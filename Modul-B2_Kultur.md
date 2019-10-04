@@ -1,6 +1,6 @@
 \--------------------------
 
-1
+B2_1
 =
 
 tc:
@@ -54,9 +54,9 @@ fo:
 
 tr:
 
->   GOTO 2a if h_split2==1
+>   GOTO B2_2a if h_split2==1
 
->   GOTO 2b if h_split2==2
+>   GOTO B2_2b if h_split2==2
 
 hi: Hilfsvariable muss an vorheriger Stelle generiert werden
 
@@ -64,7 +64,7 @@ h_split2 = 50/50-Split; values (1;2) zufällig aufgeteilt, 1=2a; 2=2b
 
 \--------------------------
 
-2a
+B2_2a
 ==
 
 tc: 50 Prozent der Befragten
@@ -162,7 +162,7 @@ hv:
 
 fo:
 
-tr: GOTO 3b
+tr: GOTO B2_3b
 
 hi: Zwischenüberschriften zwischen den ao’s möglich?
 
@@ -186,7 +186,7 @@ hi: Zwischenüberschriften zwischen den ao’s möglich?
 
 \--------------------------
 
-2b
+B2_2b
 ==
 
 tc: 50 Prozent der Befragten
@@ -288,11 +288,11 @@ hv:
 
 fo: siehe mitgeliefertes Template
 
-tr: GOTO 3a
+tr: GOTO B2_3a
 
 \--------------------------
 
-3a
+B2_3a
 ==
 
 tc: 50 Prozent der Befragten
@@ -355,13 +355,13 @@ hv:
 
 fo: ao12 absetzen
 
-tr: GOTO 4
+tr: GOTO B2_4
 
 hi:
 
 \--------------------------
 
-3b
+B2_3b
 ==
 
 tc: 50 Prozent der Befragten
@@ -423,13 +423,13 @@ hv:
 
 fo: ao12 absetzen
 
-tr: GOTO 4
+tr: GOTO B2_4
 
 hi:
 
 \--------------------------
 
-4
+B2_4
 =
 
 tc:
@@ -487,13 +487,13 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO 5
+tr: GOTO B2_5
 
 hi:
 
 \--------------------------
 
-5
+B2_5
 =
 
 tc:
@@ -559,13 +559,13 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO 6
+tr: GOTO B2_6
 
 hi:
 
 \--------------------------
 
-6
+B2_6
 =
 
 tc:
@@ -642,13 +642,13 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO 7
+tr: GOTO B2_7
 
 hi:
 
 \--------------------------
 
-7
+B2_7
 =
 
 tc:
@@ -709,15 +709,15 @@ fo: Items bitte zufällig rotieren.
 
 tr:
 
->   GOTO 8a IF sabsan = 1 \| sabsan = 2
+>   GOTO B2_8a IF sabsan = 1 \| sabsan = 2
 
->   ELSE GOTO 8b
+>   ELSE GOTO B2_8b
 
 hi:
 
 \--------------------------
 
-8a
+B2_8a
 ==
 
 tc: sabsan = 1 \| sabsan = 2
@@ -772,15 +772,15 @@ fo:
 
 tr:
 
->   GOTO 9a if h_split2==1
+>   GOTO B2_9a if h_split2==1
 
->   GOTO 9b if h_split2==2
+>   GOTO B2_9b if h_split2==2
 
 hi:
 
 \--------------------------
 
-8b
+B2_8b
 ==
 
 tc: IF sabsan \<\> 1 OR sabsan \<\> 2
@@ -833,20 +833,20 @@ fo:
 
 tr:
 
->   GOTO 9a if h_split2==1
+>   GOTO B2_9a if h_split2==1
 
->   GOTO 9b if h_split2==2
+>   GOTO B2_9b if h_split2==2
 
 hi:
 
 \--------------------------
 
-9a
+B2_9a
 ==
 
 tc: 50 Prozent der Befragten
 
-vn: einkein1; einkerf1
+vn: einkberuf1; einkba1; einkma1; einkstex11; einkstex21; einkdr1
 
 qt: Einfachauswahl im Spaltenformat/Comparison
 
@@ -854,14 +854,22 @@ hl:
 
 in:
 
-q: Was denken Sie: Welches Monatseinkommen werden Sie nach dem Studium bekommen?
+q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld...
 
 is: Beziehen Sie Ihre Angaben auf das Netto-Gehalt, d.h. Einkommen abzüglich
 Steuer.
 
-it1: (einkein1) Berufseinstieg
+it1: (einkein1einkberuf):  … mit einer Berufsausbildung?
 
-it2: (einkerf1) 10 Jahre im Beruf
+it2: (einkerf1einkba): … mit einem Bachelorabschluss? 
+
+it3: (einkma):  … mit einem Masterabschluss?
+
+it4: (einkstex1): … mit dem ersten Staatsexamen?
+
+it5: (einkstex2):  … mit dem zweiten Staatsexamen?
+
+it6: (einkdr): … mit einer Promotion?
 
 st:
 
@@ -883,11 +891,16 @@ ao8: 8: 5.000 € bis unter 10.000 €
 
 ao9: 9: 10.000 € und mehr
 
+ao10: -12: : weiß ich nicht
+
 mv: -12: : weiß ich nicht
 
 ka:
 
 vc:
+SHOW it1 and it4 and it5 and it6 if sabsan=3 [SDK-stu#05] Grundprogramm
+
+SHOW it1 and it2 and it3 and it6 if sabsan!=3 [SDK-stu#05] Grundprogramm
 
 av:
 
@@ -899,18 +912,18 @@ hv:
 
 fo: ao10 absetzen
 
-tr: GOTO 10
+tr: GOTO B2_10
 
 hi:
 
 \--------------------------
 
-9b
+B2_9b
 ==
 
 tc: 50 Prozent der Befragten
 
-vn: einkein2, einkerf2
+vn: einkberuf2; einkba2; einkma2; einkstex12; einkstex22; einkdr2
 
 qt: Offene Angabe
 
@@ -918,24 +931,37 @@ hl:
 
 in:
 
-q: Was denken Sie: Welches Monatseinkommen werden Sie nach dem Studium bekommen?
+q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld...
 
 is: Beziehen Sie Ihre Angaben auf das Netto-Gehalt, d.h. Einkommen abzüglich
 Steuer.
 
 it:
 
-st: Netto-Monatseinkommen bei…
+st:
 
-ao1 (einkein2): 5, Präfix: … Berufseinstieg: , Suffix: €/Monat
+ao1 (einkberuf2): 5, Präfix: … mit einer Berufsausbildung: , Suffix: €/Monat
 
-ao2 (einkerf2): 5, Präfix: … 10 Jahre im Beruf: , Suffix: €/Monat
+ao2 (einkba2): 5, Präfix: … mit einem Bachelorabschluss: , Suffix: €/Monat
+
+ao3 (einkma2): 5, Präfix: … mit einem Masterabschluss: , Suffix: €/Monat
+
+ao4 (einkstex12): 5, Präfix: … mit dem ersten Staatsexamen: , Suffix: €/Monat
+
+ao5 (einkstex22): 5, Präfix: … mit dem zweiten Staatsexamen: , Suffix: €/Monat
+
+ao6 (einkdr2): 5, Präfix: … mit einer Promotion: , Suffix: €/Monat
+
+ao7: -12: : weiß ich nicht
 
 mv: -12: weiß ich nicht
 
 ka:
 
-vc:
+vc: 
+SHOW ao1 and ao4 and ao5 and ao6 if sabsan=3 [SDK-stu#05] Grundprogramm
+
+SHOW ao1 and ao2 and ao3 and ao6 if sabsan!=3 [SDK-stu#05] Grundprogramm
 
 av:
 
@@ -945,15 +971,15 @@ fv:
 
 hv:
 
-fo: ao3 absetzen
+fo: ao7 absetzen
 
-tr: GOTO 10
+tr: GOTO B2_10
 
 hi:
 
 \--------------------------
 
-10
+B2_10
 ==
 
 tc:
