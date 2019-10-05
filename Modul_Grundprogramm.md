@@ -668,23 +668,24 @@ hl:
 
 in:
 
-q: Sie wurden von der Hochschule HS-Name aus [PRELOAD_??] eingeladen, sind Sie hier aktuell immatrikuliert?
+q: Sie wurden von der Hochschule [Preload-Token: Hochschulname] eingeladen, studieren Sie hier aktuell?
 
-is: Falls Sie an mehreren Hochschulen eingeschrieben sind, beziehen Sie Ihre Antwort auf diese und alle weiteren Fragen bitte auf die Hochschule, an der Sie den für Sie gegenwärtig wichtigeren Studiengang studieren.
+is: Falls Sie an mehreren Hochschulen eingeschrieben sind, beziehen Sie Ihre Antwort auf diese und alle weiteren Fragen bitte auf die Hochschule, an der Sie den für Sie gegenwärtig wichtigeren Studiengang studieren. 
+Falls Sie aktuell an einer anderen Hochschule studieren, kreuzen Sie bitte “Nein” an.
 
 it:
 
 st:
 
-ao1: 1: Ja, und zwar am Standort: Dropdown
+ao1: 1: : Ja, und zwar am Standort [DropDown-Menü]
 
-ato: Nein, ich bin an folgender Hochschule immatrikuliert:
+ao2: 2: : Nein, ich studiere an einer anderen Hochschule.
 
 mv:
 
 ka:
 
-vc: SHOW (Individualisierung) if token=xxx
+vc:
 
 av:
 
@@ -696,9 +697,177 @@ hv:
 
 fo:
 
-tr: GOTO SDK-erf02
+tr: GOTO SDK-NEU2
 
 hi:
+
+\------------------------------------------------------------
+
+SDK-NEU2
+=======
+
+tc: IF hsstand=2
+
+vn: hsstandbl
+
+qt: Einfachauswahl
+
+hl:
+
+in: 
+
+q: In welchem Bundesland/Land liegt die Hochschule, an der Sie aktuell studieren?
+
+is: 
+
+it: 
+
+st:
+Überschrift: Bundesland...
+
+ao1: 1: : Baden-Württemberg
+
+ao2: 2: : Bayern
+
+ao3: 3: : Berlin
+
+ao4: 4: : Brandenburg
+
+ao5: 5: : Bremen
+
+ao6: 6: : Hamburg
+
+ao7: 7: : Hessen
+
+ao8: 8: : Mecklenburg-Vorpommern
+
+ao9: 9: : Niedersachsen
+
+ao10: 10: Nordrhein-Westfalen
+
+ao11: 11: : Rheinland-Pfalz
+
+ao12: 12: : Saarland
+
+ao13: 13: : Sachsen
+
+ao14: 14: : Sachsen-Anhalt
+
+ao15: 15: : Schleswig-Holstein
+
+ao16: 16: : Thüringen
+
+Leerzeile
+
+ao17: 17: : im Ausland
+
+mv: 
+
+ka: 
+
+vc: 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr:
+GOTO SDK-NEU3
+
+hi: 
+
+
+\------------------------------------------------------------
+
+SDK-NEU3
+=======
+
+tc:
+vn: sabserhs
+qt: Drop-Down-Menü
+hl:
+in: 
+q: An welcher Hochschule studieren Sie aktuell?
+is: 
+it: 
+st:
+ao: Drop-Down-Menü Hochschulliste
+mv: 
+ka: 
+vc: 
+av: 
+kh: 
+fv: 
+hv: 
+fo: 
+tr:
+hi: 
+
+\------------------------------------------------------------
+
+SDK-NEU3
+=======
+
+tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
+
+vn: hsstandhs; hsstandhso; hsstandst; hsstandsto; hsstandla; hsstandlao
+
+qt: Offene Nennung
+
+hl:
+
+in: 
+
+q1 (hsstandbl=1-16): Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
+
+q2 (hsstandbl=17 & ainfasia=1-2): Bitte tragen Sie das Land, den Ort sowie die Hochschule ein, an der Sie aktuell im Ausland studieren.
+
+q3 (hsstandbl=17 & ainfasia=3-8): Bitte tragen Sie das Land sowie den Ort ein, an der Sie sich aktuell studienbezogen im Ausland befinden. 
+
+is: 
+
+it: 
+
+st:
+
+ao1: 100 Stellen, Präfix (hsstandhs; hsstandhso), Suffix: Hochschule:
+
+ao2: 100 Stellen, Präfix (hsstandst; hsstandsto), Suffix: Standort:
+
+ao3: 100 Stellen, Präfix (hsstandla; hsstandlao), Suffix: Land
+
+ao4: 100 Stellen, Präfix (neue Variablen erforderlich), Suffix: Ort
+
+mv: 
+
+ka: 
+
+vc1: SHOW hsstandhs | hsstandhso | hsstandst | hsstandsto IF hsstandbl=1 – 16
+
+vc2: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto | hsstandhs | hsstandhso IF hsstandbl=17 AND ainfasia=1-2
+
+vc3: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto IF hsstandbl=17 AND ainfasia=3-8 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr:
+GOTO SDK-erf02
+
+hi: 
 
 \------------------------------------------------------------
 
