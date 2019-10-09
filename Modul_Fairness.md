@@ -76,7 +76,7 @@ it:
 
 st:
 
-ao1: 1: ungerecht
+ao1: 1: gerecht
 
 ao2: 2:
 
@@ -84,7 +84,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: gerecht
+ao5: 5: ungerecht
 
 mv:
 
