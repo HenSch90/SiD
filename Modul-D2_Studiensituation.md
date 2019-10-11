@@ -2,7 +2,7 @@
 
 **Supportive Environment**
 
-[SEITE]
+D2_1
 -------
 
 tc:
@@ -65,7 +65,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_2
 
 hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
@@ -73,7 +73,7 @@ hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
 **Qualität der Ausstattung**
 
-[SEITE]
+D2_2
 -------
 
 tc:
@@ -146,7 +146,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_3
 
 hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
@@ -154,7 +154,7 @@ hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
 **Strukturiertheit des Studienangebots**
 
-[SEITE]
+D2_3
 -------
 
 tc:
@@ -227,7 +227,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_4
 
 hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
@@ -235,7 +235,7 @@ hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
 **Größe/Struktur des Studiengangs**
 
-[SEITE]
+D2_4
 -------
 
 tc:
@@ -296,7 +296,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_5
 
 hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
@@ -304,7 +304,7 @@ hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
 **Anwesenheit**
 
-[SEITE]
+D2_5
 -------
 
 tc:
@@ -363,7 +363,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_6
 
 hi:
 
@@ -371,7 +371,7 @@ hi:
 
 **SSCO 1**
 
-[SEITE]
+D2_6
 -------
 
 tc:
@@ -424,7 +424,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_7
 
 hi:
 
@@ -432,7 +432,7 @@ hi:
 
 **SSCO 2**
 
-[SEITE]
+D2_7
 -------
 
 tc:
@@ -495,7 +495,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_8
 
 hi: Subskalen „Konstruktion“ + „Forschungsorientierung“ + zusätzl. Items
 
@@ -503,7 +503,7 @@ hi: Subskalen „Konstruktion“ + „Forschungsorientierung“ + zusätzl. Item
 
 **SSCO 3**
 
-[SEITE]
+D2_8
 -------
 
 tc:
@@ -556,7 +556,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_9
 
 hi:
 
@@ -564,7 +564,7 @@ hi:
 
 **SSCO 4**
 
-[SEITE]
+D2_9
 -------
 
 tc:
@@ -617,7 +617,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_10
 
 hi: Subskalen „Praxisorientierung“ + „Forschungsorientierung“
 
@@ -625,7 +625,7 @@ hi: Subskalen „Praxisorientierung“ + „Forschungsorientierung“
 
 **SSCO 5**
 
-[SEITE]
+D2_10
 -------
 
 tc:
@@ -674,7 +674,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_11
 
 hi: Teil der Subskala „Forschungsorientierung“
 
@@ -682,7 +682,7 @@ hi: Teil der Subskala „Forschungsorientierung“
 
 **SSCO 6**
 
-[SEITE]
+D2_11
 -------
 
 tc:
@@ -741,7 +741,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_12
 
 hi: Subskalen „Unterstützung durch Lehrende“ + „soziales Klima“
 
@@ -749,7 +749,7 @@ hi: Subskalen „Unterstützung durch Lehrende“ + „soziales Klima“
 
 **SSCO 7**
 
-[SEITE]
+D2_12
 -------
 
 tc:
@@ -802,7 +802,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_13
 
 hi: Subskala „Motivierung und Lehrengagement“
 
@@ -810,7 +810,7 @@ hi: Subskala „Motivierung und Lehrengagement“
 
 **Kontakthäufigkeit**
 
-[SEITE]
+D2_13
 -------
 
 tc:
@@ -875,7 +875,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_14
 
 hi: Die endgültige Skalierung soll auf Basis des Pretests konzipiert werden.
 
@@ -883,7 +883,7 @@ hi: Die endgültige Skalierung soll auf Basis des Pretests konzipiert werden.
 
 **Kontaktqualität**
 
-[SEITE]
+D2_14
 -------
 
 tc:
@@ -942,7 +942,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_15
 
 hi: Kontaktqualität muss auf einer Seite mit der Kontakthäufigkeit abgebildet
 sein.
@@ -951,7 +951,7 @@ sein.
 
 **Kontakt zu Lehrenden**
 
-[Seite]
+D2_15
 -------
 
 tc:
@@ -1006,7 +1006,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_16
 
 hi: Subskala „Student-Faculty Interaction“
 
@@ -1014,7 +1014,7 @@ hi: Subskala „Student-Faculty Interaction“
 
 **Leistungsdruck**
 
-[SEITE]
+D2_16
 -------
 
 tc:
@@ -1067,7 +1067,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_17
 
 hi:
 
@@ -1075,7 +1075,7 @@ hi:
 
 **ECTS-Punkte**
 
-[SEITE]
+D2_17
 -------
 
 tc:
@@ -1128,7 +1128,7 @@ hi:
 
 **Schriftliche Leistungen**
 
-[SEITE]
+D2_18
 -------
 
 tc:
@@ -1191,7 +1191,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_19
 
 hi: „nichts davon“ bitte als Exklusivkategorie programmieren.
 
@@ -1199,7 +1199,7 @@ hi: „nichts davon“ bitte als Exklusivkategorie programmieren.
 
 **Leseleistungen**
 
-[SEITE]
+D2_19
 -------
 
 tc:
@@ -1240,7 +1240,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_20
 
 hi:
 
@@ -1248,7 +1248,7 @@ hi:
 
 **Reflective & Integrative Learning**
 
-[SEITE]
+D2_20
 -------
 
 tc:
@@ -1309,7 +1309,7 @@ fo:
 
 tr:
 
-GOTO [SEITE]
+GOTO D2_21
 
 hi:
 
@@ -1317,7 +1317,7 @@ hi:
 
 **Einzelbereichszufriedenheit**
 
-[SEITE]
+D2_21
 -------
 
 tc:
@@ -1388,6 +1388,6 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO [next Modul]
 
 hi:
