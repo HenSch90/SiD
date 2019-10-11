@@ -72,9 +72,10 @@ hv:
 
 fo:
 
-tr:
+tr: 
+GOTO pvig[deck]_1 IF h_deck_phd==[deck]
 
-hi: Weiterleitung zu Vignetten?
+hi: 
 
 
 \--------------------------------
