@@ -1,3 +1,80 @@
+\--------------------------------
+
+KSM-phd01
+==================
+
+tc:
+
+vn: 
+
+qt:
+
+hl:
+
+in: Promovieren kann man in Deutschland unter ganz unterschiedlichen
+Rahmenbedingungen. Im Folgenden schildern wir Ihnen einige mögliche
+Konstellationen, in denen eine !!fachlich für Sie sehr interessante!! Promotion
+an einer !!Hochschule in Deutschland!! möglich ist. Gehen Sie bitte davon aus,
+dass die !!formalen Voraussetzungen!! an der Hochschule Ihrer Wahl erfüllt sind
+und eine !!geeignete Betreuung der Arbeit!! gewährleistet ist. Die
+!!Lebenshaltungskosten!! sind auf dem Niveau Ihres jetzigen Studienorts.
+
+
+in1: 
+
+in2: 
+
+in3: 
+
+q:
+
+is:
+
+it:
+
+st:
+
+ao1:
+
+ao2:
+
+ao3:
+
+ao4:
+
+ao5:
+
+ao6:
+
+ao7:
+
+ao8:
+
+ao9:
+
+ao10:
+
+ao11:
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi: Weiterleitung zu Vignetten?
 
 
 \--------------------------------
@@ -13,15 +90,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 
 hl:
 
-in: Promovieren kann man in Deutschland unter ganz unterschiedlichen
-Rahmenbedingungen. Im Folgenden schildern wir Ihnen einige mögliche
-Konstellationen, in denen eine !!fachlich für Sie sehr interessante!! Promotion
-an einer !!Hochschule in Deutschland!! möglich ist. Gehen Sie bitte davon aus,
-dass die !!formalen Voraussetzungen!! an der Hochschule Ihrer Wahl erfüllt sind
-und eine !!geeignete Betreuung der Arbeit!! gewährleistet ist. Die
-!!Lebenshaltungskosten!! sind auf dem Niveau Ihres jetzigen Studienorts.
-
-Bitte geben Sie an, wie attraktiv oder unattraktiv Sie die jeweiligen
+in: Bitte geben Sie an, wie attraktiv oder unattraktiv Sie die jeweiligen
 Rahmenbedingungen einer Promotion aus Ihrer Sicht einschätzen. Uns interessiert
 Ihre subjektive Bewertung.
 
