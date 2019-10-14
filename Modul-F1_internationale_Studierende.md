@@ -15,17 +15,13 @@ q: Inwiefern treffen die folgenden Aussagen Ihrer Meinung nach zu?
 
 is:
 
-it1: (aeinnorm1): : Ein studienbezogener Auslandsaufenthalt darf während des
-Studiums auf keinen Fall fehlen.
+it1: (aeinnorm1): : Ein studienbezogener Auslandsaufenthalt darf während des Studiums auf keinen Fall fehlen.
 
-it2: (aeinnorm2): : Auslandserfharungen warden auf dem Arbeitsmarkt oftmals
-erwartet.
+it2: (aeinnorm2): : Auslandserfharungen warden auf dem Arbeitsmarkt oftmals erwartet.
 
-it3: (aeinnorm3): : Jede\*r Studierende sollte während des Studiums
-studienbezogen im Ausland gewesen sein.
+it3: (aeinnorm3): : Jede\*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
 
-it4: (aeinnormand): anderes, und zwar (offene Angabe: 100 Zeichen; Präfix
-[aeinnormando], Suffix
+it4: (aeinnormand): anderes, und zwar (offene Angabe: 100 Zeichen; Präfix [aeinnormando], Suffix
 
 st:
 
@@ -55,9 +51,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_2
+tr: GOTO F1_2
 
 hi: Items bitte zufällig rotieren (Ausnahme: aeinnormandoba)
 
@@ -68,9 +62,7 @@ F1_2
 
 tc:
 
-vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersön; aeinskont; aeinskultur;
-aeinsspaß; aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit;
-aeinsfehlspra; aeinsangstl
+vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersön; aeinskont; aeinskultur; aeinsspaß; aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
 
 qt: Einfachauswahlmatrix
 
@@ -142,9 +134,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_3
+tr: GOTO F1_3
 
 hi:
 
@@ -191,9 +181,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_4
+tr: GOTO F1_4
 
 hi:
 
@@ -212,8 +200,7 @@ hl:
 
 in:
 
-q: Kennen Sie jemanden, der bereits vor Ihnen im Rahmen seines Studiums im
-Ausland war?
+q: Kennen Sie jemanden, der bereits vor Ihnen im Rahmen seines Studiums im Ausland war?
 
 is: Mehrfachauswahl
 
@@ -249,9 +236,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_5
+tr: GOTO F1_5
 
 hi:
 
@@ -262,8 +247,7 @@ F1_5
 
 tc:
 
-vn: aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul;
-aauszeitlebbama
+vn: aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul; aauszeitlebbama
 
 qt: Mehrfachauswahl
 
@@ -271,8 +255,7 @@ hl:
 
 in:
 
-q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3
-Monate) Im Ausland verbracht?
+q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) Im Ausland verbracht?
 
 is: Bitte alles Zutreffende ankreuzen.
 
@@ -306,9 +289,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_6
+tr: GOTO F1_6
 
 hi:
 
@@ -353,9 +334,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_7
+tr: GOTO F1_7
 
 hi:
 
@@ -368,14 +347,13 @@ tc:
 
 vn: vsbanrechsch
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl
 
 hl:
 
 in:
 
-q: Hatten Sie Schwierigkeiten bei der Anerkennung Ihrer Vorbildung in
-Deutschland?
+q: Hatten Sie Schwierigkeiten bei der Anerkennung Ihrer Vorbildung in Deutschland?
 
 it:
 
@@ -409,9 +387,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_8
+tr: GOTO F1_8
 
 hi:
 
@@ -436,21 +412,17 @@ it:
 
 st:
 
-ao1: (vsbpruefba) :nach einer Feststellungsprüfung als Studienberechtigbung (z.
-B. am Studienkolleg an einer Hochschule)
+ao1: (vsbpruefba) :nach einer Feststellungsprüfung als Studienberechtigbung (z. B. am Studienkolleg an einer Hochschule)
 
-ao2: (vsbeignba): nach einer Eignungsprüfung (z. B. für Kunst, Sport) an einer
-Hochschule als Studienberechtigung
+ao2: (vsbeignba): nach einer Eignungsprüfung (z. B. für Kunst, Sport) an einer Hochschule als Studienberechtigung
 
-ao3: (vsbhsreifba): als fachorientierte oder nicht-fachorientierte
-Studienberechtigung
+ao3: (vsbhsreifba): als fachorientierte oder nicht-fachorientierte Studienberechtigung
 
 ao4: (vsbbachba): als Bachelorabschluss
 
 ao5: (vsbmastba): als Master-/Dipolom-/Magisterabschluss
 
-ao6: (vsbteilba): von meinen Studienleistungen wurden Teile anerkannt (z. B.
-einzelne Studienleistungen, Credit Points, Module, Scheine)
+ao6: (vsbteilba): von meinen Studienleistungen wurden Teile anerkannt (z. B. einzelne Studienleistungen, Credit Points, Module, Scheine)
 
 ao7: (vsbwnba): weiß ich nicht (Exklusivkategorie)
 
@@ -470,9 +442,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_9
+tr: GOTO F1_9
 
 hi:
 
@@ -483,10 +453,9 @@ F1_9
 
 tc:
 
-vn: bdefinba; bdekenba; bdesprba; bdefamsba; bdefaiba; bdetecba; bdeoekba;
-bdequaba; bdearbba
+vn: bdefinba; bdekenba; bdesprba; bdefamsba; bdefaiba; bdetecba; bdeoekba; bdequaba; bdearbba
 
-qt: Einfachauswahl
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -498,8 +467,7 @@ is: Bitte geben Sie den jeweils zutreffenden Skalenwert an.
 
 it1 (bdefinba): weil dies meinen finanziellen Möglichkeiten entspricht.
 
-it2 (bdekenba): um Deutschland kennenzulernen/weil mich die deutsche Geschichte
-und Kultur interessiert.
+it2 (bdekenba): um Deutschland kennenzulernen/weil mich die deutsche Geschichte und Kultur interessiert.
 
 it3 (bdesprba): um meine Sprachkenntnisse zu vertiefen.
 
@@ -513,8 +481,7 @@ it7 (bdeoekba): wegen der wirtschaftlichen Lage in Deutschland.
 
 it8 (bdequaba): wegen der Lebensqualität in Deutschland.
 
-it9 (bdearbba): auf der Möglichkeit, nach Studienabschluss in Deutschland zu
-arbeiten.
+it9 (bdearbba): auf der Möglichkeit, nach Studienabschluss in Deutschland zu arbeiten.
 
 st:
 
@@ -544,9 +511,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_10
+tr: GOTO F1_10
 
 hi: Items bitte zufällig rotieren.
 
@@ -577,8 +542,7 @@ Drop-Down-Menü:
 
 ao1 (ainfaba): 1: : Auslandsstudium mit angestrebtem Abschluss in Deutschland
 
-ao2 (ainfaba): 2: : Auslandsstudium/-semester ohne angestrebten Abschluss in
-Deutschland
+ao2 (ainfaba): 2: : Auslandsstudium/-semester ohne angestrebten Abschluss in Deutschland
 
 ao3 (ainfaba): 3: : Praktikum/Praxisphase
 
@@ -620,41 +584,7 @@ hv:
 
 fo:
 
-tr:
-
-hl:
-
-in:
-
-q:
-
-is:
-
-it:
-
-st:
-
-ao:
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO F1_11
+tr:  GOTO F1_11
 
 hi:
 
@@ -681,14 +611,11 @@ it:
 
 st:
 
-ao1: 1: : Nein, ich werde in Deutschland nur einen Teil meines Studiums
-absolvieren.
+ao1: 1: : Nein, ich werde in Deutschland nur einen Teil meines Studiums absolvieren.
 
-ao2: 2: : Ja, ich plane den Abschluss eines Studiums in Deutschland (z. B.
-Bachelor, Master, Promotion)
+ao2: 2: : Ja, ich plane den Abschluss eines Studiums in Deutschland (z. B. Bachelor, Master, Promotion)
 
-ao3: 3: : Ja, ich plane einen Doppelabschluss in Deutschland un in meinem
-Herkunftsland/einem anderen Land.
+ao3: 3: : Ja, ich plane einen Doppelabschluss in Deutschland un in meinem Herkunftsland/einem anderen Land.
 
 ao4: 4: : weiß ich noch nicht
 
@@ -708,9 +635,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_12
+tr: GOTO F1_12
 
 hi:
 
@@ -729,8 +654,7 @@ hl:
 
 in:
 
-q: Wissen Sie bereits, ob Ihr Aufenthalt in Deutschland auf Ihr Studium in Ihrem
-Heimatland angerechnet wird, z. B. in Form ECTS-Punkten?
+q: Wissen Sie bereits, ob Ihr Aufenthalt in Deutschland auf Ihr Studium in Ihrem Heimatland angerechnet wird, z. B. in Form ECTS-Punkten?
 
 is:
 
@@ -740,11 +664,9 @@ st:
 
 ao1: 1: : nein
 
-ao2: 2: : offene Angabe: 2 Stellen Präfix [ainfcp1osba], Suffix: ja, teilweise:
-… ECTS-Punkte
+ao2: 2: : offene Angabe: 2 Stellen Präfix [ainfcp1osba], Suffix: ja, teilweise: … ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix [ainfcp2osba], Suffix: ja,
-vollständig: … ECTS-Punkte
+ao3: 3: : offene Angabe: 2 Stellen Präfix [ainfcp2osba], Suffix: ja, vollständig: … ECTS-Punkte
 
 mv:
 
@@ -762,9 +684,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_13
+tr: GOTO F1_13
 
 hi:
 
@@ -775,8 +695,7 @@ F1_13
 
 tc:
 
-vn: aproselbba; aprokoopba; aproorigba; aprodaadba; aproerasba; aproeuba;
-aprointerba; aproanprba
+vn: aproselbba; aprokoopba; aproorigba; aprodaadba; aproerasba; aproeuba; aprointerba; aproanprba
 
 qt: Mehrfachnennung
 
@@ -784,8 +703,7 @@ hl:
 
 in:
 
-q: Findet Ihr aktueller Aufenthalt in Deutschland im Rahmen eines
-Austauschprogramms statt?
+q: Findet Ihr aktueller Aufenthalt in Deutschland im Rahmen eines Austauschprogramms statt?
 
 is: Mehrfachnennungen sind möglich.
 
@@ -793,11 +711,9 @@ it:
 
 st:
 
-ao1 (aproselbba): : nein, ich habe den Aufenthalt selbst organisiert
-(Exklusivkategorie)
+ao1 (aproselbba): : nein, ich habe den Aufenthalt selbst organisiert (Exklusivkategorie)
 
-ao2 (aprokoopba): : ja, Kooperationsprogramm zwischen Heimathochschule und
-deutscher Hochschule
+ao2 (aprokoopba): : ja, Kooperationsprogramm zwischen Heimathochschule und deutscher Hochschule
 
 ao3 (aproorigba): : ja, Programm meines Herkunftslandes
 
@@ -809,8 +725,7 @@ ao6 (aproeuba): : ja, anderes EU-Programm
 
 ao7 (aprointerba): : ja, Programm einer internationalen Organisation
 
-ao8 (aproanprba): : ja, anderes Programm offene Angabe: 100 Stellen, Präfix
-[aproanproba], Suffix:und zwar:
+ao8 (aproanprba): : ja, anderes Programm offene Angabe: 100 Stellen, Präfix [aproanproba], Suffix:und zwar:
 
 mv:
 
@@ -828,9 +743,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_14
+tr: GOTO F1_14
 
 hi:
 
@@ -843,14 +756,13 @@ tc:
 
 vn: akontdeutstba; akonteinheimba; akontheimba; akontintstba
 
-qt: Einfachauswahl
+qt: Einfachauswahlmatrix
 
 hl:
 
 in:
 
-q: Wie häufig haben Sie während Ihres Aufenthalts in Deutschland ingesamt
-Gespräche/Kontakt…
+q: Wie häufig haben Sie während Ihres Aufenthalts in Deutschland ingesamt Gespräche/Kontakt…
 
 is:
 
@@ -860,8 +772,7 @@ it2 (akonteinheimba): … mit anderen Einheimischen?
 
 it3 (akontheimba): … mit Studierenden aus Ihrem Heimatland?
 
-it4 (akontintstba): … mit anderen internationalen Studierenden (nicht aus Ihrem
-Heimatland)?
+it4 (akontintstba): … mit anderen internationalen Studierenden (nicht aus Ihrem Heimatland)?
 
 st:
 
@@ -891,9 +802,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_15
+tr: GOTO F1_15
 
 hi:
 
@@ -962,9 +871,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1\_
+tr: GOTO F1\_
 
 hi: 16
 
@@ -977,7 +884,7 @@ tc:
 
 vn: azufskein; azufskstu; azufsklehr; azuflernerf; azufinsg
 
-qt: Einfachauswahl, Akkordeon
+qt: Einfachauswahlmatrix, Akkordeon
 
 hl:
 
@@ -1025,9 +932,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_17
+tr: GOTO F1_17
 
 hi:
 
@@ -1084,9 +989,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_18
+tr: GOTO F1_18
 
 hi:
 
@@ -1105,9 +1008,7 @@ hl:
 
 in:
 
-q: Ausgehend von Ihren bisherigen Erfahrungen mit den Studien- und
-Lebensbedingungen in Deutschland: Würden Sie Ihren Freunden/Bekannten empfehlen,
-ein Studium in Deutschland durchzuführen?
+q: Ausgehend von Ihren bisherigen Erfahrungen mit den Studien- und Lebensbedingungen in Deutschland: Würden Sie Ihren Freunden/Bekannten empfehlen, ein Studium in Deutschland durchzuführen?
 
 is:
 
@@ -1141,9 +1042,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_19
+tr: GOTO F1_19
 
 hi:
 
@@ -1162,16 +1061,13 @@ hl:
 
 in:
 
-q: Hinsichtlich Ihres Auslandsaufenthalts: Wenn Sie die freie Wahl gehabt
-hätten, in welchem Land und an welchem Ort hätten Sie am liebsten studiert?
+q: Hinsichtlich Ihres Auslandsaufenthalts: Wenn Sie die freie Wahl gehabt hätten, in welchem Land und an welchem Ort hätten Sie am liebsten studiert?
 
 is:
 
-it1 (bdedarlba): Land: (offene Angabe: 100 Zeichen, Präfix [bdedarloba], Suffix
-…
+it1 (bdedarlba): Land: (offene Angabe: 100 Zeichen, Präfix [bdedarloba], Suffix …
 
-i t1 (bdedarhssia): Stadt/Hochschule: (offene Angabe: 100 Zeichen, Präfix
-[bdedarhsoba], Suffix …
+it2 (bdedarhssia): Stadt/Hochschule: (offene Angabe: 100 Zeichen, Präfix [bdedarhsoba], Suffix …
 
 it1 (-12): weiß ich nicht
 
@@ -1195,9 +1091,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_20
+tr: GOTO F1_20
 
 hi:
 
@@ -1208,11 +1102,9 @@ F1_20
 
 tc:
 
-vn: bhiitecba; bhiiwelba; bhiivorbba; bhiitutba; bhiiheimba; bhiivermba;
-bhiideuba; bhiiberba; bhiibehba; bhiikulba; bhiikomba; bhiifinba; bhiiaerlba;
-bhiivisba; bhiikvba; bhiipsyba; bhiikeinba
+vn: bhiitecba; bhiiwelba; bhiivorbba; bhiitutba; bhiiheimba; bhiivermba; bhiideuba; bhiiberba; bhiibehba; bhiikulba; bhiikomba; bhiifinba; bhiiaerlba; bhiivisba; bhiikvba; bhiipsyba; bhiikeinba
 
-qt: Einfachauswahl
+qt: Mehrfachauswahl
 
 hl:
 
@@ -1256,8 +1148,7 @@ ao14 (bhiivisba): : Beratung/Informationen zum Aufenthaltsrecht
 
 ao15 (bhiikvba): Beratung/Informationen zu Fragen der Krankenversicherung
 
-ao16 (bhiipsyba): : psychologische Beratung bei persönlichen oder
-studienbezogenen Schwierigkeiten
+ao16 (bhiipsyba): : psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
 
 Lehrzeile
 
@@ -1279,9 +1170,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_21
+tr: GOTO F1_21
 
 hi:
 
@@ -1340,9 +1229,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_22
+tr: GOTO F1_22
 
 hi:
 
@@ -1355,7 +1242,7 @@ tc:
 
 vn: intpsyherkba; intpsyzeitdeu; intpsyanddeu
 
-qt: Einfachauswahl
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -1399,9 +1286,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_23
+tr: GOTO F1_23
 
 hi:
 
@@ -1414,7 +1299,7 @@ tc:
 
 vn: intling1ba; intling2ba; intling3ba
 
-qt: Einfachauswahl
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -1424,14 +1309,11 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und
-persönliche Meinungen äußern.
+it1 (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und persönliche Meinungen äußern.
 
-it2 (intling2ba): Ich verstehen die wichtigsten Punkte in Radio- und
-Fernsehprogrammen, die auf Deutsch gesendet warden.
+it2 (intling2ba): Ich verstehen die wichtigsten Punkte in Radio- und Fernsehprogrammen, die auf Deutsch gesendet warden.
 
-it3 (intling3ba): Ich kann deutsche Zeitungsartikel lesen und vollständig
-verstehen.
+it3 (intling3ba): Ich kann deutsche Zeitungsartikel lesen und vollständig verstehen.
 
 st:
 
@@ -1461,9 +1343,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO F1_24
+tr: GOTO F1_24
 
 hi:
 
@@ -1476,7 +1356,7 @@ tc:
 
 vn: aarbchdeuba; aarbchherkba; aarbchandlba
 
-qt: Einfachauswahl
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -1522,8 +1402,6 @@ hv:
 
 fo:
 
-tr:
-
-GOTO nächstes Modul
+tr: GOTO nächstes Modul
 
 hi:
