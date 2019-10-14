@@ -125,7 +125,7 @@ q: Wie stehen Sie zu den folgenden Aussagen?
 
 is:
 
-it1: (faihs): In Deutschland hat Jede\*r die gleiche Chance auf einen Hochschulabschluss.
+it1: (faihs): In Deutschland hat jede\*r die gleiche Chance auf einen Hochschulabschluss.
 
 it2: (faiein): Nur wenn die Unterschiede im Einkommen und im sozialen Ansehen groß genug sind, gibt es auch einen Anreiz für persönliche Leistungen.
 
