@@ -294,7 +294,7 @@ mv:
 
 ka:
 
-vc: SHOW aauszeitlebbame IF sabsan=2
+vc: SHOW aauszeitlebbama IF sabsan=2
 
 av:
 
