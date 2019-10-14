@@ -1,6 +1,6 @@
 \--------------------------------
 
-1
+C3_1
 =
 
 tc: IF dkinja = 2
@@ -39,13 +39,13 @@ hv:
 
 fo:
 
-tr: GOTO 2
+tr: GOTO C3_2
 
 hi:
 
 \--------------------------------
 
-2
+C3_2
 =
 
 tc: Die vorliegende Frage wird ausschließlich dt./BI-Studierenden gestellt, die
@@ -93,13 +93,13 @@ hv:
 
 fo:
 
-tr: GOTO 2
+tr: GOTO C3_3
 
 hi:
 
 \--------------------------------
 
-3
+C3_3
 =
 
 tc: Die vorliegende Frage wird ausschließlich dt./BI-Studierenden gestellt, die
