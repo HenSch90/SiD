@@ -1,4 +1,4 @@
-1
+D1_1
 =
 
 tc1: NO IF vsbstyp=5 \| 6
@@ -50,13 +50,13 @@ fo:
 
 tr:
 
-GOTO 2
+GOTO D1_2
 
 hi:
 
 \--------------------------------
 
-2 
+D1_2 
 ==
 
 tc1: NO IF vsbstyp=5 \| 6
@@ -153,7 +153,7 @@ fo:
 
 tr:
 
-GOTO 3
+GOTO D1_3
 
 hi:
 
@@ -170,7 +170,7 @@ Prüfungsfach: \___________\_ [Drop Down1] [Drop Down2] [Drop Down3]
 
 \--------------------------------
 
-3 
+D1_3 
 ==
 
 tc:
@@ -219,14 +219,14 @@ fo:
 
 tr:
 
-GOTO 4 \| 7 \| 9 (vausbja=3 weiter mit 4; ssemhs= 1 \| 2 \| 01 \| 02 weiter mit
-7; alle anderen weiter mit 9)
+GOTO 4 \| 7 \| 9 (vausbja=3 weiter mit D1_4; ssemhs= 1 \| 2 \| 01 \| 02 weiter mit
+D1_7; alle anderen weiter mit D1_9)
 
 hi:
 
 \--------------------------------
 
-4 
+D1_4 
 ==
 
 tc1: NO IF vsbstyp=5 \| 6
@@ -277,13 +277,13 @@ fo:
 
 tr:
 
-GOTO 5
+GOTO D1_5
 
 hi:
 
 \--------------------------------
 
-5 
+D1_5 
 ==
 
 tc1: NO IF vsbstyp=5 \| 6
@@ -332,13 +332,13 @@ fo:
 
 tr:
 
-GOTO 6
+GOTO D1_6
 
 hi:
 
 \--------------------------------
 
-6
+D1_6
 =
 
 tc1: NO IF vsbstyp=5 \| 6
@@ -394,7 +394,7 @@ hi:
 
 \--------------------------------
 
-1 
+D1_7 
 ==
 
 tc: IF ssemhs=1 \| 2 \| 01 \| 02 (nur Studierende im 1. + 2. Fachsemester)
@@ -475,13 +475,13 @@ fo:
 
 tr:
 
-GOTO 8
+GOTO D1_8
 
 hi: Items zufällig rotieren
 
 \--------------------------------
 
-8 
+D1_8 
 ==
 
 tc: IF ssemhs=1 \| 2 \| 01 \| 02 (nur Studierende im 1. + 2. Fachsemester)
@@ -564,13 +564,13 @@ fo:
 
 tr:
 
-GOTO 9
+GOTO D1_9
 
 hi: Items zufällig rotieren
 
 \--------------------------------
 
-9 
+D1_9 
 ==
 
 tc:
@@ -619,13 +619,13 @@ fo:
 
 tr:
 
-GOTO 10 \| 13 (ssabsja=2 weiter mit 10; alle anderen weiter mit 13)
+GOTO 10 \| 13 (ssabsja=2 weiter mit D1_10; alle anderen weiter mit D1_13)
 
 hi:
 
 \--------------------------------
 
-10 
+D1_10 
 ===
 
 tc: IF sabsja=2 (nur Studierende mit vorherigem Hochschulabschluss)
@@ -706,15 +706,15 @@ fo:
 
 tr:
 
-GOTO 11 \| 12 (sabserbl= 2 \| 3 \| … \| 18 weiter mit 11; alle anderen weiter
-mit 12)
+GOTO 11 \| 12 (sabserbl= 2 \| 3 \| … \| 18 weiter mit D1_11; alle anderen weiter
+mit D1_12)
 
 hi: Bitte auf zwei Seiten programmieren (Filter“ nein/ja“ (an der derzeitigen
 Hochschule), bei „nein“ erscheinen die Bundesländer 2-18
 
 \--------------------------------
 
-11a 
+D1_11a 
 ====
 
 tc: IF sabserbl = 2 – 17 (nur für Studierende, die das Bundesland Ihrer
@@ -756,13 +756,13 @@ fo:
 
 tr:
 
-GOTO 13
+GOTO D1_13
 
 hi: Bitte mit nachfolgender Frage auf einer Seite programmieren.
 
 \--------------------------------
 
-11b 
+D1_11b 
 ====
 
 tc1: IF sabserbl= 2 – 17
@@ -812,13 +812,13 @@ fo:
 
 tr:
 
-GOTO 12
+GOTO D1_12
 
 hi:
 
 \--------------------------------
 
-12 
+D1_12 
 ===
 
 tc: IF sabsja=1 (nur für Studierende mit vorherigem Hochschulabschluss)
@@ -867,7 +867,7 @@ hi:
 
 \--------------------------------
 
-13 
+D1_13 
 ===
 
 tc:
@@ -918,7 +918,7 @@ hi:
 
 \--------------------------------
 
-14 
+D1_14 
 ===
 
 tc: IF ssweija=1 und/oder saweija=1 und/oder shwija=1 und/oder ssuja=1 (nur
@@ -990,7 +990,7 @@ hi:
 
 \--------------------------------
 
-15 
+D1_15 
 ===
 
 tc:
@@ -1065,7 +1065,7 @@ fo:
 
 tr:
 
-GOTO 16 \| 17 (ssuja=1 weiter mit 16; alle anderen weiter mit 17)
+GOTO 16 \| 17 (ssuja=1 weiter mit D1_16; alle anderen weiter mit D1_17)
 
 hi: Wenn techepi=1, bitte zwei weitere Zeilen einblenden.
 
@@ -1073,7 +1073,7 @@ Das Tableau passt nicht in die gängige Template-Vorlage!
 
 \--------------------------------
 
-16 
+D1_16 
 ===
 
 tc: IF ssuja=1 (nur Studierende, die mindestens eine Studienunterbrechung
@@ -1145,7 +1145,7 @@ fo:
 
 tr:
 
-GOTO 17
+GOTO D1_17
 
 hi: In Abhängigkeit der Antworten auf Seite D1_14 erfolgt eine Einblendung von
 bis zu drei Unterbrechungen, für die je Zeile anhand verschiedener
@@ -1153,7 +1153,7 @@ Antwortformate Informationen erhoben werden.
 
 \--------------------------------
 
-17 
+D1_17 
 ===
 
 tc:
@@ -1219,7 +1219,7 @@ fo:
 
 tr:
 
-GOTO 18
+GOTO D1_18
 
 hi:
 
@@ -1282,13 +1282,13 @@ fo:
 
 tr:
 
-GOTO 19
+GOTO D1_19
 
 hi:
 
 \--------------------------------
 
-19 
+D1_19 
 ===
 
 tc:
@@ -1385,13 +1385,13 @@ fo:
 
 tr:
 
-GOTO 20
+GOTO D1_20
 
 hi:
 
 \--------------------------------
 
-20 
+D1_20 
 ===
 
 tc:
@@ -1464,13 +1464,13 @@ fo:
 
 tr:
 
-GOTO 21
+GOTO D1_21
 
 hi:
 
 \--------------------------------
 
-21 
+D1_21 
 ===
 
 tc:
@@ -1533,13 +1533,13 @@ fo:
 
 tr:
 
-GOTO 50% 22 / 50% 23
+GOTO 50% D1_22 / 50% D1_23
 
 hi:
 
 \--------------------------------
 
-22 
+D1_22 
 ===
 
 tc:
@@ -1622,13 +1622,13 @@ fo:
 
 tr:
 
-GOTO 24
+GOTO D1_24
 
 hi: Items zufällig rotieren
 
 \--------------------------------
 
-23 
+D1_23 
 ===
 
 tc:
@@ -1731,13 +1731,13 @@ fo:
 
 tr:
 
-GOTO 24
+GOTO D1_24
 
 hi: Die Items bitte zufällig rotieren.
 
 \--------------------------------
 
-24 
+D1_24 
 ===
 
 tc:
@@ -1807,13 +1807,13 @@ fo:
 
 tr:
 
-GOTO 25
+GOTO D1_25
 
 hi: Items bitte zufällig rotieren
 
 \--------------------------------
 
-25 
+D1_25 
 ===
 
 tc:
@@ -1868,13 +1868,13 @@ fo:
 
 tr:
 
-GOTO 26
+GOTO D1_26
 
 hi: Items bitte zufällig rotieren
 
 \--------------------------------
 
-26 
+D1_26 
 ===
 
 tc:
@@ -1924,13 +1924,13 @@ fo:
 
 tr:
 
-GOTO 27
+GOTO D1_27
 
 hi:
 
 \--------------------------------
 
-27 
+D1_27 
 ===
 
 tc:
@@ -1983,13 +1983,13 @@ fo:
 
 tr:
 
-GOTO 28
+GOTO D1_28
 
 hi:
 
 \--------------------------------
 
-28 
+D1_28 
 ===
 
 tc: IF NOT partpsy=1
