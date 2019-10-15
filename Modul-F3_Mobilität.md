@@ -292,7 +292,7 @@ ao4 (avorfreund): Freunde
 
 ao5 (avorkomm): Kommiliton\*innen
 
-ao6 (avorniem): nein, niemanden [EK]
+ao6 (avorniem): nein, niemanden [Exklusivkategorie]
 
 mv:
 
@@ -341,7 +341,7 @@ it:
 
 st:
 
-ao1 (aauszeitlebnein): nein
+ao1 (aauszeitlebnein): nein [Exklusivkategorie]
 
 ao2 (aauszeitlebfrkin): ja, in meiner frühen Kindheit
 
