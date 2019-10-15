@@ -1118,7 +1118,7 @@ it:
 
 st:
 
-ao1 (bdedarhsoba): : Einführung in wissenschaftliche Lern- und Arbeitstechniken
+ao1 (bhiitecba): : Einführung in wissenschaftliche Lern- und Arbeitstechniken
 
 ao2 (bhiiwelba): : Welcome-Veranstaltungen/Begrüßungsveranstaltung
 
