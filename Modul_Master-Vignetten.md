@@ -428,8 +428,8 @@ hv:
 fo:
 
 tr: 
-GOTO KSM-ma07 IF mastplan = 4 OR mastplan = 5
-GOTO KSM-ma08 IF mastplan = 1 OR mastplan = 2
+GOTO KSM-ma07 IF mastplan >= 4
+GOTO KSM-ma08 IF mastplan < 3
 GOTO KSM-ma09 IF mastplan = 3
 
 hi: Hier in Abhängigkeit von der Absicht ein Masterstudium aufzunehmen auf die folgenden Fragen weiterleiten
