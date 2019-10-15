@@ -71,9 +71,7 @@ it:
 
 st:
 
-ao1: 2 Stellen, Präfix [wohnami]: Suffix: Anzahl [number] Person(en)
-
-ao2: -12 (wohnamio)
+ao1: 2 Stellen, Präfix [wohnami]: Suffix: Anzahl: [wohnamio] Person(en)
 
 mv:
 
