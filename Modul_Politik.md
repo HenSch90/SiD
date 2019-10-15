@@ -333,7 +333,7 @@ tc:
 
 vn: teilndisku; teilnbeitr; teilnstreik; teilngrem; teilnbeset; teilndemo; teilnpeti
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -343,23 +343,31 @@ q: An welchen Formen der Kritik würden Sie wie teilnehmen, um auf hochschulpoli
 
 is:
 
-it:
+it: (teilndisku): Diskussion mit Verantwortlichen suchen
+
+it: (teilnbeitr): Beiträge / Aufrufe in Blogs, Plattformen, sozialen Medien
+
+it: (teilnstreik): Streik (Veranstaltungsboykott)
+
+it: (teilngrem): Einflussnahme über Gremien
+
+it: (teilnbeset): Institutsbesetzung
+
+it: (teilndemo): Demonstrationen, Kundgebungen
+
+it: (teilnpeti): Petitionen, Unterschriftenaktionen
 
 st:
 
-ao1: (teilndisku): Diskussion mit Verantwortlichen suchen
+ao1: 1: würde sicher nicht teilnehmen
 
-ao2: (teilnbeitr): Beiträge / Aufrufe in Blogs, Plattformen, sozialen Medien
+ao2: 2:
 
-ao3: (teilnstreik): Streik (Veranstaltungsboykott)
+ao3: 3:
 
-ao4: (teilngrem): Einflussnahme über Gremien
+ao4: 4:
 
-ao5: (teilnbeset): Institutsbesetzung
-
-ao6: (teilndemo): Demonstrationen, Kundgebungen
-
-ao7: (teilnpeti): Petitionen, Unterschriftenaktionen
+ao5: würde ganz sicher teilnehmen
 
 mv:
 
