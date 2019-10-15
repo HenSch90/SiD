@@ -1,5 +1,54 @@
 \------------------------------------------------------------
 
+index
+=========
+
+tc:
+
+vn: 
+
+qt: 
+
+hl: 
+
+in:
+
+q: Das ist eine Zofar Befragung.
+Hier haben Sie die Möglichkeit eine Befragung zu erstellen. 
+
+is:
+
+it:
+
+st:
+
+ao1: 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+    mastersplit = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
+    zusatzsplit = 1, 2, 3, 4 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
+
+fo:
+
+tr: GOTO SDK-scr01
+
+hi:
+
+\------------------------------------------------------------
+
 SDK-scr01
 =========
 
