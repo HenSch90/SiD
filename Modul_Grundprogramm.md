@@ -896,6 +896,120 @@ tr:
 
 hi:
 
+\--------------------------------
+
+B1_9
+==
+
+tc:
+
+vn: pflegang; pflegango
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: Nein
+ao2: 2: Ja, und zwar: ___ Personen
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+GOTO B1_10 IF pflegang=2
+ELSE SDK-gub01
+
+hi:
+
+\--------------------------------
+
+B1_10
+==
+
+tc:
+
+vn: pflegt (pflegt1; pflegt2; pflegt3; pflegt4; pflegt5; pflegt5o)
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wenn Sie an eine typische Woche denken: Wie häufig führen Sie folgende Pflegetätigkeiten aus?
+
+is:
+
+it1: (pflegt1): Besorgungen und Erledigungen außer Haus
+
+it2: (pflegt2): Haushaltsführung, Versorgung mit Mahlzeiten und Getränken
+
+it3: (pflegt3): Einfachere Pflegetätigkeiten, z.B. Hilfe beim An- und Auskleiden,
+Waschen, Kämmen und Rasieren
+
+it4: (pflegt4): schwierigere Pflegetätigkeiten, z.B. Hilfe beim Umbetten,
+Stuhlgang usw.
+
+it5: (pflegt5; pflegt5o): Etwas anderes und zwar: ___ [offene Angabe, 50 Zeichen]
+
+st:
+
+ao1: 1: überhaupt nicht
+
+ao2: 2 
+
+ao3: 3 
+
+ao4: 4 
+
+ao5: 5: sehr häufig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+GOTO 
+
+hi:
+
 \------------------------------------------------------------
 
 SDK-gub01
@@ -1371,65 +1485,12 @@ hi:
 
 \------------------------------------------------------------
 
-SDK-stu06
-=========
-
-tc:
-
-vn: sfach1; sfach1o; sfach1ka
-
-qt: Einfachauswahl mit Dropdown
-
-hl:
-
-in:
-
-q1: Bitte wählen Sie Ihr (erstes) Studienfach/Hauptfach aus der unten angegebenen Liste aus.
-
-q2: Bitte wählen Sie Ihr erstes Unterrichtsfach/Hauptfach aus der unten angegebenen Liste aus.
-
-is:
-
-it:
-
-st:
-
-ao: 1: Dropdown Fächerliste (DDM StaBu-Liste)
-
-mv:
-
-ka:
-
-vc: SHOW q1 if sabslaja=1 OR sabslaja=SYSMISS
-
-SHOW q2 if sabslaja=2
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: Sie haben Ihr Studienfach nicht angegeben. Die Angabe Ihres Studienfachs ist für diese Befragung sehr wichtig. Sollte Ihr Studienfach in der Liste nicht aufgeführt sein, tragen Sie es bitte in dem dafür vorgesehenen Textfeld ein.
-
-(1) offene Abfrage: 50, Anderes Studienfach:
-
-(2) Checkbox: Ich möchte mein Studienfach nicht angeben.
-
-tr: GOTO SDK-stu07
-
-hi:
-
-\------------------------------------------------------------
-
 SDK-stu07
 =========
 
 tc:
 
-vn: sfach1o2
+vn: sfach1o2, sfach2o2
 
 qt: Offene Frage
 
@@ -1447,64 +1508,9 @@ it:
 
 st:
 
-ao1: 1: 60, Prefix: (erstes) Studienfach
+ao1: 1: 60, Prefix: erstes Studienfach
 
-ao2: 2: 60, Prefix: erstes Unterrichtsfach
-
-mv:
-
-ka:
-
-vc: SHOW q1 if sabslaja=1 OR sabslaja=SYSMISS
-
-SHOW q2 if sabslaja=2
-
-SHOW ao1 Prefix if sabslaja=1 OR sabslaja=SYSMISS
-
-SHOW ao2 Prefix if sabslaja=2
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu06
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu06
-=========
-
-tc:
-
-vn: sfazweit1
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Studieren Sie noch ein weiteres Fach?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: Nein
-
-ao2: 2: Ja, ein Fach
-
-ao3: 3: Ja, zwei oder mehr Fächer
+ao2: 2: 60, Prefix: ggf. zweites Studienfach
 
 mv:
 
@@ -1522,7 +1528,7 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu05
+tr: GOTO SDK-stu06
 
 hi:
 
@@ -2537,108 +2543,6 @@ hi:
 
 \------------------------------------------------------------
 
-SDK-vbi3
-========
-
-tc:
-
-vn: vsbart
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Welche Studienberechtigung hatten Sie bei Ihrer Erstimmatrikulation?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: allgemeine Hochschulreife
-
-ao2: 2: fachgebundene Hochschulreife
-
-ao3: 3: Fachhochschulreife
-
-ao4: 4: andere Studienberechtigung
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-vbi3_1
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-vbi3_1
-==========
-
-tc:
-
-vn: vsbart
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Die Berechtigung zum Studium kann in Deutschland auf verschiedenen Wegen erfolgen: Zum einen (klassisch) über ein Schulzeugnis, zum anderen aber auch über die Anerkennung beruflicher Qualifikationen oder besonderer Eignungen.
-
-Auf welchem Weg erfolgte Ihre Zulassung zu Ihrem ersten Studium?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: Schulzeugnis (Abitur, Fachhochschulreife, fachgebundene Hochschulreife, auch Abendgymnasium/Kolleg )
-
-ao2: 2: Berufliche Qualifikation (Fortbildungsabschluss als Meister o.ä.; Ausbildungsabschluss und Berufspraxis)
-
-ao3: 3: Eignungs- bzw. Begabtenprüfung
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
 SDK-vbi3_2
 ==========
 
@@ -2694,63 +2598,6 @@ hi:
 
 \------------------------------------------------------------
 
-SDK-vbi5
-========
-
-tc:
-
-vn: vsbstyp; vsbtypo
-
-qt: Einfachauswahl mit offener Abfrage
-
-hl:
-
-in:
-
-q: Auf welchem Schultyp bzw. auf welchem Weg haben Sie Ihre Studienberechtigung erworben?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gymnasiale Oberstufe (Gymnasium, Gesamtschule, berufliches Gymnasium, Fachgymnasium, Oberstufenzentrum u.a.)
-
-ao2: 2: Berufsoberschule, Fachoberschule, andere berufsbildende Schulen (Berufsfachschule, Berufskolleg u.a.)
-
-ao3: 3: Abendgymnasium, Kolleg (nicht Berufskolleg) 
-
-ao4: 4: berufliche Aufstiegsfortbildung (Meister(in), Fachwirt(in), Erzieher(in), Techniker(in) u. a.)
-
-ao5: 5: abgeschlossene Berufsausbildung mit mindestens dreijähriger Berufserfahrung und Eignungsfeststellung, Begabtenprüfung oder Probestudium
-
-ao6: 6: auf einem anderen Weg,
-
-ato: 50: Prefix: und zwar:
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: Bitte die Beispiele in Klammern in etwas kleinerer Schriftgröße (2pt kleiner) umsetzen.
-
-tr: GOTO SDK-vbi5
-
-hi:
-
-\------------------------------------------------------------
-
 SDK-vbi5_1
 ==========
 
@@ -2764,7 +2611,9 @@ hl:
 
 in:
 
-q: Auf welchem Schultyp bzw. auf welchem Weg haben Sie Ihre Studienberechtigung erworben?
+q: Die Berechtigung zum Studium kann in Deutschland auf verschiedenen Wegen erfolgen: Zum einen (klassisch) über ein Schulzeugnis, zum anderen aber auch über die Anerkennung beruflicher Qualifikationen oder besonderer Eignungen.
+
+Auf welchem Weg erfolgte Ihre Zulassung zu Ihrem ersten Studium?
 
 is: Mehrfachnennungen möglich
 
