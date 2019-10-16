@@ -657,1009 +657,6 @@ hi:
 
 \------------------------------------------------------------
 
-SDK-scr03
-=========
-
-tc:
-
-vn: imausl
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Befinden Sie sich zurzeit studienbezogen außerhalb Deutschlands?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: nein
-
-ao2: 2: ja
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: SDK-NEU
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-NEU
-=======
-
-tc:
-
-vn: NEU
-
-qt: Einfachauswahl mit Dropdown und offener Angabe
-
-hl:
-
-in:
-
-q: Sie wurden von der Hochschule [Preload-Token: Hochschulname] eingeladen, studieren Sie hier aktuell?
-
-is: Falls Sie an mehreren Hochschulen eingeschrieben sind, beziehen Sie Ihre Antwort auf diese und alle weiteren Fragen bitte auf die Hochschule, an der Sie den für Sie gegenwärtig wichtigeren Studiengang studieren. 
-Falls Sie aktuell an einer anderen Hochschule studieren, kreuzen Sie bitte “Nein” an.
-
-it:
-
-st:
-
-ao1: 1: : Ja, und zwar am Standort [DropDown-Menü]
-
-ao2: 2: : Nein, ich studiere an einer anderen Hochschule.
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-NEU2
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-NEU2
-=======
-
-tc: IF hsstand=2
-
-vn: hsstandbl
-
-qt: Einfachauswahl
-
-hl:
-
-in: 
-
-q: In welchem Bundesland/Land liegt die Hochschule, an der Sie aktuell studieren?
-
-is: 
-
-it: 
-
-st:
-Überschrift: Bundesland...
-
-ao1: 1: : Baden-Württemberg
-
-ao2: 2: : Bayern
-
-ao3: 3: : Berlin
-
-ao4: 4: : Brandenburg
-
-ao5: 5: : Bremen
-
-ao6: 6: : Hamburg
-
-ao7: 7: : Hessen
-
-ao8: 8: : Mecklenburg-Vorpommern
-
-ao9: 9: : Niedersachsen
-
-ao10: 10: Nordrhein-Westfalen
-
-ao11: 11: : Rheinland-Pfalz
-
-ao12: 12: : Saarland
-
-ao13: 13: : Sachsen
-
-ao14: 14: : Sachsen-Anhalt
-
-ao15: 15: : Schleswig-Holstein
-
-ao16: 16: : Thüringen
-
-Leerzeile
-
-ao17: 17: : im Ausland
-
-mv: 
-
-ka: 
-
-vc: 
-
-av: 
-
-kh: 
-
-fv: 
-
-hv: 
-
-fo: 
-
-tr:
-GOTO SDK-NEU3
-
-hi: 
-
-
-\------------------------------------------------------------
-
-SDK-NEU3
-=======
-
-tc:
-vn: sabserhs
-qt: Drop-Down-Menü
-hl:
-in: 
-q: An welcher Hochschule studieren Sie aktuell?
-is: 
-it: 
-st:
-ao: Drop-Down-Menü Hochschulliste
-mv: 
-ka: 
-vc: 
-av: 
-kh: 
-fv: 
-hv: 
-fo: 
-tr:
-hi: 
-
-\------------------------------------------------------------
-
-SDK-NEU3
-=======
-
-tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
-
-vn: hsstandhs; hsstandhso; hsstandst; hsstandsto; hsstandla; hsstandlao
-
-qt: Offene Nennung
-
-hl:
-
-in: 
-
-q1 (hsstandbl=1-16): Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
-
-q2 (hsstandbl=17 & ainfasia=1-2): Bitte tragen Sie das Land, den Ort sowie die Hochschule ein, an der Sie aktuell im Ausland studieren.
-
-q3 (hsstandbl=17 & ainfasia=3-8): Bitte tragen Sie das Land sowie den Ort ein, an der Sie sich aktuell studienbezogen im Ausland befinden. 
-
-is: 
-
-it: 
-
-st:
-
-ao1: 100 Stellen, Präfix (hsstandhs; hsstandhso), Suffix: Hochschule:
-
-ao2: 100 Stellen, Präfix (hsstandst; hsstandsto), Suffix: Standort:
-
-ao3: 100 Stellen, Präfix (hsstandla; hsstandlao), Suffix: Land
-
-ao4: 100 Stellen, Präfix (neue Variablen erforderlich), Suffix: Ort
-
-mv: 
-
-ka: 
-
-vc1: SHOW hsstandhs | hsstandhso | hsstandst | hsstandsto IF hsstandbl=1 – 16
-
-vc2: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto | hsstandhs | hsstandhso IF hsstandbl=17 AND ainfasia=1-2
-
-vc3: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto IF hsstandbl=17 AND ainfasia=3-8 
-
-av: 
-
-kh: 
-
-fv: 
-
-hv: 
-
-fo: 
-
-tr:
-GOTO SDK-erf02
-
-hi: 
-
-\------------------------------------------------------------
-
-SDK-erf02
-=========
-
-tc:
-
-vn: sperleiszufr
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Alles in allem: Wie zufrieden sind Sie insgesamt mit den Bedingungen im Studium?
-
-is:
-
-it:
-
-st:
-
-ao: 1: 1: sehr unzufrieden
-
-ao: 2: 2:
-
-ao: 3: 3:
-
-ao: 4: 4:
-
-ao: 5: 5: sehr zufrieden
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu04
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu04
-=========
-
-tc:
-
-vn: sabslaja
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Sind Sie in einem Lehramtsstudiengang eingeschrieben?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: nein
-
-ao2: 2: ja, und zwar Lehramt an Grundschulen (Primarstufe)
-
-ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I)
-
-ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
-
-ao5: 5: ja, Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
-
-ao6: 6: ja, Lehramt an Förderschulen/Sonderpädagogik
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu06
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu06
-=========
-
-tc:
-
-vn: sfach1; sfach1o; sfach1ka
-
-qt: Einfachauswahl mit Dropdown
-
-hl:
-
-in:
-
-q1: Bitte wählen Sie Ihr (erstes) Studienfach/Hauptfach aus der unten angegebenen Liste aus.
-
-q2: Bitte wählen Sie Ihr erstes Unterrichtsfach/Hauptfach aus der unten angegebenen Liste aus.
-
-is:
-
-it:
-
-st:
-
-ao: 1: Dropdown Fächerliste (DDM StaBu-Liste)
-
-mv:
-
-ka:
-
-vc: SHOW q1 if sabslaja=1 OR sabslaja=SYSMISS
-
-SHOW q2 if sabslaja=2
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: Sie haben Ihr Studienfach nicht angegeben. Die Angabe Ihres Studienfachs ist für diese Befragung sehr wichtig. Sollte Ihr Studienfach in der Liste nicht aufgeführt sein, tragen Sie es bitte in dem dafür vorgesehenen Textfeld ein.
-
-(1) offene Abfrage: 50, Anderes Studienfach:
-
-(2) Checkbox: Ich möchte mein Studienfach nicht angeben.
-
-tr: GOTO SDK-stu07
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu07
-=========
-
-tc:
-
-vn: sfach1o2
-
-qt: Offene Frage
-
-hl:
-
-in:
-
-q1: Bitte tragen Sie Ihr (erstes) Studienfach in das dafür vorgesehene Feld ein.
-
-q2: Bitte tragen Sie Ihr erstes Unterrichtsfach in das dafür vorgesehene Feld ein.
-
-is:
-
-it:
-
-st:
-
-ao1: 1: 60, Prefix: (erstes) Studienfach
-
-ao2: 2: 60, Prefix: erstes Unterrichtsfach
-
-mv:
-
-ka:
-
-vc: SHOW q1 if sabslaja=1 OR sabslaja=SYSMISS
-
-SHOW q2 if sabslaja=2
-
-SHOW ao1 Prefix if sabslaja=1 OR sabslaja=SYSMISS
-
-SHOW ao2 Prefix if sabslaja=2
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu06
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu06
-=========
-
-tc:
-
-vn: sfazweit1
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Studieren Sie noch ein weiteres Fach?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: Nein
-
-ao2: 2: Ja, ein Fach
-
-ao3: 3: Ja, zwei oder mehr Fächer
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu05
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu05
-=========
-
-tc:
-
-vn: sabsan
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Und welchen Abschluss streben Sie in ihrem aktuellen Studiengang an?
-
-is: Bei mehreren Abschlüssen bitte den zeitlich nächsten nennen.
-
-it:
-
-st:
-
-ao1: 1: Bachelor
-
-ao2: 2: Master
-
-ao3: 3: Staatsexamen
-
-ao4: 4: Diplom
-
-ao5: 5: Promotion
-
-ao6: 6: kirchliche Abschlussprüfung
-
-ao7: 7: künstlerische Abschlussprüfung
-
-ao8: 8: anderen Abschluss (bspw. Ausländischer Abschluss, Magister)
-
-ao9: 9: keinen Studienabschluss
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu if sabsan=9
-
-GOTO SDK-stu12
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu
-=======
-
-tc:
-
-vn: sabsweit; sabsweito
-
-qt: Mehrfachauswahl
-
-hl:
-
-in:
-
-q: Sie haben angegeben in Ihrem aktuellen Studium keinen Studienabschluss anzustreben. Nutzen Sie aktuell hochschulische Weiterbildungsangebote?
-
-is: Bitte alles zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: 1: Nein
-
-ao2: 2: Ja, Zertifikatskurs(e)
-
-ao3: 3: Ja, Seminar(reihe)
-
-ao4: 4: Ja, Workshop(s)
-
-ao5: 5: Ja, Modul/Kurs
-
-ao6: 6: Ja, anderes
-
-ato: Prefix: und zwar:
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu12
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu12
-=========
-
-tc:
-
-vn: sformpraes; sformdua; sformberu; sformfern; sformsons; sformsonso
-
-qt: Mehrfachauswahl mit offener Angabe
-
-hl:
-
-in:
-
-q: Um welche Form des Studiums handelt es sich bei Ihrem Studiengang?
-
-is: Bitte alles Zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: 1: Präsenzstudiengang (in Gegensatz zu Fernstudium)
-
-ao2: 2: Dualer Studiengang
-
-ao3: 3: Berufsbegleitender Studiengang
-
-ao4: 4: Fernstudiengang
-
-ao5: 5: anderes,
-
-ato: 30, Prefix: und zwar:
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu14
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu14
-=========
-
-tc:
-
-vn: ssemhs
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q1: Im wievielten Fachsemester befinden Sie sich zurzeit?
-
-is1: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Bachelor-Studiengang eingeschrieben sind.
-
-is2: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Master-Studiengang eingeschrieben sind.
-
-it:
-
-st:
-
-ao1: 2, Prefix: Zahl der Fachsemester:
-
-mv:
-
-ka:
-
-vc: SHOW is1 if sabsan=1
-
-SHOW is2 if sabsan=2
-
-av: number, 1-2 stellig
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-stu15
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-stu15
-=========
-
-tc:
-
-vn: ssemhs
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q1: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
-
-is: Hochschulsemester sind alle Semester, die Sie seit Ihrer Erstimmatrikulation insgesamt studiert haben (also auch die Zeiten eines möglichen Bachelorstudiums), einschließlich Urlaubs-, Auslands- und Praxissemester.
-
-it:
-
-st:
-
-ao1: 2, Prefix: Zahl der Hochschulsemester:
-
-mv:
-
-ka:
-
-vc:
-
-av: number, 1-2 stellig
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-erf01
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-erf01
-=========
-
-tc:
-
-vn: spernot; spernoto
-
-qt: offene Frage, Einfachauswahl
-
-hl:
-
-in:
-
-q: Wie wurden Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium im Durchschnitt bewertet?
-
-is: Für den Fall, dass Sie keine Noten erhalten, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in Noten um.
-
-it:
-
-st:
-
-ao1: 3, Prefix: Durchschnittsnote (z.B. 2,5):
-
-ao2: 11: Ich habe bisher keine Noten erhalten / In meinem Studium gibt es keine Noten.
-
-ao3: -12: weiß ich nicht
-
-mv: -11: Ich habe bisher keine Noten erhalten / In meinem Studium gibt es keine Noten.
-
-\-12: weiß ich nicht
-
-ka:
-
-vc:
-
-av: number: \<= dreistellig: 1,0 TO 4,0
-
-kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
-
-fv:
-
-hv:
-
-fo: Bitte die beiden geschlossenen Antwortoptionen/-items neben der Notenabfrage in einer Zeile positionieren.
-
-tr: GOTO SDK-erf03
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-erf03
-=========
-
-tc:
-
-vn: sperleisrel
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Wie schätzen Sie Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium im Vergleich zu den Leistungen Ihrer Kommiliton(inn)en ein?
-
-is:
-
-it:
-
-st:
-
-ao: 1: 1:unterdurchschnittlich
-
-ao: 2: 2:
-
-ao: 3: 3: durchschnittlich
-
-ao: 4: 4:
-
-ao: 5: 5: überdurchschnittlich
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-sde01
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-erf03
-=========
-
-tc:
-
-vn: sperleiszufr
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Wie zufrieden sind Sie insgesamt mit den bisher von Ihnen erbrachten Studienleistungen in Ihrem aktuellen Studium?
-
-is:
-
-it:
-
-st:
-
-ao: 1: 1:sehr unzufrieden
-
-ao: 2: 2:
-
-ao: 3: 3:
-
-ao: 4: 4:
-
-ao: 5: 5: sehr zufrieden
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-sde01
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-erf03
-=========
-
-tc:
-
-vn: studerfolg; masterfolg; promoerfolg
-
-qt: Mehrfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Inwieweit trauen Sie sich zu, …?
-
-is:
-
-it1: studerfolg: … ein Studium erfolgreich abzuschließen?
-
-it2: masterfolg: … ein Masterstudium erfolgreich abzuschließen?
-
-it3: promoerfolg: … eine Promotion erfolgreich abzuschließen?
-
-st:
-
-ao: 1: 1: sehr unwahrscheinlich
-
-ao: 2: 2:
-
-ao: 3: 3:
-
-ao: 4: 4:
-
-ao: 5: 5: sehr wahrscheinlich
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-sde01
-
-hi:
-
-\------------------------------------------------------------
-
 SDK-sde01
 =========
 
@@ -1959,6 +956,1009 @@ hv:
 fo:
 
 tr:
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-scr03
+=========
+
+tc:
+
+vn: imausl
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Befinden Sie sich zurzeit studienbezogen außerhalb Deutschlands?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: SDK-NEU
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu14
+=========
+
+tc:
+
+vn: ssemhs
+
+qt: offene Frage
+
+hl:
+
+in:
+
+q1: Im wievielten Fachsemester befinden Sie sich zurzeit?
+
+is1: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Bachelor-Studiengang eingeschrieben sind.
+
+is2: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Master-Studiengang eingeschrieben sind.
+
+it:
+
+st:
+
+ao1: 2, Prefix: Zahl der Fachsemester:
+
+mv:
+
+ka:
+
+vc: SHOW is1 if sabsan=1
+
+SHOW is2 if sabsan=2
+
+av: number, 1-2 stellig
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu15
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu15
+=========
+
+tc:
+
+vn: ssemhs
+
+qt: offene Frage
+
+hl:
+
+in:
+
+q1: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
+
+is: Hochschulsemester sind alle Semester, die Sie seit Ihrer Erstimmatrikulation insgesamt studiert haben (also auch die Zeiten eines möglichen Bachelorstudiums), einschließlich Urlaubs-, Auslands- und Praxissemester.
+
+it:
+
+st:
+
+ao1: 2, Prefix: Zahl der Hochschulsemester:
+
+mv:
+
+ka:
+
+vc:
+
+av: number, 1-2 stellig
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-erf01
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-NEU
+=======
+
+tc:
+
+vn: NEU
+
+qt: Einfachauswahl mit Dropdown und offener Angabe
+
+hl:
+
+in:
+
+q: Sie wurden von der Hochschule [Preload-Token: Hochschulname] eingeladen, studieren Sie hier aktuell?
+
+is: Falls Sie an mehreren Hochschulen eingeschrieben sind, beziehen Sie Ihre Antwort auf diese und alle weiteren Fragen bitte auf die Hochschule, an der Sie den für Sie gegenwärtig wichtigeren Studiengang studieren. 
+Falls Sie aktuell an einer anderen Hochschule studieren, kreuzen Sie bitte “Nein” an.
+
+it:
+
+st:
+
+ao1: 1: : Ja, und zwar am Standort [DropDown-Menü]
+
+ao2: 2: : Nein, ich studiere an einer anderen Hochschule.
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-NEU2
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-NEU2
+=======
+
+tc: IF hsstand=2
+
+vn: hsstandbl
+
+qt: Einfachauswahl
+
+hl:
+
+in: 
+
+q: In welchem Bundesland/Land liegt die Hochschule, an der Sie aktuell studieren?
+
+is: 
+
+it: 
+
+st:
+Überschrift: Bundesland...
+
+ao1: 1: : Baden-Württemberg
+
+ao2: 2: : Bayern
+
+ao3: 3: : Berlin
+
+ao4: 4: : Brandenburg
+
+ao5: 5: : Bremen
+
+ao6: 6: : Hamburg
+
+ao7: 7: : Hessen
+
+ao8: 8: : Mecklenburg-Vorpommern
+
+ao9: 9: : Niedersachsen
+
+ao10: 10: Nordrhein-Westfalen
+
+ao11: 11: : Rheinland-Pfalz
+
+ao12: 12: : Saarland
+
+ao13: 13: : Sachsen
+
+ao14: 14: : Sachsen-Anhalt
+
+ao15: 15: : Schleswig-Holstein
+
+ao16: 16: : Thüringen
+
+Leerzeile
+
+ao17: 17: : im Ausland
+
+mv: 
+
+ka: 
+
+vc: 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr:
+GOTO SDK-NEU3
+
+hi: 
+
+
+\------------------------------------------------------------
+
+SDK-NEU3
+=======
+
+tc:
+vn: sabserhs
+qt: Drop-Down-Menü
+hl:
+in: 
+q: An welcher Hochschule studieren Sie aktuell?
+is: 
+it: 
+st:
+ao: Drop-Down-Menü Hochschulliste
+mv: 
+ka: 
+vc: 
+av: 
+kh: 
+fv: 
+hv: 
+fo: 
+tr:
+hi: 
+
+\------------------------------------------------------------
+
+SDK-NEU3
+=======
+
+tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
+
+vn: hsstandhs; hsstandhso; hsstandst; hsstandsto; hsstandla; hsstandlao
+
+qt: Offene Nennung
+
+hl:
+
+in: 
+
+q1 (hsstandbl=1-16): Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
+
+q2 (hsstandbl=17 & ainfasia=1-2): Bitte tragen Sie das Land, den Ort sowie die Hochschule ein, an der Sie aktuell im Ausland studieren.
+
+q3 (hsstandbl=17 & ainfasia=3-8): Bitte tragen Sie das Land sowie den Ort ein, an der Sie sich aktuell studienbezogen im Ausland befinden. 
+
+is: 
+
+it: 
+
+st:
+
+ao1: 100 Stellen, Präfix (hsstandhs; hsstandhso), Suffix: Hochschule:
+
+ao2: 100 Stellen, Präfix (hsstandst; hsstandsto), Suffix: Standort:
+
+ao3: 100 Stellen, Präfix (hsstandla; hsstandlao), Suffix: Land
+
+ao4: 100 Stellen, Präfix (neue Variablen erforderlich), Suffix: Ort
+
+mv: 
+
+ka: 
+
+vc1: SHOW hsstandhs | hsstandhso | hsstandst | hsstandsto IF hsstandbl=1 – 16
+
+vc2: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto | hsstandhs | hsstandhso IF hsstandbl=17 AND ainfasia=1-2
+
+vc3: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto IF hsstandbl=17 AND ainfasia=3-8 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr:
+GOTO SDK-erf02
+
+hi: 
+
+\------------------------------------------------------------
+
+SDK-erf02
+=========
+
+tc:
+
+vn: sperleiszufr
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Alles in allem: Wie zufrieden sind Sie insgesamt mit den Bedingungen im Studium?
+
+is:
+
+it:
+
+st:
+
+ao: 1: 1: sehr unzufrieden
+
+ao: 2: 2:
+
+ao: 3: 3:
+
+ao: 4: 4:
+
+ao: 5: 5: sehr zufrieden
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu04
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu06
+=========
+
+tc:
+
+vn: sfach1; sfach1o; sfach1ka
+
+qt: Einfachauswahl mit Dropdown
+
+hl:
+
+in:
+
+q1: Bitte wählen Sie Ihr (erstes) Studienfach/Hauptfach aus der unten angegebenen Liste aus.
+
+q2: Bitte wählen Sie Ihr erstes Unterrichtsfach/Hauptfach aus der unten angegebenen Liste aus.
+
+is:
+
+it:
+
+st:
+
+ao: 1: Dropdown Fächerliste (DDM StaBu-Liste)
+
+mv:
+
+ka:
+
+vc: SHOW q1 if sabslaja=1 OR sabslaja=SYSMISS
+
+SHOW q2 if sabslaja=2
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: Sie haben Ihr Studienfach nicht angegeben. Die Angabe Ihres Studienfachs ist für diese Befragung sehr wichtig. Sollte Ihr Studienfach in der Liste nicht aufgeführt sein, tragen Sie es bitte in dem dafür vorgesehenen Textfeld ein.
+
+(1) offene Abfrage: 50, Anderes Studienfach:
+
+(2) Checkbox: Ich möchte mein Studienfach nicht angeben.
+
+tr: GOTO SDK-stu07
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu07
+=========
+
+tc:
+
+vn: sfach1o2
+
+qt: Offene Frage
+
+hl:
+
+in:
+
+q1: Bitte tragen Sie Ihr (erstes) Studienfach in das dafür vorgesehene Feld ein.
+
+q2: Bitte tragen Sie Ihr erstes Unterrichtsfach in das dafür vorgesehene Feld ein.
+
+is:
+
+it:
+
+st:
+
+ao1: 1: 60, Prefix: (erstes) Studienfach
+
+ao2: 2: 60, Prefix: erstes Unterrichtsfach
+
+mv:
+
+ka:
+
+vc: SHOW q1 if sabslaja=1 OR sabslaja=SYSMISS
+
+SHOW q2 if sabslaja=2
+
+SHOW ao1 Prefix if sabslaja=1 OR sabslaja=SYSMISS
+
+SHOW ao2 Prefix if sabslaja=2
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu06
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu06
+=========
+
+tc:
+
+vn: sfazweit1
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Studieren Sie noch ein weiteres Fach?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: Nein
+
+ao2: 2: Ja, ein Fach
+
+ao3: 3: Ja, zwei oder mehr Fächer
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu05
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu04
+=========
+
+tc:
+
+vn: sabslaja
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Sind Sie in einem Lehramtsstudiengang eingeschrieben?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja, und zwar Lehramt an Grundschulen (Primarstufe)
+
+ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I)
+
+ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
+
+ao5: 5: ja, Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+
+ao6: 6: ja, Lehramt an Förderschulen/Sonderpädagogik
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu06
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu05
+=========
+
+tc:
+
+vn: sabsan
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Und welchen Abschluss streben Sie in ihrem aktuellen Studiengang an?
+
+is: Bei mehreren Abschlüssen bitte den zeitlich nächsten nennen.
+
+it:
+
+st:
+
+ao1: 1: Bachelor
+
+ao2: 2: Master
+
+ao3: 3: Staatsexamen
+
+ao4: 4: Diplom
+
+ao5: 5: Promotion
+
+ao6: 6: kirchliche Abschlussprüfung
+
+ao7: 7: künstlerische Abschlussprüfung
+
+ao8: 8: anderen Abschluss (bspw. Ausländischer Abschluss, Magister)
+
+ao9: 9: keinen Studienabschluss
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu if sabsan=9
+
+GOTO SDK-stu12
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu
+=======
+
+tc:
+
+vn: sabsweit; sabsweito
+
+qt: Mehrfachauswahl
+
+hl:
+
+in:
+
+q: Sie haben angegeben in Ihrem aktuellen Studium keinen Studienabschluss anzustreben. Nutzen Sie aktuell hochschulische Weiterbildungsangebote?
+
+is: Bitte alles zutreffende auswählen.
+
+it:
+
+st:
+
+ao1: 1: Nein
+
+ao2: 2: Ja, Zertifikatskurs(e)
+
+ao3: 3: Ja, Seminar(reihe)
+
+ao4: 4: Ja, Workshop(s)
+
+ao5: 5: Ja, Modul/Kurs
+
+ao6: 6: Ja, anderes
+
+ato: Prefix: und zwar:
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu12
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-stu12
+=========
+
+tc:
+
+vn: sformpraes; sformdua; sformberu; sformfern; sformsons; sformsonso
+
+qt: Mehrfachauswahl mit offener Angabe
+
+hl:
+
+in:
+
+q: Um welche Form des Studiums handelt es sich bei Ihrem Studiengang?
+
+is: Bitte alles Zutreffende auswählen.
+
+it:
+
+st:
+
+ao1: 1: Präsenzstudiengang (in Gegensatz zu Fernstudium)
+
+ao2: 2: Dualer Studiengang
+
+ao3: 3: Berufsbegleitender Studiengang
+
+ao4: 4: Fernstudiengang
+
+ao5: 5: anderes,
+
+ato: 30, Prefix: und zwar:
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-stu14
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-erf01
+=========
+
+tc:
+
+vn: spernot; spernoto
+
+qt: offene Frage, Einfachauswahl
+
+hl:
+
+in:
+
+q: Wie wurden Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium im Durchschnitt bewertet?
+
+is: Für den Fall, dass Sie keine Noten erhalten, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in Noten um.
+
+it:
+
+st:
+
+ao1: 3, Prefix: Durchschnittsnote (z.B. 2,5):
+
+ao2: 11: Ich habe bisher keine Noten erhalten / In meinem Studium gibt es keine Noten.
+
+ao3: -12: weiß ich nicht
+
+mv: -11: Ich habe bisher keine Noten erhalten / In meinem Studium gibt es keine Noten.
+
+\-12: weiß ich nicht
+
+ka:
+
+vc:
+
+av: number: \<= dreistellig: 1,0 TO 4,0
+
+kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+
+fv:
+
+hv:
+
+fo: Bitte die beiden geschlossenen Antwortoptionen/-items neben der Notenabfrage in einer Zeile positionieren.
+
+tr: GOTO SDK-erf03
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-erf03
+=========
+
+tc:
+
+vn: sperleisrel
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Wie schätzen Sie Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium im Vergleich zu den Leistungen Ihrer Kommiliton(inn)en ein?
+
+is:
+
+it:
+
+st:
+
+ao: 1: 1:unterdurchschnittlich
+
+ao: 2: 2:
+
+ao: 3: 3: durchschnittlich
+
+ao: 4: 4:
+
+ao: 5: 5: überdurchschnittlich
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-sde01
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-erf03
+=========
+
+tc:
+
+vn: sperleiszufr
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Wie zufrieden sind Sie insgesamt mit den bisher von Ihnen erbrachten Studienleistungen in Ihrem aktuellen Studium?
+
+is:
+
+it:
+
+st:
+
+ao: 1: 1:sehr unzufrieden
+
+ao: 2: 2:
+
+ao: 3: 3:
+
+ao: 4: 4:
+
+ao: 5: 5: sehr zufrieden
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-sde01
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-erf03
+=========
+
+tc:
+
+vn: studerfolg; masterfolg; promoerfolg
+
+qt: Mehrfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Inwieweit trauen Sie sich zu, …?
+
+is:
+
+it1: studerfolg: … ein Studium erfolgreich abzuschließen?
+
+it2: masterfolg: … ein Masterstudium erfolgreich abzuschließen?
+
+it3: promoerfolg: … eine Promotion erfolgreich abzuschließen?
+
+st:
+
+ao: 1: 1: sehr unwahrscheinlich
+
+ao: 2: 2:
+
+ao: 3: 3:
+
+ao: 4: 4:
+
+ao: 5: 5: sehr wahrscheinlich
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-sde01
 
 hi:
 
@@ -3022,6 +3022,136 @@ hi:
 
 \------------------------------------------------------------
 
+ SDK-fin01
+==========
+
+tc:
+
+vn: eaktsens
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Sind Sie während der Vorlesungszeit [Individualisierung] erwerbstätig?
+
+is: Mit \*\*„*Erwerbstätigkeit(en)*“\*\* sind sämtliche Tätigkeiten gemeint, mit denen Sie im aktuellen Semester Geld verdienen (z. B. Nebenjob, Berufstätigkeit, freiberufliche/selbständige Tätigkeit).
+
+it:
+
+st:
+
+ao1: 1: Nein
+
+ao2: 2: Ja, mit einer Tätigkeit
+
+ao3: 3: Ja, mit zwei verschiedenen Tätigkeiten
+
+ao4: 4: Ja, mit drei oder mehreren Tätigkeiten
+
+mv:
+
+ka:
+
+vc: SHOW Individualisierung if sformdua==1 : neben Ihrer Tätigkeit in der Ausbildungsstätte
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO SDK-fin04 if eaktsens=2 OR eaktsens=3 OR eaktsens=4
+
+hi:
+
+\------------------------------------------------------------
+
+SDK-fin04
+=========
+
+tc: if eaktsens=2 OR eaktsens=3 OR eaktsens=4
+
+vn:
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: In welchem Maße [Individualisierung] einen fachlichen Bezug zu Ihrem aktuellen Studium?
+
+is:
+
+it: 1: Tätigkeit A [Individualisierung]
+
+it: 2: Tätigkeit B [Individualisierung]
+
+it: 3: Tätigkeit C [Individualisierung]
+
+st:
+
+ao1: 1: 1: in gar keinem Maße
+
+ao2: 2: 2:
+
+ao3: 3: 3:
+
+ao4: 4: 4:
+
+ao5: 5: : in sehr hohem Maße
+
+mv:
+
+ka:
+
+vc: SHOW Individualisierung if eaktsens=2 : hat ihre Erwerbstätigkeit
+
+SHOW Individualisierung if eaktsens=2 AND sformdua=1 : hat Ihre Erwerbstätigkeit, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
+
+SHOW Individualisierung if eaktsens=3 : haben Ihre Erwerbstätigkeiten 
+
+SHOW Individualisierung if eaktsens=3 AND sformdua=1 : haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
+
+SHOW Individualisierung if eaktsens=4 : haben Ihre Erwerbstätigkeiten
+
+SHOW Individualisierung if eaktsens=4 AND sformdua=1 : haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
+
+SHOW it1 if eaktsens=2
+
+SHOW it1 if eaktsens=2 AND sformdua=1
+
+SHOW it1 & it2 if eaktsens=3
+
+SHOW it1 & it2 if eaktsens=3 AND sformdua=1 :
+
+SHOW it1 & it2 & it3 if eaktsens=4 :
+
+SHOW it1 & it2 & it3 if eaktsens=4 AND sformdua=1 :
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: It1 den Text “Tätigkeit A” nicht anzeigen
+
+tr: ?
+
+hi:
+
+\------------------------------------------------------------
+
 SDK-stu16
 =========
 
@@ -3703,136 +3833,6 @@ hv:
 fo:
 
 tr: GOTO SDK-fin01
-
-hi:
-
-\------------------------------------------------------------
-
- SDK-fin01
-==========
-
-tc:
-
-vn: eaktsens
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Sind Sie während der Vorlesungszeit [Individualisierung] erwerbstätig?
-
-is: Mit \*\*„*Erwerbstätigkeit(en)*“\*\* sind sämtliche Tätigkeiten gemeint, mit denen Sie im aktuellen Semester Geld verdienen (z. B. Nebenjob, Berufstätigkeit, freiberufliche/selbständige Tätigkeit).
-
-it:
-
-st:
-
-ao1: 1: Nein
-
-ao2: 2: Ja, mit einer Tätigkeit
-
-ao3: 3: Ja, mit zwei verschiedenen Tätigkeiten
-
-ao4: 4: Ja, mit drei oder mehreren Tätigkeiten
-
-mv:
-
-ka:
-
-vc: SHOW Individualisierung if sformdua==1 : neben Ihrer Tätigkeit in der Ausbildungsstätte
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-fin04 if eaktsens=2 OR eaktsens=3 OR eaktsens=4
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-fin04
-=========
-
-tc: if eaktsens=2 OR eaktsens=3 OR eaktsens=4
-
-vn:
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: In welchem Maße [Individualisierung] einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-is:
-
-it: 1: Tätigkeit A [Individualisierung]
-
-it: 2: Tätigkeit B [Individualisierung]
-
-it: 3: Tätigkeit C [Individualisierung]
-
-st:
-
-ao1: 1: 1: in gar keinem Maße
-
-ao2: 2: 2:
-
-ao3: 3: 3:
-
-ao4: 4: 4:
-
-ao5: 5: : in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc: SHOW Individualisierung if eaktsens=2 : hat ihre Erwerbstätigkeit
-
-SHOW Individualisierung if eaktsens=2 AND sformdua=1 : hat Ihre Erwerbstätigkeit, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
-
-SHOW Individualisierung if eaktsens=3 : haben Ihre Erwerbstätigkeiten 
-
-SHOW Individualisierung if eaktsens=3 AND sformdua=1 : haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
-
-SHOW Individualisierung if eaktsens=4 : haben Ihre Erwerbstätigkeiten
-
-SHOW Individualisierung if eaktsens=4 AND sformdua=1 : haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
-
-SHOW it1 if eaktsens=2
-
-SHOW it1 if eaktsens=2 AND sformdua=1
-
-SHOW it1 & it2 if eaktsens=3
-
-SHOW it1 & it2 if eaktsens=3 AND sformdua=1 :
-
-SHOW it1 & it2 & it3 if eaktsens=4 :
-
-SHOW it1 & it2 & it3 if eaktsens=4 AND sformdua=1 :
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: It1 den Text “Tätigkeit A” nicht anzeigen
-
-tr: ?
 
 hi:
 
