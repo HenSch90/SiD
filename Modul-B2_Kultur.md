@@ -859,17 +859,17 @@ q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen 
 is: Beziehen Sie Ihre Angaben auf das Netto-Gehalt, d.h. Einkommen abzüglich
 Steuer.
 
-it1: (einkein1einkberuf):  … mit einer Berufsausbildung?
+it1: (einkberuf1):  … mit einer Berufsausbildung?
 
-it2: (einkerf1einkba): … mit einem Bachelorabschluss? 
+it2: (einkba1): … mit einem Bachelorabschluss? 
 
-it3: (einkma):  … mit einem Masterabschluss?
+it3: (einkma1):  … mit einem Masterabschluss?
 
 it4: (einkstex1): … mit dem ersten Staatsexamen?
 
 it5: (einkstex2):  … mit dem zweiten Staatsexamen?
 
-it6: (einkdr): … mit einer Promotion?
+it6: (einkdr1): … mit einer Promotion?
 
 st:
 
