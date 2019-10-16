@@ -891,8 +891,6 @@ ao8: 8: 5.000 € bis unter 10.000 €
 
 ao9: 9: 10.000 € und mehr
 
-ao10: -12: : weiß ich nicht
-
 mv: -12: : weiß ich nicht
 
 ka:
@@ -951,8 +949,6 @@ ao4 (einkstex12): 5, Präfix: … mit dem ersten Staatsexamen: , Suffix: €/Mon
 ao5 (einkstex22): 5, Präfix: … mit dem zweiten Staatsexamen: , Suffix: €/Monat
 
 ao6 (einkdr2): 5, Präfix: … mit einer Promotion: , Suffix: €/Monat
-
-ao7: -12: : weiß ich nicht
 
 mv: -12: weiß ich nicht
 
