@@ -49,7 +49,7 @@ hi:
 
 \------------------------------------------------------------
 
-SDK-scr01
+A_1
 =========
 
 tc:
@@ -100,7 +100,7 @@ hi:
 
 \------------------------------------------------------------
 
-SDK-scr01
+A_1
 =========
 
 tc:
@@ -141,7 +141,8 @@ hv:
 
 fo:
 
-tr: GOTO CMI1
+tr: GOTO A_2 IF dnatdeu==1
+    GOTO A_3 IF if dnatdeu=0 AND dnatausl=1
 
 hi:
 
@@ -159,7 +160,7 @@ hi:
 
 \------------------------------------------------------------
 
-CMI1
+A_2
 ====
 
 tc:
@@ -202,13 +203,13 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_3 IF dnatderw=2 OR dnatderw=3
 
 hi:
 
 \------------------------------------------------------------
 
-CMI2
+A_3
 ====
 
 tc:
@@ -221,8 +222,8 @@ hl:
 
 in:
 
-q1: Welche nicht-deutsche Staatsangehörigkeit besaßen Sie vor Ihrem Zuzug nach
-Deutschland?
+q1: Welche nicht-deutsche Staatsangehörigkeit besaßen Sie bevor Sie nach
+Deutschland kamen?
 
 q2: Welche Staatsangehörigkeit besaßen Sie vor Ihrer Einbürgerung?
 
@@ -276,13 +277,13 @@ hv:
 
 fo:
 
-tr: GOTO CMI3
+tr: GOTO A_4
 
 hi:
 
 \------------------------------------------------------------
 
-CMI3
+A_4
 ====
 
 tc:
@@ -295,8 +296,8 @@ hl:
 
 in:
 
-q1: Bitte geben Sie nun die Staatsangehörigkeit an, die Sie vor Ihrem Zuzug nach
-Deutschland hatten.
+q1: Bitte geben Sie nun die Staatsangehörigkeit an, die Sie bevor Sie nach
+Deutschland kamen hatten.
 
 q2: Bitte geben Sie nun Ihre Staatsangehörigkeit vor Ihrer Einbürgerung an.
 
@@ -337,13 +338,13 @@ hv:
 
 fo:
 
-tr: GOTO CMI4
+tr: 
 
 hi:
 
 \------------------------------------------------------------
 
-CMI3
+A_4
 ====
 
 tc:
@@ -356,15 +357,7 @@ hl:
 
 in:
 
-q1: Bitte geben Sie nun die Staatsangehörigkeit an, die Sie vor Ihrem Zuzug nach
-Deutschland hatten.
-
-q2: Bitte geben Sie nun Ihre Staatsangehörigkeit vor Ihrer Einbürgerung an.
-
-q3: Bitte geben Sie nun Ihre Staatsangehörigkeit an, die Sie neben der deutschen
-besitzen.
-
-q4: Bitte geben Sie nun Ihre ausländische Staatsangehörigkeit an.
+q: An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben. 
 
 is:
 
@@ -372,21 +365,13 @@ it:
 
 st:
 
-ao1: offene Angabe: 30, Prefix: Staatsangehörigkeit:
+ao1: offene Angabe: 30
 
 mv:
 
 ka:
 
-vc: SHOW offene Angabe if dnatko=SYSMISS
-
-SHOW q1 if dnatderw=2
-
-SHOW q2 if dnatderw=3
-
-SHOW q3 if dnatdeu=1 AND dnatausl=1
-
-SHOW q4 if dnatdeu=0 AND dnatausl=1
+vc:
 
 av:
 
@@ -398,13 +383,13 @@ hv:
 
 fo:
 
-tr: GOTO CMI4
+tr: GOTO A_5
 
 hi:
 
 \------------------------------------------------------------
 
-CMI4
+A_5
 ====
 
 tc:
@@ -445,7 +430,7 @@ hv:
 
 fo:
 
-tr: GOTO CMI5 if dgebort=2
+tr: GOTO A_6 if dgebort=2
 
 GOTO SDK-scr03 if dgebort=1
 
@@ -453,7 +438,7 @@ hi:
 
 \------------------------------------------------------------
 
-CMI5
+A_6
 ====
 
 tc:
@@ -500,13 +485,13 @@ hv:
 
 fo:
 
-tr: CMI6
+tr: A_7
 
 hi:
 
 \------------------------------------------------------------
 
-CMI6
+A_7
 ====
 
 tc:
@@ -545,13 +530,13 @@ hv:
 
 fo:
 
-tr: GOTO B16
+tr: 
 
 hi:
 
 \------------------------------------------------------------
 
-CMI6
+A_7
 ====
 
 tc:
@@ -564,7 +549,7 @@ hl:
 
 in:
 
-q: Bitte geben Sie nun das Land an, in dem Sie geboren sind.
+q: An dieser Stelle können Sie Ihr Geburtsland auch offen angeben.
 
 is:
 
@@ -572,7 +557,7 @@ it:
 
 st:
 
-ao1: offene Angabe: 30, Prefix: Staatsangehörigkeit:
+ao1: offene Angabe: 30
 
 mv:
 
@@ -590,13 +575,13 @@ hv:
 
 fo:
 
-tr: GOTO B16
+tr: GOTO C3_1
 
 hi:
 
 \------------------------------------------------------------
 
-B16
+A_8
 ===
 
 tc:
@@ -651,13 +636,13 @@ hv: Bildungsausländer\*Innen = 1 auf Grundlage von SDK-scr01 – SDK-scr03
 
 fo:
 
-tr: GOTO SDK-scr03
-
+tr: GOTO A_9a (50%)
+    GOTO A_9b (50%)
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde01
+A_9a
 =========
 
 tc:
@@ -702,13 +687,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-sde02
+tr: GOTO A_10
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde01
+A_9b
 =========
 
 tc:
@@ -751,13 +736,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-sde02
+tr: GOTO A_10
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde02
+A_10
 =========
 
 tc:
@@ -796,13 +781,13 @@ hv:
 
 fo:
 
-tr: SDK-sde03
+tr: GOTO A_11
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde03
+A_11
 =========
 
 tc:
@@ -845,13 +830,13 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_12
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde04
+A_12
 =========
 
 tc:
@@ -892,13 +877,13 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_13
 
 hi:
 
 \--------------------------------
 
-B1_9
+A_13
 ==
 
 tc:
@@ -940,14 +925,14 @@ fo:
 
 tr:
 
-GOTO B1_10 IF pflegang=2
+GOTO A_14 IF pflegang=2
 ELSE SDK-gub01
 
 hi:
 
 \--------------------------------
 
-B1_10
+A_14
 ==
 
 tc:
@@ -1004,15 +989,13 @@ hv:
 
 fo:
 
-tr:
-
-GOTO 
+tr: GOTO A_15
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-gub01
+A_15
 =========
 
 tc:
@@ -1069,13 +1052,13 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_16
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-scr03
+A_16
 =========
 
 tc:
@@ -1116,18 +1099,18 @@ hv:
 
 fo:
 
-tr: SDK-NEU
+tr: GOTO A_17
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu14
+A_17
 =========
 
 tc:
 
-vn: ssemhs
+vn: ssemfs
 
 qt: offene Frage
 
@@ -1137,23 +1120,19 @@ in:
 
 q1: Im wievielten Fachsemester befinden Sie sich zurzeit?
 
-is1: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Bachelor-Studiengang eingeschrieben sind.
-
-is2: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Master-Studiengang eingeschrieben sind.
+is1: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
 
 it:
 
 st:
 
-ao1: 2, Prefix: Zahl der Fachsemester:
+ao1: 2, Prefix: Fachsemester:
 
 mv:
 
 ka:
 
-vc: SHOW is1 if sabsan=1
-
-SHOW is2 if sabsan=2
+vc: 
 
 av: number, 1-2 stellig
 
@@ -1165,13 +1144,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu15
+tr: 
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu15
+A_17
 =========
 
 tc:
@@ -1186,13 +1165,13 @@ in:
 
 q1: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
 
-is: Hochschulsemester sind alle Semester, die Sie seit Ihrer Erstimmatrikulation insgesamt studiert haben (also auch die Zeiten eines möglichen Bachelorstudiums), einschließlich Urlaubs-, Auslands- und Praxissemester.
+is: Hochschulsemester sind alle Semester, die Sie seit Ihrer Erstimmatrikulation insgesamt studiert haben, einschließlich Urlaubs-, Auslands- und Praxissemester.
 
 it:
 
 st:
 
-ao1: 2, Prefix: Zahl der Hochschulsemester:
+ao1: 2, Prefix: Hochschulsemester:
 
 mv:
 
@@ -1210,18 +1189,18 @@ hv:
 
 fo:
 
-tr: GOTO SDK-erf01
+tr: GOTO A_18
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-NEU
+A_18
 =======
 
 tc:
 
-vn: NEU
+vn: hsstand
 
 qt: Einfachauswahl mit Dropdown und offener Angabe
 
@@ -1258,13 +1237,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-NEU2
+tr: GOTO A_19
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-NEU2
+A_19
 =======
 
 tc: IF hsstand=2
@@ -1284,7 +1263,7 @@ is:
 it: 
 
 st:
-Überschrift: Bundesland...
+
 
 ao1: 1: : Baden-Württemberg
 
@@ -1338,15 +1317,14 @@ hv:
 
 fo: 
 
-tr:
-GOTO SDK-NEU3
-
+tr: GOTO A_20 if hsstandbl=1-16
+    GOTO A_21 if hsstandbl=17
 hi: 
 
 
 \------------------------------------------------------------
 
-SDK-NEU3
+A_20
 =======
 
 tc:
@@ -1372,12 +1350,12 @@ hi:
 
 \------------------------------------------------------------
 
-SDK-NEU3
+A_20
 =======
 
-tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
+tc: 
 
-vn: hsstandhs; hsstandhso; hsstandst; hsstandsto; hsstandla; hsstandlao
+vn: hsstandhso
 
 qt: Offene Nennung
 
@@ -1385,35 +1363,19 @@ hl:
 
 in: 
 
-q1 (hsstandbl=1-16): Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
+q: Sollte Ihre Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
 
-q2 (hsstandbl=17 & ainfasia=1-2): Bitte tragen Sie das Land, den Ort sowie die Hochschule ein, an der Sie aktuell im Ausland studieren.
-
-q3 (hsstandbl=17 & ainfasia=3-8): Bitte tragen Sie das Land sowie den Ort ein, an der Sie sich aktuell studienbezogen im Ausland befinden. 
-
-is: 
+is: Bitte Beschreiben Sie Ihren Hochschulstandort möglichst genau (bspw. HU Berlin, FH Bielefeld)
 
 it: 
 
 st:
 
-ao1: 100 Stellen, Präfix (hsstandhs; hsstandhso), Suffix: Hochschule:
-
-ao2: 100 Stellen, Präfix (hsstandst; hsstandsto), Suffix: Standort:
-
-ao3: 100 Stellen, Präfix (hsstandla; hsstandlao), Suffix: Land
-
-ao4: 100 Stellen, Präfix (neue Variablen erforderlich), Suffix: Ort
+ao1: 100 Stellen, Präfix (hsstandhso), Suffix: Hochschule:
 
 mv: 
 
 ka: 
-
-vc1: SHOW hsstandhs | hsstandhso | hsstandst | hsstandsto IF hsstandbl=1 – 16
-
-vc2: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto | hsstandhs | hsstandhso IF hsstandbl=17 AND ainfasia=1-2
-
-vc3: SHOW hsstandla | hsstandlao | hsstandst | hsstandsto IF hsstandbl=17 AND ainfasia=3-8 
 
 av: 
 
@@ -1425,14 +1387,58 @@ hv:
 
 fo: 
 
-tr:
-GOTO SDK-erf02
+tr: GOTO A_22
 
 hi: 
 
 \------------------------------------------------------------
 
-SDK-erf02
+A_21
+=======
+
+tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
+
+vn: hsstandlao, hsstandhsao
+
+qt: Offene Nennung
+
+hl:
+
+in: 
+
+q: Bitte tragen Sie das Land und den Ort bzw. die Hochschule ein, an der Sie aktuell im Ausland studieren.
+
+is: 
+
+it: 
+
+st:
+
+ao1: 100 Stellen, Präfix (hsstandlao), Suffix: Land
+
+ao2: 100 Stellen, Präfix (hsstandhsao), Suffix: Ort
+
+mv: 
+
+ka: 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr: GOTO A_22
+
+hi: 
+
+\------------------------------------------------------------
+
+A_22
 =========
 
 tc:
@@ -1479,13 +1485,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu04
+tr: GOTO A_23
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu07
+A_23
 =========
 
 tc:
@@ -1528,13 +1534,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu06
+tr: GOTO A_24
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu04
+A_24
 =========
 
 tc:
@@ -1583,13 +1589,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu06
+tr: GOTO A_25
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu05
+A_25
 =========
 
 tc:
@@ -1644,15 +1650,15 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu if sabsan=9
+tr: GOTO A_26 if sabsan=9
 
-GOTO SDK-stu12
+GOTO A_27 if ELSE
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu
+A_26
 =======
 
 tc:
@@ -1703,13 +1709,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu12
+tr: GOTO A_27
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu12
+A_27
 =========
 
 tc:
@@ -1758,13 +1764,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu14
+tr: GOTO A_28
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-erf01
+A_28
 =========
 
 tc:
@@ -1809,13 +1815,13 @@ hv:
 
 fo: Bitte die beiden geschlossenen Antwortoptionen/-items neben der Notenabfrage in einer Zeile positionieren.
 
-tr: GOTO SDK-erf03
+tr: GOTO A_29
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-erf03
+A_29
 =========
 
 tc:
@@ -1862,13 +1868,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-sde01
+tr: GOTO A_30
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-erf03
+A_30
 =========
 
 tc:
@@ -1911,13 +1917,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-sde01
+tr: GOTO A_31
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-erf03
+A_31
 =========
 
 tc:
@@ -1964,13 +1970,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-sde01
+tr: GOTO A_32
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde08
+A-32
 =========
 
 tc:
@@ -2024,13 +2030,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-sde10
+tr: GOTO A_33
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde10
+A_33
 =========
 
 tc:
@@ -2105,13 +2111,13 @@ weiß ich nicht Kästchen Kästchen
 o Bei Angabe von „weiß ich nicht“, sollen die Textfelder in der jeweiligen
 Spalte bitte nicht ausgefüllt werden können und umgekehrt (Exklusivkategorie).
 
-tr: GOTO SDK-sde21
+tr: GOTO A_34
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-sde21
+A_34
 =========
 
 tc:
@@ -2155,7 +2161,7 @@ hv:
 
 fo:
 
-tr: GOTO CMI13 if deltgebv=2 OR deltgebm=2
+tr: GOTO A_35 if deltgebv=2 OR deltgebm=2
 
 GOTO SDK-vbi2
 
@@ -2163,7 +2169,7 @@ hi:
 
 \------------------------------------------------------------
 
-CMI13
+A_35
 =====
 
 tc:
@@ -2216,7 +2222,7 @@ hi:
 
 \------------------------------------------------------------
 
-CMI13
+A_35
 =====
 
 tc:
@@ -2263,13 +2269,13 @@ hv:
 
 fo:
 
-tr: GOTO CMI14
+tr: GOTO A_36
 
 hi:
 
 \------------------------------------------------------------
 
-CMI14
+A_36
 =====
 
 tc:
@@ -2314,7 +2320,7 @@ hi:
 
 \------------------------------------------------------------
 
-CMI14
+A_36
 =====
 
 tc:
@@ -2359,7 +2365,7 @@ hi:
 
 \------------------------------------------------------------
 
-CMI14
+A_36
 =====
 
 tc:
@@ -2404,7 +2410,7 @@ hi:
 
 \------------------------------------------------------------
 
-CMI14
+A_36
 =====
 
 tc:
@@ -2443,13 +2449,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-vbi2
-
+tr: GOTO A_37a (50%)
+    GOTO A_37b (50%)
 hi:
 
 \------------------------------------------------------------
 
-SDK-vbi2
+A_37a
 ========
 
 tc:
@@ -2490,13 +2496,13 @@ hv:
 fo: Softreminder: Bitte den Text „[Textfeld; 12 Stellen]“ erst dann einblenden,
 wenn die PLZ nicht angegeben wurde.
 
-tr: GOTO SDK-vbi2_1
+tr: GOTO A_38
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-vbi2_1
+A_37b
 ==========
 
 tc:
@@ -2537,13 +2543,13 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_38
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-vbi3_2
+A_38
 ==========
 
 tc:
@@ -2592,13 +2598,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-vbi5
+tr: GOTO A_39
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-vbi5_1
+A_39
 ==========
 
 tc:
@@ -2669,13 +2675,13 @@ hv:
 
 fo: Bitte die Beispiele in Klammern in etwas kleinerer Schriftgröße (2pt kleiner) umsetzen.
 
-tr: GOTO SDK-vbi7
+tr: GOTO A_40
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-vbi7
+A_40
 ========
 
 tc:
@@ -2720,13 +2726,13 @@ hv:
 
 fo: Die Antwortoptionen bitte als Exklusivkategorien programmieren.
 
-tr:
+tr: 
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-vbi8
+A_40
 ========
 
 tc:
@@ -2739,9 +2745,7 @@ hl:
 
 in:
 
-q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt
-
-(Zeitpunkt der Zeugnisübergabe)?
+q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt (Zeitpunkt der Zeugnisübergabe)?
 
 is:
 
@@ -2769,63 +2773,16 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_41
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-vbi8_1
-==========
-
-tc:
-
-vn: vsbzpj
-
-qt: offene Frage, Mehrfachauswahl
-
-hl:
-
-in:
-
-q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt (Zeitpunkt der Zeugnisübergabe)?
-
-is:
-
-it:
-
-st:
-
-ao1: 4: Prefix: Jahr:
-
-ao2: -12: weiß ich nicht (EK)
-
-mv: -12: weiß ich nicht
-
-ka:
-
-vc:
-
-av: number: vierstellig
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO SDK-vbi1001 if
-
-hi:
-
-\------------------------------------------------------------
-
-SDK-vbi1001
+A_41
 ===========
 
-tc: SDK-vbi5 oder SDK-vbi5_1
+tc: 
 
 vn: vausbja
 
@@ -3450,23 +3407,29 @@ SDK-stu17
 
 tc:
 
-vn: promoplan
+vn: ssahswe; ssafawe; ssaunt; ssaaja
 
-qt: Einfachauswahl mit Horizontalen ao
+qt: Einfachauswahl matrix
 
 hl:
 
 in:
 
-q: Planen Sie nach dem Studium…
+q: Inwieweit denken Sie zur Zeit daran …
 
 is:
 
-it:
+it1: (ssahswe): … die Hochschule zu wechseln?
 
-st: … eine Promotion aufnehmen?
+it2: (ssafawe): … Ihr Studienfach zu wechseln?
 
-ao1: 1: 1: sehr unwahrscheinlich
+it3: (ssaunt): … Ihr aktuelles Studium zu unterbrechen?
+
+it4: (ssaaja): … das Studium ganz aufzugeben?
+
+st:
+
+ao1: 1: 1: gar nicht
 
 ao2: 2: 2:
 
@@ -3474,7 +3437,7 @@ ao3: 3: 3:
 
 ao4: 4: 4:
 
-ao5: 5: 5: sehr wahrscheinlich
+ao5: 5: 5: sehr ernsthaft
 
 mv:
 
