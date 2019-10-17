@@ -381,7 +381,7 @@ C1_7
 tc: IF dkinja = 2
 
 vn: dkinbe (dkinbekihs / dkinbehsa / dkinbeki / dkinbehts / dkinbegts /
-dekinbesoe / dekinbesoeo)
+dkinbesoe / dkinbesoeo)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -410,7 +410,7 @@ it4: (dkinbehts): Halbtagsschule
 
 it5: (dkinbegts): Ganztagsschule
 
-it6: (dekinbesoe, dekinbesoeo): sonstige Einrichtung, und zwar: [50 Zeichen,
+it6: (dkinbesoe, dkinbesoeo): sonstige Einrichtung, und zwar: [50 Zeichen,
 60pt]
 
 st:
