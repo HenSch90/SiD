@@ -5,9 +5,9 @@ F2_1
 
 tc:
 
-vn: aeinnorm1 ; aeinnorm2; aeinnorm3; aeinnormando
+vn: aeinnormsia1 ; aeinnormsia2; aeinnormsia3; aeinnormandsia; aeinnormandsiao
 
-qt: Einfachauswahl
+qt: Einfachauswahlmaxtrix und offene Angabe
 
 hl:
 
@@ -17,18 +17,28 @@ q: Inwiefern treffen die folgenden Aussagen Ihrer Meinung nach zu?
 
 is:
 
-it:
+it1: (aeinnormsia1): : Ein studienbezogener Auslandsaufenthalt darf während des
+Studiums auf keinen Fall fehlen.
+
+it2: (aeinnormsia2): : Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals
+erwartet.
+
+it3: (aeinnormsia3): : Jede\*r Studierende sollte während des Studiums
+studienbezogen im Ausland gewesen sein.
+
+it4: (aeinnormandsia): anderes, und zwar (offene Angabe: 100 Zeichen; Präfix [aeinnormandsiao], Suffix
 
 st:
 
-ao1: (aeinnorm1): : Ein studienbezogener Auslandsaufenthalt darf während des
-Studiums auf keinen Fall fehlen.
+ao1: 1: trifft gar nicht zu
 
-ao2: (aeinnorm2): : Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals
-erwartet.
+ao2: 2:
 
-ao3: (aeinnorm3): : Jede\*r Studierende sollte während des Studiums
-studienbezogen im Ausland gewesen sein.
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
