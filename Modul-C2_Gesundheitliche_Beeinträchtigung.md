@@ -3,7 +3,7 @@
 C2_1
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF gartmob-gartka (Grundprogramm) mindestens einmal =1
 
 vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls;
 gbegrson; gbegrka
@@ -860,6 +860,6 @@ hv:
 
 fo:
 
-tr: GOTO nächstes Modul
+tr: GOTO A_16
 
 hi:
