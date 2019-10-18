@@ -39,7 +39,7 @@ hv:
 
 fo:
 
-tr: GOTO C3_2
+tr: GOTO A_8
 
 hi:
 
@@ -143,6 +143,7 @@ hv:
 
 fo:
 
-tr: GOTO nächstes Modul
+tr: GOTO A_37a (50%)
+    GOTO A_37b (50%)
 
 hi:
