@@ -911,8 +911,7 @@ fo:
 
 tr:
 
-GOTO 14 \| 17 (ssweije=1 und/oder saweija=1 und/oder shwija=1 und/oder ssuja=1
-weiter mit 14; alle anderen weiter mit 17)
+GOTO A_27
 
 hi:
 
@@ -1225,7 +1224,7 @@ hi:
 
 \--------------------------------
 
-18 
+D1_18 
 ===
 
 tc:
@@ -1383,9 +1382,8 @@ hv:
 
 fo:
 
-tr:
-
-GOTO D1_20
+tr: GOTO D2_13 if mastersplit=1, 2, 7, 8, 14
+    GOTO A_23 if mastersplit=3, 4, 9, 10
 
 hi:
 
