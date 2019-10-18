@@ -2822,13 +2822,14 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu16
-
+tr: GOTO A_42 if vausbja=1
+    GOTO D1_4 if vausbja=2 OR ausbja=3
+    GOTO A_42 if vausbja=MISSING
 hi:
 
 \------------------------------------------------------------
 
- SDK-fin01
+A:42 
 ==========
 
 tc:
@@ -2873,18 +2874,19 @@ hv:
 
 fo:
 
-tr: GOTO SDK-fin04 if eaktsens=2 OR eaktsens=3 OR eaktsens=4
-
+tr: GOTO A_44 if eaktsens=1
+    GOTO A_43 if eaktsens=2 OR eaktsens=3 OR eaktsens=4
+    GOTO A_44 if eaktsens=MISSING
 hi:
 
 \------------------------------------------------------------
 
-SDK-fin04
+A_43
 =========
 
 tc: if eaktsens=2 OR eaktsens=3 OR eaktsens=4
 
-vn:
+vn: efachnah1, efachnah2, efachnah3
 
 qt: Einfachauswahlmatrix
 
@@ -2952,13 +2954,13 @@ hv:
 
 fo: It1 den Text “Tätigkeit A” nicht anzeigen
 
-tr: ?
+tr: GOTO D3_19
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu16
+A_44
 =========
 
 tc:
@@ -2999,13 +3001,14 @@ hv:
 
 fo:
 
-tr:
-
+tr: GOTO  if sabsja=1
+    GOTO A_45 if sabsja=2
+    GOTO  if sabsja=MISSING
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu16_1
+A_45
 ===========
 
 tc: sabsja==2
@@ -3072,13 +3075,13 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_46
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu17
+A-46
 =========
 
 tc: sabsja==2
@@ -3131,13 +3134,14 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu0
-
+tr: GOTO A_47
+    GOTO D1_10 if mastersplit=
+    
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu0
+A_47
 ========
 
 tc: sabsja==2
@@ -3178,13 +3182,13 @@ hv:
 
 fo:
 
-tr: GOTO SDK-stu21
+tr: GOTO A_48
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu21
+A_48
 =========
 
 tc: sabsja==2
@@ -3229,15 +3233,15 @@ fo:
 
 tr:
 
-GOTO SDK-stu17 IF sabser=1
+GOTO A_49a IF sabser=1
 
-GOTO SDK-stu17 IF sabser\>1
+GOTO A_49b IF sabser\>1
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu17
+A_49a
 =========
 
 tc:
@@ -3288,13 +3292,13 @@ fo:
 
 tr:
 
-GOTO SDK-pla02
+GOTO A_50
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu17
+A_49b
 =========
 
 tc:
@@ -3343,13 +3347,13 @@ fo:
 
 tr:
 
-GOTO SDK-pla02
+GOTO A_50
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-pla02
+A_50
 =========
 
 tc:
@@ -3396,13 +3400,20 @@ hv:
 
 fo:
 
-tr:
-
+tr: GOTO A_51a if ssweja=2 OR saweja=2 OR shwja=2 OR ssuja=2 (50%)
+    GOTO A_51B if ssweja=2 OR saweja=2 OR shwja=2 OR ssuja=2 (50%)
+    
+    GOTO D1_15 if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=
+    GOTO D1_15 if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=  
+    
+    GOTO A_51a if SYSTEMMISSING (50%)
+    GOTO A_51b if SYSTEMMISSING (50%)
+ 
 hi:
 
 \------------------------------------------------------------
 
-SDK-stu17
+A_51a
 =========
 
 tc:
@@ -3457,13 +3468,13 @@ fo:
 
 tr:
 
-GOTO SDK-pla02
+GOTO A_52
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-pla02
+A_51b
 =========
 
 tc:
@@ -3516,13 +3527,13 @@ hv:
 
 fo:
 
-tr: GOTO SEK-woh01
+tr: GOTO A_52
 
 hi:
 
 \------------------------------------------------------------
 
-SEK-woh01
+A_52
 =========
 
 tc:
@@ -3581,13 +3592,14 @@ hv:
 
 fo:
 
-tr: GOTO SDK-woh02
-
+tr: GOTO D3_1 if mastersplit=
+    GOTO A_52 if mastersplit=
+  
 hi:
 
 \------------------------------------------------------------
 
-SDK-woh02
+A_52
 =========
 
 tc:
@@ -3644,13 +3656,16 @@ hv:
 
 fo:
 
-tr: GOTO SDK-fin01
+tr: GOTO D3_2 if mastersplit=
+    GOTO B1_2 if mastersplit=
+    GOTO B2_5 if mastersplit=
+    GOTO A_54 if mastersplit=
 
 hi:
 
 \------------------------------------------------------------
 
-SEK-aer01
+A_54
 =========
 
 tc:
@@ -3695,13 +3710,13 @@ hv:
 
 fo:
 
-tr: GOTO ?
+tr: GOTO A_55
 
 hi:
 
 \------------------------------------------------------------
 
-SEK-aer01
+A_55
 =========
 
 tc:
@@ -3750,13 +3765,18 @@ hv:
 
 fo:
 
-tr: GOTO SDK-zei01
+tr: GOTO F1_1 if mastersplit= AND BILDUNGSAUSLÄNDER
+    GOTO F1_2 if mastersplit= AND STUDIERENDER IM AUSLAND
+    GOTO F1_3 if mastersplit= AND NICHT BILDUNGSAUSLÄNDER/NICHT AUSLAND
+    GOTO E1_1 if mastersplit= AND zusatzsplit=1
+    GOTO E1_3 if mastersplit= AND zusatzsplit=3
+    GOTO E1_4 if mastersplit= AND zusatzsplit=4
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-zei01
+A_56
 =========
 
 tc:
@@ -3803,13 +3823,13 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_57
 
 hi:
 
 \------------------------------------------------------------
 
-SDK-zei01
+A_57
 =========
 
 tc:
@@ -3887,6 +3907,6 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO ABSCHLUSSSEITE
 
 hi:
