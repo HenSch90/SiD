@@ -398,7 +398,7 @@ tc:
 
 vn: beteil1; beteil2; beteil3; beteil4; beteil5; beteil6; beteil7; beteil8; beteil9
 
-qt: Mehrfachauswahlmatrix mit horizontalen ao
+qt: Mehrfachauswahl
 
 hl:
 
@@ -408,29 +408,27 @@ q: An welcher der folgenden Tätigkeiten in Gruppen oder Organisationen sind Sie
 
 is: Mehrfachantworten sind möglich
 
-it: (beteil1): Beteiligung an Bürger\*inneninitiativen
+it:
 
-it: (beteil2): Mitarbeit in politischen Parteien
+ao1: (beteil1): Beteiligung an Bürger*inneninitiativen
 
-it: (beteil3): Beteiligung an Umwelt-, Natur-, Tierschutzorganisationen
+ao2: (beteil2): Mitarbeit in politischen Parteien
 
-it: (beteil4): Mitarbeit im sozialen Bereich (Jugendarbeit, Hilfen, Wohlfahrt)
+ao3: (beteil3): Beteiligung an Umwelt-, Natur-, Tierschutzorganisationen
 
-it: (beteil5): Trainer\*in / Übungsleiter\*innentätigkeit im Sportverein
+ao4: (beteil4): Mitarbeit im sozialen Bereich (Jugendarbeit, Hilfen, Wohlfahrt)
 
-it: (beteil6): Mitarbeit in Friedens-, Menschenrechts-, Asylgruppen
+ao5: (beteil5): Trainer*in / Übungsleiter*innentätigkeit im Sportverein
 
-it: (beteil7): Studierendenvertretungen
+ao6: (beteil6): Mitarbeit in Friedens-, Menschenrechts-, Asylgruppen
 
-it: (beteil8): Student\*innenverbindungen
+ao7: (beteil7): Studierendenvertretungen
 
-it: (beteil9): Engagement in anderen politischen oder sozialen Gruppierungen
+ao8: (beteil8): Student*innenverbindungen
+
+ao9: (beteil9): Engagement in anderen politischen oder sozialen Gruppierungen
 
 st:
-
-ao1: ja
-
-ao2: nein
 
 mv:
 
@@ -448,6 +446,6 @@ hv:
 
 fo:
 
-tr:
+tr: end
 
 hi:
