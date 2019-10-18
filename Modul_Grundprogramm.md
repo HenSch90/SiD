@@ -431,8 +431,10 @@ hv:
 fo:
 
 tr: GOTO A_6 if dgebort=2
-
-GOTO SDK-scr03 if dgebort=1
+    GOTO A_9a if dgebort=1 (50%)
+    GOTO A_9b if dgebort=1 (50%)
+    GOTO A_9a if dgebort=MISSING (50%)
+    GOTO A_9b if dgebort=MISSING (50%)
 
 hi:
 
@@ -877,7 +879,9 @@ hv:
 
 fo:
 
-tr: GOTO A_13
+tr: GOTO A_13 if dkinja=1
+    GOTO C1_1 if dkinja=2
+    GOTO A_13 if dkinja=MISSING
 
 hi:
 
@@ -926,7 +930,7 @@ fo:
 tr:
 
 GOTO A_14 IF pflegang=2
-ELSE SDK-gub01
+ELSE A_15
 
 hi:
 
@@ -1052,8 +1056,10 @@ hv:
 
 fo:
 
-tr: GOTO A_16
-
+tr: GOTO A_16 if gbeges=1
+    GOTO C2_1 if gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+    GOTO A_16 if gbeges=MISSING AND gartmob=MISSING AND gartseh=MISSING AND gartohr=MISSING AND gartspr=MISSING AND gartpsy=MISSING AND gartsom=MISSING AND garttls=MISSING AND gartson=MISSING AND gartka=MISSING
+    
 hi:
 
 \------------------------------------------------------------
@@ -1237,7 +1243,11 @@ hv:
 
 fo:
 
-tr: GOTO A_19
+tr: GOTO D2_1 if hsstand=1 AND mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
+    GOTO A_22 if hsstand=1 AND mastersplit=3, 4, 9, 10, 13
+    GOTO D2_1 if hsstand=MISSING AND mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
+    GOTO A_22 if hsstand=MISSING AND mastersplit=3, 4, 9, 10, 13
+    GOTO A_19 if hsstand=2
 
 hi:
 
@@ -1485,8 +1495,9 @@ hv:
 
 fo:
 
-tr: GOTO A_23
-
+tr: GOTO D1_17 if mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+    GOTO D2_13 if mastersplit=5, 6, 11, 12
+    
 hi:
 
 \------------------------------------------------------------
@@ -1651,8 +1662,10 @@ hv:
 fo:
 
 tr: GOTO A_26 if sabsan=9
-
-GOTO A_27 if ELSE
+    GOTO D1_13 if sabsan=1/8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
+    GOTO A_27 if sabsan=1/8 AND mastersplit=5, 6, 11, 12, 13
+    GOTO D1_13 if sabsan=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
+    GOTO A_27 if sabsan=MISSING AND mastersplit=5, 6, 11, 12, 13
 
 hi:
 
@@ -1764,7 +1777,9 @@ hv:
 
 fo:
 
-tr: GOTO A_28
+tr: GOTO D2_5 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
+    GOTO B1_7 if mastersplit=3, 4, 13
+    GOTO A_28 if mastersplit=9, 10
 
 hi:
 
@@ -2162,8 +2177,8 @@ hv:
 fo:
 
 tr: GOTO A_35 if deltgebv=2 OR deltgebm=2
-
-GOTO SDK-vbi2
+    GOTO A_37a if deltgebv=1 AND deltgebm=1 (50%)
+    GOTO A_37b if deltgebv=1 AND deltgebm=1 (50%)
 
 hi:
 
@@ -2449,8 +2464,8 @@ hv:
 
 fo:
 
-tr: GOTO A_37a (50%)
-    GOTO A_37b (50%)
+tr: GOTO C3_2
+
 hi:
 
 \------------------------------------------------------------
@@ -3081,7 +3096,7 @@ hi:
 
 \------------------------------------------------------------
 
-A-46
+A_46
 =========
 
 tc: sabsja==2
@@ -3593,13 +3608,13 @@ hv:
 fo:
 
 tr: GOTO D3_1 if mastersplit=
-    GOTO A_52 if mastersplit=
+    GOTO A_53 if mastersplit=
   
 hi:
 
 \------------------------------------------------------------
 
-A_52
+A_53
 =========
 
 tc:
