@@ -46,6 +46,8 @@ fv:
 
 hv:
 
+sv: s_fairsplit = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (einmalige Randomisierung; 1= 10%, 2= 10 %, 3= 10%, 4= 10%, 5= 10%, 6= 10%, 7= 10%, 8= 10%, 9= 10%, 10= 10%)
+
 fo:
 
 tr: KSM-fai02
@@ -297,7 +299,16 @@ hv:
 
 fo:
 
-tr: KSM-fai06
+tr: GOTO KSM-fai06 if s_fairsplit= 1
+GOTO KSM-fai07 if s_fairsplit= 2
+GOTO KSM-fai08 if s_fairsplit= 3
+GOTO KSM-fai09 if s_fairsplit= 4
+GOTO KSM-fai10 if s_fairsplit= 5
+GOTO KSM-fai11 if s_fairsplit= 6
+GOTO KSM-fai12 if s_fairsplit= 7
+GOTO KSM-fai13 if s_fairsplit= 8
+GOTO KSM-fai14 if s_fairsplit= 9
+GOTO KSM-fai15 if s_fairsplit= 10
 
 hi: Ab hier sollen die Befragten zufällig einer der Seiten KSM-fai06 - KSM-fai16 zugewiesen werden. KSM-fai06 - KSM-fai16 beinhalten dieselbe Frage, aber mit verschiedenen Fächerkombinationen (10 insgesamt, also 10 einzelne Seiten), von denen jeweils eine Fächerkombination pro Seite angezeigt werden soll. Das heißt: Jeder Befragte wird per Zufall auf eine der Seiten verwiesen. Danach werden alle auf KSM-fai16 weitergeleitet mit den Gründen für das höhere Gehalt.
 
