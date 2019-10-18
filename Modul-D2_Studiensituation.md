@@ -802,7 +802,7 @@ fo:
 
 tr:
 
-GOTO D2_13
+GOTO D2_21
 
 hi: Subskala „Motivierung und Lehrengagement“
 
@@ -1309,7 +1309,7 @@ fo:
 
 tr:
 
-GOTO D2_21
+GOTO A_23
 
 hi:
 
@@ -1388,6 +1388,6 @@ hv:
 
 fo:
 
-tr: GOTO [next Modul]
+tr: GOTO A_44
 
 hi:
