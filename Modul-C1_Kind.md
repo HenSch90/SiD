@@ -136,7 +136,7 @@ fo:
 
 tr:
 
-GOTO C1_3
+GOTO C1_5
 
 hi: Dezimalstellen zulassen
 
@@ -196,7 +196,7 @@ fo:
 
 tr:
 
-GOTO C1_4
+GOTO C1_11
 
 hi:
 
@@ -288,7 +288,7 @@ hv:
 
 fo:
 
-tr: GOTO C1_6
+tr: GOTO C1_3
 
 hi:
 
@@ -652,7 +652,7 @@ hv:
 
 fo:
 
-tr: GOTO C1_11
+tr: GOTO C1_12
 
 hi: Items bitte zufällig rotieren
 
@@ -722,7 +722,7 @@ hv:
 
 fo:
 
-tr: GOTO C1_12
+tr: GOTO C1_6
 
 hi: Items bitte zufällig rotieren
 
@@ -919,6 +919,6 @@ hv:
 
 fo:
 
-tr: GOTO XXX
+tr: GOTO A_13
 
 hi:
