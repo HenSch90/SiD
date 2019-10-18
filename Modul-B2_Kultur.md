@@ -921,7 +921,7 @@ B2_9b
 
 tc: 50 Prozent der Befragten
 
-vn: einkberuf2; einkba2; einkma2; einkstex12; einkstex22; einkdr2
+vn: einkberuf2; einkba2; einkma2; einkstex12; einkstex22; einkdr2; einkka2
 
 qt: Offene Angabe
 
@@ -950,7 +950,7 @@ ao5 (einkstex22): 5, Präfix: … mit dem zweiten Staatsexamen: , Suffix: €/Mo
 
 ao6 (einkdr2): 5, Präfix: … mit einer Promotion: , Suffix: €/Monat
 
-mv: -12: weiß ich nicht
+mv: (einkka2): -12, weiß ich nicht
 
 ka:
 
