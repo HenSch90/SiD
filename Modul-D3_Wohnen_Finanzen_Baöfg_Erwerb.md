@@ -43,7 +43,7 @@ hv:
 
 fo:
 
-tr: GOTO 2 (D3_2)
+tr: GOTO D3_3
 
 hi:
 
@@ -89,7 +89,7 @@ hv:
 
 fo:
 
-tr: GOTO 3 (D3_3)
+tr: GOTO D3_4
 
 hi: Variable wohnamio bitte erst einblenden, wenn Wert bei wohnami nicht
 definiert ist
@@ -147,7 +147,7 @@ hv:
 
 fo:
 
-tr: GOTO 4 (D3_4)
+tr: GOTO A_53
 
 hi: Variablen wohnplzo und wohnplzorto bitte erst einblenden, wenn Werte bei
 wohnplz bzw. wohnpolzort nicht definiert sind
@@ -258,7 +258,9 @@ hv:
 
 fo:
 
-tr: GOTO 6 (D3_6)
+tr: GOTO B2_5 if mastersplit=9, 10, 11, 12
+    GOTO B1_5 if mastersplit=3, 4, 5, 6,
+    GOTO D3_13 if mastersplit=14
 
 hi:
 
@@ -381,7 +383,7 @@ fo:
 
 tr:
 
-GOTO 7 (D3_7)
+GOTO D3_7
 
 hi: “Betrag” als Spaltenüberschriften; „(it 15) Gesamteinnahmen“ bitte fett und unterstrichen
 
@@ -440,7 +442,7 @@ hv:
 
 fo:
 
-tr: GOTO 8 (D3_8)
+tr: GOTO D3_8
 
 hi:
 
@@ -565,7 +567,7 @@ hv:
 
 fo:
 
-tr: GOTO 9 (D3_9)
+tr: GOTO D3_9
 
 hi: “Ich bezahle selbst” und “Dritte (Eltern, Partner\*in etc.) bezahlen direkt”
 als Spaltenüberschriften; Bei "fausinsg" (Gesamtausgaben) bitte Trennlinie und keine Spalten, sondern nur 1 offenes Angabefeld 
@@ -613,7 +615,8 @@ hv:
 
 fo:
 
-tr: GOTO D3_10 IF feindgsemo > 0 | feindgstuo > 0;  ELSE GOTO D3_11 
+tr: GOTO D3_10 IF feindgsemo > 0 | feindgstuo > 0;  
+    ELSE GOTO D3_11 
 
 hi:
 
@@ -666,7 +669,7 @@ hv:
 
 fo: 
 
-tr: GOTO 11 (D3_11)
+tr: GOTO D3_11
 
 hi: 
 
@@ -732,7 +735,7 @@ hv:
 
 fo:
 
-tr: GOTO 12 (D3_12)
+tr: GOTO D3_12
 
 hi: Items bitte zufällig rotieren
 
@@ -752,7 +755,7 @@ hl:
 
 in:
 
-q: Der Umgang mit Feld kann unterschiedliche Herausforderungen mit sich bringen:
+q: Der Umgang mit Geld kann unterschiedliche Herausforderungen mit sich bringen:
 Inwieweit treffen die nachfolgenden Aussagen auf Sie zu?
 
 is:
@@ -806,7 +809,7 @@ hv:
 
 fo:
 
-tr: GOTO 13 (D3_13)
+tr: GOTO A_54
 
 hi: Items bitte zufällig rotieren
 
@@ -858,13 +861,13 @@ hv:
 fo:
 
 tr:
-GOTO 14 (D3_14) IF fbafja = 1
+GOTO D3_14 IF fbafja = 1
 
-GOTO 15 (D3_15) IF fbafja = 2
+GOTO D3_15 IF fbafja = 2
 
-GOTO 17 (D3_17) IF fbafja = 4
+GOTO D3_17 IF fbafja = 4
 
-ELSE GOTO 19 (D3_19) 
+GOTO D3_6 IF fbafja = 3 OR fbafja = MISSING
 
 hi:
 
@@ -919,7 +922,7 @@ hv:
 
 fo:
 
-tr: GOTO 16 (D3_16)
+tr: GOTO D3_16
 
 hi:
 
@@ -968,7 +971,7 @@ hv:
 
 fo:
 
-tr: GOTO 16 (D3_16)
+tr: GOTO D3_16
 
 hi:
 
@@ -1052,7 +1055,7 @@ hv:
 
 fo:
 
-GOTO 19 (D3_19)
+GOTO D3_6
 
 hi:
 
@@ -1099,7 +1102,7 @@ hv:
 
 fo:
 
-tr: GOTO 18 (D3_18)
+tr: GOTO D3_18
 
 hi:
 
@@ -1146,7 +1149,7 @@ hv:
 
 fo:
 
-tr: GOTO 19 (D3_19)
+tr: GOTO D3_6
 
 hi:
 
@@ -1225,7 +1228,8 @@ hv:
 
 fo: 
 
-tr: GOTO 20 (D3_20) IF sformberu=1 | sformdua=1; ELSE GOTO 21 (D3_21)
+tr: GOTO D3_20 IF sformberu=1 | sformdua=1;  
+    GOTO D3_21 IF ELSE
 
 hi: 
 
@@ -1297,7 +1301,7 @@ hv:
 
 fo:
 
-tr: GOTO 21 (D3_21)
+tr: GOTO D3_21
 
 hi:
 
@@ -1394,7 +1398,7 @@ hv:
 
 fo:
 
-tr: GOTO 22 (D3_22)
+tr: GOTO D3_22
 
 hi: Items bitte zufällig rotieren.
 
@@ -1457,8 +1461,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO nächstes Modul
+tr:  GOTO D1_9 IF mastersplit=3, 4, 9, 10, 14
+     GOTO D2_6 IF mastersplit=5, 6, 11, 12
 
 hi:
