@@ -289,7 +289,10 @@ hv:
 
 fo:
 
-tr: GOTO F1_6
+tr: 
+IF Deutsche Studierende GOTO F3_6
+IF Internationale Studierende GOTO F1_6
+IF Deutsche Studierende aktuell im Ausland GOTO F2_6 
 
 hi:
 
