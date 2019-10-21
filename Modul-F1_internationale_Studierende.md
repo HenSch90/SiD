@@ -3,7 +3,7 @@ F1_1
 
 tc:
 
-vn: aeinnormba1; aeinnormba2; aeinnormba3; aeinnormando; aeinnormando
+vn: aeinnorm1; aeinnorm2; aeinnorm3; aeinnormando; aeinnormando
 
 qt: Einfachauswahlmaxtrix und offene Angabe
 
