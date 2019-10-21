@@ -52,11 +52,7 @@ hv:
 
 fo:
 
-tr:
-
->   GOTO B2_2a if h_split2==1
-
->   GOTO B2_2b if h_split2==2
+tr: GOTO A_33
 
 hi: Hilfsvariable muss an vorheriger Stelle generiert werden
 
@@ -162,7 +158,8 @@ hv:
 
 fo:
 
-tr: GOTO B2_3b
+tr: GOTO B2_3a if h_split=1 (50%)
+    GOTO B2_3b if h_split=2 (50%)
 
 hi: Zwischenüberschriften zwischen den ao’s möglich?
 
@@ -288,7 +285,8 @@ hv:
 
 fo: siehe mitgeliefertes Template
 
-tr: GOTO B2_3a
+tr: GOTO B2_3a if h_split=1 (50%)
+    GOTO B2_3b if h_split=2 (50%)
 
 \--------------------------
 
@@ -355,7 +353,7 @@ hv:
 
 fo: ao12 absetzen
 
-tr: GOTO B2_4
+tr: GOTO B2_6
 
 hi:
 
@@ -423,7 +421,7 @@ hv:
 
 fo: ao12 absetzen
 
-tr: GOTO B2_4
+tr: GOTO B2_6
 
 hi:
 
@@ -559,7 +557,7 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO B2_6
+tr: GOTO 
 
 hi:
 
@@ -642,8 +640,9 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO B2_7
-
+tr: GOTO B2_8a IF sabsan = 1 OR sabsan = 2
+    GOTO B2_8b IF sabsan >=3
+    GOTO Bs_8b IF sabsan=MISSING
 hi:
 
 \--------------------------
@@ -720,7 +719,7 @@ hi:
 B2_8a
 ==
 
-tc: sabsan = 1 \| sabsan = 2
+tc: sabsan = 1 OR sabsan = 2
 
 vn: bilaspab / bilaspma / bilaspdr / bilaspber
 
@@ -734,7 +733,7 @@ q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
 
 is:
 
-it1: (bilaspab) … einen Hochschulabschluss erreichen?
+it1: (bilaspab) … einen Bachelorabschluss erreichen?
 
 it2: (bilaspma) … einen Masterabschluss erreichen?
 
@@ -770,11 +769,7 @@ hv:
 
 fo:
 
-tr:
-
->   GOTO B2_9a if h_split2==1
-
->   GOTO B2_9b if h_split2==2
+tr:   GOTO B2_10
 
 hi:
 
@@ -831,11 +826,8 @@ hv:
 
 fo:
 
-tr:
+tr:   GOTO B2_10
 
->   GOTO B2_9a if h_split2==1
-
->   GOTO B2_9b if h_split2==2
 
 hi:
 
@@ -1023,6 +1015,6 @@ hv:
 
 fo: ao6 absetzen
 
-tr:
+tr: GOTO A_34
 
 hi: [ao1 (promno): nein] soll exklusiv sein
