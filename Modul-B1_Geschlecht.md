@@ -384,7 +384,7 @@ fo:
 
 tr:
 
-GOTO B1_4b
+GOTO B1_2
 
 hi:
 
@@ -436,7 +436,7 @@ hv:
 
 fo: 
 
-tr: GOTO B1_6
+tr: GOTO B1_2
 
 hi:  
 
@@ -497,8 +497,10 @@ hv:
 
 fo: 
 
-tr: GOTO B1_6
-
+tr: GOTO B1_4a IF wohnpar=1 AND h_split=1 (50%)
+    GOTO B1_4b IF wohnpar=1 AND h_split=2 (50%)
+    GOTO B1_2 IF wohnpar=0 
+    
 hi: 
 
 
@@ -562,7 +564,7 @@ fo:
 
 tr:
 
-GOTO B1_7
+GOTO B1_8
 
 hi:
 
@@ -614,7 +616,7 @@ fo:
 
 tr:
 
-GOTO B1_8
+GOTO A_28
 
 hi:
 
@@ -686,7 +688,7 @@ fo:
 
 tr:
 
-GOTO next modul
+GOTO A_34
 
 hi:
 
