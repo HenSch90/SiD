@@ -429,7 +429,7 @@ hv:
 
 fo: 
 
-tr: GOTO D2_6
+tr: GOTO D2_6a
 
 hi: 
 
