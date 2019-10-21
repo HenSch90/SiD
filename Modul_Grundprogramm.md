@@ -43,7 +43,7 @@ hv:
 
 fo:
 
-tr: GOTO SDK-scr01
+tr: GOTO A_1
 
 hi:
 
@@ -1397,7 +1397,8 @@ hv:
 
 fo: 
 
-tr: GOTO A_22
+tr: GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
+    GOTO A_22 if mastersplit=3, 4, 9, 10, 13
 
 hi: 
 
@@ -1442,7 +1443,8 @@ hv:
 
 fo: 
 
-tr: GOTO A_22
+tr: GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
+    GOTO A_22 if mastersplit=3, 4, 9, 10, 13
 
 hi: 
 
@@ -2045,7 +2047,8 @@ hv:
 
 fo:
 
-tr: GOTO A_33
+tr: GOTO B2_1 if mastersplit=1, 2, 3, 4, 5, 6, 13
+    GOTO A_33 if mastersplit=7, 8, 9, 10, 11, 12
 
 hi:
 
@@ -2121,12 +2124,14 @@ Berufsbezeichnung: Eingabefeld Eingabefeld
 
 Tätigkeitsbeschreibung: Eingabefeld Eingabefeld
 
-weiß ich nicht Kästchen Kästchen
+weiß ich nicht Kästchen
 
 o Bei Angabe von „weiß ich nicht“, sollen die Textfelder in der jeweiligen
 Spalte bitte nicht ausgefüllt werden können und umgekehrt (Exklusivkategorie).
 
-tr: GOTO A_34
+tr: GOTO B2_2a if mastersplit=1, 2, 3, 4, 5, 6, 13 AND h_split2==1 (50%)
+    GOTO B2_2b if mastersplit=1, 2, 3, 4, 5, 6, 13 AND h_split2==2 (50%)
+    GOTO B1_6 if mastersplit=7, 8, 9, 10, 11, 12
 
 hi:
 
@@ -2177,9 +2182,9 @@ hv:
 fo:
 
 tr: GOTO A_35 if deltgebv=2 OR deltgebm=2
-    GOTO A_37a if deltgebv=1 AND deltgebm=1 (50%)
-    GOTO A_37b if deltgebv=1 AND deltgebm=1 (50%)
-
+    GOTO A_38 if deltgebv=1 AND deltgebm=1
+    GOTO A_38 if deltgebv=MISSING AND deltgebm=MISSING 
+    
 hi:
 
 \------------------------------------------------------------
@@ -2511,7 +2516,7 @@ hv:
 fo: Softreminder: Bitte den Text „[Textfeld; 12 Stellen]“ erst dann einblenden,
 wenn die PLZ nicht angegeben wurde.
 
-tr: GOTO A_38
+tr: GOTO A_41
 
 hi:
 
@@ -2558,7 +2563,7 @@ hv:
 
 fo:
 
-tr: GOTO A_38
+tr: GOTO A_41
 
 hi:
 
@@ -2690,7 +2695,8 @@ hv:
 
 fo: Bitte die Beispiele in Klammern in etwas kleinerer Schriftgröße (2pt kleiner) umsetzen.
 
-tr: GOTO A_40
+tr: GOTO D1_1 if (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14) AND (vsbtyp1=1 OR vsbtyp2=1 OR vsbtyp3=1 OR vsbtyp4=1 OR vsbtyp5=1 OR vsbtyp6=1 OR vsbtyp7=1 OR vsbtyp8=1 OR vsbtyp9=1)
+    GOTO A_40 IF ELSE
 
 hi:
 
@@ -2788,7 +2794,10 @@ hv:
 
 fo:
 
-tr: GOTO A_41
+tr: GOTO A_37a if deltgebv=1 AND deltgebm=1 AND h_split=1 (50%)
+    GOTO A_37b if deltgebv=1 AND deltgebm=1 AND h_split=2 (50%)
+    GOTO A_37a if deltgebv=MISSING AND deltgebm=MISSING AND h_split=1 (50%)
+    GOTO A_37b if deltgebv=MISSING AND deltgebm=MISSING AND h_split=2 (50%)
 
 hi:
 
@@ -2838,8 +2847,9 @@ hv:
 fo:
 
 tr: GOTO A_42 if vausbja=1
-    GOTO D1_4 if vausbja=2 OR ausbja=3
+    GOTO D1_4 if (vausbja=2 OR ausbja=3) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
     GOTO A_42 if vausbja=MISSING
+    
 hi:
 
 \------------------------------------------------------------
@@ -2889,9 +2899,13 @@ hv:
 
 fo:
 
-tr: GOTO A_44 if eaktsens=1
-    GOTO A_43 if eaktsens=2 OR eaktsens=3 OR eaktsens=4
-    GOTO A_44 if eaktsens=MISSING
+tr: GOTO A_43 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
+    GOTO D1_9 IF eaktsens=1 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+    GOTO D1_9 IF eaktsens=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+    GOTO D2_6 IF eaktsens=1 AND mastersplit=5, 6, 11, 12
+    GOTO D2_6 IF eaktsens=MISSING AND mastersplit=5, 6, 11, 12
+   
+    
 hi:
 
 \------------------------------------------------------------
@@ -2969,8 +2983,9 @@ hv:
 
 fo: It1 den Text “Tätigkeit A” nicht anzeigen
 
-tr: GOTO D3_19
-
+tr: GOTO D3_19 IF mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO D1_9 IF mastersplit=1, 2, 7, 8
+    
 hi:
 
 \------------------------------------------------------------
@@ -3016,9 +3031,12 @@ hv:
 
 fo:
 
-tr: GOTO  if sabsja=1
-    GOTO A_45 if sabsja=2
-    GOTO  if sabsja=MISSING
+tr: GOTO A_49a IF sabsja=1 AND sabser=1
+    GOTO A_49b IF sabsja=1 AND sabser\>1
+    GOTO A_45 IF sabsja=2
+    GOTO A_49a IF sabsja=MISSING AND sabser=1
+    GOTO A_49b IF sabsja=MISSING AND sabser\>1
+    
 hi:
 
 \------------------------------------------------------------
@@ -3150,8 +3168,7 @@ hv:
 fo:
 
 tr: GOTO A_47
-    GOTO D1_10 if mastersplit=
-    
+        
 hi:
 
 \------------------------------------------------------------
@@ -3246,11 +3263,9 @@ hv:
 
 fo:
 
-tr:
-
-GOTO A_49a IF sabser=1
-
-GOTO A_49b IF sabser\>1
+tr: GOTO D1_10 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+    GOTO A_49a IF (mastersplit=5, 6, 11, 12, 13) AND (sabser=1)
+    GOTO A_49b IF (mastersplit=5, 6, 11, 12, 13) AND (sabser\>1)
 
 hi:
 
@@ -3305,10 +3320,21 @@ hv:
 
 fo:
 
-tr:
-
-GOTO A_50
-
+tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     GOTO KSM-anf02 IF (mastersplit=7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     GOTO KSM-anf01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     GOTO KSM-anf02 IF (mastersplit=8, 10, 12) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=2) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     
+     GOTO KSM-ma01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND sabsan=1 AND ssemfs>5
+     GOTO KSM-ma01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND sabsan=1 AND ssemfs>5
+          
+     GOTO KSM-phd01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
+     GOTO KSM-phd01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
+          
+     GOTO A_50 IF zusatzsplit=1 OR zusatzsplit=3 OR zusatzsplit=4
+     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=1 AND imausl=1)
+     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=MISSING OR imausl=MISSING)
+     
 hi:
 
 \------------------------------------------------------------
@@ -3360,9 +3386,21 @@ hv:
 
 fo:
 
-tr:
-
-GOTO A_50
+tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     GOTO KSM-anf02 IF (mastersplit=7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     GOTO KSM-anf01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     GOTO KSM-anf02 IF (mastersplit=8, 10, 12) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=2) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
+     
+     GOTO KSM-ma01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND sabsan=1 AND ssemfs>5
+     GOTO KSM-ma01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND sabsan=1 AND ssemfs>5
+          
+     GOTO KSM-phd01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
+     GOTO KSM-phd01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
+          
+     GOTO A_50 IF zusatzsplit=1 OR zusatzsplit=3 OR zusatzsplit=4
+     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=1 AND imausl=1)
+     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=MISSING OR imausl=MISSING)
+     
 
 hi:
 
@@ -3415,14 +3453,11 @@ hv:
 
 fo:
 
-tr: GOTO A_51a if ssweja=2 OR saweja=2 OR shwja=2 OR ssuja=2 (50%)
-    GOTO A_51B if ssweja=2 OR saweja=2 OR shwja=2 OR ssuja=2 (50%)
-    
-    GOTO D1_15 if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=
-    GOTO D1_15 if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=  
-    
-    GOTO A_51a if SYSTEMMISSING (50%)
-    GOTO A_51b if SYSTEMMISSING (50%)
+tr: GOTO D1_14 IF (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
+    GOTO A_51a if ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2 AND h_split=1 (50%)
+    GOTO A_51B if ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2 AND h_split=2 (50%)
+    GOTO A_51a if SYSTEMMISSING AND h_split=1 (50%)
+    GOTO A_51b if SYSTEMMISSING AND h_split=2 (50%)
  
 hi:
 
@@ -3481,9 +3516,8 @@ hv:
 
 fo:
 
-tr:
-
-GOTO A_52
+tr: GOTO D1_20 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+    GOTO A_52 IF mastersplit=5, 6, 11, 12, 13	
 
 hi:
 
@@ -3542,7 +3576,8 @@ hv:
 
 fo:
 
-tr: GOTO A_52
+tr: GOTO D1_20 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+    GOTO A_52 IF mastersplit=5, 6, 11, 12, 13	
 
 hi:
 
@@ -3607,8 +3642,9 @@ hv:
 
 fo:
 
-tr: GOTO D3_1 if mastersplit=
-    GOTO A_53 if mastersplit=
+tr: GOTO D3_1 if mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO A_53 IF mastersplit=1, 2, 7, 8, 13	
+
   
 hi:
 
@@ -3671,11 +3707,12 @@ hv:
 
 fo:
 
-tr: GOTO D3_2 if mastersplit=
-    GOTO B1_2 if mastersplit=
-    GOTO B2_5 if mastersplit=
-    GOTO A_54 if mastersplit=
-
+tr: GOTO D3_2 IF wohnal=0 AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO D3_2 IF wohnal=MISSING AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO D3_4 IF wohnal=1 AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO B2_5 IF mastersplit=7, 8, 13
+    GOTO B1_5 IF mastersplit=1, 2
+  
 hi:
 
 \------------------------------------------------------------
@@ -3780,12 +3817,12 @@ hv:
 
 fo:
 
-tr: GOTO F1_1 if mastersplit= AND BILDUNGSAUSLÄNDER
-    GOTO F1_2 if mastersplit= AND STUDIERENDER IM AUSLAND
-    GOTO F1_3 if mastersplit= AND NICHT BILDUNGSAUSLÄNDER/NICHT AUSLAND
-    GOTO E1_1 if mastersplit= AND zusatzsplit=1
-    GOTO E1_3 if mastersplit= AND zusatzsplit=3
-    GOTO E1_4 if mastersplit= AND zusatzsplit=4
+tr: GOTO F1_1 if mastersplit=2, 4, 6, 8, 10, 12, 14
+    GOTO E1_1 if mastersplit=1, 3, 5, 7, 9, 11, 13 AND zusatzsplit=1
+    GOTO KSM-pol01 if mastersplit=1, 3, 5, 7, 9, 11, 13 AND zusatzsplit=3
+    GOTO KSM-fai01 if mastersplit=1, 3, 5, 7, 9, 11, 13 AND zusatzsplit=4
+    GOTO A_56 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2
+    GOTO A_56 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1)
 
 hi:
 
