@@ -146,7 +146,7 @@ fo:
 
 tr:
 
-GOTO D2_3
+GOTO A_22
 
 hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
 
@@ -363,15 +363,83 @@ fo:
 
 tr:
 
-GOTO D2_6
+GOTO B1_7 if mastersplit=1, 2, 5, 6
+GOTO A_28 if mastersplit=7, 8, 11, 12, 14
 
 hi:
+
+
+
+**------------------------------------------------------------**
+
+**Vereinbarkeit Studium**
+
+D2_6
+-------
+
+tc:
+
+vn: sver (sverkin; sverbeein; svererwerb; svercare)
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in: 
+
+q: Inwieweit kann man aus Ihrer Perspektive ein Studium mit folgenden Aspekten vereinbaren?
+
+is: 
+
+it1: (sverkin): Elternschaft
+
+it1: (sverbeein): gesundheitlicher Beeinträchtigung
+
+it1: (svererwerb): Erwerbstätigkeit?
+
+it1: (svercare): Pflegeaufgaben?
+
+st:
+
+ao1: 1: überhaupt nicht vereinbar
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr gut vereinbar
+
+ao6: 6: weiß ich nicht
+
+mv: 
+
+ka: 
+
+vc: 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr: GOTO D2_6
+
+hi: 
+
+
 
 **------------------------------------------------------------**
 
 **SSCO 1**
 
-D2_6
+D2_6a
 -------
 
 tc:
@@ -1322,7 +1390,7 @@ D2_21
 
 tc:
 
-vn: sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11; sszustud12; sszustud13
+vn: sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11; sszustud12; sszustud13; sszustud14/ sszustud15/ sszustud16/ sszustud17
 
 qt: Einfachauswahlmatrix
 
@@ -1334,7 +1402,7 @@ q: Wie zufrieden sind Sie – insgesamt betrachtet – mit den folgenden Aspekte
 
 is:
 
-it1: (sszustud1): Fachliche Kompetenz der Lehrenden
+it1: (sszustud1): fachliche Kompetenz der Lehrenden
 
 it2: (sszustud2): Vermittlung des Lehrstoffs durch die Lehrenden (Didaktik)
 
@@ -1342,13 +1410,13 @@ it3: (sszustud3): Betreuung und Beratung durch die Lehrenden
 
 it4: (sszustud4): Klima/Atmosphäre im Studiengang
 
-it5: (sszustud5): Inhaltliche Breite/Vielfalt des Studienangebots
+it5: (sszustud5): inhaltliche Breite/Vielfalt des Studienangebots
 
 it6: (sszustud6): Verknüpfung von Theorie- und Praxisanteilen
 
 it7: (sszustud7): Aufbau und Struktur des Studiengangs insgesamt
 
-it8: (sszustud8): Räumliche und sachliche Ausstattung Ihrer Hochschule
+it8: (sszustud8): räumliche und sachliche Ausstattung Ihrer Hochschule
 
 it9: (sszustud9): Service- und Beratungsleistungen an Ihrer Hochschule
 
@@ -1359,6 +1427,14 @@ it11: (sszustud11): Ihrer Studienleistungen
 it12: (sszustud12): Ihrem Studienfortschritt
 
 it13: (sszustud13): Ihrem bisher erreichten Wissen und Können (Studienertrag insgesamt)
+
+it14: (sszustud14) : Vereinbarkeit von Studium und Elternschaft
+
+it15: (sszustud15) : Vereinbarkeit von Studium und gesundheitlicher Beeinträchtigung
+
+it16: (sszustud16) : Vereinbarkeit von Studium und Erwerbstätigkeit
+
+it17: (sszustud17) : Vereinbarkeit von Studium und Pflegeaufgaben
 
 st:
 
@@ -1376,7 +1452,13 @@ mv: -13: kann ich nicht beurteilen
 
 ka:
 
-vc:
+vc1: SHOW sszustud14 IF dkinja=2
+
+vc2: SHOW sszustud15 IF gartmob=1 or/and gartseh=1 or/and gartohr=1 or/and gartspr=1 or/and gartpsy=1 or/and gartsom=1 or/and garttls=1 or/and gartson=1 or/and gartka=1
+
+vc3: SHOW sszustud16 IF eaktsens=2 or eaktsens=3 or eaktsens=4
+
+vc4: SHOW sszustud17 IF pflegang=2
 
 av:
 
