@@ -1233,57 +1233,6 @@ fo:
 
 tr:
 
-GOTO F3_18
-
-hi:
-
-\--------------------------------
-
-F3_18
-=====
-
-tc: Die Frage erhalten ausschließlich Studierende, die beabsichtigen einen
-(weiteren) Auslandsaufenthalt durchzuführen.
-
-vn: aplanpflich
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Ist dieser Auslandsaufenthalt in Ihrem Studiengang verpflichtend
-vorgeschrieben?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: : nein
-
-ao2: 2: : ja
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
 GOTO F3_19
 
 hi:
