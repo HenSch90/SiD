@@ -1,9 +1,7 @@
 D1_1
 =
 
-tc1: NO IF vsbstyp=5 \| 6
-
-tc2: NO IF vsbstyp1-15= 10 \| 11 \| 12 \| 13 \| 14
+tc1:
 
 vn: vtrae; vtraeo
 
@@ -59,11 +57,7 @@ hi:
 D1_2 
 ==
 
-tc1: NO IF vsbstyp=5 \| 6
-
-tc2: NO IF vsbstyp1-15= 10 \| 11 \| 12 \| 13 \| 14
-
-tc3: NO IF …………. (beruflich Qualifizierte 3. BW)
+tc1:
 
 vn: prffach1; prffach2; prffach3; prffach4; prffach5; stdfach1, stdfach2,
 stdfach3, stdfach4, stdfach5; notefach1, notefach2, notefach3, notefach4,
@@ -217,10 +211,7 @@ hv:
 
 fo:
 
-tr:
-
-GOTO 4 \| 7 \| 9 (vausbja=3 weiter mit D1_4; ssemhs= 1 \| 2 \| 01 \| 02 weiter mit
-D1_7; alle anderen weiter mit D1_9)
+tr: GOTO A_40
 
 hi:
 
@@ -388,7 +379,7 @@ fo:
 
 tr:
 
-GOTO 7 \| 9 (ssemhs=1 \| 2 \| 01 \| 02 weiter mit 7; alle anderen weiter mit 9)
+GOTO A_42
 
 hi:
 
@@ -564,7 +555,9 @@ fo:
 
 tr:
 
-GOTO D1_9
+GOTO D2_6 IF mastersplit=1, 2, 7, 8, 14
+GOTO A_44 IF mastersplit=3, 4, 9, 10
+
 
 hi: Items zufällig rotieren
 
@@ -617,9 +610,11 @@ hv:
 
 fo:
 
-tr:
-
-GOTO 10 \| 13 (ssabsja=2 weiter mit D1_10; alle anderen weiter mit D1_13)
+tr: GOTO D1_7 IF (ssemhs=1 OR ssemhs=2) OR (ssemhs=01 OR ssemhs=02)
+    GOTO D1_7 IF ssemhs=MISSING
+    GOTO D2_6 IF (ssemhs>2 OR ssemhs>02) AND (mastersplit=1, 2, 7, 8, 14)
+    GOTO A_44 IF (ssemhs>2 OR ssemhs>02) AND (mastersplit=3, 4, 9, 10)
+       
 
 hi:
 
@@ -706,8 +701,8 @@ fo:
 
 tr:
 
-GOTO 11 \| 12 (sabserbl= 2 \| 3 \| … \| 18 weiter mit D1_11; alle anderen weiter
-mit D1_12)
+GOTO D1_11a IF sabserbl = 2 – 17
+GOTO D1_11b IF sabserbl = 18
 
 hi: Bitte auf zwei Seiten programmieren (Filter“ nein/ja“ (an der derzeitigen
 Hochschule), bei „nein“ erscheinen die Bundesländer 2-18
@@ -859,9 +854,8 @@ hv:
 
 fo:
 
-tr:
-
-GOTO
+tr: GOTO A_49a IF sabser=1
+    GOTO A_49b IF sabser>1
 
 hi:
 
@@ -981,10 +975,10 @@ hv:
 
 fo:
 
-tr:
-
-GOTO 15 \| 16 (bei Angabe bei ssujaaz weiter mit 16; alle anderen weiter mit 15)
-
+tr: GOTO D1_15 IF ssweja=1 OR saweja=1 OR shwja=1
+    GOTO D1_16 IF ssweja=0 AND saweja=0 AND shwja=0 AND ssuja=1
+    
+    
 hi:
 
 \--------------------------------
@@ -1062,10 +1056,12 @@ hv:
 
 fo:
 
-tr:
-
-GOTO 16 \| 17 (ssuja=1 weiter mit D1_16; alle anderen weiter mit D1_17)
-
+tr: GOTO D1_16 IF ssuja=1
+    GOTO A_51a IF ssuja=0 AND h_split=1 (50%)
+    GOTO A_51b IF ssuja=0 AND h_split=2 (50%)
+    GOTO A_51a IF ssuja=MISSING AND h_split=1 (50%)
+    GOTO A_51b IF ssuja=MISSING AND h_split=2 (50%)  
+    
 hi: Wenn techepi=1, bitte zwei weitere Zeilen einblenden.
 
 Das Tableau passt nicht in die gängige Template-Vorlage!
@@ -1142,10 +1138,9 @@ hv:
 
 fo:
 
-tr:
-
-GOTO D1_17
-
+tr: GOTO A_51a IF h_split=1 (50%)
+    GOTO A_51b IF h_split=2 (50%)
+    
 hi: In Abhängigkeit der Antworten auf Seite D1_14 erfolgt eine Einblendung von
 bis zu drei Unterbrechungen, für die je Zeile anhand verschiedener
 Antwortformate Informationen erhoben werden.
@@ -2055,6 +2050,6 @@ fo:
 
 tr:
 
-GOTO nächstes Modul
+GOTO A_52
 
 hi: Items bitte rotieren
