@@ -19,16 +19,14 @@ it:
 
 st:
 
-ao1: 1: : An einer staatlichen Schule
+ao1: 1: : staatliche Schule
 
-ao2: 2: : An einer privaten Schule
+ao2: 2: : private Schule
 
-ao3: 3: : An einer kirchlichen Schule
+ao3: 3: : kirchliche Schule
 
-ao4: 4: : An einer anderen Schule, und zwar: (offene Angabe: Präfix [vtraeo], 50
+ao4: 4: : Andere Schule, und zwar: (offene Angabe: Präfix [vtraeo], 50
 Zeichen)
-
-ao5: 12: : weiß ich nicht
 
 mv:
 
@@ -69,9 +67,7 @@ hl:
 
 in:
 
-q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer, die wöchentliche
-Stundenzahl, Ihre jeweilige Abschlussnote und das Geschlecht Ihrer jeweiligen
-Leher\*in?
+q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer inklusive der jeweiligen wöchentlichen Stundenzahl, der Abschlussnote und des Geschlechts des/der Lehrer*/in.
 
 is: Beziehen Sie Ihre Angaben bitte auf Ihr Abschlussjahr.
 
@@ -177,20 +173,21 @@ hl:
 
 in:
 
-q: Wurden sie jemals in einer integrative arbeitenden Klasse/Inklusionsklasse
+q: Wurden Sie jemals in einer integrativ arbeitenden Klasse/Inklusionsklasse
 unterrichtet oder haben Sie eine Förderschule besucht?
 
-is:
-
-it: Kennzeichnend für eine integrative arbeitende Klasse/Inklusionsklasse ist
+is: Kennzeichnend für eine integrativ arbeitende Klasse/Inklusionsklasse ist
 der gemeinsame Unterricht von Schüler\*innen mit und ohne sonderpädagogischen
 Förderbedarf.
+Bitte alles Zutreffende auswählen.
+
+it: 
 
 st:
 
 ao1: inklnein: : nein, weder noch [Exklusivkategorie]
 
-ao2: inklja: : Ja, ich wurde in einer integrative arbeitenden
+ao2: inklja: : Ja, ich wurde in einer integrativ arbeitenden
 Klasse/Inklusionsklasse unterrichtet.
 
 ao3: inklschu: : Ja, ich war auf einer Förderschule.
@@ -235,7 +232,7 @@ hl:
 in:
 
 q: Bitte geben Sie an, wann Sie Ihre (letzte) Berufsausbildung abgeschlossen
-haben (Zeitpunkt der Zeugnisübergabe):
+haben (Zeitpunkt der Zeugnisübergabe).
 
 is:
 
@@ -248,8 +245,6 @@ Abschlusses der Berufsausbildung
 
 ao2: (vausbzpmo): : Januar\|Februar\|…\|November\|Dezember (Dropdown)
 
-ao3: (vausbzpka): : weiß ich nicht (Exklusivkategorie)
-
 mv:
 
 ka:
@@ -258,7 +253,7 @@ vc:
 
 av: number: vierstellig : 1950 TO 2020
 
-kh: (vausbzpjo) Bitte geben Sie das Jahr des Abschlusses ein.
+kh: (vausbzpjo) Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 bis 2020).
 
 fv:
 
@@ -291,8 +286,7 @@ hl:
 
 in:
 
-q: Welche Berufsausbildung haben Sie (zuletzt) abgeschlossen? Bitte nennen Sie
-den gelernten Beruf.
+q: Welche Berufsausbildung haben Sie (zuletzt) abgeschlossen?
 
 is:
 
@@ -369,7 +363,7 @@ vc:
 
 av: number: dreistellig : 1,0 TO 4,0
 
-kh: Bitte geben Sie Ihren Notendurchschnitt an (0,1 bis 4,0).
+kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
 fv:
 
@@ -412,27 +406,27 @@ it3: (stfwein): Einkommenschancen im späteren Beruf
 
 it4: (stfwber): fester Berufswunsch
 
-it5: (stfwsoz): eine hohe soziale Position zu erreichen
+it5: (stfwsoz): spätere hohe soziale Position
 
 it6: (stfwart): gute Aussichten auf sicheren Arbeitsplatz
 
 it7: (stfwalt): Ausweichlösung, da keine Zulassung im gewünschten Studienfach
 
-it8: (stfwwiss): eine gute wissenschaftliche Ausbildung zu erhalten
+it8: (stfwwiss): Erhalt einer guten wissenschaftlichen Ausbildung
 
-it9: (stfwfam): weil meine Eltern/Familie mir dazu greaten haben
+it9: (stfwfam): Eltern/Familie haben mir dazu geraten
 
-it10: (stfwzeit): wegen der kurzen Studienzeiten
+it10: (stfwzeit): kurze Studienzeiten
 
-it11: (stfwzul): geringe Hürden bei der Zulassung (z. B. keine
+it11: (stfwzul): niedrige Hürden bei der Zulassung (z. B. keine
 Zulassungsbeschränkung)
 
-it12: (stfwhelf): anderen Menschen helfen zu können
+it12: (stfwhelf): Möglichkeit anderen Menschen helfen zu können
 
 it13: (stfwver): Vereinbarkeit meiner Beeinträchtigung mit späteren
 Beschäftigungsmöglichkeiten
 
-it14: (stfwand): anderes, und zwar:
+it14: (stfwand): Anderes, und zwar:
 
 it15: (offene Angabe) 120 Zeichen; Präfix: [stfwando]; Suffix: weiterer Grund:
 
@@ -504,13 +498,13 @@ it5: (hswreg): regionale Nähe zum Heimatort
 it6: (hswbed): günstige Lebensbedingungen am Hochschulort (Wohnen,
 Lebenshaltung)
 
-it7: (hswruf): gutter Ruf der Lehrenden in meinem Fachgebiet
+it7: (hswruf): guter Ruf der Lehrenden in meinem Fachgebiet
 
 it8: (hswfach): gewünschte Fachrichtung
 
 it9: (hswrank): gute Platzierung meines Fachs in Rankings
 
-it10: (hswint): international Ausrichtung des Studienangebotes
+it10: (hswint): internationale Ausrichtung des Studienangebotes
 
 it11: (hsweng): Wunschstudiengang wird auf Englisch angeboten
 
@@ -521,7 +515,7 @@ it13: (hswbarr): gute Ausstattung/Barrierefreiheit
 
 it14: (hswtz): Möglichkeit, in Teilzeit studieren zu können
 
-it15: (hswand): anderes, und zwar:
+it15: (hswand): Anderes, und zwar:
 
 it16: (offene Angabe) 100 Zeichen; Präfix: [hswando]; Suffix: weiterer Grund:
 
@@ -584,15 +578,13 @@ it:
 
 st:
 
-ao1: 1: : Ich studiere in Vollzeit.
+ao1: 1: : Vollzeit
 
-ao2: 2: : Ich studiere in Teilzeit.
+ao2: 2: : Teilzeit
 
-ao3: 3: : Ich studiere in einem Vollzeitstudiengang mit einer individuellen
-Teilzeitregelung.
+ao3: 3: : Vollzeitstudiengang mit individueller Teilzeitregelung.
 
-ao4: 4: : Ich studiere in einem Vollzeitstudiengang, betreibe mein Studium
-jedoch ohne offizielle Regelung als Teilzeitstudium.
+ao4: 4: : Vollzeitstudiengang inoffiziell als Teilzeitstudium
 
 mv:
 
@@ -681,7 +673,7 @@ ao17 (sabserbl): 16: : Schleswig-Holstein
 
 ao18 (sabserbl): 17: : Thüringen
 
-ao19 (sabserbl): 18: : Im Ausland
+ao19 (sabserbl): 18: : im Ausland
 
 mv:
 
@@ -875,7 +867,7 @@ hl:
 
 in:
 
-q: Wann werden Sie voraussichtlich Ihr derzeitiges Studium abschließen?
+q: Wann werden Sie Ihr derzeitiges Studium voraussichtlich abschließen?
 
 is:
 
@@ -1180,7 +1172,7 @@ Kontakte zu anderen Studierenden aufzubauen.
 it6 (sintfach): Ich kenne viele Kommiliton\*innen, mit denen ich mich über
 fachspezifische Fragen austauschen kann.
 
-it7 (sintsem): Ich habe viele KOntakte zu Studierenden aus meinem Semester.
+it7 (sintsem): Ich habe viele Kontakte zu Studierenden aus meinem Semester.
 
 st:
 
@@ -1193,8 +1185,6 @@ ao3: 3
 ao4: 4
 
 ao5: 5: : trifft voll und ganz zu
-
-ao6: -12: : kann ich nicht beurteilen
 
 mv:
 
@@ -1257,8 +1247,6 @@ ao4: 4
 
 ao5: 5: : trifft voll und ganz zu
 
-ao6: -12: : kann ich nicht beurteilen
-
 mv:
 
 ka:
@@ -1296,19 +1284,19 @@ hl:
 
 in:
 
-q:
+q: Bitte beantworten Sie die folgenden Fragen ohne lange nachzudenken.
 
 is:
 
-it1 (sask1): Ich halte meine Begabung für das Studium für …
+it1 (sask1): Ich halte meine Begabung für das Studium für
 
-it2 (sask2): Neues zu lernen im Studium fällt mir …
+it2 (sask2): Im Studium Neues zu lernen fällt mir
 
-it3 (sask3): Meiner Meinung nach bin ich …
+it3 (sask3): Meiner Meinung nach bin ich
 
-it4 (sask4): Meine studienbezogenen Fähigkeiten sind …
+it4 (sask4): Meine studienbezogenen Fähigkeiten sind
 
-it5 (sask5): Aufgaben im Rahmen des Studiums fallen mir …
+it5 (sask5): Aufgaben im Rahmen des Studiums fallen mir
 
 st:
 
@@ -1410,7 +1398,7 @@ it2 (kommeth): Anwendung fachbezogener Methoden
 
 it3 (komwiss): Erarbeitung einer wissenschaftlichen Fragestellung
 
-it4 (komtext): Verstehen von wissenschaftlichen Texten.
+it4 (komtext): Verstehen von wissenschaftlichen Texten
 
 it5 (komkrit): kritisches Denken (eigene Ideen/Ideen anderer in Frage stellen)
 
@@ -1418,7 +1406,7 @@ it6 (komsch): schriftlicher Ausdruck
 
 it7 (kommuen): mündlicher Ausdruck
 
-it8 (komteam): Teamfähigkeit / Zusammenarbeit in einer Gruppe
+it8 (komteam): Teamfähigkeit/Zusammenarbeit in einer Gruppe
 
 it9 (komvera): Übernahme von Verantwortung in einer Gruppe
 
@@ -1436,9 +1424,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: : sehr stark
-
-ao6: -11: : trifft nicht zu
+ao5: 5: : in hohem Maße
 
 mv:
 
@@ -1505,7 +1491,7 @@ ao4: 4
 
 ao5: 5: : sehr gute Kenntnisse
 
-ao6: 6: : ich beherrsche diese Sprache nicht
+ao6: 6: : Ich beherrsche diese Sprache nicht
 
 ao7: 7: : Muttersprache
 
@@ -1564,7 +1550,7 @@ die ich nach einer Antwort suche.
 it4 (dsmein): Ich bin erst zufrieden, wenn ich mich intensiv genug in ein Thema
 eingearbeitet habe, um mir eine eigene Meinung bilden zu können.
 
-it5 (dswiss): Ich überprüfe mein Wissen zu wichtigen Themen bis ich es wirklich
+it5 (dswiss): Ich überprüfe mein Wissen zu wichtigen Themen, bis ich es wirklich
 verstanden habe.
 
 it6 (dsfreiz): Ich nutze meine Freizeit häufig dafür, mehr über interessante
@@ -1581,11 +1567,11 @@ nicht klausurrelevant ist.
 
 it10 (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
 
-it11 (sswied): Manche Dinge wiederhole ich so lange bis ich sie auswendig kann,
+it11 (sswied): Manche Dinge wiederhole ich so lange, bis ich sie auswendig kann,
 selbst wenn ich sie nicht verstehe.
 
 it12 (sszeit): Lehrende sollten nicht erwarten, dass Studierende viel Zeit damit
-verbringen Stoff zu lernen, von dem jeder weiß, dass es nicht geprüft wird.
+verbringen Stoff zu lernen, von dem jeder weiß, dass er nicht geprüft wird.
 
 st:
 
@@ -1683,7 +1669,7 @@ woanders bin.
 it14 (resskonz2): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
 
 it15 (resszeit): Beim Lernen stelle ich einen Zeitplan auf, an den ich mich auch
-halte.\#
+halte.
 
 it16 (lernumg1): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell
 finden kann.
@@ -1757,7 +1743,7 @@ it2 (pbigextro): Ich gehe aus mir raus, bin gesellig.
 it3 (pbigtrau): Ich schenke anderen leicht Vertrauen, glaube an das Gute im
 Menschen.
 
-it4 (pbigkrit): Ich neige dazu, andere zu kritisiereen.
+it4 (pbigkrit): Ich neige dazu, andere zu kritisieren.
 
 it5 (pbiggenau): Ich erledige Aufgaben gründlich.
 
@@ -1938,7 +1924,7 @@ hl:
 
 in:
 
-q: Wie haben Sie sich in den letzten vier Wochen übeerwiegend gefühlt?
+q: Wie haben Sie sich in den letzten vier Wochen überwiegend gefühlt?
 
 is:
 
@@ -1998,7 +1984,7 @@ hl:
 
 in:
 
-q: Wie fühlen Sie sic him Allgemeinen?
+q: Wie fühlen Sie sich im Allgemeinen?
 
 is:
 
@@ -2012,15 +1998,15 @@ it4 (deptrau): Ich bin traurig.
 
 it5 (depverz): Ich bin verzweifelt.
 
-it6 (depgedr): Ich bin in gedrückter Stimmung
+it6 (depgedr): Ich bin in gedrückter Stimmung.
 
 it7 (depgut): Ich fühle mich gut.
 
 it8 (depsich): Ich fühle mich sicher.
 
-it9 (depruhe): Ich ruhig und gelassen.
+it9 (depruhe): Ich bin ruhig und gelassen.
 
-it10 (depspass): Das Leben macht mir Spass.
+it10 (depspass): Das Leben macht mir Spaß.
 
 st:
 
