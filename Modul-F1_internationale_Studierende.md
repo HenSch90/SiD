@@ -290,9 +290,21 @@ hv:
 fo:
 
 tr: 
-IF Deutsche Studierende GOTO F3_6
-IF Internationale Studierende GOTO F1_6
-IF Deutsche Studierende aktuell im Ausland GOTO F2_6 
+GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=1)
+GOTO F1_6 IF (vsbdeba=2 AND dnatausl=1 AND imausl=1)
+GOTO F2_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=2)
+
+GOTO F2_6 IF (vsbdeba=1 AND dnatdeu=MISSING AND imausl=2)
+GOTO F2_6 IF (vsbdeba=MISSING AND dnatdeu=1 AND imausl=2)
+GOTO F2_6 IF (vsbdeba=MISSING AND dnatdeu=MISSING AND imausl=2)
+
+GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=MISSING)
+GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=MISSING AND imausl=1)
+GOTO F3_6 IF (vsbdeba=MISSING AND dnatdeu=1 AND imausl=1)
+
+GOTO F1_6 IF (vsbdeba=2 AND dnatausl=1 AND imausl=MISSING)
+GOTO F1_6 IF (vsbdeba=2 AND dnatausl=MISSING AND imausl=1)
+GOTO F1_6 IF (vsbdeba=2 AND dnatausl=MISSING AND imausl=MISSING)
 
 hi:
 
@@ -874,7 +886,7 @@ hv:
 
 fo:
 
-tr: GOTO F1\_
+tr: GOTO F1_16
 
 hi: 16
 
@@ -1405,6 +1417,6 @@ hv:
 
 fo:
 
-tr: GOTO nächstes Modul
+tr: GOTO A_56
 
 hi:
