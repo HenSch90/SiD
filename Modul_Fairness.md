@@ -336,7 +336,7 @@ it:
 
 st:
 
-ao1: 1: gar nicht gerechtfertigt
+ao1: 1: völlig gerechtfertigt
 
 ao2: 2:
 
@@ -344,7 +344,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: völlig gerechtfertigt
+ao5: 5: gar nicht gerechtfertigt
 
 mv:
 
