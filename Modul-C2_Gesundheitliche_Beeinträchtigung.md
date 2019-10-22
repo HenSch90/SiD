@@ -112,8 +112,7 @@ hl:
 
 in:
 
-q: Sind Sie aufgrund Ihrer Beeinträchtigung(en) auf die folgenden Bedarfe
-angewiesen?
+q: Haben Sie aufgrund Ihrer Beeinträchtigung spezielle Bedürfnisse?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -124,7 +123,7 @@ st:
 ao1 (bedno): nein [EK]
 
 ao2 (bedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge,
-selbstöffnende Türen, Behinderten-WCs)
+selbstöffnende Türen, barrierefreie WCs)
 
 ao3 (bedori): taktile, optische oder akustische Leitsysteme, Wegbeschreibungen
 oder Orientierungshilfen
@@ -148,11 +147,11 @@ Gebärdensprachdolmetscher\*in)
 ao10 (bedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen
 Reader, Braille-Zeile, FM-Anlage)
 
-ao11 (bedand): anderes, und zwar: [[bedando] 250 Zeichen]
+ao11 (bedand): Anderes, und zwar: [[bedando] 250 Zeichen]
 
 mv:
 
-ka (ao2 TO ao11): ja, und zwar:
+ka (ao2 TO ao11): Ja, und zwar:
 
 vc:
 
@@ -244,7 +243,7 @@ it:
 
 st:
 
-ao1: 1: : Nein.
+ao1: 1: : nein
 
 ao2: 2: : Ja, möglicherweise nach einiger Zeit.
 
@@ -286,7 +285,7 @@ hl:
 
 in:
 
-q: Haben Sie einen „Schwerbehindertenausweis“?
+q: Haben Sie einen Schwerbehindertenausweis?
 
 is:
 
@@ -298,9 +297,7 @@ ao1: 1: : Nein, habe ich nicht beantragt.
 
 ao2: 2: : Nein, weil keine Behinderung festgestellt wurde.
 
-ao3: 3: : Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
-
-ao4: 4: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo1), number, 3
+ao4: 3: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo1), number, 3
 Zeichen]
 
 mv:
@@ -411,7 +408,7 @@ Praktika)
 ao3 (schwpru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art
 der Prüfungen, zeitliche Vorgaben)
 
-ao4 (schwand): andere Studienbereiche, und zwar: [(schwando): 250 Zeichen]
+ao4 (schwand): Anderer Studienbereich, und zwar: [(schwando): 250 Zeichen]
 
 ao5 : keine beeinträchtigungsbedingten Schwierigkeiten [EK]
 
@@ -470,7 +467,7 @@ Praktika)
 it3: (ntapru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art
 der Prüfungen, zeitliche Vorgaben)
 
-it4: (ntaand): andere Studienbereiche, und zwar: [(ntaando): 250 Zeichen]
+it4: (ntaand): Anderer Studienbereich, und zwar: [(ntaando): 250 Zeichen]
 
 st:
 
@@ -534,7 +531,7 @@ Praktika)
 it3: (ntahpru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art
 der Prüfungen, zeitliche Vorgaben)
 
-it4: (ntahand): andere Studienbereiche, und zwar: [(ntahando), 250 Zeichen]
+it4: (ntahand): Anderer Studienbereich, und zwar: [(ntahando), 250 Zeichen]
 
 st:
 
@@ -547,10 +544,6 @@ ao3: 3: 3
 ao4: 4: 4
 
 ao5: 5: 5: gar nicht hilfreich
-
-ao6:
-
-mv: 6: 6: Nicht um individuelle Anpassung gebeten
 
 ka:
 
@@ -627,7 +620,7 @@ ao9 (nbmiss): Ich glaube nicht, dass sich meine Situation ändern lässt.
 
 ao10 (nbkons): Weil ich dadurch Nachteile im weiteren Studium befürchte.
 
-ao11 (nband): aus anderen Gründen, und zwar: [(nbando), 350 Zeichen]
+ao11 (nband): Aus anderen Gründen, und zwar: [(nbando), 350 Zeichen]
 
 mv:
 
@@ -684,23 +677,23 @@ ao3 (kbwert): Ersatzleistung wurde nicht als gleichwertig angesehen.
 ao4 (kbbev): Individuelle Anpassung/Absprache bzw. Nachteilsausgleich wird als
 Bevorzugung angesehen.
 
-ao5 (kblehr): Lehrende® war nicht dazu bereit, Lehrroutinen zu ändern.
+ao5 (kblehr): Lehrende\*r war nicht dazu bereit, Lehrroutinen zu ändern.
 
-ao6 (kbtech): technische Probleme (z.B. fehlende Ausstattung)
+ao6 (kbtech): Aufgrund technischer Probleme (z. B. fehlende Ausstattung).
 
-ao7 (kborga): organisatorische Probleme (z.B. keine Raum- oder Prüfungsverlegung
-möglich)
+ao7 (kborga): Aufgrund organisatorischer Probleme (z. B. keine Raum- oder Prüfungsverlegung
+möglich).
 
-ao8 (kbatt): fehlende Nachweise (z.B. fachärztliches Attest,
-Schwerbehindertenausweis)
+ao8 (kbatt): Aufgrund fehlender Nachweise (z. B. fachärztliches Attest,
+Schwerbehindertenausweis).
 
-ao9 (kbzeit): zu spät beantragt
+ao9 (kbzeit): Nachteilsausgleiche und/oder individuellen Anpassungen/Absprachen wurden zu spät beantragt.
 
-ao10 (kband): anderer Grund, und zwar: [(kbando), 250 Zeichen]
+ao10 (kband): Anderer Grund, und zwar: [(kbando), 250 Zeichen]
 
-ao12 (kbunbe): mir nicht bekannt
+ao12 (kbunbe): Ist mir nicht bekannt.
 
-ao13 (kbmem): weiß nicht mehr
+ao13 (kbmem): Weiß ich nicht mehr.
 
 mv:
 
@@ -754,24 +747,24 @@ it3: bepsy: psychologische Beratungsstelle des Studentenwerks/der Hochschule
 it4: bestud: Beratung für Studierende mit Behinderungen/Beeinträchtigungen des
 AStA, StuRa, UStA etc.
 
-it5: beselb: studentische Behindertenselbsthilfe (BHSA, DVBS, BAG Behinderung
-und Studium u. a.)
+it5: beselb: studentische Behindertenselbsthilfe (u. a. BHSA, DVBS, BAG Behinderung
+und Studium)
 
 it6: beand: studienbezogene Beratung anderer Selbsthilfevereinigungen
 
-it7: beandhs: (andere) beeinträchtigungsspezifische Beratungsangebote an ++der
+it7: beandhs: (Anderes) beeinträchtigungsspezifisches Beratungsangebot ++an der
 Hochschule++, und zwar: [(beandhso), 150 Zeichen]
 
-it8: beandauß: (andere) beeinträchtigungsspezifische Beratungsangebote
-++außerhalb++ der Hochschule, und zwar: [(beandaußo), 150 Zeichen]
+it8: beandauß: (Anderes) beeinträchtigungsspezifisches Beratungsangebot
+++außerhalb der Hochschule++, und zwar: [(beandaußo), 150 Zeichen]
 
 st:
 
-ao1: 1: : habe ich genutzt
+ao1: 1: : kenne ich nicht/sind nicht vorhanden
 
 ao2: 2: : kenne ich, aber nicht genutzt
 
-ao3: 3: : kenne ich nicht/sind nicht vorhanden
+ao3: 3: : habe ich genutzt
 
 mv:
 
@@ -827,14 +820,14 @@ it3: (behpsy): psychologische Beratungsstelle des Studentenwerks/der Hochschule
 it4: (behstud): Beratung für Studierende mit Behinderungen/Beeinträchtigungen
 des AStA, StuRa, UStA etc.
 
-it5: (behselb): studentische Behindertenselbsthilfe (BHSA, DVBS, BAG Behinderung
-und Studium u. a.)
+it5: (behselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS, BAG Behinderung
+und Studium)
 
 it6: (behand): studienbezogene Beratung anderer Selbsthilfevereinigungen
 
 st:
 
-ao1: 1: 1: sehr hilfreich
+ao1: 1: 1: gar nicht hilfreich
 
 ao2: 2: 2
 
@@ -842,7 +835,7 @@ ao3: 3: 3
 
 ao4: 4: 4
 
-ao5: 5: 5: gar nicht hilfreich
+ao5: 5: 5: sehr hilfreich
 
 mv:
 
