@@ -1214,10 +1214,10 @@ hl:
 
 in:
 
-q: Sie wurden von der Hochschule [Preload-Token: Hochschulname] eingeladen, studieren Sie hier aktuell?
+q: Sie haben bei Ihrer letzten Befragung angegeben, dass Sie an der Hochschule: [Preload-Token: Hochschulname] studieren?
 
-is: Falls Sie an mehreren Hochschulen eingeschrieben sind, beziehen Sie Ihre Antwort auf diese und alle weiteren Fragen bitte auf die Hochschule, an der Sie den für Sie gegenwärtig wichtigeren Studiengang studieren. 
-Falls Sie aktuell an einer anderen Hochschule studieren, kreuzen Sie bitte “Nein” an.
+is: Falls Sie aktuell an einer anderen Hochschule studieren, kreuzen Sie bitte “Nein” an.
+Falls Sie an mehreren Hochschulen eingeschrieben sind, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
 
 it:
 
