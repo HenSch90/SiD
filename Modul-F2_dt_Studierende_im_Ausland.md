@@ -70,9 +70,9 @@ fo:
 
 tr:
 
-GOTO F2_7 (ainfasia=3-8 OR ainfasia=1-2 AND hsstand=1 \| hsstandbl=1-16
+GOTO F2_7 IF ainfasia=3-8 OR (ainfasia=1-2 AND (hsstand=1 OR hsstandbl=1-16)
 
-GOTO F2_8 (else)
+GOTO F2_8 IF ainfasia=1-2 AND hsstandlao>0
 
 hi:
 
@@ -323,7 +323,7 @@ hi:
 
 \--------------------------------
 
-11
+F2_11
 ==
 
 tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
@@ -936,6 +936,5 @@ fo:
 
 tr:
 
-GOTO nächstes Modul
-
+GOTO A_56
 hi:
