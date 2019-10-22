@@ -56,7 +56,6 @@ tr: GOTO A_33
 
 hi: Hilfsvariable muss an vorheriger Stelle generiert werden
 
-h_split2 = 50/50-Split; values (1;2) zufällig aufgeteilt, 1=2a; 2=2b
 
 \--------------------------
 
@@ -158,8 +157,8 @@ hv:
 
 fo:
 
-tr: GOTO B2_3a if h_split=1 (50%)
-    GOTO B2_3b if h_split=2 (50%)
+tr: GOTO B2_3a IF h_split=1 (50%)
+    GOTO B2_3b IF h_split=2 (50%)
 
 hi: Zwischenüberschriften zwischen den ao’s möglich?
 
@@ -285,8 +284,8 @@ hv:
 
 fo: siehe mitgeliefertes Template
 
-tr: GOTO B2_3a if h_split=1 (50%)
-    GOTO B2_3b if h_split=2 (50%)
+tr: GOTO B2_3a IF h_split=1 (50%)
+    GOTO B2_3b IF h_split=2 (50%)
 
 \--------------------------
 
@@ -485,7 +484,7 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO B2_5
+tr: GOTO B2_7
 
 hi:
 
@@ -557,7 +556,7 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO 
+tr: GOTO B2_4
 
 hi:
 
@@ -706,12 +705,9 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr:
-
->   GOTO B2_8a IF sabsan = 1 \| sabsan = 2
-
->   ELSE GOTO B2_8b
-
+tr: GOTO B2_9a if h_split=1 (50%)
+    GOTO B2_9b if h_split=2 (50%)
+    
 hi:
 
 \--------------------------
@@ -902,7 +898,8 @@ hv:
 
 fo: ao10 absetzen
 
-tr: GOTO B2_10
+tr: GOTO D3_13 IF masterplan=9, 10, 11, 12
+    GOTO A_54 IF masterplan=7, 8, 14
 
 hi:
 
@@ -961,7 +958,9 @@ hv:
 
 fo: ao7 absetzen
 
-tr: GOTO B2_10
+tr: GOTO D3_13 IF masterplan=9, 10, 11, 12
+    GOTO A_54 IF masterplan=7, 8, 14
+
 
 hi:
 
