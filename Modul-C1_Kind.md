@@ -156,27 +156,27 @@ hl:
 
 in:
 
-q: Kannten Sie jemanden, der bereits vor Ihnen mit Kind studiert hat?
+q: Kannten Sie jemanden, der bereits vor Ihnen mit Kind(ern) studiert hat?
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1 (dkinroelt): Eltern
+ao1 (dkinrono): nein, niemanden [EK] 
 
-ao2 (dkinroges): Geschwister
+ao2 (dkinroelt): Eltern
 
-ao3 (dkinrover): andere Verwandte
+ao3 (dkinroges): Geschwister
 
-ao4 (dkinrokom): Kommiliton\*innen
+ao4 (dkinrover): andere Verwandte
 
-ao5 (dkinrofr): Freunde
+ao5 (dkinrokom): Kommiliton\*innen
 
-ao6 (dkinroan): andere Person, und zwar... [dkinroano, 50 Zeichen, 30pt]
+ao6 (dkinrofr): Freunde
 
-ao7 (dkinrono): nein, niemanden [EK]
+ao7 (dkinroan): Andere Person(en), und zwar... [dkinroano, 50 Zeichen, 30pt]
 
 mv:
 
@@ -317,7 +317,7 @@ q3: Wenn Sie an eine typische Woche denken: Wer betreut wie häufig Ihre Kinder?
 
 is:
 
-it1: (dkinbesel) : Ich selbst
+it1: (dkinbesel) : ich selbst
 
 it2: (dkinbepar): Partner\*in
 
@@ -333,13 +333,13 @@ it7: (dkinbesit): bezahlter Babysitter
 
 it8: (dkinbetag): Tagesmutter
 
-it9: (dkinbealo): Das Kind/die Kinder bleibt/bleiben alleine.
+it9: (dkinbealo): Das Kind bleibt/Die Kinder bleiben alleine.
 
-it10: (dkinbeson, dkinbesono): sonstige Person, und zwar: [50 Zeichen, 60pt]
+it10: (dkinbeson, dkinbesono): Sonstige Person, und zwar: [50 Zeichen, 60pt]
 
 st:
 
-ao1: 1: 1: fast nie
+ao1: 1: 1: nie
 
 ao2: 2: 2
 
@@ -347,7 +347,7 @@ ao3: 3: 3
 
 ao4: 4: 4
 
-ao5: 5:5: sehr häufig
+ao5: 5: 5: sehr häufig
 
 mv:
 
@@ -390,7 +390,7 @@ hl:
 in:
 
 q1: Wenn Sie an eine typische Woche denken: Inwieweit nutzen Sie die folgenden
-Einrichtungen zur Betreuung Ihres Kindes/ Ihrer Kinder?
+Einrichtungen zur Betreuung Ihres Kindes/Ihrer Kinder?
 
 q2: Wenn Sie an eine typische Woche denken: Inwieweit nutzen Sie die folgenden
 Einrichtungen zur Betreuung Ihres Kindes?
@@ -400,9 +400,9 @@ Einrichtungen zur Betreuung Ihrer Kinder?
 
 is:
 
-it1: (dkinbekihs): Kita der Hochschule/des Studentenwerks
+it1: (dkinbekihs): Kita an der Hochschule
 
-it2: (dkinbehsa): weitere hochschulspezifische Angebote
+it2: (dkinbehsa): weitere hochschulspezifische Betreuungsangebote
 
 it3: (dkinbeki): andere Kita (Kindergarten, Hort, Krippe)
 
@@ -410,12 +410,12 @@ it4: (dkinbehts): Halbtagsschule
 
 it5: (dkinbegts): Ganztagsschule
 
-it6: (dkinbesoe, dkinbesoeo): sonstige Einrichtung, und zwar: [50 Zeichen,
+it6: (dkinbesoe, dkinbesoeo): Sonstige Einrichtung, und zwar: [50 Zeichen,
 60pt]
 
 st:
 
-ao1: 1: 1: fast nie
+ao1: 1: 1: nie
 
 ao2: 2: 2
 
@@ -547,7 +547,7 @@ it6: (dkinsuinf): Informationsangebote
 
 it7: (dkinsuber): Studienberatung für Studierende mit Kind
 
-it8: (dkinsubar): Barrierefreie Zugänge für Kinderwagen
+it8: (dkinsubar): barrierefreie Zugänge für Kinderwagen
 
 it9: (dkinsuspr): Gesprächskreise für Eltern
 
@@ -557,7 +557,7 @@ it11: (dkinsukber): Angebote zur Kurzzeitbetreuung von Kindern
 
 it12: (dkinsubur): Familienservice/-büro
 
-it13: (dkinsuso, dkinsusoo): sonstiges, und zwar: [Eingabefeld; 50 Zeichen]
+it13: (dkinsuso, dkinsusoo): Sonstiges, und zwar: [Eingabefeld; 50 Zeichen]
 
 st:
 
@@ -603,11 +603,11 @@ hl:
 
 in:
 
-q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind zu?
+q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind(ern) zu?
 
 is:
 
-it1: (dkinverdau): Durch den Zeitbedarf für mein(e) Kind(er) wird mein Studium
+it1: (dkinverdau): Durch den Zeitbedarf für mein(e) Kind(er), wird mein Studium
 länger dauern.
 
 it2: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die
@@ -615,7 +615,7 @@ besondere Situation von Studierenden mit Kind.
 
 it3: (dkinverlei): Es fällt mir leicht, Studium und Kind(er) zu vereinbaren.
 
-it4: (dkinverwil): Wegen meines/meiner Kindes/Kinder, kann ich nicht so
+it4: (dkinverwil): Wegen meines Kindes/meiner Kinder, kann ich nicht so
 studieren, wie ich will.
 
 it5: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche
@@ -745,40 +745,40 @@ q: Wie sehr stimmen Sie den folgenden Aussagen zu?
 
 is:
 
-it1: (dkinmsabi): Für mich ist das !!Abitur!! für mein(e) Kind(er) der absolute
+it1: (dkinmsabi): Für mich ist das ++Abitur++ für mein(e) Kind(er) der absolute
 Minimalstandard.
 
-it2: (dkinzuabi): Mit weniger als einem !!Abitur!! für mein(e) Kind(er) würde
+it2: (dkinzuabi): Mit weniger als einem ++Abitur++ für mein(e) Kind(er) würde
 ich mich nicht zufrieden geben.
 
-it3: (dkinmsstu): Für mich ist ein !!Studium!! für mein(e) Kind(er) der absolute
+it3: (dkinmsstu): Für mich ist ein ++Studium++ für mein(e) Kind(er) der absolute
 Minimalstandard.
 
-it4: (dkinzustu): Mit weniger als einem !!Studium!! für mein(e) Kind(er) würde
+it4: (dkinzustu): Mit weniger als einem ++Studium++ für mein(e) Kind(er) würde
 ich mich nicht zufrieden geben.
 
-it5: (dkinmsabi): Für mich ist das !!Abitur!! für mein Kind der absolute
+it5: (dkinmsabi): Für mich ist das ++Abitur++ für mein Kind der absolute
 Minimalstandard.
 
-it6: (dkinzuabi): Mit weniger als einem !!Abitur!! für mein Kind würde ich mich
+it6: (dkinzuabi): Mit weniger als einem ++Abitur++ für mein Kind würde ich mich
 nicht zufrieden geben.
 
-it7: (dkinmsstu): Für mich ist ein !!Studium!! für mein Kind der absolute
+it7: (dkinmsstu): Für mich ist ein ++Studium++ für mein Kind der absolute
 Minimalstandard.
 
-it8: (dkinzustu): Mit weniger als einem !!Studium!! für mein Kind würde ich mich
+it8: (dkinzustu): Mit weniger als einem ++Studium++ für mein Kind würde ich mich
 nicht zufrieden geben.
 
-it9: (dkinmsabi): Für mich ist das !!Abitur!! für meine Kinder der absolute
+it9: (dkinmsabi): Für mich ist das ++Abitur++ für meine Kinder der absolute
 Minimalstandard.
 
-it10: (dkinzuabi): Mit weniger als einem !!Abitur!! für meine Kinder würde ich
+it10: (dkinzuabi): Mit weniger als einem ++Abitur++ für meine Kinder würde ich
 mich nicht zufrieden geben.
 
-it11: (dkinmsstu): Für mich ist ein !!Studium!! für meine Kinder der absolute
+it11: (dkinmsstu): Für mich ist ein ++Studium++ für meine Kinder der absolute
 Minimalstandard.
 
-it12: (dkinzustu): Mit weniger als einem !!Studium!! für meine Kinder würde ich
+it12: (dkinzustu): Mit weniger als einem ++Studium++ für meine Kinder würde ich
 mich nicht zufrieden geben.
 
 st:
@@ -840,7 +840,7 @@ it: … wieder mit Kind(ern) studieren?
 
 st:
 
-ao1: 1: 1: Nein, auf keinen Fall
+ao1: 1: 1: nein, auf keinen Fall
 
 ao2: 2: 2
 
@@ -848,7 +848,7 @@ ao3: 3: 3
 
 ao4: 4: 4
 
-ao5: 5: 5: Ja, auf jeden Fall
+ao5: 5: 5: ja, auf jeden Fall
 
 mv:
 
@@ -902,6 +902,8 @@ ao2: 2: : erst das Studium beenden und dann ein Kind bekommen
 ao3: 3: : gar kein(e) Kind(er) bekommen.
 
 ao4: 4: : gar kein Studium aufnehmen
+
+ao5: 5: : keine der genannten Optionen
 
 mv:
 
