@@ -335,7 +335,11 @@ it8: (dkinbetag): Tagesmutter
 
 it9: (dkinbealo): Das Kind bleibt/Die Kinder bleiben alleine.
 
-it10: (dkinbeson, dkinbesono): Andere Person, und zwar: [50 Zeichen, 60pt]
+it10: (dkinbealo): Das Kind bleibt alleine.
+
+it11: (dkinbealo): Die Kinder bleiben alleine.
+
+it12: (dkinbeson, dkinbesono): Andere Person, und zwar: [50 Zeichen, 60pt]
 
 st:
 
@@ -358,6 +362,12 @@ vc1: SHOW q1 IF dkinanz = k.A.
 vc2: SHOW q2 IF dkinanz = 1
 
 vc3: SHOW q3 IF dkinanz \>1
+
+vc4: SHOW it9 IF dkinanz = k.A.
+
+vc5: SHOW it10 IF dkinanz = 1
+
+vc6: SHOW it11 IF dkinanz \>1
 
 av:
 
