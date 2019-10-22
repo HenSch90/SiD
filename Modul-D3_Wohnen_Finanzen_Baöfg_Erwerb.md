@@ -205,7 +205,7 @@ hv:
 
 fo:
 
-tr: GOTO 5 (D3_5)
+tr: GOTO D3_5
 
 hi:
 
@@ -615,8 +615,9 @@ hv:
 
 fo:
 
-tr: GOTO D3_10 IF feindgsemo > 0 | feindgstuo > 0;  
-    ELSE GOTO D3_11 
+tr: GOTO D3_10  IF feindgsemo > 0 OR feindgstuo > 0;  
+    GOTO D3_11  IF feindgsemo = 0 AND feindgstuo = 0
+    GOTO D3_11  IF feindgsemo = MISSING AND feindgstuo = MISSING
 
 hi:
 
