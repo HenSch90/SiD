@@ -856,7 +856,8 @@ fo:
 
 tr: GOTO A_49a IF sabser=1
     GOTO A_49b IF sabser>1
-
+    GOTO A_49a IF sabser=MISSING
+    
 hi:
 
 \--------------------------------
@@ -1526,7 +1527,8 @@ fo:
 
 tr:
 
-GOTO 50% D1_22 / 50% D1_23
+GOTO D1_22 IF h_split=1 (50%)
+GOTO D1_23 IF h_split=2 (50%)
 
 hi:
 
