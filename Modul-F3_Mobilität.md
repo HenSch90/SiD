@@ -52,7 +52,12 @@ fo:
 
 tr:
 
-GOTO F3_7
+GOTO F3_7 IF ainfaus>1
+GOTO F3_16 IF ainfaus=1 AND auslandint=4
+GOTO F3_16 IF ainfaus=MISSING AND auslandint=4
+GOTO F3_21 IF ainfaus=1 AND auslandint=1,2,3
+GOTO F3_21 IF ainfaus=MISSING AND auslandint=1,2,3
+
 
 hi:
 
@@ -792,7 +797,7 @@ fo:
 
 tr:
 
-GOTO F3_16
+GOTO F3_22
 
 hi:
 
@@ -1044,7 +1049,7 @@ fo:
 
 tr:
 
-GOTO F3_21
+GOTO F3_22
 
 hi:
 
@@ -1322,6 +1327,6 @@ hv:
 
 fo:
 
-tr: GOTO nächstes Modul
+tr: GOTO A_56
 
 hi:
