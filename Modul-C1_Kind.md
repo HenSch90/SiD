@@ -176,7 +176,7 @@ ao5 (dkinrokom): Kommiliton\*innen
 
 ao6 (dkinrofr): Freunde
 
-ao7 (dkinroan): Andere Person(en), und zwar... [dkinroano, 50 Zeichen, 30pt]
+ao7 (dkinroan): Andere Person(en), und zwar: [dkinroano, 50 Zeichen, 30pt]
 
 mv:
 
@@ -254,7 +254,7 @@ tc: IF dkinja = 2
 
 vn: dkinalo
 
-qt: Einfachauswahl mit vertiklen ao
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -335,7 +335,7 @@ it8: (dkinbetag): Tagesmutter
 
 it9: (dkinbealo): Das Kind bleibt/Die Kinder bleiben alleine.
 
-it10: (dkinbeson, dkinbesono): Sonstige Person, und zwar: [50 Zeichen, 60pt]
+it10: (dkinbeson, dkinbesono): Andere Person, und zwar: [50 Zeichen, 60pt]
 
 st:
 
@@ -603,26 +603,58 @@ hl:
 
 in:
 
-q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind(ern) zu?
+q1: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind(ern) zu?
+
+q2: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind zu?
+
+q3: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kindern zu?
 
 is:
 
 it1: (dkinverdau): Durch den Zeitbedarf für mein(e) Kind(er), wird mein Studium
 länger dauern.
 
-it2: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die
+it2: (dkinverdau): Durch den Zeitbedarf für mein Kind, wird mein Studium
+länger dauern.
+
+it3: (dkinverdau): Durch den Zeitbedarf für meine Kinder, wird mein Studium
+länger dauern.
+
+it4: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die
+besondere Situation von Studierenden mit Kind(ern).
+
+it5: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die
 besondere Situation von Studierenden mit Kind.
 
-it3: (dkinverlei): Es fällt mir leicht, Studium und Kind(er) zu vereinbaren.
+it6: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die
+besondere Situation von Studierenden mit Kindern.
 
-it4: (dkinverwil): Wegen meines Kindes/meiner Kinder, kann ich nicht so
+it7: (dkinverlei): Es fällt mir leicht, Studium und Kind(er) zu vereinbaren.
+
+it8: (dkinverlei): Es fällt mir leicht, Studium und Kind zu vereinbaren.
+
+it9: (dkinverlei): Es fällt mir leicht, Studium und Kinder zu vereinbaren.
+
+it10: (dkinverwil): Wegen meines Kindes/meiner Kinder, kann ich nicht so
 studieren, wie ich will.
 
-it5: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche
+it11: (dkinverwil): Wegen meines Kindes, kann ich nicht so
+studieren, wie ich will.
+
+it12: (dkinverwil): Wegen meiner Kinder, kann ich nicht so
+studieren, wie ich will.
+
+it13: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche
 Atmosphäre.
 
-it6: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit
+it14: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit
 Kind(ern).
+
+it15: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit
+Kind.
+
+it16: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit
+Kindern.
 
 st:
 
@@ -640,7 +672,17 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW q1 IF dkinanz = k.A.
+
+vc2: SHOW q2 IF dkinanz = 1
+
+vc3: SHOW q3 IF dkinanz \>1
+
+vc4: SHOW it1, it4, it7, it10, it14 IF dkinanz = k.A.
+
+vc5: SHOW it2, it5, it8, it11, it15 IF dkinanz = 1
+
+vc6: SHOW it3, it6, it9, it12, it16 IF dkinanz \>1
 
 av:
 
@@ -678,21 +720,48 @@ is:
 it1: (dkinsw): Ich kann den Bedürfnissen meines Kindes/meiner Kinder sehr gut
 gerecht werden.
 
-it2: (dkinopfb): Ich würde alles aushalten für das Wohl meines Kindes/meiner
-Kinder.
+it2: (dkinsw): Ich kann den Bedürfnissen meines Kindes sehr gut gerecht werden.
 
-it3: (dkinauto): Ich habe das Gefühl, dass die Betreuung und Erziehung meines
+it3: (dkinsw): Ich kann den Bedürfnissen meiner Kinder sehr gut gerecht werden.
+
+it4: (dkinopfb): Ich würde alles aushalten für das Wohl meines Kindes/meiner Kinder.
+
+it5: (dkinopfb): Ich würde alles aushalten für das Wohl meines Kindes.
+
+it6: (dkinopfb): Ich würde alles aushalten für das Wohl meiner Kinder.
+
+it7: (dkinauto): Ich habe das Gefühl, dass die Betreuung und Erziehung meines
 Kindes/meiner Kinder mich völlig in Beschlag nimmt und mein ganzes Leben
 bestimmt.
 
-it4: (dkinfreu): Ich freue mich immer darauf, mit meinem Kind/meinen Kindern
+it8: (dkinauto): Ich habe das Gefühl, dass die Betreuung und Erziehung meines
+Kindes mich völlig in Beschlag nimmt und mein ganzes Leben
+bestimmt.
+
+it9: (dkinauto): Ich habe das Gefühl, dass die Betreuung und Erziehung meiner
+Kinder mich völlig in Beschlag nimmt und mein ganzes Leben
+bestimmt.
+
+it10: (dkinfreu): Ich freue mich immer darauf, mit meinem Kind/meinen Kindern
 zusammen zu sein.
 
-it5: (dkinufur): Ich bin ständig in Sorge, dass meinem Kind/meinen Kindern etwas
+it11: (dkinfreu): Ich freue mich immer darauf, mit meinem Kind zusammen zu sein.
+
+it12: (dkinfreu): Ich freue mich immer darauf, mit meinen Kindern zusammen zu sein.
+
+it13: (dkinufur): Ich bin ständig in Sorge, dass meinem Kind/meinen Kindern etwas
 zustoßen könnte.
 
-it6: (dkinfoe): Ich denke, wenn mein Kind/eins meiner Kinder sich falsch
+it14: (dkinufur): Ich bin ständig in Sorge, dass meinem Kind etwas zustoßen könnte.
+
+it15: (dkinufur): Ich bin ständig in Sorge, dass meinen Kindern etwas zustoßen könnte.
+
+it16: (dkinfoe): Ich denke, wenn mein Kind/eins meiner Kinder sich falsch
 verhält, macht es das mit Absicht.
+
+it17: (dkinfoe): Ich denke, wenn mein Kind sich falsch verhält, macht es das mit Absicht.
+
+it18: (dkinfoe): Ich denke, wenn eins meiner Kinder sich falsch verhält, macht es das mit Absicht.
 
 st:
 
@@ -710,7 +779,11 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW it1, it4, it7, it10, it13, it16 IF dkinanz = k.A.
+
+vc2: SHOW it2, it5, it8, it11, it14, it17 IF dkinanz = 1
+
+vc3: SHOW it3, it6, it9, it12, it15, it18 IF dkinanz \>1
 
 av:
 
@@ -836,7 +909,11 @@ q: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie …
 
 is:
 
-it: … wieder mit Kind(ern) studieren?
+it1: … wieder mit Kind(ern) studieren?
+
+it2: … wieder mit Kind studieren?
+
+it3: … wieder mit Kindern studieren?
 
 st:
 
@@ -854,7 +931,11 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW it1 IF dkinanz = k. A.
+
+vc2: SHOW it2 IF dkinanz = 1
+
+vc3: SHOW it3 IF dkinanz \> 1
 
 av:
 
@@ -895,21 +976,37 @@ it:
 
 st:
 
-ao1: 1: : erst studieren, wenn das Kind selbstständiger ist
+ao1: 1: : erst studieren, wenn das Kind selbstständiger ist/die Kinder selbstständiger sind
 
-ao2: 2: : erst das Studium beenden und dann ein Kind bekommen
+ao2: 1: : erst studieren, wenn das Kind selbstständiger ist
 
-ao3: 3: : gar kein(e) Kind(er) bekommen.
+ao3: 1: : erst studieren, wenn die Kinder selbstständiger sind
 
-ao4: 4: : gar kein Studium aufnehmen
+ao4: 2: : erst das Studium beenden und dann ein Kind/Kinder bekommen
 
-ao5: 5: : keine der genannten Optionen
+ao5: 2: : erst das Studium beenden und dann ein Kind bekommen
+
+ao6: 2: : erst das Studium beenden und dann Kinder bekommen
+
+ao7: 3: : gar kein(e) Kind(er) bekommen.
+
+ao8: 3: : gar kein Kind bekommen.
+
+ao9: 3: : gar keine Kinder bekommen.
+
+ao10: 4: : gar kein Studium aufnehmen
+
+ao11: 5: : keine der genannten Optionen
 
 mv:
 
 ka:
 
-vc:
+vc1: SHOW ao1, ao4, ao7 IF dkinanz = k. A.
+
+vc2: SHOW ao2, ao5, ao8 IF dkinanz = 1
+
+vc3: SHOW ao3, ao6, ao9 IF dkinanz \> 1
 
 av:
 
