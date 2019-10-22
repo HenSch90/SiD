@@ -51,9 +51,8 @@ hv:
 
 fo:
 
-tr:
-
-GOTO B1_2
+tr: GOTO B1_3a IF h_split=1 (50%)
+    GOTO B1_3b IF h_split=2 (50%)
 
 hi:
 
@@ -131,9 +130,7 @@ fo: Items bitte zufällig rotieren.
 
 tr:
 
-GOTO B1_4 IF demosex=3
-
-ELSE GOTO B1_3 (Aufteilung 3a und 3b)
+GOTO B1_1
 
 hi:
 
@@ -248,10 +245,8 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr:
-
-GOTO B1_4a IF wohnpar=1
-ELSE GOTO B1_5
+tr: GOTO D3_13 IF masterplan=3, 4, 5, 6
+    GOTO A_54 IF masterplan=1, 2, 13
 
 hi:
 
@@ -322,10 +317,8 @@ hv:
 
 fo:
 
-tr:
-
-GOTO B1_4a IF wohnpar=1
-ELSE GOTO B1_5
+tr:  GOTO D3_13 IF masterplan=3, 4, 5, 6
+     GOTO A_54 IF masterplan=1, 2, 13
 
 hi:
 
@@ -384,7 +377,7 @@ fo:
 
 tr:
 
-GOTO B1_2
+GOTO B1_4b
 
 hi:
 
@@ -446,7 +439,7 @@ hi:
 B1_5
 ==
 
-tc: IF wohnpar ! 1
+tc:
 
 vn: atihh; atiee; atiwe; atikb
 
@@ -497,9 +490,9 @@ hv:
 
 fo: 
 
-tr: GOTO B1_4a IF wohnpar=1 AND h_split=1 (50%)
-    GOTO B1_4b IF wohnpar=1 AND h_split=2 (50%)
-    GOTO B1_2 IF wohnpar=0 
+tr: GOTO B1_4a IF wohnpar=1
+    GOTO B1_2 IF wohnpar=0
+    GOTO B1_2 IF wohnpar=MISSING
     
 hi: 
 
