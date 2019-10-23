@@ -884,9 +884,9 @@ mv: -12: : weiß ich nicht
 ka:
 
 vc:
-SHOW it1 and it4 and it5 and it6 if sabsan=3 [SDK-stu#05] Grundprogramm
+SHOW it4 and it5 if sabsan=3 [SDK-stu#05] Grundprogramm
 
-SHOW it1 and it2 and it3 and it6 if sabsan!=3 [SDK-stu#05] Grundprogramm
+SHOW it2 and it3 if sabsan!=3 [SDK-stu#05] Grundprogramm
 
 av:
 
