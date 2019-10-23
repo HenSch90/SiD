@@ -13,19 +13,19 @@ hl:
 
 in:
 
-q: Wo wohnen Sie während der Vorlesungszeit
+q: Wo wohnen Sie während der Vorlesungszeit?
 
 is:
 
 it:
 
-st: Ich wohne ...
+st:
 
-ao1: 1: ... ausschließlich am Hochschulort.
+ao1: 1: ausschließlich am Hochschulort
 
-ao2: 2: ... ausschließlich außerhalb des Hochschulortes.
+ao2: 2: ausschließlich außerhalb des Hochschulortes
 
-ao3: 3: ... am Hochschulort und außerhalb des Hochschulortes.
+ao3: 3: am Hochschulort und außerhalb des Hochschulortes
 
 mv:
 
@@ -121,7 +121,7 @@ st:
 ao1: 5 Stellen, Präfix [wohnplz] Suffix: Postleitzahl:[number]
 
 ao2: 50 Stellen, Präfix [wohnplzort] Suffix: Falls Sie die Postleitzahl nicht
-kennen, geben Sie bitten den Ort an: [50 Zeichen]
+kennen, geben Sie bitten den Ort an. [50 Zeichen]
 
 ao3: -12 (wohnplzo)
 
@@ -320,7 +320,7 @@ it12: (feinbest1): Krankenversicherungsleistungen für technische Hilfsmittel
 
 it13: (feinbest2):  weitere spezifische Sozialleistungen im Zusammenhang mit meiner gesundheitlichen Beeinträchtigung
 
-it14: (feinandq): weitere Finanzierungsquelle(n), und zwar: (offene Angabe: [feinandqo] 50 Zeichen) 
+it14: (feinandq): Weitere Finanzierungsquelle(n), und zwar: (offene Angabe: [feinandqo] 50 Zeichen) 
 
 [Trennlinie]
 
@@ -424,7 +424,7 @@ ao6 (festipartandstaat): ja, anderes mit staatlichen Mitteln finanziertes Stipen
 
 ao7 (festipartprivat): ja, Stipendium eines privaten Geldgebers (Industrie, Firma, privater Stifter)
 
-ao8 (festipartsons): ja, anderes und zwar: [festipartsonso] (Eingabefeld; 50 Zeichen)
+ao8 (festipartsons): Ja, anderes und zwar: [festipartsonso] (Eingabefeld; 50 Zeichen)
 
 mv:
 
@@ -465,7 +465,7 @@ qt: Einfachauswahl, offene Angabe
 
 hl:
 
-in: Kommen wir nun zu Ihren monatlichen Kosten und Ausgaben:
+in:
 
 q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie (z. B. Eltern
 bezahlen Ihre Miete direkt an den Vermieter) im Sommersemester 2020 monatlich
@@ -501,7 +501,7 @@ it13: (fausgasso; feindgasso): Ausgaben für personelle Assistenzen (z. B. Pfleg
 
 it14: (fausgthilfo; feindgthilfo): Ausgaben für technische Hilfsmittel (z. B. Screen Reader, Braille-Zeile, FM-Anlage)
 
-it15: (fausandqo; feinandqo2): weitere Ausgaben, und zwar:
+it15: (fausandqo; feinandqo2): Weitere Ausgaben, und zwar:
 
 Trennlinie
 
@@ -587,7 +587,7 @@ hl:
 
 in:
 
-q: Was wären Ihrer Meinung nach die absolut niedrigsten Einnahmen pro Monat, die Sie benötigen würden, um finanziell zu recht zukommen?
+q: Wieviel Geld benötigen Sie mindestens pro Monat, um finanziell zurecht zu kommen?
 
 is:
 
@@ -640,19 +640,19 @@ q: Sie haben angegeben, dass Dritte Ihre Studienkosten (Semesterbeitrag bzw. Stu
 [Leerzeile]
 Davon bezahlen durchschnittlich im Monat …
 
-is: Falls Sie hierbei von anderen bzw. Ihrem Arbeitgeber unterstützt werden, geben Sie die Höhe dieser Leistungen bitte in der betreffenden Spalte an.
+is:
 
 it: 
 
 st:
 
-ao1: 4 Stellen; Präfix [fausgstkelt; fausgstkelto] Suffix: meine Eltern für mich direkt: [number] €
+ao1: 4 Stellen; Präfix [fausgstkelt; fausgstkelto] Suffix: ... meine Eltern für mich direkt: [number] €
 
-ao2: 4 Stellen; Präfix [fausgstkpart; fausgstkparto] Suffix: mein*e Partner*in für mich direkt: [number] €
+ao2: 4 Stellen; Präfix [fausgstkpart; fausgstkparto] Suffix: ... mein*/e Partner*/in für mich direkt: [number] €
 
-ao3: 4 Stellen; Präfix [fausgstkarb; fausgstkarbo] Suffix: mein Arbeitgeber für mich direkt: [number] €
+ao3: 4 Stellen; Präfix [fausgstkarb; fausgstkarbo] Suffix: ... mein Arbeitgeber für mich direkt: [number] €
 
-ao4: 4 Stellen, Präfix [fausgstkand; fausgstkando] Suffix: Andere für mich direkt und zwar: [number] €
+ao4: 4 Stellen, Präfix [fausgstkand; fausgstkando] Suffix: ... andere für mich direkt und zwar: [number] €
 
 mv: 
 
@@ -689,7 +689,7 @@ hl:
 
 in:
 
-q: Inwieweit treffen die nachfolgenden Aussagen auf Sie und Ihre finanzielle
+q: Inwieweit treffen die nachfolgenden Aussagen Sie und Ihre finanzielle
 Situation zu?
 
 is:
@@ -843,7 +843,7 @@ ao2: 2: Nein, mein aktueller Antrag wurde endgültig abgelehnt.
 
 ao3: 3: Über meinen Antrag (bzw. Widerspruch) ist noch nicht entschieden.
 
-ao4: 4: Ja
+ao4: 4: ja
 
 mv:
 
@@ -897,7 +897,7 @@ it:
 
 st:
 
-ao1: 1: Nein.
+ao1: 1: nein
 
 ao2: 2: Ja, ich habe einmal einen Antrag gestellt, der wurde aber abgelehnt.
 
@@ -950,7 +950,7 @@ it:
 
 st:
 
-ao1: 1: Nein.
+ao1: 1: nein
 
 ao2: 2: Ja, ich habe früher einen Antrag gestellt, der wurde aber abgelehnt.
 
@@ -1010,29 +1010,29 @@ it:
 
 st:
 
-ao1: (fbafkelt): Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin
-ist/war zu hoch
+ao1: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin
+ist/war zu hoch.
 
-ao2: (fbafkein): eigenes Einkommen/Vermögen ist/war zu noch
+ao2: (fbafkein): Das eigene Einkommen/Vermögen ist/war zu hoch.
 
-ao3: (fbafkfhd): Förderungshöchstdauer wurde überschritten
+ao3: (fbafkfhd): Die Förderungshöchstdauer wurde überschritten.
 
-ao4: (fbafktw): Studienfach wurde gewechselt
+ao4: (fbafktw): Das Studienfach wurde gewechselt.
 
-ao5: (fbafkleis): notwenige Leistungsbescheinigung konnte nicht erbracht warden
+ao5: (fbafkleis): Die notwendige Leistungsbescheinigung konnte nicht erbracht werden.
 
-ao6: (fbafkalt): bei Studienbeginn war die maßgebliche Altersgrenze bereits
-überschritten
+ao6: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits
+überschritten.
 
-ao7: (fbafkzwei): das jetzige Studium ist eine nicht förderungsfähige weitere
-Hochschulausbildung (Zweitstudium, Ergänzungsstudium)
+ao7: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
+Hochschulausbildung (Zweitstudium, Ergänzungsstudium).
 
-ao8: (fbafkweni): der zu erwartende Förderbeitrag ist/war so gering, dass es
-sich nicht lohnt/e
+ao8: (fbafkweni): Der zu erwartende Förderbeitrag ist/war so gering, dass es
+sich nicht lohnt/e.
 
-ao9: (fbafkschu): will/wollte keine Schulden Machen
+ao9: (fbafkschu): Ich will/wollte keine Schulden machen.
 
-ao10: (fbafand): andere Gründe, und zwar:
+ao10: (fbafand): Andere Gründe, und zwar:
 
 ao11: 50 Zeichen, Präfix (fbafando) Suffix: 50 Zeichen
 
@@ -1083,9 +1083,9 @@ it:
 
 st:
 
-ao1: 1: Nein
+ao1: 1: nein
 
-ao2: 2: Ja
+ao2: 2: ja
 
 mv:
 
@@ -1124,7 +1124,7 @@ in:
 
 q: Ist in Ihrem Förderungsbetrag ein Zuschlag enthalten für …
 
-is: Bitte alles Zutreffende auswählen.
+is:
 
 it:
 
@@ -1180,7 +1180,7 @@ q4: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten, neb
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 q5: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
-Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten, der Sie im aktuellen Semester nachgehen, an.
+Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 q6: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten, neben Ihrer Tätigkeit im Ausbildungsbetrieb, nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
@@ -1338,30 +1338,30 @@ im Ausbildungsbetrieb ausübe, nach, …
 
 is:
 
-it1: (egrfin1): weil es zur Finanzierung meines Lebensunterhalts unbedingt
+it1: (egrfin1): ... weil es zur Finanzierung meines Lebensunterhalts unbedingt
 notwendig ist.
 
-it2: (egrfin2): um mir mein Studium finanzieren zu können.
+it2: (egrfin2): ... um mir mein Studium finanzieren zu können.
 
-it3: (egrfin3): damit ich mir (etwas) mehr leisten kann.
+it3: (egrfin3): ... damit ich mir (etwas) mehr leisten kann.
 
-it4: (egrkar1): um Kontakte für eine spätere Beschäftigung zu knüpfen.
+it4: (egrkar1): ... um Kontakte für eine spätere Beschäftigung zu knüpfen.
 
-it5: (egrkar2): um mich neben dem Studium weiter zu qualifizieren.
+it5: (egrkar2): ... um mich neben dem Studium weiter zu qualifizieren.
 
-it6: (egrper1): damit ich meinen Horizont erweitern kann.
+it6: (egrper1): ... damit ich meinen Horizont erweitern kann.
 
-it7: (egrper2): um mehr über meine Stärken und Schwächen zu erfahren.
+it7: (egrper2): ... um mehr über meine Stärken und Schwächen zu erfahren.
 
-it8: (egrper3): um mich persönlich weiter zu entwickeln.
+it8: (egrper3): ... um mich persönlich weiter zu entwickeln.
 
-it9: (egrerf1): um praktische Erfahrungen zu sammeln.
+it9: (egrerf1): ... um praktische Erfahrungen zu sammeln.
 
-it10: (egrerf2): um etwas Neues zu lernen und mich fortzubilden.
+it10: (egrerf2): ... um etwas Neues zu lernen und mich fortzubilden.
 
-it11: (egralt1): um einen Beitrag zur Gesellschaft zu leisten.
+it11: (egralt1): ... um einen Beitrag zur Gesellschaft zu leisten.
 
-it12: (egralt2): um anderen zu helfen.
+it12: (egralt2): ... um anderen zu helfen.
 
 st:
 
@@ -1418,19 +1418,19 @@ hl:
 
 in:
 
-q: Wie zufrieden sind Sie mit…
+q: Wie zufrieden sind Sie aktuell mit…
 
 is:
 
-it1: (zufrwohn): Ihrer aktuellen Wohnsituation?
+it1: (zufrwohn): ... Ihrer Wohnsituation?
 
-it2: (zufrlstand): Ihrem derzeitigen Lebensstandard?
+it2: (zufrlstand): ... Ihrem Lebensstandard?
 
-it3: (zufrfinsit): Ihrer aktuellen finanziellen Situation?
+it3: (zufrfinsit): ... Ihrer finanziellen Situation?
 
-it4: (zufrerw): Ihrer/Ihren aktuellen Erwerbstätigkeit/en?
+it4: (zufrerw): ... Ihrer/Ihren Erwerbstätigkeit/en?
 
-it5: (zufrleb): mit Ihrem Leben insgesamt?
+it5: (zufrleb): ... Ihrem Leben insgesamt?
 
 st:
 
