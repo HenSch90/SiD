@@ -223,7 +223,7 @@ tc2: NO IF vsbstyp1-15= 10 \| 11 \| 12 \| 13 \| 14
 
 tc3: IF vausbja=3
 
-vn: vausbzpjo; vausbzpmo; vausbzpka
+vn: vausbzpjo; vausbzpmo
 
 qt: Einfachauswahl /offene Angabe / Dropdown
 
@@ -296,8 +296,6 @@ st:
 
 ao1: (vausberuf): 75 Zeichen; Präfix: [vausberufo]; Suffix: Beruf:
 (Exklusivkategorie)
-
-ao2: (vausbzpka): -12: : weiß ich nicht
 
 mv:
 
