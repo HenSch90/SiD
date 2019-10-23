@@ -192,7 +192,7 @@ st:
 
 ao1 (bezeit): 1: : seit meiner Geburt
 
-ao2 (bezeit): 2: : seit meinem [Drop-Down-Menu Lebensjahre] Lebensjahr
+ao2 (bezeit): 2: : 1 cm, seit meinem [number] Lebensjahr
 
 mv:
 
@@ -200,9 +200,9 @@ ka:
 
 vc: SHOW is IF Zahl der Nennungen von gartmob bis gartka \> 1
 
-av:
+av: number: 2 stellig: 1 TO 99
 
-kh:
+kh: Bitte tragen Sie eine Zahl zwischen 1 und 99 ein.
 
 fv:
 
