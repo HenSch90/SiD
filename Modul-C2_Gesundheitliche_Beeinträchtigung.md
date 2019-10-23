@@ -776,8 +776,8 @@ hv:
 
 fo:
 
-tr: GOTO C2_13 IF beauftr = 1 OR besoz =1 OR bepsy = 1 OR bestud = 1 OR beselb =
-1 OR beand = 1 OR beandhs = 1 OR beandauß =1
+tr: GOTO C2_13 IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb =
+3 OR beand = 3
 
 ELSE GOTO nächstes Modul
 
@@ -788,8 +788,8 @@ hi:
 C2_13
 =====
 
-tc: IF beauftr = 1 OR besoz =1 OR bepsy = 1 OR bestud = 1 OR beselb = 1 OR beand
-= 1 OR beandhs = 1 OR beandauß =1
+tc: IF beauftr = 3 OR besoz =3 OR bepsy = 3 OR bestud = 3 OR beselb = 3 OR beand
+= 3
 
 vn: behauftr; behsoz; behpsy; behstud; behselb; behand)
 
@@ -835,7 +835,17 @@ mv:
 
 ka:
 
-vc:
+vc: SHOW it1 IF beauftr >1
+
+SHOW it2 IF besoz >1
+
+SHOW it3 IF bepsy >1
+
+SHOW it4 IF bestud >1
+
+SHOW it5 IF beselb >1
+
+SHOW it6 IF beand >1
 
 av:
 
