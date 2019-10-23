@@ -546,9 +546,9 @@ mv:
 
 ka:
 
-vc1: SHOW fausgkitaso; feindkitaso IF [dkinja = 1]
+vc1: SHOW fausgkitaso; feindkitaso IF [dkinja = 2]
 
-vc2: SHOW fausgkindso; feindkindso IF [dkinja = 1]
+vc2: SHOW fausgkindso; feindkindso IF [dkinja = 2]
 
 vc3: SHOW fausgasso; feindgasso IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
 
