@@ -56,13 +56,9 @@ mv: -13: : gar nicht
 
 ka:
 
->   vc1: SHOW q1 IF gartmob = 1 AND gartseh = 1 AND gartohr = 1 AND gartspr = 1
->   AND gartpsy = 1 AND gartsom = 1 AND garttls = 1 AND gartson = 1 AND gartka =
->   1
+>   vc1: SHOW q1 IF h_gartcount = 1
 
->   vc2: SHOW q2 IF gartmob \> 1 \| gartseh \> 1 \| gartohr \> 1 \| gartspr \> 1
->   \| gartpsy \> 1 \| gartsom \> 1 \| garttls \> 1 \| gartson \> 1 \| gartka \>
->   1
+>   vc2: SHOW q2 IF h_gartcount > 1
 
 vc3: SHOW it1 IF gartmob=1
 
