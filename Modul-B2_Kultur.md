@@ -944,9 +944,9 @@ mv: (einkka2): -12, weiß ich nicht
 ka:
 
 vc: 
-SHOW ao1 and ao4 and ao5 and ao6 if sabsan=3 [SDK-stu#05] Grundprogramm
+SHOW ao4 and ao5 if sabsan=3 [SDK-stu#05] Grundprogramm
 
-SHOW ao1 and ao2 and ao3 and ao6 if sabsan!=3 [SDK-stu#05] Grundprogramm
+SHOW ao2 and ao3 if sabsan!=3 [SDK-stu#05] Grundprogramm
 
 av:
 
