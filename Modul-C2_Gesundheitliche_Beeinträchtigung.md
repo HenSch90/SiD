@@ -234,8 +234,7 @@ hl:
 
 in:
 
-q: Ist für andere wahrnehmbar, dass Sie eine (oder mehrere) Beeinträchtigung(en)
-haben?
+q: Ist für andere wahrnehmbar, dass Sie eine Beeinträchtigung haben?
 
 is:
 
@@ -335,7 +334,7 @@ hl:
 
 in:
 
-q: Wurde(n) Ihre Beeinträchtigung(en) amtlich festgestellt?
+q: Wurde Ihre Beeinträchtigung amtlich festgestellt?
 
 is:
 
@@ -391,7 +390,6 @@ Schwierigkeiten?
 
 is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen
 Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
-
 Bitte alles Zutreffende auswählen.
 
 it:
