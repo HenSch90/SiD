@@ -1001,7 +1001,7 @@ wenn fbafja = 2: wurde Ihr aktueller Antrag abgelehnt?
 
 wenn (fbafja = 1) AND (fbafex = 2 \| 3): wurde Ihr Antrag damals abgelehnt?
 
-wenn fbafja = 2 AND fbafex = 4: haben Sie keinen Antrag auf Weiterförderung mehr
+wenn fbafja = 1 AND fbafex = 4: haben Sie keinen Antrag auf Weiterförderung mehr
 gestellt?
 
 is: Bitte alles Zutreffende auswählen.
