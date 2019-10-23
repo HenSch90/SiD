@@ -683,6 +683,8 @@ ao2: 2: : offene Angabe: 2 Stellen Präfix [ainfcp1osba], Suffix: ja, teilweise:
 
 ao3: 3: : offene Angabe: 2 Stellen Präfix [ainfcp2osba], Suffix: ja, vollständig: … ECTS-Punkte
 
+ao: -12: : weiß ich (noch) nicht
+
 mv:
 
 ka:
