@@ -1134,11 +1134,19 @@ ao1: (fbafkv): … Ihre Kranken- und Pflegeversicherung?
 
 ao2: (fbafkin): … die Betreuung Ihres Kindes/Ihrer Kinder?
 
+ao3: (fbafkin): … die Betreuung Ihres Kindes?
+
+ao4: (fbafkin): … die Betreuung Ihrer Kinder?
+
 mv:
 
 ka:
 
-vc: SHOW fbafkin IF dkinja = 2
+vc1: SHOW ao2 IF dkinanz = k. A.
+
+vc2: SHOW ao3 IF dkinanz = 1
+
+vc3: SHOW ao4 IF dkinanz \> 1 
 
 av:
 
