@@ -1004,7 +1004,7 @@ A_15
 
 tc:
 
-vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartka
+vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartka; h_gartcount
 
 qt: Mehrfachauswahl
 
@@ -1042,7 +1042,7 @@ ao10: 10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
 mv:
 
-ka: ka1 (ao2 TO ao10): ja, und zwar:
+ka: ka1 (ao2 TO ao10): Ja, und zwar:
 
 vc:
 
@@ -1052,7 +1052,7 @@ kh:
 
 fv:
 
-hv:
+hv: h_gartcount = gartmob=1 AND gartseh=1 AND gartohr=1 AND gartspr=1 AND gartpsy=1 AND gartsom=1 AND garttls=1 AND gartson=1 AND gartka=1
 
 fo:
 
@@ -1993,7 +1993,7 @@ hi:
 
 \------------------------------------------------------------
 
-A-32
+A_32
 =========
 
 tc:
