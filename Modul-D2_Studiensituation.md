@@ -513,7 +513,7 @@ hl:
 
 in:
 
-q:
+q: Bitte schätzen Sie	ein, auf wie viele der Lehrveranstaltungen in Ihrem	derzeitigen	Studiengang die folgenden Aussagen zutreffen
 
 is:.
 
