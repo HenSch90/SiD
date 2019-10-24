@@ -996,11 +996,11 @@ ao5: 2: : erst das Studium beenden und dann ein Kind bekommen
 
 ao6: 2: : erst das Studium beenden und dann Kinder bekommen
 
-ao7: 3: : gar kein(e) Kind(er) bekommen.
+ao7: 3: : gar kein(e) Kind(er) bekommen
 
-ao8: 3: : gar kein Kind bekommen.
+ao8: 3: : gar kein Kind bekommen
 
-ao9: 3: : gar keine Kinder bekommen.
+ao9: 3: : gar keine Kinder bekommen
 
 ao10: 4: : gar kein Studium aufnehmen
 
