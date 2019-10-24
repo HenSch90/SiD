@@ -88,17 +88,17 @@ it6: (dkinage5) : [infield = Alter 4. Kind]
 
 st:
 
-ao1 (dkinagej): 2-stellig, 0-99, [number], Suffix: Jahre
+ao1 (dkinagej): 2-stellig, 0-99, [number] Suffix: Jahre
 
-ao2 (dkinage1): 2-stellig, 0-99, [number], Suffix: Jahre
+ao2 (dkinage1): 2-stellig, 0-99, [number] Suffix: Jahre
 
-ao3 (dkinage2): 2-stellig, 0-99, [number], Suffix: Jahre
+ao3 (dkinage2): 2-stellig, 0-99, [number] Suffix: Jahre
 
-ao4 (dkinage3): 2-stellig, 0-99, [number], Suffix: Jahre
+ao4 (dkinage3): 2-stellig, 0-99, [number] Suffix: Jahre
 
-ao5 (dkinage4): 2-stellig, 0-99, Suffix: Jahre
+ao5 (dkinage4): 2-stellig, 0-99, [number] Suffix: Jahre
 
-ao6 (dkinage5): 2-stellig, 0-99, Suffix: Jahre
+ao6 (dkinage5): 2-stellig, 0-99, [number] Suffix: Jahre
 
 mv:
 
