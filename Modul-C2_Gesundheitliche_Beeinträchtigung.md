@@ -192,7 +192,7 @@ st:
 
 ao1 (bezeit): 1: : seit meiner Geburt
 
-ao2 (bezeit): 2: : 1 cm, seit meinem [number]. Lebensjahr
+ao2 (bezeit): 2: : 0,5 cm, seit meinem [number]. Lebensjahr
 
 mv:
 
