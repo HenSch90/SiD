@@ -617,6 +617,18 @@ um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche be
 
 q11: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
 
+q12: Sie haben angegeben, mit räumlichen Bedingungen, Prüfungen und einem anderen Bereich Schwierigkeiten zu haben:
+Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q13: Sie haben angegeben, mit der Studienorganisation/Lehre, Prüfungen und einem anderen Bereich Schwierigkeiten zu haben:
+Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q14: Sie haben angegeben, mit räumlichen Bedingungen, der Studienorganisation/Lehre und Prüfungen Schwierigkeiten zu haben:
+Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q15: Sie haben angegeben, mit räumlichen Bedingungen, der Studienorganisation/Lehre und einem anderen Bereich Schwierigkeiten
+zu haben: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
 is: Bitte alles Zutreffende auswählen.
 
 it:
@@ -653,27 +665,35 @@ mv:
 
 ka:
 
-vc1: SHOW q1 IF ntabau=1
+vc1: SHOW q1 IF ntabau=1 AND ntaorg<>1 AND ntapru<>1 AND ntaand<>1
 
-vc2: SHOW q2 IF ntaorg=1
+vc2: SHOW q2 IF ntaorg=1 AND ntabau<>1 AND ntapru<>1 AND ntaand<>1
 
-vc3: SHOW q3 IF ntapru=1
+vc3: SHOW q3 IF ntapru=1 AND ntabau<>1 AND ntaorg<>1 AND ntaand<>1
 
-vc4: SHOW q4 IF ntaand=1
+vc4: SHOW q4 IF ntaand=1 AND ntabau<>1 AND ntaorg<>1 AND ntapru<>1
 
-vc5: SHOW q5 IF ntabau=1 AND ntaorg=1
+vc5: SHOW q5 IF ntabau=1 AND ntaorg=1 AND ntapru<>1 AND ntaand<>1
 
-vc6: SHOW q6 IF ntabau=1 AND ntapru=1
+vc6: SHOW q6 IF ntabau=1 AND ntapru=1 AND ntaorg<>1 AND ntaand<>1
 
-vc7: SHOW q7 IF ntabau=1 AND ntaand=1
+vc7: SHOW q7 IF ntabau=1 AND ntaand=1 AND ntaorg<>1 AND ntapru<>1
 
-vc8: SHOW q8 IF ntaorg=1 AND ntapru=1
+vc8: SHOW q8 IF ntaorg=1 AND ntapru=1 AND ntabau<>1 AND ntaand<>1
 
-vc9: SHOW q9 IF ntaorg=1 AND ntaand=1
+vc9: SHOW q9 IF ntaorg=1 AND ntaand=1 AND ntabau<>1 AND ntapru<>1
 
-vc10: SHOW q10 IF ntapru=1 AND ntaand=1
+vc10: SHOW q10 IF ntapru=1 AND ntaand=1 AND ntabau<>1 AND ntaorg<>1
 
 vc11: SHOW q11 IF ntabau=1 AND ntaorg=1 AND ntapru=1 AND ntaand=1
+
+vc12: SHOW q12 IF ntabau=1 AND ntapru=1 AND ntaand=1 AND ntaorg<>1
+
+vc13: SHOW q13 IF ntaorg=1 AND ntapru=1 AND ntaand=1 AND ntabau<>1
+
+vc14: SHOW q14 IF ntabau=1 AND ntaorg=1 AND ntapru=1 AND ntaand<>1
+
+vc15: SHOW q15 IF ntabau=1 AND ntaorg=1 AND ntaand=1 AND ntapru<>1
 
 av:
 
@@ -740,6 +760,18 @@ in Bezug auf Prüfungen und einen anderen Bereich nicht bewilligt?
 q11: Weshalb wurde mindestens einer der zuletzt beantragten Nachteilsausgleiche
 und/oder individuellen Anpassungen/Absprachen nicht bewilligt?
 
+q12: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die räumlichen Bedingungen, Prüfungen und einen anderen Bereich nicht bewilligt?
+
+q13: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die Studienorganisation/Lehre, Prüfungen und einen anderen Bereich nicht bewilligt?
+
+q14: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die räumlichen Bedingungen, die Studienorganisation/Lehre und Prüfungen nicht bewilligt?
+
+q15: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die räumlichen Bedingungen, die Studienorganisation/Lehre und einen anderen Bereich nicht bewilligt?
+
 is: Bitte alles Zutreffende auswählen.
 
 it:
@@ -778,27 +810,35 @@ mv:
 
 ka:
 
-vc1: SHOW q1 IF ntabau=3
+vc1: SHOW q1 IF ntabau=3 AND ntaorg<>3 AND ntapru<>3 AND ntaand<>3
 
-vc2: SHOW q2 IF ntaorg=3
+vc2: SHOW q2 IF ntaorg=3 AND ntabau<>3 AND ntapru<>3 AND ntaand<>3
 
-vc3: SHOW q3 IF ntapru=3
+vc3: SHOW q3 IF ntapru=3 AND ntabau<>3 AND ntaorg<>3 AND ntaand<>3
 
-vc4: SHOW q4 IF ntaand=3
+vc4: SHOW q4 IF ntaand=3 AND ntabau<>3 AND ntaorg<>3 AND ntapru<>3
 
-vc5: SHOW q5 IF ntabau=3 AND ntaorg=3
+vc5: SHOW q5 IF ntabau=3 AND ntaorg=3 AND ntapru<>3 AND ntaand<>3
 
-vc6: SHOW q6 IF ntabau=3 AND ntapru=3
+vc6: SHOW q6 IF ntabau=3 AND ntapru=3 AND ntaorg<>3 AND ntaand<>3
 
-vc7: SHOW q7 IF ntabau=3 AND ntaand=3
+vc7: SHOW q7 IF ntabau=3 AND ntaand=3 AND ntaorg<>3 AND ntapru<>3
 
-vc8: SHOW q8 IF ntaorg=3 AND ntapru=3
+vc8: SHOW q8 IF ntaorg=3 AND ntapru=3 AND ntabau<>3 AND ntaand<>3
 
-vc9: SHOW q9 IF ntaorg=3 AND ntaand=3
+vc9: SHOW q9 IF ntaorg=3 AND ntaand=3 AND ntabau<>3 AND ntapru<>3
 
-vc10: SHOW q10 IF ntapru=3 AND ntaand=3
+vc10: SHOW q10 IF ntapru=3 AND ntaand=3 AND ntabau<>3 AND ntaorg<>3
 
 vc11: SHOW q11 IF ntabau=3 AND ntaorg=3 AND ntapru=3 AND ntaand=3
+
+vc12: SHOW q12 IF ntabau=3 AND ntapru=3 AND ntaand=3 AND ntaorg<>3
+
+vc13: SHOW q13 IF ntaorg=3 AND ntapru=3 AND ntaand=3 AND ntabau<>3
+
+vc14: SHOW q14 IF ntabau=3 AND ntaorg=3 AND ntapru=3 AND ntaand<>3
+
+vc15: SHOW q15 IF ntabau=3 AND ntaorg=3 AND ntaand=3 AND ntapru<>3
 
 av:
 
