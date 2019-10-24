@@ -56,9 +56,9 @@ mv: -13: : gar nicht
 
 ka:
 
->   vc1: SHOW q1 IF h_gartcount = 1
+vc1: SHOW q1 IF h_gartcount = 1
 
->   vc2: SHOW q2 IF h_gartcount > 1
+vc2: SHOW q2 IF h_gartcount > 1
 
 vc3: SHOW it1 IF gartmob=1
 
@@ -372,7 +372,7 @@ C2_7
 
 tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
-vn: schwbau; schworg; schwpru; schwand; schwando
+vn: schwbau; schworg; schwpru; schwand; schwando, schwno
 
 qt: Mehrfachauswahl; offene Angabe
 
@@ -380,7 +380,7 @@ hl:
 
 in:
 
-q: In welchen Studienbereichen haben oder hatten Sie im Zusammenhang mit Ihrer
+q: In welchen Bereichen haben oder hatten Sie im Zusammenhang mit Ihrer
 Beeinträchtigung [Ihren Beeinträchtigungen] in Ihrem derzeitigen Studium
 Schwierigkeiten?
 
@@ -404,7 +404,7 @@ der Prüfungen, zeitliche Vorgaben)
 
 ao4 (schwand): Anderer Studienbereich, und zwar: [(schwando): 250 Zeichen]
 
-ao5 : keine beeinträchtigungsbedingten Schwierigkeiten [EK]
+ao5 (schwno): keine beeinträchtigungsbedingten Schwierigkeiten [EK]
 
 mv:
 
@@ -422,7 +422,9 @@ hv:
 
 fo:
 
-tr: GOTO C2_8
+tr: GOTO C2_8 IF schwno <> 1
+
+ELSE GOTO C2_12 
 
 hi:
 
@@ -489,7 +491,7 @@ fo:
 
 tr: GOTO C2_9 IF ntabau=2 OR ntaorg=2 OR ntaorg=2 OR ntaand=2
 
-GOTO C2_10 IF ntabau=1 AND ntaorg=1 AND ntaorg=1 AND ntaand=1
+GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntaorg=1 OR ntaand=1
 
 GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
 
@@ -547,7 +549,7 @@ vc2: SHOW it2 IF ntaorg = 2
 
 vc3: SHOW it3 IF ntapru = 2
 
-vc4: Show it4 IF ntaand = 2
+vc4: SHOW it4 IF ntaand = 2
 
 av:
 
@@ -559,7 +561,9 @@ hv:
 
 fo:
 
-tr: GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
+tr: GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntaorg=1 OR ntaand=1
+
+GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
 
 ELSE GOTO C2_12
 
@@ -570,7 +574,7 @@ hi:
 C2_10
 =====
 
-tc: IF ntabau=1 AND ntaorg=1 AND ntaorg=1 AND ntaand=1
+tc: IF ntabau=1 OR ntaorg=1 OR ntaorg=1 OR ntaand=1
 
 vn: nbkenn; nbsond; nbhemm; nbsecr; nbsich; nbsupp; nbaufw; nbexp; nbmiss;
 nbkons; nband; nbando
@@ -581,8 +585,37 @@ hl:
 
 in:
 
-q: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw.
-keine Nachteilsausgleiche beantragt?
+q1: Sie haben angegeben, mit räumlichen Bedingungen Schwierigkeiten zu haben: Weshalb haben Sie nicht
+um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q2: Sie haben angegeben, mit der Studienorganisation/Lehre Schwierigkeiten zu haben: Weshalb haben Sie nicht
+um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q3: Sie haben angegeben, mit Prüfungen Schwierigkeiten zu haben: Weshalb haben Sie nicht
+um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q4: Sie haben angegeben, in einem (weiteren) anderen Bereich Schwierigkeiten zu haben: Weshalb haben Sie nicht
+um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q5: Sie haben angegeben, mit räumlichen Bedingungen und der Studienorganisation/Lehre Schwierigkeiten zu haben:
+Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q6: Sie haben angegeben, mit räumlichen Bedingungen und Prüfungen Schwierigkeiten zu haben:
+Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q7: Sie haben angegeben, mit räumlichen Bedingungen und einem anderen Bereich Schwierigkeiten zu haben:
+Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q8: Sie haben angegeben, mit der Studienorganisation/Lehre und Prüfungen Schwierigkeiten zu haben: Weshalb haben Sie nicht
+um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q9: Sie haben angegeben, mit der Studienorganisation/Lehre und einem anderen Bereich Schwierigkeiten zu haben: Weshalb haben Sie
+nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q10: Sie haben angegeben, mit Prüfungen und einem anderen Bereich Schwierigkeiten zu haben: Weshalb haben Sie nicht
+um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+
+q11: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -620,7 +653,27 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW q1 IF ntabau=1
+
+vc2: SHOW q2 IF ntaorg=1
+
+vc3: SHOW q3 IF ntapru=1
+
+vc4: SHOW q4 IF ntaand=1
+
+vc5: SHOW q5 IF ntabau=1 AND ntaorg=1
+
+vc6: SHOW q6 IF ntabau=1 AND ntapru=1
+
+vc7: SHOW q7 IF ntabau=1 AND ntaand=1
+
+vc8: SHOW q8 IF ntaorg=1 AND ntapru=1
+
+vc9: SHOW q9 IF ntaorg=1 AND ntaand=1
+
+vc10: SHOW q10 IF ntapru=1 AND ntaand=1
+
+vc11: SHOW q11 IF ntabau=1 AND ntaorg=1 AND ntapru=1 AND ntaand=1
 
 av:
 
@@ -632,7 +685,9 @@ hv:
 
 fo:
 
-tr: GOTO C2_12
+tr: GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
+
+ELSE GOTO C2_12
 
 hi:
 
@@ -652,7 +707,37 @@ hl:
 
 in:
 
-q: Weshalb wurde mindestens einer der zuletzt beantragten Nachteilsausgleiche
+q1: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
+in Bezug auf die räumlichen Bedingungen nicht bewilligt?
+
+q2: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
+in Bezug auf die Studienorganisation/Lehre nicht bewilligt?
+
+q3: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
+in Bezug auf Prüfungen nicht bewilligt?
+
+q4: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
+in Bezug auf einen anderen Bereich nicht bewilligt?
+
+q5: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die räumlichen Bedingungen und die Studienorganisation/Lehre nicht bewilligt?
+
+q6: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die räumlichen Bedingungen und Prüfungen nicht bewilligt?
+
+q7: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die räumlichen Bedingungen und einen anderen Bereich nicht bewilligt?
+
+q8: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die Studienorganisation/Lehre und Prüfungen nicht bewilligt?
+
+q9: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf die Studienorganisation/Lehre und einen anderen Bereich nicht bewilligt?
+
+q10: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
+in Bezug auf Prüfungen und einen anderen Bereich nicht bewilligt?
+
+q11: Weshalb wurde mindestens einer der zuletzt beantragten Nachteilsausgleiche
 und/oder individuellen Anpassungen/Absprachen nicht bewilligt?
 
 is: Bitte alles Zutreffende auswählen.
@@ -693,7 +778,27 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW q1 IF ntabau=3
+
+vc2: SHOW q2 IF ntaorg=3
+
+vc3: SHOW q3 IF ntapru=3
+
+vc4: SHOW q4 IF ntaand=3
+
+vc5: SHOW q5 IF ntabau=3 AND ntaorg=3
+
+vc6: SHOW q6 IF ntabau=3 AND ntapru=3
+
+vc7: SHOW q7 IF ntabau=3 AND ntaand=3
+
+vc8: SHOW q8 IF ntaorg=3 AND ntapru=3
+
+vc9: SHOW q9 IF ntaorg=3 AND ntaand=3
+
+vc10: SHOW q10 IF ntapru=3 AND ntaand=3
+
+vc11: SHOW q11 IF ntabau=3 AND ntaorg=3 AND ntapru=3 AND ntaand=3
 
 av:
 
