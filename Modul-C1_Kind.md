@@ -957,9 +957,7 @@ hv:
 
 fo:
 
-tr: IF dkinstuja >=1 AND dkinstuja <=3 GOTO C1_14
-
-ELSE GOTO XXX
+tr: GOTO C1_14
 
 hi:
 
@@ -978,7 +976,7 @@ hl:
 
 in:
 
-q: Welche Alternative würden Sie favorisieren?
+q: Wenn Sie die Möglichkeit hätten, welche Alternative würden Sie favorisieren?
 
 is:
 
