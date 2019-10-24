@@ -11,7 +11,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 
 hl:
 
-in:
+in: Im Folgenden geht es um Fragen zur sozialen Gerechtigkeit an der Hochschule und innerhalb der Gesellschaft. Dabei geht es nicht um richtig oder falsch, sondern um Ihre persönliche Meinung. Bitte lesen Sie dazu die Aussagen aufmerksam durch.
 
 q: Würden Sie die sozialen Unterschiede in Deutschland ganz allgemein als klein
 oder groß bezeichnen?
@@ -255,7 +255,7 @@ hl:
 
 in:
 
-q: Inwiefern stimmen Sie folgenden Aussagen zum Thema Meinungsfreiheit zu oder lehnen Sie ab?
+q: Inwiefern stimmen Sie folgenden Aussagen zum Thema Meinungsfreiheit zu?
 
 is:
 
@@ -273,7 +273,7 @@ it6: (faians): Die meisten Lehrenden und Studierenden an meiner Hochschule haben
 
 st:
 
-ao1: 1: lehne völlig ab
+ao1: 1: stimme überhaupt nicht zu
 
 ao2: 2:
 
@@ -281,9 +281,9 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: stimme völlig zu
+ao5: 5: stimme voll und ganz zu
 
-mv:
+mv: 6: kann ich nicht beurteilen
 
 ka:
 
@@ -328,7 +328,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden. 
 Absolvent\*innen wirtschaftswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 43.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen wirtschaftswissenschaftlicher Studienfächer direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen wirtschaftswissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -336,7 +336,7 @@ it:
 
 st:
 
-ao1: 1: völlig gerechtfertigt
+ao1: 1: gar nicht gerechtfertigt
 
 ao2: 2:
 
@@ -344,7 +344,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: gar nicht gerechtfertigt
+ao5: 5: völlig gerechtfertigt
 
 mv:
 
@@ -382,7 +382,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -436,7 +436,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 52.700 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -490,7 +490,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen rechtswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 46.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -544,7 +544,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Rechtswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Rechtswissenschaften?
 
 is:
 
@@ -598,7 +598,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Ingenieurwissenschaften verdienen demgegenüber durchschnittlich ca. 47.500 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Ingenieurwissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Ingenieurwissenschaften?
 
 is:
 
@@ -653,7 +653,7 @@ in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen versch
 
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss !!mehr!! verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
 is:
 
@@ -708,7 +708,7 @@ in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen versch
 
 Absolvent\*innen rechtswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 46.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
 is:
 
@@ -762,7 +762,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Rechtswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Rechtswissenschaften?
 
 is:
 
@@ -817,7 +817,7 @@ in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen versch
 
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss !!**mehr!!** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
 is:
 
@@ -870,9 +870,9 @@ hl:
 
 in:
 
-q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? Die Absolvent\*innen ...
 
-is: Die Absolvent\*innen der [Fächergruppe mit jeweils höherem Gehalt]...
+is: Mehrfachantworten sind möglich
 
 it:
 
@@ -943,7 +943,7 @@ hl:
 in:
 
 q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen für eine Absage (z.B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung für die Ablehnung verantwortlich sein. 
-Weshalb wird man Ihrer Meinung nach eher abgelehnt?
+Aus welchen Gründen wird man ihrer Meinung nach diskriminiert?
 
 is:
 
@@ -960,6 +960,10 @@ it5: (faidisrel): aufgrund religiöser Zugehörigkeit
 it6: (faidissex): aufgrund der sexuellen Orientierung
 
 it7: (faidisbeein): aufgrund physischer oder psychischer Beeinträchtigung
+
+it8: (faidisother): ein anderer und zwar:_____\_ 
+
+it9: (faidisother_open): [60 Zeichen]
 
 st:
 
@@ -1000,7 +1004,7 @@ tc:
 
 vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a
 
-qt: Mehrfachauswahlmatrix
+qt: Mehrfachauswahlmatrix mit horizontalen ao
 
 hl:
 
