@@ -183,7 +183,7 @@ st:
 
 ao1: 1: von Geburt an?
 
-ao2: 2: als Spätaussielder(in)?
+ao2: 2: als Spätaussiedler(in)?
 
 ao3: 3: durch Einbürgerung?
 
