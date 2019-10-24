@@ -116,13 +116,13 @@ vc5: SHOW dkinage4 IF dkinanz >= 3
 
 vc6: SHOW dkinage5 IF dkinanz >= 4
 
-vc7: SHOW is IF dkinanz >=2
+vc7: SHOW is IF dkinanz >= 2
 
 vc8: SHOW q1 IF dkinanz = k. A.
 
 vc9: SHOW q2 IF dkinanz = 1
 
-vc10 SHOW q3 IF dkinanz \> 1
+vc10 SHOW q3 IF dkinanz >= 2
 
 av: Bitte geben Sie das Lebensalter Ihres Kindes an (0 bis 99).
 
