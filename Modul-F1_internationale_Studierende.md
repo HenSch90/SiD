@@ -202,7 +202,7 @@ in:
 
 q: Kennen Sie jemanden, der bereits vor Ihnen im Rahmen seines Studiums im Ausland war?
 
-is: Mehrfachauswahl
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
