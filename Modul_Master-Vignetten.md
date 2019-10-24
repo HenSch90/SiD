@@ -13,7 +13,8 @@ qt: Einfachauswahl mit vertikalen Antwortoptionen
 
 hl: Fragen zu Masterstudium und Beruf
 
-in: Nachfolgend bitten wir Sie, für vier hypothetische Masterstudiengänge mit unterschiedlichen Eigenschaften einzuschätzen, wie wahrscheinlich Sie sich bewerben würden. Die Merkmale der Studiengänge sind jeweils in kurzen Texten dargestellt. 
+in: Sie sind momentan im fortgeschrittenen Bachelorstudium und möchten sich vielleicht für ein Masterstudium bewerben.
+Nachfolgend bitten wir Sie, für vier hypothetische Masterstudiengänge mit unterschiedlichen Eigenschaften einzuschätzen, wie wahrscheinlich Sie sich bewerben würden. Die Merkmale der Studiengänge sind jeweils in kurzen Texten dargestellt. 
 
 Es handelt sich um einen Studiengang an einer staatlichen oder privaten Hochschule, der auf Ihrem angestrebten Bachelorabschluss fachlich aufbaut. Wohnkosten und Freizeitmöglichkeiten entsprechen in etwa Ihrem jetzigen Studienort.
 
@@ -81,7 +82,7 @@ it:
 
 st:
 
-ao1: 0: sehr wahrscheinlich
+ao1: 0: sehr unwahrscheinlich
 
 ao2: 1:
 
@@ -306,7 +307,7 @@ it4: (joberfü): ... Sie wirklich erfüllt
 
 st:
 
-ao1: 1: überhaupt nicht vorbereitet
+ao1: 1: überhaupt nicht
 
 ao2: 2:
 
@@ -314,7 +315,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr gut vorbereitet
+ao5: 5: in sehr hohem Maße
 
 mv:
 
@@ -334,7 +335,7 @@ fo:
 
 tr: GOTO KSM-ma06
 
-hi:
+hi: in der Vorschau entspricht die Reihenfolge der Items nicht der hier dargestellten. Bitte prüfen
 
 \--------------------------------
 
@@ -452,7 +453,7 @@ hl:
 in:
 
 q: Im Laufe dieser Befragung haben Sie angegeben, dass Sie ein Masterstudium
-planen. Aus welchem Grund möchten Sie ein Masterstudium aufnehmen?
+planen. Aus welchen Gründen möchten Sie ein Masterstudium aufnehmen?
 
 is:
 
@@ -482,7 +483,7 @@ it12: (mastergrund12): um später in der Wissenschaft zu arbeiten
 
 it13: (mastergrund13): weil ich noch nicht weiß, was ich sonst machen soll
 
-it14: (mastergrund14): weil mein\*e Professor\*in mich dazu ermutigt hat
+it14: (mastergrund14): weil ein\*e Professor\*in mich dazu ermutigt hat
 
 it15: (mastergrund15): anderes, und zwar... [mastergrund15o]
 
@@ -617,11 +618,11 @@ hl:
 in:
 
 q: Wie stehen Sie zu den folgenden Aussagen bezüglich des Bachelorabschlusses?
-Ein Bachelorabschluss ist…
+Ein Bachelorabschluss …
 
 is:
 
-it1: (bawert1): …kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
+it1: (bawert1): … ist kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
 der beruflichen Ausbildung
 
 it2: (bawert2): …wird von Arbeitgebern kaum angesehen
