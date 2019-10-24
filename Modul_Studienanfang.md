@@ -3,6 +3,60 @@
 KSM-anf01
 =========
 
+tc: Einstiegsseite
+
+vn: 
+
+qt: 
+
+hl: Übergang an die Hochschule
+
+in: Der Übergang an die Hochschule kann mit verschiedenen Herausforderungen und Schwierigkeiten verbunden sein. Im Folgenden werden wir Ihnen daher abschließend Fragen zu Ihrer Studienanfangsphase sowie zu Ihren persönlichen Interessen stellen.
+
+q: 
+
+is:
+
+it:
+
+st:
+
+ao1:
+
+ao2:
+
+ao3:
+
+ao4:
+
+ao5:
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: KSM-anf02
+
+hi: Wäre es möglich, diesen Eingangstext etwas größer darzustellen als es sonst für die Einleitung üblich ist?
+
+\------------------------------------------------------------
+\------------------------------------------------------------
+
+KSM-anf02
+=========
+
 tc:
 
 vn: abselt
@@ -47,13 +101,13 @@ hv:
 
 fo:
 
-tr: KSM-anf02
+tr: KSM-anf03
 
 hi:
 
 \------------------------------------------------------------
 
-KSM-anf02
+KSM-anf03
 =========
 
 tc:
@@ -146,13 +200,13 @@ hv:
 
 fo:
 
-tr: KSM-anf03
+tr: KSM-anf04
 
 hi:
 
 \------------------------------------------------------------
 
-KSM-anf03
+KSM-anf04
 =========
 
 tc:
@@ -215,13 +269,13 @@ hv:
 
 fo:
 
-tr: KSM-anf04
+tr: KSM-anf05
 
 hi:
 
 \------------------------------------------------------------
 
-KSM-anf04
+KSM-anf05
 =========
 
 tc:
@@ -282,13 +336,13 @@ hv:
 
 fo:
 
-tr: KSM-anf05
+tr: KSM-anf06
 
 hi:
 
 \------------------------------------------------------------
 
-KSM-anf05
+KSM-anf06
 =========
 
 tc:
