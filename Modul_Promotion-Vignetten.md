@@ -11,7 +11,9 @@ qt:
 
 hl:
 
-in: Promovieren kann man in Deutschland unter ganz unterschiedlichen
+in: Abschließend interessiert uns Ihre Meinung zu den Gründen für oder gegen eine Promotion.
+
+Promovieren kann man in Deutschland unter ganz unterschiedlichen
 Rahmenbedingungen. Im Folgenden schildern wir Ihnen einige mögliche
 Konstellationen, in denen eine !!fachlich für Sie sehr interessante!! Promotion
 an einer !!Hochschule in Deutschland!! möglich ist. Gehen Sie bitte davon aus,
@@ -252,35 +254,33 @@ hl:
 
 in:
 
-q: Aus welchem Grund möchten Sie promovieren?
+q: Im Laufe dieser Befragung haben Sie angegeben, dass Sie eine Promotion planen. Aus welchem Grund möchten Sie promovieren?
 
 is:
 
-it1: (promgrund1): ich möchte nicht promovieren
+it1: (promgrund2): um zu einem bestimmten Thema zu forschen
 
-it2: (promgrund2): um zu einem bestimmten Thema zu forschen
+it2: (promgrund3): um später in der Wissenschaft zu arbeiten
 
-it3: (promgrund3): um später in der Wissenschaft zu arbeiten
+it3: (promgrund4): um meine Berufsaussichten zu verbessern
 
-it4: (promgrund4): um meine Berufsaussichten zu verbessern
+it4: (promgrund5): weil es in meinem angestrebten Berufsfeld üblich ist
 
-it5: (promgrund5): weil es in meinem angestrebten Berufsfeld üblich ist
+it5: (promgrund6): weil der Titel ein hohes soziales Ansehen besitzt
 
-it6: (promgrund6): weil der Titel ein hohes soziales Ansehen besitzt
+it6: (promgrund7): weil ich noch nicht weiß, was ich sonst machen soll
 
-it7: (promgrund7): weil ich noch nicht weiß, was ich sonst machen soll
+it7: (promgrund8): weil ein\*e Professor\*in mich dazu ermutigt hat
 
-it8: (promgrund8): weil mein\*e Professor\*in mich dazu ermutigt hat
+it8: (promgrund9): um meinen Berufswunsch zu erfüllen
 
-it9: (promgrund9): um meinen Berufswunsch zu erfüllen
+it9: (promgrund10): um mir ein höheres Einkommen zu sichern
 
-it10: (promgrund10): um mir ein höheres Einkommen zu sichern
+it10: (promgrund11): um mich persönlich zu entfalten
 
-it11: (promgrund11): um mich persönlich zu entfalten
+it11: (promgrund12): um länger an der Hochschule bleiben zu können
 
-it12: (promgrund12): um länger an der Hochschule bleiben zu können
-
-it13: (promgrund13): sonstige, und zwar: [promgrund13o]
+it12: (promgrund13): sonstige, und zwar: [promgrund13o]
 
 st:
 
