@@ -11,7 +11,7 @@ qt: Einfachauswahl mit horizontaler Antwortoption
 
 hl:
 
-in:
+in: Zum Abschluss geht es um Aussagen zur Politik und zu hochschulpolitischen Themen, bei denen Sie angeben sollen, inwieweit sie diesen zustimmen oder diese ablehnen. Dabei geht es nicht um richtig oder falsch, sondern um Ihre persönliche Meinung. Bitte lesen Sie dazu die Aussagen aufmerksam durch.
 
 q: Wie stark interessieren Sie sich für Politik?
 
@@ -74,7 +74,7 @@ it:
 
 st:
 
-ao1: 1: gar nicht zufrieden
+ao1: 1: überhaupt nicht zufrieden
 
 ao2: 2:
 
@@ -82,7 +82,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr stark zufrieden
+ao5: 5: voll und ganz zufrieden
 
 
 
@@ -121,7 +121,7 @@ hl:
 
 in:
 
-q: Stimmen Sie den folgenden Aussagen zu oder lehnen Sie sie ab?
+q: Inwiefern stimmen Sie den folgenden Aussagen zu?
 
 is:
 
@@ -147,7 +147,7 @@ it10: (rechtspop10): Politische Vorgänge sind so kompliziert, dass ich mir nur 
 
 st:
 
-ao1: 1: lehne völlig ab
+ao1: 1: stimme überhaupt nicht zu
 
 ao2: 2:
 
@@ -155,7 +155,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: stimme völlig zu
+ao5: 5: stimme voll und ganz zu
 
 
 mv: 6: kann ich nicht beurteilen
@@ -280,7 +280,7 @@ q: Im Folgenden geht es um hochschulpolitische Themen. Wie stehen Sie zu folgend
 
 is:
 
-it1: (hochschulpol1): Hochschulen sind nur an Forschung interessiert, nicht an der Lehre.
+it1: (hochschulpol1): Professor\*innen sind nur an Forschung interessiert, nicht an der Lehre.
 
 it2: (hochschulpol2): Hochschulen beziehen zu wenig Stellung zu gesellschaftlich relevanten Themen.
 
@@ -304,7 +304,7 @@ ao4: 4:
 
 ao5: 5: stimme voll und ganz zu
 
-mv:
+mv: 6: kann ich nicht beurteilen
 
 ka:
 
@@ -339,7 +339,7 @@ hl:
 
 in:
 
-q: An welchen Formen der Kritik würden Sie wie teilnehmen, um auf hochschulpolitische Probleme aufmerksam zu machen?
+q: An welchen Formen der Kritik würden Sie teilnehmen, um auf hochschulpolitische Probleme aufmerksam zu machen?
 
 is:
 
@@ -418,13 +418,13 @@ ao3: (beteil3): Beteiligung an Umwelt-, Natur-, Tierschutzorganisationen
 
 ao4: (beteil4): Mitarbeit im sozialen Bereich (Jugendarbeit, Hilfen, Wohlfahrt)
 
-ao5: (beteil5): Trainer*in / Übungsleiter*innentätigkeit im Sportverein
+ao5: (beteil5): Trainer\*in / Übungsleiter\*in im Sportverein
 
 ao6: (beteil6): Mitarbeit in Friedens-, Menschenrechts-, Asylgruppen
 
 ao7: (beteil7): Studierendenvertretungen
 
-ao8: (beteil8): Student*innenverbindungen
+ao8: (beteil8): Student\*innenverbindungen
 
 ao9: (beteil9): Engagement in anderen politischen oder sozialen Gruppierungen
 
