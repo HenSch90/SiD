@@ -966,7 +966,7 @@ hi:
 C1_14
 =====
 
-tc: IF dkinja = 2 AND dkinstuja \>=1 AND dkinstuja \<=3
+tc: IF dkinja = 2
 
 vn: dkinsturev
 
