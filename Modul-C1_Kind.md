@@ -74,17 +74,17 @@ q3: Wie alt sind Ihre Kinder?
 
 is: Mit der Bezeichnung “1. Kind” meinen wir Ihr ältestes Kind.
 
-it1: (dkinagej) : Alter Ihres jüngsten Kindes:
+it1: (dkinagej) : [infield = Alter jüngstes Kind]
 
-it2: (dkinage1) : Alter Ihres Kindes:
+it2: (dkinage1) : [infield = Alter Kind]
 
-it3: (dkinage2) : Alter Ihres 1. Kindes:
+it3: (dkinage2) : [infield = Alter 1. Kind]
 
-it4: (dkinage3) : Alter Ihres 2. Kindes:
+it4: (dkinage3) : [infield = Alter 2. Kind]
 
-it5: (dkinage4) : Alter Ihres 3. Kindes:
+it5: (dkinage4) : [infield = Alter 3. Kind]
 
-it6: (dkinage5) : Alter Ihres 4. Kindes
+it6: (dkinage5) : [infield = Alter 4. Kind]
 
 st:
 
@@ -104,19 +104,19 @@ mv:
 
 ka:
 
-vc1: SHOW dkinagej IF dkinanz = ao..k.A.)
+vc1: SHOW dkinagej IF dkinanz = k. A.
 
-vc2: SHOW dkinage1 IF dkinanz1 = ao1
+vc2: SHOW dkinage1 IF dkinanz = 1
 
-vc3: SHOW dkinage2 IF dkinanz2 \>= ao2
+vc3: SHOW dkinage2 IF dkinanz >= 2
 
-vc4: SHOW dkinage3 IF dkinanz2 \>= ao2
+vc4: SHOW dkinage3 IF dkinanz >= 2
 
-vc5: SHOW dkinage4 IF dkinanz3 \>= ao3
+vc5: SHOW dkinage4 IF dkinanz >= 3
 
-vc6: SHOW dkinage5 IF dkinanz4 \>= ao4
+vc6: SHOW dkinage5 IF dkinanz >= 4
 
-vc7: SHOW is IF dkinanz \>=2
+vc7: SHOW is IF dkinanz >=2
 
 vc8: SHOW q1 IF dkinanz = k. A.
 
@@ -138,7 +138,7 @@ tr:
 
 GOTO C1_5
 
-hi: Dezimalstellen zulassen
+hi: Eingabefelder auf XXXX-Format setzen; Wertebereich = 0 bis 99 betragen; Dezimalstellen zulassen.
 
 \--------------------------------
 
@@ -223,7 +223,7 @@ it:
 
 st:
 
-ao: (dkinanzhh): Anzahl Kinder: [(dkinanzhho) number, 1-stellig: 0 TO 9]
+ao: (dkinanzhh):  [(dkinanzhho) infield = "Anzahl Kinder"; number, 1-stellig: 0 TO 9]
 
 mv:
 
@@ -468,7 +468,7 @@ tc: IF dkinja = 2
 
 vn: dekinbezuf
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahl mit horizontalen ao
 
 hl:
 
@@ -595,7 +595,7 @@ fo:
 
 tr: GOTO C1_10
 
-hi: Wie soll das hier codiert werden? über ao4 und entsprechender vc?
+hi:
 
 \--------------------------------
 
@@ -915,15 +915,15 @@ hl:
 
 in:
 
-q: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie …
+q1: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie wieder mit Kind(ern) studieren?
+
+q2: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie wieder mit Kind studieren?
+
+q3: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie wieder mit Kindern studieren?
 
 is:
 
-it1: … wieder mit Kind(ern) studieren?
-
-it2: … wieder mit Kind studieren?
-
-it3: … wieder mit Kindern studieren?
+it:
 
 st:
 
@@ -941,11 +941,11 @@ mv:
 
 ka:
 
-vc1: SHOW it1 IF dkinanz = k. A.
+vc1: SHOW q1 IF dkinanz = k. A.
 
-vc2: SHOW it2 IF dkinanz = 1
+vc2: SHOW q2 IF dkinanz = 1
 
-vc3: SHOW it3 IF dkinanz \> 1
+vc3: SHOW q3 IF dkinanz \> 1
 
 av:
 
@@ -957,7 +957,7 @@ hv:
 
 fo:
 
-tr: IF dkinstuja \>=1 AND dkinstuja \<=3 GOTO C1_14
+tr: IF dkinstuja >=1 AND dkinstuja <=3 GOTO C1_14
 
 ELSE GOTO XXX
 
