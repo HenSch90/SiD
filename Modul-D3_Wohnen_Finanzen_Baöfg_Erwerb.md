@@ -363,9 +363,9 @@ ka:
 
 vc1: SHOW it4 (feinjobdso) if sformdua = 1 
 
-vc2: SHOW it5 (feinjobo) if sformdua = 1
+vc2: SHOW it5 (feinjobo) if sformdua != 1
 
-vc3: SHOW it5 IF  sformdua = 1 
+vc3: SHOW it6 (feinjobo) IF  sformdua = 1 
 
 vc3: SHOW it11 (feinekio) if dkinja=2
 
