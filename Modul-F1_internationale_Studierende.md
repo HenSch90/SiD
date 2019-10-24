@@ -255,9 +255,9 @@ hl:
 
 in:
 
-q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) Im Ausland verbracht?
+q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) im Ausland verbracht?
 
-is: Bitte alles Zutreffende ankreuzen.
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -423,11 +423,13 @@ in:
 
 q: Wie wurde Ihre Vorbildung in Deutschland anerkannt?
 
+is: Bitte alles Zutreffende auswählen.
+
 it:
 
 st:
 
-ao1: (vsbpruefba) :nach einer Feststellungsprüfung als Studienberechtigbung (z. B. am Studienkolleg an einer Hochschule)
+ao1: (vsbpruefba) :nach einer Feststellungsprüfung als Studienberechtigung (z. B. am Studienkolleg an einer Hochschule)
 
 ao2: (vsbeignba): nach einer Eignungsprüfung (z. B. für Kunst, Sport) an einer Hochschule als Studienberechtigung
 
@@ -476,9 +478,11 @@ hl:
 
 in:
 
-q: Warum haben Sie sich für Deutschland als Studienlang entschieden?
+q: Warum haben Sie sich für Deutschland als Studienland entschieden?
 
 is: Bitte geben Sie den jeweils zutreffenden Skalenwert an.
+
+Ich habe mich für ein Studium in Deutschland entschieden, ...
 
 it1 (bdefinba): weil dies meinen finanziellen Möglichkeiten entspricht.
 
@@ -496,7 +500,7 @@ it7 (bdeoekba): wegen der wirtschaftlichen Lage in Deutschland.
 
 it8 (bdequaba): wegen der Lebensqualität in Deutschland.
 
-it9 (bdearbba): auf der Möglichkeit, nach Studienabschluss in Deutschland zu arbeiten.
+it9 (bdearbba): aufgrund der Möglichkeit, nach Studienabschluss in Deutschland zu arbeiten.
 
 st:
 
@@ -628,7 +632,7 @@ st:
 
 ao1: 1: : Nein, ich werde in Deutschland nur einen Teil meines Studiums absolvieren.
 
-ao2: 2: : Ja, ich plane den Abschluss eines Studiums in Deutschland (z. B. Bachelor, Master, Promotion)
+ao2: 2: : Ja, ich plane den Abschluss eines Studiums in Deutschland (z. B. Bachelor, Master, Promotion).
 
 ao3: 3: : Ja, ich plane einen Doppelabschluss in Deutschland un in meinem Herkunftsland/einem anderen Land.
 
@@ -669,7 +673,7 @@ hl:
 
 in:
 
-q: Wissen Sie bereits, ob Ihr Aufenthalt in Deutschland auf Ihr Studium in Ihrem Heimatland angerechnet wird, z. B. in Form ECTS-Punkten?
+q: Wissen Sie bereits, ob Ihr Aufenthalt in Deutschland auf Ihr Studium in Ihrem Heimatland angerechnet wird, z. B. in Form von ECTS-Punkten?
 
 is:
 
@@ -722,7 +726,7 @@ in:
 
 q: Findet Ihr aktueller Aufenthalt in Deutschland im Rahmen eines Austauschprogramms statt?
 
-is: Mehrfachnennungen sind möglich.
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -840,7 +844,7 @@ in:
 
 q1: Wie willkommen fühlen Sie sich in Deutschland?
 
-q2: Wie sicher fühlen Sie sich bisland in Deutschland insgesamt?
+q2: Wie sicher fühlen Sie sich bislang in Deutschland insgesamt?
 
 is:
 
@@ -1078,7 +1082,7 @@ hl:
 
 in:
 
-q: Hinsichtlich Ihres Auslandsaufenthalts: Wenn Sie die freie Wahl gehabt hätten, in welchem Land und an welchem Ort hätten Sie am liebsten studiert?
+q: Hinsichtlich Ihres Auslandsaufenthalts: Wenn Sie die freie Wahl gehabt hätten, in welchem Land, in welcher Stadt/Hochschule hätten Sie am liebsten studiert?
 
 is:
 
@@ -1137,7 +1141,7 @@ st:
 
 ao1 (bhiitecba): : Einführung in wissenschaftliche Lern- und Arbeitstechniken
 
-ao2 (bhiiwelba): : Welcome-Veranstaltungen/Begrüßungsveranstaltung
+ao2 (bhiiwelba): : Welcome-Veranstaltungen/Begrüßungsveranstaltungen
 
 ao3 (bhiivorbba): : fachliche Vorbereitungskurse
 
@@ -1206,7 +1210,7 @@ hl:
 
 in:
 
-q: Was planen Sie direct im Anschluss an Ihr Studium in Deutschland?
+q: Was planen Sie direkt im Anschluss an Ihr Studium in Deutschland?
 
 is:
 
@@ -1216,19 +1220,19 @@ st:
 
 Ich möchte Arbeiten, und zwar …
 
-ao1: … in Deutschland
+ao1: … in Deutschland.
 
-ao2: … in meinem Heimatland
+ao2: … in meinem Heimatland.
 
-ao3: … in einem anderen Land
+ao3: … in einem anderen Land.
 
 Ich möchte weiterstudieren, und zwar …
 
-ao4: … in Deutschland
+ao4: … in Deutschland.
 
-ao5: … in meinem Heimatland
+ao5: … in meinem Heimatland.
 
-ao6: … in einem anderen Land
+ao6: … in einem anderen Land.
 
 mv:
 
@@ -1328,7 +1332,7 @@ is:
 
 it1 (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und persönliche Meinungen äußern.
 
-it2 (intling2ba): Ich verstehen die wichtigsten Punkte in Radio- und Fernsehprogrammen, die auf Deutsch gesendet warden.
+it2 (intling2ba): Ich verstehe die wichtigsten Punkte in Radio- und Fernsehprogrammen, die auf Deutsch gesendet warden.
 
 it3 (intling3ba): Ich kann deutsche Zeitungsartikel lesen und vollständig verstehen.
 
@@ -1391,7 +1395,7 @@ it3 (aarbchandlba): in einem anderen Land?
 
 st:
 
-ao1: 1: :überhaupt nicht
+ao1: 1: :überhaupt nicht gut
 
 ao2: 2
 
