@@ -170,9 +170,10 @@ hv:
 
 fo:
 
-tr: GOTO KSM-ma03 if maber==2 OR maber==3
+tr: GOTO KSM-ma03 if maber= 2 OR maber= 3
 
-GOTO KSM-ma04 if maber==1
+GOTO KSM-ma04 if maber= 1
+GOTO KSM-ma04 if maber= SYSMISS
 
 hi:
 
@@ -431,6 +432,7 @@ tr:
 GOTO KSM-ma07 IF mastplan >= 4
 GOTO KSM-ma08 IF mastplan < 3
 GOTO KSM-ma09 IF mastplan = 3
+GOTO KSM-ma09 IF mastplan = SYSMISS
 
 hi: Hier in Abhängigkeit von der Absicht ein Masterstudium aufzunehmen auf die folgenden Fragen weiterleiten
 
