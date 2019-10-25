@@ -306,6 +306,24 @@ GOTO F1_6 IF (vsbdeba=2 AND dnatausl=1 AND imausl=MISSING)
 GOTO F1_6 IF (vsbdeba=2 AND dnatausl=MISSING AND imausl=1)
 GOTO F1_6 IF (vsbdeba=2 AND dnatausl=MISSING AND imausl=MISSING)
 
+
+ALTERNATIV:
+
+			<zofar:transition target="F1_6" 
+							  condition="(zofar.asNumber(vsbdeba)==2)"/>			
+			<zofar:transition target="F2_6" 
+							  condition="(zofar.asNumber(vsbdeba)==1 
+							  			and zofar.asNumber(imausl)==1)"/>				
+			<zofar:transition target="F3_6" 
+							  condition="(zofar.asNumber(vsbdeba)==1 
+							  			and zofar.asNumber(imausl)==2)"/>					
+			<zofar:transition target="F2_6" 
+							  condition="(zofar.isMissing(vsbdeba) 
+							  			and zofar.asNumber(imausl)==1)"/>		
+			<zofar:transition target="F3_6" 
+							  condition="(zofar.asNumber(vsbdeba)==1 
+							  			and zofar.isMissing(imausl))"/>		
+                      
 hi:
 
 \--------------------------------
