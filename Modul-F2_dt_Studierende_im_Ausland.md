@@ -144,8 +144,7 @@ hl:
 
 in:
 
-q: Warum haben Sie sich für das Land in dem Sie Ihren aktuellen studienbezogenen
-Auslandsaufenthalt absolvieren entschieden?
+q: Warum haben Sie sich für dieses Land entschieden?
 
 is: Bitte geben Sie den jeweils zutreffenden Skalenwert an.
 
@@ -229,8 +228,7 @@ hl:
 
 in:
 
-q: Planen Sie im Rahmen Ihres aktuellen studienbezogenen Auslandsaufenthalts
-eine Abschluss zu erwerben?
+q: Beabsichtigen Sie im Ausland einen Abschluss zu erwerben?
 
 is:
 
@@ -283,7 +281,7 @@ hl:
 in:
 
 q: Wissen Sie bereits, ob Ihr aktueller Auslandsaufenthalt auf Ihr Studium in
-Deutschland angerechnet wird, z. B. in Form von ECTS-Punkten?
+Deutschland angerechnet wird?
 
 is:
 
@@ -298,6 +296,8 @@ ao2: 2: : offene Angabe: 2 Stellen Präfix [ainfcp1osia], Suffix: ja, teilweise:
 
 ao3: 3: : offene Angabe: 2 Stellen Präfix [ainfcp2osia], Suffix: ja,
 vollständig: … ECTS-Punkte
+
+ao1: 4: : weiß ich nicht
 
 mv:
 
@@ -465,18 +465,17 @@ hl:
 
 in:
 
-q: Wie häufig haben Sie während Ihres aktuellen studienbezogenen
-Auslandsaufenthalts insgesamt Gespräche/Kontakt …
+q: Wie häufig unterhalten Sie sich während Ihres Auslandsaufenthalts mit …
 
 is:
 
-it1 (akontdeustsia): … mit Studierenden aus Deutschland?
+it1 (akontdeustsia): … Studierenden aus Deutschland?
 
-it2 (akontgastsia): … mit Studierenden des Gastlandes?
+it2 (akontgastsia): … Studierenden des Gastlandes?
 
-it3 (akonteinheimsia): … mit anderen Einheimischen?
+it3 (akonteinheimsia): … anderen Einheimischen?
 
-it4 (akontintstsia): … mit anderen internationalen Studierenden (nicht aus
+it4 (akontintstsia): … anderen internationalen Studierenden (nicht aus
 Deutschland)?
 
 st:
@@ -529,7 +528,7 @@ hl:
 
 in:
 
-q: Wie häufig sprechen Sie während Ihres aktuellen Auslandsaufenthalts die
+q: Wie häufig sprechen Sie während Ihres Auslandsaufenthalts die
 folgenden Sprachen
 
 is:
@@ -591,8 +590,7 @@ hl:
 
 in:
 
-q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt in Bezug auf Ihren
-aktuellen studienbezogenen Auslandsaufenthalt mit …
+q: In Bezug auf Ihren Auslandsaufenthalt: Wie zufrieden sind Sie mit …
 
 is:
 
@@ -768,7 +766,7 @@ F2_18
 tc: IF (nur für Studierende, die sich aktuell studienbezogen im Ausland
 befinden)
 
-vn: bdedarlsia; bdedarlosia; bdedarhssia; bdedarhsosia
+vn: bdedarlosia; bdedarhsosia
 
 qt: Einfachauswahl, offene Angabe
 
@@ -776,10 +774,7 @@ hl:
 
 in:
 
-q: Hinsichtlich Ihres Auslandsaufenthalts:
-
-Wenn Sie die freie Wahl hätten, in welchem Land, an welchem Ort bzw. an welcher
-Hochschule hätten Sie am liebsten studiert?
+q:  Wenn Sie die freie Wahl hätten, wo würden Sie am liebsten studieren?
 
 is:
 
@@ -787,13 +782,11 @@ it:
 
 st:
 
-ao1 (bdedarlsia): : Land: (offene Angabe: 100 Zeichen, Präfix [bdedarlosia],
+ao1:  Land: (offene Angabe: 100 Zeichen, Präfix [bdedarlosia],
 Suffix:
 
-ao2 (bdedarhssia): :Ort/Hochschule: (offene Angabe: 100 Zeichen, Präfix
+ao2: Ort/Hochschule: (offene Angabe: 100 Zeichen, Präfix
 [bdedarhsosia], Suffix:
-
-ao3: -12 : : weiß ich nicht
 
 mv:
 
