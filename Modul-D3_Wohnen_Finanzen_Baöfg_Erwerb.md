@@ -56,7 +56,7 @@ tc:
 
 vn: wohnami, wohnamio
 
-qt: Offene Frage
+qt: offene Frage
 
 hl:
 
@@ -71,7 +71,7 @@ it:
 
 st:
 
-ao1: 2 Stellen, Präfix [wohnami]: Suffix: Anzahl: [wohnamio] Person(en)
+ao1: : (wohnami) Eingaabefeld, 2 Stellen, Präfix: [infield = Personenzahl; (wohnamio)]
 
 mv:
 
@@ -91,8 +91,7 @@ fo:
 
 tr: GOTO D3_4
 
-hi: Variable wohnamio bitte erst einblenden, wenn Wert bei wohnami nicht
-definiert ist
+hi: 
 
 \--------------------------------
 
@@ -109,8 +108,10 @@ hl:
 
 in:
 
-q: Bitte geben Sie die fünfstellige Postleitzahl Ihres derzeitigen Wohnortes am
+q1: Bitte geben Sie die fünfstellige Postleitzahl Ihres derzeitigen Wohnortes am
 Hochschulort an.
+
+q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitten den Ort an.
 
 is:
 
@@ -118,39 +119,29 @@ it:
 
 st:
 
-ao1: 5 Stellen, Präfix [wohnplz] Suffix: Postleitzahl:[number]
+ao1: : (wohnplz), 5 Stellen, Präfix [infield = PLZ; number (wohnplzo)] 
 
-ao2: 50 Stellen, Präfix [wohnplzort] Suffix: Falls Sie die Postleitzahl nicht
-kennen, geben Sie bitten den Ort an. [50 Zeichen]
-
-ao3: -12 (wohnplzo)
-
-ao4: -12 (wohnplzorto)
+ao2: : (wohnplzort), Präfix [infield = Ort; (wohnplzorto)]; 100 Zeichen
 
 mv:
 
 ka:
 
-vc:
+vc: 
 
-av1: ao1 (wohnplz) number: 10000 : 1 TO 99999
-
-av2: ao2 (wohnplzort) 100 Zeichen
+av1: ao1 (wohnplz) number: 01000 TO 99999
 
 kh1: (wohnplzo): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
-
-kh2: (wohnplzorto): Bitte geben Sie Ihren Wohnort an (100 Zeichen).
 
 fv:
 
 hv:
 
-fo:
+fo: SHOW q2 and ao2 IF wohnplzo = k. A. (--> soft forcing, also danach geht es normal weiter)
 
 tr: GOTO A_53
 
-hi: Variablen wohnplzo und wohnplzorto bitte erst einblenden, wenn Werte bei
-wohnplz bzw. wohnpolzort nicht definiert sind
+hi:
 
 \--------------------------------
 
@@ -167,7 +158,11 @@ hl:
 
 in:
 
-q: Wie groß ...
+q1: Wie groß ist Ihre Wohnung?
+
+q2: Wie groß ist Haus?
+
+q3: Wie groß ist das von Ihnen genutzte Zimmer?
 
 is:
 
@@ -175,23 +170,19 @@ it:
 
 st:
 
-ao1: 3 Stellen, Präfix (wohnqmw) Suffix: ist (Individualisierung: “Ihr Haus” bei
-Elternwohnern, sonst “Ihre Wohnung”)
+ao1: (wohnqmw),  Präfix: [infield = qm²; 3 Stellen; number (wohnqmwo)]
 
-ao2: -12 (wohnqmwo): weiß ich nicht (Exklusivkategorie)
-
-ao3: 2 Stellen, Präfix (wohnqmz) Suffix: ist das von Ihnen genutzte Zimmer:
-[number] m²
-
-ao4: -12 (wohnqmzo): weiß ich nicht (Exklusivkategorie)
+ao2: (wohnqmz), Präfix: [infield = qm²; 2 Stellen; number (wohnqmzo)]
 
 mv:
 
 ka:
 
-vc1: SHOW ao3 IF wohnel=1 OR wohnwg=1 (wenn Elternwohner\*innen oder WG-Wohnende)
+vc1: SHOW q1 IF wohnel!=1
 
-vc2: SHOW ao4 IF wohnel=1 OR wohnwg=1 (wenn Elternwohner\*innen oder WG-Wohnende)
+vc3: SHOW q2 IF wohnel=1 
+
+vc2: SHOW q3, ao2 IF wohnel=1 OR wohnwg=1 
 
 av1: number: 3 stellig : 1 TO 999
 
@@ -218,7 +209,7 @@ tc:
 
 vn: wohnzust
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -273,7 +264,7 @@ tc:
 
 vn: feinelto; feinkino; feinparo; feinjobdso; feinjobo; feinspao; feinbafo; feinkredo; feinstio; feinekio; feinbest1; feinbest2; feinandq; feinandqo; feininsg; feininsgo
 
-qt: Akkordeon, Einfachauswahl, offene Angabe
+qt: offene Angabe
 
 hl:
 
@@ -283,8 +274,8 @@ q: Auf Ihre Person bezogen: Wie viel Geld steht Ihnen durchschnittlich pro Monat
 während des Sommersemesters 2020 zur Verfügung?
 
 is: Bitte berücksichtigen Sie hier nur das Geld, über das Sie tatsächlich selbst
-verfügen. Berücksichtigen Sie hier bitte !!++nicht++!!, was z. B. Ihre Eltern
-oder Ihr(e) Partner*in für Sie direkt an Dritte zahlen (z. B. direkte
+verfügen. Berücksichtigen Sie hier bitte ++nicht++, was z. B. Ihre Eltern
+oder Ihr(e) Partner\*in für Sie direkt an Dritte zahlen (z. B. direkte
 Überweisung der Miete an Ihren Vermieter).
 
 Leerzeile
@@ -329,33 +320,33 @@ it15: (feininsg): Gesamteinnahmen: (offene Angabe: [feininsgo] 5 Zeichen)
 
 st:
 
-ao1: 4 Stellen, Präfix [feinelto] Suffix: [number] € pro Monat
+ao1: 4 Stellen, Präfix infield = Betrag [feinelto] Suffix: [number] € pro Monat
 
-ao2: 4 Stellen, Präfix [feinkino] Suffix: [number]€ pro Monat
+ao2: 4 Stellen, Präfix infield = Betrag [feinkino] Suffix: [number]€ pro Monat
 
-ao3: 4 Stellen, Präfix [feinparo] Suffix: [number]€ pro Monat
+ao3: 4 Stellen, Präfix infield = Betrag [feinparo] Suffix: [number]€ pro Monat
 
-ao4: 4 Stellen, Präfix [feinjobdso] Suffix: [number]€ pro Monat
+ao4: 4 Stellen, Präfix infield = Betrag [feinjobdso] Suffix: [number]€ pro Monat
 
-ao5: 4 Stellen, Präfix [feinjobo] Suffix: [number]€ pro Monat
+ao5: 4 Stellen, Präfix infield = Betrag [feinjobo] Suffix: [number]€ pro Monat
 
-ao6: 4 Stellen, Präfix [feinspao] Suffix: [number]€ pro Monat
+ao6: 4 Stellen, Präfix infield = Betrag [feinspao] Suffix: [number]€ pro Monat
 
-ao7: 4 Stellen, Präfix [feinbafo] Suffix: [number]€ pro Monat
+ao7: 4 Stellen, Präfix infield = Betrag [feinbafo] Suffix: [number]€ pro Monat
 
-ao8: 4 Stellen, Präfix [feinkredo] Suffix: [number]€ pro Monat
+ao8: 4 Stellen, Präfix infield = Betrag [feinkredo] Suffix: [number]€ pro Monat
 
-ao9: 4 Stellen, Präfix [feinstio] Suffix: [number]€ pro Monat
+ao9: 4 Stellen, Präfix infield = Betrag [feinstio] Suffix: [number]€ pro Monat
 
-ao10: 4 Stellen, Präfix [feinekio] Suffix: [number]€ pro Monat
+ao10: 4 Stellen, Präfix infield = Betrag [feinekio] Suffix: [number]€ pro Monat
 
-ao11: 4 Stellen, Präfix [feinbest1] Suffix: [number]€ pro Monat
+ao11: 4 Stellen, Präfix infield = Betrag [feinbest1] Suffix: [number]€ pro Monat
 
-ao12: 4 Stellen, Präfix [feinbest2] Suffix: [number]€ pro Monat
+ao12: 4 Stellen, Präfix infield = Betrag [feinbest2] Suffix: [number]€ pro Monat
 
-ao13: 4 Stellen, Präfix [feinandqo] Suffix: [number]€ pro Monat
+ao13: 4 Stellen, Präfix infield = Betrag [feinandqo] Suffix: [number]€ pro Monat
 
-ao14: 5 Stellen, Präfix [feininsgo] Suffix: [number]€ pro Monat
+ao14: 5 Stellen, Präfix infield = Betrag [feininsgo] Suffix: [number]€ pro Monat
 
 mv:
 
@@ -385,7 +376,7 @@ tr:
 
 GOTO D3_7
 
-hi: “Betrag” als Spaltenüberschriften; „(it 15) Gesamteinnahmen“ bitte fett und unterstrichen
+hi: 
 
 \--------------------------------
 
@@ -461,7 +452,7 @@ vn3: fausinsg
 
 
 
-qt: Einfachauswahl, offene Angabe
+qt: offene Angabe
 
 hl:
 
@@ -471,7 +462,9 @@ q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie (z. B. Eltern
 bezahlen Ihre Miete direkt an den Vermieter) im Sommersemester 2020 monatlich
 haben.
 
-is: IF wohnal=!1: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an bzw. nur was Sie selbst ausgeben.
+is1: Dritte bezahlen direkt" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
+
+is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an bzw. nur was Sie selbst ausgeben.
 
 it1: (fausgmieto; feindmieto): Miete inkl. Nebenkosten (Strom, Heizung, (Ab-)Wasser usw.)
 
@@ -510,37 +503,37 @@ it16: (fausinsg): Gesamtausgaben:
 
 st:
 
-ao1: Präfix [fausgmieto; feindmieto] Suffix: [number] € pro Monat
+ao1: Präfix [infield = Betrag; fausgmieto; feindmieto] Suffix: [number] € pro Monat
 
-ao2:  Präfix [fausgerno; feinderno] Suffix: [number] € pro Monat
+ao2:  Präfix [infield = Betrag; fausgerno; feinderno] Suffix: [number] € pro Monat
 
-ao3: Präfix [fausgkomo; feindkomo] Suffix: [number] € pro Monat 
+ao3: Präfix [infield = Betrag; fausgkomo; feindkomo] Suffix: [number] € pro Monat 
 
-ao4: Präfix [fausgkleio; feindkleio] Suffix: [number] € pro Monat
+ao4: Präfix [infield = Betrag; fausgkleio; feindkleio] Suffix: [number] € pro Monat
 
-ao5: Präfix [fausglerno; feindlerno] Suffix: [number] € pro Monat
+ao5: Präfix [infield = Betrag; fausglerno; feindlerno] Suffix: [number] € pro Monat
 
-ao6: Präfix [fausgmobo; feindgmobo] Suffix: [number] € pro Monat
+ao6: Präfix [infield = Betrag; fausgmobo; feindgmobo] Suffix: [number] € pro Monat
 
-ao7: Präfix [fausggeso; feindgeso] Suffix: [number] € pro Monat
+ao7: Präfix [infield = Betrag; fausggeso; feindgeso] Suffix: [number] € pro Monat
 
-ao8: Präfix [fausgsemo; feindgsemo] Suffix: [number] € pro Monat
+ao8: Präfix [infield = Betrag; fausgsemo; feindgsemo] Suffix: [number] € pro Monat
 
-ao9: Präfix [faugstuo; feindgstuo] Suffix: [number] € pro Monat
+ao9: Präfix [infield = Betrag; faugstuo; feindgstuo] Suffix: [number] € pro Monat
 
-ao10: Präfix [fausgfreio; feindgfreio] Suffix: [number] € pro Monat
+ao10: Präfix [infield = Betrag; fausgfreio; feindgfreio] Suffix: [number] € pro Monat
 
-ao11: Präfix [fausgkitaso; feindkitaso] Suffix: [number] € pro Monat
+ao11: Präfix [infield = Betrag; fausgkitaso; feindkitaso] Suffix: [number] € pro Monat
 
-ao12: Präfix [fausgkindso; feindkindso] Suffix: [number] € pro Monat
+ao12: Präfix [infield = Betrag; fausgkindso; feindkindso] Suffix: [number] € pro Monat
 
-ao13: Präfix [fausgasso; feindgasso] Suffix: [number] € pro Monat
+ao13: Präfix [infield = Betrag; fausgasso; feindgasso] Suffix: [number] € pro Monat
 
-ao14: Präfix [fausgthilfo; feindgthilfo] Suffix: [number] € pro Monat
+ao14: Präfix [infield = Betrag; fausgthilfo; feindgthilfo] Suffix: [number] € pro Monat
 
-ao15: Präfix [fausandq; fausandqo; feinandq2; feinandqo2] Suffix: [number] (50 Zeichen)
+ao15: Präfix [infield = Betrag; fausandq; fausandqo; feinandq2; feinandqo2] Suffix: [number] (50 Zeichen)
 
-ao16: Präfix [fausinsg] Suffix: [number] € pro Monat
+ao16: Präfix [infield = Betrag; fausinsg] Suffix: [number] € pro Monat
 
 mv:
 
@@ -553,6 +546,8 @@ vc2: SHOW fausgkindso; feindkindso IF [dkinja = 2]
 vc3: SHOW fausgasso; feindgasso IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
 
 vc4: SHOW fausgthilfo; feindgthilfo IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
+
+vc5: SHOW is2 IF wohnal=!1
 
 av1: number : 1 bis 4 stellig (1-9999)
 
@@ -595,9 +590,7 @@ it:
 
 st:
 
-ao1: 4, Präfix [feininsg] Suffix: Mindesteinnahmen: . [number] €
-
-ao2: -12: : weiß ich nicht (Exklusivkategorie)
+ao1: (fmineink) Eingabefeld; Präfix: [infield =  €; [number], (fmineinko)]  
 
 mv:
 
@@ -607,7 +600,7 @@ vc:
 
 av: number : 1-4 stellig : 1 TO 9999
 
-kh: Bitte geben Sie Ihre monatlichen Gesamtausgaben an (1 bis 9999)
+kh: Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (1 bis 9999).
 
 fv:
 
@@ -642,17 +635,23 @@ Davon bezahlen durchschnittlich im Monat …
 
 is:
 
-it: 
+it1: ... meine Eltern für mich direkt:
+
+it2: ... mein*/e Partner*/in für mich direkt:
+
+it3: ... mein Arbeitgeber für mich direkt:
+
+it4: ... andere für mich direkt und zwar:
 
 st:
 
-ao1: 4 Stellen; Präfix [fausgstkelt; fausgstkelto] Suffix: ... meine Eltern für mich direkt: [number] €
+ao1: Präfix [infield = €; [number] fausgstkelt; fausgstkelto] 
 
-ao2: 4 Stellen; Präfix [fausgstkpart; fausgstkparto] Suffix: ... mein*/e Partner*/in für mich direkt: [number] €
+ao2: Präfix [infield = €; [number] fausgstkpart; fausgstkparto]  
 
-ao3: 4 Stellen; Präfix [fausgstkarb; fausgstkarbo] Suffix: ... mein Arbeitgeber für mich direkt: [number] €
+ao3: Präfix [infield = €; [number] fausgstkarb; fausgstkarbo]
 
-ao4: 4 Stellen, Präfix [fausgstkand; fausgstkando] Suffix: ... andere für mich direkt und zwar: [number] €
+ao4: Präfix [infield = €; [number] fausgstkand; fausgstkando] 
 
 mv: 
 
@@ -738,7 +737,7 @@ fo:
 
 tr: GOTO D3_12
 
-hi: Items bitte zufällig rotieren
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -812,7 +811,7 @@ fo:
 
 tr: GOTO A_54
 
-hi: Items bitte zufällig rotieren
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -1249,11 +1248,9 @@ hi:
 D3_20
 =====
 
-tc: Frage wird berufsbegleitend oder dual Studierenden gestellt
+tc: sformberu = 1 | sformdua = 1 Frage wird berufsbegleitend oder dual Studierenden gestellt
 
-vn1: deltjobbbs (deltjobbbso1 / deltjobbbso2)
-
-vn2: deltjobds (deltjobdso1 / deltjobdso2)
+vn1: jobbbds1, jobbbdsso1, jobbbds2, jobbbdsso2, 
 
 qt: offene Abfrage im Spaltenformat / Einfachauswahl im Spaltenformat
 
@@ -1266,7 +1263,7 @@ q: Welchen Beruf üben Sie aktuell aus? Bitte erläutern Sie die Tätigkeit kurz
 is: Falls Sie zurzeit nicht erwerbstätig sind, geben Sie bitte die Ihre zuletzt
 ausgeübte Tätigkeit an.
 
-\*\*++Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive
+Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive
 Führungsaufgaben ein. Zum Beispiel:
 
 -   Bankkaufmann/-frau (nicht: Angestellte/r) Beratung, Verkauf von
@@ -1276,17 +1273,17 @@ Führungsaufgaben ein. Zum Beispiel:
     Einsatzplanung
 
 -   Maschinenbauingenieur(in) (nicht: Ingenieur/in) Konstruktion,
-    Optimierungsprozesse, Produktionsleitung++\*\*
+    Optimierungsprozesse, Produktionsleitung
 
 it:
 
 st:
 
-ao1(-o1): 50; Präfix: \*\*++Berufsbezeichnung:++\*\*
+ao1: (jobbbds1) Textfeld, 50 Zeichen; Präfix: [infield = Berufsbezeichnung; (jobbbdsso1)]
 
-ao2 (-o2): 50; Präfix: \*\*++Tätigkeitsbeschreibung:++\*\*
+ao2: (jobbbds2) Textfeld, 50 Zeichen; Präfix: [infield = Tätigkeitsbeschreibung (jobbbdsso2)]
 
-ao3: -11: : \*\*++nie berufstätig gewesen++\*\*
+ao3: -11: : nie berufstätig gewesen
 
 ao4: -12: : weiß ich nicht [EK]
 
@@ -1295,10 +1292,6 @@ mv:
 ka:
 
 vc:
-
-SHOW vn1 IF sformberu == 1
-
-SHOW vn2 IF sformdua == 1
 
 av:
 
@@ -1393,9 +1386,9 @@ SHOW q1 IF eaktsens = 2
 
 SHOW q2 IF eaktsens = 2 AND sformdua == 1
 
-SHOW q3 IF eaktsens = [ 3 \| 4]
+SHOW q3 IF eaktsens =  3 \| 4
 
-SHOW q4 IF eaktsens = [3 \| 4] AND sformdua == 1
+SHOW q4 IF eaktsens = 3 \| 4 AND sformdua == 1
 
 av:
 
