@@ -308,12 +308,11 @@ hl:
 
 in:
 
-q1: Wenn Sie an eine typische Woche denken: Wer betreut wie häufig Ihr(e)
-Kind(er)?
+q1: Wenn Sie an eine typische Woche denken: Welche der folgenden Personen betreuen wie häufig Ihr(e) Kind(er)?
 
-q2: Wenn Sie an eine typische Woche denken: Wer betreut wie häufig Ihr Kind?
+q2: Wenn Sie an eine typische Woche denken: Welche der folgenden Personen betreuen wie häufig Ihr Kind?
 
-q3: Wenn Sie an eine typische Woche denken: Wer betreut wie häufig Ihre Kinder?
+q3: Wenn Sie an eine typische Woche denken: Welche der folgenden Personen betreuen wie häufig Ihre Kinder?
 
 is:
 
@@ -474,8 +473,7 @@ hl:
 
 in:
 
-q1: Wie zufrieden sind Sie insgesamt mit der Betreuungssituation Ihres
-Kindes/Ihrer Kinder?
+q1: Wie zufrieden sind Sie insgesamt mit der Betreuungssituation Ihres Kindes/Ihrer Kinder?
 
 q2: Wie zufrieden sind Sie insgesamt mit der Betreuungssituation Ihres Kindes?
 
@@ -538,8 +536,7 @@ hl:
 
 in:
 
-q: Gibt es an Ihrer Hochschule folgende Unterstützungsmöglichkeiten bzw.
-Angebote für Studierende mit Kind(ern)?
+q: Gibt es an Ihrer Hochschule folgende Unterstützungsmöglichkeiten bzw. Angebote für Studierende mit Kind(ern)?
 
 is:
 
@@ -727,8 +724,7 @@ q: Wie sehr treffen folgende Aussagen auf Sie zu?
 
 is:
 
-it1: (dkinsw): Ich kann den Bedürfnissen meines Kindes/meiner Kinder sehr gut
-gerecht werden.
+it1: (dkinsw): Ich kann den Bedürfnissen meines Kindes/meiner Kinder sehr gut gerecht werden.
 
 it2: (dkinsw): Ich kann den Bedürfnissen meines Kindes sehr gut gerecht werden.
 
@@ -915,11 +911,11 @@ hl:
 
 in:
 
-q1: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie wieder mit Kind(ern) studieren?
+q1: Würden Sie wieder mit Kind(ern) studieren?
 
-q2: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie wieder mit Kind studieren?
+q2: Würden Sie wieder mit Kind studieren?
 
-q3: Wenn Sie noch einmal vor der Entscheidung stünden: Würden Sie wieder mit Kindern studieren?
+q3: Würden Sie wieder mit Kindern studieren?
 
 is:
 
