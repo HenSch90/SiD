@@ -62,7 +62,7 @@ hl:
 
 in:
 
-q: Mit wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit
+q: Zu wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit
 eingeschlossen – zusammen?
 
 is:
@@ -108,8 +108,7 @@ hl:
 
 in:
 
-q1: Bitte geben Sie die fünfstellige Postleitzahl Ihres derzeitigen Wohnortes am
-Hochschulort an.
+q1: Bitte geben Sie die Postleitzahl Ihres derzeitigen Wohnortes am Hochschulort an.
 
 q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitten den Ort an.
 
@@ -215,7 +214,7 @@ hl:
 
 in:
 
-q: Wie würden Sie allgemein den Zustand Ihrer Wohnung einschätzen?
+q: Wie würden Sie den Allgemeinzustand Ihrer Wohnung einschätzen?
 
 is:
 
@@ -462,9 +461,9 @@ q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie (z. B. Eltern
 bezahlen Ihre Miete direkt an den Vermieter) im Sommersemester 2020 monatlich
 haben.
 
-is1: Dritte bezahlen direkt" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
+is1: "Dritte bezahlen direkt" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
 
-is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an bzw. nur was Sie selbst ausgeben.
+is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an.
 
 it1: (fausgmieto; feindmieto): Miete inkl. Nebenkosten (Strom, Heizung, (Ab-)Wasser usw.)
 
@@ -629,7 +628,7 @@ hl:
 
 in: 
 
-q: Sie haben angegeben, dass Dritte Ihre Studienkosten (Semesterbeitrag bzw. Studiengebühren) übernehmen.
+q: Sie haben angegeben, dass Dritte Ihre Studienkosten (Semesterbeitrag bzw. Studiengebühren) übernehmen oder sich daran beteiligen.
 [Leerzeile]
 Davon bezahlen durchschnittlich im Monat …
 
@@ -688,7 +687,7 @@ hl:
 
 in:
 
-q: Inwieweit treffen die nachfolgenden Aussagen Sie und Ihre finanzielle
+q: Inwieweit treffen die folgenden Aussagen Sie und Ihre finanzielle
 Situation zu?
 
 is:
@@ -755,8 +754,7 @@ hl:
 
 in:
 
-q: Der Umgang mit Geld kann unterschiedliche Herausforderungen mit sich bringen:
-Inwieweit treffen die nachfolgenden Aussagen auf Sie zu?
+q: Inwieweit treffen die folgenden Aussagen zum Umgang mit Geld auf Sie zu?
 
 is:
 
@@ -1170,20 +1168,20 @@ hl:
 
 in: 
 
-q1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit, der Sie im aktuellen Semester nachgehen, an.
+q1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Semester nachgehen.
 
-q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit, der Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb im aktuellen Semester nachgehen, an.
+q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb  nachgehen.
 
 q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
-q4: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten, neben Ihrer Tätigkeit im Ausbildungsbetrieb, nachzugehen. 
+q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 q5: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
-q6: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten, neben Ihrer Tätigkeit im Ausbildungsbetrieb, nachzugehen. 
+q6: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 is: 
@@ -1321,15 +1319,15 @@ q1: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
 aktuellen Semesters einer Erwerbstätigkeit nach, …
 
 q2: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
-aktuellen Semesters einer Erwerbstätigkeit, die ich neben meiner Tätigkeit im
-Ausbildungsbetrieb ausübe, nach, …
+aktuellen Semesters neben meiner Tätigkeit im
+Ausbildungsbetrieb einer Erwerbstätigkeit nach, …
 
 q3: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
 aktuellen Semesters mehreren Erwerbstätigkeiten nach, …
 
 q4: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
-aktuellen Semesters mehreren Erwerbstätigkeiten, die ich neben meiner Tätigkeit
-im Ausbildungsbetrieb ausübe, nach, …
+aktuellen Semesters neben meiner Tätigkeit
+im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nach, …
 
 is:
 
