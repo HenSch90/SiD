@@ -1417,7 +1417,7 @@ hl:
 
 in: 
 
-q: Bitte tragen Sie das Land und den Ort bzw. die Hochschule ein, an der Sie aktuell im Ausland studieren.
+q: An welcher Hochschule studieren Sie aktuell?
 
 is: 
 
@@ -1463,7 +1463,7 @@ hl:
 
 in:
 
-q: Alles in allem: Wie zufrieden sind Sie insgesamt mit den Bedingungen im Studium?
+q: Alles in allem: Wie zufrieden sind Sie insgesamt mit den Bedingungen an Ihrer Hochschule?
 
 is:
 
@@ -1517,9 +1517,9 @@ hl:
 
 in:
 
-q1: Bitte tragen Sie Ihr (erstes) Studienfach in das dafür vorgesehene Feld ein.
+q1: Bitte geben Sie Ihr Studienfach an.
 
-q2: Bitte tragen Sie Ihr erstes Unterrichtsfach in das dafür vorgesehene Feld ein.
+q2: 
 
 is:
 
@@ -1851,7 +1851,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium im Vergleich zu den Leistungen Ihrer Kommiliton(inn)en ein?
+q: Wie schätzen Sie Ihre bisherigen	Studienleistungen im Vergleich zu Ihren Kommiliton(inn)en ein?
 
 is:
 
@@ -1904,7 +1904,7 @@ hl:
 
 in:
 
-q: Wie zufrieden sind Sie insgesamt mit den bisher von Ihnen erbrachten Studienleistungen in Ihrem aktuellen Studium?
+q: Wie zufrieden sind Sie insgesamt mit den bisher von Ihnen erbrachten Studienleistungen?
 
 is:
 
@@ -2129,9 +2129,9 @@ weiß ich nicht Kästchen
 o Bei Angabe von „weiß ich nicht“, sollen die Textfelder in der jeweiligen
 Spalte bitte nicht ausgefüllt werden können und umgekehrt (Exklusivkategorie).
 
-tr: GOTO B2_2a if mastersplit=1, 2, 3, 4, 5, 6, 13 AND h_split2==1 (50%)
-    GOTO B2_2b if mastersplit=1, 2, 3, 4, 5, 6, 13 AND h_split2==2 (50%)
-    GOTO B1_6 if mastersplit=7, 8, 9, 10, 11, 12
+tr: GOTO B2_2a if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split2==1 (50%)
+    GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split2==2 (50%)
+    GOTO B1_6 if mastersplit=1, 2, 3, 4, 5, 6
 
 hi:
 
