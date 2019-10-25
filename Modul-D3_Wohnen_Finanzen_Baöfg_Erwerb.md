@@ -119,9 +119,9 @@ it:
 
 st:
 
-ao1: : (wohnplz), 5 Stellen, Präfix [infield = PLZ; number (wohnplzo)] 
+ao1: : (wohnplz), Präfix [infield = PLZ; 5 Stellen; number (wohnplzo)] 
 
-ao2: : (wohnplzort), Präfix [infield = Ort; (wohnplzorto)]; 100 Zeichen
+ao2: : (wohnplzort), Präfix [infield = Ort; 100 Zeichen (wohnplzorto)]
 
 mv:
 
@@ -160,7 +160,7 @@ in:
 
 q1: Wie groß ist Ihre Wohnung?
 
-q2: Wie groß ist Haus?
+q2: Wie groß ist Ihr Haus?
 
 q3: Wie groß ist das von Ihnen genutzte Zimmer?
 
@@ -505,7 +505,7 @@ st:
 
 ao1: Präfix [infield = Betrag; fausgmieto; feindmieto] Suffix: [number] € pro Monat
 
-ao2:  Präfix [infield = Betrag; fausgerno; feinderno] Suffix: [number] € pro Monat
+ao2: Präfix [infield = Betrag; fausgerno; feinderno] Suffix: [number] € pro Monat
 
 ao3: Präfix [infield = Betrag; fausgkomo; feindkomo] Suffix: [number] € pro Monat 
 
@@ -539,13 +539,13 @@ mv:
 
 ka:
 
-vc1: SHOW fausgkitaso; feindkitaso IF [dkinja = 2]
+vc1: SHOW it11 IF [dkinja = 2]
 
-vc2: SHOW fausgkindso; feindkindso IF [dkinja = 2]
+vc2: SHOW it12 IF [dkinja = 2]
 
-vc3: SHOW fausgasso; feindgasso IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
+vc3: SHOW it13 IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
 
-vc4: SHOW fausgthilfo; feindgthilfo IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
+vc4: SHOW it14 IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
 
 vc5: SHOW is2 IF wohnal=!1
 
@@ -993,14 +993,14 @@ in:
 
 q: Aus welchen Gründen [Individualisierung]:
 
-wenn fbafja = 1 AND fbafex = 1 \| kA: haben Sie bisher keinen BAföG-Antrag
+IF fbafja = 1 AND fbafex = 1 \| kA: haben Sie bisher keinen BAföG-Antrag
 gestellt?
 
-wenn fbafja = 2: wurde Ihr aktueller Antrag abgelehnt?
+IF fbafja = 2: wurde Ihr aktueller Antrag abgelehnt?
 
-wenn (fbafja = 1) AND (fbafex = 2 \| 3): wurde Ihr Antrag damals abgelehnt?
+IF (fbafja = 1) AND (fbafex = 2 \| 3): wurde Ihr Antrag damals abgelehnt?
 
-wenn fbafja = 1 AND fbafex = 4: haben Sie keinen Antrag auf Weiterförderung mehr
+IF fbafja = 1 AND fbafex = 4: haben Sie keinen Antrag auf Weiterförderung mehr
 gestellt?
 
 is: Bitte alles Zutreffende auswählen.
@@ -1031,13 +1031,7 @@ sich nicht lohnt/e.
 
 ao9: (fbafkschu): Ich will/wollte keine Schulden machen.
 
-ao10: (fbafand): Andere Gründe, und zwar:
-
-ao11: 50 Zeichen, Präfix (fbafando) Suffix: 50 Zeichen
-
-ao2:
-
-ao3:
+ao10: (fbafand): Andere Gründe, und zwar: (fbafando) 50 Zeichen 
 
 mv:
 
@@ -1250,7 +1244,7 @@ D3_20
 
 tc: sformberu = 1 | sformdua = 1 Frage wird berufsbegleitend oder dual Studierenden gestellt
 
-vn1: jobbbds1, jobbbdsso1, jobbbds2, jobbbdsso2, 
+vn1: jobbbds1, jobbbdso1, jobbbds2, jobbbdso2, 
 
 qt: offene Abfrage im Spaltenformat / Einfachauswahl im Spaltenformat
 
@@ -1279,9 +1273,9 @@ it:
 
 st:
 
-ao1: (jobbbds1) Textfeld, 50 Zeichen; Präfix: [infield = Berufsbezeichnung; (jobbbdsso1)]
+ao1: (jobbbds1) Textfeld, 50 Zeichen; Präfix: [infield = Berufsbezeichnung; (jobbbdso1)]
 
-ao2: (jobbbds2) Textfeld, 50 Zeichen; Präfix: [infield = Tätigkeitsbeschreibung (jobbbdsso2)]
+ao2: (jobbbds2) Textfeld, 50 Zeichen; Präfix: [infield = Tätigkeitsbeschreibung (jobbbdso2)]
 
 ao3: -11: : nie berufstätig gewesen
 
