@@ -64,80 +64,185 @@ B2_2a
 
 tc: 50 Prozent der Befragten
 
-vn: deltposv1; deltposm1
+vn: deltposv1
 
-qt: Einfachauswahl im Spaltenformat/Comparison
+qt: Einfachauswahl mit Überkategorien
 
 hl:
 
 in:
 
-q: Welche berufliche Stellung hat Ihr Vater/Ihre Mutter?
+q: Welche berufliche Stellung hat Ihr Vater?
 
-is: Falls Ihr Vater oder Ihre Mutter zurzeit nicht erwerbstätig sind (z. B.
-Rentner(in), Pensionär(in), Hausfrau/-mann oder arbeitssuchend), beziehen Sie
-sich bitte auf die jeweils zuletzt ausgeübte Tätigkeit.
+is: Falls Ihr Vater zurzeit nicht erwerbstätig ist (z. B. Rentner, Pensionär, Hausmann oder arbeitssuchend), beziehen Sie sich bitte auf die zuletzt ausgeübte Tätigkeit.
 
-it1: (deltposv1): Vater
+ao1: 1: … ungelernt 
 
-It2 (deltposm1): Mutter
+ao2: 2: … angelernt
 
-ao1: 1: ungelernt
+ao3: 3: … Facharbeiter
 
-ao2: 2: angelernt
+ao4: 4: … Vorarbeiter, Kolonnenführer
 
-ao3: 3: Facharbeiter(in)
+ao5: 5: … Meister, Polier, Brigadier
 
-ao4: 4: Vorarbeiter(in), Kolonnenführer(in)
+ao6: 6: … mit ausführender Tätigkeit
+z. B. Verkäufer, Datentypist, Sekretariatsassistent, Pflegehelfer
 
-ao5: 5: Meister(in), Polier(in), Brigadier(in)
+ao7: 7: … mit qualifizierter Tätigkeit
+z. B. Sachbearbeiter, Buchhalter, technischer Zeichner
 
-ao6: 6: mit ausführender Tätigkeit z. B. Verkäufer(in), Datentypist(in),
-Sekretariatsassistent(in), Pflegehelfer(in)
+ao8: 8: … mit Fachverantwortung für Personal 
+z. B. wissenschaftlicher Mitarbeiter, Prokurist, Abteilungsleiter bzw. Meister im Angestelltenverhältnis
 
-ao7: 7: mit qualifizierter Tätigkeit z. B. Sachbearbeiter(in), Buchhalter(in),
-technische(r) Zeichner(in)
+ao9: 9: … mit umfassenden Führungsaufgaben und Entscheidungsbefugnissen 
+z. B. Direktor, Geschäftsführer, Mitglied des Vorstandes
 
-ao8: 8: mit Fachverantwortung für Personal z. B. wissenschaftliche(r)
-Mitarbeiter(in), Prokurist(in), Abteilungsleiter(in) bzw. Meister(in) im
-Angestelltenverhältnis
+ao10: 10: … im einfachen Dienst 
+z. B. Amtsgehilfe, Schaffner, Betriebsassistent, ab (Ober-)Gefreiter
 
-ao9: 9: mit umfassenden Führungsaufgaben und Entscheidungsbefugnissen z. B.
-Direktor(in), Geschäftsführer(in), Mitglied des Vorstandes
+ao11: 11: … im mittleren Dienst 
+z. B. Polizei(haupt)meister, Sekretär, Gerichtsvollzieher, ab Unteroffizier
 
-ao10: 10: im einfachen Dienst z. B. Amtsgehilfe/-gehilfin, Schaffner(in),
-Betriebsassistent(in), ab (Ober)Gefreiter
+ao12: 12: … im gehobenen Dienst 
+z. B. Inspektor, Lehrer, Amtsrat, Kriminalkommissar, ab Leutnant
 
-ao11: 11: im mittleren Dienst z. B. Polizei(haupt)meister(in), Sekretär(in),
-Gerichtsvollzieher(in), ab Unteroffizier(in)
+ao13: 13: … im höheren Dienst 
+z. B. Regierungsrat, Studienrat, Hochschullehrer, Rektor, Richter, ab Major
 
-ao12: 12: im gehobenen Dienst z. B. Inspektor(in), Lehrer(in), Amtsrat/-rätin,
-Kriminalkommissar(in), ab Leutnant(in)
+ao14: 14: … keine weiteren Mitarbeiter*innen
 
-ao13: 13: im höheren Dienst z. B. Regierungsrat/-rätin, Studienrat/-rätin,
-Hochschullehrer(in), Rektor(in), Richter(in), ab Major(in)
+ao15: 15: … 1 bis 4 Mitarbeiter*innen
 
-ao14: 14: keine weiteren Mitarbeiter(innen)
+ao16: 16: … 5 und mehr Mitarbeiter*innen
 
-ao15: 15: 1 bis 4 Mitarbeiter(innen)
+ao17: 17: … keine weiteren Mitarbeiter*innen
 
-ao16: 16: 5 und mehr Mitarbeiter(innen)
+ao18: 18: … 1 bis 4 Mitarbeiter*innen
 
-ao17: 17: keine weiteren Mitarbeiter(innen)
+ao19: 19: … 5 und mehr Mitarbeiter*innen
 
-ao18: 18: 1 bis 4 Mitarbeiter(innen)
+ao20: 20: … PGH-Mitglied
 
-ao19: 19: 5 und mehr Mitarbeiter(innen)
+ao21: 21: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
 
-ao20: 20: PGH-Mitglied
+ao22: 22: … mit einer landwirtschaftlich genutzten Fläche von 10 ha und mehr
 
-ao21: 21: mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
+ao23: 23: … Genossenschaftsbauer (ehemals LPG)
 
-ao22: 22: mit einer landwirtschaftlich genutzten Fläche von 10 ha und mehr
+ao24: 24: !!Mithelfender Familienangehöriger!!
 
-ao23: 23: Genossenschaftsbauer/-bäuerin (ehemals LPG)
+ao25: -11: !!nie berufstätig gewesen!!
 
-ao24: 24: !!Mithelfende(r) Familienangehörige(r)!!
+mv: -12: !!weiß ich nicht!!
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO B2_2a2
+
+hi: Überkategorien der Antwortoptionen:
+
+>   st1: !!Arbeiter, und zwar …!! (ao1, ao2, ao3, ao4, ao5)
+
+>   st2: !!Angestellter, und zwar …!! (ao6, ao7, ao8, ao9)
+
+>   st3: !!Beamter, Richter, Berufssoldat, und zwar …!! (ao10,
+>   ao11, ao12, ao13)
+
+>   st4: !!Akademiker in freiem Beruf (z.B. Rechtsanwalt, niedergelassener Arzt, Steuerberater, Künstler), und zwar…!! (ao14,
+>   ao15, ao16)
+
+>   st5: !!Selbstständiger im Handel, im Gastgewerbe, im Handwerk, in der Industrie, der Dienstleistung, auch Ich-AG oder PGH-Mitglied und hat/hatte …!! (ao17, ao18, ao19, ao20)
+
+>   st6: !!Selbständiger Landwirt bzw. Genossenschaftsbauer, und zwar …!!
+>   (ao21, ao22, ao23)
+
+\--------------------------
+
+B2_2a2
+==
+
+tc:
+
+vn: deltposm1
+
+qt: Einfachauswahl mit Überkategorien
+
+hl:
+
+in:
+
+q: Welche berufliche Stellung hat Ihre Mutter?
+
+is: Falls Ihre Mutter zurzeit nicht erwerbstätig ist (z. B. Rentnerin, Pensionärin, Hausfrau oder arbeitssuchend), beziehen Sie sich bitte auf die zuletzt ausgeübte Tätigkeit.
+
+ao1: 1: … ungelernt 
+
+ao2: 2: … angelernt
+
+ao3: 3: … Facharbeiterin
+
+ao4: 4: … Vorarbeiterin, Kolonnenführerin
+
+ao5: 5: … Meisterin, Polierin, Brigadierin
+
+ao6: 6: … mit ausführender Tätigkeit
+z. B. Verkäuferin, Datentypistin, Sekretariatsassistentin, Pflegehelferin
+
+ao7: 7: … mit qualifizierter Tätigkeit
+z. B. Sachbearbeiterin, Buchhalterin, technische Zeichnerin
+
+ao8: 8: … mit Fachverantwortung für Personal 
+z. B. wissenschaftliche Mitarbeiterin, Prokuristin, Abteilungsleiterin bzw. Meisterin im Angestelltenverhältnis
+
+ao9: 9: … mit umfassenden Führungsaufgaben und Entscheidungsbefugnissen 
+z. B. Direktorin, Geschäftsführerin, Mitglied des Vorstandes
+
+ao10: 10: … im einfachen Dienst 
+z. B. Amtsgehilfin, Schaffnerin, Betriebsassistentin, ab (Ober-)Gefreite
+
+ao11: 11: … im mittleren Dienst 
+z. B. Polizei(haupt)meisterin, Sekretärin, Gerichtsvollzieherin, ab Unteroffizierin
+
+ao12: 12: … im gehobenen Dienst 
+z. B. Inspektorin, Lehrerin, Amtsrätin, Kriminalkommissarin, ab Leutnantin
+
+ao13: 13: … im höheren Dienst 
+z. B. Regierungsrätin, Studienrätin, Hochschullehrerin, Rektorin, Richterin, ab Majorin
+
+ao14: 14: … keine weiteren Mitarbeiter*innen
+
+ao15: 15: … 1 bis 4 Mitarbeiter*innen
+
+ao16: 16: … 5 und mehr Mitarbeiter*innen
+
+ao17: 17: … keine weiteren Mitarbeiter*innen
+
+ao18: 18: … 1 bis 4 Mitarbeiter*innen
+
+ao19: 19: … 5 und mehr Mitarbeiter*innen
+
+ao20: 20: … PGH-Mitglied
+
+ao21: 21: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
+
+ao22: 22: … mit einer landwirtschaftlich genutzten Fläche von 10 ha und mehr
+
+ao23: 23: … Genossenschaftsbäuerin (ehemals LPG)
+
+ao24: 24: !!Mithelfende Familienangehörige!!
 
 ao25: -11: !!nie berufstätig gewesen!!
 
@@ -160,25 +265,23 @@ fo:
 tr: GOTO B2_3a IF h_split=1 (50%)
     GOTO B2_3b IF h_split=2 (50%)
 
-hi: Zwischenüberschriften zwischen den ao’s möglich?
+hi: Zwischenüberschriften zwischen den ao’s:
 
->   st1: !!Arbeiter(in), und zwar...!! (ao1, ao2, ao3, ao4, ao5)
+>   st1: !!Arbeiterin, und zwar … !! (ao1, ao2, ao3, ao4, ao5)
 
->   st2: !!Angestellte(r), und zwar...!! (ao6, ao7, ao8, ao9)
+>   st2: !!Angestellte, und zwar …!! (ao6, ao7, ao8, ao9)
 
->   st3: !!Beamter/Beamtin, Richter(in), Berufssoldat(in), und zwar...!! (ao10,
+>   st3: !!Beamtin, Richterin, Berufssoldatin, und zwar …!! (ao10,
 >   ao11, ao12, ao13)
 
->   st4: !!Akademiker(in) in freiem Beruf (z. B. Rechtsanwalt/-anwältin,
->   niedergelassene/r Arzt/Ärztin, Steuerberater(in), Künstler(in)!! (ao14,
+>   st4: !!Akademikerin in freiem Beruf (z.B. Rechtsanwältin, niedergelassene Ärztin, Steuerberaterin, Künstlerin), und zwar …!! (ao14,
 >   ao15, ao16)
 
->   st5: !!Selbstständige im Handel, im Gastgewerbe, im Handwerk, in der
->   Industrie, der Dienstleistung, auch Ich-AG oder PGH-Mitglied und
->   hat/hatte...!! (ao17, ao18, ao19, ao20)
+>   st5: !!Selbstständige im Handel, im Gastgewerbe, im Handwerk, in der Industrie, der Dienstleistung, auch Ich-AG oder PGH-Mitglied und hat/hatte …!! (ao17, ao18, ao19, ao20)
 
->   st6: !!Selbstständige(r) Landwirt(in) bzw. Genossenschaftsbauer/-bäuerin!!
+>   st6: !!Selbständige Landwirtin bzw. Genossenschaftsbäuerin, und zwar…!!
 >   (ao21, ao22, ao23)
+
 
 \--------------------------
 
@@ -187,86 +290,75 @@ B2_2b
 
 tc: 50 Prozent der Befragten
 
-vn: deltposv2; deltposm2
+vn: deltposv2
 
-qt: Einfachauswahl im Spaltenformat/Comparison
+qt: Einfachauswahl mit Überkategorien
 
 hl:
 
 in:
 
-q: Welche berufliche Stellung hat Ihr Vater/Ihre Mutter?
+q: Welche berufliche Stellung hat Ihr Vater?
 
-is: Falls Ihr Vater oder Ihre Mutter zurzeit nicht erwerbstätig sind (z. B.
-Rentner(in), Pensionär(in), Hausfrau/-mann oder arbeitssuchend), beziehen Sie
-sich bitte auf die jeweils zuletzt ausgeübte Tätigkeit.
+is: Falls Ihr Vater zurzeit nicht erwerbstätig ist (z. B. Rentner, Pensionär, Hausmann oder arbeitssuchend), beziehen Sie sich bitte auf die zuletzt ausgeübte Tätigkeit.
 
-it1: (deltposv2): Vater
+ao1: 1: … ungelernt 
 
-It2 (deltposm2): Mutter
+ao2: 2: … angelernt
 
-st1: !!Arbeiter!! (ao1, ao2, ao3, ao4)
+ao3: 3: … Facharbeiter
 
-st2: !!Angestellte!! (ao5, ao6, ao7, ao8)
+ao4: 4: … Vorarbeiter, Kolonnenführer
 
-st3: !!Beamte!! (ao9, ao10, ao11, ao12)
+ao5: 5: … Meister, Polier
 
-st4: !!Selbstständige!1 (ao13, ao14, ao15)
+ao6: 6: … mit ausführender Tätigkeit
+z. B. Sekretariatsassistent, Pflegehelfer
 
-st5: !!Akademiker(in) in freiem Beruf!! (ao16, ao17, ao18)
+ao7: 7: … mit qualifizierter Tätigkeit
+z. B. Sachbearbeiter, technischer Zeichner
 
-st6: !!Selbstständige(r) Landwirt(in) bzw. Genossenschaftsbauer/-bäuerin!!
-(ao21, ao22, ao23)
+ao8: 8: … mit Fachverantwortung für Personal 
+z. B. Prokurist, Abteilungsleiter
 
-ao1: 1: ungelernt/angelernt
+ao9: 9: … mit umfassenden Führungsaufgaben und Entscheidungsbefugnissen 
+z. B. Direktor, Geschäftsführer
 
-ao2: 2: Facharbeiter(in)
+ao10: 10: … im einfachen Dienst 
+z. B. Amtsgehilfe, Schaffner
 
-ao3: 3: Vorarbeiter(in), Kolonnenführer(in)
+ao11: 11: … im mittleren Dienst 
+z. B. Polizei(haupt)meister, Gerichtsvollzieher
 
-ao4: 4: Meister(in), Polier(in), Brigadier(in)
+ao12: 12: … im gehobenen Dienst 
+z. B. Lehrer, Amtsrat
 
-ao5: 5: mit ausführender Tätigkeit z. B. Verkäufer(in),
-Sekretariatsassistent(in), Pflegehelfer(in)
+ao13: 13: … im höheren Dienst 
+z. B. Studienrat, Hochschullehrer, Richter
 
-ao6: 6: mit qualifizierter Tätigkeit z. B. Sachbearbeiter(in), Buchhalter(in),
-technische(r) Zeichner(in)
+ao14: 14: … keine weiteren Mitarbeiter*innen
 
-ao7: 7: mit gehobener Position z. B. wiss. Mitarbeiter(in), Prokurist(in),
-Abteilungsleiter(in) bzw. Meister(in) im Angestelltenverhältnis
+ao15: 15: … 1 bis 4 Mitarbeiter*innen
 
-ao8: 8: mit umfassenden Führungsaufgaben und Entscheidungsbefugnissen z. B.
-Direktor(in), Geschäftsführer(in), Mitglied des Vorstandes
+ao16: 16: … 5 und mehr Mitarbeiter*innen
 
-ao9: 9: im einfachen Dienst z. B. Amtsgehilfe/-gehilfin, Schaffner(in),
-Betriebsassistent(in)
+ao17: 17: … keine weiteren Mitarbeiter*innen
 
-ao10: 10: im mittleren Dienst z. B. Polizei(haupt)meister(in), Sekretär(in),
-Gerichtsvollzieher(in)
+ao18: 18: … 1 bis 4 Mitarbeiter*innen
 
-ao11: 11: im gehobenen Dienst z. B. Inspektor(in), Lehrer(in), Amtsrat/-rätin,
-Kriminalkommisar(in)
+ao19: 19: … 5 und mehr Mitarbeiter*innen
 
-ao12: 12: im höheren Dienst z. B. Regierungsrat/-rätin, Studienrat/-rätin,
-Rektor(in), Richter(in)
+ao20: 20: … PGH-Mitglied
 
-ao13: 13: kleinere Selbstständige z. B. Einzelhändler(in) mit kleinem Geschäft,
-Hauptvertreter(in), mittlere Landwirtschaft
+ao21: 21: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
 
-ao14: 14: mittlere Selbstständige z. B. Einzelhändler(in) mit großem Geschäft,
-Handwerker(in, größere Landwirtschaft
+ao22: 22: … mit einer landwirtschaftlich genutzten Fläche von 10 ha und mehr
 
-ao15: 15: größere Selbstständige z. B. Unternehmer(in) mit großem Betrieb
+ao23: 23: … Genossenschaftsbauer (ehemals LPG)
 
-ao16: 16: keine weiteren Mitarbeiter(innen)
+ao24: 24: !!Mithelfender Familienangehöriger!!
 
-ao17: 17: 1 bis 4 Mitarbeiter(innen)
-
-ao18: 18: 5 und mehr Mitarbeiter(innen)
-
-ao19: 19: !!Mithelfende(r) Familienangehörige(r)!!
-
-ao20: -11: !!nie berufstätig gewesen!!
+ao25: -11: !!nie berufstätig gewesen!!
 
 mv: -12: !!weiß ich nicht!!
 
@@ -282,10 +374,140 @@ fv:
 
 hv:
 
-fo: siehe mitgeliefertes Template
+fo:
+
+tr: GOTO B2_2b2
+
+hi: Überkategorien der Antwortoptionen:
+
+>   st1: !!Arbeiter, und zwar …!! (ao1, ao2, ao3, ao4, ao5)
+
+>   st2: !!Angestellter, und zwar …!! (ao6, ao7, ao8, ao9)
+
+>   st3: !!Beamter, Richter, Berufssoldat, und zwar …!! (ao10,
+>   ao11, ao12, ao13)
+
+>   st4: !!Akademiker in freiem Beruf (z.B. Rechtsanwalt, niedergelassener Arzt, Steuerberater, Künstler), und zwar…!! (ao14,
+>   ao15, ao16)
+
+>   st5: !!Selbstständiger im Handel, im Gastgewerbe, im Handwerk, in der Industrie, der Dienstleistung, auch Ich-AG oder PGH-Mitglied und hat/hatte …!! (ao17, ao18, ao19, ao20)
+
+>   st6: !!Selbständiger Landwirt bzw. Genossenschaftsbauer, und zwar …!!
+>   (ao21, ao22, ao23)
+
+\--------------------------
+
+B2_2b2
+==
+
+tc:
+
+vn: deltposm2
+
+qt: Einfachauswahl mit Überkategorien
+
+hl:
+
+in:
+
+q: Welche berufliche Stellung hat Ihre Mutter?
+
+is: Falls Ihre Mutter zurzeit nicht erwerbstätig ist (z. B. Rentnerin, Pensionärin, Hausfrau oder arbeitssuchend), beziehen Sie sich bitte auf die zuletzt ausgeübte Tätigkeit.
+
+ao1: 1: … ungelernt 
+
+ao2: 2: … angelernt
+
+ao3: 3: … Facharbeiterin
+
+ao4: 4: … Vorarbeiterin, Kolonnenführerin
+
+ao5: 5: … Meisterin, Polierin
+
+ao6: 6: … mit ausführender Tätigkeit
+z. B. Sekretariatsassistentin, Pflegehelferin
+
+ao7: 7: … mit qualifizierter Tätigkeit
+z. B. Sachbearbeiterin, technische Zeichnerin
+
+ao8: 8: … mit Fachverantwortung für Personal 
+z. B. Prokuristin, Abteilungsleiterin
+
+ao9: 9: … mit umfassenden Führungsaufgaben und Entscheidungsbefugnissen 
+z. B. Direktorin, Geschäftsführerin
+
+ao10: 10: … im einfachen Dienst 
+z. B. Amtsgehilfin, Schaffnerin
+
+ao11: 11: … im mittleren Dienst 
+z. B. Polizei(haupt)meisterin, Gerichtsvollzieherin
+
+ao12: 12: … im gehobenen Dienst 
+z. B. Lehrerin, Amtsrätin, Kriminalkommissarin
+
+ao13: 13: … im höheren Dienst 
+z. B. Studienrätin, Hochschullehrerin, Richterin
+
+ao14: 14: … keine weiteren Mitarbeiter*innen
+
+ao15: 15: … 1 bis 4 Mitarbeiter*innen
+
+ao16: 16: … 5 und mehr Mitarbeiter*innen
+
+ao17: 17: … keine weiteren Mitarbeiter*innen
+
+ao18: 18: … 1 bis 4 Mitarbeiter*innen
+
+ao19: 19: … 5 und mehr Mitarbeiter*innen
+
+ao20: 20: … PGH-Mitglied
+
+ao21: 21: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
+
+ao22: 22: … mit einer landwirtschaftlich genutzten Fläche von 10 ha und mehr
+
+ao23: 23: … Genossenschaftsbäuerin (ehemals LPG)
+
+ao24: 24: !!Mithelfende Familienangehörige!!
+
+ao25: -11: !!nie berufstätig gewesen!!
+
+mv: -12: !!weiß ich nicht!!
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
 
 tr: GOTO B2_3a IF h_split=1 (50%)
     GOTO B2_3b IF h_split=2 (50%)
+
+hi: Zwischenüberschriften zwischen den ao’s:
+
+>   st1: !!Arbeiterin, und zwar … !! (ao1, ao2, ao3, ao4, ao5)
+
+>   st2: !!Angestellte, und zwar …!! (ao6, ao7, ao8, ao9)
+
+>   st3: !!Beamtin, Richterin, Berufssoldatin, und zwar …!! (ao10,
+>   ao11, ao12, ao13)
+
+>   st4: !!Akademikerin in freiem Beruf (z.B. Rechtsanwältin, niedergelassene Ärztin, Steuerberaterin, Künstlerin), und zwar …!! (ao14,
+>   ao15, ao16)
+
+>   st5: !!Selbstständige im Handel, im Gastgewerbe, im Handwerk, in der Industrie, der Dienstleistung, auch Ich-AG oder PGH-Mitglied und hat/hatte …!! (ao17, ao18, ao19, ao20)
+
+>   st6: !!Selbständige Landwirtin bzw. Genossenschaftsbäuerin, und zwar…!!
+>   (ao21, ao22, ao23)
+
 
 \--------------------------
 
