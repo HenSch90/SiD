@@ -11,7 +11,7 @@ hl:
 
 in:
 
-q: An welcher Schule haben Sie Ihre Studienberechtigung erworben?
+q: An welcher Art von Schule haben Sie Ihre Studienberechtigung erworben?
 
 is:
 
@@ -157,8 +157,7 @@ hl:
 
 in:
 
-q: Wurden Sie jemals in einer integrativ arbeitenden Klasse/Inklusionsklasse
-unterrichtet oder haben Sie eine Förderschule besucht?
+q: Unabhängig davon, ob bei Ihnen selbst ein Förderbedarf bestand oder nicht: Wurden Sie jemals in einer integrativ arbeitenden Klasse/Inklusionsklasse unterrichtet oder haben Sie eine Förderschule besucht?
 
 is: Kennzeichnend für eine integrativ arbeitende Klasse/Inklusionsklasse ist
 der gemeinsame Unterricht von Schüler\*innen mit und ohne sonderpädagogischen
@@ -215,8 +214,7 @@ hl:
 
 in:
 
-q: Bitte geben Sie an, wann Sie Ihre (letzte) Berufsausbildung abgeschlossen
-haben (Zeitpunkt der Zeugnisübergabe).
+q: Wann haben Sie Ihre (letzte) Berufsausbildung abgeschlossen (Zeitpunkt der Zeugnisübergabe)?
 
 is:
 
@@ -269,7 +267,7 @@ hl:
 
 in:
 
-q: Welche Berufsausbildung haben Sie (zuletzt) abgeschlossen?
+q: Welchen Beruf haben Sie (zuletzt) erlernt?
 
 is:
 
@@ -886,7 +884,7 @@ ins Masterstudium.
 
 it1: (ssweijaaz): … das Studienfach gewechselt?
 
-it2: (sawejaaz): ... den Abschluss gewechselt?
+it2: (sawejaaz): ... den angestrebten Abschluss gewechselt?
 
 it3: (shwjaaz): … die Hochschule gewechselt?
 
@@ -1042,13 +1040,13 @@ Individualisierung:
 
 q1: Bitte beschreiben Sie Ihre Studienunterbrechung näher.
 
-q2: Bitte beschreiben Sie Ihre Studienunterbrechung näher.
+q2: Bitte beschreiben Sie Ihre Studienunterbrechungen näher.
 
 q3: Bitte beschreiben Sie Ihre letzten drei Studienunterbrechungen nächer.
 
 is1 (nur für q2): Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 
-is2 (nur für q3): Bitte beginnen Si emit Ihrer letzten Studienunterbrechung.
+is2 (nur für q3): Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 Sollten Sie mehr als dreimal unterbrochen haben, beginnen Sie bitte mit Ihrer
 drittletzten Unterbrechung.
 
@@ -1830,8 +1828,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie sich persönlich ein: Wie risikobereit sind Sie im
-Allgemeinen?
+q: Wie risikobereit sind Sie im Allgemeinen?
 
 is:
 
