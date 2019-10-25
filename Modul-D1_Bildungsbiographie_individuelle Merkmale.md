@@ -75,55 +75,50 @@ it:
 
 st:
 
-ao1: offene Angabe (Präfix [prffach1], 50 Zeichen
+ao1: offene Angabe, Präfix: [infield = 1. Prüfungsfach; prffach1], 50 Zeichen
 
-ao2: offene Angabe (Präfix [prffach2], 50 Zeichen
+ao2: offene Angabe, Präfix: [infield = 2. Prüfungsfach; prffach2], 50 Zeichen
 
-ao3: offene Angabe (Präfix [prffach3], 50 Zeichen
+ao3: offene Angabe, Präfix: [infield = 3. Prüfungsfach; prffach3], 50 Zeichen
 
-ao4: offene Angabe (Präfix [prffach4], 50 Zeichen
+ao4: offene Angabe, Präfix: [infield = 4. Prüfungsfach; prffach4], 50 Zeichen
 
-ao5: offene Angabe (Präfix [prffach5], 50 Zeichen
+ao5: offene Angabe, Präfix: [infield = 5. Prüfungsfach; prffach5], 50 Zeichen
 
-ao6: stdfach1: : 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std. (Dropdown)
+ao6: stdfach1: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
+Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao7: stdfach2: : 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std. (Dropdown)
+ao7: stdfach2: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
+Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao8: stdfach3: : 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std. (Dropdown)
+ao8: stdfach3: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
+Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao9: stdfach4: : 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std. (Dropdown)
+ao9: stdfach4: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
+Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao10: stdfach5: : 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std. (Dropdown)
+ao10: stdfach5: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
+Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao11: notefach1: : sehr
-gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend (Dropdown)
+ao11: notefach1: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
 
-ao12: notefach2: : sehr
-gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend (Dropdown)
+ao12: notefach2: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
 
-ao13: notefach3: : sehr
-gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend (Dropdown)
+ao13: notefach3: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
 
-ao14: notefach4: : sehr
-gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend (Dropdown)
+ao14: notefach4: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
 
-ao15: notefach5: : sehr
-gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend (Dropdown)
+ao15: notefach5: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
 
-ao16: gesfach1: : männlich \| weiblich (Dropdown)
+ao16: gesfach1: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
 
-ao17: gesfach2: : männlich \| weiblich (Dropdown)
+ao17: gesfach2: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
 
-ao18: gesfach3: : männlich \| weiblich (Dropdown)
+ao18: gesfach3: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
 
-ao19: gesfach4: : männlich \| weiblich (Dropdown)
+ao19: gesfach4: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
 
-ao20: gesfach5: : männlich \| weiblich (Dropdown)
+ao20: gesfach5: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
 
 mv:
 
@@ -146,17 +141,6 @@ tr:
 GOTO D1_3
 
 hi:
-
-Stundenzahl, Note und Geschlecht sollen zeilenweise, also für jedes Prüfungsfach
-angegeben werden können. Wünschenswert ist folgendes Format:
-
-Stunden
-
-je Woche Note: Geschlecht
-
-Prüfungsfach: \___________\_ [Drop Down1] [Drop Down2] [Drop Down3]
-
-Prüfungsfach: \___________\_ [Drop Down1] [Drop Down2] [Drop Down3]
 
 \--------------------------------
 
@@ -225,7 +209,7 @@ tc3: IF vausbja=3
 
 vn: vausbzpjo; vausbzpmo
 
-qt: Einfachauswahl /offene Angabe / Dropdown
+qt: offene Angabe (nebeneinander)
 
 hl:
 
@@ -240,10 +224,9 @@ it:
 
 st:
 
-ao1: (vausbzpjo) 4 Stellen; 1950-2020; Präfix: [number]; Suffix: Jahr des
-Abschlusses der Berufsausbildung
+ao1: (vausbzpjo) Eingabefeld, 4 Stellen; 1950-2020; Präfix: [infield = Jahr; number]
 
-ao2: (vausbzpmo): : Januar\|Februar\|…\|November\|Dezember (Dropdown)
+ao2: (vausbzpmo): Textfeld, 15 Zeichen; Präfix: [infield = Monat]
 
 mv:
 
@@ -280,7 +263,7 @@ tc3: IF vausbja=3
 
 vn: vausberuf, vausberufo
 
-qt: Einfachauswahl / offene Angabe
+qt: offene Angabe
 
 hl:
 
@@ -294,8 +277,7 @@ it:
 
 st:
 
-ao1: (vausberuf): 75 Zeichen; Präfix: [vausberufo]; Suffix: Beruf:
-(Exklusivkategorie)
+ao1: (vausberuf): 75 Zeichen; Präfix: [Infield = gelernter Beruf; (vausberufo)];
 
 mv:
 
@@ -346,12 +328,9 @@ it:
 
 st:
 
-ao1: xxx-Format; 3 Stellen; Präfix: [number]; Suffix: Abschlussnote (z. B. 2,5):
-(Exklusivkategorie)
+ao1: (vausbnote): : Eingabefeld; 3 Stellen; Präfix: [infield = Note (z. B. 2,5); (vausbnoteo); number]
 
 ao2: -11: : Ich habe keine Note erhalten.
-
-ao3: -12: : weiß ich nicht
 
 mv:
 
@@ -460,7 +439,7 @@ tr:
 
 GOTO D1_8
 
-hi: Items zufällig rotieren
+hi: Items bitte zufällig rotieren
 
 \--------------------------------
 
@@ -551,7 +530,7 @@ GOTO D2_6 IF mastersplit=1, 2, 7, 8, 14
 GOTO A_44 IF mastersplit=3, 4, 9, 10
 
 
-hi: Items zufällig rotieren
+hi: Items bitte zufällig rotieren
 
 \--------------------------------
 
@@ -615,9 +594,9 @@ D1_10
 
 tc: IF sabsja=2 (nur Studierende mit vorherigem Hochschulabschluss)
 
-vn: sabserbl1; sabserbl
+vn: sabserbl
 
-qt: Einfachauswahl
+qt: Drop-Down
 
 hl:
 
@@ -628,56 +607,49 @@ Hochschulabschluss erworben haben?
 
 is:
 
-it1: (sabserbl1): Ich habe meinen letzten Hochschulabschluss an meiner
-derzeitigen Hochschule erworben.
-
-it2: (sabserbl): Bundesland:
+it1: (sabserbl): : [infield = Bundesland] (Dropdown)
 
 st:
 
-ao1 (sabserbl1): 0: : nein
+ao1 (sabserbl): 1: : Baden-Württemberg
 
-ao2 (sabserbl1) 1: : ja
+ao2 (sabserbl): 2: : Bayern
 
-ao3 (sabserbl): 2: : Baden-Württemberg
+ao3 (sabserbl): 3: : Berlin
 
-ao4 (sabserbl): 3: : Bayern
+ao4 (sabserbl): 4: : Brandenburg
 
-ao5 (sabserbl): 4: : Berlin
+ao5 (sabserbl): 5: : Bremen
 
-ao6 (sabserbl): 5: : Brandenburg
+ao6 (sabserbl): 6: : Hamburg
 
-ao7 (sabserbl): 6: : Bremen
+ao7 (sabserbl): 7: : Hessen
 
-ao8 (sabserbl): 7: : Hamburg
+ao8 (sabserbl): 8: : Mecklenburg-Vorpommern
 
-ao9 (sabserbl): 8: : Hessen
+ao9 (sabserbl): 9: : Niedersachsen
 
-ao10 (sabserbl): 9: : Mecklenburg-Vorpommern
+ao10 (sabserbl): 10: : Nordrhein-Westfalen
 
-ao11 (sabserbl): 10: : Niedersachsen
+ao11 (sabserbl): 11: : Rheinland-Pfalz
 
-ao12 (sabserbl): 11: : Nordrhein-Westfalen
+ao12 (sabserbl): 12: : Saarland
 
-ao13 (sabserbl): 12: : Rheinland-Pfalz
+ao13 (sabserbl): 13: : Sachsen
 
-ao14 (sabserbl): 13: : Saarland
+ao14 (sabserbl): 14: : Sachsen-Anhalt
 
-ao15 (sabserbl): 14: : Sachsen
+ao15 (sabserbl): 15: : Schleswig-Holstein
 
-ao16 (sabserbl): 15: : Sachsen-Anhalt
+ao16 (sabserbl): 16: : Thüringen
 
-ao17 (sabserbl): 16: : Schleswig-Holstein
-
-ao18 (sabserbl): 17: : Thüringen
-
-ao19 (sabserbl): 18: : im Ausland
+ao17 (sabserbl): 17: : im Ausland
 
 mv:
 
 ka:
 
-vc: SHOW sabserbl1=0 IF sabserbl=2 \| 3 \| … \| 18
+vc: 
 
 av:
 
@@ -691,19 +663,16 @@ fo:
 
 tr:
 
-GOTO D1_11a IF sabserbl = 2 – 17
-GOTO D1_11b IF sabserbl = 18
+GOTO D1_11a IF sabserbl = 1 – 16
+GOTO D1_11b IF sabserbl = 17
 
-hi: Bitte auf zwei Seiten programmieren (Filter“ nein/ja“ (an der derzeitigen
-Hochschule), bei „nein“ erscheinen die Bundesländer 2-18
 
 \--------------------------------
 
 D1_11a 
 ====
 
-tc: IF sabserbl = 2 – 17 (nur für Studierende, die das Bundesland Ihrer
-vorherigen Hochschule angegeben haben)
+tc: IF sabserbl = 1 – 16 
 
 vn: sabserhs
 
@@ -721,7 +690,7 @@ it:
 
 st:
 
-ao (sabserhs): Hochschulliste als Dropdown-Menü
+ao (sabserhs): : [infield = Hochschule] (Dropdown)
 
 mv:
 
@@ -750,9 +719,9 @@ hi: Bitte mit nachfolgender Frage auf einer Seite programmieren.
 D1_11b 
 ====
 
-tc1: IF sabserbl= 2 – 17
+tc1: IF sabserbl= 1 – 16
 
-tc2: IF sabserbl= 18
+tc2: IF sabserbl= 17
 
 vn: sabserhs2
 
@@ -773,17 +742,14 @@ it:
 
 st:
 
-ao1: (offene Nennung): 100 Stellen; Präfix: [sabserhs2]; Suffix: … (muss hier
-was eingetragen werden, wenn bereits das offene Feld in der Frage “erklärt”
-wird?)
-
+ao1: (offene Nennung): 100 Stellen; Präfix: [infield = Hochschule; sabserhs2]; 
 mv:
 
 ka:
 
-vc1: SHOW q1 IF sabserbl= 2 - 17
+vc1: SHOW q1 IF sabserbl= 1 - 16
 
-vc2: SHOW q2 IF sabserbl=18
+vc2: SHOW q2 IF sabserbl=17
 
 av:
 
@@ -806,11 +772,11 @@ hi:
 D1_12 
 ===
 
-tc: IF sabsja=1 (nur für Studierende mit vorherigem Hochschulabschluss)
+tc: IF sabsja=1 
 
 vn: sabserfacho
 
-qt: Offene Nennung
+qt: offene Nennung
 
 hl:
 
@@ -824,9 +790,7 @@ it:
 
 st:
 
-ao1: (offene Nennung): 60 Stellen; Präfix: [sabserfacho]; Suffix: … (muss hier
-was eingetragen werden, wenn bereits das offene Feld in der Frage “erklärt”
-wird?)
+ao1: (offene Nennung): 60 Stellen; Präfix: [infield =  Studienfach; sabserfacho]
 
 mv:
 
@@ -859,7 +823,7 @@ tc:
 
 vn: absterm
 
-qt: Einfachauswahl / Dropdown-Menü
+qt: Dropdown-Menü
 
 hl:
 
@@ -873,10 +837,8 @@ it:
 
 st:
 
-ao1: Dropdown: Sommersemester 2020 \| Wintersemester 2020/21 \| Sommersemester
-2021 \|Wintersemester 2021/22 \| Sommersemester 2022 \| … \| Sommersemester 2030
-
-ao2: -12: : weiß ich noch nicht
+ao1: (absterm): : [infield = Semester; Sommersemester 2020 \| Wintersemester 2020/21 \| Sommersemester
+2021 \|Wintersemester 2021/22 \| Sommersemester 2022 \| … \| Sommersemester 2030] (Drop-Down)
 
 mv:
 
@@ -917,7 +879,7 @@ hl:
 
 in:
 
-q: Wie häufig haben Sie seit Ihrer Erstimmatrikulation…
+q: Wie häufig haben Sie seit Ihrer Erstimmatrikulation …
 
 is: Nicht gemeint sind Wechsel oder Unterbrechungen beim Übergang vom Bachelor-
 ins Masterstudium.
@@ -932,17 +894,19 @@ it4: (ssujaaz): … das Studium zwischenzeitlich unterbrochen?
 
 st:
 
-ao1: 1: : einmal
+ao1: 0: : keinmal
 
-ao2: 2: : zweimal
+ao2: 1: : einmal
 
-ao3: 3: : dreimal
+ao3: 2: : zweimal
 
-ao4: 4: : viermal
+ao4: 3: : dreimal
 
-ao5: 5: : fünfmal und mehr
+ao5: 4: : viermal
 
-(ao1 bis ao5 Dropdown)
+ao6: 5: : fünfmal und mehr
+
+(ao1 bis ao5 als Dropdown; infield = Anzahl)
 
 mv:
 
@@ -1204,7 +1168,7 @@ tr:
 
 GOTO D1_18
 
-hi:
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -1265,7 +1229,7 @@ tr:
 
 GOTO D1_19
 
-hi:
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -1444,7 +1408,7 @@ tr:
 
 GOTO D1_21
 
-hi:
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -1489,9 +1453,9 @@ ao4: 4
 
 ao5: 5: : sehr gute Kenntnisse
 
-ao6: 6: : Ich beherrsche diese Sprache nicht
+ao6: 6: : Muttersprache
 
-ao7: 7: : Muttersprache
+ao7: 7: : Ich beherrsche diese Sprache nicht
 
 mv:
 
@@ -1603,7 +1567,7 @@ tr:
 
 GOTO D1_24
 
-hi: Items zufällig rotieren
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -1860,7 +1824,7 @@ tc:
 
 vn: risk
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1964,7 +1928,7 @@ tr:
 
 GOTO D1_28
 
-hi:
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -2038,4 +2002,4 @@ tr:
 
 GOTO A_52
 
-hi: Items bitte rotieren
+hi: Items bitte zufällig rotieren.
