@@ -47,45 +47,52 @@ hv:
 
 fo:
 
-tr: KSM-anf02
+tr: GOTO KSM-anf02a IF sabsan = 1 OR sabsan = 2 AND masterplit <> 1, 2, 3, 4, 5, 6, 13
+GOTO KSM-anf02b IF IF sabsan <> 1 OR sabsan <> 2 AND masterplit <> 1, 2, 3, 4, 5, 6, 13
+GOTO KSM-anf02b IF sabsan=MISSING
+GOTO KSM-anf03 IF masterplit = 1, 2, 3, 4, 5, 6, 13
 
 hi: Wäre es möglich, diesen Eingangstext etwas größer darzustellen als es sonst für die Einleitung üblich ist?
 
 \------------------------------------------------------------
-\------------------------------------------------------------
 
-KSM-anf02
-=========
+KSM-anf02a
 
-tc:
+tc: sabsan = 1 OR sabsan = 2  
 
-vn: abselt
+vn: paba / pama / paphd / pajob
 
-qt: Einfachauswahl mit horizontalen Antwortoptionen
+qt: Einfachauswahlmatrix
 
 hl:
 
 in:
 
-q: Wie wichtig ist es für Ihre Eltern, dass Sie einen Studienabschluss erwerben?
+q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
 
 is:
 
-it:
+it1: (paba) … einen Bachelorabschluss erreichen?
+
+it2: (pama) … einen Masterabschluss erreichen?
+
+it3: (paphd) … einen Doktortitel erreichen?
+
+it4: (pajob) … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: überhaupt nicht wichtig
+ao1: 1: 1: sehr unwichtig
 
-ao2: 2:
+ao2: 2: 2
 
-ao3: 3:
+ao3: 3: 3
 
-ao4: 4:
+ao4: 4: 4
 
-ao5: 5: sehr wichtig
+ao5: 5: 5: sehr wichtig
 
-mv:
+mv:  6: weiß ich nicht
 
 ka:
 
@@ -101,11 +108,68 @@ hv:
 
 fo:
 
-tr: KSM-anf03
+tr: GOTO KSM-anf03
 
 hi:
 
-\------------------------------------------------------------
+\--------------------------
+
+KSM-anf02b
+
+tc: IF sabsan <> 1 OR sabsan <> 2
+
+vn: pa (pagrad / padoc / parjob)
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
+
+is:
+
+it1: (pagrad) … einen Hochschulabschluss erreichen?
+
+It2: (padoc) … einen Doktortitel erreichen?
+
+It3: (parjob) … beruflich ganz weit nach vorne kommen?
+
+st:
+
+ao1: 1: 1: sehr unwichtig
+
+ao2: 2: 2
+
+ao3: 3: 3
+
+ao4: 4: 4
+
+ao5: 5: 5: sehr wichtig
+
+mv:  6: weiß ich nicht
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-anf03
+
+hi:
+
+\--------------------------
+
 
 KSM-anf03
 =========
@@ -136,41 +200,41 @@ it5: (intart1): kreativ/gestaltend tätig sein
 
 it6: (intart2): sich mit Kunst/Literatur/Sprache/ Musik/Design befassen
 
-it7: (intent1): Unternehmen gründen und leiten
+it7: (intent1): Unternehmen gründen oder leiten
 
-ao8: (intent2): andere von einer Sache überzeugen
+it8: (intent2): andere von einer Sache überzeugen
 
-ao9: (intconv1): Dinge ordnen und verwalten
+it9: (intconv1): Dinge ordnen und verwalten
 
-ao10: (Intconv2): sich mit rechtlichen Fragen beschäftigen
+it10: (Intconv2): sich mit rechtlichen Fragen beschäftigen
 
-ao11: (intreal1): untersuchen, wie Dinge funktionieren
+it11: (intreal1): untersuchen, wie Dinge funktionieren
 
-ao12: (intreal2): innovative technische Lösungen entwickeln
+it12: (intreal2): innovative technische Lösungen entwickeln
 
-ao13: (intsoc3): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
+it13: (intsoc3): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
 
-ao14: (intsoc4): Mit Menschen (zusammen)arbeiten
+it14: (intsoc4): mit Menschen (zusammen)arbeiten
 
-ao15: (intinv3): wissenschaftliche Aufsätze lesen
+it15: (intinv3): wissenschaftliche Aufsätze lesen
 
-ao16: (intinv4): Lösungen für komplexe Probleme finden
+it16: (intinv4): Lösungen für komplexe Probleme finden
 
-ao17: (intart3): Gebäude, Landschaften oder Gegenstände designen
+it17: (intart3): Gebäude, Landschaften oder Gegenstände designen
 
-ao18: (intart4): Etwas sprachlich ansprechend formulieren
+it18: (intart4): etwas sprachlich ansprechend formulieren
 
-ao19: (intent3): Andere Menschen anleiten oder führen
+it19: (intent3): andere Menschen anleiten oder führen
 
-ao20: (intent4): Events organisieren oder leiten
+it20: (intent4): Events organisieren oder leiten
 
-ao21: (intconv3): Arbeitsprozesse planen
+it21: (intconv3): Arbeitsprozesse planen
 
-ao22: (intconv4): Mit Zahlen oder Statistiken arbeiten
+it22: (intconv4): mit Zahlen oder Statistiken arbeiten
 
-ao23: (intreal3): An Soft- oder Hardware arbeiten
+it23: (intreal3): an Soft- oder Hardware arbeiten
 
-ao24: (intreal4): Konstruktion von Bauwerken
+it24: (intreal4): Konstruktion von Bauwerken
 
 st:
 
@@ -202,7 +266,7 @@ fo:
 
 tr: KSM-anf04
 
-hi:
+hi: Itemliste bitte rotieren
 
 \------------------------------------------------------------
 
@@ -219,7 +283,7 @@ hl:
 
 in:
 
-q: Inwiefern wurden Ihre Erwartungen hinsichtlich der folgenden Aspekte erfüllt?
+q: Inwiefern wurden Ihre Erwartungen, die Sie vor der Studienaufnahme hatten, hinsichtlich der folgenden Aspekte erfüllt?
 
 is:
 
@@ -288,7 +352,7 @@ hl:
 
 in:
 
-q: Bereiten Ihnen folgende Aspekte des Studienalltags Schwierigkeiten?
+q: Bereiten Ihnen folgende Aspekte des __Alltags__ Schwierigkeiten?
 
 is:
 
@@ -304,7 +368,7 @@ it5: (studall5): Studienfinanzierung
 
 it6: (studall6): Vereinbarkeit von Studium und Erwerbstätigkeit
 
-it7: (studall7): Alltagsorganisation
+it7: (studall7): Alltagsorganisation (Haushaltsführung, Behördengänge)
 
 ao8: (studall8): Eigenverantwortung
 
@@ -355,7 +419,7 @@ hl:
 
 in:
 
-q: Inwiefern bereiten Ihnen folgende Aspekte im Studium Schwierigkeiten?
+q: Inwiefern bereiten Ihnen folgende Aspekte Schwierigkeiten?
 
 is:
 
