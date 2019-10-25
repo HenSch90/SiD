@@ -334,90 +334,54 @@ hv:
 fo:
 
 tr: GOTO KSM-ma06
+GOTO KSM-ma07 IF mastplan >= 3 AND mastersplit = 1, 2, 3, 4, 5, 6, 13
+GOTO KSM-ma08 IF mastplan < 3 AND mastersplit = 1, 2, 3, 4, 5, 6, 13
+GOTO KSM-ma09 IF mastplan = SYSMISS AND mastersplit = 1, 2, 3, 4, 5, 6, 13
 
 hi: in der Vorschau entspricht die Reihenfolge der Items nicht der hier dargestellten. Bitte prüfen
 
 \--------------------------------
 
-KSM-ma06
-========
-
-tc:  
-
-vn: balohn, baloho
-
-qt: Einfachauswahl mit offener Angabe
-
-hl:
-
-in:
-
-q: Wie schätzen Sie Ihr künftiges monatliches Nettogehalt mit einem
-!!Bachelorabschluss!! ein?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: (balohno) [number, 20pt, 5Zeichen]
-
-ao2: 2: weiß nicht
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\--------------------------------
 
 KSM-ma06
-========
 
 tc: 
 
-vn: malohn, malohno
+vn: lohnber; lohnba; lohnma; lohnsta1; lohnsta2; lohnphd; lohnka
 
-qt: Einfachauswahl mit offener Angabe
+qt: Offene Angabe
 
 hl:
 
 in:
 
-q: Wie schätzen Sie Ihr künftiges monatliches Nettogehalt mit einem
-!!Masterabschluss!! ein?
+q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld...
 
-is:
+is: Beziehen Sie Ihre Angaben auf das Netto-Gehalt, d.h. Einkommen abzüglich Steuer.
 
 it:
 
 st:
 
-ao1: 1: (malohno): [number, 20pt, 5 Zeichen]
+ao1 (lohnber): 5, Präfix: … mit einer Berufsausbildung: , Suffix: €/Monat
 
-ao2: 2: weiß nicht
+ao2 (lohnba): 5, Präfix: … mit einem Bachelorabschluss: , Suffix: €/Monat
 
-mv:
+ao3 (lohnma): 5, Präfix: … mit einem Masterabschluss: , Suffix: €/Monat
+
+ao4 (lohnsta1): 5, Präfix: … mit dem ersten Staatsexamen: , Suffix: €/Monat
+
+ao5 (lohnsta2): 5, Präfix: … mit dem zweiten Staatsexamen: , Suffix: €/Monat
+
+ao6 (lohnphd): 5, Präfix: … mit einer Promotion: , Suffix: €/Monat
+
+mv: (lohnka): -12, weiß ich nicht
 
 ka:
 
-vc:
+vc: SHOW ao4 and ao5 if sabsan = 3
+
+SHOW ao2 and ao3 if sabsan<> 3 
 
 av:
 
@@ -427,15 +391,13 @@ fv:
 
 hv:
 
-fo:
+fo: ao7 absetzen
 
-tr: 
-GOTO KSM-ma07 IF mastplan >= 4
+tr: GOTO KSM-ma07 IF mastplan >= 3
 GOTO KSM-ma08 IF mastplan < 3
-GOTO KSM-ma09 IF mastplan = 3
 GOTO KSM-ma09 IF mastplan = SYSMISS
 
-hi: Hier in Abhängigkeit von der Absicht ein Masterstudium aufzunehmen auf die folgenden Fragen weiterleiten
+hi:
 
 \--------------------------------
 
