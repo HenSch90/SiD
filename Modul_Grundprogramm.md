@@ -596,7 +596,9 @@ hl:
 
 in:
 
-q: Für den Zuzug nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen, welchen Status haben Sie damals bei Ihrer Einreise nach Deutschland gehabt?
+q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
+
+Als ich damals nach Deutschland kam, war ich ...
 
 is:
 
@@ -604,23 +606,27 @@ it:
 
 st:
 
-ao1: 1: (baufgrueuba): Bürger/ Bürgerin eines EU Mitgliedstaates/ Staates im EWR (Europäischer Wirtschaftsraum)
+ao1: 1: (baufgrueuba): Bürger*in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
 
-ao2: 2: (baufgruausba): Aussiedler/ Aussiedlerin, das heißt deutschstämmige Person aus osteuropäischen Staaten
+ao2: 2: (baufgrustuba): Studierende*r (auch zu Zwecken der Studienvorbereitung)
 
-ao3: 3: (baufgruasylba): Asylbewerber/ Asylbewerberin oder Flüchtling
+ao3: 3: (baufgruerwerb): Erwerbstätige*r
 
-ao4: 4: (baufgrufamba): Familiennachzug, z. B. als Ehegatte/ Ehegattin oder Kind eines/ einer Aufenthaltsberechtigten
+ao4: 4: (baufgrutouba): Tourist*in (Besuchsvisum)
 
-ao5: 5: (baufgrutouba): mit einem Touristenvisum
+ao5: 5: (baufgruasylba): Asylbewerber*in, Geflüchtete*r oder Schutzsuchende*r
 
-ao6: 6: (baufgrustuba): Studierender/ Studierende, Schüler/ Schülerin oder Auszubildender/ Auszubildende (einschließlich Aufenthaltserlaubnis zur Studienvorbereitung)
+ao6: 6: (baufgrufaman): Familienangehörige*r, Einreise mit Eltern bzw. Ehepartner*in
+
+ao6: 7: (baufgrufamba): Familiennachzug (Visum zur Familienzusammenführung)
+
+ao6: 8: (baufgruausba): (Spät-)Aussiedler*in
 
 ao7: 7: (baufgruandba): anderen, und zwar: (baufgruandba_open)
 
+
 ato:
 
-ao8: 8: (baufgruwnba): weiß ich nicht [EK]
 
 mv:
 
@@ -3773,7 +3779,7 @@ A_55
 
 tc:
 
-vn:
+vn: auslandint
 
 qt: Einfachauswahl
 
