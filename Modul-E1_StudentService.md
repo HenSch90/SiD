@@ -948,86 +948,8 @@ fo:
 
 tr:
 
-GOTO E1_12
+GOTO A_56
 
 hi:
 
 \--------------------------------
-
-E1_12
-=====
-
-tc:
-
-vn: engemusi; engespor; engefasc; engemedi; engedeba; engestse; engestin;
-engehogr; engestve; engesoho; engethta; engelege; engepoli
-
-qt:
-
-hl:
-
-in:
-
-q: Neben Lehrveranstaltungen gibt es weitere Möglichkeiten, sich in der
-Hochschule zu engagieren. Wie stark engagieren Sie sich in den folgenden
-Bereichen?
-
-is:
-
-it1: (engemusi): Chor/Orchester/Band der Hochschule
-
-it2: (engespor): Hochschulsport
-
-it3: (engefasc): Fachschaft
-
-it4: (engemedi): Campusradio/Campus-TV/Printorgan der Hochschule
-
-it5: (engedeba): Debattierklub
-
-it6: (engestse): studentische Selbstverwaltung (z. B. AStA, AEGEE)
-
-it7: (engestin): studentische Interessenvertretung (z. B. AISEC e. V.)
-
-it8: (engehogr): als studentische\*r Vertreter\*in in einem Hochschulgremium
-
-it9: (engestve): studentische Verbindung
-
-it10: (engesoho): soziale Hochschulgruppe
-
-it11: (engethta): studentische Theater-/Tanzgruppe
-
-it12: (engelege): wissenschaftlicher Lesekreis/Gesprächskreis
-
-it13: (engepoli): Hochschulgruppe einer politischen Partei
-
-st:
-
-ao1: 1: überhaupt nicht
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: sehr stark
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
