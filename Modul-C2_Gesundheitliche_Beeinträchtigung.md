@@ -380,9 +380,8 @@ hl:
 
 in:
 
-q: In welchen Bereichen haben oder hatten Sie im Zusammenhang mit Ihrer
-Beeinträchtigung [Ihren Beeinträchtigungen] in Ihrem derzeitigen Studium
-Schwierigkeiten?
+q: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer
+Beeinträchtigung [Ihren Beeinträchtigungen] Schwierigkeiten?
 
 is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen
 Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
@@ -444,7 +443,7 @@ hl:
 in:
 
 q: In welchen Bereichen haben Sie um individuelle Anpassungen/Absprachen gebeten
-oder Nachteilsausgleiche beantragt und wurden diese bewilligt?
+oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
 
 is: Bitte berücksichtigen Sie sowohl Antragstellungen bei
 Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit
