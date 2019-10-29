@@ -200,9 +200,7 @@ hi:
 D1_4 
 ==
 
-tc1: IF vsbstyp= 10 \| 11 
-
-tc2: IF vausbja=3
+tc: IF vsbstyp= 10 \| 11 \| vausbja=3
 
 vn: vausbzpjo; vausbzpmo
 
@@ -251,9 +249,7 @@ hi:
 D1_5 
 ==
 
-tc1: IF vsbstyp= 10 \| 11 
-
-tc2: IF vausbja=3
+tc: IF vsbstyp= 10 \| 11 \| vausbja=3
 
 vn: vausberuf, vausberufo
 
@@ -300,9 +296,7 @@ hi:
 D1_6
 =
 
-tc1: IF vsbstyp= 10 \| 11 
-
-tc2: IF vausbja=3
+tc: IF vsbstyp= 10 \| 11 \| vausbja=3
 
 vn: vausbnote; vausbnoteo
 
