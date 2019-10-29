@@ -909,9 +909,7 @@ hi:
 D1_14 
 ===
 
-tc: IF ssweija=1 und/oder saweija=1 und/oder shwija=1 und/oder ssuja=1 (nur
-Studierende mit vorherigem Studienfachwechsel, Abschlusswechsel,
-Hochschulwechsel und/oder Studienunterbrechung)
+tc: 
 
 vn: ssweijaaz; saweijaaz, sshwjaaz; ssujaaz
 
@@ -983,7 +981,9 @@ hi:
 D1_15 
 ===
 
-tc:
+tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1 (nur
+Studierende mit vorherigem Studienfachwechsel, Abschlusswechsel, Hochschulwechsel)
+
 
 vn: beginn01 – beginn05; ende01 – ende05; hs01 – hs05; fach01 – fach05; abs01 –
 abs05; stand01 – stand05; techepi
@@ -1068,7 +1068,7 @@ Das Tableau passt nicht in die gängige Template-Vorlage!
 D1_16 
 ===
 
-tc: IF ssuja=1 (nur Studierende, die mindestens eine Studienunterbrechung
+tc: IF ssujaaz>=1 (nur Studierende, die mindestens eine Studienunterbrechung
 hatten)
 
 vn: suzeitp01; suzeitp02; suzeit03; sudau01; sudau02; sudau03; subeur01;
