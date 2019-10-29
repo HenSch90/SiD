@@ -200,7 +200,7 @@ hi:
 D1_4 
 ==
 
-tc1: NO IF vsbstyp= 10 \| 11 \| 12 \| 13 \| 14
+tc1: IF vsbstyp= 10 \| 11 
 
 tc2: IF vausbja=3
 
@@ -251,7 +251,7 @@ hi:
 D1_5 
 ==
 
-tc1: NO IF vsbstyp= 10 \| 11 \| 12 \| 13 \| 14
+tc1: IF vsbstyp= 10 \| 11 
 
 tc2: IF vausbja=3
 
@@ -300,7 +300,7 @@ hi:
 D1_6
 =
 
-tc1: NO IF vsbstyp= 10 \| 11 \| 12 \| 13 \| 14
+tc1: IF vsbstyp= 10 \| 11 
 
 tc2: IF vausbja=3
 
