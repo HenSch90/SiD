@@ -61,7 +61,7 @@ vn: prffach1; prffach2; prffach3; prffach4; prffach5; stdfach1, stdfach2,
 stdfach3, stdfach4, stdfach5; notefach1, notefach2, notefach3, notefach4,
 notefach5, gesfach1, gesfach2, gesfach3, gesfach4, gesfach5
 
-qt: offene Angabe / Einfachauswahl mit Dropdown-Menü
+qt: Akkordeon, offene Angabe, Einfachauswahl mit Dropdown-Menü
 
 hl:
 
