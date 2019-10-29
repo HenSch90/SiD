@@ -13,6 +13,7 @@ hl:
 
 in: Zum Abschluss geht es um Aussagen zur Politik und zu hochschulpolitischen Themen, bei denen Sie angeben sollen, inwieweit sie diesen zustimmen oder diese ablehnen. Dabei geht es nicht um richtig oder falsch, sondern um Ihre persönliche Meinung. Bitte lesen Sie dazu die Aussagen aufmerksam durch.
 
+
 q: Wie stark interessieren Sie sich für Politik?
 
 is:
@@ -125,25 +126,25 @@ q: Inwiefern stimmen Sie den folgenden Aussagen zu?
 
 is:
 
-it1: (rechtspop1): Die Auseinandersetzungen zwischen verschiedenen Interessengruppen schaden dem Allgemeinwohl.
+it1: (rechtspop1): Die Auseinandersetzungen zwischen verschiedenen Interessengruppen schaden dem Allgemeinwohl
 
-it2: (rechtspop2): Bürger\*innen sollten das Recht zu Streiks und Demonstrationen verlieren, wenn sie damit die öffentliche Ordnung gefährden.
+it2: (rechtspop2): Bürger\*innen sollten das Recht zu Streiks und Demonstrationen verlieren, wenn sie damit die öffentliche Ordnung gefährden
 
-it3: (rechtspop3): Die Parteien wollen nur die Stimmen der Wähler\*innen, ihre Ansichten interessieren sie nicht.
+it3: (rechtspop3): Die Parteien wollen nur die Stimmen der Wähler\*innen, ihre Ansichten interessieren sie nicht
 
-it4: (rechtspop4): Wichtige Fragen sollten nicht von Parlamenten, sondern in Volksabstimmungen entschieden werden.
+it4: (rechtspop4): Wichtige Fragen sollten nicht von Parlamenten, sondern in Volksabstimmungen entschieden werden
 
-it5: (rechtspop5): Politische Kompromisse sind nichts anderes als ein Verrat der eigenen Prinzipien.
+it5: (rechtspop5): Politische Kompromisse sind nichts anderes als ein Verrat der eigenen Prinzipien
 
-it6: (rechtspop6): Die Politik ist nur zur Lösung kurzfristiger Probleme in der Lage.
+it6: (rechtspop6): Die Politik ist nur zur Lösung kurzfristiger Probleme in der Lage
 
-it7: (rechtspop7): Die Medien (Tageszeitungen, TV-Nachrichten) manipulieren die öffentliche Meinung.
+it7: (rechtspop7): Die Medien (Tageszeitungen, TV-Nachrichten) manipulieren die öffentliche Meinung
 
-it8: (rechtspop8): Die Parteien sind die Handlanger\*innen des Lobbyismus.
+it8: (rechtspop8): Die Parteien sind die Handlanger\*innen des Lobbyismus
 
-it9: (rechtspop9): Gleichgültigkeit gegenüber Politik ist verantwortungslos.
+it9: (rechtspop9): Gleichgültigkeit gegenüber Politik ist verantwortungslos
 
-it10: (rechtspop10): Politische Vorgänge sind so kompliziert, dass ich mir nur schwer ein Urteil bilden kann.
+it10: (rechtspop10): Politische Vorgänge sind so kompliziert, dass ich mir nur schwer ein Urteil bilden kann
 
 st:
 
@@ -201,7 +202,7 @@ it1: (polziel1): harte Bestrafung der Kriminalität
 
 it2: (polziel2): verstärkte Förderung technologischer Entwicklung
 
-it3: (polziel3): Begrenzung der Zuwanderung von Ausländer\*innen
+it3: (polziel3): Begrenzung der Zuwanderung von Ausländer*innen
 
 it4: (polziel4): Sicherung der freien Marktwirtschaft und des privaten Unternehmertums
 
@@ -410,7 +411,7 @@ is: Mehrfachantworten sind möglich
 
 it:
 
-ao1: (beteil1): Beteiligung an Bürger*inneninitiativen
+ao1: (beteil1): Beteiligung an Bürger\*inneninitiativen
 
 ao2: (beteil2): Mitarbeit in politischen Parteien
 
