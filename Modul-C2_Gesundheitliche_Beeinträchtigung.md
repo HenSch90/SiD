@@ -979,17 +979,17 @@ mv:
 
 ka:
 
-vc: SHOW it1 IF beauftr >1
+vc: SHOW it1 IF beauftr =3
 
-SHOW it2 IF besoz >1
+SHOW it2 IF besoz =3
 
-SHOW it3 IF bepsy >1
+SHOW it3 IF bepsy =3
 
-SHOW it4 IF bestud >1
+SHOW it4 IF bestud =3
 
-SHOW it5 IF beselb >1
+SHOW it5 IF beselb =3
 
-SHOW it6 IF beand >1
+SHOW it6 IF beand =3
 
 av:
 
