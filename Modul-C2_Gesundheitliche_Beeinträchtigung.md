@@ -874,15 +874,15 @@ Beeinträchtigung kennen Sie bzw. haben Sie genutzt?
 
 is:
 
-it1: beauftr: Beauftragte/Beratungsstellen für Studierende mit
-Behinderungen/Beeinträchtigungen der Hochschule
+it1: beauftr: eratungsstellen für Studierende mit
+Beeinträchtigungen der Hochschule
 
-it2: besoz: Sozialberatung/Beratungsstelle für Studierende mit
-Behinderungen/Beeinträchtigungen des Studentenwerks
+it2: besoz: Beratungsstelle für Studierende mit
+Beeinträchtigungen des Studentenwerks
 
 it3: bepsy: psychologische Beratungsstelle des Studentenwerks/der Hochschule
 
-it4: bestud: Beratung für Studierende mit Behinderungen/Beeinträchtigungen des
+it4: bestud: Beratung für Studierende mit Beeinträchtigungen des
 AStA, StuRa, UStA etc.
 
 it5: beselb: studentische Behindertenselbsthilfe (u. a. BHSA, DVBS, BAG Behinderung
