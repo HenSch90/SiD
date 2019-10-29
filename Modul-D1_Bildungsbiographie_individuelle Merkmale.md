@@ -200,11 +200,9 @@ hi:
 D1_4 
 ==
 
-tc1: NO IF vsbstyp=5 \| 6
+tc1: NO IF vsbstyp= 10 \| 11 \| 12 \| 13 \| 14
 
-tc2: NO IF vsbstyp1-15= 10 \| 11 \| 12 \| 13 \| 14
-
-tc3: IF vausbja=3
+tc2: IF vausbja=3
 
 vn: vausbzpjo; vausbzpmo
 
@@ -253,11 +251,9 @@ hi:
 D1_5 
 ==
 
-tc1: NO IF vsbstyp=5 \| 6
+tc1: NO IF vsbstyp= 10 \| 11 \| 12 \| 13 \| 14
 
-tc2: NO IF vsbstyp1-15= 10 \| 11 \| 12 \| 13 \| 14
-
-tc3: IF vausbja=3
+tc2: IF vausbja=3
 
 vn: vausberuf, vausberufo
 
@@ -304,11 +300,9 @@ hi:
 D1_6
 =
 
-tc1: NO IF vsbstyp=5 \| 6
+tc1: NO IF vsbstyp= 10 \| 11 \| 12 \| 13 \| 14
 
-tc2: NO IF vsbstyp1-15= 10 \| 11 \| 12 \| 13 \| 14
-
-tc3: IF vausbja=3
+tc2: IF vausbja=3
 
 vn: vausbnote; vausbnoteo
 
