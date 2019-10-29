@@ -1058,7 +1058,7 @@ kh:
 
 fv:
 
-hv: h_gartcount = gartmob=1 AND gartseh=1 AND gartohr=1 AND gartspr=1 AND gartpsy=1 AND gartsom=1 AND garttls=1 AND gartson=1 AND gartka=1
+hv: h_gartcount = gartmob + gartseh + gartohr + gartspr + gartpsy + gartsom + garttls + gartson + gartka; ignore mv AND SYSMISS
 
 fo:
 
