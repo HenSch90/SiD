@@ -585,12 +585,65 @@ tr: GOTO D1_7 IF (ssemhs=1 OR ssemhs=2) OR (ssemhs=01 OR ssemhs=02)
 
 hi:
 
+
 \--------------------------------
+
+D1_10a 
+===
+
+tc: IF sabsja=2 (nur Studierende mit vorherigem Hochschulabschluss)
+
+vn: sabserbl1
+
+qt: Einfachauswahl vertikal
+
+hl:
+
+in:
+
+q: Haben Sie Ihren letzten Hochschulabschluss an Ihrer derzeitigen Hochschule erworben?
+
+is:
+
+it:
+
+st:
+
+ao1 (sabserbl1): 0: : nein
+
+ao2 (sabserbl1): 1: : ja
+
+mv:
+
+ka:
+
+vc: 
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+GOTO D1_10 IF sabserbl1 = 0
+GOTO D1_12 IF sabserbl = 1
+GOTO D1_12 IF sabserbl = k. A.
+
+
+\--------------------------------
+
+
 
 D1_10 
 ===
 
-tc: IF sabsja=2 (nur Studierende mit vorherigem Hochschulabschluss)
+tc: IF sabserbl1 = 0 (nur Studierende mit vorherigem Hochschulabschluss an anderer als derzeitiger Hochschule)
 
 vn: sabserbl
 
@@ -661,26 +714,29 @@ fo:
 
 tr:
 
-GOTO D1_11a IF sabserbl = 1 – 16
-GOTO D1_11b IF sabserbl = 17
-
+GOTO D1_11 IF sabserbl = 1 – 16
+GOTO D1_11a IF sabserbl = 17
+GOTO D1_12 IF sabserbl = k. A.
 
 \--------------------------------
 
-D1_11a 
+D1_11 
 ====
 
 tc: IF sabserbl = 1 – 16 
 
-vn: sabserhs
+vn: sabserhs1, sabserhs2
 
-qt: Dropdown-Menü
+qt: Dropdown-Menü, offene Nennung
 
 hl:
 
 in:
 
-q: An welcher Hochschule haben Sie Ihren Abschluss erworben?
+q1: An welcher Hochschule haben Sie Ihren Abschluss erworben?
+
+q2: Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das
+dafür vorgesehene Feld ein.
 
 is:
 
@@ -688,7 +744,9 @@ it:
 
 st:
 
-ao (sabserhs): : [infield = Hochschule] (Dropdown)
+ao1: (sabserhs1): : [infield = Hochschule] (Dropdown)
+
+ao2: (sabserhs2): (offene Nennung): 100 Stellen; Präfix: [infield = Hochschule; sabserhs2]; 
 
 mv:
 
@@ -708,31 +766,28 @@ fo:
 
 tr:
 
-GOTO D1_13
+GOTO D1_12
 
-hi: Bitte mit nachfolgender Frage auf einer Seite programmieren.
+hi: q1 und ao1 bitte oberhalb von q2 und ao2 platzieren.
+
 
 \--------------------------------
 
-D1_11b 
+
+D1_11a 
 ====
 
-tc1: IF sabserbl= 1 – 16
+tc: IF sabserbl = 17
 
-tc2: IF sabserbl= 17
+vn: sabserhs3, sabserhs4
 
-vn: sabserhs2
-
-qt: Offene Nennung
+qt: offene Nennung
 
 hl:
 
 in:
 
-q1: Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das
-dafür vorgesehene Feld ein.
-
-q2: An welcher Hochschule haben Sie Ihren Abschluss erworben?
+q: An welcher ausländischen Hochschule haben Sie Ihren Abschluss erworben?
 
 is:
 
@@ -740,14 +795,15 @@ it:
 
 st:
 
-ao1: (offene Nennung): 100 Stellen; Präfix: [infield = Hochschule; sabserhs2]; 
+ao1: (sabserhs3): (offene Nennung): 60 Stellen; Präfix: [infield = Land; sabserhs3]; 
+
+ao2: (sabserhs4): (offene Nennung): 60 Stellen; Präfix: [infield = Hochschule; sabserhs4]; 
+
 mv:
 
 ka:
 
-vc1: SHOW q1 IF sabserbl= 1 - 16
-
-vc2: SHOW q2 IF sabserbl=17
+vc:
 
 av:
 
@@ -770,7 +826,7 @@ hi:
 D1_12 
 ===
 
-tc: IF sabsja=1 
+tc: IF sabsja=2 
 
 vn: sabserfacho
 
