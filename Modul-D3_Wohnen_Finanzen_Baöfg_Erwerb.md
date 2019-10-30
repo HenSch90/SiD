@@ -1175,23 +1175,16 @@ q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Sem
 q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
-q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. 
-Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
-
-q5: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
-Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
-
-q6: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. 
-Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
+q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 is: 
-it1: (etat1): Art der Tätigkeit [Dropdown-Menü] (Tätigkeit A)
-it2: (etat2): Art der Tätigkeit [Dropdown-Menü] (Tätigkeit B)
-it3: (etat3): Art der Tätigkeit [Dropdown-Menü] (Tätigkeit C)
+it1: (etat1): (Tätigkeit A)  [infield = Art der Tätigkeit; Dropdown-Menü] 
+it2: (etat2): (Tätigkeit B)  [infield = Art der Tätigkeit; Dropdown-Menü] 
+it3: (etat3): (Tätigkeit C)  [infield = Art der Tätigkeit; Dropdown-Menü] 
 
 st:
-ao1: 1: : Tätigkeit als studentische/ wissenschaftliche Hilfskraft im Bereich Forschung und Lehre
-ao2: 2: : Tätigkeit als studentische/ wissenschaftliche Hilfskraft im Bereich Verwaltung
+ao1: 1: : Tätigkeit als studentische/wissenschaftliche Hilfskraft im Bereich Forschung und Lehre
+ao2: 2: : Tätigkeit als studentische/wissenschaftliche Hilfskraft im Bereich Verwaltung
 ao3: 3: : Jobben (z. B. in einer Fabrik, einem Büro, einer Kneipe, Babysitten, Nachhilfeunterricht)
 ao4: 4: : Tätigkeit, die einen Hochschulabschluss voraussetzt (ohne Hilfskraft)
 ao5: 5: : Tätigkeit, die einen beruflichen Ausbildungsabschluss voraussetzt
@@ -1205,21 +1198,19 @@ ka2 (it2): Tätigkeit B
 ka3 (it3): Tätigkeit C 
 
 vc: 
-SHOW q1 IF eaktsens = 2
+SHOW q1 IF eaktsens = 2 AND sformdua != 1
 SHOW q2 IF eaktsens = 2 AND sformdua = 1
-SHOW q3 IF eaktsens = 3
-SHOW q4 IF eaktsens = 3 AND sformdua = 1
-SHOW q5 IF eaktsens = 4  
-SHOW q6 IF eaktsens = 4 AND sformdua = 1
+SHOW q3 IF eaktsens = 3 | 4 AND sformdua != 1
+SHOW q4 IF eaktsens = 3 | 4 AND sformdua = 1
 
-SHOW it1 IF eaktsens = 2 OR eaktsens = 2 AND sformdua = 1
-SHOW it1 TO it2 IF eaktsens = 3 OR eaktsens = 3 AND sformdua = 1
-SHOW it1 TO it3 IF eaktsens = 4 OR eaktsens = 4 AND sformdua = 1
+SHOW it1 IF eaktsens = 2 
+SHOW it1 TO it2 IF eaktsens = 3 
+SHOW it1 TO it3 IF eaktsens = 4 
 
-SHOW ka1 IF eaktsens = 3 OR eaktsens = 3 AND sformdua = 1
-SHOW ka1 TO ka3 IF eaktsens = 4   OR eaktsens = 4 AND sformdua = 1
+SHOW ka1 TO ka2 IF eaktsens = 3 
+SHOW ka1 TO ka3 IF eaktsens = 4   
 
-av: number: <= dreistellig : 1 TO 999 
+av: 
 kh: 
 
 fv: 
