@@ -493,11 +493,11 @@ hv:
 
 fo:
 
-tr: GOTO C2_9 IF ntabau=2 OR ntaorg=2 OR ntaorg=2 OR ntaand=2
+tr: GOTO C2_9 IF ntabau=2 OR ntaorg=2 OR ntapru=2 OR ntaand=2
 
-GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntaorg=1 OR ntaand=1
+GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntapru=1 OR ntaand=1
 
-GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
+GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
 
 hi:
 
@@ -506,7 +506,7 @@ hi:
 C2_9
 ====
 
-tc: IF ntabau=2 OR ntaorg=2 OR ntaorg=2 OR ntaand=2
+tc: IF ntabau=2 OR ntaorg=2 OR ntapru=2 OR ntaand=2
 
 vn: ntahbau; ntahorg; ntahpru; ntahand; ntahando
 
@@ -565,9 +565,9 @@ hv:
 
 fo:
 
-tr: GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntaorg=1 OR ntaand=1
+tr: GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntapru=1 OR ntaand=1
 
-GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
+GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
 
 ELSE GOTO C2_12
 
@@ -578,7 +578,7 @@ hi:
 C2_10
 =====
 
-tc: IF ntabau=1 OR ntaorg=1 OR ntaorg=1 OR ntaand=1
+tc: IF ntabau=1 OR ntaorg=1 OR ntapru=1 OR ntaand=1
 
 vn: nbkenn; nbsond; nbhemm; nbsecr; nbsich; nbsupp; nbaufw; nbexp; nbmiss;
 nbkons; nband; nbando
@@ -709,7 +709,7 @@ hv:
 
 fo:
 
-tr: GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
+tr: GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
 
 ELSE GOTO C2_12
 
@@ -720,7 +720,7 @@ hi:
 C2_11
 =====
 
-tc: IF ntabau=3 OR ntaorg=3 OR ntaorg=3 OR ntaand=3
+tc: IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
 
 vn: kbgrund; kbordn; kbwert; kbbev; kblehr; kbtech; kborga; kbatt; kbzeit;
 kband; kbando; kbunbe; kbmem
