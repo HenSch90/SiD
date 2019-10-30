@@ -467,7 +467,7 @@ tc: IF dkinja = 2
 
 vn: dekinbezuf
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -905,7 +905,7 @@ tc: IF dkinja = 2
 
 vn: dkinstuja
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
