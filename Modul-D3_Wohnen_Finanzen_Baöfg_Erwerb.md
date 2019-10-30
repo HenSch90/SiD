@@ -110,7 +110,9 @@ in:
 
 q1: Bitte geben Sie die Postleitzahl Ihres derzeitigen Wohnortes am Hochschulort an.
 
-q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitten den Ort an.
+q2: Bitte geben Sie die Postleitzahl Ihres derzeitigen Wohnortes außerhalb des Hochschulortes an.
+
+q3: Falls Sie die Postleitzahl nicht kennen, geben Sie bitten den Ort an.
 
 is:
 
@@ -126,7 +128,9 @@ mv:
 
 ka:
 
-vc: 
+vc1: SHOW q1 and ao1 IF wohnort = 1 | 3
+
+vc1: SHOW q2 and ao1 IF wohnort = 2
 
 av1: ao1 (wohnplz) number: 01000 TO 99999
 
@@ -136,7 +140,7 @@ fv:
 
 hv:
 
-fo: SHOW q2 and ao2 IF wohnplzo = k. A. (--> soft forcing, also danach geht es normal weiter)
+fo: SHOW q3 and ao2 IF wohnplzo = k. A. (--> soft forcing, also danach geht es normal weiter)
 
 tr: GOTO A_53
 
