@@ -57,6 +57,7 @@ hi: Wäre es möglich, diesen Eingangstext etwas größer darzustellen als es so
 \------------------------------------------------------------
 
 KSM-anf02a
+=========
 
 tc: sabsan = 1 OR sabsan = 2  
 
@@ -115,6 +116,7 @@ hi:
 \--------------------------
 
 KSM-anf02b
+=========
 
 tc: IF sabsan <> 1 OR sabsan <> 2
 
