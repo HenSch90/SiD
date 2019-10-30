@@ -363,7 +363,7 @@ vc3: SHOW it6 (feinjobo) IF  sformdua = 1
 
 vc3: SHOW it11 (feinekio) if dkinja=2
 
-vc4: SHOW it12 – it13 (feinbest1 – feinbest2) if [gartmob=1 OR gartseh=1 OR gartohr=1 … gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
+vc4: SHOW it12 – it13 (feinbest1 – feinbest2) if [gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1] 
 
 av: number : 1-4 stellig : 1 TO 9999
 
@@ -449,7 +449,7 @@ tc:
 
 vn1: „Ich bezahle selbst“ [fausg]: (fausgmiet; fausgmieto; fausgerno; fausgerno; fausgkomo; fausgkleio; fausglerno; fausgmobo; fausggeso; fausgsemo; fausgstuo; fausffreio; fausgkitaso; fausgkindso; fausgasso; fausgthilfo; fausandqo) 
 
-vn2: „Dritte (Eltern, Partner*in etc) bezahlen direkt [feind]: (feindmieto; feinderno, feindkomo; feindkleio; feindlerno; feindgmobo, feindgeso; feindgsemo; feindgstuo; feindgfreio; feindkitaso; feindkindso; feindgasso; feindgthilfo; feinandquo2)
+vn2: „Dritte (Eltern, Partner\*in etc) bezahlen direkt [feind]: (feindmieto; feinderno, feindkomo; feindkleio; feindlerno; feindgmobo, feindgeso; feindgsemo; feindgstuo; feindgfreio; feindkitaso; feindkindso; feindgasso; feindgthilfo; feinandquo2)
 
 vn3: fausinsg
 
@@ -546,9 +546,9 @@ vc1: SHOW it11 IF [dkinja = 2]
 
 vc2: SHOW it12 IF [dkinja = 2]
 
-vc3: SHOW it13 IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
+vc3: SHOW it13 IF [gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1] 
 
-vc4: SHOW it14 IF [gartmob=1 | gartseh=1 | gartohr=1 … | gartka=1] [Variablen beeinträchtigt Studierende aus SDK-gub01]
+vc4: SHOW it14 IF [ggartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1] 
 
 vc5: SHOW is2 IF wohnal=!1
 
@@ -568,7 +568,7 @@ fo:
 tr: GOTO D3_9
 
 hi: “Ich bezahle selbst” und “Dritte (Eltern, Partner\*in etc.) bezahlen direkt”
-als Spaltenüberschriften; Bei "fausinsg" (Gesamtausgaben) bitte Trennlinie und keine Spalten, sondern nur 1 offenes Angabefeld 
+als Spaltenüberschriften; Bei "fausinsg" (Gesamtausgaben) bitte Trennlinie und 2 offene Angabefelder (selbst vs. Dritte) 
 
 \--------------------------------
 
@@ -1207,8 +1207,8 @@ SHOW q2 IF eaktsens = 2 AND sformdua = 1
 SHOW q3 IF eaktsens = 3 | 4 AND sformdua != 1
 SHOW q4 IF eaktsens = 3 | 4 AND sformdua = 1
 
-SHOW it1 IF eaktsens = 2 
-SHOW it1 TO it2 IF eaktsens = 3 
+SHOW it1 IF eaktsens = 2 | 3 | 4
+SHOW it1 TO it2 IF eaktsens = 3 | 4 
 SHOW it1 TO it3 IF eaktsens = 4 
 
 SHOW ka1 TO ka2 IF eaktsens = 3 
