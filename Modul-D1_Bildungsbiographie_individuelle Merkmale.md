@@ -409,7 +409,7 @@ mv:
 
 ka:
 
-vc: SHOW stfwver IF gartmob – gartka=1
+vc: SHOW stfwver IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
