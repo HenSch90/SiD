@@ -161,11 +161,9 @@ hl:
 
 in:
 
-q1: Wie groß ist Ihre Wohnung?
+q1: Wie groß ist Ihre Wohnung/Ihr Haus?
 
-q2: Wie groß ist Ihr Haus?
-
-q3: Wie groß ist das von Ihnen genutzte Zimmer?
+q2: Wie groß ist das von Ihnen genutzte Zimmer?
 
 is:
 
@@ -181,11 +179,7 @@ mv:
 
 ka:
 
-vc1: SHOW q1 IF wohnel!=1
-
-vc3: SHOW q2 IF wohnel=1 
-
-vc2: SHOW q3, ao2 IF wohnel=1 OR wohnwg=1 
+vc: SHOW q2, ao2 IF wohnel=1 OR wohnwg=1 
 
 av1: number: 3 stellig : 1 TO 999
 
@@ -312,7 +306,7 @@ it11: (feinekio): Kindergeld/Unterhalt für Ihr(e) Kind(er)
 
 it12: (feinbest1): Krankenversicherungsleistungen für technische Hilfsmittel
 
-it13: (feinbest2):  weitere spezifische Sozialleistungen im Zusammenhang mit meiner gesundheitlichen Beeinträchtigung
+it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit meiner gesundheitlichen Beeinträchtigung
 
 it14: (feinandq): Weitere Finanzierungsquelle(n), und zwar: (offene Angabe: [feinandqo] 50 Zeichen) 
 
@@ -1208,8 +1202,8 @@ SHOW q3 IF eaktsens = 3 | 4 AND sformdua != 1
 SHOW q4 IF eaktsens = 3 | 4 AND sformdua = 1
 
 SHOW it1 IF eaktsens = 2 | 3 | 4
-SHOW it1 TO it2 IF eaktsens = 3 | 4 
-SHOW it1 TO it3 IF eaktsens = 4 
+SHOW it2 IF eaktsens = 3 | 4 
+SHOW it3 IF eaktsens = 4 
 
 SHOW ka1 TO ka2 IF eaktsens = 3 
 SHOW ka1 TO ka3 IF eaktsens = 4   
