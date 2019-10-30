@@ -2929,15 +2929,21 @@ hl:
 
 in:
 
-q: In welchem Maße [Individualisierung] einen fachlichen Bezug zu Ihrem aktuellen Studium?
+q1: In welchem Maße hat ihre Erwerbstätigkeit einen fachlichen Bezug zu Ihrem aktuellen Studium?
+
+q2: In welchem Maße hat Ihre Erwerbstätigkeit, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
+
+q3: In welchem Maße haben Ihre Erwerbstätigkeiten  einen fachlichen Bezug zu Ihrem aktuellen Studium?
+
+q4:  In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
 
 is:
 
-it: 1: Tätigkeit A [Individualisierung]
+it: 1: Tätigkeit A 
 
-it: 2: Tätigkeit B [Individualisierung]
+it: 2: Tätigkeit B 
 
-it: 3: Tätigkeit C [Individualisierung]
+it: 3: Tätigkeit C 
 
 st:
 
@@ -2955,29 +2961,18 @@ mv:
 
 ka:
 
-vc: SHOW Individualisierung if eaktsens=2 : hat ihre Erwerbstätigkeit
+vc1: SHOW q1 IF eaktsens=2 AND sformdua!=1
 
-SHOW Individualisierung if eaktsens=2 AND sformdua=1 : hat Ihre Erwerbstätigkeit, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
+vc2: SHOW q2 IF eaktsens=2 AND sformdua=1 
 
-SHOW Individualisierung if eaktsens=3 : haben Ihre Erwerbstätigkeiten 
+vc3: SHOW q3 IF eaktsens=3 | 4 AND sformdua!=1
 
-SHOW Individualisierung if eaktsens=3 AND sformdua=1 : haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
+vc4: SHOW q4 IF eaktsens=3 | 4 AND sformdua=1 
 
-SHOW Individualisierung if eaktsens=4 : haben Ihre Erwerbstätigkeiten
+vc5: SHOW it1 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4 
+vc6: SHOW it2 IF eaktsens=3 OR eaktsens=4 
+vc7: SHOW it3 IF eaktsens=4 
 
-SHOW Individualisierung if eaktsens=4 AND sformdua=1 : haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben,
-
-SHOW it1 if eaktsens=2
-
-SHOW it1 if eaktsens=2 AND sformdua=1
-
-SHOW it1 & it2 if eaktsens=3
-
-SHOW it1 & it2 if eaktsens=3 AND sformdua=1 :
-
-SHOW it1 & it2 & it3 if eaktsens=4 :
-
-SHOW it1 & it2 & it3 if eaktsens=4 AND sformdua=1 :
 
 av:
 
