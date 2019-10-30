@@ -9,7 +9,7 @@ vn:
 
 qt: 
 
-hl: Übergang an die Hochschule
+hl: 
 
 in: Der Übergang an die Hochschule kann mit verschiedenen Herausforderungen und Schwierigkeiten verbunden sein. Im Folgenden werden wir Ihnen daher abschließend Fragen zu Ihrer Studienanfangsphase sowie zu Ihren persönlichen Interessen stellen.
 
