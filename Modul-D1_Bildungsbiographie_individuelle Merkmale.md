@@ -988,7 +988,7 @@ Studierende mit vorherigem Studienfachwechsel, Abschlusswechsel, Hochschulwechse
 vn: beginn01 – beginn05; ende01 – ende05; hs01 – hs05; fach01 – fach05; abs01 –
 abs05; stand01 – stand05; techepi
 
-qt: Dropdown-Menü / offene Angaben
+qt: Tableau / Dropdown-Menü / offene Angaben
 
 hl:
 
@@ -1015,22 +1015,22 @@ it6: techepi): Benötigen Sie weitere Episoden?
 
 st:
 
-ao1: (Dropdown bitte absteigend - beginn01 – beginn05): Sommersemester 2020 \|
+ao1: Prefix: Beginn: (Dropdown bitte absteigend - beginn01 – beginn05): Sommersemester 2020 \|
 Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
-\| Wintersemester 2020
 
-ao2: -12: : weiß ich noch nicht
+ao2: Prefix: Ende: (Dropdown bitte absteigend - ende01 – ende05): Sommersemester 2020 \|
+Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
 
-ao3: (offene Angabe): 100 Stellen; Präfix: [hs01 – hs05]; Suffix: Hochschule
+ao3: (offene Angabe): 100 Stellen; Präfix: [infield = Hochschule; hs01 – hs05];
 
-ao4: (offene Angabe) 60 Stellen; Präfix: [fach01 – fach05]; Suffix: Studienfach
+ao4: (offene Angabe) 60 Stellen; Präfix: [infield = Studienfach; fach01 – fach05]; 
 
-ao5: (Dropdown abs01 – abs05): Bachelor \| Bachelor (Lehramt) \| Master \|
+ao5: (Dropdown abs01 – abs05): infield = angestrebter Abschluss; Bachelor \| Bachelor (Lehramt) \| Master \|
 Master (Lehramt) \| Staatsexamen \| Staatsexamen (Lehramt) \| Diplom, Promotion
 \| kirchliche Abschlussprüfung \| künstlerische Abschlussprüfung \| anderer
 Abschluss (bspw. Ausländischer Abschluss \| Magister) \| kein Studienabschluss
 
-ao6: (Dropdown stand01 – stand05): begonnen \| abgeschlossen \| abgebrochen \|
+ao6: (Dropdown stand01 – stand05): infield = letzter Stand; begonnen \| abgeschlossen \| abgebrochen \|
 unterbrochen
 
 ao7: (techepi): 0: : nein
@@ -1061,7 +1061,6 @@ tr: GOTO D1_16 IF ssuja=1
     
 hi: Wenn techepi=1, bitte zwei weitere Zeilen einblenden.
 
-Das Tableau passt nicht in die gängige Template-Vorlage!
 
 \--------------------------------
 
@@ -1094,7 +1093,7 @@ is2 (nur für q3): Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 Sollten Sie mehr als dreimal unterbrochen haben, beginnen Sie bitte mit Ihrer
 drittletzten Unterbrechung.
 
-it1: (suzeitp01 – sozeitp03): Zeitpunkt der Unterbrechung:
+it1: (suzeitp01 – suzeitp03): Zeitpunkt der Unterbrechung:
 
 it2: (sudau01 – sudau03): Dauer der Unterbrechung
 
@@ -1116,13 +1115,13 @@ mv:
 
 ka:
 
-vc1: SHOW q1 AND suzeitp01 \| sudau01 \| subeur01 IF ssujaaz=1 \| kA
+vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssujaaz=1 \| kA
 
-vc2: SHOW q2 AND suzeitp01 \| sudau01 \| subeur01 \| suzeitß02 \| sudau02 \|
+vc2: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
 subeur02 IF ssujaaz=2
 
-vc3: SHOW q3 AND suzeitp01 \| sudau01 \| subeur01 \| suzeitp01 \| sudau01 \|
-subeur01 \| suzeitp02 \| sudau02 \| subeur02 \| suzeitp03 \| sudau03 \| subeur03
+vc3: SHOW q3/is2 AND suzeitp01 & sudau01 & subeur01 & suzeitp01 & sudau01 &
+subeur01 & suzeitp02 &sudau02 & subeur02 & suzeitp03 & sudau03 & subeur03
 IF ssujaaz= 3 \| 4 \| 5
 
 av:
