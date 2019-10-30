@@ -380,8 +380,11 @@ hl:
 
 in:
 
-q: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer
-Beeinträchtigung [Ihren Beeinträchtigungen] Schwierigkeiten?
+q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer
+Beeinträchtigung Schwierigkeiten?
+
+q2: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihren
+Beeinträchtigungen Schwierigkeiten?
 
 is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen
 Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
@@ -409,7 +412,9 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW q1 IF h_gartcount = 1
+
+vc2: SHOW q2 IF h_gartcount > 1
 
 av:
 
