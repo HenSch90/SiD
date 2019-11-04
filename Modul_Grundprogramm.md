@@ -2053,8 +2053,8 @@ hv:
 
 fo:
 
-tr: GOTO B2_1 if mastersplit=1, 2, 3, 4, 5, 6, 13
-    GOTO A_33 if mastersplit=7, 8, 9, 10, 11, 12
+tr: GOTO A_33 if mastersplit=1, 2, 3, 4, 5, 6, 14
+    GOTO B2_1 if mastersplit=7, 8, 9, 10, 11, 12, 13
 
 hi:
 
@@ -2138,6 +2138,7 @@ Spalte bitte nicht ausgefüllt werden können und umgekehrt (Exklusivkategorie).
 tr: GOTO B2_2a if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split2==1 (50%)
     GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split2==2 (50%)
     GOTO B1_6 if mastersplit=1, 2, 3, 4, 5, 6
+    GOTO A34 if mastersplit=14
 
 hi:
 
@@ -2852,9 +2853,10 @@ hv:
 
 fo:
 
-tr: GOTO A_42 if vausbja=1
-    GOTO D1_4 if (vausbja=2 OR ausbja=3) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
-    GOTO A_42 if vausbja=MISSING
+tr: GOTO A_42 if vausbja=1 | k.A.
+    GOTO A_42 if (ausbja=2 | 3) AND (mastersplit=5, 6, 11, 12, 13)
+    GOTO D1_4 if (ausbja=3) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
+    GOTO D1_5 if (vausbja=2) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
     
 hi:
 
@@ -2906,11 +2908,10 @@ hv:
 fo:
 
 tr: GOTO A_43 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
-    GOTO D1_9 IF eaktsens=1 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
-    GOTO D1_9 IF eaktsens=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
-    GOTO D2_6 IF eaktsens=1 AND mastersplit=5, 6, 11, 12
-    GOTO D2_6 IF eaktsens=MISSING AND mastersplit=5, 6, 11, 12
-   
+    GOTO A_44 IF (eaktsens=1 | k.A.) AND (mastersplit=13)
+    GOTO D1_9 IF eaktsens=1 | k.A.) AND (mastersplit=1, 2, 7, 8)
+    GOTO D3_20 IF (eaktsens =1 | k.A. & sformberu=1 | sformdua=1) AND (mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14)
+    GOTO D3_22 IF (eaktsens =1 | k.A. & sformberu!=1 | sformdua!=1) AND (mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14)
     
 hi:
 
@@ -2986,6 +2987,7 @@ fo: It1 den Text “Tätigkeit A” nicht anzeigen
 
 tr: GOTO D3_19 IF mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
     GOTO D1_9 IF mastersplit=1, 2, 7, 8
+    GOTO A44 IF mastersplit=13
     
 hi:
 
@@ -3264,9 +3266,9 @@ hv:
 
 fo:
 
-tr: GOTO D1_10 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+tr: GOTO D1_10a IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
     GOTO A_49a IF (mastersplit=5, 6, 11, 12, 13) AND (sabser=1)
-    GOTO A_49b IF (mastersplit=5, 6, 11, 12, 13) AND (sabser\>1)
+    GOTO A_49b IF (mastersplit=5, 6, 11, 12, 13) AND (sabser!=1)
 
 hi:
 
@@ -3455,11 +3457,12 @@ hv:
 fo:
 
 tr: GOTO D1_14 IF (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
-    GOTO A_51a if ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2 AND h_split=1 (50%)
-    GOTO A_51B if ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2 AND h_split=2 (50%)
-    GOTO A_51a if SYSTEMMISSING AND h_split=1 (50%)
-    GOTO A_51b if SYSTEMMISSING AND h_split=2 (50%)
- 
+    GOTO A_51a if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1 AND h_split=1 (50%)) AND (mastersplit=5, 6, 11, 12, 13)
+    GOTO A_51b if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1 AND h_split=2 (50%)) AND (mastersplit=5, 6, 11, 12, 13)
+    GOTO A_51a if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2) AND (h_split=1 (50%))
+    GOTO A_51b if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2) AND (h_split=2 (50%))
+    GOTO A_51a if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=1 (50%))
+    GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=2 (50%))
 hi:
 
 \------------------------------------------------------------
@@ -3708,8 +3711,7 @@ hv:
 
 fo:
 
-tr: GOTO D3_2 IF wohnal=0 AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
-    GOTO D3_2 IF wohnal=MISSING AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+tr: GOTO D3_2 IF wohnal!=1 AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
     GOTO D3_4 IF wohnal=1 AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
     GOTO B2_5 IF mastersplit=7, 8, 13
     GOTO B1_5 IF mastersplit=1, 2
