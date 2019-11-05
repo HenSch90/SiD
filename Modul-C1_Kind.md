@@ -136,7 +136,7 @@ fo:
 
 tr:
 
-GOTO C1_5
+GOTO C1_4
 
 hi: Eingabefelder auf XXXX-Format setzen; Wertebereich = 0 bis 99 betragen; Dezimalstellen zulassen.
 
