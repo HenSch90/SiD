@@ -426,9 +426,7 @@ hv:
 
 fo:
 
-tr: GOTO C2_8 IF schwno <> 1
-
-ELSE GOTO C2_12 
+tr: GOTO C2_8
 
 hi:
 
