@@ -2854,8 +2854,8 @@ hv:
 fo:
 
 tr: GOTO A_42 if vausbja=1 | k.A.
-    GOTO A_42 if (ausbja=2 | 3) AND (mastersplit=5, 6, 11, 12, 13)
-    GOTO D1_4 if (ausbja=3) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
+    GOTO A_42 if (vausbja=2 | 3) AND (mastersplit=5, 6, 11, 12, 13)
+    GOTO D1_4 if (vausbja=3) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
     GOTO D1_5 if (vausbja=2) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
     
 hi:
