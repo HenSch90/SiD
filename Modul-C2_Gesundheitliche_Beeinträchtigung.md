@@ -240,7 +240,7 @@ st:
 
 ao1: 1: : nein
 
-ao2: 2: : Ja, möglicherweise nach einiger Zeit.
+ao2: 2: : Ja, nach einiger Zeit.
 
 ao3: 3: : Ja, bei der ersten Begegnung.
 
