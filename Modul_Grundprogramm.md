@@ -2862,7 +2862,7 @@ hi:
 
 \------------------------------------------------------------
 
-A:42 
+A_42 
 ==========
 
 tc:
@@ -2895,7 +2895,7 @@ mv:
 
 ka:
 
-vc: SHOW Individualisierung if sformdua==1 : neben Ihrer Tätigkeit in der Ausbildungsstätte
+vc: SHOW Individualisierung if sformdua==1 : neben Ihrem dualen Studium
 
 av:
 
