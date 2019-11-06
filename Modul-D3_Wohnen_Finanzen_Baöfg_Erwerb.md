@@ -290,9 +290,9 @@ it3: ( feinparo): Partner*in (bar auf die Hand/per Überweisung auf Ihr Konto)
 
 it4: (feinjobdso): Ausbildungsvergütung für Duales Studium
 
-it5: (feinjobo): Erwerbstätigkeit
+it5: (feinjobo1): Erwerbstätigkeit
 
-it6: (feinjobo): Verdienst aus weiteren Tätigkeiten außerhalb der Ausbildungsinstitution während des Dualen Studiums
+it6: (feinjobo2): Verdienst aus weiteren Tätigkeiten außerhalb der Ausbildungsinstitution während des Dualen Studiums
 
 it7: (feinspao): eigene Mittel (z. B. Ersparnisse, Erbe)
 
@@ -325,25 +325,27 @@ ao3: 4 Stellen, Präfix infield = Betrag [feinparo] Suffix: [number]€ pro Mona
 
 ao4: 4 Stellen, Präfix infield = Betrag [feinjobdso] Suffix: [number]€ pro Monat
 
-ao5: 4 Stellen, Präfix infield = Betrag [feinjobo] Suffix: [number]€ pro Monat
+ao5: 4 Stellen, Präfix infield = Betrag [feinjobo1] Suffix: [number]€ pro Monat
 
-ao6: 4 Stellen, Präfix infield = Betrag [feinspao] Suffix: [number]€ pro Monat
+ao6: 4 Stellen, Präfix infield = Betrag [feinjobo2] Suffix: [number]€ pro Monat
 
-ao7: 4 Stellen, Präfix infield = Betrag [feinbafo] Suffix: [number]€ pro Monat
+ao7: 4 Stellen, Präfix infield = Betrag [feinspao] Suffix: [number]€ pro Monat
 
-ao8: 4 Stellen, Präfix infield = Betrag [feinkredo] Suffix: [number]€ pro Monat
+ao8: 4 Stellen, Präfix infield = Betrag [feinbafo] Suffix: [number]€ pro Monat
 
-ao9: 4 Stellen, Präfix infield = Betrag [feinstio] Suffix: [number]€ pro Monat
+ao9: 4 Stellen, Präfix infield = Betrag [feinkredo] Suffix: [number]€ pro Monat
 
-ao10: 4 Stellen, Präfix infield = Betrag [feinekio] Suffix: [number]€ pro Monat
+ao10: 4 Stellen, Präfix infield = Betrag [feinstio] Suffix: [number]€ pro Monat
 
-ao11: 4 Stellen, Präfix infield = Betrag [feinbest1] Suffix: [number]€ pro Monat
+ao11: 4 Stellen, Präfix infield = Betrag [feinekio] Suffix: [number]€ pro Monat
 
-ao12: 4 Stellen, Präfix infield = Betrag [feinbest2] Suffix: [number]€ pro Monat
+ao12: 4 Stellen, Präfix infield = Betrag [feinbest1] Suffix: [number]€ pro Monat
 
-ao13: 4 Stellen, Präfix infield = Betrag [feinandqo] Suffix: [number]€ pro Monat
+ao13: 4 Stellen, Präfix infield = Betrag [feinbest2] Suffix: [number]€ pro Monat
 
-ao14: 5 Stellen, Präfix infield = Betrag [feininsgo] Suffix: [number]€ pro Monat
+ao14: 4 Stellen, Präfix infield = Betrag [feinandqo] Suffix: [number]€ pro Monat
+
+ao15: 5 Stellen, Präfix infield = Betrag [feininsgo] Suffix: [number]€ pro Monat
 
 mv:
 
@@ -351,9 +353,9 @@ ka:
 
 vc1: SHOW it4 (feinjobdso) if sformdua = 1 
 
-vc2: SHOW it5 (feinjobo) if sformdua != 1
+vc2: SHOW it5 (feinjobo1) if sformdua != 1
 
-vc3: SHOW it6 (feinjobo) IF  sformdua = 1 
+vc3: SHOW it6 (feinjobo2) IF  sformdua = 1 
 
 vc3: SHOW it11 (feinekio) if dkinja=2
 
