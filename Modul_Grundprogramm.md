@@ -3855,7 +3855,7 @@ mv:
 
 ka:
 
-vc: offene Frage Matrix if sformdua=0 AND sformfern=0 AND sformberu=0
+vc:
 
 av: number: \<= zweistellig, 0 TO 99
 
