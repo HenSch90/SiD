@@ -259,7 +259,7 @@ D3_6
 
 tc:
 
-vn: feinelto; feinkino; feinparo; feinjobdso; feinjobo; feinspao; feinbafo; feinkredo; feinstio; feinekio; feinbest1; feinbest2; feinandq; feinandqo; feininsg; feininsgo
+vn: feinelto; feinkino; feinparo; feinjobdso; feinjobo1; feinjobo2; feinspao; feinbafo; feinkredo; feinstio; feinekio; feinbest1; feinbest2; feinandq; feinandqo; feininsg; feininsgo
 
 qt: offene Angabe
 
