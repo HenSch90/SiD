@@ -3600,11 +3600,10 @@ hl:
 
 in:
 
-q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters [Individualisierung]?
+q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters? 
 
-q2: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters?
-
-is: Wenn Sie bei Ihren Eltern oder anderen Verwandten/Bekannten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
+is: Bitte beziehen Sie Ihre Angaben auf Ihren Hauptwohnsitz.
+Wenn Sie bei Ihren Eltern oder anderen Verwandten/Bekannten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an. 
 
 it:
 
@@ -3614,7 +3613,7 @@ ao1: 1: zur Miete (auch Wohngemeinschaft)
 
 ao2: 2: zur Untermiete
 
-ao3: 3: als (Mit-)Eigentümer(in)
+ao3: 3: als (Mit-)Eigentümer*in
 
 ao4: 4: im Einzelzimmer (Flurgemeinschaft)
 
@@ -3630,11 +3629,7 @@ ka: ka1: ao1 TO ao3: in einer Wohnung, einem Zimmer oder einem Haus:
 
 ka2: ao4TO ao7: im Studierendenwohnheim:
 
-vc: SHOW (Individualisierung) if wohnort=3
-
-SHOW q1 if sformfern!=1 AND sformdual!=0
-
-SHOW q2 if sformfern=1 AND sformdual=0
+vc: 
 
 av:
 
@@ -3667,9 +3662,7 @@ hl:
 
 in:
 
-q1: Mit wem wohnen Sie während der Vorlesungszeit des aktuellen Semesters [Individualisierung] zusammen?
-
-q2: Mit wem wohnen Sie zusammen?
+q1: Mit wem wohnen Sie während der Vorlesungszeit des aktuellen Semesters überwiegend zusammen?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -3683,7 +3676,7 @@ ao2: 2: mit Mitbewohner(inne)n in einer Wohngemeinschaft.
 
 ao3: 3: bei/mit meinen Eltern (bzw. Elternteil)
 
-ao4: 4: mit meinem/meiner (Ehe-) Partner(in).
+ao4: 4: mit meinem/meiner (Ehe-) Partner*in.
 
 ao5: 5: mit meinem Kind/meinen Kindern.
 
@@ -3695,11 +3688,7 @@ mv:
 
 ka:
 
-vc: SHOW Individualisierung if wohnort=3
-
-SHOW q1 if sformfern!=1 AND sformdual!=0
-
-SHOW q2 if sformfern=1 AND sformdual=0
+vc:
 
 av:
 
