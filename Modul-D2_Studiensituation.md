@@ -1207,9 +1207,9 @@ hl:
 
 in:
 
-q: Wie vieleZusammenfassungen, Exzerpte, Hausarbeiten oder andere schriftlicheLeistungen müssen Sie im aktuellen Semester erbringen?
+q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten oder andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen?
 
-is:.
+is: Bitte geben Sie die Anzahl der schriftlichen Leistungen (inklusive der noch nicht abgeschlossenen) entsprechend ihrer Länge an.
 
 it:
 
@@ -1424,7 +1424,7 @@ it11: (sszustud11): Ihrer Studienleistungen
 
 it12: (sszustud12): Ihrem Studienfortschritt
 
-it13: (sszustud13): Ihrem bisher erreichten Wissen und Können (Studienertrag insgesamt)
+it13: (sszustud13): Ihrem bisher erreichten Wissen und Können
 
 it14: (sszustud14) : Vereinbarkeit von Studium und Elternschaft
 
