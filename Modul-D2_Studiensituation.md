@@ -393,9 +393,9 @@ it1: (sverkin): Elternschaft
 
 it1: (sverbeein): gesundheitlicher Beeinträchtigung
 
-it1: (svererwerb): Erwerbstätigkeit?
+it1: (svererwerb): Erwerbstätigkeit
 
-it1: (svercare): Pflegeaufgaben?
+it1: (svercare): Pflegeaufgaben
 
 st:
 
@@ -454,11 +454,11 @@ q: Wie beurteilen Sie die Anforderungen, die in Ihrem Studiengang an Studierende
 
 is:.
 
-it1: (sscowver1): selbständig zu denken und zu arbeiten.
+it1: (sscowver1): selbständig zu denken und zu arbeiten
 
-it2: (sscowver2): grundlegende Zusammenhänge zu verstehen.
+it2: (sscowver2): grundlegende Zusammenhänge zu verstehen
 
-it3: (sscowver3): verschiedene Theorien und Konzepte kritisch vergleichen und beurteilen zu können.
+it3: (sscowver3): verschiedene Theorien und Konzepte kritisch vergleichen und beurteilen zu können
 
 st:
 
@@ -511,9 +511,9 @@ hl:
 
 in:
 
-q: Bitte schätzen Sie	ein, auf wie viele der Lehrveranstaltungen in Ihrem	derzeitigen	Studiengang die folgenden Aussagen zutreffen
+q: Bitte schätzen Sie	ein, auf wie viele der Lehrveranstaltungen in Ihrem	derzeitigen	Studiengang die folgenden Aussagen zutreffen.
 
-is:.
+is:
 
 it1: (sscolehr1): Die Lehrenden fördern die aktive Mitarbeit der Studierenden.
 
@@ -588,7 +588,7 @@ is:.
 
 it1: (sscofaeh1): kritische Auseinandersetzung mit den Studieninhalten
 
-it2: (sscofaeh2): Fähigkeit, selbständig forschend tätig zu sein.
+it2: (sscofaeh2): Fähigkeit, selbständig forschend tätig zu sein
 
 it3: (sscofaeh3): berufspraktische Fähigkeiten
 
@@ -651,7 +651,7 @@ it1: (sscofopra1): Forschungsbezug in der Lehre?
 
 it2: (sscofopra2): eine enge Verknüpfung zwischen Theorie und Praxis?
 
-it3: (sscofopra3): einen engen Praxisbezug
+it3: (sscofopra3): einen engen Praxisbezug?
 
 st:
 
@@ -832,7 +832,7 @@ q: Inwieweit beschreiben die folgenden Aussagen die Lehre in Ihrem Studiengang?
 
 is:.
 
-it1: (sscolmo1): Die Lehrenden [wenn Fernstudium: Die Lehrenden/Studienmaterialien] stellen den Stoff interessant dar.
+it1: (sscolmo1): Die Lehrenden stellen den Lernstoff interessant dar.
 
 it2: (sscolmo2): Die Lehrenden vermitteln den Studierenden Freude am Fach.
 
