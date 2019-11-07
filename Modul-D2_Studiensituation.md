@@ -94,13 +94,13 @@ it1: (ssqualeq1): Zugang zum W-LAN
 
 it2: (ssqualeq2): Verfügbarkeit von studienrelevanter EDV/Software
 
-it3: (ssqualeq3): Digitale Organisation und Verwaltung des Studiums (z. B. Einschreibung, Prüfungsanmeldung, -verfahren)
+it3: (ssqualeq3): digitale Organisation und Verwaltung des Studiums (z. B. Einschreibung, Prüfungsanmeldung, -verfahren)
 
 it4: (ssqualeq4): Einsatz von digitalen Lernmanagementsystemen (z. B. Moodle, ILIAS oder hochschuleigene Entwicklungen)
 
 it5: (ssqualeq5): Öffnungszeiten der Bibliothek
 
-it6: (ssqualeq6): Technische Ausstattung der Veranstaltungsräume
+it6: (ssqualeq6): technische Ausstattung der Veranstaltungsräume
 
 it7: (ssqualeq7): Gesamtzustand der Veranstaltungsräume (Helligkeit, Belüftung, Mobiliar)
 
@@ -249,8 +249,6 @@ hl:
 in:
 
 q: Auf wie viele Lehrveranstaltungen, die Sie in diesem Semester besuchen, trifft Folgendes zu?
-
-Trifft auf … Lehrveranstaltungen zu.
 
 is:.
 
