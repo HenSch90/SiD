@@ -901,7 +901,7 @@ it3: (sskonth3): Lehrende
 
 it4: (sskonth4): Mitarbeiter\*innen der Hochschulverwaltung
 
-it5: (sskonth5): Freunde und Bekannte außerhalb der Hochschule
+it5: (sskonth5): Freund\*innen und Bekannte außerhalb der Hochschule
 
 it6: (sskonth6): Familie (Eltern, Geschwister u. a.)
 
@@ -974,7 +974,7 @@ it3: (sskontq3): … Lehrende?
 
 it4: (sskontq4): … Mitarbeiter\*innen der Hochschulverwaltung?
 
-it5: (sskontq5): … Freunde und Bekannte außerhalb der Hochschule?
+it5: (sskontq5): … Freund\*innen und Bekannten außerhalb der Hochschule?
 
 it6: (sskontq6): … Familie (Eltern, Geschwister u. a.)?
 
@@ -1030,7 +1030,7 @@ hl:
 
 in:
 
-q:
+q: Wie oft haben Sie im aktuellen Semester ...
 
 is:.
 
@@ -1162,9 +1162,9 @@ it:
 
 st:
 
-ao1: (ssectsstud): [Freitextfeld]: Sie bislang in Ihrem aktuellen Studium zirka erreicht haben.
+ao1: (ssectsstud): [Freitextfeld]: ... Sie bislang in Ihrem aktuellen Studium zirka erreicht haben.
 
-ao2: (ssectssem): [Freitextfeld]: Sie voraussichtlich im aktuellen Semester erreichen werden.
+ao2: (ssectssem): [Freitextfeld]: ... Sie voraussichtlich im aktuellen Semester erreichen werden.
 
 mv:
 
@@ -1186,7 +1186,7 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO D2_18
 
 hi:
 
@@ -1207,7 +1207,7 @@ hl:
 
 in:
 
-q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten oder andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen? (Inklusive der noch nicht abgeschlossenen)
+q: Wie vieleZusammenfassungen, Exzerpte, Hausarbeiten oder andere schriftlicheLeistungen müssen Sie im aktuellen Semester erbringen?
 
 is:.
 
