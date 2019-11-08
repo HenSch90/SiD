@@ -593,9 +593,9 @@ in:
 
 q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
 
-Als ich damals nach Deutschland kam, war ich ...
+Als ich nach Deutschland kam, war ich ...
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -1217,8 +1217,8 @@ in:
 
 q: Sie haben bei Ihrer letzten Befragung angegeben, dass Sie an der Hochschule: [Preload-Token: Hochschulname] studieren?
 
-is: Falls Sie aktuell an einer anderen Hochschule studieren, kreuzen Sie bitte “Nein” an.
-Falls Sie an mehreren Hochschulen eingeschrieben sind, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
+is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus.
+Falls Sie an mehreren Hochschulen parallel studieren, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
 
 it:
 
@@ -1267,7 +1267,7 @@ hl:
 
 in: 
 
-q: In welchem Bundesland/Land liegt die Hochschule, an der Sie aktuell studieren?
+q: In welchem Bundesland/Land liegt Ihre Hochschule?
 
 is: 
 
@@ -1622,9 +1622,9 @@ hl:
 
 in:
 
-q: Und welchen Abschluss streben Sie in ihrem aktuellen Studiengang an?
+q: Und welchen Abschluss streben Sie als nächstes an?
 
-is: Bei mehreren Abschlüssen bitte den zeitlich nächsten nennen.
+is: Sollten Sie mehrere Abschlüsse anstreben, beziehen Sie sich bitte auf den zeitlich nächsten.
 
 it:
 
@@ -1801,7 +1801,7 @@ hl:
 
 in:
 
-q: Wie wurden Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium im Durchschnitt bewertet?
+q: Wie wurden Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium bewertet?
 
 is: Für den Fall, dass Sie keine Noten erhalten, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in Noten um.
 
@@ -1852,7 +1852,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie Ihre bisherigen	Studienleistungen im Vergleich zu Ihren Kommiliton(inn)en ein?
+q: Wie schätzen Sie Ihre bisherigen Studienleistungen im Vergleich zu Ihren Kommiliton*innen ein?
 
 is:
 
@@ -2072,8 +2072,7 @@ q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus? Bitte erläu
 
 is: Falls Ihr Vater oder Ihre Mutter zurzeit nicht erwerbstätig sind (z. B. Rentner(in), Pensionär(in), Hausfrau/-mann oder arbeitssuchend), geben Sie bitte die jeweils zuletzt ausgeübte Tätigkeit an.
 
-Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive Führungsaufgaben ein. 
-Zum Beispiel:
+Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive Führungsaufgaben ein. Zum Beispiel:
 
 \- Bankkaufmann/-frau (nicht: Angestellte/r) 
 
@@ -2490,9 +2489,9 @@ hl:
 
 in:
 
-q: Bitte geben Sie die fünfstellige Postleitzahl des Ortes an, in dem Sie bei Erhalt Ihrer Studienberechtigung gewohnt haben.
+q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben?
 
-is:
+is: Bitte tragen Sie die fünfstellige Postleitzahl ein.
 
 it:
 
@@ -2537,9 +2536,9 @@ hl:
 
 in:
 
-q: Bitte geben Sie die fünfstellige Postleitzahl des Ortes an, in dem Sie bei Erhalt Ihrer Studienberechtigung gewohnt haben.
+q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben?
 
-is:
+is: Bitte tragen Sie die fünfstellige Postleitzahl und ggf. den Wohnort ein.
 
 it:
 
@@ -2584,7 +2583,7 @@ hl:
 
 in:
 
-q: Welchen höchsten Schulabschluss haben Sie vor dem Studium erworben?
+q: Welchen höchsten Schulabschluss hatten Sie vor Beginn des Studiums erworben?
 
 is:
 
@@ -2639,11 +2638,11 @@ hl:
 
 in:
 
-q: Die Berechtigung zum Studium kann in Deutschland auf verschiedenen Wegen erfolgen: Zum einen (klassisch) über ein Schulzeugnis, zum anderen aber auch über die Anerkennung beruflicher Qualifikationen oder besonderer Eignungen.
+q: Die Berechtigung zum Studium kann in Deutschland auf unterschiedlichen Wegen erfolgen: Zum einen (klassisch) über ein Schulzeugnis, zum anderen aber auch über die Anerkennung beruflicher Qualifikationen oder besonderer Eignungen.
 
 Auf welchem Weg erfolgte Ihre Zulassung zu Ihrem ersten Studium?
 
-is: Mehrfachnennungen möglich
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -2719,7 +2718,7 @@ in:
 
 q: Welche Abschlussnote hatten Sie in dem Zeugnis, das Sie zur Aufnahme eines Studiums berechtigt?
 
-is: (bitte Punktzahl ggf. in Note umrechnen)
+is: Punktzahl bitte in Note umrechnen
 
 it:
 
@@ -2768,9 +2767,9 @@ hl:
 
 in:
 
-q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt (Zeitpunkt der Zeugnisübergabe)?
+q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt?
 
-is:
+is: Zeitpunkt der Zeugnisübergabe
 
 it:
 
@@ -2818,7 +2817,7 @@ hl:
 
 in:
 
-q: Haben Sie vor Ihrer Erstimmatrikulation bereits eine Berufsausbildung begonnen bzw. abgeschlossen?
+q: Haben Sie vor dem Studium eine Berufsausbildung begonnen bzw. abgeschlossen?
 
 is:
 
@@ -3231,7 +3230,7 @@ hl:
 
 in:
 
-q: Welche Abschlussnote haben sie in ihrem vorhergien Studium erhalten?
+q: Welche Abschlussnote haben Sie in Ihrem vorherigen Studium erhalten?
 
 is: Für den Fall, dass Sie keine Noten erhalten haben, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in eine Abschlussnote um.
 
@@ -3282,7 +3281,7 @@ hl:
 
 in:
 
-q: Planen Sie nach dem Studium…
+q: Wie wahrscheinlich ist es, dass Sie..
 
 is:
 
@@ -3350,7 +3349,7 @@ hl:
 
 in:
 
-q: Planen Sie nach dem Studium…
+q: Wie wahrscheinlich ist es, dass Sie...
 
 is:
 
@@ -3419,7 +3418,7 @@ in:
 
 q: Haben Sie seit Ihrer Erstimmatrikulation…
 
-is: (Nicht gemeint sind Veränderungen bzw. Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium)
+is: Nicht gemeint sind Veränderungen bzw. Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
 
 it1: ssweja: … das Studienfach gewechselt?
 
@@ -3475,7 +3474,7 @@ hl:
 
 in:
 
-q: Inwieweit denken Sie zur Zeit daran …
+q: Inwieweit denken Sie daran…
 
 is:
 
@@ -3598,7 +3597,7 @@ in:
 q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters? 
 
 is: Bitte beziehen Sie Ihre Angaben auf Ihren Hauptwohnsitz.
-Wenn Sie bei Ihren Eltern oder anderen Verwandten/Bekannten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an. 
+Wenn Sie bei Ihren Eltern oder anderen Verwandten/Bekannten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
 
 it:
 
@@ -3659,7 +3658,7 @@ in:
 
 q1: Mit wem wohnen Sie während der Vorlesungszeit des aktuellen Semesters überwiegend zusammen?
 
-is: Bitte alles Zutreffende auswählen.
+is: 
 
 it:
 
@@ -3717,9 +3716,9 @@ hl:
 
 in:
 
-q: Haben Sie sich während Ihres Studiums studienbezogen im Ausland aufgehalten?
+q: Waren Sie im Rahmen Ihres Studiums bereits im Ausland?
 
-is: (z. B. Auslandsstudium/-semester, Auslandspraktikum, Sprachkurs im Ausland, Studienreise im Ausland, Projektarbeit im Ausland, Summerschool im Ausland)
+is: 
 
 it:
 
@@ -3832,9 +3831,9 @@ q: Wie viele Stunden wenden Sie in einer für Sie typischen Woche für folgende 
 
 is: Bitte runden Sie Ihre Zeitangaben jeweils auf volle Zeitstunden.
 
-it: (zlvwo): Während der Vorlesungszeit / Studienphase
+it: (zlvwo): Vorlesungszeit / Studienphase
 
-it: 2: Während der vorlesungsfreien Zeit / Praxisphase
+it: 2: vorlesungsfreien Zeit / Praxisphase
 
 st:
 
@@ -3881,8 +3880,7 @@ hl:
 
 in:
 
-q: Wie wichtig sind Ihnen die folgenden Aspekte des weiteren Berufs- und
-Lebensweges?
+q: Wie wichtig sind Ihnen die folgenden Aspekte des weiteren Berufs- und Lebensweges?
 
 is:.
 
