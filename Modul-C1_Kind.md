@@ -7,7 +7,7 @@ tc: IF dkinja = 2
 
 vn: dkinanz
 
-qt: Einfachauswahl mit vertiklen ao
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -60,7 +60,7 @@ tc: IF dkinja = 2
 
 vn: dkinage (dkinagej / dkinage1 / dkinage2 / dkinage3 / dkinage4 / dkinage5)
 
-qt: Akkordeon oder offene Einzelfrage mit Eingabespalte
+qt: offene Einzelfragen mit Eingabespalte/-feld
 
 hl:
 
@@ -88,17 +88,17 @@ it6: (dkinage5) : [infield = Alter 4. Kind]
 
 st:
 
-ao1 (dkinagej): 2-stellig, 0-99, [number] Suffix: Jahre
+ao1 (dkinagej): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao2 (dkinage1): 2-stellig, 0-99, [number] Suffix: Jahre
+ao2 (dkinage1): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao3 (dkinage2): 2-stellig, 0-99, [number] Suffix: Jahre
+ao3 (dkinage2): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao4 (dkinage3): 2-stellig, 0-99, [number] Suffix: Jahre
+ao4 (dkinage3): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao5 (dkinage4): 2-stellig, 0-99, [number] Suffix: Jahre
+ao5 (dkinage4): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao6 (dkinage5): 2-stellig, 0-99, [number] Suffix: Jahre
+ao6 (dkinage5): 4-stellig, 0-99, [number] Suffix: Jahre
 
 mv:
 
@@ -147,10 +147,10 @@ C1_3
 
 tc: IF dkinja=2
 
-vn: dkinro (dkinroelt / dkinroges / dkinrover / dkinrokom / dkinrofr / dkinroan
-/ dkinroano / dkinrono)
+vn: dkinro (dkinrono / dkinroelt / dkinroges / dkinrover / dkinrokom / dkinrofr / dkinroan
+/ dkinroano)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -174,7 +174,7 @@ ao4 (dkinrover): andere Verwandte
 
 ao5 (dkinrokom): Kommiliton\*innen
 
-ao6 (dkinrofr): Freunde
+ao6 (dkinrofr): Freund\*innen
 
 ao7 (dkinroan): Andere Person(en), und zwar: [dkinroano, 50 Zeichen, 30pt]
 
@@ -207,7 +207,7 @@ C1_4
 
 tc: IF dkinja = 2
 
-vn: dkinanzhh, dkinanzhho
+vn: dkinanzhh
 
 qt: offene Angabe
 
@@ -223,7 +223,7 @@ it:
 
 st:
 
-ao: (dkinanzhh):  [(dkinanzhho) infield = "Anzahl Kinder"; number, 1-stellig: 0 TO 9]
+ao: (dkinanzhh):  [infield = "Anzahl Kinder"; number, 1-stellig: 0 TO 9]
 
 mv:
 
@@ -302,7 +302,7 @@ tc: IF dkinja = 2
 vn: dkinbe (dkinbesel / dkinbepar / dkinbeelt / dkinbegelt / dkinbever /
 dkinbefr / dkinbesit / dkinbetag / dkinbealo / dkinbeson / dkinbesono)
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -338,7 +338,7 @@ it10: (dkinbealo): Das Kind bleibt alleine.
 
 it11: (dkinbealo): Die Kinder bleiben alleine.
 
-it12: (dkinbeson, dkinbesono): Andere Person, und zwar: [50 Zeichen, 60pt]
+it12: (dkinbeson): Andere Person, und zwar: [dkinbesono; 50 Zeichen, 30pt]
 
 st:
 
@@ -392,7 +392,7 @@ tc: IF dkinja = 2
 vn: dkinbe (dkinbekihs / dkinbehsa / dkinbeki / dkinbehts / dkinbegts /
 dkinbesoe / dkinbesoeo)
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -419,8 +419,7 @@ it4: (dkinbehts): Halbtagsschule
 
 it5: (dkinbegts): Ganztagsschule
 
-it6: (dkinbesoe, dkinbesoeo): Sonstige Einrichtung, und zwar: [50 Zeichen,
-60pt]
+it6: (dkinbesoe): Sonstige Einrichtung, und zwar: [dkinbesoeo; 50 Zeichen, 30pt]
 
 st:
 
@@ -564,7 +563,7 @@ it11: (dkinsukber): Angebote zur Kurzzeitbetreuung von Kindern
 
 it12: (dkinsubur): Familienservice/-büro
 
-it13: (dkinsuso, dkinsusoo): Sonstiges, und zwar: [Eingabefeld; 50 Zeichen]
+it13: (dkinsuso): Sonstiges, und zwar: [dkinsusoo; Eingabefeld; 50 Zeichen]
 
 st:
 
@@ -604,7 +603,7 @@ tc: IF dkinja = 2
 vn: dkinver (dkinverdau / dkinverlver / dkinverlei / dkinverwil / dkinveratm /
 dkinverreg)
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -703,7 +702,7 @@ fo:
 
 tr: GOTO C1_12
 
-hi: Items bitte zufällig rotieren
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -714,7 +713,7 @@ tc: IF dkinja = 2
 
 vn: dkin (dkinsw / dkinopfb / dkinauto / dkinfreu / dkinufur / dkinfoe)
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -803,7 +802,7 @@ fo:
 
 tr: GOTO C1_6
 
-hi: Items bitte zufällig rotieren
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -812,9 +811,9 @@ C1_12
 
 tc: IF dkinja = 2
 
-vn: dkin (dkinmsabi / dkinzuabi / dkinmsstu / dkinzustu)
+vn: dkin (dkinstuwi / dkinstuent / dkinstubew)
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -824,41 +823,23 @@ q: Wie sehr stimmen Sie den folgenden Aussagen zu?
 
 is:
 
-it1: (dkinmsabi): Für mich ist das ++Abitur++ für mein(e) Kind(er) der absolute
-Minimalstandard.
+it1: (dkinstuwi): Mir ist es wichtig, dass mein Kind studiert/meine Kinder studieren.
 
-it2: (dkinzuabi): Mit weniger als einem ++Abitur++ für mein(e) Kind(er) würde
-ich mich nicht zufrieden geben.
+it2: (dkinstuwi): Mir ist es wichtig, dass mein Kind studiert.
 
-it3: (dkinmsstu): Für mich ist ein ++Studium++ für mein(e) Kind(er) der absolute
-Minimalstandard.
+it3: (dkinstuwi): Mir ist es wichtig, dass meine Kinder studieren.
 
-it4: (dkinzustu): Mit weniger als einem ++Studium++ für mein(e) Kind(er) würde
-ich mich nicht zufrieden geben.
+it4: (dkinstuent): Wenn mein Kind nicht studiert/meine Kinder nicht studieren, wäre ich enttäuscht.
 
-it5: (dkinmsabi): Für mich ist das ++Abitur++ für mein Kind der absolute
-Minimalstandard.
+it5: (dkinstuent): Wenn mein Kind nicht studiert, wäre ich enttäuscht.
 
-it6: (dkinzuabi): Mit weniger als einem ++Abitur++ für mein Kind würde ich mich
-nicht zufrieden geben.
+it6: (dkinstuent): Wenn meine Kinder nicht studieren, wäre ich enttäuscht.
 
-it7: (dkinmsstu): Für mich ist ein ++Studium++ für mein Kind der absolute
-Minimalstandard.
+it7: (dkinstubew): Ich würde versuchen, mein(e) Kind(er) zu einer Studienaufnahme zu bewegen.
 
-it8: (dkinzustu): Mit weniger als einem ++Studium++ für mein Kind würde ich mich
-nicht zufrieden geben.
+it8: (dkinstubew): Ich würde versuchen, mein Kind zu einer Studienaufnahme zu bewegen.
 
-it9: (dkinmsabi): Für mich ist das ++Abitur++ für meine Kinder der absolute
-Minimalstandard.
-
-it10: (dkinzuabi): Mit weniger als einem ++Abitur++ für meine Kinder würde ich
-mich nicht zufrieden geben.
-
-it11: (dkinmsstu): Für mich ist ein ++Studium++ für meine Kinder der absolute
-Minimalstandard.
-
-it12: (dkinzustu): Mit weniger als einem ++Studium++ für meine Kinder würde ich
-mich nicht zufrieden geben.
+it9: (dkinstubew): Ich würde versuchen, meine Kinder zu einer Studienaufnahme zu bewegen.
 
 st:
 
@@ -876,11 +857,11 @@ mv:
 
 ka:
 
-vc1: SHOW it1 TO it4 IF dkinanz = k. A.
+vc1: SHOW it1, it4, it7  IF dkinanz = k. A.
 
-vc2: SHOW it5 TO it8 IF dkinanz = 1
+vc2: SHOW it2, it5, it8 IF dkinanz = 1
 
-vc3: SHOW it9 TO it12 IF dkinanz \> 1
+vc3: SHOW it3, it6, it9 IF dkinanz \> 1
 
 av:
 
@@ -894,7 +875,7 @@ fo:
 
 tr: GOTO C1_13
 
-hi: Items bitte zufällig rotieren
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -980,37 +961,43 @@ it:
 
 st:
 
-ao1: 1: : erst studieren, wenn das Kind selbstständiger ist/die Kinder selbstständiger sind
+ao1: 1: : während des Studiums das Kind/Kinder bekommen
 
-ao2: 1: : erst studieren, wenn das Kind selbstständiger ist
+ao2: 1: : während des Studiums das Kind bekommen
 
-ao3: 1: : erst studieren, wenn die Kinder selbstständiger sind
+ao3: 1: : während des Studiums Kinder bekommen
 
-ao4: 2: : erst das Studium beenden und dann ein Kind/Kinder bekommen
+ao4: 2: : erst studieren, wenn das Kind selbstständiger ist/die Kinder selbstständiger sind
 
-ao5: 2: : erst das Studium beenden und dann ein Kind bekommen
+ao5: 2: : erst studieren, wenn das Kind selbstständiger ist
 
-ao6: 2: : erst das Studium beenden und dann Kinder bekommen
+ao6: 2: : erst studieren, wenn die Kinder selbstständiger sind
 
-ao7: 3: : gar kein(e) Kind(er) bekommen
+ao7: 3: : erst das Studium beenden und dann ein Kind/Kinder bekommen
 
-ao8: 3: : gar kein Kind bekommen
+ao8: 3: : erst das Studium beenden und dann ein Kind bekommen
 
-ao9: 3: : gar keine Kinder bekommen
+ao9: 3: : erst das Studium beenden und dann Kinder bekommen
 
-ao10: 4: : gar kein Studium aufnehmen
+ao10: 4: : gar kein(e) Kind(er) bekommen
 
-ao11: 5: : keine der genannten Optionen
+ao11: 4: : gar kein Kind bekommen
+
+ao12: 4: : gar keine Kinder bekommen
+
+ao13: 5: : gar kein Studium aufnehmen
+
+ao14: 6: : keine der genannten Optionen
 
 mv:
 
 ka:
 
-vc1: SHOW ao1, ao4, ao7 IF dkinanz = k. A.
+vc1: SHOW ao1, ao4, ao7, ao10 IF dkinanz = k. A.
 
-vc2: SHOW ao2, ao5, ao8 IF dkinanz = 1
+vc2: SHOW ao2, ao5, ao8, ao11 IF dkinanz = 1
 
-vc3: SHOW ao3, ao6, ao9 IF dkinanz \> 1
+vc3: SHOW ao3, ao6, ao9, ao12 IF dkinanz \> 1
 
 av:
 
