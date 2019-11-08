@@ -895,9 +895,9 @@ it3: (skwiss) … Ihre wissenschaftlichen Arbeiten gegenliest?
 it4: (skjobs) … Ihnen einen Job oder ein Praktikum vermittelt?
 
 it5: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z.B. Bafög,
-Steuererklärung) hilft?
+Steuererklärung) helfen würde?
 
-it6: (skausl) … Ihnen nahelegt im Ausland zu studieren?
+it6: (skausl) … Ihnen nahelegt, im Ausland zu studieren?
 
 st:
 
@@ -951,7 +951,7 @@ q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
 
 is:
 
-it1: (bilaspab) … einen Bachelorabschluss erreichen?
+it1: (bilaspab) … einen Hochschulabschluss erreichen?
 
 it2: (bilaspma) … einen Masterabschluss erreichen?
 
@@ -998,7 +998,7 @@ B2_8b
 
 tc: IF sabsan \<\> 1 OR sabsan \<\> 2
 
-vn: bilas (bilaspab / bilaspdr / bilaspber)
+vn: bilaspab1 / bilaspdr1 / bilaspber1
 
 qt: Einfachauswahlmatrix
 
@@ -1010,11 +1010,11 @@ q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
 
 is:
 
-it1: (bilaspab) … einen Hochschulabschluss erreichen?
+it1: (bilaspab1) … einen Hochschulabschluss erreichen?
 
-It2: (bilaspdr) … einen Doktortitel erreichen?
+It2: (bilaspdr1) … einen Doktortitel erreichen?
 
-It3: (bilaspber) … beruflich ganz weit nach vorne kommen?
+It3: (bilaspber1) … beruflich ganz weit nach vorne kommen?
 
 st:
 
@@ -1077,7 +1077,7 @@ it3: (einkma1):  … mit einem Masterabschluss?
 
 it4: (einkstex1): … mit dem ersten Staatsexamen?
 
-it5: (einkstex2):  … mit dem zweiten Staatsexamen?
+it5: (einkstex21):  … mit dem zweiten Staatsexamen?
 
 it6: (einkdr1): … mit einer Promotion?
 
