@@ -1242,7 +1242,7 @@ hl:
 
 in:
 
-q: Wenn Sie nochmals vor der Wahl stünden: In welchem Land, in welcher Stadt beziehungsweise an welcher Hochschule hätten Sie am liebsten ihren studienbezogenen Auslandsaufenthalt durchgeführt?
+q: Wenn Sie nochmals vor der Wahl stünden: In welchem Land, in welcher Stadt beziehungsweise an welcher Hochschule hätten Sie am liebsten Ihren studienbezogenen Auslandsaufenthalt durchgeführt?
 
 is:
 
