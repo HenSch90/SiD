@@ -14,9 +14,7 @@ hl:
 
 in:
 
-q1: Wie stark wirkt sich Ihre Beeinträchtigung im aktuellen Studium aus?
-
-q2: Wie stark wirken sich Ihre Beeinträchtigungen im aktuellen Studium aus?
+q1: Inwiefern wirkt sich Ihre Beeinträchtigung bzw. Ihre Beeinträchtigungen auf Ihr aktuelles Studium aus?
 
 is:
 
@@ -182,9 +180,7 @@ in:
 
 q: Seit wann besteht Ihre Beeinträchtigung?
 
-is: Sofern Ihre Beeinträchtigungen zu unterschiedlichen Zeitpunkten aufgetreten
-sind, beziehen Sie Ihre Antwort bitte auf die zuerst aufgetretene
-studienerschwerende Beeinträchtigung.
+is: Sofern Ihre Beeinträchtigungen zu unterschiedlichen Zeitpunkten aufgetreten sind,  beziehen Sie Ihre Antwort bitte auf die zuerst aufgetretene studienerschwerende  Beeinträchtigung.
 
 it:
 
@@ -380,14 +376,9 @@ hl:
 
 in:
 
-q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer
-Beeinträchtigung Schwierigkeiten?
+q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen Schwierigkeiten?
 
-q2: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihren
-Beeinträchtigungen Schwierigkeiten?
-
-is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen
-Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
+is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
 Bitte alles Zutreffende auswählen.
 
 it:
@@ -445,15 +436,9 @@ hl:
 
 in:
 
-q: In welchen Bereichen haben Sie um individuelle Anpassungen/Absprachen gebeten
-oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
+q: In welchen Bereichen haben Sie um individuelle Anpassungen/Absprachen gebeten oder  Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
 
-is: Bitte berücksichtigen Sie sowohl Antragstellungen bei
-Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit
-Dozent\*innen.
-
-Bei mehreren Anträgen/Bitten um Anpassungen im selben Bereich, denken Sie bitte
-an die letzte Situation
+is: Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Dozent*innen.
 
 it1: (ntabau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B.
 Zugänglichkeit und Orientierung, Sicht-/Hörverhältnisse, Rückzugsräume)
@@ -587,49 +572,7 @@ hl:
 
 in:
 
-q1: Sie haben angegeben, mit räumlichen Bedingungen Schwierigkeiten zu haben: Weshalb haben Sie nicht
-um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q2: Sie haben angegeben, mit der Studienorganisation/Lehre Schwierigkeiten zu haben: Weshalb haben Sie nicht
-um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q3: Sie haben angegeben, mit Prüfungen Schwierigkeiten zu haben: Weshalb haben Sie nicht
-um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q4: Sie haben angegeben, in einem (weiteren) anderen Bereich Schwierigkeiten zu haben: Weshalb haben Sie nicht
-um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q5: Sie haben angegeben, mit räumlichen Bedingungen und der Studienorganisation/Lehre Schwierigkeiten zu haben:
-Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q6: Sie haben angegeben, mit räumlichen Bedingungen und Prüfungen Schwierigkeiten zu haben:
-Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q7: Sie haben angegeben, mit räumlichen Bedingungen und einem anderen Bereich Schwierigkeiten zu haben:
-Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q8: Sie haben angegeben, mit der Studienorganisation/Lehre und Prüfungen Schwierigkeiten zu haben: Weshalb haben Sie nicht
-um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q9: Sie haben angegeben, mit der Studienorganisation/Lehre und einem anderen Bereich Schwierigkeiten zu haben: Weshalb haben Sie
-nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q10: Sie haben angegeben, mit Prüfungen und einem anderen Bereich Schwierigkeiten zu haben: Weshalb haben Sie nicht
-um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q11: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q12: Sie haben angegeben, mit räumlichen Bedingungen, Prüfungen und einem anderen Bereich Schwierigkeiten zu haben:
-Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q13: Sie haben angegeben, mit der Studienorganisation/Lehre, Prüfungen und einem anderen Bereich Schwierigkeiten zu haben:
-Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q14: Sie haben angegeben, mit räumlichen Bedingungen, der Studienorganisation/Lehre und Prüfungen Schwierigkeiten zu haben:
-Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
-
-q15: Sie haben angegeben, mit räumlichen Bedingungen, der Studienorganisation/Lehre und einem anderen Bereich Schwierigkeiten
-zu haben: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+q1: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -729,50 +672,7 @@ hl:
 
 in:
 
-q1: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
-in Bezug auf die räumlichen Bedingungen nicht bewilligt?
-
-q2: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
-in Bezug auf die Studienorganisation/Lehre nicht bewilligt?
-
-q3: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
-in Bezug auf Prüfungen nicht bewilligt?
-
-q4: Weshalb wurde der zuletzt beantragte Nachteilsausgleich und/oder individuelle Anpassung/Absprache
-in Bezug auf einen anderen Bereich nicht bewilligt?
-
-q5: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die räumlichen Bedingungen und die Studienorganisation/Lehre nicht bewilligt?
-
-q6: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die räumlichen Bedingungen und Prüfungen nicht bewilligt?
-
-q7: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die räumlichen Bedingungen und einen anderen Bereich nicht bewilligt?
-
-q8: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die Studienorganisation/Lehre und Prüfungen nicht bewilligt?
-
-q9: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die Studienorganisation/Lehre und einen anderen Bereich nicht bewilligt?
-
-q10: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf Prüfungen und einen anderen Bereich nicht bewilligt?
-
-q11: Weshalb wurde mindestens einer der zuletzt beantragten Nachteilsausgleiche
-und/oder individuellen Anpassungen/Absprachen nicht bewilligt?
-
-q12: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die räumlichen Bedingungen, Prüfungen und einen anderen Bereich nicht bewilligt?
-
-q13: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die Studienorganisation/Lehre, Prüfungen und einen anderen Bereich nicht bewilligt?
-
-q14: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die räumlichen Bedingungen, die Studienorganisation/Lehre und Prüfungen nicht bewilligt?
-
-q15: Weshalb wurden die zuletzt beantragten Nachteilsausgleiche und/oder individuelle Anpassungen/Absprachen
-in Bezug auf die räumlichen Bedingungen, die Studienorganisation/Lehre und einen anderen Bereich nicht bewilligt?
+q1: Weshalb wurden Ihre beantragten Nachteilsausgleiche bzw. individuellen Anpassungen/Absprachen nicht bewilligt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -872,12 +772,11 @@ hl:
 
 in:
 
-q: Welche Angebote für eine persönliche Beratung zum Thema Studium und
-Beeinträchtigung kennen Sie bzw. haben Sie genutzt?
+q: Welche Angebote für eine persönliche Beratung zum Thema Studium und Beeinträchtigung kennen Sie bzw. haben Sie genutzt?
 
 is:
 
-it1: beauftr: eratungsstellen für Studierende mit
+it1: beauftr: Beratungsstellen für Studierende mit
 Beeinträchtigungen der Hochschule
 
 it2: besoz: Beratungsstelle für Studierende mit
