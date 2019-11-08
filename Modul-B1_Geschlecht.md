@@ -339,7 +339,7 @@ q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewä
 
 is: \*\*Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
-it1: (_p): Partner/*in
+it1: (_p): Partner\*in
 
 it2: (_i): ich selbst
 
@@ -363,7 +363,7 @@ vc:
 
 SHOW vn4 if dkinja=2
 
-av:
+av:Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 kh:
 
@@ -393,7 +393,7 @@ hl:
 
 in: 
 
-q: Alles in allem: Wie zufrieden sind Sie insgesamt mit der derzeitigen Arbeitsteilung zwischen Ihnen und Ihrem/Ihrer Partner*in in Ihrem Haushalt?
+q: Alles in allem: Wie zufrieden sind Sie insgesamt mit der derzeitigen Arbeitsteilung zwischen Ihnen und Ihrem/Ihrer Partner\*in in Ihrem Haushalt?
 
 is: 
 
@@ -462,9 +462,9 @@ it4: (atikb): Kinderbetreuung
 
 st:
 
-ao1: 1: ausschließlich mein*e Partner*in
+ao1: 1: ausschließlich mein\*e Partner\*in
 
-ao2: 2: eher mein*e Partner*in
+ao2: 2: eher mein\*e Partner\*in
 
 ao3: 3: wir beide gleichermaßen
 
@@ -511,11 +511,9 @@ hl:
 in:
 
 q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß
-zu unterschiedlichen Bereichen im Haushalt beigetragen?
+zu den unterschiedlichen Bereichen im Haushalt beigetragen?
 
-is: \*\*Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
-Sollten Sie keine (Stief-)Mutter und/oder keinen (Stief-)Vater haben, kreuzen
-Sie bitte entsprechend „trifft nicht zu“ an.\*\*
+is: \*\*Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.\*\*
 
 it1: (_m): (Stief-)Mutter
 
@@ -523,19 +521,17 @@ it2: (_v): (Stief-)Vater
 
 it3: (_i): ich selbst
 
-it4: (_a): andere Personen
+it4: (_s): andere Personen
 
 st:
 
-ao1 (athh): Hausarbeit: 3, Suffix: %
+ao1 (athhm): Hausarbeit: 3, Suffix: %
 
-ao2 (atee): Erwerbseinkommen: 3, Suffix: %
+ao2 (ateem): Erwerbseinkommen: 3, Suffix: %
 
-ao3 (atwe): Treffen wichtiger Entscheidungen: 3, Suffix: %
+ao3 (atwem): Treffen wichtiger Entscheidungen: 3, Suffix: %
 
-ao4 (atkb): Kinderbetreuung: 3, Suffix: %
-
-ao5 (atka): trifft nicht zu
+ao4 (atkbm): Kinderbetreuung: 3, Suffix: %
 
 mv:
 
@@ -543,7 +539,7 @@ ka:
 
 vc:
 
-av:
+av:Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 kh:
 
@@ -566,16 +562,15 @@ B1_7
 
 tc:
 
-vn: antfemst
+vn: ssanlehr
 
-qt: Regler
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
 in:
 
-q: Bitte denken Sie an die Lehrenden in Ihrem aktuellen Semester: Wie hoch ist
-der Anteil an weiblichem Lehrpersonal?
+q: Wenn Sie an die Lehrenden in Ihrem aktuellen Semester denken: Wie hoch ist der Anteil an weiblichem Lehrpersonal?
 
 is:
 
@@ -583,13 +578,27 @@ it:
 
 st:
 
-ao1: 0 : 0%
+ao1: 1: 0 bis 10 %
 
-ao50: 50 : \|
+ao2: 2: 11 bis 20 %
 
-ao100: 100 : 100%
+ao3: 3: 21 bis 30 %
 
-mv:
+ao4: 4: 31 bis 40 %
+
+ao5: 5: 41 bis 50 %
+
+ao6: 6: 51 bis 60 %
+
+ao7: 7: 61 bis 70 %
+
+ao8: 8: 71 bis 80 %
+
+ao9: 9: 81 bis 90 %
+
+ao10: 10: 91 bis 100 %
+
+mv: -12: trifft nicht zu
 
 ka:
 
