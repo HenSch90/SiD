@@ -24,17 +24,17 @@ it2: (hschabm) Mutter
 
 st:
 
-ao1: 1: keinen Schulabschluss
+ao1: 1: allgemeine/fachgebundene Hochschulreife (Abitur)
 
-ao2: 2: anderer Schulabschluss
+ao2: 2: Fachhochschulreife
 
-ao3: 3: Haupt-, Volksschulabschluss (mind. 8. Klasse)
+ao3: 3: mittlere Reife, Realschulabschluss (10. Klasse)
 
-ao4: 4: mittlere Reife, Realschulabschluss (10. Klasse)
+ao4: 4: Haupt-, Volksschulabschluss (mind. 8. Klasse)
 
-ao5: 5: Fachhochschulreife
+ao5: 5: anderer Schulabschluss
 
-ao6: 6: allgemeine/fachgebundene Hochschulreife (Abitur)
+ao6: 6: keinen Schulabschluss
 
 mv: -12: weiß ich nicht
 
@@ -524,17 +524,16 @@ hl:
 
 in:
 
-q: Was schätzen Sie, wie viele Bücher besitzen Sie heute und wie viele Bücher
-besaßen Ihre Eltern zu Ihrer Kindheit?
+q: Was schätzen Sie, wie viele Bücher besitzen Sie selbst aktuell und wie viele Bücher besaßen Ihre Eltern zum Zeitpunkt Ihrer Kindheit?
 
 is: Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher.
 Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
 
 is: Anzahl Bücher
 
-it1: (buchanzi1): Sie
+it1: (buchanzi1): ich selbst
 
-it2: (buchanze1): Elternhaus
+it2: (buchanze1): Eltern
 
 ao1: 1: 0 bis 10
 
@@ -593,14 +592,14 @@ hl:
 
 in:
 
-q: Wie viele Bücher besitzen Sie bzw. Ihre Eltern?
+q: Wie viele Bücher besitzen Sie selbst aktuell bzw. Ihre Eltern?
 
 is: Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher.
 Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
 
 is: Anzahl Bücher
 
-it1: (buchanzi2): Sie
+it1: (buchanzi2): ich selbst
 
 it2: (buchanze2): Eltern
 
@@ -661,7 +660,7 @@ hl:
 
 in:
 
-q: Wie oft diskutieren Sie mit anderen in Ihrer Freizeit über folgende Aspekte?
+q: Wie oft diskutieren Sie mit anderen in Ihrer Freizeit über folgende Themenbereiche?
 
 is:
 
@@ -671,10 +670,11 @@ it2: (disklit) Literatur
 
 it3: (diskkun) Kunst
 
-it4: (diskmus) Musik  
+it4: (diskmus) Musik
+
 it5: (diskspo) Sport
 
-it6: (disktv) Fernsehserien/TV
+it6: (disktv) Serien, Filme (Fernsehen/Streaming)
 
 it7: (diskwiss) wissenschaftliche Themen und Fragestellungen
 
@@ -704,7 +704,7 @@ fv:
 
 hv:
 
-fo: Items bitte zufällig rotieren.
+fo:
 
 tr: GOTO B2_7
 
@@ -736,7 +736,7 @@ it2: (freikunst) künstlerisch betätigen
 
 it3: (freikult) kulturelle Veranstaltungen besuchen
 
-it4: (freiaba) Abends Ausgehen
+it4: (freiaba) abends Ausgehen
 
 it5: (freifreu) mit Freunden treffen
 
@@ -863,7 +863,7 @@ fo: Items bitte zufällig rotieren.
 
 tr: GOTO B2_8a IF sabsan = 1 OR sabsan = 2
     GOTO B2_8b IF sabsan >=3
-    GOTO Bs_8b IF sabsan=MISSING
+    GOTO B2_8b IF sabsan=MISSING
 hi:
 
 \--------------------------
