@@ -731,15 +731,17 @@ ao8 (ainfaba): 8: : sonstiger Aufenthalt
 
 
 Beginn:
-Nebeneinander angeordnete Drop-Down-Menüs:
+
+Nebeneinander angeordnete Drop-Down-Menüs
 
 ao9 (ainfbmba): : Monat: (Monat \ Januar \| … \| Dezember)
 
 ao10 (ainfbjba): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
 
 
-Ende:
-Nebeneinander angeordnete Drop-Down-Menüs:
+voraussichtliches Ende:
+
+Nebeneinander angeordnete Drop-Down-Menüs
 
 ao11 (ainfemba): : Monat: (Monat \ Januar \| … \| Dezember)
 
