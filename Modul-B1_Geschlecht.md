@@ -33,8 +33,6 @@ ao5: 5: offene Angabe: 25, Prefix: eine andere, und zwar:
 
 ao6: 6: unklar
 
-
-
 mv: -12: Ich möchte diese Frage nicht beantworten.
 
 ka:
@@ -279,7 +277,7 @@ it3: (fulldadbad): Ein Vollzeit erwerbstätiger Vater kann sich nicht ausreichen
 
 it4: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
 
-it5: (chldben): Es ist für ein Kind sogar gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
+it5: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
 
 it6: (fullmumtod): Eine Vollzeiterwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie eine Mutter, die nicht berufstätig ist.
 
@@ -341,7 +339,7 @@ q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewä
 
 is: \*\*Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
-it1: (_p): Partner*in
+it1: (_p): Partner/*in
 
 it2: (_i): ich selbst
 
