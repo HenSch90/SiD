@@ -13,8 +13,7 @@ hl:
 
 in:
 
-q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine
-Mensa oder Cafeteria Ihrer Hochschule?
+q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine Mensa oder Cafeteria Ihrer Hochschule?
 
 is:
 
@@ -162,8 +161,7 @@ hl:
 
 in:
 
-q: Nun geht es um Ihr allgemeines Ernährungsverhalten: Inwieweit treffen die
-folgenden Aussagen auf Ihre persönliche Ernährung zu?
+q: Nun geht es um Ihr allgemeines Ernährungsverhalten: Inwieweit treffen die folgenden Aussagen auf Ihre persönliche Ernährung zu?
 
 is:
 
@@ -255,8 +253,7 @@ hl:
 
 in:
 
-q: Ein Studium erfordert oftmals etwas Zeit: Inwieweit ist ein Studium aus Ihrer
-Perspektive überhaupt vereinbar mit folgenden Aspekten?
+q: Inwieweit ist ein Studium aus Ihrer Perspektive vereinbar mit folgenden Aspekten? 
 
 is:
 
@@ -391,8 +388,7 @@ in:
 
 q: Wir möchten nun gerne noch etwas mehr über Ihre Situation erfahren:
 
-Inwieweit hatten Sie in den letzten zwölf Monaten Fragen bis hin zu
-Schwierigkeiten hinsichtlich folgender Themen?
+Inwieweit hatten Sie in den letzten zwölf Monaten Fragen bis hin zu Schwierigkeiten hinsichtlich folgender Themen?
 
 is:
 
@@ -518,8 +514,7 @@ hl:
 
 in:
 
-q: Haben Sie zu den zuvor genannten Themen/Problembereichen in den letzten zwölf
-Monaten Beratung in Anspruch genommen?
+q: Haben Sie zu den zuvor genannten Themen/Problembereichen in den letzten zwölf Monaten Beratung in Anspruch genommen?
 
 is:
 
