@@ -3,7 +3,7 @@ F1_1
 
 tc:
 
-vn: aeinnorm1; aeinnorm2; aeinnorm3; aeinnormando; aeinnormando
+vn: aeinnorm1; aeinnorm2; aeinnorm3
 
 qt: Einfachauswahlmaxtrix und offene Angabe
 
@@ -17,11 +17,9 @@ is:
 
 it1: (aeinnorm1): : Ein studienbezogener Auslandsaufenthalt darf während des Studiums auf keinen Fall fehlen.
 
-it2: (aeinnorm2): : Auslandserfharungen warden auf dem Arbeitsmarkt oftmals erwartet.
+it2: (aeinnorm2): : Auslandserfahrungen warden auf dem Arbeitsmarkt oftmals erwartet.
 
-it3: (aeinnorm3): : Jede\*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
-
-it4: (aeinnormand): anderes, und zwar (offene Angabe: 100 Zeichen; Präfix [aeinnormando], Suffix
+it3: (aeinnorm3): : Jede*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
 
 st:
 
@@ -51,9 +49,17 @@ hv:
 
 fo:
 
-tr: GOTO F1_2
+tr: GOTO F1_2b IF width.value lt 768
 
-hi: Items bitte zufällig rotieren (Ausnahme: aeinnormandoba)
+ELSE GOTO F1_2
+
+		<zofar:transitions>
+			<zofar:transition target="F1_2b" condition="width.value lt 768"/>
+			<zofar:transition target="F1_2"/>
+		</zofar:transitions>
+
+
+hi: Items bitte zufällig rotieren
 
 \-------------------------------
 
@@ -140,6 +146,136 @@ hi:
 
 \--------------------------------
 
+F1_2b
+====
+
+tc:
+
+vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersön; aeinskont; aeinskultur; aeinsspaß
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Was spricht Ihrer Meinung nach für einen Auslandsaufenthalt?
+
+is:
+
+it1 (aeinsarbm): verbesserte Arbeitsmarktaussichten
+
+it2 (aeinssprachk): verbesserte Sprachkenntnisse
+
+it3 (aeinsfach): verbesserte Fachkenntnisse
+
+it4 (aeinspersön): Persönlichkeitsentwicklung
+
+it5 (aeinskont): international Kontakte knüpfen
+
+it6 (aeinskultur): andere Länder/Kulturen kennenlernen
+
+it7 (aeinsspaß): Spaß haben
+
+st:
+
+ao1: 1: : überhaupt nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: : sehr stark
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO F1_2c
+
+hi:
+
+
+\-------------------------------
+
+F1_2c
+====
+
+tc:
+
+vn: aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Was spricht Ihrer Meinung nach gegen einen Auslandsaufenthalt?
+
+is:
+
+it8 (aeinsfinanz): finanzielle Belastung
+
+it9 (aeinsorga): Organisationsaufwand
+
+it10 (aeinsfreun): Trennung von Freunden und Familie
+
+it11 (aeinsanerk): Anerkennungsschwierigkeiten
+
+it12 (aeinszeit): Zeitverlust
+
+it13 (aeinsfehlspra): fehlende Sprachkenntnisse
+
+it14 (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
+
+st:
+
+ao1: 1: : überhaupt nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: : sehr stark
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO F1_3
+
+hi:
+
+
 F1_3
 ====
 
@@ -214,9 +350,9 @@ ao2: (avorgeschw) : Geschwister
 
 ao3: (avorandver) : andere Verwandte
 
-ao4: (avorfreund) : Freunde
+ao4: (avorfreund) : Freund*innen
 
-ao5: (avorkomm) : Kommiliton\*innen
+ao5: (avorkomm) : Kommiliton*innen
 
 ao6: (avorniem) : nein, niemanden (Exklusivkategorie)
 
@@ -277,7 +413,7 @@ mv:
 
 ka:
 
-vc: SHOW aauszeitlebbama IF sabsan=2
+vc: SHOW aauszeitlebbama IF sabsan=2 or sabsan=MISSING
 
 av:
 
@@ -290,13 +426,15 @@ hv:
 fo:
 
 tr: 
-GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=1)
 GOTO F1_6 IF (vsbdeba=2 AND dnatausl=1 AND imausl=1)
+
 GOTO F2_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=2)
 
 GOTO F2_6 IF (vsbdeba=1 AND dnatdeu=MISSING AND imausl=2)
 GOTO F2_6 IF (vsbdeba=MISSING AND dnatdeu=1 AND imausl=2)
 GOTO F2_6 IF (vsbdeba=MISSING AND dnatdeu=MISSING AND imausl=2)
+
+GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=1)
 
 GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=MISSING)
 GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=MISSING AND imausl=1)
@@ -309,20 +447,21 @@ GOTO F1_6 IF (vsbdeba=2 AND dnatausl=MISSING AND imausl=MISSING)
 
 ALTERNATIV:
 
-			<zofar:transition target="F1_6" 
-							  condition="(zofar.asNumber(vsbdeba)==2)"/>			
-			<zofar:transition target="F2_6" 
-							  condition="(zofar.asNumber(vsbdeba)==1 
-							  			and zofar.asNumber(imausl)==1)"/>				
-			<zofar:transition target="F3_6" 
-							  condition="(zofar.asNumber(vsbdeba)==1 
-							  			and zofar.asNumber(imausl)==2)"/>					
-			<zofar:transition target="F2_6" 
-							  condition="(zofar.isMissing(vsbdeba) 
-							  			and zofar.asNumber(imausl)==1)"/>		
-			<zofar:transition target="F3_6" 
-							  condition="(zofar.asNumber(vsbdeba)==1 
-							  			and zofar.isMissing(imausl))"/>		
+<zofar:transition target="F1_6" condition="(zofar.asNumber(vsbdeba)==2)"/>		
+
+<zofar:transition target="F2_6" condition="(zofar.asNumber(vsbdeba)==1 					  			and zofar.asNumber(imausl)==2)"/>
+
+<zofar:transition target="F2_6" condition="(zofar.isMissing(vsbdeba) 
+					and zofar.asNumber(imausl)==2)"/>
+
+<zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1 
+					and zofar.asNumber(imausl)==1)"/>
+
+<zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1 
+					and zofar.isMissing(imausl))"/>
+					
+<zofar:transition target="F3_6" condition="(zofar.isMissing(vsbdeba) 
+					and zofar.isMissing(imausl))"/>
                       
 hi:
 
@@ -392,17 +531,15 @@ it:
 
 st:
 
-ao1: 1: : nein, überhaupt nicht
+ao1: 1: : nein, keine Schwierigkeiten
 
 ao2: 2
 
-ao3: 3: : teils, teils
+ao3: 3
 
 ao4: 4
 
 ao5: 5: : ja, sehr viele Schwierigkeiten
-
-ao6: 6: : weiß ich nicht (Exklusivkategorie)
 
 mv:
 
@@ -431,7 +568,7 @@ F1_8
 
 tc:
 
-vn: vsbpruefba; vsbeignba; vsbhsreifba; ssbbachba; vsbmastba; vsbteilba; vsbwnba
+vn: intdeutsch1; intdeutsch2; intdeutsch3; intdeutsch4; intdeutsch5
 
 qt: Mehrfachauswahl
 
@@ -439,7 +576,7 @@ hl:
 
 in:
 
-q: Wie wurde Ihre Vorbildung in Deutschland anerkannt?
+q: Wo haben Sie die nötigen Sprachkenntnisse für ein Studium in Deutschland erworben?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -447,19 +584,15 @@ it:
 
 st:
 
-ao1: (vsbpruefba) :nach einer Feststellungsprüfung als Studienberechtigung (z. B. am Studienkolleg an einer Hochschule)
+ao1: (intdeutsch1): Schule/Studium im Ausland
 
-ao2: (vsbeignba): nach einer Eignungsprüfung (z. B. für Kunst, Sport) an einer Hochschule als Studienberechtigung
+ao2: (intdeutsch2): Sprachkurs im Ausland
 
-ao3: (vsbhsreifba): als fachorientierte oder nicht-fachorientierte Studienberechtigung
+ao3: (intdeutsch3): Sprachkurs in Deutschland (vor dem Studium)
 
-ao4: (vsbbachba): als Bachelorabschluss
+ao4: (intdeutsch4): Studienbegleitend an einer deutschen Hochschule
 
-ao5: (vsbmastba): als Master-/Dipolom-/Magisterabschluss
-
-ao6: (vsbteilba): von meinen Studienleistungen wurden Teile anerkannt (z. B. einzelne Studienleistungen, Credit Points, Module, Scheine)
-
-ao7: (vsbwnba): weiß ich nicht (Exklusivkategorie)
+ao5: (intdeutsch5): bisher noch gar nicht
 
 mv:
 
@@ -488,7 +621,7 @@ F1_9
 
 tc:
 
-vn: bdefinba; bdekenba; bdesprba; bdefamsba; bdefaiba; bdetecba; bdeoekba; bdequaba; bdearbba
+vn: bdefinba; bdekenba; bdesprba; bdefamsba; bdefamlba; bdetecba; bdeoekba; bdequaba; bdearbba
 
 qt: Einfachauswahlmatrix
 
@@ -512,7 +645,7 @@ it4 (bdefamsba): weil Freunde/Verwandte in Deutschland studieren/studiert haben.
 
 it5 (bdefamlba): weil Freunde/Verwandte in Deutschland leben/gelebt haben.
 
-it6 (ddetecba): weil Deutschland ein hochtechnisiertes Land ist.
+it6 (bdetecba): weil Deutschland ein hochtechnisiertes Land ist.
 
 it7 (bdeoekba): wegen der wirtschaftlichen Lage in Deutschland.
 
@@ -576,10 +709,13 @@ it:
 st:
 
 Drop-Down-Menü:
+Art des Auslandsaufenthalts:
 
-ao1 (ainfaba): 1: : Auslandsstudium mit angestrebtem Abschluss in Deutschland
+aox (ainfaba): 0: : Art des Auslandsaufenthalts
 
-ao2 (ainfaba): 2: : Auslandsstudium/-semester ohne angestrebten Abschluss in Deutschland
+ao1 (ainfaba): 1: : Auslandsstudium mit Abschluss in Deutschland
+
+ao2 (ainfaba): 2: : Auslandsstudium/-semester ohne Abschluss in Deutschland
 
 ao3 (ainfaba): 3: : Praktikum/Praxisphase
 
@@ -589,21 +725,25 @@ ao5 (ainfaba): 5: : Studienreise
 
 ao6 (ainfaba): 6: : Projektarbeit
 
-ao7 (ainfaba): 7: : Summerschool
+ao7 (ainfaba): 7: : Summer School
 
 ao8 (ainfaba): 8: : sonstiger Aufenthalt
 
+
+Beginn:
 Nebeneinander angeordnete Drop-Down-Menüs:
 
-ao9 (ainfbmba): : Monat: (Januar \| … \| Dezember)
+ao9 (ainfbmba): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao10 (ainfbjba): : Jahr: (2020 \| 2019 \| … \| 2000 \| vor 2000)
+ao10 (ainfbjba): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
 
+
+Ende:
 Nebeneinander angeordnete Drop-Down-Menüs:
 
-ao11 (ainfemba): : Monat: (Januar \| … \| Dezember)
+ao11 (ainfemba): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao12 (ainfejba): Jahr: (2030 \| 2029 \| … \| 2000 \| vor 2000)
+ao12 (ainfejba): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030)
 
 mv:
 
@@ -691,7 +831,7 @@ hl:
 
 in:
 
-q: Wissen Sie bereits, ob Ihr Aufenthalt in Deutschland auf Ihr Studium in Ihrem Heimatland angerechnet wird, z. B. in Form von ECTS-Punkten?
+q: Werden Ihnen die in Deutschland erbrachten Studienleistungen auf Ihr Studium in Ihrem Heimatland angerechnet?
 
 is:
 
@@ -734,7 +874,7 @@ F1_13
 
 tc:
 
-vn: aproselbba; aprokoopba; aproorigba; aprodaadba; aproerasba; aproeuba; aprointerba; aproanprba
+vn: aproselbba; aprokoopba; aproorigba; aprodaadba; aproerasba; aproeuba; aprointerba; aproanprba; aproanproba
 
 qt: Mehrfachnennung
 
@@ -758,13 +898,13 @@ ao3 (aproorigba): : ja, Programm meines Herkunftslandes
 
 ao4 (aprodaadba): : ja, deutsches Programm (z. B. DAAD-Programm)
 
-ao5 (aproerasba): : ja, ERASSMUS+/ERASMUS-Programm
+ao5 (aproerasba): : ja, ERASMUS+/ERASMUS-Programm
 
 ao6 (aproeuba): : ja, anderes EU-Programm
 
-ao7 (aprointerba): : ja, Programm einer internationalen Organisation
+ao7 (aprointerba): : ja, Programm meiner Gasthochschule im Ausland
 
-ao8 (aproanprba): : ja, anderes Programm offene Angabe: 100 Stellen, Präfix [aproanproba], Suffix:und zwar:
+ao8 (aproanprba): : Ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix [aproanproba], Suffix:und zwar:
 
 mv:
 
@@ -801,17 +941,17 @@ hl:
 
 in:
 
-q: Wie häufig haben Sie während Ihres Aufenthalts in Deutschland ingesamt Gespräche/Kontakt…
+q: Wie häufig haben Sie während Ihres Aufenthalts in Deutschland Kontakt mit …
 
 is:
 
-it1 (akontdeutstba): … mit Studierenden aus Deutschland?
+it1 (akontdeutstba): … Studierenden aus Deutschland?
 
-it2 (akonteinheimba): … mit anderen Einheimischen?
+it2 (akonteinheimba): … anderen Einheimischen?
 
-it3 (akontheimba): … mit Studierenden aus Ihrem Heimatland?
+it3 (akontheimba): … Studierenden aus Ihrem Heimatland?
 
-it4 (akontintstba): … mit anderen internationalen Studierenden (nicht aus Ihrem Heimatland)?
+it4 (akontintstba): … anderen internationalen Studierenden (nicht aus Ihrem Heimatland)?
 
 st:
 
@@ -852,7 +992,7 @@ F1_15
 
 tc:
 
-vn: azufrwillba;azufrsichba
+vn: azufrwillba; azufrsichba
 
 qt: Einfachauswahl
 
@@ -860,9 +1000,9 @@ hl:
 
 in:
 
-q1: Wie willkommen fühlen Sie sich in Deutschland?
+q1: (azufrwillba): Wie willkommen fühlen Sie sich in Deutschland?
 
-q2: Wie sicher fühlen Sie sich bislang in Deutschland insgesamt?
+q2: (azufrsichba): Wie sicher fühlen Sie sich bislang in Deutschland insgesamt?
 
 is:
 
@@ -912,7 +1052,7 @@ fo:
 
 tr: GOTO F1_16
 
-hi: 16
+hi:
 
 \--------------------------------
 
@@ -933,11 +1073,11 @@ q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …
 
 is:
 
-it1 (azufskein): … dem sozialen Kontakt zu Einheimischen?
+it1 (azufskein): … dem Kontakt zu Einheimischen?
 
-it2 (azufskstu): … dem sozialen Kontakt zu Studierenden?
+it2 (azufskstu): … dem Kontakt zu Studierenden?
 
-it3 (azufsklehr): … dem sozialen Kontakt zu Lehrenden?
+it3 (azufsklehr): … dem Kontakt zu Lehrenden?
 
 it4 (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
 
@@ -982,7 +1122,7 @@ F1_17
 
 tc:
 
-vn: azufleistanf; azuforgaufw; azuffinanzaufw
+vn: azufleistanf; azuforgaaufw; azuffinanzaufw
 
 qt: Einfachauswahl, Akkordeon
 
@@ -994,11 +1134,11 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1 (azufleistanf): … die aktuellen Leistungsanforderungen?
+it1 (azufleistanf): … die Leistungsanforderungen an Ihrer Hochschule?
 
-it2 (azuforgaaufw): … den aktuellen organisatorischen Aufwand?
+it2 (azuforgaaufw): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it3 (azuffinanzaufw): … den aktuellen finanziellen Aufwand?
+it3 (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
@@ -1047,7 +1187,7 @@ hl:
 
 in:
 
-q: Ausgehend von Ihren bisherigen Erfahrungen mit den Studien- und Lebensbedingungen in Deutschland: Würden Sie Ihren Freunden/Bekannten empfehlen, ein Studium in Deutschland durchzuführen?
+q: Ausgehend von Ihren bisherigen Erfahrungen mit den Studien- und Lebensbedingungen in Deutschland: Würden Sie Ihren Freunden/Bekannten empfehlen, in Deutschland zu studieren?
 
 is:
 
@@ -1094,13 +1234,13 @@ tc:
 
 vn: bdedarlba; bdedarloba; bdedarhssia; bdedarhsoba
 
-qt: Einfachauswahl, offene Angabe
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: Hinsichtlich Ihres Auslandsaufenthalts: Wenn Sie die freie Wahl gehabt hätten, in welchem Land, in welcher Stadt/Hochschule hätten Sie am liebsten studiert?
+q: Wenn Sie nochmals vor der Wahl stünden: In welchem Land, in welcher Stadt beziehungsweise an welcher Hochschule hätten Sie am liebsten ihren studienbezogenen Auslandsaufenthalt durchgeführt?
 
 is:
 
@@ -1159,7 +1299,7 @@ st:
 
 ao1 (bhiitecba): : Einführung in wissenschaftliche Lern- und Arbeitstechniken
 
-ao2 (bhiiwelba): : Welcome-Veranstaltungen/Begrüßungsveranstaltungen
+ao2 (bhiiwelba): : Welcome-/Begrüßungsveranstaltungen
 
 ao3 (bhiivorbba): : fachliche Vorbereitungskurse
 
@@ -1251,6 +1391,10 @@ ao4: … in Deutschland.
 ao5: … in meinem Heimatland.
 
 ao6: … in einem anderen Land.
+
+Etwas Anderes
+
+ao7: Sonstiges
 
 mv:
 
@@ -1348,9 +1492,9 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und persönliche Meinungen äußern.
+it1 (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und meine persönliche Meinung äußern.
 
-it2 (intling2ba): Ich verstehe die wichtigsten Punkte in Radio- und Fernsehprogrammen, die auf Deutsch gesendet warden.
+it2 (intling2ba): Ich verstehe die wichtigsten Punkte in deutschen Radio- und Fernsehprogrammen.
 
 it3 (intling3ba): Ich kann deutsche Zeitungsartikel lesen und vollständig verstehen.
 
@@ -1393,7 +1537,7 @@ F1_24
 
 tc:
 
-vn: aarbchdeuba; aarbchherkba; aarbchandlba
+vn: aarbchdeuba; aarbchherkba
 
 qt: Einfachauswahlmatrix
 
@@ -1401,15 +1545,13 @@ hl:
 
 in:
 
-q: Wie schätzen Sie Ihre derzeitigen Berufs- und Arbeitsmarktchancen ein?
+q: Wie schätzen Sie Ihre derzeitigen Berufs- und Arbeitsmarktchancen ein, und zwar in …
 
 is:
 
-it1 (aarbchdeuba): in Deutschland?
+it1 (aarbchdeuba): … Deutschland?
 
-it2 (aarbchherkba): in Ihrem Herkunftsland?
-
-it3 (aarbchandlba): in einem anderen Land?
+it2 (aarbchherkba): … Ihrem Herkunftsland?
 
 st:
 
@@ -1425,7 +1567,7 @@ ao5: 5: : sehr gut
 
 ao6: 6: : kann ich nicht beurteilen
 
-mv:
+mv: ao6
 
 ka:
 
