@@ -62,11 +62,9 @@ hl:
 
 in:
 
-q: Um die Befragung passend für Ihre Situation gestalten zu können und
-insbesondere auf die Situation internationaler Studierender eingehen zu können,
-müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
+q: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
 
-Die erste Frage lautet: Wo haben Sie Ihre Hochschulreife erworben?
+Wo haben Sie erstmals Ihre Hochschulreife erworben?
 
 is:
 
@@ -113,7 +111,7 @@ hl:
 
 in:
 
-q: Die zweite Frage lautet: Welche Staatsangehörigkeit haben Sie?
+q: Und: Welche Staatsangehörigkeit haben Sie?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -222,18 +220,15 @@ hl:
 
 in:
 
-q1: Welche nicht-deutsche Staatsangehörigkeit besaßen Sie bevor Sie nach
-Deutschland kamen?
+q1: Welche Staatsangehörigkeit besaßen Sie bevor Sie nach Deutschland kamen?
 
 q2: Welche Staatsangehörigkeit besaßen Sie vor Ihrer Einbürgerung?
 
-q3: Sie haben zu Beginn der Befragung angegeben, die deutsche und eine oder
-mehrere ausländische Staatsangehörigkeit(en) zu haben.
+q3: Sie haben zu Beginn der Befragung angegeben, die deutsche und eine ausländische Staatsangehörigkeit zu haben.
 
 Welche Staatsangehörigkeit besitzen Sie neben der deutschen?
 
-q4: Sie haben zu Beginn der Befragung angegeben, eine oder mehrere ausländische
-Staatsangehörigkeit(en) zu haben.
+q4: Sie haben zu Beginn der Befragung angegeben, eine ausländische Staatsangehörigkeit zu haben.
 
 Welche ausländische Staatsangehörigkeit besitzen Sie?
 
@@ -506,7 +501,7 @@ hl:
 
 in:
 
-q: Bitte geben Sie nun das Land an, in dem Sie geboren sind.
+q: Bitte geben Sie nun das Land an, in dem Sie geboren wurden.
 
 is:
 
