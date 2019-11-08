@@ -180,7 +180,7 @@ in:
 
 q: Seit wann besteht Ihre Beeinträchtigung?
 
-is: Sofern Ihre Beeinträchtigungen zu unterschiedlichen Zeitpunkten aufgetreten sind,  beziehen Sie Ihre Antwort bitte auf die zuerst aufgetretene studienerschwerende  Beeinträchtigung.
+is: Sofern Ihre Beeinträchtigungen zu unterschiedlichen Zeitpunkten aufgetreten sind, beziehen Sie Ihre Antwort bitte auf die zuerst aufgetretene studienerschwerende Beeinträchtigung.
 
 it:
 
@@ -376,7 +376,7 @@ hl:
 
 in:
 
-q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen Schwierigkeiten?
+q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen 
 
 is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
 Bitte alles Zutreffende auswählen.
@@ -436,7 +436,7 @@ hl:
 
 in:
 
-q: In welchen Bereichen haben Sie um individuelle Anpassungen/Absprachen gebeten oder  Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
+q: In welchen Bereichen haben Sie um individuelle Anpassungen/Absprachen gebeten oder   Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
 
 is: Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Dozent*innen.
 
