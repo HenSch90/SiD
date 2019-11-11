@@ -306,11 +306,11 @@ it12: (feinbest1): Krankenversicherungsleistungen für technische Hilfsmittel
 
 it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit einer gesundheitlichen Beeinträchtigung
 
-it14: (feinandq): Weitere Finanzierungsquelle(n), und zwar: (offene Angabe: [feinandqo] 50 Zeichen) 
+it14: (feinandqo): Weitere Finanzierungsquelle(n), und zwar: 
 
 #{layout.BREAK}#{layout.BREAK}
 
-it15: (feininsg): ++Gesamteinnahmen++: (offene Angabe: [feininsgo] 5 Zeichen) 
+it15: (feininsg): ++Gesamteinnahmen++:
 
 
 st:
@@ -445,9 +445,9 @@ D3_8
 
 tc:
 
-vn1: fausg (fausgmieto / fausgerno / fausgkomo / fausgkleio / fausglerno / fausgmobo / fausggeso / fausgsemo / fausgstuo / fausgfreio / fausgkitaso / fausgkindso / fausgasso / fausgthilfo / fausandqo) 
+vn1: fausg (fausgmieto / fausgerno / fausgkomo / fausgkleio / fausglerno / fausgmobo / fausggeso / fausgsemo / fausgstuo / fausgfreio / fausgkitaso / fausgkindso / fausgasso / fausgthilfo / fausandq / fausandqo) 
 
-vn2: feind (feindmieto / feinderno / feindkomo / feindkleio / feindlerno / feindgmobo / feindgeso / feindgsemo / feindgstuo / feindgfreio / feindkitaso / feindkindso / feindgasso / feindgthilfo / feinandquo2)
+vn2: feind (feindmieto / feinderno / feindkomo / feindkleio / feindlerno / feindgmobo / feindgeso / feindgsemo / feindgstuo / feindgfreio / feindkitaso / feindkindso / feindgasso / feindgthilfo / feinandqu2 / feinandquo2)
 
 vn3: fausinsg; feininsg2
 
