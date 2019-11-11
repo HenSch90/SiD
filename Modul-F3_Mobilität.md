@@ -14,7 +14,7 @@ in:
 
 q1: Inwieweit trauen Sie es sich zu, im Ausland zu studieren?
 
-q2: Inwieweit trauen Sie es sich zu, nochmals im Ausland zu studieren?
+q2: Inwieweit trauen Sie es sich zu, ein weiteres Mal im Ausland zu studieren?
 
 is:
 
@@ -38,7 +38,7 @@ ka:
 
 vc:
 
-SHOW q2 IF Studierende mit Auslandsaufenthalten
+SHOW q2 IF ainfaus ge 2
 
 av:
 
@@ -58,7 +58,6 @@ GOTO F3_16 IF ainfaus=MISSING AND auslandint=4
 GOTO F3_21 IF ainfaus=1 AND auslandint=1,2,3
 GOTO F3_21 IF ainfaus=MISSING AND auslandint=1,2,3
 
-
 hi:
 
 \--------------------------------
@@ -68,10 +67,10 @@ F3_7
 
 tc: IF ainfaus \> 1 \| kA
 
-vn: ainfa1 / ainfl1 / ainfl1o / ainfst1 / ainfst1o / ainfbm1 / ainfbj1 /
-ainfbridg1/ ainfem1 / ainfej1 / ainfa2 / ainfl2 / ainfl1o / ainfst2 / ainfst2o /
-ainfbm2 / ainfbj2 / ainfbridg2/ ainfem2 / ainfej2 / ainfa3 / ainfl3 / ainfl3o /
-ainfst3 / ainfst3o / ainfbm3 / ainfbj3 / ainfbridg3/ ainfem3 / ainfej3
+vn: 
+ainfa1 / ainflo1 / ainfsto1 / ainfhso1 / ainfbm1 / ainfbj1 / ainfem1 / ainfej1 / 
+ainfa2 / ainflo2 / ainfsto2 / ainfhso2 / ainfbm2 / ainfbj2 / ainfem2 / ainfej2 / 
+ainfa3 / ainflo3 / ainfsto3 / ainfhso3 / ainfbm3 / ainfbj3 / ainfem3 / ainfej3
 
 qt: Tableau-Abfrage Drop-Down-Menüs, offene Angabe
 
@@ -93,16 +92,15 @@ Aufenthalt an.
 
 it1: (ainfa1): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it2: (ainfl1): Land: [ainfl1o] [Eingabefeld; 100 Zeichen]
+it2: Land: [ainflo1] [Eingabefeld; 100 Zeichen]
 
-it3: (ainfst1): Stadt/Hochschule: [ainfst1o] [Eingabefeld; 100 Zeichen]
+it3: Stadt/Hochschule: [ainfsto1] [Eingabefeld; 100 Zeichen]
 
-it4: (ainfbm1): Monat: [Drop-Down-Menü2]
+it4: ggf. Hochschule: [ainfhso1] [Eingabefeld; 100 Zeichen]
 
-it5: (ainfbj1): Jahr: [Drop-Down-Menü3]
+it5: (ainfbm1): Monat: [Drop-Down-Menü2]
 
-it6: (ainfbridg1): War der Auslandsaufenthalt zwischen Ihrem Bachelor- und
-Masterstudium? [Drop-Down-Menü4]
+it6: (ainfbj1): Jahr: [Drop-Down-Menü3]
 
 it7: (ainfem1): Monat: [Drop-Down-Menü2]
 
@@ -110,16 +108,15 @@ it8: (ainfej1): Jahr: [Drop-Down-Menü5]
 
 it9: (ainfa2): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it10: (ainfl2): Land: [ainfl2o] [Eingabefeld; 100 Zeichen]
+it10: Land: [ainflo2] [Eingabefeld; 100 Zeichen]
 
-it11: (ainfst2): Stadt/Hochschule: [ainfst2o] [Eingabefeld; 100 Zeichen]
+it11: Stadt/Hochschule: [ainfsto2] [Eingabefeld; 100 Zeichen]
 
-it12: (ainfbm2): Monat: [Drop-Down-Menü2]
+it12: ggf. Hochschule: [ainfhso2] [Eingabefeld; 100 Zeichen]
 
-it13: (ainfbj2): Jahr: [Drop-Down-Menü3]
+it13: (ainfbm2): Monat: [Drop-Down-Menü2]
 
-it14: (ainfbridg2): War der Auslandsaufenthalt zwischen Ihrem Bachelor- und
-Masterstudium? [Drop-Down-Menü4]
+it14: (ainfbj2): Jahr: [Drop-Down-Menü3]
 
 it15: (ainfem2): Monat: [Drop-Down-Menü2]
 
@@ -127,16 +124,15 @@ it16: (ainfej2): Jahr: [Drop-Down-Menü5]
 
 it17: (ainfa3): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it18: (ainfl3): Land: [ainfl3o] [Eingabefeld; 100 Zeichen]
+it18: Land: [ainflo3] [Eingabefeld; 100 Zeichen]
 
-it19: (ainfst3): Stadt/Hochschule: [ainfst3o] [Eingabefeld; 100 Zeichen]
+it19: Stadt/Hochschule: [ainfsto3] [Eingabefeld; 100 Zeichen]
 
-it20: (ainfbm3): Monat: [Drop-Down-Menü2]
+it20: ggf. Hochschule: [ainfhso3] [Eingabefeld; 100 Zeichen]
 
-it21: (ainfbj3): Jahr: [Drop-Down-Menü3]
+it21: (ainfbm3): Monat: [Drop-Down-Menü2]
 
-it22: (ainfbridg3): War der Auslandsaufenthalt zwischen Ihrem Bachelor- und
-Masterstudium? [Drop-Down-Menü4]
+it22: (ainfbj3): Jahr: [Drop-Down-Menü3]
 
 it23: (ainfem3): Monat: [Drop-Down-Menü2]
 
@@ -180,20 +176,11 @@ ka9 (it23 TO it24): Ende des Auslandsaufenthalts:
 
 vc:
 
-SHOW q1 AND it1 TO it5 AND it7 TO it8 AND ka1 TO ka3 IF ainfaus = 2 \| kA
+SHOW q1 AND it1 TO it8 AND ka1 TO ka3 IF ainfaus = 2 \| kA
 
-SHOW q2 AND is1 AND it1 TO it5 AND it7 TO it13 AND it15 TO it16 AND ka1 TO ka6
-IF ainfaus = 3
+SHOW q2 AND is1 AND it1 TO it13 AND it16 AND ka1 TO ka6 IF ainfaus = 3
 
-SHOW q3 AND is2 AND it1 TO it5 AND it7 TO it13 AND it15 TO it21 AND it 23 TO
-it24 AND ka1 TO ka9 IF ainfaus = 4
-
-SHOW it6 IF ainfaus = 2 \| kA AND Masterstudierende mit Bachelorabschluss
-
-SHOW it6 AND it14 IF ainfaus = 3 AND Masterstudierende mit Bachelorabschluss
-
-SHOW it6 AND it14 AND it22 IF ainfaus = 4 AND Masterstudierende mit
-Bachelorabschluss
+SHOW q3 AND is2 AND it1 TO it24 AND ka1 TO ka9 IF ainfaus = 4
 
 av:
 
@@ -224,7 +211,7 @@ aprodaad2 / apropad2 / apropromos2 / aprodths2 / aprogahs2 / aproanpr2 /
 aproselb3 / aproeras3 / aproapeu3 / aprodaad3 / apropad3 / apropromos3 /
 aprodths3 / aprogahs3 / aproanpr3
 
-qt: Mehrfachnennung, Spaltenabfrage Aufenthalt A, B, C
+qt: Mehrfachnennung, Akkordeon je Aufenthalt
 
 hl:
 
@@ -248,9 +235,9 @@ ao3: (aproapeu1): ja, anderes EU-Programm
 
 ao4: (aprodaad1): ja, DAAD-Programm
 
-ao5: (apropad1): Pädagogischer Austauschdient (PAD)/COMENIUS
+ao5: (apropad1): ja, Pädagogischer Austauschdient (PAD)/COMENIUS
 
-ao6: (apropromos1): PROMOS-Stipendium
+ao6: (apropromos1): ja, PROMOS-Stipendium
 
 ao7: (aprodths1): ja, Programm meiner Hochschule in Deutschland
 
@@ -266,9 +253,9 @@ ao12: (aproapeu2): ja, anderes EU-Programm
 
 ao13: (aprodaad2): ja, DAAD-Programm
 
-ao14: (apropad2): Pädagogischer Austauschdient (PAD)/COMENIUS
+ao14: (apropad2): ja, Pädagogischer Austauschdient (PAD)/COMENIUS
 
-ao15: (apropromos2): PROMOS-Stipendium
+ao15: (apropromos2): ja, PROMOS-Stipendium
 
 ao16: (aprodths2): ja, Programm meiner Hochschule in Deutschland
 
@@ -284,9 +271,9 @@ ao21: (aproapeu3): ja, anderes EU-Programm
 
 ao22: (aprodaad3): ja, DAAD-Programm
 
-ao23: (apropad3): Pädagogischer Austauschdient (PAD)/COMENIUS
+ao23: (apropad3): ja, Pädagogischer Austauschdient (PAD)/COMENIUS
 
-ao24: (apropromos3): PROMOS-Stipendium
+ao24: (apropromos3): ja, PROMOS-Stipendium
 
 ao25: (aprodths3): ja, Programm meiner Hochschule in Deutschland
 
@@ -341,7 +328,7 @@ hl:
 
 in:
 
-q: Wurde Ihr letzter Auslandsaufenthalt auf Ihr Studium angerechnet, z.B. in
+q: Wurde Ihr letzter Auslandsaufenthalt auf Ihr Studium angerechnet, z. B. in
 Form von ECTS-Punkten?
 
 is:
@@ -385,12 +372,12 @@ F3_10
 
 tc: IF ainfaus \> 1 \| k.A.
 
-vn: afinelt1 / afinpar1 / afinbaf1 / afinjobv1 / afinjobw1 / afinstip1 /
-afinand1 / afinelt2 / afinpar2 / afinbaf2 / afinjobv2 / afinjobw2 / afinstip2 /
-afinand2 / afinelt3 / afinpar3 / afinbaf3 / afinjobv3 / afinjobw3 / afinstip3 /
-afinand3
+vn: 
+afinelt1 / afinpar1 / afinbaf1 / afinjobv1 / afinjobw1 / afinstip1 / afinand1 / 
+afinelt2 / afinpar2 / afinbaf2 / afinjobv2 / afinjobw2 / afinstip2 / afinand2 / 
+afinelt3 / afinpar3 / afinbaf3 / afinjobv3 / afinjobw3 / afinstip3 / afinand3
 
-qt: Mehrfachnennung, Spaltenabfrage Aufenthalt A, B, C
+qt: Mehrfachnennung, Akkordeon
 
 hl:
 
@@ -400,7 +387,7 @@ q1: Wie haben Sie ihren Auslandsaufenthalt finanziert?
 
 q2: Wie haben Sie ihre Auslandsaufenthalte finanziert?
 
-is: Bitte alles Zutreffende auswählen
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -502,17 +489,17 @@ q1: Wie häufig hatten Sie während Ihres studienbezogenen Auslandsaufenthalts
 Kontakt …
 
 q2: Wie häufig hatten Sie während Ihres letzten studienbezogenen
-Auslandsaufenthalts Kontakt …
+Auslandsaufenthalts Kontakt mit…
 
 is:
 
-it1: (akontdeust): … mit Studierenden aus Deutschland?
+it1: (akontdeust): … Studierenden aus Deutschland?
 
-it2: (akontgast): … mit Studierenden des Gastlandes?
+it2: (akontgast): … Studierenden des Gastlandes?
 
-it3: (akonteinheim): … mit anderen Einheimischen?
+it3: (akonteinheim): … anderen Einheimischen?
 
-it4: (akontintst): … mit anderen internationalen Studierenden (nicht aus
+it4: (akontintst): … anderen internationalen Studierenden (nicht aus
 Deutschland)?
 
 st:
@@ -560,7 +547,7 @@ F3_12
 
 tc: IF ainfaus \> 1 \| k.A.
 
-vn: asprachland / asprachdeut / asprachand
+vn: asprachland / asprachdeut / asprachand / asprachando
 
 qt: Einfachauswahlmatrix mit horizontal abgetragenen Antwortoptionen
 
@@ -580,7 +567,7 @@ it1: (asprachland): Landessprache
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): andere Sprache, und zwar [Eingabefeld, 50 Stellen]
+it3: (asprachand): Andere Sprache, und zwar [asprachando] [Eingabefeld, 50 Stellen]
 
 st:
 
@@ -640,11 +627,11 @@ Auslandsaufenthalt mit …
 
 is:
 
-it1: (azufskein): … dem sozialen Kontakt zu Einheimischen?
+it1: (azufskein): … dem Kontakt zu Einheimischen?
 
-it2: (azufskstu): … dem sozialen Kontakt zu Studierenden?
+it2: (azufskstu): … dem Kontakt zu Studierenden?
 
-it3: (azufsklehr): … dem sozialen Kontakt zu Lehrenden?
+it3: (azufsklehr): … dem Kontakt zu Lehrenden?
 
 it4: (azuflernerf): … den gewonnen fachlichen Kenntnissen?
 
@@ -761,7 +748,7 @@ in:
 
 q: Ausgehend von Ihren bisherigen Erfahrungen:
 
-Würden Sie empfehlen im Rahmen des Studiums ins Ausland zu gehen?
+Würden Sie einen studienbezogenen Auslandsaufenthalt empfehlen?
 
 is:
 
@@ -931,7 +918,7 @@ F3_19
 tc: Die Frage erhalten ausschließlich Studierende, die beabsichtigen einen
 (weiteren) Auslandsaufenthalt durchzuführen.
 
-vn: aplanföpro
+vn: aplanföpro; aplanföproo
 
 qt: Einfachauswahl
 
@@ -962,15 +949,15 @@ ao6: 6: : … ja, Programm meiner Hochschule in Deutschland
 
 ao7: 7: : … ja, Programm meiner Gasthochschule im Ausland
 
-ao8: 8: : … ja, anderes Programm, und zwar [Eingabefeld; 100 Stellen]
+ao8: 8: : … ja, anderes Programm, und zwar [aplanföproo] [Eingabefeld; 100 Stellen]
 
 [Leerzeile]
 
-ao9: 9: : … nein, ich werde den Aufenthalt selbst organisieren. [EK]
+ao9: 9: : nein, werde Aufenthalt selbst organisieren [EK]
 
 mv:
 
-ka (ao1 TO ao9) : Der Aufenthalt findet im Rahmen eines Austauschprogramms statt
+ka (ao1 TO ao8) : Der Aufenthalt findet im Rahmen eines Austauschprogramms statt
 
 vc:
 
@@ -988,7 +975,7 @@ tr:
 
 GOTO F3_20
 
-hi:
+hi: ao9 bitte optisch von restlicher Itemliste absetzen
 
 \--------------------------------
 
@@ -1018,7 +1005,7 @@ st:
 
 ao1 (aplfinelt): Eltern
 
-ao2 (aplfinpar): Partner(in)
+ao2 (aplfinpar): Partner*in
 
 ao3 (aplfinbaf): BAföG
 
