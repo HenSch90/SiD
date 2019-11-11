@@ -580,9 +580,7 @@ hi:
 E1_7
 ====
 
-tc1: IF (ibedsfi \| ... \| ibedabs) \> 1
-
-tc2: IF ibedno = 0
+tc:
 
 vn: iinasfin; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinaaldr; iinavbew;
 iianvbki; iinavbhs; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs;
@@ -644,11 +642,6 @@ it21: (iinabsat): Aneignung bedarfsberechter Arbeitstechniken
 
 it22: (iinabsrb): Durchsetzung von Ansprüchen, Rechtsberatung
 
-Leerzeile
-
-it23: (iinano): Ich habe zu keinem der genannten Themenbereiche in den letzten
-12 Monaten Beratung in Anspruch genommen (Exklusivkategorie)
-
 st:
 
 ao1: 1: nein
@@ -659,20 +652,15 @@ ao3: 3: ja, außerhalb des Hochschulbereichs
 
 ao4: 4: ja, innerhalb und außerhalb des Hochschulbereichs
 
-ao6: 0: nicht ausgewählt (nur ibedno)
-
-ao6: 1: ausgewählt (nur ibedno)
-
 mv:
 
-ka1: (it1, it2, it3): Finanzierungsbezogene Themen
+ka1: (it1, it2, it3): finanzierungsbezogene Themen
 
-ka2: (it4, it5, it6, it7): Persönliche Themen
+ka2: (it4, it5, it6, it7): persönliche Themen
 
-ka3: (it8, it9, it10, it11, it12, it13, it14, it15): Studienbezogene Themen
+ka3: (it8, it9, it10, it11, it12, it13, it14, it15): studienbezogene Themen
 
-ka4: (it16, it17, it18, it19, it20, it21, it22): Beeinträchtigungsbezogene
-Themen
+ka4: (it16, it17, it18, it19, it20, it21, it22): beeinträchtigungsbezogene Themen
 
 vc: SHOW it1 IF ibedsfin \> 1
 
@@ -761,7 +749,7 @@ it2: (ihingel): ... weil sich das Problem von allein gelöst hat.
 
 it3: (ihinkan): ... weil ich kein passendes Angebot gefunden habe.
 
-it4: (ihinpre): ... weil ich mein Problem(meine Schwierigkeit nicht preisgeben
+it4: (ihinpre): ... weil ich mein Problem/meine Schwierigkeit nicht preisgeben
 wollte.
 
 it5: (ihinfreu): ... weil ich im privaten Umfeld Hilfe/Unterstützung gefunden
