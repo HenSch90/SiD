@@ -54,7 +54,7 @@ D3_2
 
 tc:
 
-vn: wohnami, wohnamio
+vn: wohnamio
 
 qt: offene Frage
 
@@ -62,7 +62,7 @@ hl:
 
 in:
 
-q: Zu wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit
+q: Mit wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit
 eingeschlossen – zusammen?
 
 is:
@@ -71,7 +71,7 @@ it:
 
 st:
 
-ao1: : (wohnami) Eingaabefeld, 2 Stellen, Präfix: [infield = Personenzahl; (wohnamio)]
+ao1: : (wohnamio), Präfix: [infield = Personenzahl; number]
 
 mv:
 
@@ -79,9 +79,9 @@ ka:
 
 vc:
 
-av:
+av: (wohnamio): number 2 Stellen; 2 TO 15
 
-kh:
+kh: (wohnamio): Bitte geben Sie an, zu wie vielen Personen Sie insgesamt zusammenwohnen (2 bis 15).
 
 fv:
 
@@ -100,7 +100,7 @@ D3_3
 
 tc:
 
-vn: wohnplz; wohnplzo; wohnplzort; wohnplzorto
+vn: wohnplz; wohnplzort
 
 qt: offene Angabe
 
@@ -108,11 +108,9 @@ hl:
 
 in:
 
-q1: Bitte geben Sie die Postleitzahl Ihres derzeitigen Wohnortes am Hochschulort an.
+q1: Bitte geben Sie die Postleitzahl Ihres derzeitigen Hauptwohnsitzes an.
 
-q2: Bitte geben Sie die Postleitzahl Ihres derzeitigen Wohnortes außerhalb des Hochschulortes an.
-
-q3: Falls Sie die Postleitzahl nicht kennen, geben Sie bitten den Ort an.
+q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an.
 
 is:
 
@@ -120,31 +118,29 @@ it:
 
 st:
 
-ao1: : (wohnplz), Präfix [infield = PLZ; 5 Stellen; number (wohnplzo)] 
+ao1: : (wohnplz), Präfix [infield = PLZ; number] 
 
-ao2: : (wohnplzort), Präfix [infield = Ort; 100 Zeichen (wohnplzorto)]
+ao2: : (wohnplzort), Präfix [infield = Ort; 100 Zeichen]
 
 mv:
 
 ka:
 
-vc1: SHOW q1 and ao1 IF wohnort = 1 | 3
+vc:
 
-vc1: SHOW q2 and ao1 IF wohnort = 2
+av: (wohnplz): number 5 Stellen; 01000 TO 99999
 
-av1: ao1 (wohnplz) number: 01000 TO 99999
-
-kh1: (wohnplzo): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
+kh: (wohnplz): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
 
 fv:
 
 hv:
 
-fo: SHOW q3 and ao2 IF wohnplzo = k. A. (--> soft forcing, also danach geht es normal weiter)
+fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing, also danach geht es normal weiter)
 
 tr: GOTO A_53
 
-hi:
+hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
 
 \--------------------------------
 
@@ -153,7 +149,7 @@ D3_4
 
 tc:
 
-vn: wohnqmw; wohnqmwo; wohnqmz; wohnqmzo
+vn: wohnqmw; wohnqmz
 
 qt: offene Angabe
 
@@ -171,9 +167,9 @@ it:
 
 st:
 
-ao1: (wohnqmw),  Präfix: [infield = qm²; 3 Stellen; number (wohnqmwo)]
+ao1: : (wohnqmw), Präfix: [infield = qm²; number]
 
-ao2: (wohnqmz), Präfix: [infield = qm²; 2 Stellen; number (wohnqmzo)]
+ao2: : (wohnqmz), Präfix: [infield = qm²; number]
 
 mv:
 
@@ -181,11 +177,13 @@ ka:
 
 vc: SHOW q2, ao2 IF wohnel=1 OR wohnwg=1 
 
-av1: number: 3 stellig : 1 TO 999
+av1: (wohnqmw): number 3 Stellen; 1 TO 999
 
-av2: number: 2 stellig : 1 TO 99
+av2: (wohnqmz): number 2 Stellen; 1 TO 99
 
-kh:
+kh1: (wohnqmw): Bitte geben Sie die Größe Ihrer Wohnung/Ihres Hauses an (1 bis 999).
+
+kh1: (wohnqmz): Bitte geben Sie die Größe Ihres Zimmers an (1 bis 99).
 
 fv:
 
@@ -259,7 +257,7 @@ D3_6
 
 tc:
 
-vn: feinelto; feinkino; feinparo; feinjobdso; feinjobo1; feinjobo2; feinspao; feinbafo; feinkredo; feinstio; feinekio; feinbest1; feinbest2; feinandq; feinandqo; feininsg; feininsgo
+vn: fein (feinelto / feinkino / feinparo / feinjobdso / feinjobo1 / feinjobo2 / feinspao / feinbafo / feinkredo / feinstio / feinekio / feinbest1 / feinbest2 / feinandq / feinandqo / feininsg)
 
 qt: offene Angabe
 
@@ -272,10 +270,10 @@ während des Sommersemesters 2020 zur Verfügung?
 
 is: Bitte berücksichtigen Sie hier nur das Geld, über das Sie tatsächlich selbst
 verfügen. Berücksichtigen Sie hier bitte ++nicht++, was z. B. Ihre Eltern
-oder Ihr(e) Partner\*in für Sie direkt an Dritte zahlen (z. B. direkte
-Überweisung der Miete an Ihren Vermieter).
+oder Ihr\*e Partner\*in für Sie direkt an Dritte zahlen (z. B. direkte
+Überweisung der Miete an Ihre\*n Vermieter\*in).
 
-Leerzeile
+#{layout.BREAK}#{layout.BREAK}
 
 Sollten Sie Ihren Lebensunterhalt auch mit unregelmäßigen Einnahmen oder durch
 früher erworbenes Geld (z. B. Ersparnisse) bestreiten, geben Sie bitte nur den
@@ -286,7 +284,7 @@ it1: (feinelto): Eltern (bar auf die Hand/per Überweisung auf Ihr Konto)
 it2: (feinkino): Kindergeld für Sie selbst (sofern nicht bereits bei
 Geldbeträgen von den Eltern angegeben)
 
-it3: ( feinparo): Partner*in (bar auf die Hand/per Überweisung auf Ihr Konto)
+it3: (feinparo): Partner\*in (bar auf die Hand/per Überweisung auf Ihr Konto)
 
 it4: (feinjobdso): Ausbildungsvergütung für Duales Studium
 
@@ -306,64 +304,68 @@ it11: (feinekio): Kindergeld/Unterhalt für Ihr(e) Kind(er)
 
 it12: (feinbest1): Krankenversicherungsleistungen für technische Hilfsmittel
 
-it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit meiner gesundheitlichen Beeinträchtigung
+it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit einer gesundheitlichen Beeinträchtigung
 
 it14: (feinandq): Weitere Finanzierungsquelle(n), und zwar: (offene Angabe: [feinandqo] 50 Zeichen) 
 
-[Trennlinie]
+#{layout.BREAK}#{layout.BREAK}
 
-it15: (feininsg): Gesamteinnahmen: (offene Angabe: [feininsgo] 5 Zeichen) 
+it15: (feininsg): ++Gesamteinnahmen++: (offene Angabe: [feininsgo] 5 Zeichen) 
 
 
 st:
 
-ao1: 4 Stellen, Präfix infield = Betrag [feinelto] Suffix: [number] € pro Monat
+ao1: : (feinelto), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao2: 4 Stellen, Präfix infield = Betrag [feinkino] Suffix: [number]€ pro Monat
+ao2: : (feinkino), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao3: 4 Stellen, Präfix infield = Betrag [feinparo] Suffix: [number]€ pro Monat
+ao3: : (feinparo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao4: 4 Stellen, Präfix infield = Betrag [feinjobdso] Suffix: [number]€ pro Monat
+ao4: : (feinjobdso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao5: 4 Stellen, Präfix infield = Betrag [feinjobo1] Suffix: [number]€ pro Monat
+ao5: : (feinjobo1), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao6: 4 Stellen, Präfix infield = Betrag [feinjobo2] Suffix: [number]€ pro Monat
+ao6: : (feinjobo2), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao7: 4 Stellen, Präfix infield = Betrag [feinspao] Suffix: [number]€ pro Monat
+ao7: : (feinspao), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao8: 4 Stellen, Präfix infield = Betrag [feinbafo] Suffix: [number]€ pro Monat
+ao8: : (feinbafo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao9: 4 Stellen, Präfix infield = Betrag [feinkredo] Suffix: [number]€ pro Monat
+ao9: : (feinkredo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao10: 4 Stellen, Präfix infield = Betrag [feinstio] Suffix: [number]€ pro Monat
+ao10: : (feinstio), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao11: 4 Stellen, Präfix infield = Betrag [feinekio] Suffix: [number]€ pro Monat
+ao11: : (feinekio), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao12: 4 Stellen, Präfix infield = Betrag [feinbest1] Suffix: [number]€ pro Monat
+ao12: : (feinbest1), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao13: 4 Stellen, Präfix infield = Betrag [feinbest2] Suffix: [number]€ pro Monat
+ao13: : (feinbest2), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao14: 4 Stellen, Präfix infield = Betrag [feinandqo] Suffix: [number]€ pro Monat
+ao14: : (feinandq; feinandqo), [50 Zeichen] Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao15: 5 Stellen, Präfix infield = Betrag [feininsgo] Suffix: [number]€ pro Monat
+#{layout.BREAK}#{layout.BREAK}
+
+ao15: : (feininsg), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 mv:
 
 ka:
 
-vc1: SHOW it4 (feinjobdso) if sformdua = 1 
+vc1: SHOW it4/ao4 (feinjobdso) IF sformdua = 1 
 
-vc2: SHOW it5 (feinjobo1) if sformdua != 1
+vc2: SHOW it5/ao5 (feinjobo1) IF sformdua != 1
 
-vc3: SHOW it6 (feinjobo2) IF  sformdua = 1 
+vc3: SHOW it6/ao6 (feinjobo2) IF  sformdua = 1 
 
-vc3: SHOW it11 (feinekio) if dkinja=2
+vc3: SHOW it11/ao11 (feinekio) IF dkinja = 2
 
-vc4: SHOW it12 – it13 (feinbest1 – feinbest2) if [gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1] 
+av1: ao1 TO ao14: number 4 Stellen; 0 TO 9999
 
-av: number : 1-4 stellig : 1 TO 9999
+av2: ao15: number 5 Stellen; 0 TO 99999
 
-kh: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (1 bis 9999)
+kh1: ao1 TO ao14: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999)
+
+kh2: ao15: Bitte geben Sie Ihre jeweiligen monatlichen Gesamteinnahmen an (0 bis 99999)
 
 fv:
 
@@ -414,7 +416,7 @@ ao6 (festipartandstaat): ja, anderes mit staatlichen Mitteln finanziertes Stipen
 
 ao7 (festipartprivat): ja, Stipendium eines privaten Geldgebers (Industrie, Firma, privater Stifter)
 
-ao8 (festipartsons): Ja, anderes und zwar: [festipartsonso] (Eingabefeld; 50 Zeichen)
+ao8 (festipartsons): Ja, anderes und zwar: [(festipartsonso); Eingabefeld; 50 Zeichen]
 
 mv:
 
@@ -443,11 +445,11 @@ D3_8
 
 tc:
 
-vn1: „Ich bezahle selbst“ [fausg]: (fausgmiet; fausgmieto; fausgerno; fausgerno; fausgkomo; fausgkleio; fausglerno; fausgmobo; fausggeso; fausgsemo; fausgstuo; fausffreio; fausgkitaso; fausgkindso; fausgasso; fausgthilfo; fausandqo) 
+vn1: fausg (fausgmieto / fausgerno / fausgkomo / fausgkleio / fausglerno / fausgmobo / fausggeso / fausgsemo / fausgstuo / fausgfreio / fausgkitaso / fausgkindso / fausgasso / fausgthilfo / fausandqo) 
 
-vn2: „Dritte (Eltern, Partner\*in etc) bezahlen direkt [feind]: (feindmieto; feinderno, feindkomo; feindkleio; feindlerno; feindgmobo, feindgeso; feindgsemo; feindgstuo; feindgfreio; feindkitaso; feindkindso; feindgasso; feindgthilfo; feinandquo2)
+vn2: feind (feindmieto / feinderno / feindkomo / feindkleio / feindlerno / feindgmobo / feindgeso / feindgsemo / feindgstuo / feindgfreio / feindkitaso / feindkindso / feindgasso / feindgthilfo / feinandquo2)
 
-vn3: fausinsg
+vn3: fausinsg; feininsg2
 
 
 
@@ -457,11 +459,10 @@ hl:
 
 in:
 
-q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie (z. B. Eltern
-bezahlen Ihre Miete direkt an den Vermieter) im Sommersemester 2020 monatlich
+q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie im Sommersemester 2020 monatlich
 haben.
 
-is1: "Dritte bezahlen direkt" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
+is1: "Dritte" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
 
 is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an.
 
@@ -481,7 +482,7 @@ it7: (fausggeso; feindgeso): Gesundheitskosten (z. B. Krankenversicherung, Medik
 
 it8: (fausgsemo; feindgsemo): Semesterbeitrag (ohne Semesterticket)
 
-it9: (faugstuo; feindgstuo): Studiengebühren (z. B. privates Studium, Langzeitgebühren, Zweitstudium)
+it9: (fausgstuo; feindgstuo): Studiengebühren (z. B. privates Studium, Langzeitgebühren, Zweitstudium)
 
 it10: (fausgfreio; feindgfreio): Freizeit, Kultur und Sport
 
@@ -495,65 +496,62 @@ it14: (fausgthilfo; feindgthilfo): Ausgaben für technische Hilfsmittel (z. B. S
 
 it15: (fausandqo; feinandqo2): Weitere Ausgaben, und zwar:
 
-Trennlinie
+#{layout.BREAK}#{layout.BREAK}
 
-it16: (fausinsg): Gesamtausgaben:
+it16: (fausinsg; feininsg2): ++Gesamtausgaben++:
 
 
 st:
 
-ao1: Präfix [infield = Betrag; fausgmieto; feindmieto] Suffix: [number] € pro Monat
+ao1: : (fausgmieto; feindmieto), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao2: Präfix [infield = Betrag; fausgerno; feinderno] Suffix: [number] € pro Monat
+ao2: : (fausgerno; feinderno), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao3: Präfix [infield = Betrag; fausgkomo; feindkomo] Suffix: [number] € pro Monat 
+ao3: : (fausgkomo; feindkomo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao4: Präfix [infield = Betrag; fausgkleio; feindkleio] Suffix: [number] € pro Monat
+ao4: : (fausgkleio; feindkleio), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao5: Präfix [infield = Betrag; fausglerno; feindlerno] Suffix: [number] € pro Monat
+ao5: : (fausglerno; feindlerno), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao6: Präfix [infield = Betrag; fausgmobo; feindgmobo] Suffix: [number] € pro Monat
+ao6: : (fausgmobo; feindgmobo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao7: Präfix [infield = Betrag; fausggeso; feindgeso] Suffix: [number] € pro Monat
+ao7: : (fausggeso; feindgeso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao8: Präfix [infield = Betrag; fausgsemo; feindgsemo] Suffix: [number] € pro Monat
+ao8: : (fausgsemo; feindgsemo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao9: Präfix [infield = Betrag; faugstuo; feindgstuo] Suffix: [number] € pro Monat
+ao9: : (faugstuo; feindgstuo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao10: Präfix [infield = Betrag; fausgfreio; feindgfreio] Suffix: [number] € pro Monat
+ao10: : (fausgfreio; feindgfreio), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao11: Präfix [infield = Betrag; fausgkitaso; feindkitaso] Suffix: [number] € pro Monat
+ao11: : (fausgkitaso; feindkitaso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao12: Präfix [infield = Betrag; fausgkindso; feindkindso] Suffix: [number] € pro Monat
+ao12: : (fausgkindso; feindkindso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao13: Präfix [infield = Betrag; fausgasso; feindgasso] Suffix: [number] € pro Monat
+ao13: : (fausgasso; feindgasso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao14: Präfix [infield = Betrag; fausgthilfo; feindgthilfo] Suffix: [number] € pro Monat
+ao14: : (fausgthilfo; feindgthilfo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao15: Präfix [infield = Betrag; fausandq; fausandqo; feinandq2; feinandqo2] Suffix: [number] (50 Zeichen)
+ao15: : (fausandq; fausandqo; feinandq2; feinandqo2), [50 Zeichen] Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao16: Präfix [infield = Betrag; fausinsg] Suffix: [number] € pro Monat
+#{layout.BREAK}#{layout.BREAK}
+
+ao16: : (fausinsg; feininsg2), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 mv:
 
 ka:
 
-vc1: SHOW it11 IF [dkinja = 2]
+vc1: SHOW it11 TO 12 IF dkinja = 2
 
-vc2: SHOW it12 IF [dkinja = 2]
+vc2: SHOW is2 IF wohnal=!1
 
-vc3: SHOW it13 IF [gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1] 
+av1: ao1 TO ao15: number 4 Stellen; 0 TO 9999
 
-vc4: SHOW it14 IF [ggartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1] 
+av2: ao16: number 5 Stellen; 0 TO 99999
 
-vc5: SHOW is2 IF wohnal=!1
+kh1: ao1 TO ao15: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (0 bis 9999)
 
-av1: number : 1 bis 4 stellig (1-9999)
-
-av2: number : 50 Zeichen (hier nur für 2 Variablen x müssen noch eingetragen
-werden, siehe unter ao14)
-
-kh: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (1 bis 9999)
+kh2: ao16: Bitte geben Sie Ihre jeweiligen monatlichen Gesamtausgaben an (0 bis 99999)
 
 fv:
 
@@ -563,8 +561,9 @@ fo:
 
 tr: GOTO D3_9
 
-hi: “Ich bezahle selbst” und “Dritte (Eltern, Partner\*in etc.) bezahlen direkt”
-als Spaltenüberschriften; Bei "fausinsg" (Gesamtausgaben) bitte Trennlinie und 2 offene Angabefelder (selbst vs. Dritte) 
+hi1: “Ich bezahle selbst” und “Andere bezahlen für mich” bitte als Spaltenüberschriften.
+hi2: Bitte etwas Abstand zwischen den beiden Spalten.
+hi3: Bei "fausinsg" und "feininsg2" (Gesamtausgaben) bitte ebenfalls 2 offene Angabefelder in der Zeile. 
 
 \--------------------------------
 
@@ -573,7 +572,7 @@ D3_9
 
 tc:
 
-vn: fmineink; fmineinko
+vn: fmineinko
 
 qt: offene Angabe
 
@@ -589,7 +588,7 @@ it:
 
 st:
 
-ao1: (fmineink) Eingabefeld; Präfix: [infield =  €; [number], (fmineinko)]  
+ao1: : (fmineinko), Präfix [infield = €; number] 
 
 mv:
 
@@ -597,9 +596,9 @@ ka:
 
 vc:
 
-av: number : 1-4 stellig : 1 TO 9999
+av: (fmineinko): number 4 stellig; 0 TO 9999
 
-kh: Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (1 bis 9999).
+kh: Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (0 bis 9999).
 
 fv:
 
@@ -609,7 +608,7 @@ fo:
 
 tr: GOTO D3_10  IF feindgsemo > 0 OR feindgstuo > 0;  
     GOTO D3_11  IF feindgsemo = 0 AND feindgstuo = 0
-    GOTO D3_11  IF feindgsemo = MISSING AND feindgstuo = MISSING
+    GOTO D3_11  IF feindgsemo = k. A. AND feindgstuo = k. A.
 
 hi:
 
@@ -618,9 +617,9 @@ hi:
 D3_10
 =====
 
-tc: IF (feindgsemo > 0 | feindgstuo > 0)
+tc: IF feindgsemo > 0 | feindgstuo > 0
 
-vn: fausgstkelt; fausgstkelto; fausgstkpart; fausgstkparto; fausgstkarb; fausgstkarbo; fausgstkand; fausgstkando
+vn: fausgst (fausgstkelto / fausgstkparto / fausgstkarbo / fausgstkando)
 
 qt: offene Angabe
 
@@ -629,28 +628,28 @@ hl:
 in: 
 
 q: Sie haben angegeben, dass Dritte Ihre Studienkosten (Semesterbeitrag bzw. Studiengebühren) übernehmen oder sich daran beteiligen.
-[Leerzeile]
+#{layout.BREAK}
 Davon bezahlen durchschnittlich im Monat …
 
 is:
 
-it1: ... meine Eltern für mich direkt:
+it1: ... meine Eltern für mich:
 
-it2: ... mein*/e Partner*/in für mich direkt:
+it2: ... mein*/e Partner*/in für mich:
 
-it3: ... mein Arbeitgeber für mich direkt:
+it3: ... mein Arbeitgeber für mich:
 
-it4: ... andere für mich direkt und zwar:
+it4: ... andere für mich:
 
 st:
 
-ao1: Präfix [infield = €; [number] fausgstkelt; fausgstkelto] 
+ao1: : (fausgstkelto), Präfix [infield = €; number] 
 
-ao2: Präfix [infield = €; [number] fausgstkpart; fausgstkparto]  
+ao2: : (fausgstkparto), Präfix [infield = €; number] 
 
-ao3: Präfix [infield = €; [number] fausgstkarb; fausgstkarbo]
+ao3: : (fausgstkarbo), Präfix [infield = €; number] 
 
-ao4: Präfix [infield = €; [number] fausgstkand; fausgstkando] 
+ao4: : (fausgstkando), Präfix [infield = €; number] 
 
 mv: 
 
@@ -658,9 +657,9 @@ ka:
 
 vc: 
 
-av: number : 1-4 stellig : 1 TO 9999
+av: ao1 TO ao4: number 4 stellig; 0 TO 9999
 
-kh: 
+kh: Bitte geben Sie den Betrag an, mit dem Sie bei Ihren Studienkosten unterstützt werden (0 bis 9999).
 
 fv: 
 
@@ -679,9 +678,9 @@ D3_11
 
 tc:
 
-vn: fsitzum1; fsitzum2; fsitzum3; fsitelt1; fsitelt2; fsitelt3
+vn: fsit (fsitzum1 / fsitzum2 / fsitzum3 / fsitelt1 / fsitelt2 / fsitelt3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -745,11 +744,9 @@ D3_12
 
 tc:
 
-vn: feinstf1; feinstf2; feinstf3; feinstf4; feinstf5; feinstf6; feinstf7;
-feinstf8
+vn: feinstf (feinstf1 / feinstf2 / feinstf3 / feinstf4 / feinstf5 / feinstf6 / feinstf7 / feinstf8)
 
-qt: Einfachauswahlmatrix (keine Mehrfachauswahl???)
-
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 hl:
 
 in:
@@ -758,7 +755,7 @@ q: Inwieweit treffen die folgenden Aussagen zum Umgang mit Geld auf Sie zu?
 
 is:
 
-it1: (feinstf1): Ich gebe Geld lieber sofort aus als es für einen späteren
+it1: (feinstf1): Ich gebe Geld lieber sofort aus, als es für einen späteren
 Zeitpunkt zu sparen.
 
 it2: (feinstf2): Ich kümmere mich sorgfältig um meine finanziellen
@@ -769,7 +766,7 @@ it3: (feinstf3): Es gelingt mir, mit meinem Geld auszukommen.
 it4: (feinstf4): Es belastet mich, mir Gedanken über meine finanzielle Zukunft
 zu machen.
 
-it5: (feinstf5): Bevor ich etwas kaufe, vergleiche ich immer die Preise
+it5: (feinstf5): Bevor ich etwas kaufe, vergleiche ich immer die Preise.
 
 it6: (feinstf6): Ich achte darauf, dass ich Geld für schlechte Zeiten habe.
 
@@ -865,7 +862,7 @@ GOTO D3_15 IF fbafja = 2
 
 GOTO D3_17 IF fbafja = 4
 
-GOTO D3_6 IF fbafja = 3 OR fbafja = MISSING
+GOTO D3_6 IF fbafja = 3 OR fbafja = k. A.
 
 hi:
 
@@ -875,7 +872,7 @@ hi:
 D3_14
 =====
 
-tc: IF fbafja = 1 (kein Bafög-Antrag gestellt)
+tc: IF fbafja = 1 
 
 vn: fbafex
 
@@ -885,8 +882,7 @@ hl:
 
 in:
 
-q: Haben Sie während Ihres Studiums früher einmal einen Antrag auf BAföG
-gestellt?
+q: Haben Sie während Ihres Studiums früher einmal einen Antrag auf BAföG gestellt?
 
 is:
 
@@ -929,7 +925,7 @@ hi:
 D3_15
 =====
 
-tc:IF fbafja = 2 (Bafög-Antrag abgelehnt)
+tc:IF fbafja = 2 
 
 vn: fbafabg
 
@@ -939,7 +935,7 @@ hl:
 
 in:
 
-q: Haben Sie bereits früher schon einmal einen Antrag auf BAföG gestellt?
+q: Haben Sie früher schon einmal einen Antrag auf BAföG gestellt?
 
 is:
 
@@ -978,28 +974,23 @@ hi:
 D3_16
 =====
 
-tc: IF fbafja = 1 \| 2 (im SS 2020 kein Bafög)
+tc: IF fbafja = 1 \| 2 
 
-vn: fbafkelt; fbafkein; fbafkfhd; fbafktw; fbafkleis; fbafkalt; fbafkzwei;
-fbafkweni; fabfkschu; fbafand; fbafando
+vn: fbaf (fbafkelt / fbafkein / fbafkfhd / fbafktw / fbafkleis / fbafkalt / fbafkzwei / fbafkweni / fabfkschu / fbafand / fbafando)
 
-qt: Mehrfachnennung und offene Angabe (ao11)
+qt: Mehrfachnennung/offene Angabe 
 
 hl:
 
 in:
 
-q: Aus welchen Gründen [Individualisierung]:
+q1: Aus welchen Gründen haben Sie bisher keinen BAföG-Antrag gestellt?
 
-IF fbafja = 1 AND fbafex = 1 \| kA: haben Sie bisher keinen BAföG-Antrag
-gestellt?
+q2: Aus welchen Gründen wurde Ihr aktueller Antrag abgelehnt?
 
-IF fbafja = 2: wurde Ihr aktueller Antrag abgelehnt?
+q3: Aus welchen Gründen wurde Ihr Antrag damals abgelehnt?
 
-IF (fbafja = 1) AND (fbafex = 2 \| 3): wurde Ihr Antrag damals abgelehnt?
-
-IF fbafja = 1 AND fbafex = 4: haben Sie keinen Antrag auf Weiterförderung mehr
-gestellt?
+q4: Aus welchen Gründen haben Sie keinen Antrag auf Weiterförderung mehr gestellt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -1007,35 +998,57 @@ it:
 
 st:
 
-ao1: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin
-ist/war zu hoch.
+ao1: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin ist zu hoch.
 
-ao2: (fbafkein): Das eigene Einkommen/Vermögen ist/war zu hoch.
+ao2: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin war zu hoch.
 
-ao3: (fbafkfhd): Die Förderungshöchstdauer wurde überschritten.
+ao3: (fbafkein): Das eigene Einkommen/Vermögen ist zu hoch.
 
-ao4: (fbafktw): Das Studienfach wurde gewechselt.
+ao4: (fbafkein): Das eigene Einkommen/Vermögen war zu hoch.
 
-ao5: (fbafkleis): Die notwendige Leistungsbescheinigung konnte nicht erbracht werden.
+ao5: (fbafkfhd): Die Förderungshöchstdauer wurde überschritten.
 
-ao6: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits
-überschritten.
+ao6: (fbafktw): Das Studienfach wurde gewechselt.
 
-ao7: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
+ao7: (fbafkleis): Die notwendige Leistungsbescheinigung konnte nicht erbracht werden.
+
+ao8: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits überschritten.
+
+ao9: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
 Hochschulausbildung (Zweitstudium, Ergänzungsstudium).
 
-ao8: (fbafkweni): Der zu erwartende Förderbeitrag ist/war so gering, dass es
-sich nicht lohnt/e.
+ao10: (fbafkzwei): Das  Studium war eine nicht förderungsfähige weitere
+Hochschulausbildung (Zweitstudium, Ergänzungsstudium).
 
-ao9: (fbafkschu): Ich will/wollte keine Schulden machen.
+ao11: (fbafkweni): Der zu erwartende Förderbeitrag ist so gering, dass es sich nicht lohnt.
 
-ao10: (fbafand): Andere Gründe, und zwar: (fbafando) 50 Zeichen 
+ao12: (fbafkweni): Der zu erwartende Förderbeitrag war so gering, dass es sich nicht lohnte.
+
+ao13: (fbafkschu): Ich will keine Schulden machen.
+
+ao14: (fbafkschu): Ich wollte keine Schulden machen.
+
+ao15: (fbafand): Andere Gründe, und zwar: [(fbafando) 50 Zeichen] 
 
 mv:
 
 ka:
 
-vc:
+vc1: SHOW q1 IF (fbafja = 1) AND (fbafex = 1 | k. A.)
+
+vc2: SHOW q2 IF (fbafja = 2)
+
+vc3: SHOW q3 IF (fbafja = 1) AND (fbafex = 2 | 3)
+
+vc4: SHOW q4 IF (fbafja = 1) AND (fbafex = 4)
+
+vc5: SHOW ao1, ao3, ao5, ao6, ao7, ao8, ao9, ao11, ao13, ao15 IF (fbafja = 1) AND (fbafex = 1 | k. A.)
+
+vc6: SHOW ao1, ao3, ao5, ao6, ao7, ao8, ao9, ao15 IF (fbafja = 2)
+
+vc7: SHOW ao2, ao4, ao5, ao6, ao7, ao8, ao10, ao15 IF (fbafja = 1) AND (fbafex = 2 | 3)
+
+vc8: SHOW ao2, ao4, ao5, ao6, ao7, ao8, ao10, ao12, ao14, ao15 IF (fbafja = 1) AND (fbafex = 4)
 
 av:
 
@@ -1056,7 +1069,7 @@ hi:
 D3_17
 =====
 
-tc: IF fbafja = 4 (Form der Bafög-Förderung I)
+tc: IF fbafja = 4 
 
 vn: fbafunab
 
@@ -1074,9 +1087,9 @@ it:
 
 st:
 
-ao1: 1: nein
+ao1: 0: nein
 
-ao2: 2: ja
+ao2: 1: ja
 
 mv:
 
@@ -1103,9 +1116,9 @@ hi:
 D3_18
 =====
 
-tc: IF fbafja = 4 (Form der Bafög-Förderung II)
+tc: IF fbafja = 4 
 
-vn: fbafkv; fbafkin
+vn: fbabf (fbafkv / fbafkin)
 
 qt: Mehrfachauswahl
 
@@ -1158,11 +1171,11 @@ hi:
 D3_19
 =====
 
-tc: IF eaktsens = 2 | 3 | 4 (Studierende mit mind. einer Erwerbstätigkeit)
+tc: IF eaktsens = 2 | 3 | 4 
 
 vn: etat (etat1 / etat2 / etat3)
 
-qt: offene Angaben (Tableau – Drop Down)
+qt: Tableau (Drop Down)
 
 hl:
 
@@ -1175,12 +1188,12 @@ q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Sem
 q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
-q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
+q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren anderen Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 is: 
-it1: (etat1): (Tätigkeit A)  [infield = Art der Tätigkeit; Dropdown-Menü] 
-it2: (etat2): (Tätigkeit B)  [infield = Art der Tätigkeit; Dropdown-Menü] 
-it3: (etat3): (Tätigkeit C)  [infield = Art der Tätigkeit; Dropdown-Menü] 
+it1: (etat1), Präfix [infield = Art der Tätigkeit; Dropdown-Menü] 
+it2: (etat2), Präfix [infield = Art der Tätigkeit; Dropdown-Menü] 
+it3: (etat3), Präfix [infield = Art der Tätigkeit; Dropdown-Menü] 
 
 st:
 ao1: 1: : Tätigkeit als studentische/wissenschaftliche Hilfskraft im Bereich Forschung und Lehre
@@ -1188,27 +1201,25 @@ ao2: 2: : Tätigkeit als studentische/wissenschaftliche Hilfskraft im Bereich Ve
 ao3: 3: : Jobben (z. B. in einer Fabrik, einem Büro, einer Kneipe, Babysitten, Nachhilfeunterricht)
 ao4: 4: : Tätigkeit, die einen Hochschulabschluss voraussetzt (ohne Hilfskraft)
 ao5: 5: : Tätigkeit, die einen beruflichen Ausbildungsabschluss voraussetzt
-ao6: 6: : Tätigkeit als Praktikant*in 
+ao6: 6: : Tätigkeit als Praktikant\*in 
 
 mv: 
-ka1 (it1): Tätigkeit A
 
-ka2 (it2): Tätigkeit B
+ka1: (it1): Tätigkeit A
+ka2: (it2): Tätigkeit B
+ka3: (it3): Tätigkeit C 
 
-ka3 (it3): Tätigkeit C 
+vc1: SHOW q1 IF eaktsens = 2 AND sformdua != 1
+vc2: SHOW q2 IF eaktsens = 2 AND sformdua = 1
+vc3: SHOW q3 IF eaktsens = 3 | 4 AND sformdua != 1
+vc4: SHOW q4 IF eaktsens = 3 | 4 AND sformdua = 1
 
-vc: 
-SHOW q1 IF eaktsens = 2 AND sformdua != 1
-SHOW q2 IF eaktsens = 2 AND sformdua = 1
-SHOW q3 IF eaktsens = 3 | 4 AND sformdua != 1
-SHOW q4 IF eaktsens = 3 | 4 AND sformdua = 1
+vc5: SHOW it1 IF eaktsens = 2 | 3 | 4
+vc6: SHOW it2 IF eaktsens = 3 | 4 
+vc7: SHOW it3 IF eaktsens = 4 
 
-SHOW it1 IF eaktsens = 2 | 3 | 4
-SHOW it2 IF eaktsens = 3 | 4 
-SHOW it3 IF eaktsens = 4 
-
-SHOW ka1 TO ka2 IF eaktsens = 3 
-SHOW ka1 TO ka3 IF eaktsens = 4   
+vc8: SHOW ka1 TO ka2 IF eaktsens = 3 
+vc9: SHOW ka1 TO ka3 IF eaktsens = 4   
 
 av: 
 kh: 
@@ -1231,11 +1242,11 @@ hi:
 D3_20
 =====
 
-tc: sformberu = 1 | sformdua = 1 Frage wird berufsbegleitend oder dual Studierenden gestellt
+tc: sformberu = 1 | sformdua = 1 
 
 vn1: jobbbds1, jobbbdso1, jobbbds2, jobbbdso2, 
 
-qt: offene Abfrage im Spaltenformat / Einfachauswahl im Spaltenformat
+qt: offene Abfrage / Einfachauswahl im Spaltenformat
 
 hl:
 
@@ -1243,32 +1254,24 @@ in:
 
 q: Welchen Beruf üben Sie aktuell aus? Bitte erläutern Sie die Tätigkeit kurz.
 
-is: Falls Sie zurzeit nicht erwerbstätig sind, geben Sie bitte die Ihre zuletzt
-ausgeübte Tätigkeit an.
-
-Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive
-Führungsaufgaben ein. Zum Beispiel:
-
--   Bankkaufmann/-frau (nicht: Angestellte/r) Beratung, Verkauf von
-    Finanzprodukten, Abteilungsleitung
-
--   Zollbeamte(r) im gehobenen Dienst (nicht: Beamter/in) Zollfahndung,
-    Einsatzplanung
-
--   Maschinenbauingenieur(in) (nicht: Ingenieur/in) Konstruktion,
-    Optimierungsprozesse, Produktionsleitung
+is: Falls Sie zurzeit nicht erwerbstätig sind, geben Sie bitte Ihre zuletzt ausgeübte Tätigkeit an. 
+#{layout.BREAK}
+Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive Führungsaufgaben ein. Zum Beispiel:
+-   Bankkaufmann/-frau (nicht: Angestellte/r) Beratung, Verkauf von Finanzprodukten, Abteilungsleitung
+-   Zollbeamte(r) im gehobenen Dienst (nicht: Beamter/in) Zollfahndung, Einsatzplanung
+-   Maschinenbauingenieur\*in (nicht: Ingenieur\*in) Konstruktion, Optimierungsprozesse, Produktionsleitung
 
 it:
 
 st:
 
-ao1: (jobbbds1) Textfeld, 50 Zeichen; Präfix: [infield = Berufsbezeichnung; (jobbbdso1)]
+ao1: (jobbbdso1), Präfix: [infield = Berufsbezeichnung; 100 Zeichen]
 
-ao2: (jobbbds2) Textfeld, 50 Zeichen; Präfix: [infield = Tätigkeitsbeschreibung (jobbbdso2)]
+ao2: (jobbbdso2), Präfix: [infield = Tätigkeitsbeschreibung; 100 Zeichen]
 
-ao3: -11: : nie berufstätig gewesen
+ao3: (jobbbds1), -11: : nie berufstätig gewesen [EK]
 
-ao4: -12: : weiß ich nicht [EK]
+ao4: (jobbbds2), -12: : weiß ich nicht [EK]
 
 mv:
 
@@ -1286,7 +1289,8 @@ hv:
 
 fo:
 
-tr: GOTO D3_21
+tr: GOTO D3_21 IF (eaktsens > 1)
+    GOTO D3_22 IF (eaktsens = 1 | k. A.)
 
 hi:
 
@@ -1297,10 +1301,9 @@ D3_21
 
 tc: IF eaktsens = 2 \|3 \|4
 
-vn: egr (egrfin1 / egrfin2 / egrfin3 / egrkar1 / egrkar2 / egrper1 / egrper2 /
-egrper3 / egrerf1 / egrerf2 / egralt1 / egralt2)
+vn: egr (egrfin1 / egrfin2 / egrfin3 / egrkar1 / egrkar2 / egrper1 / egrper2 / egrper3 / egrerf1 / egrerf2 / egralt1 / egralt2)
 
-qt: Caroussel
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1310,20 +1313,17 @@ q1: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
 aktuellen Semesters einer Erwerbstätigkeit nach, …
 
 q2: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
-aktuellen Semesters neben meiner Tätigkeit im
-Ausbildungsbetrieb einer Erwerbstätigkeit nach, …
+aktuellen Semesters neben meiner Tätigkeit im Ausbildungsbetrieb einer Erwerbstätigkeit nach, …
 
 q3: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
 aktuellen Semesters mehreren Erwerbstätigkeiten nach, …
 
 q4: Inwiefern treffen die folgenden Aussagen auf Sie zu? Ich gehe während des
-aktuellen Semesters neben meiner Tätigkeit
-im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nach, …
+aktuellen Semesters neben meiner Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nach, …
 
 is:
 
-it1: (egrfin1): ... weil es zur Finanzierung meines Lebensunterhalts unbedingt
-notwendig ist.
+it1: (egrfin1): ... weil es zur Finanzierung meines Lebensunterhalts unbedingt notwendig ist.
 
 it2: (egrfin2): ... um mir mein Studium finanzieren zu können.
 
@@ -1365,13 +1365,13 @@ ka:
 
 vc:
 
-SHOW q1 IF eaktsens = 2
+SHOW q1 IF eaktsens = 2 AND sformdua != 1
 
-SHOW q2 IF eaktsens = 2 AND sformdua == 1
+SHOW q2 IF eaktsens = 2 AND sformdua = 1
 
-SHOW q3 IF eaktsens =  3 \| 4
+SHOW q3 IF eaktsens =  3 | 4 AND sformdua != 1
 
-SHOW q4 IF eaktsens = 3 \| 4 AND sformdua == 1
+SHOW q4 IF eaktsens = 3 | 4 AND sformdua = 1
 
 av:
 
@@ -1394,15 +1394,15 @@ D3_22
 
 tc:
 
-vn: zufrwohn /zufrlstand / zufrfinsit / zufrerw / zufrleb
+vn: zufr (zufrwohn /zufrlstand / zufrfinsit / zufrerw / zufrleb)
 
-qt: Einfachauswahlmatrix mit horizontal abgetragenen Antwortoptionen
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie zufrieden sind Sie aktuell mit…
+q: Wie zufrieden sind Sie aktuell mit …
 
 is:
 
@@ -1434,7 +1434,7 @@ ka:
 
 vc:
 
-SHOW it4 IF eaktsens = 2 \|3 \|4
+SHOW it4 IF eaktsens = 2 |3 | 4
 
 av:
 
