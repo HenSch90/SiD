@@ -3,7 +3,7 @@
 C3_1
 =
 
-tc: IF dkinja = 2
+tc:
 
 vn: daltein
 
@@ -48,10 +48,9 @@ hi:
 C3_2
 =
 
-tc: Die vorliegende Frage wird ausschließlich dt./BI-Studierenden gestellt, die
-im Ausland geboren sind. Internationale Studierende bekommen diese Frage nicht.
+tc:
 
-vn: dnat (dnatm/ dnatv)
+vn: dnat (dnatm; dnatv)
 
 qt: Einfachauswahl, Comparison
 
@@ -102,8 +101,7 @@ hi:
 C3_3
 =
 
-tc: Die vorliegende Frage wird ausschließlich dt./BI-Studierenden gestellt, die
-im Ausland geboren sind. Internationale Studierende bekommen diese Frage nicht.
+tc:
 
 vn: dsprelt
 
