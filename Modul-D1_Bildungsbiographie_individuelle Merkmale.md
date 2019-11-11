@@ -3,9 +3,9 @@ D1_1
 
 tc1:
 
-vn: vtrae; vtraeo
+vn: vtrae / vtraeo
 
-qt: Einfachauswahl, offene Angabe
+qt: Einfachauswahl / offene Angabe
 
 hl:
 
@@ -25,8 +25,7 @@ ao2: 2: : private Schule
 
 ao3: 3: : kirchliche Schule
 
-ao4: 4: : Andere Schule, und zwar: (offene Angabe: Präfix [vtraeo], 50
-Zeichen)
+ao4: 4: : Andere Schule, und zwar: [(vtraeo), 50 Zeichen]
 
 mv:
 
@@ -57,11 +56,12 @@ D1_2
 
 tc1:
 
-vn: prffach1; prffach2; prffach3; prffach4; prffach5; stdfach1, stdfach2,
-stdfach3, stdfach4, stdfach5; notefach1, notefach2, notefach3, notefach4,
-notefach5, gesfach1, gesfach2, gesfach3, gesfach4, gesfach5
+vn: prffach (prffach1 / prffach2 / prffach3 / prffach4 / prffach5)
+    stdfach (stdfach1 / stdfach2 / stdfach3 / stdfach4 / stdfach5)
+    notefach (notefach1 / notefach2 / notefach3 / notefach4 / notefach5)
+    gesfach (gesfach1 / gesfach2 / gesfach3 / gesfach4 / gesfach5)
 
-qt: Akkordeon, offene Angabe, Einfachauswahl mit Dropdown-Menü
+qt: Akkordeon / offene Angabe / Dropdown-Menü
 
 hl:
 
@@ -75,50 +75,45 @@ it:
 
 st:
 
-ao1: offene Angabe, Präfix: [infield = 1. Prüfungsfach; prffach1], 50 Zeichen
+ao1: (prffach1), Präfix: [infield = 1. Prüfungsfach; 50 Zeichen] (offene Angabe)
 
-ao2: offene Angabe, Präfix: [infield = 2. Prüfungsfach; prffach2], 50 Zeichen
+ao2: (prffach2), Präfix: [infield = 2. Prüfungsfach; 50 Zeichen] (offene Angabe)
 
-ao3: offene Angabe, Präfix: [infield = 3. Prüfungsfach; prffach3], 50 Zeichen
+ao3: (prffach3), Präfix: [infield = 3. Prüfungsfach; 50 Zeichen] (offene Angabe)
 
-ao4: offene Angabe, Präfix: [infield = 4. Prüfungsfach; prffach4], 50 Zeichen
+ao4: (prffach4), Präfix: [infield = 4. Prüfungsfach; 50 Zeichen] (offene Angabe)
 
-ao5: offene Angabe, Präfix: [infield = 5. Prüfungsfach; prffach5], 50 Zeichen
+ao5: (prffach5), Präfix: [infield = 5. Prüfungsfach; 50 Zeichen] (offene Angabe)
 
-ao6: stdfach1: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std.] (Dropdown)
+ao6: (stdfach1), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao7: stdfach2: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std.] (Dropdown)
+ao7: (stdfach2), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao8: stdfach3: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std.] (Dropdown)
+ao8: (stdfach3), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao9: stdfach4: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std.] (Dropdown)
+ao9: (stdfach4), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao10: stdfach5: : [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8
-Std.\|9 Std.\|10 Std.] (Dropdown)
+ao10: (stdfach5), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
 
-ao11: notefach1: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
+ao11: (notefach1), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
-ao12: notefach2: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
+ao12: (notefach2), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
-ao13: notefach3: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
+ao13: (notefach3), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
-ao14: notefach4: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
+ao14: (notefach4), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
-ao15: notefach5: : [infield = Note; sehr gut\|gut\|befriedigend\|ausreichend\|mangelhaft\|ungenügend] (Dropdown)
+ao15: (notefach5), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
-ao16: gesfach1: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
+ao16: (gesfach1), [infield = Geschlecht; männlich - weiblich] (Dropdown)
 
-ao17: gesfach2: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
+ao17: (gesfach2), [infield = Geschlecht; männlich - weiblich] (Dropdown)
 
-ao18: gesfach3: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
+ao18: (gesfach3), [infield = Geschlecht; männlich - weiblich] (Dropdown)
 
-ao19: gesfach4: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
+ao19: (gesfach4), [infield = Geschlecht; männlich - weiblich] (Dropdown)
 
-ao20: gesfach5: : [infield = Geschlecht; männlich \| weiblich] (Dropdown)
+ao20: (gesfach5), [infield = Geschlecht; männlich - weiblich] (Dropdown)
 
 mv:
 
@@ -140,7 +135,7 @@ tr:
 
 GOTO D1_3
 
-hi:
+hi: Bitte Eingabefelder / Drop-downs linksbündig untereinander und die Zeilen ohne graue Schraffierung.
 
 \--------------------------------
 
@@ -149,7 +144,7 @@ D1_3
 
 tc:
 
-vn: inklnein; inklja; inklschu
+vn: inkl (inklnein / inklja / inklschu)
 
 qt: Mehrfachauswahl
 
@@ -157,23 +152,23 @@ hl:
 
 in:
 
-q: Unabhängig davon, ob bei Ihnen selbst ein Förderbedarf bestand oder nicht: Wurden Sie jemals in einer integrativ arbeitenden Klasse/Inklusionsklasse unterrichtet oder haben Sie eine Förderschule besucht?
+q: Unabhängig davon, ob bei Ihnen selbst ein Förderbedarf bestand oder nicht: Wurden Sie jemals in einer integrativ arbeitenden (Inklusions-)Klasse unterrichtet oder haben Sie eine Förderschule besucht?
 
-is: Kennzeichnend für eine integrativ arbeitende Klasse/Inklusionsklasse ist
+is: Kennzeichnend für eine integrativ arbeitende (Inklusions-)Klasse ist
 der gemeinsame Unterricht von Schüler\*innen mit und ohne sonderpädagogischen
 Förderbedarf.
+#{layout.BREAK}
 Bitte alles Zutreffende auswählen.
 
 it: 
 
 st:
 
-ao1: inklnein: : nein, weder noch [Exklusivkategorie]
+ao1: (inklnein): nein, weder noch [Exklusivkategorie]
 
-ao2: inklja: : Ja, ich wurde in einer integrativ arbeitenden
-Klasse/Inklusionsklasse unterrichtet.
+ao2: (inklja): Ja, ich wurde in einer integrativ arbeitenden (Inklusions-)Klasse unterrichtet.
 
-ao3: inklschu: : Ja, ich war auf einer Förderschule.
+ao3: (inklschu): Ja, ich war auf einer Förderschule.
 
 mv:
 
@@ -200,11 +195,11 @@ hi:
 D1_4 
 ==
 
-tc: IF vsbstyp= 10 \| 11 \| vausbja=3
+tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
 vn: vausbzpjo; vausbzpmo
 
-qt: offene Angabe (nebeneinander)
+qt: offene Angabe 
 
 hl:
 
@@ -218,9 +213,9 @@ it:
 
 st:
 
-ao1: (vausbzpjo) Eingabefeld, 4 Stellen; 1950-2020; Präfix: [infield = Jahr; number]
+ao1: (vausbzpjo), Präfix: [infield = Jahr; number]
 
-ao2: (vausbzpmo): Textfeld, 15 Zeichen; Präfix: [infield = Monat]
+ao2: (vausbzpmo), Präfix: [infield = Monat; number]
 
 mv:
 
@@ -228,9 +223,14 @@ ka:
 
 vc:
 
-av: number: vierstellig : 1950 TO 2020
+av1: (vausbzpjo): number 4 Stellen; 1950 TO 2020
 
-kh: (vausbzpjo) Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 bis 2020).
+av2: (vausbzpmo): number 2 Stellen; 1 bis 12
+
+kh1: (vausbzpjo): Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 bis 2020).
+
+kh2: (vausbzpmo): Bitte geben Sie den Monat des Abschlusses Ihrer (letzten) Berufsausbildung an (1 bis 12).
+
 
 fv:
 
@@ -249,9 +249,9 @@ hi:
 D1_5 
 ==
 
-tc: IF vsbstyp= 10 \| 11 \| vausbja=3
+tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
-vn: vausberuf, vausberufo
+vn: vausberufo
 
 qt: offene Angabe
 
@@ -267,7 +267,7 @@ it:
 
 st:
 
-ao1: (vausberuf): 75 Zeichen; Präfix: [Infield = gelernter Beruf; (vausberufo)];
+ao1: (vausberufo), Präfix: [Infield = gelernter Beruf; 75 Zeichen]
 
 mv:
 
