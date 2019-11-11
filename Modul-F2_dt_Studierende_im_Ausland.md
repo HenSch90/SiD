@@ -2,8 +2,7 @@
 F2_6
 ====
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: ainfasia; ainfbmsia; ainfbjsia; ainfemsia; ainfejsia
 
@@ -22,7 +21,10 @@ it:
 
 st:
 
-Drop-Down-Menü:
+Art des Auslandsaufenthalts: 
+Drop-Down-Menü
+
+ao1 (ainfasia): 0: : Art des Auslandsaufenthalts 
 
 ao1 (ainfasia): 1: : Auslandsstudium mit angestrebtem Abschluss im Ausland
 
@@ -36,21 +38,27 @@ ao5 (ainfasia): 5: : Studienreise
 
 ao6 (ainfasia): 6: : Projektarbeit
 
-ao7 (ainfasia): 7: : Summerschool
+ao7 (ainfasia): 7: : Summer School
 
 ao8 (ainfasia): 8: : sonstiger Aufenthalt
 
-Nebeneinander angeordnete Drop-Down-Menüs: Start des Auslandsaufenthalts
 
-ao9 (ainfbmsia): : Monat: (Januar \| … \| Dezember)
+Nebeneinander angeordnete Drop-Down-Menüs
 
-ao10 (ainfbjsai): : Jahr: (2020 \| 2019 \| … \| 2000 \| vor 2000)
+Start des Auslandsaufenthalts:
 
-Nebeneinander angeordnete Drop-Down-Menüs: vrstl. Ende des Auslandsaufenthalts
+ao9 (ainfbmsia): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao11 (ainfemsia): : Monat: (Januar \| … \| Dezember)
+ao10 (ainfbjsai): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
 
-ao12 (ainfejsia): Jahr: (2030 \| 2029 \| … \| 2000 \| vor 2000)
+
+Nebeneinander angeordnete Drop-Down-Menüs
+
+voraussichtliches Ende des Auslandsaufenthalts:
+
+ao11 (ainfemsia): : Monat: (Monat \ Januar \| … \| Dezember)
+
+ao12 (ainfejsia): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030)
 
 mv:
 
@@ -81,9 +89,9 @@ hi:
 F2_7
 ====
 
-tc: IF ainfasia=3-8 OR ainfasia=1-2 AND hsstand=1 \| hsstandbl=1-16
+tc:
 
-vn: hsstandla; hsstandlao; hsstandst; hsstandsto; hsstandhs; hsstandhso
+vn: hsstandlao; hsstandsto; hsstandhso
 
 qt: offene Angabe
 
@@ -91,8 +99,8 @@ hl:
 
 in:
 
-q: Bitte tragen Sie das Land, den Ort sowie ggf. die Hochschule ein, an der Sie
-aktuell im Ausland studieren.
+q: Wo führen Sie Ihren aktuellen studienbezogenen Auslandsaufenthalt durch? 
+Bitte tragen Sie das Land, den Ort beziehungsweise die Hochschule ein.
 
 is:
 
@@ -100,11 +108,11 @@ it:
 
 st:
 
-ao1: 100 Stellen, Präfix (hsstandla; hsstandlao), Suffix: Land
+ao1: 100 Stellen, Präfix (hsstandlao), Suffix: Land
 
-ao2: 100 Stellen, Präfix (neue Variablen erforderlich), Suffix: Ort
+ao2: 100 Stellen, Präfix (hsstandsto), Suffix: Ort
 
-ao1: 300 Stellen, Präfix (hsstandhs; hsstandhso), Suffix: Hochschule:
+ao1: 300 Stellen, Präfix (hsstandhso), Suffix: Hochschule:
 
 mv:
 
@@ -131,12 +139,10 @@ hi:
 F2_8
 ====
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: bdefinsia; bdekensia; bdesprsia; bdefamssia; bdefamlsia; bdetecsia;
-bdeoeksia; bdepolsia; bdequasia; bdearbsia, es fehlen noch zwei Variablen
-(„anderer Grund, und zwar“ und offene Angabe)
+bdeoeksia; bdepolsia; bdequasia; bdearbsia; bdeandsia; bdeandosia
 
 qt: Einfachauswahlmatrix
 
@@ -146,35 +152,35 @@ in:
 
 q: Warum haben Sie sich für dieses Land entschieden?
 
-is: Bitte geben Sie den jeweils zutreffenden Skalenwert an.
+is:
 
 Überschrift: Ich habe mich für das Studienland entschieden …
 
-it1 (bdefinsia): weil ein Studium in diesem Land meinen finanziellen
+it1 (bdefinsia): …weil ein Studium in diesem Land meinen finanziellen
 Möglichkeiten entspricht.
 
-it2 (bdekensia): um dieses Land kennenzulernen/weil mich die Geschichte und
+it2 (bdekensia): …um dieses Land kennenzulernen/weil mich die Geschichte und
 Kultur des Landes interessiert.
 
-it3 (bdesprsia): um eine Sprachkenntnisse zu vertiefen.
+it3 (bdesprsia): …um eine Sprachkenntnisse zu vertiefen.
 
-it4 (bdefamssia): weil Freunde/Verwandte in diesem Land studieren/studiert
+it4 (bdefamssia): …weil Freunde/Verwandte in diesem Land studieren/studiert
 haben.
 
-it5 (bdefamlsia): weil Freunde/Verwandte in diesem Land leben/gelebt haben.
+it5 (bdefamlsia): …weil Freunde/Verwandte in diesem Land leben/gelebt haben.
 
-it6 (bdetecsia): weil dieses Land ein hochtechnisiertes Land ist.
+it6 (bdetecsia): …weil dieses Land ein hochtechnisiertes Land ist.
 
-it7 (bdeoeksia): wegen der wirtschaftlichen Lage in diesem Land.
+it7 (bdeoeksia): …wegen der wirtschaftlichen Lage in diesem Land.
 
-it8 (bdepolsia): wegen der politischen Lage in diesem Land.
+it8 (bdepolsia): …wegen der politischen Lage in diesem Land.
 
-it9 (bdequasia): wegen der Lebensqualität in diesem Land.
+it9 (bdequasia): …wegen der Lebensqualität in diesem Land.
 
-it10 (bdearbsia): aufgrund der Möglichkeiten, nach Studienabschluss in diesem
+it10 (bdearbsia): …aufgrund der Möglichkeiten, nach Studienabschluss in diesem
 Land zu arbeiten.
 
-it11 (Variable fehlt ): anderer Grund
+it11 (bdeandsia): …Anderer Grund, und zwar: [bdeandosia]
 
 st:
 
@@ -188,7 +194,7 @@ ao4: 4
 
 ao5: 5: : trifft voll und ganz zu
 
-ao6: (Variable für offene Angabe ): 100 Zeichen, Prefix (anderer Grund)
+ao6: (bdeandosia): 100 Zeichen, Prefix (Anderer Grund, und zwar:)
 
 mv:
 
@@ -217,8 +223,7 @@ hi: Items bitte zufällig rotieren.
 F2_9
 ====
 
-tc: IF (nur für Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: ainfastsia
 
@@ -228,7 +233,7 @@ hl:
 
 in:
 
-q: Beabsichtigen Sie im Ausland einen Abschluss zu erwerben?
+q: Beabsichtigen Sie im Ausland einen Studienabschluss zu erwerben?
 
 is:
 
@@ -238,9 +243,9 @@ st:
 
 ao1: 1: : nein
 
-ao2: 2: : ja, sowohl an der ausländischen Hochschule als auch der deutschen.
+ao2: 2: : ja, sowohl an der ausländischen als auch der deutschen Hochschule.
 
-ao3: 3: : Ja, nur an der ausländischen Hochschule.
+ao3: 3: : ja, nur an der ausländischen Hochschule
 
 mv:
 
@@ -269,8 +274,7 @@ hi:
 F2_10
 =====
 
-tc: IF (nur für Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: ainfcpsia; ainfcp1osia; ainfcp2osia
 
@@ -326,8 +330,7 @@ hi:
 F2_11
 ==
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: aproselbsia; aproerassia; aproapeusia; aprodaadsia; apropadsia;
 apropromossia; aprodthssia; aprogahssia; aproanprsia; aproanprosia
@@ -346,7 +349,7 @@ it:
 
 st:
 
-ao1 (aproselbsia): : nein, ich habe den Aufenthalt selbst organisiert
+ao1 (aproselbsia): : nein, habe den Aufenthalt selbst organisiert
 (Exklusivkategorie)
 
 ao2 (aproerassia): : ja, ERASMUS+, ERASMUS
@@ -355,15 +358,15 @@ ao3 (aproapeusia): : ja, anderes EU-Programm
 
 ao4 (aprodaadsia): : ja, DAAD-Programm
 
-ao5 (apropadsia): : Pädagogischer Austauschdienst (PAD)/COMENIUS
+ao5 (apropadsia): : ja, Pädagogischer Austauschdienst (PAD)/COMENIUS
 
-ao6 (apropromossia): : PROMOS-Stipendium
+ao6 (apropromossia): : ja, PROMOS-Stipendium
 
 ao7 (aprodthssia): : ja, Programm meiner Hochschule in Deutschland
 
 ao8 (aprogahssia): : ja, Programm meiner Gasthochschule im Ausland
 
-ao9 (aproanprsia): : ja, anderes Programm offene Angabe: 100 Stellen, Präfix
+ao9 (aproanprsia): : ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix
 [aproanprosia], Suffix:und zwar:
 
 mv:
@@ -393,8 +396,7 @@ hi:
 F2_12
 =====
 
-tc: IF (nur für Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: afinelt; afinpar; afinbaf; afinjobv; afinjobw; afinstip; afinand
 
@@ -414,7 +416,7 @@ st:
 
 ao1 (afinelt): : Eltern
 
-ao2 (afinpar): : Parnter\*in
+ao2 (afinpar): : Parnter*in
 
 ao3 (afinbaf): : BAföG
 
@@ -454,8 +456,7 @@ hi:
 F2_13
 =====
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: akontdeustsia; akontgastsia; akonteinheimsia; akontintstsia
 
@@ -465,7 +466,7 @@ hl:
 
 in:
 
-q: Wie häufig unterhalten Sie sich während Ihres Auslandsaufenthalts mit …
+q: Wie häufig haben Sie während Ihres Auslandsaufenthalts Kontakt mit…
 
 is:
 
@@ -484,7 +485,7 @@ ao1: 1: : nie
 
 ao2: 2: : selten
 
-ao3: 3: : manchma
+ao3: 3: : manchmal
 
 ao4: 4: : häufig
 
@@ -517,8 +518,7 @@ hi:
 F2_14
 =====
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: asprachlandsia; asprachdeutsia; asprachandsia; asprachandosia
 
@@ -528,16 +528,15 @@ hl:
 
 in:
 
-q: Wie häufig sprechen Sie während Ihres Auslandsaufenthalts die
-folgenden Sprachen
+q: Wie häufig sprechen Sie während Ihres Auslandsaufenthalts die folgenden Sprachen?
 
 is:
 
-it1 (asprachlandsia): Landessprache
+it1 (asprachlandsia): Landessprache des Gastlandes
 
 it2 (asprachdeutsia): Deutsch
 
-it3 (asprachandsia): andere Sprache, und zwar (offene Angabe: 50 Stellen, Präfix
+it3 (asprachandsia): Andere Sprache, und zwar (offene Angabe: 50 Stellen, Präfix
 [asprachandosia], Suffix
 
 st:
@@ -579,8 +578,7 @@ hi:
 F2_15
 =====
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: azufskein; azufskstu; azufsklehr; azuflernerf; azufinsg
 
@@ -594,11 +592,11 @@ q: In Bezug auf Ihren Auslandsaufenthalt: Wie zufrieden sind Sie mit …
 
 is:
 
-it1 (azufskein): … dem sozialen Kontakt zu Einheimischen?
+it1 (azufskein): … dem Kontakt zu Einheimischen?
 
-it2 (azufskstu): … dem sozialen Kontakt zu Studierenden?
+it2 (azufskstu): … dem Kontakt zu Studierenden?
 
-it3 (azufsklehr): … dem sozialen Kontakt zu Lehrenden?
+it3 (azufsklehr): … dem Kontakt zu Lehrenden?
 
 it4 (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
 
@@ -645,8 +643,7 @@ hi:
 F2_16
 =====
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: azufleistanf; azuforgaufw; azuffinanzaufw
 
@@ -660,11 +657,11 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1 (azufleistanf): … die aktuellen Leistungsanforderungen?
+it1 (azufleistanf): … die Leistungsanforderungen an Ihrer Hochschule?
 
-it2 (azuforgaufw): … den aktuellen organisatorischen Aufwand?
+it2 (azuforgaufw): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it3 (azuffinanzaufw): … den aktuellen finanziellen Aufwand?
+it3 (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
@@ -705,8 +702,7 @@ hi:
 F2_17
 =====
 
-tc: IF (nur für dt. Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: aeempfsia
 
@@ -717,8 +713,7 @@ hl:
 in:
 
 q: Ausgehend von Ihren bisherigen Erfahrungen:
-
-Würden Sie empfehlen, im Rahmen eines Studiums ins Ausland zu gehen?
+Würden Sie einen studienbezogenen Auslandsaufenthalt empfehlen?
 
 is:
 
@@ -763,10 +758,9 @@ hi:
 F2_18
 =====
 
-tc: IF (nur für Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
-vn: bdedarlosia; bdedarhsosia
+vn: bdedarlosia; bdedarstosia; bdedarhsosia 
 
 qt: Einfachauswahl, offene Angabe
 
@@ -774,7 +768,7 @@ hl:
 
 in:
 
-q:  Wenn Sie die freie Wahl hätten, wo würden Sie am liebsten studieren?
+q:  Wenn Sie nochmal vor der Wahl stünden: In welchem Land, in welcher Stadt beziehungsweise an welcher Hochschule hätten Sie am liebsten Ihren studienbezogenen Auslandsaufenthalt durchgeführt?
 
 is:
 
@@ -785,7 +779,10 @@ st:
 ao1:  Land: (offene Angabe: 100 Zeichen, Präfix [bdedarlosia],
 Suffix:
 
-ao2: Ort/Hochschule: (offene Angabe: 100 Zeichen, Präfix
+ao2: Stadt (offene Angabe: 100 Zeichen, Präfix
+[bdedarstosia], Suffix:
+
+ao3: Hochschule: (offene Angabe: 100 Zeichen, Präfix
 [bdedarhsosia], Suffix:
 
 mv:
@@ -890,14 +887,12 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 ( intling1sia): Ich kann in der Landessprache über vertraute Themen sprechen
-und persönliche Meinungen äußern.
+it1 (intling1sia): Ich kann in der Landessprache über vertraute Themen sprechen
+und meine persönliche Meinung äußern.
 
-it2 (intling2sia): Ich verstehen die wichtigsten Punkte in Radio- und
-Fernsehprogrammen, die in der Landessprache gesendet warden.
+it2 (intling2sia): Ich verstehe die wichtigsten Punkte in den einheimischen Radio- und Fernsehprogrammen.
 
-it3 (intling3sia): Ich kann einheimische Zeitungsartikel lesen und vollständig
-verstehen.
+it3 (intling3sia): Ich kann einheimische Zeitungsartikel lesen und verstehen.
 
 st:
 
