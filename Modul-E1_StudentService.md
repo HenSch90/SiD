@@ -372,8 +372,8 @@ hi:
 
 \--------------------------------
 
-E1_6 / E1_6b
-============
+E1_6b
+===
 
 tc:
 
@@ -453,14 +453,111 @@ ao5: 5: in hohem Maße
 
 mv:
 
-ka1: (it1, it2, it3): finanzierungsbezogene Themen
+vc: SHOW ibebsln AND ibebssu AND ibebsth AND ibebspa AND ibebsbh AND ibebsat AND ibebsrb IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
 
-ka2: (it4, it5, it6, it7): persönliche Themen
+av:
 
-ka3: (it8, it9, it10, it11, it12, it13, it14, it15): studienbezogene Themen
+kh:
 
-ka4: (it16, it17, it18, it19, it20, it21, it22): beeinträchtigungsbezogene
-Themen
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO E1_7
+
+hi: 
+
+\--------------------------------
+
+E1_6
+===
+tc:
+
+vn: ibedsfin; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedaldr; ibedvbew;
+ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln;
+ibebssu; ibebsth; ibebspa; ibebsbh; ibebsat; ibebsrb
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wir möchten nun gerne noch etwas mehr über Ihre Situation erfahren:
+
+Inwieweit hatten Sie in den letzten zwölf Monaten Fragen bis hin zu Schwierigkeiten hinsichtlich folgender Themen?
+
+is:
+
+it1: (ibedsfin): Finanzierung des Studiums
+
+it2: (ibedkv): Krankenversicherung
+
+it3: (ibedafin): Finanzierung eines studienbezogenen Auslandsaufenthalts
+
+it4: (ibedpart): Partnerschaftsprobleme
+
+it5: (ibedfamu): Probleme im familiären Umfeld
+
+it6: (ibeddep): depressive Verstimmungen
+
+it7: (ibedaldr): Probleme mit Alkohol oder anderen Drogen
+
+it8: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
+
+it9: (ibedvbki): Vereinbarkeit von Studium und Kind(ern)
+
+it10: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer
+Krankheit
+
+it11: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
+
+it12: (ibedaoz): Arbeitsorganisation, Zeitmanagement
+
+it13: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
+
+it14: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
+
+it15: (ibedabs): Studienabschlussprobleme
+
+it16: (ibebsln): Nachteilsausgleiche bei Leistungsnachweisen
+
+it17: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten
+Studienunterbrechungen
+
+it18: (ibebsth): Organisation und Nutzung von technischen Hilfsmitteln
+
+it19: (ibebspa): Organisation und Nutzung von personellen Assistenzen
+
+it20: (ibebsbh): Umgang mit baulichen Hürden, Raumverlegungen und Umbauten
+
+it21: (ibebsat): Aneignung bedarfsgerechter Arbeitstechniken
+
+it22: (ibebsrb): Durchsetzung von Ansprüchen, Rechtsberatung
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: in hohem Maße
+
+mv:
+
+t1: (it1, it2, it3): finanzierungsbezogene Themen
+
+t2: (it4, it5, it6, it7): persönliche Themen
+
+t3: (it8, it9, it10, it11, it12, it13, it14, it15): studienbezogene Themen
+
+t4: (it16, it17, it18, it19, it20, it21, it22): beeinträchtigungsbezogene Themen
 
 vc: SHOW ibebsln AND ibebssu AND ibebsth AND ibebspa AND ibebsbh AND ibebsat AND ibebsrb IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
 
@@ -474,17 +571,9 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO E1_7
 
-IF ((ibedsfin \| … \| ibedabs bzw. ibebsrb \> 1) & ibedno =0) GOTO E1_7
-
-ELSE E1_9
-
-hi: Skalierung bitte bei der Teilüberschrift „Studienbezogene Themen“ nochmals
-einblenden; Items des letzten Themenbereichs (Beeinträchtigungsbezogene Themen)
-bitte nur für Studierende mit Beeinträchtigung einblenden (siehe unten).;
-
-Bitte die Teilüberschriften nach oben optisch absetzen
+hi:
 
 \--------------------------------
 
