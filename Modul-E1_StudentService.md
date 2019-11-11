@@ -21,7 +21,7 @@ it1: (moftfrue): zum Frühstück
 
 it2: (moftvorm): zu einer Zwischenmahlzeit am Vormittag
 
-it3: (moftmitt): zum MIttagessen
+it3: (moftmitt): zum Mittagessen
 
 it4: (moftnach): zu einer Zwischenmahlzeit am Nachmittag
 
@@ -106,7 +106,7 @@ it1: (mzufwart): Wartezeiten
 
 it1: (mzufserv): Service
 
-it1: (mzufverl): Zeitliche Vereinbarkeit mit Lehr-/Veranstaltungsplan
+it1: (mzufverl): zeitliche Vereinbarkeit mit Lehr-/Veranstaltungsplan
 
 it1: (mzuföff): Öffnungszeiten
 
@@ -191,7 +191,7 @@ nehme.
 
 it12: (inderplan): Ich orientiere mich an einem Ernährungsplan.
 
-it13: (inderzuha): Ich ernähre mich so, wie ich es von zuhause gewöhnt bin.
+it13: (inderzuha): Ich ernähre mich so, wie ich es von Zuhause gewöhnt bin.
 
 it14: (inderprob): Ich probiere gerne Speisen aus anderen Kulturkreisen aus.
 
@@ -295,10 +295,12 @@ hv:
 
 fo:
 
-tr: IF (Kind = ja OR IF Beeinträchtigung = ja OR IF Erwerbstätigkeit = ja OR
-Pflege von Angehörigen = ja) GOTO E1_5
+tr: GOTO E1_5 IF dkinja==2 
+OR gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1 
+OR eaktsens==2 OR eaktsens==3 OR eaktsens==4 
+OR pflegang==2
 
-ELSE GOTO E1_6
+ELSE GOTO E1_6 (zusätzliche Kondition einblenden für responsive Nutzer\*innen -> E1_6b)
 
 hi:
 
@@ -346,13 +348,11 @@ mv:
 
 ka:
 
-vc: SHOW it1 IF Kind = ja
+vc: SHOW szufverkin IF dkinja==2
+SHOW szufverbeein IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
+SHOW szufvererwerb IF eaktsens==2 OR eaktsens==3 OR eaktsens==4
+SHOW szufvercare IF pflegang==2
 
-SHOW it2 IF Beeinträchtigung = ja
-
-SHOW it3 IF Erwerbstätigkeit = ja
-
-SHOW it4 IF Pflege von Angehörigen = ja
 
 av:
 
@@ -364,21 +364,22 @@ hv:
 
 fo:
 
-tr: GOTO E1_6
+<zofar:transition condition="width.value lt 768" target="E1_6b"/> ----> responsive Nutzer\*innen
+
+<zofar:transition target="E1_6"/>
 
 hi:
 
 \--------------------------------
 
-E1_6
-====
+E1_6 / E1_6b
+============
 
-tc: Hier fehlt Filter für it16 bis it22 – nur für Studierende mit
-Beeinträchtigung!
+tc:
 
 vn: ibedsfin; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedaldr; ibedvbew;
 ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln;
-ibebssu; ibebsth; ibebspa; ibebsbh; ibebsat; ibebsrb; ibedno
+ibebssu; ibebsth; ibebspa; ibebsbh; ibebsat; ibebsrb
 
 qt: Einfachauswahlmatrix
 
@@ -438,9 +439,6 @@ it21: (ibebsat): Aneignung bedarfsgerechter Arbeitstechniken
 
 it22: (ibebsrb): Durchsetzung von Ansprüchen, Rechtsberatung
 
-it23: (ibedno): Ich hatte zu keinem der genannten Themenbereiche Fragen bis hin
-zu Schwierigkeiten oder Belastungen. (Exklusivkategorie)
-
 st:
 
 ao1: 1: gar nicht
@@ -453,25 +451,18 @@ ao4: 4
 
 ao5: 5: in hohem Maße
 
-ao6: 0: nicht ausgewählt (nur ibedno)
-
-ao7: 1: ausgewählt (nur ibedno)
-
 mv:
 
-ka1: (it1, it2, it3): Finanzierungsbezogene Themen
+ka1: (it1, it2, it3): finanzierungsbezogene Themen
 
-ka2: (it4, it5, it6, it7): Persönliche Themen
+ka2: (it4, it5, it6, it7): persönliche Themen
 
-ka3: (it8, it9, it10, it11, it12, it13, it14, it15): Studienbezogene Themen
+ka3: (it8, it9, it10, it11, it12, it13, it14, it15): studienbezogene Themen
 
-ka4: (it16, it17, it18, it19, it20, it21, it22): Beeinträchtigungsbezogene
+ka4: (it16, it17, it18, it19, it20, it21, it22): beeinträchtigungsbezogene
 Themen
 
-vc: Wenn **gartmob-gartka** auf [SDK-gub\#01] (Grundprogramm) mindestens einmal
-=1 [Identifikation Studierende mit Beeinträchtigung]; dann **Einblendung**
-zusätzlicher Items Themenbereich **Beeinträchtigungsbezogene Themen** ibebsln;
-ibebssu; ibebsth; ibebspa; ibebsbh; ibebsat; ibebsrb
+vc: SHOW ibebsln AND ibebssu AND ibebsth AND ibebspa AND ibebsbh AND ibebsat AND ibebsrb IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
 
 av:
 
