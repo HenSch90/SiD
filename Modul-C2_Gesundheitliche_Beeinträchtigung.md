@@ -14,7 +14,7 @@ hl:
 
 in:
 
-q1: Inwiefern wirkt sich Ihre Beeinträchtigung bzw. Ihre Beeinträchtigungen auf Ihr aktuelles Studium aus?
+q: Inwiefern wirkt sich Ihre Beeinträchtigung bzw. Ihre Beeinträchtigungen auf Ihr aktuelles Studium aus?
 
 is:
 
@@ -53,10 +53,6 @@ ao5: 5: 5: sehr stark
 mv: -13: : gar nicht
 
 ka:
-
-vc1: SHOW q1 IF h_gartcount = 1
-
-vc2: SHOW q2 IF h_gartcount > 1
 
 vc3: SHOW it1 IF gartmob=1
 
@@ -141,7 +137,7 @@ Gebärdensprachdolmetscher\*in)
 ao10 (bedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen
 Reader, Braille-Zeile, FM-Anlage)
 
-ao11 (bedand): Anderes, und zwar: [[bedando] 250 Zeichen]
+ao11 (bedand): Anderes, und zwar: [bedando] [offenes Eingabefeld; 250 Zeichen]
 
 mv:
 
@@ -440,17 +436,14 @@ q: In welchen Bereichen haben Sie um individuelle Anpassungen/Absprachen gebeten
 
 is: Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Dozent*innen.
 
-it1: (ntabau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B.
-Zugänglichkeit und Orientierung, Sicht-/Hörverhältnisse, Rückzugsräume)
+it1: (ntabau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B. Sicht-/Hörverhältnisse)
 
-it2: (ntaorg): Studienorganisation, Lehre und Lernen (z. B. unflexibler
-Stundenplan, Gestaltung von Lehrveranstaltungen, Gruppenarbeit, Auslandsstudium,
-Praktika)
+it2: (ntaorg): Studienorganisation, Lehre und Lernen (z. B. Gestaltung von Lehrveranstaltungen)
 
 it3: (ntapru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art
-der Prüfungen, zeitliche Vorgaben)
+der Prüfungen)
 
-it4: (ntaand): Anderer Studienbereich, und zwar: [(ntaando): 250 Zeichen]
+it4: (ntaand): Anderer Studienbereich, und zwar: [ntaando] [offenes Eingabefeld; 250 Zeichen]
 
 st:
 
@@ -482,6 +475,30 @@ GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntapru=1 OR ntaand=1
 
 GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
 
+ODER
+
+        <zofar:transitions>
+            <zofar:transition target="C2_9" condition="zofar.asNumber(ntabau)==2 or zofar.asNumber(ntaorg)==2 or zofar.asNumber(ntapru)==2 or zofar.asNumber(ntaand)==2"/>
+            <zofar:transition target="C2_11" condition="zofar.asNumber(ntabau)==3 or zofar.asNumber(ntaorg)==3 or zofar.asNumber(ntapru)==3 or zofar.asNumber(ntaand)==3"/>
+	        <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
+			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
+			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
+			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
+			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_12" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
+		</zofar:transitions>
+
+
 hi:
 
 \--------------------------------
@@ -504,21 +521,17 @@ Anpassungen/Nachteilsausgleiche?
 
 is:
 
-it1: (ntahbau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B.
-Zugänglichkeit und Orientierung, Sicht-/Hörverhältnisse, Rückzugsräume)
+it1: (ntahbau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B. Sicht-/Hörverhältnisse)
 
-it2: (ntahorg): Studienorganisation, Lehre und Lernen (z. B. unflexibler
-Stundenplan, Gestaltung von Lehrveranstaltungen, Gruppenarbeit, Auslandsstudium,
-Praktika)
+it2: (ntahorg): Studienorganisation, Lehre und Lernen (z. B. Gestaltung von Lehrveranstaltungen)
 
-it3: (ntahpru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art
-der Prüfungen, zeitliche Vorgaben)
+it3: (ntahpru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art der Prüfungen)
 
-it4: (ntahand): Anderer Studienbereich, und zwar: [(ntahando), 250 Zeichen]
+it4: (ntahand): Anderer Studienbereich, und zwar: [ntahando] [Offenes Eingabefeld; 250 Zeichen]
 
 st:
 
-ao1: 1: 1: sehr hilfreich
+ao1: 1: 1: gar nicht hilfreich
 
 ao2: 2: 2
 
@@ -526,7 +539,7 @@ ao3: 3: 3
 
 ao4: 4: 4
 
-ao5: 5: 5: gar nicht hilfreich
+ao5: 5: 5: sehr hilfreich
 
 ka:
 
@@ -672,7 +685,7 @@ hl:
 
 in:
 
-q1: Weshalb wurden Ihre beantragten Nachteilsausgleiche bzw. individuellen Anpassungen/Absprachen nicht bewilligt?
+q: Weshalb wurden Ihre beantragten Nachteilsausgleiche bzw. individuellen Anpassungen/Absprachen nicht bewilligt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -690,7 +703,7 @@ ao3 (kbwert): Ersatzleistung wurde nicht als gleichwertig angesehen.
 ao4 (kbbev): Individuelle Anpassung/Absprache bzw. Nachteilsausgleich wird als
 Bevorzugung angesehen.
 
-ao5 (kblehr): Lehrende\*r war nicht dazu bereit, Lehrroutinen zu ändern.
+ao5 (kblehr): Lehrende*r war nicht dazu bereit, Lehrroutinen zu ändern.
 
 ao6 (kbtech): Aufgrund technischer Probleme (z. B. fehlende Ausstattung).
 
@@ -704,43 +717,13 @@ ao9 (kbzeit): Nachteilsausgleiche und/oder individuellen Anpassungen/Absprachen 
 
 ao10 (kband): Anderer Grund, und zwar: [(kbando), 250 Zeichen]
 
-ao12 (kbunbe): Ist mir nicht bekannt.
+ao12 (kbunbe): mir nicht bekannt
 
-ao13 (kbmem): Weiß ich nicht mehr.
+ao13 (kbmem): weiß ich nicht
 
 mv:
 
 ka:
-
-vc1: SHOW q1 IF ntabau=3 AND ntaorg<>3 AND ntapru<>3 AND ntaand<>3
-
-vc2: SHOW q2 IF ntaorg=3 AND ntabau<>3 AND ntapru<>3 AND ntaand<>3
-
-vc3: SHOW q3 IF ntapru=3 AND ntabau<>3 AND ntaorg<>3 AND ntaand<>3
-
-vc4: SHOW q4 IF ntaand=3 AND ntabau<>3 AND ntaorg<>3 AND ntapru<>3
-
-vc5: SHOW q5 IF ntabau=3 AND ntaorg=3 AND ntapru<>3 AND ntaand<>3
-
-vc6: SHOW q6 IF ntabau=3 AND ntapru=3 AND ntaorg<>3 AND ntaand<>3
-
-vc7: SHOW q7 IF ntabau=3 AND ntaand=3 AND ntaorg<>3 AND ntapru<>3
-
-vc8: SHOW q8 IF ntaorg=3 AND ntapru=3 AND ntabau<>3 AND ntaand<>3
-
-vc9: SHOW q9 IF ntaorg=3 AND ntaand=3 AND ntabau<>3 AND ntapru<>3
-
-vc10: SHOW q10 IF ntapru=3 AND ntaand=3 AND ntabau<>3 AND ntaorg<>3
-
-vc11: SHOW q11 IF ntabau=3 AND ntaorg=3 AND ntapru=3 AND ntaand=3
-
-vc12: SHOW q12 IF ntabau=3 AND ntapru=3 AND ntaand=3 AND ntaorg<>3
-
-vc13: SHOW q13 IF ntaorg=3 AND ntapru=3 AND ntaand=3 AND ntabau<>3
-
-vc14: SHOW q14 IF ntabau=3 AND ntaorg=3 AND ntapru=3 AND ntaand<>3
-
-vc15: SHOW q15 IF ntabau=3 AND ntaorg=3 AND ntaand=3 AND ntapru<>3
 
 av:
 
