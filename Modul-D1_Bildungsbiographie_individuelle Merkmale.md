@@ -314,7 +314,7 @@ it:
 
 st:
 
-ao1: (vausbnote): : Eingabefeld; 3 Stellen; Präfix: [infield = Note (z. B. 2,5); (vausbnoteo); number]
+ao1: (vausbnote): : Eingabefeld; 3 Stellen; Präfix: [infield = Abschlussnote (z. B. 2,5); (vausbnoteo); number]
 
 ao2: -11: : Ich habe keine Note erhalten.
 
@@ -425,7 +425,7 @@ tr:
 
 GOTO D1_8
 
-hi: Items bitte zufällig rotieren
+hi: Items bitte zufällig rotieren mit Ausnahme von it14 "Anderes und zwar"; it14 bitte am Ende der Itemliste verankern.
 
 \--------------------------------
 
@@ -452,7 +452,7 @@ it1: (hswzul): keine Zulassung an Wunschhochschule
 
 it2: (hswtrad): Tradition und Ruf der Hochschule
 
-it3: (hswkont): persönlicher Kontakt zu Freunden und/oder Familie vor Ort
+it3: (hswkont): persönlicher Kontakt zu Freund*innen und/oder Familie vor Ort
 
 it4: (hswatt): Attraktivität von Stadt und Umgebung
 
@@ -516,7 +516,7 @@ GOTO D2_6 IF mastersplit=1, 2, 7, 8, 14
 GOTO A_44 IF mastersplit=3, 4, 9, 10
 
 
-hi: Items bitte zufällig rotieren
+hi: Items bitte zufällig rotieren mit Ausnahme von it15 "Anderes und zwar"; it15 bitte am Ende der Itemliste verankern.
 
 \--------------------------------
 
@@ -545,7 +545,7 @@ ao1: 1: : Vollzeit
 
 ao2: 2: : Teilzeit
 
-ao3: 3: : Vollzeitstudiengang mit individueller Teilzeitregelung.
+ao3: 3: : Vollzeitstudiengang mit individueller Teilzeitregelung
 
 ao4: 4: : Vollzeitstudiengang inoffiziell als Teilzeitstudium
 
@@ -646,9 +646,11 @@ Hochschulabschluss erworben haben?
 
 is:
 
-it1: (sabserbl): : [infield = Bundesland] (Dropdown)
+it1: (sabserbl): : [Drop-Down: Bundesland]
 
 st:
+
+ao0 (sabserbl): 0: : Bundesland
 
 ao1 (sabserbl): 1: : Baden-Württemberg
 
@@ -732,7 +734,7 @@ it:
 
 st:
 
-ao1: (sabserhs1): : [infield = Hochschule] (Dropdown)
+ao1: (sabserhs1): : [Drop-Down: Hochschule]
 
 ao2: (sabserhs2): (offene Nennung): 100 Stellen; Präfix: [infield = Hochschule; sabserhs2]; 
 
@@ -865,7 +867,7 @@ tc:
 
 vn: absterm
 
-qt: Dropdown-Menü
+qt: Drop-Down-Menü
 
 hl:
 
@@ -879,8 +881,8 @@ it:
 
 st:
 
-ao1: (absterm): : [infield = Semester; Sommersemester 2020 \| Wintersemester 2020/21 \| Sommersemester
-2021 \|Wintersemester 2021/22 \| Sommersemester 2022 \| … \| Sommersemester 2030] (Drop-Down)
+ao1: (absterm): : [Drop-Down-Menü: Semester; Sommersemester 2020 \| Wintersemester 2020/21 \| Sommersemester
+2021 \|Wintersemester 2021/22 \| Sommersemester 2022 \| … \| Sommersemester 2030]
 
 mv:
 
@@ -934,19 +936,19 @@ it4: (ssujaaz): … das Studium zwischenzeitlich unterbrochen?
 
 st:
 
-ao1: 0: : keinmal
+aox: 0: : Anzahl
 
-ao2: 1: : einmal
+ao1: 1: : einmal
 
-ao3: 2: : zweimal
+ao2: 2: : zweimal
 
-ao4: 3: : dreimal
+ao3: 3: : dreimal
 
-ao5: 4: : viermal
+ao4: 4: : viermal
 
-ao6: 5: : fünfmal und mehr
+ao5: 5: : fünfmal und mehr
 
-(ao1 bis ao5 als Dropdown; infield = Anzahl)
+(ao1 bis ao5 als Drop-Down; infield = Anzahl)
 
 mv:
 
@@ -1015,22 +1017,22 @@ it6: techepi): Benötigen Sie weitere Episoden?
 
 st:
 
-ao1: Prefix: Beginn: (Dropdown bitte absteigend - beginn01 – beginn05): Sommersemester 2020 \|
+ao1: Prefix: Beginn: (Dropdown bitte absteigend - beginn01 – beginn05): Semester \ Sommersemester 2020 \|
 Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
 
-ao2: Prefix: Ende: (Dropdown bitte absteigend - ende01 – ende05): Sommersemester 2020 \|
+ao2: Prefix: Ende: (Dropdown bitte absteigend - ende01 – ende05): Semester \ Sommersemester 2020 \|
 Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
 
 ao3: (offene Angabe): 100 Stellen; Präfix: [infield = Hochschule; hs01 – hs05];
 
 ao4: (offene Angabe) 60 Stellen; Präfix: [infield = Studienfach; fach01 – fach05]; 
 
-ao5: (Dropdown abs01 – abs05): infield = angestrebter Abschluss; Bachelor \| Bachelor (Lehramt) \| Master \|
+ao5: (Dropdown abs01 – abs05): angestrebter Abschluss \ Bachelor \| Bachelor (Lehramt) \| Master \|
 Master (Lehramt) \| Staatsexamen \| Staatsexamen (Lehramt) \| Diplom, Promotion
 \| kirchliche Abschlussprüfung \| künstlerische Abschlussprüfung \| anderer
 Abschluss (bspw. Ausländischer Abschluss \| Magister) \| kein Studienabschluss
 
-ao6: (Dropdown stand01 – stand05): infield = letzter Stand; begonnen \| abgeschlossen \| abgebrochen \|
+ao6: (Dropdown stand01 – stand05): letzter Stand \ begonnen \| abgeschlossen \| abgebrochen \|
 unterbrochen
 
 ao7: (techepi): 0: : nein
