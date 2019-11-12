@@ -146,7 +146,7 @@ tc:
 
 vn: inkl (inklnein / inklja / inklschu)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl vertikal
 
 hl:
 
@@ -385,9 +385,7 @@ it12: (stfwhelf): Möglichkeit anderen Menschen helfen zu können
 
 it13: (stfwver): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
 
-it14: (stfwand): Anderes, und zwar:
-
-it15: (offene Angabe) 120 Zeichen; Präfix: [stfwando]; Suffix: weiterer Grund:
+it14: (stfwand): Anderes, und zwar: [(stfwando), 100 Zeichen]
 
 st:
 
@@ -409,7 +407,7 @@ vc: SHOW stfwver IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=
 
 av:
 
-kh: Bitte geben Sie einen weiteren Grund an.
+kh: 
 
 fv:
 
@@ -428,19 +426,17 @@ hi: Items bitte zufällig rotieren mit Ausnahme von it14 "Anderes und zwar"; it1
 D1_8 
 ==
 
-tc: IF ssemhs=1 \| 2 \| 01 \| 02 (nur Studierende im 1. + 2. Fachsemester)
+tc: IF (ssemhs=1 | 2 | 01 | 02)
 
-vn: hswzul; hswtrad; hswkont; hswatt, hswreg; hswbed; hswruf; hswfach; hswrank;
-hswint; hsweng; hswsupp; hswbarr; hswtz, hswand; hswando
+vn: hsw (hswzul / hswtrad / hswkont / hswatt / hswreg / hswbed / hswruf / hswfach / hswrank / hswint / hsweng / hswsupp / hswbarr / hswtz / hswand / hswando)
 
-qt: Einfachauswahlmatrix / offene Angabe
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao / offene Angabe
 
 hl:
 
 in:
 
-q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihrer derzeitigen
-Hochschule?
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihrer derzeitigen Hochschule?
 
 is:
 
@@ -448,14 +444,13 @@ it1: (hswzul): keine Zulassung an Wunschhochschule
 
 it2: (hswtrad): Tradition und Ruf der Hochschule
 
-it3: (hswkont): persönlicher Kontakt zu Freund*innen und/oder Familie vor Ort
+it3: (hswkont): persönlicher Kontakt zu Freund\*innen und/oder Familie vor Ort
 
 it4: (hswatt): Attraktivität von Stadt und Umgebung
 
 it5: (hswreg): regionale Nähe zum Heimatort
 
-it6: (hswbed): günstige Lebensbedingungen am Hochschulort (Wohnen,
-Lebenshaltung)
+it6: (hswbed): günstige Lebensbedingungen am Hochschulort (Wohnen, Lebenshaltung)
 
 it7: (hswruf): guter Ruf der Lehrenden in meinem Fachgebiet
 
@@ -467,16 +462,13 @@ it10: (hswint): internationale Ausrichtung des Studienangebotes
 
 it11: (hsweng): Wunschstudiengang wird auf Englisch angeboten
 
-it12: (hswsupp): hochschulspezifische Unterstützungsangebote (Beratung,
-psychologische Betreuung, Vorsorge, “Brückenkurse”)
+it12: (hswsupp): hochschulspezifische Unterstützungsangebote (Beratung, psychologische Betreuung, Vorsorge, “Brückenkurse”)
 
 it13: (hswbarr): gute Ausstattung/Barrierefreiheit
 
 it14: (hswtz): Möglichkeit, in Teilzeit studieren zu können
 
-it15: (hswand): Anderes, und zwar:
-
-it16: (offene Angabe) 100 Zeichen; Präfix: [hswando]; Suffix: weiterer Grund:
+it15: (hswand): Anderes, und zwar: [(hswando), 100 Zeichen]
 
 st:
 
@@ -498,7 +490,7 @@ vc:
 
 av:
 
-kh: Bitte geben Sie einen weiteren Grund an.
+kh: 
 
 fv:
 
@@ -523,7 +515,7 @@ tc:
 
 vn: sartzeit
 
-qt: Einfachauswahl
+qt: Einfachauswahl vertikal
 
 hl:
 
@@ -561,10 +553,10 @@ hv:
 
 fo:
 
-tr: GOTO D1_7 IF (ssemhs=1 OR ssemhs=2) OR (ssemhs=01 OR ssemhs=02)
-    GOTO D1_7 IF ssemhs=MISSING
-    GOTO D2_6 IF (ssemhs>2 OR ssemhs>02) AND (mastersplit=1, 2, 7, 8, 14)
-    GOTO A_44 IF (ssemhs>2 OR ssemhs>02) AND (mastersplit=3, 4, 9, 10)
+tr: GOTO D1_7 IF ssemhs <= 6
+    GOTO D1_7 IF ssemhs = k. A. 
+    GOTO D2_6 IF (ssemhs >= 7) AND (mastersplit = 1, 2, 7, 8, 14)
+    GOTO A_44 IF (ssemhs >=7 OR) AND (mastersplit = 3, 4, 9, 10)
        
 
 hi:
@@ -575,7 +567,7 @@ hi:
 D1_10a 
 ===
 
-tc: IF sabsja=2 (nur Studierende mit vorherigem Hochschulabschluss)
+tc: IF sabsja=2 
 
 vn: sabserbl1
 
@@ -593,9 +585,9 @@ it:
 
 st:
 
-ao1 (sabserbl1): 0: : nein
+ao1: 0: : nein
 
-ao2 (sabserbl1): 1: : ja
+ao2: 1: : ja
 
 mv:
 
@@ -627,60 +619,57 @@ GOTO D1_12 IF sabserbl = k. A.
 D1_10 
 ===
 
-tc: IF sabserbl1 = 0 (nur Studierende mit vorherigem Hochschulabschluss an anderer als derzeitiger Hochschule)
+tc: IF sabserbl1 = 0 
 
 vn: sabserbl
 
-qt: Drop-Down
+qt: Drop-Down-Menü
 
 hl:
 
 in:
 
-q: In welchem Bundesland liegt die Hochschule, an der Sie Ihren letzten
-Hochschulabschluss erworben haben?
+q: In welchem Bundesland liegt die Hochschule, an der Sie Ihren letzten Hochschulabschluss erworben haben?
 
 is:
 
-it1: (sabserbl): : [Drop-Down: Bundesland]
+it1: (sabserbl): [infield = Bundesland] (Drop-Down)
 
 st:
 
-ao0 (sabserbl): 0: : Bundesland
+ao1: 1: : Baden-Württemberg
 
-ao1 (sabserbl): 1: : Baden-Württemberg
+ao2: 2: : Bayern
 
-ao2 (sabserbl): 2: : Bayern
+ao3: 3: : Berlin
 
-ao3 (sabserbl): 3: : Berlin
+ao4: 4: : Brandenburg
 
-ao4 (sabserbl): 4: : Brandenburg
+ao5: 5: : Bremen
 
-ao5 (sabserbl): 5: : Bremen
+ao6: 6: : Hamburg
 
-ao6 (sabserbl): 6: : Hamburg
+ao7: 7: : Hessen
 
-ao7 (sabserbl): 7: : Hessen
+ao8: 8: : Mecklenburg-Vorpommern
 
-ao8 (sabserbl): 8: : Mecklenburg-Vorpommern
+ao9: 9: : Niedersachsen
 
-ao9 (sabserbl): 9: : Niedersachsen
+ao10: 10: : Nordrhein-Westfalen
 
-ao10 (sabserbl): 10: : Nordrhein-Westfalen
+ao11: 11: : Rheinland-Pfalz
 
-ao11 (sabserbl): 11: : Rheinland-Pfalz
+ao12: 12: : Saarland
 
-ao12 (sabserbl): 12: : Saarland
+ao13: 13: : Sachsen
 
-ao13 (sabserbl): 13: : Sachsen
+ao14: 14: : Sachsen-Anhalt
 
-ao14 (sabserbl): 14: : Sachsen-Anhalt
+ao15: 15: : Schleswig-Holstein
 
-ao15 (sabserbl): 15: : Schleswig-Holstein
+ao16: 16: : Thüringen
 
-ao16 (sabserbl): 16: : Thüringen
-
-ao17 (sabserbl): 17: : im Ausland
+ao17: 17: : im Ausland
 
 mv:
 
@@ -700,9 +689,9 @@ fo:
 
 tr:
 
-GOTO D1_11 IF sabserbl = 1 – 16
-GOTO D1_11a IF sabserbl = 17
-GOTO D1_12 IF sabserbl = k. A.
+GOTO D1_11 IF (sabserbl = 1 – 16)
+GOTO D1_11a IF (sabserbl = 17)
+GOTO D1_12 IF (sabserbl = k. A. | 0)
 
 \--------------------------------
 
@@ -711,9 +700,9 @@ D1_11
 
 tc: IF sabserbl = 1 – 16 
 
-vn: sabserhs1, sabserhs2
+vn: sabserhs1 / sabserhs2
 
-qt: Dropdown-Menü, offene Nennung
+qt: Dropdown-Menü / offene Nennung
 
 hl:
 
@@ -721,8 +710,7 @@ in:
 
 q1: An welcher Hochschule haben Sie Ihren Abschluss erworben?
 
-q2: Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das
-dafür vorgesehene Feld ein.
+q2: Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
 
 is:
 
@@ -730,9 +718,9 @@ it:
 
 st:
 
-ao1: (sabserhs1): : [Drop-Down: Hochschule]
+ao1: (sabserhs1), [infield = Hochschule] (Drop-Down)
 
-ao2: (sabserhs2): (offene Nennung): 100 Stellen; Präfix: [infield = Hochschule; sabserhs2]; 
+ao2: (sabserhs2), Präfix: [infield = Hochschule; 100 Zeichen] (offene Nennung)
 
 mv:
 
@@ -754,7 +742,8 @@ tr:
 
 GOTO D1_12
 
-hi: q1 und ao1 bitte oberhalb von q2 und ao2 platzieren.
+hi1: q1 und ao1 bitte oberhalb von q2 und ao2 platzieren.
+hi2: Das Drop-Down ist mit einer von uns zu lieferenden Hochschulliste (am besten vorgefiltert nach Bundesland) zu füllen.
 
 
 \--------------------------------
@@ -765,7 +754,7 @@ D1_11a
 
 tc: IF sabserbl = 17
 
-vn: sabserhs3, sabserhs4
+vn: sabserhs3 / sabserhs4
 
 qt: offene Nennung
 
@@ -781,9 +770,9 @@ it:
 
 st:
 
-ao1: (sabserhs3): (offene Nennung): 60 Stellen; Präfix: [infield = Land; sabserhs3]; 
+ao1: (sabserhs3), Präfix: [infield = Land; 60 Zeichen] 
 
-ao2: (sabserhs4): (offene Nennung): 60 Stellen; Präfix: [infield = Hochschule; sabserhs4]; 
+ao2: (sabserhs4), Präfix: [infield = Hochschule; 60 Zeichen] 
 
 mv:
 
@@ -830,7 +819,7 @@ it:
 
 st:
 
-ao1: (offene Nennung): 60 Stellen; Präfix: [infield =  Studienfach; sabserfacho]
+ao1: (sabserfacho), Präfix: [infield =  Studienfach; 60 Zeichen]
 
 mv:
 
@@ -849,8 +838,7 @@ hv:
 fo:
 
 tr: GOTO A_49a IF sabser=1
-    GOTO A_49b IF sabser>1
-    GOTO A_49a IF sabser=MISSING
+    GOTO A_49b IF (sabser!=1) OR (sabser = k. A.)
     
 hi:
 
@@ -873,12 +861,19 @@ q: Wann werden Sie Ihr derzeitiges Studium voraussichtlich abschließen?
 
 is:
 
-it:
+it: (absterm): [infield = Semester] (Drop-Down)
 
 st:
 
-ao1: (absterm): : [Drop-Down-Menü: Semester; Sommersemester 2020 \| Wintersemester 2020/21 \| Sommersemester
-2021 \|Wintersemester 2021/22 \| Sommersemester 2022 \| … \| Sommersemester 2030]
+ao1: 1: : Sommersemester 2020
+
+ao2: 2: : Wintersemester 2020/21
+
+ao3: 3: : Sommersemester 2021
+.
+.
+.
+ao21: 21: : Sommersemester 2030
 
 mv:
 
@@ -909,9 +904,9 @@ D1_14
 
 tc: 
 
-vn: ssweijaaz; saweijaaz, sshwjaaz; ssujaaz
+vn: ssweijaaz / sawejaaz / shwjaaz / ssujaaz
 
-qt: Dropdown-Menü
+qt: Drop-Down-Menü
 
 hl:
 
@@ -919,8 +914,7 @@ in:
 
 q: Wie häufig haben Sie seit Ihrer Erstimmatrikulation …
 
-is: Nicht gemeint sind Wechsel oder Unterbrechungen beim Übergang vom Bachelor-
-ins Masterstudium.
+is: Nicht gemeint sind Wechsel oder Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
 
 it1: (ssweijaaz): … das Studienfach gewechselt?
 
@@ -950,9 +944,9 @@ mv:
 
 ka:
 
-vc1: SHOW ssweijaaz IF ssweija=1
+vc1: SHOW ssweijaaz IF ssweja=1
 
-vc2: SHOW sawejaaz IF saweija=1
+vc2: SHOW sawejaaz IF saweja=1
 
 vc3: SHOW shwjaaz IF shwja=1
 
@@ -968,8 +962,7 @@ hv:
 
 fo:
 
-tr: GOTO D1_15 IF ssweja=1 OR saweja=1 OR shwja=1
-    GOTO D1_16 IF ssweja=0 AND saweja=0 AND shwja=0 AND ssuja=1
+tr: GOTO D1_15
     
     
 hi:
@@ -979,57 +972,50 @@ hi:
 D1_15 
 ===
 
-tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1 (nur
-Studierende mit vorherigem Studienfachwechsel, Abschlusswechsel, Hochschulwechsel)
+tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1 
 
 
-vn: beginn01 – beginn05; ende01 – ende05; hs01 – hs05; fach01 – fach05; abs01 –
-abs05; stand01 – stand05; techepi
+vn: beginn01 – beginn05 / ende01 – ende05 / hs01 – hs05 / fach01 – fach05 / abs01 – abs05 / stand01 – stand05 / techepi
 
-qt: Tableau / Dropdown-Menü / offene Angaben
+qt: Akkordeon/ Tableau / Dropdown-Menü / offene Angaben / Einfachauswahl
 
 hl:
 
 in:
 
-q: Bitte tragen Sie die wesentlichen Stationen Ihres Studienverlaufs in das
-nachfolgende Tableau ein.
+q1: Bitte tragen Sie die wesentlichen Stationen Ihres Studienverlaufs in das nachfolgende Tableau ein.
 
-is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit
-Studienbeginn. Sollten die vorgegebenen 5 Episoden nicht ausreichen, so können
-Sie weitere Episoden aktivieren.
+q2: Benötigen Sie weitere Episoden?
 
-it1 (beginn01 – beginn05, ende01 – ende05): Beginn und Ende (Semester)
+is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit Studienbeginn. Sollten die vorgegebenen 5 Episoden nicht ausreichen, so können Sie weitere Episoden aktivieren.
 
-it2 (hs01 – hs05): Hochschule
+it1: (beginn01 / beginn02 / beginn03 / beginn04 / beginn05): Präfix: Beginn: [infield = Semester] (Drop-Down)
 
-it3 (fach01 – fach05): Studienfach
+it2: (ende01 / ende02 / ende03 / ende04 / ende05): Präfix: Ende: [infield = Semester] (Drop-Down)
 
-it4 (abs01 – abs05): angestrebter Abschluss
+it3: (hs01 / hs02 / hs03 / hs04 / hs05): Präfix: [infield = Hochschule; 100 Zeichen] (offene Angabe)
 
-it5 (stand01 – stand05): letzter Stand
+it4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfach; 100 Zeichen] (offene Angabe)
 
-it6: techepi): Benötigen Sie weitere Episoden?
+it5: (abs01 / abs02 / abs03 / abs04 / abs05): [infield = angestrebter Abschluss] (Drop-Down)
+
+it6: (stand01 / stand02 / stand03 / stand04 / stand05): [infield = letzter Stand] (Drop-Down)
+
+it7: (techepi)
 
 st:
 
-ao1: Prefix: Beginn: (Dropdown bitte absteigend - beginn01 – beginn05): Semester \ Sommersemester 2020 \|
-Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
+ao1: (beginn01 / beginn02 / beginn03 / beginn04 / beginn05): 1: : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
 
-ao2: Prefix: Ende: (Dropdown bitte absteigend - ende01 – ende05): Semester \ Sommersemester 2020 \|
-Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
+ao2: (ende01 / ende02 / ende03 / ende04 / ende05): 1 : : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
 
-ao3: (offene Angabe): 100 Stellen; Präfix: [infield = Hochschule; hs01 – hs05];
+ao3: (hs01 / hs02 / hs03 / hs04 / hs05): Präfix: [infield = Hochschule; 100 Zeichen] 
 
-ao4: (offene Angabe) 60 Stellen; Präfix: [infield = Studienfach; fach01 – fach05]; 
+ao4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfach; 100 Zeichen] 
 
-ao5: (Dropdown abs01 – abs05): angestrebter Abschluss \ Bachelor \| Bachelor (Lehramt) \| Master \|
-Master (Lehramt) \| Staatsexamen \| Staatsexamen (Lehramt) \| Diplom, Promotion
-\| kirchliche Abschlussprüfung \| künstlerische Abschlussprüfung \| anderer
-Abschluss (bspw. Ausländischer Abschluss \| Magister) \| kein Studienabschluss
+ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: :Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss \ 10: : kein Studienabschluss
 
-ao6: (Dropdown stand01 – stand05): letzter Stand \ begonnen \| abgeschlossen \| abgebrochen \|
-unterbrochen
+ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: : begonnen \ 2: : abgeschlossen \ 3: : abgebrochen \ 4: : unterbrochen
 
 ao7: (techepi): 0: : nein
 
@@ -1051,13 +1037,83 @@ hv:
 
 fo:
 
-tr: GOTO D1_16 IF ssuja=1
-    GOTO A_51a IF ssuja=0 AND h_split=1 (50%)
-    GOTO A_51b IF ssuja=0 AND h_split=2 (50%)
-    GOTO A_51a IF ssuja=MISSING AND h_split=1 (50%)
-    GOTO A_51b IF ssuja=MISSING AND h_split=2 (50%)  
+tr: GOTO D1_15b IF techepi==2
+    GOTO D1_16 IF ssuja=1  
+    GOTO A_51a IF h_split=1 
+    GOTO A_51b IF h_split=2 
     
-hi: Wenn techepi=1, bitte zwei weitere Zeilen einblenden.
+hi1: Bitte 5 Akkordeons mit den Überschriften Episode 1, Episode 2, Episode 3, Episode 4, Episode 5 anlegen. 
+hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig untereinander anordnen.
+
+
+\--------------------------------
+
+D1_15b 
+===
+
+tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1 & techepi = 1
+
+
+vn: beginn06 – beginn10 / ende06 – ende10 / hs06 – hs10 / fach06 – fach10 / abs06 – abs10 / stand06 – stand10 
+
+qt: Akkordeon/ Tableau / Dropdown-Menü / offene Angaben 
+
+hl:
+
+in:
+
+q1: Bitte tragen Sie die wesentlichen Stationen Ihres Studienverlaufs in das nachfolgende Tableau ein.
+
+is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit Studienbeginn. 
+
+it1: (beginn06 / beginn07 / beginn08 / beginn09 / beginn10): Präfix: Beginn: [infield = Semester] (Drop-Down)
+
+it2: (ende06 / ende07 / ende08 / ende09 / ende10): Präfix: Ende: [infield = Semester] (Drop-Down)
+
+it3: (hs06 / hs07 / hs08 / hs09 / hs10): Präfix: [infield = Hochschule; 100 Zeichen] (offene Angabe)
+
+it4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 100 Zeichen] (offene Angabe)
+
+it5: (abs06 / abs07 / abs08 / abs09 / abs10): [infield = angestrebter Abschluss] (Drop-Down)
+
+it6: (stand06 / stand07 / stand08 / stand09 / stand10): [infield = letzter Stand] (Drop-Down)
+
+st:
+
+ao1: (beginn06 / beginn07 / beginn08 / beginn09 / beginn10): 1: : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
+
+ao2: (ende06 / ende07 / ende08 / ende09 / ende10): 1 : : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
+
+ao3: (hs06 / hs07 / hs08 / hs09 / hs10): Präfix: [infield = Hochschule; 100 Zeichen] 
+
+ao4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 100 Zeichen] 
+
+ao5: (abs06 / abs07 / abs08 / abs09 / abs10): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: :Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss \ 10: : kein Studienabschluss
+
+ao6: (stand06 / stand07 / stand08 / stand09 / stand10): 1: : begonnen \ 2: : abgeschlossen \ 3: : abgebrochen \ 4: : unterbrochen
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO D1_16 IF ssuja=1  
+    GOTO A_51a IF h_split=1 
+    GOTO A_51b IF h_split=2 
+    
+hi1: Bitte 5 Akkordeons mit den Überschriften Episode 6, Episode 7, Episode 8, Episode 9, Episode 10 anlegen. 
+hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig untereinander anordnen.
 
 
 \--------------------------------
@@ -1065,19 +1121,15 @@ hi: Wenn techepi=1, bitte zwei weitere Zeilen einblenden.
 D1_16 
 ===
 
-tc: IF ssujaaz>=1 (nur Studierende, die mindestens eine Studienunterbrechung
-hatten)
+tc: IF ssujaaz>=1 
 
-vn: suzeitp01; suzeitp02; suzeit03; sudau01; sudau02; sudau03; subeur01;
-subeur02; subeur03
+vn: suzeitp01 / suzeitp02 / suzeit03 / sudau01 / sudau02 / sudau03 / subeur01 / subeur02 / subeur03
 
-qt: Tableau-Abfrage (Dropdown-Menü, offene Angabe, Einfachauswahl)
+qt: Akkordeon / Tableau / Drop-Down-Menü / offene Angabe / Einfachauswahl
 
 hl:
 
 in:
-
-Individualisierung:
 
 q1: Bitte beschreiben Sie Ihre Studienunterbrechung näher.
 
@@ -1085,29 +1137,27 @@ q2: Bitte beschreiben Sie Ihre Studienunterbrechungen näher.
 
 q3: Bitte beschreiben Sie Ihre letzten drei Studienunterbrechungen nächer.
 
-is1 (nur für q2): Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
+is1: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 
-is2 (nur für q3): Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
+is2: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 Sollten Sie mehr als dreimal unterbrochen haben, beginnen Sie bitte mit Ihrer
 drittletzten Unterbrechung.
 
-it1: (suzeitp01 – suzeitp03): Zeitpunkt der Unterbrechung:
+it1: (suzeitp01 / suzeitp02 / suzeitp03): Präfix: Zeitpunkt der Unterbrechung: [infield = Semester] (Drop-Down)
 
-it2: (sudau01 – sudau03): Dauer der Unterbrechung
+it2: (sudau01 / sudau02 / sudau03): Präfix: Dauer der Unterbrechung: [infield = Monate; number] (Eingabefeld)
 
-it3: (subeur01 – subeur03): mit Beurlaubung?
+it3: (subeur01 / subeur02 / subeur03): mit Beurlaubung?
 
 st:
 
-ao1: (Dropdown suzeitp01 – suzeitp03): : Sommersemester 2020 \| Wintersemester
-2019/2020 \| Sommersemester 2019 \| … \| Wintersemester 2004/2005
+ao1: (suzeitp01 / suzeitp02 / suzeitp03): : 1: : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
 
-ao2: (offene Angabe): 2 Stellen (00-99); Präfix: [sudau01 – sudau03]; Suffix:
-Monate
+ao2: (sudau01 / sudau02 / sudau03): number 2 Stellen; 0 TO 99
 
-ao3: (subeur01 – subeur03) 1: : nein
+ao3: (subeur01 / subeur02 / subeur03) 0: : nein
 
-ao4: (subeur01 – subeur03) 2: : ja
+ao4: (subeur01 / subeur02 / subeur03) 1: : ja
 
 mv:
 
@@ -1120,11 +1170,11 @@ subeur02 IF ssujaaz=2
 
 vc3: SHOW q3/is2 AND suzeitp01 & sudau01 & subeur01 & suzeitp01 & sudau01 &
 subeur01 & suzeitp02 &sudau02 & subeur02 & suzeitp03 & sudau03 & subeur03
-IF ssujaaz= 3 \| 4 \| 5
+IF ssujaaz= 3 | 4 | 5
 
 av:
 
-kh:
+kh: (sudau01 / sudau02 / sudau03): Bitte geben Sie die Dauer Ihrer Studienunterbrechung in Monaten an (0 bis 99).
 
 fv:
 
@@ -1132,12 +1182,11 @@ hv:
 
 fo:
 
-tr: GOTO A_51a IF h_split=1 (50%)
-    GOTO A_51b IF h_split=2 (50%)
+tr: GOTO A_51a IF h_split=1 
+    GOTO A_51b IF h_split=2 
     
-hi: In Abhängigkeit der Antworten auf Seite D1_14 erfolgt eine Einblendung von
-bis zu drei Unterbrechungen, für die je Zeile anhand verschiedener
-Antwortformate Informationen erhoben werden.
+hi1: Bitte 3 Akkordeons mit den Überschriften 1. Studienunterbrechung, 2. Studienunterbrechung, 3. Studienunterbrechung      anlegen. 
+hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig untereinander anordnen.
 
 \--------------------------------
 
@@ -1146,9 +1195,9 @@ D1_17
 
 tc:
 
-vn: sintaner; sintzur; sintfair; sinternst; sintkont; sintfach; sintsem
+vn: sint (sintaner / sintzur / sintfair / sinternst / sintkont / sintfach / sintsem)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1158,22 +1207,19 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium zu?
 
 is:
 
-it1 (sintaner): Ich fühle mich von den Lehrenden anerkannt.
+it1: (sintaner): Ich fühle mich von den Lehrenden anerkannt.
 
-it2 (sintzur): Mit den Lehrenden meines Studiengangs komme ich gut zurecht.
+it2: (sintzur): Mit den Lehrenden meines Studiengangs komme ich gut zurecht.
 
-it3 (sintfair): Die meisten Lehrenden behandeln mich fair.
+it3: (sintfair): Die meisten Lehrenden behandeln mich fair.
 
-it4 (sinternst): Die Lehrenden interessieren sich für das, was ich zu sagen
-habe.
+it4: (sinternst): Die Lehrenden interessieren sich für das, was ich zu sagen habe.
 
-it5 (sintkont): Mir ist es während meines bisherigen Studiums gut gelungen,
-Kontakte zu anderen Studierenden aufzubauen.
+it5: (sintkont): Mir ist es während meines bisherigen Studiums gut gelungen, Kontakte zu anderen Studierenden aufzubauen.
 
-it6 (sintfach): Ich kenne viele Kommiliton\*innen, mit denen ich mich über
-fachspezifische Fragen austauschen kann.
+it6: (sintfach): Ich kenne viele Kommiliton\*innen, mit denen ich mich über fachspezifische Fragen austauschen kann.
 
-it7 (sintsem): Ich habe viele Kontakte zu Studierenden aus meinem Semester.
+it7: (sintsem): Ich habe viele Kontakte zu Studierenden aus meinem Semester.
 
 st:
 
@@ -1216,9 +1262,9 @@ D1_18
 
 tc:
 
-vn: pakagern; pakafrem; pakaort; pakalost
+vn: paka (pakagern / pakafrem / pakaort / pakalost)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1228,13 +1274,13 @@ q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (pakagern): Alles in allem bin ich gerne Student(in).
+it1: (pakagern): Alles in allem bin ich gerne Student\*in.
 
-it2 (pakafrem): Die studentische Welt ist mir fremd.
+it2: (pakafrem): Die studentische Welt ist mir fremd.
 
-it3 (pakaort): Die Hochschule ist genau der richtige Platz für mich.
+it3: (pakaort): Die Hochschule ist genau der richtige Platz für mich.
 
-it4 (pakalost): An der Hochschule fühle ich mich verloren.
+it4: (pakalost): An der Hochschule fühle ich mich verloren.
 
 st:
 
@@ -1277,9 +1323,9 @@ D1_19
 
 tc:
 
-vn: sask1; sask2; sask3; sask4; sask5
+vn: sask (sask1 / sask2 / sask3 / sask4 / sask5)
 
-qt: 5er Skala mit Bezeichnung der Endpunkte
+qt: 5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1289,19 +1335,19 @@ q: Bitte beantworten Sie die folgenden Fragen ohne lange nachzudenken.
 
 is:
 
-it1 (sask1): Ich halte meine Begabung für das Studium für
+it1: (sask1): Ich halte meine Begabung für das Studium für ...
 
-it2 (sask2): Im Studium Neues zu lernen fällt mir
+it2: (sask2): Im Studium Neues zu lernen fällt mir ...
 
-it3 (sask3): Meiner Meinung nach bin ich
+it3: (sask3): Meiner Meinung nach bin ich ...
 
-it4 (sask4): Meine studienbezogenen Fähigkeiten sind
+it4: (sask4): Meine studienbezogenen Fähigkeiten sind ...
 
-it5 (sask5): Aufgaben im Rahmen des Studiums fallen mir
+it5: (sask5): Aufgaben im Rahmen des Studiums fallen mir ...
 
 st:
 
-ao1 (sask1) 1 : : niedrig
+ao1 (sask1) 1 : :  ... niedrig
 
 ao2 (sask1) 2
 
@@ -1309,9 +1355,9 @@ ao3 (sask1) 3
 
 ao4 (sask1) 4
 
-ao5 (sask1) 5: : hoch
+ao5 (sask1) 5: :  ... hoch
 
-ao6 (sask2) 1 : : schwer
+ao6 (sask2) 1 : :  ... schwer
 
 ao7 (sask2) 2
 
@@ -1319,9 +1365,9 @@ ao8 (sask2) 3
 
 ao9 (sask2) 4
 
-ao10 (sask2) 5: : leicht
+ao10 (sask2) 5: :  ... leicht
 
-ao11 (sask3) 1 : : nicht intelligent
+ao11 (sask3) 1 : :  ... nicht intelligent
 
 ao12 (sask3) 2
 
@@ -1329,9 +1375,9 @@ ao13 (sask3) 3
 
 ao14 (sask3) 4
 
-ao15 (sask3) 5: : sehr intelligent
+ao15 (sask3) 5: :  ... sehr intelligent
 
-ao16 (sask4) 1 : : niedrig
+ao16 (sask4) 1 : :  ... niedrig
 
 ao17 (sask4) 2
 
@@ -1339,9 +1385,9 @@ ao18 (sask4) 3
 
 ao19 (sask4) 4
 
-ao20 (sask4) 5: : hoch
+ao20 (sask4) 5: :  ... hoch
 
-ao21 (sask5) 1 : : schwer
+ao21 (sask5) 1 : :  ... schwer
 
 ao22 (sask5) 2
 
@@ -1349,7 +1395,7 @@ ao23 (sask5) 3
 
 ao24 (sask5) 4
 
-ao25 (sask5) 5: : leicht
+ao25 (sask5) 5: :  ... leicht
 
 mv:
 
@@ -1379,41 +1425,39 @@ D1_20
 
 tc:
 
-vn: kominter; kommeth; komwiss; komtext; komkrit; komsch; kommuen; komteam;
-komvera; komkomm; komplan
+vn: kom  (kominter / kommeth / komwiss / komtext / komkrit / komsch / kommuen / komteam / komvera / komkomm / komplan)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Bitte schätzen Sie ein, inwieweit Sie aktuell über die folgenden Fähigkeiten
-und Kenntnisse verfügen.
+q: Bitte schätzen Sie ein, inwieweit Sie aktuell über die folgenden Fähigkeiten und Kenntnisse verfügen.
 
 is:
 
-it1 (kominter): fachübergreifendes Wissen und Denken/Interdisziplinarität
+it1: (kominter): fachübergreifendes Wissen und Denken/Interdisziplinarität
 
-it2 (kommeth): Anwendung fachbezogener Methoden
+it2: (kommeth): Anwendung fachbezogener Methoden
 
-it3 (komwiss): Erarbeitung einer wissenschaftlichen Fragestellung
+it3: (komwiss): Erarbeitung einer wissenschaftlichen Fragestellung
 
-it4 (komtext): Verstehen von wissenschaftlichen Texten
+it4: (komtext): Verstehen von wissenschaftlichen Texten
 
-it5 (komkrit): kritisches Denken (eigene Ideen/Ideen anderer in Frage stellen)
+it5: (komkrit): kritisches Denken (eigene Ideen/Ideen anderer in Frage stellen)
 
-it6 (komsch): schriftlicher Ausdruck
+it6: (komsch): schriftlicher Ausdruck
 
-it7 (kommuen): mündlicher Ausdruck
+it7: (kommuen): mündlicher Ausdruck
 
-it8 (komteam): Teamfähigkeit/Zusammenarbeit in einer Gruppe
+it8: (komteam): Teamfähigkeit/Zusammenarbeit in einer Gruppe
 
-it9 (komvera): Übernahme von Verantwortung in einer Gruppe
+it9: (komvera): Übernahme von Verantwortung in einer Gruppe
 
-it10 (komkomm): Kommunikation mit Professor\*innen
+it10: (komkomm): Kommunikation mit Professor\*innen
 
-it11 (komplan): Planungs- und Organisationsfähigkeit
+it11: (komplan): Planungs- und Organisationsfähigkeit
 
 st:
 
@@ -1456,9 +1500,9 @@ D1_21
 
 tc:
 
-vn: ksprdeu; kspreng; ksprfra; ksprspa; ksprand; ksprando
+vn: kspr (ksprdeu / kspreng / ksprfra / ksprspa / ksprand / ksprando)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1468,21 +1512,19 @@ q: Wie gut beherrschen Sie die folgenden Sprachen?
 
 is:
 
-it1 (ksprdeu): Deutsch
+it1: (ksprdeu): Deutsch
 
-it2 (kspreng): Englisch
+it2: (kspreng): Englisch
 
-it3 (ksprfra): Französisch
+it3: (ksprfra): Französisch
 
-it4 (krprspa): Spanisch
+it4: (ksprspa): Spanisch
 
-it5 (ksprand): Andere Sprache, und zwar:
-
-it6 (offene Angabe): 50 Stellen; Präfix: [ksprando]; Suffix: Andere Sprache:
+it5: (ksprand / ksprando): Andere Sprache, und zwar: [50 Zeichen]
 
 st:
 
-ao1: 1: : Grundkenntnisse
+ao1: 1: : keine Kenntnisse
 
 ao2: 2
 
@@ -1493,8 +1535,6 @@ ao4: 4
 ao5: 5: : sehr gute Kenntnisse
 
 ao6: 6: : Muttersprache
-
-ao7: 7: : Ich beherrsche diese Sprache nicht
 
 mv:
 
@@ -1514,10 +1554,10 @@ fo:
 
 tr:
 
-GOTO D1_22 IF h_split=1 (50%)
-GOTO D1_23 IF h_split=2 (50%)
+GOTO D1_22 IF h_split=1 
+GOTO D1_23 IF h_split=2 
 
-hi:
+hi: Die Kategorie "Muttersprache" bitte etwas nach rechts abgesetzt und ohne Verbindungslinie zu den übrigen Skalenpunkten.
 
 \--------------------------------
 
@@ -1526,10 +1566,9 @@ D1_22
 
 tc:
 
-vn: dpzufr; dpinter; dpfrag; dsmein; dswiss; dsfreiz; staufw; sfober; sfklaus;
-ssverl; sswied; sszeit
+vn: dpzufr / dpinter / dpfrag / dsmein / dswiss / dsfreiz / staufw / sfober / sfklaus / ssverl / sswied / sszeit
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1539,40 +1578,29 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium zu?
 
 is:
 
-it1 (dpzufr): Studieren gibt mir manchmal das Gefühl von tiefer persönlicher
-Zufriedenheit.
+it1: (dpzufr): Studieren gibt mir manchmal das Gefühl von tiefer persönlicher Zufriedenheit.
 
-it2 (dpinter): Ich habe das Gefühl, dass praktisch jedes Thema hochinteressant
-sein kann, wenn ich mich erst einmal damit befasse.
+it2: (dpinter): Ich habe das Gefühl, dass praktisch jedes Thema hochinteressant sein kann, wenn ich mich erst einmal damit befasse.
 
-it3 (dpfrag): In die meisten meiner Lehrveranstaltungen gehe ich mit Fragen, auf
-die ich nach einer Antwort suche.
+it3: (dpfrag): In die meisten meiner Lehrveranstaltungen gehe ich mit Fragen, auf die ich nach einer Antwort suche.
 
-it4 (dsmein): Ich bin erst zufrieden, wenn ich mich intensiv genug in ein Thema
-eingearbeitet habe, um mir eine eigene Meinung bilden zu können.
+it4: (dsmein): Ich bin erst zufrieden, wenn ich mich intensiv genug in ein Thema eingearbeitet habe, um mir eine eigene Meinung bilden zu können.
 
-it5 (dswiss): Ich überprüfe mein Wissen zu wichtigen Themen, bis ich es wirklich
-verstanden habe.
+it5: (dswiss): Ich überprüfe mein Wissen zu wichtigen Themen, bis ich es wirklich verstanden habe.
 
-it6 (dsfreiz): Ich nutze meine Freizeit häufig dafür, mehr über interessante
-Themen zu erfahren, die wir in Lehrveranstaltungen diskutiert haben.
+it6: (dsfreiz): Ich nutze meine Freizeit häufig dafür, mehr über interessante Themen zu erfahren, die wir in Lehrveranstaltungen diskutiert haben.
 
-it7 (sfaufw): Mein Ziel ist es, Lehrveranstaltungen mit so wenig Aufwand wie
-möglich zu bestehen.
+it7: (sfaufw): Mein Ziel ist es, Lehrveranstaltungen mit so wenig Aufwand wie möglich zu bestehen.
 
-it8 (sfober): Ich finde es nicht hilfreich, Themen zu vertiefen. Es verwirrt nur
-und ist verschwendete Zeit, wenn man nur oberflächliches Wissen benötigt.
+it8: (sfober): Ich finde es nicht hilfreich, Themen zu vertiefen. Es verwirrt nur und ist verschwendete Zeit, wenn man nur oberflächliches Wissen benötigt.
 
-it9 (sfklaus): Ich sehe keinen Grund darin Stoff zu lernen, der wahrscheinlich
-nicht klausurrelevant ist.
+it9: (sfklaus): Ich sehe keinen Grund darin Stoff zu lernen, der wahrscheinlich nicht klausurrelevant ist.
 
-it10 (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
+it10: (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
 
-it11 (sswied): Manche Dinge wiederhole ich so lange, bis ich sie auswendig kann,
-selbst wenn ich sie nicht verstehe.
+it11: (sswied): Manche Dinge wiederhole ich so lange, bis ich sie auswendig kann, selbst wenn ich sie nicht verstehe.
 
-it12 (sszeit): Lehrende sollten nicht erwarten, dass Studierende viel Zeit damit
-verbringen Stoff zu lernen, von dem jeder weiß, dass er nicht geprüft wird.
+it12: (sszeit): Lehrende sollten nicht erwarten, dass Studierende viel Zeit damit verbringen Stoff zu lernen, von dem jeder weiß, dass er nicht geprüft wird.
 
 st:
 
@@ -1615,11 +1643,9 @@ D1_23
 
 tc:
 
-vn: kogorga; kogkrit1; kogkrit2; kogzus; kogwied; mkogplan1; mkogplan2;
-mkogwach1; mkogwach2; mkogreg; ressanst1; ressanst2; sesskonz1; resskonz2;
-resszeit; lernumg1; lernumg2; resskomm; lit
+vn: kogorga / kogkrit1 / kogkrit2 / kogzus / kogwied / mkogplan1 / mkogplan2 / mkogwach1 / mkogwach2 / mkogreg / ressanst1 / ressanst2 / sesskonz1 / resskonz2 / resszeit / lernumg1 / lernumg2 / resskomm / lit
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1629,59 +1655,43 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium zu?
 
 is:
 
-it1 (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze
-Zusammenfassungen mit den wichtigsten Punkten zusammen.
+it1: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen mit den wichtigsten Punkten zusammen.
 
-it2 (kogkrit1): Beim Lernen hinterfrage ich die meisten Schlussfolgerungen
-kritisch.
+it2: (kogkrit1): Beim Lernen hinterfrage ich die meisten Schlussfolgerungen kritisch.
 
-it3 (kogkrit2): Ich denke über Alternativen zu den Behauptungen oder
-Schlussfolgerungen in den Lerntexten nach.
+it3: (kogkrit2): Ich denke über Alternativen zu den Behauptungen oder Schlussfolgerungen in den Lerntexten nach.
 
-it4 (kogzus): Zu neuen Lerninhalten stelle ich mir praktische Anwendungen vor.
+it4: (kogzus): Zu neuen Lerninhalten stelle ich mir praktische Anwendungen vor.
 
-it5 (kogwied): Ich lerne den Lernstoff anhand von Skripten oder anderen
-Aufzeichnungen möglichst auswendig.
+it5: (kogwied): Ich lerne den Lernstoff anhand von Skripten oder anderen Aufzeichnungen möglichst auswendig.
 
-it6 (mkogplan1): Ich überlege mir vorher, in welcher Reihenfolge ich den Stoff
-durcharbeite.
+it6: (mkogplan1): Ich überlege mir vorher, in welcher Reihenfolge ich den Stoff durcharbeite.
 
-it7 (mkogplan2): Ich versuche, mir vorher genau zu überlegen, welche Teile eines
-bestimmten Themengebiets ich lernen muss und welche nicht.
+it7: (mkogplan2): Ich versuche, mir vorher genau zu überlegen, welche Teile eines bestimmten Themengebiets ich lernen muss und welche nicht.
 
-it8 (mkogwach1): Ich bearbeite zusätzliche Aufgaben, um festzustellen, ob ich
-den Stoff wirklich verstanden habe.
+it8: (mkogwach1): Ich bearbeite zusätzliche Aufgaben, um festzustellen, ob ich den Stoff wirklich verstanden habe.
 
-it9 (mkogwach2): Um Wissenslücken festzustellen, rekapituliere ich die
-wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen,
+it9: (mkogwach2): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen,
 
-it10 (mkogreg): Wenn ich Lerninhalte nicht direkt verstehe, gehe ich den Text
-noch einmal langsam durch.
+it10: (mkogreg): Wenn ich Lerninhalte nicht direkt verstehe, gehe ich den Text noch einmal langsam durch.
 
-it11 (ressanst1): Ich arbeite so lange, bis ich mir sicher bin, die Prüfung gut
-bestehen zu können.
+it11: (ressanst1): Ich arbeite so lange, bis ich mir sicher bin, die Prüfung gut bestehen zu können.
 
-it12 (ressanst2): Ich lerne auch spätabends und am Wochenende, wenn es sein
-muss.
+it12: (ressanst2): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
 
-it13 (resskonz1): Ich ertappe mich dabei, dass ich mit meinen Gedanken ganz
-woanders bin.
+it13: (resskonz1): Ich ertappe mich dabei, dass ich mit meinen Gedanken ganz woanders bin.
 
-it14 (resskonz2): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
+it14: (resskonz2): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
 
-it15 (resszeit): Beim Lernen stelle ich einen Zeitplan auf, an den ich mich auch
-halte.
+it15: (resszeit): Beim Lernen stelle ich einen Zeitplan auf, an den ich mich auch halte.
 
-it16 (lernumg1): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell
-finden kann.
+it16: (lernumg1): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell finden kann.
 
-it17 (lernumg2): Wenn ich lerne, sorge ich dafür, dass ich in Ruhe arbeiten
-kann.
+it17: (lernumg2): Wenn ich lerne, sorge ich dafür, dass ich in Ruhe arbeiten kann.
 
-it18 (resskomm): Ich lerne zusammen mit meinen Studienkolleg\*innen.
+it18: (resskomm): Ich lerne zusammen mit meinen Studienkolleg\*innen.
 
-it19 (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte
-noch nicht ganz klar sind.
+it19: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
 
 st:
 
@@ -1724,10 +1734,9 @@ D1_24
 
 tc:
 
-vn: pbigintro; pbigextro; pbigtrau; pbigkrit; pbiggenau; pbigfaul; pbigruh;
-pbignerv; pbigkrea; pbignoku
+vn: pbig (pbigintro / pbigextro / pbigtrau / pbigkrit / pbiggenau / pbigfaul / pbigruh / pbignerv / pbigkrea / pbignoku)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1737,27 +1746,25 @@ q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (pbigintro): Ich bin eher zurückhaltend, reserviert.
+it1: (pbigintro): Ich bin eher zurückhaltend, reserviert.
 
-it2 (pbigextro): Ich gehe aus mir raus, bin gesellig.
+it2: (pbigextro): Ich gehe aus mir raus, bin gesellig.
 
-it3 (pbigtrau): Ich schenke anderen leicht Vertrauen, glaube an das Gute im
-Menschen.
+it3: (pbigtrau): Ich schenke anderen leicht Vertrauen, glaube an das Gute im Menschen.
 
-it4 (pbigkrit): Ich neige dazu, andere zu kritisieren.
+it4: (pbigkrit): Ich neige dazu, andere zu kritisieren.
 
-it5 (pbiggenau): Ich erledige Aufgaben gründlich.
+it5: (pbiggenau): Ich erledige Aufgaben gründlich.
 
-it6 (pbigfaul): Ich bin bequem, neige zur Faulheit.
+it6: (pbigfaul): Ich bin bequem, neige zur Faulheit.
 
-it7 (pbigruh): Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe
-bringen.
+it7: (pbigruh): Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe bringen.
 
-it8 (pbignerv): Ich werde leicht nervös und unsicher.
+it8: (pbignerv): Ich werde leicht nervös und unsicher.
 
-it9 (pbigkrea): Ich habe eine aktive Vorstellungskraft, bin phantasievoll.
+it9: (pbigkrea): Ich habe eine aktive Vorstellungskraft, bin phantasievoll.
 
-it10 (pbignoku): Ich habe nur wenig künstlerisches Interesse.
+it10: (pbignoku): Ich habe nur wenig künstlerisches Interesse.
 
 st:
 
@@ -1800,9 +1807,9 @@ D1_25
 
 tc:
 
-vn: pswskill; pswkraft; pswaufg
+vn: psw (pswskill / pswkraft / pswaufg)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1812,13 +1819,11 @@ q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (pswskill): In schwierigen Situationen kann ich mich auf meine Fähigkeiten
-verlassen.
+it1: (pswskill): In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.
 
-it2 (pswkraft): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
+it2: (pswkraft): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
 
-it3 (pswaufg): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel
-gut lösen.
+it3: (pswaufg): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.
 
 st:
 
@@ -1877,15 +1882,15 @@ it:
 
 st:
 
-ao1 (risk) 1: : gar nicht risikobereit
+ao1: 1: : gar nicht risikobereit
 
-ao2 (risk) 2
+ao2: 2
 
-ao3 (risk) 3
+ao3: 3
 
-ao4 (risk) 4
+ao4: 4
 
-ao5 (risk) 5: : sehr risikobereit
+ao5: 5: : sehr risikobereit
 
 mv:
 
@@ -1916,9 +1921,9 @@ D1_27
 
 tc:
 
-vn: feelstress; feellast; feeldruck
+vn: feel (feelstress / feellast / feeldruck)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1928,11 +1933,11 @@ q: Wie haben Sie sich in den letzten vier Wochen überwiegend gefühlt?
 
 is:
 
-it1 (feelstress): gestresst
+it1: (feelstress): gestresst
 
-it2 (feellast): überlastet
+it2: (feellast): überlastet
 
-it3 (feeldruck): unter Druck
+it3: (feeldruck): unter Druck
 
 st:
 
@@ -1975,10 +1980,9 @@ D1_28
 
 tc: IF NOT partpsy=1
 
-vn: depschw; depglue; depdep; deptrau; depverz; depgedr; depgut; depsich;
-depruhe; depspass
+vn: dep (depschw / depglue / depdep / deptrau / depverz / depgedr / depgut / depsich / depruhe / depspass)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1988,25 +1992,25 @@ q: Wie fühlen Sie sich im Allgemeinen?
 
 is:
 
-it1 (depschw): Meine Stimmung ist schwermütig.
+it1: (depschw): Meine Stimmung ist schwermütig.
 
-it2 (depglue): Ich bin glücklich.
+it2: (depglue): Ich bin glücklich.
 
-it3 (depdep): Ich bin deprimiert.
+it3: (depdep): Ich bin deprimiert.
 
-it4 (deptrau): Ich bin traurig.
+it4: (deptrau): Ich bin traurig.
 
-it5 (depverz): Ich bin verzweifelt.
+it5: (depverz): Ich bin verzweifelt.
 
-it6 (depgedr): Ich bin in gedrückter Stimmung.
+it6: (depgedr): Ich bin in gedrückter Stimmung.
 
-it7 (depgut): Ich fühle mich gut.
+it7: (depgut): Ich fühle mich gut.
 
-it8 (depsich): Ich fühle mich sicher.
+it8: (depsich): Ich fühle mich sicher.
 
-it9 (depruhe): Ich bin ruhig und gelassen.
+it9: (depruhe): Ich bin ruhig und gelassen.
 
-it10 (depspass): Das Leben macht mir Spaß.
+it10: (depspass): Das Leben macht mir Spaß.
 
 st:
 
