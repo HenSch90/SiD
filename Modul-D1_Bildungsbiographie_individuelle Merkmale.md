@@ -853,8 +853,7 @@ hv:
 fo:
 
 tr: GOTO A_49a IF sabser=1
-    GOTO A_49b IF sabser>1
-    GOTO A_49a IF sabser=MISSING
+    GOTO A_49b IF (sabser !=1 | sabser=MISSING)
     
 hi:
 
@@ -928,7 +927,7 @@ ins Masterstudium.
 
 it1: (ssweijaaz): … das Studienfach gewechselt?
 
-it2: (sawejaaz): ... den angestrebten Abschluss gewechselt?
+it2: (sawejaaz): … den angestrebten Abschluss gewechselt?
 
 it3: (shwjaaz): … die Hochschule gewechselt?
 
@@ -972,8 +971,7 @@ hv:
 
 fo:
 
-tr: GOTO D1_15 IF ssweja=1 OR saweja=1 OR shwja=1
-    GOTO D1_16 IF ssweja=0 AND saweja=0 AND shwja=0 AND ssuja=1
+tr: GOTO D1_15
     
     
 hi:
@@ -990,7 +988,7 @@ Studierende mit vorherigem Studienfachwechsel, Abschlusswechsel, Hochschulwechse
 vn: beginn01 – beginn05; ende01 – ende05; hs01 – hs05; fach01 – fach05; abs01 –
 abs05; stand01 – stand05; techepi
 
-qt: Tableau / Dropdown-Menü / offene Angaben
+qt: Akkordeon / Dropdown-Menü / offene Angaben
 
 hl:
 
@@ -1013,7 +1011,7 @@ it4 (abs01 – abs05): angestrebter Abschluss
 
 it5 (stand01 – stand05): letzter Stand
 
-it6: techepi): Benötigen Sie weitere Episoden?
+it6: (techepi): Benötigen Sie weitere Episoden?
 
 st:
 
@@ -1055,14 +1053,87 @@ hv:
 
 fo:
 
-tr: GOTO D1_16 IF ssuja=1
-    GOTO A_51a IF ssuja=0 AND h_split=1 (50%)
-    GOTO A_51b IF ssuja=0 AND h_split=2 (50%)
-    GOTO A_51a IF ssuja=MISSING AND h_split=1 (50%)
-    GOTO A_51b IF ssuja=MISSING AND h_split=2 (50%)  
+tr: GOTO D1_15b IF techepi=1
+    GOTO D1_16 IF ssuja=1
+    GOTO A_51a IF (ssuja=0 | ssuja=MISSING) AND h_split=1 (50%)
+    GOTO A_51b IF (ssuja=0 | ssuja=MISSING) AND h_split=2 (50%)
     
-hi: Wenn techepi=1, bitte zwei weitere Zeilen einblenden.
+hi:
 
+
+\--------------------------------
+
+D1_15b
+===
+
+tc:
+
+vn: beginn06 – beginn10; ende06 – ende10; hs06 – hs10; fach06 – fach10; abs06 –
+abs10; stand06 – stand10
+
+qt: Akkordeon / Dropdown-Menü / offene Angaben
+
+hl:
+
+in:
+
+q: Bitte tragen Sie die wesentlichen Stationen Ihres Studienverlaufs in das
+nachfolgende Tableau ein.
+
+is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit
+Studienbeginn.
+
+it1 (beginn06 – beginn10, ende06 – ende10): Beginn und Ende (Semester)
+
+it2 (hs06 – hs10): Hochschule
+
+it3 (fach06 – fach10): Studienfach
+
+it4 (abs06 – abs10): angestrebter Abschluss
+
+it5 (stand06 – stand10): letzter Stand
+
+st:
+
+ao1: Prefix: Beginn: (Dropdown bitte absteigend - beginn06 – beginn10): Semester \ Sommersemester 2020 \|
+Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
+
+ao2: Prefix: Ende: (Dropdown bitte absteigend - ende06 – ende10): Semester \ Sommersemester 2020 \|
+Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
+
+ao3: (offene Angabe): 100 Stellen; Präfix: [infield = Hochschule; hs06 – hs10];
+
+ao4: (offene Angabe) 60 Stellen; Präfix: [infield = Studienfach; fach06 – fach10]; 
+
+ao5: (Dropdown abs06 – abs10): angestrebter Abschluss \ Bachelor \| Bachelor (Lehramt) \| Master \|
+Master (Lehramt) \| Staatsexamen \| Staatsexamen (Lehramt) \| Diplom, Promotion
+\| kirchliche Abschlussprüfung \| künstlerische Abschlussprüfung \| anderer
+Abschluss (bspw. Ausländischer Abschluss \| Magister) \| kein Studienabschluss
+
+ao6: (Dropdown stand06 – stand10): letzter Stand \ begonnen \| abgeschlossen \| abgebrochen \|
+unterbrochen
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO D1_16 IF ssuja=1
+    GOTO A_51a IF (ssuja=0 | ssuja=MISSING) AND h_split=1 (50%)
+    GOTO A_51b IF (ssuja=0 | ssuja=MISSING) AND h_split=2 (50%)
+    
+hi:
 
 \--------------------------------
 
@@ -1075,7 +1146,7 @@ hatten)
 vn: suzeitp01; suzeitp02; suzeit03; sudau01; sudau02; sudau03; subeur01;
 subeur02; subeur03
 
-qt: Tableau-Abfrage (Dropdown-Menü, offene Angabe, Einfachauswahl)
+qt: Akkordeo / Dropdown-Menü / offene Angabe / Einfachauswahl
 
 hl:
 
@@ -1103,7 +1174,7 @@ it3: (subeur01 – subeur03): mit Beurlaubung?
 
 st:
 
-ao1: (Dropdown suzeitp01 – suzeitp03): : Sommersemester 2020 \| Wintersemester
+ao1: (Dropdown suzeitp01 – suzeitp03): : Semester \ Sommersemester 2020 \| Wintersemester
 2019/2020 \| Sommersemester 2019 \| … \| Wintersemester 2004/2005
 
 ao2: (offene Angabe): 2 Stellen (00-99); Präfix: [sudau01 – sudau03]; Suffix:
@@ -1140,8 +1211,7 @@ tr: GOTO A_51a IF h_split=1 (50%)
     GOTO A_51b IF h_split=2 (50%)
     
 hi: In Abhängigkeit der Antworten auf Seite D1_14 erfolgt eine Einblendung von
-bis zu drei Unterbrechungen, für die je Zeile anhand verschiedener
-Antwortformate Informationen erhoben werden.
+bis zu drei Unterbrechungen jeweils mittels Akkordeon.
 
 \--------------------------------
 
@@ -1232,7 +1302,7 @@ q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (pakagern): Alles in allem bin ich gerne Student(in).
+it1 (pakagern): Alles in allem bin ich gerne Student\*in.
 
 it2 (pakafrem): Die studentische Welt ist mir fremd.
 
@@ -1657,7 +1727,7 @@ it8 (mkogwach1): Ich bearbeite zusätzliche Aufgaben, um festzustellen, ob ich
 den Stoff wirklich verstanden habe.
 
 it9 (mkogwach2): Um Wissenslücken festzustellen, rekapituliere ich die
-wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen,
+wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen.
 
 it10 (mkogreg): Wenn ich Lerninhalte nicht direkt verstehe, gehe ich den Text
 noch einmal langsam durch.
