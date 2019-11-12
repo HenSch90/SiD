@@ -465,8 +465,8 @@ hv:
 
 fo:
 
-tr: GOTO E1_7
-
+tr: GOTO E1_7 IF ibedsfin > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedaldr > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 OR ibebsth > 1 OR ibebspa > 1 OR ibebsbh > 1 OR ibebsat > 1 OR ibebsrb > 1
+ELSE GOTO E1_8
 hi: 
 
 \--------------------------------
@@ -571,7 +571,8 @@ hv:
 
 fo:
 
-tr: GOTO E1_7
+tr: GOTO E1_7 IF ibedsfin > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedaldr > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 OR ibebsth > 1 OR ibebspa > 1 OR ibebsbh > 1 OR ibebsat > 1 OR ibebsrb > 1
+ELSE GOTO E1_8
 
 hi:
 
@@ -662,49 +663,49 @@ ka3: (it8, it9, it10, it11, it12, it13, it14, it15): studienbezogene Themen
 
 ka4: (it16, it17, it18, it19, it20, it21, it22): beeinträchtigungsbezogene Themen
 
-vc: SHOW it1 IF ibedsfin \> 1
+vc: SHOW it1 IF ibedsfin > 1
 
-SHOW it2 IF ibedkv \> 1
+SHOW it2 IF ibedkv > 1
 
-SHOW it3 IF ibedafin \> 1
+SHOW it3 IF ibedafin > 1
 
-SHOW it4 IF ibedpart \> 1
+SHOW it4 IF ibedpart > 1
 
-SHOW it5 IF ibedfamu \> 1
+SHOW it5 IF ibedfamu > 1
 
-SHOW it6 IF ibeddep \> 1
+SHOW it6 IF ibeddep > 1
 
-SHOW it7 IF ibedaldr \> 1
+SHOW it7 IF ibedaldr > 1
 
-SHOW it8 IF ibedvbew \> 1
+SHOW it8 IF ibedvbew > 1
 
-SHOW it9 IF ibedvbki \> 1
+SHOW it9 IF ibedvbki > 1
 
-SHOW it10 IF ibedvbhc \> 1
+SHOW it10 IF ibedvbhc > 1
 
-SHOW it11 IF ibedllpran \> 1
+SHOW it11 IF ibedllpran > 1
 
-SHOW it12 IF ibedaoz \> 1
+SHOW it12 IF ibedaoz > 1
 
-SHOW it13 IF ibedabersw \> 1
+SHOW it13 IF ibedabersw > 1
 
-SHOW it14 IF ibedaorg \> 1
+SHOW it14 IF ibedaorg > 1
 
-SHOW it15 IF ibedabs \> 1
+SHOW it15 IF ibedabs > 1
 
-SHOW it16 IF ibebsln \> 1
+SHOW it16 IF ibebsln > 1
 
-SHOW it17 IF ibebssu \> 1
+SHOW it17 IF ibebssu > 1
 
-SHOW it18 IF ibebsth \> 1
+SHOW it18 IF ibebsth > 1
 
-SHOW it19 IF ibebspa \> 1
+SHOW it19 IF ibebspa > 1
 
-SHOW it20 IF ibebsbh \> 1
+SHOW it20 IF ibebsbh > 1
 
-SHOW it21 IF ibebsat \> 1
+SHOW it21 IF ibebsat > 1
 
-SHOW it22 IF ibebsrb \> 1
+SHOW it22 IF ibebsrb > 1
 
 av:
 
@@ -716,9 +717,7 @@ hv:
 
 fo:
 
-tr: IF iinano=1 GOTO E1_8
-
-ELSE GOTO E1_9
+tr: GOTO E1_8
 
 hi:
 
@@ -764,7 +763,7 @@ it8: (ihinnac): ... weil ich dadurch Nachteile im weiteren Studium befürchtete.
 
 it9: (ihinand): ... aus anderen Gründen
 
-st: Ich habe kein Beratungsangebot in Anspruch genommen ...
+st: Ich habe kein Beratungsangebot in Anspruch genommen, ...
 
 ao:
 
@@ -834,15 +833,15 @@ ao1: 1: nicht angeboten
 
 ao2: 2: angeboten, aber nicht genutzt
 
-ao3: 3: angebogen und genutzt
+ao3: 3: angeboten und genutzt
 
-ao4: -12: weiß nicht
+ao4: -12: weiß ich nicht
 
 mv:
 
 ka:
 
-vc: SHOW uekabekr IF gartmob-gartka = 1 (mindestens einmal angegeben)
+vc: SHOW uekabekr IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
 
 av:
 
@@ -854,7 +853,7 @@ hv:
 
 fo:
 
-tr: IF uekastei \| […] \| uekabekr = 3 GOTO E1_10
+tr: GOTO E1_10 IF uekastei==3 OR uekastte==3 OR uekasfrsp==3 OR uekasosk==3 OR uekauefa==3 OR uekabeei==3 OR uekabekr==3 
 
 ELSE GOTO E1_11
 
@@ -865,7 +864,7 @@ hi:
 E1_10
 =====
 
-tc: IF uekastei \| ... \| uekabekr = 3 (mindestens ein Kursangebot genutzt)
+tc: IF uekastei==3 OR uekastte==3 OR uekasfrsp==3 OR uekasosk==3 OR uekauefa==3 OR uekabeei==3 OR uekabekr==3
 
 vn: zuekastei; zuekastte; zuekafrsp; zuekasosk; zuekauefa; zuekabeei; zuekabekr
 
@@ -879,29 +878,19 @@ q: Wie zufrieden sind/waren Sie mit den von Ihnen genutzten Kursangeboten?
 
 is:
 
-it1: (zuekastei): Kurse zum Studieneinstieg (z. B. “Brückenkurse zur
-Aufarbeitung von Wissenslücken)
+it1: (zuekastei): Kurse zum Studieneinstieg (z. B. “Brückenkurse zur Aufarbeitung von Wissenslücken)
 
-it2: (zuekastte): Kurse zur Schulung von Studien- und Lerntechniken (z. B.
-Schreibwerkstatt, Präsentationstraining)
+it2: (zuekastte): Kurse zur Schulung von Studien- und Lerntechniken (z. B. Schreibwerkstatt, Präsentationstraining)
 
 it3: (zuekafrsp): (Fremd-)Sprachenkurse
 
-it4: (zuekasosk): Kurse zur Schulung von “soft skills” (z. B. Rhetorik, soziale
-Kompetenzen)
+it4: (zuekasosk): Kurse zur Schulung von “soft skills” (z. B. Rhetorik, soziale Kompetenzen)
 
-it5: (zuekauefa): Kurse zum Erwerb überfachlicher Zusatzqualifikationen (z. B.
-Projekt-, Wissensmanagement,
+it5: (zuekauefa): Kurse zum Erwerb überfachlicher Zusatzqualifikationen (z. B. Projekt-, Wissensmanagement, spezielle EDV-Software)
 
-spezielle EDV-Software)
+it6: (zuekabeei): Kurse zum Berufseinstieg (z. B. Bewerbungsstrategien, Assessment Center-Training, Karrieremessen)
 
-it6: (zuekabeei): Kurse zum Berufseinstieg (z. B. Bewerbungsstrategien,
-Assessment Center-Training,
-
-Karrieremessen)
-
-it7: (zuekabekr): Kurse zum Umgang mit der eigenen Beeinträchtigung/chronischen
-Krankheit
+it7: (zuekabekr): Kurse zum Umgang mit der eigenen Beeinträchtigung/chronischen Krankheit
 
 st:
 
@@ -919,19 +908,19 @@ mv:
 
 ka:
 
-vc1: SHOW zuekastei IF uekastei = 3
+vc1: SHOW zuekastei IF uekastei == 3
 
-vc2: SHOW zuekastte IF uekastte = 3
+vc2: SHOW zuekastte IF uekastte == 3
 
-vc3: SHOW zuekafrsp IF uekafrsp = 3
+vc3: SHOW zuekafrsp IF uekafrsp == 3
 
-vc4: SHOW zuekasosk IF uekasosk = 3
+vc4: SHOW zuekasosk IF uekasosk == 3
 
-vc5: SHOW zuekauefa IF uekauefa = 3
+vc5: SHOW zuekauefa IF uekauefa == 3
 
-vc6: SHOW zuekabeei IF uekabeei = 3
+vc6: SHOW zuekabeei IF uekabeei == 3
 
-vc7: SHOW zuekabekr IF uekabekr = 3
+vc7: SHOW zuekabekr IF uekabekr == 3
 
 av:
 
@@ -966,14 +955,13 @@ q: Wie gut informiert sind Sie über die folgenden Bereiche Ihrer Hochschule?
 
 is:
 
-it1: (infoauvo): außercussiculare Vortragsreihen (z. B. Studium generale)
+it1: (infoauvo): außercurriculare Vortragsreihen (z. B. Studium generale)
 
 it2: (Infofopr): Forschungsschwerpunkte Ihrer Professor\*innen
 
 it3: (infohosp): Programm des Hochschulsports
 
-it4: (infostve): politische Zusammensetzung der gegenwärtigen
-Studierendenvertretung
+it4: (infostve): politische Zusammensetzung der gegenwärtigen Studierendenvertretung
 
 it5: (infopaho): Partys auf dem Hochschulcampus
 
@@ -991,7 +979,7 @@ ao4: 4
 
 ao5: 5: sehr gut informiert
 
-ao6: -66: interessiert mich nicht (Extrakategorie)
+ao6: -12: interessiert mich nicht (Extrakategorie)
 
 mv:
 
