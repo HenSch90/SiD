@@ -306,7 +306,7 @@ it12: (feinbest1): Krankenversicherungsleistungen für technische Hilfsmittel
 
 it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit einer gesundheitlichen Beeinträchtigung
 
-it14: (feinandqo): Weitere Finanzierungsquelle(n), und zwar: 
+it14: (feinandq): Weitere Finanzierungsquelle(n), und zwar: 
 
 #{layout.BREAK}#{layout.BREAK}
 
@@ -447,7 +447,7 @@ tc:
 
 vn1: fausg (fausgmieto / fausgerno / fausgkomo / fausgkleio / fausglerno / fausgmobo / fausggeso / fausgsemo / fausgstuo / fausgfreio / fausgkitaso / fausgkindso / fausgasso / fausgthilfo / fausandq / fausandqo) 
 
-vn2: feind (feindmieto / feinderno / feindkomo / feindkleio / feindlerno / feindgmobo / feindgeso / feindgsemo / feindgstuo / feindgfreio / feindkitaso / feindkindso / feindgasso / feindgthilfo / feinandqu2 / feinandquo2)
+vn2: feind (feindmieto / feinderno / feindkomo / feindkleio / feindlerno / feindmobo / feindgeso / feindgsemo / feindgstuo / feindfreio / feindkitaso / feindkindso / feindasso / feindgthilfo / feinandquo2)
 
 vn3: fausinsg; feininsg2
 
@@ -459,10 +459,9 @@ hl:
 
 in:
 
-q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie im Sommersemester 2020 monatlich
-haben.
+q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie im Sommersemester 2020 monatlich haben.
 
-is1: "Dritte" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
+is1: "Dritte" bzw. "Andere" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
 
 is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an.
 
@@ -476,7 +475,7 @@ it4: (fausgkleio; feindkleio): Kleidung
 
 it5: (fausglerno; feindlerno): Lernmittel (z. B. Fachliteratur; aber nicht: einmalige Anschaffungskosten für PC, Instrument o. ä.)
 
-it6: (fausgmobo; feindgmobo): Mobilität (z. B. Semesterticket, laufende Ausgaben für Kfz, öff. Verkehrsmittel)
+it6: (fausgmobo; feindmobo): Mobilität (z. B. Semesterticket, laufende Ausgaben für Kfz, öff. Verkehrsmittel)
 
 it7: (fausggeso; feindgeso): Gesundheitskosten (z. B. Krankenversicherung, Medikamente, Therapiemaßnahmen)
 
@@ -484,17 +483,17 @@ it8: (fausgsemo; feindgsemo): Semesterbeitrag (ohne Semesterticket)
 
 it9: (fausgstuo; feindgstuo): Studiengebühren (z. B. privates Studium, Langzeitgebühren, Zweitstudium)
 
-it10: (fausgfreio; feindgfreio): Freizeit, Kultur und Sport
+it10: (fausgfreio; feindfreio): Freizeit, Kultur und Sport
 
 it11: (fausgkitaso; feindkitaso): Ausgaben Kinderbetreuung
 
 it12: (fausgkindso; feindkindso): kinderbezogene Ausgaben für Drogerieartikel, Kleidung, Spielzeug
 
-it13: (fausgasso; feindgasso): Ausgaben für personelle Assistenzen (z. B. Pflegeassistenz, Mitschreibkraft, Haushaltshilfe)
+it13: (fausgasso; feindasso): Ausgaben für personelle Assistenzen (z. B. Pflegeassistenz, Mitschreibkraft, Haushaltshilfe)
 
 it14: (fausgthilfo; feindgthilfo): Ausgaben für technische Hilfsmittel (z. B. Screen Reader, Braille-Zeile, FM-Anlage)
 
-it15: (fausandqo; feinandqo2): Weitere Ausgaben, und zwar:
+it15: (fausandq): Weitere Ausgaben, und zwar:
 
 #{layout.BREAK}#{layout.BREAK}
 
@@ -513,25 +512,25 @@ ao4: : (fausgkleio; feindkleio), Präfix [infield = Betrag; number] Suffix: € 
 
 ao5: : (fausglerno; feindlerno), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao6: : (fausgmobo; feindgmobo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao6: : (fausgmobo; feindmobo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 ao7: : (fausggeso; feindgeso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 ao8: : (fausgsemo; feindgsemo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao9: : (faugstuo; feindgstuo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao9: : (fausgstuo; feindgstuo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao10: : (fausgfreio; feindgfreio), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao10: : (fausgfreio; feindfreio), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 ao11: : (fausgkitaso; feindkitaso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 ao12: : (fausgkindso; feindkindso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao13: : (fausgasso; feindgasso), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao13: : (fausgasso; feindasso), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 ao14: : (fausgthilfo; feindgthilfo), Präfix [infield = Betrag; number] Suffix: € pro Monat
 
-ao15: : (fausandq; fausandqo; feinandq2; feinandqo2), [50 Zeichen] Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao15: : (fausandq; fausandqo; feinandqo2), [50 Zeichen] Präfix [infield = Betrag; number] Suffix: € pro Monat
 
 #{layout.BREAK}#{layout.BREAK}
 
