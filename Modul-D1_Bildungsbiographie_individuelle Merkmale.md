@@ -2044,4 +2044,5 @@ tr:
 
 GOTO A_52
 
-hi: Items bitte zufällig rotieren.
+hi1: Items bitte zufällig rotieren.
+hi2: Bitte keine Verbindungslinie der Skalenpunkte da ordinale Items.
