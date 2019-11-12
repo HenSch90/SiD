@@ -223,13 +223,13 @@ ka:
 
 vc:
 
-av1: (vausbzpjo): number 4 Stellen; 1950 TO 2020
+av1: (vausbzpjo): number 4 Stellen; 1950 bis 2020
 
 av2: (vausbzpmo): number 2 Stellen; 1 bis 12
 
-kh1: (vausbzpjo): Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 bis 2020).
+kh1: (vausbzpjo): Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 TO 2020).
 
-kh2: (vausbzpmo): Bitte geben Sie den Monat des Abschlusses Ihrer (letzten) Berufsausbildung an (1 bis 12).
+kh2: (vausbzpmo): Bitte geben Sie den Monat des Abschlusses Ihrer (letzten) Berufsausbildung an (1 TO 12).
 
 
 fv:
@@ -296,11 +296,11 @@ hi:
 D1_6
 =
 
-tc: IF vsbstyp= 10 \| 11 \| vausbja=3
+tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
-vn: vausbnote; vausbnoteo
+vn: vausbnote / vausbnoteo
 
-qt: Einfachauswahl / offene Angabe
+qt: offene Angabe / Einfachauswahl
 
 hl:
 
@@ -314,9 +314,9 @@ it:
 
 st:
 
-ao1: (vausbnote): : Eingabefeld; 3 Stellen; Präfix: [infield = Abschlussnote (z. B. 2,5); (vausbnoteo); number]
+ao1: (vausbnoteo), Präfix: [infield = Abschlussnote (z. B. 2,5); number]
 
-ao2: -11: : Ich habe keine Note erhalten.
+ao2: (vausbnote), -11: : Ich habe keine Note erhalten.
 
 mv:
 
@@ -324,9 +324,9 @@ ka:
 
 vc:
 
-av: number: dreistellig : 1,0 TO 4,0
+av: (vausbnoteo): number 3 Stellen; 1,0 TO 4,0
 
-kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh: (vausbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
 fv:
 
@@ -345,19 +345,17 @@ hi:
 D1_7 
 ==
 
-tc: IF ssemhs=1 \| 2 \| 01 \| 02 (nur Studierende im 1. + 2. Fachsemester)
+tc: IF (ssemhs= 1 | 2 | 01 | 02) 
 
-vn: stfwint; stfwent; stfwein; stfwber; stfwsoz; stfwarb; stfwalt; stfwwiss;
-stfwfam; stfwzeit; stfwzul; stfwhelf; stfwver; stfwand; stfwando
+vn: stfw (stfwint / stfwent / stfwein / stfwber / stfwsoz / stfwarb / stfwalt / stfwwiss / stfwfam / stfwzeit / stfwzul / stfwhelf / stfwver / stfwand / stfwando)
 
-qt: Einfachauswahlmatrix / offene Angabe
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao / offene Angabe
 
 hl:
 
 in:
 
-q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen
-Studienfaches?
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches?
 
 is:
 
@@ -381,13 +379,11 @@ it9: (stfwfam): Eltern/Familie haben mir dazu geraten
 
 it10: (stfwzeit): kurze Studienzeiten
 
-it11: (stfwzul): niedrige Hürden bei der Zulassung (z. B. keine
-Zulassungsbeschränkung)
+it11: (stfwzul): niedrige Hürden bei der Zulassung (z. B. keine Zulassungsbeschränkung)
 
 it12: (stfwhelf): Möglichkeit anderen Menschen helfen zu können
 
-it13: (stfwver): Vereinbarkeit meiner Beeinträchtigung mit späteren
-Beschäftigungsmöglichkeiten
+it13: (stfwver): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
 
 it14: (stfwand): Anderes, und zwar:
 
@@ -853,7 +849,8 @@ hv:
 fo:
 
 tr: GOTO A_49a IF sabser=1
-    GOTO A_49b IF (sabser !=1 | sabser=MISSING)
+    GOTO A_49b IF sabser>1
+    GOTO A_49a IF sabser=MISSING
     
 hi:
 
@@ -927,7 +924,7 @@ ins Masterstudium.
 
 it1: (ssweijaaz): … das Studienfach gewechselt?
 
-it2: (sawejaaz): … den angestrebten Abschluss gewechselt?
+it2: (sawejaaz): ... den angestrebten Abschluss gewechselt?
 
 it3: (shwjaaz): … die Hochschule gewechselt?
 
@@ -971,7 +968,8 @@ hv:
 
 fo:
 
-tr: GOTO D1_15
+tr: GOTO D1_15 IF ssweja=1 OR saweja=1 OR shwja=1
+    GOTO D1_16 IF ssweja=0 AND saweja=0 AND shwja=0 AND ssuja=1
     
     
 hi:
@@ -988,7 +986,7 @@ Studierende mit vorherigem Studienfachwechsel, Abschlusswechsel, Hochschulwechse
 vn: beginn01 – beginn05; ende01 – ende05; hs01 – hs05; fach01 – fach05; abs01 –
 abs05; stand01 – stand05; techepi
 
-qt: Akkordeon / Dropdown-Menü / offene Angaben
+qt: Tableau / Dropdown-Menü / offene Angaben
 
 hl:
 
@@ -1011,7 +1009,7 @@ it4 (abs01 – abs05): angestrebter Abschluss
 
 it5 (stand01 – stand05): letzter Stand
 
-it6: (techepi): Benötigen Sie weitere Episoden?
+it6: techepi): Benötigen Sie weitere Episoden?
 
 st:
 
@@ -1053,87 +1051,14 @@ hv:
 
 fo:
 
-tr: GOTO D1_15b IF techepi=1
-    GOTO D1_16 IF ssuja=1
-    GOTO A_51a IF (ssuja=0 | ssuja=MISSING) AND h_split=1 (50%)
-    GOTO A_51b IF (ssuja=0 | ssuja=MISSING) AND h_split=2 (50%)
-    
-hi:
-
-
-\--------------------------------
-
-D1_15b
-===
-
-tc:
-
-vn: beginn06 – beginn10; ende06 – ende10; hs06 – hs10; fach06 – fach10; abs06 –
-abs10; stand06 – stand10
-
-qt: Akkordeon / Dropdown-Menü / offene Angaben
-
-hl:
-
-in:
-
-q: Bitte tragen Sie die wesentlichen Stationen Ihres Studienverlaufs in das
-nachfolgende Tableau ein.
-
-is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit
-Studienbeginn.
-
-it1 (beginn06 – beginn10, ende06 – ende10): Beginn und Ende (Semester)
-
-it2 (hs06 – hs10): Hochschule
-
-it3 (fach06 – fach10): Studienfach
-
-it4 (abs06 – abs10): angestrebter Abschluss
-
-it5 (stand06 – stand10): letzter Stand
-
-st:
-
-ao1: Prefix: Beginn: (Dropdown bitte absteigend - beginn06 – beginn10): Semester \ Sommersemester 2020 \|
-Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
-
-ao2: Prefix: Ende: (Dropdown bitte absteigend - ende06 – ende10): Semester \ Sommersemester 2020 \|
-Wintersemester 2019/2020 \| Sommersemester 2019 \| Wintersemester 2018/2019 \| …
-
-ao3: (offene Angabe): 100 Stellen; Präfix: [infield = Hochschule; hs06 – hs10];
-
-ao4: (offene Angabe) 60 Stellen; Präfix: [infield = Studienfach; fach06 – fach10]; 
-
-ao5: (Dropdown abs06 – abs10): angestrebter Abschluss \ Bachelor \| Bachelor (Lehramt) \| Master \|
-Master (Lehramt) \| Staatsexamen \| Staatsexamen (Lehramt) \| Diplom, Promotion
-\| kirchliche Abschlussprüfung \| künstlerische Abschlussprüfung \| anderer
-Abschluss (bspw. Ausländischer Abschluss \| Magister) \| kein Studienabschluss
-
-ao6: (Dropdown stand06 – stand10): letzter Stand \ begonnen \| abgeschlossen \| abgebrochen \|
-unterbrochen
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
 tr: GOTO D1_16 IF ssuja=1
-    GOTO A_51a IF (ssuja=0 | ssuja=MISSING) AND h_split=1 (50%)
-    GOTO A_51b IF (ssuja=0 | ssuja=MISSING) AND h_split=2 (50%)
+    GOTO A_51a IF ssuja=0 AND h_split=1 (50%)
+    GOTO A_51b IF ssuja=0 AND h_split=2 (50%)
+    GOTO A_51a IF ssuja=MISSING AND h_split=1 (50%)
+    GOTO A_51b IF ssuja=MISSING AND h_split=2 (50%)  
     
-hi:
+hi: Wenn techepi=1, bitte zwei weitere Zeilen einblenden.
+
 
 \--------------------------------
 
@@ -1146,7 +1071,7 @@ hatten)
 vn: suzeitp01; suzeitp02; suzeit03; sudau01; sudau02; sudau03; subeur01;
 subeur02; subeur03
 
-qt: Akkordeo / Dropdown-Menü / offene Angabe / Einfachauswahl
+qt: Tableau-Abfrage (Dropdown-Menü, offene Angabe, Einfachauswahl)
 
 hl:
 
@@ -1174,7 +1099,7 @@ it3: (subeur01 – subeur03): mit Beurlaubung?
 
 st:
 
-ao1: (Dropdown suzeitp01 – suzeitp03): : Semester \ Sommersemester 2020 \| Wintersemester
+ao1: (Dropdown suzeitp01 – suzeitp03): : Sommersemester 2020 \| Wintersemester
 2019/2020 \| Sommersemester 2019 \| … \| Wintersemester 2004/2005
 
 ao2: (offene Angabe): 2 Stellen (00-99); Präfix: [sudau01 – sudau03]; Suffix:
@@ -1211,7 +1136,8 @@ tr: GOTO A_51a IF h_split=1 (50%)
     GOTO A_51b IF h_split=2 (50%)
     
 hi: In Abhängigkeit der Antworten auf Seite D1_14 erfolgt eine Einblendung von
-bis zu drei Unterbrechungen jeweils mittels Akkordeon.
+bis zu drei Unterbrechungen, für die je Zeile anhand verschiedener
+Antwortformate Informationen erhoben werden.
 
 \--------------------------------
 
@@ -1302,7 +1228,7 @@ q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (pakagern): Alles in allem bin ich gerne Student\*in.
+it1 (pakagern): Alles in allem bin ich gerne Student(in).
 
 it2 (pakafrem): Die studentische Welt ist mir fremd.
 
@@ -1727,7 +1653,7 @@ it8 (mkogwach1): Ich bearbeite zusätzliche Aufgaben, um festzustellen, ob ich
 den Stoff wirklich verstanden habe.
 
 it9 (mkogwach2): Um Wissenslücken festzustellen, rekapituliere ich die
-wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen.
+wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen,
 
 it10 (mkogreg): Wenn ich Lerninhalte nicht direkt verstehe, gehe ich den Text
 noch einmal langsam durch.
