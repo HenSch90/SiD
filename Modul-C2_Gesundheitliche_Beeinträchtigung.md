@@ -372,7 +372,7 @@ hl:
 
 in:
 
-q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen 
+q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen bzw. Ihren Beeinträchtigungen Schwierigkeiten?
 
 is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
 Bitte alles Zutreffende auswählen.
