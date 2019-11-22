@@ -284,8 +284,7 @@ hl:
 
 in:
 
-q: Wissen Sie bereits, ob Ihr aktueller Auslandsaufenthalt auf Ihr Studium in
-Deutschland angerechnet wird?
+q: Wird Ihr gegenwärtiger Auslandsaufenthalt auf Ihr Studium in Deutschland angerechnet?
 
 is:
 
