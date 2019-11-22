@@ -833,8 +833,7 @@ hl:
 
 in:
 
-q: Werden Ihnen die in Deutschland erbrachten Studienleistungen auf Ihr Studium in Ihrem Heimatland angerechnet?
-
+q: Werden Ihnen die in Deutschland erbrachten Studienleistungen auf Ihr Studium an Ihrer Heimatuniversität angerechnet?
 is:
 
 it:
