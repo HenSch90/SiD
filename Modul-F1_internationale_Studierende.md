@@ -1497,7 +1497,7 @@ it1 (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und meine
 
 it2 (intling2ba): Ich verstehe die wichtigsten Punkte in deutschen Radio- und Fernsehprogrammen.
 
-it3 (intling3ba): Ich kann deutsche Zeitungsartikel lesen und vollständig verstehen.
+it3 (intling3ba): Ich kann deutsche Zeitungsartikel lesen und verstehen.
 
 st:
 
