@@ -99,8 +99,7 @@ hl:
 
 in:
 
-q: Wo führen Sie Ihren aktuellen studienbezogenen Auslandsaufenthalt durch? 
-Bitte tragen Sie das Land, den Ort beziehungsweise die Hochschule ein.
+q: Bitte tragen Sie das Land, den Ort sowie ggf. die Hochschule ein, an der Sie aktuell im Ausland studieren.
 
 is:
 
