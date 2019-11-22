@@ -766,8 +766,7 @@ hl:
 
 in:
 
-q:  Wenn Sie nochmal vor der Wahl stünden: In welchem Land, in welcher Stadt beziehungsweise an welcher Hochschule hätten Sie am liebsten Ihren studienbezogenen Auslandsaufenthalt durchgeführt?
-
+q:  Wenn Sie die freie Wahl hätten, wo würden Sie am liebsten studieren?
 is:
 
 it:
