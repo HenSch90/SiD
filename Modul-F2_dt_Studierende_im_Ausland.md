@@ -884,7 +884,7 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (intling1sia): Ich kann in der Landessprache über vertraute Themen sprechen
+it1 (intling1sia): Ich kann in der Sprache meines Gastlandes über vertraute Themen sprechen
 und meine persönliche Meinung äußern.
 
 it2 (intling2sia): Ich verstehe die wichtigsten Punkte in den einheimischen Radio- und Fernsehprogrammen.
