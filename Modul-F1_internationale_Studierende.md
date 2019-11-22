@@ -17,7 +17,7 @@ is:
 
 it1: (aeinnorm1): : Ein studienbezogener Auslandsaufenthalt darf während des Studiums auf keinen Fall fehlen.
 
-it2: (aeinnorm2): : Auslandserfahrungen warden auf dem Arbeitsmarkt oftmals erwartet.
+it2: (aeinnorm2): : Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals erwartet.
 
 it3: (aeinnorm3): : Jede*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
 
