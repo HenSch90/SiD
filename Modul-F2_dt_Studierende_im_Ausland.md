@@ -154,7 +154,7 @@ q: Warum haben Sie sich für dieses Land entschieden?
 
 is:
 
-Überschrift: Ich habe mich für das Studienland entschieden …
+Überschrift: Ich habe mich für ein Studium in diesem Land entschieden, 
 
 it1 (bdefinsia): …weil ein Studium in diesem Land meinen finanziellen
 Möglichkeiten entspricht.
