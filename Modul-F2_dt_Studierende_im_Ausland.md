@@ -233,7 +233,7 @@ hl:
 
 in:
 
-q: Beabsichtigen Sie im Ausland einen Studienabschluss zu erwerben?
+q: Beabsichtigen Sie im Ausland einen Abschluss zu erwerben?
 
 is:
 
@@ -243,7 +243,7 @@ st:
 
 ao1: 1: : nein
 
-ao2: 2: : ja, sowohl an der ausländischen als auch der deutschen Hochschule.
+ao2: 2: : ja, sowohl an der ausländischen als auch der deutschen Hochschule
 
 ao3: 3: : ja, nur an der ausländischen Hochschule
 
