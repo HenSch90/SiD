@@ -92,25 +92,23 @@ it2: (mzufqual): Ernährungsqualität und Gesundheitswert
 
 it3: (mzufausw): Auswahl- und Kombinationsmöglichkeiten
 
-it4: (mzufatmo): Atmosphäre und Raumgestaltung
-
 it5: (mzufprl): Preis-Leistungs-Verhältnis
 
 it6: (mzufpraes): Präsentation und Darbietung des Essensangebots
 
-it1: (mzufatmo): Atmosphäre und Raumgestaltung
+it7: (mzufatmo): Atmosphäre und Raumgestaltung
 
-it1: (mzuflage): Lage und Erreichbarkeit
+it8: (mzuflage): Lage und Erreichbarkeit
 
-it1: (mzufwart): Wartezeiten
+it9: (mzufwart): Wartezeiten
 
-it1: (mzufserv): Service
+it10: (mzufserv): Service
 
-it1: (mzufverl): zeitliche Vereinbarkeit mit Lehr-/Veranstaltungsplan
+it11: (mzufverl): zeitliche Vereinbarkeit mit Lehr-/Veranstaltungsplan
 
-it1: (mzuföff): Öffnungszeiten
+it12: (mzuföff): Öffnungszeiten
 
-it1: (mzufkomm): Ort der Kommunikation
+it13: (mzufkomm): Ort der Kommunikation
 
 st:
 
