@@ -80,15 +80,13 @@ in:
 
 q1: Bitte beschreiben Sie Ihren studienbezogenen Auslandsaufenthalt näher.
 
-q2: Bitte beschreiben Sie Ihre beiden studienbezogenen Auslandsaufenthalte näher
+q2: Bitte beschreiben Sie Ihre beiden studienbezogenen Auslandsaufenthalte näher.
 
 q3: Bitte beschreiben Sie Ihre drei studienbezogenen Auslandsaufenthalte näher.
 
-is1: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt.
+is1: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt.
 
-is2: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt. Sollten Sie
-mehr als drei Aufenthalte haben, dann geben sie bitte den drittletzten
-Aufenthalt an.
+is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. Sollten Sie bereits häufiger als dreimal studienbezogen im Ausland gewesen sein, dann geben Sie bitte nur die drei letzten Aufenthalte an.
 
 it1: (ainfa1): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
@@ -144,15 +142,13 @@ st:
 
 ao:
 
-Drop-Down-Menü1
+Drop-Down-Menü1 (0="Art des Auslandsaufenthalts", 1="Auslandsstudium mit angestrebtem Abschluss im Ausland", 2="Auslandsstudium/-semester ohne angestrebten Abschluss", 3="Praktikum/Praxisphase", 4="Sprachkurs", 5="Studienreise", 6="Projektarbeit", 7="Summer School", 8="sonstiger Aufenthalt"
 
-Drop-Down-Menü2
+Drop-Down-Menü2 (0="Monat", 1="Januar", 2="Februar" ... 12="Dezember")
 
-Drop-Down-Menü3
+Drop-Down-Menü3 (0="Jahr", 1="2020", 2="2019" ... 13="2008")
 
-Drop-Down-Menü4
-
-Drop-Down-Menü5
+Drop-Down-Menü5 (0="Jahr", 1="2030", 2="2029" ... 13="2018")
 
 mv:
 
@@ -221,7 +217,10 @@ q1: Fand Ihr Auslandsaufenthalt im Rahmen eines Programms statt?
 
 q2: Fanden Ihre Auslandsaufenthalte im Rahmen eines Programms statt?
 
-is: Bitte alles Zutreffende auswählen.
+is1: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt. Sollten Sie mehr als drei Aufenthalte haben, dann geben sie bitte den drittletzten Aufenthalt an.
+Bitte alles Zutreffende auswählen.
+
+is2: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -291,11 +290,11 @@ ka3 (ao19 TO ao27): Aufenthalt C: [Art Aufenthalt, Land, Beginn]
 
 vc:
 
-SHOW q1 AND ao1 TO ao9 AND ka1 IF 1 Aufenthalt
+SHOW q1 AND ao1 TO ao9 AND ka1 AND is2 IF 1 Aufenthalt (ainfaus > 1 \ ainfaus = kA)
 
-SHOW q2 AND ao1 TO ao18 AND ka1 TO ka2 IF 2 Aufenthalte
+SHOW q2 AND ao1 TO ao18 AND ka1 TO ka2 AND is1 AND is2 IF 2 Aufenthalte (ainfaus > 2)
 
-SHOW q2 AND ao1 TO ao27 AND ka1 TO ka3 IF 3 Aufenthalte
+SHOW q2 AND ao1 TO ao27 AND ka1 TO ka3 AND is1 AND is2 IF 3 Aufenthalte (ainfaus > 3)
 
 av:
 
@@ -311,7 +310,7 @@ tr:
 
 GOTO F3_9
 
-hi:
+hi: Bitte bis zu 3 Akkordeons mit den Überschriften "1. Auslandsaufenhalt", "2.Auslandsaufenhalt", "3.Auslandsaufenhalt"
 
 \--------------------------------
 
