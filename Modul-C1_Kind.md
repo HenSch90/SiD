@@ -464,7 +464,7 @@ C1_8
 
 tc: IF dkinja = 2
 
-vn: dekinbezuf
+vn: dkinbezuf
 
 qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
