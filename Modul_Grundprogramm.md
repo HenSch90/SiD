@@ -1897,7 +1897,7 @@ A_30
 
 tc:
 
-vn: sperleiszufr
+vn: sperleiszufr_2
 
 qt: Einfachauswahl
 
