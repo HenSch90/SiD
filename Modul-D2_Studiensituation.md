@@ -307,7 +307,7 @@ D2_5
 
 tc:
 
-vn: ssanlehr
+vn: ssanwesend
 
 qt: Einfachauswahl
 
