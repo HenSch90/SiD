@@ -176,7 +176,7 @@ ao5 (dkinrokom): Kommiliton\*innen
 
 ao6 (dkinrofr): Freunde
 
-ao7 (dkinroan): Andere Person(en), und zwar: [dkinroano, 50 Zeichen, 30pt]
+ao7 (dkinroan): Andere Person(en), und zwar: [dkinroano, 30pt]
 
 mv:
 
@@ -563,7 +563,7 @@ it11: (dkinsukber): Angebote zur Kurzzeitbetreuung von Kindern
 
 it12: (dkinsubur): Familienservice/-büro
 
-it13: (dkinsuso): Sonstiges, und zwar: [dkinsusoo; Eingabefeld; 50 Zeichen]
+it13: (dkinsuso): Sonstiges, und zwar: [dkinsusoo; Eingabefeld]
 
 st:
 
@@ -881,10 +881,15 @@ it:
 st:
 
 ao1: 1: während des Studiums das Kind bekommen
+
 ao2: 2: erst studieren, wenn das Kind selbstständiger ist
+
 ao3: 3: erst das Studium beenden und dann ein Kind bekommen
+
 ao4: 4: gar kein(e) Kind(er) bekommen
+
 ao5: 5: gar kein Studium aufnehmen
+
 ao6: 6: keine der genannten Optionen
 
 mv:
