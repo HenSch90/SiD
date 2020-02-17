@@ -25,7 +25,7 @@ ao2: 2: : private Schule
 
 ao3: 3: : kirchliche Schule
 
-ao4: 4: : Andere Schule, und zwar: [(vtraeo), 50 Zeichen]
+ao4: 4: : Andere Schule, und zwar:
 
 mv:
 
@@ -152,9 +152,9 @@ hl:
 
 in:
 
-q: Unabhängig davon, ob bei Ihnen selbst ein Förderbedarf bestand oder nicht: Wurden Sie jemals in einer integrativ arbeitenden (Inklusions-)Klasse unterrichtet oder haben Sie eine Förderschule besucht?
+q: Unabhängig davon, ob bei Ihnen selbst ein Förderbedarf bestand oder nicht: Wurden Sie jemals in einer integrativ arbeitenden Klasse/Inklusionsklasse unterrichtet oder haben Sie eine Förderschule besucht?
 
-is: Kennzeichnend für eine integrativ arbeitende (Inklusions-)Klasse ist
+is: Kennzeichnend für eine integrativ arbeitende Klasse/Inklusionsklasse ist
 der gemeinsame Unterricht von Schüler\*innen mit und ohne sonderpädagogischen
 Förderbedarf.
 #{layout.BREAK}
@@ -166,7 +166,7 @@ st:
 
 ao1: (inklnein): nein, weder noch [Exklusivkategorie]
 
-ao2: (inklja): Ja, ich wurde in einer integrativ arbeitenden (Inklusions-)Klasse unterrichtet.
+ao2: (inklja): Ja, ich wurde in einer integrativ arbeitenden Klasse/Inklusionsklasse unterrichtet.
 
 ao3: (inklschu): Ja, ich war auf einer Förderschule.
 
@@ -199,7 +199,7 @@ tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
 vn: vausbzpjo; vausbzpmo
 
-qt: offene Angabe 
+qt: offene Angabe und Einfachauswahl mit Dropdown
 
 hl:
 
@@ -213,9 +213,33 @@ it:
 
 st:
 
-ao1: (vausbzpjo), Präfix: [infield = Jahr; number]
+ao: (vausbzpjo), Präfix: [infield = Jahr; number], Suffix:Jahr des Abschlusses der Berufsausbildung
 
-ao2: (vausbzpmo), Präfix: [infield = Monat; number]
+ao: (vausbzpmo), Dropdown Monat
+
+ao1: 1: Januar
+
+ao2: 2: Februar
+
+ao3: 3: März
+
+ao4: 4: April
+
+ao5: 5: Mai
+
+ao6: 6: Juni
+
+ao7: 7: Juli
+
+ao8: 8: August
+
+ao9: 9: September
+
+ao10: 10: Oktober
+
+ao11: 11: November
+
+ao12: 12: Dezember
 
 mv:
 
@@ -223,13 +247,9 @@ ka:
 
 vc:
 
-av1: (vausbzpjo): number 4 Stellen; 1950 bis 2020
+av: (vausbzpjo): number 4 Stellen; 1950 bis 2020
 
-av2: (vausbzpmo): number 2 Stellen; 1 bis 12
-
-kh1: (vausbzpjo): Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 TO 2020).
-
-kh2: (vausbzpmo): Bitte geben Sie den Monat des Abschlusses Ihrer (letzten) Berufsausbildung an (1 TO 12).
+kh: (vausbzpjo): Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 bis 2020).
 
 
 fv:
@@ -324,7 +344,7 @@ ka:
 
 vc:
 
-av: (vausbnoteo): number 3 Stellen; 1,0 TO 4,0
+av: (vausbnoteo): 1,0 TO 4,0
 
 kh: (vausbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
@@ -609,7 +629,7 @@ tr:
 
 GOTO D1_10 IF sabserbl1 = 0
 GOTO D1_12 IF sabserbl = 1
-GOTO D1_12 IF sabserbl = k. A.
+GOTO D1_10 IF sabserbl = k. A.
 
 
 \--------------------------------
@@ -1037,7 +1057,7 @@ hv:
 
 fo:
 
-tr: GOTO D1_15b IF techepi==2
+tr: GOTO D1_15b IF techepi==1
     GOTO D1_16 IF ssuja=1  
     GOTO A_51a IF h_split=1 
     GOTO A_51b IF h_split=2 
@@ -1163,7 +1183,7 @@ mv:
 
 ka:
 
-vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssujaaz=1 \| kA
+vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssujaaz=1 \
 
 vc2: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
 subeur02 IF ssujaaz=2
@@ -1331,7 +1351,7 @@ hl:
 
 in:
 
-q: Bitte beantworten Sie die folgenden Fragen ohne lange nachzudenken.
+q: 
 
 is:
 
@@ -1524,7 +1544,7 @@ it5: (ksprand / ksprando): Andere Sprache, und zwar: [50 Zeichen]
 
 st:
 
-ao1: 1: : keine Kenntnisse
+ao1: 1: : Grundkenntnisse
 
 ao2: 2
 
@@ -1534,7 +1554,8 @@ ao4: 4
 
 ao5: 5: : sehr gute Kenntnisse
 
-ao6: 6: : Muttersprache
+ao6: 6: : Ich beherrsche diese Sprache nicht
+ao7: 7: : Muttersprache
 
 mv:
 
