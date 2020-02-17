@@ -571,7 +571,7 @@ fv:
 
 hv:
 
-fo: ao12 absetzen
+fo: 
 
 tr: GOTO B2_6
 
@@ -597,7 +597,7 @@ q: Wie viele Bücher besitzen Sie selbst aktuell bzw. Ihre Eltern?
 is: Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher.
 Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
 
-is: Anzahl Bücher
+is: 
 
 it1: (buchanzi2): ich selbst
 
@@ -810,7 +810,7 @@ it2: (bezmein) Die Meinung meiner Eltern ist mir sehr wichtig.
 it3: (bezprob) Wenn ich Probleme im Studium habe, dann spreche ich mit meinen
 Eltern darüber.
 
-it4: (bezsit) Meine Eltern können meine Lebenssituation gut nachvollziehen
+it4: (bezsit) Meine Eltern können meine Lebenssituation gut nachvollziehen.
 
 it5: (beztip) Meine Eltern geben mir Tipps, wenn es um mein Studium geht.
 
@@ -1220,7 +1220,7 @@ ao4 (promgroß): ja, Großeltern
 
 ao5 (promver): ja, andere Verwandte
 
-mv: -12: weiß ich nicht
+mv: -12: weiß ich nicht (EK)
 
 ka:
 
@@ -1234,8 +1234,8 @@ fv:
 
 hv:
 
-fo: ao6 absetzen
+fo: 
 
 tr: GOTO A_34
 
-hi: [ao1 (promno): nein] soll exklusiv sein
+hi: 
