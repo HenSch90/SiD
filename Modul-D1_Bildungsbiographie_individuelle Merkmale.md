@@ -1555,6 +1555,7 @@ ao4: 4
 ao5: 5: : sehr gute Kenntnisse
 
 ao6: 6: : Ich beherrsche diese Sprache nicht
+
 ao7: 7: : Muttersprache
 
 mv:
