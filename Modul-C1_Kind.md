@@ -74,17 +74,17 @@ q3: Wie alt sind Ihre Kinder?
 
 is: Mit der Bezeichnung “1. Kind” meinen wir Ihr ältestes Kind.
 
-it1: (dkinagej) : [infield = Alter jüngstes Kind]
+it1: (dkinagej) : [infield = Alter Ihres jüngsten Kindes]
 
-it2: (dkinage1) : [infield = Alter Kind]
+it2: (dkinage1) : [infield = Alter Ihres Kindes]
 
-it3: (dkinage2) : [infield = Alter 1. Kind]
+it3: (dkinage2) : [infield = Alter Ihres 1. Kindes]
 
-it4: (dkinage3) : [infield = Alter 2. Kind]
+it4: (dkinage3) : [infield = Alter Ihres 2. Kindes]
 
-it5: (dkinage4) : [infield = Alter 3. Kind]
+it5: (dkinage4) : [infield = Alter Ihres 3. Kindes]
 
-it6: (dkinage5) : [infield = Alter 4. Kind]
+it6: (dkinage5) : [infield = Alter Ihres 4. Kindes]
 
 st:
 
@@ -174,9 +174,9 @@ ao4 (dkinrover): andere Verwandte
 
 ao5 (dkinrokom): Kommiliton\*innen
 
-ao6 (dkinrofr): Freund\*innen
+ao6 (dkinrofr): Freunde
 
-ao7 (dkinroan): Andere Person(en), und zwar: [dkinroano, 50 Zeichen, 30pt]
+ao7 (dkinroan): Andere Person(en), und zwar: [dkinroano, 30pt]
 
 mv:
 
