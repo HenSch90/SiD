@@ -137,7 +137,7 @@ Gebärdensprachdolmetscher\*in)
 ao10 (bedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen
 Reader, Braille-Zeile, FM-Anlage)
 
-ao11 (bedand): Anderes, und zwar: [bedando] [offenes Eingabefeld; 250 Zeichen]
+ao11 (bedand): Anderes, und zwar: [bedando] [offenes Eingabefeld]
 
 mv:
 
@@ -168,7 +168,7 @@ tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
 vn: bezeit; bezeitj
 
-qt: Einfachauswahl mit Dropdown-Menü
+qt: Einfachauswahl mit offenenm Zahlenfeld
 
 hl:
 
@@ -184,13 +184,13 @@ st:
 
 ao1 (bezeit): 1: : seit meiner Geburt
 
-ao2 (bezeit): 2: : 0,5 cm, seit meinem [number]. Lebensjahr
+ao2 (bezeit): 2: : seit meinem [number]. Lebensjahr
 
 mv:
 
 ka:
 
-vc: SHOW is IF Zahl der Nennungen von gartmob bis gartka \> 1
+vc:
 
 av: number: 2 stellig: 1 TO 99
 
@@ -284,7 +284,9 @@ ao1: 1: : Nein, habe ich nicht beantragt.
 
 ao2: 2: : Nein, weil keine Behinderung festgestellt wurde.
 
-ao4: 3: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo1), number, 3
+ao3: 3: : Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
+
+ao4: 4: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo1), number, 3
 Zeichen]
 
 mv:
@@ -334,7 +336,9 @@ ao1: 1 : Nein, habe ich nicht beantragt.
 
 ao2: 2: : Nein, weil keine Behinderung festgestellt wurde.
 
-ao3: 3: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo2), 3 Zeichen,
+ao3: 3: : Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
+
+ao4: 4: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo2), 3 Zeichen,
 number]
 
 mv:
@@ -372,7 +376,7 @@ hl:
 
 in:
 
-q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen bzw. Ihren Beeinträchtigungen Schwierigkeiten?
+q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen Schwierigkeiten?
 
 is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
 Bitte alles Zutreffende auswählen.
@@ -393,15 +397,11 @@ der Prüfungen, zeitliche Vorgaben)
 
 ao4 (schwand): Anderer Studienbereich, und zwar: [(schwando): 250 Zeichen]
 
-ao5 (schwno): keine beeinträchtigungsbedingten Schwierigkeiten [EK]
-
 mv:
 
 ka:
 
 vc1: SHOW q1 IF h_gartcount = 1
-
-vc2: SHOW q2 IF h_gartcount > 1
 
 av:
 
@@ -471,7 +471,7 @@ fo:
 
 tr: GOTO C2_9 IF ntabau=2 OR ntaorg=2 OR ntapru=2 OR ntaand=2
 
-GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntapru=1 OR ntaand=1
+GOTO C2_10 IF ntabau=1 AND ntaorg=1 AND ntapru=1 AND ntaand=1
 
 GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
 
@@ -531,7 +531,7 @@ it4: (ntahand): Anderer Studienbereich, und zwar: [ntahando] [Offenes Eingabefel
 
 st:
 
-ao1: 1: 1: gar nicht hilfreich
+ao1: 1: 1: sehr hilfreich
 
 ao2: 2: 2
 
@@ -539,7 +539,9 @@ ao3: 3: 3
 
 ao4: 4: 4
 
-ao5: 5: 5: sehr hilfreich
+ao5: 5: 5: gar nicht hilfreich
+
+ao6: 6: Nicht um individuelle Anpassung gebeten
 
 ka:
 
@@ -561,7 +563,7 @@ hv:
 
 fo:
 
-tr: GOTO C2_10 IF ntabau=1 OR ntaorg=1 OR ntapru=1 OR ntaand=1
+tr: 
 
 GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
 
