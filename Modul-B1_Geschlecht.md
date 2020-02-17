@@ -539,7 +539,7 @@ ka:
 
 vc:
 
-av:Bitte geben Sie den prozentualen Anteil an (0 bis 100).
+av:
 
 kh:
 
