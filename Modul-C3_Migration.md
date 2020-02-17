@@ -141,7 +141,7 @@ hv:
 
 fo:
 
-tr: GOTO A_37a (50%)
+tr: GOTO A_37a (50% )
     GOTO A_37b (50%)
 
 hi:
