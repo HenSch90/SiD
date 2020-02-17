@@ -25,7 +25,7 @@ ao2: 2: : private Schule
 
 ao3: 3: : kirchliche Schule
 
-ao4: 4: : Andere Schule, und zwar:
+ao4: 4: : Andere Schule, und zwar: [(vtraeo)]
 
 mv:
 
@@ -488,7 +488,7 @@ it13: (hswbarr): gute Ausstattung/Barrierefreiheit
 
 it14: (hswtz): Möglichkeit, in Teilzeit studieren zu können
 
-it15: (hswand): Anderes, und zwar: [(hswando), 100 Zeichen]
+it15: (hswand): Anderes, und zwar: [(hswando)]
 
 st:
 
@@ -1579,7 +1579,7 @@ tr:
 GOTO D1_22 IF h_split=1 
 GOTO D1_23 IF h_split=2 
 
-hi: Die Kategorie "Muttersprache" bitte etwas nach rechts abgesetzt und ohne Verbindungslinie zu den übrigen Skalenpunkten.
+hi: 
 
 \--------------------------------
 
