@@ -409,8 +409,6 @@ ao4: 4
 
 ao5: 5: sehr gut vereinbar
 
-ao6: 6: weiß ich nicht
-
 mv: 
 
 ka: 
@@ -563,7 +561,7 @@ tr:
 
 GOTO D2_8
 
-hi: Subskalen „Konstruktion“ + „Forschungsorientierung“ + zusätzl. Items
+hi: 
 
 **------------------------------------------------------------**
 
@@ -685,7 +683,7 @@ tr:
 
 GOTO D2_10
 
-hi: Subskalen „Praxisorientierung“ + „Forschungsorientierung“
+hi: 
 
 **------------------------------------------------------------**
 
@@ -742,7 +740,7 @@ tr:
 
 GOTO D2_11
 
-hi: Teil der Subskala „Forschungsorientierung“
+hi: 
 
 **------------------------------------------------------------**
 
@@ -809,7 +807,7 @@ tr:
 
 GOTO D2_12
 
-hi: Subskalen „Unterstützung durch Lehrende“ + „soziales Klima“
+hi: 
 
 **------------------------------------------------------------**
 
@@ -870,7 +868,7 @@ tr:
 
 GOTO D2_21
 
-hi: Subskala „Motivierung und Lehrengagement“
+hi: 
 
 **------------------------------------------------------------**
 
@@ -1010,8 +1008,7 @@ tr:
 
 GOTO D2_15
 
-hi: Kontaktqualität muss auf einer Seite mit der Kontakthäufigkeit abgebildet
-sein.
+hi: 
 
 **------------------------------------------------------------**
 
@@ -1450,13 +1447,12 @@ mv: -13: kann ich nicht beurteilen
 
 ka:
 
-vc1: SHOW sszustud14 IF dkinja=2
+vc1: 
 
-vc2: SHOW sszustud15 IF gartmob=1 or/and gartseh=1 or/and gartohr=1 or/and gartspr=1 or/and gartpsy=1 or/and gartsom=1 or/and garttls=1 or/and gartson=1 or/and gartka=1
+vc2: 
+vc3: 
 
-vc3: SHOW sszustud16 IF eaktsens=2 or eaktsens=3 or eaktsens=4
-
-vc4: SHOW sszustud17 IF pflegang=2
+vc4: 
 
 av:
 
