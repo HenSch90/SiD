@@ -80,7 +80,7 @@ fv:
 
 hv:
 
-fo: ao6 abgesetzt
+fo: mv abgesetzt
 
 tr: GOTO C2_2
 
@@ -204,8 +204,7 @@ fo:
 
 tr: GOTO C2_4
 
-hi: \@ ZOFAR: Wie sollen diese Drop-Down-Listen hier codiert werden? / soll eine
-Ziffernliste von 1. bis 99. Enthalten
+hi:
 
 \--------------------------------
 
@@ -252,10 +251,10 @@ hv:
 
 fo:
 
-tr: GOTO C2_5 / C2_6 (50%-50%-Split)
+tr: GOTO C2_5 if h_split==1
+GOTO C2_6 if h_split==2
 
-hi: \@ ZOFAR: Wahrscheinlich legt ihr für den Split eine Systemvariable an? Wie
-soll das in dieser Vorlage codiert werden?
+hi:
 
 \--------------------------------
 
@@ -625,36 +624,6 @@ mv:
 
 ka:
 
-vc1: SHOW q1 IF ntabau=1 AND ntaorg<>1 AND ntapru<>1 AND ntaand<>1
-
-vc2: SHOW q2 IF ntaorg=1 AND ntabau<>1 AND ntapru<>1 AND ntaand<>1
-
-vc3: SHOW q3 IF ntapru=1 AND ntabau<>1 AND ntaorg<>1 AND ntaand<>1
-
-vc4: SHOW q4 IF ntaand=1 AND ntabau<>1 AND ntaorg<>1 AND ntapru<>1
-
-vc5: SHOW q5 IF ntabau=1 AND ntaorg=1 AND ntapru<>1 AND ntaand<>1
-
-vc6: SHOW q6 IF ntabau=1 AND ntapru=1 AND ntaorg<>1 AND ntaand<>1
-
-vc7: SHOW q7 IF ntabau=1 AND ntaand=1 AND ntaorg<>1 AND ntapru<>1
-
-vc8: SHOW q8 IF ntaorg=1 AND ntapru=1 AND ntabau<>1 AND ntaand<>1
-
-vc9: SHOW q9 IF ntaorg=1 AND ntaand=1 AND ntabau<>1 AND ntapru<>1
-
-vc10: SHOW q10 IF ntapru=1 AND ntaand=1 AND ntabau<>1 AND ntaorg<>1
-
-vc11: SHOW q11 IF ntabau=1 AND ntaorg=1 AND ntapru=1 AND ntaand=1
-
-vc12: SHOW q12 IF ntabau=1 AND ntapru=1 AND ntaand=1 AND ntaorg<>1
-
-vc13: SHOW q13 IF ntaorg=1 AND ntapru=1 AND ntaand=1 AND ntabau<>1
-
-vc14: SHOW q14 IF ntabau=1 AND ntaorg=1 AND ntapru=1 AND ntaand<>1
-
-vc15: SHOW q15 IF ntabau=1 AND ntaorg=1 AND ntaand=1 AND ntapru<>1
-
 av:
 
 kh:
@@ -665,9 +634,7 @@ hv:
 
 fo:
 
-tr: GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
-
-ELSE GOTO C2_12
+tr: GOTO C2_12
 
 hi:
 
@@ -810,7 +777,7 @@ fo:
 tr: GOTO C2_13 IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb =
 3 OR beand = 3
 
-ELSE GOTO nächstes Modul
+ELSE GOTO A_16
 
 hi:
 
