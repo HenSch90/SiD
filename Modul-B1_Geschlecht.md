@@ -271,7 +271,7 @@ is:
 
 it1: (chldsuffer): Ein Kleinkind wird sicherlich darunter leiden, wenn seine Mutter berufstätig ist.
 
-it2: (malebread): Es ist für alle Beteiligten viel besser, wenn der Mann voll im Berufsleben steht und die Frau zu Hause bleibt und sich um den Haushalt und die Kinder kümmert.
+it2: (malebread): Es ist für alle Beteiligten besser, wenn der Mann voll im Berufsleben steht und die Frau zu Hause bleibt und sich um den Haushalt und die Kinder kümmert.
 
 it3: (fulldadbad): Ein Vollzeit erwerbstätiger Vater kann sich nicht ausreichend um seine Kinder kümmern.
 
@@ -279,7 +279,7 @@ it4: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wen
 
 it5: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
 
-it6: (fullmumtod): Eine Vollzeiterwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie eine Mutter, die nicht berufstätig ist.
+it6: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie eine Mutter, die nicht berufstätig ist.
 
 it7: (bothfull): Die beste Arbeitsteilung in einer Familie ist die, dass beide Partner Vollzeit arbeiten und sich gleichermaßen um den Haushalt und die Kinder kümmern.
 
@@ -462,9 +462,9 @@ it4: (atikb): Kinderbetreuung
 
 st:
 
-ao1: 1: ausschließlich mein\*e Partner\*in
+ao1: 1: ausschließlich mein*e Partner*in
 
-ao2: 2: eher mein\*e Partner\*in
+ao2: 2: eher mein*e Partner*in
 
 ao3: 3: wir beide gleichermaßen
 
@@ -635,7 +635,7 @@ hl:
 
 in:
 
-q: Gibt es in ihrem familiären Umfeld jemanden der/die studiert bzw. promoviert
+q: Gibt es in ihrem familiären Umfeld jemanden, der/die studiert bzw. promoviert
 (hat)?
 
 is:
