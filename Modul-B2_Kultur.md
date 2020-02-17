@@ -529,8 +529,6 @@ q: Was schätzen Sie, wie viele Bücher besitzen Sie selbst aktuell und wie viel
 is: Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher.
 Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
 
-is: Anzahl Bücher
-
 it1: (buchanzi1): ich selbst
 
 it2: (buchanze1): Eltern
@@ -596,8 +594,6 @@ q: Wie viele Bücher besitzen Sie selbst aktuell bzw. Ihre Eltern?
 
 is: Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher.
 Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
-
-is: 
 
 it1: (buchanzi2): ich selbst
 
@@ -806,7 +802,8 @@ is:
 it1: (bezgew) Ich habe meinen Eltern gegenüber manchmal ein schlechtes Gewissen,
 weil ich studiere.
 
-it2: (bezmein) Die Meinung meiner Eltern ist mir sehr wichtig.  
+it2: (bezmein) Die Meinung meiner Eltern ist mir sehr wichtig. 
+
 it3: (bezprob) Wenn ich Probleme im Studium habe, dann spreche ich mit meinen
 Eltern darüber.
 
@@ -894,7 +891,7 @@ it3: (skwiss) … Ihre wissenschaftlichen Arbeiten gegenliest?
 
 it4: (skjobs) … Ihnen einen Job oder ein Praktikum vermittelt?
 
-it5: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z.B. Bafög,
+it5: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z. B. BAföG,
 Steuererklärung) helfen würde?
 
 it6: (skausl) … Ihnen nahelegt, im Ausland zu studieren?
@@ -1042,86 +1039,10 @@ fv:
 
 hv:
 
-fo:
+fo: mv von Skala optisch abgesetzt
 
 tr:   GOTO B2_10
 
-
-hi:
-
-\--------------------------
-
-B2_9a
-==
-
-tc: 50 Prozent der Befragten
-
-vn: einkberuf1; einkba1; einkma1; einkstex11; einkstex21; einkdr1
-
-qt: Einfachauswahl im Spaltenformat/Comparison
-
-hl:
-
-in:
-
-q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld...
-
-is: Beziehen Sie Ihre Angaben auf das Netto-Gehalt, d.h. Einkommen abzüglich
-Steuer.
-
-it1: (einkberuf1):  … mit einer Berufsausbildung?
-
-it2: (einkba1): … mit einem Bachelorabschluss? 
-
-it3: (einkma1):  … mit einem Masterabschluss?
-
-it4: (einkstex1): … mit dem ersten Staatsexamen?
-
-it5: (einkstex21):  … mit dem zweiten Staatsexamen?
-
-it6: (einkdr1): … mit einer Promotion?
-
-st:
-
-ao1: 1: unter 1.000 €
-
-ao2: 2: 1.000 € bis unter 1.500 €
-
-ao3: 3: 1.500 € bis unter 2.000 €
-
-ao4: 4: 2.000 € bis unter 2.500 €
-
-ao5: 5: 2.500 € bis unter 3.000 €
-
-ao6: 6: 3.000 € bis unter 4.000 €
-
-ao7: 7: 4.000 € bis unter 5.000 €
-
-ao8: 8: 5.000 € bis unter 10.000 €
-
-ao9: 9: 10.000 € und mehr
-
-mv: -12: : weiß ich nicht
-
-ka:
-
-vc:
-SHOW it4 and it5 if sabsan=3 [SDK-stu#05] Grundprogramm
-
-SHOW it2 and it3 if sabsan!=3 [SDK-stu#05] Grundprogramm
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: ao10 absetzen
-
-tr: GOTO D3_13 IF masterplan=9, 10, 11, 12
-    GOTO A_54 IF masterplan=7, 8, 14
 
 hi:
 
