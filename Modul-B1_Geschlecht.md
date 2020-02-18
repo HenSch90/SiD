@@ -151,7 +151,8 @@ hl:
 in:
 
 q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und
-ihre Beziehungen in der heutigen Gesellschaft. Bitte geben Sie an, in welchem
+ihre Beziehungen in der heutigen Gesellschaft. 
+Bitte geben Sie an, in welchem
 Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
 
 is:
