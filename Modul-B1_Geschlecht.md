@@ -49,8 +49,7 @@ hv:
 
 fo:
 
-tr: GOTO B1_3a IF h_split=1 (50%)
-    GOTO B1_3b IF h_split=2 (50%)
+tr: GOTO B1_2
 
 hi:
 
