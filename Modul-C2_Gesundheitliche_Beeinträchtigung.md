@@ -190,7 +190,7 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW is IF h_gartcount > 1
 
 av: number: 2 stellig: 1 TO 99
 
