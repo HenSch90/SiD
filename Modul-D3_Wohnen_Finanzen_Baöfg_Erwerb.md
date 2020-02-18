@@ -71,7 +71,7 @@ it:
 
 st:
 
-ao1: : (wohnamio), Präfix: [infield = Personenzahl; number]
+ao1: : (wohnamio), Präfix: [infield = Personenzahl; number], Suffix: Person(en)
 
 mv:
 
@@ -81,7 +81,7 @@ vc:
 
 av: (wohnamio): number 2 Stellen; 2 TO 15
 
-kh: (wohnamio): Bitte geben Sie an, zu wie vielen Personen Sie insgesamt zusammenwohnen (2 bis 15).
+kh: (wohnamio):Bitte geben Sie die Anzahl an Personen an, mit denen Sie zusammenwohnen (2 bis 15).
 
 fv:
 
@@ -181,9 +181,9 @@ av1: (wohnqmw): number 3 Stellen; 1 TO 999
 
 av2: (wohnqmz): number 2 Stellen; 1 TO 99
 
-kh1: (wohnqmw): Bitte geben Sie die Größe Ihrer Wohnung/Ihres Hauses an (1 bis 999).
+kh1: (wohnqmw): Bitte geben Sie nur Zahlen ein.
 
-kh1: (wohnqmz): Bitte geben Sie die Größe Ihres Zimmers an (1 bis 99).
+kh1: (wohnqmz): Bitte geben Sie nur Zahlen ein.
 
 fv:
 
@@ -270,8 +270,8 @@ während des Sommersemesters 2020 zur Verfügung?
 
 is: Bitte berücksichtigen Sie hier nur das Geld, über das Sie tatsächlich selbst
 verfügen. Berücksichtigen Sie hier bitte ++nicht++, was z. B. Ihre Eltern
-oder Ihr\*e Partner\*in für Sie direkt an Dritte zahlen (z. B. direkte
-Überweisung der Miete an Ihre\*n Vermieter\*in).
+oder Ihr(e) Partner\*in für Sie direkt an Dritte zahlen (z. B. direkte
+Überweisung der Miete an Ihren Vermieter).
 
 #{layout.BREAK}#{layout.BREAK}
 
@@ -304,7 +304,7 @@ it11: (feinekio): Kindergeld/Unterhalt für Ihr(e) Kind(er)
 
 it12: (feinbest1): Krankenversicherungsleistungen für technische Hilfsmittel
 
-it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit einer gesundheitlichen Beeinträchtigung
+it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit meiner gesundheitlichen Beeinträchtigung
 
 it14: (feinandq): Weitere Finanzierungsquelle(n), und zwar: 
 
@@ -361,11 +361,10 @@ vc3: SHOW it11/ao11 (feinekio) IF dkinja = 2
 
 av1: ao1 TO ao14: number 4 Stellen; 0 TO 9999
 
-av2: ao15: number 5 Stellen; 0 TO 99999
 
 kh1: ao1 TO ao14: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999)
 
-kh2: ao15: Bitte geben Sie Ihre jeweiligen monatlichen Gesamteinnahmen an (0 bis 99999)
+
 
 fv:
 
@@ -461,7 +460,7 @@ in:
 
 q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie im Sommersemester 2020 monatlich haben.
 
-is1: "Dritte" bzw. "Andere" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
+is1: "Dritte bzw. Andere" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
 
 is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an.
 
@@ -544,13 +543,9 @@ vc1: SHOW it11 TO 12 IF dkinja = 2
 
 vc2: SHOW is2 IF wohnal=!1
 
-av1: ao1 TO ao15: number 4 Stellen; 0 TO 9999
-
-av2: ao16: number 5 Stellen; 0 TO 99999
+av1: ao1 TO ao16: number 4 Stellen; 0 TO 9999
 
 kh1: ao1 TO ao15: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (0 bis 9999)
-
-kh2: ao16: Bitte geben Sie Ihre jeweiligen monatlichen Gesamtausgaben an (0 bis 99999)
 
 fv:
 
@@ -597,7 +592,7 @@ vc:
 
 av: (fmineinko): number 4 stellig; 0 TO 9999
 
-kh: Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (0 bis 9999).
+kh: Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (1 bis 9999).
 
 fv:
 
@@ -632,23 +627,23 @@ Davon bezahlen durchschnittlich im Monat …
 
 is:
 
-it1: ... meine Eltern für mich:
+it1: ... meine Eltern für mich direkt:
 
-it2: ... mein*/e Partner*/in für mich:
+it2: ... mein\*e Partner\*in für mich direkt:
 
-it3: ... mein Arbeitgeber für mich:
+it3: ... mein Arbeitgeber für mich direkt:
 
-it4: ... andere für mich:
+it4: ... andere für mich direkt und zwar:
 
 st:
 
-ao1: : (fausgstkelto), Präfix [infield = €; number] 
+ao1: : (fausgstkelto), Präfix [number], Suffix: €
 
-ao2: : (fausgstkparto), Präfix [infield = €; number] 
+ao2: : (fausgstkparto), Präfix [number], Suffix: € 
 
-ao3: : (fausgstkarbo), Präfix [infield = €; number] 
+ao3: : (fausgstkarbo), Präfix [number], Suffix: € 
 
-ao4: : (fausgstkando), Präfix [infield = €; number] 
+ao4: : (fausgstkando), Präfix [number], Suffix: € 
 
 mv: 
 
@@ -658,7 +653,7 @@ vc:
 
 av: ao1 TO ao4: number 4 stellig; 0 TO 9999
 
-kh: Bitte geben Sie den Betrag an, mit dem Sie bei Ihren Studienkosten unterstützt werden (0 bis 9999).
+kh: Bitte geben Sie nur Zahlen ein.
 
 fv: 
 
@@ -754,7 +749,7 @@ q: Inwieweit treffen die folgenden Aussagen zum Umgang mit Geld auf Sie zu?
 
 is:
 
-it1: (feinstf1): Ich gebe Geld lieber sofort aus, als es für einen späteren
+it1: (feinstf1): Ich gebe Geld lieber sofort aus als es für einen späteren
 Zeitpunkt zu sparen.
 
 it2: (feinstf2): Ich kümmere mich sorgfältig um meine finanziellen
@@ -934,7 +929,7 @@ hl:
 
 in:
 
-q: Haben Sie früher schon einmal einen Antrag auf BAföG gestellt?
+q: Haben Sie bereits früher schon einmal einen Antrag auf BAföG gestellt?
 
 is:
 
@@ -997,37 +992,26 @@ it:
 
 st:
 
-ao1: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin ist zu hoch.
+ao1: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin ist/war zu hoch.
 
-ao2: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin war zu hoch.
+ao2: (fbafkein): Das eigene Einkommen/Vermögen ist/war zu hoch.
 
-ao3: (fbafkein): Das eigene Einkommen/Vermögen ist zu hoch.
+ao3: (fbafkfhd): Die Förderungshöchstdauer wurde überschritten.
 
-ao4: (fbafkein): Das eigene Einkommen/Vermögen war zu hoch.
+ao4: (fbafktw): Das Studienfach wurde gewechselt.
 
-ao5: (fbafkfhd): Die Förderungshöchstdauer wurde überschritten.
+ao5: (fbafkleis): Die notwendige Leistungsbescheinigung konnte nicht erbracht werden.
 
-ao6: (fbafktw): Das Studienfach wurde gewechselt.
+ao6: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits überschritten.
 
-ao7: (fbafkleis): Die notwendige Leistungsbescheinigung konnte nicht erbracht werden.
-
-ao8: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits überschritten.
-
-ao9: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
+ao7: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
 Hochschulausbildung (Zweitstudium, Ergänzungsstudium).
 
-ao10: (fbafkzwei): Das  Studium war eine nicht förderungsfähige weitere
-Hochschulausbildung (Zweitstudium, Ergänzungsstudium).
+ao8: (fbafkweni): Der zu erwartende Förderbeitrag ist/war so gering, dass es sich nicht lohnt/e.
 
-ao11: (fbafkweni): Der zu erwartende Förderbeitrag ist so gering, dass es sich nicht lohnt.
+ao9: (fbafkschu): Ich will/wollte keine Schulden machen.
 
-ao12: (fbafkweni): Der zu erwartende Förderbeitrag war so gering, dass es sich nicht lohnte.
-
-ao13: (fbafkschu): Ich will keine Schulden machen.
-
-ao14: (fbafkschu): Ich wollte keine Schulden machen.
-
-ao15: (fbafand): Andere Gründe, und zwar: [(fbafando) 50 Zeichen] 
+ao10: (fbafand): Andere Gründe, und zwar: [(fbafando) 50 Zeichen] 
 
 mv:
 
@@ -1041,13 +1025,13 @@ vc3: SHOW q3 IF (fbafja = 1) AND (fbafex = 2 | 3)
 
 vc4: SHOW q4 IF (fbafja = 1) AND (fbafex = 4)
 
-vc5: SHOW ao1, ao3, ao5, ao6, ao7, ao8, ao9, ao11, ao13, ao15 IF (fbafja = 1) AND (fbafex = 1 | k. A.)
+vc5: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 1) AND (fbafex = 1 | k. A.)
 
-vc6: SHOW ao1, ao3, ao5, ao6, ao7, ao8, ao9, ao15 IF (fbafja = 2)
+vc6: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 2)
 
-vc7: SHOW ao2, ao4, ao5, ao6, ao7, ao8, ao10, ao15 IF (fbafja = 1) AND (fbafex = 2 | 3)
+vc7: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 1) AND (fbafex = 2 | 3)
 
-vc8: SHOW ao2, ao4, ao5, ao6, ao7, ao8, ao10, ao12, ao14, ao15 IF (fbafja = 1) AND (fbafex = 4)
+vc8: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 1) AND (fbafex = 4)
 
 av:
 
@@ -1187,7 +1171,7 @@ q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Sem
 q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
-q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren anderen Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
+q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 is: 
 it1: (etat1), Präfix [infield = Art der Tätigkeit; Dropdown-Menü] 
@@ -1219,7 +1203,7 @@ vc7: SHOW it3 IF eaktsens = 4
 
 vc8: SHOW ka1 TO ka2 IF eaktsens = 3 
 vc9: SHOW ka1 TO ka3 IF eaktsens = 4   
-
+vc10: SHOW ka1 IF eaktsens = 2
 av: 
 kh: 
 
