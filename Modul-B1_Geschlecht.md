@@ -52,7 +52,7 @@ fo:
 tr: 
 
 GOTO B1_3a IF h_split=1
-GOTO B1_3b IF h_split=2
+GOTO B1_3b IF h_split=2 
 
 hi:
 
