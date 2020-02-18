@@ -924,8 +924,7 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO B2_9a if h_split=1 (50%)
-    GOTO B2_9b if h_split=2 (50%)
+tr: GOTO B2_9b
     
 hi:
 
