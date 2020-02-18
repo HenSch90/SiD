@@ -298,7 +298,7 @@ OR gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom
 OR eaktsens==2 OR eaktsens==3 OR eaktsens==4 
 OR pflegang==2
 
-ELSE GOTO E1_6 (zusätzliche Kondition einblenden für responsive Nutzer\*innen -> E1_6b)
+ELSE GOTO E1_6
 
 hi:
 
