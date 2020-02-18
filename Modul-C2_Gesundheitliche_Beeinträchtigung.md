@@ -184,7 +184,7 @@ st:
 
 ao1 (bezeit): 1: : seit meiner Geburt
 
-ao2 (bezeit): 2: : seit meinem [number]. Lebensjahr
+ao2 (bezeit): 2: : seit meinem [bezeitj] [number] Lebensjahr
 
 mv:
 
