@@ -246,8 +246,8 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO D3_13 IF masterplan=3, 4, 5, 6
-    GOTO A_54 IF masterplan=1, 2, 13
+tr: GOTO D3_13 IF mastersplit=3, 4, 5, 6
+    GOTO A_54 IF mastersplit=1, 2, 13
 
 hi:
 
