@@ -6,13 +6,13 @@ tc:
 
 vn: ainfasia; ainfbmsia; ainfbjsia; ainfemsia; ainfejsia
 
-qt: Tableau-Abfrage Drop-Down-Menü, offene Angabe
+qt: Tableau-Abfrage Drop-Down-Menü
 
 hl:
 
 in:
 
-q: Bitte beschreiben Sie Ihren aktuellen studienbezogenen Auslandsaufenthalt
+q: Sie befinden sich zurzeit im Ausland: Bitte beschreiben Sie Ihren aktuellen studienbezogenen Auslandsaufenthalt
 näher.
 
 is:
@@ -43,22 +43,22 @@ ao7 (ainfasia): 7: : Summer School
 ao8 (ainfasia): 8: : sonstiger Aufenthalt
 
 
-Nebeneinander angeordnete Drop-Down-Menüs
+Untereinander angeordnete Drop-Down-Menüs
 
-Start des Auslandsaufenthalts:
+Start des Auslandsaufenthalts
 
 ao9 (ainfbmsia): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao10 (ainfbjsai): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
+ao10 (ainfbjsai): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2009 \| vor 2009)
 
 
-Nebeneinander angeordnete Drop-Down-Menüs
+Untereinander angeordnete Drop-Down-Menüs
 
-voraussichtliches Ende des Auslandsaufenthalts:
+voraussichtliches Ende des Auslandsaufenthalts
 
 ao11 (ainfemsia): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao12 (ainfejsia): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030)
+ao12 (ainfejsia): Jahr: (Jahr \ 2018 \| 2019 \| … \| 2030)
 
 mv:
 
