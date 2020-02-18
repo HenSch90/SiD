@@ -541,7 +541,7 @@ ka:
 
 vc:
 
-av:
+av: Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 kh:
 
