@@ -54,7 +54,7 @@ fo:
 
 tr: GOTO A_33
 
-hi: Hilfsvariable muss an vorheriger Stelle generiert werden
+hi:
 
 
 \--------------------------
@@ -1100,8 +1100,8 @@ hv:
 
 fo: ao7 absetzen
 
-tr: GOTO D3_13 IF masterplan=9, 10, 11, 12
-    GOTO A_54 IF masterplan=7, 8, 14
+tr: GOTO D3_13 IF mastersplit=9, 10, 11, 12
+    GOTO A_54 IF mastersplit=7, 8, 13
 
 
 hi:
