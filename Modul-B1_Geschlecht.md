@@ -139,7 +139,7 @@ hi:
 B1_3a
 ==
 
-tc: IF demosex\<\>3
+tc:
 
 vn: besex01; besex02; besex03; besex04; besex05; besex06; besex07; besex08; besex09; besex10; besex11;
 hosex01; hosex02; hosex03; hosex04; hosex05; hosex06; hosex07; hosex08; hosex09; hosex10; hosex11
@@ -255,7 +255,7 @@ hi:
 B1_3b
 ==
 
-tc: IF demosex\<\>3
+tc:
 
 vn: chldsuffer; malebread; fulldadbad; wrkmumhome; chldben; fullmumtod; bothfull; fulldadtod; rolechange 
 
