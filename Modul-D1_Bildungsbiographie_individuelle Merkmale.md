@@ -217,6 +217,8 @@ ao: (vausbzpjo), Präfix: [infield = Jahr; number], Suffix:Jahr des Abschlusses 
 
 ao: (vausbzpmo), Dropdown Monat
 
+ao0: 0: Monat
+
 ao1: 1: Januar
 
 ao2: 2: Februar
@@ -249,8 +251,7 @@ vc:
 
 av: (vausbzpjo): number 4 Stellen; 1950 bis 2020
 
-kh: (vausbzpjo): Bitte geben Sie das Jahr des Abschlusses Ihrer (letzten) Berufsausbildung an (1950 bis 2020).
-
+kh:
 
 fv:
 
@@ -336,7 +337,7 @@ st:
 
 ao1: (vausbnoteo), Präfix: [infield = Abschlussnote (z. B. 2,5); number]
 
-ao2: (vausbnote), -11: : Ich habe keine Note erhalten.
+ao2: (vausbnote): Ich habe keine Note erhalten.
 
 mv:
 
@@ -365,7 +366,7 @@ hi:
 D1_7 
 ==
 
-tc: IF (ssemhs= 1 | 2 | 01 | 02) 
+tc: IF (ssemhs <= 7 | isMissing(ssemhs)) 
 
 vn: stfw (stfwint / stfwent / stfwein / stfwber / stfwsoz / stfwarb / stfwalt / stfwwiss / stfwfam / stfwzeit / stfwzul / stfwhelf / stfwver / stfwand / stfwando)
 
@@ -405,7 +406,7 @@ it12: (stfwhelf): Möglichkeit anderen Menschen helfen zu können
 
 it13: (stfwver): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
 
-it14: (stfwand): Anderes, und zwar: [(stfwando), 100 Zeichen]
+it14: (stfwand): Anderes, und zwar: [(stfwando)]
 
 st:
 
@@ -423,7 +424,7 @@ mv:
 
 ka:
 
-vc: SHOW stfwver IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it13 (stfwver) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
@@ -446,7 +447,7 @@ hi: Items bitte zufällig rotieren mit Ausnahme von it14 "Anderes und zwar"; it1
 D1_8 
 ==
 
-tc: IF (ssemhs=1 | 2 | 01 | 02)
+tc: IF (ssemhs <= 7 | isMissing(ssemhs)) 
 
 vn: hsw (hswzul / hswtrad / hswkont / hswatt / hswreg / hswbed / hswruf / hswfach / hswrank / hswint / hsweng / hswsupp / hswbarr / hswtz / hswand / hswando)
 
