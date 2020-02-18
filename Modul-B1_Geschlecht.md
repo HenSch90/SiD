@@ -340,7 +340,7 @@ in:
 
 q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewältigen gilt. Dabei kann eine Aufgabenteilung ausgesprochen effizient sein. Wenn Sie an Ihre Partnerschaft denken: Wer trägt in welchem Ausmaß zu den folgenden Bereichen im Haushalt bei?
 
-is: \*\*Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
+is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
 it1: (_p): Partner\*in
 
