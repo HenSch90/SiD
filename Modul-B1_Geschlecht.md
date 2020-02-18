@@ -515,7 +515,7 @@ in:
 q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß
 zu den unterschiedlichen Bereichen im Haushalt beigetragen?
 
-is: \*\*Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.\*\*
+is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
 it1: (_m): (Stief-)Mutter
 
