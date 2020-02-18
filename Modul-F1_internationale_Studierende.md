@@ -159,6 +159,16 @@ hl:
 
 in:
 
+ao1: 1: : überhaupt nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: : sehr stark
+
 q: Was spricht Ihrer Meinung nach für einen Auslandsaufenthalt?
 
 is:
@@ -179,16 +189,6 @@ it7 (aeinsspaß): Spaß haben
 
 st:
 
-ao1: 1: : überhaupt nicht
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : sehr stark
-
 mv:
 
 ka:
@@ -207,7 +207,7 @@ fo:
 
 tr: GOTO F1_2c
 
-hi:
+hi: Items bitte zufällig rotieren.
 
 
 \-------------------------------
