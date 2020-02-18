@@ -577,7 +577,7 @@ fo:
 tr: GOTO D1_7 IF ssemhs <= 6
     GOTO D1_7 IF ssemhs = k. A. 
     GOTO D2_6 IF (ssemhs >= 7) AND (mastersplit = 1, 2, 7, 8, 14)
-    GOTO A_44 IF (ssemhs >=7 OR) AND (mastersplit = 3, 4, 9, 10)
+    GOTO A_44 IF (ssemhs >= 7) AND (mastersplit = 3, 4, 9, 10)
        
 
 hi:
@@ -588,7 +588,7 @@ hi:
 D1_10a 
 ===
 
-tc: IF sabsja=2 
+tc: IF sabsja=2 AND (mastersplit = 1, 2, 3, 4, 7, 8, 9, 10, 14)
 
 vn: sabserbl1
 
@@ -629,8 +629,8 @@ fo:
 tr:
 
 GOTO D1_10 IF sabserbl1 = 0
-GOTO D1_12 IF sabserbl = 1
-GOTO D1_10 IF sabserbl = k. A.
+GOTO D1_12 IF sabserbl1 = 1
+GOTO D1_10 IF ssemhs = k. A.
 
 
 \--------------------------------
@@ -658,39 +658,41 @@ it1: (sabserbl): [infield = Bundesland] (Drop-Down)
 
 st:
 
-ao1: 1: : Baden-Württemberg
+aox: 0: : Bundesland
 
-ao2: 2: : Bayern
+ao1: 2: : Baden-Württemberg
 
-ao3: 3: : Berlin
+ao2: 3: : Bayern
 
-ao4: 4: : Brandenburg
+ao3: 4: : Berlin
 
-ao5: 5: : Bremen
+ao4: 5: : Brandenburg
 
-ao6: 6: : Hamburg
+ao5: 6: : Bremen
 
-ao7: 7: : Hessen
+ao6: 7: : Hamburg
 
-ao8: 8: : Mecklenburg-Vorpommern
+ao7: 8: : Hessen
 
-ao9: 9: : Niedersachsen
+ao8: 9: : Mecklenburg-Vorpommern
 
-ao10: 10: : Nordrhein-Westfalen
+ao9: 10: : Niedersachsen
 
-ao11: 11: : Rheinland-Pfalz
+ao10: 11: : Nordrhein-Westfalen
 
-ao12: 12: : Saarland
+ao11: 12: : Rheinland-Pfalz
 
-ao13: 13: : Sachsen
+ao12: 13: : Saarland
 
-ao14: 14: : Sachsen-Anhalt
+ao13: 14: : Sachsen
 
-ao15: 15: : Schleswig-Holstein
+ao14: 15: : Sachsen-Anhalt
 
-ao16: 16: : Thüringen
+ao15: 16: : Schleswig-Holstein
 
-ao17: 17: : im Ausland
+ao16: 17: : Thüringen
+
+ao17: 18: : im Ausland
 
 mv:
 
@@ -710,8 +712,8 @@ fo:
 
 tr:
 
-GOTO D1_11 IF (sabserbl = 1 – 16)
-GOTO D1_11a IF (sabserbl = 17)
+GOTO D1_11 IF (sabserbl = 2 – 17)
+GOTO D1_11a IF (sabserbl = 18)
 GOTO D1_12 IF (sabserbl = k. A. | 0)
 
 \--------------------------------
@@ -764,7 +766,7 @@ tr:
 GOTO D1_12
 
 hi1: q1 und ao1 bitte oberhalb von q2 und ao2 platzieren.
-hi2: Das Drop-Down ist mit einer von uns zu lieferenden Hochschulliste (am besten vorgefiltert nach Bundesland) zu füllen.
+hi2: Das Drop-Down wird mit einer von uns zu lieferenden Hochschulliste (vorgefiltert nach Bundesland) gefüllt.
 
 
 \--------------------------------
@@ -886,6 +888,8 @@ it: (absterm): [infield = Semester] (Drop-Down)
 
 st:
 
+aox: 0: : Semester
+
 ao1: 1: : Sommersemester 2020
 
 ao2: 2: : Wintersemester 2020/21
@@ -939,7 +943,7 @@ is: Nicht gemeint sind Wechsel oder Unterbrechungen beim Übergang vom Bachelor-
 
 it1: (ssweijaaz): … das Studienfach gewechselt?
 
-it2: (sawejaaz): ... den angestrebten Abschluss gewechselt?
+it2: (sawejaaz): … den angestrebten Abschluss gewechselt?
 
 it3: (shwjaaz): … die Hochschule gewechselt?
 
@@ -1352,7 +1356,7 @@ hl:
 
 in:
 
-q: 
+q: Bitte beantworten Sie die folgenden Fragen ohne lange nachzudenken.
 
 is:
 
