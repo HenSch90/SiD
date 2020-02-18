@@ -225,6 +225,16 @@ hl:
 
 in:
 
+ao1: 1: : überhaupt nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: : sehr stark
+
 q: Was spricht Ihrer Meinung nach gegen einen Auslandsaufenthalt?
 
 is:
@@ -245,16 +255,6 @@ it14 (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
 
 st:
 
-ao1: 1: : überhaupt nicht
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : sehr stark
-
 mv:
 
 ka:
@@ -273,7 +273,7 @@ fo:
 
 tr: GOTO F1_3
 
-hi:
+hi: Items bitte zufällig rotieren.
 
 
 F1_3
@@ -629,7 +629,7 @@ hl:
 
 in:
 
-q: Warum haben Sie sich für Deutschland als Studienland entschieden?
+q: Warum haben Sie sich für ein Studium in Deutschland entschieden?
 
 is: Bitte geben Sie den jeweils zutreffenden Skalenwert an.
 
@@ -725,31 +725,31 @@ ao5 (ainfaba): 5: : Studienreise
 
 ao6 (ainfaba): 6: : Projektarbeit
 
-ao7 (ainfaba): 7: : Summer School
+ao7 (ainfaba): 7: : Summerschool
 
 ao8 (ainfaba): 8: : sonstiger Aufenthalt
 
 
 Beginn:
 
-Nebeneinander angeordnete Drop-Down-Menüs
+Untereinander angeordnete Drop-Down-Menüs
 
 ao9 (ainfbmba): : Monat: (Monat \ Januar \| … \| Dezember)
 
 ao10 (ainfbjba): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
 
 
-voraussichtliches Ende:
+Ende:
 
-Nebeneinander angeordnete Drop-Down-Menüs
+Untereinander angeordnete Drop-Down-Menüs
 
 ao11 (ainfemba): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao12 (ainfejba): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030)
+ao12 (ainfejba): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030 oder später)
 
 mv:
 
-ka:
+ka:ka1 (ao0 -ao12): aktueller Studienbezogener Auslandsaufenthalt - bitte auswählen
 
 vc:
 
@@ -823,7 +823,7 @@ hi:
 F1_12
 =====
 
-tc: IF sabsabsba=1 AND sabsabsba=3
+tc:
 
 vn: ainfcpba; ainfcp1osba; ainfcp2osba
 
@@ -842,11 +842,11 @@ st:
 
 ao1: 1: : nein
 
-ao2: 2: : offene Angabe: 2 Stellen Präfix [ainfcp1osba], Suffix: ja, teilweise: … ECTS-Punkte
+ao2: 2: : offene Angabe: 2 Stellen Präfix: ja, teilweise:[ainfcp1osba], Suffix: ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix [ainfcp2osba], Suffix: ja, vollständig: … ECTS-Punkte
+ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollstädnig:[ainfcp2osba], Suffix: … ECTS-Punkte
 
-ao: -12: : weiß ich (noch) nicht
+ao: -12: : weiß ich nicht
 
 mv:
 
@@ -905,7 +905,7 @@ ao6 (aproeuba): : ja, anderes EU-Programm
 
 ao7 (aprointerba): : ja, Programm meiner Gasthochschule im Ausland
 
-ao8 (aproanprba): : Ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix [aproanproba], Suffix:und zwar:
+ao8 (aproanprba): : ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix [aproanproba]
 
 mv:
 
@@ -925,7 +925,7 @@ fo:
 
 tr: GOTO F1_14
 
-hi:
+hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -1070,7 +1070,7 @@ hl:
 
 in:
 
-q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …
+q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …...
 
 is:
 
@@ -1086,7 +1086,7 @@ it5 (azufinsg): … Ihrem Aufenthalt in Deutschland insgesamt?
 
 st:
 
-ao1: 1: : überhaupt nicht zufriden
+ao1: 1: : überhaupt nicht zufrieden
 
 ao2: 2
 
@@ -1222,7 +1222,7 @@ hv:
 
 fo:
 
-tr: GOTO F1_19
+tr: GOTO F1_20
 
 hi:
 
@@ -1290,7 +1290,7 @@ hl:
 
 in:
 
-q: Welche der Hilfestellungen für Studierende haben Sie bisher genutzt?
+q: Welche dieser Hilfestellungen für Studierende haben Sie bisher genutzt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -1330,9 +1330,7 @@ ao15 (bhiikvba): Beratung/Informationen zu Fragen der Krankenversicherung
 
 ao16 (bhiipsyba): : psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
 
-Lehrzeile
-
-ao17 (bhiikeinba): : kein Angebot genutzt (Exklusivkategorie)
+ao17 (bhiikeinba): : kein Angebot genutz
 
 mv:
 
