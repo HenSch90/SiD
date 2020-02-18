@@ -141,6 +141,7 @@ fo:
 
 tr: GOTO A_2 IF dnatdeu==1
     GOTO A_3 IF if dnatdeu=0 AND dnatausl=1
+    zofar:transition target="A_5" condition="!dnatdeu.value and !dnatausl.value"
 
 hi:
 
@@ -202,6 +203,8 @@ hv:
 fo:
 
 tr: GOTO A_3 IF dnatderw=2 OR dnatderw=3
+     <zofar:transition target="A_5" condition="dnatdeu.value and zofar.asNumber(dnatderw)==1"/>
+     <zofar:transition target="A_5" condition="dnatdeu.value and zofar.isMissing(dnatderw)"/>
 
 hi:
 
@@ -360,7 +363,7 @@ it:
 
 st:
 
-ao1: offene Angabe: 30
+ao1: offene Angabe: 50
 
 mv:
 
@@ -554,7 +557,7 @@ it:
 
 st:
 
-ao1: offene Angabe: 30
+ao1: offene Angabe: 50
 
 mv:
 
@@ -601,21 +604,21 @@ it:
 
 st:
 
-ao1: 1: (baufgrueuba): Bürger*in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
+ao1: 1: (baufgrueuba): Bürger*\in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
 
-ao2: 2: (baufgrustuba): Studierende*r (auch zu Zwecken der Studienvorbereitung)
+ao2: 2: (baufgrustuba): Studierende*\r (auch zu Zwecken der Studienvorbereitung)
 
-ao3: 3: (baufgruerwerb): Erwerbstätige*r
+ao3: 3: (baufgruerwerb): Erwerbstätige*\r
 
-ao4: 4: (baufgrutouba): Tourist*in (Besuchsvisum)
+ao4: 4: (baufgrutouba): Tourist*\in (Besuchsvisum)
 
-ao5: 5: (baufgruasylba): Asylbewerber*in, Geflüchtete*r oder Schutzsuchende*r
+ao5: 5: (baufgruasylba): Asylbewerber*\in, Geflüchtete*\r oder Schutzsuchende*\r
 
-ao6: 6: (baufgrufaman): Familienangehörige*r, Einreise mit Eltern bzw. Ehepartner*in
+ao6: 6: (baufgrufaman): Familienangehörige*\r, Einreise mit Eltern bzw. Ehepartner*\in
 
 ao6: 7: (baufgrufamba): Familiennachzug (Visum zur Familienzusammenführung)
 
-ao6: 8: (baufgruausba): (Spät-)Aussiedler*in
+ao6: 8: (baufgruausba): (Spät-)Aussiedler*\in
 
 ao7: 7: (baufgruandba): anderen, und zwar: (baufgruandba_open)
 
@@ -635,12 +638,113 @@ kh:
 
 fv:
 
-hv: Bildungsausländer\*Innen = 1 auf Grundlage von SDK-scr01 – SDK-scr03
+hv: 
 
 fo:
 
-tr: GOTO A_9a (50%)
-    GOTO A_9b (50%)
+tr: <zofar:transition target="A_8a" condition="baufgruasylba.value"/>
+            <zofar:transition target="A_8b" condition="!baufgruasylba.value and (baufgrufaman.value or baufgrufamba.value)"/>
+            <zofar:transition target="A_9a" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="A_9b" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
+
+hi:
+
+\------------------------------------------------------------
+
+A_8a
+=========
+
+tc:
+
+vn: asylantrag
+
+qt: Einfachauswahl 
+
+hl:
+
+in:
+
+q: Wie wurde über Ihren Asylantrag entschieden?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: Das Asylverfahren ist noch nicht abgeschlossen.
+
+ao2: 2: Ich wurde als Flüchtling oder Asylberechtigte\*r anerkannt.
+
+ao3: 3: Ich habe einen subsidiären Schutzstatus bekommen.
+
+ao4: 4: Der Asylantrag wurde abgelehnt und ich habe eine Duldung bekommen.
+
+ao5: 5: Der Asylantrag wurde abgelehnt und ich habe keine Duldung bekommen.
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: <zofar:transition target="A_8b" condition="baufgrufaman.value or baufgrufamba.value"/>
+      <zofar:transition target="A_9a" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
+       <zofar:transition target="A_9b" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
+
+hi:
+
+\------------------------------------------------------------
+
+A_8b
+=========
+
+tc:
+
+vn: intgrund2
+
+qt: offene Angabe
+
+hl:
+
+in:
+
+q: Was waren die Gründe dafür, dass Ihre Familie..
+
+is:
+
+it:
+
+st:
+
+ao1: : (intgrund2), Präfix ... nach Deutschland gezogen ist?
+ao2: : (intgrund2), Präfix ... Ihr Herkunftsland verlassen hat?
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: <zofar:transition target="A_9a" condition="zofar.asNumber(h_split)==1"/>
+     <zofar:transition target="A_9b" condition="zofar.asNumber(h_split)==2"/>
+
 hi:
 
 \------------------------------------------------------------
@@ -670,7 +774,7 @@ ao1: 1: männlich
 
 ao2: 2: weiblich
 
-ao3: 3: anderes,
+ao3: 3: Anderes,
 
 ato: Prefix: und zwar:
 
@@ -723,7 +827,7 @@ ao2: 2: weiblich
 
 ao3: 3: divers
 
-ao4: 4: keine der genannten Kategorien,
+ao4: 4: Keine der genannten Kategorien,
 
 ato: Prefix: sondern:
 
