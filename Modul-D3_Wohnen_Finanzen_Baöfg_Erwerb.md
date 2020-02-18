@@ -79,9 +79,9 @@ ka:
 
 vc:
 
-av: (wohnamio): number 2 Stellen; 2 TO 15
+av: (wohnamio): number 2 Stellen; 1 TO 15
 
-kh: (wohnamio):Bitte geben Sie die Anzahl an Personen an, mit denen Sie zusammenwohnen (2 bis 15).
+kh: (wohnamio): Bitte geben Sie die Anzahl an Personen an, mit denen Sie zusammenwohnen.
 
 fv:
 
@@ -120,7 +120,7 @@ st:
 
 ao1: : (wohnplz), Präfix [infield = PLZ; number] 
 
-ao2: : (wohnplzort), Präfix [infield = Ort; 100 Zeichen]
+ao2: : (wohnplzort), Präfix [infield = Ort; 60 Zeichen]
 
 mv:
 
@@ -183,7 +183,7 @@ av2: (wohnqmz): number 2 Stellen; 1 TO 99
 
 kh1: (wohnqmw): Bitte geben Sie nur Zahlen ein.
 
-kh1: (wohnqmz): Bitte geben Sie nur Zahlen ein.
+kh2: (wohnqmz): Bitte geben Sie nur Zahlen ein.
 
 fv:
 
@@ -557,7 +557,6 @@ tr: GOTO D3_9
 
 hi1: “Ich bezahle selbst” und “Andere bezahlen für mich” bitte als Spaltenüberschriften.
 hi2: Bitte etwas Abstand zwischen den beiden Spalten.
-hi3: Bei "fausinsg" und "feininsg2" (Gesamtausgaben) bitte ebenfalls 2 offene Angabefelder in der Zeile. 
 
 \--------------------------------
 
