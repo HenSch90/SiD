@@ -364,8 +364,6 @@ ka:
 
 vc:
 
-SHOW vn4 if dkinja=2
-
 av:Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 kh:
