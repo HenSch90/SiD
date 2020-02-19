@@ -1282,67 +1282,6 @@ hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
-D1_18 
-===
-
-tc:
-
-vn: paka (pakagern / pakafrem / pakaort / pakalost)
-
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
-
-is:
-
-it1: (pakagern): Alles in allem bin ich gerne Student\*in.
-
-it2: (pakafrem): Die studentische Welt ist mir fremd.
-
-it3: (pakaort): Die Hochschule ist genau der richtige Platz für mich.
-
-it4: (pakalost): An der Hochschule fühle ich mich verloren.
-
-st:
-
-ao1: 1: : trifft gar nicht zu
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D1_19
-
-hi: Items bitte zufällig rotieren.
-
-\--------------------------------
-
 D1_19 
 ===
 
