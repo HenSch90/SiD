@@ -393,7 +393,7 @@ in:
 
 q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) im Ausland verbracht?
 
-is: Bitte alles Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen
 
 it:
 
@@ -844,7 +844,7 @@ ao1: 1: : nein
 
 ao2: 2: : offene Angabe: 2 Stellen Präfix: ja, teilweise:[ainfcp1osba], Suffix: ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollstädnig:[ainfcp2osba], Suffix: … ECTS-Punkte
+ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollstädnig:[ainfcp2osba], Suffix: ECTS-Punkte
 
 ao: -12: : weiß ich nicht
 
@@ -1330,7 +1330,7 @@ ao15 (bhiikvba): Beratung/Informationen zu Fragen der Krankenversicherung
 
 ao16 (bhiipsyba): : psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
 
-ao17 (bhiikeinba): : kein Angebot genutz
+ao17 (bhiikeinba): : kein Angebot genutzt (Exklusivkategorie)
 
 mv:
 
@@ -1544,7 +1544,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie Ihre derzeitigen Berufs- und Arbeitsmarktchancen ein, und zwar in …
+q: Wie schätzen Sie Ihre derzeitigen Berufs- und Arbeitsmarktchancen ein, und zwar in…
 
 is:
 
