@@ -125,13 +125,13 @@ hi:
 
 \--------------------------------
 
-B1_3a
+B1_3b
 ==
 
-tc: If demosex !=3
+tc:
 
-vn: besex01; besex02; besex03; besex04; besex05; besex06; besex07; besex08; besex09; besex10; besex11;
-hosex01; hosex02; hosex03; hosex04; hosex05; hosex06; hosex07; hosex08; hosex09; hosex10; hosex11
+vn: chldsuffer; malebread; wrkmumhome; chldben; fullmumtod; bothfull; fulldadtod
+
 
 qt: Einfachauswahlmatrix
 
@@ -139,83 +139,33 @@ hl:
 
 in:
 
-q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und
-ihre Beziehungen in der heutigen Gesellschaft. #{layout.BREAK}
-Bitte geben Sie an, in welchem
-Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
+q: Über die Aufgaben von Müttern und Vätern gibt es verschiedene Meinungen. Bitte geben Sie an, inwiefern Sie den folgenden Aussagen zustimmen.
 
 is:
 
-it1: (besex01): Egal wie erfolgreich ein Mann auch sein mag, ohne die Liebe
-einer Frau fehlt ihm etwas ganz Wichtiges.
+it1: (chldsuffer): Ein Kleinkind wird sicherlich darunter leiden, wenn seine Mutter berufstätig ist.
 
-it2: (hosex01): Viele Frauen versuchen unter dem Deckmantel der
-Gleichberechtigung, besondere Vergünstigungen zu erlangen, wie z.B. eine
-Bevorzugung bei der Besetzung von Arbeitsstellen.
+it2: (malebread): Es ist für alle Beteiligten besser, wenn der Mann voll im Berufsleben steht und die Frau sich um den Haushalt und die Kinder kümmert.
 
-it3: (besex02): Bei einer Katastrophe sollten Frauen vor Männern gerettet
-werden.
+it3: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
 
-it4: (hosex02): Die meisten Frauen interpretieren harmlose Äußerungen oder
-Handlungen als frauenfeindlich.
+it4: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
 
-it5: (hosex03): Frauen sind zu schnell beleidigt.
+it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie eine Mutter, die nicht berufstätig ist.
 
-it6: (besex03): Man kann im Leben erst richtig glücklich sein, wenn man einen
-Partner hat, den man liebt.
+it6: (bothfull): Die beste Arbeitsteilung in einer Familie ist die, dass beide Partner in gleichem Umfang arbeiten und sich gleichermaßen um den Haushalt und die Kinder kümmern.
 
-it7: (hosex04): Feministinnen wollen, dass Frauen mehr Macht bekommen als
-Männer.
-
-it8: (besex04): Viele Frauen haben eine Art von Ehrlichkeit, die nur wenige
-Männer besitzen.
-
-it9: (besex05): Frauen sollten von Männern umsorgt und beschützt werden.
-
-it10: (hosex05): Die meisten Frauen sehen gar nicht, was Männer alles für sie
-tun.
-
-it11: (hosex06): Frauen versuchen, Macht zu erlangen, indem sie Männer immer
-mehr beherrschen.
-
-it12: (besex06): Jeder Mann sollte eine Frau haben, die er über alles liebt.
-
-it13: (besex07): Männer sind ohne Frauen unvollkommen.
-
-it14: (hosex07): Frauen übertreiben Probleme, die sie am Arbeitsplatz haben.
-
-it15: (hosex08): Hat eine Frau erst mal einen Mann „rumgekriegt“, dann versucht
-sie, ihn an die kurze Leine zu legen.
-
-it16: (hosex09): Wenn Frauen in einem fairen Wettbewerb gegenüber Männern den
-Kürzeren ziehen, behaupten sie gerne, sie seien diskriminiert worden.
-
-it17: (besex08): Eine Frau sollte von ihrem Mann auf Händen getragen werden.
-
-it18: (hosex10): Viele Frauen haben Spaß daran, mit Männern zu „spielen“, indem
-sie sich zuerst verführerisch geben, dann aber die Annäherungsversuche der
-Männer zurückweisen.
-
-it19: (besex09): Verglichen mit Männern haben Frauen ein besseres moralisches
-Empfinden.
-
-it20: (besex10): Ein Mann sollte bereit sein, sein eigenes Wohl zu opfern, um
-für seine Frau sorgen zu können.
-
-it21: (hosex11): Feministinnen stellen oftmals unberechtigte Forderungen an Männer.
-
-it22: (besex11): Verglichen mit Männern haben Frauen einen feineren Sinn für
-Kultur und einen besseren Geschmack.
+it7: (fulldadtod): Ein Vollzeit erwerbstätiger Vater kann zu seinem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie ein Vater, der nicht berufstätig ist.
 
 st:
 
 ao1: 1: stimme gar nicht zu
 
-ao2: 2: 
+ao2: 2
 
-ao3: 3: 
+ao3: 3
 
-ao4: 4: 
+ao4: 4
 
 ao5: 5: stimme voll und ganz zu
 
@@ -234,78 +184,6 @@ fv:
 hv:
 
 fo: Items bitte zufällig rotieren.
-
-tr: GOTO D3_13 IF mastersplit=3, 4, 5, 6
-    GOTO A_54 IF mastersplit=1, 2, 13
-
-hi:
-
-\--------------------------------
-
-B1_3b
-==
-
-tc:
-
-vn: chldsuffer; malebread; fulldadbad; wrkmumhome; chldben; fullmumtod; bothfull; fulldadtod; rolechange 
-
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Über die Aufgaben von Müttern und Vätern gibt es verschiedene Meinungen.
-Bitte geben Sie an, inwiefern Sie den folgenden Aussagen zustimmen.
-
-is:
-
-it1: (chldsuffer): Ein Kleinkind wird sicherlich darunter leiden, wenn seine Mutter berufstätig ist.
-
-it2: (malebread): Es ist für alle Beteiligten besser, wenn der Mann voll im Berufsleben steht und die Frau zu Hause bleibt und sich um den Haushalt und die Kinder kümmert.
-
-it3: (fulldadbad): Ein Vollzeit erwerbstätiger Vater kann sich nicht ausreichend um seine Kinder kümmern.
-
-it4: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
-
-it5: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
-
-it6: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie eine Mutter, die nicht berufstätig ist.
-
-it7: (bothfull): Die beste Arbeitsteilung in einer Familie ist die, dass beide Partner Vollzeit arbeiten und sich gleichermaßen um den Haushalt und die Kinder kümmern.
-
-it8: (fulldadtod): Ein Vollzeit erwerbstätiger Vater kann zu seinem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie ein Vater, der nicht berufstätig ist.
-
-it9: (rolechange): In einer Familie kann auch der Mann für den Haushalt und die Kinder verantwortlich sein, während die Frau Vollzeit erwerbstätig ist.
-
-st:
-
-ao1: 1: stimme gar nicht zu
-
-ao2: 2: 2
-
-ao3: 3: 3
-
-ao4: 4: 4
-
-ao5: 5: stimme voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
 
 tr:  GOTO D3_13 IF mastersplit=3, 4, 5, 6
      GOTO A_54 IF mastersplit=1, 2, 13
