@@ -3967,6 +3967,941 @@ tr: GOTO A_57
 
 hi:
 
+
+\------------------------------------------------------------
+
+N_1
+=========
+tc: IF NRW / zusatzsplit ==1
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Würden Sie wieder…
+
+is:
+
+it1: (nrwstudium): … ein Studium aufnehmen?
+
+it2: (nrwfach): … das gleiche Studienfach wählen?
+
+st:
+
+ao1: 1: auf keinen Fall
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: auf jeden Fall 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_2
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_2
+=========
+
+tc:
+
+vn: nrwstudium2
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, zu studieren?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_3
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_3
+=========
+
+tc:
+
+vn: nrwfach2
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, Ihren Studiengang/Ihre Fächerkombination zu studieren?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_4
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_4
+=========
+
+tc:
+
+vn: nrwregel
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie wichtig ist Ihnen ein Abschluss in Regelstudienzeit, d. h. in der Anzahl an Fachsemestern, wie es der Studienverlaufsplan vorsieht?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_57
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_5
+=========
+
+tc: IF zusatzsplit == 3
+
+vn: nrwdigbed
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie schätzen Sie Ihren Bedarf an digitalen Selbstlernangeboten in Ihrem Studiengang ein?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: sehr niedrig
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr hoch
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_6
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_6
+=========
+
+tc:
+
+vn: nrwdigged
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: In welchem Maße wird Ihr Bedarf an digitalen Selbstlernangeboten durch die Hochschule gedeckt?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_7
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_7
+=========
+
+tc:
+
+vn: nrwselbtest
+
+qt: vertikale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Haben Sie vor/zu Studienbeginn einen von Ihrer Hochschule angebotenen Selbsttest zur fachlichen Eignung durchgeführt? Und wie 
+hilfreich waren die Ergebnisse des Selbsttests (bspw. Online-Self-Assessment/OSA, Studicheck, Wissenstest etc.)?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv: 7: Test nicht durchgeführt/angeboten
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_8
+
+hi: mv ist von den übrigen aos abgesetzt, nicht Teil der Antwortmatrix
+
+
+\------------------------------------------------------------
+
+N_8
+=========
+
+tc:
+
+vn: nrwstudipor
+
+qt: vertikale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: 
+
+is:
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv: 7: Angebot nicht bekannt/nicht genutzt
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO_N9
+
+hi: mv ist von den übrigen aos abgesetzt, nicht Teil der Antwortmatrix
+
+
+\------------------------------------------------------------
+
+N_9
+=========
+
+tc:
+
+vn: digorg1, digorg2, digorg3, digorg4, digorg5
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie häufig werden die folgenden Aspekte Ihrer Lehrveranstaltungen über digitale Plattformen organisiert? (z. B. StudIP, Moodle, 
+Ilias, Olat)
+
+is:
+
+it1: (digorg1): An-/Abmeldung zu Lehrveranstaltungen
+
+it2: (digorg2): Kommunikation innerhalb der Lehrveranstaltungen
+
+it3: (digorg3): Bereitstellung von Literatur und Lehrmaterialien
+
+it4: (digorg4): Erbringung von Leistungsnachweisen / elektronische Prüfungen
+
+it5: (digorg5): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig 
+
+ao6: -13:  weiß nicht  
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_10
+
+hi: ao6 (missing) ist abgesetzt von ao1-ao5
+
+
+\------------------------------------------------------------
+
+N_10
+=========
+
+tc:
+
+vn: diglehr1, diglehr2, diglehr3, diglehr4, diglehr5, diglehr6, diglehr7, diglehr8, diglehr9, diglehr10, diglehr11, diglehr12, 
+diglehr12o
+
+qt: horizontale Einfachauswahlmatrix / offene Angabe
+
+hl:
+
+in:
+
+q: Wie häufig kommen folgende digitale Methoden bzw. Medien im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
+
+is:
+
+it1: diglehr1: Online-Vorlesung (z. B. Live-Digitized-Lecture oder archivierte Aufzeichnung)
+
+it2: (diglehr2): Online-Seminare
+
+it3: (diglehr3): Online-Selbststudium mit anschließender Vertiefung im Präsenzstudium
+
+it4: (diglehr4): virtuelle Lernorte / Labore
+
+it5: (diglehr5): Lehr- und Lernvideos / E-Lecture
+
+it6: (diglehr6): E-Tutorial / E-Coaching (z. B. Web Based Training)
+
+it7: (diglehr7): Lernspiele / Game-Based Learning
+
+it8: (diglehr8): Präsentationssoftware (z. B. PowerPoint, Prezi)
+
+it9: (diglehr9): Smart-Board 
+
+it10: (diglehr10): fachspezifische Software (z. B. Statistik- oder Transkriptionsprog.)
+
+it11: (diglehr11): Kommunikationstools
+
+it12: diglehr12, diglehr12o: Etwas anderes und zwar: [offene Angabe, 50 Zeichen] 
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig 
+
+ao6: -13: kenne ich nicht
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_11
+
+hi: ao6 (missing) ist abgesetzt von ao1-ao5
+
+
+\------------------------------------------------------------
+
+N_11
+=========
+
+tc:
+
+vn: digkom1, digkom2, digkom3, digkom4, digkom5, digkom6
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton\*innen)? 
+
+is:
+
+it1: (digkom1): Instant Messaging-Dienste (z. B. WhatsApp, Telegram)
+
+it2: (digkom2): Soziale Netzwerke (z. B. Facebook, Instagram)
+
+it3: (digkom3): Online Verwaltungstools (z. B. Doodle)
+
+it4: (digkom4): Tools der Lernmanagementsysteme (z. B. Peer-Feedback, Foren)
+
+it5: (digkom5): Clouddienste zum gemeinsamen Schreiben (z. B. Etherpad, Google docs)
+
+it6: (digkom6): Clouddienste zum Dateienaustausch (z. B. Dropbox)
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig 
+
+ao6: -13: kenne ich nicht
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_12
+
+hi: ao6 (missing) ist abgesetzt von ao1-ao5
+
+
+\------------------------------------------------------------
+
+N_12
+=========
+
+tc:
+
+vn: digan1, digan2, digan3, digan4, digan5, digan6, digan7, digan8, digan9, digan10, digan11
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie leicht würde es Ihnen fallen, …
+
+is:
+
+it1: (digan1): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)? 
+
+it2: (digan2): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
+
+it3: (digan3): … eine bestimmte Publikation als Download zu finden?
+
+it4: (digan4): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren?
+
+it5: (digan5): … einen Text nach bestimmten Vorgabe  zu formatieren (z. B. mit Word, Latex)? 
+
+it6: (digan6): …  wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
+
+it7: (digan7): … sich in ein neues Computerprogramm einzuarbeiten?
+
+it8: (digan8): … eine Website zu programmieren?
+
+it9: (digan9): … eine Programmiersprache (z. B. Python, SQL, QML) sicher anzuwenden?
+
+it10: (digan10): … digitale Gruppen/Netzwerke zu recherchieren und sich zu beteiligen?
+
+it11: (digan11): … digitale Gruppen/Netzwerke zu initiieren und zu moderieren?
+
+st:
+
+ao1: 1: sehr leicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr schwer
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_57
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_13
+=========
+
+tc: IF zusatzsplit ==4
+
+vn: diskjane, diskjane1, diskjane2, diskjane3, diskjane4, diskjane5, diskjane6, diskjane7, diskjane8, diskjane9, diskjane10, 
+diskjane11, diskjane12, diskjane13, diskjane14, diskjane15, diskjane16, diskjane16o
+
+qt: vertikale Mehrfachauswahl
+
+hl:
+
+in: Nun geht es um das Thema Diskriminierung. Diskriminierung  bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt 
+wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. 
+
+q: !!Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?!!
+
+is:
+
+it:
+
+st:
+
+ao1: 1: (diskjane): nein  
+
+ao2: 2: (diskjane1): Leistungen wurden mir nicht zugetraut.
+
+ao3: 3: (diskjane2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
+
+ao4: 4: (diskjane3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde. 
+
+ao5: 5: (diskjane4): Mir wurden Rechte/Informationen vorenthalten.
+
+ao6: 6: (diskjane5): Mein Antrag wurde abgelehnt oder mit wurde eine Leistung verwehrt. 
+
+ao7: 7: (diskjane6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen). 
+
+ao8: 8: (diskjane7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
+
+ao9: 9: (diskjane8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
+
+ao10: 10: (diskjane9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet. 
+
+ao11: 11: (diskjane10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
+
+ao12: 12: (diskjane11): Ich wurde beleidigt oder beschimpft. 
+
+ao13: 13: (diskjane12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
+
+ao14: 14: (diskjane13): Ich habe sexualisierte körperliche Übergriffe erlebt. 
+
+ao15: 15: (diskjane14): Ich wurde körperlich bedroht.
+
+ao16: 16: (diskjane15): Ich wurde körperlich angegriffen. 
+
+ao17: 17: (diskjane16, diskjane16o): sonstiges: [offene Angabe, 50 Zeichen] 
+
+mv:
+
+ka (ao2 TO ao17): ja, und zwar: 
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_57 IF diskjane=1
+GOTO N_14 IF diskjane!=1
+
+
+\------------------------------------------------------------
+
+N_14
+=========
+
+tc:
+
+vn: diskanza1, diskanza2, diskanza3, diskanza4, diskanza5, diskanza6, diskanza7, diskanza8, diskanza9, diskanza10, diskanza11, 
+diskanza12, diskanza13, diskanza14, diskanza15
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie häufig haben Sie diese Erfahrungen im Rahmen des Studiums gemacht?
+
+is:
+
+it1: (diskanza1): Leistungen wurden mir nicht zugetraut.
+
+it2: (diskanza2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
+
+it3: (diskanza3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde.
+
+it4: (diskanza4): Mir wurden Rechte/Informationen vorenthalten.
+
+it5: (diskanza5): Mein Antrag wurde abgelehnt oder mir wurde eine Leistung verwehrt.
+
+it6: (diskanza6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen).
+
+it7: (diskanza7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
+
+it8: (diskanza8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
+
+it9: (diskanza9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet.
+
+it10: (diskanza10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
+
+it11: (diskanza11): Ich wurde beleidigt oder beschimpft.
+
+it12: (diskanza12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
+
+it13: (diskanza13): Ich habe sexualisierte körperliche Übergriffe erlebt.
+
+it14: (diskanza14): Ich wurde körperlich bedroht.
+
+it15: (diskanza15): Ich wurde körperlich angegriffen.
+
+st:
+
+ao1: 1: einmal
+
+ao2: 2: mehrmals
+
+ao3: 3: regelmäßig
+
+ao4: 4: weiß nicht wie häufig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_15
+
+hi:
+
+
+\------------------------------------------------------------
+
+N_15
+=========
+
+tc:
+
+vn: diskwem1; diskwem2; diskwem3; diskwem4; diskwem5; diskwem6; diskwem7; diskwem8; diskwem8o
+
+qt:  Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Von wem oder was ging die Benachteiligung/Diskriminierung aus?
+
+is: **Bitte alles Zutreffende auswählen.**
+
+it:
+
+st:
+
+ao1: (diskwem1): Studierende
+
+ao2: (diskwem2): Tutor*innen
+
+ao3: (diskwem3): Lehrende
+
+ao4: (diskwem4): Verwaltungsmitarbeiter*innen
+
+ao5: (diskwem5): Materielle Gegebenheiten/technische Ausstattung
+
+ao6: (diskwem6): Verfahren/Regelungen
+
+ao7: (diskwem7): Keine Angabe
+
+ao8: (diskwem8; diskwem8o): Andere: [offene Angabe, 350 Zeichen]
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_57
+
+hi:
+
+
 \------------------------------------------------------------
 
 A_57
