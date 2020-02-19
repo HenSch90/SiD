@@ -602,6 +602,7 @@ fo:
 tr: GOTO D3_10  IF feindgsemo > 0 OR feindgstuo > 0;  
     GOTO D3_11  IF feindgsemo = 0 AND feindgstuo = 0
     GOTO D3_11  IF feindgsemo = k. A. AND feindgstuo = k. A.
+    GOTO D3_11
 
 hi:
 
@@ -1024,14 +1025,6 @@ vc3: SHOW q3 IF (fbafja = 1) AND (fbafex = 2 | 3)
 
 vc4: SHOW q4 IF (fbafja = 1) AND (fbafex = 4)
 
-vc5: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 1) AND (fbafex = 1 | k. A.)
-
-vc6: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 2)
-
-vc7: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 1) AND (fbafex = 2 | 3)
-
-vc8: SHOW ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 IF (fbafja = 1) AND (fbafex = 4)
-
 av:
 
 kh:
@@ -1128,7 +1121,7 @@ mv:
 
 ka:
 
-vc1: SHOW ao2 IF dkinanz = k. A.
+vc1: SHOW ao2 IF dkinja = k. A.
 
 vc2: SHOW ao3 IF dkinanz = 1
 
@@ -1165,7 +1158,7 @@ in:
 
 q1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Semester nachgehen.
 
-q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb  nachgehen.
+q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb nachgehen.
 
 q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
 Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
@@ -1173,9 +1166,9 @@ Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 is: 
-it1: (etat1), Präfix [infield = Art der Tätigkeit; Dropdown-Menü] 
-it2: (etat2), Präfix [infield = Art der Tätigkeit; Dropdown-Menü] 
-it3: (etat3), Präfix [infield = Art der Tätigkeit; Dropdown-Menü] 
+it1: (etat1), Präfix [infield = Tätigkeit; Dropdown-Menü] 
+it2: (etat2), Präfix [infield = Tätigkeit; Dropdown-Menü] 
+it3: (etat3), Präfix [infield = Tätigkeit; Dropdown-Menü] 
 
 st:
 ao1: 1: : Tätigkeit als studentische/wissenschaftliche Hilfskraft im Bereich Forschung und Lehre
@@ -1187,9 +1180,9 @@ ao6: 6: : Tätigkeit als Praktikant\*in
 
 mv: 
 
-ka1: (it1): Tätigkeit A
-ka2: (it2): Tätigkeit B
-ka3: (it3): Tätigkeit C 
+ka1: (it1): Art der Tätigkeit (Tätigkeit A)
+ka2: (it2): Art der Tätigkeit (Tätigkeit B)
+ka3: (it3): Art der Tätigkeit (Tätigkeit C)
 
 vc1: SHOW q1 IF eaktsens = 2 AND sformdua != 1
 vc2: SHOW q2 IF eaktsens = 2 AND sformdua = 1
@@ -1213,7 +1206,7 @@ hv:
 fo: 
 
 tr: GOTO D3_20 IF sformberu=1 | sformdua=1;  
-    GOTO D3_21 IF ELSE
+    GOTO D3_21 IF sformberu=0 | sformdua=0
 
 hi: 
 
@@ -1251,7 +1244,7 @@ ao1: (jobbbdso1), Präfix: [infield = Berufsbezeichnung; 100 Zeichen]
 
 ao2: (jobbbdso2), Präfix: [infield = Tätigkeitsbeschreibung; 100 Zeichen]
 
-ao3: (jobbbds1), -11: : nie berufstätig gewesen [EK]
+ao3: (jobbbds1), -11: : nie berufstätig gewesen
 
 ao4: (jobbbds2), -12: : weiß ich nicht [EK]
 
