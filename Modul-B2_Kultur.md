@@ -442,15 +442,15 @@ it6: (skkarr) … Ihnen hilfreiche Ratschläge für den weiteren Berufs- und Kar
 
 st:
 
-ao1: 1: 1: sehr unwahrscheinlich
+ao1: 1: sehr unwahrscheinlich
 
-ao2: 2: 2
+ao2: 2
 
-ao3: 3: 3
+ao3: 3
 
-ao4: 4: 4
+ao4: 4
 
-ao5: 5: 5: sehr wahrscheinlich
+ao5: 5: sehr wahrscheinlich
 
 mv:
 
@@ -501,15 +501,15 @@ it4: (bilaspber) … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: 1: sehr unwichtig
+ao1: 1: sehr unwichtig
 
-ao2: 2: 2
+ao2: 2:
 
-ao3: 3: 3
+ao3: 3:
 
-ao4: 4: 4
+ao4: 4:
 
-ao5: 5: 5: sehr wichtig
+ao5: 5: sehr wichtig
 
 mv: -12: weiß ich nicht
 
