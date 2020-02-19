@@ -119,9 +119,9 @@ it:
 
 st:
 
-ao1: 1: die deutsche Staatsangehörigkeit
+ao1: (dnatdeu): 1: die deutsche Staatsangehörigkeit
 
-ao2: 2: eine oder mehrere andere Staatsangehörigkeit(en)
+ao2: (dnatausl): 2: eine oder mehrere andere Staatsangehörigkeit(en)
 
 mv:
 
@@ -604,23 +604,23 @@ it:
 
 st:
 
-ao1: 1: (baufgrueuba): Bürger*\in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
+ao1: (baufgrueuba): 1: Bürger*\in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
 
-ao2: 2: (baufgrustuba): Studierende*\r (auch zu Zwecken der Studienvorbereitung)
+ao2: (baufgrustuba): 2: Studierende*\r (auch zu Zwecken der Studienvorbereitung)
 
-ao3: 3: (baufgruerwerb): Erwerbstätige*\r
+ao3: (baufgruerwerb): 3: Erwerbstätige*\r
 
-ao4: 4: (baufgrutouba): Tourist*\in (Besuchsvisum)
+ao4: (baufgrutouba): 4: Tourist*\in (Besuchsvisum)
 
-ao5: 5: (baufgruasylba): Asylbewerber*\in, Geflüchtete*\r oder Schutzsuchende*\r
+ao5: (baufgruasylba): 5: Asylbewerber*\in, Geflüchtete*\r oder Schutzsuchende*\r
 
-ao6: 6: (baufgrufaman): Familienangehörige*\r, Einreise mit Eltern bzw. Ehepartner*\in
+ao6: (baufgrufaman): 6: Familienangehörige*\r, Einreise mit Eltern bzw. Ehepartner*\in
 
-ao6: 7: (baufgrufamba): Familiennachzug (Visum zur Familienzusammenführung)
+ao6: (baufgrufamba): 7: Familiennachzug (Visum zur Familienzusammenführung)
 
-ao6: 8: (baufgruausba): (Spät-)Aussiedler*\in
+ao6: (baufgruausba): 8: (Spät-)Aussiedler*\in
 
-ao7: 7: (baufgruandba): anderen, und zwar: (baufgruandba_open)
+ao7: (baufgruandba): 7: anderen, und zwar: (baufgruandba_open)
 
 
 ato:
@@ -774,9 +774,7 @@ ao1: 1: männlich
 
 ao2: 2: weiblich
 
-ao3: 3: Anderes,
-
-ato: Prefix: und zwar:
+ao3: 3: Anderes, und zwar: (demosexo)
 
 mv:
 
@@ -827,9 +825,7 @@ ao2: 2: weiblich
 
 ao3: 3: divers
 
-ao4: 4: Keine der genannten Kategorien,
-
-ato: Prefix: sondern:
+ao4: 4: Keine der genannten Kategorien, sondern: (demosexo)
 
 vc:
 
@@ -1014,7 +1010,7 @@ it:
 st:
 
 ao1: 1: nein
-ao2: 2: ja, und zwar: ___ Personen
+ao2: 2: ja, und zwar: (pflegango) Personen
 
 mv:
 
@@ -1068,7 +1064,7 @@ Waschen, Kämmen und Rasieren
 it4: (pflegt4): schwierigere Pflegetätigkeiten, z.B. Hilfe beim Umbetten,
 Stuhlgang usw.
 
-it5: (pflegt5; pflegt5o): Etwas anderes und zwar: ___ [offene Angabe, 50 Zeichen]
+it5: (pflegt5): Etwas anderes und zwar: (pflegt5o)
 
 st:
 
@@ -1125,25 +1121,25 @@ it:
 
 st:
 
-ao1: 1: (gbeges): nein (EK)
+ao1: (gbeges): 1: nein (EK)
 
-ao2: 2: (gartmob): Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
+ao2: (gartmob): 2: Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
 
-ao3: 3: (gartseh): Sehbeeinträchtigung/Blindheit
+ao3: (gartseh): 3:  Sehbeeinträchtigung/Blindheit
 
-ao4: 4: (gartohr): Hörbeeinträchtigung/Gehörlosigkeit
+ao4: (gartohr): 4: Hörbeeinträchtigung/Gehörlosigkeit
 
-ao5: 5: (gartspr): Sprechbeeinträchtigung (z. B. Stottern)
+ao5: (gartspr): 5:  Sprechbeeinträchtigung (z. B. Stottern)
 
-ao6: 6: (gartpsy): psychische Erkrankung (z. B. Depression, Essstörung)
+ao6: (gartpsy): 6:  psychische Erkrankung (z. B. Depression, Essstörung)
 
-ao7: 7: (gartsom): länger dauernde Krankheit/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
+ao7: (gartsom): 7: länger dauernde Krankheit/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
 
-ao8: 8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
+ao8: (garttls): 8: Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-ao9: 9: (gartson): andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) [offene Angabe, 50 Zeichen]
+ao9: (gartson): 9: andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) (gartsono), 50 Zeichen
 
-ao10: 10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
+ao10: (gartka): 10: Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
 mv:
 
@@ -1314,7 +1310,7 @@ tc:
 
 vn: hsstand
 
-qt: Einfachauswahl mit Dropdown und offener Angabe
+qt: Einfachauswahl mit Dropdown
 
 hl:
 
@@ -1476,15 +1472,11 @@ hl:
 
 in: 
 
-q: Sollte Ihre Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
-
-is: Bitte Beschreiben Sie Ihren Hochschulstandort möglichst genau (bspw. HU Berlin, FH Bielefeld)
-
 it: 
 
 st:
 
-ao1: 100 Stellen, Präfix (hsstandhso), Suffix: Hochschule:
+ao1: 50 Stellen, Präfix (hsstandhso) Hochschule:
 
 mv: 
 
@@ -1528,9 +1520,9 @@ it:
 
 st:
 
-ao1: 100 Stellen, Präfix (hsstandlao), Suffix: Land
+ao1: Präfix Land (hsstandlao)
 
-ao2: 100 Stellen, Präfix (hsstandhsao), Suffix: Ort
+ao2: Präfix Ort/Hochschule (hsstandhsao)
 
 mv: 
 
@@ -1602,6 +1594,7 @@ fo:
 
 tr: GOTO D1_17 if mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
     GOTO D2_13 if mastersplit=5, 6, 11, 12
+    <zofar:transition target="A_23" condition="zofar.asNumber(mastersplit)==13"/>
     
 hi:
 
@@ -1630,9 +1623,9 @@ it:
 
 st:
 
-ao1: 1: 60, Prefix: erstes Studienfach
+ao1: 1: 50, Prefix: erstes Studienfach
 
-ao2: 2: 60, Prefix: ggf. zweites Studienfach
+ao2: 2: 50, Prefix: ggf. zweites Studienfach
 
 mv:
 
@@ -1685,9 +1678,9 @@ ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I
 
 ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
 
-ao5: 5: ja, Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: ja, und zwar Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: ja, Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: ja, und zwar Lehramt an Förderschulen/Sonderpädagogik
 
 mv:
 
@@ -1746,7 +1739,7 @@ ao6: 6: kirchliche Abschlussprüfung
 
 ao7: 7: künstlerische Abschlussprüfung
 
-ao8: 8: anderen Abschluss (bspw. Ausländischer Abschluss, Magister)
+ao8: 8: anderen Abschluss (bspw. ausländischer Abschluss, Magister)
 
 ao9: 9: keinen Studienabschluss
 
@@ -1797,19 +1790,19 @@ it:
 
 st:
 
-ao1: 1: Nein
+ao1: (sabsweit): 1: nein[EK]
 
-ao2: 2: Ja, Zertifikatskurs(e)
+ao2: (sabsweito): 2: ja, Zertifikatskurs(e)
 
-ao3: 3: Ja, Seminar(reihe)
+ao3: (todo1): 3: ja, Seminar(reihe)
 
-ao4: 4: Ja, Workshop(s)
+ao4: (todo2): 4: ja, Workshop(s)
 
-ao5: 5: Ja, Modul/Kurs
+ao5: (todo3): 5: ja, Modul/Kurs
 
-ao6: 6: Ja, anderes
+ao6: (todo4): 6: ja, anderes
 
-ato: Prefix: und zwar:
+ato: (todo5_open):  Prefix: und zwar:
 
 mv:
 
@@ -1854,17 +1847,15 @@ it:
 
 st:
 
-ao1: 1: Präsenzstudiengang (in Gegensatz zu Fernstudium)
+ao1: (sformpraes): 1: Präsenzstudim (in Gegensatz zu Fernstudium)
 
-ao2: 2: Dualer Studiengang
+ao2: (sformdua): 2: duales Studium
 
-ao3: 3: Berufsbegleitender Studiengang
+ao3: (sformberu): 3: berufsbegleitendes Studium
 
-ao4: 4: Fernstudiengang
+ao4: (sformfern): 4: Fernstudium
 
-ao5: 5: anderes,
-
-ato: 30, Prefix: und zwar:
+ao5: (sformsons): 5: Anderes, und zwar: (sformsonso), 50 Zeichen
 
 mv:
 
@@ -1911,23 +1902,19 @@ it:
 
 st:
 
-ao1: 3, Prefix: Durchschnittsnote (z.B. 2,5):
+ao1: Prefix: Durchschnittsnote (z.B. 2,5): (spernoto), 3 Zeichen
 
-ao2: 11: Ich habe bisher keine Noten erhalten / In meinem Studium gibt es keine Noten.
+ao2: -11: Ich habe bisher keine Noten erhalten. / In meinem Studium gibt es keine Noten.
 
 ao3: -12: weiß ich nicht
-
-mv: -11: Ich habe bisher keine Noten erhalten / In meinem Studium gibt es keine Noten.
-
-\-12: weiß ich nicht
 
 ka:
 
 vc:
 
-av: number: \<= dreistellig: 1,0 TO 4,0
+av: 
 
-kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh: 
 
 fv:
 
