@@ -543,7 +543,7 @@ fv:
 
 hv:
 
-fo: Bitte in der Zeile Großvater (promgroßv), Großmutter (promgroßm), Vater (promvat), Mutter (prommut) jeweils das Antwortkästchen für mv2/"habe ich nicht" nicht einblenden.
+fo: Bitte in der Zeile Großvater (promgroßv), Großmutter (promgroßm), Vater (promvat), Mutter (prommut) jeweils das Antwortkästchen für mv2/"habe ich nicht" ausblenden.
 
 tr:
 
