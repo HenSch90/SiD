@@ -759,7 +759,7 @@ it7: (ihinhem): ...weil ich Hemmungen hatte, Hilfe in Anspruch zu nehmen.
 
 it8: (ihinnac): ... weil ich dadurch Nachteile im weiteren Studium befürchtete.
 
-it9: (ihinand): ... aus anderen Gründen
+it9: (ihinand): ... aus anderen Gründen.
 
 st: Ich habe kein Beratungsangebot in Anspruch genommen, ...
 
