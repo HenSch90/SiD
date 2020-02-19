@@ -694,7 +694,7 @@ tc:
 
 vn: ainfaba; ainfbmba; ainfbjba; ainfemba, ainfejba
 
-qt: Tableau-Frage Drop-Down Menüs, offene Angabe
+qt: Akkordeon (Drop-Down Menüs, offene Angabe)
 
 hl:
 
