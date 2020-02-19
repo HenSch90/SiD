@@ -589,7 +589,7 @@ tr:
 
 GOTO F3_13
 
-hi:
+hi:Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -790,7 +790,7 @@ hl:
 in:
 
 q: Sie haben angegeben, dass sie einen (weiteren) studienbezogenen
-Auslandsaufenthalt künftig beabsichtigen durchzuführen:
+Auslandsaufenthalt planen:
 
 Welche Art von Aufenthalt planen Sie?
 
@@ -813,7 +813,7 @@ ao5 (aplanstureis): Studienreise
 
 ao6 (aplanprojekt): Projektarbeit
 
-ao7 (aplansumschoo): Summerschool
+ao7 (aplansumschoo): Summer School
 
 ao8 (aplanson): sonstiger Auslandsaufenthalt
 
@@ -837,7 +837,7 @@ fo:
 
 tr:
 
-GOTO F3_17
+GOTO F3_19
 
 hi:
 
@@ -1095,11 +1095,11 @@ q: Wie häufig unterhalten Sie sich mit…
 
 is:
 
-it1: (akontdeust): … Studierenden aus Deutschland
+it1: (akontdeust): … Studierenden aus Deutschland?
 
-it2: (akonteust): … Studierenden aus anderen Ländern Europas
+it2: (akonteust): … Studierenden aus anderen Ländern Europas?
 
-it3: (akontneust): … Studierenden aus Ländern außerhalb Europas
+it3: (akontneust): … Studierenden aus Ländern außerhalb Europas?
 
 st:
 
@@ -1264,11 +1264,11 @@ q: Wenn Sie an Ihre Zukunft denken, wo möchten Sie leben?
 
 is:
 
-it1: (intpsydeu): In Deutschland
+it1: (intpsydeu): in Deutschland
 
-it2: (intpsyzeitl): Zeitweise im Ausland
+it2: (intpsyzeitl): zeitweise im Ausland
 
-it3: (intpsyandl): Dauerhaft im Ausland
+it3: (intpsyandl): dauerhaft im Ausland
 
 st:
 
