@@ -367,7 +367,7 @@ C2_7
 
 tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
-vn: schwbau; schworg; schwpru; schwand; schwando, schwno
+vn: schwbau; schworg; schwpru; schwand; schwando
 
 qt: Mehrfachauswahl; offene Angabe
 
@@ -400,7 +400,7 @@ mv:
 
 ka:
 
-vc1: SHOW q1 IF h_gartcount = 1
+vc:
 
 av:
 
