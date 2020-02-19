@@ -33,7 +33,7 @@ ao5: 5: offene Angabe: 25, Prefix: Eine andere, und zwar:
 
 ao6: 6: unklar
 
-mv: -12: Ich möchte diese Frage nicht beantworten.
+mv: -11: Ich möchte diese Frage nicht beantworten.
 
 ka:
 
@@ -65,7 +65,7 @@ tc:
 
 vn: genidsach; genidloes; genidrat; genidlieb; genideinf; genidemo; genidrisk
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -75,15 +75,15 @@ q: Wenn Sie sich selbst beschreiben müssten: Welche Eigenschaften treffen am eh
 
 is:
 
-it1: (genidsach): sachlich
+it1: (genidloes): lösungsorientiert
 
-it2: (genidloes): lösungsorientiert
+it2: (genidlieb): liebevoll
 
-it3: (genidrat): rational
+it3: (genidsach): sachlich
 
-it4: (genidlieb): liebevoll
+it4: (genideinf): einfühlsam
 
-it5: (genideinf): einfühlsam
+it5: (genidrat): rational
 
 it6: (genidemo): emotional
 
@@ -133,7 +133,7 @@ tc:
 vn: chldsuffer; malebread; wrkmumhome; chldben; fullmumtod; bothfull; fulldadtod
 
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -147,9 +147,9 @@ it1: (chldsuffer): Ein Kleinkind wird sicherlich darunter leiden, wenn seine Mut
 
 it2: (malebread): Es ist für alle Beteiligten besser, wenn der Mann voll im Berufsleben steht und die Frau sich um den Haushalt und die Kinder kümmert.
 
-it3: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
+it3: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
 
-it4: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
+it4: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
 
 it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie eine Mutter, die nicht berufstätig ist.
 
@@ -217,13 +217,13 @@ it3: (\_a): andere Personen
 
 st:
 
-ao1 (atakhh): Hausarbeit: 3, Suffix: %
+ao1 (atakhh): Hausarbeit: offene Angabe: 3, Suffix: %
 
-ao2 (atakee): Erwerbseinkommen: 3, Suffix: %
+ao2 (atakee): Erwerbseinkommen: offene Angabe: 3, Suffix: %
 
-ao3 (atakwe): Treffen wichtiger Entscheidungen: 3, Suffix: %
+ao3 (atakwe): Treffen wichtiger Entscheidungen: offene Angabe: 3, Suffix: %
 
-ao4 (atakkb): Kinderbetreuung: 3, Suffix: %
+ao4 (atakkb): Kinderbetreuung: offene Angabe: 3, Suffix: %
 
 mv:
 
@@ -239,7 +239,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte eine vierte Zeile programmieren, in der in der Itemspalte unter it3 ("andere Personen") "Summe" steht. In dieser vierten Zeile soll zudem für die vier ao-Spalten dann jeweils "100 %" als Text stehen. 
 
 tr:
 
@@ -256,7 +256,7 @@ tc: IF wohnpar=1
 
 vn1: atakzufr
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -311,7 +311,7 @@ tc:
 vn: atihh; atiee; atiwe; atikb
 
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl: 
 
@@ -369,9 +369,9 @@ hi:
 B1_6
 ==
 
-tc: IF wohnpar=1
+tc:
 
-vn: athhm_m; athhm__v; athhm_i; athhm__a; ateem_m; ateem_v; ateem_i; ateem_a; atwem_m; atwem_v; atwem_i; atwem_a; atkbm_m; atkbm_v; atkbm_i; atkbm_a; atkam_m; atkam_v; atkam_i; atkam_a
+vn: athhm_m; athhm_v; athhm_i; athhm_a; ateem_m; ateem_v; ateem_i; ateem_a; atwem_m; atwem_v; atwem_i; atwem_a; atkbm_m; atkbm_v; atkbm_i; atkbm_a; atkam_m; atkam_v; atkam_i; atkam_a
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao mit offener Nennung
 
@@ -393,13 +393,13 @@ it4: (\_a): andere Personen
 
 st:
 
-ao1 (athhm): Hausarbeit: 3, Suffix: %
+ao1 (athhm): Hausarbeit: offene Angabe: 3, Suffix: %
 
-ao2 (ateem): Erwerbseinkommen: 3, Suffix: %
+ao2 (ateem): Erwerbseinkommen: offene Angabe: 3, Suffix: %
 
-ao3 (atwem): Treffen wichtiger Entscheidungen: 3, Suffix: %
+ao3 (atwem): Treffen wichtiger Entscheidungen: offene Angabe: 3, Suffix: %
 
-ao4 (atkbm): Kinderbetreuung: 3, Suffix: %
+ao4 (atkbm): Kinderbetreuung: offene Angabe: 3, Suffix: %
 
 mv:
 
@@ -415,7 +415,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte eine fünfte Zeile programmieren, in der in der Itemspalte unter it4 ("andere Personen") "Summe" steht. In dieser fünften Zeile soll zudem für die vier ao-Spalten dann jeweils "100 %" als Text stehen.. 
 
 tr:
 
@@ -466,7 +466,7 @@ ao9: 9: 81 bis 90 %
 
 ao10: 10: 91 bis 100 %
 
-mv: -12: trifft nicht zu
+mv: -11: trifft nicht zu
 
 ka:
 
@@ -480,7 +480,7 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
@@ -497,7 +497,7 @@ tc:
 
 vn: promgroßv; promgroßm; promvat; prommut; prombrud; promschw
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit horizontalen ao
 
 hl:
 
@@ -527,15 +527,13 @@ ao2: 2: studiert
 
 ao3: 3: promoviert
 
-ao4: 4: habe ich nicht
+mv1: -12: weiß ich nicht
 
-
-
-mv: -12: weiß ich nicht
+mv2: -11: habe ich nicht
 
 ka:
 
-vc: SHOW ao4 FOR it5 and it6
+vc: 
 
 av:
 
@@ -545,7 +543,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte in der Zeile Großvater (promgroßv), Großmutter (promgroßm), Vater (promvat), Mutter (prommut) jeweils das Antwortkästchen für mv2/"habe ich nicht" nicht einblenden.
 
 tr:
 
