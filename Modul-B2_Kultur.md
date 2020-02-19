@@ -515,9 +515,9 @@ mv: -12: weiß ich nicht
 
 ka:
 
-vc:
+vc: SHOW it2 IF sabsan = 1 OR sabsan = 2
 
-av: SHOW it2 IF sabsan = 1 OR sabsan = 2
+av: 
 
 kh:
 
