@@ -57,7 +57,7 @@ GOTO F3_16 IF ainfaus=1 AND auslandint=4
 GOTO F3_16 IF ainfaus=MISSING AND auslandint=4
 GOTO F3_21 IF ainfaus=1 AND auslandint=1,2,3
 GOTO F3_21 IF ainfaus=MISSING AND auslandint=1,2,3
-
+GOTO F3_21 IF ainfaus=MISSING AND auslandint=MISSING
 hi:
 
 \--------------------------------
@@ -72,7 +72,7 @@ ainfa1 / ainflo1 / ainfsto1 / ainfhso1 / ainfbm1 / ainfbj1 / ainfem1 / ainfej1 /
 ainfa2 / ainflo2 / ainfsto2 / ainfhso2 / ainfbm2 / ainfbj2 / ainfem2 / ainfej2 / 
 ainfa3 / ainflo3 / ainfsto3 / ainfhso3 / ainfbm3 / ainfbj3 / ainfem3 / ainfej3
 
-qt: Tableau-Abfrage Drop-Down-Menüs, offene Angabe
+qt: Akkordeon (Drop-Down-Menüs), offene Angabe
 
 hl:
 
@@ -94,47 +94,41 @@ it2: Land: [ainflo1] [Eingabefeld; 100 Zeichen]
 
 it3: Stadt/Hochschule: [ainfsto1] [Eingabefeld; 100 Zeichen]
 
-it4: ggf. Hochschule: [ainfhso1] [Eingabefeld; 100 Zeichen]
+it4: (ainfbm1): Monat: [Drop-Down-Menü2]
 
-it5: (ainfbm1): Monat: [Drop-Down-Menü2]
+it5: (ainfbj1): Jahr: [Drop-Down-Menü3]
 
-it6: (ainfbj1): Jahr: [Drop-Down-Menü3]
+it6: (ainfem1): Monat: [Drop-Down-Menü2]
 
-it7: (ainfem1): Monat: [Drop-Down-Menü2]
+it7: (ainfej1): Jahr: [Drop-Down-Menü5]
 
-it8: (ainfej1): Jahr: [Drop-Down-Menü5]
+it8: (ainfa2): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it9: (ainfa2): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
+it9: Land: [ainflo2] [Eingabefeld; 100 Zeichen]
 
-it10: Land: [ainflo2] [Eingabefeld; 100 Zeichen]
+it10: Stadt/Hochschule: [ainfsto2] [Eingabefeld; 100 Zeichen]
 
-it11: Stadt/Hochschule: [ainfsto2] [Eingabefeld; 100 Zeichen]
+it11: (ainfbm2): Monat: [Drop-Down-Menü2]
 
-it12: ggf. Hochschule: [ainfhso2] [Eingabefeld; 100 Zeichen]
+it12: (ainfbj2): Jahr: [Drop-Down-Menü3]
 
-it13: (ainfbm2): Monat: [Drop-Down-Menü2]
+it13: (ainfem2): Monat: [Drop-Down-Menü2]
 
-it14: (ainfbj2): Jahr: [Drop-Down-Menü3]
+it14: (ainfej2): Jahr: [Drop-Down-Menü5]
 
-it15: (ainfem2): Monat: [Drop-Down-Menü2]
+it15: (ainfa3): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it16: (ainfej2): Jahr: [Drop-Down-Menü5]
+it16: Land: [ainflo3] [Eingabefeld; 100 Zeichen]
 
-it17: (ainfa3): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
+it17: Stadt/Hochschule: [ainfsto3] [Eingabefeld; 100 Zeichen]
 
-it18: Land: [ainflo3] [Eingabefeld; 100 Zeichen]
+it18: (ainfbm3): Monat: [Drop-Down-Menü2]
 
-it19: Stadt/Hochschule: [ainfsto3] [Eingabefeld; 100 Zeichen]
+it19: (ainfbj3): Jahr: [Drop-Down-Menü3]
 
-it20: ggf. Hochschule: [ainfhso3] [Eingabefeld; 100 Zeichen]
+it20: (ainfem3): Monat: [Drop-Down-Menü2]
 
-it21: (ainfbm3): Monat: [Drop-Down-Menü2]
-
-it22: (ainfbj3): Jahr: [Drop-Down-Menü3]
-
-it23: (ainfem3): Monat: [Drop-Down-Menü2]
-
-it24: (ainfej3): Jahr: [Drop-Down-Menü5]
+it21: (ainfej3): Jahr: [Drop-Down-Menü5]
 
 it
 
@@ -142,33 +136,27 @@ st:
 
 ao:
 
-Drop-Down-Menü1 (0="Art des Auslandsaufenthalts", 1="Auslandsstudium mit angestrebtem Abschluss im Ausland", 2="Auslandsstudium/-semester ohne angestrebten Abschluss", 3="Praktikum/Praxisphase", 4="Sprachkurs", 5="Studienreise", 6="Projektarbeit", 7="Summer School", 8="sonstiger Aufenthalt"
+Drop-Down-Menü1 (0="Art des Auslandsaufenthalts", 1="Auslandsstudium mit angestrebtem Abschluss im Ausland", 2="Auslandsstudium/-semester ohne angestrebten Abschluss", 3="Praktikum/Praxisphase", 4="Sprachkurs", 5="Studienreise", 6="Projektarbeit", 7="Summerschool", 8="sonstiger Aufenthalt"
 
 Drop-Down-Menü2 (0="Monat", 1="Januar", 2="Februar" ... 12="Dezember")
 
-Drop-Down-Menü3 (0="Jahr", 1="2020", 2="2019" ... 13="2008")
+Drop-Down-Menü3 (0="Jahr", 1="2030", 2="2019" ... 13="2008")
 
 Drop-Down-Menü5 (0="Jahr", 1="2030", 2="2029" ... 13="2018")
 
 mv:
 
-ka1 (it2 TO it3): Land, Stadt, Hochschule des Auslandsaufenthalts:
+ka1 (it4 TO it5): Start des Auslandsaufenthalts:
 
-ka2 (it4 TO it6): Start des Auslandsaufenthalts:
+ka2 (it6 TO it7): Ende des Auslandsaufenthalts:
 
-ka3 (it7 TO it8): Ende des Auslandsaufenthalts:
+ka3 (it11 TO it12): Start des Auslandsaufenthalts:
 
-ka4 (it10 TO it11): Land, Stadt, Hochschule des Auslandsaufenthalts:
+ka4 (it13 TO it14): Ende des Auslandsaufenthalts:
 
-ka5 (it12 TO it14): Start des Auslandsaufenthalts:
+ka5 (it18 TO it19): Start des Auslandsaufenthalts:
 
-ka6 (it15 TO it16): Ende des Auslandsaufenthalts:
-
-ka7 (it18 TO it19): Land, Stadt, Hochschule des Auslandsaufenthalts:
-
-ka8 (it20 TO it22): Start des Auslandsaufenthalts:
-
-ka9 (it23 TO it24): Ende des Auslandsaufenthalts:
+ka6 (it20 TO it21): Ende des Auslandsaufenthalts:
 
 vc:
 
@@ -192,7 +180,7 @@ tr:
 
 GOTO F3_8
 
-hi:
+hi:Bitte bis zu 3 Akkordeons mit den Überschriften "1. Auslandsaufenhalt", "2.Auslandsaufenhalt", "3.Auslandsaufenhalt"
 
 \--------------------------------
 
@@ -218,15 +206,12 @@ q1: Fand Ihr Auslandsaufenthalt im Rahmen eines Programms statt?
 q2: Fanden Ihre Auslandsaufenthalte im Rahmen eines Programms statt?
 
 is1: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt. Sollten Sie mehr als drei Aufenthalte haben, dann geben sie bitte den drittletzten Aufenthalt an.
-Bitte alles Zutreffende auswählen.
-
-is2: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1: (aproselb1): Nein, ich habe den Aufenthalt selbst organisiert. [EK]
+ao1: (aproselb1): Nein, ich habe den Aufenthalt selbst organisiert.
 
 ao2: (aproeras1): ja, ERASMUS+, ERASMUS
 
@@ -262,7 +247,7 @@ ao17: (aprogahs2): ja, Programm meiner Gasthochschule im Ausland
 
 ao18: (aproanpr2): ja, anderes Programm, und zwar [Eingabefeld; 100 Stellen]
 
-ao19: (aproselb3): Nein, ich habe den Aufenthalt selbst organisiert. [EK]
+ao19: (aproselb3): Nein, ich habe den Aufenthalt selbst organisiert.
 
 ao20: (aproeras3): ja, ERASMUS+, ERASMUS
 
@@ -282,11 +267,11 @@ ao27: (aproanpr3): ja, anderes Programm, und zwar [Eingabefeld; 100 Stellen]
 
 mv:
 
-ka1 (ao1 TO ao9): Aufenthalt A: [Art Aufenthalt, Land, Beginn]
+ka1 (ao1 TO ao9): 1. studienbezogner Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
-ka2 (ao10 TO ao18): Aufenthalt B: [Art Aufenthalt, Land, Beginn]
+ka2 (ao10 TO ao18): 2. studeinebezogner Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
-ka3 (ao19 TO ao27): Aufenthalt C: [Art Aufenthalt, Land, Beginn]
+ka3 (ao19 TO ao27): 3. Auslnadbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
 vc:
 
@@ -338,9 +323,9 @@ st:
 
 ao1: 1: : Nein
 
-ao2: 2: : ja, teilweise: [ainfcpteilo] [Eingabefeld; 2 Stellen] ECTS-Punkte
+ao2: 2: : ja, teilweise: [ainfcpteilo] [Eingabefeld] ECTS-Punkte
 
-ao3: 3: : ja, vollständig: [ainfcpvollo] [Eingabefeld; 2 Stellen] ECTS-Punkte
+ao3: 3: : ja, vollständig: [ainfcpvollo] [Eingabefeld] ECTS-Punkte
 
 ao4: -12: : weiß ich nicht
 
@@ -424,7 +409,7 @@ ao14 (afinand2): andere Finanzierungsquelle
 
 ao15 (afinelt3): Eltern
 
-ao16 (afinpar3): Partner(in)
+ao16 (afinpar3): Partner\*in
 
 ao17 (afinbaf3): BAföG
 
@@ -439,11 +424,11 @@ ao21 (afinand3): andere Finanzierungsquelle
 
 mv:
 
-ka1 (ao1 TO ao7) : Aufenthalt A: [Art Aufenthalt, Land, Beginn]
+ka1 (ao1 TO ao7) : 1. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
-ka2 (ao8 TO ao14): Aufenthalt B: [Art Aufenthalt, Land, Beginn]
+ka2 (ao8 TO ao14): 2. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
-ka3 (ao15 TO ao21): Aufenthalt C: [Art Aufenthalt, Land, Beginn]
+ka3 (ao15 TO ao21): 3. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
 vc:
 
