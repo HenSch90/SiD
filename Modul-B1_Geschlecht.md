@@ -229,9 +229,9 @@ mv:
 
 ka:
 
-vc:
+vc: SHOW ao4 IF dkinja=2
 
-av:Bitte geben Sie den prozentualen Anteil an (0 bis 100).
+av: Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 kh:
 
@@ -371,7 +371,7 @@ B1_6
 
 tc: IF wohnpar=1
 
-vn: athhm_m/_v/_i/_a; ateem_m/_v/_i/_a; atwem_m/_v/_i/_a; atkbm_m/_v/_i/_a; atkam_m/_v/_i/_a;
+vn: athhm_m; athhm__v; athhm_i; athhm__a; ateem_m; ateem_v; ateem_i; ateem_a; atwem_m; atwem_v; atwem_i; atwem_a; atkbm_m; atkbm_v; atkbm_i; atkbm_a; atkam_m; atkam_v; atkam_i; atkam_a
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao mit offener Nennung
 
@@ -379,18 +379,17 @@ hl:
 
 in:
 
-q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß
-zu den unterschiedlichen Bereichen im Haushalt beigetragen?
+q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß zu den unterschiedlichen Bereichen im Haushalt beigetragen?
 
 is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
-it1: (_m): (Stief-)Mutter
+it1: (\_m): (Stief-)Mutter
 
-it2: (_v): (Stief-)Vater
+it2: (\_v): (Stief-)Vater
 
-it3: (_i): ich selbst
+it3: (\_i): ich selbst
 
-it4: (_s): andere Personen
+it4: (\_a): andere Personen
 
 st:
 
@@ -408,7 +407,7 @@ ka:
 
 vc:
 
-av:
+av: Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 kh:
 
@@ -439,7 +438,7 @@ hl:
 
 in:
 
-q: Wenn Sie an die Lehrenden in Ihrem aktuellen Semester denken: Wie hoch ist der Anteil an weiblichem Lehrpersonal?
+q: Wenn Sie an die Lehrenden in Ihren Lehrveranstaltungen denken: Wie hoch ist der Anteil an weiblichem Lehrpersonal?
 
 is:
 
@@ -496,7 +495,7 @@ B1_8
 
 tc:
 
-vn: promgroßv; promgroßm; promvat; prommut; prombrud; promschw; promtan; promonk; promcoin; promcoine
+vn: promgroßv; promgroßm; promvat; prommut; prombrud; promschw
 
 qt: Einfachauswahl
 
@@ -504,10 +503,9 @@ hl:
 
 in:
 
-q: Gibt es in ihrem familiären Umfeld jemanden, der/die studiert bzw. promoviert
-(hat)?
+q: Gibt es in Ihrem familiären Umfeld jemanden, der studiert bzw. promoviert (hat)?
 
-is:
+is: Bitte geben Sie immer den höchsten Bildungsgang an.
 
 it1: (promgroßv): Großvater
 
@@ -521,14 +519,6 @@ it5: (prombrud): Bruder
 
 it6: (promschw): Schwester
 
-it7: (promtan): Tante
-
-it8: (promonk): Onkel
-
-it9: (promcoin): Cousin
-
-it10: (promcoine): Cousine
-
 st:
 
 ao1: 1: nein
@@ -537,13 +527,15 @@ ao2: 2: studiert
 
 ao3: 3: promoviert
 
+ao4: 4: habe ich nicht
+
 
 
 mv: -12: weiß ich nicht
 
 ka:
 
-vc:
+vc: SHOW ao4 FOR it5 and it6
 
 av:
 
