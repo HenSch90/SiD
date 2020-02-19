@@ -1424,4 +1424,4 @@ fo:
 tr:  GOTO D1_9 IF mastersplit=3, 4, 9, 10, 14
      GOTO D2_6 IF mastersplit=5, 6, 11, 12
 
-hi:
+hi: Items bitte zufällig rotieren.
