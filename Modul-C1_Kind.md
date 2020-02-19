@@ -21,13 +21,13 @@ it:
 
 st:
 
-ao1: 1: : eins
+ao1: 1: eins
 
-ao2: 2: : zwei
+ao2: 2: zwei
 
-ao3: 3: : drei
+ao3: 3: drei
 
-ao4: 4: : vier oder mehr
+ao4: 4: vier oder mehr
 
 mv:
 
@@ -60,7 +60,7 @@ tc: IF dkinja = 2
 
 vn: dkinage (dkinagej / dkinage1 / dkinage2 / dkinage3 / dkinage4 / dkinage5)
 
-qt: offene Einzelfragen mit Eingabespalte/-feld
+qt: offene Einzelfragen mit vertikaler Eingabespalte/-feldern
 
 hl:
 
@@ -74,31 +74,31 @@ q3: Wie alt sind Ihre Kinder?
 
 is: Mit der Bezeichnung “1. Kind” meinen wir Ihr ältestes Kind.
 
-it1: (dkinagej) : [infield = Alter jüngstes Kind]
+it1: (dkinagej) 
 
-it2: (dkinage1) : [infield = Alter Ihres Kindes]
+it2: (dkinage1): [infield = Alter Ihres Kindes]
 
-it3: (dkinage2) : [infield = Alter Ihres 1. Kindes]
+it3: (dkinage2): [infield = Alter Ihres 1. Kindes]
 
-it4: (dkinage3) : [infield = Alter Ihres 2. Kindes]
+it4: (dkinage3): [infield = Alter Ihres 2. Kindes]
 
-it5: (dkinage4) : [infield = Alter Ihres 3. Kindes]
+it5: (dkinage4): [infield = Alter Ihres 3. Kindes]
 
-it6: (dkinage5) : [infield = Alter Ihres 4. Kindes]
+it6: (dkinage5): [infield = Alter Ihres 4. Kindes]
 
 st:
 
-ao1 (dkinagej): 4-stellig, 0-99, [number] Suffix: Jahre
+ao1: (dkinagej): 2-stellig, 0-99, [number] Suffix: Jahre
 
-ao2 (dkinage1): 4-stellig, 0-99, [number] Suffix: Jahre
+ao2: (dkinage1): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao3 (dkinage2): 4-stellig, 0-99, [number] Suffix: Jahre
+ao3: (dkinage2): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao4 (dkinage3): 4-stellig, 0-99, [number] Suffix: Jahre
+ao4: (dkinage3): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao5 (dkinage4): 4-stellig, 0-99, [number] Suffix: Jahre
+ao5: (dkinage4): 4-stellig, 0-99, [number] Suffix: Jahre
 
-ao6 (dkinage5): 4-stellig, 0-99, [number] Suffix: Jahre
+ao6: (dkinage5): 4-stellig, 0-99, [number] Suffix: Jahre
 
 mv:
 
@@ -122,7 +122,7 @@ vc8: SHOW q1 IF dkinanz = k. A.
 
 vc9: SHOW q2 IF dkinanz = 1
 
-vc10 SHOW q3 IF dkinanz >= 2
+vc10: SHOW q3 IF dkinanz >= 2
 
 av: Bitte geben Sie das Lebensalter Ihres Kindes an (0 bis 99).
 
@@ -164,19 +164,19 @@ it:
 
 st:
 
-ao1 (dkinrono): nein, niemanden [EK] 
+ao1: (dkinrono): nein, niemanden [EK] 
 
-ao2 (dkinroelt): Eltern
+ao2: (dkinroelt): Eltern
 
-ao3 (dkinroges): Geschwister
+ao3: (dkinroges): Geschwister
 
-ao4 (dkinrover): andere Verwandte
+ao4: (dkinrover): andere Verwandte
 
-ao5 (dkinrokom): Kommiliton\*innen
+ao5: (dkinrokom): Kommiliton\*innen
 
-ao6 (dkinrofr): Freunde
+ao6: (dkinrofr): Freunde
 
-ao7 (dkinroan): Andere Person(en), und zwar: [dkinroano, 30pt]
+ao7: (dkinroan): Andere Person(en), und zwar: [dkinroano, 30pt]
 
 mv:
 
@@ -268,9 +268,9 @@ it:
 
 st:
 
-ao1: 1: :ja
+ao1: 1: ja
 
-ao2. 2: : nein
+ao2: 2: nein
 
 mv:
 
