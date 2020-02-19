@@ -197,7 +197,7 @@ B1_4a
 
 tc: IF wohnpar=1
 
-vn: atakhh_p; atakhh_i/_a; atakee_p/_i/_a; atakwe_p/_i/_a; atakkb_p/_i/_a
+vn: atakhh_p; atakhh_i; atakhh_a; atakee_p; atakee_i; atakee_a; atakwe_p; atakwe_i; atakwe_a; atakkb_p; atakkb_i; atakkb_a
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao mit offener Nennung
 
@@ -211,9 +211,9 @@ is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
 it1: (\_p): Partner\*in
 
-it2: (_i): ich selbst
+it2: (\_i): ich selbst
 
-it3: (_a): andere Personen
+it3: (\_a): andere Personen
 
 st:
 
