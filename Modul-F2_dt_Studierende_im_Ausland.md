@@ -107,11 +107,11 @@ it:
 
 st:
 
-ao1: 100 Stellen, Präfix (hsstandlao), Suffix: Land
+ao1: 100 Stellen, Präfix (hsstandlao), Suffix: [Land]
 
-ao2: 100 Stellen, Präfix (hsstandsto), Suffix: Ort
+ao2: 100 Stellen, Präfix (hsstandsto), Suffix: [Ort]
 
-ao1: 300 Stellen, Präfix (hsstandhso), Suffix: Hochschule:
+ao1: 300 Stellen, Präfix (hsstandhso), Suffix: [Hochschule]
 
 mv:
 
@@ -143,13 +143,13 @@ tc:
 vn: bdefinsia; bdekensia; bdesprsia; bdefamssia; bdefamlsia; bdetecsia;
 bdeoeksia; bdepolsia; bdequasia; bdearbsia; bdeandsia; bdeandosia
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit offener Angabe
 
 hl:
 
 in:
 
-q: Warum haben Sie sich für dieses Land entschieden?
+q: Warum haben Sie sich für dieses Land entschieden, ...
 
 is:
 
@@ -161,7 +161,7 @@ Möglichkeiten entspricht.
 it2 (bdekensia): …um dieses Land kennenzulernen/weil mich die Geschichte und
 Kultur des Landes interessiert.
 
-it3 (bdesprsia): …um eine Sprachkenntnisse zu vertiefen.
+it3 (bdesprsia): …um meine Sprachkenntnisse zu vertiefen.
 
 it4 (bdefamssia): …weil Freunde/Verwandte in diesem Land studieren/studiert
 haben.
@@ -179,7 +179,7 @@ it9 (bdequasia): …wegen der Lebensqualität in diesem Land.
 it10 (bdearbsia): …aufgrund der Möglichkeiten, nach Studienabschluss in diesem
 Land zu arbeiten.
 
-it11 (bdeandsia): …Anderer Grund, und zwar: [bdeandosia]
+it11 (bdeandsia): …anderer Grund, und zwar: [bdeandosia]
 
 st:
 
@@ -193,7 +193,7 @@ ao4: 4
 
 ao5: 5: : trifft voll und ganz zu
 
-ao6: (bdeandosia): 100 Zeichen, Prefix (Anderer Grund, und zwar:)
+ao6: (bdeandosia): 100 Zeichen, Präfix (Anderer Grund, und zwar:)
 
 mv:
 
@@ -293,11 +293,9 @@ st:
 
 ao1: 1: : nein
 
-ao2: 2: : offene Angabe: 2 Stellen Präfix [ainfcp1osia], Suffix: ja, teilweise:
-… ECTS-Punkte
+ao2: 2: : offene Angabe: 2 Stellen Präfix: ja, teilweise [ainfcp1osia], Suffix: ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix [ainfcp2osia], Suffix: ja,
-vollständig: … ECTS-Punkte
+ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollstädnig [ainfcp2osia], Suffix:ECTS-Punkte
 
 ao1: 4: : weiß ich nicht
 
@@ -333,7 +331,7 @@ tc:
 vn: aproselbsia; aproerassia; aproapeusia; aprodaadsia; apropadsia;
 apropromossia; aprodthssia; aprogahssia; aproanprsia; aproanprosia
 
-qt: Mehrfachnennung
+qt: Mehrfachnennung mit EK
 
 hl:
 
@@ -347,7 +345,7 @@ it:
 
 st:
 
-ao1 (aproselbsia): : nein, habe den Aufenthalt selbst organisiert
+ao1 (aproselbsia): : nein, habe Aufenthalt selbst organisiert
 (Exklusivkategorie)
 
 ao2 (aproerassia): : ja, ERASMUS+, ERASMUS
@@ -365,7 +363,7 @@ ao7 (aprodthssia): : ja, Programm meiner Hochschule in Deutschland
 ao8 (aprogahssia): : ja, Programm meiner Gasthochschule im Ausland
 
 ao9 (aproanprsia): : ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix
-[aproanprosia], Suffix:und zwar:
+[aproanprosia], Suffix
 
 mv:
 
@@ -414,7 +412,7 @@ st:
 
 ao1 (afinelt): : Eltern
 
-ao2 (afinpar): : Parnter*in
+ao2 (afinpar): : Parnter*In
 
 ao3 (afinbaf): : BAföG
 
@@ -776,11 +774,9 @@ st:
 ao1:  Land: (offene Angabe: 100 Zeichen, Präfix [bdedarlosia],
 Suffix:
 
-ao2: Stadt (offene Angabe: 100 Zeichen, Präfix
-[bdedarstosia], Suffix:
-
-ao3: Hochschule: (offene Angabe: 100 Zeichen, Präfix
+ao2: Ort/Hochschule: (offene Angabe: 100 Zeichen, Präfix
 [bdedarhsosia], Suffix:
+
 
 mv:
 
