@@ -737,7 +737,7 @@ in:
 
 q: Warum haben Sie kein Beratungsangebot genutzt?
 
-is: Bitte alles Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen
 
 it1: (ihinzeit): ... weil ich keine Zeit dafür hatte/der Aufwand zu groß
 erschien.
