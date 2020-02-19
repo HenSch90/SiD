@@ -29,7 +29,7 @@ ao3: 3: lesbisch
 
 ao4: 4: bisexuell
 
-ao5: 5: offene Angabe: 20, Prefix: eine andere, und zwar:
+ao5: 5: offene Angabe: 25, Prefix: Eine andere, und zwar:
 
 ao6: 6: unklar
 
