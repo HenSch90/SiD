@@ -12,9 +12,10 @@ qt:
 hl:
 
 in: Abschließend interessiert uns Ihre Meinung zu den Gründen für oder gegen eine Promotion.
-
 Promovieren kann man in Deutschland unter ganz unterschiedlichen
-Rahmenbedingungen. Im Folgenden schildern wir Ihnen einige mögliche
+Rahmenbedingungen. 
+
+Im Folgenden schildern wir Ihnen einige mögliche
 Konstellationen, in denen eine !!fachlich für Sie sehr interessante!! Promotion
 an einer !!Hochschule in Deutschland!! möglich ist. Gehen Sie bitte davon aus,
 dass die !!formalen Voraussetzungen!! an der Hochschule Ihrer Wahl erfüllt sind
@@ -319,7 +320,7 @@ hi:
 KSM-phd03
 =========
 
-tc: promoplan <3 (keine Promotionsabsicht bzw. (sehr) unwahrscheinlich)
+tc: 
 
 vn: keinprom1- keinprom10; keinprom10o
 
