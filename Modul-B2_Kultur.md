@@ -370,15 +370,15 @@ it6: (bezint) Meine Eltern interessieren sich für das, was ich studiere.
 
 st:
 
-ao1: 1: 1: trifft überhaupt nicht zu
+ao1: 1: trifft überhaupt nicht zu
 
-ao2: 2: 2
+ao2: 2
 
-ao3: 3: 3
+ao3: 3
 
-ao4: 4: 4
+ao4: 4
 
-ao5: 5: 5: trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
