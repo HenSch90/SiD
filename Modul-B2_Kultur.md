@@ -548,7 +548,7 @@ in:
 
 q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit ...
 
-is: Beziehen Sie Ihre Angaben auf das Netto-Gehalt, d.h. Einkommen abzüglich Steuer.
+is: Bitte beziehen Sie Ihre Angaben auf das Netto-Gehalt einer Vollzeitstelle, d. h. Gehalt abzüglich Steuern und Sozialabgaben.
 
 it1: (einkberuf): ... Berufsausbildung?
 
