@@ -262,7 +262,7 @@ hl:
 
 in: 
 
-q: Alles in allem: Wie zufrieden sind Sie insgesamt mit der derzeitigen Arbeitsteilung zwischen Ihnen und Ihrem/Ihrer Partner\*in in Ihrem Haushalt?
+q: Alles in allem: Wie zufrieden sind Sie mit der derzeitigen Arbeitsteilung zwischen Ihnen und Ihrem/Ihrer Partner\*in in Ihrem Haushalt?
 
 is: 
 
@@ -272,11 +272,11 @@ st:
 
 ao1: 1: gar nicht zufrieden 
 
-ao2: 2: 2
+ao2: 2
 
-ao3: 3: 3
+ao3: 3
 
-ao4: 4: 4
+ao4: 4
 
 ao5: 5: sehr zufrieden
 
@@ -317,7 +317,7 @@ hl:
 
 in: 
 
-q:  In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewältigen gilt. Dabei kann eine klare Aufgabenteilung ausgesprochen effizient sein. Unabhängig davon, ob Sie aktuell in einer Partnerschaft leben: Bitte geben Sie an, wer Ihrer Meinung nach für die folgenden Haushaltsbereiche ++idealerweise++  zuständig sein sollte.
+q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewältigen gilt. Unabhängig davon, ob Sie aktuell in einer Partnerschaft leben: Bitte geben Sie an, wer Ihrer Meinung nach für die folgenden Haushaltsbereiche ++idealerweise++ zuständig sein sollte.
 
 is: 
 
@@ -331,9 +331,9 @@ it4: (atikb): Kinderbetreuung
 
 st:
 
-ao1: 1: ausschließlich mein*e* *Partner*in
+ao1: 1: ausschließlich mein\*e Partner\*in
 
-ao2: 2: eher mein*e* *Partner*in
+ao2: 2: eher mein\*e Partner\*in
 
 ao3: 3: wir beide gleichermaßen
 
