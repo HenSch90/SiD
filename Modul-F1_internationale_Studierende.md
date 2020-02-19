@@ -1327,15 +1327,11 @@ it:
 
 st:
 
-Ich möchte Arbeiten, und zwar …
-
 ao1: … in Deutschland.
 
 ao2: … in meinem Heimatland.
 
 ao3: … in einem anderen Land.
-
-Ich möchte weiterstudieren, und zwar …
 
 ao4: … in Deutschland.
 
@@ -1343,13 +1339,15 @@ ao5: … in meinem Heimatland.
 
 ao6: … in einem anderen Land.
 
-Etwas Anderes
-
 ao7: Sonstiges
 
 mv:
 
-ka:
+ka1 (ao1 TO ao3): Ich möchte Arbeiten, und zwar...
+
+ka2 (ao4 TO ao6): Ich möchte weiterstudieren, und zwar...
+
+ka3 (ao7): Etwas Anderes
 
 vc:
 
