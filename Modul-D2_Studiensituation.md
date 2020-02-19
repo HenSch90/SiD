@@ -67,7 +67,7 @@ tr:
 
 GOTO D2_2
 
-hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
+hi: 
 
 **------------------------------------------------------------**
 
@@ -148,7 +148,7 @@ tr:
 
 GOTO A_22
 
-hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
+hi: 
 
 **------------------------------------------------------------**
 
@@ -229,7 +229,7 @@ tr:
 
 GOTO D2_4
 
-hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
+hi:
 
 **------------------------------------------------------------**
 
@@ -296,7 +296,7 @@ tr:
 
 GOTO D2_5
 
-hi: Pretest soll auf Kürzungspotenzial aufmerksam machen.
+hi: 
 
 **------------------------------------------------------------**
 
@@ -941,7 +941,7 @@ tr:
 
 GOTO D2_14
 
-hi: Die endgültige Skalierung soll auf Basis des Pretests konzipiert werden.
+hi: 
 
 **------------------------------------------------------------**
 
@@ -1071,7 +1071,7 @@ tr:
 
 GOTO D2_16
 
-hi: Subskala „Student-Faculty Interaction“
+hi: 
 
 **------------------------------------------------------------**
 
@@ -1256,7 +1256,7 @@ tr:
 
 GOTO D2_19
 
-hi: „nichts davon“ bitte als Exklusivkategorie programmieren.
+hi: 
 
 **------------------------------------------------------------**
 
@@ -1421,16 +1421,6 @@ it11: (sszustud11): Ihrer Studienleistungen
 
 it12: (sszustud12): Ihrem Studienfortschritt
 
-it13: (sszustud13): Ihrem bisher erreichten Wissen und Können
-
-it14: (sszustud14) : Vereinbarkeit von Studium und Elternschaft
-
-it15: (sszustud15) : Vereinbarkeit von Studium und gesundheitlicher Beeinträchtigung
-
-it16: (sszustud16) : Vereinbarkeit von Studium und Erwerbstätigkeit
-
-it17: (sszustud17) : Vereinbarkeit von Studium und Pflegeaufgaben
-
 st:
 
 ao1: 1: überhaupt nicht zufrieden
@@ -1447,12 +1437,7 @@ mv: -13: kann ich nicht beurteilen
 
 ka:
 
-vc1: 
-
-vc2: 
-vc3: 
-
-vc4: 
+vc:
 
 av:
 
