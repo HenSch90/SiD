@@ -197,7 +197,7 @@ B1_4a
 
 tc: IF wohnpar=1
 
-vn: atakhh_p/_i/_a; atakee_p/_i/_a; atakwe_p/_i/_a; atakkb_p/_i/_a
+vn: atakhh_p; atakhh_i/_a; atakee_p/_i/_a; atakwe_p/_i/_a; atakkb_p/_i/_a
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao mit offener Nennung
 
@@ -205,11 +205,11 @@ hl:
 
 in:
 
-q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewältigen gilt. Dabei kann eine Aufgabenteilung ausgesprochen effizient sein. Wenn Sie an Ihre Partnerschaft denken: Wer trägt in welchem Ausmaß zu den folgenden Bereichen im Haushalt bei?
+q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an. Wenn Sie an Ihre Partnerschaft denken: Wer trägt in welchem Ausmaß zu den folgenden Haushaltsbereichen bei?
 
 is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
-it1: (_p): Partner\*in
+it1: (\_p): Partner\*in
 
 it2: (_i): ich selbst
 
