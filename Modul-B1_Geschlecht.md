@@ -63,7 +63,7 @@ B1_2
 
 tc:
 
-vn: genidsach; genidloes; genidrat; genidueb; genidmach; genidrue; genidlieb; genideinf; genidemo; genidang; genidempf; genidvor
+vn: genidsach; genidloes; genidrat; genidlieb; genideinf; genidemo; genidrisk
 
 qt: Einfachauswahlmatrix
 
@@ -71,8 +71,7 @@ hl:
 
 in:
 
-q: Wenn Sie sich selbst beschreiben müssten: Welche Eigenschaften treffen am
-ehesten auf Sie zu?
+q: Wenn Sie sich selbst beschreiben müssten: Welche Eigenschaften treffen am ehesten auf Sie zu?
 
 is:
 
@@ -82,23 +81,13 @@ it2: (genidloes): lösungsorientiert
 
 it3: (genidrat): rational
 
-it4: (genidueb): überheblich
+it4: (genidlieb): liebevoll
 
-it5: (genidmach): machtbesessen
+it5: (genideinf): einfühlsam
 
-it6: (genidrue): rücksichtslos
+it6: (genidemo): emotional
 
-it7: (genidlieb): liebevoll
-
-it8: (genideinf): einfühlsam
-
-it9: (genidemo): emotional
-
-it10: (genidang): ängstlich
-
-it11: (genidempf): empfindlich
-
-it12: (genidvor): vorsichtig
+it7: (genidrisk): risikobereit
 
 st:
 
