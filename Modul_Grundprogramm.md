@@ -870,7 +870,7 @@ it:
 
 st:
 
-ao1: 2: Prefix: Alter: : Postfix: Jahre
+ao1: 2: Postfix: Jahre
 
 mv:
 
@@ -921,7 +921,7 @@ ao2: 2: nicht verheiratet, mit fester Partnerbeziehung
 
 ao3: 3: verheiratet/eingetragene Lebenspartnerschaft
 
-mv: -13: Keine Angabe
+mv: -13: keine Angabe
 
 ka:
 
@@ -1013,8 +1013,8 @@ it:
 
 st:
 
-ao1: 1: Nein
-ao2: 2: Ja, und zwar: ___ Personen
+ao1: 1: nein
+ao2: 2: ja, und zwar: ___ Personen
 
 mv:
 
@@ -1062,7 +1062,7 @@ it1: (pflegt1): Besorgungen und Erledigungen außer Haus
 
 it2: (pflegt2): Haushaltsführung, Versorgung mit Mahlzeiten und Getränken
 
-it3: (pflegt3): Einfachere Pflegetätigkeiten, z.B. Hilfe beim An- und Auskleiden,
+it3: (pflegt3): einfachere Pflegetätigkeiten, z.B. Hilfe beim An- und Auskleiden,
 Waschen, Kämmen und Rasieren
 
 it4: (pflegt4): schwierigere Pflegetätigkeiten, z.B. Hilfe beim Umbetten,
@@ -1141,13 +1141,13 @@ ao7: 7: (gartsom): länger dauernde Krankheit/chronische Krankheit (z. B. Rheuma
 
 ao8: 8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-ao9: 9: (gartson): andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung)
+ao9: 9: (gartson): andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) [offene Angabe, 50 Zeichen]
 
-ao10: 10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. (EK)
+ao10: 10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
 mv:
 
-ka: ka1 (ao2 TO ao10): Ja, und zwar:
+ka: ka1 (ao2 TO ao10): ja, und zwar:
 
 vc:
 
@@ -1157,7 +1157,7 @@ kh:
 
 fv:
 
-hv: h_gartcount = gartmob + gartseh + gartohr + gartspr + gartpsy + gartsom + garttls + gartson + gartka; ignore mv AND SYSMISS
+hv: 
 
 fo:
 
@@ -1300,7 +1300,8 @@ hv:
 
 fo:
 
-tr: GOTO A_18
+tr: <zofar:transition target="A_19" condition="zofar.asNumber(PRELOADhs_id)==0"/>
+    <zofar:transition target="A_18"/>
 
 hi:
 
@@ -1348,12 +1349,9 @@ hv:
 
 fo:
 
-tr: GOTO D2_1 if hsstand=1 AND mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
-    GOTO A_22 if hsstand=1 AND mastersplit=3, 4, 9, 10, 13
-    GOTO D2_1 if hsstand=MISSING AND mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
-    GOTO A_22 if hsstand=MISSING AND mastersplit=3, 4, 9, 10, 13
-    GOTO A_19 if hsstand=2
-
+tr: <zofar:transition target="D2_1" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
+            <zofar:transition target="A_22" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13)"/>
+            <zofar:transition target="A_19" condition="hsstand_2.value"/>
 hi:
 
 \------------------------------------------------------------
@@ -1412,7 +1410,7 @@ ao15: 15: : Schleswig-Holstein
 
 ao16: 16: : Thüringen
 
-Leerzeile
+
 
 ao17: 17: : im Ausland
 
