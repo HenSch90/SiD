@@ -19,7 +19,7 @@ it1: (aeinnorm1): : Ein studienbezogener Auslandsaufenthalt darf während des St
 
 it2: (aeinnorm2): : Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals erwartet.
 
-it3: (aeinnorm3): : Jede*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
+it3: (aeinnorm3): : Jede\*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
 
 st:
 
@@ -82,35 +82,35 @@ is:
 
 Überschrift: … für einen Auslandsenthalt?
 
-it1 (aeinsarbm): verbesserte Arbeitsmarktaussichten
+it1: (aeinsarbm): verbesserte Arbeitsmarktaussichten
 
-it2 (aeinssprachk): verbesserte Sprachkenntnisse
+it2: (aeinssprachk): verbesserte Sprachkenntnisse
 
-it3 (aeinsfach): verbesserte Fachkenntnisse
+it3: (aeinsfach): verbesserte Fachkenntnisse
 
-it4 (aeinspersön): Persönlichkeitsentwicklung
+it4: (aeinspersön): Persönlichkeitsentwicklung
 
-it5 (aeinskont): international Kontakte knüpfen
+it5: (aeinskont): international Kontakte knüpfen
 
-it6 (aeinskultur): andere Länder/Kulturen kennenlernen
+it6: (aeinskultur): andere Länder/Kulturen kennenlernen
 
-it7 (aeinsspaß): Spaß haben
+it7: (aeinsspaß): Spaß haben
 
 Überschrift: … gegen einen Auslandsaufenthalt?
 
-it8 (aeinsfinanz): finanzielle Belastung
+it8: (aeinsfinanz): finanzielle Belastung
 
-it9 (aeinsorga): Organisationsaufwand
+it9: (aeinsorga): Organisationsaufwand
 
-it10 (aeinsfreun): Trennung von Freunden und Familie
+it10: (aeinsfreun): Trennung von Freunden und Familie
 
-it11 (aeinsanerk): Anerkennungsschwierigkeiten
+it11: (aeinsanerk): Anerkennungsschwierigkeiten
 
-it12 (aeinszeit): Zeitverlust
+it12: (aeinszeit): Zeitverlust
 
-it13 (aeinsfehlspra): fehlende Sprachkenntnisse
+it13: (aeinsfehlspra): fehlende Sprachkenntnisse
 
-it14 (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
+it14: (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
 
 st:
 
@@ -149,7 +149,7 @@ hi:
 F1_2b
 ====
 
-tc:
+tc: width.value lt 768
 
 vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersön; aeinskont; aeinskultur; aeinsspaß
 
@@ -173,19 +173,19 @@ q: Was spricht Ihrer Meinung nach für einen Auslandsaufenthalt?
 
 is:
 
-it1 (aeinsarbm): verbesserte Arbeitsmarktaussichten
+it1: (aeinsarbm): verbesserte Arbeitsmarktaussichten
 
-it2 (aeinssprachk): verbesserte Sprachkenntnisse
+it2: (aeinssprachk): verbesserte Sprachkenntnisse
 
-it3 (aeinsfach): verbesserte Fachkenntnisse
+it3: (aeinsfach): verbesserte Fachkenntnisse
 
-it4 (aeinspersön): Persönlichkeitsentwicklung
+it4: (aeinspersön): Persönlichkeitsentwicklung
 
-it5 (aeinskont): international Kontakte knüpfen
+it5: (aeinskont): international Kontakte knüpfen
 
-it6 (aeinskultur): andere Länder/Kulturen kennenlernen
+it6: (aeinskultur): andere Länder/Kulturen kennenlernen
 
-it7 (aeinsspaß): Spaß haben
+it7: (aeinsspaß): Spaß haben
 
 st:
 
@@ -215,7 +215,7 @@ hi: Items bitte zufällig rotieren.
 F1_2c
 ====
 
-tc:
+tc: width.value lt 768
 
 vn: aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
 
@@ -235,23 +235,23 @@ ao4: 4
 
 ao5: 5: : sehr stark
 
-q: Was spricht Ihrer Meinung nach gegen einen Auslandsaufenthalt?
+q: Und was spricht Ihrer Meinung nach gegen einen Auslandsaufenthalt?
 
 is:
 
-it8 (aeinsfinanz): finanzielle Belastung
+it8: (aeinsfinanz): finanzielle Belastung
 
-it9 (aeinsorga): Organisationsaufwand
+it9: (aeinsorga): Organisationsaufwand
 
-it10 (aeinsfreun): Trennung von Freunden und Familie
+it10: (aeinsfreun): Trennung von Freunden und Familie
 
-it11 (aeinsanerk): Anerkennungsschwierigkeiten
+it11: (aeinsanerk): Anerkennungsschwierigkeiten
 
-it12 (aeinszeit): Zeitverlust
+it12: (aeinszeit): Zeitverlust
 
-it13 (aeinsfehlspra): fehlende Sprachkenntnisse
+it13: (aeinsfehlspra): fehlende Sprachkenntnisse
 
-it14 (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
+it14: (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
 
 st:
 
@@ -350,9 +350,9 @@ ao2: (avorgeschw) : Geschwister
 
 ao3: (avorandver) : andere Verwandte
 
-ao4: (avorfreund) : Freund*innen
+ao4: (avorfreund) : Freund\*innen
 
-ao5: (avorkomm) : Kommiliton*innen
+ao5: (avorkomm) : Kommiliton\*innen
 
 ao6: (avorniem) : nein, niemanden (Exklusivkategorie)
 
@@ -519,7 +519,7 @@ tc:
 
 vn: vsbanrechsch
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit horizontalen ao
 
 hl:
 
@@ -578,7 +578,7 @@ in:
 
 q: Wo haben Sie die nötigen Sprachkenntnisse für ein Studium in Deutschland erworben?
 
-is: Bitte alles Zutreffende auswählen.
+is:
 
 it:
 
@@ -635,23 +635,23 @@ is: Bitte geben Sie den jeweils zutreffenden Skalenwert an.
 
 Ich habe mich für ein Studium in Deutschland entschieden, ...
 
-it1 (bdefinba): weil dies meinen finanziellen Möglichkeiten entspricht.
+it1: (bdefinba): weil dies meinen finanziellen Möglichkeiten entspricht.
 
-it2 (bdekenba): um Deutschland kennenzulernen/weil mich die deutsche Geschichte und Kultur interessiert.
+it2: (bdekenba): um Deutschland kennenzulernen/weil mich die deutsche Geschichte und Kultur interessiert.
 
-it3 (bdesprba): um meine Sprachkenntnisse zu vertiefen.
+it3: (bdesprba): um meine Sprachkenntnisse zu vertiefen.
 
-it4 (bdefamsba): weil Freunde/Verwandte in Deutschland studieren/studiert haben.
+it4: (bdefamsba): weil Freunde/Verwandte in Deutschland studieren/studiert haben.
 
-it5 (bdefamlba): weil Freunde/Verwandte in Deutschland leben/gelebt haben.
+it5: (bdefamlba): weil Freunde/Verwandte in Deutschland leben/gelebt haben.
 
-it6 (bdetecba): weil Deutschland ein hochtechnisiertes Land ist.
+it6: (bdetecba): weil Deutschland ein hochtechnisiertes Land ist.
 
-it7 (bdeoekba): wegen der wirtschaftlichen Lage in Deutschland.
+it7: (bdeoekba): wegen der wirtschaftlichen Lage in Deutschland.
 
-it8 (bdequaba): wegen der Lebensqualität in Deutschland.
+it8: (bdequaba): wegen der Lebensqualität in Deutschland.
 
-it9 (bdearbba): aufgrund der Möglichkeit, nach Studienabschluss in Deutschland zu arbeiten.
+it9: (bdearbba): aufgrund der Möglichkeit, nach Studienabschluss in Deutschland zu arbeiten.
 
 st:
 
@@ -711,45 +711,45 @@ st:
 Drop-Down-Menü:
 Art des Auslandsaufenthalts:
 
-aox (ainfaba): 0: : Art des Auslandsaufenthalts
+aox: (ainfaba): 0: : Art des Auslandsaufenthalts
 
-ao1 (ainfaba): 1: : Auslandsstudium mit Abschluss in Deutschland
+ao1: (ainfaba): 1: : Auslandsstudium mit Abschluss in Deutschland
 
-ao2 (ainfaba): 2: : Auslandsstudium/-semester ohne Abschluss in Deutschland
+ao2: (ainfaba): 2: : Auslandsstudium/-semester ohne Abschluss in Deutschland
 
-ao3 (ainfaba): 3: : Praktikum/Praxisphase
+ao3: (ainfaba): 3: : Praktikum/Praxisphase
 
-ao4 (ainfaba): 4: : Sprachkurs
+ao4: (ainfaba): 4: : Sprachkurs
 
-ao5 (ainfaba): 5: : Studienreise
+ao5: (ainfaba): 5: : Studienreise
 
-ao6 (ainfaba): 6: : Projektarbeit
+ao6: (ainfaba): 6: : Projektarbeit
 
-ao7 (ainfaba): 7: : Summerschool
+ao7: (ainfaba): 7: : Summerschool
 
-ao8 (ainfaba): 8: : sonstiger Aufenthalt
+ao8: (ainfaba): 8: : sonstiger Aufenthalt
 
 
 Beginn:
 
 Untereinander angeordnete Drop-Down-Menüs
 
-ao9 (ainfbmba): : Monat: (Monat \ Januar \| … \| Dezember)
+ao9: (ainfbmba): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao10 (ainfbjba): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
+ao10: (ainfbjba): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
 
 
 Ende:
 
 Untereinander angeordnete Drop-Down-Menüs
 
-ao11 (ainfemba): : Monat: (Monat \ Januar \| … \| Dezember)
+ao11: (ainfemba): : Monat: (Monat \ Januar \| … \| Dezember)
 
-ao12 (ainfejba): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030 oder später)
+ao12: (ainfejba): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030 oder später)
 
 mv:
 
-ka:ka1 (ao0 -ao12): aktueller Studienbezogener Auslandsaufenthalt - bitte auswählen
+ka: ka1 (ao0 -ao12): aktueller Studienbezogener Auslandsaufenthalt - bitte auswählen
 
 vc:
 
@@ -844,9 +844,9 @@ ao1: 1: : nein
 
 ao2: 2: : offene Angabe: 2 Stellen Präfix: ja, teilweise:[ainfcp1osba], Suffix: ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollstädnig:[ainfcp2osba], Suffix: ECTS-Punkte
+ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollständig:[ainfcp2osba], Suffix: ECTS-Punkte
 
-ao: -12: : weiß ich nicht
+ao4: 4: : weiß ich nicht
 
 mv:
 
@@ -891,21 +891,21 @@ it:
 
 st:
 
-ao1 (aproselbba): : nein, ich habe den Aufenthalt selbst organisiert (Exklusivkategorie)
+ao1: (aproselbba): : nein, ich habe den Aufenthalt selbst organisiert (Exklusivkategorie)
 
-ao2 (aprokoopba): : ja, Kooperationsprogramm zwischen Heimathochschule und deutscher Hochschule
+ao2: (aprokoopba): : ja, Kooperationsprogramm zwischen Heimathochschule und deutscher Hochschule
 
-ao3 (aproorigba): : ja, Programm meines Herkunftslandes
+ao3: (aproorigba): : ja, Programm meines Herkunftslandes
 
-ao4 (aprodaadba): : ja, deutsches Programm (z. B. DAAD-Programm)
+ao4: (aprodaadba): : ja, deutsches Programm (z. B. DAAD-Programm)
 
-ao5 (aproerasba): : ja, ERASMUS+/ERASMUS-Programm
+ao5: (aproerasba): : ja, ERASMUS+/ERASMUS-Programm
 
-ao6 (aproeuba): : ja, anderes EU-Programm
+ao6: (aproeuba): : ja, anderes EU-Programm
 
-ao7 (aprointerba): : ja, Programm meiner Gasthochschule im Ausland
+ao7: (aprointerba): : ja, Programm meiner Gasthochschule im Ausland
 
-ao8 (aproanprba): : ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix [aproanproba]
+ao8: (aproanprba): : ja, anderes Programm und zwar: offene Angabe: Präfix [aproanproba]
 
 mv:
 
@@ -946,13 +946,13 @@ q: Wie häufig haben Sie während Ihres Aufenthalts in Deutschland Kontakt mit �
 
 is:
 
-it1 (akontdeutstba): … Studierenden aus Deutschland?
+it1: (akontdeutstba): … Studierenden aus Deutschland?
 
-it2 (akonteinheimba): … anderen Einheimischen?
+it2: (akonteinheimba): … anderen Einheimischen?
 
-it3 (akontheimba): … Studierenden aus Ihrem Heimatland?
+it3: (akontheimba): … Studierenden aus Ihrem Heimatland?
 
-it4 (akontintstba): … anderen internationalen Studierenden (nicht aus Ihrem Heimatland)?
+it4: (akontintstba): … anderen internationalen Studierenden (nicht aus Ihrem Heimatland)?
 
 st:
 
@@ -1074,15 +1074,15 @@ q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …...
 
 is:
 
-it1 (azufskein): … dem Kontakt zu Einheimischen?
+it1: (azufskein): … dem Kontakt zu Einheimischen?
 
-it2 (azufskstu): … dem Kontakt zu Studierenden?
+it2: (azufskstu): … dem Kontakt zu Studierenden?
 
-it3 (azufsklehr): … dem Kontakt zu Lehrenden?
+it3: (azufsklehr): … dem Kontakt zu Lehrenden?
 
-it4 (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
+it4: (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
 
-it5 (azufinsg): … Ihrem Aufenthalt in Deutschland insgesamt?
+it5: (azufinsg): … Ihrem Aufenthalt in Deutschland insgesamt?
 
 st:
 
@@ -1135,11 +1135,11 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1 (azufleistanf): … die Leistungsanforderungen an Ihrer Hochschule?
+it1: (azufleistanf): … die Leistungsanforderungen an Ihrer Hochschule?
 
-it2 (azuforgaaufw): … den organisatorischen Aufwand Ihres Aufenthaltes?
+it2: (azuforgaaufw): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it3 (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
+it3: (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
@@ -1196,64 +1196,15 @@ it:
 
 st:
 
-ao1 (adeempfba): 1: : nein, überhaupt nicht
+ao1: (adeempfba): 1: nein, überhaupt nicht
 
-ao2 (adeempfba): 2
+ao2: (adeempfba): 2: 
 
-ao3 (adeempfba): 3
+ao3: (adeempfba): 3: 
 
-ao4 (adeempfba): 4
+ao4: (adeempfba): 4: 
 
-ao5 (adeempfba): 5 : : ja, unbedingt
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO F1_20
-
-hi:
-
-\--------------------------------
-
-F1_19
-=====
-
-tc:
-
-vn: bdedarlba; bdedarloba; bdedarhssia; bdedarhsoba
-
-qt: offene Angabe
-
-hl:
-
-in:
-
-q: Wenn Sie nochmals vor der Wahl stünden: In welchem Land, in welcher Stadt beziehungsweise an welcher Hochschule hätten Sie am liebsten Ihren studienbezogenen Auslandsaufenthalt durchgeführt?
-
-is:
-
-it1 (bdedarlba): Land: (offene Angabe: 100 Zeichen, Präfix [bdedarloba], Suffix …
-
-it2 (bdedarhssia): Stadt/Hochschule: (offene Angabe: 100 Zeichen, Präfix [bdedarhsoba], Suffix …
-
-it1 (-12): weiß ich nicht
-
-st:
-
-ao:
+ao5: (adeempfba): 5: ja, unbedingt
 
 mv:
 
@@ -1274,6 +1225,7 @@ fo:
 tr: GOTO F1_20
 
 hi:
+
 
 \--------------------------------
 
@@ -1298,39 +1250,39 @@ it:
 
 st:
 
-ao1 (bhiitecba): : Einführung in wissenschaftliche Lern- und Arbeitstechniken
+ao1: (bhiitecba): : Einführung in wissenschaftliche Lern- und Arbeitstechniken
 
-ao2 (bhiiwelba): : Welcome-/Begrüßungsveranstaltungen
+ao2: (bhiiwelba): : Welcome-/Begrüßungsveranstaltungen
 
-ao3 (bhiivorbba): : fachliche Vorbereitungskurse
+ao3: (bhiivorbba): : fachliche Vorbereitungskurse
 
-ao4 (bhiitutba): : studienbegleitende Tutorien
+ao4: (bhiitutba): : studienbegleitende Tutorien
 
-ao5 (bhiiheimba): : Betreuungsangebote in Wohnheimen
+ao5: (bhiiheimba): : Betreuungsangebote in Wohnheimen
 
-ao6 (bhiivermba): : Vermittlung von Wohnraum
+ao6: (bhiivermba): : Vermittlung von Wohnraum
 
-ao7 (bhiideuba): : Deutschkurse
+ao7: (bhiideuba): : Deutschkurse
 
-ao8 (bhiiberba): : Studienberatung
+ao8: (bhiiberba): : Studienberatung
 
-ao9 (bhiibehba): : Hilfe im Umgang mit Behörden
+ao9: (bhiibehba): : Hilfe im Umgang mit Behörden
 
-ao10 (bhiikulba): : Kultur- und Freizeitangebote
+ao10: (bhiikulba): : Kultur- und Freizeitangebote
 
-ao11 (bhiikomba): : Kommunikationsmöglichkeiten mit deutschen Studierenden
+ao11: (bhiikomba): : Kommunikationsmöglichkeiten mit deutschen Studierenden
 
-ao12 (bhiifinba): : Informationen zur Finanzierung des Studiums
+ao12: (bhiifinba): : Informationen zur Finanzierung des Studiums
 
-ao13 (bhiiaerlba): : Beratung/Informationen zu Fragen der Arbeitserlaubnis
+ao13: (bhiiaerlba): : Beratung/Informationen zu Fragen der Arbeitserlaubnis
 
-ao14 (bhiivisba): : Beratung/Informationen zum Aufenthaltsrecht
+ao14: (bhiivisba): : Beratung/Informationen zum Aufenthaltsrecht
 
-ao15 (bhiikvba): Beratung/Informationen zu Fragen der Krankenversicherung
+ao15: (bhiikvba): Beratung/Informationen zu Fragen der Krankenversicherung
 
-ao16 (bhiipsyba): : psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
+ao16: (bhiipsyba): : psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
 
-ao17 (bhiikeinba): : kein Angebot genutzt (Exklusivkategorie)
+ao17: (bhiikeinba): : kein Angebot genutzt (Exklusivkategorie)
 
 mv:
 
@@ -1434,11 +1386,11 @@ q: Wenn Sie an Ihre Zukunft denken, wo möchten Sie leben?
 
 is:
 
-it1 (intpsyherkba): in meinem Heimatland
+it1: (intpsyherkba): in meinem Heimatland
 
-it2 (intpsyzeitdeu): zeitweise in Deutschland
+it2: (intpsyzeitdeu): zeitweise in Deutschland
 
-it3 (intpsyanddeu): dauerhaft in Deutschland
+it3: (intpsyanddeu): dauerhaft in Deutschland
 
 st:
 
@@ -1491,11 +1443,11 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und meine persönliche Meinung äußern.
+it1: (intling1ba): Ich kann auf Deutsch über vertraute Themen sprechen und meine persönliche Meinung äußern.
 
-it2 (intling2ba): Ich verstehe die wichtigsten Punkte in deutschen Radio- und Fernsehprogrammen.
+it2: (intling2ba): Ich verstehe die wichtigsten Punkte in deutschen Radio- und Fernsehprogrammen.
 
-it3 (intling3ba): Ich kann deutsche Zeitungsartikel lesen und verstehen.
+it3: (intling3ba): Ich kann deutsche Zeitungsartikel lesen und verstehen.
 
 st:
 
@@ -1548,9 +1500,9 @@ q: Wie schätzen Sie Ihre derzeitigen Berufs- und Arbeitsmarktchancen ein, und z
 
 is:
 
-it1 (aarbchdeuba): … Deutschland?
+it1: (aarbchdeuba): … Deutschland?
 
-it2 (aarbchherkba): … Ihrem Herkunftsland?
+it2: (aarbchherkba): … Ihrem Herkunftsland?
 
 st:
 
