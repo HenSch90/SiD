@@ -138,7 +138,7 @@ tr:
 
 GOTO C1_4
 
-hi: Eingabefelder auf XXXX-Format setzen; Wertebereich = 0 bis 99 betragen; Dezimalstellen zulassen.
+hi: Eingabefelder auf XXXX-Format setzen; Wertebereich = 0 bis 99; Dezimalstellen zulassen.
 
 \--------------------------------
 
@@ -147,8 +147,7 @@ C1_3
 
 tc: IF dkinja=2
 
-vn: dkinro (dkinrono / dkinroelt / dkinroges / dkinrover / dkinrokom / dkinrofr / dkinroan
-/ dkinroano)
+vn: dkinro (dkinrono / dkinroelt / dkinroges / dkinrover / dkinrokom / dkinrofr / dkinroan / dkinroano)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -316,7 +315,7 @@ q3: Wenn Sie an eine typische Woche denken: Welche der folgenden Personen betreu
 
 is:
 
-it1: (dkinbesel) : ich selbst
+it1: (dkinbesel): ich selbst
 
 it2: (dkinbepar): Partner\*in
 
@@ -334,23 +333,19 @@ it8: (dkinbetag): Tagesmutter
 
 it9: (dkinbealo): Das Kind bleibt/Die Kinder bleiben alleine.
 
-it10: (dkinbealo): Das Kind bleibt alleine.
-
-it11: (dkinbealo): Die Kinder bleiben alleine.
-
-it12: (dkinbeson): Andere Person, und zwar: [dkinbesono; 30pt]
+it10: (dkinbeson): Andere Person, und zwar: [dkinbesono; 30pt]
 
 st:
 
-ao1: 1: 1: nie
+ao1: 1: nie
 
-ao2: 2: 2
+ao2: 2: 
 
-ao3: 3: 3
+ao3: 3: 
 
-ao4: 4: 4
+ao4: 4: 
 
-ao5: 5: 5: sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -361,12 +356,6 @@ vc1: SHOW q1 IF dkinanz = k.A.
 vc2: SHOW q2 IF dkinanz = 1
 
 vc3: SHOW q3 IF dkinanz \>1
-
-vc4:
-
-vc5: SHOW it10 IF dkinanz = 1
-
-vc6: SHOW it11 IF dkinanz \>1
 
 av:
 
@@ -423,15 +412,15 @@ it6: (dkinbesoe): Sonstige Einrichtung, und zwar: [dkinbesoeo; 30pt]
 
 st:
 
-ao1: 1: 1: nie
+ao1: 1: nie
 
-ao2: 2: 2
+ao2: 2: 
 
-ao3: 3: 3
+ao3: 3: 
 
-ao4: 4: 4
+ao4: 4: 
 
-ao5: 5: 5: sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -484,15 +473,15 @@ it:
 
 st:
 
-ao1: 1: 1: gar nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
-ao2: 2: 2
+ao2: 2: 
 
-ao3: 3: 3
+ao3: 3: 
 
-ao4: 4: 4
+ao4: 4: 
 
-ao5: 5: 5: sehr zufrieden
+ao5: 5: sehr zufrieden
 
 mv:
 
@@ -567,11 +556,11 @@ it13: (dkinsuso): Sonstiges, und zwar: [dkinsusoo; Eingabefeld]
 
 st:
 
-ao1: 0: : nein [EK]
+ao1: 0: nein 
 
-ao2: 1: : ja [EK]
+ao2: 1: ja 
 
-ao3: -12: : weiß ich nicht [EK]
+ao3: -12: weiß ich nicht 
 
 mv:
 
@@ -600,8 +589,7 @@ C1_10
 
 tc: IF dkinja = 2
 
-vn: dkinver (dkinverdau / dkinverlver / dkinverlei / dkinverwil / dkinveratm /
-dkinverreg)
+vn: dkinver (dkinverdau / dkinverlver / dkinverlei / dkinverwil / dkinveratm / dkinverreg)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -613,34 +601,29 @@ q1: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind(ern
 
 is:
 
-it1: (dkinverdau): Durch den Zeitbedarf für mein(e) Kind(er), wird mein Studium
-länger dauern.
+it1: (dkinverdau): Durch den Zeitbedarf für mein(e) Kind(er), wird mein Studium länger dauern.
 
-it5: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die
-besondere Situation von Studierenden mit Kind.
+it2: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kind.
 
-it7: (dkinverlei): Es fällt mir leicht, Studium und Kind(er) zu vereinbaren.
+it3: (dkinverlei): Es fällt mir leicht, Studium und Kind(er) zu vereinbaren.
 
-it10: (dkinverwil): Wegen meines Kindes/meiner Kinder, kann ich nicht so
-studieren, wie ich will.
+it4: (dkinverwil): Wegen meines Kindes/meiner Kinder, kann ich nicht so studieren, wie ich will.
 
-it13: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche
-Atmosphäre.
+it5: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche Atmosphäre.
 
-it14: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit
-Kind(ern).
+it6: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind(ern).
 
 st:
 
-ao1: 1: 1: trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
-ao2: 2: 2
+ao2: 2: 
 
-ao3: 3: 3
+ao3: 3: 
 
-ao4: 4: 4
+ao4: 4: 
 
-ao5: 5: 5: trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -681,32 +664,32 @@ is:
 
 it1: (dkinsw): Ich kann den Bedürfnissen meines Kindes/meiner Kinder sehr gut gerecht werden.
 
-it4: (dkinopfb): Ich würde alles aushalten für das Wohl meines Kindes/meiner Kinder.
+it2: (dkinopfb): Ich würde alles aushalten für das Wohl meines Kindes/meiner Kinder.
 
-it7: (dkinauto): Ich habe das Gefühl, dass die Betreuung und Erziehung meines
+it3: (dkinauto): Ich habe das Gefühl, dass die Betreuung und Erziehung meines
 Kindes/meiner Kinder mich völlig in Beschlag nimmt und mein ganzes Leben
 bestimmt.
 
-it10: (dkinfreu): Ich freue mich immer darauf, mit meinem Kind/meinen Kindern
+it4: (dkinfreu): Ich freue mich immer darauf, mit meinem Kind/meinen Kindern
 zusammen zu sein.
 
-it13: (dkinufur): Ich bin ständig in Sorge, dass meinem Kind/meinen Kindern etwas
+it5: (dkinufur): Ich bin ständig in Sorge, dass meinem Kind/meinen Kindern etwas
 zustoßen könnte.
 
-it16: (dkinfoe): Ich denke, wenn mein Kind/eins meiner Kinder sich falsch
+it6: (dkinfoe): Ich denke, wenn mein Kind/eins meiner Kinder sich falsch
 verhält, macht es das mit Absicht.
 
 st:
 
-ao1: 1: 1: trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
-ao2: 2: 2
+ao2: 2: 
 
-ao3: 3: 3
+ao3: 3: 
 
-ao4: 4: 4
+ao4: 4: 
 
-ao5: 5: 5: trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -733,7 +716,7 @@ C1_12
 
 tc: IF dkinja = 2
 
-vn: dkin (dkinstuwi / dkinstuent / dkinstubew)
+vn: dkin (dkinmsabi / dkinzuabi / dkinmsstu / dkinzustu / dkinmsabi1 / dkinzuabi1 / dkinmsstu1 / dkinzustu1 / dkinmsabi2 / dkinzuabi2 / dkinmsstu2 / dkinzustu2)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -762,15 +745,15 @@ it12: (dkinzustu2): Mit weniger als einem ++Studium++ für meine Kinder würde i
 
 st:
 
-ao1: 1: 1: gar nicht
+ao1: 1: gar nicht
 
-ao2: 2: 2
+ao2: 2: 
 
-ao3: 3: 3
+ao3: 3: 
 
-ao4: 4: 4
+ao4: 4: 
 
-ao5: 5: 5: voll und ganz
+ao5: 5: voll und ganz
 
 mv:
 
@@ -823,15 +806,15 @@ it:
 
 st:
 
-ao1: 1: 1: nein, auf keinen Fall
+ao1: 1: nein, auf keinen Fall
 
-ao2: 2: 2
+ao2: 2: 
 
-ao3: 3: 3
+ao3: 3: 
 
-ao4: 4: 4
+ao4: 4: 
 
-ao5: 5: 5: ja, auf jeden Fall
+ao5: 5: ja, auf jeden Fall
 
 mv:
 
@@ -866,7 +849,7 @@ tc: IF dkinja = 2
 
 vn: dkinsturev
 
-qt: Single-Choice
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
