@@ -138,7 +138,7 @@ hi:
 C2_2
 ====
 
-tc: IF beschwer==2
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
 vn: bedno; bedbau; bedauss; bedsich; bedruh; bedmed; bedelearn; bedpers ; bedtech; bedand
 
@@ -289,7 +289,7 @@ hi:
 C2_3
 ====
 
-tc: IF beschwer==2
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
 vn: bezeit; bezeitj
 
@@ -336,7 +336,7 @@ hi:
 C2_4
 ====
 
-tc: IF beschwer==2
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
 vn: bewahr
 
@@ -385,7 +385,7 @@ hi:
 C2_5
 ====
 
-tc: IF beschwer==2
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
 vn: beausw; beauswo
 
@@ -438,9 +438,9 @@ hi:
 C2_7
 ====
 
-tc: IF beschwer==2
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
-vn: schwbau; schworg; schwpru; schwand; schwando
+vn: schwleist; schwwieei; schwanwes; schwlv; schwselbst; schwgrup; schwflex; schwdicht; schwwieho; schwdauer; schwprart; schwno
 
 qt: Mehrfachauswahl
 
@@ -511,7 +511,7 @@ C2_8
 
 tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
-vn: ntabau; ntaorg; ntapru; ntaand; ntaando
+vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart
 
 qt: Einfachauswahlmatrix mit vertikalen ao
 
@@ -519,30 +519,69 @@ hl:
 
 in:
 
-q: In welchen Bereichen haben Sie um individuelle Anpassungen/Absprachen gebeten oder   Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
+q: Haben Sie in den von Ihnen benannten Bereichen um individuelle Anpassungen gebeten oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
 
-is: Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Dozent*innen.
+is: Wenn im Laufe des Studiums bestimmte Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Lehrenden.
 
-it1: (ntabau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B. Sicht-/Hörverhältnisse)
+it1 (ntaleist): Leistungspensum/festgelegte Studienordnung
 
-it2: (ntaorg): Studienorganisation, Lehre und Lernen (z. B. Gestaltung von Lehrveranstaltungen)
+it2 (ntawieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
 
-it3: (ntapru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art
-der Prüfungen)
+it3 (ntaanwes): Anwesenheitspflicht
 
-it4: (ntaand): Anderer Studienbereich, und zwar: [ntaando] [offenes Eingabefeld; 250 Zeichen]
+it4 (ntalv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
+
+it5 (ntaselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
+
+it6 (ntagrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
+
+it7 (ntaflex): mangelnde Flexibilität der Lehrenden
+
+it8 (ntadicht): Prüfungsdichte
+
+it9 (ntawieho): Wiederholung/Verschiebung von Prüfungen
+
+it10 (ntadauer): Prüfungsdauer/Abgabefristen
+
+it11 (ntaprart): Prüfungsart/Prüfungsbedingungen
 
 st:
 
-ao1: 1: : nicht beantragt
+ao1: 1: : beantragt und bewilligt
 
-ao2: 2: : beantragt, wurde bewilligt
+ao2: 2: : beantragt, aber nicht bewilligt
 
-ao3: 3: : beantragt, wurde nicht bewilligt
+ao3: 3: : nicht beantragt
 
 mv:
 
-ka:
+ka1 (it1 TO it3): Studienorganisation
+
+ka2 (it4 TO it7): Lehre und Lernen
+
+ka3 (it8 TO it11): Prüfungen/Leistungsnachweise
+
+vc1: SHOW it1 IF schwleist=1
+
+vc2: SHOW it2 IF schwwieei=1
+
+vc3: SHOW it3 IF schwanwes=1
+
+vc4: SHOW it4 IF schwlv=1 
+
+vc5: SHOW it5 IF schwselbst=1
+
+vc6: SHOW it6 IF schwgrup=1
+
+vc7: SHOW it7 IF schwflex=1 
+
+vc8: SHOW it8 IF schwdicht=1 
+
+vc9: SHOW it9 IF schwwieho=1 
+
+vc8: SHOW it8 IF schwdauer=1 
+
+vc9: SHOW it9 IF schwprart=1 
 
 vc:
 
@@ -556,11 +595,11 @@ hv:
 
 fo:
 
-tr: GOTO C2_9 IF ntabau=2 OR ntaorg=2 OR ntapru=2 OR ntaand=2
+tr: GOTO C2_9 IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagrup=1 OR ntaflex=1 OR ntadicht=1 OR ntawieho=1 OR ntadauer=1 OR ntaprart=1
 
-GOTO C2_10 IF ntabau=1 AND ntaorg=1 AND ntapru=1 AND ntaand=1
+GOTO C2_10 IF ntaleist=3 AND ntawieei=3 AND ntaanwes=3 AND ntalv=3 AND ntaselbst=3 AND ntagrup=3 AND ntaflex=3 AND ntadicht=3 AND ntawieho=3 AND ntadauer=3 AND ntaprart=3
 
-GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
+GOTO C2_11 IF ntaleist=2 OR ntawieei=2 OR ntaanwes=2 OR ntalv=2 OR ntaselbst=2 OR ntagrup=2 OR ntaflex=2 OR ntadicht=2 OR ntawieho=2 OR ntadauer=2 OR ntaprart=2
 
 ODER
 
