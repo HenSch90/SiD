@@ -68,13 +68,13 @@ it2: (dnatv): Vater
 
 st:
 
-ao1: 1: : die deutsche Staatsangehörigkeit
+ao1: 1: die deutsche Staatsangehörigkeit
 
-ao2: 2: : die deutsche und eine andere Staatsangehörigkeit
+ao2: 2: die deutsche und eine andere Staatsangehörigkeit
 
-ao3: 3: : eine andere Staatsangehörigkeit
+ao3: 3: eine andere Staatsangehörigkeit
 
-ao4: -12: : weiß ich nicht
+ao4: -12: weiß ich nicht
 
 mv:
 
@@ -119,11 +119,11 @@ it:
 
 st:
 
-ao1: 1: : Deutsch
+ao1: 1: Deutsch
 
-ao2: 2: : Deutsch und eine andere Sprache
+ao2: 2: Deutsch und eine andere Sprache
 
-ao3: 3: : eine andere Sprache
+ao3: 3: eine andere Sprache
 
 mv:
 
@@ -141,7 +141,6 @@ hv:
 
 fo:
 
-tr: GOTO A_37a (50% )
-    GOTO A_37b (50%)
+tr: GOTO A_38
 
 hi:
