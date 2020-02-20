@@ -972,10 +972,9 @@ hv:
 
 fo:
 
-tr: GOTO C2_13 IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb =
-3 OR beand = 3
+tr: GOTO C2_13 IF beauftr = 4 OR besoz = 4 OR bepsy = 4 OR bestud = 4 OR beselb = 4 OR beand = 4
 
-ELSE GOTO A_16
+ELSE GOTO C2_14
 
 hi:
 
@@ -984,10 +983,10 @@ hi:
 C2_13
 =====
 
-tc: IF beauftr = 3 OR besoz =3 OR bepsy = 3 OR bestud = 3 OR beselb = 3 OR beand
-= 3
+tc: IF beauftr = 4 OR besoz = 4 OR bepsy = 4 OR bestud = 4 OR beselb = 4 OR beand = 4
 
-vn: behauftr; behsoz; behpsy; behstud; behselb; behand)
+
+vn: behauftr; behsoz; behpsy; behstud; behselb; behand
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -999,19 +998,15 @@ q: Wie hilfreich waren diese Angebote für Sie?
 
 is:
 
-it1: (behauftr): Beauftragte/Beratungsstellen für Studierende mit
-Behinderungen/Beeinträchtigungen der Hochschule
+it1: (behauftr): Beratungsstellen für Studierende mit Beeinträchtigungen der Hochschule
 
-it2: (behsoz): Sozialberatung/Beratungsstelle für Studierende mit
-Behinderungen/Beeinträchtigungen des Studentenwerks
+it2: (behsoz): Beratungsstelle für Studierende mit Beeinträchtigungen des Studentenwerks
 
 it3: (behpsy): psychologische Beratungsstelle des Studentenwerks/der Hochschule
 
-it4: (behstud): Beratung für Studierende mit Behinderungen/Beeinträchtigungen
-des AStA, StuRa, UStA etc.
+it4: (behstud): Beratung für Studierende mit Beeinträchtigungen des AStA, StuRa, UStA etc.
 
-it5: (behselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS, BAG Behinderung
-und Studium)
+it5: (behselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS)
 
 it6: (behand): studienbezogene Beratung anderer Selbsthilfevereinigungen
 
@@ -1031,17 +1026,75 @@ mv:
 
 ka:
 
-vc: SHOW it1 IF beauftr =3
+vc1: SHOW it1 IF beauftr =4
 
-SHOW it2 IF besoz =3
+vc2: SHOW it2 IF besoz =4
 
-SHOW it3 IF bepsy =3
+vc3: SHOW it3 IF bepsy =4
 
-SHOW it4 IF bestud =3
+vc4: SHOW it4 IF bestud =4
 
-SHOW it5 IF beselb =3
+vc5: SHOW it5 IF beselb =4
 
-SHOW it6 IF beand =3
+vc6: SHOW it6 IF beand =4
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO C2_14
+
+hi:
+
+
+\--------------------------------
+
+C2_14
+=====
+
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+
+vn: belehrver; besoersch; bekomoff
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Beeinträchtigung zu?
+
+is:
+
+it1: (belehrver): Die Lehrenden meines Studiengangs haben Verständnis für die Situation von Studierenden mit Beeinträchtigung.
+
+it2: (besoersch): Die  Studienorganisation/-ordnung erschwert das Studieren mit Beeinträchtigung.
+
+it3: (bekomoff): Mit meinen Kommiliton\*innen kann ich offen über meine beeinträchtigungsbedingten Schwierigkeiten im Studium sprechen.
+
+st:
+
+ao1: 1: trifft überhaupt nicht zu
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
 
 av:
 
