@@ -60,7 +60,7 @@ tc: IF dkinja = 2
 
 vn: dkinage (dkinagej / dkinage1 / dkinage2 / dkinage3 / dkinage4 / dkinage5)
 
-qt: offene Einzelfragen mit vertikaler Eingabespalte/-feldern
+qt: offene Angaben mit vertikaler Eingabespalte/-feldern
 
 hl:
 
@@ -72,23 +72,23 @@ q2: Wie alt ist Ihr Kind?
 
 q3: Wie alt sind Ihre Kinder?
 
-is: Mit der Bezeichnung “1. Kind” meinen wir Ihr ältestes Kind.
+is: Mit “1. Kind” meinen wir Ihr ältestes Kind.
 
-it1: (dkinagej) 
+it1: (dkinagej) [infield = Alter jüngstes Kind]
 
 it2: (dkinage1): [infield = Alter Ihres Kindes]
 
-it3: (dkinage2): [infield = Alter Ihres 1. Kindes]
+it3: (dkinage2): [infield = Alter 1. Kind]
 
-it4: (dkinage3): [infield = Alter Ihres 2. Kindes]
+it4: (dkinage3): [infield = Alter 2. Kind]
 
-it5: (dkinage4): [infield = Alter Ihres 3. Kindes]
+it5: (dkinage4): [infield = Alter 3. Kind]
 
-it6: (dkinage5): [infield = Alter Ihres 4. Kindes]
+it6: (dkinage5): [infield = Alter 4. Kind]
 
 st:
 
-ao1: (dkinagej): 2-stellig, 0-99, [number] Suffix: Jahre
+ao1: (dkinagej): 4-stellig, 0-99, [number] Suffix: Jahre
 
 ao2: (dkinage1): 4-stellig, 0-99, [number] Suffix: Jahre
 
@@ -138,7 +138,7 @@ tr:
 
 GOTO C1_4
 
-hi: Eingabefelder auf XXXX-Format setzen; Wertebereich = 0 bis 99; Dezimalstellen zulassen.
+hi: Dezimalstellen zulassen.
 
 \--------------------------------
 
@@ -147,7 +147,7 @@ C1_3
 
 tc: IF dkinja=2
 
-vn: dkinro (dkinrono / dkinroelt / dkinroges / dkinrover / dkinrokom / dkinrofr / dkinroan / dkinroano)
+vn: dkinro (dkinrono / dkinrofr / dkinrokom / dkinroges / dkinroelt / dkinrover)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -155,7 +155,7 @@ hl:
 
 in:
 
-q: Kannten Sie jemanden, der bereits vor Ihnen mit Kind(ern) studiert hat?
+q: Kannten Sie jemanden, der bereits vor Ihnen mit Kind studiert hat?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -165,21 +165,19 @@ st:
 
 ao1: (dkinrono): nein, niemanden [EK] 
 
-ao2: (dkinroelt): Eltern
+ao2: (dkinrofr): Freund\*innen, Bekannte
 
-ao3: (dkinroges): Geschwister
+ao3: (dkinrokom): Kommiliton\*innen
 
-ao4: (dkinrover): andere Verwandte
+ao4: (dkinroges): Geschwister
 
-ao5: (dkinrokom): Kommiliton\*innen
+ao5: (dkinroelt): Eltern
 
-ao6: (dkinrofr): Freunde
-
-ao7: (dkinroan): Andere Person(en), und zwar: [dkinroano, 30pt]
+ao6: (dkinrover): andere Verwandte
 
 mv:
 
-ka:
+ka: (ao2 TO ao6): ja, und zwar:
 
 vc:
 
@@ -191,7 +189,7 @@ fv:
 
 hv:
 
-fo:
+fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
 
 tr:
 
@@ -261,7 +259,8 @@ in:
 
 q: Sind Sie alleinerziehend?
 
-is:
+is: Darunter fallen Personen, die allein mit minderjährigen Kindern zusammenleben und 
+hauptverantwortlich für deren Erziehung sorgen.
 
 it:
 
@@ -293,13 +292,79 @@ hi:
 
 \--------------------------------
 
+C1_7
+====
+
+tc: IF dkinja = 2
+
+vn: dkinbe (dkinbehs / dkinbekit / dkinbekig / dkinbeho / dkinbehts / dkinbehtsn / dkinbegts / dkinbek)
+
+qt: Mehrfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q1: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes/Ihrer Kinder?
+
+q2: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes?
+
+q3: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihrer Kinder?
+
+is: Bitte alles Zutreffende auswählen.
+
+it:
+
+st:
+
+ao1: (dkinbehs): Betreuungsangebote an der Hochschule
+
+ao2: (dkinbekit): Krippe/Kita/Tagesmutter (0-3 Jahre)
+
+ao3: (dkinbekig): Kindergarten (3-6 Jahre)
+
+ao4: (dkinbeho): Hort 
+
+ao5: (dkinbehts): Halbtagsschule
+
+ao6: (dkinbehtsn): Halbtagsschule mit Nachmittagsangeboten
+
+ao7: (dkinbegts): Ganztagsschule
+
+ao8: (dkinbek): keine der genannten Einrichtungen [EK]
+
+mv:
+
+ka:
+
+vc1: SHOW q1 IF dkinanz = k.A.
+
+vc2: SHOW q2 IF dkinanz = 1
+
+vc3: SHOW q3 IF dkinanz \>1
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: ao8 bitte etwas absetzen.
+
+tr: GOTO C1_8
+
+hi:
+
+\--------------------------------
+
 C1_6
 ====
 
 tc: IF dkinja = 2
 
-vn: dkinbe (dkinbesel / dkinbepar / dkinbeelt / dkinbegelt / dkinbever /
-dkinbefr / dkinbesit / dkinbetag / dkinbealo / dkinbeson / dkinbesono)
+vn: dkinbe (dkinbesel / dkinbepar / dkinbeelt / dkinbegelt / dkinbefr / dkinbesit / dkinbealo)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -307,11 +372,11 @@ hl:
 
 in:
 
-q1: Wenn Sie an eine typische Woche denken: Welche der folgenden Personen betreuen wie häufig Ihr(e) Kind(er)?
+q1: Wie häufig betreuen die folgenden Personen Ihr(e) Kind(er)?
 
-q2: Wenn Sie an eine typische Woche denken: Welche der folgenden Personen betreuen wie häufig Ihr Kind?
+q2: Wie häufig betreuen die folgenden Personen Ihr Kind?
 
-q3: Wenn Sie an eine typische Woche denken: Welche der folgenden Personen betreuen wie häufig Ihre Kinder?
+q3: Wie häufig betreuen die folgenden Personen Ihre Kinder?
 
 is:
 
@@ -321,19 +386,17 @@ it2: (dkinbepar): Partner\*in
 
 it3: (dkinbeelt): anderer Elternteil (falls nicht Partner\*in)
 
-it4: (dkinbegelt): Großeltern
+it4: (dkinbegelt): Großeltern oder andere Verwandte
 
-it5: (dkinbever): andere Verwandte
+it5: (dkinbefr): Freund\*innen, Bekannte
 
-it6: (dkinbefr): Freunde, Bekannte
+it6: (dkinbesit): bezahlte Babysitter\*innen
 
-it7: (dkinbesit): bezahlter Babysitter
+it7: (dkinbealo): Das Kind bleibt/Die Kinder bleiben alleine.
 
-it8: (dkinbetag): Tagesmutter
+it8: (dkinbealo): Das Kind bleibt alleine.
 
-it9: (dkinbealo): Das Kind bleibt/Die Kinder bleiben alleine.
-
-it10: (dkinbeson): Andere Person, und zwar: [dkinbesono; 30pt]
+it9: (dkinbealo): Die Kinder bleiben alleine.
 
 st:
 
@@ -356,6 +419,12 @@ vc1: SHOW q1 IF dkinanz = k.A.
 vc2: SHOW q2 IF dkinanz = 1
 
 vc3: SHOW q3 IF dkinanz \>1
+
+vc4: SHOW it7 IF dkinanz = k.A.
+
+vc5: SHOW it8 IF dkinanz = 1
+
+vc6: SHOW it9 IF dkinanz \>1
 
 av:
 
@@ -373,150 +442,12 @@ hi:
 
 \--------------------------------
 
-C1_7
-====
-
-tc: IF dkinja = 2
-
-vn: dkinbe (dkinbekihs / dkinbehsa / dkinbeki / dkinbehts / dkinbegts /
-dkinbesoe / dkinbesoeo)
-
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q1: Wenn Sie an eine typische Woche denken: Inwieweit nutzen Sie die folgenden
-Einrichtungen zur Betreuung Ihres Kindes/Ihrer Kinder?
-
-q2: Wenn Sie an eine typische Woche denken: Inwieweit nutzen Sie die folgenden
-Einrichtungen zur Betreuung Ihres Kindes?
-
-q3: Wenn Sie an eine typische Woche denken: Inwieweit nutzen Sie die folgenden
-Einrichtungen zur Betreuung Ihrer Kinder?
-
-is:
-
-it1: (dkinbekihs): Kita an der Hochschule
-
-it2: (dkinbehsa): weitere hochschulspezifische Betreuungsangebote
-
-it3: (dkinbeki): andere Kita (Kindergarten, Hort, Krippe)
-
-it4: (dkinbehts): Halbtagsschule
-
-it5: (dkinbegts): Ganztagsschule
-
-it6: (dkinbesoe): Sonstige Einrichtung, und zwar: [dkinbesoeo; 30pt]
-
-st:
-
-ao1: 1: nie
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: sehr häufig
-
-mv:
-
-ka:
-
-vc1: SHOW q1 IF dkinanz = k.A.
-
-vc2: SHOW q2 IF dkinanz = 1
-
-vc3: SHOW q3 IF dkinanz \>1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO C1_8
-
-hi:
-
-\--------------------------------
-
-C1_8
-====
-
-tc: IF dkinja = 2
-
-vn: dkinbezuf
-
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q1: Wie zufrieden sind Sie insgesamt mit der Betreuungssituation Ihres Kindes/Ihrer Kinder?
-
-q2: Wie zufrieden sind Sie insgesamt mit der Betreuungssituation Ihres Kindes?
-
-q3: Wie zufrieden sind Sie insgesamt mit der Betreuungssituation Ihrer Kinder?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht zufrieden
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: sehr zufrieden
-
-mv:
-
-ka:
-
-vc1: SHOW q1 IF dkinanz = k.A.
-
-vc2: SHOW q2 IF dkinanz = 1
-
-vc3: SHOW q3 IF dkinanz \>1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO C1_9
-
-hi:
-
-\--------------------------------
-
 C1_9
 ====
 
 tc: IF dkinja = 2
 
-vn: dkinsu (dkinsuwic / dkinsustil / dkinsuekr / dkinsuspz / dkinsuspf /
-dkinsuinf / dkinsuber / dkinsubar / dkinsuspr / dkinsuwoh / dkinsukber /
-dkinsubur / dkinsuso / dkinsusoo)
+vn: dkinsu (dkinsuwist / dkinsuekr / dkinsuspz / dkinsubers / dkinsuberf / dkinsubar / dkinsuspr / dkinsuwoh / dkinsukber)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -524,35 +455,28 @@ hl:
 
 in:
 
-q: Gibt es an Ihrer Hochschule folgende Unterstützungsmöglichkeiten bzw. Angebote für Studierende mit Kind(ern)?
+q: Gibt es an Ihrem Hochschulstandort folgende Unterstützungsmöglichkeiten bzw. Angebote für Studierende mit Kind?
 
 is:
 
-it1: (dkinsuwic): Wickelräume
+it1: (dkinsuwist): Wickel-/Stillräume
 
-it2: (dkinsustil): Stillräume
+it2: (dkinsuekr): Eltern-Kind-Räume
 
-it3: (dkinsuekr): Eltern-Kind-Räume
+it3: (dkinsuspm): Spielmöglichkeiten
 
-it4: (dkinsuspz): Spielzimmer
+it4: (dkinsubers): Studienberatung, Familienservice/-büro
 
-it5: (dkinsuspf): Spielflächen im Freien
+it5: (dkinsuberf) Sozial-/Finanzberatung
 
-it6: (dkinsuinf): Informationsangebote
+it6: (dkinsubar): barrierefreie Zugänge für Kinderwagen
 
-it7: (dkinsuber): Studienberatung für Studierende mit Kind
+it7: (dkinsuspr): Gesprächskreise für Eltern
 
-it8: (dkinsubar): barrierefreie Zugänge für Kinderwagen
+it8: (dkinsuwoh): Wohnangebote für Studierende mit Kind
 
-it9: (dkinsuspr): Gesprächskreise für Eltern
+it9: (dkinsukber): Angebote zur flexiblen Kurzzeitbetreuung von Kindern
 
-it10: (dkinsuwoh): Wohnangebote für Studierende mit Kind
-
-it11: (dkinsukber): Angebote zur Kurzzeitbetreuung von Kindern
-
-it12: (dkinsubur): Familienservice/-büro
-
-it13: (dkinsuso): Sonstiges, und zwar: [dkinsusoo; Eingabefeld]
 
 st:
 
@@ -560,9 +484,7 @@ ao1: 0: nein
 
 ao2: 1: ja 
 
-ao3: -12: weiß ich nicht 
-
-mv:
+mv: -12: weiß ich nicht 
 
 ka:
 
@@ -576,7 +498,7 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"weiß ich nicht" etwas absetzen.
 
 tr: GOTO C1_10
 
@@ -589,7 +511,7 @@ C1_10
 
 tc: IF dkinja = 2
 
-vn: dkinver (dkinverdau / dkinverlver / dkinverlei / dkinverwil / dkinveratm / dkinverreg)
+vn: dkinver (dkinverlver / dkinverreg / dkinveratm)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -599,19 +521,27 @@ in:
 
 q1: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind(ern) zu?
 
+q2: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kind zu?
+
+q3: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kindern zu?
+
 is:
 
-it1: (dkinverdau): Durch den Zeitbedarf für mein(e) Kind(er), wird mein Studium länger dauern.
+
+it1: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kind(ern).
 
 it2: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kind.
 
-it3: (dkinverlei): Es fällt mir leicht, Studium und Kind(er) zu vereinbaren.
+it3: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kindern.
 
-it4: (dkinverwil): Wegen meines Kindes/meiner Kinder, kann ich nicht so studieren, wie ich will.
+it4: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind(ern).
 
-it5: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche Atmosphäre.
+it5: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind.
 
-it6: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind(ern).
+it6: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kindern.
+
+it7: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche Atmosphäre.
+
 
 st:
 
@@ -628,6 +558,18 @@ ao5: 5: trifft voll und ganz zu
 mv:
 
 ka:
+
+vc1: SHOW q1 IF dkinanz = k.A.
+
+vc2: SHOW q2 IF dkinanz = 1
+
+vc3: SHOW q3 IF dkinanz \>1
+
+vc4: SHOW it1, it4 IF dkinanz = k.A.
+
+vc5: SHOW it2, it5 IF dkinanz = 1
+
+vc6: SHOW it3, it6 IF dkinanz \>1
 
 av:
 
@@ -641,73 +583,7 @@ fo:
 
 tr: GOTO C1_12
 
-hi: Items bitte zufällig rotieren.
-
-\--------------------------------
-
-C1_11
-=====
-
-tc: IF dkinja = 2
-
-vn: dkin (dkinsw / dkinopfb / dkinauto / dkinfreu / dkinufur / dkinfoe)
-
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie sehr treffen folgende Aussagen auf Sie zu?
-
-is:
-
-it1: (dkinsw): Ich kann den Bedürfnissen meines Kindes/meiner Kinder sehr gut gerecht werden.
-
-it2: (dkinopfb): Ich würde alles aushalten für das Wohl meines Kindes/meiner Kinder.
-
-it3: (dkinauto): Ich habe das Gefühl, dass die Betreuung und Erziehung meines
-Kindes/meiner Kinder mich völlig in Beschlag nimmt und mein ganzes Leben
-bestimmt.
-
-it4: (dkinfreu): Ich freue mich immer darauf, mit meinem Kind/meinen Kindern
-zusammen zu sein.
-
-it5: (dkinufur): Ich bin ständig in Sorge, dass meinem Kind/meinen Kindern etwas
-zustoßen könnte.
-
-it6: (dkinfoe): Ich denke, wenn mein Kind/eins meiner Kinder sich falsch
-verhält, macht es das mit Absicht.
-
-st:
-
-ao1: 1: trifft gar nicht zu
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: trifft voll und ganz zu
-
-mv:
-
-ka:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO C1_6
-
-hi: Items bitte zufällig rotieren.
+hi: 
 
 \--------------------------------
 
@@ -716,7 +592,7 @@ C1_12
 
 tc: IF dkinja = 2
 
-vn: dkin (dkinmsabi / dkinzuabi / dkinmsstu / dkinzustu / dkinmsabi1 / dkinzuabi1 / dkinmsstu1 / dkinzustu1 / dkinmsabi2 / dkinzuabi2 / dkinmsstu2 / dkinzustu2)
+vn: dkin (dkinwistu / dkinentstu)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -728,20 +604,18 @@ q: Wie sehr stimmen Sie den folgenden Aussagen zu?
 
 is:
 
-it1: (dkinmsabi): Für mich ist das ++Abitur++ für mein(e) Kind(er) der absolute Minimalstandard.
-it2: (dkinzuabi): Mit weniger als einem ++Abitur++ für mein(e) Kind(er) würde ich mich nicht zufrieden geben.
-it3: (dkinmsstu): Für mich ist ein ++Studium++ für mein(e) Kind(er) der absolute Minimalstandard.
-it4: (dkinzustu): Mit weniger als einem ++Studium++ für mein(e) Kind(er) würde ich mich nicht zufrieden geben.
+it1: (dkinwistu): Mir ist es wichtig, dass mein Kind später einmal studiert/meine Kinder später einmal studieren.
 
-it5: (dkinmsabi1): Für mich ist das ++Abitur++ für mein Kind der absolute Minimalstandard.
-it6: (dkinzuabi1): Mit weniger als einem ++Abitur++ für mein Kind würde ich mich nicht zufrieden geben.
-it7: (dkinmsstu1): Für mich ist ein ++Studium++ für mein Kind der absolute Minimalstandard.
-it8: (dkinzustu1): Mit weniger als einem ++Studium++ für mein Kind würde ich mich nicht zufrieden geben.
+it2: (dkinwistu): Mir ist es wichtig, dass mein Kind später einmal studiert.
 
-it9: (dkinmsabi2): Für mich ist das ++Abitur++ für meine Kinder der absolute Minimalstandard.
-it10: (dkinzuabi2): Mit weniger als einem ++Abitur++ für meine Kinder würde ich mich nicht zufrieden geben.
-it11: (dkinmsstu2): Für mich ist ein ++Studium++ für meine Kinder der absolute Minimalstandard.
-it12: (dkinzustu2): Mit weniger als einem ++Studium++ für meine Kinder würde ich mich nicht zufrieden geben.
+it3: (dkinwistu): Mir ist es wichtig, dass meine Kinder später einmal studieren.
+
+it4: (dkinentstu): Wenn mein Kind nicht studiert/meine Kinder nicht studieren, wäre ich enttäuscht.
+
+it5: (dkinentstu): Wenn mein Kind nicht studiert, wäre ich enttäuscht.
+
+it6: (dkinentstu): Wenn meine Kinder nicht studieren, wäre ich enttäuscht.
+
 
 st:
 
@@ -759,11 +633,11 @@ mv:
 
 ka:
 
-vc1: SHOW it1, it2, it3, it4 IF dkinanz = k. A.
+vc1: SHOW it1, it4 IF dkinanz = k. A.
 
-vc2: SHOW it5, it6, it7, it8 IF dkinanz = 1
+vc2: SHOW it2, it5 IF dkinanz = 1
 
-vc3: SHOW it9, it10, it11, it12 IF dkinanz \> 1
+vc3: SHOW it3, it6 IF dkinanz \> 1
 
 av:
 
@@ -776,67 +650,6 @@ hv:
 fo:
 
 tr: GOTO C1_13
-
-hi:
-
-\--------------------------------
-
-C1_13
-=====
-
-tc: IF dkinja = 2
-
-vn: dkinstuja
-
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q1: Würden Sie wieder mit Kind(ern) studieren?
-
-q2: Würden Sie wieder mit Kind studieren?
-
-q3: Würden Sie wieder mit Kindern studieren?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: nein, auf keinen Fall
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: ja, auf jeden Fall
-
-mv:
-
-ka:
-
-vc1: SHOW q1 IF dkinanz = k. A.
-
-vc2: SHOW q2 IF dkinanz = 1
-
-vc3: SHOW q3 IF dkinanz \> 1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO C1_14
 
 hi:
 
@@ -855,7 +668,7 @@ hl:
 
 in:
 
-q: Wenn Sie die Möglichkeit hätten, welche Alternative würden Sie favorisieren?
+q: Was würden Sie künftigen Studienanfänger\*innen empfehlen
 
 is:
 
@@ -863,17 +676,13 @@ it:
 
 st:
 
-ao1: 1: während des Studiums das Kind bekommen
+ao1: 1: erst studieren, wenn die Kinder älter sind
 
-ao2: 2: erst studieren, wenn das Kind selbstständiger ist
+ao2: 2: während des Studiums Kinder bekommen
 
-ao3: 3: erst das Studium beenden und dann ein Kind bekommen
+ao3: 3: erst das Studium beenden und dann Kinder bekommen
 
-ao4: 4: gar kein(e) Kind(er) bekommen
-
-ao5: 5: gar kein Studium aufnehmen
-
-ao6: 6: keine der genannten Optionen
+ao4: 4: gar keine Kinder bekommen
 
 mv:
 
