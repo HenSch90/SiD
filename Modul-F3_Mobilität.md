@@ -22,15 +22,15 @@ it:
 
 st:
 
-ao1: 1: 1: gar nicht
+ao1: 1: gar nicht
 
-ao2: 2: 2
+ao2: 2:
 
-ao3: 3: 3
+ao3: 3:
 
-ao4: 4: 4
+ao4: 4:
 
-ao5: 5: 5: voll und ganz
+ao5: 5: voll und ganz
 
 mv:
 
@@ -325,13 +325,13 @@ it:
 
 st:
 
-ao1: 1: : Nein
+ao1: 1: Nein
 
-ao2: 2: : ja, teilweise: [ainfcpteilo] [Eingabefeld] ECTS-Punkte
+ao2: 2: ja, teilweise: [ainfcpteilo] [Eingabefeld] ECTS-Punkte
 
-ao3: 3: : ja, vollständig: [ainfcpvollo] [Eingabefeld] ECTS-Punkte
+ao3: 3: ja, vollständig: [ainfcpvollo] [Eingabefeld] ECTS-Punkte
 
-ao-12: -12: : weiß ich nicht
+ao-12: -12: weiß ich nicht
 
 mv:
 
@@ -381,54 +381,54 @@ it:
 
 st:
 
-ao1 (afinelt1): Eltern
+ao1: (afinelt1): Eltern
 
-ao2 (afinpar1): Partner\*in
+ao2: (afinpar1): Partner\*in
 
-ao3 (afinbaf1): BAföG
+ao3: (afinbaf1): BAföG
 
-ao4 (afinjobv1): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao4: (afinjobv1): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
 
-ao5 (afinjobw1): eigener Verdienst aus Tätigkeiten während des
+ao5: (afinjobw1): eigener Verdienst aus Tätigkeiten während des
 Auslandsaufenthalts
 
-ao6 (afinstip1): Stipendium
+ao6: (afinstip1): Stipendium
 
-ao7 (afinand1): andere Finanzierungsquelle
+ao7: (afinand1): andere Finanzierungsquelle
 
-ao8 (afinelt2): Eltern
+ao8: (afinelt2): Eltern
 
-ao9 (afinpar2): Partner(in)
+ao9: (afinpar2): Partner(in)
 
-ao10 (afinbaf2): BAföG
+ao10: (afinbaf2): BAföG
 
-ao11 (afinjobv2): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao11: (afinjobv2): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
 
-ao12 (afinjobw2): eigener Verdienst aus Tätigkeiten während des
+ao12: (afinjobw2): eigener Verdienst aus Tätigkeiten während des
 Auslandsaufenthalts
 
-ao13 (afinstip2): Stipendium
+ao13: (afinstip2): Stipendium
 
-ao14 (afinand2): andere Finanzierungsquelle
+ao14: (afinand2): andere Finanzierungsquelle
 
-ao15 (afinelt3): Eltern
+ao15: (afinelt3): Eltern
 
-ao16 (afinpar3): Partner(in)
+ao16: (afinpar3): Partner(in)
 
-ao17 (afinbaf3): BAföG
+ao17: (afinbaf3): BAföG
 
-ao18 (afinjobv3): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao18: (afinjobv3): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
 
-ao19 (afinjobw3): eigener Verdienst aus Tätigkeiten während des
+ao19: (afinjobw3): eigener Verdienst aus Tätigkeiten während des
 Auslandsaufenthalts
 
-ao20 (afinstip3): Stipendium
+ao20: (afinstip3): Stipendium
 
-ao21 (afinand3): andere Finanzierungsquelle
+ao21: (afinand3): andere Finanzierungsquelle
 
 mv:
 
-ka1 (ao1 TO ao7) : 1. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
+ka1 (ao1 TO ao7): 1. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
 ka2 (ao8 TO ao14): 2. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
@@ -537,7 +537,7 @@ tc: IF ainfaus \> 1 \| k.A.
 
 vn: asprachland / asprachdeut / asprachand / asprachando
 
-qt: Einfachauswahlmatrix mit horizontal abgetragenen Antwortoptionen
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
@@ -555,19 +555,19 @@ it1: (asprachland): Landessprache
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): Andere Sprache, und zwar [asprachando] [Eingabefeld, 50 Stellen]
+it3: (asprachand): Andere Sprache, und zwar [asprachando] [Eingabefeld]
 
 st:
 
-ao1: 1: : nie
+ao1: 1: nie
 
-ao2: 2: : selten
+ao2: 2: selten
 
-ao3: 3: : manchmal
+ao3: 3: manchmal
 
-ao4: 4: : häufig
+ao4: 4: häufig
 
-ao5: 5: : sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -575,7 +575,7 @@ ka:
 
 vc:
 
-SHOW q1 IF ainfaus = 2 \| kA
+SHOW q1 IF ainfaus = 2 \| MISSING
 
 SHOW q2 IF ainfaus \> 2
 
@@ -627,15 +627,15 @@ it5: (azufinsg): … dem Auslandsaufenthalt insgesamt?
 
 st:
 
-ao1: 1: 1: überhaupt nicht zufrieden
+ao1: 1: überhaupt nicht zufrieden
 
-ao2: 2: 2
+ao2: 2:
 
-ao3: 3: 3
+ao3: 3:
 
-ao4: 4: 4
+ao4: 4:
 
-ao5: 5: 5: sehr zufrieden
+ao5: 5: sehr zufrieden
 
 mv:
 
@@ -668,7 +668,7 @@ tc: IF ainfaus \> 1 \| kA
 
 vn: azufleistanf / azuforgaufw / azuffinanzaufw
 
-qt: Akkordeon
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
@@ -687,15 +687,15 @@ it3: (azuffinanzaufw): … den finanziellen Aufwand?
 
 st:
 
-ao1: 1: 1: sehr niedrig
+ao1: 1: sehr niedrig
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: sehr hoch
+ao5: 5: sehr hoch
 
 mv:
 
@@ -728,7 +728,7 @@ tc:
 
 vn: aeempf
 
-qt: Einfachauswahl vertikale ao
+qt: Einfachauswahl mit vertikalen aos
 
 hl:
 
@@ -744,15 +744,15 @@ it:
 
 st:
 
-ao1: 1: 1: nein überhaupt nicht
+ao1: 1: nein überhaupt nicht
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: ja, unbedingt
+ao5: 5: ja, unbedingt
 
 mv:
 
@@ -781,8 +781,9 @@ hi:
 F3_16
 =====
 
-tc: Die Frage erhalten ausschließlich Studierende, die beabsichtigen einen
-(weiteren) Auslandsaufenthalt durchzuführen (s. Grundprogramm).
+tc: 
+(ainfaus=1 AND auslandint==4) OR
+(ainfaus=MISSING AND auslandint==4)
 
 vn: aplanstg / aplantst / aplanpra / aplanspk / aplanstureis / aplanprojekt /
 aplansumschoo / aplanson / aplanwnn
@@ -795,7 +796,6 @@ in:
 
 q: Sie haben angegeben, dass sie einen (weiteren) studienbezogenen
 Auslandsaufenthalt planen:
-
 Welche Art von Aufenthalt planen Sie?
 
 is: Bitte alles Zutreffende auswählen.
@@ -804,77 +804,24 @@ it:
 
 st:
 
-ao1 (aplanstg): Auslandsstudium mit Erwerb eines Abschlusses im Ausland (z. B.
+ao1: (aplanstg): Auslandsstudium mit Erwerb eines Abschlusses im Ausland (z. B.
 Masterstudium)
 
-ao2 (aplantst): Teilstudium im Ausland (Auslandssemester)
+ao2: (aplantst): Teilstudium im Ausland (Auslandssemester)
 
-ao3 (aplanpra): Auslandspraktikum
+ao3: (aplanpra): Auslandspraktikum
 
-ao4 (aplanspk): Sprachkurs im Ausland
+ao4: (aplanspk): Sprachkurs im Ausland
 
-ao5 (aplanstureis): Studienreise
+ao5: (aplanstureis): Studienreise
 
-ao6 (aplanprojekt): Projektarbeit
+ao6: (aplanprojekt): Projektarbeit
 
-ao7 (aplansumschoo): Summer School
+ao7: (aplansumschoo): Summer School
 
-ao8 (aplanson): sonstiger Auslandsaufenthalt
+ao8: (aplanson): sonstiger Auslandsaufenthalt
 
-ao9 (aplanwnn): weiß ich noch nicht
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO F3_19
-
-hi:
-
-\--------------------------------
-
-F3_17
-=====
-
-tc: Die Frage erhalten ausschließlich Studierende, die beabsichtigen einen
-(weiteren) Auslandsaufenthalt durchzuführen.
-
-vn: aplanlasta / aplanlao / aplanstao
-
-qt: Einfachauswahl, offene Angabe
-
-hl:
-
-in:
-
-q: In welchem Land und in welcher Stadt/Hochschule planen Sie den
-Auslandsaufenthalt durchzuführen?
-
-is:
-
-it:
-
-st:
-
-ao1: 100 Stellen; Präfix: Land:
-
-ao2: 100 Stellen; Präfix: Stadt/Hochschule:
-
-ao3: -12: : weiß ich noch nicht
+ao9: (aplanwnn): weiß ich noch nicht
 
 mv:
 
@@ -897,18 +844,20 @@ tr:
 GOTO F3_19
 
 hi:
+
 
 \--------------------------------
 
 F3_19
 =====
 
-tc: Die Frage erhalten ausschließlich Studierende, die beabsichtigen einen
-(weiteren) Auslandsaufenthalt durchzuführen.
+tc: 
+(ainfaus=1 AND auslandint==4) OR
+(ainfaus=MISSING AND auslandint==4)
 
 vn: aplanföpro; aplanföproo
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit offener Angabe
 
 hl:
 
@@ -917,35 +866,33 @@ in:
 q: Auf welche Weise planen Sie Ihren künftigen Auslandsaufenthalt zu
 organisieren?
 
-is:
+is: Der Aufenthalt findet im Rahmen eines Austauschprogramms statt…
 
 it:
 
 st:
 
-ao1: 1: : … ja, ERASMUS+, ERASMUS
+ao1: 1: … ja, ERASMUS+, ERASMUS
 
-ao2: 2: : … ja, anderes EU-Programm
+ao2: 2: … ja, anderes EU-Programm
 
-ao3: 3: : … ja, DAAD-Programm
+ao3: 3: … ja, DAAD-Programm
 
-ao4: 4: : … ja, Pädagogischer Austauschdient (PAD)/COMENIUS
+ao4: 4: … ja, Pädagogischer Austauschdient (PAD)/COMENIUS
 
-ao5: 5: : … ja, PROMOS-Stipendium
+ao5: 5: … ja, PROMOS-Stipendium
 
-ao6: 6: : … ja, Programm meiner Hochschule in Deutschland
+ao6: 6: … ja, Programm meiner Hochschule in Deutschland
 
-ao7: 7: : … ja, Programm meiner Gasthochschule im Ausland
+ao7: 7: … ja, Programm meiner Gasthochschule im Ausland
 
-ao8: 8: : … ja, anderes Programm, und zwar [aplanföproo] [Eingabefeld; 100 Stellen]
+ao8: 8: … ja, anderes Programm, und zwar [aplanföproo] [Eingabefeld; 100 Zeichen]
 
-[Leerzeile]
-
-ao9: 9: : nein, werde Aufenthalt selbst organisieren [EK]
+ao9: 9: … nein, werde Aufenthalt selbst organisieren [EK]
 
 mv:
 
-ka (ao1 TO ao8) : Der Aufenthalt findet im Rahmen eines Austauschprogramms statt
+ka:
 
 vc:
 
@@ -963,15 +910,16 @@ tr:
 
 GOTO F3_20
 
-hi: ao9 bitte optisch von restlicher Itemliste absetzen
+hi:
 
 \--------------------------------
 
 F3_20
 =====
 
-tc: Die Frage erhalten ausschließlich Studierende, die beabsichtigen einen
-(weiteren) Auslandsaufenthalt durchzuführen.
+tc: 
+(ainfaus=1 AND auslandint==4) OR
+(ainfaus=MISSING AND auslandint==4)
 
 vn: aplfinelt / aplfinpar / aplfinbaf / aplfinjobv / aplfinjobw / aplfinstip /
 aplfinand
@@ -991,20 +939,20 @@ it:
 
 st:
 
-ao1 (aplfinelt): Eltern
+ao1: (aplfinelt): Eltern
 
-ao2 (aplfinpar): Partner*in
+ao2: (aplfinpar): Partner\*in
 
-ao3 (aplfinbaf): BAföG
+ao3: (aplfinbaf): BAföG
 
-ao4 (aplfinjobv): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao4: (aplfinjobv): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
 
-ao5 (aplfinjobw): eigener Verdienst aus Tätigkeiten während des
+ao5: (aplfinjobw): eigener Verdienst aus Tätigkeiten während des
 Auslandsaufenthalts
 
-ao6 (aplfinstip): Stipendium
+ao6: (aplfinstip): Stipendium
 
-ao7 (aplfinand): andere Finanzierungsquelle
+ao7: (aplfinand): andere Finanzierungsquelle
 
 mv:
 
@@ -1054,9 +1002,9 @@ it:
 
 st:
 
-ao1: 1: : nein
+ao1: 1: nein
 
-ao2: 2: : ja, und zwar wenn … [aplanbedio] [Eingabefeld; 200 Stellen]
+ao2: 2: ja, und zwar wenn … [aplanbedio] [Eingabefeld; 200 Stellen]
 
 mv:
 
@@ -1089,7 +1037,7 @@ tc:
 
 vn: akontdeust; akonteust; akontneust
 
-qt: Einfachauswahlmatrix mit horizontal abgetragenen Antwortoptionen
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
@@ -1107,15 +1055,15 @@ it3: (akontneust): … Studierenden aus Ländern außerhalb Europas?
 
 st:
 
-ao1: 1: 1: sehr selten
+ao1: 1: sehr selten
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -1165,7 +1113,7 @@ st:
 
 ao1: 3 Stellen; Präfix: Dauer:; Suffix: Minuten
 
-ao2: -12: : weiß ich nicht [EK]
+ao2: -12: weiß ich nicht
 
 mv:
 
@@ -1215,17 +1163,17 @@ it:
 
 st:
 
-ao1: 1: : ich gehe zu Fuß
+ao1: 1: ich gehe zu Fuß
 
-ao2: 2: : Fahrrad
+ao2: 2: Fahrrad
 
-ao3: 3: : öffentliche Verkehrsmittel
+ao3: 3: öffentliche Verkehrsmittel
 
-ao4: 4: : PKW (allein fahrend)
+ao4: 4: PKW (allein fahrend)
 
-ao5: 5: : PKW (in Fahrgemeinschaft)
+ao5: 5: PKW (in Fahrgemeinschaft)
 
-ao6: 6: : anderes
+ao6: 6: anderes
 
 mv:
 
@@ -1258,7 +1206,7 @@ tc:
 
 vn: intpsydeu / intpsyzeit / intpsyandl
 
-qt: Einfachauswahlmatrix mit horizontal abgetragenen Antwortoptionen
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
@@ -1276,15 +1224,15 @@ it3: (intpsyandl): dauerhaft im Ausland
 
 st:
 
-ao1: 1: 1: auf keinen Fall
+ao1: 1: auf keinen Fall
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: auf jeden Fall
+ao5: 5: auf jeden Fall
 
 mv:
 
