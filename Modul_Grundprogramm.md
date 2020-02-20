@@ -643,10 +643,10 @@ hv:
 fo:
 
 tr: <zofar:transition target="A_8a" condition="baufgruasylba.value"/>
-            <zofar:transition target="A_8b" condition="!baufgruasylba.value and (baufgrufaman.value or baufgrufamba.value)"/>
-            <zofar:transition target="A_9a" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_9b" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
-        </zofar:transitions>
+    <zofar:transition target="A_8b" condition="!baufgruasylba.value and (baufgrufaman.value or baufgrufamba.value)"/>
+    <zofar:transition target="A_9a" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
+    <zofar:transition target="A_9b" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
+    </zofar:transitions>
 
 hi:
 
@@ -700,8 +700,8 @@ hv:
 fo:
 
 tr: <zofar:transition target="A_8b" condition="baufgrufaman.value or baufgrufamba.value"/>
-      <zofar:transition target="A_9a" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
-       <zofar:transition target="A_9b" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
+    <zofar:transition target="A_9a" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
+    <zofar:transition target="A_9b" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
 
 hi:
 
@@ -743,7 +743,7 @@ hv:
 fo:
 
 tr: <zofar:transition target="A_9a" condition="zofar.asNumber(h_split)==1"/>
-     <zofar:transition target="A_9b" condition="zofar.asNumber(h_split)==2"/>
+    <zofar:transition target="A_9b" condition="zofar.asNumber(h_split)==2"/>
 
 hi:
 
@@ -1346,8 +1346,8 @@ hv:
 fo:
 
 tr: <zofar:transition target="D2_1" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_22" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13)"/>
-            <zofar:transition target="A_19" condition="hsstand_2.value"/>
+    <zofar:transition target="A_22" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13)"/>
+    <zofar:transition target="A_19" condition="hsstand_2.value"/>
 hi:
 
 \------------------------------------------------------------
@@ -1800,9 +1800,7 @@ ao4: (todo2): 4: ja, Workshop(s)
 
 ao5: (todo3): 5: ja, Modul/Kurs
 
-ao6: (todo4): 6: ja, anderes
-
-ato: (todo5_open):  Prefix: und zwar:
+ao6: (todo4): 6: ja, anderes und zwar: (todo5_open)
 
 mv:
 
@@ -2043,7 +2041,7 @@ hl:
 
 in:
 
-q: Inwieweit trauen Sie sich zu, …?
+q: Inwieweit trauen Sie sich zu, …
 
 is:
 
@@ -2112,7 +2110,7 @@ ao2: 6: Universitätsabschluss
 
 ao3: 5: Fachhochschulabschluss
 
-ao4: 4: Abschluss an einer Meister-, Techniker-/ Fachschule
+ao4: 4: Abschluss an einer Meister-, Techniker-, Fachschule
 
 ao5: 3: Lehre bzw. Facharbeiterabschluss, Abschluss an einer Berufsfach-, Handels-, Berufsaufbauschule
 
@@ -2149,7 +2147,7 @@ A_33
 
 tc:
 
-vn: deltjobv [deltjobvo1] [deltjobvo2]; deltjobm [deltjobmo1] [deltjobmo2]
+vn: deltjobv [deltjobvo1] [deltjobvo2] [deltjobv1] [deltjobv2]; deltjobm [deltjobmo1] [deltjobmo2] [deltjobm1] [deltjobm2]
 
 qt: Comparison
 
@@ -2175,23 +2173,19 @@ Zollfahndung, Einsatzplanung
 
 Konstruktion, Optimierungsprozesse, Produktionsleitung
 
-It1: Vater
+It1: (deltjobvo1): Vater
 
-It2: Mutter
+It2: (deltjobmo1): Mutter
 
 st:
 
-ao1: 1: 50: Prefix: Berufsbezeichnung:
+ao1: (deltjobvo1, deltjobmo1): 1: 100: Prefix: Berufsbezeichnung:
 
-ao2: 2: 50: Prefix: Tätigkeitsbeschreibung:
+ao2: (deltjobvo2, deltjobmo2): 2: 100: Prefix: Tätigkeitsbeschreibung:
 
-ao3: -11: nie berufstätig gewesen
+ao3: (deltjobv1, deltjobv2): -11: nie berufstätig gewesen
 
-ao4: -12: weiß ich nicht
-
-mv: -11: nie berufstätig gewesen
-
-\-12: weiß ich nicht
+ao4: (deltjobv2, deltjobm2)-12: weiß ich nicht
 
 ka:
 
@@ -2271,9 +2265,25 @@ hv:
 
 fo:
 
-tr: GOTO A_35 if deltgebv=2 OR deltgebm=2
-    GOTO A_38 if deltgebv=1 AND deltgebm=1
-    GOTO A_38 if deltgebv=MISSING AND deltgebm=MISSING 
+tr: <zofar:transition target="A_35" condition="zofar.asNumber(deltgebv)==2 or zofar.asNumber(deltgebm)==2"/>
+    <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber(deltgebv)==1 and zofar.asNumber(deltgebm)==1)"/>
+    <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.isMissing(deltgebv) and zofar.isMissing(deltgebm))"/>
+    <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber(deltgebv)==1 and zofar.asNumber(deltgebm)==1)"/>
+    <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.isMissing(deltgebv) and zofar.isMissing(deltgebm))"/>
+    <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber(deltgebv)==1 and zofar.asNumber(deltgebm)==1)"/>
+    <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.isMissing(deltgebv) and zofar.isMissing(deltgebm))"/>
+    <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebv)==1 and zofar.isMissing(deltgebm))"/>
+    <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebm)==1 and zofar.isMissing(deltgebv))"/>
+    <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebv)==1 and zofar.asNumber (deltgebm)==3)"/>
+    <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebm)==1 and zofar.asNumber (deltgebv)==3)"/>
+    <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebv)==1 and zofar.isMissing(deltgebm))"/>
+    <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebm)==1 and zofar.isMissing(deltgebv))"/>
+    <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebv)==1 and zofar.asNumber (deltgebm)==3)"/>
+    <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebm)==1 and zofar.asNumber (deltgebv)==3)"/>
+    <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebv)==1 and zofar.isMissing(deltgebm))"/>
+    <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebm)==1 and zofar.isMissing(deltgebv))"/>
+    <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebv)==1 and zofar.asNumber (deltgebm)==3)"/>
+    <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebm)==1 and zofar.asNumber (deltgebv)==3)"/>
     
 hi:
 
@@ -2294,7 +2304,7 @@ in:
 
 q: In welchem Land wurde Ihr Vater geboren?
 
-is: Bitte wählen Sie zunächst den Kontinent aus.
+is: Bitte wählen Sie hier zunächst den Kontinent aus.
 
 it:
 
@@ -2347,7 +2357,7 @@ in:
 
 q: In welchem Land wurde Ihre Mutter geboren?
 
-is: Bitte wählen Sie zunächst den Kontinent aus.
+is: Bitte wählen Sie hier zunächst den Kontinent aus.
 
 it:
 
@@ -2412,7 +2422,7 @@ mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if deltgkov\>0
+vc: visible="(!zofar.isMissing(deltgkov) or zofar.asNumber(deltkov)!=0) and zofar.asNumber(deltgebv)==2"
 
 av:
 
@@ -2451,13 +2461,13 @@ it:
 
 st:
 
-ao1: 30: Prefix: Geburtsland des Vaters:
+ao1: 50: Prefix: Geburtsland des Vaters:
 
 mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if deltgkov=SYSMISS AND deltgebv=2
+vc: visible="(zofar.isMissing(deltgkov) or zofar.asNumber(deltgkov)==0) and zofar.asNumber(deltgebv)==2"
 
 av:
 
@@ -2502,7 +2512,7 @@ mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if deltgkom\>0
+vc: visible="(!zofar.isMissing(deltgkom) or zofar.asNumber(deltgkom)!=0) and zofar.asNumber(deltgebm)==2"
 
 av:
 
@@ -2541,13 +2551,13 @@ it:
 
 st:
 
-ao1: 30: Prefix: Geburtsland der Mutter:
+ao1: 50: Prefix: Geburtsland der Mutter:
 
 mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if deltgkom=SYSMISS AND deltgebm=2
+vc: visible="(zofar.isMissing(deltgkom) or zofar.asNumber(deltgkom)==0) and zofar.asNumber(deltgebm)==2"
 
 av:
 
@@ -2586,20 +2596,21 @@ it:
 
 st:
 
-ao1: 5, Prefix: Postleitzahl:
+ao1: (vsbplz): 5 Zeichen, Prefix: Postleitzahl: (vsbplzo)
+
+ao2: (vsbort): 25 Zeichen
 
 mv:
 
 ka:
 
-vc:
+vc: SHOW ao2 -> uid="softforce" visible="navigatorBean.isSame() or vsbort.value==''"
 
 av: number, 5-stellig: 01000 TO 99999
 
 kh:
 
-fv: sf_ao: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an:
-: 12 Stellen
+fv: sf_ao: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: 25 Stellen
 
 hv:
 
@@ -2633,9 +2644,9 @@ it:
 
 st:
 
-ao1: 5, Prefix: Postleitzahl:
+ao1: (vsbplz): 5, Prefix: Postleitzahl: (vsbplzo)
 
-ao2: 25, Prefix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an:
+ao2: (vsbort): 25, Prefix: ggf. Wohnort
 
 mv:
 
@@ -2691,6 +2702,8 @@ ao4: 4: Mittlere Reife
 ao5: 5: Hauptschulabschluss
 
 ao6: 6: Anderer Abschluss
+
+a07: 7: kein Abschluss
 
 mv:
 
