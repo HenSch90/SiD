@@ -848,7 +848,7 @@ hv:
 
 fo: kbmem/"Wurde mir nicht mitgeteilt." als Exklusivkategorie absetzen
 
-tr: GOTO C2_12
+tr: GOTO C2_11a
 
 hi:
 
@@ -859,7 +859,7 @@ C2_11a
 
 tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
-vn: hilfleist; hilfwieei; hilfanwes; hilflv; hilfselbst; hilfgrup; hilfflex; hilfdicht; hilfwieho; hilfdauer; hilfprart
+vn: bsuntkom; bsuntleh; bsuntfre; bsuntfam; bsuntaer; bsuntber
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -871,21 +871,21 @@ q: Inwiefern werden Sie in Bezug auf Ihre beeinträchtigungsbedingten Schwierigk
 
 is:
 
-it1 (hilfleist): … Kommiliton\*innen?
+it1 (bsuntkom): … Kommiliton\*innen?
 
-it2 (hilfwieei): … Lehrende?
+it2 (bsuntleh): … Lehrende?
 
-it3 (hilfanwes): … Freund\*innen/Bekannte?
+it3 (bsuntfre): … Freund\*innen/Bekannte?
 
-it4 (hilflv): … Familienangehörige?
+it4 (bsuntfam): … Familienangehörige?
 
-it5 (hilfselbst): … Ärzt\*innen/Therapeut\*innen?
+it5 (bsuntaer): … Ärzt\*innen/Therapeut\*innen?
 
-it6 (hilfgrup): … Beratungen/Coachings/Workshops?
+it6 (bsuntber): … Beratungen/Coachings/Workshops?
 
 st:
 
-ao1: 1: gar nicht hilfreich
+ao1: 1: überhaupt nicht
 
 ao2: 2
 
@@ -893,35 +893,13 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: sehr hilfreich
+ao5: 5: voll und ganz
 
-ka1 (it1 TO it3): Studienorganisation
+mv: -11: habe ich nicht
 
-ka2 (it4 TO it7): Lehre und Lernen
+ka:
 
-ka3 (it8 TO it11): Prüfungen/Leistungsnachweise
-
-vc1: SHOW it1 IF ntaleist=1
-
-vc2: SHOW it2 IF ntawieei=1
-
-vc3: SHOW it3 IF ntaanwes=1
-
-vc4: SHOW it4 IF ntalv=1
-
-vc5: SHOW it5 IF ntaselbst=1
-
-vc6: SHOW it6 IF ntagrup=1
-
-vc7: SHOW it7 IF ntaflex=1
-
-vc8: SHOW it8 IF ntadicht=1
-
-vc9: SHOW it9 IF ntawieho=1
-
-vc10: SHOW it10 IF ntadauer=1
-
-vc11: SHOW it11 IF ntaprart=1
+vc:
 
 av:
 
@@ -931,13 +909,9 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte in der Zeile der Kommiliton\*innen (bsuntkom) und Lehrende (bsuntleh) jeweils das Antwortkästchen für mv/"habe ich nicht" nicht einblenden.
 
-tr: 
-
-GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
-
-ELSE GOTO C2_12
+tr: GOTO C2_12
 
 hi:
 
@@ -948,48 +922,39 @@ C2_12
 
 tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 
-vn: beauftr; besoz; bepsy; bestud; beselb; beand; beandhs; beandhso; beandauß;
-beandaußo
+vn: beauftr; besoz; bepsy; bestud; beselb; beand
 
-qt: Einfachauswahlmatrix mit horizontalen ao und offener Nachfrage
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
 in:
 
-q: Welche Angebote für eine persönliche Beratung zum Thema Studium und Beeinträchtigung kennen Sie bzw. haben Sie genutzt?
+q: Welche speziellen Anlaufstellen für eine persönliche Beratung zum Thema Studium und Beeinträchtigung kennen Sie bzw. haben Sie genutzt?
 
 is:
 
-it1 (beauftr): Beratungsstellen für Studierende mit
-Beeinträchtigungen der Hochschule
+it1 (beauftr): Beratungsstellen für Studierende mit Beeinträchtigungen der Hochschule
 
-it2 (besoz): Beratungsstelle für Studierende mit
-Beeinträchtigungen des Studentenwerks
+it2 (besoz): Beratungsstelle für Studierende mit Beeinträchtigungen des Studentenwerks
 
 it3 (bepsy): psychologische Beratungsstelle des Studentenwerks/der Hochschule
 
-it4 (bestud): Beratung für Studierende mit Beeinträchtigungen des
-AStA, StuRa, UStA etc.
+it4 (bestud): Beratung für Studierende mit Beeinträchtigungen des AStA, StuRa, UStA etc.
 
-it5 (beselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS, BAG Behinderung
-und Studium)
+it5 (beselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS)
 
-it6: beand: studienbezogene Beratung anderer Selbsthilfevereinigungen
-
-it7 (beandhs): (Anderes) beeinträchtigungsspezifisches Beratungsangebot ++an der
-Hochschule++, und zwar: [(beandhso), 150 Zeichen]
-
-it8 (beandauß): (Anderes) beeinträchtigungsspezifisches Beratungsangebot
-++außerhalb der Hochschule++, und zwar: [(beandaußo), 150 Zeichen]
+it6 (beand): studienbezogene Beratung anderer Selbsthilfevereinigungen
 
 st:
 
-ao1: 1: kenne ich nicht/sind nicht vorhanden
+ao1: 1: nicht vorhanden
 
-ao2: 2: kenne ich, aber nicht genutzt
+ao2: 2: kenne ich nicht
 
-ao3: 3: habe ich genutzt
+ao3: 3: kenne ich, aber nicht genutzt
+
+ao4: 4: habe ich genutzt
 
 mv:
 
