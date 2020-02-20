@@ -40,17 +40,17 @@ it9: (gbegrka): Beeinträchtigung ohne Zuordnung
 
 st:
 
-ao1: 1: 1: sehr schwach
+ao1: 1: sehr schwach
 
-ao2: 2: 2
+ao2: 2
 
-ao3: 3: 3
+ao3: 3
 
-ao4: 4: 4
+ao4: 4
 
-ao5: 5: 5: sehr stark
+ao5: 5: sehr stark
 
-mv: -13: : gar nicht
+mv: -13: gar nicht
 
 ka:
 
@@ -182,9 +182,9 @@ it:
 
 st:
 
-ao1 (bezeit): 1: : seit meiner Geburt
+ao1 (bezeit): 1: seit meiner Geburt
 
-ao2 (bezeit): 2: : seit meinem [bezeitj] [number] Lebensjahr
+ao2 (bezeit): 2: seit meinem [bezeitj] [number] Lebensjahr
 
 mv:
 
@@ -229,11 +229,11 @@ it:
 
 st:
 
-ao1: 1: : nein
+ao1: 1: nein
 
-ao2: 2: : Ja, nach einiger Zeit.
+ao2: 2: Ja, nach einiger Zeit.
 
-ao3: 3: : Ja, bei der ersten Begegnung.
+ao3: 3: Ja, bei der ersten Begegnung.
 
 mv:
 
@@ -279,13 +279,13 @@ it:
 
 st:
 
-ao1: 1: : Nein, habe ich nicht beantragt.
+ao1: 1: Nein, habe ich nicht beantragt.
 
-ao2: 2: : Nein, weil keine Behinderung festgestellt wurde.
+ao2: 2: Nein, weil keine Behinderung festgestellt wurde.
 
-ao3: 3: : Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
+ao3: 3: Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
 
-ao4: 4: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo1), number, 3
+ao4: 4: Ja, mit einem Grad der Behinderung (GdB) von [(beauswo1), number, 3
 Zeichen]
 
 mv:
@@ -530,7 +530,7 @@ it4: (ntahand): Anderer Studienbereich, und zwar: [ntahando] [Offenes Eingabefel
 
 st:
 
-ao1: 1: gar nicht hilfreich
+ao1: 1: sehr hilfreich
 
 ao2: 2
 
@@ -538,7 +538,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: sehr hilfreich
+ao5: 5: gar nicht hilfreich
 
 ao6: Nicht um individuelle Anpassung gebeten
 
