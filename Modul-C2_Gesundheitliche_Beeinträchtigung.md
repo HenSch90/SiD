@@ -289,17 +289,17 @@ hi:
 C2_3
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF beschwer==2
 
 vn: bezeit; bezeitj
 
-qt: Einfachauswahl mit offenenm Zahlenfeld
+qt: Einfachauswahl; offene Angabe
 
 hl:
 
 in:
 
-q: Seit wann besteht Ihre Beeinträchtigung?
+q: Seit wann sind Sie beeinträchtigt?
 
 is: Sofern Ihre Beeinträchtigungen zu unterschiedlichen Zeitpunkten aufgetreten sind, beziehen Sie Ihre Antwort bitte auf die zuerst aufgetretene studienerschwerende Beeinträchtigung.
 
@@ -309,7 +309,7 @@ st:
 
 ao1 (bezeit): 1: seit meiner Geburt
 
-ao2 (bezeit): 2: seit meinem [bezeitj] [number] Lebensjahr
+ao2 (bezeit): 2: seit meinem [(bezeitj) number - 2-stellig]. Lebensjahr
 
 mv:
 
@@ -325,7 +325,7 @@ fv:
 
 hv:
 
-fo:
+fo: 
 
 tr: GOTO C2_4
 
@@ -336,7 +336,7 @@ hi:
 C2_4
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF beschwer==2
 
 vn: bewahr
 
@@ -376,8 +376,7 @@ hv:
 
 fo:
 
-tr: GOTO C2_5 if h_split==1
-GOTO C2_6 if h_split==2
+tr: GOTO C2_5
 
 hi:
 
@@ -386,9 +385,9 @@ hi:
 C2_5
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF beschwer==2
 
-vn: beausw1; beauswo1
+vn: beausw; beauswo
 
 qt: Einfachauswahl; offene Angabe
 
@@ -404,14 +403,13 @@ it:
 
 st:
 
-ao1: 1: Nein, habe ich nicht beantragt.
+ao1 (beausw): 1: Nein, habe ich nicht beantragt.
 
-ao2: 2: Nein, weil keine Behinderung festgestellt wurde.
+ao2 (beausw): 2: Nein, weil keine Behinderung festgestellt wurde.
 
-ao3: 3: Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
+ao3 (beausw): 3: Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
 
-ao4: 4: Ja, mit einem Grad der Behinderung (GdB) von [(beauswo1), number, 3
-Zeichen]
+ao4 (beausw): 4: Ja, mit einem Grad der Behinderung (GdB) von [(beauswo) number - 3-stellig]
 
 mv:
 
@@ -419,7 +417,7 @@ ka:
 
 vc:
 
-av: number : \<=dreistellig : 0 TO 100
+av: number: 3-stellig: 1 TO 100
 
 kh: Bitte tragen Sie eine Zahl zwischen 0 und 100 ein.
 
@@ -433,97 +431,62 @@ tr: GOTO C2_7
 
 hi:
 
-\--------------------------------
 
-C2_6
-====
-
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
-
-vn: beausw2; beauswo2
-
-qt: Einfachauswahl; offene Angabe
-
-hl:
-
-in:
-
-q: Wurde Ihre Beeinträchtigung amtlich festgestellt?
-
-is:
-
-it:
-
-st:
-
-ao1: 1 : Nein, habe ich nicht beantragt.
-
-ao2: 2: : Nein, weil keine Behinderung festgestellt wurde.
-
-ao3: 3: : Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
-
-ao4: 4: : Ja, mit einem Grad der Behinderung (GdB) von [(beauswo2), 3 Zeichen,
-number]
-
-mv:
-
-ka:
-
-vc:
-
-av: number : \<=dreistellig : 0 TO 100
-
-kh: Bitte tragen Sie eine Zahl zwischen 0 und 100 ein.
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO C2_7
-
-hi:
 
 \--------------------------------
 
 C2_7
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF beschwer==2
 
 vn: schwbau; schworg; schwpru; schwand; schwando
 
-qt: Mehrfachauswahl; offene Angabe
+qt: Mehrfachauswahl
 
 hl:
 
 in:
 
-q1: Mit Blick auf Ihr Studium: In welchen Bereichen hatten oder haben Sie im Zusammenhang mit Ihrer Beeinträchtigung bzw. Ihren Beeinträchtigungen Schwierigkeiten?
+q: Wenn Sie an Ihr Studium denken: Was bereitet oder bereitete Ihnen im Zusammenhang mit Ihrer Beeinträchtigung Schwierigkeiten?
 
-is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden.
-Bitte alles Zutreffende auswählen.
+is: Bitte denken Sie dabei auch an Schwierigkeiten, die – z. B. durch einen Nachteilsausgleich oder individuelle Absprachen – bereits ausgeglichen wurden. Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1 (schwbau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B.
-Zugänglichkeit und Orientierung, Sicht-/Hörverhältnisse, Rückzugsräume)
+ao1 (schwleist): Leistungspensum/festgelegte Studienordnung
 
-ao2 (schworg): Studienorganisation, Lehre und Lernen (z. B. unflexibler
-Stundenplan, Gestaltung von Lehrveranstaltungen, Gruppenarbeit, Auslandsstudium,
-Praktika)
+ao2 (schwwieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
 
-ao3 (schwpru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art
-der Prüfungen, zeitliche Vorgaben)
+ao3 (schwanwes): Anwesenheitspflicht
 
-ao4 (schwand): Anderer Studienbereich, und zwar: [(schwando): 250 Zeichen]
+ao4 (schwlv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
+
+ao5 (schwselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
+
+ao6 (schwgrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
+
+ao7 (schwflex): mangelnde Flexibilität der Lehrenden
+
+ao8 (schwdicht): Prüfungsdichte
+
+ao9 (schwwieho): Wiederholung/Verschiebung von Prüfungen
+
+ao10 (schwdauer): Prüfungsdauer/Abgabefristen
+
+ao11 (schwprart): Prüfungsart/Prüfungsbedingungen
+
+ao12 (schwno): Ich habe und hatte keine Schwierigkeiten. [EK]
 
 mv:
 
-ka:
+ka1 (ao2 TO ao10): Studienorganisation
+
+ka2 (ao2 TO ao10): Lehre und Lernen
+
+ka3 (ao2 TO ao10): Prüfungen/Leistungsnachweise
 
 vc:
 
@@ -535,7 +498,7 @@ fv:
 
 hv:
 
-fo:
+fo: schwno/"Ich habe und hatte keine Schwierigkeiten." als Exklusivkategorie absetzen
 
 tr: GOTO C2_8
 
