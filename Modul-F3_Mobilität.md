@@ -36,9 +36,11 @@ mv:
 
 ka:
 
-vc1: SHOW q1 IF ainfaus = 1 or ainfaus = MISSING
+vc:
 
-vc2: SHOW q2 IF ainfaus ge 2
+SHOW q1 IF ainfaus = 1 or ainfaus = MISSING
+
+SHOW q2 IF ainfaus ge 2
 
 av:
 
@@ -191,13 +193,12 @@ F3_8
 
 tc: IF ainfaus \> 1 \| kA
 
-vn: aproselb1 / aproeras1 / aproapeu1 / aprodaad1 / apropad1 / apropromos1 /
-aprodths1 / aprogahs1 / aproanpr1 / aproselb2 / aproeras2 / aproapeu2 /
-aprodaad2 / apropad2 / apropromos2 / aprodths2 / aprogahs2 / aproanpr2 /
+vn: aproselb1 / aproeras1 / aproapeu1 / aprodaad1 / apropad1 / apropromos1 /aprodths1 / aprogahs1 / aproanpr1 /  aproanpro1 /
+aproselb2 / aproeras2 / aproapeu2 / aprodaad2 / apropad2 / apropromos2 / aprodths2 / aprogahs2 / aproanpr2 / aproanpro2 /
 aproselb3 / aproeras3 / aproapeu3 / aprodaad3 / apropad3 / apropromos3 /
-aprodths3 / aprogahs3 / aproanpr3
+aprodths3 / aprogahs3 / aproanpr3 / aproanpro3
 
-qt: Mehrfachnennung, Akkordeon je Aufenthalt
+qt: Mehrfachauswahl, Akkordeon je Aufenthalt
 
 hl:
 
@@ -229,9 +230,9 @@ ao7: (aprodths1): ja, Programm meiner Hochschule in Deutschland
 
 ao8: (aprogahs1): ja, Programm meiner Gasthochschule im Ausland
 
-ao9: (aproanpr1): ja, anderes Programm, und zwar [Eingabefeld; 100 Stellen]
+ao9: (aproanpr1): ja, anderes Programm, und zwar [Eingabefeld; aproanpro1; 100 Stellen]
 
-ao10: (aproselb2): Nein, ich habe den Aufenthalt selbst organisiert. [EK]
+ao10: (aproselb2): Nein, ich habe den Aufenthalt selbst organisiert.
 
 ao11: (aproeras2): ja, ERASMUS+, ERASMUS
 
@@ -247,7 +248,7 @@ ao16: (aprodths2): ja, Programm meiner Hochschule in Deutschland
 
 ao17: (aprogahs2): ja, Programm meiner Gasthochschule im Ausland
 
-ao18: (aproanpr2): ja, anderes Programm, und zwar [Eingabefeld; 100 Stellen]
+ao18: (aproanpr2): ja, anderes Programm, und zwar [Eingabefeld; aproanpro2; 100 Stellen]
 
 ao19: (aproselb3): Nein, ich habe den Aufenthalt selbst organisiert.
 
@@ -265,7 +266,7 @@ ao25: (aprodths3): ja, Programm meiner Hochschule in Deutschland
 
 ao26: (aprogahs3): ja, Programm meiner Gasthochschule im Ausland
 
-ao27: (aproanpr3): ja, anderes Programm, und zwar [Eingabefeld; 100 Stellen]
+ao27: (aproanpr3): ja, anderes Programm, und zwar [Eingabefeld; aproanpro3; 100 Stellen]
 
 mv:
 
@@ -297,7 +298,8 @@ tr:
 
 GOTO F3_9
 
-hi: Bitte bis zu 3 Akkordeons mit den Überschriften "1. Auslandsaufenhalt", "2.Auslandsaufenhalt", "3.Auslandsaufenhalt"
+hi: Bitte bis zu 3 Akkordeons mit den Überschriften "1. studienbezogener Auslandsaufenthalt",
+"2. studienbezogener Auslandsaufenthalt", "3. studienbezogener Auslandsaufenthalt"
 
 \--------------------------------
 
@@ -314,7 +316,7 @@ hl:
 
 in:
 
-q: Wurde Ihr letzter Auslandsaufenthalt auf Ihr Studium angerechnet, z. B. in
+q: Wurde Ihr letzter Auslandsaufenthalt auf Ihr Studium angerechnet, z.B. in
 Form von ECTS-Punkten?
 
 is:
@@ -329,7 +331,7 @@ ao2: 2: : ja, teilweise: [ainfcpteilo] [Eingabefeld] ECTS-Punkte
 
 ao3: 3: : ja, vollständig: [ainfcpvollo] [Eingabefeld] ECTS-Punkte
 
-ao4: -12: : weiß ich nicht
+ao-12: -12: : weiß ich nicht
 
 mv:
 
@@ -381,7 +383,7 @@ st:
 
 ao1 (afinelt1): Eltern
 
-ao2 (afinpar1): Partner(in)
+ao2 (afinpar1): Partner\*in
 
 ao3 (afinbaf1): BAföG
 
@@ -411,7 +413,7 @@ ao14 (afinand2): andere Finanzierungsquelle
 
 ao15 (afinelt3): Eltern
 
-ao16 (afinpar3): Partner\*in
+ao16 (afinpar3): Partner(in)
 
 ao17 (afinbaf3): BAföG
 
@@ -434,11 +436,11 @@ ka3 (ao15 TO ao21): 3. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Lan
 
 vc:
 
-SHOW q1 AND ao1 TO ao7 AND ka1 IF 1 Aufenthalt
+SHOW q1 AND ao1 TO ao7 AND ka1 IF ainfaus==2 OR ainfaus==MISSING
 
-SHOW q2 AND ao1 TO ao14 AND ka1 TO ka2 IF 2 Aufenthalte
+SHOW q2 AND ao1 TO ao14 AND ka1 TO ka2 IF ainfaus==3
 
-SHOW q2 AND ao1 TO ao21 AND ka1 TO ka3 IF 3 Aufenthalte
+SHOW q2 AND ao1 TO ao21 AND ka1 TO ka3 IF ainfaus==4
 
 av:
 
@@ -465,7 +467,7 @@ tc: IF ainfaus \> 1 \| k.A.
 
 vn: akontdeust / akontgast / akonteinheim / akontintst
 
-qt: Einfachauswahlmatrix mit horizontal abgetragenen Antwortoptionen
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
