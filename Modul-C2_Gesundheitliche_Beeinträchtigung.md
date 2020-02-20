@@ -530,17 +530,17 @@ it4: (ntahand): Anderer Studienbereich, und zwar: [ntahando] [Offenes Eingabefel
 
 st:
 
-ao1: 1: 1: sehr hilfreich
+ao1: 1: gar nicht hilfreich
 
-ao2: 2: 2
+ao2: 2
 
-ao3: 3: 3
+ao3: 3
 
-ao4: 4: 4
+ao4: 4
 
-ao5: 5: 5: gar nicht hilfreich
+ao5: 5: sehr hilfreich
 
-ao6: 6: Nicht um individuelle Anpassung gebeten
+ao6: Nicht um individuelle Anpassung gebeten
 
 ka:
 
@@ -672,7 +672,7 @@ ao3 (kbwert): Ersatzleistung wurde nicht als gleichwertig angesehen.
 ao4 (kbbev): Individuelle Anpassung/Absprache bzw. Nachteilsausgleich wird als
 Bevorzugung angesehen.
 
-ao5 (kblehr): Lehrende*r war nicht dazu bereit, Lehrroutinen zu ändern.
+ao5 (kblehr): Lehrende\*r war nicht dazu bereit, Lehrroutinen zu ändern.
 
 ao6 (kbtech): Aufgrund technischer Probleme (z. B. fehlende Ausstattung).
 
@@ -688,7 +688,7 @@ ao10 (kband): Anderer Grund, und zwar: [(kbando), 250 Zeichen]
 
 ao12 (kbunbe): mir nicht bekannt
 
-ao13 (kbmem): weiß ich nicht
+ao13 (kbmem): weiß ich nicht [Exklusivkategorie]
 
 mv:
 
@@ -728,35 +728,35 @@ q: Welche Angebote für eine persönliche Beratung zum Thema Studium und Beeintr
 
 is:
 
-it1: beauftr: Beratungsstellen für Studierende mit
+it1 (beauftr): Beratungsstellen für Studierende mit
 Beeinträchtigungen der Hochschule
 
-it2: besoz: Beratungsstelle für Studierende mit
+it2 (besoz): Beratungsstelle für Studierende mit
 Beeinträchtigungen des Studentenwerks
 
-it3: bepsy: psychologische Beratungsstelle des Studentenwerks/der Hochschule
+it3 (bepsy): psychologische Beratungsstelle des Studentenwerks/der Hochschule
 
-it4: bestud: Beratung für Studierende mit Beeinträchtigungen des
+it4 (bestud): Beratung für Studierende mit Beeinträchtigungen des
 AStA, StuRa, UStA etc.
 
-it5: beselb: studentische Behindertenselbsthilfe (u. a. BHSA, DVBS, BAG Behinderung
+it5 (beselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS, BAG Behinderung
 und Studium)
 
 it6: beand: studienbezogene Beratung anderer Selbsthilfevereinigungen
 
-it7: beandhs: (Anderes) beeinträchtigungsspezifisches Beratungsangebot ++an der
+it7 (beandhs): (Anderes) beeinträchtigungsspezifisches Beratungsangebot ++an der
 Hochschule++, und zwar: [(beandhso), 150 Zeichen]
 
-it8: beandauß: (Anderes) beeinträchtigungsspezifisches Beratungsangebot
+it8 (beandauß): (Anderes) beeinträchtigungsspezifisches Beratungsangebot
 ++außerhalb der Hochschule++, und zwar: [(beandaußo), 150 Zeichen]
 
 st:
 
-ao1: 1: : kenne ich nicht/sind nicht vorhanden
+ao1: 1: kenne ich nicht/sind nicht vorhanden
 
-ao2: 2: : kenne ich, aber nicht genutzt
+ao2: 2: kenne ich, aber nicht genutzt
 
-ao3: 3: : habe ich genutzt
+ao3: 3: habe ich genutzt
 
 mv:
 
@@ -819,15 +819,15 @@ it6: (behand): studienbezogene Beratung anderer Selbsthilfevereinigungen
 
 st:
 
-ao1: 1: 1: gar nicht hilfreich
+ao1: 1: gar nicht hilfreich
 
-ao2: 2: 2
+ao2: 2
 
-ao3: 3: 3
+ao3: 3
 
-ao4: 4: 4
+ao4: 4
 
-ao5: 5: 5: sehr hilfreich
+ao5: 5: sehr hilfreich
 
 mv:
 
