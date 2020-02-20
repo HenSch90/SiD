@@ -127,7 +127,7 @@ fv:
 
 hv:
 
-fo: mv abgesetzt
+fo: mv als erste Spalte, danach Skala
 
 tr: GOTO C2_2
 
@@ -138,20 +138,19 @@ hi:
 C2_2
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF beschwer==2
 
-vn: bedno; bedbau; bedori; bedauss; bedsich; bedaku; bedruh; bedmed ; bedpers;
-bedtech; bedand; bedando
+vn: bedno; bedbau; bedauss; bedsich; bedruh; bedmed; bedelearn; bedpers ; bedtech; bedand
 
-qt: Mehrfachnennung; offene Angabe
+qt: Mehrfachnennung
 
 hl:
 
 in:
 
-q: Haben Sie aufgrund Ihrer Beeinträchtigung spezielle Bedürfnisse?
+q: Haben Sie aufgrund Ihrer Beeinträchtigung besondere Anforderungen an Bau und Ausstattung Ihrer Hochschule und/oder Bedarf an Unterstützungsangeboten?
 
-is: Bitte alles Zutreffende auswählen.
+is: Bitte alle Zutreffende auswählen.
 
 it:
 
@@ -159,36 +158,27 @@ st:
 
 ao1 (bedno): nein [EK]
 
-ao2 (bedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge,
-selbstöffnende Türen, barrierefreie WCs)
+ao2 (bedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge, barrierefreies WC, Leitsysteme)
 
-ao3 (bedori): taktile, optische oder akustische Leitsysteme, Wegbeschreibungen
-oder Orientierungshilfen
+ao3 (bedauss): spezielle technische Ausstattungen an der Hochschule (z. B. unterfahrbare Tische, Großbildschirme)
 
-ao4 (bedauss): spezielle technische Ausstattungen an der Hochschule (z. B.
-unterfahrbare Tische, Großbildschirme, Induktionsschleifen, barrierefreie
-PC-Arbeitsplätze)
+ao4 (bedsich): störungsarme Sicht-, Hör- und Belüftungsverhältnisse
 
-ao5 (bedsich): störungsfreie/-arme Sichtverhältnisse
+ao5 (bedruh): Ruhe-/Rückzugsräume
 
-ao6 (bedaku): störungsfreie/-arme Hörverhältnisse/Akustik
+ao6 (bedmed): barrierefrei aufbereitete Medien (z. B. Dokumente, Literatur, Webseiten)
 
-ao7 (bedruh): Ruhe-/Rückzugsräume
+ao7 (bedelearn): E-Learning-Angebote
 
-ao8 (bedmed): barrierefrei aufbereitete Medien (z. B. Dokumente, Formulare,
-Literatur, Webseiten)
+ao8 (bedpers): personelle Assistenzen (z. B. Mitschreibkraft, Gebärdensprachdolmetscher\*in)
 
-ao9 (bedpers): personelle Assistenzen (z. B. Pflegeassistenz, Mitschreibkraft,
-Gebärdensprachdolmetscher\*in)
+ao9 (bedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen Reader, FM-Anlage)
 
-ao10 (bedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen
-Reader, Braille-Zeile, FM-Anlage)
-
-ao11 (bedand): Anderes, und zwar: [bedando] [offenes Eingabefeld]
+ao10 (bedand): andere Anforderung
 
 mv:
 
-ka (ao2 TO ao11): Ja, und zwar:
+ka (ao2 TO ao10): ja, und zwar:
 
 vc:
 
@@ -202,7 +192,95 @@ hv:
 
 fo:
 
+tr: GOTO C2_2a IF bedbau=1 OR bedauss=1 OR bedsich=1 OR bedruh=1 OR bedmed=1 OR bedelearn=1 OR bedpers=1 OR bedtech=1 OR bedand=1
+GOTO C2_3 if bedno==1
+
+
+hi:
+
+\--------------------------------
+
+C2_2a
+====
+
+tc: IF bedbau=1 OR bedauss=1 OR bedsich=1 OR bedruh=1 OR bedmed=1 OR bedelearn=1 OR bedpers=1 OR bedtech=1 OR bedand=1
+
+vn: erfbedbau; erfbedauss; erfbedsich; erfbedruh; erfbedmed; erfbedelearn; erfbedpers; erfbedtech ; erfbedand
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwiefern sind Ihre beeinträchtigungsbezogenen Anforderungen an Bau, Ausstattung und Unterstützung an Ihrer Hochschule erfüllt?
+
+is:
+
+it1 (erfbedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge, barrierefreies WC, Leitsysteme)
+
+it2 (erfbedauss): spezielle technische Ausstattungen an der Hochschule (z. B. unterfahrbare Tische, Großbildschirme)
+
+it3 (erfbedsich): störungsarme Sicht-, Hör- und Belüftungsverhältnisse
+
+it4 (erfbedruh): Ruhe-/Rückzugsräume
+
+it5 (erfbedmed): barrierefrei aufbereitete Medien (z. B. Dokumente, Literatur, Webseiten)
+
+it6 (erfbedelearn): E-Learning-Angebote
+
+it7 (erfbedpers): personelle Assistenzen (z. B. Mitschreibkraft, Gebärdensprachdolmetscher\*in)
+
+it8 (erfbedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen Reader, FM-Anlage)
+
+it9 (erfbedand): andere Anforderung
+ 
+st:
+
+ao1: 1: gar nicht erfüllt
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: voll und ganz erfüllt
+
+mv:
+
+ka:
+
+vc1: SHOW it1 IF bedbau=1
+
+vc2: SHOW it2 IF bedauss=1
+
+vc3: SHOW it3 IF bedsich=1
+
+vc4: SHOW it4 IF bedruh=1 
+
+vc5: SHOW it5 IF bedmed=1
+
+vc6: SHOW it6 IF bedelearn=1
+
+vc7: SHOW it7 IF bedpers=1 
+
+vc8: SHOW it8 IF bedtech=1 
+
+vc9: SHOW it9 IF bedand=1 
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
 tr: GOTO C2_3
+
 
 hi:
 
