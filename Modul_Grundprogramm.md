@@ -3125,9 +3125,9 @@ hl:
 
 in:
 
-q: Sind Sie während der Vorlesungszeit [Individualisierung] erwerbstätig?
+q: Sind Sie während der Vorlesungszeit erwerbstätig?
 
-is: Mit \*\*„*Erwerbstätigkeit(en)*“\*\* sind sämtliche Tätigkeiten gemeint, mit denen Sie im aktuellen Semester Geld verdienen (z. B. Nebenjob, Berufstätigkeit, freiberufliche/selbständige Tätigkeit).
+is: 
 
 it:
 
@@ -3145,7 +3145,7 @@ mv:
 
 ka:
 
-vc: SHOW Individualisierung if sformdua==1 : neben Ihrem dualen Studium
+vc: 
 
 av:
 
@@ -3233,7 +3233,7 @@ fv:
 
 hv:
 
-fo: It1 den Text “Tätigkeit A” nicht anzeigen
+fo: 
 
 tr: GOTO D3_19 IF mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
     GOTO D1_9 IF mastersplit=1, 2, 7, 8
@@ -3264,9 +3264,9 @@ it:
 
 st:
 
-ao1: 1: Nein
+ao1: 1: nein
 
-ao2: 2: Ja
+ao2: 2: ja
 
 mv:
 
@@ -3299,7 +3299,7 @@ A_45
 
 tc: sabsja==2
 
-vn: sabszp
+vn: sabszp, sabszp2
 
 qt: Einfachauswahl mit Dropdown x2
 
@@ -3315,7 +3315,9 @@ it:
 
 st:
 
-ao: Dropdown Monat
+ao: (sabszsp): Dropdown
+
+ao0: 0: Monat
 
 ao1: 1: Januar
 
@@ -3341,7 +3343,32 @@ ao11: 11: November
 
 ao12: 12: Dezember
 
-ao: Dropdown Jahr
+
+ao: (sabszsp2) Dropdown Jahr
+
+ao0: 0: Jahr
+
+ao1: 1: 2019
+
+ao2: 2: 2018
+
+ao3: 3: 2017
+
+ao4: 4: 2016
+
+ao5: 5: 2015
+
+ao6: 6: 2014
+
+ao7: 7: 2013
+
+ao8: 8: 2012
+
+ao9: 9: 2011
+
+ao10: 10: 2010
+
+ao11: 11: 2009 und früher
 
 mv:
 
@@ -3447,9 +3474,17 @@ it:
 
 st:
 
-ao1: 1: Nein
+ao1: 1: nein
 
-ao2: 2: Ja
+ao2: 2: ja, und zwar Lehramt an Grundschulen (Primarstufe)
+
+ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I)
+
+ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
+
+ao5: 5: ja, und zwar Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+
+ao6: 6: ja, und zwar Lehramt an Förderschulen/Sonderpädagogik
 
 mv:
 
@@ -3478,7 +3513,7 @@ A_48
 
 tc: sabsja==2
 
-vn: sabsernot
+vn: sabsernot, sabsernoto
 
 qt: Einfachauswahl mit offene Angabe
 
@@ -3494,11 +3529,11 @@ it:
 
 st:
 
-ao1: 1: offene Angabe: 3, Prefix: Abschlussnote (z. B. 2,5):
+ao1: 1: offene Angabe: 3, Prefix: Abschlussnote (z. B. 2,5): (sabsernoto)
 
-ao2: -11: Ich habe keine Note erhalten. / In meinem vorigen Studium gab es keine Noten.
+ao2: -11: Ich habe keine Note erhalten./In meinem vorigen Studium gab es keine Noten.
 
-ao3: -12: Weiß ich nicht
+ao3: -12: weiß ich nicht
 
 mv:
 
@@ -3506,9 +3541,9 @@ ka:
 
 vc:
 
-av: 3-stellig: 1,0 TO 4,0
+av: 
 
-kh:
+kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
 fv:
 
@@ -3517,7 +3552,7 @@ hv:
 fo:
 
 tr: GOTO D1_10a IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
-    GOTO A_49a IF (mastersplit=5, 6, 11, 12, 13) AND (sabser=1)
+    GOTO A_49a IF (mastersplit=5, 6, 11, 12, 13) AND (sabser==1)
     GOTO A_49b IF (mastersplit=5, 6, 11, 12, 13) AND (sabser!=1)
 
 hi:
@@ -3531,7 +3566,7 @@ tc:
 
 vn: mastplan; promoplan
 
-qt: Einfachauswahl matrix
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -3541,9 +3576,9 @@ q: Wie wahrscheinlich ist es, dass Sie..
 
 is:
 
-it1: … ein Masterstudium aufnehmen?
+it1: (mastplan): … ein Masterstudium aufnehmen?
 
-It2: … eine Promotion aufnehmen?
+It2: (promoplan) … eine Promotion aufnehmen?
 
 st:
 
@@ -3676,13 +3711,13 @@ q: Haben Sie seit Ihrer Erstimmatrikulation…
 
 is: Nicht gemeint sind Veränderungen bzw. Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
 
-it1: ssweja: … das Studienfach gewechselt?
+it1: (ssweja): … das Studienfach gewechselt?
 
-it2: saweja: … den Abschluss gewechselt?
+it2: (saweja): … den Abschluss gewechselt?
 
-it3: shwja: … die Hochschule gewechselt?
+it3: (shwja): … die Hochschule gewechselt?
 
-it4: ssuja: … das Studium zwischenzeitlich unterbrochen?
+it4: (ssuja): … das Studium zwischenzeitlich unterbrochen?
 
 st:
 
@@ -3724,7 +3759,7 @@ tc:
 
 vn: ssahswe; ssafawe; ssaunt; ssaaja
 
-qt: Einfachauswahl matrix
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -3784,7 +3819,7 @@ tc:
 
 vn: ssahswe; ssafawe; ssaunt; ssaaja
 
-qt: Einfachauswahl matrix
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -3863,7 +3898,7 @@ ao1: 1: zur Miete (auch Wohngemeinschaft)
 
 ao2: 2: zur Untermiete
 
-ao3: 3: als (Mit-)Eigentümer*in
+ao3: 3: als (Mit-)Eigentümer\*in
 
 ao4: 4: im Einzelzimmer (Flurgemeinschaft)
 
@@ -3875,9 +3910,9 @@ ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind)
 
 mv:
 
-ka: ka1: ao1 TO ao3: in einer Wohnung, einem Zimmer oder einem Haus:
+ka: ka1: ao1 TO ao3: in einer Wohnung, einem Zimmer oder einem Haus
 
-ka2: ao4TO ao7: im Studierendenwohnheim:
+ka2: ao4TO ao7: im Studierendenwohnheim
 
 vc: 
 
@@ -3920,13 +3955,13 @@ it:
 
 st: Ich wohne …
 
-ao1: 1: allein [EK]
+ao1: 1: allein. [EK]
 
 ao2: 2: mit Mitbewohner(inne)n in einer Wohngemeinschaft.
 
-ao3: 3: bei/mit meinen Eltern (bzw. Elternteil)
+ao3: 3: bei meinen Eltern (bzw. einem Elternteil)
 
-ao4: 4: mit meinem/meiner (Ehe-) Partner*in.
+ao4: 4: mit meinem/meiner (Ehe-) Partner\*in.
 
 ao5: 5: mit meinem Kind/meinen Kindern.
 
@@ -3980,13 +4015,13 @@ it:
 
 st:
 
-ao1: 1: Nein
+ao1: 1: nein
 
-ao2: 2: Ja, ein Aufenthalt
+ao2: 2: ja, ein Aufenthalt
 
-ao3: 3: Ja, zwei Aufenthalte
+ao3: 3: ja, zwei Aufenthalte
 
-ao4: 4: Ja, drei oder mehr Aufenthalte
+ao4: 4: ja, drei oder mehr Aufenthalte
 
 mv:
 
@@ -4033,13 +4068,13 @@ it:
 
 st:
 
-ao1: 1: Nein, kein Interesse
+ao1: 1: nein, kein Interesse
 
-ao2: 2: Nein, sehe keine Realisierungschance
+ao2: 2: nein, sehe keine Realisierungschance
 
-ao3: 3: Weiß ich noch nicht
+ao3: 3: weiß ich noch nicht
 
-ao4: 4: Ja
+ao4: 4: ja
 
 mv:
 
@@ -4075,7 +4110,7 @@ A_56
 
 tc:
 
-vn: zlvwo; zseswo; zerwo; zcarwo; zlvwo2; zseswo2; zerwo2; zcarwo2
+vn: (zlvwo, zlvwo2) (zseswo, zseswo2) (zerwo, zerwo2) (zcarwo, zcarwo2)
 
 qt: offene Frage Matrix
 
@@ -4087,23 +4122,23 @@ q: Wie viele Stunden wenden Sie in einer für Sie typischen Woche für folgende 
 
 is: Bitte runden Sie Ihre Zeitangaben jeweils auf volle Zeitstunden.
 
-it: (zlvwo): Vorlesungszeit / Studienphase
+it: Vorlesungszeit / Studienphase
 
-it: 2: vorlesungsfreien Zeit / Praxisphase
+it: vorlesungsfreien Zeit / Praxisphase
 
 st:
 
-ao1: 1: Lehrveranstaltungen (Vorlesungen, Seminare, Übungen, Tutorien usw.)
+ao1: (zlvwo, zlvwo2): Lehrveranstaltungen (Vorlesungen, Seminare, Übungen, Tutorien usw.)
 
-ao2: 2: Selbststudium (Vor‐/Nachbereitung, Referate, Fachlektüre, Studien-/Haus-/Abschlussarbeiten, stud. Lerngruppen, Prüfungsvorbereitung usw.)
+ao2: (zseswo, zseswo2): Selbststudium (Vor‐/Nachbereitung, Referate, Fachlektüre, Studien-/Haus-/Abschlussarbeiten, stud. Lerngruppen, Prüfungsvorbereitung usw.)
 
-ao3: 3: Erwerbstätigkeit (Nebenjob, Beruf, freiberufliche/selbstständige Tätigkeit usw.)
+ao3: (zerwo, zerwo2): Erwerbstätigkeit (Nebenjob, Beruf, freiberufliche/selbstständige Tätigkeit usw.)
 
-ao4: 4: Pflege- und Betreuungsarbeiten (Familienleben, Kinderbetreuung, Pflege Angehöriger usw.)
+ao4: (zcarwo, zcarwo2): Pflege- und Betreuungsarbeiten (Familienleben, Kinderbetreuung, Pflege Angehöriger usw.)
 
 mv:
 
-ka:
+ka: Während der...
 
 vc:
 
@@ -4117,7 +4152,10 @@ hv:
 
 fo:
 
-tr: GOTO A_57
+tr: <zofar:transition target="N_1" condition="zofar.asNumber(zusatzsplit)==1"/>
+    <zofar:transition target="N_13" condition="zofar.asNumber(zusatzsplit)==4"/>
+    <zofar:transition target="N_5" condition="zofar.asNumber(zusatzsplit)==3"/>
+    <zofar:transition target="A_57" condition="zofar.asNumber(zusatzsplit)==2"/>
 
 hi:
 
@@ -5085,9 +5123,9 @@ it: 4: gute Aufstiegsmöglichkeiten
 
 it: 5: flexible Arbeitszeiten
 
-it: 6: die Erwartungen meiner Vorgesetzten erfüllen
+it: 6: die Erwartungen meiner Vorgesetzten zu erfüllen
 
-it: 7: verantwortungsvolle Aufgaben übernehmen
+it: 7: verantwortungsvolle Aufgaben zu übernehmen
 
 it: 8: eigene Ideen verwirklichen zu können
 
@@ -5101,7 +5139,7 @@ it: 12: anderen Menschen helfen zu können
 
 it: 13: ein Beruf, in dem man Nützliches für die Allgemeinheit tun kann
 
-it: 14: Vereinbarkeit von Privatleben (Familie) und Beruf
+it: 14: Vereinbarkeit von Privatleben und Beruf
 
 it: 15: eine glückliche Beziehung zu führen
 
