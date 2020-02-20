@@ -2588,9 +2588,7 @@ hl:
 
 in:
 
-q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben?
-
-is: Bitte tragen Sie die fünfstellige Postleitzahl ein.
+q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben? Bitte tragen Sie die fünfstellige Postleitzahl ein.
 
 it:
 
@@ -2665,6 +2663,176 @@ hv:
 fo:
 
 tr: GOTO A_41
+
+hi:
+
+\------------------------------------------------------------
+A_38a
+
+tc:
+
+vn: intbild1 intbild2 intbild3 intbild4 intbild5 intbild6 intbild7
+
+qt: Mehrfachauswahl
+
+hl:
+
+in:
+
+q: Welchen Bildungsstand hatten Sie, als Sie nach Deutschland kamen?
+
+is: Bitte alles Zutreffende auswählen.
+
+it:
+
+st:
+
+ao1: (intbild1): Promotion
+
+ao2: (intbild2): Hochschulstudium mit zweitem Abschluss (z. B. Master)
+
+ao3. (intbild3): Hochschulstudium mit erstem Abschluss (z. B. Bachelor)
+
+ao4: (intbild4): begonnenes Hochschulstudium ohne Abschluss
+
+a05: (intbild5): Schulabschluss, der zum Studium berechtigt"
+
+ao6: (intbild6): Schulabschluss ohne Studienberechtigung
+
+ao7: (intbild7): kein Schulabschluss
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: <zofar:transition target="A_38b" condition="(intbild1.value or intbild2.value or intbild3.value or intbild4.value or intbild5.value)"/>
+    <zofar:transition target="A_38c" condition="(intbild6.value or intbild7.value)"/>
+    <zofar:transition target="A_38c" condition="(!intbild1.value and !intbild2.value and !intbild3.value and !intbild4.value and !intbild5.value and !intbild6.value and !intbild7.value)"
+
+hi:
+
+\------------------------------------------------------------
+A_38b
+
+tc:
+
+vn: ankbild1 ankbild2 ankbild3 ankbild4 ankbild5
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wurden diese Bildungsabschlüsse bzw. Ihre bisherigen Studienleistungen in Deutschland anerkannt?
+is:
+
+it1: (ankbild1): Promotion
+
+it2: (ankbild2): Hochschulstudium mit zweitem Abschluss
+
+it3: (ankbild3): Hochschulstudium mit erstem Abschluss
+
+it4: (ankbild4): Teile meines bisherigen Studiums
+
+it5: (ankbild5): schulische Studienberechtigung
+
+st:
+
+ao1: 1: vollständig anerkannt
+
+ao2: 2: teilweise anerkannt
+
+ao3: 3: nicht anerkannt
+
+ao6: -13: weiß ich nicht
+
+mv:
+
+ka:
+
+vc: SHOW it1 if intbild1>0
+      SHOW it2 if intbild2>0
+      SHOW it3 if intbild3>0
+      SHOW it4 if intbild4>0
+      SHOW it5 if intbild5>0
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_38c
+
+hi:
+
+\------------------------------------------------------------
+A_38c
+
+tc:
+
+vn: intvors1 intvors2 intvors3 intvors4 intvors5 intvors5o intvors6
+
+qt: Mehrfachauswahl
+
+hl:
+
+in:
+
+q: Welche zusätzlichen Voraussetzungen mussten Sie für ein Studium in Deutschland erfüllen?
+
+is: Bitte alles Zutreffende auswählen.
+
+it:
+
+st:
+
+ao1: (intvors1): Feststellungsprüfung
+
+ao2: (intvors2): Nachweis deutscher Sprachkenntnisse (z. B. TestDaF, DSH)
+
+ao3: (intvors3): Nachweis englischer Sprachkenntnisse (z. B. Cambridge FCE, TOEFL, IELTS)
+
+ao4: (intvors4): fachliche Eignungsprüfung (z. B. Kunst, Musik, Sport)
+
+ao5: (intvors5): Etwas anderes, und zwar: (intvors5o), 250 Zeichen
+
+ao6: (intvors6): keine
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: <zofar:transition target="D1_2" condition="(zofar.asNumber(mastersplit)==1 or zofar.asNumber(mastersplit)==2 or zofar.asNumber(mastersplit)==3 or zofar.asNumber(mastersplit)==4 or zofar.asNumber(mastersplit)==7 or zofar.asNumber(mastersplit)==8 or zofar.asNumber(mastersplit)==9 or zofar.asNumber(mastersplit)==10 or zofar.asNumber(mastersplit)==14)"/>
+<zofar:transition target="A_40"/>
 
 hi:
 
@@ -2766,21 +2934,19 @@ ao7: (vsbtyp7): Berufsoberschule
 
 ao8: (vsbtyp8): Fachoberschule
 
-ao9: (vsbtyp9): andere berufsbildende Schule (Fachschule, Fachakademie, Berufskolleg u. a.)
+ao9: (vsbtyp9): andere berufsbildende Schule (z.B. Fachschule, Fachakademie, Berufskolleg u. a.)
 
-ao10: (vsbtyp10): berufliche Aufstiegsfortbildung als Meister, Techniker, Fachwirt, Erzieher o.ä.
+ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z.B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
 
 ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis
 
-ao12: (vsbtyp12): Eignungsprüfung für Kunst- und Musikhochschulen
+ao12: (vsbtyp12): Eignungsprüfung (z.B. Kunst, Musik, Sport)
 
 ao13: (vsbtyp13): Begabtenprüfung
 
 ao14: (vsbtyp14): Mediziner\*innen-Test (TMS)
 
-ao15: (vsbtyp15): auf einem anderen Weg,
-
-ato: (vsbtypob): Prefix: und zwar:
+ao15: (vsbtyp15): auf einem anderen Weg und zwar: (vsbtypob)
 
 mv:
 
@@ -2812,7 +2978,7 @@ tc:
 
 vn: vsbnoteo; vsbnote
 
-qt: offene Frage
+qt: Einfachauswahl mit offener Abfrage
 
 hl:
 
@@ -2826,21 +2992,17 @@ it:
 
 st:
 
-ao1: 3: Prefix: Durchschnittsnote (z. B. 2,5):
+ao1: 3: Prefix: Durchschnittsnote (z. B. 2,5): (vsbnoteo)
 
-ao2: -11: Ich habe keine Note erhalten. (EK)
+ao2: -11: Ich habe keine Note erhalten. 
 
-ao3: -12: weiß ich nicht (EK)
-
-mv: -11: Ich habe keine Note erhalten
-
-\-12: weiß ich nicht
+ao3: -12: weiß ich nicht 
 
 ka:
 
 vc:
 
-av: number: zweistellig: 1,0 TO 4,0
+av: 
 
 kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
@@ -2848,7 +3010,7 @@ fv:
 
 hv:
 
-fo: Die Antwortoptionen bitte als Exklusivkategorien programmieren.
+fo:
 
 tr: 
 
@@ -2877,13 +3039,7 @@ it:
 
 st:
 
-ao1: 1: Jahr:
-
-ao2: -12: weiß ich nicht
-
-mv: -12: weiß ich nicht
-
-ka: Jahr: alle ao
+ao1: 1: Jahr: (Dropdownjahresliste 2019 bis 1999 und früher)
 
 vc:
 
@@ -2897,10 +3053,8 @@ hv:
 
 fo:
 
-tr: GOTO A_37a if deltgebv=1 AND deltgebm=1 AND h_split=1 (50%)
-    GOTO A_37b if deltgebv=1 AND deltgebm=1 AND h_split=2 (50%)
-    GOTO A_37a if deltgebv=MISSING AND deltgebm=MISSING AND h_split=1 (50%)
-    GOTO A_37b if deltgebv=MISSING AND deltgebm=MISSING AND h_split=2 (50%)
+tr: <zofar:transition target="A_37a" condition="zofar.asNumber(h_split)==1"/>
+    <zofar:transition target="A_37b" condition="zofar.asNumber(h_split)==2"/>
 
 hi:
 
