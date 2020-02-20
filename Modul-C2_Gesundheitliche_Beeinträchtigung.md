@@ -632,9 +632,9 @@ hi:
 C2_9
 ====
 
-tc: IF ntabau=2 OR ntaorg=2 OR ntapru=2 OR ntaand=2
+tc: IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagrup=1 OR ntaflex=1 OR ntadicht=1 OR ntawieho=1 OR ntadauer=1 OR ntaprart=1
 
-vn: ntahbau; ntahorg; ntahpru; ntahand; ntahando
+vn: hilfleist; hilfwieei; hilfanwes; hilflv; hilfselbst; hilfgrup; hilfflex; hilfdicht; hilfwieho; hilfdauer; hilfprart
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -642,22 +642,35 @@ hl:
 
 in:
 
-q: Wie hilfreich waren die zuletzt verabredeten individuellen
-Anpassungen/Nachteilsausgleiche?
+q: Wie hilfreich waren die zuletzt verabredeten individuellen Anpassungen/Nachteilsausgleiche?
 
 is:
 
-it1: (ntahbau): bauliche Barrierefreiheit, räumliche Bedingungen (z. B. Sicht-/Hörverhältnisse)
+it1 (hilfleist): Leistungspensum/festgelegte Studienordnung
 
-it2: (ntahorg): Studienorganisation, Lehre und Lernen (z. B. Gestaltung von Lehrveranstaltungen)
+it2 (hilfwieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
 
-it3: (ntahpru): Prüfungen, Hausarbeiten und andere Leistungsnachweise (z. B. Art der Prüfungen)
+it3 (hilfanwes): Anwesenheitspflicht
 
-it4: (ntahand): Anderer Studienbereich, und zwar: [ntahando] [Offenes Eingabefeld; 250 Zeichen]
+it4 (hilflv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
+
+it5 (hilfselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
+
+it6 (hilfgrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
+
+it7 (hilfflex): mangelnde Flexibilität der Lehrenden
+
+it8 (hilfdicht): Prüfungsdichte
+
+it9 (hilfwieho): Wiederholung/Verschiebung von Prüfungen
+
+it10 (hilfdauer): Prüfungsdauer/Abgabefristen
+
+it11 (hilfprart): Prüfungsart/Prüfungsbedingungen
 
 st:
 
-ao1: 1: sehr hilfreich
+ao1: 1: gar nicht hilfreich
 
 ao2: 2
 
@@ -665,19 +678,35 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: gar nicht hilfreich
+ao5: 5: sehr hilfreich
 
-ao6: Nicht um individuelle Anpassung gebeten
+ka1 (it1 TO it3): Studienorganisation
 
-ka:
+ka2 (it4 TO it7): Lehre und Lernen
 
-vc1: SHOW it1 IF ntabau = 2
+ka3 (it8 TO it11): Prüfungen/Leistungsnachweise
 
-vc2: SHOW it2 IF ntaorg = 2
+vc1: SHOW it1 IF ntaleist=1
 
-vc3: SHOW it3 IF ntapru = 2
+vc2: SHOW it2 IF ntawieei=1
 
-vc4: SHOW it4 IF ntaand = 2
+vc3: SHOW it3 IF ntaanwes=1
+
+vc4: SHOW it4 IF ntalv=1
+
+vc5: SHOW it5 IF ntaselbst=1
+
+vc6: SHOW it6 IF ntagrup=1
+
+vc7: SHOW it7 IF ntaflex=1
+
+vc8: SHOW it8 IF ntadicht=1
+
+vc9: SHOW it9 IF ntawieho=1
+
+vc10: SHOW it10 IF ntadauer=1
+
+vc11: SHOW it11 IF ntaprart=1
 
 av:
 
@@ -702,18 +731,17 @@ hi:
 C2_10
 =====
 
-tc: IF ntabau=1 OR ntaorg=1 OR ntapru=1 OR ntaand=1
+tc: IF ntaleist=3 AND ntawieei=3 AND ntaanwes=3 AND ntalv=3 AND ntaselbst=3 AND ntagrup=3 AND ntaflex=3 AND ntadicht=3 AND ntawieho=3 AND ntadauer=3 AND ntaprart=3
 
-vn: nbkenn; nbsond; nbhemm; nbsecr; nbsich; nbsupp; nbaufw; nbexp; nbmiss;
-nbkons; nband; nbando
-
+vn: nbkenn; nbfueh; nbunbek; nbextra; nblast; nbhemm; nbsecr; nbwen; nbaufw; nberlo; nbaend; nband
+ 
 qt: Mehrfachauswahl
 
 hl:
 
 in:
 
-q1: Weshalb haben Sie nicht um individuelle Anpassungen/Absprachen gebeten bzw. keine Nachteilsausgleiche beantragt?
+q: Weshalb haben Sie trotz Ihrer beeinträchtigungsbezogenen Schwierigkeiten nicht um individuelle Anpassungen gebeten bzw. keine Nachteilsausgleiche beantragt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -721,31 +749,29 @@ it:
 
 st:
 
-ao1 (nbkenn): Die Möglichkeit war mir nicht bekannt.
+ao1 (nbkenn): Ich bin nicht sicher, ob ich anspruchsberechtigt bin oder mein Antrag Chancen hat.
 
-ao2 (nbsond): Ich will keine „Sonderbehandlung“.
+ao2 (nbfueh): Ich fühle mich nicht beeinträchtigt genug.
 
-ao3 (nbhemm): Ich hatte Hemmungen, mich aufgrund meiner
-beeinträchtigungsbedingten Probleme an jemanden zu wenden.
+ao3 (nbunbek): Die Möglichkeit war mir nicht bekannt.
 
-ao4 (nbsecr): Ich will/wollte meine Beeinträchtigung nicht preisgeben.
+ao4 (nbextra): Ich will nicht bevorzugt behandelt werden.
 
-ao5 (nbsich): Ich bin nicht sicher, ob ich anspruchsberechtigt bin oder mein
-Antrag Chancen hat.
+ao5 (nblast): Ich möchte niemandem zur Last fallen.
 
-ao6 (nbsupp): Ich wusste nicht, wen ich um Unterstützung/Beratung hätte bitten
-können.
+ao6 (nbhemm): Ich hatte Hemmungen, mich an jemanden zu wenden.
 
-ao7 (nbaufw): Es wäre zu viel Aufwand gewesen.
+ao7 (nbsecr): Ich wollte meine Beeinträchtigung nicht preisgeben.
 
-ao8 (nbexp): Weil ich mich früher schon erfolglos um individuelle
-Anpassungen/Absprachen bzw. Nachteilsausgleiche bemüht habe.
+ao8 (nbwen): Ich wusste nicht, wen ich um Unterstützung/Beratung hätte bitten können.
 
-ao9 (nbmiss): Ich glaube nicht, dass sich meine Situation ändern lässt.
+ao9 (nbaufw): Es wäre zu viel Aufwand gewesen.
 
-ao10 (nbkons): Weil ich dadurch Nachteile im weiteren Studium befürchte.
+ao10 (nberlo): Weil ich mich früher schon erfolglos darum bemüht habe.
 
-ao11 (nband): Aus anderen Gründen, und zwar: [(nbando), 350 Zeichen]
+ao11 (nbaend): Ich glaube nicht, dass sich meine Situation ändern lässt.
+
+ao12 (nband): Weil ich dadurch Nachteile im weiteren Studium befürchtet habe.
 
 mv:
 
