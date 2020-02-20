@@ -12,8 +12,8 @@ hl:
 
 in:
 
-q: Sie befinden sich zurzeit im Ausland: Bitte beschreiben Sie Ihren aktuellen studienbezogenen Auslandsaufenthalt
-näher.
+q: Sie befinden sich zurzeit im Ausland: Bitte beschreiben Sie Ihren aktuellen studienbezogenen 
+Auslandsaufenthalt näher.
 
 is:
 
@@ -24,7 +24,7 @@ st:
 Art des Auslandsaufenthalts: 
 Drop-Down-Menü
 
-ao1 (ainfasia): 0: : Art des Auslandsaufenthalts 
+aox (ainfasia): 0: : Art des Auslandsaufenthalts 
 
 ao1 (ainfasia): 1: : Auslandsstudium mit angestrebtem Abschluss im Ausland
 
@@ -78,9 +78,9 @@ fo:
 
 tr:
 
-GOTO F2_7 IF ainfasia=3-8 OR (ainfasia=1-2 AND (hsstand=1 OR hsstandbl=1-16)
-
-GOTO F2_8 IF ainfasia=1-2 AND hsstandlao>0
+<zofar:transition target="F2_7" condition="(zofar.asNumber(ainfasia) ge 3 or zofar.asNumber(ainfasia) le 8) or      ((zofar.asNumber(ainfasia)==1 or zofar.asNumber(ainfasia)==2) and (!hsstand_2.value or (zofar.asNumber(hsstandbl) ge 1 and zofar.asNumber(hsstandbl) le 16)))"/>
+            <zofar:transition target="F2_7" condition="(zofar.asNumber(ainfasia)==1 or zofar.asNumber(ainfasia)==2) and zofar.isMissing(hsstandlao)"/>
+            <zofar:transition target="F2_8"/>
 
 hi:
 
@@ -107,11 +107,11 @@ it:
 
 st:
 
-ao1: 100 Stellen, Präfix (hsstandlao), Suffix: [Land]
+ao1: 70 Stellen, Präfix (hsstandlao), Suffix: [Land]
 
-ao2: 100 Stellen, Präfix (hsstandsto), Suffix: [Ort]
+ao2: 70 Stellen, Präfix (hsstandsto), Suffix: [Ort]
 
-ao1: 300 Stellen, Präfix (hsstandhso), Suffix: [Hochschule]
+ao1: 70 Stellen, Präfix (hsstandhso), Suffix: [Hochschule]
 
 mv:
 
@@ -135,13 +135,16 @@ GOTO F2_8
 
 hi:
 
+
+\--------------------------------
+
 F2_8
 ====
 
 tc:
 
 vn: bdefinsia; bdekensia; bdesprsia; bdefamssia; bdefamlsia; bdetecsia;
-bdeoeksia; bdepolsia; bdequasia; bdearbsia; bdeandsia; bdeandosia
+bdeoeksia; bdepolsia; bdequasia; bdearbsia; fehlt; fehlto
 
 qt: Einfachauswahlmatrix mit offener Angabe
 
@@ -149,11 +152,11 @@ hl:
 
 in:
 
-q: Warum haben Sie sich für dieses Land entschieden, ...
+q: Warum haben Sie sich für dieses Land entschieden?
 
 is:
 
-Überschrift: Ich habe mich für ein Studium in diesem Land entschieden, 
+Überschrift: Ich habe mich für ein Studium in diesem Land entschieden, …
 
 it1 (bdefinsia): …weil ein Studium in diesem Land meinen finanziellen
 Möglichkeiten entspricht.
@@ -179,7 +182,7 @@ it9 (bdequasia): …wegen der Lebensqualität in diesem Land.
 it10 (bdearbsia): …aufgrund der Möglichkeiten, nach Studienabschluss in diesem
 Land zu arbeiten.
 
-it11 (bdeandsia): …anderer Grund, und zwar: [bdeandosia]
+it11 (fehlt): …anderer Grund und zwar: [fehlto, 100 Zeichen]
 
 st:
 
@@ -192,8 +195,6 @@ ao3: 3
 ao4: 4
 
 ao5: 5: : trifft voll und ganz zu
-
-ao6: (bdeandosia): 100 Zeichen, Präfix (Anderer Grund, und zwar:)
 
 mv:
 
@@ -295,7 +296,7 @@ ao1: 1: : nein
 
 ao2: 2: : offene Angabe: 2 Stellen Präfix: ja, teilweise [ainfcp1osia], Suffix: ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollstädnig [ainfcp2osia], Suffix:ECTS-Punkte
+ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollständig [ainfcp2osia], Suffix: ECTS-Punkte
 
 ao1: 4: : weiß ich nicht
 
@@ -345,8 +346,7 @@ it:
 
 st:
 
-ao1 (aproselbsia): : nein, habe Aufenthalt selbst organisiert
-(Exklusivkategorie)
+ao1 (aproselbsia): : nein, habe Aufenthalt selbst organisiert (Exklusivkategorie)
 
 ao2 (aproerassia): : ja, ERASMUS+, ERASMUS
 
@@ -404,7 +404,7 @@ in:
 
 q: Wie finanzieren Sie Ihren studienbezogenen Auslandsaufenthalt?
 
-is: Bitte alles Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen
 
 it:
 
@@ -412,7 +412,7 @@ st:
 
 ao1 (afinelt): : Eltern
 
-ao2 (afinpar): : Parnter*In
+ao2 (afinpar): : Parnter\*In
 
 ao3 (afinbaf): : BAföG
 
@@ -612,7 +612,7 @@ ao5: 5: : sehr zufrieden
 
 ao6: 6: : trifft nicht zu
 
-mv:
+mv: ao6
 
 ka:
 
@@ -702,7 +702,7 @@ tc:
 
 vn: aeempfsia
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl mit horizontalen aos
 
 hl:
 
@@ -756,7 +756,7 @@ F2_18
 
 tc:
 
-vn: bdedarlosia; bdedarstosia; bdedarhsosia 
+vn: bdedarlosia; bdedarhsosia 
 
 qt: Einfachauswahl, offene Angabe
 
@@ -771,11 +771,11 @@ it:
 
 st:
 
-ao1:  Land: (offene Angabe: 100 Zeichen, Präfix [bdedarlosia],
+ao1:  Land: (offene Angabe, Präfix [bdedarlosia]),
 Suffix:
 
-ao2: Ort/Hochschule: (offene Angabe: 100 Zeichen, Präfix
-[bdedarhsosia], Suffix:
+ao2: Ort/Hochschule: (offene Angabe, Präfix [bdedarhsosia]), 
+Suffix:
 
 
 mv:
