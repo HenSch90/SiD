@@ -478,7 +478,7 @@ ao10 (schwdauer): Prüfungsdauer/Abgabefristen
 
 ao11 (schwprart): Prüfungsart/Prüfungsbedingungen
 
-ao12 (schwno): Ich habe und hatte keine Schwierigkeiten. [EK]
+ao12 (schwno): Ich habe und hatte keine Schwierigkeiten. [Exklusivkategorie]
 
 mv:
 
@@ -796,18 +796,17 @@ hi:
 C2_11
 =====
 
-tc: IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
+tc: C2_11 IF ntaleist=2 OR ntawieei=2 OR ntaanwes=2 OR ntalv=2 OR ntaselbst=2 OR ntagrup=2 OR ntaflex=2 OR ntadicht=2 OR ntawieho=2 OR ntadauer=2 OR ntaprart=2
 
-vn: kbgrund; kbordn; kbwert; kbbev; kblehr; kbtech; kborga; kbatt; kbzeit;
-kband; kbando; kbunbe; kbmem
+vn: kbgrund; kbordn; kbwert; kbbev; kblehr; kbtech; kborga; kbatt; kbzeit; kbmem
 
-qt: Mehrfachauswahl; offene Angabe
+qt: Mehrfachauswahl
 
 hl:
 
 in:
 
-q: Weshalb wurden Ihre beantragten Nachteilsausgleiche bzw. individuellen Anpassungen/Absprachen nicht bewilligt?
+q: Weshalb wurden Ihre beantragten Nachteilsausgleiche bzw. individuellen Anpassungswünsche nicht bewilligt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -815,33 +814,25 @@ it:
 
 st:
 
-ao1 (kbgrund): Meine Beeinträchtigung(en) wurde(n) nicht als Grund akzeptiert.
+ao1 (kbgrund): Meine Beeinträchtigung wurde nicht als Grund akzeptiert.
 
-ao2 (kbordn): Individuelle Anpassungen/Absprachen bzw. Nachteilsausgleiche
-wurden als nicht vereinbar mit der Studien-/Prüfungsordnung angesehen.
+ao2 (kbordn): Anpassungswünsche/ Nachteilsausgleiche wurden als nicht vereinbar mit der Prüfungsordnung angesehen.
 
 ao3 (kbwert): Ersatzleistung wurde nicht als gleichwertig angesehen.
 
-ao4 (kbbev): Individuelle Anpassung/Absprache bzw. Nachteilsausgleich wird als
-Bevorzugung angesehen.
+ao4 (kbbev): Anpassungswünsche/ Nachteilsausgleiche wurden als Bevorzugung angesehen.
 
 ao5 (kblehr): Lehrende\*r war nicht dazu bereit, Lehrroutinen zu ändern.
 
 ao6 (kbtech): Aufgrund technischer Probleme (z. B. fehlende Ausstattung).
 
-ao7 (kborga): Aufgrund organisatorischer Probleme (z. B. keine Raum- oder Prüfungsverlegung
-möglich).
+ao7 (kborga): Aufgrund organisatorischer Probleme (z. B. keine Raum- oder Prüfungsverlegung möglich).
 
-ao8 (kbatt): Aufgrund fehlender Nachweise (z. B. fachärztliches Attest,
-Schwerbehindertenausweis).
+ao8 (kbatt): Aufgrund fehlender Nachweise (z. B. fachärztliches Attest, Schwerbehindertenausweis).
 
-ao9 (kbzeit): Nachteilsausgleiche und/oder individuellen Anpassungen/Absprachen wurden zu spät beantragt.
+ao9 (kbzeit): Anpassungswünsche/Nachteilsausgleiche wurden zu spät beantragt.
 
-ao10 (kband): Anderer Grund, und zwar: [(kbando), 250 Zeichen]
-
-ao12 (kbunbe): mir nicht bekannt
-
-ao13 (kbmem): weiß ich nicht [Exklusivkategorie]
+ao10 (kbmem): Wurde mir nicht mitgeteilt. [Exklusivkategorie]
 
 mv:
 
@@ -855,9 +846,98 @@ fv:
 
 hv:
 
-fo:
+fo: kbmem/"Wurde mir nicht mitgeteilt." als Exklusivkategorie absetzen
 
 tr: GOTO C2_12
+
+hi:
+
+\--------------------------------
+
+C2_11a
+====
+
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+
+vn: hilfleist; hilfwieei; hilfanwes; hilflv; hilfselbst; hilfgrup; hilfflex; hilfdicht; hilfwieho; hilfdauer; hilfprart
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwiefern werden Sie in Bezug auf Ihre beeinträchtigungsbedingten Schwierigkeiten unterstützt durch…
+
+is:
+
+it1 (hilfleist): … Kommiliton\*innen?
+
+it2 (hilfwieei): … Lehrende?
+
+it3 (hilfanwes): … Freund\*innen/Bekannte?
+
+it4 (hilflv): … Familienangehörige?
+
+it5 (hilfselbst): … Ärzt\*innen/Therapeut\*innen?
+
+it6 (hilfgrup): … Beratungen/Coachings/Workshops?
+
+st:
+
+ao1: 1: gar nicht hilfreich
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr hilfreich
+
+ka1 (it1 TO it3): Studienorganisation
+
+ka2 (it4 TO it7): Lehre und Lernen
+
+ka3 (it8 TO it11): Prüfungen/Leistungsnachweise
+
+vc1: SHOW it1 IF ntaleist=1
+
+vc2: SHOW it2 IF ntawieei=1
+
+vc3: SHOW it3 IF ntaanwes=1
+
+vc4: SHOW it4 IF ntalv=1
+
+vc5: SHOW it5 IF ntaselbst=1
+
+vc6: SHOW it6 IF ntagrup=1
+
+vc7: SHOW it7 IF ntaflex=1
+
+vc8: SHOW it8 IF ntadicht=1
+
+vc9: SHOW it9 IF ntawieho=1
+
+vc10: SHOW it10 IF ntadauer=1
+
+vc11: SHOW it11 IF ntaprart=1
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: 
+
+GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
+
+ELSE GOTO C2_12
 
 hi:
 
