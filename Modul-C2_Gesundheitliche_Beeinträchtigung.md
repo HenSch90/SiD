@@ -1,12 +1,61 @@
 \--------------------------------
 
+C2_0
+====
+
+tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+
+vn: beschwer
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Wirkt sich Ihre Beeinträchtigung erschwerend auf Ihr Studium aus?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO C2_1 if beschwer==2
+GOTO XX if beschwer==1
+
+hi:
+
+
+\--------------------------------
+
 C2_1
 ====
 
-tc: IF gartmob-gartka (Grundprogramm) mindestens einmal =1
+tc: IF beschwer==2
 
 vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls;
-gbegrson; gbegrka
+gbegrson; gbegrsono; gbegrka
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -14,27 +63,25 @@ hl:
 
 in:
 
-q: Inwiefern wirkt sich Ihre Beeinträchtigung bzw. Ihre Beeinträchtigungen auf Ihr aktuelles Studium aus?
+q: Wie stark wirkt sich Ihre Beeinträchtigung  auf Ihr aktuelles Studium aus?
 
 is:
 
 it1: (gbegrmob): Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
 
-it2: (gbegrseh): Sehbeeinträchtigung/Blindheit
+it2: (gbegrseh): Blindheit/Sehbeeinträchtigung
 
-it3: (gbegrohr): Hörbeeinträchtigung/Gehörlosigkeit
+it3: (gbegrohr): Gehörlosigkeit/Hörbeeinträchtigung
 
 it4: (gbegrspr): Sprechbeeinträchtigung (z. B. Stottern)
 
 it5: (gbegrpsy): psychische Erkrankung (z. B. Depression, Essstörung)
 
-it6: (gbegrchron): länger dauernde Krankheit/chronische Krankheit (z. B. Rheuma,
-MS, Darmerkrankung)
+it6: (gbegrchron): körperliche länger dauernde/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
 
 it7: (gbegrtls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-it8: (gbegrson): andere Beeinträchtigung/schwere Erkrankung (z. B.
-Tumorerkrankung, Autismus-Spektrum-Störung)
+it8: (gbegrson): Andere Beeinträchtigung/Erkrankung, und zwar [gbegrsono] [offenes Eingabefeld; 250 Zeichen]
 
 it9: (gbegrka): Beeinträchtigung ohne Zuordnung
 
@@ -96,7 +143,7 @@ tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
 vn: bedno; bedbau; bedori; bedauss; bedsich; bedaku; bedruh; bedmed ; bedpers;
 bedtech; bedand; bedando
 
-qt: Mehrfachnennung; offene Abgabe
+qt: Mehrfachnennung; offene Angabe
 
 hl:
 
