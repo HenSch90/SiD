@@ -6,7 +6,7 @@ tc:
 
 vn: azufmob
 
-qt: Einfachauswahl mit horizontal abgetragenen Antwortoptionen
+qt: Einfachauswahl mit horizontalen aos
 
 hl:
 
@@ -36,9 +36,9 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW q1 IF ainfaus = 1 or ainfaus = MISSING
 
-SHOW q2 IF ainfaus ge 2
+vc2: SHOW q2 IF ainfaus ge 2
 
 av:
 
@@ -55,8 +55,8 @@ tr:
 GOTO F3_7 IF ainfaus>1
 GOTO F3_16 IF ainfaus=1 AND auslandint=4
 GOTO F3_16 IF ainfaus=MISSING AND auslandint=4
-GOTO F3_21 IF ainfaus=1 AND auslandint=1,2,3
-GOTO F3_21 IF ainfaus=MISSING AND auslandint=1,2,3
+GOTO F3_21 IF ainfaus=1 AND auslandint=1 | 2 | 3
+GOTO F3_21 IF ainfaus=MISSING AND auslandint=1 | 2 | 3
 GOTO F3_21 IF ainfaus=MISSING AND auslandint=MISSING
 hi:
 
@@ -68,7 +68,7 @@ F3_7
 tc: IF ainfaus \> 1 \| kA
 
 vn: 
-ainfa1 / ainflo1 / ainfsto1 / ainfhso1 / ainfbm1 / ainfbj1 / ainfem1 / ainfej1 / 
+ainfa1 / ainfl1 / ainfst1 / ainfbm1 / ainfbj1 / ainfem1 / ainfej1 / 
 ainfa2 / ainflo2 / ainfsto2 / ainfhso2 / ainfbm2 / ainfbj2 / ainfem2 / ainfej2 / 
 ainfa3 / ainflo3 / ainfsto3 / ainfhso3 / ainfbm3 / ainfbj3 / ainfem3 / ainfej3
 
@@ -90,9 +90,9 @@ is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. S
 
 it1: (ainfa1): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it2: Land: [ainflo1] [Eingabefeld; 100 Zeichen]
+it2: Land: [ainfl1] [Eingabefeld; 100 Zeichen]
 
-it3: Stadt/Hochschule: [ainfsto1] [Eingabefeld; 100 Zeichen]
+it3: Stadt/Hochschule: [ainfst1] [Eingabefeld; 100 Zeichen]
 
 it4: (ainfbm1): Monat: [Drop-Down-Menü2]
 
@@ -180,7 +180,9 @@ tr:
 
 GOTO F3_8
 
-hi:Bitte bis zu 3 Akkordeons mit den Überschriften "1. Auslandsaufenhalt", "2.Auslandsaufenhalt", "3.Auslandsaufenhalt"
+hi: Bitte bis zu 3 Akkordeons mit den Überschriften "1. studienbezogener Auslandsaufenthalt", 
+"2. studienbezogener Auslandsaufenthalt", "3. studienbezogener Auslandsaufenthalt"
+
 
 \--------------------------------
 
