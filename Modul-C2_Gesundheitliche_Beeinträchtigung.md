@@ -309,7 +309,7 @@ st:
 
 ao1 (bezeit): 1: seit meiner Geburt
 
-ao2 (bezeit): 2: seit meinem [(bezeitj) number - 2-stellig]. Lebensjahr
+ao2 (bezeit): 2: seit meinem [(bezeitj) number - 2-stellig, 0,5 cm]. Lebensjahr
 
 mv:
 
