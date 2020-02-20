@@ -4166,6 +4166,8 @@ N_1
 =========
 tc: IF NRW / zusatzsplit ==1
 
+vn: nrwstudium, nrwfach
+
 qt: horizontale Einfachauswahlmatrix
 
 hl:
@@ -4553,7 +4555,7 @@ hl:
 
 in:
 
-q: 
+q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportaö "Studiport" genutzt? Halten Sie rückblickend diese E-Learning-Angebote für hilfreich?
 
 is:
 
@@ -4675,7 +4677,7 @@ q: Wie häufig kommen folgende digitale Methoden bzw. Medien im Rahmen der von I
 
 is:
 
-it1: diglehr1: Online-Vorlesung (z. B. Live-Digitized-Lecture oder archivierte Aufzeichnung)
+it1: (diglehr1): Online-Vorlesung (z. B. Live-Digitized-Lecture oder archivierte Aufzeichnung)
 
 it2: (diglehr2): Online-Seminare
 
@@ -4697,7 +4699,7 @@ it10: (diglehr10): fachspezifische Software (z. B. Statistik- oder Transkription
 
 it11: (diglehr11): Kommunikationstools
 
-it12: diglehr12, diglehr12o: Etwas anderes und zwar: [offene Angabe, 50 Zeichen] 
+it12: (diglehr12): Etwas anderes und zwar: [(diglehr12o), 50 Zeichen] 
 
 st:
 
@@ -4899,39 +4901,39 @@ it:
 
 st:
 
-ao1: 1: (diskjane): nein  
+ao1: (diskjane): nein  
 
-ao2: 2: (diskjane1): Leistungen wurden mir nicht zugetraut.
+ao2: (diskjane1): Leistungen wurden mir nicht zugetraut.
 
-ao3: 3: (diskjane2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
+ao3: (diskjane2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
 
-ao4: 4: (diskjane3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde. 
+ao4: (diskjane3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde. 
 
-ao5: 5: (diskjane4): Mir wurden Rechte/Informationen vorenthalten.
+ao5: (diskjane4): Mir wurden Rechte/Informationen vorenthalten.
 
-ao6: 6: (diskjane5): Mein Antrag wurde abgelehnt oder mit wurde eine Leistung verwehrt. 
+ao6: (diskjane5): Mein Antrag wurde abgelehnt oder mir wurde eine Leistung verwehrt. 
 
-ao7: 7: (diskjane6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen). 
+ao7: (diskjane6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen). 
 
-ao8: 8: (diskjane7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
+ao8: (diskjane7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
 
-ao9: 9: (diskjane8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
+ao9: (diskjane8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
 
-ao10: 10: (diskjane9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet. 
+ao10: (diskjane9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet. 
 
-ao11: 11: (diskjane10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
+ao11: (diskjane10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
 
-ao12: 12: (diskjane11): Ich wurde beleidigt oder beschimpft. 
+ao12: (diskjane11): Ich wurde beleidigt oder beschimpft. 
 
-ao13: 13: (diskjane12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
+ao13: (diskjane12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
 
-ao14: 14: (diskjane13): Ich habe sexualisierte körperliche Übergriffe erlebt. 
+ao14: (diskjane13): Ich habe sexualisierte körperliche Übergriffe erlebt. 
 
-ao15: 15: (diskjane14): Ich wurde körperlich bedroht.
+ao15: (diskjane14): Ich wurde körperlich bedroht.
 
-ao16: 16: (diskjane15): Ich wurde körperlich angegriffen. 
+ao16: (diskjane15): Ich wurde körperlich angegriffen. 
 
-ao17: 17: (diskjane16, diskjane16o): sonstiges: [offene Angabe, 50 Zeichen] 
+ao17: (diskjane16): sonstiges: [(diskjane16o), 50 Zeichen] 
 
 mv:
 
@@ -4950,7 +4952,7 @@ hv:
 fo:
 
 tr: GOTO A_57 IF diskjane=1
-GOTO N_14 IF diskjane!=1
+    GOTO N_14 IF diskjane!=1
 
 
 \------------------------------------------------------------
@@ -5059,11 +5061,11 @@ st:
 
 ao1: (diskwem1): Studierende
 
-ao2: (diskwem2): Tutor*innen
+ao2: (diskwem2): Tutor\*innen
 
 ao3: (diskwem3): Lehrende
 
-ao4: (diskwem4): Verwaltungsmitarbeiter*innen
+ao4: (diskwem4): Verwaltungsmitarbeiter\*innen
 
 ao5: (diskwem5): Materielle Gegebenheiten/technische Ausstattung
 
@@ -5071,7 +5073,7 @@ ao6: (diskwem6): Verfahren/Regelungen
 
 ao7: (diskwem7): Keine Angabe
 
-ao8: (diskwem8; diskwem8o): Andere: [offene Angabe, 350 Zeichen]
+ao8: (diskwem8): Andere: [(diskwem8o), 350 Zeichen]
 
 mv:
 
