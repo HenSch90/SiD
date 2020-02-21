@@ -419,13 +419,13 @@ ao3: (beteil3): Beteiligung an Umwelt-, Natur-, Tierschutzorganisationen
 
 ao4: (beteil4): Mitarbeit im sozialen Bereich (Jugendarbeit, Hilfen, Wohlfahrt)
 
-ao5: (beteil5): Trainer\*in / Übungsleiter\*in im Sportverein
+ao5: (beteil5): Trainer\ \*in / Übungsleiter\ \*in im Sportverein
 
 ao6: (beteil6): Mitarbeit in Friedens-, Menschenrechts-, Asylgruppen
 
 ao7: (beteil7): Studierendenvertretungen
 
-ao8: (beteil8): Student\*innenverbindungen
+ao8: (beteil8): Student\ \*innenverbindungen
 
 ao9: (beteil9): Engagement in anderen politischen oder sozialen Gruppierungen
 
