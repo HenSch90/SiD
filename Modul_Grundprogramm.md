@@ -954,7 +954,7 @@ it:
 
 st:
 
-ao1: 2: Postfix: Jahre
+ao1: Postfix: Jahre
 
 mv:
 
@@ -1005,7 +1005,9 @@ ao2: 2: nicht verheiratet, mit fester Partnerbeziehung
 
 ao3: 3: verheiratet/eingetragene Lebenspartnerschaft
 
-mv: -13: keine Angabe
+ao4: -13: keine Angabe
+
+mv: ao4
 
 ka:
 
@@ -1098,7 +1100,8 @@ it:
 st:
 
 ao1: 1: nein
-ao2: 2: ja, und zwar: (pflegango) Personen
+
+ao2: 2: ja, und zwar: [pflegango] Präfix: Personen
 
 mv:
 
@@ -1152,17 +1155,17 @@ Waschen, Kämmen und Rasieren
 it4: (pflegt4): schwierigere Pflegetätigkeiten, z.B. Hilfe beim Umbetten,
 Stuhlgang usw.
 
-it5: (pflegt5): Etwas anderes und zwar: (pflegt5o)
+it5: (pflegt5): Etwas anderes und zwar: [pflegt5o]
 
 st:
 
 ao1: 1: überhaupt nicht
 
-ao2: 2 
+ao2: 2:
 
-ao3: 3 
+ao3: 3:
 
-ao4: 4 
+ao4: 4:
 
 ao5: 5: sehr häufig
 
@@ -1200,6 +1203,7 @@ qt: Mehrfachauswahl
 hl:
 
 in: Im Folgenden stellen wir Ihnen einige kurze Fragen zu möglichen Beeinträchtigungen. Wie für alle Fragen gilt: Die Beantwortung dieser Fragen ist selbstverständlich freiwillig und wir sichern Ihnen Anonymität und den Schutz Ihrer Daten zu.
+(Leerzeile)
 
 q: Haben Sie eine oder mehrere der nachfolgend aufgeführten gesundheitlichen Beeinträchtigungen?
 
@@ -1209,23 +1213,23 @@ it:
 
 st:
 
-ao1: (gbeges): 1: nein (EK)
+ao1: (gbeges): 1: nein (Exklusivkategorie)
 
 ao2: (gartmob): 2: Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
 
-ao3: (gartseh): 3:  Sehbeeinträchtigung/Blindheit
+ao3: (gartseh): 3: Sehbeeinträchtigung/Blindheit
 
 ao4: (gartohr): 4: Hörbeeinträchtigung/Gehörlosigkeit
 
-ao5: (gartspr): 5:  Sprechbeeinträchtigung (z. B. Stottern)
+ao5: (gartspr): 5: Sprechbeeinträchtigung (z. B. Stottern)
 
-ao6: (gartpsy): 6:  psychische Erkrankung (z. B. Depression, Essstörung)
+ao6: (gartpsy): 6: psychische Erkrankung (z. B. Depression, Essstörung)
 
 ao7: (gartsom): 7: länger dauernde Krankheit/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
 
 ao8: (garttls): 8: Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-ao9: (gartson): 9: andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) (gartsono), 50 Zeichen
+ao9: (gartson): 9: andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) [gartsono], 50 Zeichen
 
 ao10: (gartka): 10: Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
@@ -1315,13 +1319,13 @@ in:
 
 q1: Im wievielten Fachsemester befinden Sie sich zurzeit?
 
-is1: Fachsemester sind die Semester, die sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
+is1: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
 
 it:
 
 st:
 
-ao1: 2, Prefix: Fachsemester:
+ao1: 2, Präfix: Fachsemester:
 
 mv:
 
@@ -1329,9 +1333,9 @@ ka:
 
 vc: 
 
-av: number, 1-2 stellig
+av: number, 2 stellig
 
-kh:
+kh: Bitte geben Sie nur Zahlen ein.
 
 fv:
 
@@ -1366,7 +1370,7 @@ it:
 
 st:
 
-ao1: 2, Prefix: Hochschulsemester:
+ao1: 2, Präfix: Hochschulsemester:
 
 mv:
 
@@ -1374,9 +1378,9 @@ ka:
 
 vc:
 
-av: number, 1-2 stellig
+av: number, 2 stellig
 
-kh:
+kh: Bitte geben Sie nur Zahlen ein.
 
 fv:
 
@@ -1404,7 +1408,7 @@ hl:
 
 in:
 
-q: Sie haben bei Ihrer letzten Befragung angegeben, dass Sie an der Hochschule: [Preload-Token: Hochschulname] studieren?
+q: Sie haben bei Ihrer letzten Befragung angegeben, dass Sie an der [Preload-Token: Hochschulname] studieren?
 
 is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus.
 Falls Sie an mehreren Hochschulen parallel studieren, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
@@ -1413,15 +1417,18 @@ it:
 
 st:
 
-ao1: 1: : Ja, und zwar am Standort [DropDown-Menü]
+ao1: 1: Ja, und zwar am Standort [Dropdown]
 
-ao2: 2: : Nein, ich studiere an einer anderen Hochschule.
+ao2: 2: Nein, ich studiere an einer anderen Hochschule.
 
 mv:
 
 ka:
 
-vc:
+vc: 
+SHOW ao1 AND [Dropdown] IF 
+zofar.asNumber(PRELOADhs_id)==10 or zofar.asNumber(PRELOADhs_id)==30 or zofar.asNumber(PRELOADhs_id)==100 or zofar.asNumber(PRELOADhs_id)==300 or zofar.asNumber(PRELOADhs_id)==370 or zofar.asNumber(PRELOADhs_id)==550 or zofar.asNumber(PRELOADhs_id)==760 or zofar.asNumber(PRELOADhs_id)==810 or zofar.asNumber(PRELOADhs_id)==820 or zofar.asNumber(PRELOADhs_id)==1190 or zofar.asNumber(PRELOADhs_id)==1220 or zofar.asNumber(PRELOADhs_id)==1250 or zofar.asNumber(PRELOADhs_id)==1290 or zofar.asNumber(PRELOADhs_id)==1310 or zofar.asNumber(PRELOADhs_id)==1320 or zofar.asNumber(PRELOADhs_id)==1540 or zofar.asNumber(PRELOADhs_id)==1560 or zofar.asNumber(PRELOADhs_id)==1630 or zofar.asNumber(PRELOADhs_id)==1920 or zofar.asNumber(PRELOADhs_id)==2210 or zofar.asNumber(PRELOADhs_id)==2270 or zofar.asNumber(PRELOADhs_id)==2370 or zofar.asNumber(PRELOADhs_id)==2380 or zofar.asNumber(PRELOADhs_id)==2570 or zofar.asNumber(PRELOADhs_id)==2580 or zofar.asNumber(PRELOADhs_id)==3050 or zofar.asNumber(PRELOADhs_id)==3060 or zofar.asNumber(PRELOADhs_id)==3070 or zofar.asNumber(PRELOADhs_id)==3120 or zofar.asNumber(PRELOADhs_id)==3240 or zofar.asNumber(PRELOADhs_id)==3710 or zofar.asNumber(PRELOADhs_id)==3970 or zofar.asNumber(PRELOADhs_id)==4980 or zofar.asNumber(PRELOADhs_id)==4990 or zofar.asNumber(PRELOADhs_id)==5150 or zofar.asNumber(PRELOADhs_id)==5160 or zofar.asNumber(PRELOADhs_id)==5250 or zofar.asNumber(PRELOADhs_id)==5270 or zofar.asNumber(PRELOADhs_id)==5310 or zofar.asNumber(PRELOADhs_id)==5380 or zofar.asNumber(PRELOADhs_id)==5390 or zofar.asNumber(PRELOADhs_id)==5410 or zofar.asNumber(PRELOADhs_id)==5500 or zofar.asNumber(PRELOADhs_id)==5690 or zofar.asNumber(PRELOADhs_id)==5700 or zofar.asNumber(PRELOADhs_id)==5710 or zofar.asNumber(PRELOADhs_id)==5720 or zofar.asNumber(PRELOADhs_id)==5730 or zofar.asNumber(PRELOADhs_id)==5750 or zofar.asNumber(PRELOADhs_id)==5800 or zofar.asNumber(PRELOADhs_id)==5820 or zofar.asNumber(PRELOADhs_id)==5830 or zofar.asNumber(PRELOADhs_id)==5840 or zofar.asNumber(PRELOADhs_id)==5860 or zofar.asNumber(PRELOADhs_id)==5890 or zofar.asNumber(PRELOADhs_id)==5900 or zofar.asNumber(PRELOADhs_id)==5990 or zofar.asNumber(PRELOADhs_id)==6030 or zofar.asNumber(PRELOADhs_id)==6210 or zofar.asNumber(PRELOADhs_id)==6230 or zofar.asNumber(PRELOADhs_id)==6240 or zofar.asNumber(PRELOADhs_id)==6270 or zofar.asNumber(PRELOADhs_id)==6280 or zofar.asNumber(PRELOADhs_id)==6400 or zofar.asNumber(PRELOADhs_id)==6410 or zofar.asNumber(PRELOADhs_id)==6520 or zofar.asNumber(PRELOADhs_id)==6530 or zofar.asNumber(PRELOADhs_id)==6580 or zofar.asNumber(PRELOADhs_id)==6710 or zofar.asNumber(PRELOADhs_id)==6730 or zofar.asNumber(PRELOADhs_id)==6740 or zofar.asNumber(PRELOADhs_id)==6750 or zofar.asNumber(PRELOADhs_id)==6790 or zofar.asNumber(PRELOADhs_id)==6840 or zofar.asNumber(PRELOADhs_id)==7190 or zofar.asNumber(PRELOADhs_id)==7300 or zofar.asNumber(PRELOADhs_id)==7310 or zofar.asNumber(PRELOADhs_id)==7350 or zofar.asNumber(PRELOADhs_id)==7380 or zofar.asNumber(PRELOADhs_id)==7520 or zofar.asNumber(PRELOADhs_id)==7530 or zofar.asNumber(PRELOADhs_id)==7550 or zofar.asNumber(PRELOADhs_id)==7970 or zofar.asNumber(PRELOADhs_id)==8010 or zofar.asNumber(PRELOADhs_id)==8020 or zofar.asNumber(PRELOADhs_id)==8030 or zofar.asNumber(PRELOADhs_id)==8070 or zofar.asNumber(PRELOADhs_id)==81000 or zofar.asNumber(PRELOADhs_id)==8110 or zofar.asNumber(PRELOADhs_id)==81700
+
 
 av:
 
@@ -1433,9 +1440,11 @@ hv:
 
 fo:
 
-tr: <zofar:transition target="D2_1" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
-    <zofar:transition target="A_22" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13)"/>
-    <zofar:transition target="A_19" condition="hsstand_2.value"/>
+tr: 
+GOTO D2_1 IF hsstand_2=0 AND mastersplit=1
+GOTO A_22 IF hsstand_2=0 AND mastersplit=3
+GOTO A_19 IF hsstand_2=1
+
 hi:
 
 \------------------------------------------------------------
@@ -1443,11 +1452,11 @@ hi:
 A_19
 =======
 
-tc: IF hsstand=2
+tc: IF hsstand_2=1
 
 vn: hsstandbl
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit Dropdown
 
 hl:
 
@@ -1461,42 +1470,43 @@ it:
 
 st:
 
+ao: [Dropdown:]
 
-ao1: 1: : Baden-Württemberg
+aox: 0: Bundesland/Land
 
-ao2: 2: : Bayern
+ao1: 1: Baden-Württemberg
 
-ao3: 3: : Berlin
+ao2: 2: Bayern
 
-ao4: 4: : Brandenburg
+ao3: 3: Berlin
 
-ao5: 5: : Bremen
+ao4: 4: Brandenburg
 
-ao6: 6: : Hamburg
+ao5: 5: Bremen
 
-ao7: 7: : Hessen
+ao6: 6: Hamburg
 
-ao8: 8: : Mecklenburg-Vorpommern
+ao7: 7: Hessen
 
-ao9: 9: : Niedersachsen
+ao8: 8: Mecklenburg-Vorpommern
+
+ao9: 9: Niedersachsen
 
 ao10: 10: Nordrhein-Westfalen
 
-ao11: 11: : Rheinland-Pfalz
+ao11: 11: Rheinland-Pfalz
 
-ao12: 12: : Saarland
+ao12: 12: Saarland
 
-ao13: 13: : Sachsen
+ao13: 13: Sachsen
 
-ao14: 14: : Sachsen-Anhalt
+ao14: 14: Sachsen-Anhalt
 
-ao15: 15: : Schleswig-Holstein
+ao15: 15: Schleswig-Holstein
 
-ao16: 16: : Thüringen
+ao16: 16: Thüringen
 
-
-
-ao17: 17: : im Ausland
+ao17: 17: im Ausland
 
 mv: 
 
@@ -1514,8 +1524,10 @@ hv:
 
 fo: 
 
-tr: GOTO A_20 if hsstandbl=1-16
-    GOTO A_21 if hsstandbl=17
+tr: 
+GOTO A_20 if hsstandbl=1-16
+GOTO A_21 if hsstandbl=17
+
 hi: 
 
 
@@ -1525,25 +1537,45 @@ A_20
 =======
 
 tc:
+
 vn: sabserhs
-qt: Drop-Down-Menü
+
+qt: Einfachauswahl mit Dropdown
+
 hl:
+
 in: 
+
 q: An welcher Hochschule studieren Sie aktuell?
+
 is: 
+
 it: 
+
 st:
-ao: Drop-Down-Menü Hochschulliste
+
+ao: [Dropdown; Hochschulliste]
+
 mv: 
+
 ka: 
-vc: 
+
+vc: nach Bundesland vorselektierte [Dropdown] - Liste
+
 av: 
+
 kh: 
+
 fv: 
+
 hv: 
+
 fo: 
+
 tr:
+
 hi: 
+
 
 \------------------------------------------------------------
 
@@ -1554,7 +1586,7 @@ tc:
 
 vn: hsstandhso
 
-qt: Offene Nennung
+qt: Offene Frage
 
 hl:
 
@@ -1564,7 +1596,7 @@ it:
 
 st:
 
-ao1: 50 Stellen, Präfix (hsstandhso) Hochschule:
+ao1: 50 Stellen, Präfix Hochschule: [hsstandhso] 
 
 mv: 
 
@@ -1585,6 +1617,7 @@ tr: GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
 
 hi: 
 
+
 \------------------------------------------------------------
 
 A_21
@@ -1594,7 +1627,7 @@ tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
 
 vn: hsstandlao, hsstandhsao
 
-qt: Offene Nennung
+qt: Offene Frage
 
 hl:
 
@@ -1608,9 +1641,9 @@ it:
 
 st:
 
-ao1: Präfix Land (hsstandlao)
+ao1: Präfix Land [hsstandlao]
 
-ao2: Präfix Ort/Hochschule (hsstandhsao)
+ao2: Präfix Ort/Hochschule [hsstandhsao]
 
 mv: 
 
@@ -1626,10 +1659,12 @@ hv:
 
 fo: 
 
-tr: GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
-    GOTO A_22 if mastersplit=3, 4, 9, 10, 13
+tr:
+GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
+GOTO A_22 if mastersplit=3, 4, 9, 10, 13
 
 hi: 
+
 
 \------------------------------------------------------------
 
@@ -1680,9 +1715,9 @@ hv:
 
 fo:
 
-tr: GOTO D1_17 if mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
-    GOTO D2_13 if mastersplit=5, 6, 11, 12
-    <zofar:transition target="A_23" condition="zofar.asNumber(mastersplit)==13"/>
+tr: GOTO D1_17 IF mastersplit= 1, 2, 3, 4, 7, 8, 9, 10, 14
+    GOTO D2_13 IF mastersplit= 5, 6, 11, 12
+    GOTO A_23 IF mastersplit= 13
     
 hi:
 
@@ -1711,9 +1746,9 @@ it:
 
 st:
 
-ao1: 1: 50, Prefix: erstes Studienfach
+ao1: 1: 50, Präfix: erstes Studienfach
 
-ao2: 2: 50, Prefix: ggf. zweites Studienfach
+ao2: 2: 50, Präfix: ggf. zweites Studienfach
 
 mv:
 
@@ -1848,8 +1883,8 @@ hv:
 fo:
 
 tr: GOTO A_26 if sabsan=9
-    GOTO D1_13 if sabsan=1/8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
-    GOTO A_27 if sabsan=1/8 AND mastersplit=5, 6, 11, 12, 13
+    GOTO D1_13 if sabsan=1-8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
+    GOTO A_27 if sabsan=1-8 AND mastersplit=5, 6, 11, 12, 13
     GOTO D1_13 if sabsan=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
     GOTO A_27 if sabsan=MISSING AND mastersplit=5, 6, 11, 12, 13
 
@@ -1860,7 +1895,7 @@ hi:
 A_26
 =======
 
-tc:
+tc: IF sabsan=9
 
 vn: sabsweit; sabsweito
 
@@ -1878,7 +1913,7 @@ it:
 
 st:
 
-ao1: (sabsweit): 1: nein[EK]
+ao1: (sabsweit): 1: nein [Exklusivkategorie]
 
 ao2: (sabsweito): 2: ja, Zertifikatskurs(e)
 
@@ -1888,7 +1923,7 @@ ao4: (todo2): 4: ja, Workshop(s)
 
 ao5: (todo3): 5: ja, Modul/Kurs
 
-ao6: (todo4): 6: ja, anderes und zwar: (todo5_open)
+ao6: (todo4): 6: ja, anderes und zwar: [todo5_open]
 
 mv:
 
