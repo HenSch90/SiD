@@ -5,16 +5,56 @@ index
 
 tc:
 
-vn: 
+vn: sidpretest_consent
 
-qt: 
+qt: Mehrfachauswahl
 
 hl: 
 
 in:
 
-q: Das ist eine Zofar Befragung.
-Hier haben Sie die Möglichkeit eine Befragung zu erstellen. 
+q: 
+Vorstudie „die Studierendenbefragung in Deutschland“
+(Leerzeile)
+
+Herzlich willkommen bei **Die Studierendenbefragung in Deutschland**
+(Leerzeile)
+
+Wir freuen uns, dass Sie uns mit Ihrer Teilnahme bei der Konzeption der größten Studierendenbefragung in Deutschland unterstützen. 
+(Leerzeile)
+
+Ziel der Studie ist es, ein umfassendes Bild von der Gesamtsituation aller Studierenden in Deutschland zu erhalten. Daher umfasst die Befragung ein breites Themenspektrum, das von Fragen zu Ihrer individuellen Bildungsbiographie, den Rahmenbedingungen und Herausforderungen im Studium bis hin zu Ihren Karriereaussichten und gesellschaftlichen Wertvorstellungen reicht. Unser Anspruch ist es, detailliert auf Ihre individuelle Lebenslage einzugehen: Vor welchen besonderen Herausforderungen standen Sie im Laufe Ihres Studiums? Welche Rahmenbedingungen sind Ihrer Einschätzung nach notwendig, damit auch Studierende mit Kind oder körperlichen Beeinträchtigung erfolgreich ein Studium absolvieren zu können? Welche Wege führen ins Ausland und welche Wege führen ausländische Studierende an eine deutsche Hochschule? Diese und viele weitere Fragen sind leitend für unsere Studie.
+(Leerzeile)
+
+Die gewonnenen Daten stellen eine wesentliche Grundlage der Bildungsberichterstattung in Deutschland dar und fließen regelmäßig in die bildungspolitische Diskussion ein. Über Ihre Teilnahme tragen Sie daher aktiv zu einer Bildungs‐ und Hochschulpolitik bei, die sich an der Lebenswirklichkeit und den Bedarfen der Studierenden von heute orientiert.
+(Leerzeile)
+
+Aktuell sind wir dabei das Befragungsinstrument zu entwickeln und benötigen im Rahmen dieser Vorstudie von Ihnen erste Hinweise, welche Fragen in welcher Form die Lebenswirklichkeit der Studierenden am besten abbilden.
+(Leerzeile)
+
+Die Beantwortung des Fragebogens nimmt ca. 30-40 Minuten in Anspruch. Sie können die Befragung jederzeit pausieren und sich zu einem späteren Zeitpunkt erneut mit Ihrem Passwort einloggen. Die komfortabelste Befragungssituation erhalten Sie, wenn Sie die Befragung an einem PC oder Laptop durchführen.
+(Leerzeile)
+
+Um ein möglichst genaues Bild zu erhalten, bitten wir Sie, möglichst alle Fragen zu beantworten. Sollten einzelne Frage nicht passen, gehen Sie bitte zur nächsten Frage weiter. Selbstverständlich ist Ihre Teilnahme freiwillig. Alle Angaben werden vertraulich behandelt und nur für wissenschaftliche Zwecke genutzt.
+(Leerzeile)
+
+Weiterführende Informationen finden Sie unter www.die-studierendenbefragung.de.
+(Leerzeile)
+
+Für weitere Fragen wenden Sie sich bitte an uns: 
+(Leerzeile)
+(Leerzeile)
+
+Dr. Markus Lörz #{layout.MAIL_START}loerz@dzhw.eu#{layout.MAIL_END}loerz@dzhw.eu#{layout.MAIL_STOP}
+(Leerzeile)
+
+Heike Naumann #{layout.MAIL_START}naumann@dzhw.eu#{layout.MAIL_END}naumann@dzhw.eu#{layout.MAIL_STOP}
+(Leerzeile)
+
+Weitere Informationen zum Datenschutz finden Sie #{layout.hyperlink('./SID_Informed_Consent.pdf','hier','_blank')}.
+
+Bei **Fragen zum Datenschutz** wenden Sie sich bitte an den Datenschutzbeauftragten des DZHW, Herrn Martin Fuchs: Tel.: +49 511 450670-491; E-Mail: #{layout.MAIL_START}fuchs@dzhw.eu#{layout.MAIL_END}fuchs@dzhw.eu#{layout.MAIL_STOP}. Weitere Informationen zum Datenschutz am DZHW finden Sie hier: #{layout.hyperlink('https://www.dzhw.eu/datenschutz','https://www.dzhw.eu/datenschutz','_blank')}
+
 
 is:
 
@@ -22,7 +62,63 @@ it:
 
 st:
 
-ao1: 
+ao1: (sidpretest_consent): Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden. Meine Teilnahme an der Befragung ist freiwillig. Diese Einwilligung bezieht sich ausdrücklich auch auf die Angaben zur gesundheitlichen Beeinträchtigung.
+
+mv:
+
+ka:
+
+vc:
+SHOW kh1 IF sidpretest_consent!=1
+
+av:
+
+kh1: Bitte beachten Sie, dass ohne Zustimmung zu den Datenschutzbestimmungen eine Teilnahme an der Vorstudie von 
+						#{layout.BOLD_START}“Die Studierendenbefragung in Deutschland“#{layout.BOLD_END} leider nicht möglich ist.
+
+fv:
+
+hv:
+mastersplit = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
+
+zusatzsplit = 1, 2, 3, 4 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
+
+fo:
+
+tr: 
+GOTO index IF !sidpretest_consent.value and !sf_h.value
+GOTO offer IF sidpretest_consent.value and jsCheck.value and isMobile.value and width.value lt 768
+GOTO A_1 IF sidpretest_consent.value
+
+
+hi:
+
+
+\------------------------------------------------------------
+
+offer
+=========
+
+tc:
+
+vn:
+
+qt:
+
+hl:
+
+in:
+
+q: 
+Um ein optimales Befragungserlebnis zu erhalten, sollten Sie für die Beantwortung einiger Fragen das Display drehen.
+
+is:
+
+it:
+
+st:
+
+ao:
 
 mv:
 
@@ -38,14 +134,12 @@ fv:
 
 hv:
 
-    mastersplit = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
-    zusatzsplit = 1, 2, 3, 4 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
-
 fo:
 
-tr: GOTO A_1
+tr: A_1
 
 hi:
+
 
 \------------------------------------------------------------
 
