@@ -1,6 +1,6 @@
 \------------------------------------------------------------
 
-KSM-fai01
+KSM-fai01 (E3 - fai0101)
 =========
 
 tc:
@@ -11,7 +11,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 
 hl:
 
-in: Im Folgenden geht es um Fragen zur sozialen Gerechtigkeit an der Hochschule und innerhalb der Gesellschaft. Dabei geht es nicht um richtig oder falsch, sondern um Ihre persönliche Meinung. Bitte lesen Sie dazu die Aussagen aufmerksam durch.
+in:
 
 q: Würden Sie die sozialen Unterschiede in Deutschland ganz allgemein als klein
 oder groß bezeichnen?
@@ -56,7 +56,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai02
+KSM-fai02 (E3 - fai0201)
 =========
 
 tc:
@@ -78,7 +78,7 @@ it:
 
 st:
 
-ao1: 1: gerecht
+ao1: 1: ungerecht
 
 ao2: 2:
 
@@ -86,7 +86,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: ungerecht
+ao5: 5: gerecht
 
 mv:
 
@@ -110,7 +110,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai03
+KSM-fai03 (E3 - fai0301)
 =========
 
 tc:
@@ -127,7 +127,7 @@ q: Wie stehen Sie zu den folgenden Aussagen?
 
 is:
 
-it1: (faihs): In Deutschland hat jede\*r die gleiche Chance auf einen Hochschulabschluss.
+it1: (faihs): In Deutschland hat Jede\*r die gleiche Chance auf einen Hochschulabschluss.
 
 it2: (faiein): Nur wenn die Unterschiede im Einkommen und im sozialen Ansehen groß genug sind, gibt es auch einen Anreiz für persönliche Leistungen.
 
@@ -167,7 +167,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai04
+KSM-fai04 (E3 - fai0401)
 =========
 
 tc:
@@ -242,7 +242,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai05
+KSM-fai05 (E3 - fai0501)
 =========
 
 tc:
@@ -255,7 +255,7 @@ hl:
 
 in:
 
-q: Inwiefern stimmen Sie folgenden Aussagen zum Thema Meinungsfreiheit zu?
+q: Inwiefern stimmen Sie folgenden Aussagen zum Thema Meinungsfreiheit zu oder lehnen Sie ab?
 
 is:
 
@@ -273,7 +273,7 @@ it6: (faians): Die meisten Lehrenden und Studierenden an meiner Hochschule haben
 
 st:
 
-ao1: 1: stimme überhaupt nicht zu
+ao1: 1: lehne völlig ab
 
 ao2: 2:
 
@@ -281,7 +281,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: stimme voll und ganz zu
+ao5: 5: stimme völlig zu 
 
 mv: 6: kann ich nicht beurteilen
 
@@ -314,7 +314,7 @@ hi: Ab hier sollen die Befragten zufällig einer der Seiten KSM-fai06 - KSM-fai1
 
 \------------------------------------------------------------
 
-KSM-fai06
+KSM-fai06 (E3 - fai0601)
 =========
 
 tc:
@@ -368,7 +368,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai07
+KSM-fai07 (E3 - fai0701)
 =========
 
 tc:
@@ -422,7 +422,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai08
+KSM-fai08 (E3 - fai0801)
 =========
 
 tc:
@@ -476,7 +476,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai09
+KSM-fai09 (E3 - fai0901)
 =========
 
 tc:
@@ -530,7 +530,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai10
+KSM-fai10 (E3 - fai1001)
 =========
 
 tc:
@@ -584,7 +584,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai11
+KSM-fai11 (E3 - fai1101)
 =========
 
 tc:
@@ -638,7 +638,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai12
+KSM-fai12 (E3 - fai1201)
 =========
 
 tc:
@@ -693,7 +693,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai13
+KSM-fai13 (E3 - fai1301)
 =========
 
 tc:
@@ -748,7 +748,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai14
+KSM-fai14 (E3 - fai1401)
 =========
 
 tc:
@@ -802,7 +802,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai15
+KSM-fai15 (E3 - fai1501)
 =========
 
 tc:
@@ -857,7 +857,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai16
+KSM-fai16 (E3 - fai1601)
 =========
 
 tc:
@@ -870,9 +870,9 @@ hl:
 
 in:
 
-q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? Die Absolvent\*innen ...
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? Absolvent*innen ...
 
-is: Mehrfachantworten sind möglich
+is: 
 
 it:
 
@@ -922,14 +922,10 @@ fo:
 
 tr: KSM-fai17
 
-hi: Den Platzhalter in der Ausfüllanweisung immer durch die Fächergruppe ergänzen, die in der vorangegangenen Frage (Seiten KSM-fai06-KSM-fai15) das höhere Gehalt bezogen hat (Medizin, Ingenieurwissenschaften, Rechtswissenschaften,
-Wirtschaftswissenschaften). Verknüpfung mit Fragen KSS-fai06.06 – KSS-fai06.15
-Bsp.: Befragter erhält Seite KSS-fai06 =  Wirtschaftswissenschaften vs. Geisteswissenschaften. Seite KSS-fai017: Platzhaltern = Wirtschaftswissenschaften. 
-Ist so etwas mit Steuerungsvariablen möglich?
-
+hi: 
 \------------------------------------------------------------
 
-KSM-fai17
+KSM-fai17 (E3 - fai1701)
 =========
 
 tc:
@@ -943,7 +939,7 @@ hl:
 in:
 
 q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen für eine Absage (z.B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung für die Ablehnung verantwortlich sein. 
-Aus welchen Gründen wird man ihrer Meinung nach diskriminiert?
+Aus welchen Gründen wird man Ihrer Meinung nach eher abgelehnt?
 
 is:
 
@@ -960,10 +956,6 @@ it5: (faidisrel): aufgrund religiöser Zugehörigkeit
 it6: (faidissex): aufgrund der sexuellen Orientierung
 
 it7: (faidisbeein): aufgrund physischer oder psychischer Beeinträchtigung
-
-it8: (faidisother): ein anderer und zwar:_____\_ 
-
-it9: (faidisother_open): [60 Zeichen]
 
 st:
 
@@ -997,7 +989,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai18
+KSM-fai18 (E3 - fai1801)
 =========
 
 tc:
@@ -1050,6 +1042,6 @@ hv:
 
 fo:
 
-tr:
+tr:GOTO A_56
 
 hi:
