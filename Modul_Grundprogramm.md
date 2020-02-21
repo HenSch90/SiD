@@ -234,22 +234,11 @@ hv:
 fo:
 
 tr: GOTO A_2 IF dnatdeu==1
-    GOTO A_3 IF if dnatdeu=0 AND dnatausl=1
-    zofar:transition target="A_5" condition="!dnatdeu.value and !dnatausl.value"
+    GOTO A_3 IF dnatdeu=0 AND dnatausl=1
+    GOTO A_5 IF !dnatdeu.value and !dnatausl.value
 
 hi:
 
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
 
 \------------------------------------------------------------
 
@@ -276,7 +265,7 @@ st:
 
 ao1: 1: von Geburt an?
 
-ao2: 2: als Spätaussiedler(in)?
+ao2: 2: als Spätaussiedler\*in?
 
 ao3: 3: durch Einbürgerung?
 
@@ -296,9 +285,12 @@ hv:
 
 fo:
 
-tr: GOTO A_3 IF dnatderw=2 OR dnatderw=3
-     <zofar:transition target="A_5" condition="dnatdeu.value and zofar.asNumber(dnatderw)==1"/>
-     <zofar:transition target="A_5" condition="dnatdeu.value and zofar.isMissing(dnatderw)"/>
+tr: 
+<zofar:transition target="A_3" condition="dnatausl.value or (dnatdeu.value and (zofar.asNumber(dnatderw)==2 or zofar.asNumber(dnatderw)==3))"/>
+<zofar:transition target="A_3" condition="dnatausl.value and zofar.asNumber(dnatderw)==1"/>
+<zofar:transition target="A_3" condition="dnatausl.value and zofar.isMissing(dnatderw)"/>
+<zofar:transition target="A_5" condition="dnatdeu.value and zofar.asNumber(dnatderw)==1"/>
+<zofar:transition target="A_5" condition="dnatdeu.value and zofar.isMissing(dnatderw)"/>
 
 hi:
 
