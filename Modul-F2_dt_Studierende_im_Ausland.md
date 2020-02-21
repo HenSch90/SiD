@@ -24,23 +24,23 @@ st:
 Art des Auslandsaufenthalts: 
 Drop-Down-Menü
 
-aox (ainfasia): 0: : Art des Auslandsaufenthalts 
+aox (ainfasia): 0: Art des Auslandsaufenthalts 
 
-ao1 (ainfasia): 1: : Auslandsstudium mit angestrebtem Abschluss im Ausland
+ao1 (ainfasia): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
 
-ao2 (ainfasia): 2: : Auslandsstudium/-semester ohne angestrebten Abschluss
+ao2 (ainfasia): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
 
-ao3 (ainfasia): 3: : Praktikum/Praxisphase
+ao3 (ainfasia): 3: Praktikum/Praxisphase
 
-ao4 (ainfasia): 4: : Sprachkurs
+ao4 (ainfasia): 4: Sprachkurs
 
-ao5 (ainfasia): 5: : Studienreise
+ao5 (ainfasia): 5: Studienreise
 
-ao6 (ainfasia): 6: : Projektarbeit
+ao6 (ainfasia): 6: Projektarbeit
 
-ao7 (ainfasia): 7: : Summer School
+ao7 (ainfasia): 7: Summer School
 
-ao8 (ainfasia): 8: : sonstiger Aufenthalt
+ao8 (ainfasia): 8: sonstiger Aufenthalt
 
 
 Untereinander angeordnete Drop-Down-Menüs
@@ -158,43 +158,43 @@ is:
 
 Überschrift: Ich habe mich für ein Studium in diesem Land entschieden, …
 
-it1 (bdefinsia): …weil ein Studium in diesem Land meinen finanziellen
+it1: (bdefinsia): …weil ein Studium in diesem Land meinen finanziellen
 Möglichkeiten entspricht.
 
-it2 (bdekensia): …um dieses Land kennenzulernen/weil mich die Geschichte und
+it2: (bdekensia): …um dieses Land kennenzulernen/weil mich die Geschichte und
 Kultur des Landes interessiert.
 
-it3 (bdesprsia): …um meine Sprachkenntnisse zu vertiefen.
+it3: (bdesprsia): …um meine Sprachkenntnisse zu vertiefen.
 
-it4 (bdefamssia): …weil Freunde/Verwandte in diesem Land studieren/studiert
+it4: (bdefamssia): …weil Freunde/Verwandte in diesem Land studieren/studiert
 haben.
 
-it5 (bdefamlsia): …weil Freunde/Verwandte in diesem Land leben/gelebt haben.
+it5: (bdefamlsia): …weil Freunde/Verwandte in diesem Land leben/gelebt haben.
 
-it6 (bdetecsia): …weil dieses Land ein hochtechnisiertes Land ist.
+it6: (bdetecsia): …weil dieses Land ein hochtechnisiertes Land ist.
 
-it7 (bdeoeksia): …wegen der wirtschaftlichen Lage in diesem Land.
+it7: (bdeoeksia): …wegen der wirtschaftlichen Lage in diesem Land.
 
-it8 (bdepolsia): …wegen der politischen Lage in diesem Land.
+it8: (bdepolsia): …wegen der politischen Lage in diesem Land.
 
-it9 (bdequasia): …wegen der Lebensqualität in diesem Land.
+it9: (bdequasia): …wegen der Lebensqualität in diesem Land.
 
-it10 (bdearbsia): …aufgrund der Möglichkeiten, nach Studienabschluss in diesem
+it10: (bdearbsia): …aufgrund der Möglichkeiten, nach Studienabschluss in diesem
 Land zu arbeiten.
 
-it11 (fehlt): …anderer Grund und zwar: [fehlto, 100 Zeichen]
+it11: (fehlt): …anderer Grund und zwar: [fehlto, 100 Zeichen]
 
 st:
 
-ao1: 1: : trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -241,11 +241,11 @@ it:
 
 st:
 
-ao1: 1: : nein
+ao1: 1: nein
 
-ao2: 2: : ja, sowohl an der ausländischen als auch der deutschen Hochschule
+ao2: 2: ja, sowohl an der ausländischen als auch der deutschen Hochschule
 
-ao3: 3: : ja, nur an der ausländischen Hochschule
+ao3: 3: ja, nur an der ausländischen Hochschule
 
 mv:
 
@@ -292,13 +292,13 @@ it:
 
 st:
 
-ao1: 1: : nein
+ao1: 1: nein
 
-ao2: 2: : offene Angabe: 2 Stellen Präfix: ja, teilweise [ainfcp1osia], Suffix: ECTS-Punkte
+ao2: 2: offene Angabe: 2 Stellen Präfix: ja, teilweise [ainfcp1osia], Suffix: ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollständig [ainfcp2osia], Suffix: ECTS-Punkte
+ao3: 3: offene Angabe: 2 Stellen Präfix: ja, vollständig [ainfcp2osia], Suffix: ECTS-Punkte
 
-ao1: 4: : weiß ich nicht
+ao1: 4: weiß ich nicht
 
 mv:
 
@@ -332,7 +332,7 @@ tc:
 vn: aproselbsia; aproerassia; aproapeusia; aprodaadsia; apropadsia;
 apropromossia; aprodthssia; aprogahssia; aproanprsia; aproanprosia
 
-qt: Mehrfachnennung mit EK
+qt: Mehrfachnennung mit Exklusivkategorie
 
 hl:
 
@@ -346,23 +346,23 @@ it:
 
 st:
 
-ao1 (aproselbsia): : nein, habe Aufenthalt selbst organisiert (Exklusivkategorie)
+ao1: (aproselbsia): nein, habe Aufenthalt selbst organisiert (Exklusivkategorie)
 
-ao2 (aproerassia): : ja, ERASMUS+, ERASMUS
+ao2: (aproerassia): ja, ERASMUS+, ERASMUS
 
-ao3 (aproapeusia): : ja, anderes EU-Programm
+ao3: (aproapeusia): ja, anderes EU-Programm
 
-ao4 (aprodaadsia): : ja, DAAD-Programm
+ao4: (aprodaadsia): ja, DAAD-Programm
 
-ao5 (apropadsia): : ja, Pädagogischer Austauschdienst (PAD)/COMENIUS
+ao5: (apropadsia): ja, Pädagogischer Austauschdienst (PAD)/COMENIUS
 
-ao6 (apropromossia): : ja, PROMOS-Stipendium
+ao6: (apropromossia): ja, PROMOS-Stipendium
 
-ao7 (aprodthssia): : ja, Programm meiner Hochschule in Deutschland
+ao7: (aprodthssia): ja, Programm meiner Hochschule in Deutschland
 
-ao8 (aprogahssia): : ja, Programm meiner Gasthochschule im Ausland
+ao8: (aprogahssia): ja, Programm meiner Gasthochschule im Ausland
 
-ao9 (aproanprsia): : ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix
+ao9: (aproanprsia): ja, anderes Programm und zwar: offene Angabe: 100 Stellen, Präfix
 [aproanprosia], Suffix
 
 mv:
@@ -410,20 +410,20 @@ it:
 
 st:
 
-ao1 (afinelt): : Eltern
+ao1: (afinelt): Eltern
 
-ao2 (afinpar): : Parnter\*In
+ao2: (afinpar): Parnter\*In
 
-ao3 (afinbaf): : BAföG
+ao3: (afinbaf): BAföG
 
-ao4 (afinjobv): : eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao4: (afinjobv): eigener Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
 
-ao5 (afinjobw): : eigener Verdienst aus Tätigkeiten während des
+ao5: (afinjobw): eigener Verdienst aus Tätigkeiten während des
 Auslandsaufenthalts
 
-ao6 (afinstip): : Stipendium
+ao6: (afinstip): Stipendium
 
-ao7 (afinand): : andere Finanzierungsquelle
+ao7: (afinand): andere Finanzierungsquelle
 
 mv:
 
@@ -466,26 +466,26 @@ q: Wie häufig haben Sie während Ihres Auslandsaufenthalts Kontakt mit…
 
 is:
 
-it1 (akontdeustsia): … Studierenden aus Deutschland?
+it1: (akontdeustsia): … Studierenden aus Deutschland?
 
-it2 (akontgastsia): … Studierenden des Gastlandes?
+it2: (akontgastsia): … Studierenden des Gastlandes?
 
-it3 (akonteinheimsia): … anderen Einheimischen?
+it3: (akonteinheimsia): … anderen Einheimischen?
 
-it4 (akontintstsia): … anderen internationalen Studierenden (nicht aus
+it4: (akontintstsia): … anderen internationalen Studierenden (nicht aus
 Deutschland)?
 
 st:
 
-ao1: 1: : nie
+ao1: 1: nie
 
-ao2: 2: : selten
+ao2: 2: selten
 
-ao3: 3: : manchmal
+ao3: 3: manchmal
 
-ao4: 4: : häufig
+ao4: 4: häufig
 
-ao5: 5: : sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -528,24 +528,24 @@ q: Wie häufig sprechen Sie während Ihres Auslandsaufenthalts die folgenden Spr
 
 is:
 
-it1 (asprachlandsia): Landessprache des Gastlandes
+it1: (asprachlandsia): Landessprache des Gastlandes
 
-it2 (asprachdeutsia): Deutsch
+it2: (asprachdeutsia): Deutsch
 
-it3 (asprachandsia): Andere Sprache, und zwar (offene Angabe: 50 Stellen, Präfix
+it3: (asprachandsia): Andere Sprache, und zwar (offene Angabe: 50 Stellen, Präfix
 [asprachandosia], Suffix
 
 st:
 
-ao1: 1: : nie
+ao1: 1: nie
 
-ao2: 2: : selten
+ao2: 2: selten
 
-ao3: 3: : manchmal
+ao3: 3: manchmal
 
-ao4: 4: : häufig
+ao4: 4: häufig
 
-ao5: 5: : sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -588,29 +588,29 @@ q: In Bezug auf Ihren Auslandsaufenthalt: Wie zufrieden sind Sie mit …
 
 is:
 
-it1 (azufskein): … dem Kontakt zu Einheimischen?
+it1: (azufskein): … dem Kontakt zu Einheimischen?
 
-it2 (azufskstu): … dem Kontakt zu Studierenden?
+it2: (azufskstu): … dem Kontakt zu Studierenden?
 
-it3 (azufsklehr): … dem Kontakt zu Lehrenden?
+it3: (azufsklehr): … dem Kontakt zu Lehrenden?
 
-it4 (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
+it4: (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
 
-it5 (azufinsg): … dem Auslandsaufenthalt insgesamt?
+it5: (azufinsg): … dem Auslandsaufenthalt insgesamt?
 
 st:
 
-ao1: 1: : überhaupt nicht zufrieden
+ao1: 1: überhaupt nicht zufrieden
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : sehr zufrieden
+ao5: 5: sehr zufrieden
 
-ao6: 6: : trifft nicht zu
+ao6: 6: trifft nicht zu
 
 mv: ao6
 
@@ -653,23 +653,23 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1 (azufleistanf): … die Leistungsanforderungen an Ihrer Hochschule?
+it1: (azufleistanf): … die Leistungsanforderungen an Ihrer Hochschule?
 
-it2 (azuforgaufw): … den organisatorischen Aufwand Ihres Aufenthaltes?
+it2: (azuforgaufw): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it3 (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
+it3: (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
-ao1: 1: : sehr niedrig
+ao1: 1: sehr niedrig
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : sehr hoch
+ao5: 5: sehr hoch
 
 mv:
 
@@ -717,15 +717,15 @@ it:
 
 st:
 
-ao1: 1: : nein, überhaupt nicht
+ao1: 1: nein, überhaupt nicht
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : ja, unbedingt
+ao5: 5: ja, unbedingt
 
 mv:
 
@@ -820,23 +820,23 @@ q: Wenn Sie an Ihre Zukunft denken, wo möchten Sie leben?
 
 is:
 
-it1 (intpsydeu): in Deutschland
+it1: (intpsydeu): in Deutschland
 
-it2 (intpsyzeitl): zeitweise im Ausland
+it2: (intpsyzeitl): zeitweise im Ausland
 
-it3 (intpsyandl): dauerhaft im Ausland
+it3: (intpsyandl): dauerhaft im Ausland
 
 st:
 
-ao1: 1: : auf keinen Fall
+ao1: 1: auf keinen Fall
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : auf jeden Fall
+ao5: 5: auf jeden Fall
 
 mv:
 
@@ -880,24 +880,24 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1 (intling1sia): Ich kann in der Sprache meines Gastlandes über vertraute Themen sprechen
+it1: (intling1sia): Ich kann in der Sprache meines Gastlandes über vertraute Themen sprechen
 und meine persönliche Meinung äußern.
 
-it2 (intling2sia): Ich verstehe die wichtigsten Punkte in den einheimischen Radio- und Fernsehprogrammen.
+it2: (intling2sia): Ich verstehe die wichtigsten Punkte in den einheimischen Radio- und Fernsehprogrammen.
 
-it3 (intling3sia): Ich kann einheimische Zeitungsartikel lesen und verstehen.
+it3: (intling3sia): Ich kann einheimische Zeitungsartikel lesen und verstehen.
 
 st:
 
-ao1: 1: : trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
