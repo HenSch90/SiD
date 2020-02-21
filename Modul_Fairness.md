@@ -870,7 +870,7 @@ hl:
 
 in:
 
-q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? Die *Absolvent\*innen ...
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? Die *Absolvent\*innen* ...
 
 is: 
 
