@@ -864,7 +864,7 @@ hi:
 C2_11a
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: bsuntkom; bsuntleh; bsuntfre; bsuntfam; bsuntaer; bsuntber
 
@@ -874,21 +874,21 @@ hl:
 
 in:
 
-q: Inwiefern werden Sie in Bezug auf Ihre beeinträchtigungsbedingten Schwierigkeiten unterstützt durch…
+q: Inwiefern werden Sie in Bezug auf Ihre beeinträchtigungsbedingten Schwierigkeiten unterstützt durch …
 
 is:
 
-it1 (bsuntkom): … Kommiliton\*innen?
+it1: (bsuntkom): … Kommiliton\*innen?
 
-it2 (bsuntleh): … Lehrende?
+it2: (bsuntleh): … Lehrende?
 
-it3 (bsuntfre): … Freund\*innen/Bekannte?
+it3: (bsuntfre): … Freund\*innen/Bekannte?
 
-it4 (bsuntfam): … Familienangehörige?
+it4: (bsuntfam): … Familienangehörige?
 
-it5 (bsuntaer): … Ärzt\*innen/Therapeut\*innen?
+it5: (bsuntaer): … Ärzt\*innen/Therapeut\*innen?
 
-it6 (bsuntber): … Beratungen/Coachings/Workshops?
+it6: (bsuntber): … Beratungen/Coachings/Workshops?
 
 st:
 
@@ -902,7 +902,7 @@ ao4: 4
 
 ao5: 5: voll und ganz
 
-mv: -11: habe ich nicht
+mv: -11: nicht vorhanden
 
 ka:
 
@@ -916,7 +916,9 @@ fv:
 
 hv:
 
-fo: Bitte in der Zeile der Kommiliton\*innen (bsuntkom) und Lehrende (bsuntleh) jeweils das Antwortkästchen für mv/"habe ich nicht" nicht einblenden.
+fo1: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (quasi links von der Spalte "überhaupt nicht").
+
+fo2: Bitte in der Zeile der Kommiliton\*innen (it1: bsuntkom) und Lehrende (it2: bsuntleh) jeweils das Antwortkästchen für mv/"nicht vorhanden" nicht einblenden.
 
 tr: GOTO C2_12
 
@@ -927,7 +929,7 @@ hi:
 C2_12
 =====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: beauftr; besoz; bepsy; bestud; beselb; beand
 
@@ -941,29 +943,27 @@ q: Welche speziellen Anlaufstellen für eine persönliche Beratung zum Thema Stu
 
 is:
 
-it1 (beauftr): Beratungsstellen für Studierende mit Beeinträchtigungen der Hochschule
+it1: (beauftr): Beratungsstellen für Studierende mit Beeinträchtigungen der Hochschule
 
-it2 (besoz): Beratungsstelle für Studierende mit Beeinträchtigungen des Studentenwerks
+it2: (besoz): Beratungsstelle für Studierende mit Beeinträchtigungen des Studentenwerks
 
-it3 (bepsy): psychologische Beratungsstelle des Studentenwerks/der Hochschule
+it3: (bepsy): psychologische Beratungsstelle des Studentenwerks/der Hochschule
 
-it4 (bestud): Beratung für Studierende mit Beeinträchtigungen des AStA, StuRa, UStA etc.
+it4: (bestud): Beratung für Studierende mit Beeinträchtigungen des AStA, StuRa, UStA etc.
 
-it5 (beselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS)
+it5: (beselb): studentische Behindertenselbsthilfe (u. a. BHSA, DVBS)
 
-it6 (beand): studienbezogene Beratung anderer Selbsthilfevereinigungen
+it6: (beand): studienbezogene Beratung anderer Selbsthilfevereinigungen
 
 st:
 
-ao1: 1: nicht vorhanden
+ao1: 1: kenne ich nicht
 
-ao2: 2: kenne ich nicht
+ao2: 2: kenne ich, aber nicht genutzt
 
-ao3: 3: kenne ich, aber nicht genutzt
+ao3: 3: habe ich genutzt
 
-ao4: 4: habe ich genutzt
-
-mv:
+mv: -11: nicht vorhanden
 
 ka:
 
@@ -977,9 +977,9 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (quasi links von der Spalte "kenne ich nicht").
 
-tr: GOTO C2_13 IF beauftr = 4 OR besoz = 4 OR bepsy = 4 OR bestud = 4 OR beselb = 4 OR beand = 4
+tr: GOTO C2_13 IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb = 3 OR beand = 3
 
 ELSE GOTO C2_14
 
@@ -990,8 +990,7 @@ hi:
 C2_13
 =====
 
-tc: IF beauftr = 4 OR besoz = 4 OR bepsy = 4 OR bestud = 4 OR beselb = 4 OR beand = 4
-
+tc: IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb = 3 OR beand = 3
 
 vn: behauftr; behsoz; behpsy; behstud; behselb; behand
 
@@ -1021,11 +1020,11 @@ st:
 
 ao1: 1: gar nicht hilfreich
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: sehr hilfreich
 
@@ -1033,17 +1032,17 @@ mv:
 
 ka:
 
-vc1: SHOW it1 IF beauftr =4
+vc1: SHOW it1 IF beauftr =3
 
-vc2: SHOW it2 IF besoz =4
+vc2: SHOW it2 IF besoz =3
 
-vc3: SHOW it3 IF bepsy =4
+vc3: SHOW it3 IF bepsy =3
 
-vc4: SHOW it4 IF bestud =4
+vc4: SHOW it4 IF bestud =3
 
-vc5: SHOW it5 IF beselb =4
+vc5: SHOW it5 IF beselb =3
 
-vc6: SHOW it6 IF beand =4
+vc6: SHOW it6 IF beand =3
 
 av:
 
@@ -1065,7 +1064,7 @@ hi:
 C2_14
 =====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: belehrver; besoersch; bekomoff
 
@@ -1089,11 +1088,11 @@ st:
 
 ao1: 1: trifft überhaupt nicht zu
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: trifft voll und ganz zu
 
