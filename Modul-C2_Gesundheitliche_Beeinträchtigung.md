@@ -447,7 +447,7 @@ tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: schwleist; schwwieei; schwanwes; schwlv; schwselbst; schwgrup; schwflex; schwdicht; schwwieho; schwdauer; schwprart; schwno
 
-qt: Mehrfachauswahl mit vertikalen ao und mit Überkategorien
+qt: Mehrfachauswahl mit vertikalen ao und mit Überkategorien/Zwischenüberschriften
 
 hl:
 
@@ -520,7 +520,7 @@ tc: IF schwleist=1 OR schwwieei=1 OR schwanwes=1 OR schwlv=1 OR schwselbst=1 OR 
 
 vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart
 
-qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien
+qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien/Zwischenüberschriften
 
 hl:
 
@@ -643,7 +643,7 @@ tc: IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagr
 
 vn: hilfleist; hilfwieei; hilfanwes; hilflv; hilfselbst; hilfgrup; hilfflex; hilfdicht; hilfwieho; hilfdauer; hilfprart
 
-qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien
+qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien/Zwischenüberschriften
 
 hl:
 
