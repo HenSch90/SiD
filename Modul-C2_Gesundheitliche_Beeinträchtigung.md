@@ -320,7 +320,7 @@ mv:
 
 ka:
 
-vc1: SHOW is IF h_gartcount > 1
+vc: SHOW is IF h_gartcount > 1
 
 av: Bitte tragen Sie eine Zahl zwischen 1 und 99 ein.
 
@@ -520,7 +520,7 @@ tc: IF schwleist=1 OR schwwieei=1 OR schwanwes=1 OR schwlv=1 OR schwselbst=1 OR 
 
 vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart
 
-qt: Einfachauswahlmatrix mit vertikalen ao
+qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien
 
 hl:
 
@@ -528,45 +528,45 @@ in:
 
 q: Haben Sie in den von Ihnen benannten Bereichen um individuelle Anpassungen gebeten oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
 
-is: Wenn im Laufe des Studiums bestimmte Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Lehrenden.
+is: Wenn im Laufe Ihres Studiums bestimmte Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Lehrenden.
 
-it1 (ntaleist): Leistungspensum/festgelegte Studienordnung
+it1: (ntaleist): Leistungspensum/festgelegte Studienordnung
 
-it2 (ntawieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
+it2: (ntawieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
 
-it3 (ntaanwes): Anwesenheitspflicht
+it3: (ntaanwes): Anwesenheitspflicht
 
-it4 (ntalv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
+it4: (ntalv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
 
-it5 (ntaselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
+it5: (ntaselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
 
-it6 (ntagrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
+it6: (ntagrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
 
-it7 (ntaflex): mangelnde Flexibilität der Lehrenden
+it7: (ntaflex): mangelnde Flexibilität der Lehrenden
 
-it8 (ntadicht): Prüfungsdichte
+it8: (ntadicht): Prüfungsdichte
 
-it9 (ntawieho): Wiederholung/Verschiebung von Prüfungen
+it9: (ntawieho): Wiederholung/Verschiebung von Prüfungen
 
-it10 (ntadauer): Prüfungsdauer/Abgabefristen
+it10: (ntadauer): Prüfungsdauer/Abgabefristen
 
-it11 (ntaprart): Prüfungsart/Prüfungsbedingungen
+it11: (ntaprart): Prüfungsart/Prüfungsbedingungen
 
 st:
 
-ao1: 1: : beantragt und bewilligt
+ao1: 1: beantragt und bewilligt
 
-ao2: 2: : beantragt, aber nicht bewilligt
+ao2: 2: beantragt, aber nicht bewilligt
 
-ao3: 3: : nicht beantragt
+ao3: 3: nicht beantragt
 
 mv:
 
-ka1 (it1 TO it3): Studienorganisation
+ka1: (it1 TO it3): !!Studienorganisation!!
 
-ka2 (it4 TO it7): Lehre und Lernen
+ka2: (it4 TO it7): !!Lehre und Lernen!!
 
-ka3 (it8 TO it11): Prüfungen/Leistungsnachweise
+ka3: (it8 TO it11): !!Prüfungen/Leistungsnachweise!!
 
 vc1: SHOW it1 IF schwleist=1
 
@@ -586,9 +586,9 @@ vc8: SHOW it8 IF schwdicht=1
 
 vc9: SHOW it9 IF schwwieho=1 
 
-vc8: SHOW it8 IF schwdauer=1 
+vc10: SHOW it10 IF schwdauer=1 
 
-vc9: SHOW it9 IF schwprart=1 
+vc11: SHOW it11 IF schwprart=1 
 
 vc:
 
@@ -600,7 +600,7 @@ fv:
 
 hv:
 
-fo:
+fo: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
 
 tr: GOTO C2_9 IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagrup=1 OR ntaflex=1 OR ntadicht=1 OR ntawieho=1 OR ntadauer=1 OR ntaprart=1
 
@@ -643,7 +643,7 @@ tc: IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagr
 
 vn: hilfleist; hilfwieei; hilfanwes; hilflv; hilfselbst; hilfgrup; hilfflex; hilfdicht; hilfwieho; hilfdauer; hilfprart
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien
 
 hl:
 
@@ -653,45 +653,45 @@ q: Wie hilfreich waren die zuletzt verabredeten individuellen Anpassungen/Nachte
 
 is:
 
-it1 (hilfleist): Leistungspensum/festgelegte Studienordnung
+it1: (hilfleist): Leistungspensum/festgelegte Studienordnung
 
-it2 (hilfwieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
+it2: (hilfwieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
 
-it3 (hilfanwes): Anwesenheitspflicht
+it3: (hilfanwes): Anwesenheitspflicht
 
-it4 (hilflv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
+it4: (hilflv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
 
-it5 (hilfselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
+it5: (hilfselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
 
-it6 (hilfgrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
+it6: (hilfgrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
 
-it7 (hilfflex): mangelnde Flexibilität der Lehrenden
+it7: (hilfflex): mangelnde Flexibilität der Lehrenden
 
-it8 (hilfdicht): Prüfungsdichte
+it8: (hilfdicht): Prüfungsdichte
 
-it9 (hilfwieho): Wiederholung/Verschiebung von Prüfungen
+it9: (hilfwieho): Wiederholung/Verschiebung von Prüfungen
 
-it10 (hilfdauer): Prüfungsdauer/Abgabefristen
+it10: (hilfdauer): Prüfungsdauer/Abgabefristen
 
-it11 (hilfprart): Prüfungsart/Prüfungsbedingungen
+it11: (hilfprart): Prüfungsart/Prüfungsbedingungen
 
 st:
 
 ao1: 1: gar nicht hilfreich
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: sehr hilfreich
 
-ka1 (it1 TO it3): Studienorganisation
+ka1: (it1 TO it3): !!Studienorganisation!!
 
-ka2 (it4 TO it7): Lehre und Lernen
+ka2: (it4 TO it7): !!Lehre und Lernen!!
 
-ka3 (it8 TO it11): Prüfungen/Leistungsnachweise
+ka3: (it8 TO it11): !!Prüfungen/Leistungsnachweise!!
 
 vc1: SHOW it1 IF ntaleist=1
 
@@ -723,7 +723,7 @@ fv:
 
 hv:
 
-fo:
+fo: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
 
 tr: 
 
@@ -740,9 +740,9 @@ C2_10
 
 tc: IF ntaleist=3 AND ntawieei=3 AND ntaanwes=3 AND ntalv=3 AND ntaselbst=3 AND ntagrup=3 AND ntaflex=3 AND ntadicht=3 AND ntawieho=3 AND ntadauer=3 AND ntaprart=3
 
-vn: nbkenn; nbfueh; nbunbek; nbextra; nblast; nbhemm; nbsecr; nbwen; nbaufw; nberlo; nbaend; nband
+vn: nbkenn; nbfueh; nbunbek; nbextra; nblast; nbhemm; nbsecr; nbwen; nbaufw; nberlo; nbaend; nbnach
  
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -756,29 +756,29 @@ it:
 
 st:
 
-ao1 (nbkenn): Ich bin nicht sicher, ob ich anspruchsberechtigt bin oder mein Antrag Chancen hat.
+ao1: (nbkenn): Ich bin nicht sicher, ob ich anspruchsberechtigt bin oder mein Antrag Chancen hat.
 
-ao2 (nbfueh): Ich fühle mich nicht beeinträchtigt genug.
+ao2: (nbfueh): Ich fühle mich nicht beeinträchtigt genug.
 
-ao3 (nbunbek): Die Möglichkeit war mir nicht bekannt.
+ao3: (nbunbek): Die Möglichkeit war mir nicht bekannt.
 
-ao4 (nbextra): Ich will nicht bevorzugt behandelt werden.
+ao4: (nbextra): Ich will nicht bevorzugt behandelt werden.
 
-ao5 (nblast): Ich möchte niemandem zur Last fallen.
+ao5: (nblast): Ich möchte niemandem zur Last fallen.
 
-ao6 (nbhemm): Ich hatte Hemmungen, mich an jemanden zu wenden.
+ao6: (nbhemm): Ich hatte Hemmungen, mich an jemanden zu wenden.
 
-ao7 (nbsecr): Ich wollte meine Beeinträchtigung nicht preisgeben.
+ao7: (nbsecr): Ich wollte meine Beeinträchtigung nicht preisgeben.
 
-ao8 (nbwen): Ich wusste nicht, wen ich um Unterstützung/Beratung hätte bitten können.
+ao8: (nbwen): Ich wusste nicht, wen ich um Unterstützung/Beratung hätte bitten können.
 
-ao9 (nbaufw): Es wäre zu viel Aufwand gewesen.
+ao9: (nbaufw): Es wäre zu viel Aufwand gewesen.
 
-ao10 (nberlo): Weil ich mich früher schon erfolglos darum bemüht habe.
+ao10: (nberlo): Weil ich mich früher schon erfolglos darum bemüht habe.
 
-ao11 (nbaend): Ich glaube nicht, dass sich meine Situation ändern lässt.
+ao11: (nbaend): Ich glaube nicht, dass sich meine Situation ändern lässt.
 
-ao12 (nband): Weil ich dadurch Nachteile im weiteren Studium befürchtet habe.
+ao12: (nbnach): Weil ich dadurch Nachteile im weiteren Studium befürchtet habe.
 
 mv:
 
@@ -803,11 +803,11 @@ hi:
 C2_11
 =====
 
-tc: C2_11 IF ntaleist=2 OR ntawieei=2 OR ntaanwes=2 OR ntalv=2 OR ntaselbst=2 OR ntagrup=2 OR ntaflex=2 OR ntadicht=2 OR ntawieho=2 OR ntadauer=2 OR ntaprart=2
+tc: IF ntaleist=2 OR ntawieei=2 OR ntaanwes=2 OR ntalv=2 OR ntaselbst=2 OR ntagrup=2 OR ntaflex=2 OR ntadicht=2 OR ntawieho=2 OR ntadauer=2 OR ntaprart=2
 
 vn: kbgrund; kbordn; kbwert; kbbev; kblehr; kbtech; kborga; kbatt; kbzeit; kbmem
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -821,25 +821,25 @@ it:
 
 st:
 
-ao1 (kbgrund): Meine Beeinträchtigung wurde nicht als Grund akzeptiert.
+ao1: (kbgrund): Meine Beeinträchtigung wurde nicht als Grund akzeptiert.
 
-ao2 (kbordn): Anpassungswünsche/ Nachteilsausgleiche wurden als nicht vereinbar mit der Prüfungsordnung angesehen.
+ao2: (kbordn): Anpassungswünsche/Nachteilsausgleiche wurden als nicht vereinbar mit der Prüfungsordnung angesehen.
 
-ao3 (kbwert): Ersatzleistung wurde nicht als gleichwertig angesehen.
+ao3: (kbwert): Ersatzleistung wurde nicht als gleichwertig angesehen.
 
-ao4 (kbbev): Anpassungswünsche/ Nachteilsausgleiche wurden als Bevorzugung angesehen.
+ao4: (kbbev): Anpassungswünsche/Nachteilsausgleiche wurden als Bevorzugung angesehen.
 
-ao5 (kblehr): Lehrende\*r war nicht dazu bereit, Lehrroutinen zu ändern.
+ao5: (kblehr): Lehrende\*r war nicht dazu bereit, Lehrroutinen zu ändern.
 
-ao6 (kbtech): Aufgrund technischer Probleme (z. B. fehlende Ausstattung).
+ao6: (kbtech): Aufgrund technischer Probleme (z. B. fehlende Ausstattung).
 
-ao7 (kborga): Aufgrund organisatorischer Probleme (z. B. keine Raum- oder Prüfungsverlegung möglich).
+ao7: (kborga): Aufgrund organisatorischer Probleme (z. B. keine Raum- oder Prüfungsverlegung möglich).
 
-ao8 (kbatt): Aufgrund fehlender Nachweise (z. B. fachärztliches Attest, Schwerbehindertenausweis).
+ao8: (kbatt): Aufgrund fehlender Nachweise (z. B. fachärztliches Attest, Schwerbehindertenausweis).
 
-ao9 (kbzeit): Anpassungswünsche/Nachteilsausgleiche wurden zu spät beantragt.
+ao9: (kbzeit): Anpassungswünsche/Nachteilsausgleiche wurden zu spät beantragt.
 
-ao10 (kbmem): Wurde mir nicht mitgeteilt. [Exklusivkategorie]
+ao10: (kbmem): Wurde mir nicht mitgeteilt. [EK]
 
 mv:
 
@@ -853,7 +853,7 @@ fv:
 
 hv:
 
-fo: kbmem/"Wurde mir nicht mitgeteilt." als Exklusivkategorie absetzen
+fo: kbmem/"Wurde mir nicht mitgeteilt." als EK absetzen
 
 tr: GOTO C2_11a
 
