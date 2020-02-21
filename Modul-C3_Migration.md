@@ -7,13 +7,13 @@ tc:
 
 vn: daltein
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: Wie alt waren Sie als Sie nach Deutschland gekommen sind?
+q: Wie alt waren Sie, als Sie nach Deutschland gekommen sind?
 
 is:
 
@@ -21,7 +21,7 @@ it:
 
 st:
 
-ao: 2; 1-99; Präfix: Alter:; Suffix: Jahre
+ao: (daltein): [infield = "Alter"; number, 2-stellig: 1 TO 99]; Suffix: Jahre  
 
 mv:
 
@@ -29,7 +29,7 @@ ka:
 
 vc:
 
-av: number: \<= zweistellig : 1 TO 99
+av: Bitte geben Sie an, wie alt Sie waren, als Sie nach Deutschland gekommen sind (1 bis 99).
 
 kh:
 
@@ -52,7 +52,7 @@ tc:
 
 vn: dnat (dnatm; dnatv)
 
-qt: Einfachauswahl, Comparison
+qt: Einfachauswahl im Spaltenformat/Comparison
 
 hl:
 
@@ -74,9 +74,7 @@ ao2: 2: die deutsche und eine andere Staatsangehörigkeit
 
 ao3: 3: eine andere Staatsangehörigkeit
 
-ao4: -12: weiß ich nicht
-
-mv:
+mv: 
 
 ka:
 
@@ -105,7 +103,7 @@ tc:
 
 vn: dsprelt
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
