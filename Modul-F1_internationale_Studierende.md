@@ -5,7 +5,7 @@ tc:
 
 vn: aeinnorm1; aeinnorm2; aeinnorm3
 
-qt: Einfachauswahlmaxtrix und offene Angabe
+qt: Einfachauswahlmaxtrix
 
 hl:
 
@@ -15,11 +15,11 @@ q: Inwiefern treffen die folgenden Aussagen Ihrer Meinung nach zu?
 
 is:
 
-it1: (aeinnorm1): : Ein studienbezogener Auslandsaufenthalt darf während des Studiums auf keinen Fall fehlen.
+it1: (aeinnorm1): Ein studienbezogener Auslandsaufenthalt darf während des Studiums auf keinen Fall fehlen.
 
-it2: (aeinnorm2): : Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals erwartet.
+it2: (aeinnorm2): Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals erwartet.
 
-it3: (aeinnorm3): : Jede\*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
+it3: (aeinnorm3): Jede\*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
 
 st:
 
@@ -486,9 +486,9 @@ it:
 
 st:
 
-ao1: 1: : nein
+ao1: 1: nein
 
-ao2: 2: : ja
+ao2: 2: ja
 
 mv:
 
@@ -531,15 +531,15 @@ it:
 
 st:
 
-ao1: 1: : nein, keine Schwierigkeiten
+ao1: 1: nein, keine Schwierigkeiten
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : ja, sehr viele Schwierigkeiten
+ao5: 5: ja, sehr viele Schwierigkeiten
 
 mv:
 
@@ -655,15 +655,15 @@ it9: (bdearbba): aufgrund der Möglichkeit, nach Studienabschluss in Deutschland
 
 st:
 
-ao1: 1: : trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -711,39 +711,39 @@ st:
 Drop-Down-Menü:
 Art des Auslandsaufenthalts:
 
-aox: (ainfaba): 0: : Art des Auslandsaufenthalts
+aox: (ainfaba): 0: Art des Auslandsaufenthalts
 
-ao1: (ainfaba): 1: : Auslandsstudium mit Abschluss in Deutschland
+ao1: (ainfaba): 1: Auslandsstudium mit Abschluss in Deutschland
 
-ao2: (ainfaba): 2: : Auslandsstudium/-semester ohne Abschluss in Deutschland
+ao2: (ainfaba): 2: Auslandsstudium/-semester ohne Abschluss in Deutschland
 
-ao3: (ainfaba): 3: : Praktikum/Praxisphase
+ao3: (ainfaba): 3: Praktikum/Praxisphase
 
-ao4: (ainfaba): 4: : Sprachkurs
+ao4: (ainfaba): 4: Sprachkurs
 
-ao5: (ainfaba): 5: : Studienreise
+ao5: (ainfaba): 5: Studienreise
 
-ao6: (ainfaba): 6: : Projektarbeit
+ao6: (ainfaba): 6: Projektarbeit
 
-ao7: (ainfaba): 7: : Summerschool
+ao7: (ainfaba): 7: Summerschool
 
-ao8: (ainfaba): 8: : sonstiger Aufenthalt
+ao8: (ainfaba): 8: sonstiger Aufenthalt
 
 
 Beginn:
 
 Untereinander angeordnete Drop-Down-Menüs
 
-ao9: (ainfbmba): : Monat: (Monat \ Januar \| … \| Dezember)
+ao9: (ainfbmba): Monat: (Monat \ Januar \| … \| Dezember)
 
-ao10: (ainfbjba): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
+ao10: (ainfbjba): Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
 
 
 Ende:
 
 Untereinander angeordnete Drop-Down-Menüs
 
-ao11: (ainfemba): : Monat: (Monat \ Januar \| … \| Dezember)
+ao11: (ainfemba): Monat: (Monat \ Januar \| … \| Dezember)
 
 ao12: (ainfejba): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030 oder später)
 
@@ -790,13 +790,13 @@ it:
 
 st:
 
-ao1: 1: : Nein, ich werde in Deutschland nur einen Teil meines Studiums absolvieren.
+ao1: 1: Nein, ich werde in Deutschland nur einen Teil meines Studiums absolvieren.
 
-ao2: 2: : Ja, ich plane den Abschluss eines Studiums in Deutschland (z. B. Bachelor, Master, Promotion).
+ao2: 2: Ja, ich plane den Abschluss eines Studiums in Deutschland (z. B. Bachelor, Master, Promotion).
 
-ao3: 3: : Ja, ich plane einen Doppelabschluss in Deutschland un in meinem Herkunftsland/einem anderen Land.
+ao3: 3: Ja, ich plane einen Doppelabschluss in Deutschland un in meinem Herkunftsland/einem anderen Land.
 
-ao4: 4: : weiß ich noch nicht
+ao4: 4: weiß ich noch nicht
 
 mv:
 
@@ -840,13 +840,13 @@ it:
 
 st:
 
-ao1: 1: : nein
+ao1: 1: nein
 
-ao2: 2: : offene Angabe: 2 Stellen Präfix: ja, teilweise:[ainfcp1osba], Suffix: ECTS-Punkte
+ao2: 2: offene Angabe: 2 Stellen Präfix: ja, teilweise:[ainfcp1osba], Suffix: ECTS-Punkte
 
-ao3: 3: : offene Angabe: 2 Stellen Präfix: ja, vollständig:[ainfcp2osba], Suffix: ECTS-Punkte
+ao3: 3: offene Angabe: 2 Stellen Präfix: ja, vollständig:[ainfcp2osba], Suffix: ECTS-Punkte
 
-ao4: 4: : weiß ich nicht
+ao4: 4: weiß ich nicht
 
 mv:
 
@@ -891,21 +891,21 @@ it:
 
 st:
 
-ao1: (aproselbba): : nein, ich habe den Aufenthalt selbst organisiert (Exklusivkategorie)
+ao1: (aproselbba): nein, ich habe den Aufenthalt selbst organisiert (Exklusivkategorie)
 
-ao2: (aprokoopba): : ja, Kooperationsprogramm zwischen Heimathochschule und deutscher Hochschule
+ao2: (aprokoopba): ja, Kooperationsprogramm zwischen Heimathochschule und deutscher Hochschule
 
-ao3: (aproorigba): : ja, Programm meines Herkunftslandes
+ao3: (aproorigba): ja, Programm meines Herkunftslandes
 
-ao4: (aprodaadba): : ja, deutsches Programm (z. B. DAAD-Programm)
+ao4: (aprodaadba): ja, deutsches Programm (z. B. DAAD-Programm)
 
-ao5: (aproerasba): : ja, ERASMUS+/ERASMUS-Programm
+ao5: (aproerasba): ja, ERASMUS+/ERASMUS-Programm
 
-ao6: (aproeuba): : ja, anderes EU-Programm
+ao6: (aproeuba): ja, anderes EU-Programm
 
-ao7: (aprointerba): : ja, Programm meiner Gasthochschule im Ausland
+ao7: (aprointerba): ja, Programm meiner Gasthochschule im Ausland
 
-ao8: (aproanprba): : ja, anderes Programm und zwar: offene Angabe: Präfix [aproanproba]
+ao8: (aproanprba): ja, anderes Programm und zwar: offene Angabe: Präfix [aproanproba]
 
 mv:
 
@@ -956,15 +956,15 @@ it4: (akontintstba): … anderen internationalen Studierenden (nicht aus Ihrem H
 
 st:
 
-ao1: 1: : nie
+ao1: 1: nie
 
-ao2: 2: : selten
+ao2: 2: selten
 
-ao3: 3: : manchmal
+ao3: 3: manchmal
 
-ao4: 4: : häufig
+ao4: 4: häufig
 
-ao5: 5: : sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -1013,27 +1013,27 @@ st:
 
 für q1:
 
-ao1: 1: : gar nicht willkommen
+ao1: 1: gar nicht willkommen
 
-ao2: 2
+ao2: 2:
 
 ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-105: 5: : sehr willkommen
+a05: 5: sehr willkommen
 
 für q2:
 
-ao1: 1: : gar nicht sicher
+ao1: 1: gar nicht sicher
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : sehr sicher
+ao5: 5: sehr sicher
 
 mv:
 
@@ -1086,15 +1086,15 @@ it5: (azufinsg): … Ihrem Aufenthalt in Deutschland insgesamt?
 
 st:
 
-ao1: 1: : überhaupt nicht zufrieden
+ao1: 1: überhaupt nicht zufrieden
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : sehr zufrieden
+ao5: 5: sehr zufrieden
 
 mv:
 
@@ -1143,15 +1143,15 @@ it3: (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
-ao1: 1: : sehr niedrig
+ao1: 1: sehr niedrig
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : sehr hoch
+ao5: 5: sehr hoch
 
 mv:
 
@@ -1250,39 +1250,39 @@ it:
 
 st:
 
-ao1: (bhiitecba): : Einführung in wissenschaftliche Lern- und Arbeitstechniken
+ao1: (bhiitecba): Einführung in wissenschaftliche Lern- und Arbeitstechniken
 
-ao2: (bhiiwelba): : Welcome-/Begrüßungsveranstaltungen
+ao2: (bhiiwelba): Welcome-/Begrüßungsveranstaltungen
 
-ao3: (bhiivorbba): : fachliche Vorbereitungskurse
+ao3: (bhiivorbba): fachliche Vorbereitungskurse
 
-ao4: (bhiitutba): : studienbegleitende Tutorien
+ao4: (bhiitutba): studienbegleitende Tutorien
 
-ao5: (bhiiheimba): : Betreuungsangebote in Wohnheimen
+ao5: (bhiiheimba): Betreuungsangebote in Wohnheimen
 
-ao6: (bhiivermba): : Vermittlung von Wohnraum
+ao6: (bhiivermba): Vermittlung von Wohnraum
 
-ao7: (bhiideuba): : Deutschkurse
+ao7: (bhiideuba): Deutschkurse
 
-ao8: (bhiiberba): : Studienberatung
+ao8: (bhiiberba): Studienberatung
 
-ao9: (bhiibehba): : Hilfe im Umgang mit Behörden
+ao9: (bhiibehba): Hilfe im Umgang mit Behörden
 
-ao10: (bhiikulba): : Kultur- und Freizeitangebote
+ao10: (bhiikulba): Kultur- und Freizeitangebote
 
-ao11: (bhiikomba): : Kommunikationsmöglichkeiten mit deutschen Studierenden
+ao11: (bhiikomba): Kommunikationsmöglichkeiten mit deutschen Studierenden
 
-ao12: (bhiifinba): : Informationen zur Finanzierung des Studiums
+ao12: (bhiifinba): Informationen zur Finanzierung des Studiums
 
-ao13: (bhiiaerlba): : Beratung/Informationen zu Fragen der Arbeitserlaubnis
+ao13: (bhiiaerlba): Beratung/Informationen zu Fragen der Arbeitserlaubnis
 
-ao14: (bhiivisba): : Beratung/Informationen zum Aufenthaltsrecht
+ao14: (bhiivisba): Beratung/Informationen zum Aufenthaltsrecht
 
 ao15: (bhiikvba): Beratung/Informationen zu Fragen der Krankenversicherung
 
-ao16: (bhiipsyba): : psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
+ao16: (bhiipsyba): psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
 
-ao17: (bhiikeinba): : kein Angebot genutzt (Exklusivkategorie)
+ao17: (bhiikeinba): kein Angebot genutzt (Exklusivkategorie)
 
 mv:
 
@@ -1327,19 +1327,19 @@ it:
 
 st:
 
-ao1: … in Deutschland.
+ao1: 1: … in Deutschland.
 
-ao2: … in meinem Heimatland.
+ao2: 2: … in meinem Heimatland.
 
-ao3: … in einem anderen Land.
+ao3: 3: … in einem anderen Land.
 
-ao4: … in Deutschland.
+ao4: 4: … in Deutschland.
 
-ao5: … in meinem Heimatland.
+ao5: 5: … in meinem Heimatland.
 
-ao6: … in einem anderen Land.
+ao6: 6: … in einem anderen Land.
 
-ao7: Sonstiges
+ao7: 7: Sonstiges
 
 mv:
 
@@ -1392,15 +1392,15 @@ it3: (intpsyanddeu): dauerhaft in Deutschland
 
 st:
 
-ao1: 1: : auf keinen Fall
+ao1: 1: auf keinen Fall
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : auf jeden Fall
+ao5: 5: auf jeden Fall
 
 mv:
 
@@ -1449,15 +1449,15 @@ it3: (intling3ba): Ich kann deutsche Zeitungsartikel lesen und verstehen.
 
 st:
 
-ao1: 1: : trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -1504,17 +1504,17 @@ it2: (aarbchherkba): … Ihrem Herkunftsland?
 
 st:
 
-ao1: 1: :überhaupt nicht gut
+ao1: 1: überhaupt nicht gut
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
-ao5: 5: : sehr gut
+ao5: 5: sehr gut
 
-ao6: 6: : kann ich nicht beurteilen
+ao6: 6: kann ich nicht beurteilen
 
 mv: ao6
 
