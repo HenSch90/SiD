@@ -870,7 +870,7 @@ hl:
 
 in:
 
-q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? Absolvent*innen ...
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? Die *Absolvent\*innen ...
 
 is: 
 
@@ -902,7 +902,7 @@ ao11: (faistre): haben mehr Stress/Belastungen am Arbeitsplatz
 
 ao12: (faiand): anderer Grund, und zwar:_____\_
 
-ao13: (faiand_open): [60 Zeichen]
+ao13: (faiand_open): 
 
 mv:
 
