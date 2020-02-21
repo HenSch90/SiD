@@ -343,9 +343,9 @@ ka:
 
 vc:
 
-SHOW q1 if dnatderw=2
+SHOW q1 if dnatderw=2 AND dnatausl=0
 
-SHOW q2 if dnatderw=3
+SHOW q2 if dnatderw=3 AND dnatausl=0
 
 SHOW q3 if dnatdeu=1 AND dnatausl=1
 
@@ -372,7 +372,7 @@ A_4
 
 tc:
 
-vn: dnatsta, dnatstao
+vn: dnatsta
 
 qt: Einfachauswahl mit Dropdown
 
@@ -396,17 +396,17 @@ it:
 
 st:
 
-ao: Einfachauswahl: Dropdown Staatenliste_DBI
+ao: Dropdown [Staatenliste_DBI]
 
 mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if dnatko\>0
+vc: SHOW Dropdown if dnatko\>0
 
-SHOW q1 if dnatderw=2
+SHOW q1 if dnatderw=2 and dnatausl=0
 
-SHOW q2 if dnatderw=3
+SHOW q2 if dnatderw=3 and dnatausl=0
 
 SHOW q3 if dnatdeu=1 AND dnatausl=1
 
@@ -424,7 +424,7 @@ fo:
 
 tr: 
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_3 vorselektieren.
 
 \------------------------------------------------------------
 
@@ -449,7 +449,7 @@ it:
 
 st:
 
-ao1: offene Angabe: 50
+ao1: offene Angabe: 50 Zeichen
 
 mv:
 
@@ -515,10 +515,8 @@ hv:
 fo:
 
 tr: GOTO A_6 if dgebort=2
-    GOTO A_9a if dgebort=1 (50%)
-    GOTO A_9b if dgebort=1 (50%)
-    GOTO A_9a if dgebort=MISSING (50%)
-    GOTO A_9b if dgebort=MISSING (50%)
+    GOTO A_9a if (dgebort=1 OR dgebort=MISSING) AND h_split=1 (50%)
+    GOTO A_9b if (dgebort=1 OR dgebort=MISSING) AND h_split=2 (50%)
 
 hi:
 
@@ -598,13 +596,13 @@ it:
 
 st:
 
-ao: Einfachauswahl: Dropdown Staatenliste_DBI
+ao: Dropdown [Staatenliste_DBI]
 
 mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if dgebko\>0
+vc: SHOW Dropdown if (dgebko != MISSING AND dgebko != 0)
 
 av:
 
@@ -643,7 +641,7 @@ it:
 
 st:
 
-ao1: offene Angabe: 50
+ao1: offene Angabe: 50 Zeichen
 
 mv:
 
@@ -672,7 +670,7 @@ A_8
 
 tc:
 
-vn: baufgrueuba; baufgruausba; baufgruasylba; baufgrufamba; baufgrutouba; baufgrustuba; baufgruandba; baufgruandba_open; baufgruwnba
+vn: baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandba_open
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -681,7 +679,7 @@ hl:
 in:
 
 q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
-
+(Leerzeile)
 Als ich nach Deutschland kam, war ich ...
 
 is: Bitte alles Zutreffende auswählen.
@@ -690,27 +688,25 @@ it:
 
 st:
 
-ao1: (baufgrueuba): 1: Bürger*\in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
+ao1: (baufgrueuba): 1: Bürger\*in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
 
-ao2: (baufgrustuba): 2: Studierende*\r (auch zu Zwecken der Studienvorbereitung)
+ao2: (baufgrustuba): 2: Studierende\*r (auch zur Studienvorbereitung)
 
-ao3: (baufgruerwerb): 3: Erwerbstätige*\r
+ao3: (baufgruerwerb): 3: Erwerbstätige\*r (Arbeitsvisum)
 
-ao4: (baufgrutouba): 4: Tourist*\in (Besuchsvisum)
+ao4: (baufgrutouba): 4: Tourist\*in (Besuchsvisum)
 
-ao5: (baufgruasylba): 5: Asylbewerber*\in, Geflüchtete*\r oder Schutzsuchende*\r
+ao5: (baufgruasylba): 5: Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
 
-ao6: (baufgrufaman): 6: Familienangehörige*\r, Einreise mit Eltern bzw. Ehepartner*\in
+ao6: (baufgrufaman): 6: Familienangehörige\*r, kam mit Eltern bzw. Ehepartner\*in
 
-ao6: (baufgrufamba): 7: Familiennachzug (Visum zur Familienzusammenführung)
+ao6: (baufgrufamba): 7: Familiennachzug, zog zu bereits in Deutschland lebender Familie
 
-ao6: (baufgruausba): 8: (Spät-)Aussiedler*\in
+ao6: (baufgruausba): 8: (Spät-)Aussiedler\*in
 
-ao7: (baufgruandba): 7: anderen, und zwar: (baufgruandba_open)
-
+ao7: (baufgruandba): 7: Anderer Status, und zwar: (baufgruandba_open)
 
 ato:
-
 
 mv:
 
@@ -728,13 +724,14 @@ hv:
 
 fo:
 
-tr: <zofar:transition target="A_8a" condition="baufgruasylba.value"/>
-    <zofar:transition target="A_8b" condition="!baufgruasylba.value and (baufgrufaman.value or baufgrufamba.value)"/>
-    <zofar:transition target="A_9a" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
-    <zofar:transition target="A_9b" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
-    </zofar:transitions>
+tr: 
+GOTO A_8a IF baufgruasylba=1
+GOTO A_8b IF baufgruasylba=0 AND (baufgrufaman=1 OR baufgrufamba=1)
+GOTO A_9a IF (baufgruasylba=0 AND baufgrufaman=0 AND baufgrufamba=0) AND h_split=1
+GOTO A_9b IF (baufgruasylba=0 AND baufgrufaman=0 AND baufgrufamba=0) AND h_split=2
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -785,11 +782,12 @@ hv:
 
 fo:
 
-tr: <zofar:transition target="A_8b" condition="baufgrufaman.value or baufgrufamba.value"/>
-    <zofar:transition target="A_9a" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
-    <zofar:transition target="A_9b" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
+tr: GOTO A_8b IF (baufgrufaman=1 OR baufgrufamba=1)
+    GOTO A_9a IF (baufgrufaman=0 AND baufgrufamba=0) AND h_split=1
+    GOTO A_9b IF (baufgrufaman=0 AND baufgrufamba=0) AND h_split=2
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -806,7 +804,7 @@ hl:
 
 in:
 
-q: Was waren die Gründe dafür, dass Ihre Familie..
+q: Was waren die Gründe dafür, dass Ihre Familie...
 
 is:
 
@@ -814,8 +812,9 @@ it:
 
 st:
 
-ao1: : (intgrund2), Präfix ... nach Deutschland gezogen ist?
-ao2: : (intgrund2), Präfix ... Ihr Herkunftsland verlassen hat?
+ao1: 1: offene Angabe: Präfix: ...Ihr Herkunftsland verlassen hat?: [intgrund2]
+ao2: 2: offene Angabe: Präfix: ...nach Deutschland gezogen ist?: [intgrund2]
+
 vc:
 
 av:
@@ -832,6 +831,7 @@ tr: <zofar:transition target="A_9a" condition="zofar.asNumber(h_split)==1"/>
     <zofar:transition target="A_9b" condition="zofar.asNumber(h_split)==2"/>
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -860,7 +860,7 @@ ao1: 1: männlich
 
 ao2: 2: weiblich
 
-ao3: 3: Anderes, und zwar: (demosexo)
+ao3: 3: Anderes, und zwar: [demosexo]
 
 mv:
 
@@ -882,6 +882,7 @@ tr: GOTO A_10
 
 hi:
 
+
 \------------------------------------------------------------
 
 A_9b
@@ -889,7 +890,7 @@ A_9b
 
 tc:
 
-vn: demosex; demosexo
+vn: demosexb; demosexob
 
 qt: Einfachauswahl mit offener Angabe
 
@@ -911,7 +912,7 @@ ao2: 2: weiblich
 
 ao3: 3: divers
 
-ao4: 4: Keine der genannten Kategorien, sondern: (demosexo)
+ao4: 4: Keine der genannten Kategorien, sondern: [demosexob]
 
 vc:
 
@@ -928,6 +929,7 @@ fo:
 tr: GOTO A_10
 
 hi:
+
 
 \------------------------------------------------------------
 
