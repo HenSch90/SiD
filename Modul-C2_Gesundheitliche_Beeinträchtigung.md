@@ -52,7 +52,7 @@ hi:
 C2_1
 ====
 
-tc: IF beschwer==2
+tc: IF gartmob-gartka auf [A_15] (Grundprogramm) mindestens einmal =1 & beschwer=2
 
 vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls; gbegrson; gbegrsono; gbegrka
 
@@ -145,11 +145,11 @@ hi:
 C2_2
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF gartmob-gartka auf [A_15] (Grundprogramm) mindestens einmal =1 & beschwer=2
 
 vn: bedno; bedbau; bedauss; bedsich; bedruh; bedmed; bedelearn; bedpers ; bedtech; bedand
 
-qt: Mehrfachnennung
+qt: Mehrfachnennung mit vertikalen ao
 
 hl:
 
@@ -157,7 +157,7 @@ in:
 
 q: Haben Sie aufgrund Ihrer Beeinträchtigung besondere Anforderungen an Bau und Ausstattung Ihrer Hochschule und/oder Bedarf an Unterstützungsangeboten?
 
-is: Bitte alle Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -185,7 +185,7 @@ ao10 (bedand): andere Anforderung
 
 mv:
 
-ka (ao2 TO ao10): ja, und zwar:
+ka: (ao2 TO ao10): ja, und zwar:
 
 vc:
 
@@ -197,7 +197,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über ao2 "ja, und zwar:" positionieren.
 
 tr: GOTO C2_2a IF bedbau=1 OR bedauss=1 OR bedsich=1 OR bedruh=1 OR bedmed=1 OR bedelearn=1 OR bedpers=1 OR bedtech=1 OR bedand=1
 GOTO C2_3 if bedno==1
