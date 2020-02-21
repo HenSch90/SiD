@@ -333,7 +333,7 @@ ao3: 3: ja, vollständig: [ainfcpvollo] [Eingabefeld] ECTS-Punkte
 
 ao-12: -12: weiß ich nicht
 
-mv:
+mv: ao-12
 
 ka:
 
@@ -888,7 +888,7 @@ ao7: 7: … ja, Programm meiner Gasthochschule im Ausland
 
 ao8: 8: … ja, anderes Programm, und zwar [aplanföproo] [Eingabefeld; 100 Zeichen]
 
-ao9: 9: … nein, werde Aufenthalt selbst organisieren [EK]
+ao9: 9: … nein, werde Aufenthalt selbst organisieren [Exklusivkategorie]
 
 mv:
 
@@ -1004,7 +1004,7 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, und zwar wenn … [aplanbedio] [Eingabefeld; 200 Stellen]
+ao2: 2: ja, und zwar wenn … (offene Angabe; 200 Zeichen; [aplanbedio])
 
 mv:
 
@@ -1111,7 +1111,7 @@ it:
 
 st:
 
-ao1: 3 Stellen; Präfix: Dauer:; Suffix: Minuten
+ao1: 1: Präfix: Dauer: (offene Angabe; 3 Zeichen; [wohnemino]); Suffix: Minuten
 
 ao2: -12: weiß ich nicht
 
