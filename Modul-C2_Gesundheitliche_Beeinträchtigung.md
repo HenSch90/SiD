@@ -3,7 +3,7 @@
 C2_0
 ====
 
-tc: IF gartmob-gartka auf [A_15] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1
 
 vn: beschwer
 
@@ -52,7 +52,7 @@ hi:
 C2_1
 ====
 
-tc: IF gartmob-gartka auf [A_15] (Grundprogramm) mindestens einmal =1 & beschwer=2
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls; gbegrson; gbegrsono; gbegrka
 
@@ -102,11 +102,9 @@ mv: -11: gar nicht
 
 ka:
 
-vc1: SHOW q1 IF sum gartmob, gartseh, gartohr, gartspr, gartpsy, gartsom, garttls, gartson, gartka = 1 
-(maximal eine gesundheitl. Beeinträchtigung)
+vc1: SHOW q1 IF h_gartcount = 1
 
-vc2: SHOW q2 IF sum gartmob, gartseh, gartohr, gartspr, gartpsy, gartsom, garttls, gartson, gartka /> 1 
-(mehr als eine gesundheitl. Beeinträchtigung)
+vc2: SHOW q2 IF h_gartcount /> 1
 
 vc3: SHOW it1 IF gartmob=1
 
@@ -134,7 +132,7 @@ fv:
 
 hv:
 
-fo: mv als erste abgesetzte Spalte, danach Skala.
+fo: mv als erste, etwa abgesetzte Spalte, danach Skala.
 
 tr: GOTO C2_2
 
@@ -145,7 +143,7 @@ hi:
 C2_2
 ====
 
-tc: IF gartmob-gartka auf [A_15] (Grundprogramm) mindestens einmal =1 & beschwer=2
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: bedno; bedbau; bedauss; bedsich; bedruh; bedmed; bedelearn; bedpers ; bedtech; bedand
 
@@ -296,11 +294,11 @@ hi:
 C2_3
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: bezeit; bezeitj
 
-qt: Einfachauswahl; offene Angabe
+qt: Einfachauswahl; offene Angabe mit vertikalen ao
 
 hl:
 
@@ -316,17 +314,17 @@ st:
 
 ao1 (bezeit): 1: seit meiner Geburt
 
-ao2 (bezeit): 2: seit meinem [(bezeitj) number - 2-stellig, 0,5 cm]. Lebensjahr
+ao2 (bezeit): 2: seit meinem [(bezeitj); 2-stellig, 1-99, number; 0,5 cm]. Lebensjahr
 
 mv:
 
 ka:
 
-vc1: SHOW is IF h_gartcount > 1
+vc1: SHOW is IF h_gartcount /> 1
 
-av: number: 2 stellig: 1 TO 99
+av: Bitte tragen Sie eine Zahl zwischen 1 und 99 ein.
 
-kh: Bitte tragen Sie eine Zahl zwischen 1 und 99 ein.
+kh: 
 
 fv:
 
