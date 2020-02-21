@@ -3,11 +3,11 @@
 C2_0
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF gartmob-gartka auf [A_15] (Grundprogramm) mindestens einmal =1
 
 vn: beschwer
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -54,8 +54,7 @@ C2_1
 
 tc: IF beschwer==2
 
-vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls;
-gbegrson; gbegrsono; gbegrka
+vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls; gbegrson; gbegrsono; gbegrka
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -63,7 +62,9 @@ hl:
 
 in:
 
-q: Wie stark wirkt sich Ihre Beeinträchtigung  auf Ihr aktuelles Studium aus?
+q1: Wie stark wirkt sich Ihre Beeinträchtigung auf Ihr aktuelles Studium aus?
+
+q2: Wie stark wirken sich Ihre Beeinträchtigungen auf Ihr aktuelles Studium aus?
 
 is:
 
@@ -81,7 +82,7 @@ it6: (gbegrchron): körperliche länger dauernde/chronische Krankheit (z. B. Rhe
 
 it7: (gbegrtls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-it8: (gbegrson): Andere Beeinträchtigung/Erkrankung, und zwar [gbegrsono] [offenes Eingabefeld; 250 Zeichen]
+it8: (gbegrson): Andere Beeinträchtigung/Erkrankung, und zwar: [gbegrsono] [offenes Eingabefeld; 250 Zeichen]
 
 it9: (gbegrka): Beeinträchtigung ohne Zuordnung
 
@@ -97,9 +98,15 @@ ao4: 4
 
 ao5: 5: sehr stark
 
-mv: -13: gar nicht
+mv: -11: gar nicht
 
 ka:
+
+vc1: SHOW q1 IF sum gartmob, gartseh, gartohr, gartspr, gartpsy, gartsom, garttls, gartson, gartka = 1 
+(maximal eine gesundheitl. Beeinträchtigung)
+
+vc2: SHOW q2 IF sum gartmob, gartseh, gartohr, gartspr, gartpsy, gartsom, garttls, gartson, gartka /> 1 
+(mehr als eine gesundheitl. Beeinträchtigung)
 
 vc3: SHOW it1 IF gartmob=1
 
@@ -127,7 +134,7 @@ fv:
 
 hv:
 
-fo: mv als erste Spalte, danach Skala
+fo: mv als erste abgesetzte Spalte, danach Skala.
 
 tr: GOTO C2_2
 
