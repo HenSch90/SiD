@@ -149,7 +149,7 @@ it:
 
 st:
 
-ao1: 1: nein, noch offen
+ao1: 1: nein, noch 
 
 ao2: 2: ja, mit einiger Sicherheit
 
@@ -491,7 +491,7 @@ tc:
 
 vn: mastercontra1- mastercontra12; mastercontra12o
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit offener Frage
 
 hl:
 
@@ -586,9 +586,9 @@ is:
 it1: (bawert1): … ist kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
 der beruflichen Ausbildung
 
-it2: (bawert2): …wird von Arbeitgebern kaum angesehen
+it2: (bawert3): …ist nur ein Zwischenschritt zu einem Masterstudium
 
-it3: (bawert3): …ist nur ein Zwischenschritt zu einem Masterstudium
+it3: (bawert2): …wird von Arbeitgebern kaum angesehen
 
 st:
 
