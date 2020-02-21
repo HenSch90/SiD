@@ -90,11 +90,11 @@ st:
 
 ao1: 1: sehr schwach
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: sehr stark
 
@@ -104,7 +104,7 @@ ka:
 
 vc1: SHOW q1 IF h_gartcount = 1
 
-vc2: SHOW q2 IF h_gartcount /> 1
+vc2: SHOW q2 IF h_gartcount > 1
 
 vc3: SHOW it1 IF gartmob=1
 
@@ -161,25 +161,25 @@ it:
 
 st:
 
-ao1 (bedno): nein [EK]
+ao1: (bedno): nein [EK]
 
-ao2 (bedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge, barrierefreies WC, Leitsysteme)
+ao2: (bedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge, barrierefreies WC, Leitsysteme)
 
-ao3 (bedauss): spezielle technische Ausstattungen an der Hochschule (z. B. unterfahrbare Tische, Großbildschirme)
+ao3: (bedauss): spezielle technische Ausstattungen an der Hochschule (z. B. unterfahrbare Tische, Großbildschirme)
 
-ao4 (bedsich): störungsarme Sicht-, Hör- und Belüftungsverhältnisse
+ao4: (bedsich): störungsarme Sicht-, Hör- und Belüftungsverhältnisse
 
-ao5 (bedruh): Ruhe-/Rückzugsräume
+ao5: (bedruh): Ruhe-/Rückzugsräume
 
-ao6 (bedmed): barrierefrei aufbereitete Medien (z. B. Dokumente, Literatur, Webseiten)
+ao6: (bedmed): barrierefrei aufbereitete Medien (z. B. Dokumente, Literatur, Webseiten)
 
-ao7 (bedelearn): E-Learning-Angebote
+ao7: (bedelearn): E-Learning-Angebote
 
-ao8 (bedpers): personelle Assistenzen (z. B. Mitschreibkraft, Gebärdensprachdolmetscher\*in)
+ao8: (bedpers): personelle Assistenzen (z. B. Mitschreibkraft, Gebärdensprachdolmetscher\*in)
 
-ao9 (bedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen Reader, FM-Anlage)
+ao9: (bedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen Reader, FM-Anlage)
 
-ao10 (bedand): andere Anforderung
+ao10: (bedand): andere Anforderung
 
 mv:
 
@@ -222,33 +222,33 @@ q: Inwiefern sind Ihre beeinträchtigungsbezogenen Anforderungen an Bau, Ausstat
 
 is:
 
-it1 (erfbedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge, barrierefreies WC, Leitsysteme)
+it1: (erfbedbau): bauliche Barrierefreiheit der Gebäude (z. B. Rampen, Aufzüge, barrierefreies WC, Leitsysteme)
 
-it2 (erfbedauss): spezielle technische Ausstattungen an der Hochschule (z. B. unterfahrbare Tische, Großbildschirme)
+it2: (erfbedauss): spezielle technische Ausstattungen an der Hochschule (z. B. unterfahrbare Tische, Großbildschirme)
 
-it3 (erfbedsich): störungsarme Sicht-, Hör- und Belüftungsverhältnisse
+it3: (erfbedsich): störungsarme Sicht-, Hör- und Belüftungsverhältnisse
 
-it4 (erfbedruh): Ruhe-/Rückzugsräume
+it4: (erfbedruh): Ruhe-/Rückzugsräume
 
-it5 (erfbedmed): barrierefrei aufbereitete Medien (z. B. Dokumente, Literatur, Webseiten)
+it5: (erfbedmed): barrierefrei aufbereitete Medien (z. B. Dokumente, Literatur, Webseiten)
 
-it6 (erfbedelearn): E-Learning-Angebote
+it6: (erfbedelearn): E-Learning-Angebote
 
-it7 (erfbedpers): personelle Assistenzen (z. B. Mitschreibkraft, Gebärdensprachdolmetscher\*in)
+it7: (erfbedpers): personelle Assistenzen (z. B. Mitschreibkraft, Gebärdensprachdolmetscher\*in)
 
-it8 (erfbedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen Reader, FM-Anlage)
+it8: (erfbedtech): technische Hilfsmittel zum individuellen Gebrauch (z. B. Screen Reader, FM-Anlage)
 
-it9 (erfbedand): andere Anforderung
+it9: (erfbedand): andere Anforderung
  
 st:
 
 ao1: 1: gar nicht erfüllt
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: voll und ganz erfüllt
 
@@ -298,7 +298,7 @@ tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: bezeit; bezeitj
 
-qt: Einfachauswahl; offene Angabe mit vertikalen ao
+qt: Einfachauswahl mit vertikalen ao; offene Angabe
 
 hl:
 
@@ -312,15 +312,15 @@ it:
 
 st:
 
-ao1 (bezeit): 1: seit meiner Geburt
+ao1: (bezeit): 1: seit meiner Geburt
 
-ao2 (bezeit): 2: seit meinem [(bezeitj); 2-stellig, 1-99, number; 0,5 cm]. Lebensjahr
+ao2: (bezeit): 2: seit meinem [(bezeitj); 2-stellig, 1-99, number; 0,5 cm]. Lebensjahr
 
 mv:
 
 ka:
 
-vc1: SHOW is IF h_gartcount /> 1
+vc1: SHOW is IF h_gartcount > 1
 
 av: Bitte tragen Sie eine Zahl zwischen 1 und 99 ein.
 
@@ -341,11 +341,11 @@ hi:
 C2_4
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: bewahr
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -390,11 +390,11 @@ hi:
 C2_5
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: beausw; beauswo
 
-qt: Einfachauswahl; offene Angabe
+qt: Einfachauswahl mit vertikalen ao; offene Angabe
 
 hl:
 
@@ -408,13 +408,13 @@ it:
 
 st:
 
-ao1 (beausw): 1: Nein, habe ich nicht beantragt.
+ao1: (beausw): 1: Nein, habe ich nicht beantragt.
 
-ao2 (beausw): 2: Nein, weil keine Behinderung festgestellt wurde.
+ao2: (beausw): 2: Nein, weil keine Behinderung festgestellt wurde.
 
-ao3 (beausw): 3: Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
+ao3: (beausw): 3: Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
 
-ao4 (beausw): 4: Ja, mit einem Grad der Behinderung (GdB) von [(beauswo) number - 3-stellig]
+ao4: (beausw): 4: Ja, mit einem Grad der Behinderung (GdB) von [(beauswo): number, 3-stellig: 1 to 100]
 
 mv:
 
@@ -422,9 +422,9 @@ ka:
 
 vc:
 
-av: number: 3-stellig: 1 TO 100
+av: Bitte tragen Sie den Grad der festgestellten Behinderung ein (1 bis 100).
 
-kh: Bitte tragen Sie eine Zahl zwischen 0 und 100 ein.
+kh: 
 
 fv:
 
@@ -443,11 +443,11 @@ hi:
 C2_7
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF h_gartcount >= 1 & beschwer=2
 
 vn: schwleist; schwwieei; schwanwes; schwlv; schwselbst; schwgrup; schwflex; schwdicht; schwwieho; schwdauer; schwprart; schwno
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao und mit Überkategorien
 
 hl:
 
@@ -461,37 +461,37 @@ it:
 
 st:
 
-ao1 (schwleist): Leistungspensum/festgelegte Studienordnung
+ao1: (schwleist): Leistungspensum/festgelegte Studienordnung
 
-ao2 (schwwieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
+ao2: (schwwieei): Wiedereinstieg ins Studium (z. B. nach Klinikaufenthalten)
 
-ao3 (schwanwes): Anwesenheitspflicht
+ao3: (schwanwes): Anwesenheitspflicht
 
-ao4 (schwlv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
+ao4: (schwlv): Gestaltung von Lehrveranstaltungen (Medien, Methoden, Interaktionsformen)
 
-ao5 (schwselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
+ao5: (schwselbst): Selbstlernphasen (z. B. Aufbereitung der Lernmaterialien)
 
-ao6 (schwgrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
+ao6: (schwgrup): Gruppen-/Teamarbeiten (z. B. Terminkoordination, Kommunikation)
 
-ao7 (schwflex): mangelnde Flexibilität der Lehrenden
+ao7: (schwflex): mangelnde Flexibilität der Lehrenden
 
-ao8 (schwdicht): Prüfungsdichte
+ao8: (schwdicht): Prüfungsdichte
 
-ao9 (schwwieho): Wiederholung/Verschiebung von Prüfungen
+ao9: (schwwieho): Wiederholung/Verschiebung von Prüfungen
 
-ao10 (schwdauer): Prüfungsdauer/Abgabefristen
+ao10: (schwdauer): Prüfungsdauer/Abgabefristen
 
-ao11 (schwprart): Prüfungsart/Prüfungsbedingungen
+ao11: (schwprart): Prüfungsart/Prüfungsbedingungen
 
-ao12 (schwno): Ich habe und hatte keine Schwierigkeiten. [Exklusivkategorie]
+ao12: (schwno): Ich habe und hatte keine Schwierigkeiten. [EK]
 
 mv:
 
-ka1 (ao2 TO ao10): Studienorganisation
+ka1: (ao1 TO ao3): !!Studienorganisation!!
 
-ka2 (ao2 TO ao10): Lehre und Lernen
+ka2: (ao4 TO ao7): !!Lehre und Lernen!!
 
-ka3 (ao2 TO ao10): Prüfungen/Leistungsnachweise
+ka3: (ao8 TO ao12): !!Prüfungen/Leistungsnachweise!!
 
 vc:
 
@@ -503,9 +503,11 @@ fv:
 
 hv:
 
-fo: schwno/"Ich habe und hatte keine Schwierigkeiten." als Exklusivkategorie absetzen
+fo1: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
 
-tr: GOTO C2_8
+fo2: schwno/"Ich habe und hatte keine Schwierigkeiten." als EK absetzen
+
+tr: GOTO C2_12 IF schwno=1; GOTO C2_8 IF schwleist=1 OR schwwieei=1 OR schwanwes=1 OR schwlv=1 OR schwselbst=1 OR schwgrup=1 OR schwflex=1 OR schwdicht=1 OR schwwieho=1 OR schwdauer=1 OR schwprart=1 
 
 hi:
 
@@ -514,7 +516,7 @@ hi:
 C2_8
 ====
 
-tc: IF gartmob-gartka auf [SDK-gub\#01] (Grundprogramm) mindestens einmal =1
+tc: IF schwleist=1 OR schwwieei=1 OR schwanwes=1 OR schwlv=1 OR schwselbst=1 OR schwgrup=1 OR schwflex=1 OR schwdicht=1 OR schwwieho=1 OR schwdauer=1 OR schwprart=1 
 
 vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart
 
