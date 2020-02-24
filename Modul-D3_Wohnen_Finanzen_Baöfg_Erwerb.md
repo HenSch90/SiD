@@ -56,14 +56,13 @@ tc:
 
 vn: wohnamio
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: Mit wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit
-eingeschlossen – zusammen?
+q: Mit wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit eingeschlossen – zusammen?
 
 is:
 
@@ -71,7 +70,7 @@ it:
 
 st:
 
-ao1: : (wohnamio), Präfix: [infield = Personenzahl; number], Suffix: Person(en)
+ao1: (wohnamio): [infield = Personenzahl; number, 2-stellig: 1 To 15], Postfix: Person(en)
 
 mv:
 
@@ -79,7 +78,7 @@ ka:
 
 vc:
 
-av: (wohnamio): number 2 Stellen; 1 TO 15
+av: 
 
 kh: (wohnamio): Bitte geben Sie die Anzahl an Personen an, mit denen Sie zusammenwohnen.
 
@@ -118,9 +117,9 @@ it:
 
 st:
 
-ao1: : (wohnplz), Präfix [infield = PLZ; number] 
+ao1: (wohnplz): Präfix [infield = PLZ; number, 5-stellig: 01000 TO 99999] 
 
-ao2: : (wohnplzort), Präfix [infield = Ort; 60 Zeichen]
+ao2: (wohnplzort): Präfix [infield = Ort; 60 Zeichen]
 
 mv:
 
@@ -128,7 +127,7 @@ ka:
 
 vc:
 
-av: (wohnplz): number 5 Stellen; 01000 TO 99999
+av: 
 
 kh: (wohnplz): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
 
@@ -136,7 +135,7 @@ fv:
 
 hv:
 
-fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing, also danach geht es normal weiter)
+fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
 
 tr: GOTO A_53
 
@@ -167,9 +166,9 @@ it:
 
 st:
 
-ao1: : (wohnqmw), Präfix: [infield = qm²; number]
+ao1: (wohnqmw): [infield = qm²; number, 3-stellig: 1 TO 999]
 
-ao2: : (wohnqmz), Präfix: [infield = qm²; number]
+ao2: (wohnqmz): [infield = qm²; number, 2-stellig: 1 TO 99], Postfix: m²
 
 mv:
 
@@ -177,9 +176,7 @@ ka:
 
 vc: SHOW q2, ao2 IF wohnel=1 OR wohnwg=1 
 
-av1: (wohnqmw): number 3 Stellen; 1 TO 999
-
-av2: (wohnqmz): number 2 Stellen; 1 TO 99
+av: 
 
 kh1: (wohnqmw): Bitte geben Sie nur Zahlen ein.
 
@@ -315,37 +312,35 @@ it15: (feininsg): ++Gesamteinnahmen++:
 
 st:
 
-ao1: : (feinelto), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao1: (feinelto): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao2: : (feinkino), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao2: (feinkino): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao3: : (feinparo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao3: (feinparo): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao4: : (feinjobdso), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao4: (feinjobdso): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao5: : (feinjobo1), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao5: (feinjobo1): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao6: : (feinjobo2), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao6: (feinjobo2): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao7: : (feinspao), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao7: (feinspao): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao8: : (feinbafo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao8: (feinbafo): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao9: : (feinkredo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao9: (feinkredo): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao10: : (feinstio), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao10: (feinstio): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao11: : (feinekio), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao11: (feinekio): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao12: : (feinbest1), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao12: (feinbest1): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao13: : (feinbest2), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao13: (feinbest2): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-ao14: : (feinandq; feinandqo), [50 Zeichen] Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao14: (feinandq; feinandqo): [50 Zeichen] [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
-#{layout.BREAK}#{layout.BREAK}
-
-ao15: : (feininsg), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao15: (feininsg), [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
 
 mv:
 
@@ -357,14 +352,11 @@ vc2: SHOW it5/ao5 (feinjobo1) IF sformdua != 1
 
 vc3: SHOW it6/ao6 (feinjobo2) IF  sformdua = 1 
 
-vc3: SHOW it11/ao11 (feinekio) IF dkinja = 2
+vc4: SHOW it11/ao11 (feinekio) IF dkinja = 2
 
-av1: ao1 TO ao14: number 4 Stellen; 0 TO 9999
+av: 
 
-
-kh1: ao1 TO ao14: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999)
-
-
+kh: ao1 TO ao14: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999)
 
 fv:
 
