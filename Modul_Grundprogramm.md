@@ -1968,14 +1968,10 @@ it:
 
 st:
 
-ao1: (sformpraes): 1: Präsenzstudim (in Gegensatz zu Fernstudium)
-
-ao2: (sformdua): 2: duales Studium
-
-ao3: (sformberu): 3: berufsbegleitendes Studium
-
-ao4: (sformfern): 4: Fernstudium
-
+ao1: (sformpraes): 1: Präsenzstudim (in Gegensatz zum Fernstudium)
+ao2: (sformfern): 2: Fernstudium
+ao3: (sformdua): 3: duales Studium
+ao4: (sformberu): 4: berufsbegleitendes Studium
 ao5: (sformsons): 5: Anderes, und zwar: (sformsonso), 50 Zeichen
 
 mv:
@@ -1994,7 +1990,7 @@ hv:
 
 fo:
 
-tr: GOTO D2_5 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
+tr: GOTO D2_3 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
     GOTO B1_7 if mastersplit=3, 4, 13
     GOTO A_28 if mastersplit=9, 10
 
@@ -2023,11 +2019,11 @@ it:
 
 st:
 
-ao1: Prefix: Durchschnittsnote (z.B. 2,5): (spernoto), 3 Zeichen
+ao: Prefix: Durchschnittsnote (z. B. 2,5): [spernoto], 3 Zeichen
 
-ao2: -11: Ich habe bisher keine Noten erhalten. / In meinem Studium gibt es keine Noten.
+ao1: spernot: -11: Ich habe bisher keine Noten erhalten. / In meinem Studium gibt es keine Noten.
 
-ao3: -12: weiß ich nicht
+ao2: spernot: -12: weiß ich nicht
 
 ka:
 
@@ -2062,7 +2058,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie Ihre bisherigen Studienleistungen im Vergleich zu Ihren Kommiliton*innen ein?
+q: Wie schätzen Sie Ihre bisherigen Studienleistungen im Vergleich zu Ihren Kommiliton\*innen ein?
 
 is:
 
@@ -2070,15 +2066,15 @@ it:
 
 st:
 
-ao: 1: 1:unterdurchschnittlich
+ao1: 1: unterdurchschnittlich
 
-ao: 2: 2:
+ao2: 2:
 
-ao: 3: 3: durchschnittlich
+ao3: 3: durchschnittlich
 
-ao: 4: 4:
+ao4: 4:
 
-ao: 5: 5: überdurchschnittlich
+ao5: 5: überdurchschnittlich
 
 mv:
 
@@ -2123,15 +2119,15 @@ it:
 
 st:
 
-ao: 1: 1:sehr unzufrieden
+ao1: 1: sehr unzufrieden
 
-ao: 2: 2:
+ao2: 2:
 
-ao: 3: 3:
+ao3: 3:
 
-ao: 4: 4:
+ao4: 4:
 
-ao: 5: 5: sehr zufrieden
+ao5: 5: sehr zufrieden
 
 vc:
 
@@ -2168,23 +2164,23 @@ q: Inwieweit trauen Sie sich zu, …
 
 is:
 
-it1: studerfolg: … ein Studium erfolgreich abzuschließen?
+it1: (studerfolg): … ein Studium erfolgreich abzuschließen?
 
-it2: masterfolg: … ein Masterstudium erfolgreich abzuschließen?
+it2: (masterfolg): … ein Masterstudium erfolgreich abzuschließen?
 
-it3: promoerfolg: … eine Promotion erfolgreich abzuschließen?
+it3: (promoerfolg): … eine Promotion erfolgreich abzuschließen?
 
 st:
 
-ao: 1: 1: sehr unwahrscheinlich
+ao1: 1: sehr unwahrscheinlich
 
-ao: 2: 2:
+ao2: 2:
 
-ao: 3: 3:
+ao3: 3:
 
-ao: 4: 4:
+ao4: 4:
 
-ao: 5: 5: sehr wahrscheinlich
+ao5: 5: sehr wahrscheinlich
 
 vc:
 
@@ -2221,9 +2217,9 @@ q: Welches ist der höchste berufliche Abschluss Ihres Vaters/Ihrer Mutter?
 
 is:
 
-it1 (deltberuv): Vater
+it1: (deltberuv): Vater
 
-it2 (deltberum): Mutter
+it2: (deltberum): Mutter
 
 st:
 
@@ -2241,8 +2237,9 @@ ao6: 2: anderer beruflicher Abschluss
 
 ao7: 1: hat keinen beruflichen Abschluss
 
+ao8: -12: weiß ich nicht
 
-mv: -12: weiß ich nicht
+mv: ao8
 
 ka:
 
@@ -2272,7 +2269,7 @@ tc:
 
 vn: deltjobv [deltjobvo1] [deltjobvo2] [deltjobv1] [deltjobv2]; deltjobm [deltjobmo1] [deltjobmo2] [deltjobm1] [deltjobm2]
 
-qt: Comparison
+qt: Comparison, Mehrfachauswahl
 
 hl:
 
@@ -2308,7 +2305,7 @@ ao2: (deltjobvo2, deltjobmo2): 2: 100: Prefix: Tätigkeitsbeschreibung:
 
 ao3: (deltjobv1, deltjobv2): -11: nie berufstätig gewesen
 
-ao4: (deltjobv2, deltjobm2)-12: weiß ich nicht
+ao4: (deltjobv2, deltjobm2)-12: weiß ich nicht [Exklusivkategorie]
 
 ka:
 
@@ -2322,7 +2319,7 @@ fv:
 
 hv:
 
-fo: Vater“ und „Mutter“ bitte in einer extra Zeile positionieren, die mittig über den jeweils darunterliegenden Antwortzeilen liegt (siehe Darstellung hierunter):
+fo: „Vater“ und „Mutter“ bitte in einer extra Zeile positionieren, die mittig über den jeweils darunterliegenden Antwortzeilen liegt (siehe Darstellung hierunter):
 
 Vater Mutter
 
@@ -2335,8 +2332,8 @@ weiß ich nicht Kästchen
 o Bei Angabe von „weiß ich nicht“, sollen die Textfelder in der jeweiligen
 Spalte bitte nicht ausgefüllt werden können und umgekehrt (Exklusivkategorie).
 
-tr: GOTO B2_2a if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split2==1 (50%)
-    GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split2==2 (50%)
+tr: GOTO B2_2a if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split==1 (50%)
+    GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split==2 (50%)
     GOTO B1_6 if mastersplit=1, 2, 3, 4, 5, 6
     GOTO A34 if mastersplit=14
 
@@ -2371,8 +2368,9 @@ ao1: 1: in Deutschland
 
 ao2: 2: in einem anderen Land
 
+ao3: -12: weiß ich nicht
 
-mv: -12 weiß ich nicht
+mv: ao3
 
 ka:
 
@@ -2447,7 +2445,7 @@ mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if deltgebv=2
+vc: SHOW Einfachauswahl IF deltgebv=2
 
 av:
 
@@ -2500,7 +2498,7 @@ mv:
 
 ka:
 
-vc: SHOW Einfachauswahl if deltgebm=2
+vc: SHOW Einfachauswahl IF deltgebm=2
 
 av:
 
@@ -2539,7 +2537,7 @@ it:
 
 st:
 
-ao: Dropdown Staatenliste_DBI_Eltern
+ao: [Dropdown; Staatenliste_DBI_Eltern]
 
 mv:
 
@@ -2629,7 +2627,7 @@ it:
 
 st:
 
-ao: Dropdown Staatenliste_DBI_Eltern
+ao: [Dropdown; Staatenliste_DBI_Eltern]
 
 mv:
 
