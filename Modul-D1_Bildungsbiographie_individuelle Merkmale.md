@@ -1530,7 +1530,7 @@ D1_22
 
 tc:
 
-vn: dpzufr / dpinter / dpfrag / dsmein / dswiss / dsfreiz / staufw / sfober / sfklaus / ssverl / sswied / sszeit
+vn: dpzufr / dpinter / dpfrag / dsmein / dswiss / dsfreiz / sfaufw / sfober / sfklaus / ssverl / sswied / sszeit
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1607,7 +1607,7 @@ D1_23
 
 tc:
 
-vn: kogorga / kogkrit1 / kogkrit2 / kogzus / kogwied / mkogplan1 / mkogplan2 / mkogwach1 / mkogwach2 / mkogreg / ressanst1 / ressanst2 / sesskonz1 / resskonz2 / resszeit / lernumg1 / lernumg2 / resskomm / lit
+vn: kogorga / kogkrit1 / kogkrit2 / kogzus / kogwied / mkogplan1 / mkogplan2 / mkogwach1 / mkogwach2 / mkogreg / ressanst1 / ressanst2 / resskonz1 / resskonz2 / resszeit / lernumg1 / lernumg2 / resskomm / lit
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1771,7 +1771,7 @@ D1_25
 
 tc:
 
-vn: psw (pswskill / pswkraft / pswaufg)
+vn: pbigintro / pbigextro / pbigtrau
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1783,11 +1783,11 @@ q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1: (pswskill): In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.
+it1: (pbigintro): In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.
 
-it2: (pswkraft): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
+it2: (pbigextro): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
 
-it3: (pswaufg): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.
+it3: (pbigtrau): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.
 
 st:
 
