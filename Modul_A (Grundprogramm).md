@@ -4688,7 +4688,7 @@ hl:
 
 in:
 
-q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportaö "Studiport" genutzt? Halten Sie rückblickend diese E-Learning-Angebote für hilfreich?
+q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportal "Studiport" genutzt? Halten Sie rückblickend diese E-Learning-Angebote für hilfreich?
 
 is:
 
@@ -4722,7 +4722,7 @@ hv:
 
 fo:
 
-tr: GOTO_N9
+tr: GOTO N_9
 
 hi: mv ist von den übrigen aos abgesetzt, nicht Teil der Antwortmatrix
 
@@ -4770,6 +4770,8 @@ ao4: 4:
 ao5: 5: sehr häufig 
 
 ao6: -13:  weiß nicht  
+
+mv: ao6
 
 ka:
 
@@ -4832,7 +4834,7 @@ it10: (diglehr10): fachspezifische Software (z. B. Statistik- oder Transkription
 
 it11: (diglehr11): Kommunikationstools
 
-it12: (diglehr12): Etwas anderes und zwar: [(diglehr12o), 50 Zeichen] 
+it12: (diglehr12): Etwas anderes und zwar: [diglehr12o, 50 Zeichen] 
 
 st:
 
@@ -4848,7 +4850,7 @@ ao5: 5: sehr häufig
 
 ao6: -13: kenne ich nicht
 
-mv:
+mv: ao6
 
 ka:
 
@@ -4896,7 +4898,7 @@ it3: (digkom3): Online Verwaltungstools (z. B. Doodle)
 
 it4: (digkom4): Tools der Lernmanagementsysteme (z. B. Peer-Feedback, Foren)
 
-it5: (digkom5): Clouddienste zum gemeinsamen Schreiben (z. B. Etherpad, Google docs)
+it5: (digkom5): Clouddienste zum gemeinsamen Schreiben (z.B. Etherpad, Google docs)
 
 it6: (digkom6): Clouddienste zum Dateienaustausch (z. B. Dropbox)
 
@@ -4914,7 +4916,7 @@ ao5: 5: sehr häufig
 
 ao6: -13: kenne ich nicht
 
-mv:
+mv: ao6
 
 ka:
 
@@ -5019,11 +5021,11 @@ tc: IF zusatzsplit ==4
 vn: diskjane, diskjane1, diskjane2, diskjane3, diskjane4, diskjane5, diskjane6, diskjane7, diskjane8, diskjane9, diskjane10, 
 diskjane11, diskjane12, diskjane13, diskjane14, diskjane15, diskjane16, diskjane16o
 
-qt: vertikale Mehrfachauswahl
+qt: Mehrfachauswahl
 
 hl:
 
-in: Nun geht es um das Thema Diskriminierung. Diskriminierung  bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt 
+in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt 
 wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. 
 
 q: !!Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?!!
@@ -5098,7 +5100,7 @@ tc:
 vn: diskanza1, diskanza2, diskanza3, diskanza4, diskanza5, diskanza6, diskanza7, diskanza8, diskanza9, diskanza10, diskanza11, 
 diskanza12, diskanza13, diskanza14, diskanza15
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -5186,7 +5188,7 @@ in:
 
 q: Von wem oder was ging die Benachteiligung/Diskriminierung aus?
 
-is: **Bitte alles Zutreffende auswählen.**
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -5206,7 +5208,7 @@ ao6: (diskwem6): Verfahren/Regelungen
 
 ao7: (diskwem7): Keine Angabe
 
-ao8: (diskwem8): Andere: [(diskwem8o), 350 Zeichen]
+ao8: (diskwem8): Andere: [diskwem8o, 350 Zeichen]
 
 mv:
 
@@ -5236,7 +5238,7 @@ A_57
 
 tc:
 
-vn:
+vn: sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16
 
 qt: Einfachauswahlmatrix
 
@@ -5248,49 +5250,49 @@ q: Wie wichtig sind Ihnen die folgenden Aspekte des weiteren Berufs- und Lebensw
 
 is:.
 
-it: 1: hohes Einkommen
+it: (sdkzei1): hohes Einkommen
 
-it: 2: prestigeträchtige Berufsposition
+it: (sdkzei2): prestigeträchtige Berufsposition
 
-it: 3: sicherer Arbeitsplatz
+it: (sdkzei3): sicherer Arbeitsplatz
 
-it: 4: gute Aufstiegsmöglichkeiten
+it: (sdkzei4): gute Aufstiegsmöglichkeiten
 
-it: 5: flexible Arbeitszeiten
+it: (sdkzei5): flexible Arbeitszeiten
 
-it: 6: die Erwartungen meiner Vorgesetzten zu erfüllen
+it: (sdkzei6): die Erwartungen meiner Vorgesetzten zu erfüllen
 
-it: 7: verantwortungsvolle Aufgaben zu übernehmen
+it: (sdkzei7): verantwortungsvolle Aufgaben zu übernehmen
 
-it: 8: eigene Ideen verwirklichen zu können
+it: (sdkzei8): eigene Ideen verwirklichen zu können
 
-it: 9: selbstständig Entscheidungen treffen zu können
+it: (sdkzei9): selbstständig Entscheidungen treffen zu können
 
-it: 10: eine Arbeit, die mir immer wieder neue Aufgaben stellt
+it: (sdkzei10): eine Arbeit, die mir immer wieder neue Aufgaben stellt
 
-it: 11: Möglichkeit zu wissenschaftlicher Tätigkeit
+it: (sdkzei11): Möglichkeit zu wissenschaftlicher Tätigkeit
 
-it: 12: anderen Menschen helfen zu können
+it: (sdkzei12): anderen Menschen helfen zu können
 
-it: 13: ein Beruf, in dem man Nützliches für die Allgemeinheit tun kann
+it: (sdkzei13): ein Beruf, in dem ich Nützliches für die Allgemeinheit tun kann
 
-it: 14: Vereinbarkeit von Privatleben und Beruf
+it: (sdkzei14): Vereinbarkeit von Privatleben und Beruf
 
-it: 15: eine glückliche Beziehung zu führen
+it: (sdkzei15): eine glückliche Beziehung zu führen
 
-it: 16: eine Familie zu gründen
+it: (sdkzei16): eine Familie zu gründen
 
 st:
 
-ao1: 1: 1: unbedeutend
+ao1: 1: unbedeutend
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: sehr bedeutend
+ao5: 5: sehr bedeutend
 
 mv:
 
