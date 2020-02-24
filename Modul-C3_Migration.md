@@ -29,9 +29,9 @@ ka:
 
 vc:
 
-av: Bitte geben Sie an, wie alt Sie waren, als Sie nach Deutschland gekommen sind (1 bis 99).
+av: 
 
-kh:
+kh: Bitte geben Sie an, wie alt Sie waren, als Sie nach Deutschland gekommen sind (1 bis 99).
 
 fv:
 
