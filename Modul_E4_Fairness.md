@@ -50,7 +50,7 @@ sv: s_fairsplit = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 (einmalige Randomisierung; 1= 10
 
 fo:
 
-tr: KSM-fai02
+tr: GOTO KSM-fai02
 
 hi:
 
@@ -104,7 +104,7 @@ hv:
 
 fo:
 
-tr: KSM-fai03
+tr: GOTO KSM-fai03
 
 hi:
 
@@ -161,7 +161,7 @@ hv:
 
 fo:
 
-tr: KSM-fai04
+tr: GOTO KSM-fai04
 
 hi:
 
@@ -236,7 +236,7 @@ hv:
 
 fo:
 
-tr: KSM-fai05
+tr: GOTO KSM-fai05
 
 hi:
 
@@ -247,7 +247,7 @@ KSM-fai05 (E4 - fai0501)
 
 tc:
 
-vn: faischuet; faimut; faiausl; faiprot; faimei; faians
+vn: faischuet; faimut; faiausl; faiprot; faimei; faians1
 
 qt: Einfachauswahlmatrix
 
@@ -269,7 +269,7 @@ it4: (faiprot): Kontroverse Gastredner\*innen zu stören oder am Reden zu hinder
 
 it5: (faimei): Bei kontroversen Diskussionen in Seminaren oder anderen Anlässen meiner Hochschule vermeide ich es lieber, meine ehrliche Meinung zu sagen.
 
-it6: (faians): Die meisten Lehrenden und Studierenden an meiner Hochschule haben politische Ansichten, die meinen eigenen sehr ähnlich sind.
+it6: (faians1): Die meisten Lehrenden und Studierenden an meiner Hochschule haben politische Ansichten, die meinen eigenen sehr ähnlich sind.
 
 st:
 
@@ -282,8 +282,6 @@ ao3: 3:
 ao4: 4:
 
 ao5: 5: stimme völlig zu 
-
-mv: 6: kann ich nicht beurteilen
 
 ka:
 
@@ -312,6 +310,8 @@ GOTO KSM-fai15 if s_fairsplit= 10
 
 hi: Ab hier sollen die Befragten zufällig einer der Seiten KSM-fai06 - KSM-fai16 zugewiesen werden. KSM-fai06 - KSM-fai16 beinhalten dieselbe Frage, aber mit verschiedenen Fächerkombinationen (10 insgesamt, also 10 einzelne Seiten), von denen jeweils eine Fächerkombination pro Seite angezeigt werden soll. Das heißt: Jeder Befragte wird per Zufall auf eine der Seiten verwiesen. Danach werden alle auf KSM-fai16 weitergeleitet mit den Gründen für das höhere Gehalt.
 
+hi: @ZOFAR t5 wird in der QML nicht benannt.
+
 \------------------------------------------------------------
 
 KSM-fai06 (E4 - fai0601)
@@ -328,7 +328,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden. 
 Absolvent\*innen wirtschaftswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 43.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen wirtschaftswissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen wirtschaftswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -362,7 +362,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -382,7 +382,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -416,7 +416,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -436,7 +436,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 52.700 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -470,7 +470,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -490,7 +490,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen rechtswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 46.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Geisteswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
 is:
 
@@ -524,7 +524,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -544,7 +544,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Rechtswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Rechtswissenschaften?
 
 is:
 
@@ -578,7 +578,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -598,7 +598,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Ingenieurwissenschaften verdienen demgegenüber durchschnittlich ca. 47.500 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Ingenieurwissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Ingenieurwissenschaften?
 
 is:
 
@@ -632,7 +632,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -653,7 +653,7 @@ in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen versch
 
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
 is:
 
@@ -687,7 +687,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -708,7 +708,7 @@ in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen versch
 
 Absolvent\*innen rechtswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 46.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
 is:
 
@@ -742,7 +742,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -762,7 +762,7 @@ hl:
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Rechtswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Rechtswissenschaften?
 
 is:
 
@@ -796,7 +796,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -817,7 +817,7 @@ in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen versch
 
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
 
-q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss _mehr_ verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
+q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
 is:
 
@@ -851,7 +851,7 @@ hv:
 
 fo:
 
-tr: KSM-fai16
+tr: GOTO KSM-fai16
 
 hi:
 
@@ -870,7 +870,7 @@ hl:
 
 in:
 
-q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen? *Die Absolvent\*innen ...*
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
 is: 
 
@@ -900,13 +900,11 @@ ao10: (faiflex): haben nur geringere zeitliche/räumliche Flexibilität in ihrer
 
 ao11: (faistre): haben mehr Stress/Belastungen am Arbeitsplatz
 
-ao12: (faiand): anderer Grund, und zwar:_____\_
-
-ao13: (faiand_open): 
+ao12: (faiand): anderer Grund, und zwar:[100 Zeichen, faiand_open]
 
 mv:
 
-ka:
+ka: Die Absolvent\*innen ...
 
 vc:
 
@@ -920,7 +918,7 @@ hv:
 
 fo:
 
-tr: KSM-fai17
+tr: GOTO KSM-fai17
 
 hi: 
 \------------------------------------------------------------
@@ -967,7 +965,9 @@ ao3: 3: eher ja
 
 ao4: 4: ja
 
-mv: -98: weiß nicht
+ao5: -98: weiß nicht
+
+mv: ao5
 
 ka:
 
@@ -983,7 +983,7 @@ hv:
 
 fo:
 
-tr: KSM-fai18
+tr: GOTO KSM-fai18
 
 hi:
 
@@ -1006,25 +1006,25 @@ q: Haben Sie in Ihrem bisherigen Studium an der Hochschule schon einmal Benachte
 
 is:
 
-it1: (faierlge): aufgrund des Geschlechts
+it1: selbst erlebt
 
-it2: (faierlmig): aufgrund des Migrationshintergrunds
+it2: bei anderen beobachtet
 
-it3: (faierlsoz): aufgrund der sozialen Herkunft
+ao1: (faierlge_s, fairlge_a): aufgrund des Geschlechts
 
-it4: (faierlspra): aufgrund der sprachlichen Ausdrucksweise (Dialekt, weniger gewandt)
+ao2: (faierlmig_s, faierlmig_a): aufgrund des Migrationshintergrunds
 
-it5: (faierlrel): aufgrund religiöser Zugehörigkeit
+ao3: (faierlsoz_s, faierlsoz_a): aufgrund der sozialen Herkunft
 
-it6: (faierlsex): aufgrund der sexuellen Orientierung
+ao4: (faierlspra_s, faierlspra_a): aufgrund der sprachlichen Ausdrucksweise (Dialekt, weniger gewandt)
 
-it7: (faierlbeein): aufgrund physischer oder psychischer Beeinträchtigung
+ao5: (faierlrel_s, faierlrel_a): aufgrund religiöser Zugehörigkeit
+
+ao6: (faierlsex_s, faierlsex_a): aufgrund der sexuellen Orientierung
+
+ao7: (faierlbeein_s, faierlbeein_a): aufgrund physischer oder psychischer Beeinträchtigung
 
 st:
-
-ao1: 1: (_s) selbst erlebt
-
-ao2: 2: (_a) bei anderen beobachtet
 
 mv:
 
