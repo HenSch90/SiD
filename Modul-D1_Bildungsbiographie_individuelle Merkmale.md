@@ -67,7 +67,7 @@ hl:
 
 in:
 
-q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer inklusive der jeweiligen wöchentlichen Stundenzahl, der Abschlussnote und des Geschlechts des/der Lehrer*/in.
+q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer inklusive der jeweiligen wöchentlichen Stundenzahl, der Abschlussnote und des Geschlechts des/der Lehrer\*in.
 
 is: Beziehen Sie Ihre Angaben bitte auf Ihr Abschlussjahr.
 
@@ -368,7 +368,7 @@ D1_7
 
 tc: IF (ssemhs <= 7 | isMissing(ssemhs)) 
 
-vn: stfw (stfwint / stfwent / stfwein / stfwber / stfwsoz / stfwarb / stfwalt / stfwwiss / stfwfam / stfwzeit / stfwzul / stfwhelf / stfwver / stfwand / stfwando)
+vn: stfw (stfwint / stfwent / stfwein / stfwber / stfwsoz / stfwart / stfwalt / stfwwiss / stfwfam / stfwzeit / stfwzul / stfwhelf / stfwver / stfwand / stfwando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao / offene Angabe
 
@@ -550,13 +550,13 @@ it:
 
 st:
 
-ao1: 1: : Vollzeit
+ao1: 1: Vollzeit
 
-ao2: 2: : Teilzeit
+ao2: 2: Teilzeit
 
-ao3: 3: : Vollzeitstudiengang mit individueller Teilzeitregelung
+ao3: 3: Vollzeitstudiengang mit individueller Teilzeitregelung
 
-ao4: 4: : Vollzeitstudiengang inoffiziell als Teilzeitstudium
+ao4: 4: Vollzeitstudiengang inoffiziell als Teilzeitstudium
 
 mv:
 
@@ -606,9 +606,9 @@ it:
 
 st:
 
-ao1: 0: : nein
+ao1: 0: nein
 
-ao2: 1: : ja
+ao2: 1: ja
 
 mv:
 
@@ -630,7 +630,7 @@ tr:
 
 GOTO D1_10 IF sabserbl1 = 0
 GOTO D1_12 IF sabserbl1 = 1
-GOTO D1_10 IF ssemhs = k. A.
+GOTO D1_12 IF ssemhs = k. A.
 
 
 \--------------------------------
@@ -658,41 +658,41 @@ it1: (sabserbl): [infield = Bundesland] (Drop-Down)
 
 st:
 
-aox: 0: : Bundesland
+aox: 0: Bundesland
 
-ao1: 2: : Baden-Württemberg
+ao1: 2: Baden-Württemberg
 
-ao2: 3: : Bayern
+ao2: 3: Bayern
 
-ao3: 4: : Berlin
+ao3: 4: Berlin
 
-ao4: 5: : Brandenburg
+ao4: 5: Brandenburg
 
-ao5: 6: : Bremen
+ao5: 6: Bremen
 
-ao6: 7: : Hamburg
+ao6: 7: Hamburg
 
-ao7: 8: : Hessen
+ao7: 8: Hessen
 
-ao8: 9: : Mecklenburg-Vorpommern
+ao8: 9: Mecklenburg-Vorpommern
 
-ao9: 10: : Niedersachsen
+ao9: 10: Niedersachsen
 
-ao10: 11: : Nordrhein-Westfalen
+ao10: 11: Nordrhein-Westfalen
 
-ao11: 12: : Rheinland-Pfalz
+ao11: 12: Rheinland-Pfalz
 
-ao12: 13: : Saarland
+ao12: 13: Saarland
 
-ao13: 14: : Sachsen
+ao13: 14: Sachsen
 
-ao14: 15: : Sachsen-Anhalt
+ao14: 15: Sachsen-Anhalt
 
-ao15: 16: : Schleswig-Holstein
+ao15: 16: Schleswig-Holstein
 
-ao16: 17: : Thüringen
+ao16: 17: Thüringen
 
-ao17: 18: : im Ausland
+ao17: 18: im Ausland
 
 mv:
 
