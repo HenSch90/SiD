@@ -1172,7 +1172,7 @@ it1: (suzeitp01 / suzeitp02 / suzeitp03): Präfix: Zeitpunkt der Unterbrechung: 
 
 it2: (sudau01 / sudau02 / sudau03): Präfix: Dauer der Unterbrechung: [infield = Monate; number] (Eingabefeld)
 
-it3: (subeur01 / subeur02 / subeur03): mit Beurlaubung?
+it3: (subeur01 / subeur02 / subeur03): mit Beurlaubung
 
 st:
 
@@ -1180,9 +1180,7 @@ ao1: (suzeitp01 / suzeitp02 / suzeitp03): : 1: : Sommersemester 2020 \ 2 : : Win
 
 ao2: (sudau01 / sudau02 / sudau03): number 2 Stellen; 0 TO 99
 
-ao3: (subeur01 / subeur02 / subeur03) 0: : nein
-
-ao4: (subeur01 / subeur02 / subeur03) 1: : ja
+ao3: (subeur01 / subeur02 / subeur03) 1: : mit Beurlaubung
 
 mv:
 
