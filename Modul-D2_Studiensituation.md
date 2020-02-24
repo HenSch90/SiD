@@ -17,7 +17,7 @@ in:
 
 q: Was schätzen Sie, wie wichtig ist es Ihrer Hochschule, …
 
-is:.
+is:
 
 it1: (sssupe1): … den Studierenden Angebote zur Verbesserung des Studienerfolgs zu machen?
 
@@ -128,7 +128,9 @@ ao4: 4:
 
 ao5: 5: sehr gut
 
-mv: -12: weiß ich nicht
+ao6: -12: weiß ich nicht
+
+mv: ao6
 
 ka:
 
@@ -276,7 +278,9 @@ ao4: 4:
 
 ao5: 5: alle
 
-mv: -14: kann ich nicht beurteilen
+ao6: -14: kann ich nicht beurteilen
+
+mv: ao6
 
 ka:
 
@@ -365,8 +369,6 @@ GOTO B1_7 if mastersplit=1, 2, 5, 6
 GOTO A_28 if mastersplit=7, 8, 11, 12, 14
 
 hi:
-
-
 
 **------------------------------------------------------------**
 
@@ -643,13 +645,13 @@ in:
 
 q: Wie stark ist Ihr Studiengang an Ihrer Hochschule charakterisiert durch ...
 
-is:.
+is:
 
-it1: (sscofopra1): Forschungsbezug in der Lehre?
+it1: (sscofopra1): ...Forschungsbezug in der Lehre?
 
-it2: (sscofopra2): eine enge Verknüpfung zwischen Theorie und Praxis?
+it2: (sscofopra2): ...eine enge Verknüpfung zwischen Theorie und Praxis?
 
-it3: (sscofopra3): einen engen Praxisbezug?
+it3: (sscofopra3): ...einen engen Praxisbezug?
 
 st:
 
@@ -887,7 +889,7 @@ hl:
 
 in:
 
-q: Wie häufig haben Sie im laufenden Semester *außerhalb* der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
+q: Wie häufig haben Sie im laufenden Semester ***außerhalb*** der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
 
 is:.
 
@@ -941,7 +943,7 @@ tr:
 
 GOTO D2_14
 
-hi: 
+hi: @ZOFAR in der QML sind die Titel nicht deckungsgleich mit den Antwortoptionen programmiert.
 
 **------------------------------------------------------------**
 
@@ -1071,7 +1073,7 @@ tr:
 
 GOTO D2_16
 
-hi: 
+hi: @ZOFAR in der QML wurde t1 zweimal programmiert.
 
 **------------------------------------------------------------**
 
@@ -1159,9 +1161,9 @@ it:
 
 st:
 
-ao1: (ssectsstud): [Freitextfeld]: ... Sie bislang in Ihrem aktuellen Studium zirka erreicht haben.
+ao1: (ssectsstud): Präfix: ... Sie bislang in Ihrem aktuellen Studium zirka erreicht haben.
 
-ao2: (ssectssem): [Freitextfeld]: ... Sie voraussichtlich im aktuellen Semester erreichen werden.
+ao2: (ssectssem): Präfix: ... Sie voraussichtlich im aktuellen Semester erreichen werden.
 
 mv:
 
@@ -1212,19 +1214,21 @@ it:
 
 st:
 
-ao1: (sswrite1): bis zu 5 Seiten : [Freitextfeld]
+ao1: (sswrite1): Präfix: bis zu 5 Seiten
 
-ao2: (sswrite2): 6 bis 10 Seiten : [Freitextfeld]
+ao2: (sswrite2): Präfix: 6 bis 10 Seiten
 
-ao3: (sswrite3): 11 bis 15 Seiten : [Freitextfeld]
+ao3: (sswrite3): Präfix: 11 bis 15 Seiten
 
-ao4: (sswrite4): 16 bis 20 Seiten : [Freitextfeld]
+ao4: (sswrite4): Präfix: 16 bis 20 Seiten
 
-ao5: (sswrite5): 21 bis 25 Seiten : [Freitextfeld]
+ao5: (sswrite5): Präfix: 21 bis 25 Seiten
 
-ao6: (sswrite6): 26 Seiten oder mehr : [Freitextfeld]
+ao6: (sswrite6): Präfix: 26 Seiten oder mehr
 
-mv: (sswrite7): nichts davon
+ao7: (sswrite7): nichts davon
+
+mv: ao7
 
 ka:
 
@@ -1283,7 +1287,7 @@ it:
 
 st:
 
-ao: (ssread): [Freitextfeld]
+ao: (ssread): 
 
 mv:
 
@@ -1328,11 +1332,11 @@ q: Wie oft haben Sie in diesem Semester…
 
 is:.
 
-it1: (ssrilern1): .… Erkenntnisse aus verschiedenen Lehrveranstaltungen zusammengeführt?
+it1: (ssrilern1): … Erkenntnisse aus verschiedenen Lehrveranstaltungen zusammengeführt?
 
 it2: (ssrilern2): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
 
-it3: (ssrilern3): …unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
+it3: (ssrilern3): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
 
 it4: (ssrilern4): … die Stärken und Schwächen des eigenen Standpunktes reflektiert?
 
@@ -1385,7 +1389,7 @@ D2_21
 
 tc:
 
-vn: sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11; sszustud12; sszustud13; sszustud14/ sszustud15/ sszustud16/ sszustud17
+vn: sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11; sszustud12; sszustud13
 
 qt: Einfachauswahlmatrix
 
@@ -1417,9 +1421,11 @@ it9: (sszustud9): Service- und Beratungsleistungen an Ihrer Hochschule
 
 it10: (sszustud10): Studienbedingungen an Ihrer Hochschule insgesamt
 
-it11: (sszustud11): Ihrer Studienleistungen
+it11: (sszustud11): Ihren Studienleistungen
 
 it12: (sszustud12): Ihrem Studienfortschritt
+
+it13: (sszustud13): Ihrem bisher erreichten Wissen und Können
 
 st:
 
@@ -1433,7 +1439,9 @@ ao4: 4:
 
 ao5: 5: sehr zufrieden
 
-mv: -13: kann ich nicht beurteilen
+ao6: -13: kann ich nicht beurteilen
+
+mv: ao6 
 
 ka:
 
