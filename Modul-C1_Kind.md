@@ -228,9 +228,9 @@ ka:
 
 vc:
 
-av: Bitte geben Sie die Anzahl an Kindern in Ihrem Haushalt an (0 bis 9).
+av:
 
-kh:
+kh: Bitte geben Sie die Anzahl an Kindern in Ihrem Haushalt an (0 bis 9).
 
 fv:
 
