@@ -1101,7 +1101,7 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, und zwar: [pflegango] Präfix: Personen
+ao2: 2: Präfix: ja, und zwar: [pflegango] Postfix: Personen
 
 mv:
 
@@ -2715,7 +2715,7 @@ it:
 
 st:
 
-ao1: (vsbplz): 5 Zeichen, Prefix: Postleitzahl: (vsbplzo)
+ao1: (vsbplz): 5 Zeichen, Präfix: Postleitzahl: [vsbplzo]
 
 ao2: (vsbort): 25 Zeichen
 
@@ -2763,9 +2763,9 @@ it:
 
 st:
 
-ao1: (vsbplz): 5, Prefix: Postleitzahl: (vsbplzo)
+ao1: (vsbplz): 5, Präfix: Postleitzahl: [vsbplzo]
 
-ao2: (vsbort): 25, Prefix: ggf. Wohnort
+ao2: (vsbort): 25, Präfix: ggf. Wohnort
 
 mv:
 
@@ -2789,6 +2789,7 @@ hi:
 
 \------------------------------------------------------------
 A_38a
+==========
 
 tc:
 
@@ -2846,6 +2847,7 @@ hi:
 
 \------------------------------------------------------------
 A_38b
+==========
 
 tc:
 
@@ -2880,7 +2882,7 @@ ao3: 3: nicht anerkannt
 
 ao6: -13: weiß ich nicht
 
-mv:
+mv: ao6
 
 ka:
 
@@ -2905,6 +2907,7 @@ hi:
 
 \------------------------------------------------------------
 A_38c
+==========
 
 tc:
 
@@ -2952,8 +2955,9 @@ hv:
 
 fo:
 
-tr: <zofar:transition target="D1_2" condition="(zofar.asNumber(mastersplit)==1 or zofar.asNumber(mastersplit)==2 or zofar.asNumber(mastersplit)==3 or zofar.asNumber(mastersplit)==4 or zofar.asNumber(mastersplit)==7 or zofar.asNumber(mastersplit)==8 or zofar.asNumber(mastersplit)==9 or zofar.asNumber(mastersplit)==10 or zofar.asNumber(mastersplit)==14)"/>
-<zofar:transition target="A_40"/>
+tr: 
+GOTO D1_2 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
+ELSO GOTO A_40
 
 hi:
 
@@ -2990,7 +2994,7 @@ ao4: 4: Mittlere Reife
 
 ao5: 5: Hauptschulabschluss
 
-ao6: 6: Anderer Abschluss
+ao6: 6: anderer Abschluss
 
 a07: 7: kein Abschluss
 
@@ -3043,7 +3047,7 @@ ao1: (vsbtyp1): Gymnasium
 
 ao2: (vsbtyp2): Gesamtschule mit gymnasialer Oberstufe
 
-ao3: (vsbtyp3): Schule in freier Trägerschaft (z.B. Waldorfschule)
+ao3: (vsbtyp3): Schule in freier Trägerschaft (z. B. Waldorfschule)
 
 ao4: (vsbtyp4): Abendgymnasium, Kolleg (nicht Berufskolleg)
 
@@ -3055,23 +3059,23 @@ ao7: (vsbtyp7): Berufsoberschule
 
 ao8: (vsbtyp8): Fachoberschule
 
-ao9: (vsbtyp9): andere berufsbildende Schule (z.B. Fachschule, Fachakademie, Berufskolleg u. a.)
+ao9: (vsbtyp9): andere berufsbildende Schule (z. B. Fachschule, Fachakademie, Berufskolleg u. a.) [Exklusivkategorie]
 
-ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z.B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
+ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z. B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
 
-ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis
+ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
 
-ao12: (vsbtyp12): Eignungsprüfung (z.B. Kunst, Musik, Sport)
+ao12: (vsbtyp12): Eignungsprüfung (z. B. Kunst, Musik, Sport)
 
 ao13: (vsbtyp13): Begabtenprüfung
 
 ao14: (vsbtyp14): Mediziner\*innen-Test (TMS)
 
-ao15: (vsbtyp15): auf einem anderen Weg und zwar: (vsbtypob)
+ao15: (vsbtyp15): auf einem anderen Weg, und zwar: [vsbtypob]
 
 mv:
 
-ka: ka1 (ao1 TO ao9) Schulischer Weg: : ka2(ao10 TO ao11) Berufliche Qualifikation: :ka3(ao12 TO ao15) Eignungsprüfungen:
+ka: ka1 (ao1 TO ao9) Schulischer Weg: ; ka2(ao10 TO ao11) Berufliche Qualifikation: ; ka3(ao12 TO ao15) Eignungsprüfungen:
 
 vc:
 
@@ -3113,7 +3117,7 @@ it:
 
 st:
 
-ao1: 3: Prefix: Durchschnittsnote (z. B. 2,5): (vsbnoteo)
+ao1: 3: Präfix: Durchschnittsnote (z. B. 2,5): (vsbnoteo)
 
 ao2: -11: Ich habe keine Note erhalten. 
 
@@ -3160,7 +3164,7 @@ it:
 
 st:
 
-ao1: 1: Jahr: (Dropdownjahresliste 2019 bis 1999 und früher)
+ao1: 1: Jahr: [Dropdown, Jahresliste: Jahr, 2019 ... 1999 und früher]
 
 vc:
 
@@ -3174,8 +3178,9 @@ hv:
 
 fo:
 
-tr: <zofar:transition target="A_37a" condition="zofar.asNumber(h_split)==1"/>
-    <zofar:transition target="A_37b" condition="zofar.asNumber(h_split)==2"/>
+tr:
+GOTO A_37a IF h_split=1
+GOTO A_37b IF h_split=2
 
 hi:
 
@@ -3225,10 +3230,10 @@ hv:
 fo:
 
 tr: GOTO A_42 if vausbja=1 | k.A.
-    GOTO A_42 if (vausbja=2 | 3) AND (mastersplit=5, 6, 11, 12, 13)
-    GOTO D1_4 if (vausbja=3) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
     GOTO D1_5 if (vausbja=2) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
-    
+    GOTO D1_4 if (vausbja=3) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)   
+    GOTO A_42 if (vausbja=2 | 3) AND (mastersplit=5, 6, 11, 12, 13)
+
 hi:
 
 \------------------------------------------------------------
@@ -3254,13 +3259,13 @@ it:
 
 st:
 
-ao1: 1: Nein
+ao1: 1: nein
 
-ao2: 2: Ja, mit einer Tätigkeit
+ao2: 2: ja, mit einer Tätigkeit
 
-ao3: 3: Ja, mit zwei verschiedenen Tätigkeiten
+ao3: 3: ja, mit zwei verschiedenen Tätigkeiten
 
-ao4: 4: Ja, mit drei oder mehreren Tätigkeiten
+ao4: 4: ja, mit drei oder mehreren Tätigkeiten
 
 mv:
 
@@ -3280,10 +3285,10 @@ fo:
 
 tr: GOTO A_43 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
     GOTO A_44 IF (eaktsens=1 | k.A.) AND (mastersplit=13)
-    GOTO D1_9 IF eaktsens=1 | k.A.) AND (mastersplit=1, 2, 7, 8)
     GOTO D3_20 IF (eaktsens =1 | k.A. & sformberu=1 | sformdua=1) AND (mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14)
     GOTO D3_22 IF (eaktsens =1 | k.A. & sformberu!=1 | sformdua!=1) AND (mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14)
-    
+    GOTO D1_9 IF eaktsens=1 | k.A.) AND (mastersplit=1, 2, 7, 8)
+
 hi:
 
 \------------------------------------------------------------
@@ -3305,9 +3310,13 @@ q1: In welchem Maße hat ihre Erwerbstätigkeit einen fachlichen Bezug zu Ihrem 
 
 q2: In welchem Maße hat Ihre Erwerbstätigkeit, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
 
-q3: In welchem Maße haben Ihre Erwerbstätigkeiten  einen fachlichen Bezug zu Ihrem aktuellen Studium?
+q3: In welchem Maße haben Ihre Erwerbstätigkeiten einen fachlichen Bezug zu Ihrem aktuellen Studium?
 
-q4:  In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
+q4: In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
+
+q5: In welchem Maße haben Ihre Erwerbstätigkeiten einen fachlichen Bezug zu Ihrem aktuellen Studium?
+
+q6: In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
 
 is:
 
@@ -3319,15 +3328,15 @@ it: 3: Tätigkeit C
 
 st:
 
-ao1: 1: 1: in gar keinem Maße
+ao1: 1: in gar keinem Maße
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: : in sehr hohem Maße
+ao5: 5: in sehr hohem Maße
 
 mv:
 
@@ -3337,13 +3346,17 @@ vc1: SHOW q1 IF eaktsens=2 AND sformdua!=1
 
 vc2: SHOW q2 IF eaktsens=2 AND sformdua=1 
 
-vc3: SHOW q3 IF eaktsens=3 | 4 AND sformdua!=1
+vc3: SHOW q3 IF eaktsens=3 AND sformdua!=1
 
-vc4: SHOW q4 IF eaktsens=3 | 4 AND sformdua=1 
+vc4: SHOW q4 IF eaktsens=3 AND sformdua=1 
 
-vc5: SHOW it1 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4 
-vc6: SHOW it2 IF eaktsens=3 OR eaktsens=4 
-vc7: SHOW it3 IF eaktsens=4 
+vc5: SHOW q5 IF eaktsens=4 AND sformdua!=1
+
+vc6: SHOW q6 IF eaktsens=4 AND sformdua=1 
+
+vc7: SHOW it1 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4 
+vc8: SHOW it2 IF eaktsens=3 OR eaktsens=4 
+vc9: SHOW it3 IF eaktsens=4 
 
 
 av:
@@ -3436,7 +3449,7 @@ it:
 
 st:
 
-ao: (sabszsp): Dropdown
+ao: (sabszp): [Dropdown]
 
 ao0: 0: Monat
 
@@ -3465,7 +3478,7 @@ ao11: 11: November
 ao12: 12: Dezember
 
 
-ao: (sabszsp2) Dropdown Jahr
+ao: (sabszp2) [Dropdown] Jahr
 
 ao0: 0: Jahr
 
@@ -3493,9 +3506,9 @@ ao11: 11: 2009 und früher
 
 mv:
 
-ka: ka1(Dropdown Monat): Monat
+ka1: (Dropdown Monat): Monat
 
-ka2(Dropdown Jahr): Jahr
+ka2: (Dropdown Jahr): Jahr
 
 vc:
 
@@ -3650,7 +3663,7 @@ it:
 
 st:
 
-ao1: 1: offene Angabe: 3, Prefix: Abschlussnote (z. B. 2,5): (sabsernoto)
+ao1: 1: offene Angabe: 3, Prefix: Abschlussnote (z. B. 2,5): [sabsernoto]
 
 ao2: -11: Ich habe keine Note erhalten./In meinem vorigen Studium gab es keine Noten.
 
@@ -3693,7 +3706,7 @@ hl:
 
 in:
 
-q: Wie wahrscheinlich ist es, dass Sie..
+q: Wie wahrscheinlich ist es, dass Sie…
 
 is:
 
@@ -3703,15 +3716,15 @@ It2: (promoplan) … eine Promotion aufnehmen?
 
 st:
 
-ao1:1: 1: sehr unwahrscheinlich
+ao1: 1: sehr unwahrscheinlich
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: sehr wahrscheinlich
+ao5: 5: sehr wahrscheinlich
 
 mv:
 
@@ -3733,18 +3746,16 @@ tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3,
      GOTO KSM-anf02 IF (mastersplit=7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
      GOTO KSM-anf01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
      GOTO KSM-anf02 IF (mastersplit=8, 10, 12) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=2) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     
      GOTO KSM-ma01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND sabsan=1 AND ssemfs>5
      GOTO KSM-ma01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND sabsan=1 AND ssemfs>5
-          
      GOTO KSM-phd01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
      GOTO KSM-phd01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
-          
      GOTO A_50 IF zusatzsplit=1 OR zusatzsplit=3 OR zusatzsplit=4
      GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=1 AND imausl=1)
      GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=MISSING OR imausl=MISSING)
      
 hi:
+
 
 \------------------------------------------------------------
 
@@ -3769,15 +3780,15 @@ it:
 
 st: … eine Promotion aufnehmen?
 
-ao1:1: 1: sehr unwahrscheinlich
+ao1: 1: sehr unwahrscheinlich
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: sehr wahrscheinlich
+ao5: 5: sehr wahrscheinlich
 
 mv:
 
@@ -3799,13 +3810,10 @@ tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3,
      GOTO KSM-anf02 IF (mastersplit=7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
      GOTO KSM-anf01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
      GOTO KSM-anf02 IF (mastersplit=8, 10, 12) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=2) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     
      GOTO KSM-ma01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND sabsan=1 AND ssemfs>5
      GOTO KSM-ma01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND sabsan=1 AND ssemfs>5
-          
      GOTO KSM-phd01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
      GOTO KSM-phd01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
-          
      GOTO A_50 IF zusatzsplit=1 OR zusatzsplit=3 OR zusatzsplit=4
      GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=1 AND imausl=1)
      GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=MISSING OR imausl=MISSING)
@@ -3869,6 +3877,7 @@ tr: GOTO D1_14 IF (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=
     GOTO A_51b if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2) AND (h_split=2 (50%))
     GOTO A_51a if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=1 (50%))
     GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=2 (50%))
+
 hi:
 
 \------------------------------------------------------------
@@ -3900,15 +3909,15 @@ it4: (ssaaja): … das Studium ganz aufzugeben?
 
 st:
 
-ao1: 1: 1: gar nicht
+ao1: 1: gar nicht
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: sehr ernsthaft
+ao5: 5: sehr ernsthaft
 
 mv:
 
@@ -3960,15 +3969,15 @@ it4: (ssaaja): … das Studium ganz aufzugeben?
 
 st:
 
-ao1: 1: 1: gar nicht
+ao1: 1: gar nicht
 
-ao2: 2: 2:
+ao2: 2:
 
-ao3: 3: 3:
+ao3: 3:
 
-ao4: 4: 4:
+ao4: 4:
 
-ao5: 5: 5: sehr ernsthaft
+ao5: 5: sehr ernsthaft
 
 mv:
 
@@ -4031,7 +4040,7 @@ ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind)
 
 mv:
 
-ka: ka1: ao1 TO ao3: in einer Wohnung, einem Zimmer oder einem Haus
+ka1: ao1 TO ao3: in einer Wohnung, einem Zimmer oder einem Haus
 
 ka2: ao4TO ao7: im Studierendenwohnheim
 
@@ -4076,9 +4085,9 @@ it:
 
 st: Ich wohne …
 
-ao1: 1: allein. [EK]
+ao1: 1: allein. [Exklusivkategorie]
 
-ao2: 2: mit Mitbewohner(inne)n in einer Wohngemeinschaft.
+ao2: 2: mit Mitbewohner\*innen in einer Wohngemeinschaft.
 
 ao3: 3: bei meinen Eltern (bzw. einem Elternteil)
 
@@ -4106,10 +4115,10 @@ hv:
 
 fo:
 
-tr: GOTO D3_2 IF wohnal!=1 AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
-    GOTO D3_4 IF wohnal=1 AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
-    GOTO B2_5 IF mastersplit=7, 8, 13
-    GOTO B1_5 IF mastersplit=1, 2
+tr: GOTO D3_2 IF wohnal != 1 AND mastersplit = 3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO D3_4 IF wohnal = 1 AND mastersplit = 3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO B2_5 IF mastersplit= 7, 8, 13
+    GOTO B1_5 IF mastersplit= 1, 2
   
 hi:
 
@@ -4201,7 +4210,9 @@ mv:
 
 ka:
 
-vc: SHOW q1 if ainfaus=1
+vc: 
+
+SHOW q1 if ainfaus=1
 
 SHOW q2 if ainfaus=2 OR ainfaus=3 OR ainfaus=4
 
@@ -4223,6 +4234,7 @@ tr: GOTO F1_1 if mastersplit=2, 4, 6, 8, 10, 12, 14
     GOTO A_56 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1)
 
 hi:
+
 
 \------------------------------------------------------------
 
