@@ -721,7 +721,7 @@ GOTO D1_12 IF (sabserbl = k. A. | 0)
 D1_11 
 ====
 
-tc: IF sabserbl = 1 – 16 
+tc: IF sabserbl = 2 – 17 
 
 vn: sabserhs1 / sabserhs2
 
@@ -951,17 +951,17 @@ it4: (ssujaaz): … das Studium zwischenzeitlich unterbrochen?
 
 st:
 
-aox: 0: : Anzahl
+aox: 0: Anzahl
 
-ao1: 1: : einmal
+ao1: 1: einmal
 
-ao2: 2: : zweimal
+ao2: 2: zweimal
 
-ao3: 3: : dreimal
+ao3: 3: dreimal
 
-ao4: 4: : viermal
+ao4: 4: viermal
 
-ao5: 5: : fünfmal und mehr
+ao5: 5: fünfmal und mehr
 
 (ao1 bis ao5 als Drop-Down; infield = Anzahl)
 
@@ -1020,7 +1020,7 @@ it2: (ende01 / ende02 / ende03 / ende04 / ende05): Präfix: Ende: [infield = Sem
 
 it3: (hs01 / hs02 / hs03 / hs04 / hs05): Präfix: [infield = Hochschule; 100 Zeichen] (offene Angabe)
 
-it4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfach; 100 Zeichen] (offene Angabe)
+it4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfach; 60 Zeichen] (offene Angabe)
 
 it5: (abs01 / abs02 / abs03 / abs04 / abs05): [infield = angestrebter Abschluss] (Drop-Down)
 
@@ -1036,15 +1036,15 @@ ao2: (ende01 / ende02 / ende03 / ende04 / ende05): 1 : : Sommersemester 2020 \ 2
 
 ao3: (hs01 / hs02 / hs03 / hs04 / hs05): Präfix: [infield = Hochschule; 100 Zeichen] 
 
-ao4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfach; 100 Zeichen] 
+ao4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfach; 60 Zeichen] 
 
-ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: :Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss \ 10: : kein Studienabschluss
+ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: :Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss, Magister) \ 10: : kein Studienabschluss
 
 ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: : begonnen \ 2: : abgeschlossen \ 3: : abgebrochen \ 4: : unterbrochen
 
-ao7: (techepi): 0: : nein
+ao7: (techepi): 1: : nein
 
-ao8: (techepi): 1: : ja
+ao8: (techepi): 2: : ja
 
 mv:
 
@@ -1062,7 +1062,7 @@ hv:
 
 fo:
 
-tr: GOTO D1_15b IF techepi==1
+tr: GOTO D1_15b IF techepi==2
     GOTO D1_16 IF ssuja=1  
     GOTO A_51a IF h_split=1 
     GOTO A_51b IF h_split=2 
@@ -1097,7 +1097,7 @@ it2: (ende06 / ende07 / ende08 / ende09 / ende10): Präfix: Ende: [infield = Sem
 
 it3: (hs06 / hs07 / hs08 / hs09 / hs10): Präfix: [infield = Hochschule; 100 Zeichen] (offene Angabe)
 
-it4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 100 Zeichen] (offene Angabe)
+it4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 60 Zeichen] (offene Angabe)
 
 it5: (abs06 / abs07 / abs08 / abs09 / abs10): [infield = angestrebter Abschluss] (Drop-Down)
 
@@ -1111,9 +1111,9 @@ ao2: (ende06 / ende07 / ende08 / ende09 / ende10): 1 : : Sommersemester 2020 \ 2
 
 ao3: (hs06 / hs07 / hs08 / hs09 / hs10): Präfix: [infield = Hochschule; 100 Zeichen] 
 
-ao4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 100 Zeichen] 
+ao4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 60 Zeichen] 
 
-ao5: (abs06 / abs07 / abs08 / abs09 / abs10): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: :Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss \ 10: : kein Studienabschluss
+ao5: (abs06 / abs07 / abs08 / abs09 / abs10): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: : Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss, Magister) \ 10: : kein Studienabschluss
 
 ao6: (stand06 / stand07 / stand08 / stand09 / stand10): 1: : begonnen \ 2: : abgeschlossen \ 3: : abgebrochen \ 4: : unterbrochen
 
