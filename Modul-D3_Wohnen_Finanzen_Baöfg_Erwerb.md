@@ -362,7 +362,7 @@ fv:
 
 hv:
 
-fo:
+fo: “Betrag” bitte als Spaltenüberschrift über die Spalte mit den Eingabefeldern.
 
 tr:
 
@@ -379,7 +379,7 @@ tc:
 
 vn: festipart (festipartnein / festipartdeut / festipartstuvolk / festipartpartei / festipartbegabt / festipartandstaat / festipartprivat / festipartsons / festipartsonso)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -393,21 +393,21 @@ it:
 
 st:
 
-ao1 (festipartnein): nein
+ao1: (festipartnein): nein
 
-ao2 (festipartdeut): ja, Deutschlandstipendium
+ao2: (festipartdeut): ja, Deutschlandstipendium
 
-ao3 (festipartstuvolk): ja, Stipendium der Studienstiftung des deutschen Volkes e. V.
+ao3: (festipartstuvolk): ja, Stipendium der Studienstiftung des deutschen Volkes e. V.
 
-ao4 (festipartpartei): ja, Stipendium einer parteinahen Stiftung
+ao4: (festipartpartei): ja, Stipendium einer parteinahen Stiftung
 
-ao5 (festipartbegabt): ja, Stipendium eines anderen Begabtenförderungswerks
+ao5: (festipartbegabt): ja, Stipendium eines anderen Begabtenförderungswerks
 
-ao6 (festipartandstaat): ja, anderes mit staatlichen Mitteln finanziertes Stipendium (Geldgeber: Land, Kommune, Hochschule)
+ao6: (festipartandstaat): ja, anderes mit staatlichen Mitteln finanziertes Stipendium (Geldgeber: Land, Kommune, Hochschule)
 
-ao7 (festipartprivat): ja, Stipendium eines privaten Geldgebers (Industrie, Firma, privater Stifter)
+ao7: (festipartprivat): ja, Stipendium eines privaten Geldgebers (Industrie, Firma, privater Stifter)
 
-ao8 (festipartsons): Ja, anderes und zwar: [(festipartsonso); Eingabefeld; 50 Zeichen]
+ao8: (festipartsons): Ja, anderes und zwar: [(festipartsonso); Eingabefeld: 50 Zeichen]
 
 mv:
 
@@ -493,39 +493,37 @@ it16: (fausinsg; feininsg2): ++Gesamtausgaben++:
 
 st:
 
-ao1: : (fausgmieto; feindmieto), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao1: (fausgmieto; feindmieto): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao2: : (fausgerno; feinderno), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao2: (fausgerno; feinderno): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao3: : (fausgkomo; feindkomo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao3: (fausgkomo; feindkomo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao4: : (fausgkleio; feindkleio), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao4: (fausgkleio; feindkleio): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao5: : (fausglerno; feindlerno), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao5: (fausglerno; feindlerno): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao6: : (fausgmobo; feindmobo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao6: (fausgmobo; feindmobo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao7: : (fausggeso; feindgeso), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao7: (fausggeso; feindgeso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao8: : (fausgsemo; feindgsemo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao8: (fausgsemo; feindgsemo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao9: : (fausgstuo; feindgstuo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao9: (fausgstuo; feindgstuo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao10: : (fausgfreio; feindfreio), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao10: (fausgfreio; feindfreio): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao11: : (fausgkitaso; feindkitaso), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao11: (fausgkitaso; feindkitaso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao12: : (fausgkindso; feindkindso), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao12: (fausgkindso; feindkindso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao13: : (fausgasso; feindasso), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao13: (fausgasso; feindasso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao14: : (fausgthilfo; feindgthilfo), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao14: (fausgthilfo; feindgthilfo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao15: : (fausandq; fausandqo; feinandqo2), [50 Zeichen] Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao15: (fausandq; fausandqo; feinandqo2): [50 Zeichen] [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-#{layout.BREAK}#{layout.BREAK}
-
-ao16: : (fausinsg; feininsg2), Präfix [infield = Betrag; number] Suffix: € pro Monat
+ao16: (fausinsg; feininsg2): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
 mv:
 
@@ -535,20 +533,21 @@ vc1: SHOW it11 TO 12 IF dkinja = 2
 
 vc2: SHOW is2 IF wohnal=!1
 
-av1: ao1 TO ao16: number 4 Stellen; 0 TO 9999
+av: 
 
-kh1: ao1 TO ao15: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (0 bis 9999)
+kh: ao1 TO ao15: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (0 bis 9999)
 
 fv:
 
 hv:
 
-fo:
+fo1: “Ich bezahle selbst” und “Andere bezahlen für mich” bitte als Spaltenüberschriften über die erste bzw. zweite Spalte mit den Eingabefeldern.
+
+fo2: Bitte etwas Abstand zwischen den beiden Spalten.
 
 tr: GOTO D3_9
 
-hi1: “Ich bezahle selbst” und “Andere bezahlen für mich” bitte als Spaltenüberschriften.
-hi2: Bitte etwas Abstand zwischen den beiden Spalten.
+hi:
 
 \--------------------------------
 
