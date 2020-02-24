@@ -1200,7 +1200,7 @@ tc:
 
 vn: sswrite1; sswrite2; sswrite3; sswrite4; sswrite5; sswrite6; sswrite7
 
-qt: offene Abfrage
+qt: offene Abfrage und Mehrfachauswahl
 
 hl:
 
@@ -1227,8 +1227,6 @@ ao5: (sswrite5): Präfix: 21 bis 25 Seiten
 ao6: (sswrite6): Präfix: 26 Seiten oder mehr
 
 ao7: (sswrite7): nichts davon
-
-mv: ao7
 
 ka:
 
