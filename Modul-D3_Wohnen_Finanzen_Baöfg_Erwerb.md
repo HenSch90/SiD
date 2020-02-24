@@ -521,7 +521,7 @@ ao13: (fausgasso; feindasso): [infield = Betrag; number, 4-stellig: 0 TO 9999] P
 
 ao14: (fausgthilfo; feindgthilfo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
-ao15: (fausandq; fausandqo; feinandqo2): [50 Zeichen] [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao15: (fausandqo; feinandqo2): [50 Zeichen] [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
 ao16: (fausinsg; feininsg2): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
 
@@ -572,7 +572,7 @@ it:
 
 st:
 
-ao1: : (fmineinko), Präfix [infield = €; number] 
+ao1: (fmineinko): [infield = €; number, 4-stellig: 0 TO 9999] 
 
 mv:
 
@@ -580,9 +580,9 @@ ka:
 
 vc:
 
-av: (fmineinko): number 4 stellig; 0 TO 9999
+av: 
 
-kh: Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (1 bis 9999).
+kh: (fmineinko): Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (1 bis 9999).
 
 fv:
 
@@ -622,19 +622,19 @@ it1: ... meine Eltern für mich direkt:
 
 it2: ... mein\*e Partner\*in für mich direkt:
 
-it3: ... mein Arbeitgeber für mich direkt:
+it3: ... mein Arbeitgeber für mich direkt und zwar:
 
-it4: ... andere für mich direkt und zwar:
+it4: ... andere für mich direkt:
 
 st:
 
-ao1: : (fausgstkelto), Präfix [number], Suffix: €
+ao1: (fausgstkelto): [number, 4-stellig: 1 TO 9999], Postfix: €
 
-ao2: : (fausgstkparto), Präfix [number], Suffix: € 
+ao2: (fausgstkparto): [number, 4-stellig: 1 TO 9999], Postfix: € 
 
-ao3: : (fausgstkarbo), Präfix [number], Suffix: € 
+ao3: (fausgstkarbo): [number, 4-stellig: 1 TO 9999], Postfix: € 
 
-ao4: : (fausgstkando), Präfix [number], Suffix: € 
+ao4: (fausgstkando): [number, 4-stellig: 1 TO 9999], Postfix: € 
 
 mv: 
 
@@ -642,7 +642,7 @@ ka:
 
 vc: 
 
-av: ao1 TO ao4: number 4 stellig; 0 TO 9999
+av: 
 
 kh: Bitte geben Sie nur Zahlen ein.
 
@@ -802,7 +802,7 @@ tc:
 
 vn: fbafja
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -816,7 +816,7 @@ it:
 
 st:
 
-ao1: 1: Nein, ich habe keinen Antrag gestellt.
+ao1: 1: Nein, ich habe keine Antrag gestellt.
 
 ao2: 2: Nein, mein aktueller Antrag wurde endgültig abgelehnt.
 
@@ -861,7 +861,7 @@ tc: IF fbafja = 1
 
 vn: fbafex
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -914,7 +914,7 @@ tc:IF fbafja = 2
 
 vn: fbafabg
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -963,7 +963,7 @@ tc: IF fbafja = 1 \| 2
 
 vn: fbaf (fbafkelt / fbafkein / fbafkfhd / fbafktw / fbafkleis / fbafkalt / fbafkzwei / fbafkweni / fabfkschu / fbafand / fbafando)
 
-qt: Mehrfachnennung/offene Angabe 
+qt: Mehrfachnennung/offene Angabe mit vertikalen ao
 
 hl:
 
@@ -1039,7 +1039,7 @@ tc: IF fbafja = 4
 
 vn: fbafunab
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1053,9 +1053,9 @@ it:
 
 st:
 
-ao1: 0: nein
+ao1: 1: nein
 
-ao2: 1: ja
+ao2: 2: ja
 
 mv:
 
@@ -1157,17 +1157,17 @@ Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
 
 is: 
-it1: (etat1), Präfix [infield = Tätigkeit; Dropdown-Menü] 
-it2: (etat2), Präfix [infield = Tätigkeit; Dropdown-Menü] 
-it3: (etat3), Präfix [infield = Tätigkeit; Dropdown-Menü] 
+it1: (etat1): [infield = Tätigkeit; Dropdown-Menü] 
+it2: (etat2): [infield = Tätigkeit; Dropdown-Menü] 
+it3: (etat3): [infield = Tätigkeit; Dropdown-Menü] 
 
 st:
-ao1: 1: : Tätigkeit als studentische/wissenschaftliche Hilfskraft im Bereich Forschung und Lehre
-ao2: 2: : Tätigkeit als studentische/wissenschaftliche Hilfskraft im Bereich Verwaltung
-ao3: 3: : Jobben (z. B. in einer Fabrik, einem Büro, einer Kneipe, Babysitten, Nachhilfeunterricht)
-ao4: 4: : Tätigkeit, die einen Hochschulabschluss voraussetzt (ohne Hilfskraft)
-ao5: 5: : Tätigkeit, die einen beruflichen Ausbildungsabschluss voraussetzt
-ao6: 6: : Tätigkeit als Praktikant\*in 
+ao1: 1: Tätigkeit als studentische/ wissenschaftliche Hilfskraft im Bereich Forschung und Lehre
+ao2: 2: Tätigkeit als studentische/ wissenschaftliche Hilfskraft im Bereich Verwaltung
+ao3: 3: Jobben (z. B. in einer Fabrik, einem Büro, einer Kneipe, Babysitten, Nachhilfeunterricht)
+ao4: 4: Tätigkeit, die einen Hochschulabschluss voraussetzt (ohne Hilfskraft)
+ao5: 5: Tätigkeit, die einen beruflichen Ausbildungsabschluss voraussetzt
+ao6: 6: Tätigkeit als Praktikant\*in 
 
 mv: 
 
@@ -1186,7 +1186,6 @@ vc7: SHOW it3 IF eaktsens = 4
 
 vc8: SHOW ka1 TO ka2 IF eaktsens = 3 
 vc9: SHOW ka1 TO ka3 IF eaktsens = 4   
-vc10: SHOW ka1 IF eaktsens = 2
 av: 
 kh: 
 
@@ -1210,7 +1209,7 @@ D3_20
 
 tc: sformberu = 1 | sformdua = 1 
 
-vn1: jobbbds1, jobbbdso1, jobbbds2, jobbbdso2, 
+vn1: jobbbds1; jobbbdso1; jobbbds2; jobbbdso2; 
 
 qt: offene Abfrage / Einfachauswahl im Spaltenformat
 
@@ -1220,26 +1219,24 @@ in:
 
 q: Welchen Beruf üben Sie aktuell aus? Bitte erläutern Sie die Tätigkeit kurz.
 
-is: Falls Sie zurzeit nicht erwerbstätig sind, geben Sie bitte Ihre zuletzt ausgeübte Tätigkeit an. 
+is: Falls Sie zurzeit nicht erwerbstätig sind, geben Sie bitte die Ihre zuletzt ausgeübte Tätigkeit an. 
 #{layout.BREAK}
 Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive Führungsaufgaben ein. Zum Beispiel:
 -   Bankkaufmann/-frau (nicht: Angestellte/r) Beratung, Verkauf von Finanzprodukten, Abteilungsleitung
 -   Zollbeamte(r) im gehobenen Dienst (nicht: Beamter/in) Zollfahndung, Einsatzplanung
--   Maschinenbauingenieur\*in (nicht: Ingenieur\*in) Konstruktion, Optimierungsprozesse, Produktionsleitung
+-   Maschinenbauingenieur(in) (nicht: Ingenieur/in) Konstruktion, Optimierungsprozesse, Produktionsleitung
 
 it:
 
 st:
 
-ao1: (jobbbdso1), Präfix: [infield = Berufsbezeichnung; 100 Zeichen]
+ao1: (jobbbdso1): Präfix: [infield = Berufsbezeichnung; 100 Zeichen]
 
-ao2: (jobbbdso2), Präfix: [infield = Tätigkeitsbeschreibung; 100 Zeichen]
+ao2: (jobbbdso2): Präfix: [infield = Tätigkeitsbeschreibung; 100 Zeichen]
 
-ao3: (jobbbds1), -11: : nie berufstätig gewesen
+mv1: (jobbbds1): -11: nie berufstätig gewesen
 
-ao4: (jobbbds2), -12: : weiß ich nicht [EK]
-
-mv:
+mv2: (jobbbds2): -12: weiß ich nicht [EK]
 
 ka:
 
@@ -1319,7 +1316,7 @@ ao1: 1: trifft gar nicht zu
 
 ao2: 2
 
-ao3: 3:
+ao3: 3
 
 ao4: 4
 
