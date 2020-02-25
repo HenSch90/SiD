@@ -212,15 +212,17 @@ vc5: SHOW it12/ao12 (feinbest) IF  h_gartcount >= 1
 
 av: 
 
-kh1: ao1 TO ao13: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999)
+kh1: ao1 TO ao13: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999).
 
-kh2: ao14: Bitte geben Sie Ihre jeweiligen monatlichen Gesamteinnahmen an (0 bis 99999)
+kh2: ao14: Bitte geben Sie Ihre jeweiligen monatlichen Gesamteinnahmen an (0 bis 99999).
 
 fv:
 
 hv:
 
-fo: “Betrag” bitte als Spaltenüberschrift über die Spalte mit den Eingabefeldern.
+fo1: “Betrag” bitte als Spaltenüberschrift über die Spalte mit den Eingabefeldern.
+
+fo2: Bitte Leerzeile/Abstand vor den Gesamteinnahmen einziehen. 
 
 tr:
 
@@ -294,9 +296,9 @@ D3_8
 
 tc:
 
-vn1: fausg (fausgmieto / fausgerno / fausgkomo / fausgkleio / fausglerno / fausgmobo / fausggeso / fausgsemo / fausgstuo / fausgfreio / fausgkitaso / fausgkindso / fausgasso / fausgthilfo / fausandq / fausandqo) 
+vn1: fausg (fausgmieto / fausgerno / fausgkomo / fausgkleio / fausglerno / fausggeso / fausgmobo / fausgsemo / fausgstuo / fausgfreio / fausgkitaso / fausgkindso / fausgasso / fausandq / fausandqo) 
 
-vn2: feind (feindmieto / feinderno / feindkomo / feindkleio / feindlerno / feindmobo / feindgeso / feindgsemo / feindgstuo / feindfreio / feindkitaso / feindkindso / feindasso / feindgthilfo / feinandquo2)
+vn2: feind (feindmieto / feinderno / feindkomo / feindkleio / feindlerno / feindgeso / feindmobo / feindgsemo / feindstuo / feindfreio / feindkitaso / feindkindso / feindasso / feinandquo2)
 
 vn3: fausinsg; feininsg2
 
@@ -308,104 +310,114 @@ hl:
 
 in:
 
-q: Bitte geben Sie an, welche Ausgaben Sie bzw. Dritte für Sie im Sommersemester 2020 monatlich haben.
+q: Bitte geben Sie an, welche Ausgaben Sie bzw. Andere für Sie im Sommersemester 2020 ++monatlich++ haben.
 
-is1: "Dritte bzw. Andere" meint bspw. Ihre Eltern, die Ihre Miete direkt an den Vermieter bezahlen. 
+is1: "Andere" meint bspw. die Überweisung der Miete durch Ihre Eltern. 
 
 is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an.
 
-it1: (fausgmieto; feindmieto): Miete inkl. Nebenkosten (Strom, Heizung, (Ab-)Wasser usw.)
+it1: (fausgmieto; feindmieto): Warmmiete inkl. Nebenkosten
 
-it2: (fausgerno; feinderno): Ernährung (Lebensmittel und Getränke, auch außer Haus)
+it2: (fausgerno; feinderno): Ernährung 
 
-it3: (fausgkomo; feindkomo): (Mobil)Telefon, Internet, Audio-/Videostreaming
+it3: (fausgkomo; feindkomo): Telefon, Internet
 
 it4: (fausgkleio; feindkleio): Kleidung
 
-it5: (fausglerno; feindlerno): Lernmittel (z. B. Fachliteratur; aber nicht: einmalige Anschaffungskosten für PC, Instrument o. ä.)
+it5: (fausglerno; feindlerno): Lernmittel (z. B. Fachliteratur)
 
-it6: (fausgmobo; feindmobo): Mobilität (z. B. Semesterticket, laufende Ausgaben für Kfz, öff. Verkehrsmittel)
+it6: (fausggeso; feindgeso): Gesundheitskosten (z. B. Krankenversicherung, Medikamente, Therapien)
 
-it7: (fausggeso; feindgeso): Gesundheitskosten (z. B. Krankenversicherung, Medikamente, Therapiemaßnahmen)
+it7: (fausgmobo; feindmobo): Mobilitätskosten (z. B. Auto, Bahn)
 
-it8: (fausgsemo; feindgsemo): Semesterbeitrag (ohne Semesterticket)
+it8: (fausgsemo; feindgsemo): Semesterbeitrag (inkl. Semesterticket)
 
-it9: (fausgstuo; feindgstuo): Studiengebühren (z. B. privates Studium, Langzeitgebühren, Zweitstudium)
+it9: (fausgstuo; feindstuo): Studiengebühren 
 
 it10: (fausgfreio; feindfreio): Freizeit, Kultur und Sport
 
-it11: (fausgkitaso; feindkitaso): Ausgaben Kinderbetreuung
+it11: (fausgkitaso; feindkitaso): Ausgaben für Kinderbetreuung
 
-it12: (fausgkindso; feindkindso): kinderbezogene Ausgaben für Drogerieartikel, Kleidung, Spielzeug
+it12: (fausgkindso; feindkindso): kinderbezogene Ausgaben (Drogerieartikel, Kleidung usw.)
 
-it13: (fausgasso; feindasso): Ausgaben für personelle Assistenzen (z. B. Pflegeassistenz, Mitschreibkraft, Haushaltshilfe)
+it13: (fausgasso; feindasso): Ausgaben für personelle Assistenzen im Zusammenhang mit einer Beeinträchtigung (z. B. Pflegeassistenz, Mitschreibkraft)
 
-it14: (fausgthilfo; feindgthilfo): Ausgaben für technische Hilfsmittel (z. B. Screen Reader, Braille-Zeile, FM-Anlage)
-
-it15: (fausandq): Weitere Ausgaben, und zwar:
+it14: (fausandq): Weitere Ausgaben, und zwar:
 
 #{layout.BREAK}#{layout.BREAK}
 
-it16: (fausinsg; feininsg2): ++Gesamtausgaben++:
+it15: (fausinsg; feininsg2): ++Gesamtausgaben++:
 
 
 st:
 
-ao1: (fausgmieto; feindmieto): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao1: (fausgmieto; feindmieto): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao2: (fausgerno; feinderno): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao2: (fausgerno; feinderno): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao3: (fausgkomo; feindkomo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao3: (fausgkomo; feindkomo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao4: (fausgkleio; feindkleio): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao4: (fausgkleio; feindkleio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao5: (fausglerno; feindlerno): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao5: (fausglerno; feindlerno): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao6: (fausgmobo; feindmobo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao6: (fausggeso; feindgeso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao7: (fausggeso; feindgeso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao7: (fausgmobo; feindmobo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao8: (fausgsemo; feindgsemo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao8: (fausgsemo; feindgsemo): [infield = € pro Semester; number, 4-stellig: 0 TO 9999]
 
-ao9: (fausgstuo; feindgstuo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao9: (fausgstuo; feindstuo): [infield = € pro Semester; number, 4-stellig: 0 TO 9999]
 
-ao10: (fausgfreio; feindfreio): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao10: (fausgfreio; feindfreio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao11: (fausgkitaso; feindkitaso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao11: (fausgkitaso; feindkitaso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao12: (fausgkindso; feindkindso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao12: (fausgkindso; feindkindso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao13: (fausgasso; feindasso): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao13: (fausgasso; feindasso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao14: (fausgthilfo; feindgthilfo): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao14: (fausandqo; feinandqo2): [50 Zeichen] [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao15: (fausandqo; feinandqo2): [50 Zeichen] [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+#{layout.BREAK}#{layout.BREAK}
 
-ao16: (fausinsg; feininsg2): [infield = Betrag; number, 4-stellig: 0 TO 9999] Postfix: € pro Monat
+ao15: (fausinsg; feininsg2): [infield = € pro Monat; number, 5-stellig: 0 TO 99999]
 
 mv:
 
 ka:
 
-vc1: SHOW it11 TO 12 IF dkinja = 2
+vc1: SHOW it11/ao11 TO it12/ao12 IF dkinja = 2
 
-vc2: SHOW is2 IF wohnal=!1
+vc2: SHOW it13/ao13 IF h_gartcount >= 1 
+
+vc3: SHOW is2 IF wohnal=!1
 
 av: 
 
-kh: ao1 TO ao15: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (0 bis 9999)
+kh1: ao1 TO ao14: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (0 bis 9999).
+
+kh2: ao1 TO ao14: Bitte geben Sie an, was andere monatlich jeweils für Sie bezahlen (0 bis 9999).
+
+kh3: ao15: Bitte geben Sie Ihre jeweiligen monatlichen Gesamtausgaben an (0 bis 99999).
+
+kh4: ao15: Bitte geben Sie an, was andere monatlich insgesamt für Sie bezahlen (0 bis 99999).
 
 fv:
 
 hv:
 
-fo1: “Ich bezahle selbst” und “Andere bezahlen für mich” bitte als Spaltenüberschriften über die erste bzw. zweite Spalte mit den Eingabefeldern.
+fo1: “ich bezahle selbst” und “andere bezahlen für mich” bitte als Spaltenüberschriften über die erste bzw. zweite Spalte mit den Eingabefeldern setzen (und dabei bitte kleingeschrieben anfangen).
 
 fo2: Bitte etwas Abstand zwischen den beiden Spalten.
 
+fo3: Bitte Leerzeile/Abstand vor den Gesamtausgaben einziehen. 
+
 tr: GOTO D3_9
 
-hi:
+hi1: Bitte kh1 für die Einzelausgabeposten der Spalte "Ich bezahle selbst" nutzen und kh2 für die Einzelausgabeposten der Spalte "Andere bezahlen für mich".
+
+hi2: Bitte kh3 für die Gesamtausgaben der Spalte "Ich bezahle selbst" nutzen und kh4 für die Gesamtausgaben der Spalte "Andere bezahlen für mich".
 
 \--------------------------------
 
