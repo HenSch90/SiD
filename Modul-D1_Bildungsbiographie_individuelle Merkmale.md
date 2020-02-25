@@ -1010,7 +1010,7 @@ D1_21
 
 tc:
 
-vn: kspr (ksprdeu / kspreng / ksprfra / ksprspa / ksprand / ksprando)
+vn: kspr (ksprdeu / kspreng / ksprfra / ksprspa / ksprand1 / ksprando1 / ksprand2 / ksprando2 / ksprand3 / ksprando3)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1030,11 +1030,15 @@ it3: (ksprfra): Französisch
 
 it4: (ksprspa): Spanisch
 
-it5: (ksprand / ksprando): Andere Sprache, und zwar: [50 Zeichen]
+it5: (ksprand1): [(ksprando1); 60 Zeichen] (offene Angabe)
+
+it6: (ksprand2): [(ksprando2); 60 Zeichen] (offene Angabe)
+
+it7: (ksprand3): [(ksprando3); 60 Zeichen] (offene Angabe)
 
 st:
 
-ao1: 1: : Grundkenntnisse
+ao1: 1: : keine Kenntnisse
 
 ao2: 2
 
@@ -1044,13 +1048,11 @@ ao4: 4
 
 ao5: 5: : sehr gute Kenntnisse
 
-ao6: 6: : Ich beherrsche diese Sprache nicht
-
-ao7: 7: : Muttersprache
+ao6: 6: : Muttersprache
 
 mv:
 
-ka:
+ka: (it5 TO it7): Andere Sprache, und zwar:
 
 vc:
 
@@ -1069,7 +1071,7 @@ tr:
 GOTO D1_22 IF h_split=1 
 GOTO D1_23 IF h_split=2 
 
-hi: 
+hi: Bitte über die drei offenen Angaben eine Zeile einfügen mit "Andere Sprache, und zwar:" linksbündig 
 
 \--------------------------------
 
