@@ -399,7 +399,7 @@ kh1: ao1 TO ao14: Bitte geben Sie Ihre jeweiligen monatlichen Ausgaben an (0 bis
 
 kh2: ao1 TO ao14: Bitte geben Sie an, was andere monatlich jeweils für Sie bezahlen (0 bis 9999).
 
-kh3: ao15: Bitte geben Sie Ihre jeweiligen monatlichen Gesamtausgaben an (0 bis 99999).
+kh3: ao15: Bitte geben Sie Ihre monatlichen Gesamtausgaben an (0 bis 99999).
 
 kh4: ao15: Bitte geben Sie an, was andere monatlich insgesamt für Sie bezahlen (0 bis 99999).
 
