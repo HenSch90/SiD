@@ -94,7 +94,6 @@ ao14: (notefach4), [infield = Note; sehr gut - gut - befriedigend - ausreichend 
 
 ao15: (notefach5), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
-
 mv:
 
 ka:
@@ -230,7 +229,6 @@ tr:
 GOTO D1_7
 
 hi: Auf dieser Seite werden untereinander drei Fragen mit den zugehörigen Antwortoptionen usw. dargestellt (q1 mit ao1, q2 mit ao2a und ao2b sowie q3 mit is3, ao3a, kh3a und ao3b). ao2a und ao2b bitte nebeneinander darstellen, ao3a und ao3b können gerne linksbündig untereinander darsgestellt werden. Wichtig: ao3a bitte als NUMBER mit einer Dezimalstelle programmieren!
-
 
 \--------------------------------
 
@@ -399,9 +397,7 @@ tr:
 GOTO D2_6 IF mastersplit=1, 2, 7, 8, 14
 GOTO A_44 IF mastersplit=3, 4, 9, 10
 
-
 hi:
-
 
 \--------------------------------
 
@@ -537,7 +533,6 @@ GOTO D1_12
 
 hi1: q1 und ao1 bitte oberhalb von q2 und ao2 platzieren.
 hi2: Das Drop-Down wird mit einer von uns zu lieferenden Hochschulliste (vorgefiltert nach Bundesland) gefüllt.
-
 
 \--------------------------------
 
@@ -684,14 +679,12 @@ GOTO A_27
 
 hi:
 
-
 \--------------------------------
 
 D1_15 
 ===
 
 tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1 
-
 
 vn: beginn01 – beginn05 / ende01 – ende05 / hs01 – hs05 / fach01 – fach05 / abs01 – abs05 / stand01 – stand05 
 
@@ -754,7 +747,6 @@ tr: GOTO D1_15b IF techepi==2
     
 hi1: Bitte 5 Akkordeons mit den Überschriften 1. Studienepisode, 2. Studienepisode, 3. Studienepisode, 4. Studienepisode, 5. Studienepisode linksbündig untereinander anlegen. 
 hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig nebeneinander anordnen.
-
 
 \--------------------------------
 
@@ -830,7 +822,6 @@ tr: GOTO A_51a IF h_split=1
     
 hi1: Bitte 5 Akkordeons mit den Überschriften 1. Unterbrechung, 2. Unterbrechung, 3. Unterbrechung, 4. Unterbrechung, 5. Unterbrechung linksbündig untereinander anlegen. Die Überschriften bitte in die erste Spalte der jeweiligen Akkordeons einfügen. 
 hi2: Bitte die Drop-Downs und Eingabefelder pro Unterbrechung linksbündig nebeneinander anordnen.
-
 
 \--------------------------------
 
@@ -1068,8 +1059,7 @@ fo:
 
 tr:
 
-GOTO D1_22 IF h_split=1 
-GOTO D1_23 IF h_split=2 
+GOTO D1_22
 
 hi: Bitte über die drei offenen Angaben eine Zeile linksbündig einfügen mit "Andere Sprache, und zwar:"
 
