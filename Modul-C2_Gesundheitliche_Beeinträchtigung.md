@@ -314,7 +314,7 @@ st:
 
 ao1: (bezeit): 1: seit meiner Geburt
 
-ao2: (bezeit): 2: seit meinem [(bezeitj); 2-stellig, 1-99, number; 0,5 cm]. Lebensjahr
+ao2: (bezeit): 2: seit meinem [(bezeitj); 2-stellig: 1 TO 99, number; 0,5 cm]. Lebensjahr
 
 mv:
 
@@ -322,9 +322,9 @@ ka:
 
 vc: SHOW is IF h_gartcount > 1
 
-av: Bitte tragen Sie eine Zahl zwischen 1 und 99 ein.
+av: 
 
-kh: 
+kh: Bitte tragen Sie eine Zahl zwischen 1 und 99 ein.
 
 fv:
 
@@ -422,9 +422,9 @@ ka:
 
 vc:
 
-av: Bitte tragen Sie den Grad der festgestellten Behinderung ein (1 bis 100).
+av: 
 
-kh: 
+kh: Bitte tragen Sie den Grad der festgestellten Behinderung ein (1 bis 100).
 
 fv:
 
