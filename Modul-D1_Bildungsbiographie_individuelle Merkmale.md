@@ -715,7 +715,7 @@ it4: (fach01 / fach02 / fach03 / fach04 / fach05): [infield = Studienfach; 80 Ze
 
 it5: (abs01 / abs02 / abs03 / abs04 / abs05): [infield = angestrebter Abschluss] (Drop-Down)
 
-it6: (stand01 / stand02 / stand03 / stand04 / stand05): letzter Stand
+it6: (stand01 / stand02 / stand03 / stand04 / stand05): letzter Stand [Einfachauswahl]
 
 st:
 
@@ -765,7 +765,7 @@ tc: IF ssujaaz>=1
 
 vn: suzeitp01 / suzeitp02 / suzeit03 / suzeitp04 / suzeit05 / sudau01 / sudau02 / sudau03 / sudau04 / sudau05 / subeur01 / subeur02 / subeur03 / subeur04 / subeur05
 
-qt: Akkordeon / Tableau / Drop-Down-Menü / offene Angabe / Einfachauswahl
+qt: Akkordeon / Tableau / Drop-Down-Menü / Einfachauswahl
 
 hl:
 
@@ -782,19 +782,19 @@ is1: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 is2: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 Sollten Sie mehr als fünfmal unterbrochen haben, beginnen Sie bitte mit Ihrer fünftletzten Unterbrechung.
 
-it1: (suzeitp01 / suzeitp02 / suzeitp03): Präfix: Zeitpunkt der Unterbrechung: [infield = Semester] (Drop-Down)
+it1: (suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05): Präfix: Zeitpunkt: [infield = Semester] (Drop-Down)
 
-it2: (sudau01 / sudau02 / sudau03): Präfix: Dauer der Unterbrechung: [infield = Monate; number] (Eingabefeld)
+it2: (sudau01 / sudau02 / sudau03 / sudau04 / sudau05): Präfix: Dauer: [infield = Monate] (Drop-Down)
 
-it3: (subeur01 / subeur02 / subeur03): mit Beurlaubung
+it3: (subeur01 / subeur02 / subeur03 / subeur03 / subeur04): Beurlaubung [Einfachauswahl]
 
 st:
 
-ao1: (suzeitp01 / suzeitp02 / suzeitp03): : 1: : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
+ao1: (suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05): 1: Sommersemester 2020 \ 2 : Wintersemester 2019/2020 \ 3 : Sommersemester 2019 \ 4 : Wintersemester 2018/2019 \ ... 21 : Sommersemester 2010
 
-ao2: (sudau01 / sudau02 / sudau03): number 2 Stellen; 0 TO 99
+ao2: (sudau01 / sudau02 / sudau03 / sudau04 / sudau05): 1: 1 Monat \ 2: 2 Monate \ 3: 3 Monate \ 4: 4 Monate \ 24: 24 Monate
 
-ao3: (subeur01 / subeur02 / subeur03) 1: : mit Beurlaubung
+ao3: (subeur01 / subeur02 / subeur03 / subeur04 / subeur05) 1: ja; 2: nein
 
 mv:
 
@@ -805,13 +805,19 @@ vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssujaaz=1 \
 vc2: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
 subeur02 IF ssujaaz=2
 
-vc3: SHOW q3/is2 AND suzeitp01 & sudau01 & subeur01 & suzeitp01 & sudau01 &
-subeur01 & suzeitp02 &sudau02 & subeur02 & suzeitp03 & sudau03 & subeur03
-IF ssujaaz= 3 | 4 | 5
+vc3: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
+subeur02 & suzeitp03 & sudau03 & subeur03 IF ssujaaz=3
+
+vc4: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
+subeur02 & suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 IF ssujaaz=4
+
+vc5: SHOW q3/is2 AND suzeitp01 & sudau01 & subeur01 & suzeitp01 & sudau01 &
+subeur01 & suzeitp02 &sudau02 & subeur02 & suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 & suzeitp05 & sudau05 & subeur05
+IF ssujaaz= 5
 
 av:
 
-kh: (sudau01 / sudau02 / sudau03): Bitte geben Sie die Dauer Ihrer Studienunterbrechung in Monaten an (0 bis 99).
+kh:
 
 fv:
 
@@ -825,72 +831,6 @@ tr: GOTO A_51a IF h_split=1
 hi1: Bitte 5 Akkordeons mit den Überschriften 1. Unterbrechung, 2. Unterbrechung, 3. Unterbrechung, 4. Unterbrechung, 5. Unterbrechung linksbündig untereinander anlegen. Die Überschriften bitte in die erste Spalte der jeweiligen Akkordeons einfügen. 
 hi2: Bitte die Drop-Downs und Eingabefelder pro Unterbrechung linksbündig nebeneinander anordnen.
 
-\--------------------------------
-
-D1_17 
-===
-
-tc:
-
-vn: sint (sintaner / sintzur / sintfair / sinternst / sintkont / sintfach / sintsem)
-
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium zu?
-
-is:
-
-it1: (sintaner): Ich fühle mich von den Lehrenden anerkannt.
-
-it2: (sintzur): Mit den Lehrenden meines Studiengangs komme ich gut zurecht.
-
-it3: (sintfair): Die meisten Lehrenden behandeln mich fair.
-
-it4: (sinternst): Die Lehrenden interessieren sich für das, was ich zu sagen habe.
-
-it5: (sintkont): Mir ist es während meines bisherigen Studiums gut gelungen, Kontakte zu anderen Studierenden aufzubauen.
-
-it6: (sintfach): Ich kenne viele Kommiliton\*innen, mit denen ich mich über fachspezifische Fragen austauschen kann.
-
-it7: (sintsem): Ich habe viele Kontakte zu Studierenden aus meinem Semester.
-
-st:
-
-ao1: 1: : trifft gar nicht zu
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D1_18
-
-hi: Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -899,7 +839,7 @@ D1_19
 
 tc:
 
-vn: sask (sask1 / sask2 / sask3 / sask4 / sask5)
+vn: sask (sask1 / sask2 / sask3 / sask4)
 
 qt: 5er-Skala mit horizontalen ao
 
@@ -915,11 +855,9 @@ it1: (sask1): Ich halte meine Begabung für das Studium für ...
 
 it2: (sask2): Im Studium Neues zu lernen fällt mir ...
 
-it3: (sask3): Meiner Meinung nach bin ich ...
+it3: (sask3): Meine studienbezogenen Fähigkeiten sind ...
 
-it4: (sask4): Meine studienbezogenen Fähigkeiten sind ...
-
-it5: (sask5): Aufgaben im Rahmen des Studiums fallen mir ...
+it4: (sask4): Aufgaben im Rahmen des Studiums fallen mir ...
 
 st:
 
@@ -943,7 +881,7 @@ ao9 (sask2) 4
 
 ao10 (sask2) 5: :  ... leicht
 
-ao11 (sask3) 1 : :  ... nicht intelligent
+ao11 (sask3) 1 : :  ... niedrig
 
 ao12 (sask3) 2
 
@@ -951,9 +889,9 @@ ao13 (sask3) 3
 
 ao14 (sask3) 4
 
-ao15 (sask3) 5: :  ... sehr intelligent
+ao15 (sask3) 5: :  ... hoch
 
-ao16 (sask4) 1 : :  ... niedrig
+ao16 (sask4) 1 : :  ... schwer
 
 ao17 (sask4) 2
 
@@ -961,17 +899,7 @@ ao18 (sask4) 3
 
 ao19 (sask4) 4
 
-ao20 (sask4) 5: :  ... hoch
-
-ao21 (sask5) 1 : :  ... schwer
-
-ao22 (sask5) 2
-
-ao23 (sask5) 3
-
-ao24 (sask5) 4
-
-ao25 (sask5) 5: :  ... leicht
+ao20 (sask4) 5: :  ... leicht
 
 mv:
 
@@ -1001,7 +929,7 @@ D1_20
 
 tc:
 
-vn: kom  (kominter / kommeth / komwiss / komtext / komkrit / komsch / kommuen / komteam / komvera / komkomm / komplan)
+vn: kom  (komsch / kommuen / kommbela / kommdurch / komteam / komvera / komplan / komkomm / komtext / komwiss / kommeth / kommwisl / komkrit / kominter)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1013,27 +941,33 @@ q: Bitte schätzen Sie ein, inwieweit Sie aktuell über die folgenden Fähigkeit
 
 is:
 
-it1: (kominter): fachübergreifendes Wissen und Denken/Interdisziplinarität
+it1: (komsch): schriftlicher Ausdruck
 
-it2: (kommeth): Anwendung fachbezogener Methoden
+it2: (kommuen): mündlicher Ausdruck
 
-it3: (komwiss): Erarbeitung einer wissenschaftlichen Fragestellung
+it3: (kommbela): Belastbarkeit
 
-it4: (komtext): Verstehen von wissenschaftlichen Texten
+it4: (kommdurch): Durchsetzungsfähigkeit
 
-it5: (komkrit): kritisches Denken (eigene Ideen/Ideen anderer in Frage stellen)
+it5: (komteam): Teamfähigkeit
 
-it6: (komsch): schriftlicher Ausdruck
+it6: (komvera): Übernahme von Verantwortung in Gruppen
 
-it7: (kommuen): mündlicher Ausdruck
+it7: (komplan): Planungs- und Organisationsfähigkeit
 
-it8: (komteam): Teamfähigkeit/Zusammenarbeit in einer Gruppe
+it8: (komkomm): Kommunikation mit Professor\*innen
 
-it9: (komvera): Übernahme von Verantwortung in einer Gruppe
+it9: (komtext): Verstehen wissenschaftlicher Texte
 
-it10: (komkomm): Kommunikation mit Professor\*innen
+it10: (komwiss): Erarbeitung einer wissenschaftlichen Fragestellung
 
-it11: (komplan): Planungs- und Organisationsfähigkeit
+it11: (kommeth): Anwendung wissenschaftlicher Methoden
+
+it12: (kommwisl): eigene Wissenslücken erkennen und schließen
+
+it13: (komkrit): kritisches Denken/Ideen hinterfragen
+
+it14: (kominter): fachübergreifendes Wissen und Denken
 
 st:
 
@@ -1067,7 +1001,7 @@ tr:
 
 GOTO D1_21
 
-hi: Items bitte zufällig rotieren.
+hi:
 
 \--------------------------------
 
