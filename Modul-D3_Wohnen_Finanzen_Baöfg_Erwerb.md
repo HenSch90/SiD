@@ -1247,7 +1247,7 @@ hv:
 
 fo:
 
-tr:  GOTO D3_22
+tr:  GOTO D3_23
 
 hi:
 
