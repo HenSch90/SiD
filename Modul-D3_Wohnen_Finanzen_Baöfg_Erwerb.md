@@ -434,7 +434,7 @@ hl:
 
 in:
 
-q: Wieviel Geld benötigen Sie mindestens pro Monat, um finanziell zurecht zu kommen?
+q: Wie viel Geld benötigen Sie mindestens pro Monat, um finanziell zurecht zu kommen?
 
 is:
 
@@ -442,7 +442,7 @@ it:
 
 st:
 
-ao1: (fmineinko): [infield = €; number, 4-stellig: 0 TO 9999] 
+ao1: (fmineinko): [number, 4-stellig: 1 TO 9999], Postfix: € 
 
 mv:
 
@@ -460,71 +460,9 @@ hv:
 
 fo:
 
-tr: GOTO D3_10  IF feindgsemo > 0 OR feindgstuo > 0;  
-    GOTO D3_11  IF feindgsemo = 0 AND feindgstuo = 0
-    GOTO D3_11  IF feindgsemo = k. A. AND feindgstuo = k. A.
-    GOTO D3_11
-
-hi:
-
-\--------------------------------
-
-D3_10
-=====
-
-tc: IF feindgsemo > 0 | feindgstuo > 0
-
-vn: fausgst (fausgstkelto / fausgstkparto / fausgstkarbo / fausgstkando)
-
-qt: offene Angabe
-
-hl:
-
-in: 
-
-q: Sie haben angegeben, dass Dritte Ihre Studienkosten (Semesterbeitrag bzw. Studiengebühren) übernehmen oder sich daran beteiligen.
-#{layout.BREAK}
-Davon bezahlen durchschnittlich im Monat …
-
-is:
-
-it1: ... meine Eltern für mich direkt:
-
-it2: ... mein\*e Partner\*in für mich direkt:
-
-it3: ... mein Arbeitgeber für mich direkt und zwar:
-
-it4: ... andere für mich direkt:
-
-st:
-
-ao1: (fausgstkelto): [number, 4-stellig: 1 TO 9999], Postfix: €
-
-ao2: (fausgstkparto): [number, 4-stellig: 1 TO 9999], Postfix: € 
-
-ao3: (fausgstkarbo): [number, 4-stellig: 1 TO 9999], Postfix: € 
-
-ao4: (fausgstkando): [number, 4-stellig: 1 TO 9999], Postfix: € 
-
-mv: 
-
-ka: 
-
-vc: 
-
-av: 
-
-kh: Bitte geben Sie nur Zahlen ein.
-
-fv: 
-
-hv: 
-
-fo: 
-
 tr: GOTO D3_11
 
-hi: 
+hi:
 
 \--------------------------------
 
@@ -533,7 +471,7 @@ D3_11
 
 tc:
 
-vn: fsit (fsitzum1 / fsitzum2 / fsitzum3 / fsitelt1 / fsitelt2 / fsitelt3)
+vn: fsit (fsitzum1 / fsitzum2 / fsitzum3)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -541,99 +479,19 @@ hl:
 
 in:
 
-q: Inwieweit treffen die folgenden Aussagen Sie und Ihre finanzielle
-Situation zu?
+q: Inwieweit treffen die folgenden Aussagen auf Sie und Ihre finanzielle Situation zu?
 
 is:
 
-it1: (fsitzum1): Ich verfüge zurzeit über ausreichend finanzielle Mittel, um
-meine monatlichen Ausgaben zu decken.
+it1: (fsitzum1): Die Finanzierung meines Lebensunterhalts während des Studiums ist sichergestellt.
 
 it2: (fsitzum2): Ich habe zurzeit finanzielle Schwierigkeiten.
 
-it3: (fsitzum3): Die Finanzierung meines Lebensunterhalts während meines
-Studiums ist sichergestellt.
-
-it4: (fsitelt1): Meine Eltern unterstützen mich finanziell so gut sie können.
-
-it5: (fsitelt2): Ich habe den Eindruck, meine Eltern finanziell zu überfordern.
-
-it6: (fsitelt3): Ich will finanziell nicht auf meine Eltern angewiesen sein.
+it3: (fsitzum3): Im Großen und Ganzen gelingt es mir, mit meinem Geld auszukommen.
 
 st:
 
-ao1: 1: trifft gar nicht zu
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO D3_12
-
-hi: Items bitte zufällig rotieren.
-
-\--------------------------------
-
-D3_12
-=====
-
-tc:
-
-vn: feinstf (feinstf1 / feinstf2 / feinstf3 / feinstf4 / feinstf5 / feinstf6 / feinstf7 / feinstf8)
-
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-hl:
-
-in:
-
-q: Inwieweit treffen die folgenden Aussagen zum Umgang mit Geld auf Sie zu?
-
-is:
-
-it1: (feinstf1): Ich gebe Geld lieber sofort aus als es für einen späteren
-Zeitpunkt zu sparen.
-
-it2: (feinstf2): Ich kümmere mich sorgfältig um meine finanziellen
-Angelegenheiten.
-
-it3: (feinstf3): Es gelingt mir, mit meinem Geld auszukommen.
-
-it4: (feinstf4): Es belastet mich, mir Gedanken über meine finanzielle Zukunft
-zu machen.
-
-it5: (feinstf5): Bevor ich etwas kaufe, vergleiche ich immer die Preise.
-
-it6: (feinstf6): Ich achte darauf, dass ich Geld für schlechte Zeiten habe.
-
-it7: (feinstf7): Ich empfinde es als sehr anstrengend, den Überblick über meine
-Finanzen zu behalten.
-
-it8: (feinstf8): Ich neige dazu, im Hier und Jetzt zu leben und lasse die
-Zukunft auf mich zukommen.
-
-st:
-
-ao1: 1: trifft gar nicht zu
+ao1: 1: trifft überhaupt nicht zu
 
 ao2: 2
 
@@ -686,13 +544,61 @@ it:
 
 st:
 
-ao1: 1: Nein, ich habe keine Antrag gestellt.
+ao1: 1: Nein, ich habe keinen Antrag gestellt.
 
 ao2: 2: Nein, mein aktueller Antrag wurde endgültig abgelehnt.
 
 ao3: 3: Über meinen Antrag (bzw. Widerspruch) ist noch nicht entschieden.
 
 ao4: 4: ja
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO D3_13b
+
+hi:
+
+
+\--------------------------------
+
+D3_13b
+=====
+
+tc:
+
+vn: fbafber
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Haben Sie bereits eine Beratung zum Thema BAföG in Anspruch genommen?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
 
 mv:
 
@@ -853,24 +759,24 @@ it:
 
 st:
 
-ao1: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin ist/war zu hoch.
+ao1: (fbafkelt): Das Einkommen der Eltern bzw. des Ehepartners/der Ehepartnerin ist zu hoch.
 
-ao2: (fbafkein): Das eigene Einkommen/Vermögen ist/war zu hoch.
+ao2: (fbafkein): Das eigene Einkommen/Vermögen ist zu hoch.
 
 ao3: (fbafkfhd): Die Förderungshöchstdauer wurde überschritten.
 
 ao4: (fbafktw): Das Studienfach wurde gewechselt.
 
-ao5: (fbafkleis): Die notwendige Leistungsbescheinigung konnte nicht erbracht werden.
+ao5: (fbafkleis): Die notwendigen Leistungsbescheinigungen konnten nicht erbracht werden.
 
 ao6: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits überschritten.
 
 ao7: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
 Hochschulausbildung (Zweitstudium, Ergänzungsstudium).
 
-ao8: (fbafkweni): Der zu erwartende Förderbeitrag ist/war so gering, dass es sich nicht lohnt/e.
+ao8: (fbafkweni): Der zu erwartende Förderbetrag ist so gering, dass es sich nicht lohnt.
 
-ao9: (fbafkschu): Ich will/wollte keine Schulden machen.
+ao9: (fbafkschu): Ich will keine Schulden machen.
 
 ao10: (fbafand): Andere Gründe, und zwar: [(fbafando) 50 Zeichen] 
 
@@ -885,6 +791,11 @@ vc2: SHOW q2 IF (fbafja = 2)
 vc3: SHOW q3 IF (fbafja = 1) AND (fbafex = 2 | 3)
 
 vc4: SHOW q4 IF (fbafja = 1) AND (fbafex = 4)
+
+vc5: DON’T SHOW ao8, ao9 IF (fbafja = 2)
+
+vc6: DON’T SHOW ao8, ao9 IF (fbafja = 1) AND (fbafex = 2 | 3)
+
 
 av:
 
@@ -982,7 +893,7 @@ mv:
 
 ka:
 
-vc1: SHOW ao2 IF dkinja = k. A.
+vc1: SHOW ao2 IF dkinanz = k. A.
 
 vc2: SHOW ao3 IF dkinanz = 1
 
