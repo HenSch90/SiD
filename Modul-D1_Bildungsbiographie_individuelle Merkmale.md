@@ -402,61 +402,6 @@ GOTO A_44 IF mastersplit=3, 4, 9, 10
 
 hi:
 
-\--------------------------------
-
-D1_9 
-==
-
-tc:
-
-vn: sartzeit
-
-qt: Einfachauswahl vertikal
-
-hl:
-
-in:
-
-q: Betreiben Sie Ihr Studium in Vollzeit oder Teilzeit?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: Vollzeit
-
-ao2: 2: Teilzeit
-
-ao3: 3: Vollzeitstudiengang mit individueller Teilzeitregelung
-
-ao4: 4: Vollzeitstudiengang inoffiziell als Teilzeitstudium
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO D1_7 IF ssemhs <= 6
-    GOTO D1_7 IF ssemhs = k. A. 
-    GOTO D2_6 IF (ssemhs >= 7) AND (mastersplit = 1, 2, 7, 8, 14)
-    GOTO A_44 IF (ssemhs >= 7) AND (mastersplit = 3, 4, 9, 10)
-       
-
-hi:
-
 
 \--------------------------------
 
@@ -608,7 +553,7 @@ in:
 
 q1: An welcher Hochschule haben Sie Ihren Abschluss erworben?
 
-q2: Sollte die Hochschule nicht aufgeführt sein, tragen Sie diese bitte in das dafür vorgesehene Feld ein.
+q2: Sollte Ihre Hochschule nicht aufgeführt sein, tragen Sie diese bitte hier ein (z. B. HU Berlin, FH Bielefeld):
 
 is:
 
@@ -618,7 +563,7 @@ st:
 
 ao1: (sabserhs1), [infield = Hochschule] (Drop-Down)
 
-ao2: (sabserhs2), Präfix: [infield = Hochschule; 100 Zeichen] (offene Nennung)
+ao2: (sabserhs2), [infield = Hochschule; 100 Zeichen] (offene Nennung)
 
 mv:
 
@@ -668,9 +613,9 @@ it:
 
 st:
 
-ao1: (sabserhs3), Präfix: [infield = Land; 60 Zeichen] 
+ao1: (sabserhs3), [infield = Land; 100 Zeichen] 
 
-ao2: (sabserhs4), Präfix: [infield = Hochschule; 60 Zeichen] 
+ao2: (sabserhs4), [infield = Hochschule; 100 Zeichen] 
 
 mv:
 
