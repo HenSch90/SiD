@@ -11,7 +11,9 @@ qt:
 
 hl: 
 
-in: Der Übergang an die Hochschule kann mit verschiedenen Herausforderungen und Schwierigkeiten verbunden sein. Im Folgenden werden wir Ihnen daher abschließend Fragen zu Ihrer Studienanfangsphase sowie zu Ihren persönlichen Interessen stellen.
+in: 
+Übergang an die Hochschule: 
+Der Übergang an die Hochschule kann mit verschiedenen Herausforderungen und Schwierigkeiten verbunden sein. Im Folgenden werden wir Ihnen daher abschließend Fragen zu Ihrer Studienanfangsphase sowie zu Ihren persönlichen Interessen stellen.
 
 q: 
 
@@ -73,27 +75,29 @@ q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
 
 is:
 
-it1: (paba) … einen Bachelorabschluss erreichen?
+it1: (paba): … einen Bachelorabschluss erreichen?
 
-it2: (pama) … einen Masterabschluss erreichen?
+it2: (pama): … einen Masterabschluss erreichen?
 
-it3: (paphd) … einen Doktortitel erreichen?
+it3: (paphd): … einen Doktortitel erreichen?
 
-it4: (pajob) … beruflich ganz weit nach vorne kommen?
+it4: (pajob): … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: 1: sehr unwichtig
+ao1: 1: sehr unwichtig
 
-ao2: 2: 2
+ao2: 2:
 
-ao3: 3: 3
+ao3: 3:
 
-ao4: 4: 4
+ao4: 4:
 
-ao5: 5: 5: sehr wichtig
+ao5: 5: sehr wichtig
 
-mv:  6: weiß ich nicht
+ao6: 6: weiß ich nicht
+
+mv: ao6
 
 ka:
 
@@ -132,23 +136,23 @@ q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
 
 is:
 
-it1: (pagrad) … einen Hochschulabschluss erreichen?
+it1: (pagrad): … einen Hochschulabschluss erreichen?
 
-It2: (padoc) … einen Doktortitel erreichen?
+It2: (padoc): … einen Doktortitel erreichen?
 
-It3: (parjob) … beruflich ganz weit nach vorne kommen?
+It3: (parjob): … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: 1: sehr unwichtig
+ao1: 1: sehr unwichtig
 
-ao2: 2: 2
+ao2: 2:
 
-ao3: 3: 3
+ao3: 3:
 
-ao4: 4: 4
+ao4: 4:
 
-ao5: 5: 5: sehr wichtig
+ao5: 5: sehr wichtig
 
 mv:  6: weiß ich nicht
 
@@ -386,7 +390,9 @@ ao4: 4:
 
 ao5: 5: sehr große
 
-mv: 6: trifft nicht zu
+ao6: 6: trifft nicht zu
+
+mv: ao6
 
 ka:
 
@@ -459,7 +465,9 @@ ao4: 4:
 
 ao5: 5: sehr stark
 
-mv: 6: kann ich nicht beurteilen
+ao6: 6: kann ich nicht beurteilen
+
+mv: ao6
 
 ka:
 
