@@ -922,59 +922,106 @@ tc: IF eaktsens = 2 | 3 | 4
 
 vn: etat (etat1 / etat2 / etat3)
 
-qt: Tableau (Drop Down)
+qt: Tableau/Einfachauswahl
 
 hl:
 
 in: 
 
-q1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Semester nachgehen.
+q1: Sie haben angegeben, im aktuellen Semester einer Erwerbstätigkeit nachzugehen.
 
-q2: Bitte geben Sie die Art Ihrer Erwerbstätigkeit an, der Sie im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb nachgehen.
+q2: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb einer Erwerbstätigkeit nachzugehen.
 
-q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen. 
-Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
+q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nachzugehen.
 
-q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. Bitte geben Sie die jeweilige Art Ihrer Erwerbstätigkeiten an.
+q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. 
 
-is: 
-it1: (etat1): [infield = Tätigkeit; Dropdown-Menü] 
-it2: (etat2): [infield = Tätigkeit; Dropdown-Menü] 
-it3: (etat3): [infield = Tätigkeit; Dropdown-Menü] 
+is1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit und ihre inhaltliche Nähe zu den Studieninhalten an.
+
+is2: Bitte geben Sie die Art Ihrer jeweiligen Erwerbstätigkeiten und ihre inhaltliche Nähe zu den Studieninhalten an.
+
+
+it1: (etat1): !!1. Erwerbstätigkeit!!
+
+ao1: (etat1): 1: studentische Hilfskraft an der Hochschule
+ao2: (etat1): 2: studentische Hilfskraft außerhalb der Hochschule
+ao3: (etat1): 3: Jobben 
+ao4: (etat1): 4: Selbstständigkeit/freiberufliche Tätigkeit
+ao5: (etat1): 5: Erwerbstätigkeit im erlernten Beruf
+ao6: (etat1): 6: Berufsausbildung
+ao7: (etat1): 7: Praktikum
+
+it2: (fachn1): !!Fachnähe!!
+
+ao8: (fachn1): 1: fachfern
+ao9: (fachn1): 2
+ao10: (fachn1): 3
+ao11: (fachn1): 4
+ao12: (fachn1): 5: fachnah
+
+
+it3: (etat1): !!2. Erwerbstätigkeit!!
+
+ao13: (etat2): 1: studentische Hilfskraft an der Hochschule
+ao14: (etat2): 2: studentische Hilfskraft außerhalb der Hochschule
+ao15: (etat2): 3: Jobben 
+ao16: (etat2): 4: Selbstständigkeit/freiberufliche Tätigkeit
+ao17: (etat2): 5: Erwerbstätigkeit im erlernten Beruf
+ao18: (etat2): 6: Berufsausbildung
+ao19: (etat2): 7: Praktikum
+
+it4: (fachn2): !!Fachnähe!!
+
+ao20: (fachn2): 1: fachfern
+ao21: (fachn2): 2
+ao22: (fachn2): 3
+ao23: (fachn2): 4
+ao24: (fachn2): 5: fachnah
+
+
+it5: (etat3): !!3. Erwerbstätigkeit!!
+
+ao25: (etat3): 1: studentische Hilfskraft an der Hochschule
+ao26: (etat3): 2: studentische Hilfskraft außerhalb der Hochschule
+ao27: (etat3): 3: Jobben 
+ao28: (etat3): 4: Selbstständigkeit/freiberufliche Tätigkeit
+ao29: (etat3): 5: Erwerbstätigkeit im erlernten Beruf
+ao30: (etat3): 6: Berufsausbildung
+ao31: (etat3): 7: Praktikum
+
+it6: (fachn3): !!Fachnähe!!
+
+ao32: (fachn3): 1: fachfern
+ao33: (fachn3): 2
+ao34: (fachn3): 3
+ao35: (fachn3): 4
+ao36: (fachn3): 5: fachnah
 
 st:
-ao1: 1: Tätigkeit als studentische/ wissenschaftliche Hilfskraft im Bereich Forschung und Lehre
-ao2: 2: Tätigkeit als studentische/ wissenschaftliche Hilfskraft im Bereich Verwaltung
-ao3: 3: Jobben (z. B. in einer Fabrik, einem Büro, einer Kneipe, Babysitten, Nachhilfeunterricht)
-ao4: 4: Tätigkeit, die einen Hochschulabschluss voraussetzt (ohne Hilfskraft)
-ao5: 5: Tätigkeit, die einen beruflichen Ausbildungsabschluss voraussetzt
-ao6: 6: Tätigkeit als Praktikant\*in 
 
 mv: 
-
-ka1: (it1): Art der Tätigkeit (Tätigkeit A)
-ka2: (it2): Art der Tätigkeit (Tätigkeit B)
-ka3: (it3): Art der Tätigkeit (Tätigkeit C)
 
 vc1: SHOW q1 IF eaktsens = 2 AND sformdua != 1
 vc2: SHOW q2 IF eaktsens = 2 AND sformdua = 1
 vc3: SHOW q3 IF eaktsens = 3 | 4 AND sformdua != 1
 vc4: SHOW q4 IF eaktsens = 3 | 4 AND sformdua = 1
 
-vc5: SHOW it1 IF eaktsens = 2 | 3 | 4
-vc6: SHOW it2 IF eaktsens = 3 | 4 
-vc7: SHOW it3 IF eaktsens = 4 
+vc5: SHOW is1 IF eaktsens = 2
+vc6: SHOW is2 IF eaktsens = 3 | 4
 
-vc8: SHOW ka1 TO ka2 IF eaktsens = 3 
-vc9: SHOW ka1 TO ka3 IF eaktsens = 4   
+vc7: SHOW it1-it2/ao1-ao12 IF eaktsens = 2 | 3 | 4
+vc8: SHOW it3-it4/ao13-ao24 IF eaktsens = 3 | 4 
+vc9: SHOW it5-it6/ao25-ao36 IF eaktsens = 4 
+
 av: 
+
 kh: 
 
 fv: 
 
 hv: 
 
-fo: 
+fo: Die Abfrage der Erwerbstätigkeit und Fachnähe soll bitte jeweils zusammen erfolgen. Das heißt "1. Erwerbstätigkeit" (it1) soll als Überschrift in fett programmiert werden und darunter vertikel die entsprechenden ao1-ao7 folgen. Anschließend/darunter soll "Fachnähe" (it2) fett programmiert werden und in derselben Zeile/horizontal die ao8-ao12 folgen. Damit wäre der erste Abschnitt für die erste Erwerbstätigkeit beendet. Der ggf. folgende zweite/dritte Abschnitt würden äquivalent umgesetzt werden, sofern die Einblendbedingunegn erfüllt sind.
 
 tr: GOTO D3_20 IF sformberu=1 | sformdua=1;  
     GOTO D3_21 IF sformberu=0 | sformdua=0
