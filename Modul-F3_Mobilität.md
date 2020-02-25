@@ -210,7 +210,7 @@ q1: Fand Ihr Auslandsaufenthalt im Rahmen eines Programms statt?
 
 q2: Fanden Ihre Auslandsaufenthalte im Rahmen eines Programms statt?
 
-is1: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt. Sollten Sie mehr als drei Aufenthalte haben, dann geben sie bitte den drittletzten Aufenthalt an.
+is: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt. Sollten Sie mehr als drei Aufenthalte haben, dann geben sie bitte den drittletzten Aufenthalt an.
 
 it:
 
@@ -272,19 +272,19 @@ ao27: (aproanpr3): ja, anderes Programm, und zwar [Eingabefeld; aproanpro3; 100 
 
 mv:
 
-ka1 (ao1 TO ao9): 1. studienbezogner Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
+ka1 (ao1 TO ao9): 1. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
-ka2 (ao10 TO ao18): 2. studeinebezogner Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
+ka2 (ao10 TO ao18): 2. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
-ka3 (ao19 TO ao27): 3. Auslnadbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
+ka3 (ao19 TO ao27): 3. studienbezogener Auslandsaufenthalt: [Art Aufenthalt, Land, Beginn]
 
 vc:
 
-SHOW q1 AND ao1 TO ao9 AND ka1 AND is2 IF 1 Aufenthalt (ainfaus > 1 \ ainfaus = kA)
+SHOW q1 AND ao1 TO ao9 AND ka1 IF 1 Aufenthalt (ainfaus > 1 \ ainfaus = kA)
 
-SHOW q2 AND ao1 TO ao18 AND ka1 TO ka2 AND is1 AND is2 IF 2 Aufenthalte (ainfaus > 2)
+SHOW q2 AND ao1 TO ao18 AND ka1 TO ka2 IF 2 Aufenthalte (ainfaus > 2)
 
-SHOW q2 AND ao1 TO ao27 AND ka1 TO ka3 AND is1 AND is2 IF 3 Aufenthalte (ainfaus > 3)
+SHOW q2 AND ao1 TO ao27 AND ka1 TO ka3 IF 3 Aufenthalte (ainfaus > 3)
 
 av:
 
@@ -300,8 +300,7 @@ tr:
 
 GOTO F3_9
 
-hi: Bitte bis zu 3 Akkordeons mit den Überschriften "1. studienbezogener Auslandsaufenthalt",
-"2. studienbezogener Auslandsaufenthalt", "3. studienbezogener Auslandsaufenthalt"
+
 
 \--------------------------------
 
@@ -595,7 +594,7 @@ tr:
 
 GOTO F3_13
 
-hi:Items bitte zufällig rotieren.
+hi:
 
 \--------------------------------
 
@@ -863,12 +862,10 @@ qt: Einfachauswahl mit offener Angabe
 
 hl:
 
-in:
-
 q: Auf welche Weise planen Sie Ihren künftigen Auslandsaufenthalt zu
 organisieren?
 
-is: Der Aufenthalt findet im Rahmen eines Austauschprogramms statt…
+in: Der Aufenthalt findet im Rahmen eines Austauschprogramms statt…
 
 it:
 
@@ -890,7 +887,7 @@ ao7: 7: … ja, Programm meiner Gasthochschule im Ausland
 
 ao8: 8: … ja, anderes Programm, und zwar [aplanföproo] [Eingabefeld; 100 Zeichen]
 
-ao9: 9: … nein, werde Aufenthalt selbst organisieren [Exklusivkategorie]
+ao9: 9: … nein, werde Aufenthalt selbst organisieren.
 
 mv:
 
