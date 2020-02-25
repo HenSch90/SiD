@@ -920,7 +920,7 @@ D3_19
 
 tc: IF eaktsens = 2 | 3 | 4 
 
-vn: etat (etat1 / etat2 / etat3)
+vn1: etat (etat1 / etat2 / etat3); fachn (fachn1 / fachn2 / fachn3)
 
 qt: Tableau/Einfachauswahl
 
@@ -936,66 +936,66 @@ q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nach
 
 q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. 
 
-is1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit und ihre inhaltliche Nähe zu den Studieninhalten an.
+is1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit und deren inhaltliche Nähe zu den Studieninhalten an.
 
-is2: Bitte geben Sie die Art Ihrer jeweiligen Erwerbstätigkeiten und ihre inhaltliche Nähe zu den Studieninhalten an.
+is2: Bitte geben Sie die Art Ihrer jeweiligen Erwerbstätigkeiten und deren inhaltliche Nähe zu den Studieninhalten an.
 
 
 it1: (etat1): !!1. Erwerbstätigkeit!!
 
-ao1: (etat1): 1: studentische Hilfskraft an der Hochschule
-ao2: (etat1): 2: studentische Hilfskraft außerhalb der Hochschule
-ao3: (etat1): 3: Jobben 
-ao4: (etat1): 4: Selbstständigkeit/freiberufliche Tätigkeit
-ao5: (etat1): 5: Erwerbstätigkeit im erlernten Beruf
-ao6: (etat1): 6: Berufsausbildung
-ao7: (etat1): 7: Praktikum
+ao1: 1: studentische Hilfskraft an der Hochschule
+ao2: 2: studentische Hilfskraft außerhalb der Hochschule
+ao3: 3: Jobben 
+ao4: 4: Selbstständigkeit/freiberufliche Tätigkeit
+ao5: 5: Erwerbstätigkeit im gelernten Beruf
+ao6: 6: Berufsausbildung
+ao7: 7: Praktikum
 
 it2: (fachn1): !!Fachnähe!!
 
-ao8: (fachn1): 1: fachfern
-ao9: (fachn1): 2
-ao10: (fachn1): 3
-ao11: (fachn1): 4
-ao12: (fachn1): 5: fachnah
+ao8:  1: fachfern
+ao9:  2
+ao10: 3
+ao11: 4
+ao12: 5: fachnah
 
 
-it3: (etat1): !!2. Erwerbstätigkeit!!
+it3: (etat2): !!2. Erwerbstätigkeit!!
 
-ao13: (etat2): 1: studentische Hilfskraft an der Hochschule
-ao14: (etat2): 2: studentische Hilfskraft außerhalb der Hochschule
-ao15: (etat2): 3: Jobben 
-ao16: (etat2): 4: Selbstständigkeit/freiberufliche Tätigkeit
-ao17: (etat2): 5: Erwerbstätigkeit im erlernten Beruf
-ao18: (etat2): 6: Berufsausbildung
-ao19: (etat2): 7: Praktikum
+ao13: 1: studentische Hilfskraft an der Hochschule
+ao14: 2: studentische Hilfskraft außerhalb der Hochschule
+ao15: 3: Jobben 
+ao16: 4: Selbstständigkeit/freiberufliche Tätigkeit
+ao17: 5: Erwerbstätigkeit im gelernten Beruf
+ao18: 6: Berufsausbildung
+ao19: 7: Praktikum
 
 it4: (fachn2): !!Fachnähe!!
 
-ao20: (fachn2): 1: fachfern
-ao21: (fachn2): 2
-ao22: (fachn2): 3
-ao23: (fachn2): 4
-ao24: (fachn2): 5: fachnah
+ao20: 1: fachfern
+ao21: 2
+ao22: 3
+ao23: 4
+ao24: 5: fachnah
 
 
 it5: (etat3): !!3. Erwerbstätigkeit!!
 
-ao25: (etat3): 1: studentische Hilfskraft an der Hochschule
-ao26: (etat3): 2: studentische Hilfskraft außerhalb der Hochschule
-ao27: (etat3): 3: Jobben 
-ao28: (etat3): 4: Selbstständigkeit/freiberufliche Tätigkeit
-ao29: (etat3): 5: Erwerbstätigkeit im erlernten Beruf
-ao30: (etat3): 6: Berufsausbildung
-ao31: (etat3): 7: Praktikum
+ao25: 1: studentische Hilfskraft an der Hochschule
+ao26: 2: studentische Hilfskraft außerhalb der Hochschule
+ao27: 3: Jobben 
+ao28: 4: Selbstständigkeit/freiberufliche Tätigkeit
+ao29: 5: Erwerbstätigkeit im gelernten Beruf
+ao30: 6: Berufsausbildung
+ao31: 7: Praktikum
 
 it6: (fachn3): !!Fachnähe!!
 
-ao32: (fachn3): 1: fachfern
-ao33: (fachn3): 2
-ao34: (fachn3): 3
-ao35: (fachn3): 4
-ao36: (fachn3): 5: fachnah
+ao32: 1: fachfern
+ao33: 2
+ao34: 3
+ao35: 4
+ao36: 5: fachnah
 
 st:
 
@@ -1037,34 +1037,33 @@ D3_20
 
 tc: sformberu = 1 | sformdua = 1 
 
-vn1: jobbbds1; jobbbdso1; jobbbds2; jobbbdso2; 
+vn1: jobbbdso 
 
-qt: offene Abfrage / Einfachauswahl im Spaltenformat
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: Welchen Beruf üben Sie aktuell aus? Bitte erläutern Sie die Tätigkeit kurz.
+q: Welchen Beruf üben Sie aktuell aus?
 
-is: Falls Sie zurzeit nicht erwerbstätig sind, geben Sie bitte die Ihre zuletzt ausgeübte Tätigkeit an. 
+is: Falls Sie aktuell nicht erwerbstätig sind, geben Sie bitte den jeweils zuletzt ausgeübten Beruf an. 
 #{layout.BREAK}
-Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive Führungsaufgaben ein. Zum Beispiel:
--   Bankkaufmann/-frau (nicht: Angestellte/r) Beratung, Verkauf von Finanzprodukten, Abteilungsleitung
--   Zollbeamte(r) im gehobenen Dienst (nicht: Beamter/in) Zollfahndung, Einsatzplanung
--   Maschinenbauingenieur(in) (nicht: Ingenieur/in) Konstruktion, Optimierungsprozesse, Produktionsleitung
+#{layout.BREAK}
+Bitte tragen Sie Ihre Berufsbezeichnung möglichst genau ein. Zum Beispiel:
+#{layout.BREAK}
+#{layout.BREAK}
+-   Bankkaufmann/-frau (nicht: Angestellte\*r)
+-   Zollbeamte\*r (nicht: Beamte\*r)
+-   Maschinenbauingenieur\*in (nicht: Ingenieur\*in)
 
 it:
 
 st:
 
-ao1: (jobbbdso1): Präfix: [infield = Berufsbezeichnung; 100 Zeichen]
+ao1: (jobbbdso): [infield = Berufsbezeichnung; 100 Zeichen]
 
-ao2: (jobbbdso2): Präfix: [infield = Tätigkeitsbeschreibung; 100 Zeichen]
-
-mv1: (jobbbds1): -11: nie berufstätig gewesen
-
-mv2: (jobbbds2): -12: weiß ich nicht [EK]
+mv:
 
 ka:
 
@@ -1092,7 +1091,7 @@ D3_21
 
 tc: IF eaktsens = 2 \|3 \|4
 
-vn: egr (egrfin1 / egrfin2 / egrfin3 / egrkar1 / egrkar2 / egrper1 / egrper2 / egrper3 / egrerf1 / egrerf2 / egralt1 / egralt2)
+vn: egr (egrfin1 / egrfin2 / egrfin3 / egrfin4 / egrkar1 / egrkar2 / egrkar3 / egrerf1 / egralt1 / egralt2)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1116,31 +1115,29 @@ is:
 
 it1: (egrfin1): ... weil es zur Finanzierung meines Lebensunterhalts unbedingt notwendig ist.
 
-it2: (egrfin2): ... um mir mein Studium finanzieren zu können.
+it2: (egrkar2): ... um mich neben dem Studium weiter zu qualifizieren.
 
-it3: (egrfin3): ... damit ich mir (etwas) mehr leisten kann.
+it3: (egrkar1): ... um Kontakte für eine spätere Beschäftigung zu knüpfen.
 
-it4: (egrkar1): ... um Kontakte für eine spätere Beschäftigung zu knüpfen.
+it4: (egralt2): ... um anderen zu helfen.
 
-it5: (egrkar2): ... um mich neben dem Studium weiter zu qualifizieren.
+it5: (egrfin2): ... um mir mein Studium finanzieren zu können.
 
-it6: (egrper1): ... damit ich meinen Horizont erweitern kann.
+it6: (egrerf1): ... um praktische Erfahrungen zu sammeln.
 
-it7: (egrper2): ... um mehr über meine Stärken und Schwächen zu erfahren.
+it7: (egrkar3) ... um meine Berufschancen zu verbessern.
 
-it8: (egrper3): ... um mich persönlich weiter zu entwickeln.
+it8: (egralt1): ... um einen Beitrag zur Gesellschaft zu leisten.
 
-it9: (egrerf1): ... um praktische Erfahrungen zu sammeln.
+it9: (egrfin4) ... um finanziell unabhängig von den Eltern zu sein.
 
-it10: (egrerf2): ... um etwas Neues zu lernen und mich fortzubilden.
+it10: (egrfin3): ... damit ich mir etwas mehr leisten kann.
 
-it11: (egralt1): ... um einen Beitrag zur Gesellschaft zu leisten.
 
-it12: (egralt2): ... um anderen zu helfen.
 
 st:
 
-ao1: 1: trifft gar nicht zu
+ao1: 1: trifft überhaupt nicht zu
 
 ao2: 2
 
@@ -1185,7 +1182,7 @@ D3_22
 
 tc:
 
-vn: zufr (zufrwohn /zufrlstand / zufrfinsit / zufrerw / zufrleb)
+vn: zufr (zufrwohn /zufrlstand / zufrfinsit / zufrvstelt / zufrvstbe / zufrvsterw / zufrvstpfl /zufrleb)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1203,9 +1200,15 @@ it2: (zufrlstand): ... Ihrem Lebensstandard?
 
 it3: (zufrfinsit): ... Ihrer finanziellen Situation?
 
-it4: (zufrerw): ... Ihrer/Ihren Erwerbstätigkeit/en?
+it4: (zufrvstelt) ... der Vereinbarkeit von Studium und Elternschaft?
 
-it5: (zufrleb): ... Ihrem Leben insgesamt?
+it5: (zufrvstbe) ... der Vereinbarkeit von Studium und gesundheitlicher Beeinträchtigung?
+
+it6: (zufrvsterw) ... der Vereinbarkeit von Studium und Erwerbstätigkeit?
+
+it7: (zufrvstpfl) ... der Vereinbarkeit von Studium und Pflegeaufgaben?
+
+it8: (zufrleb): ... Ihrem Leben insgesamt?
 
 st:
 
@@ -1223,9 +1226,13 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW it4 IF dkinja = 2 
 
-SHOW it4 IF eaktsens = 2 |3 | 4
+vc2: SHOW it5 IF h_gartcount >= 1 
+
+vc3: SHOW it6 IF eaktsens = 2 |3 | 4
+
+vc4: SHOW it7 IF pflegang = 1 
 
 av:
 
@@ -1237,7 +1244,176 @@ hv:
 
 fo:
 
-tr:  GOTO D1_9 IF mastersplit=3, 4, 9, 10, 14
-     GOTO D2_6 IF mastersplit=5, 6, 11, 12
+tr:  GOTO D3_22
 
 hi: Items bitte zufällig rotieren.
+
+\--------------------------------
+
+D3_23
+====
+
+tc:
+
+vn: allges
+
+qt: Einfachauswahl/5er-Skala mit vertikalen ao
+
+hl:
+
+in:
+
+q: Wie ist Ihr Gesundheitszustand im Allgemeinen?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: sehr schlecht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr gut
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO D1_27
+
+hi:
+
+\--------------------------------
+
+D1_27 
+===
+
+tc:
+
+vn: feel (feelstress / feellast)
+
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie haben Sie sich in den letzten vier Wochen überwiegend gefühlt?
+
+is:
+
+it1: (feelstress): gestresst
+
+it2: (feellast): überlastet
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr stark
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+GOTO D1_28
+
+hi:
+
+\--------------------------------
+
+D1_28 
+===
+
+tc: IF NOT gartpsy=1
+
+vn: dep (depspass / depglue / depschw / depgedr)
+
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie fühlen Sie sich im Allgemeinen?
+
+is:
+
+it1: (depspass): Das Leben macht mir Spaß.
+
+it2: (depglue): Ich bin glücklich.
+
+it3: (depschw): Meine Stimmung ist schwermütig.
+
+it4: (depgedr): Ich bin in gedrückter Stimmung.
+
+st:
+
+ao1: 1: nie
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr häufig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO D1_9 IF mastersplit=3, 4, 9, 10, 14
+    GOTO D2_6 IF mastersplit=5, 6, 11, 12
+
+hi1: Items bitte zufällig rotieren.
