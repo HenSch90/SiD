@@ -1,68 +1,23 @@
 \--------------------------------
 
-D3_1
-====
-
-tc:
-
-vn: wohnort
-
-qt: Einfachauswahl mit vertikalen ao
-
-hl:
-
-in:
-
-q: Wo wohnen Sie während der Vorlesungszeit?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: ausschließlich am Hochschulort
-
-ao2: 2: ausschließlich außerhalb des Hochschulortes
-
-ao3: 3: am Hochschulort und außerhalb des Hochschulortes
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO D3_3
-
-hi:
-
-\--------------------------------
-
 D3_2
 ====
 
 tc:
 
-vn: wohnamio
+vn: wohnamio; wohnqmw; wohnqmz
 
-qt: offene Angabe
+qt: offene Angaben
 
 hl:
 
 in:
 
-q: Mit wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit eingeschlossen – zusammen?
+q1: Mit wie vielen Personen wohnen Sie insgesamt – also Sie selbst mit eingeschlossen – zusammen?
+
+q2: Wie groß ist Ihre Wohnung/Ihr Haus?
+
+q3: Wie groß ist das von Ihnen genutzte Zimmer?
 
 is:
 
@@ -70,127 +25,36 @@ it:
 
 st:
 
-ao1: (wohnamio): [infield = Personenzahl; number, 2-stellig: 1 To 15], Postfix: Person(en)
+ao1: (wohnamio): [number, 2-stellig: 1 To 15], Postfix: Person(en)
+
+ao2: (wohnqmw): [number, 3-stellig: 1 TO 999], Postfix: m²
+
+ao3: (wohnqmz): [number, 2-stellig: 1 TO 99], Postfix: m²
 
 mv:
 
 ka:
 
-vc:
+vc: SHOW q3, ao3 IF wohnel=1 OR wohnwg=1 
 
 av: 
 
-kh: (wohnamio): Bitte geben Sie die Anzahl an Personen an, mit denen Sie zusammenwohnen.
+kh1: (wohnamio): Bitte geben Sie die Anzahl an Personen an, mit denen Sie zusammenwohnen (1 bis 15).
+
+kh2: (wohnqmw): Bitte geben Sie die Größe Ihrer Wohnung/Ihres Hauses an (1 bis 999).
+
+kh3: (wohnqmz): Bitte geben Sie die Größe Ihres Zimmers an (1 bis 99).
+
 
 fv:
 
 hv:
 
-fo:
-
-tr: GOTO D3_4
-
-hi: 
-
-\--------------------------------
-
-D3_3
-====
-
-tc:
-
-vn: wohnplz; wohnplzort
-
-qt: offene Angabe
-
-hl:
-
-in:
-
-q1: Bitte geben Sie die Postleitzahl Ihres derzeitigen Hauptwohnsitzes an.
-
-q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an.
-
-is:
-
-it:
-
-st:
-
-ao1: (wohnplz): Präfix [infield = PLZ; number, 5-stellig: 01000 TO 99999] 
-
-ao2: (wohnplzort): Präfix [infield = Ort; 60 Zeichen]
-
-mv:
-
-ka:
-
-vc:
-
-av: 
-
-kh: (wohnplz): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
-
-fv:
-
-hv:
-
-fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
-
-tr: GOTO A_53
-
-hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
-
-\--------------------------------
-
-D3_4
-====
-
-tc:
-
-vn: wohnqmw; wohnqmz
-
-qt: offene Angabe
-
-hl:
-
-in:
-
-q1: Wie groß ist Ihre Wohnung/Ihr Haus?
-
-q2: Wie groß ist das von Ihnen genutzte Zimmer?
-
-is:
-
-it:
-
-st:
-
-ao1: (wohnqmw): [infield = qm²; number, 3-stellig: 1 TO 999]
-
-ao2: (wohnqmz): [infield = qm²; number, 2-stellig: 1 TO 99], Postfix: m²
-
-mv:
-
-ka:
-
-vc: SHOW q2, ao2 IF wohnel=1 OR wohnwg=1 
-
-av: 
-
-kh1: (wohnqmw): Bitte geben Sie nur Zahlen ein.
-
-kh2: (wohnqmz): Bitte geben Sie nur Zahlen ein.
-
-fv:
-
-hv:
-
-fo:
+fo: Auf der Seite als erstes q1/ao1 zusammen darstellen. Darunter dann q2/ao2 zusammen darstellen und darunter dann ggf. q3/ao3 zusammen einblenden.
 
 tr: GOTO D3_5
 
-hi:
+hi: 
 
 \--------------------------------
 
@@ -201,7 +65,7 @@ tc:
 
 vn: wohnzust
 
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
+qt: Einfachauswahl/5er-Skala mit vertikalen ao
 
 hl:
 
@@ -254,7 +118,7 @@ D3_6
 
 tc:
 
-vn: fein (feinelto / feinkino / feinparo / feinjobdso / feinjobo1 / feinjobo2 / feinspao / feinbafo / feinkredo / feinstio / feinekio / feinbest1 / feinbest2 / feinandq / feinandqo / feininsg)
+vn: fein (feinelto / feinekio / feinparo / feinjobo1 / feinjobdso / feinjobo2 / feinspao / feinbafo / feinkredo / feinstio /  feinwaiso / feinbest / feinandq / feinandqo / feininsg)
 
 qt: offene Angabe
 
@@ -262,32 +126,24 @@ hl:
 
 in:
 
-q: Auf Ihre Person bezogen: Wie viel Geld steht Ihnen durchschnittlich pro Monat
+q: Auf Ihre Person bezogen: Wie viel Geld steht Ihnen durchschnittlich ++pro Monat++
 während des Sommersemesters 2020 zur Verfügung?
 
 is: Bitte berücksichtigen Sie hier nur das Geld, über das Sie tatsächlich selbst
-verfügen. Berücksichtigen Sie hier bitte ++nicht++, was z. B. Ihre Eltern
-oder Ihr(e) Partner\*in für Sie direkt an Dritte zahlen (z. B. direkte
-Überweisung der Miete an Ihren Vermieter).
+verfügen. ++Nicht++ gemeint sind Beträge, die z. B. von Ihren Eltern für Sie direkt 
+an Dritte überwiesen werden (z. B. Überweisung der Miete durch Ihre Eltern).
 
-#{layout.BREAK}#{layout.BREAK}
+it1: (feinelto): Eltern und Verwandte
 
-Sollten Sie Ihren Lebensunterhalt auch mit unregelmäßigen Einnahmen oder durch
-früher erworbenes Geld (z. B. Ersparnisse) bestreiten, geben Sie bitte nur den
-Betrag an, den Sie davon aktuell monatlich im Durchschnitt einsetzen.
+it2: (feinekio): Kindergeld/Unterhalt für Ihr(e) Kind(er)
 
-it1: (feinelto): Eltern (bar auf die Hand/per Überweisung auf Ihr Konto)
+it3: (feinparo): Partner\*in 
 
-it2: (feinkino): Kindergeld für Sie selbst (sofern nicht bereits bei
-Geldbeträgen von den Eltern angegeben)
+it4: (feinjobo1): Erwerbstätigkeit
 
-it3: (feinparo): Partner\*in (bar auf die Hand/per Überweisung auf Ihr Konto)
+it5: (feinjobdso): Ausbildungsvergütung für Duales Studium
 
-it4: (feinjobdso): Ausbildungsvergütung für Duales Studium
-
-it5: (feinjobo1): Erwerbstätigkeit
-
-it6: (feinjobo2): Verdienst aus weiteren Tätigkeiten außerhalb der Ausbildungsinstitution während des Dualen Studiums
+it6: (feinjobo2): Verdienst aus weiteren Tätigkeiten außerhalb der Ausbildung
 
 it7: (feinspao): eigene Mittel (z. B. Ersparnisse, Erbe)
 
@@ -297,66 +153,68 @@ it9: (feinkredo): Kredit(e)
 
 it10: (feinstio): Stipendium
 
-it11: (feinekio): Kindergeld/Unterhalt für Ihr(e) Kind(er)
+it11: (feinwaiso): Waisengeld/Waisenrente
 
-it12: (feinbest1): Krankenversicherungsleistungen für technische Hilfsmittel
+it12: (feinbest): Sozialleistungen im Zusammenhang mit Ihrer gesundheitlichen Beeinträchtigung
 
-it13: (feinbest2): weitere spezifische Sozialleistungen im Zusammenhang mit meiner gesundheitlichen Beeinträchtigung
+it13: (feinandq): Weitere Finanzierungsquelle(n), und zwar: 
 
-it14: (feinandq): Weitere Finanzierungsquelle(n), und zwar: 
+#{layout.BREAK}#{layout.BREAK } 
 
-#{layout.BREAK}#{layout.BREAK}
-
-it15: (feininsg): ++Gesamteinnahmen++:
+it14: (feininsg): ++Gesamteinnahmen++:
 
 
 st:
 
-ao1: (feinelto): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao1: (feinelto): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao2: (feinkino): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao2: (feinekio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao3: (feinparo): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao3: (feinparo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao4: (feinjobdso): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao4: (feinjobo1): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao5: (feinjobo1): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao5: (feinjobdso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao6: (feinjobo2): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao6: (feinjobo2): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao7: (feinspao): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao7: (feinspao): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao8: (feinbafo): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao8: (feinbafo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao9: (feinkredo): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao9: (feinkredo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao10: (feinstio): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao10: (feinstio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao11: (feinekio): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao11: (feinwaiso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao12: (feinbest1): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao12: (feinbest): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao13: (feinbest2): [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao13: (feinandq; feinandqo): [50 Zeichen] [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao14: (feinandq; feinandqo): [50 Zeichen] [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+#{layout.BREAK}#{layout.BREAK } 
 
-ao15: (feininsg), [infield = Betrag; number, 4-stellig: 0 TO 9999], Postfix: € pro Monat
+ao14: (feininsg), [infield = € pro Monat; number, 5-stellig: 0 TO 99999]
 
 mv:
 
 ka:
 
-vc1: SHOW it4/ao4 (feinjobdso) IF sformdua = 1 
+vc1: SHOW it2/ao2 (feinekio) IF dkinja = 2
 
-vc2: SHOW it5/ao5 (feinjobo1) IF sformdua != 1
+vc2: SHOW it4/ao4 (feinjobo1) IF sformdua != 1
 
-vc3: SHOW it6/ao6 (feinjobo2) IF  sformdua = 1 
+vc3: SHOW it5/ao5 (feinjobdso) IF sformdua = 1 
 
-vc4: SHOW it11/ao11 (feinekio) IF dkinja = 2
+vc4: SHOW it6/ao6 (feinjobo2) IF  sformdua = 1 
+
+vc5: SHOW it12/ao12 (feinbest) IF  h_gartcount >= 1 
 
 av: 
 
-kh: ao1 TO ao14: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999)
+kh1: ao1 TO ao13: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999)
+
+kh2: ao14: Bitte geben Sie Ihre jeweiligen monatlichen Gesamteinnahmen an (0 bis 99999)
 
 fv:
 
@@ -393,25 +251,25 @@ it:
 
 st:
 
-ao1: (festipartnein): nein
+ao1: (festipartnein): nein [EK]
 
-ao2: (festipartdeut): ja, Deutschlandstipendium
+ao2: (festipartdeut): Deutschlandstipendium
 
-ao3: (festipartstuvolk): ja, Stipendium der Studienstiftung des deutschen Volkes e. V.
+ao3: (festipartstuvolk): Stipendium der Studienstiftung des deutschen Volkes e. V.
 
-ao4: (festipartpartei): ja, Stipendium einer parteinahen Stiftung
+ao4: (festipartpartei): Stipendium einer parteinahen Stiftung
 
-ao5: (festipartbegabt): ja, Stipendium eines anderen Begabtenförderungswerks
+ao5: (festipartbegabt): Stipendium eines anderen Begabtenförderungswerkes
 
-ao6: (festipartandstaat): ja, anderes mit staatlichen Mitteln finanziertes Stipendium (Geldgeber: Land, Kommune, Hochschule)
+ao6: (festipartandstaat): anderes mit staatlichen Mitteln finanziertes Stipendium (z. B. Hochschule, Land)
 
-ao7: (festipartprivat): ja, Stipendium eines privaten Geldgebers (Industrie, Firma, privater Stifter)
+ao7: (festipartprivat): Stipendium eines privaten Geldgebers (z. B. Industrie, private\*r Stifter\*in)
 
-ao8: (festipartsons): Ja, anderes und zwar: [(festipartsonso); Eingabefeld: 50 Zeichen]
+ao8: (festipartsons): anderes: [(festipartsonso); Eingabefeld: 50 Zeichen]
 
 mv:
 
-ka:
+ka: (ao2 TO ao8): ja, und zwar:
 
 vc:
 
@@ -423,7 +281,7 @@ fv:
 
 hv:
 
-fo:
+fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
 
 tr: GOTO D3_8
 
