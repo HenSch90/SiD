@@ -214,7 +214,7 @@ av:
 
 kh1: ao1 TO ao13: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999).
 
-kh2: ao14: Bitte geben Sie Ihre jeweiligen monatlichen Gesamteinnahmen an (0 bis 99999).
+kh2: ao14: Bitte geben Sie Ihre monatlichen Gesamteinnahmen an (0 bis 99999).
 
 fv:
 
