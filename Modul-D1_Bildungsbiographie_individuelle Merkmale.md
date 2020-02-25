@@ -646,7 +646,7 @@ D1_12
 
 tc: IF sabsja=2 
 
-vn: sabserfacho
+vn: sabserfacho1; sabserfacho2
 
 qt: offene Nennung
 
@@ -662,7 +662,9 @@ it:
 
 st:
 
-ao1: (sabserfacho), Präfix: [infield =  Studienfach; 60 Zeichen]
+ao1: (sabserfacho1), [infield =  1. Studienfach; 80 Zeichen]
+
+ao2: (sabserfacho2), [infield =  2. Studienfach; 80 Zeichen]
 
 mv:
 
