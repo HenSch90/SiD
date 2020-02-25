@@ -175,9 +175,9 @@ D1_4
 
 tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
-vn: erlberuf; vausbzpjo; vausbzpmo; vausbzpnot; vausbzpnok
+vn: vausberufo; vausbzpjo; vausbzpmo; vausbnoteo; vausbnote
 
-qt: offene Angabe und Einfachauswahl mit Dropdown
+qt: offene Angaben, Einfachauswahl mit Dropdown und Exklusivkategorie
 
 hl:
 
@@ -199,15 +199,15 @@ it:
 
 st:
 
-ao1 (erlberuf), [infield = erlernter Beruf; 80 Zeichen] (offene Angabe)
+ao1 (vausberufo), [infield = erlernter Beruf; 80 Zeichen] (offene Angabe)
 
 ao2a: (vausbzpjo), [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
 
 ao2b: (vausbzpmo), [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-ao3a: (vausbzpnot),[infield = Abschlussnote (z. B. 2,5); 3 Zeichen] (NUMBER, offene Angabe mit Dezimalstelle)
+ao3a: (vausbnoteo),[infield = Abschlussnote (z. B. 2,5); 3 Zeichen] (offene Angabe, NUMBER mit Dezimalstelle)
 
-ao3b: (vausbzpnok): Ich habe keine Note erhalten. [Exklusivkategorie]
+ao3b: (vausbnote): Ich habe keine Note erhalten. [Exklusivkategorie]
 
 mv:
 
@@ -215,9 +215,9 @@ ka:
 
 vc:
 
-av:
+av3a: (vausbnoteo): 1,0 TO 4,0
 
-kh:
+kh3a: (vausbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
 fv:
 
@@ -227,114 +227,19 @@ fo:
 
 tr:
 
-GOTO D1_5
+GOTO D1_7
 
-hi:
+hi: Auf dieser Seite werden untereinander drei Fragen mit den zugehörigen Antwortoptionen usw. dargestellt (q1 mit ao1, q2 mit ao2a und ao2b sowie q3 mit is3, ao3a, kh3a und ao3b). ao2a und ao2b bitte nebeneinander darstellen, ao3a und ao3b können gerne linksbündig untereinander darsgestellt werden. Wichtig: ao3a bitte als NUMBER mit einer Dezimalstelle programmieren!
 
-\--------------------------------
-
-D1_5 
-==
-
-tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
-
-vn: vausberufo
-
-qt: offene Angabe
-
-hl:
-
-in:
-
-q: Welchen Beruf haben Sie (zuletzt) erlernt?
-
-is:
-
-it:
-
-st:
-
-ao1: (vausberufo), Präfix: [Infield = gelernter Beruf; 75 Zeichen]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D1_6
-
-hi:
-
-\--------------------------------
-
-D1_6
-=
-
-tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
-
-vn: vausbnote / vausbnoteo
-
-qt: offene Angabe / Einfachauswahl
-
-hl:
-
-in:
-
-q: Mit welcher Note haben Sie Ihre (letzte) Berufsausbildung abgeschlossen?
-
-is:
-
-it:
-
-st:
-
-ao1: (vausbnoteo), Präfix: [infield = Abschlussnote (z. B. 2,5); number]
-
-ao2: (vausbnote): Ich habe keine Note erhalten.
-
-mv:
-
-ka:
-
-vc:
-
-av: (vausbnoteo): 1,0 TO 4,0
-
-kh: (vausbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO A_42
-
-hi:
 
 \--------------------------------
 
 D1_7 
 ==
 
-tc: IF (ssemhs <= 7 | isMissing(ssemhs)) 
+tc: IF (ssemhs <= 4 | isMissing(ssemhs)) 
 
-vn: stfw (stfwint / stfwent / stfwein / stfwber / stfwsoz / stfwart / stfwalt / stfwwiss / stfwfam / stfwzeit / stfwzul / stfwhelf / stfwver / stfwand / stfwando)
+vn: stfw (stfwein / stfwart / stfwzul / stfwalt / stfwzeit / stfwfam / stfwber / stfwent / stfwbega / stfwint / stfwwiss / stfwverf / stfwverb / stfwand)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao / offene Angabe
 
@@ -342,35 +247,35 @@ hl:
 
 in:
 
-q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches?
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches?  
 
 is:
 
-it1: (stfwint): spezielles Fachinteresse
+it1: (stfwein): Einkommens- und Karrierechancen
 
-it2: (stfwent): persönliche Entfaltung
+it2: (stfwart): gute Aussichten auf sicheren Arbeitsplatz
 
-it3: (stfwein): Einkommenschancen im späteren Beruf
+it3: (stfwzul): keine Zulassungsbeschränkungen
 
-it4: (stfwber): fester Berufswunsch
+it4: (stfwalt): Ausweichlösung, da keine Zulassung im gewünschten Studienfach
 
-it5: (stfwsoz): spätere hohe soziale Position
+it5: (stfwzeit): kurze Studienzeiten
 
-it6: (stfwart): gute Aussichten auf sicheren Arbeitsplatz
+it6: (stfwfam): Eltern/Familie haben mir dazu geraten
 
-it7: (stfwalt): Ausweichlösung, da keine Zulassung im gewünschten Studienfach
+it7: (stfwber): fester Berufswunsch
 
-it8: (stfwwiss): Erhalt einer guten wissenschaftlichen Ausbildung
+it8: (stfwent): persönliche Entfaltung
 
-it9: (stfwfam): Eltern/Familie haben mir dazu geraten
+it9: (stfwbega): eigene Begabung
 
-it10: (stfwzeit): kurze Studienzeiten
+it10: (stfwint): spezielles Fachinteresse
 
-it11: (stfwzul): niedrige Hürden bei der Zulassung (z. B. keine Zulassungsbeschränkung)
+it11: (stfwwiss): eine gute wissenschaftliche Ausbildung
 
-it12: (stfwhelf): Möglichkeit anderen Menschen helfen zu können
+it12: (stfwverf): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
 
-it13: (stfwver): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
+it13: (stfwverb): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
 
 it14: (stfwand): Anderes, und zwar: [(stfwando)]
 
@@ -390,7 +295,7 @@ mv:
 
 ka:
 
-vc: SHOW it13 (stfwver) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it13 (stfwverb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
@@ -406,14 +311,14 @@ tr:
 
 GOTO D1_8
 
-hi: Items bitte zufällig rotieren mit Ausnahme von it14 "Anderes und zwar"; it14 bitte am Ende der Itemliste verankern.
+hi:
 
 \--------------------------------
 
 D1_8 
 ==
 
-tc: IF (ssemhs <= 7 | isMissing(ssemhs)) 
+tc: IF (ssemhs <= 4 | isMissing(ssemhs)) 
 
 vn: hsw (hswzul / hswtrad / hswkont / hswatt / hswreg / hswbed / hswruf / hswfach / hswrank / hswint / hsweng / hswsupp / hswbarr / hswtz / hswand / hswando)
 
