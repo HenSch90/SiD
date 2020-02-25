@@ -1053,8 +1053,11 @@ is: Falls Sie aktuell nicht erwerbstätig sind, geben Sie bitte den jeweils zule
 Bitte tragen Sie Ihre Berufsbezeichnung möglichst genau ein. Zum Beispiel:
 #{layout.BREAK}
 #{layout.BREAK}
+
 \-   Bankkaufmann/-frau (nicht: Angestellte\*r)
+
 \-   Zollbeamte\*r (nicht: Beamte\*r)
+
 \-   Maschinenbauingenieur\*in (nicht: Ingenieur\*in)
 
 it:
