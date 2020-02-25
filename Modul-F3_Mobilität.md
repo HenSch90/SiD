@@ -71,8 +71,8 @@ tc: IF ainfaus \> 1 \| kA
 
 vn: 
 ainfa1 / ainfl1 / ainfst1 / ainfbm1 / ainfbj1 / ainfem1 / ainfej1 / 
-ainfa2 / ainflo2 / ainfsto2 / ainfhso2 / ainfbm2 / ainfbj2 / ainfem2 / ainfej2 / 
-ainfa3 / ainflo3 / ainfsto3 / ainfhso3 / ainfbm3 / ainfbj3 / ainfem3 / ainfej3
+ainfa2 / ainfl2 / ainfst2 / ainfbm2 / ainfbj2 / ainfem2 / ainfej2 / 
+ainfa3 / ainfl3 / ainfst3 / ainfbm3 / ainfbj3 / ainfem3 / ainfej3
 
 qt: Akkordeon (Drop-Down-Menüs), offene Angabe
 
@@ -92,9 +92,9 @@ is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. S
 
 it1: (ainfa1): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it2: Land: [ainfl1] [Eingabefeld; 100 Zeichen]
+it2: Präfix: Land: [ainfl1] [Eingabefeld; 100 Zeichen]
 
-it3: Stadt/Hochschule: [ainfst1] [Eingabefeld; 100 Zeichen]
+it3: Präfix: Stadt/Hochschule: [ainfst1] [Eingabefeld; 100 Zeichen]
 
 it4: (ainfbm1): Monat: [Drop-Down-Menü2]
 
@@ -106,9 +106,9 @@ it7: (ainfej1): Jahr: [Drop-Down-Menü5]
 
 it8: (ainfa2): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it9: Land: [ainflo2] [Eingabefeld; 100 Zeichen]
+it9: Land: [ainfl2] [Eingabefeld; 100 Zeichen]
 
-it10: Stadt/Hochschule: [ainfsto2] [Eingabefeld; 100 Zeichen]
+it10: Stadt/Hochschule: [ainfst2] [Eingabefeld; 100 Zeichen]
 
 it11: (ainfbm2): Monat: [Drop-Down-Menü2]
 
@@ -120,9 +120,9 @@ it14: (ainfej2): Jahr: [Drop-Down-Menü5]
 
 it15: (ainfa3): Art des Auslandsaufenthalts: [Drop-Down-Menü1]
 
-it16: Land: [ainflo3] [Eingabefeld; 100 Zeichen]
+it16: Land: [ainfl3] [Eingabefeld; 100 Zeichen]
 
-it17: Stadt/Hochschule: [ainfsto3] [Eingabefeld; 100 Zeichen]
+it17: Stadt/Hochschule: [ainfst3] [Eingabefeld; 100 Zeichen]
 
 it18: (ainfbm3): Monat: [Drop-Down-Menü2]
 
@@ -148,25 +148,31 @@ Drop-Down-Menü5 (0="Jahr", 1="2030", 2="2029" ... 13="2018")
 
 mv:
 
-ka1 (it4 TO it5): Start des Auslandsaufenthalts:
+ka1 (it1 TO it7) 1. studienbezogener Auslandsaufenthalt
 
-ka2 (it6 TO it7): Ende des Auslandsaufenthalts:
+ka2 (it4 TO it5): Start des Auslandsaufenthalts:
 
-ka3 (it11 TO it12): Start des Auslandsaufenthalts:
+ka3 (it6 TO it7): Ende des Auslandsaufenthalts:
 
-ka4 (it13 TO it14): Ende des Auslandsaufenthalts:
+ka4 (it8 TO it14) 2. studienbezogener Auslandsaufenthalt
 
-ka5 (it18 TO it19): Start des Auslandsaufenthalts:
+ka5 (it11 TO it12): Start des Auslandsaufenthalts:
 
-ka6 (it20 TO it21): Ende des Auslandsaufenthalts:
+ka6 (it13 TO it14): Ende des Auslandsaufenthalts:
+
+ka7 (it15 TO it21) 3. studienbezogener Auslandsaufenthalt
+
+ka8 (it18 TO it19): Start des Auslandsaufenthalts:
+
+ka9 (it20 TO it21): Ende des Auslandsaufenthalts:
 
 vc:
 
 SHOW q1 AND it1 TO it8 AND ka1 TO ka3 IF ainfaus = 2 \| kA
 
-SHOW q2 AND is1 AND it1 TO it13 AND it16 AND ka1 TO ka6 IF ainfaus = 3
+SHOW q2 AND is1 AND it1 TO it14 AND ka1 TO ka6 IF ainfaus = 3
 
-SHOW q3 AND is2 AND it1 TO it24 AND ka1 TO ka9 IF ainfaus = 4
+SHOW q3 AND is2 AND it1 TO it21 AND ka1 TO ka9 IF ainfaus = 4
 
 av:
 
@@ -181,10 +187,6 @@ fo:
 tr:
 
 GOTO F3_8
-
-hi: Bitte bis zu 3 Akkordeons mit den Überschriften "1. studienbezogener Auslandsaufenthalt", 
-"2. studienbezogener Auslandsaufenthalt", "3. studienbezogener Auslandsaufenthalt"
-
 
 \--------------------------------
 
