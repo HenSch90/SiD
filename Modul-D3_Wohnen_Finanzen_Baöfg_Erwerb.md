@@ -1249,7 +1249,7 @@ fo:
 
 tr:  GOTO D3_22
 
-hi: Items bitte zufällig rotieren.
+hi:
 
 \--------------------------------
 
