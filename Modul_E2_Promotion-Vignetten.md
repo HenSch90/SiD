@@ -385,6 +385,6 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_50
 
 hi:
