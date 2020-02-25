@@ -73,15 +73,15 @@ it:
 
 st:
 
-ao1: (prffach1), Präfix: [infield = 1. Prüfungsfach; 60 Zeichen] (offene Angabe)
+ao1: (prffach1), [infield = 1. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao2: (prffach2), Präfix: [infield = 2. Prüfungsfach; 60 Zeichen] (offene Angabe)
+ao2: (prffach2), [infield = 2. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao3: (prffach3), Präfix: [infield = 3. Prüfungsfach; 60 Zeichen] (offene Angabe)
+ao3: (prffach3), [infield = 3. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao4: (prffach4), Präfix: [infield = 4. Prüfungsfach; 60 Zeichen] (offene Angabe)
+ao4: (prffach4), [infield = 4. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao5: (prffach5), Präfix: [infield = 5. Prüfungsfach; 60 Zeichen] (offene Angabe)
+ao5: (prffach5), [infield = 5. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
 
 ao11: (notefach1), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
