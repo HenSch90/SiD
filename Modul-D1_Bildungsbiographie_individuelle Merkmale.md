@@ -239,7 +239,7 @@ D1_7
 
 tc: IF (ssemhs <= 4 | isMissing(ssemhs)) 
 
-vn: stfw (stfwein / stfwart / stfwzul / stfwalt / stfwzeit / stfwfam / stfwber / stfwent / stfwbega / stfwint / stfwwiss / stfwverf / stfwverb / stfwand)
+vn: stfw (stfwein / stfwart / stfwzul / stfwalt / stfwzeit / stfwfam / stfwber / stfwent / stfwbega / stfwint / stfwwiss / stfwverf / stfwverb / stfwand / stfwando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao / offene Angabe
 
@@ -320,7 +320,7 @@ D1_8
 
 tc: IF (ssemhs <= 4 | isMissing(ssemhs)) 
 
-vn: hsw (hswzul / hswtrad / hswkont / hswatt / hswreg / hswbed / hswruf / hswfach / hswrank / hswint / hsweng / hswsupp / hswbarr / hswtz / hswand / hswando)
+vn: hsw (hswkont / hswbed / hswatt / hswfach / hswrank / hswruf / hswtrad / hswzul / hswint / hsweng / hswtz / hswsupp / hswdig / hswuntb / hswbarr / hswand / hswando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao / offene Angabe
 
@@ -332,35 +332,37 @@ q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihrer derzeitigen 
 
 is:
 
-it1: (hswzul): keine Zulassung an Wunschhochschule
+it1: (hswkont): Freund\*innen/Familie vor Ort
 
-it2: (hswtrad): Tradition und Ruf der Hochschule
+it2: (hswbed): günstige Lebensbedingungen am Hochschulort
 
-it3: (hswkont): persönlicher Kontakt zu Freund\*innen und/oder Familie vor Ort
+it3: (hswatt): Attraktivität von Stadt und Umgebung
 
-it4: (hswatt): Attraktivität von Stadt und Umgebung
+it4: (hswfach): gewünschte Fachrichtung
 
-it5: (hswreg): regionale Nähe zum Heimatort
+it5: (hswrank): gute Platzierung meines Fachs in Rankings
 
-it6: (hswbed): günstige Lebensbedingungen am Hochschulort (Wohnen, Lebenshaltung)
+it6: (hswruf): guter Ruf der Lehrenden in meinem Fachgebiet
 
-it7: (hswruf): guter Ruf der Lehrenden in meinem Fachgebiet
+it7: (hswtrad): Tradition und Ruf der Hochschule
 
-it8: (hswfach): gewünschte Fachrichtung
+it8: (hswzul): keine Zulassung an Wunschhochschule
 
-it9: (hswrank): gute Platzierung meines Fachs in Rankings
+it9: (hswint): internationale Ausrichtung der Hochschule
 
-it10: (hswint): internationale Ausrichtung des Studienangebotes
+it10: (hsweng): Wunschstudiengang wird auf Englisch angeboten
 
-it11: (hsweng): Wunschstudiengang wird auf Englisch angeboten
+it11: (hswtz): Möglichkeit, in Teilzeit studieren zu können
 
-it12: (hswsupp): hochschulspezifische Unterstützungsangebote (Beratung, psychologische Betreuung, Vorsorge, “Brückenkurse”)
+it12: (hswsupp): hochschulspezifische Beratungs- und Unterstützungsangebote
 
-it13: (hswbarr): gute Ausstattung/Barrierefreiheit
+it13: (hswdig): Online-Angebot (Studium und Lehre)
 
-it14: (hswtz): Möglichkeit, in Teilzeit studieren zu können
+it14: (hswuntb): beeinträchtigungsspezifische Unterstützungsangebote der Hochschule
 
-it15: (hswand): Anderes, und zwar: [(hswando)]
+it15: (hswbarr): Barrierefreiheit der Hochschule
+
+it16: (hswand): Anderes, und zwar: [(hswando)]
 
 st:
 
@@ -378,7 +380,9 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW it14 (hswuntb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+
+vc2: SHOW it15 (hswbarr) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
@@ -396,7 +400,7 @@ GOTO D2_6 IF mastersplit=1, 2, 7, 8, 14
 GOTO A_44 IF mastersplit=3, 4, 9, 10
 
 
-hi: Items bitte zufällig rotieren mit Ausnahme von it15 "Anderes und zwar"; it15 bitte am Ende der Itemliste verankern.
+hi:
 
 \--------------------------------
 
