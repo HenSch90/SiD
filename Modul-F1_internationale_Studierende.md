@@ -621,7 +621,7 @@ F1_9
 
 tc:
 
-vn: bdefinba; bdekenba; bdesprba; bdefamsba; bdefamlba; bdetecba; bdeoekba; bdequaba; bdearbba
+vn: bdefinba; bdekenba; bdesprba; bdefamsba; bdefamlba; ddetecba; bdeoekba; bdequaba; bdearbba
 
 qt: Einfachauswahlmatrix
 
@@ -645,7 +645,7 @@ it4: (bdefamsba): weil Freunde/Verwandte in Deutschland studieren/studiert haben
 
 it5: (bdefamlba): weil Freunde/Verwandte in Deutschland leben/gelebt haben.
 
-it6: (bdetecba): weil Deutschland ein hochtechnisiertes Land ist.
+it6: (ddetecba): weil Deutschland ein hochtechnisiertes Land ist.
 
 it7: (bdeoekba): wegen der wirtschaftlichen Lage in Deutschland.
 
@@ -905,7 +905,7 @@ ao6: (aproeuba): ja, anderes EU-Programm
 
 ao7: (aprointerba): ja, Programm meiner Gasthochschule im Ausland
 
-ao8: (aproanprba): ja, anderes Programm und zwar: offene Angabe: Präfix [aproanproba]
+ao8: (aproanprba): ja, anderes Programm und zwar: offene Angabe: Präfix [100 Zeichen, aproanproba]
 
 mv:
 
