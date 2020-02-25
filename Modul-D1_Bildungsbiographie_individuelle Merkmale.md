@@ -656,21 +656,11 @@ q: Wann werden Sie Ihr derzeitiges Studium voraussichtlich abschließen?
 
 is:
 
-it: (absterm): [infield = Semester] (Drop-Down)
+it: 
 
 st:
 
-aox: 0: : Semester
-
-ao1: 1: : Sommersemester 2020
-
-ao2: 2: : Wintersemester 2020/21
-
-ao3: 3: : Sommersemester 2021
-.
-.
-.
-ao21: 21: : Sommersemester 2030
+ao: (absterm): [infield = Semester; Sommersemester 2020 - Wintersemester 2020/21 - Sommersemester 2021 - ... - Sommersemester 2030] (Drop-Down) 
 
 mv:
 
@@ -694,75 +684,6 @@ GOTO A_27
 
 hi:
 
-\--------------------------------
-
-D1_14 
-===
-
-tc: 
-
-vn: ssweijaaz / sawejaaz / shwjaaz / ssujaaz
-
-qt: Drop-Down-Menü
-
-hl:
-
-in:
-
-q: Wie häufig haben Sie seit Ihrer Erstimmatrikulation …
-
-is: Nicht gemeint sind Wechsel oder Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
-
-it1: (ssweijaaz): … das Studienfach gewechselt?
-
-it2: (sawejaaz): … den angestrebten Abschluss gewechselt?
-
-it3: (shwjaaz): … die Hochschule gewechselt?
-
-it4: (ssujaaz): … das Studium zwischenzeitlich unterbrochen?
-
-st:
-
-aox: 0: Anzahl
-
-ao1: 1: einmal
-
-ao2: 2: zweimal
-
-ao3: 3: dreimal
-
-ao4: 4: viermal
-
-ao5: 5: fünfmal und mehr
-
-(ao1 bis ao5 als Drop-Down; infield = Anzahl)
-
-mv:
-
-ka:
-
-vc1: SHOW ssweijaaz IF ssweja=1
-
-vc2: SHOW sawejaaz IF saweja=1
-
-vc3: SHOW shwjaaz IF shwja=1
-
-vc4: SHOW ssujaaz IF ssuja=1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO D1_15
-    
-    
-hi:
 
 \--------------------------------
 
@@ -772,7 +693,7 @@ D1_15
 tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1 
 
 
-vn: beginn01 – beginn05 / ende01 – ende05 / hs01 – hs05 / fach01 – fach05 / abs01 – abs05 / stand01 – stand05 / techepi
+vn: beginn01 – beginn05 / ende01 – ende05 / hs01 – hs05 / fach01 – fach05 / abs01 – abs05 / stand01 – stand05 
 
 qt: Akkordeon/ Tableau / Dropdown-Menü / offene Angaben / Einfachauswahl
 
@@ -780,25 +701,21 @@ hl:
 
 in:
 
-q1: Bitte tragen Sie die wesentlichen Stationen Ihres Studienverlaufs in das nachfolgende Tableau ein.
+q: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit Studienbeginn.
 
-q2: Benötigen Sie weitere Episoden?
+is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit Studienbeginn.
 
-is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit Studienbeginn. Sollten die vorgegebenen 5 Episoden nicht ausreichen, so können Sie weitere Episoden aktivieren.
+it1: (beginn01 / beginn02 / beginn03 / beginn04 / beginn05): [infield = Beginn] (Drop-Down)
 
-it1: (beginn01 / beginn02 / beginn03 / beginn04 / beginn05): Präfix: Beginn: [infield = Semester] (Drop-Down)
+it2: (ende01 / ende02 / ende03 / ende04 / ende05): [infield = Ende] (Drop-Down)
 
-it2: (ende01 / ende02 / ende03 / ende04 / ende05): Präfix: Ende: [infield = Semester] (Drop-Down)
+it3: (hs01 / hs02 / hs03 / hs04 / hs05): [infield = Hochschule; 100 Zeichen] (offene Angabe)
 
-it3: (hs01 / hs02 / hs03 / hs04 / hs05): Präfix: [infield = Hochschule; 100 Zeichen] (offene Angabe)
-
-it4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfach; 60 Zeichen] (offene Angabe)
+it4: (fach01 / fach02 / fach03 / fach04 / fach05): [infield = Studienfach; 80 Zeichen] (offene Angabe)
 
 it5: (abs01 / abs02 / abs03 / abs04 / abs05): [infield = angestrebter Abschluss] (Drop-Down)
 
-it6: (stand01 / stand02 / stand03 / stand04 / stand05): [infield = letzter Stand] (Drop-Down)
-
-it7: (techepi)
+it6: (stand01 / stand02 / stand03 / stand04 / stand05): letzter Stand
 
 st:
 
@@ -812,11 +729,7 @@ ao4: (fach01 / fach02 / fach03 / fach04 / fach05): Präfix: [infield = Studienfa
 
 ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: :Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss, Magister) \ 10: : kein Studienabschluss
 
-ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: : begonnen \ 2: : abgeschlossen \ 3: : abgebrochen \ 4: : unterbrochen
-
-ao7: (techepi): 1: : nein
-
-ao8: (techepi): 2: : ja
+ao6: 1: begonnen \ 2: abgeschlossen \ 3: abgebrochen \ 4: unterbrochen
 
 mv:
 
@@ -839,78 +752,8 @@ tr: GOTO D1_15b IF techepi==2
     GOTO A_51a IF h_split=1 
     GOTO A_51b IF h_split=2 
     
-hi1: Bitte 5 Akkordeons mit den Überschriften Episode 1, Episode 2, Episode 3, Episode 4, Episode 5 anlegen. 
-hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig untereinander anordnen.
-
-
-\--------------------------------
-
-D1_15b 
-===
-
-tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1 & techepi = 1
-
-
-vn: beginn06 – beginn10 / ende06 – ende10 / hs06 – hs10 / fach06 – fach10 / abs06 – abs10 / stand06 – stand10 
-
-qt: Akkordeon/ Tableau / Dropdown-Menü / offene Angaben 
-
-hl:
-
-in:
-
-q1: Bitte tragen Sie die wesentlichen Stationen Ihres Studienverlaufs in das nachfolgende Tableau ein.
-
-is: Vermerken Sie bitte alle Fach-, Hochschul- und Abschlusswechsel seit Studienbeginn. 
-
-it1: (beginn06 / beginn07 / beginn08 / beginn09 / beginn10): Präfix: Beginn: [infield = Semester] (Drop-Down)
-
-it2: (ende06 / ende07 / ende08 / ende09 / ende10): Präfix: Ende: [infield = Semester] (Drop-Down)
-
-it3: (hs06 / hs07 / hs08 / hs09 / hs10): Präfix: [infield = Hochschule; 100 Zeichen] (offene Angabe)
-
-it4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 60 Zeichen] (offene Angabe)
-
-it5: (abs06 / abs07 / abs08 / abs09 / abs10): [infield = angestrebter Abschluss] (Drop-Down)
-
-it6: (stand06 / stand07 / stand08 / stand09 / stand10): [infield = letzter Stand] (Drop-Down)
-
-st:
-
-ao1: (beginn06 / beginn07 / beginn08 / beginn09 / beginn10): 1: : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
-
-ao2: (ende06 / ende07 / ende08 / ende09 / ende10): 1 : : Sommersemester 2020 \ 2 : : Wintersemester 2019/2020 \ 3 : : Sommersemester 2019 \ 4 : : Wintersemester 2018/2019 \ ... 21 : : Sommersemester 2010
-
-ao3: (hs06 / hs07 / hs08 / hs09 / hs10): Präfix: [infield = Hochschule; 100 Zeichen] 
-
-ao4: (fach06 / fach07 / fach08 / fach09 / fach10): Präfix: [infield = Studienfach; 60 Zeichen] 
-
-ao5: (abs06 / abs07 / abs08 / abs09 / abs10): 1: : Bachelor \ 2: :Bachelor (Lehramt) \ 3: : Master \ 4: : Master (Lehramt) \ 5: : Staatsexamen \ 6: : Staatsexamen (Lehramt) \ 7: : Diplom, Promotion \ 8: : künstlerische Abschlussprüfung \ 9: : anderer Abschluss (bspw. Ausländischer Abschluss, Magister) \ 10: : kein Studienabschluss
-
-ao6: (stand06 / stand07 / stand08 / stand09 / stand10): 1: : begonnen \ 2: : abgeschlossen \ 3: : abgebrochen \ 4: : unterbrochen
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO D1_16 IF ssuja=1  
-    GOTO A_51a IF h_split=1 
-    GOTO A_51b IF h_split=2 
-    
-hi1: Bitte 5 Akkordeons mit den Überschriften Episode 6, Episode 7, Episode 8, Episode 9, Episode 10 anlegen. 
-hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig untereinander anordnen.
+hi1: Bitte 5 Akkordeons mit den Überschriften 1. Studienepisode, 2. Studienepisode, 3. Studienepisode, 4. Studienepisode, 5. Studienepisode linksbündig untereinander anlegen. 
+hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig nebeneinander anordnen.
 
 
 \--------------------------------
@@ -920,7 +763,7 @@ D1_16
 
 tc: IF ssujaaz>=1 
 
-vn: suzeitp01 / suzeitp02 / suzeit03 / sudau01 / sudau02 / sudau03 / subeur01 / subeur02 / subeur03
+vn: suzeitp01 / suzeitp02 / suzeit03 / suzeitp04 / suzeit05 / sudau01 / sudau02 / sudau03 / sudau04 / sudau05 / subeur01 / subeur02 / subeur03 / subeur04 / subeur05
 
 qt: Akkordeon / Tableau / Drop-Down-Menü / offene Angabe / Einfachauswahl
 
@@ -932,13 +775,12 @@ q1: Bitte beschreiben Sie Ihre Studienunterbrechung näher.
 
 q2: Bitte beschreiben Sie Ihre Studienunterbrechungen näher.
 
-q3: Bitte beschreiben Sie Ihre letzten drei Studienunterbrechungen nächer.
+q3: Bitte beschreiben Sie Ihre letzten fünf Studienunterbrechungen näher.
 
 is1: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
 
 is2: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
-Sollten Sie mehr als dreimal unterbrochen haben, beginnen Sie bitte mit Ihrer
-drittletzten Unterbrechung.
+Sollten Sie mehr als fünfmal unterbrochen haben, beginnen Sie bitte mit Ihrer fünftletzten Unterbrechung.
 
 it1: (suzeitp01 / suzeitp02 / suzeitp03): Präfix: Zeitpunkt der Unterbrechung: [infield = Semester] (Drop-Down)
 
@@ -980,8 +822,8 @@ fo:
 tr: GOTO A_51a IF h_split=1 
     GOTO A_51b IF h_split=2 
     
-hi1: Bitte 3 Akkordeons mit den Überschriften 1. Studienunterbrechung, 2. Studienunterbrechung, 3. Studienunterbrechung      anlegen. 
-hi2: Bitte die Drop-Downs und Eingabefelder pro Episode linksbündig untereinander anordnen.
+hi1: Bitte 5 Akkordeons mit den Überschriften 1. Unterbrechung, 2. Unterbrechung, 3. Unterbrechung, 4. Unterbrechung, 5. Unterbrechung linksbündig untereinander anlegen. Die Überschriften bitte in die erste Spalte der jeweiligen Akkordeons einfügen. 
+hi2: Bitte die Drop-Downs und Eingabefelder pro Unterbrechung linksbündig nebeneinander anordnen.
 
 \--------------------------------
 
