@@ -156,8 +156,6 @@ q: Warum haben Sie sich für dieses Land entschieden?
 
 is:
 
-Überschrift: Ich habe mich für ein Studium in diesem Land entschieden, …
-
 it1: (bdefinsia): …weil ein Studium in diesem Land meinen finanziellen
 Möglichkeiten entspricht.
 
@@ -198,7 +196,7 @@ ao5: 5: trifft voll und ganz zu
 
 mv:
 
-ka:
+ka: it1: Ich habe mich für ein Studium in diesem Land entschieden, …
 
 vc:
 
@@ -643,7 +641,7 @@ tc:
 
 vn: azufleistanf; azuforgaufw; azuffinanzaufw
 
-qt: Einfachauswahlmatrix (Akkordeon)
+qt: Einfachauswahlmatrix
 
 hl:
 
@@ -771,12 +769,9 @@ it:
 
 st:
 
-ao1:  Land: (offene Angabe, Präfix [bdedarlosia]),
-Suffix:
+ao1:  Präfix: Land: (offene Angabe, Präfix [bdedarlosia])
 
-ao2: Ort/Hochschule: (offene Angabe, Präfix [bdedarhsosia]), 
-Suffix:
-
+ao2: Präfix: Ort/Hochschule: (offene Angabe, Präfix [bdedarhsosia])
 
 mv:
 
@@ -805,8 +800,7 @@ hi:
 F2_19 
 ======
 
-tc: IF (nur für Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc: 
 
 vn: intpsydeu; intpsyzeitl; intpsyandl
 
@@ -865,8 +859,7 @@ hi:
 F2_20
 =====
 
-tc: IF (nur für Studierende, die sich aktuell studienbezogen im Ausland
-befinden)
+tc:
 
 vn: intling1sia; intling2sia; intling3sia
 
