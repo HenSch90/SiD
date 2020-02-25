@@ -1,6 +1,6 @@
 \------------------------------------------------------------
 
-KSM-pol01 (E3 - pol0101)
+KSM-pol01 (E3_1)
 =========
 
 tc:
@@ -54,7 +54,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol02 (E3 - pol0201)
+KSM-pol02 (E3_2)
 =========
 
 tc:
@@ -85,9 +85,9 @@ ao4: 4:
 
 ao5: 5: voll und ganz zufrieden
 
+ao6: 6: weiß nicht
 
-
-mv: 6: weiß nicht
+mv: ao6
 
 ka:
 
@@ -109,7 +109,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol03 (E3 - pol0301)
+KSM-pol03 (E3_3)
 =========
 
 tc:
@@ -158,8 +158,9 @@ ao4: 4:
 
 ao5: 5: stimme voll und ganz zu
 
+ao6: 6: kann ich nicht beurteilen
 
-mv: 6: kann ich nicht beurteilen
+mv: ao6
 
 ka:
 
@@ -181,7 +182,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol04 (E3 - pol0401)
+KSM-pol04 (E3_4)
 =========
 
 tc:
@@ -240,9 +241,9 @@ ao4: 4:
 
 ao5: 5: stimme völlig zu
 
+ao6: 6: kann ich nicht beurteilen
 
-
-mv: 6: kann ich nicht beurteilen
+mv: ao6
 
 ka:
 
@@ -264,7 +265,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol05 (E3 - pol0501)
+KSM-pol05 (E3_5)
 =========
 
 tc:
@@ -305,7 +306,9 @@ ao4: 4:
 
 ao5: 5: stimme voll und ganz zu
 
-mv: 6: kann ich nicht beurteilen
+ao6: 6: kann ich nicht beurteilen
+
+mv: ao6 
 
 ka:
 
@@ -325,9 +328,10 @@ tr: KSM-pol06
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-pol06 (E3 - pol0601)
+KSM-pol06 (E3_6)
 =========
 
 tc:
@@ -368,7 +372,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: würde ganz sicher teilnehmen
+ao5: 5: würde ganz sicher teilnehmen
 
 mv:
 
@@ -390,9 +394,10 @@ tr: KSM-pol07
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-pol07 (E3 - pol0701)
+KSM-pol07 (E3_7)
 =========
 
 tc:
