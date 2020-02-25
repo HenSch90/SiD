@@ -217,13 +217,13 @@ it3: (\_a): andere Personen
 
 st:
 
-ao1 (atakhh): Hausarbeit: offene Angabe: 3, Suffix: %
+ao1 (atakhh): Hausarbeit: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
-ao2 (atakee): Erwerbseinkommen: offene Angabe: 3, Suffix: %
+ao2 (atakee): Erwerbseinkommen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
-ao3 (atakwe): Treffen wichtiger Entscheidungen: offene Angabe: 3, Suffix: %
+ao3 (atakwe): Treffen wichtiger Entscheidungen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
-ao4 (atakkb): Kinderbetreuung: offene Angabe: 3, Suffix: %
+ao4 (atakkb): Kinderbetreuung: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
 mv:
 
@@ -231,9 +231,9 @@ ka:
 
 vc: SHOW ao4 IF dkinja=2
 
-av: Bitte geben Sie den prozentualen Anteil an (0 bis 100).
+av: 
 
-kh:
+kh: Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 fv:
 
@@ -393,13 +393,13 @@ it4: (\_a): andere Personen
 
 st:
 
-ao1 (athhm): Hausarbeit: offene Angabe: 3, Suffix: %
+ao1 (athhm): Hausarbeit: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
-ao2 (ateem): Erwerbseinkommen: offene Angabe: 3, Suffix: %
+ao2 (ateem): Erwerbseinkommen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
-ao3 (atwem): Treffen wichtiger Entscheidungen: offene Angabe: 3, Suffix: %
+ao3 (atwem): Treffen wichtiger Entscheidungen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
-ao4 (atkbm): Kinderbetreuung: offene Angabe: 3, Suffix: %
+ao4 (atkbm): Kinderbetreuung: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
 
 mv:
 
@@ -407,9 +407,9 @@ ka:
 
 vc:
 
-av: Bitte geben Sie den prozentualen Anteil an (0 bis 100).
+av:
 
-kh:
+kh: Bitte geben Sie den prozentualen Anteil an (0 bis 100).
 
 fv:
 
