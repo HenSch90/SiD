@@ -88,17 +88,17 @@ it6: (dkinage5): [infield = Alter 4. Kind]
 
 st:
 
-ao1: (dkinagej): 4-stellig, 0-99, [number] Suffix: Jahre
+ao1: (dkinagej): 4-stellig: 0 TO 99, number, Suffix: Jahre
 
-ao2: (dkinage1): 4-stellig, 0-99, [number] Suffix: Jahre
+ao2: (dkinage1): 4-stellig: 0 TO 99, number, Suffix: Jahre
 
-ao3: (dkinage2): 4-stellig, 0-99, [number] Suffix: Jahre
+ao3: (dkinage2): 4-stellig: 0 TO 99, number, Suffix: Jahre
 
-ao4: (dkinage3): 4-stellig, 0-99, [number] Suffix: Jahre
+ao4: (dkinage3): 4-stellig: 0 TO 99, number, Suffix: Jahre
 
-ao5: (dkinage4): 4-stellig, 0-99, [number] Suffix: Jahre
+ao5: (dkinage4): 4-stellig: 0 TO 99, number, Suffix: Jahre
 
-ao6: (dkinage5): 4-stellig, 0-99, [number] Suffix: Jahre
+ao6: (dkinage5): 4-stellig: 0 TO 99, number, Suffix: Jahre
 
 mv:
 
@@ -124,9 +124,9 @@ vc9: SHOW q2 IF dkinanz = 1
 
 vc10: SHOW q3 IF dkinanz >= 2
 
-av: Bitte geben Sie das Lebensalter Ihres Kindes an (0 bis 99).
+av: 
 
-kh:
+kh: Bitte geben Sie das Lebensalter Ihres Kindes an (0 bis 99).
 
 fv:
 
