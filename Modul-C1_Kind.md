@@ -193,7 +193,7 @@ fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
 
 tr:
 
-GOTO C1_11
+GOTO C1_6
 
 hi:
 
@@ -353,7 +353,7 @@ hv:
 
 fo: ao8 bitte etwas absetzen.
 
-tr: GOTO C1_8
+tr: GOTO C1_9
 
 hi:
 
@@ -649,7 +649,7 @@ hv:
 
 fo:
 
-tr: GOTO C1_13
+tr: GOTO C1_14
 
 hi:
 
