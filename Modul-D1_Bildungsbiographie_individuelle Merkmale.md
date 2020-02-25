@@ -1071,7 +1071,7 @@ tr:
 GOTO D1_22 IF h_split=1 
 GOTO D1_23 IF h_split=2 
 
-hi: Bitte über die drei offenen Angaben eine Zeile einfügen mit "Andere Sprache, und zwar:" linksbündig 
+hi: Bitte über die drei offenen Angaben eine Zeile linksbündig einfügen mit "Andere Sprache, und zwar:"
 
 \--------------------------------
 
@@ -1080,7 +1080,7 @@ D1_22
 
 tc:
 
-vn: dpzufr / dpinter / dpfrag / dsmein / dswiss / dsfreiz / sfaufw / sfober / sfklaus / ssverl / sswied / sszeit
+vn: dpfrag / dsfreiz / sfklaus / ssverl / kogorga / kogkrit2 / kogwied / mkogwach2 / ressanst2 / resskonz2 / lernumg1 / lit
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1092,29 +1092,29 @@ q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium zu?
 
 is:
 
-it1: (dpzufr): Studieren gibt mir manchmal das Gefühl von tiefer persönlicher Zufriedenheit.
+it1: (dpfrag): In die meisten meiner Lehrveranstaltungen gehe ich mit Fragen, auf die ich nach Antworten suche.
 
-it2: (dpinter): Ich habe das Gefühl, dass praktisch jedes Thema hochinteressant sein kann, wenn ich mich erst einmal damit befasse.
+it2: (dsfreiz): Ich nutze meine Freizeit häufig dafür, mehr über interessante Themen zu erfahren, die wir in Lehrveranstaltungen diskutiert haben.
 
-it3: (dpfrag): In die meisten meiner Lehrveranstaltungen gehe ich mit Fragen, auf die ich nach einer Antwort suche.
+it3: (sfklaus): Ich sehe keinen Grund darin Stoff zu lernen, der wahrscheinlich nicht klausurrelevant ist.
 
-it4: (dsmein): Ich bin erst zufrieden, wenn ich mich intensiv genug in ein Thema eingearbeitet habe, um mir eine eigene Meinung bilden zu können.
+it4: (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
 
-it5: (dswiss): Ich überprüfe mein Wissen zu wichtigen Themen, bis ich es wirklich verstanden habe.
+it5: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
 
-it6: (dsfreiz): Ich nutze meine Freizeit häufig dafür, mehr über interessante Themen zu erfahren, die wir in Lehrveranstaltungen diskutiert haben.
+it6: (kogkrit2): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
 
-it7: (sfaufw): Mein Ziel ist es, Lehrveranstaltungen mit so wenig Aufwand wie möglich zu bestehen.
+it7: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
 
-it8: (sfober): Ich finde es nicht hilfreich, Themen zu vertiefen. Es verwirrt nur und ist verschwendete Zeit, wenn man nur oberflächliches Wissen benötigt.
+it8: (mkogwach2): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen.
 
-it9: (sfklaus): Ich sehe keinen Grund darin Stoff zu lernen, der wahrscheinlich nicht klausurrelevant ist.
+it9: (ressanst2): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
 
-it10: (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
+it10: (resskonz2): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
 
-it11: (sswied): Manche Dinge wiederhole ich so lange, bis ich sie auswendig kann, selbst wenn ich sie nicht verstehe.
+it11: (lernumg1): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell finden kann.
 
-it12: (sszeit): Lehrende sollten nicht erwarten, dass Studierende viel Zeit damit verbringen Stoff zu lernen, von dem jeder weiß, dass er nicht geprüft wird.
+it12: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
 
 st:
 
@@ -1149,97 +1149,6 @@ tr:
 GOTO D1_24
 
 hi: Items bitte zufällig rotieren.
-
-\--------------------------------
-
-D1_23 
-===
-
-tc:
-
-vn: kogorga / kogkrit1 / kogkrit2 / kogzus / kogwied / mkogplan1 / mkogplan2 / mkogwach1 / mkogwach2 / mkogreg / ressanst1 / ressanst2 / resskonz1 / resskonz2 / resszeit / lernumg1 / lernumg2 / resskomm / lit
-
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium zu?
-
-is:
-
-it1: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen mit den wichtigsten Punkten zusammen.
-
-it2: (kogkrit1): Beim Lernen hinterfrage ich die meisten Schlussfolgerungen kritisch.
-
-it3: (kogkrit2): Ich denke über Alternativen zu den Behauptungen oder Schlussfolgerungen in den Lerntexten nach.
-
-it4: (kogzus): Zu neuen Lerninhalten stelle ich mir praktische Anwendungen vor.
-
-it5: (kogwied): Ich lerne den Lernstoff anhand von Skripten oder anderen Aufzeichnungen möglichst auswendig.
-
-it6: (mkogplan1): Ich überlege mir vorher, in welcher Reihenfolge ich den Stoff durcharbeite.
-
-it7: (mkogplan2): Ich versuche, mir vorher genau zu überlegen, welche Teile eines bestimmten Themengebiets ich lernen muss und welche nicht.
-
-it8: (mkogwach1): Ich bearbeite zusätzliche Aufgaben, um festzustellen, ob ich den Stoff wirklich verstanden habe.
-
-it9: (mkogwach2): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte, ohne meine Unterlagen zu Hilfe zu nehmen,
-
-it10: (mkogreg): Wenn ich Lerninhalte nicht direkt verstehe, gehe ich den Text noch einmal langsam durch.
-
-it11: (ressanst1): Ich arbeite so lange, bis ich mir sicher bin, die Prüfung gut bestehen zu können.
-
-it12: (ressanst2): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
-
-it13: (resskonz1): Ich ertappe mich dabei, dass ich mit meinen Gedanken ganz woanders bin.
-
-it14: (resskonz2): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
-
-it15: (resszeit): Beim Lernen stelle ich einen Zeitplan auf, an den ich mich auch halte.
-
-it16: (lernumg1): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell finden kann.
-
-it17: (lernumg2): Wenn ich lerne, sorge ich dafür, dass ich in Ruhe arbeiten kann.
-
-it18: (resskomm): Ich lerne zusammen mit meinen Studienkolleg\*innen.
-
-it19: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
-
-st:
-
-ao1: 1: : trifft gar nicht zu
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D1_24
-
-hi: Die Items bitte zufällig rotieren.
 
 \--------------------------------
 
@@ -1321,7 +1230,7 @@ D1_25
 
 tc:
 
-vn: pbigintro / pbigextro / pbigtrau
+vn: psw (pswskill / pswkraft / pswaufg)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1333,11 +1242,11 @@ q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
-it1: (pbigintro): In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.
+it1: (pswskill): In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.
 
-it2: (pbigextro): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
+it2: (pswkraft): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
 
-it3: (pbigtrau): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.
+it3: (pswaufg): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.
 
 st:
 
@@ -1369,63 +1278,6 @@ fo:
 
 tr:
 
-GOTO D1_26
+GOTO A_52
 
 hi: Items bitte zufällig rotieren
-
-\--------------------------------
-
-D1_26 
-===
-
-tc:
-
-vn: risk
-
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie risikobereit sind Sie im Allgemeinen?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: : gar nicht risikobereit
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : sehr risikobereit
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D1_27
-
-hi:
-
-
