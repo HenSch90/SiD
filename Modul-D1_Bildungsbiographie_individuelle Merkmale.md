@@ -11,7 +11,7 @@ hl:
 
 in:
 
-q: An welcher Art von Schule haben Sie Ihre Studienberechtigung erworben?
+q: An welcher Schule haben Sie Ihre Studienberechtigung erworben?
 
 is:
 
@@ -57,9 +57,7 @@ D1_2
 tc1:
 
 vn: prffach (prffach1 / prffach2 / prffach3 / prffach4 / prffach5)
-    stdfach (stdfach1 / stdfach2 / stdfach3 / stdfach4 / stdfach5)
     notefach (notefach1 / notefach2 / notefach3 / notefach4 / notefach5)
-    gesfach (gesfach1 / gesfach2 / gesfach3 / gesfach4 / gesfach5)
 
 qt: Akkordeon / offene Angabe / Dropdown-Menü
 
@@ -67,7 +65,7 @@ hl:
 
 in:
 
-q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer inklusive der jeweiligen wöchentlichen Stundenzahl, der Abschlussnote und des Geschlechts des/der Lehrer\*in.
+q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer inklusive der jeweiligen Abschlussnote.
 
 is: Beziehen Sie Ihre Angaben bitte auf Ihr Abschlussjahr.
 
@@ -75,25 +73,16 @@ it:
 
 st:
 
-ao1: (prffach1), Präfix: [infield = 1. Prüfungsfach; 50 Zeichen] (offene Angabe)
+ao1: (prffach1), Präfix: [infield = 1. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao2: (prffach2), Präfix: [infield = 2. Prüfungsfach; 50 Zeichen] (offene Angabe)
+ao2: (prffach2), Präfix: [infield = 2. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao3: (prffach3), Präfix: [infield = 3. Prüfungsfach; 50 Zeichen] (offene Angabe)
+ao3: (prffach3), Präfix: [infield = 3. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao4: (prffach4), Präfix: [infield = 4. Prüfungsfach; 50 Zeichen] (offene Angabe)
+ao4: (prffach4), Präfix: [infield = 4. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao5: (prffach5), Präfix: [infield = 5. Prüfungsfach; 50 Zeichen] (offene Angabe)
+ao5: (prffach5), Präfix: [infield = 5. Prüfungsfach; 60 Zeichen] (offene Angabe)
 
-ao6: (stdfach1), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
-
-ao7: (stdfach2), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
-
-ao8: (stdfach3), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
-
-ao9: (stdfach4), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
-
-ao10: (stdfach5), [infield =  Std. je Woche; 1 Std.\|2 Std.\|3 Std.\|4 Std.\|5 Std.\|6 Std.\|7 Std.\|8 Std.\|9 Std.\|10 Std.] (Dropdown)
 
 ao11: (notefach1), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
@@ -105,15 +94,6 @@ ao14: (notefach4), [infield = Note; sehr gut - gut - befriedigend - ausreichend 
 
 ao15: (notefach5), [infield = Note; sehr gut - gut - befriedigend - ausreichend - mangelhaft - ungenügend] (Dropdown)
 
-ao16: (gesfach1), [infield = Geschlecht; männlich - weiblich] (Dropdown)
-
-ao17: (gesfach2), [infield = Geschlecht; männlich - weiblich] (Dropdown)
-
-ao18: (gesfach3), [infield = Geschlecht; männlich - weiblich] (Dropdown)
-
-ao19: (gesfach4), [infield = Geschlecht; männlich - weiblich] (Dropdown)
-
-ao20: (gesfach5), [infield = Geschlecht; männlich - weiblich] (Dropdown)
 
 mv:
 
@@ -152,11 +132,9 @@ hl:
 
 in:
 
-q: Unabhängig davon, ob bei Ihnen selbst ein Förderbedarf bestand oder nicht: Wurden Sie jemals in einer integrativ arbeitenden Klasse/Inklusionsklasse unterrichtet oder haben Sie eine Förderschule besucht?
+q: Unabhängig davon, ob bei Ihnen selbst ein Förderbedarf bestand oder nicht: Wurden Sie jemals in einer Inklusionsklasse oder einer Förderschule unterrichtet?
 
-is: Kennzeichnend für eine integrativ arbeitende Klasse/Inklusionsklasse ist
-der gemeinsame Unterricht von Schüler\*innen mit und ohne sonderpädagogischen
-Förderbedarf.
+is: Mit „Inklusionsklasse“ ist der gemeinsame Unterricht von Schüler\*innen mit und ohne sonderpädagogischen Förderbedarf gemeint.
 #{layout.BREAK}
 Bitte alles Zutreffende auswählen.
 
@@ -166,7 +144,7 @@ st:
 
 ao1: (inklnein): nein, weder noch [Exklusivkategorie]
 
-ao2: (inklja): Ja, ich wurde in einer integrativ arbeitenden Klasse/Inklusionsklasse unterrichtet.
+ao2: (inklja): Ja, ich wurde in einer integrativ arbeitenden (Inklusions-)Klasse unterrichtet.
 
 ao3: (inklschu): Ja, ich war auf einer Förderschule.
 
@@ -197,7 +175,7 @@ D1_4
 
 tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
-vn: vausbzpjo; vausbzpmo
+vn: erlberuf; vausbzpjo; vausbzpmo; vausbzpnot; vausbzpnok
 
 qt: offene Angabe und Einfachauswahl mit Dropdown
 
@@ -205,43 +183,31 @@ hl:
 
 in:
 
-q: Wann haben Sie Ihre (letzte) Berufsausbildung abgeschlossen (Zeitpunkt der Zeugnisübergabe)?
+q1: Welchen Beruf haben Sie (zuletzt) erlernt?
 
-is:
+q2: Wann haben Sie die Berufsausbildung abgeschlossen?
+
+q3: Mit welcher Note haben Sie Ihre Berufsausbildung abgeschlossen?
+
+is1:
+
+is2:
+
+is3: Für den Fall, dass Sie keine Noten erhalten haben, sondern Ihre Leistungen mit Punkten, Prozentangaben o. Ä. bewertet wurden, rechnen Sie diese bitte in Noten um.
 
 it:
 
 st:
 
-ao: (vausbzpjo), Präfix: [infield = Jahr; number], Suffix:Jahr des Abschlusses der Berufsausbildung
+ao1 (erlberuf), [infield = erlernter Beruf; 80 Zeichen] (offene Angabe)
 
-ao: (vausbzpmo), Dropdown Monat
+ao2a: (vausbzpjo), [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
 
-ao0: 0: Monat
+ao2b: (vausbzpmo), [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-ao1: 1: Januar
+ao3a: (vausbzpnot),[infield = Abschlussnote (z. B. 2,5); 3 Zeichen] (NUMBER, offene Angabe mit Dezimalstelle)
 
-ao2: 2: Februar
-
-ao3: 3: März
-
-ao4: 4: April
-
-ao5: 5: Mai
-
-ao6: 6: Juni
-
-ao7: 7: Juli
-
-ao8: 8: August
-
-ao9: 9: September
-
-ao10: 10: Oktober
-
-ao11: 11: November
-
-ao12: 12: Dezember
+ao3b: (vausbzpnok): Ich habe keine Note erhalten. [Exklusivkategorie]
 
 mv:
 
@@ -249,7 +215,7 @@ ka:
 
 vc:
 
-av: (vausbzpjo): number 4 Stellen; 1950 bis 2020
+av:
 
 kh:
 
