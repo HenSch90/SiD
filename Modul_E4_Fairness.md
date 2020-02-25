@@ -1,6 +1,6 @@
 \------------------------------------------------------------
 
-KSM-fai01 (E4 - fai0101)
+KSM-fai01 (E4_1)
 =========
 
 tc:
@@ -54,9 +54,10 @@ tr: GOTO KSM-fai02
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai02 (E4 - fai0201)
+KSM-fai02 (E4_2)
 =========
 
 tc:
@@ -108,9 +109,10 @@ tr: GOTO KSM-fai03
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai03 (E4 - fai0301)
+KSM-fai03 (E4_3)
 =========
 
 tc:
@@ -165,9 +167,10 @@ tr: GOTO KSM-fai04
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai04 (E4 - fai0401)
+KSM-fai04 (E4_4)
 =========
 
 tc:
@@ -240,9 +243,10 @@ tr: GOTO KSM-fai05
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai05 (E4 - fai0501)
+KSM-fai05 (E4_5)
 =========
 
 tc:
@@ -310,11 +314,12 @@ GOTO KSM-fai15 if s_fairsplit= 10
 
 hi: Ab hier sollen die Befragten zufällig einer der Seiten KSM-fai06 - KSM-fai16 zugewiesen werden. KSM-fai06 - KSM-fai16 beinhalten dieselbe Frage, aber mit verschiedenen Fächerkombinationen (10 insgesamt, also 10 einzelne Seiten), von denen jeweils eine Fächerkombination pro Seite angezeigt werden soll. Das heißt: Jeder Befragte wird per Zufall auf eine der Seiten verwiesen. Danach werden alle auf KSM-fai16 weitergeleitet mit den Gründen für das höhere Gehalt.
 
-hi: @ZOFAR t5 wird in der QML nicht benannt.
+hi: @ZOFAR: t5 wird in der QML response Domain nicht benannt. Bitte t5 labeln.
+
 
 \------------------------------------------------------------
 
-KSM-fai06 (E4 - fai0601)
+KSM-fai06 (E4_6)
 =========
 
 tc:
@@ -366,9 +371,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai07 (E4 - fai0701)
+KSM-fai07 (E4_7)
 =========
 
 tc:
@@ -420,9 +426,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai08 (E4 - fai0801)
+KSM-fai08 (E4_8)
 =========
 
 tc:
@@ -474,9 +481,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai09 (E4 - fai0901)
+KSM-fai09 (E4_9)
 =========
 
 tc:
@@ -528,9 +536,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai10 (E4 - fai1001)
+KSM-fai10 (E4_10)
 =========
 
 tc:
@@ -582,9 +591,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai11 (E4 - fai1101)
+KSM-fai11 (E4_11)
 =========
 
 tc:
@@ -636,9 +646,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai12 (E4 - fai1201)
+KSM-fai12 (E4_12)
 =========
 
 tc:
@@ -691,9 +702,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai13 (E4 - fai1301)
+KSM-fai13 (E4_13)
 =========
 
 tc:
@@ -746,9 +758,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai14 (E4 - fai1401)
+KSM-fai14 (E4_14)
 =========
 
 tc:
@@ -800,9 +813,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai15 (E4 - fai1501)
+KSM-fai15 (E4_15)
 =========
 
 tc:
@@ -855,9 +869,10 @@ tr: GOTO KSM-fai16
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai16 (E4 - fai1601)
+KSM-fai16 (E4_16)
 =========
 
 tc:
@@ -900,7 +915,7 @@ ao10: (faiflex): haben nur geringere zeitliche/räumliche Flexibilität in ihrer
 
 ao11: (faistre): haben mehr Stress/Belastungen am Arbeitsplatz
 
-ao12: (faiand): anderer Grund, und zwar:[100 Zeichen, faiand_open]
+ao12: (faiand): anderer Grund, und zwar:[faiand_open; 100 Zeichen]
 
 mv:
 
@@ -921,9 +936,11 @@ fo:
 tr: GOTO KSM-fai17
 
 hi: 
+
+
 \------------------------------------------------------------
 
-KSM-fai17 (E4 - fai1701)
+KSM-fai17 (E4_17)
 =========
 
 tc:
@@ -987,9 +1004,10 @@ tr: GOTO KSM-fai18
 
 hi:
 
+
 \------------------------------------------------------------
 
-KSM-fai18 (E4 - fai1801)
+KSM-fai18 (E4_18)
 =========
 
 tc:
