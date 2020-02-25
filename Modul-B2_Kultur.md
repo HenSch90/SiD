@@ -254,8 +254,8 @@ hv:
 
 fo:
 
-tr: GOTO B2_3a IF h_split=1 (50%)
-    GOTO B2_3b IF h_split=2 (50%)
+tr: GOTO B2_3a
+    
 
 hi: Zwischenüberschriften zwischen den ao’s:
 
@@ -396,9 +396,8 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO B2_8a IF sabsan = 1 OR sabsan = 2
-    GOTO B2_8b IF sabsan >=3
-    GOTO B2_8b IF sabsan=MISSING
+tr: GOTO B2_8a
+ 
 hi:
 
 \--------------------------
