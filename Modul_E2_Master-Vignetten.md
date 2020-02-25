@@ -122,7 +122,7 @@ fo:
 
 tr: GOTO KSM-ma02
 
-hi: Filter am Anfang des Moduls als Einblendbedingung (nur Bachelorstudierende ab dem 4 Semester IF sabsan = 1 AND ssemhs>=4) nötig, oder wird die Zuweisung in das Modul anderweitig gesteuert? Und wenn hier gefiltert wird, muss die Einblendbedingung dann auf jede Seite im Modul?
+hi: Filter am Anfang des Moduls als Einblendbedingung (nur Bachelorstudierende ab dem 4. Semester IF sabsan = 1 AND ssemhs>=4) nötig, oder wird die Zuweisung in das Modul anderweitig gesteuert? Und wenn hier gefiltert wird, muss die Einblendbedingung dann auf jede Seite im Modul?
 vig1, vig2 und vig3 sind Absätze der Vignette, die Zuordnung und Auswahl der
 Vignetten wird in einer Excel-Liste geliefert: [Master-Vignetten](https://github.com/dzhw/SiD/blob/master/Vignetten_Master.xls)
 
@@ -149,7 +149,7 @@ it:
 
 st:
 
-ao1: 1: nein, noch 
+ao1: 1: nein, noch offen
 
 ao2: 2: ja, mit einiger Sicherheit
 
@@ -228,7 +228,7 @@ hi:
 KSM-ma04
 ========
 
-tc:  (alle)
+tc: (alle)
 
 vn: bervorb
 
@@ -340,8 +340,8 @@ GOTO KSM-ma09 IF mastplan = SYSMISS AND mastersplit = 1, 2, 3, 4, 5, 6, 13
 
 hi: in der Vorschau entspricht die Reihenfolge der Items nicht der hier dargestellten. Bitte prüfen
 
-\--------------------------------
 
+\--------------------------------
 
 KSM-ma06
 ========
@@ -364,19 +364,21 @@ it:
 
 st:
 
-ao1 (lohnber): 5, Präfix: … mit einer Berufsausbildung: , Suffix: €/Monat
+ao1: (lohnber): 5, Präfix: … mit einer Berufsausbildung: , Suffix: €/Monat
 
-ao2 (lohnba): 5, Präfix: … mit einem Bachelorabschluss: , Suffix: €/Monat
+ao2: (lohnba): 5, Präfix: … mit einem Bachelorabschluss: , Suffix: €/Monat
 
-ao3 (lohnma): 5, Präfix: … mit einem Masterabschluss: , Suffix: €/Monat
+ao3: (lohnma): 5, Präfix: … mit einem Masterabschluss: , Suffix: €/Monat
 
-ao4 (lohnsta1): 5, Präfix: … mit dem ersten Staatsexamen: , Suffix: €/Monat
+ao4: (lohnsta1): 5, Präfix: … mit dem ersten Staatsexamen: , Suffix: €/Monat
 
-ao5 (lohnsta2): 5, Präfix: … mit dem zweiten Staatsexamen: , Suffix: €/Monat
+ao5: (lohnsta2): 5, Präfix: … mit dem zweiten Staatsexamen: , Suffix: €/Monat
 
-ao6 (lohnphd): 5, Präfix: … mit einer Promotion: , Suffix: €/Monat
+ao6: (lohnphd): 5, Präfix: … mit einer Promotion: , Suffix: €/Monat
 
-mv: (lohnka): -12, weiß ich nicht
+ao7: (lohnka): -12: weiß ich nicht
+
+mv: ao7
 
 ka:
 
@@ -579,6 +581,7 @@ hl:
 in:
 
 q: Wie stehen Sie zu den folgenden Aussagen bezüglich des Bachelorabschlusses?
+
 Ein Bachelorabschluss …
 
 is:
@@ -618,6 +621,6 @@ hv:
 
 fo:
 
-tr:
+tr: GOTO A_50
 
 hi:
