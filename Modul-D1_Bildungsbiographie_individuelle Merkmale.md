@@ -405,56 +405,6 @@ hi:
 
 \--------------------------------
 
-D1_10a 
-===
-
-tc: IF sabsja=2 AND (mastersplit = 1, 2, 3, 4, 7, 8, 9, 10, 14)
-
-vn: sabserbl1
-
-qt: Einfachauswahl vertikal
-
-hl:
-
-in:
-
-q: Haben Sie Ihren letzten Hochschulabschluss an Ihrer derzeitigen Hochschule erworben?
-
-is:
-
-it:
-
-st:
-
-ao1: 0: nein
-
-ao2: 1: ja
-
-mv:
-
-ka:
-
-vc: 
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D1_10 IF sabserbl1 = 0
-GOTO D1_12 IF sabserbl1 = 1
-GOTO D1_12 IF ssemhs = k. A.
-
-
-\--------------------------------
-
 
 
 D1_10 
