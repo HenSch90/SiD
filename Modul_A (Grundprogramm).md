@@ -1972,7 +1972,7 @@ ao1: (sformpraes): 1: Präsenzstudim (in Gegensatz zum Fernstudium)
 ao2: (sformfern): 2: Fernstudium
 ao3: (sformdua): 3: duales Studium
 ao4: (sformberu): 4: berufsbegleitendes Studium
-ao5: (sformsons): 5: Anderes, und zwar: (sformsonso), 50 Zeichen
+ao5: (sformsons): 5: Anderes, und zwar: [(sformsonso) offene Angabe, 50 Zeichen]
 
 mv:
 
@@ -2019,11 +2019,11 @@ it:
 
 st:
 
-ao: Prefix: Durchschnittsnote (z. B. 2,5): [spernoto], 3 Zeichen
+ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto) offene Angabe, 3 Zeichen, NUMBER]
 
-ao1: spernot: -11: Ich habe bisher keine Noten erhalten. / In meinem Studium gibt es keine Noten.
+ao1: (spernot): -11: Ich habe bisher keine Noten erhalten. / In meinem Studium gibt es keine Noten.
 
-ao2: spernot: -12: weiß ich nicht
+ao2: (spernot): -12: weiß ich nicht
 
 ka:
 
