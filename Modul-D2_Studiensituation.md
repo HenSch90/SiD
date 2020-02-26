@@ -365,7 +365,7 @@ D2_7
 
 tc:
 
-vn: sscolehr (sscolehr1; sscolehr2; sscolehr3; sscolehr4; sscolehr5; sscolehr6; sscolehr7; sscolehr8)
+vn: sscolehr (sscolehr1; sscolehr2; sscolehr3; sscolehr4; sscolehr5; sscolehr6)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -383,15 +383,11 @@ it2: (sscolehr2): Es wird zum Mitdenken und Durchdenken des Stoffes angeregt.
 
 it3: (sscolehr3): Die Mischung aus Wissensvermittlung und Diskussion ist ausgewogen.
 
-it4: (sscolehr4): Die Lehrenden bieten Diskussionsmöglichkeiten an.
+it4: (sscolehr4): Die Lehrenden führen in die Anwendung von Forschungsmethoden ein.
 
-it5: (sscolehr5): Die Lehrenden führen in die Anwendung von Forschungsmethoden ein.
+it5: (sscolehr5): Das Lernziel der Lernveranstaltung wird klar definiert.
 
-it6: (sscolehr6): Das Lernziel der Lernveranstaltung wird klar definiert.
-
-it7: (sscolehr7): Die Lehrenden können gut erklären.
-
-it8: (sscolehr8): Die Lehrenden sind immer gut erreichbar.
+it6: (sscolehr6): Die Lehrenden sind gut erreichbar.
 
 st:
 
@@ -436,9 +432,9 @@ D2_8
 
 tc:
 
-vn: sscofaeh1; sscofaeh2; sscofaeh3
+vn: sscofaeh (sscofaeh1; sscofaeh2)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -448,11 +444,9 @@ q: Bitte geben Sie an, inwieweit folgende Aspekte in Ihrem Studiengang geförder
 
 is:.
 
-it1: (sscofaeh1): kritische Auseinandersetzung mit den Studieninhalten
+it1: (sscofaeh1): Fähigkeit, selbständig forschend tätig zu sein
 
-it2: (sscofaeh2): Fähigkeit, selbständig forschend tätig zu sein
-
-it3: (sscofaeh3): berufspraktische Fähigkeiten
+it2: (sscofaeh2): berufspraktische Fähigkeiten
 
 st:
 
@@ -497,9 +491,9 @@ D2_9
 
 tc:
 
-vn: sscofopra1; sscofopra2; sscofopra3
+vn: sscofopra (sscofopra1; sscofopra2; sscofopra3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
