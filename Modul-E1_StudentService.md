@@ -133,6 +133,8 @@ mv:
 ka:
 
 vc:
+SHOW it14 IF h_gartcount >= 1
+SHOW it15 IF dkinja = 2
 
 av:
 
@@ -156,17 +158,16 @@ E1_3
 
 tc:
 
-vn: indergenu; indervega; inderprei; inderprob; inderoeko; inderschn; inderfair;
-indersatt; indervege; inderunwe; inderregi; inderzuha; inderzuck; inderkoch;
-inderfris; indergese; inderwich, inderkalo, inderplan
+vn: indergenu; indersatt; inderprei; inderwich; inderplan; inderzuha; 
+inderprob; inderschn; inderunwe; inderkoch; indergese
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
 in:
 
-q: Nun geht es um Ihr allgemeines Ernährungsverhalten: Inwieweit treffen die folgenden Aussagen auf Ihre persönliche Ernährung zu?
+q: Nun geht es um Ihre Einstellung zum Thema Essen: Inwieweit treffen die folgenden Aussagen auf Sie zu?
 
 is:
 
@@ -176,50 +177,103 @@ it2: (indersatt): Essen muss vor allem satt machen.
 
 it3: (inderprei): Mein Essen muss preiswert sein.
 
-it4: (inderwich): Meine Ernährung ist mir nicht so wichtig.
+it4: (inderwich): Meine Ernährung ist mir wichtig.
 
-it5: (indervege): Ich ernähre mich vegetarisch.
+it5: (inderplan): Ich orientiere mich an einem Ernährungsplan.
 
-It6: (indervega): Ich ernähre mich vegan.
+it6: (inderzuha): Ich ernähre mich so, wie ich es von Zuhause gewöhnt bin.
 
-It7: (inderoeko): Ich achte bei Lebensmitteln darauf, dass sie
-EU-Öko/Bio-zertifiziert sind.
+it7: (inderprob): Ich probiere gerne Speisen aus anderen Kulturkreisen aus.
 
-It8: (inderfair): Ich achte darauf, dass Lebensmittel fair gehandelt sind.
+it8: (inderschn): Mein Essen muss schnell zubereitet sein.
 
-It9: (inderregi): Ich konsumiere vor allem regionale Lebensmittel.
+it9: (inderunwe): Ich esse häufig unterwegs.
 
-It10: (inderzuck): Ich versuche den Konsum von Zucker zu vermeiden.
+it10: (inderkoch): Meistens koche ich mein Essen selbst.
 
-it11: (inderkalo): Beim Essen achte ich darauf, wie viele Kalorien ich zu mir
-nehme.
-
-it12: (inderplan): Ich orientiere mich an einem Ernährungsplan.
-
-it13: (inderzuha): Ich ernähre mich so, wie ich es von Zuhause gewöhnt bin.
-
-it14: (inderprob): Ich probiere gerne Speisen aus anderen Kulturkreisen aus.
-
-it15: (inderschn): Mein Essen muss schnell zubereitet sein.
-
-it16: (inderunwe): Ich esse häufig unterwegs, z. B. zwischen
-Lehrveranstaltungen.
-
-it17: (inderkoch): Meistens koche ich mein Essen selbst.
-
-it18: (indergese): Ich esse am liebsten in geselliger Runde.
-
-it19: (inderfris): Ich koche vor allem mit frischen Lebensmitteln.
+it11: (indergese): Ich esse am liebsten in geselliger Runde.
 
 st:
 
-ao1:1: trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO E1_3a
+
+hi:
+
+
+\--------------------------------
+
+E1_3a
+====
+
+tc:
+
+vn: indervege; indervega; inderoeko; inderfair; inderregi; inderzuck; inderkalo; inderfris
+
+qt: Einfachauswahlmatrix mit horizontalen aos
+
+hl:
+
+in:
+
+q: Nun geht es um Ihr allgemeines Ernährungsverhalten: Inwieweit treffen die folgenden Aussagen auf Ihre persönliche Ernährung zu?
+
+is:
+
+it1: (inderflei): Fleisch gehört für mich zum Essen dazu.
+
+it2: (inderfisch): Fisch gehört für mich zum Essen dazu.
+
+it3: (indervege): Ich ernähre mich vegetarisch.
+
+it4: (indervega): Ich ernähre mich vegan.
+
+it5: (inderoeko): Ich achte bei Lebensmitteln darauf, dass sie EU-Öko/Bio-zertifiziert sind.
+
+it6: (inderfair): Ich achte darauf, dass Lebensmittel fair gehandelt sind.
+
+it7: (inderregi): Ich konsumiere vor allem regionale/saisonale Lebensmittel.
+
+it8: (inderzuck): Ich versuche den Konsum von Zucker zu vermeiden.
+
+it9: (inderkalo): Beim Essen achte ich darauf, wie viele Kalorien ich zu mir nehme.
+
+it10: (inderfris): Ich koche vor allem mit frischen Lebensmitteln.
+
+st:
+
+ao1: 1: trifft gar nicht zu
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
 
 ao5: 5: trifft voll und ganz zu
 
@@ -242,6 +296,7 @@ fo:
 tr: GOTO E1_4
 
 hi:
+
 
 \--------------------------------
 
