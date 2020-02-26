@@ -1155,7 +1155,7 @@ Waschen, Kämmen und Rasieren
 it4: (pflegt4): schwierigere Pflegetätigkeiten, z.B. Hilfe beim Umbetten,
 Stuhlgang usw.
 
-it5: (pflegt5): Etwas anderes und zwar: [pflegt5o]
+it5: (pflegt4): Etwas anderes und zwar: [pflegt5o]
 
 st:
 
@@ -1413,13 +1413,13 @@ q: Sie haben bei Ihrer letzten Befragung angegeben, dass Sie an der [Preload-Tok
 is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus.
 Falls Sie an mehreren Hochschulen parallel studieren, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
 
-it:
+it1 (hsstand): Ja, und zwar am Standort [Dropdown ao]:
+
+it2 (hsstand_2): Nein, ich studiere an einer anderen Hochschule.
 
 st:
 
-ao1: 1: Ja, und zwar am Standort [Dropdown]
-
-ao2: 2: Nein, ich studiere an einer anderen Hochschule.
+ao:
 
 mv:
 
