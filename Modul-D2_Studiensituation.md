@@ -1218,7 +1218,7 @@ ao1: (sswrite1): Präfix: bis zu 5 Seiten
 
 ao2: (sswrite2): Präfix: 6 bis 10 Seiten
 
-ao3: (sswrite3): Präfix: 11 bis 15 Seiten
+ao3: (sswrite3): Präfix: 11 bis 25 Seiten
 
 ao4: (sswrite4): Präfix: 16 bis 20 Seiten
 
