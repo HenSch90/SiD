@@ -197,7 +197,7 @@ fo:
 
 tr: GOTO F1_2c
 
-hi: Items bitte zufällig rotieren.
+hi:
 
 \-------------------------------
 
@@ -218,19 +218,19 @@ q: Und was spricht Ihrer Meinung nach gegen einen Auslandsaufenthalt?
 
 is:
 
-it8: (aeinsfinanz): finanzielle Belastung
+it1: (aeinsfinanz): finanzielle Belastung
 
-it9: (aeinsorga): Organisationsaufwand
+it2: (aeinsorga): Organisationsaufwand
 
-it10: (aeinsfreun): Trennung von Freund\*innen und Familie
+it3: (aeinsfreun): Trennung von Freund\*innen und Familie
 
-it11: (aeinsanerk): Anerkennungsschwierigkeiten
+it4: (aeinsanerk): Anerkennungsschwierigkeiten
 
-it12: (aeinszeit): Zeitverlust
+it5: (aeinszeit): Zeitverlust
 
-it13: (aeinsfehlspra): fehlende Sprachkenntnisse
+it6: (aeinsfehlspra): fehlende Sprachkenntnisse
 
-it14: (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
+it7: (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
 
 st:
 
@@ -262,7 +262,7 @@ fo:
 
 tr: GOTO F1_3
 
-hi: Items bitte zufällig rotieren.
+hi:
 
 \-------------------------------
 
@@ -318,7 +318,7 @@ F1_4
 
 tc:
 
-vn: avorelt; avorgeschw; avorandver; avorfreund; avorkomm; avorniem
+vn:  avorniem; avorelt; avorgeschw; avorandver; avorfreund; avorkomm
 
 qt: Mehrfachauswahl mit Exklusivkategorie und mit vertikalen ao
 
@@ -328,7 +328,7 @@ in:
 
 q: Kennen Sie jemanden, der bereits vor Ihnen im Rahmen seines Studiums im Ausland war?
 
-is: Bitte alles Zutreffende auswählen.
+is: *Bitte alles Zutreffende auswählen.*
 
 it:
 
@@ -383,7 +383,7 @@ in:
 
 q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) im Ausland verbracht?
 
-is: Bitte alles Zutreffende auswählen.
+is: *Bitte alles Zutreffende auswählen.*
 
 it:
 
@@ -611,7 +611,7 @@ F1_9
 
 tc:
 
-vn:  bdequaba; bdefamsba; bdeoekba; bdefinba; bdesprba; bdearbba; bdekenba 
+vn: bdequaba; bdefamsba; bdeoekba; bdefinba; bdesprba; bdearbba; bdekenba 
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -621,7 +621,7 @@ in:
 
 q: Warum haben Sie sich für Deutschland als Studienland entschieden?
 
-is: !!Ich habe mich für ein Studium in Deutschland entschieden, ...!!
+is: **Ich habe mich für ein Studium in Deutschland entschieden, ...**
 
 it1: (bdequaba): aufgrund der hohen Lebensqualität.
 
@@ -676,7 +676,7 @@ F1_10
 
 tc:
 
-vn: 
+vn: simmaba
 
 qt: Einfachauswahl mit Dropdown
 
@@ -723,7 +723,7 @@ tc:
 
 vn: sabsabsba
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -737,15 +737,15 @@ it:
 
 st:
 
-ao1: 1: Nein, ich werde in Deutschland nur einen Teil meines Studiums absolvieren.
+ao1: 1: nein
 
-ao2: 2: Ja, ich plane den Abschluss eines Studiums in Deutschland (z. B. Bachelor, Master, Promotion).
+ao2: 2: Ja, ich plane einen Studienabschluss in Deutschland (z. B. Bachelor, Master, Promotion).
 
-ao3: 3: Ja, ich plane einen Doppelabschluss in Deutschland un in meinem Herkunftsland/einem anderen Land.
+ao3: 3: Ja, ich plane einen Doppelabschluss (Deutschland und anderes Land).
 
-ao4: 4: weiß ich noch nicht
+ao4: -12: weiß ich noch nicht
 
-mv:
+mv: ao4
 
 ka:
 
@@ -759,7 +759,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao4 absetzen
 
 tr: GOTO F1_12
 
@@ -772,15 +772,15 @@ F1_12
 
 tc:
 
-vn: ainfcpba; ainfcp1osba; ainfcp2osba
+vn: ainfcpba
 
-qt: Einfachauswahl, offene Angabe
-
+qt: Einfachauswahl mit vertikalen ao
 hl:
 
 in:
 
-q: Werden Ihnen die in Deutschland erbrachten Studienleistungen auf Ihr Studium an Ihrer Heimatuniversität angerechnet?
+q: Wird Ihr gegenwärtiger Auslandsaufenthalt auf Ihr Studium im Heimatland angerechnet?
+
 is:
 
 it:
@@ -789,13 +789,15 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: offene Angabe: 2 Stellen Präfix: ja, teilweise:[ainfcp1osba], Suffix: ECTS-Punkte
+ao2: 2: ja, teilweise
 
-ao3: 3: offene Angabe: 2 Stellen Präfix: ja, vollständig:[ainfcp2osba], Suffix: ECTS-Punkte
+ao3: 3: ja, vollständig
 
-ao4: 4: weiß ich nicht
+ao4: 4: ist nicht vorgesehen
 
-mv:
+ao5: -12: weiß ich nicht
+
+mv: ao5
 
 ka:
 
@@ -809,7 +811,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao5 absetzen
 
 tr: GOTO F1_13
 
@@ -822,9 +824,9 @@ F1_13
 
 tc:
 
-vn: aproselbba; aprokoopba; aproorigba; aprodaadba; aproerasba; aproeuba; aprointerba; aproanprba; aproanproba
+vn: apronoba; aproerasba; aprodaadba; aprohhsba; aprogahsba; aproanprba
 
-qt: Mehrfachnennung
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -838,25 +840,21 @@ it:
 
 st:
 
-ao1: (aproselbba): nein, ich habe den Aufenthalt selbst organisiert (Exklusivkategorie)
+ao1: (apronoba): nein (Exklusivkategorie)
 
-ao2: (aprokoopba): ja, Kooperationsprogramm zwischen Heimathochschule und deutscher Hochschule
+ao2: (aproerasba): ERASMUS+
 
-ao3: (aproorigba): ja, Programm meines Herkunftslandes
+ao3: (aprodaadba): DAAD-Programm
 
-ao4: (aprodaadba): ja, deutsches Programm (z. B. DAAD-Programm)
+ao4: (aprohhsba): Programm meiner Heimathochschule
 
-ao5: (aproerasba): ja, ERASMUS+/ERASMUS-Programm
+ao5: (aprogahsba): Programm der Gasthochschule in Deutschland
 
-ao6: (aproeuba): ja, anderes EU-Programm
-
-ao7: (aprointerba): ja, Programm meiner Gasthochschule im Ausland
-
-ao8: (aproanprba): ja, anderes Programm und zwar: offene Angabe: Präfix [100 Zeichen, aproanproba]
+ao6: (aproanprba): anderes Programm
 
 mv:
 
-ka:
+ka: (ao2 TO ao6) ja, und zwar:
 
 vc:
 
@@ -868,7 +866,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao1 absetzen
 
 tr: GOTO F1_14
 
@@ -883,33 +881,33 @@ tc:
 
 vn: akontdeutstba; akonteinheimba; akontheimba; akontintstba
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie häufig haben Sie während Ihres Aufenthalts in Deutschland Kontakt mit …
+q: Wie häufig unterhalten Sie sich mit…
 
 is:
 
-it1: (akontdeutstba): … Studierenden aus Deutschland?
+it1: (akontdeutstba): … deutschen Studierenden?
 
 it2: (akonteinheimba): … anderen Einheimischen?
 
 it3: (akontheimba): … Studierenden aus Ihrem Heimatland?
 
-it4: (akontintstba): … anderen internationalen Studierenden (nicht aus Ihrem Heimatland)?
+it4: (akontintstba): … anderen internationalen Studierenden?
 
 st:
 
 ao1: 1: nie
 
-ao2: 2: selten
+ao2: 2: 
 
-ao3: 3: manchmal
+ao3: 3: 
 
-ao4: 4: häufig
+ao4: 4: 
 
 ao5: 5: sehr häufig
 
@@ -942,7 +940,7 @@ tc:
 
 vn: azufrwillba; azufrsichba
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit horizontalen ao 
 
 hl:
 
@@ -958,7 +956,7 @@ it:
 
 st:
 
-für q1:
+[für q1 (azufrwillba):]
 
 ao1: 1: gar nicht willkommen
 
@@ -970,7 +968,7 @@ ao4: 4:
 
 a05: 5: sehr willkommen
 
-für q2:
+[für q2 (azufrsichba):]
 
 ao1: 1: gar nicht sicher
 
@@ -1009,27 +1007,21 @@ F1_16
 
 tc:
 
-vn: azufskein; azufskstu; azufsklehr; azuflernerf; azufinsg
+vn: azuflernerf; azufinsg
 
-qt: Einfachauswahlmatrix, Akkordeon
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …...
+q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …
 
 is:
 
-it1: (azufskein): … dem Kontakt zu Einheimischen?
+it1: (azuflernerf): … den in Deutschland gewonnenen fachlichen Kenntnissen?
 
-it2: (azufskstu): … dem Kontakt zu Studierenden?
-
-it3: (azufsklehr): … dem Kontakt zu Lehrenden?
-
-it4: (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
-
-it5: (azufinsg): … Ihrem Aufenthalt in Deutschland insgesamt?
+it2: (azufinsg): … Ihrem Aufenthalt in Deutschland insgesamt?
 
 st:
 
@@ -1070,9 +1062,9 @@ F1_17
 
 tc:
 
-vn: azufleistanf; azuforgaaufw; azuffinanzaufw
+vn: azuforgaaufwba; azuffinanzaufwba
 
-qt: Einfachauswahl, Akkordeon
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1082,11 +1074,9 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1: (azufleistanf): … die Leistungsanforderungen an Ihrer Hochschule?
+it1: (azuforgaaufwba): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it2: (azuforgaaufw): … den organisatorischen Aufwand Ihres Aufenthaltes?
-
-it3: (azuffinanzaufw): … den finanziellen Aufwand Ihres Aufenthaltes?
+it2: (azuffinanzaufwba): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
@@ -1129,13 +1119,13 @@ tc:
 
 vn: adeempfba
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit horizontalen ao
 
 hl:
 
 in:
 
-q: Ausgehend von Ihren bisherigen Erfahrungen mit den Studien- und Lebensbedingungen in Deutschland: Würden Sie Ihren Freunden/Bekannten empfehlen, in Deutschland zu studieren?
+q: Ausgehend von Ihren bisherigen Erfahrungen: Würden Sie Ihren Freund\*innen/Bekannten empfehlen, in Deutschland zu studieren?
 
 is:
 
@@ -1143,93 +1133,15 @@ it:
 
 st:
 
-ao1: (adeempfba): 1: nein, überhaupt nicht
+ao1: 1: auf keinen Fall
 
-ao2: (adeempfba): 2: 
+ao2: 2: 
 
-ao3: (adeempfba): 3: 
+ao3: 3: 
 
-ao4: (adeempfba): 4: 
+ao4: 4: 
 
-ao5: (adeempfba): 5: ja, unbedingt
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO F1_20
-
-hi:
-
-
-\--------------------------------
-
-F1_20
-=====
-
-tc:
-
-vn: bhiitecba; bhiiwelba; bhiivorbba; bhiitutba; bhiiheimba; bhiivermba; bhiideuba; bhiiberba; bhiibehba; bhiikulba; bhiikomba; bhiifinba; bhiiaerlba; bhiivisba; bhiikvba; bhiipsyba; bhiikeinba
-
-qt: Mehrfachauswahl
-
-hl:
-
-in:
-
-q: Welche dieser Hilfestellungen für Studierende haben Sie bisher genutzt?
-
-is: Bitte alles Zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: (bhiitecba): Einführung in wissenschaftliche Lern- und Arbeitstechniken
-
-ao2: (bhiiwelba): Welcome-/Begrüßungsveranstaltungen
-
-ao3: (bhiivorbba): fachliche Vorbereitungskurse
-
-ao4: (bhiitutba): studienbegleitende Tutorien
-
-ao5: (bhiiheimba): Betreuungsangebote in Wohnheimen
-
-ao6: (bhiivermba): Vermittlung von Wohnraum
-
-ao7: (bhiideuba): Deutschkurse
-
-ao8: (bhiiberba): Studienberatung
-
-ao9: (bhiibehba): Hilfe im Umgang mit Behörden
-
-ao10: (bhiikulba): Kultur- und Freizeitangebote
-
-ao11: (bhiikomba): Kommunikationsmöglichkeiten mit deutschen Studierenden
-
-ao12: (bhiifinba): Informationen zur Finanzierung des Studiums
-
-ao13: (bhiiaerlba): Beratung/Informationen zu Fragen der Arbeitserlaubnis
-
-ao14: (bhiivisba): Beratung/Informationen zum Aufenthaltsrecht
-
-ao15: (bhiikvba): Beratung/Informationen zu Fragen der Krankenversicherung
-
-ao16: (bhiipsyba): psychologische Beratung bei persönlichen oder studienbezogenen Schwierigkeiten
-
-ao17: (bhiikeinba): kein Angebot genutzt (Exklusivkategorie)
+ao5: 5: auf jeden Fall
 
 mv:
 
@@ -1251,6 +1163,7 @@ tr: GOTO F1_21
 
 hi:
 
+
 \--------------------------------
 
 F1_21
@@ -1260,7 +1173,7 @@ tc:
 
 vn: bdebleibba
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1286,15 +1199,15 @@ ao5: 5: … in meinem Heimatland.
 
 ao6: 6: … in einem anderen Land.
 
-ao7: 7: Sonstiges
+ao7: 7: sonstiges
 
 mv:
 
-ka1 (ao1 TO ao3): Ich möchte Arbeiten, und zwar...
+ka1 (ao1 TO ao3): Ich möchte arbeiten, und zwar …
 
-ka2 (ao4 TO ao6): Ich möchte weiterstudieren, und zwar...
+ka2 (ao4 TO ao6): Ich möchte weiterstudieren/promovieren, und zwar …
 
-ka3 (ao7): Etwas Anderes
+ka3 (ao7): etwas Anderes
 
 vc:
 
@@ -1319,9 +1232,9 @@ F1_22
 
 tc:
 
-vn: intpsyherkba; intpsyzeitdeu; intpsyanddeu
+vn: intpsydeu; intpsyzeitdeu; intpsyherkba; intpsyandl
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1331,11 +1244,13 @@ q: Wenn Sie an Ihre Zukunft denken, wo möchten Sie leben?
 
 is:
 
-it1: (intpsyherkba): in meinem Heimatland
+it1: (intpsydeu): in Deutschland
 
 it2: (intpsyzeitdeu): zeitweise in Deutschland
 
-it3: (intpsyanddeu): dauerhaft in Deutschland
+it3: (intpsyherkba): in meinem Heimatland
+
+it4: (intpsyandl): in einem anderen Land
 
 st:
 
@@ -1378,7 +1293,7 @@ tc:
 
 vn: intling1ba; intling2ba; intling3ba
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1435,19 +1350,19 @@ tc:
 
 vn: aarbchdeuba; aarbchherkba
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie schätzen Sie Ihre derzeitigen Berufs- und Arbeitsmarktchancen ein, und zwar in…
+q: Wie schätzen Sie Ihre derzeitigen Berufs- und Arbeitsmarktchancen ein, und zwar in …
 
 is:
 
-it1: (aarbchdeuba): … Deutschland?
+it1: (aarbchherkba): … Ihrem Heimatland?
 
-it2: (aarbchherkba): … Ihrem Herkunftsland?
+it2: (aarbchdeuba): … Deutschland?
 
 st:
 
@@ -1461,9 +1376,64 @@ ao4: 4:
 
 ao5: 5: sehr gut
 
-ao6: 6: kann ich nicht beurteilen
+mv:
 
-mv: ao6
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO F1_25
+
+hi:
+
+\--------------------------------
+
+F1_25
+=====
+
+tc:
+
+vn: 
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie häufig sprechen Sie während Ihres Aufenthalts in Deutschland die folgenden Sprachen?
+
+is:
+
+it1: (asprachgaslba): Deutsch
+
+it2: (asprachheimlba): Sprache Ihres Heimatlandes
+
+it3: (asprachandba): andere Sprache, und zwar: [50 Zeichen, (asprachandbao)]
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig
+
+mv:
 
 ka:
 
