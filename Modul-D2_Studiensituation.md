@@ -680,9 +680,9 @@ D2_13
 
 tc:
 
-vn: sskonth1; sskonth2; sskonth3; sskonth4; sskonth5; sskonth6
+vn: sskonth (sskonth1; sskonth2; sskonth3; sskonth4; sskonth5; sskonth6)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -696,31 +696,25 @@ it1: (sskonth1): Kommiliton\*innen
 
 it2: (sskonth2): Studierende anderer Fächer
 
-it3: (sskonth3): Lehrende
+it3: (sskonth3): Freund\*innen und Bekannte außerhalb der Hochschule
 
-it4: (sskonth4): Mitarbeiter\*innen der Hochschulverwaltung
+it4: (sskonth4): Lehrende
 
-it5: (sskonth5): Freund\*innen und Bekannte außerhalb der Hochschule
+it5: (sskonth5): Mitarbeiter\*innen der Hochschulverwaltung
 
 it6: (sskonth6): Familie (Eltern, Geschwister u. a.)
 
 st:
 
-ao1: 1: mehrmals in der Woche
+ao1: 1: nie
 
-ao2: 2: einmal in der Woche
+ao2: 2:
 
-ao3: 3: 2-3 im Monat
+ao3: 3:
 
-ao4: 4: einmal im Monat
+ao4: 4:
 
-ao5: 5: 3-5 mal im Halbjahr
-
-ao6: 6: 1-2 mal im Halbjahr
-
-ao7: 7: weniger als halbjährlich
-
-ao8: 8: nie
+ao5: 5: sehr häufig
 
 mv:
 
@@ -742,73 +736,6 @@ tr:
 
 GOTO D2_14
 
-hi: @ZOFAR in der QML sind die Titel nicht deckungsgleich mit den Antwortoptionen programmiert.
-
-**------------------------------------------------------------**
-
-**Kontaktqualität**
-
-D2_14
--------
-
-tc:
-
-vn: sskontq1; sskontq2; sskontq3; sskontq4; sskontq5; sskontq6
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Und wie zufrieden sind Sie mit Ihrem Kontakt zu…
-
-is:.
-
-it1: (sskontq1): … Kommiliton\*innen?
-
-it2: (sskontq2): … Studierende anderer Fächer?
-
-it3: (sskontq3): … Lehrende?
-
-it4: (sskontq4): … Mitarbeiter\*innen der Hochschulverwaltung?
-
-it5: (sskontq5): … Freund\*innen und Bekannten außerhalb der Hochschule?
-
-it6: (sskontq6): … Familie (Eltern, Geschwister u. a.)?
-
-st:
-
-ao1: 1: sehr unzufrieden
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr zufrieden
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D2_15
-
 hi: 
 
 **------------------------------------------------------------**
@@ -820,23 +747,23 @@ D2_15
 
 tc:
 
-vn: sskontl1; sskontl2; sskontl3; sskontl4
+vn: sskontl (sskontl1; sskontl2; sskontl3; sskontl4)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie oft haben Sie im aktuellen Semester ...
+q: Wie oft haben Sie im aktuellen Semester ***außerhalb*** der Lehrveranstaltungen …
 
-is:.
+is:
 
 it1: (sskontl1): … mit Lehrenden über Ihre Karrierepläne gesprochen?
 
-it2: (sskontl2): … mit Lehrenden außerhalb von Lehrveranstaltungen zusammengearbeitet (z. B. in Kommissionen)?
+it2: (sskontl2): … mit Lehrenden zusammengearbeitet (z. B. in Kommissionen)?
 
-it3: (sskontl3): … mit Lehrenden über fachliche Inhalte, Ideen oder Konzepte außerhalb von Lehrveranstaltungen diskutiert?
+it3: (sskontl3): … mit Lehrenden über fachliche Inhalte und Ideen diskutiert?
 
 it4: (sskontl4): … mit Lehrenden über Ihre Studienleistungen gesprochen?
 
@@ -872,7 +799,7 @@ tr:
 
 GOTO D2_16
 
-hi: @ZOFAR in der QML wurde t1 zweimal programmiert.
+hi:
 
 **------------------------------------------------------------**
 
@@ -883,9 +810,9 @@ D2_16
 
 tc:
 
-vn: ssleisd1; ssleisd2; ssleisd3
+vn: ssleisd (ssleisd1; ssleisd2; ssleisd3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -960,9 +887,9 @@ it:
 
 st:
 
-ao1: (ssectsstud): Präfix: ... Sie bislang in Ihrem aktuellen Studium zirka erreicht haben.
+ao1: (ssectsstud): Präfix: ... Sie in Ihrem aktuellen Studium bislang ca. erreicht haben: [number: 3 Stellig : 0 TO 999]
 
-ao2: (ssectssem): Präfix: ... Sie voraussichtlich im aktuellen Semester erreichen werden.
+ao2: (ssectssem): Präfix: ... Sie insgesamt für Ihren Studienabschluss benötigen: [number: 3 Stellig : 0 TO 999]
 
 mv:
 
@@ -972,11 +899,7 @@ vc:
 
 av:
 
-ssectsstud: [number: 3 Stellig : 0 TO 999]
-
-ssectssem: [number: 3 Stellig : 0 TO 999]
-
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte tragen Sie die Anzahl der ECTS-Punkte ein (0 bis 999).
 
 fv:
 
