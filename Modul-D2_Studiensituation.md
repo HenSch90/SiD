@@ -871,7 +871,7 @@ D2_17
 
 tc:
 
-vn: ssectsstud; ssectssem
+vn: ssects (ssectsakt; ssectsstud)
 
 qt: offene Abfrage
 
@@ -887,9 +887,9 @@ it:
 
 st:
 
-ao1: (ssectsstud): Präfix: ... Sie in Ihrem aktuellen Studium bislang ca. erreicht haben: [number: 3 Stellig : 0 TO 999]
+ao1: (ssectsakt): Präfix: ... Sie in Ihrem aktuellen Studium bislang zirka erreicht haben: [number: 3 Stellig : 0 TO 999]
 
-ao2: (ssectssem): Präfix: ... Sie insgesamt für Ihren Studienabschluss benötigen: [number: 3 Stellig : 0 TO 999]
+ao2: (ssectsstud): Präfix: ... Sie insgesamt für Ihren Studienabschluss benötigen: [number: 3 Stellig : 0 TO 999]
 
 mv:
 
@@ -920,35 +920,53 @@ D2_18
 
 tc:
 
-vn: sswrite1; sswrite2; sswrite3; sswrite4; sswrite5; sswrite6; sswrite7
+vn: sswrite (sswrite1; sswrite2; sswrite3; sswrite4; sswrite5; sswrite6)
 
-qt: offene Abfrage und Mehrfachauswahl
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten oder andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen?
+q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten und andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen?
 
-is: Bitte geben Sie die Anzahl der schriftlichen Leistungen (inklusive der noch nicht abgeschlossenen) entsprechend ihrer Länge an.
+is: Bitte geben Sie die ++Anzahl++ der schriftlichen Leistungen (inklusive der noch nicht abgeschlossenen) entsprechend ihrer Länge an.
 
-it:
+it1: (sswrite1): bis zu 5 Seiten
+
+it2: (sswrite2): 6 bis 10 Seiten
+
+it3: (sswrite3): 11 bis 15 Seiten
+
+it4: (sswrite4): 16 bis 20 Seiten
+
+it5: (sswrite5): 21 bis 25 Seiten
+
+it6: (sswrite6): 26 Seiten oder mehr
 
 st:
 
-ao1: (sswrite1): Präfix: bis zu 5 Seiten
+ao1: 0: 0
 
-ao2: (sswrite2): Präfix: 6 bis 10 Seiten
+ao2: 1: 1
 
-ao3: (sswrite3): Präfix: 11 bis 25 Seiten
+ao3: 2: 2
 
-ao4: (sswrite4): Präfix: 16 bis 20 Seiten
+ao4: 3: 3
 
-ao5: (sswrite5): Präfix: 21 bis 25 Seiten
+ao5: 4: 4
 
-ao6: (sswrite6): Präfix: 26 Seiten oder mehr
+ao6: 5: 5
 
-ao7: (sswrite7): nichts davon
+ao7: 6: 6
+
+ao8: 7: 7
+
+ao9: 8: 8
+
+ao10: 9: 9
+
+ao11: 10: ≥10
 
 ka:
 
@@ -956,25 +974,13 @@ vc:
 
 av:
 
-bis zu 5 Seiten: [number: 2 Stellig : 0 TO 99]
-
-6 bis 10 Seiten: [number: 2 Stellig : 0 TO 99]
-
-11 bis 15 Seiten: [number: 2 Stellig : 0 TO 99]
-
-16 bis 20 Seiten: [number: 2 Stellig : 0 TO 99]
-
-21 bis 25 Seiten: [number: 2 Stellig : 0 TO 99]
-
-26 Seiten oder mehr: [number: 2 Stellig : 0 TO 99]
-
 kh: Bitte geben Sie nur Zahlen ein.
 
 fv:
 
 hv:
 
-fo:
+fo: Bitte mittig über die ao !!Anzahl der verfassten Texte!! positionieren.
 
 tr:
 
