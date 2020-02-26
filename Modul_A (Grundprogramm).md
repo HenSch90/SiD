@@ -1441,8 +1441,8 @@ hv:
 fo:
 
 tr: 
-GOTO D2_1 IF hsstand_2=0 AND mastersplit=1
-GOTO A_22 IF hsstand_2=0 AND mastersplit=3
+GOTO D2_1 IF hsstand_2=0 AND (mastersplit=1 OR mastersplit=2 OR mastersplit=5 OR mastersplit=6 OR mastersplit=7 OR mastersplit=8 OR mastersplit=11 OR mastersplit=12 OR mastersplit=14)
+GOTO A_22 IF hsstand_2=0 AND (mastersplit=3 OR mastersplit=4 OR mastersplit=9 OR mastersplit=10 OR mastersplit=13)
 GOTO A_19 IF hsstand_2=1
 
 hi:
@@ -1689,15 +1689,15 @@ it:
 
 st:
 
-ao: 1: 1: sehr unzufrieden
+ao: 1: sehr unzufrieden
 
-ao: 2: 2:
+ao: 2
 
-ao: 3: 3:
+ao: 3
 
-ao: 4: 4:
+ao: 4
 
-ao: 5: 5: sehr zufrieden
+ao: 5: sehr zufrieden
 
 mv:
 
@@ -1742,13 +1742,13 @@ q2:
 
 is:
 
-it:
+it1 (sfach1o2): Präfix: erstes Studienfach [offene Angabe; 50 Zeichen]
+
+it2 (sfach2o2): Präfix: ggf. zweites Studienfach [offene Angabe; 50 Zeichen]
 
 st:
 
-ao1: 1: 50, Präfix: erstes Studienfach
-
-ao2: 2: 50, Präfix: ggf. zweites Studienfach
+ao:
 
 mv:
 
