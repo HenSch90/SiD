@@ -545,63 +545,6 @@ hi:
 
 **------------------------------------------------------------**
 
-**SSCO 5**
-
-D2_10
--------
-
-tc:
-
-vn: sscoaktfo
-
-qt: Einfachauswahl mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig werden von den Lehrenden in den Veranstaltungen Fragen der laufenden Forschung behandelt?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: sehr selten
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr oft
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D2_11
-
-hi: 
-
-**------------------------------------------------------------**
-
 **SSCO 6**
 
 D2_11
@@ -609,9 +552,9 @@ D2_11
 
 tc:
 
-vn: sscokli1; sscokli2; sscokli3; sscokli4; sscokli5; sscokli6
+vn: sscokli (sscokli1; sscokli2; sscokli3; sscokli4; sscokli5; sscokli6)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -676,9 +619,9 @@ D2_12
 
 tc:
 
-vn: sscolmo1; sscolmo2; sscolmo3
+vn: sscolmo (sscolmo1; sscolmo2; sscolmo3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -692,7 +635,7 @@ it1: (sscolmo1): Die Lehrenden stellen den Lernstoff interessant dar.
 
 it2: (sscolmo2): Die Lehrenden vermitteln den Studierenden Freude am Fach.
 
-it3: (sscolmo3): Die Lehrenden schaffen es, die Studierenden für das Gebiet/den Stoff zu interessieren.
+it3: (sscolmo3): Die Lehrenden schaffen es, die Studierenden für das Fach zu motivieren.
 
 st:
 
