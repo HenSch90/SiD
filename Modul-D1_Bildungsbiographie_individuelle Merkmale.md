@@ -59,7 +59,7 @@ tc:
 vn: prffach (prffach1 / prffach2 / prffach3 / prffach4 / prffach5)
     notefach (notefach1 / notefach2 / notefach3 / notefach4 / notefach5)
 
-qt: offene Angabe / Dropdown-Menü
+qt: Tableau / offene Angabe / Drop-Down
 
 hl:
 
@@ -179,7 +179,7 @@ tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
 vn: vausberufo; vausbzpjo; vausbzpmo; vausbnoteo; vausbnote
 
-qt: offene Angaben / Einfachauswahl mit Dropdown und Exklusivkategorie
+qt: offene Angabe / Drop-Down / Einfachauswahl/Exklusivkategorie
 
 hl:
 
@@ -490,7 +490,7 @@ tc: IF sabserbl = 1 – 16
 
 vn: sabserhs1 / sabserhs2
 
-qt: Dropdown-Menü / offene Angabe
+qt: Drop-Down / offene Angabe
 
 hl:
 
@@ -625,8 +625,7 @@ hv:
 
 fo:
 
-tr: GOTO A_49a IF sabser=1
-    GOTO A_49b IF (sabser!=1) OR (sabser = k. A.)
+tr: GOTO A_49a
     
 hi:
 
@@ -686,7 +685,7 @@ tc: IF ssweijaaz>=1 und/oder saweijaaz>=1 und/oder shwijaaz>=1
 
 vn: beginn01 – beginn05 / ende01 – ende05 / hs01 – hs05 / fach01 – fach05 / abs01 – abs05 / stand01 – stand05 
 
-qt: Akkordeon/ Tableau / Drop-Down / offene Angaben / Einfachauswahl
+qt: Akkordeon / Tableau / Drop-Down / offene Angaben / Einfachauswahl
 
 hl:
 
@@ -738,10 +737,8 @@ hv:
 
 fo:
 
-tr: GOTO D1_15b IF techepi==2
-    GOTO D1_16 IF ssuja=1  
-    GOTO A_51a IF h_split=1 
-    GOTO A_51b IF h_split=2 
+tr: GOTO D1_16 IF ssuja=1  
+    GOTO A_51b
     
 hi1: Bitte 5 Akkordeons mit den Überschriften (!!in fett!!) !!1. Studienepisode!!, !!2. Studienepisode!!, !!3. Studienepisode!!, !!4. Studienepisode!!, !!5. Studienepisode!! linksbündig untereinander anlegen. 
 
@@ -816,8 +813,7 @@ hv:
 
 fo:
 
-tr: GOTO A_51a IF h_split=1 
-    GOTO A_51b IF h_split=2 
+tr: GOTO A_51b 
     
 hi1: Bitte 5 Zeilen programmieren, in denen jeweils ganz vorne/in der ersten Spalte (!!in fett!!) !!1. Unterbrechung!!, !!2. Unterbrechung!!, !!3. Unterbrechung!!, !!4. Unterbrechung!! und !!5. Unterbrechung!! linksbündig untereinander stehen. Die beiden Drop-Downs und die Einfachauswahl dann bitte pro Unterbrechung/Zeile linksbündig nebeneinander anordnen/folgen lassen. Diese drei Spalten bitte (!!in fett!!) mit !!Zeitpunkt!!, !!Dauer!! und !!Beurlaubung!! überschreiben.
 
@@ -832,7 +828,7 @@ tc:
 
 vn: sask (sask1 / sask2 / sask3 / sask4)
 
-qt: 5er-Skala mit horizontalen ao
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1004,7 +1000,7 @@ tc:
 
 vn: kspr (ksprdeu / kspreng / ksprfra / ksprspa / ksprand1 / ksprando1 / ksprand2 / ksprando2 / ksprand3 / ksprando3)
 
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/offene Angaben mit horizontalen ao
 
 hl:
 
@@ -1064,7 +1060,7 @@ GOTO D1_22
 
 hi1: Bitte über die drei offenen Angaben eine Zeile linksbündig einfügen mit "Andere Sprache(n), und zwar:"
 
-hi2: "Muttersprache" bitte etwas nach rechts absetzen.
+hi2: "Muttersprache" bitte etwas nach rechts absetzen und ohne Verbindungslinie.
 
 \--------------------------------
 
@@ -1073,7 +1069,7 @@ D1_22
 
 tc:
 
-vn: dpfrag / dsfreiz / sfklaus / ssverl / kogorga / kogkrit2 / kogwied / mkogwach2 / ressanst2 / resskonz2 / lernumg1 / lit
+vn: dpfrag / dsfreiz / sfklaus / ssverl / kogorga / kogkrit / kogwied / mkogwach / ressanst / resskonz / lernumg / lit
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1095,18 +1091,18 @@ it4: (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
 
 it5: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
 
-it6: (kogkrit2): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
+it6: (kogkrit): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
 
 it7: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
 
-it8: (mkogwach2): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte, ohne 
+it8: (mkogwach): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte, ohne 
 meine Unterlagen zu Hilfe zu nehmen.
 
-it9: (ressanst2): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
+it9: (ressanst): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
 
-it10: (resskonz2): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
+it10: (resskonz): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
 
-it11: (lernumg1): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell finden kann.
+it11: (lernumg): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell finden kann.
 
 it12: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
 
@@ -1185,7 +1181,7 @@ it10: (pbignoku): Ich habe nur wenig künstlerisches Interesse.
 
 st:
 
-ao1: 1: : trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
 ao2: 2
 
@@ -1193,7 +1189,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: : trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -1244,7 +1240,7 @@ it3: (pswaufg): Auch anstrengende und komplizierte Aufgaben kann ich in der Rege
 
 st:
 
-ao1: 1: : trifft gar nicht zu
+ao1: 1: trifft gar nicht zu
 
 ao2: 2
 
@@ -1252,7 +1248,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: : trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
