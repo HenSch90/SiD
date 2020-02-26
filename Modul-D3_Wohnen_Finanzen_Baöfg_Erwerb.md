@@ -938,7 +938,7 @@ q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbild
 
 is1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit und deren inhaltliche Nähe zu den Studieninhalten an.
 
-is2: Bitte geben Sie die Art Ihrer jeweiligen Erwerbstätigkeiten und deren inhaltliche Nähe zu den Studieninhalten an.
+is2: Bitte geben Sie die Art Ihrer jeweiligen Erwerbstätigkeiten und deren inhaltliche Nähe zu den Studieninhalten an. Sollten Sie mehr als drei Erwerbstätigkeiten ausüben, dann beziehen Sie Ihre Angaben bitte auf die drei Haupttätigkeiten.
 
 
 it1: (etat1): !!1. Erwerbstätigkeit!!
@@ -1021,7 +1021,7 @@ fv:
 
 hv: 
 
-fo: Die Abfrage der Erwerbstätigkeit und Fachnähe soll bitte jeweils zusammen erfolgen. Das heißt "1. Erwerbstätigkeit" (it1) soll als Überschrift in fett programmiert werden und darunter vertikel die entsprechenden ao1-ao7 folgen. Anschließend/darunter soll "Fachnähe" (it2) fett programmiert werden und in derselben Zeile/horizontal die ao8-ao12 folgen. Damit wäre der erste Abschnitt für die erste Erwerbstätigkeit beendet. Der ggf. folgende zweite/dritte Abschnitt würden äquivalent umgesetzt werden, sofern die Einblendbedingunegn erfüllt sind.
+fo: Die Abfrage der Erwerbstätigkeit und Fachnähe soll bitte jeweils zusammen erfolgen. Das heißt "1. Erwerbstätigkeit" (it1) soll als Überschrift in fett programmiert werden und darunter vertikel die entsprechenden ao1-ao7 folgen. Anschließend/darunter soll "Fachnähe" (it2) fett programmiert werden und in derselben Zeile/horizontal die ao8-ao12 folgen. Damit wäre der erste Abschnitt für die erste Erwerbstätigkeit beendet. Der ggf. folgende zweite/dritte Abschnitt würden äquivalent umgesetzt werden, sofern die Einblendbedingungen erfüllt sind.
 
 tr: GOTO D3_20 IF sformberu=1 | sformdua=1;  
     GOTO D3_21 IF sformberu=0 & sformdua=0 & eaktsens > 1
@@ -1057,7 +1057,7 @@ Bitte tragen Sie Ihre Berufsbezeichnung möglichst genau ein. Zum Beispiel:
 
 \-   Bankkaufmann/-frau (nicht: Angestellte\*r)
 
-\-   Zollbeamte\*r (nicht: Beamte\*r)
+\-   Zollbeamtin/-beamter (nicht: Beamtin bzw. Beamter)
 
 \-   Maschinenbauingenieur\*in (nicht: Ingenieur\*in)
 
