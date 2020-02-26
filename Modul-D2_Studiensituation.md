@@ -297,69 +297,6 @@ hi:
 
 **------------------------------------------------------------**
 
-**Vereinbarkeit Studium**
-
-D2_6
--------
-
-tc:
-
-vn: sver (sverkin; sverbeein; svererwerb; svercare)
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in: 
-
-q: Inwieweit kann man aus Ihrer Perspektive ein Studium mit folgenden Aspekten vereinbaren?
-
-is: 
-
-it1: (sverkin): Elternschaft
-
-it1: (sverbeein): gesundheitlicher Beeinträchtigung
-
-it1: (svererwerb): Erwerbstätigkeit
-
-it1: (svercare): Pflegeaufgaben
-
-st:
-
-ao1: 1: überhaupt nicht vereinbar
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: sehr gut vereinbar
-
-mv: 
-
-ka: 
-
-vc: 
-
-av: 
-
-kh: 
-
-fv: 
-
-hv: 
-
-fo: 
-
-tr: GOTO D2_6a
-
-hi: 
-
-
-
-**------------------------------------------------------------**
-
 **SSCO 1**
 
 D2_6a
@@ -367,15 +304,15 @@ D2_6a
 
 tc:
 
-vn: sscowver1; sscowver2; sscowver3
+vn: sscowver (sscowver1; sscowver2; sscowver3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie beurteilen Sie die Anforderungen, die in Ihrem Studiengang an Studierende gestellt werden? Wie viel Wert wird in Ihrem Studiengang auf folgende Aspekte gelegt?
+q: Wie viel Wert wird in Ihrem Studiengang auf folgende Aspekte gelegt?
 
 is:.
 
@@ -428,9 +365,9 @@ D2_7
 
 tc:
 
-vn: sscolehr1; sscolehr2; sscolehr3; sscolehr4; sscolehr5; sscolehr6; sscolehr7; sscolehr8
+vn: sscolehr (sscolehr1; sscolehr2; sscolehr3; sscolehr4; sscolehr5; sscolehr6; sscolehr7; sscolehr8)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
