@@ -680,7 +680,7 @@ in:
 
 q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
 (Leerzeile)
-Als ich nach Deutschland kam, war ich ...
+Als ich nach Deutschland kam, war ich:
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -704,7 +704,7 @@ ao6: (baufgrufamba): 7: Familiennachzug, zog zu bereits in Deutschland lebender 
 
 ao6: (baufgruausba): 8: (Spät-)Aussiedler\*in
 
-ao7: (baufgruandba): 7: Anderer Status, und zwar: (baufgruandba_open)
+ao7: (baufgruandba): 7: Anderer Status, und zwar: (baufgruandba_open) [offene Eingabe, 50 Zeichen]
 
 ato:
 
