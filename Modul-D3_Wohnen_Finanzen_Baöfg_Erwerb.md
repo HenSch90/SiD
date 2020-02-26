@@ -316,7 +316,7 @@ is1: "Andere" meint bspw. die Überweisung der Miete durch Ihre Eltern.
 
 is2: Bitte geben Sie nur den jeweils auf Sie persönlich bezogenen Betrag an.
 
-it1: (fausgmieto; feindmieto): Warmmiete inkl. Nebenkosten
+it1: (fausgmieto; feindmieto): Warmmiete (inkl. Nebenkosten)
 
 it2: (fausgerno; feinderno): Ernährung 
 
@@ -415,9 +415,9 @@ fo3: Bitte Leerzeile/Abstand vor den Gesamtausgaben einziehen.
 
 tr: GOTO D3_9
 
-hi1: Bitte kh1 für die Einzelausgabeposten der Spalte "Ich bezahle selbst" nutzen und kh2 für die Einzelausgabeposten der Spalte "Andere bezahlen für mich".
+hi1: Bitte kh1 für die Einzelausgabeposten der Spalte "ich bezahle selbst" nutzen und kh2 für die Einzelausgabeposten der Spalte "andere bezahlen für mich".
 
-hi2: Bitte kh3 für die Gesamtausgaben der Spalte "Ich bezahle selbst" nutzen und kh4 für die Gesamtausgaben der Spalte "Andere bezahlen für mich".
+hi2: Bitte kh3 für die Gesamtausgaben der Spalte "ich bezahle selbst" nutzen und kh4 für die Gesamtausgaben der Spalte "andere bezahlen für mich".
 
 \--------------------------------
 
