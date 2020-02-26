@@ -1024,7 +1024,8 @@ hv:
 fo: Die Abfrage der Erwerbstätigkeit und Fachnähe soll bitte jeweils zusammen erfolgen. Das heißt "1. Erwerbstätigkeit" (it1) soll als Überschrift in fett programmiert werden und darunter vertikel die entsprechenden ao1-ao7 folgen. Anschließend/darunter soll "Fachnähe" (it2) fett programmiert werden und in derselben Zeile/horizontal die ao8-ao12 folgen. Damit wäre der erste Abschnitt für die erste Erwerbstätigkeit beendet. Der ggf. folgende zweite/dritte Abschnitt würden äquivalent umgesetzt werden, sofern die Einblendbedingunegn erfüllt sind.
 
 tr: GOTO D3_20 IF sformberu=1 | sformdua=1;  
-    GOTO D3_21 IF sformberu=0 | sformdua=0
+    GOTO D3_21 IF sformberu=0 & sformdua=0 & eaktsens > 1
+    GOTO D3_22 IF sformberu=0 & sformdua=0 & eaktsens = 1 | k. A.
 
 hi: 
 
