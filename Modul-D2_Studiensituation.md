@@ -71,9 +71,9 @@ fv:
 
 hv:
 
-fo1: Bitte über it1 "räumliche Ausstattung" positionieren.
+fo1: Bitte über it1 "räumliche Ausstattung" linksbündig positionieren.
 
-fo2: Bitte über it4 "Service-Leistungen" positionieren.
+fo2: Bitte über it4 "Service-Leistungen" linksbündig positionieren.
 
 tr:
 
@@ -90,9 +90,9 @@ D2_3
 
 tc:
 
-vn: ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9; ssstruk10; ssstruk11; ssstruk12; ssstruk13
+vn: ssstruk (ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -100,33 +100,25 @@ in:
 
 q: Inwieweit treffen folgende Aussagen auf Ihr Studium zu?
 
-is:.
+is:
 
 it1: (ssstruk1): Es bestehen übersichtliche Modulwahlmöglichkeiten.
 
-it2: (ssstruk2): Lehrveranstaltungen sind zeitlich gut koordiniert.
+it2: (ssstruk2): Die Lehrveranstaltungen sind zeitlich gut koordiniert.
 
-it3: (ssstruk3): Mein Studium ist stark durch Studienordnungen/Verlaufspläne festgelegt.
+it3: (ssstruk3): Die Semestervorgaben sind gut erfüllbar.
 
-it4: (ssstruk4): Der Arbeitsaufwand ist gut über das Semester verteilt.
+it4: (ssstruk4): Die einzelnen Module bauen inhaltlich aufeinander auf.
 
-it5: (ssstruk5): Die Semestervorgaben sind gut erfüllbar.
+it5: (ssstruk5): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
 
-it6: (ssstruk6): Die einzelnen Module bauen inhaltlich/thematisch aufeinander auf.
+it6: (ssstruk6): Die Veranstaltungen bereiten gut auf die Prüfungen vor.
 
-it7: (ssstruk7): Es werden vielfältige Lehr-/ Lernformen angeboten (Vorlesungen, Seminare, Übungen etc.).
+it7: (ssstruk7): Die Prüfungen liegen zeitlich oft zu nah beieinander.
 
-it8: (ssstruk8): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
+it8: (ssstruk8): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
 
-it9: (ssstruk9): Die Veranstaltungen der Module bereiten gut auf die Modulabschlussprüfungen vor.
-
-it10: (ssstruk10): Es werden vielfältige Prüfungsformen angeboten (Klausuren, Hausarbeiten, mündliche Prüfungen etc.).
-
-it11: (ssstruk11): Die Prüfungen liegen oft zeitlich nah beieinander.
-
-it12: (ssstruk12): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
-
-it13: (ssstruk13): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten ist angemessen.
+it9: (ssstruk9): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten sind angemessen.
 
 st:
 
@@ -142,7 +134,11 @@ ao5: 5: trifft voll und ganz zu
 
 mv:
 
-ka:
+ka1: (it1 TO it3): !!Koordination!!
+
+ka2: (it4 TO it5): !!Inhalte!!
+
+ka3: (it6 TO it9): !!Prüfungsorganisation!!
 
 vc:
 
@@ -154,7 +150,11 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "Koordination" linksbündig positionieren.
+
+fo2: Bitte über it4 "Inhalte" linksbündig positionieren.
+
+fo3: Bitte über it6 "Prüfungsorganisation" linksbündig positionieren.
 
 tr:
 
@@ -171,9 +171,9 @@ D2_4
 
 tc:
 
-vn: ssstud1; ssstud2; ssstud3; ssstud4; ssstud5; ssstud6
+vn: ssstud1 (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -193,8 +193,6 @@ it4: (ssstud4): Es besteht eine Anwesenheitspflicht.
 
 it5: (ssstud5): Die Lehrveranstaltungssprache ist Englisch.
 
-it6: (ssstud6): Die Lehrveranstaltungssprache ist weder Deutsch noch Englisch, sondern eine andere.
-
 st:
 
 ao1: 1: keine
@@ -207,9 +205,7 @@ ao4: 4:
 
 ao5: 5: alle
 
-ao6: -14: kann ich nicht beurteilen
-
-mv: ao6
+mv:
 
 ka:
 
