@@ -238,7 +238,7 @@ tc:
 
 vn: ssanwesend
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -272,7 +272,7 @@ ao9: 9: 81 bis 90 %
 
 ao10: 10: 91 bis 100 %
 
-mv: 0: trifft nicht zu
+mv: -11: trifft nicht zu
 
 ka:
 
@@ -286,14 +286,14 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"trifft nicht zu" absetzen
 
 tr:
 
 GOTO B1_7 if mastersplit=1, 2, 5, 6
 GOTO A_28 if mastersplit=7, 8, 11, 12, 14
 
-hi:
+hi: 
 
 **------------------------------------------------------------**
 
