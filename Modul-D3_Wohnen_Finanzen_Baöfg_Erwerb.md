@@ -442,7 +442,7 @@ it:
 
 st:
 
-ao1: (fmineinko): [number, 4-stellig: 1 TO 9999], Postfix: € 
+ao1: (fmineinko): [number, 5-stellig: 1 TO 99999], Postfix: € 
 
 mv:
 
@@ -452,7 +452,7 @@ vc:
 
 av: 
 
-kh: (fmineinko): Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (1 bis 9999).
+kh: (fmineinko): Bitte geben Sie Ihre benötigten monatlichen Mindesteinnahmen an (1 bis 99999).
 
 fv:
 
