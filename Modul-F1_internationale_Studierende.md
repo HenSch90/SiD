@@ -3,9 +3,9 @@ F1_1
 
 tc:
 
-vn: aeinnorm1; aeinnorm2; aeinnorm3
+vn: aeinnorm1; aeinnorm2
 
-qt: Einfachauswahlmaxtrix
+qt:  Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -15,15 +15,13 @@ q: Inwiefern treffen die folgenden Aussagen Ihrer Meinung nach zu?
 
 is:
 
-it1: (aeinnorm1): Ein studienbezogener Auslandsaufenthalt darf während des Studiums auf keinen Fall fehlen.
+it1: (aeinnorm1): Ein Auslandsaufenthalt darf während des Studiums auf keinen Fall fehlen.
 
 it2: (aeinnorm2): Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals erwartet.
 
-it3: (aeinnorm3): Jede\*r Studierende sollte während des Studiums studienbezogen im Ausland gewesen sein.
-
 st:
 
-ao1: 1: : trifft gar nicht zu
+ao1: 1: : trifft überhaupt nicht zu
 
 ao2: 2
 
@@ -53,13 +51,7 @@ tr: GOTO F1_2b IF width.value lt 768
 
 ELSE GOTO F1_2
 
-		<zofar:transitions>
-			<zofar:transition target="F1_2b" condition="width.value lt 768"/>
-			<zofar:transition target="F1_2"/>
-		</zofar:transitions>
-
-
-hi: Items bitte zufällig rotieren
+hi:
 
 \-------------------------------
 
@@ -68,41 +60,37 @@ F1_2
 
 tc:
 
-vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersön; aeinskont; aeinskultur; aeinsspaß; aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
+vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersoen; aeinskont; aeinskultur; aeinsspas; aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Was spricht Ihrer Meinung nach …
+q: Was spricht Ihrer Meinung nach…
 
 is:
 
-Überschrift: … für einen Auslandsenthalt?
+it1: (aeinsarbm): Verbesserung der Arbeitsmarktchancen
 
-it1: (aeinsarbm): verbesserte Arbeitsmarktaussichten
+it2: (aeinssprachk): Verbesserung der Sprachkenntnisse
 
-it2: (aeinssprachk): verbesserte Sprachkenntnisse
+it3: (aeinsfach): Verbesserung der Fachkenntnisse
 
-it3: (aeinsfach): verbesserte Fachkenntnisse
+it4: (aeinspersoen): Persönlichkeitsentwicklung
 
-it4: (aeinspersön): Persönlichkeitsentwicklung
+it5: (aeinskont): Kontakte knüpfen
 
-it5: (aeinskont): international Kontakte knüpfen
+it6: (aeinskultur): andere Kulturen kennenlernen
 
-it6: (aeinskultur): andere Länder/Kulturen kennenlernen
-
-it7: (aeinsspaß): Spaß haben
-
-Überschrift: … gegen einen Auslandsaufenthalt?
+it7: (aeinsspas): Spaß haben
 
 it8: (aeinsfinanz): finanzielle Belastung
 
 it9: (aeinsorga): Organisationsaufwand
 
-it10: (aeinsfreun): Trennung von Freunden und Familie
+it10: (aeinsfreun): Trennung von Freund\*innen und Familie
 
 it11: (aeinsanerk): Anerkennungsschwierigkeiten
 
@@ -126,7 +114,9 @@ ao5: 5: : sehr stark
 
 mv:
 
-ka:
+ka1: (it1 TO it7) **… *für* einen Auslandsaufenthalt?**
+
+ka2: (it8 TO it it14) **… *gegen* einen Auslandsaufenthalt?**
 
 vc:
 
@@ -149,15 +139,35 @@ hi:
 F1_2b
 ====
 
-tc: width.value lt 768
+tc: 
 
-vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersön; aeinskont; aeinskultur; aeinsspaß
+vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersoen; aeinskont; aeinskultur; aeinsspas
 
-qt: Einfachauswahlmatrix
+qt:  Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
+
+q: Was spricht Ihrer Meinung nach für einen Auslandsaufenthalt?
+
+is:
+
+it1: (aeinsarbm): Verbesserung der Arbeitsmarktchancen
+
+it2: (aeinssprachk): Verbesserung der Sprachkenntnisse
+
+it3: (aeinsfach): Verbesserung der Fachkenntnisse
+
+it4: (aeinspersoen): Persönlichkeitsentwicklung
+
+it5: (aeinskont): Kontakte knüpfen
+
+it6: (aeinskultur): andere Kulturen kennenlernen
+
+it7: (aeinsspas): Spaß haben
+
+st:
 
 ao1: 1: : überhaupt nicht
 
@@ -168,26 +178,6 @@ ao3: 3
 ao4: 4
 
 ao5: 5: : sehr stark
-
-q: Was spricht Ihrer Meinung nach für einen Auslandsaufenthalt?
-
-is:
-
-it1: (aeinsarbm): verbesserte Arbeitsmarktaussichten
-
-it2: (aeinssprachk): verbesserte Sprachkenntnisse
-
-it3: (aeinsfach): verbesserte Fachkenntnisse
-
-it4: (aeinspersön): Persönlichkeitsentwicklung
-
-it5: (aeinskont): international Kontakte knüpfen
-
-it6: (aeinskultur): andere Länder/Kulturen kennenlernen
-
-it7: (aeinsspaß): Spaß haben
-
-st:
 
 mv:
 
@@ -209,31 +199,20 @@ tr: GOTO F1_2c
 
 hi: Items bitte zufällig rotieren.
 
-
 \-------------------------------
 
 F1_2c
 ====
 
-tc: width.value lt 768
+tc:
 
 vn: aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
 
-qt: Einfachauswahlmatrix
+qt:  Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
-
-ao1: 1: : überhaupt nicht
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : sehr stark
 
 q: Und was spricht Ihrer Meinung nach gegen einen Auslandsaufenthalt?
 
@@ -243,7 +222,7 @@ it8: (aeinsfinanz): finanzielle Belastung
 
 it9: (aeinsorga): Organisationsaufwand
 
-it10: (aeinsfreun): Trennung von Freunden und Familie
+it10: (aeinsfreun): Trennung von Freund\*innen und Familie
 
 it11: (aeinsanerk): Anerkennungsschwierigkeiten
 
@@ -254,6 +233,16 @@ it13: (aeinsfehlspra): fehlende Sprachkenntnisse
 it14: (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
 
 st:
+
+ao1: 1: : überhaupt nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: : sehr stark
 
 mv:
 
@@ -275,6 +264,7 @@ tr: GOTO F1_3
 
 hi: Items bitte zufällig rotieren.
 
+\-------------------------------
 
 F1_3
 ====
@@ -283,7 +273,7 @@ tc:
 
 vn: ainfpfakt
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -330,7 +320,7 @@ tc:
 
 vn: avorelt; avorgeschw; avorandver; avorfreund; avorkomm; avorniem
 
-qt: Mehrfachauswahl mit Exklusivkategorie
+qt: Mehrfachauswahl mit Exklusivkategorie und mit vertikalen ao
 
 hl:
 
@@ -344,21 +334,21 @@ it:
 
 st:
 
-ao1: (avorelt) : Eltern
+ao1: (avorniem) : nein, niemanden (Exklusivkategorie)
 
-ao2: (avorgeschw) : Geschwister
+ao2: (avorelt) : Eltern
 
-ao3: (avorandver) : andere Verwandte
+ao3: (avorgeschw) : Geschwister
 
-ao4: (avorfreund) : Freund\*innen
+ao4: (avorandver) : andere Verwandte
 
-ao5: (avorkomm) : Kommiliton\*innen
+ao5: (avorfreund) : Freund\*innen
 
-ao6: (avorniem) : nein, niemanden (Exklusivkategorie)
+ao6: (avorkomm) : Kommiliton\*innen
 
 mv:
 
-ka:
+ka: (it2 TO it6) ja, und zwar:
 
 vc:
 
@@ -383,9 +373,9 @@ F1_5
 
 tc:
 
-vn: aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul; aauszeitlebbama
+vn: aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie und mit vertikalen ao
 
 hl:
 
@@ -393,13 +383,13 @@ in:
 
 q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) im Ausland verbracht?
 
-is: Bitte alles Zutreffende auswählen
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1: (aauszeitlebnein): nein
+ao1: (aauszeitlebnein): nein (Exklusivkategorie)
 
 ao2: (aauszeitlebfrkin): ja, in meiner frühen Kindheit
 
@@ -407,13 +397,11 @@ ao3: (aauszeitlebwschul): ja, während meiner Schulzeit
 
 ao4: (aauszeitlebnschul): ja, direkt nach der Schulzeit
 
-ao5: (aauszeitlebbama): ja, zwischen meinem Bachelor- und Masterstudium
-
 mv:
 
 ka:
 
-vc: SHOW aauszeitlebbama IF sabsan=2 or sabsan=MISSING
+vc:
 
 av:
 
@@ -474,7 +462,7 @@ tc:
 
 vn: vsbkolba
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -568,9 +556,9 @@ F1_8
 
 tc:
 
-vn: intdeutsch1; intdeutsch2; intdeutsch3; intdeutsch4; intdeutsch5
+vn: intdeutsch1; intdeutsch2; intdeutsch3; intdeutsch4; intdeutsch5; intdeutsch6
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -578,21 +566,23 @@ in:
 
 q: Wo haben Sie die nötigen Sprachkenntnisse für ein Studium in Deutschland erworben?
 
-is:
+is: *Bitte alles Zutreffende auswählen.*
 
 it:
 
 st:
 
-ao1: (intdeutsch1): Schule/Studium im Ausland
+ao1: (intdeutsch1): Elternhaus
 
-ao2: (intdeutsch2): Sprachkurs im Ausland
+ao2: (intdeutsch2): Schule/Studium im Ausland
 
-ao3: (intdeutsch3): Sprachkurs in Deutschland (vor dem Studium)
+ao3: (intdeutsch3): Sprachkurs im Ausland
 
-ao4: (intdeutsch4): Studienbegleitend an einer deutschen Hochschule
+ao4: (intdeutsch4): Sprachkurs in Deutschland (vor dem Studium)
 
-ao5: (intdeutsch5): bisher noch gar nicht
+ao5: (intdeutsch5): studienbegleitend an einer deutschen Hochschule
+
+ao6: (intdeutsch6): bisher noch gar nicht
 
 mv:
 
@@ -621,37 +611,31 @@ F1_9
 
 tc:
 
-vn: bdefinba; bdekenba; bdesprba; bdefamsba; bdefamlba; ddetecba; bdeoekba; bdequaba; bdearbba
+vn:  bdequaba; bdefamsba; bdeoekba; bdefinba; bdesprba; bdearbba; bdekenba 
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Warum haben Sie sich für ein Studium in Deutschland entschieden?
+q: Warum haben Sie sich für Deutschland als Studienland entschieden?
 
-is: Bitte geben Sie den jeweils zutreffenden Skalenwert an.
+is: !!Ich habe mich für ein Studium in Deutschland entschieden, ...!!
 
-Ich habe mich für ein Studium in Deutschland entschieden, ...
+it1: (bdequaba): aufgrund der hohen Lebensqualität.
 
-it1: (bdefinba): weil dies meinen finanziellen Möglichkeiten entspricht.
+it2: (bdefamsba): weil bereits Freund\*innen/Verwandte in Deutschland studiert haben.
 
-it2: (bdekenba): um Deutschland kennenzulernen/weil mich die deutsche Geschichte und Kultur interessiert.
+it3: (bdeoekba): aufgrund der wirtschaftlichen Lage in Deutschland.
 
-it3: (bdesprba): um meine Sprachkenntnisse zu vertiefen.
+it4: (bdefinba): weil dies meinen finanziellen Möglichkeiten entspricht.
 
-it4: (bdefamsba): weil Freunde/Verwandte in Deutschland studieren/studiert haben.
+it5: (bdesprba): um meine Sprachkenntnisse zu vertiefen.
 
-it5: (bdefamlba): weil Freunde/Verwandte in Deutschland leben/gelebt haben.
+it6: (bdearbba): um nach Studienabschluss in Deutschland zu arbeiten.
 
-it6: (ddetecba): weil Deutschland ein hochtechnisiertes Land ist.
-
-it7: (bdeoekba): wegen der wirtschaftlichen Lage in Deutschland.
-
-it8: (bdequaba): wegen der Lebensqualität in Deutschland.
-
-it9: (bdearbba): aufgrund der Möglichkeit, nach Studienabschluss in Deutschland zu arbeiten.
+it7: (bdekenba): um Deutschland kennenzulernen.
 
 st:
 
@@ -692,15 +676,15 @@ F1_10
 
 tc:
 
-vn: ainfaba; ainfbmba; ainfbjba; ainfemba, ainfejba
+vn: 
 
-qt: Akkordeon (Drop-Down Menüs, offene Angabe)
+qt: Einfachauswahl mit Dropdown
 
 hl:
 
 in:
 
-q: Bitte beschreiben Sie Ihren aktuellen Aufenthalt in Deutschland näher.
+q: Wann haben Sie erstmals ein Studium in Deutschland aufgenommen?
 
 is:
 
@@ -708,48 +692,11 @@ it:
 
 st:
 
-Drop-Down-Menü:
-Art des Auslandsaufenthalts:
-
-aox: (ainfaba): 0: Art des Auslandsaufenthalts
-
-ao1: (ainfaba): 1: Auslandsstudium mit Abschluss in Deutschland
-
-ao2: (ainfaba): 2: Auslandsstudium/-semester ohne Abschluss in Deutschland
-
-ao3: (ainfaba): 3: Praktikum/Praxisphase
-
-ao4: (ainfaba): 4: Sprachkurs
-
-ao5: (ainfaba): 5: Studienreise
-
-ao6: (ainfaba): 6: Projektarbeit
-
-ao7: (ainfaba): 7: Summerschool
-
-ao8: (ainfaba): 8: sonstiger Aufenthalt
-
-
-Beginn:
-
-Untereinander angeordnete Drop-Down-Menüs
-
-ao9: (ainfbmba): Monat: (Monat \ Januar \| … \| Dezember)
-
-ao10: (ainfbjba): Jahr: (Jahr \ 2020 \| 2019 \| … \| 2000 \| vor 2000)
-
-
-Ende:
-
-Untereinander angeordnete Drop-Down-Menüs
-
-ao11: (ainfemba): Monat: (Monat \ Januar \| … \| Dezember)
-
-ao12: (ainfejba): Jahr: (Jahr \ 2020 \| 2021 \| … \| 2030 oder später)
+ao: [Dropdown, Semesterliste: Semester; SoSe2020, WiSe2019/2020 bis SoSe2010]
 
 mv:
 
-ka: ka1 (ao0 -ao12): aktueller Studienbezogener Auslandsaufenthalt - bitte auswählen
+ka:
 
 vc:
 
