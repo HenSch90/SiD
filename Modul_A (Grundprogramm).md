@@ -1897,7 +1897,7 @@ A_26
 
 tc: IF sabsan=9
 
-vn: sabsweit; sabsweito
+vn: sabsweit; sabsweito; todo1; todo2; todo3; todo4; todo5;
 
 qt: Mehrfachauswahl
 
@@ -1905,7 +1905,7 @@ hl:
 
 in:
 
-q: Sie haben angegeben in Ihrem aktuellen Studium keinen Studienabschluss anzustreben. Nutzen Sie aktuell hochschulische Weiterbildungsangebote?
+q: Sie haben angegeben, in Ihrem aktuellen Studium keinen Studienabschluss anzustreben. Nutzen Sie aktuell hochschulische Weiterbildungsangebote?
 
 is: Bitte alles zutreffende auswählen.
 
@@ -1923,7 +1923,7 @@ ao4: (todo2): 4: ja, Workshop(s)
 
 ao5: (todo3): 5: ja, Modul/Kurs
 
-ao6: (todo4): 6: ja, anderes und zwar: [todo5_open]
+ao6: (todo4): 6: Ja, anderes und zwar: [(todo5) offene Angabe, 50 Zeichen]
 
 mv:
 
