@@ -887,7 +887,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: 
+is: Die Absolvent\*innen ...
 
 it:
 
@@ -919,7 +919,7 @@ ao12: (faiand): anderer Grund, und zwar:[faiand_open; 100 Zeichen]
 
 mv:
 
-ka: Die Absolvent\*innen ...
+ka:
 
 vc:
 
@@ -953,8 +953,7 @@ hl:
 
 in:
 
-q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen für eine Absage (z.B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung für die Ablehnung verantwortlich sein. 
-Aus welchen Gründen wird man Ihrer Meinung nach eher abgelehnt?
+q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen für eine Absage (z.B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung für die Ablehnung verantwortlich sein. Weshalb wird man Ihrer Meinung nach eher abgelehnt?
 
 is:
 
