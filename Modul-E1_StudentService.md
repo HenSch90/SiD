@@ -307,8 +307,7 @@ hi:
 E1_5
 ====
 
-tc: Frage geht an Studierende mit Kind, mit Beeinträchtigung, erwerbstätige
-Studierende, Studierende mit Pflegetätigkeit
+tc:
 
 vn: szufver (szufverkin; szufverbeein; szufvererwerb; szufvercare)
 
@@ -733,9 +732,9 @@ qt: Mehrfachauswahl mit vertikalen ao (Mehrfachnennung)
 
 hl:
 
-in:
-
 q: Warum haben Sie kein Beratungsangebot genutzt?
+
+in:Ich habe kein Beratungsangebot in Anspruch genommen, ...
 
 is: Bitte alles Zutreffende auswählen
 
@@ -761,7 +760,7 @@ it8: (ihinnac): ... weil ich dadurch Nachteile im weiteren Studium befürchtete.
 
 it9: (ihinand): ... aus anderen Gründen.
 
-st: Ich habe kein Beratungsangebot in Anspruch genommen, ...
+st: 
 
 ao:
 
