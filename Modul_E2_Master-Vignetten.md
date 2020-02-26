@@ -14,6 +14,7 @@ qt: Einfachauswahl mit vertikalen Antwortoptionen
 hl: Fragen zu Masterstudium und Beruf
 
 in: Sie sind momentan im fortgeschrittenen Bachelorstudium und möchten sich vielleicht für ein Masterstudium bewerben.
+
 Nachfolgend bitten wir Sie, für vier hypothetische Masterstudiengänge mit unterschiedlichen Eigenschaften einzuschätzen, wie wahrscheinlich Sie sich bewerben würden. Die Merkmale der Studiengänge sind jeweils in kurzen Texten dargestellt. 
 
 Es handelt sich um einen Studiengang an einer **staatlichen oder privaten** Hochschule, der auf Ihrem angestrebten Bachelorabschluss **fachlich aufbaut**. **Wohnkosten und Freizeitmöglichkeiten** entsprechen in etwa Ihrem jetzigen Studienort.
