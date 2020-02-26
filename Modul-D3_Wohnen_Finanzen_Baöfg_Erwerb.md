@@ -267,7 +267,7 @@ ao6: (festipartandstaat): anderes mit staatlichen Mitteln finanziertes Stipendiu
 
 ao7: (festipartprivat): Stipendium eines privaten Geldgebers (z. B. Industrie, private\*r Stifter\*in)
 
-ao8: (festipartsons): anderes: [(festipartsonso); Eingabefeld: 50 Zeichen]
+ao8: (festipartsons): anderes: [(festipartsonso); 50 Zeichen]
 
 mv:
 
