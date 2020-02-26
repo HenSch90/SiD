@@ -539,7 +539,7 @@ fo:
 
 tr:
 
-GOTO D2_10
+GOTO D2_11
 
 hi: 
 
@@ -734,7 +734,7 @@ fo:
 
 tr:
 
-GOTO D2_14
+GOTO D2_15
 
 hi: 
 
