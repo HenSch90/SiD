@@ -974,7 +974,7 @@ vc:
 
 av:
 
-kh: Bitte geben Sie nur Zahlen ein.
+kh:
 
 fv:
 
@@ -1013,7 +1013,7 @@ it:
 
 st:
 
-ao: (ssread): 
+ao: (ssread): [number, 3-stellig: 1 TO 999], Postfix: Seiten pro Woche 
 
 mv:
 
@@ -1021,9 +1021,9 @@ ka:
 
 vc:
 
-av: [number: 3 Stellig : 0 TO 999]
+av:
 
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte geben Sie die Anzahl gelesener Seiten pro Woche an (0 bis 999).
 
 fv:
 
@@ -1046,9 +1046,9 @@ D2_20
 
 tc:
 
-vn: ssrilern1; ssrilern2; ssrilern3; ssrilern4; ssrilern5; ssrilern6; ssrilern7
+vn: ssrilern (ssrilern1; ssrilern2; ssrilern3; ssrilern4)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1058,19 +1058,13 @@ q: Wie oft haben Sie in diesem Semester…
 
 is:.
 
-it1: (ssrilern1): … Erkenntnisse aus verschiedenen Lehrveranstaltungen zusammengeführt?
+it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
 
-it2: (ssrilern2): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
+it2: (ssrilern2): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
 
-it3: (ssrilern3): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
+it3: (ssrilern3): … die Stärken und Schwächen des eigenen Standpunktes reflektiert?
 
-it4: (ssrilern4): … die Stärken und Schwächen des eigenen Standpunktes reflektiert?
-
-it5: (ssrilern5): … versucht, die Ansichten Anderer besser nachzuvollziehen, indem Sie sich in deren Perspektive hineinversetzt haben?
-
-it6: (ssrilern6): … etwas gelernt, das Ihre bisherige Sicht der Dinge grundlegend verändert hat?
-
-it7: (ssrilern7): … Erkenntnisse aus Lehrveranstaltungen mit Ihren bisherigen Erfahrungen und Kenntnissen verknüpft?
+it4: (ssrilern4): … Erkenntnisse aus Lehrveranstaltungen mit Ihren bisherigen Erfahrungen und Kenntnissen verknüpft?
 
 st:
 
@@ -1115,9 +1109,9 @@ D2_21
 
 tc:
 
-vn: sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11; sszustud12; sszustud13
+vn: sszustud (sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1129,29 +1123,25 @@ is:
 
 it1: (sszustud1): fachliche Kompetenz der Lehrenden
 
-it2: (sszustud2): Vermittlung des Lehrstoffs durch die Lehrenden (Didaktik)
+it2: (sszustud2): digitale Kompetenz der Lehrenden
 
-it3: (sszustud3): Betreuung und Beratung durch die Lehrenden
+it3: (sszustud3): Vermittlung des Lehrstoffs durch die Lehrenden
 
-it4: (sszustud4): Klima/Atmosphäre im Studiengang
+it4: (sszustud4): Betreuung und Beratung durch die Lehrenden
 
-it5: (sszustud5): inhaltliche Breite/Vielfalt des Studienangebots
+it5: (sszustud5): Klima/Atmosphäre im Studiengang
 
-it6: (sszustud6): Verknüpfung von Theorie- und Praxisanteilen
+it6: (sszustud6): inhaltliche Breite/Vielfalt des Studienangebots
 
-it7: (sszustud7): Aufbau und Struktur des Studiengangs insgesamt
+it7: (sszustud7): Verknüpfung von Theorie- und Praxisanteilen
 
-it8: (sszustud8): räumliche und sachliche Ausstattung Ihrer Hochschule
+it8: (sszustud8): Aufbau und Struktur des Studiengangs
 
-it9: (sszustud9): Service- und Beratungsleistungen an Ihrer Hochschule
+it9: (sszustud9): Ihren Studienleistungen
 
-it10: (sszustud10): Studienbedingungen an Ihrer Hochschule insgesamt
+it10: (sszustud10): Ihrem Studienfortschritt
 
-it11: (sszustud11): Ihren Studienleistungen
-
-it12: (sszustud12): Ihrem Studienfortschritt
-
-it13: (sszustud13): Ihrem bisher erreichten Wissen und Können
+it11: (sszustud11): Ihrem bisher erreichten Wissen und Können
 
 st:
 
@@ -1169,7 +1159,11 @@ ao6: -13: kann ich nicht beurteilen
 
 mv: ao6 
 
-ka:
+ka1: (it1 TO it4): !!Lehre!!
+
+ka2: (it5 TO it8): !!Studiengang!!
+
+ka3: (it9 TO it11): !!Leistungen!!
 
 vc:
 
@@ -1181,7 +1175,11 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "Lehre" linksbündig positionieren.
+
+fo2: Bitte über it5 "Studiengang" linksbündig positionieren.
+
+fo3: Bitte über it9 "Leistungen" linksbündig positionieren.
 
 tr: GOTO A_44
 
