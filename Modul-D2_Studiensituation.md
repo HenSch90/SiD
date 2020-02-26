@@ -1,76 +1,5 @@
 **------------------------------------------------------------**
 
-**Supportive Environment**
-
-D2_1
--------
-
-tc:
-
-vn: sssupe1; sssupe2; sssupe3; sssupe4; sssupe5; sssupe6; sssupe7; sssupe8
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Was schätzen Sie, wie wichtig ist es Ihrer Hochschule, …
-
-is:
-
-it1: (sssupe1): … den Studierenden Angebote zur Verbesserung des Studienerfolgs zu machen?
-
-it2: (sssupe2): … dass Studierende Lernangebote nutzen? (Tutorien, Schreibwerkstatt)
-
-it3: (sssupe3): … den Kontakt zwischen Studierenden unterschiedlicher Herkunft (sozial, ethnisch, religiös) zu fördern?
-
-it4: (sssupe4): … dass die Studierenden sozial eingebunden sind?
-
-it5: (sssupe5): … den Studierenden Angebote zur Verbesserung des allgemeinen Wohlbefindens zu machen? (Gesundheitsfürsorge, Beratung)
-
-it6: (sssupe6): … den Studierenden bei der Bewältigung außeruniversitärer Aufgaben zu helfen? (Familie, Arbeit)
-
-it7: (sssupe7): … dass Studierende an Campus-Aktivitäten und Veranstaltungen teilnehmen? (Sportevents, Kunstausstellungen)
-
-it8: (sssupe8): … dass Studierende an Veranstaltungen zu sozialen, wirtschaftlichen oder politischen Themen teilnehmen?
-
-st:
-
-ao1: 1: überhaupt nicht wichtig
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr wichtig
-
-mv: -12: weiß ich nicht
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D2_2
-
-hi: 
-
-**------------------------------------------------------------**
-
 **Qualität der Ausstattung**
 
 D2_2
@@ -78,43 +7,37 @@ D2_2
 
 tc:
 
-vn: ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10; ssqualeq11; ssqualeq12
+vn: ssqualeq (ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie bewerten Sie die Ausstattung Ihrer Hochschule hinsichtlich folgender Aspekte?
+q: Wie bewerten Sie Ihrer Hochschule hinsichtlich folgender Aspekte?
 
 is:
 
-it1: (ssqualeq1): Zugang zum W-LAN
+it1: (ssqualeq1): Zustand und Ausstattung der Veranstaltungsräume (Technik, Mobiliar, Helligkeit)
 
-it2: (ssqualeq2): Verfügbarkeit von studienrelevanter EDV/Software
+it2: (ssqualeq2): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume)
 
-it3: (ssqualeq3): digitale Organisation und Verwaltung des Studiums (z. B. Einschreibung, Prüfungsanmeldung, -verfahren)
+it3: (ssqualeq3): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen Lernen
 
-it4: (ssqualeq4): Einsatz von digitalen Lernmanagementsystemen (z. B. Moodle, ILIAS oder hochschuleigene Entwicklungen)
+it4: (ssqualeq4): Zugang zum W-LAN
 
-it5: (ssqualeq5): Öffnungszeiten der Bibliothek
+it5: (ssqualeq5): IT-/digitale Ausstattung (z. B. Software)
 
-it6: (ssqualeq6): technische Ausstattung der Veranstaltungsräume
+it6: (ssqualeq6): Öffnungszeiten der Bibliothek
 
-it7: (ssqualeq7): Gesamtzustand der Veranstaltungsräume (Helligkeit, Belüftung, Mobiliar)
+it7: (ssqualeq7): Verfügbarkeit von Fachliteratur
 
-it8: (ssqualeq8): Verfügbarkeit und Ausstattung der PC-Pools
+it8: (ssqualeq8): Service- und Beratungsleistung
 
-it9: (ssqualeq9): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume, Orchesterräume, Bild- und Tonstudios)
+it9: (ssqualeq9): Betreuungsangebote für Studierende mit Kind(ern)
 
-it10: (ssqualeq10): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen
-Lernen
-
-it11: (ssqualeq11): Betreuungsangebote für Studierende mit Kindern
-
-it12: (ssqualeq12): Verfügbarkeit von Fachliteratur (Bücher, Zeitschriften und
-Literaturdatenbanken)
+it10: (ssqualeq10): Unterstützungsangebote für Studierende mit Beeinträchtigungen (z. B. spezifisch ausgestattete Arbeitsplätze)
 
 st:
 
@@ -132,9 +55,13 @@ ao6: -12: weiß ich nicht
 
 mv: ao6
 
-ka:
+ka1: (it1 TO it3): !!räumliche Ausstattung!!
 
-vc:
+ka2: (it4 TO it10): !!Service-Leistungen!!
+
+vc1: SHOW it9 (ssqualeq9) IF dkinja = 2
+
+vc2: SHOW it10 (ssqualeq10) IF h_gartcount >= 1
 
 av:
 
@@ -144,7 +71,9 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "räumliche Ausstattung" positionieren.
+
+fo2: Bitte über it4 "Service-Leistungen" positionieren.
 
 tr:
 
