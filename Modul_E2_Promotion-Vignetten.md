@@ -255,7 +255,7 @@ hl:
 
 in:
 
-q: Im Laufe dieser Befragung haben Sie angegeben, dass Sie eine Promotion planen. Aus welchen Gründen möchten Sie promovieren?
+q: Im Laufe dieser Befragung haben Sie angegeben, dass Sie eine Promotion planen. Aus welchem Grund möchten Sie promovieren?
 
 is:
 
@@ -281,7 +281,7 @@ it10: (promgrund11): um mich persönlich zu entfalten
 
 it11: (promgrund12): um länger an der Hochschule bleiben zu können
 
-it12: (promgrund13): anderes, und zwar: [promgrund13o]
+it12: (promgrund13): sonstige, und zwar: [promgrund13o]
 
 st:
 
