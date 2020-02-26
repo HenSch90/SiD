@@ -2267,9 +2267,9 @@ A_33
 
 tc:
 
-vn: deltjobv [deltjobvo1] [deltjobvo2] [deltjobv1] [deltjobv2]; deltjobm [deltjobmo1] [deltjobmo2] [deltjobm1] [deltjobm2]
+vn: deltjobv (deltjobvo1; deltjobvo2; deltjobv1; deltjobv2); deltjobm (deltjobmo1; deltjobmo2; deltjobm1; deltjobm2)
 
-qt: Comparison, Mehrfachauswahl
+qt: Comparison, Mehrfachauswahl, offene Angaben
 
 hl:
 
@@ -2293,19 +2293,23 @@ Zollfahndung, Einsatzplanung
 
 Konstruktion, Optimierungsprozesse, Produktionsleitung
 
-It1: (deltjobvo1): Vater
+it1: (deltjobvo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
-It2: (deltjobmo1): Mutter
+it2: (deltjobvo2): Prefix: Tätigkeitsbeschreibung: [offene Angabe; 100 Zeichen]
 
-st:
+it3: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
 
-ao1: (deltjobvo1, deltjobmo1): 1: 100: Prefix: Berufsbezeichnung:
+it4: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
 
-ao2: (deltjobvo2, deltjobmo2): 2: 100: Prefix: Tätigkeitsbeschreibung:
+it5: (deltjobmo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
-ao3: (deltjobv1, deltjobv2): -11: nie berufstätig gewesen
+it6: (deltjobmo2): Prefix: Tätigkeitsbeschreibung: [offene Angabe; 100 Zeichen]
 
-ao4: (deltjobv2, deltjobm2)-12: weiß ich nicht [Exklusivkategorie]
+it7: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
+
+it8: (deltjobm2): -12: weiß ich nicht [Exklusivkategorie]
+
+ao: 
 
 ka:
 
@@ -2368,7 +2372,7 @@ ao1: 1: in Deutschland
 
 ao2: 2: in einem anderen Land
 
-ao3: -12: weiß ich nicht
+ao3: 3: weiß ich nicht
 
 mv: ao3
 
@@ -2413,7 +2417,7 @@ hi:
 A_35
 =====
 
-tc:
+tc: IF deltgebv=2 
 
 vn: deltgkov
 
@@ -2466,7 +2470,7 @@ hi:
 A_35
 =====
 
-tc:
+tc: IF deltgebm=2
 
 vn: deltgkom
 
