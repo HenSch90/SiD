@@ -7,7 +7,7 @@ tc:
 
 vn: moftfrue; moftvorm; moftmitt; moftnach; moftaben
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
@@ -17,15 +17,15 @@ q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in ei
 
 is:
 
-it1: (moftfrue): zum Frühstück
+it1: (moftfrue): zum Frühstück (07:00 - 09:00 Uhr)
 
-it2: (moftvorm): zu einer Zwischenmahlzeit am Vormittag
+it2: (moftvorm): zu einer Zwischenmahlzeit am Vormittag (09:00 - 11:30 Uhr)
 
-it3: (moftmitt): zum Mittagessen
+it3: (moftmitt): zum Mittagessen (11:30 - 14:30 Uhr)
 
-it4: (moftnach): zu einer Zwischenmahlzeit am Nachmittag
+it4: (moftnach): zu einer Zwischenmahlzeit am Nachmittag (14:30 - 17:00 Uhr)
 
-it5: (moftaben): zum Abendessen
+it5: (moftaben): zum Abendessen (17:00 - 20:00 Uhr)
 
 st:
 
@@ -65,6 +65,7 @@ tr: GOTO E1_2
 
 hi:
 
+
 \--------------------------------
 
 E1_2
@@ -72,31 +73,32 @@ E1_2
 
 tc:
 
-vn: mzufges; mzufqual; mzufausw; mzufatmo; mzufprl; mzufpraes; mzufatmo;
+vn: mzufges; mzufqual; mzufausw; mzufatmo; mzufprl; mzufpraes; 
 mzuflage; mzufwart; mzufserv; mzufverl; mzuföff; mzufkomm
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
 in:
 
-q: Wie zufrieden sind Sie mit Ihrer Mensa/Cafeteria hinsichtlich der folgenden
-Aspekte?
+q: Wie zufrieden sind Sie mit Ihrer Mensa oder Cafeteria hinsichtlich der folgenden Aspekte?
 
 is:
 
-it1: (mzufges): Geschmack
+it1: (mzufges): Geschmack und Frische
 
-it2: (mzufqual): Ernährungsqualität und Gesundheitswert
+it2: (mzufqual): Ernährungsqualität und Gesundheitswerte
 
 it3: (mzufausw): Auswahl- und Kombinationsmöglichkeiten
 
-it5: (mzufprl): Preis-Leistungs-Verhältnis
+it4: (mzufprl): Preis-Leistungs-Verhältnis
 
-it6: (mzufpraes): Präsentation und Darbietung des Essensangebots
+it5: (mzufpraes): Präsentation und Darbietung des Essensangebots
 
-it7: (mzufatmo): Atmosphäre und Raumgestaltung
+it6: (mzufatmo): Atmosphäre und Raumgestaltung
+
+it7: (mzufsitz): Verfügbarkeit von Sitzplätzen
 
 it8: (mzuflage): Lage und Erreichbarkeit
 
@@ -106,13 +108,17 @@ it10: (mzufserv): Service
 
 it11: (mzufverl): zeitliche Vereinbarkeit mit Lehr-/Veranstaltungsplan
 
-it12: (mzuföff): Öffnungszeiten
+it12: (mzufoeff): Öffnungszeiten
 
 it13: (mzufkomm): Ort der Kommunikation
 
+it14: (mzufbarf): Barrierefreiheit
+
+it15: (mzufkind): Kinderfreundlichkeit
+
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2
 
@@ -141,6 +147,7 @@ fo:
 tr: GOTO E1_3
 
 hi:
+
 
 \--------------------------------
 
