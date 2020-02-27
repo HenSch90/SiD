@@ -1,6 +1,6 @@
 \------------------------------------------------------------
 
-KSM-fai01 (E4_1)
+KSM-fai01 
 =========
 
 tc:
@@ -11,7 +11,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 
 hl:
 
-in:
+in: Im Folgenden geht es um Fragen zur sozialen Gerechtigkeit an der Hochschule und innerhalb der Gesellschaft. Dabei geht es nicht um richtig oder falsch, sondern um Ihre persönliche Meinung. Bitte lesen Sie dazu die Aussagen aufmerksam durch.
 
 q: Würden Sie die sozialen Unterschiede in Deutschland ganz allgemein als klein
 oder groß bezeichnen?
@@ -57,7 +57,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai02 (E4_2)
+KSM-fai02 
 =========
 
 tc:
@@ -79,7 +79,7 @@ it:
 
 st:
 
-ao1: 1: ungerecht
+ao1: 1: gerecht
 
 ao2: 2:
 
@@ -87,7 +87,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: gerecht
+ao5: 5: ungerecht
 
 mv:
 
@@ -112,7 +112,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai03 (E4_3)
+KSM-fai03 
 =========
 
 tc:
@@ -133,7 +133,7 @@ it1: (faihs): In Deutschland hat Jede\*r die gleiche Chance auf einen Hochschula
 
 it2: (faiein): Nur wenn die Unterschiede im Einkommen und im sozialen Ansehen groß genug sind, gibt es auch einen Anreiz für persönliche Leistungen.
 
-it3: (faiunt): Die Wirtschaft funktioniert nur, wenn die Unternehmen gute Gewinne machen, und das kommt letzten Endes Allen zugute.
+it3: (faiunt): Die Wirtschaft funktioniert nur, wenn die Unternehmen gute Gewinne machen, und das kommt letzten Endes allen zugute.
 
 st:
 
@@ -170,12 +170,12 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai04 (E4_4)
+KSM-fai04 
 =========
 
 tc:
 
-vn: faians; faiint; faiorg; faiausd; faisich; faiemo; faifina; faiglü; faiprof; faielt; fainat; faiges
+vn: faians; faiint; faiorg; faiausd; faisich; faiemo; faifina; faiglue; faiprof; faielt; fainat; faiges
 
 qt: Einfachauswahlmatrix
 
@@ -246,7 +246,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai05 (E4_5)
+KSM-fai05 
 =========
 
 tc:
@@ -259,7 +259,7 @@ hl:
 
 in:
 
-q: Inwiefern stimmen Sie folgenden Aussagen zum Thema Meinungsfreiheit zu oder lehnen Sie ab?
+q: Inwiefern stimmen Sie folgenden Aussagen zum Thema Meinungsfreiheit zu?
 
 is:
 
@@ -286,6 +286,8 @@ ao3: 3:
 ao4: 4:
 
 ao5: 5: stimme völlig zu 
+
+ao6: -12: kann ich nicht beurteilen 
 
 ka:
 
@@ -319,7 +321,7 @@ hi: @ZOFAR: t5 wird in der QML response Domain nicht benannt. Bitte t5 labeln.
 
 \------------------------------------------------------------
 
-KSM-fai06 (E4_6)
+KSM-fai06 
 =========
 
 tc:
@@ -331,6 +333,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden. 
+
 Absolvent\*innen wirtschaftswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 43.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen wirtschaftswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
@@ -374,7 +377,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai07 (E4_7)
+KSM-fai07 
 =========
 
 tc:
@@ -386,6 +389,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 hl:
  
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
+
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
@@ -422,14 +426,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai17
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai08 (E4_8)
+KSM-fai08 
 =========
 
 tc:
@@ -441,7 +445,8 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
-Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 52.700 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
+
+Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
@@ -477,14 +482,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai18
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai09 (E4_9)
+KSM-fai09 
 =========
 
 tc:
@@ -496,6 +501,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
+
 Absolvent\*innen rechtswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 46.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
@@ -532,14 +538,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai19
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai10 (E4_10)
+KSM-fai10 
 =========
 
 tc:
@@ -551,6 +557,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
+
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Rechtswissenschaften?
@@ -587,14 +594,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai20
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai11 (E4_11)
+KSM-fai11 
 =========
 
 tc:
@@ -606,6 +613,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
+
 Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Ingenieurwissenschaften verdienen demgegenüber durchschnittlich ca. 47.500 € im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Ingenieurwissenschaften?
@@ -642,14 +650,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai21
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai12 (E4_12)
+KSM-fai12 
 =========
 
 tc:
@@ -698,14 +706,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai22
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai13 (E4_13)
+KSM-fai13 
 =========
 
 tc:
@@ -754,14 +762,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai23
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai14 (E4_14)
+KSM-fai14
 =========
 
 tc:
@@ -773,6 +781,7 @@ qt: Einfachauswahl mit horizontalen Antwortoptionen
 hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
+
 Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Rechtswissenschaften?
@@ -809,14 +818,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai24
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai15 (E4_15)
+KSM-fai15 
 =========
 
 tc:
@@ -865,19 +874,19 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai16
+tr: GOTO KSM-fai25
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai16 (E4_16)
+KSM-fai16 
 =========
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiand_open
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
 
 qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
 
@@ -887,35 +896,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen ...
+is: Die Absolvent\*innen der Wirtschaftswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
 
 it:
 
 st:
 
-ao1: (faigefun): übernehmen eine wichtige gesellschaftliche Funktion
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
 
-ao2: (faifinan): erwirtschaften hohe finanzielle Erträge
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
 
-ao3: (faizeit): haben eine längere Wochenarbeitszeit
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
 
-ao4: (fainive): hatten ein höheres Anforderungsniveau im Studium
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
 
-ao5: (faivolk): üben eine Tätigkeit aus, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
 
-ao6: (failequal): tragen zur Sicherung der Lebensqualität in der Gesellschaft bei
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
 
-ao7: (faiveran): übernehmen mehr Verantwortung im Beruf
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
 
-ao8: (faikennt): verfügen über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
 
-ao9: (faikompl): führen komplexere Aufgaben im Beruf aus
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
 
-ao10: (faiflex): haben nur geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
 
-ao11: (faistre): haben mehr Stress/Belastungen am Arbeitsplatz
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
 
-ao12: (faiand): anderer Grund, und zwar:[faiand_open; 100 Zeichen]
+ao12: (faiando): nichts davon
 
 mv:
 
@@ -933,19 +942,625 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai17
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai17 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai18 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai19 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
 
 hi: 
 
 
 \------------------------------------------------------------
 
-KSM-fai17 (E4_17)
+KSM-fai20 
 =========
 
 tc:
 
-vn: faidisge; faidismig; faidissoz; faidisspra; faidisrel; faidissex; faidisbeein
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai21 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Ingenieurwissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai22 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai23 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai24 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+\------------------------------------------------------------
+
+KSM-fai25 
+=========
+
+tc:
+
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+
+qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+
+hl:
+
+in:
+
+q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
+
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie ...
+
+it:
+
+st:
+
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+
+ao3: (faizeit): eine längere Wochenarbeitszeit haben
+
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+
+ao12: (faiando): nichts davon
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-fai26
+
+hi: 
+
+
+
+
+\------------------------------------------------------------
+
+KSM-fai26 
+=========
+
+tc:
+
+vn: faidisge; faidismig; faidissoz; faidisspra; faidisrel; faidissex; faidisbeein; faidiselt
 
 qt: Einfachauswahlmatrix
 
@@ -953,7 +1568,7 @@ hl:
 
 in:
 
-q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen für eine Absage (z.B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung für die Ablehnung verantwortlich sein. Weshalb wird man Ihrer Meinung nach eher abgelehnt?
+q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen für eine Absage (z. B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung für die Ablehnung verantwortlich sein. Aus welchen Gründen wird man Ihrer Meinung nach diskriminiert?
 
 is:
 
@@ -971,6 +1586,8 @@ it6: (faidissex): aufgrund der sexuellen Orientierung
 
 it7: (faidisbeein): aufgrund physischer oder psychischer Beeinträchtigung
 
+it8: (faidiselt): aufgrund von Elternschaft
+
 st:
 
 ao1: 1: nein
@@ -981,9 +1598,9 @@ ao3: 3: eher ja
 
 ao4: 4: ja
 
-ao5: -98: weiß nicht
+ao5: -12: weiß nicht
 
-mv: ao5
+mv: 
 
 ka:
 
@@ -999,19 +1616,19 @@ hv:
 
 fo:
 
-tr: GOTO KSM-fai18
+tr: GOTO KSM-fai27
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-fai18 (E4_18)
+KSM-fai27 
 =========
 
 tc:
 
-vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a
+vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a; faierlelt_s/_a
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao
 
@@ -1040,6 +1657,8 @@ ao5: (faierlrel_s, faierlrel_a): aufgrund religiöser Zugehörigkeit
 ao6: (faierlsex_s, faierlsex_a): aufgrund der sexuellen Orientierung
 
 ao7: (faierlbeein_s, faierlbeein_a): aufgrund physischer oder psychischer Beeinträchtigung
+
+ao8: (faierlelt_s, faierlelt_a): aufgrund von Elternschaft
 
 st:
 
