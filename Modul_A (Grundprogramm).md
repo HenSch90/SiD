@@ -109,8 +109,7 @@ hl:
 
 in:
 
-q: 
-Um ein optimales Befragungserlebnis zu erhalten, sollten Sie für die Beantwortung einiger Fragen das Display drehen.
+q: Um ein optimales Befragungserlebnis zu erhalten, sollten Sie für die Beantwortung einiger Fragen das Display drehen.
 
 is:
 
@@ -184,11 +183,11 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte lediglich die Frage ("Wo haben Sie erstmals Ihre Hochschulreife erworben?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
 
 tr:
 
-hi: Bitte lediglich die Frage ("Wo haben Sie erstmals Ihre Hochschulreife erworben?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
+hi: 
 
 \------------------------------------------------------------
 
@@ -390,7 +389,7 @@ it:
 
 st:
 
-ao: Dropdown [Staatenliste_DBI]
+ao (dnatsta): [infield = Staatsangehörigkeit; Staatenliste_DBI] (Dropdown)
 
 mv:
 
@@ -418,7 +417,7 @@ fo:
 
 tr: 
 
-hi: Dropdown bitte nach Angabe des Kontinents in A_3 vorselektieren.
+hi: Dropdown bitte nach Angabe des Kontinents in A_3 (dnatko) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -429,13 +428,13 @@ tc:
 
 vn: dnatstao
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben. 
+q: An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben: 
 
 is:
 
@@ -443,7 +442,7 @@ it:
 
 st:
 
-ao1: offene Angabe: 50 Zeichen
+ao (dnatstao): [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -590,7 +589,7 @@ it:
 
 st:
 
-ao: Dropdown [Staatenliste_DBI]
+ao (dgebsta): [infield = Geburtsland; Staatenliste_DBI] (Dropdown)
 
 mv:
 
@@ -610,7 +609,7 @@ fo:
 
 tr: 
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_6 (dgebko) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -627,7 +626,7 @@ hl:
 
 in:
 
-q: An dieser Stelle können Sie Ihr Geburtsland auch offen angeben.
+q: An dieser Stelle können Sie Ihr Geburtsland auch offen angeben:
 
 is:
 
@@ -635,13 +634,13 @@ it:
 
 st:
 
-ao1: offene Angabe: 50 Zeichen
+ao (dgebstao): [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc: SHOW offene Angabe if dgebko=SYSMISS
+vc:
 
 av:
 
@@ -664,7 +663,7 @@ A_8
 
 tc:
 
-vn: baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandba_open
+vn: baufgru (baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandba_open)
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -673,7 +672,7 @@ hl:
 in:
 
 q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
-(Leerzeile)
+
 Als ich nach Deutschland kam, war ich:
 
 is: Bitte alles Zutreffende auswählen.
@@ -698,7 +697,7 @@ ao6: (baufgrufamba): 7: Familiennachzug, zog zu bereits in Deutschland lebender 
 
 ao6: (baufgruausba): 8: (Spät-)Aussiedler\*in
 
-ao7: (baufgruandba): 7: Anderer Status, und zwar: (baufgruandba_open) [offene Eingabe, 50 Zeichen]
+ao7: (baufgruandba): 7: Anderer Status, und zwar: (baufgruandba_open) [offene Eingabe, 80 Zeichen]
 
 ato:
 
@@ -716,7 +715,7 @@ fv:
 
 hv: 
 
-fo:
+fo: "Als ich nach Deutschland kam, war ich:" bitte etwas von den Einleitungssätzen absetzen.
 
 tr: 
 GOTO A_8a IF baufgruasylba=1
@@ -752,13 +751,13 @@ st:
 
 ao1: 1: Das Asylverfahren ist noch nicht abgeschlossen.
 
-ao2: 2: Ich wurde als Flüchtling oder Asylberechtigte\*r anerkannt.
+ao2: 2: Ich wurde als Geflüchtete\*r oder Asylberechtigte\*r anerkannt.
 
 ao3: 3: Ich habe einen subsidiären Schutzstatus bekommen.
 
 ao4: 4: Der Asylantrag wurde abgelehnt und ich habe eine Duldung bekommen.
 
-ao5: 5: Der Asylantrag wurde abgelehnt und ich habe keine Duldung bekommen.
+ao5: 5: Ich möchte keine Angabe machen.
 
 mv:
 
@@ -790,24 +789,25 @@ A_8b
 
 tc:
 
-vn: intgrund2
+vn: intgrundhl intgrunddl
 
-qt: offene Angabe
+qt: offene Angaben
 
 hl:
 
 in:
 
-q: Was waren die Gründe dafür, dass Ihre Familie...
+q: Was waren die Gründe dafür, dass Sie oder Ihre Familie...
 
 is:
 
-it:
+it1 (intgrundhl): Präfix: ... Ihr Herkunftsland verlassen haben? [offene Angabe; 250 Zeichen]
+
+it2: (intgrunddl): Präfix: ... nach Deutschland gezogen sind? [offene Angabe; 250 Zeichen]
 
 st:
 
-ao1: 1: offene Angabe: Präfix: ...Ihr Herkunftsland verlassen hat?: [intgrund2]
-ao2: 2: offene Angabe: Präfix: ...nach Deutschland gezogen ist?: [intgrund2]
+ao:
 
 vc:
 
@@ -819,17 +819,16 @@ fv:
 
 hv:
 
-fo:
+fo: Die beiden Items bitte linksbündig untereinander setzen.
 
-tr: <zofar:transition target="A_9a" condition="zofar.asNumber(h_split)==1"/>
-    <zofar:transition target="A_9b" condition="zofar.asNumber(h_split)==2"/>
+tr: GO TO A_9b
 
 hi:
 
 
 \------------------------------------------------------------
 
-A_9a
+A_9b
 =========
 
 tc:
@@ -854,59 +853,9 @@ ao1: 1: männlich
 
 ao2: 2: weiblich
 
-ao3: 3: Anderes, und zwar: [demosexo]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO A_10
-
-hi:
-
-
-\------------------------------------------------------------
-
-A_9b
-=========
-
-tc:
-
-vn: demosexb; demosexob
-
-qt: Einfachauswahl mit offener Angabe
-
-hl:
-
-in:
-
-q: Welches Geschlecht haben Sie?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: männlich
-
-ao2: 2: weiblich
-
 ao3: 3: divers
 
-ao4: 4: Keine der genannten Kategorien, sondern: [demosexob]
+ao4: 4: Keine der genannten Kategorien, sondern: [(demosexo); 80 Zeichen] (offene Angabe)
 
 vc:
 
@@ -918,7 +867,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao4 bitte etwas absetzen.
 
 tr: GOTO A_10
 
@@ -948,7 +897,7 @@ it:
 
 st:
 
-ao1: Postfix: Jahre
+ao:  Postfix: Jahre [offene Angabe; NUMBER 2-stellig]
 
 mv:
 
@@ -968,7 +917,7 @@ fo:
 
 tr: GOTO A_11
 
-hi:
+hi: Bitte als 2-stellige NUMBER programmieren.
 
 \------------------------------------------------------------
 
