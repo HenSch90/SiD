@@ -247,7 +247,7 @@ KSM-phd02
 
 tc: 
 
-vn: promgrund1- promgrund13; promgrund13o
+vn: promgrund1- promgrund18; promgrund18o
 
 qt: Einfachauswahlmatrix
 
