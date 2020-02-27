@@ -509,40 +509,37 @@ F3_11
 
 tc:
 
-vn: akontdeust / akontgast / akonteinheim / akontintst
+vn:  akontgast; akonteinheim; akontdeust; akontintst
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q1: Wie häufig hatten Sie während Ihres studienbezogenen Auslandsaufenthalts
-Kontakt …
+q1: Wie häufig hatten Sie während Ihres studienbezogenen Auslandsaufenthalts Kontakt …
 
-q2: Wie häufig hatten Sie während Ihres letzten studienbezogenen
-Auslandsaufenthalts Kontakt mit…
+q2: Wie häufig hatten Sie während Ihres letzten studienbezogenen Auslandsaufenthalts Kontakt zu…
 
 is:
 
-it1: (akontdeust): … Studierenden aus Deutschland?
+it1: (akontgast): … Studierenden des Gastlandes?
 
-it2: (akontgast): … Studierenden des Gastlandes?
+it2: (akonteinheim): … anderen Einheimischen?
 
-it3: (akonteinheim): … anderen Einheimischen?
+it3: (akontdeust): … deutschen Studierenden?
 
-it4: (akontintst): … anderen internationalen Studierenden (nicht aus
-Deutschland)?
+it4: (akontintst): … anderen internationalen Studierenden?
 
 st:
 
 ao1: 1: : nie
 
-ao2: 2: : selten
+ao2: 2: :
 
-ao3: 3: : manchmal
+ao3: 3: :
 
-ao4: 4: : häufig
+ao4: 4: :
 
 ao5: 5: : sehr häufig
 
@@ -552,9 +549,9 @@ ka:
 
 vc:
 
-SHOW q1 IF ainfaus = 2 \| kA
+SHOW q1 IF ainfaus > 1
 
-SHOW q2 IF ainfaus \> 2
+SHOW q2 IF ainfaus > 2
 
 av:
 
