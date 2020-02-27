@@ -4365,7 +4365,7 @@ hi:
 N_2
 =========
 
-tc:
+tc: IF NRW / zusatzsplit ==1
 
 vn: nrwstudium2
 
@@ -4419,7 +4419,7 @@ hi:
 N_3
 =========
 
-tc:
+tc: IF NRW / zusatzsplit ==1
 
 vn: nrwfach2
 
@@ -4473,7 +4473,7 @@ hi:
 N_4
 =========
 
-tc:
+tc: IF NRW / zusatzsplit ==1
 
 vn: nrwregel
 
