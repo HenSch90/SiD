@@ -213,9 +213,9 @@ it:
 
 st:
 
-ao1: (dnatdeu): 1: die deutsche Staatsangehörigkeit
+ao1: (dnatdeu): 1: deutsche Staatsangehörigkeit
 
-ao2: (dnatausl): 2: eine oder mehrere andere Staatsangehörigkeit(en)
+ao2: (dnatausl): 2: andere Staatsangehörigkeit(en)
 
 mv:
 
