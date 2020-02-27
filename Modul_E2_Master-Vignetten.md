@@ -519,7 +519,7 @@ der beruflichen Ausbildung
 
 it2: (bawert3): … ist nur ein Zwischenschritt zu einem Masterstudium
 
-it3: (bawert2): … wird von Arbeitgebern kaum angesehen
+it3: (bawert2): … wird von Arbeitgeber*/innen kaum angesehen
 
 st:
 
