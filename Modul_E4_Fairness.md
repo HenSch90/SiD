@@ -201,7 +201,7 @@ it6: (faiemo): emotionale Unterstützung von anderen
 
 it7: (faifina): finanzielle Unterstützung
 
-it8: (faiglü): Zufall/Glück
+it8: (faiglue): Zufall/Glück
 
 it9: (faiprof): Unterstützung durch Professor\*innen
 
