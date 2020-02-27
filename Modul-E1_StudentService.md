@@ -293,240 +293,10 @@ hv:
 
 fo:
 
-tr: GOTO E1_4
+tr: GOTO E1_6
 
 hi:
 
-
-\--------------------------------
-
-E1_4
-====
-
-tc:
-
-vn: sver (sverkin; sverbeein; svererwerb; svercare)
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Inwieweit ist ein Studium aus Ihrer Perspektive vereinbar mit folgenden Aspekten? 
-
-is:
-
-it1: (sverkin): Studium mit Kind
-
-it1: (sverbeein): Studium mit Beeinträchtigung
-
-it1: (svererwerb): Studium und Erwerbstätigkeit
-
-it1: (svercare): Studium und die Pflege von Angehörigen
-
-st:
-
-ao1: 1: überhaupt nicht vereinbar
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: sehr gut vereinbar
-
-ao6: 6: weiß ich nicht
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO E1_5 IF dkinja==2 
-OR gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1 
-OR eaktsens==2 OR eaktsens==3 OR eaktsens==4 
-OR pflegang==2
-
-ELSE GOTO E1_6
-
-hi:
-
-\--------------------------------
-
-E1_5
-====
-
-tc:
-
-vn: szufver (szufverkin; szufverbeein; szufvererwerb; szufvercare)
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Und wie zufrieden sind Sie mit der Vereinbarkeit von Studium und…
-
-is:
-
-it1: (szufverkin): … Kinderbetreuung?
-
-It2: (szufverbeein): … Beeinträchtigung?
-
-It3: (szufvererwerb): … Erwerbstätigkeit?
-
-It4: (szufvercare): … Pflege von Angehörigen?
-
-st:
-
-ao1: 1: gar nicht zufrieden
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: sehr zufrieden
-
-mv:
-
-ka:
-
-vc: SHOW szufverkin IF dkinja==2
-SHOW szufverbeein IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
-SHOW szufvererwerb IF eaktsens==2 OR eaktsens==3 OR eaktsens==4
-SHOW szufvercare IF pflegang==2
-
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-<zofar:transition condition="width.value lt 768" target="E1_6b"/> ----> responsive Nutzer\*innen
-
-<zofar:transition target="E1_6"/>
-
-hi:
-
-\--------------------------------
-
-E1_6b
-===
-
-tc:
-
-vn: ibedsfin; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedaldr; ibedvbew;
-ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln;
-ibebssu; ibebsth; ibebspa; ibebsbh; ibebsat; ibebsrb
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Wir möchten nun gerne noch etwas mehr über Ihre Situation erfahren:
-
-Inwieweit hatten Sie in den letzten zwölf Monaten Fragen bis hin zu Schwierigkeiten hinsichtlich folgender Themen?
-
-is:
-
-it1: (ibedsfin): Finanzierung des Studiums
-
-it2: (ibedkv): Krankenversicherung
-
-it3: (ibedafin): Finanzierung eines studienbezogenen Auslandsaufenthalts
-
-it4: (ibedpart): Partnerschaftsprobleme
-
-it5: (ibedfamu): Probleme im familiären Umfeld
-
-it6: (ibeddep): depressive Verstimmungen
-
-it7: (ibedaldr): Probleme mit Alkohol oder anderen Drogen
-
-it8: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
-
-it9: (ibedvbki): Vereinbarkeit von Studium und Kind(ern)
-
-it10: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer
-Krankheit
-
-it11: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
-
-it12: (ibedaoz): Arbeitsorganisation, Zeitmanagement
-
-it13: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
-
-it14: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
-
-it15: (ibedabs): Studienabschlussprobleme
-
-it16: (ibebsln): Nachteilsausgleiche bei Leistungsnachweisen
-
-it17: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten
-Studienunterbrechungen
-
-it18: (ibebsth): Organisation und Nutzung von technischen Hilfsmitteln
-
-it19: (ibebspa): Organisation und Nutzung von personellen Assistenzen
-
-it20: (ibebsbh): Umgang mit baulichen Hürden, Raumverlegungen und Umbauten
-
-it21: (ibebsat): Aneignung bedarfsgerechter Arbeitstechniken
-
-it22: (ibebsrb): Durchsetzung von Ansprüchen, Rechtsberatung
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: in hohem Maße
-
-mv:
-
-vc: SHOW ibebsln AND ibebssu AND ibebsth AND ibebspa AND ibebsbh AND ibebsat AND ibebsrb IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO E1_7 IF ibedsfin > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedaldr > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 OR ibebsth > 1 OR ibebspa > 1 OR ibebsbh > 1 OR ibebsat > 1 OR ibebsrb > 1
-ELSE GOTO E1_8
-hi: 
 
 \--------------------------------
 
@@ -534,9 +304,8 @@ E1_6
 ===
 tc:
 
-vn: ibedsfin; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedaldr; ibedvbew;
-ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln;
-ibebssu; ibebsth; ibebspa; ibebsbh; ibebsat; ibebsrb
+vn: ibedsfin; ibedfinbs; ibedfinwo; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedsuch; ibedvbew;
+ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln; ibebssu
 
 qt: Einfachauswahlmatrix
 
@@ -544,81 +313,73 @@ hl:
 
 in:
 
-q: Wir möchten nun gerne noch etwas mehr über Ihre Situation erfahren:
-
-Inwieweit hatten Sie in den letzten zwölf Monaten Fragen bis hin zu Schwierigkeiten hinsichtlich folgender Themen?
+q: Inwieweit hatten Sie in den letzten zwölf Monaten Fragen bis hin zu Schwierigkeiten hinsichtlich folgender Themen?
 
 is:
 
 it1: (ibedsfin): Finanzierung des Studiums
 
-it2: (ibedkv): Krankenversicherung
+it2: (ibedfinbs): Finanzierungsfragen im Zusammenhang mit meiner Beeinträchtigung
 
-it3: (ibedafin): Finanzierung eines studienbezogenen Auslandsaufenthalts
+it3: (ibedfinwo): Finanzierung der Wohnung
 
-it4: (ibedpart): Partnerschaftsprobleme
+it4: (ibedkv): Krankenversicherung
 
-it5: (ibedfamu): Probleme im familiären Umfeld
+it5: (ibedafin): Finanzierung eines studienbezogenen Auslandsaufenthalts
 
-it6: (ibeddep): depressive Verstimmungen
+it6: (ibedpart): Partnerschaftsprobleme
 
-it7: (ibedaldr): Probleme mit Alkohol oder anderen Drogen
+it7: (ibedfamu): Probleme im familiären Umfeld
 
-it8: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
+it8: (ibeddep): depressive Verstimmungen
 
-it9: (ibedvbki): Vereinbarkeit von Studium und Kind(ern)
+it9: (ibedsuch): Suchtprobleme
 
-it10: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer
-Krankheit
+it10: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
 
-it11: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
+it11: (ibedvbki): Vereinbarkeit von Studium und Kind
 
-it12: (ibedaoz): Arbeitsorganisation, Zeitmanagement
+it12: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
 
-it13: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
+it13: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
 
-it14: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
+it14: (ibedaoz): Arbeitsorganisation, Zeitmanagement
 
-it15: (ibedabs): Studienabschlussprobleme
+it15: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
 
-it16: (ibebsln): Nachteilsausgleiche bei Leistungsnachweisen
+it16: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
 
-it17: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten
-Studienunterbrechungen
+it17: (ibedabs): Studienabschlussprobleme
 
-it18: (ibebsth): Organisation und Nutzung von technischen Hilfsmitteln
+it18: (ibebsln): Nachteilsausgleiche in Studium und Prüfungen
 
-it19: (ibebspa): Organisation und Nutzung von personellen Assistenzen
-
-it20: (ibebsbh): Umgang mit baulichen Hürden, Raumverlegungen und Umbauten
-
-it21: (ibebsat): Aneignung bedarfsgerechter Arbeitstechniken
-
-it22: (ibebsrb): Durchsetzung von Ansprüchen, Rechtsberatung
+it19: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
 
 st:
 
 ao1: 1: gar nicht
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: in hohem Maße
 
 mv:
 
-t1: (it1, it2, it3): finanzierungsbezogene Themen
+t1: (it1, it2, it3, it4, it5): finanzierungsbezogene Themen
 
-t2: (it4, it5, it6, it7): persönliche Themen
+t2: (it6, it7, it8, it9): persönliche Themen
 
-t3: (it8, it9, it10, it11, it12, it13, it14, it15): studienbezogene Themen
+t3: (it10, it11, it12, it13, it14, it15, it16, it17, it18, it19): studienbezogene Themen
 
-t4: (it16, it17, it18, it19, it20, it21, it22): beeinträchtigungsbezogene Themen
-
-vc: SHOW ibebsln AND ibebssu AND ibebsth AND ibebspa AND ibebsbh AND ibebsat AND ibebsrb IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
+vc: 
+SHOW ibedfinbs IF h_gartcount >= 1
+SHOW ibedvbew IF eaktsens = 2,3,4
+SHOW ibedvbki IF dkinja = 2
+SHOW ibedvbhc AND ibebsln AND ibebssu IF h_gartcount >= 1
 
 av:
 
@@ -630,10 +391,14 @@ hv:
 
 fo:
 
-tr: GOTO E1_7 IF ibedsfin > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedaldr > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 OR ibebsth > 1 OR ibebspa > 1 OR ibebsbh > 1 OR ibebsat > 1 OR ibebsrb > 1
+tr: 
+
+GOTO E1_7 IF ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
+
 ELSE GOTO E1_8
 
 hi:
+
 
 \--------------------------------
 
