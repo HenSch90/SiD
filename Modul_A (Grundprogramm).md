@@ -1269,7 +1269,7 @@ hl:
 
 in:
 
-q1: Im wievielten Fachsemester befinden Sie sich zurzeit?
+q: Im wievielten Fachsemester befinden Sie sich zurzeit?
 
 is1: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
 
@@ -1277,7 +1277,7 @@ it:
 
 st:
 
-ao1: 2, Präfix: Fachsemester:
+ao: Präfix: Fachsemester: [offene Angabe; NUMBER 2-stellig; 1 bis 99]
 
 mv:
 
@@ -1285,9 +1285,9 @@ ka:
 
 vc: 
 
-av: number, 2 stellig
+av: NUMBER, 2-stellig (1 bis 99)
 
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte geben Sie die Anzahl Ihrer Fachsemester als Zahl an.
 
 fv:
 
@@ -1297,7 +1297,7 @@ fo:
 
 tr: 
 
-hi:
+hi: Bitte als NUMBER, 2-stellig (1 bis 99), codieren.
 
 \------------------------------------------------------------
 
@@ -1314,15 +1314,15 @@ hl:
 
 in:
 
-q1: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
+q: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
 
-is: Hochschulsemester sind alle Semester, die Sie seit Ihrer Erstimmatrikulation insgesamt studiert haben, einschließlich Urlaubs-, Auslands- und Praxissemester.
+is: Hochschulsemester sind alle Semester seit Beginn des Studiums, einschließlich Urlaubs-, Auslands- und Praxissemester.
 
 it:
 
 st:
 
-ao1: 2, Präfix: Hochschulsemester:
+ao: Präfix: Hochschulsemester: [offene Angabe; NUMBER 2-stellig; 1 bis 99]
 
 mv:
 
@@ -1330,9 +1330,56 @@ ka:
 
 vc:
 
-av: number, 2 stellig
+av: NUMBER, 2-stellig (1 bis 99)
 
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte geben Sie die Anzahl Ihrer Hochschulsemester als Zahl an.
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi: Bitte als NUMBER, 2-stellig (1 bis 99), codieren.
+
+\------------------------------------------------------------
+
+A_17
+=========
+
+tc:
+
+vn: ssemul
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Befinden Sie sich aktuell in einem Urlaubssemester?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
 
 fv:
 
@@ -1360,12 +1407,12 @@ hl:
 
 in:
 
-q: Sie haben bei Ihrer letzten Befragung angegeben, dass Sie an der [Preload-Token: Hochschulname] studieren?
+q: Wir haben Sie über die [Preload-Token: Hochschulname] angeschrieben. Ist das die Hochschule, an der Sie aktuell studieren??
 
 is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus.
 Falls Sie an mehreren Hochschulen parallel studieren, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
 
-it1 (hsstand): Ja, und zwar am Standort [Dropdown ao]:
+it1 (hsstand): Ja, und zwar am Standort [Dropdown; Standortliste].
 
 it2 (hsstand_2): Nein, ich studiere an einer anderen Hochschule.
 
@@ -1380,7 +1427,6 @@ ka:
 vc: 
 SHOW ao1 AND [Dropdown] IF 
 zofar.asNumber(PRELOADhs_id)==10 or zofar.asNumber(PRELOADhs_id)==30 or zofar.asNumber(PRELOADhs_id)==100 or zofar.asNumber(PRELOADhs_id)==300 or zofar.asNumber(PRELOADhs_id)==370 or zofar.asNumber(PRELOADhs_id)==550 or zofar.asNumber(PRELOADhs_id)==760 or zofar.asNumber(PRELOADhs_id)==810 or zofar.asNumber(PRELOADhs_id)==820 or zofar.asNumber(PRELOADhs_id)==1190 or zofar.asNumber(PRELOADhs_id)==1220 or zofar.asNumber(PRELOADhs_id)==1250 or zofar.asNumber(PRELOADhs_id)==1290 or zofar.asNumber(PRELOADhs_id)==1310 or zofar.asNumber(PRELOADhs_id)==1320 or zofar.asNumber(PRELOADhs_id)==1540 or zofar.asNumber(PRELOADhs_id)==1560 or zofar.asNumber(PRELOADhs_id)==1630 or zofar.asNumber(PRELOADhs_id)==1920 or zofar.asNumber(PRELOADhs_id)==2210 or zofar.asNumber(PRELOADhs_id)==2270 or zofar.asNumber(PRELOADhs_id)==2370 or zofar.asNumber(PRELOADhs_id)==2380 or zofar.asNumber(PRELOADhs_id)==2570 or zofar.asNumber(PRELOADhs_id)==2580 or zofar.asNumber(PRELOADhs_id)==3050 or zofar.asNumber(PRELOADhs_id)==3060 or zofar.asNumber(PRELOADhs_id)==3070 or zofar.asNumber(PRELOADhs_id)==3120 or zofar.asNumber(PRELOADhs_id)==3240 or zofar.asNumber(PRELOADhs_id)==3710 or zofar.asNumber(PRELOADhs_id)==3970 or zofar.asNumber(PRELOADhs_id)==4980 or zofar.asNumber(PRELOADhs_id)==4990 or zofar.asNumber(PRELOADhs_id)==5150 or zofar.asNumber(PRELOADhs_id)==5160 or zofar.asNumber(PRELOADhs_id)==5250 or zofar.asNumber(PRELOADhs_id)==5270 or zofar.asNumber(PRELOADhs_id)==5310 or zofar.asNumber(PRELOADhs_id)==5380 or zofar.asNumber(PRELOADhs_id)==5390 or zofar.asNumber(PRELOADhs_id)==5410 or zofar.asNumber(PRELOADhs_id)==5500 or zofar.asNumber(PRELOADhs_id)==5690 or zofar.asNumber(PRELOADhs_id)==5700 or zofar.asNumber(PRELOADhs_id)==5710 or zofar.asNumber(PRELOADhs_id)==5720 or zofar.asNumber(PRELOADhs_id)==5730 or zofar.asNumber(PRELOADhs_id)==5750 or zofar.asNumber(PRELOADhs_id)==5800 or zofar.asNumber(PRELOADhs_id)==5820 or zofar.asNumber(PRELOADhs_id)==5830 or zofar.asNumber(PRELOADhs_id)==5840 or zofar.asNumber(PRELOADhs_id)==5860 or zofar.asNumber(PRELOADhs_id)==5890 or zofar.asNumber(PRELOADhs_id)==5900 or zofar.asNumber(PRELOADhs_id)==5990 or zofar.asNumber(PRELOADhs_id)==6030 or zofar.asNumber(PRELOADhs_id)==6210 or zofar.asNumber(PRELOADhs_id)==6230 or zofar.asNumber(PRELOADhs_id)==6240 or zofar.asNumber(PRELOADhs_id)==6270 or zofar.asNumber(PRELOADhs_id)==6280 or zofar.asNumber(PRELOADhs_id)==6400 or zofar.asNumber(PRELOADhs_id)==6410 or zofar.asNumber(PRELOADhs_id)==6520 or zofar.asNumber(PRELOADhs_id)==6530 or zofar.asNumber(PRELOADhs_id)==6580 or zofar.asNumber(PRELOADhs_id)==6710 or zofar.asNumber(PRELOADhs_id)==6730 or zofar.asNumber(PRELOADhs_id)==6740 or zofar.asNumber(PRELOADhs_id)==6750 or zofar.asNumber(PRELOADhs_id)==6790 or zofar.asNumber(PRELOADhs_id)==6840 or zofar.asNumber(PRELOADhs_id)==7190 or zofar.asNumber(PRELOADhs_id)==7300 or zofar.asNumber(PRELOADhs_id)==7310 or zofar.asNumber(PRELOADhs_id)==7350 or zofar.asNumber(PRELOADhs_id)==7380 or zofar.asNumber(PRELOADhs_id)==7520 or zofar.asNumber(PRELOADhs_id)==7530 or zofar.asNumber(PRELOADhs_id)==7550 or zofar.asNumber(PRELOADhs_id)==7970 or zofar.asNumber(PRELOADhs_id)==8010 or zofar.asNumber(PRELOADhs_id)==8020 or zofar.asNumber(PRELOADhs_id)==8030 or zofar.asNumber(PRELOADhs_id)==8070 or zofar.asNumber(PRELOADhs_id)==81000 or zofar.asNumber(PRELOADhs_id)==8110 or zofar.asNumber(PRELOADhs_id)==81700
-
 
 av:
 
@@ -1418,13 +1464,9 @@ q: In welchem Bundesland/Land liegt Ihre Hochschule?
 
 is: 
 
-it: 
+it: (hsstandbl): [infield = Bundesland/Land; Baden-Württemberg - ... - im Ausland] (Dropdown)
 
 st:
-
-ao: [Dropdown:]
-
-aox: 0: Bundesland/Land
 
 ao1: 1: Baden-Württemberg
 
@@ -1502,17 +1544,17 @@ q: An welcher Hochschule studieren Sie aktuell?
 
 is: 
 
-it: 
+it: (sabserhs): [infield = Hochschule] (Dropdown) 
 
 st:
 
-ao: [Dropdown; Hochschulliste]
+ao: nach Bundesland vorselektierte Dropdown-Liste
 
 mv: 
 
 ka: 
 
-vc: nach Bundesland vorselektierte [Dropdown] - Liste
+vc: 
 
 av: 
 
@@ -1526,7 +1568,7 @@ fo:
 
 tr:
 
-hi: 
+hi: Dropdown-Hochschulliste bitte nach Bundesland vorselektieren.
 
 
 \------------------------------------------------------------
@@ -1538,17 +1580,19 @@ tc:
 
 vn: hsstandhso
 
-qt: Offene Frage
+qt: Offene Angabe
 
 hl:
 
 in: 
 
+q: Sollte Ihre Hochschule nicht aufgeführt sein, tragen Sie diese bitte hier ein (z. B. HU Berlin, FH Bielefeld).
+
 it: 
 
 st:
 
-ao1: 50 Stellen, Präfix Hochschule: [hsstandhso] 
+ao: (hsstandhso): Präfix: Hochschule: [offene Angabe; 60 Zeichen]
 
 mv: 
 
