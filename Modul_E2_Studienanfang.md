@@ -125,7 +125,7 @@ KSM-anf03
 
 tc:
 
-vn: intsoc1; intsoc2; intinv1; intinv2; intart1; intart2; intent1; intent2; intconv1; intconv2; intreal1; intreal2; intsoc3; intsoc4; intinv3; intinv4; intart3; intart4; intent3; intent4; intconv3; intconv4; intreal3; intreal4
+vn: intsoc1; intinv1; intinv2; intart1; intart2; intent1; intent2; intconv2; intreal1; intreal2; intsoc3; intsoc4; intinv4; intart4; intent3; intconv3; intconv4; intreal3
 
 qt: Einfachauswahlmatrix
 
