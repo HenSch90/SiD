@@ -233,8 +233,8 @@ hv:
 fo:
 
 tr: 
-GOTO KSM-phd02 IF promoplan >=3
-GOTO KSM-phd03 IF promoplan <3
+
+
 
 hi: vigA, vigB und vigC sind Absätze der Vignette, die Zuordnung und Auswahl der
 Vignetten wird in einer Excel-Liste geliefert.
@@ -245,7 +245,7 @@ Vignetten wird in einer Excel-Liste geliefert.
 KSM-phd02
 =========
 
-tc: IF promoplan >=3 (Promotionsabsicht bzw. (sehr) sicher + Mitte)
+tc: 
 
 vn: promgrund1- promgrund13; promgrund13o
 
@@ -255,33 +255,46 @@ hl:
 
 in:
 
-q: Im Laufe dieser Befragung haben Sie angegeben, dass Sie eine Promotion planen. Aus welchem Grund möchten Sie promovieren?
+q: Es gibt Gründe die für oder gegen eine Promotion sprechen. Bitte geben Sie an, inwiefern die folgenden Aussagen auf Sie persönlich zutreffen. 
 
 is:
 
-it1: (promgrund2): um zu einem bestimmten Thema zu forschen
+it1: (promgrund1): Ich will zu einem bestimmten Thema forschen
 
-it2: (promgrund3): um später in der Wissenschaft zu arbeiten
+it2: (promgrund2): Eine Promotion verbessert meine Berufsaussichten 
 
-it3: (promgrund4): um meine Berufsaussichten zu verbessern
+it3: (promgrund3): Eine Promotion ist in meinem angestrebten Berufsfeld üblich 
 
-it4: (promgrund5): weil es in meinem angestrebten Berufsfeld üblich ist
+it4: (promgrund4): Ein Doktortitel besitzt ein hohes soziales Ansehen 
 
-it5: (promgrund6): weil der Titel ein hohes soziales Ansehen besitzt
+it5: (promgrund5): Durch eine Promotion kann ich den Berufseinstieg hinausschieben
 
-it6: (promgrund7): weil ich noch nicht weiß, was ich sonst machen soll
+it6: (promgrund6): Mein*/e Professor*/in hat mich dazu ermutigt 
 
-it7: (promgrund8): weil ein\*e Professor\*in mich dazu ermutigt hat
+it7: (promgrund7): Mit einer Promotion kann ich meinen Berufswunsch erfüllen
 
-it8: (promgrund9): um meinen Berufswunsch zu erfüllen
+it8: (promgrund8): Eine Promotion sichert mir ein höheres Einkommen
 
-it9: (promgrund10): um mir ein höheres Einkommen zu sichern
+it9: (promgrund9): Durch eine Promotion kann ich mich persönlich entfalten
 
-it10: (promgrund11): um mich persönlich zu entfalten
+it10: (promgrund10): Eine Promotion dauert zu lange
 
-it11: (promgrund12): um länger an der Hochschule bleiben zu können
+it11: (promgrund11): Eine Promotion kann ich mir finanziell nicht leisten 
 
-it12: (promgrund13): sonstige, und zwar: [promgrund13o]
+it12: (promgrund12): Mit einer Promotion wäre ich überqualifiziert 
+
+it13: (promgrund13): Das Anforderungsniveau für eine Promotion ist zu hoch
+
+it14: (promgrund14): Ich habe kein Interesse an einer wissenschaftlichen Tätigkeit 
+
+it15: (promgrund15): Ich will mich nicht so stark spezialisieren 
+
+it16: (promgrund16): Eine Promotion passt nicht in meine Lebens- und Familienplanung
+
+it17: (promgrund17): Eine Promotion ist mit einer zu großen psychischen Belastung verbunden
+
+
+it18: (promgrund18): sonstige, und zwar: [promgrund18o]
 
 st:
 
@@ -299,81 +312,7 @@ mv:
 
 ka:
 
-vc: SHOW promgrund1 IF promoplan = 3
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi: 
-
-\--------------------------------
-
-KSM-phd03
-=========
-
-tc: 
-
-vn: keinprom1- keinprom10; keinprom10o
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Warum wollen Sie nicht promovieren?
-
-is:
-
-it1: (keinprom1): weil eine Promotion zu lang dauert
-
-it2: (keinprom2): weil ich es mir finanziell nicht leisten kann
-
-it3: (keinprom3): weil ich dann überqualifiziert bin
-
-it4: (keinprom4): weil ich das Bedürfnis habe, außerhalb der Hochschule zu
-arbeiten
-
-it5: (keinprom5): weil die Promotion für den Berufseinstieg unnötig ist
-
-it6: (keinprom6): weil mir das Anforderungsniveau einer Promotion zu hoch ist
-
-it7: (keinprom7): weil ich kein Interesse an einer wissenschaftlichen Tätigkeit
-habe
-
-it8: (keinprom8): weil die Promotion eine zu große Spezialisierung bedeutet
-
-it9: (keinprom9): weil die Chance auf eine passende Promotionsstelle zu gering
-ist
-
-it10: (keinprom10): anderes, und zwar: [keinprom10o]
-
-st:
-
-ao1: 1: trifft überhaupt nicht zu
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
+vc: 
 
 av:
 
@@ -387,4 +326,9 @@ fo:
 
 tr: GOTO A_50
 
-hi:
+hi: 
+
+\--------------------------------
+
+
+
