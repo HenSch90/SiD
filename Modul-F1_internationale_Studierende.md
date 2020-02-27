@@ -21,7 +21,7 @@ it2: (aeinnorm2): Auslandserfahrungen werden auf dem Arbeitsmarkt oftmals erwart
 
 st:
 
-ao1: 1: : trifft überhaupt nicht zu
+ao1: 1: trifft überhaupt nicht zu
 
 ao2: 2
 
@@ -29,7 +29,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: : trifft voll und ganz zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -47,9 +47,7 @@ hv:
 
 fo:
 
-tr: GOTO F1_2b IF width.value lt 768
-
-ELSE GOTO F1_2
+tr: GOTO F1_2
 
 hi:
 
@@ -62,13 +60,13 @@ tc:
 
 vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersoen; aeinskont; aeinskultur; aeinsspas; aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
 
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
 hl:
 
 in:
 
-q: Was spricht Ihrer Meinung nach…
+q: Was spricht Ihrer Meinung nach …
 
 is:
 
@@ -102,7 +100,7 @@ it14: (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
 
 st:
 
-ao1: 1: : überhaupt nicht
+ao1: 1: überhaupt nicht
 
 ao2: 2
 
@@ -110,13 +108,13 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: : sehr stark
+ao5: 5: sehr stark
 
 mv:
 
-ka1: (it1 TO it7) **… *für* einen Auslandsaufenthalt?**
+ka1: (it1 TO it7) !!… *für* einen Auslandsaufenthalt?!!
 
-ka2: (it8 TO it it14) **… *gegen* einen Auslandsaufenthalt?**
+ka2: (it8 TO it it14) !!… *gegen* einen Auslandsaufenthalt?!!
 
 vc:
 
@@ -128,143 +126,15 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "... für einen Auslandsaufenthalt" linksbündig positionieren.
+
+fo2: Bitte über it8 "... gegen einen Auslandsaufenthalt" linksbündig positionieren.
 
 tr: GOTO F1_3
 
 hi:
 
 \--------------------------------
-
-F1_2b
-====
-
-tc: 
-
-vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersoen; aeinskont; aeinskultur; aeinsspas
-
-qt:  Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q: Was spricht Ihrer Meinung nach für einen Auslandsaufenthalt?
-
-is:
-
-it1: (aeinsarbm): Verbesserung der Arbeitsmarktchancen
-
-it2: (aeinssprachk): Verbesserung der Sprachkenntnisse
-
-it3: (aeinsfach): Verbesserung der Fachkenntnisse
-
-it4: (aeinspersoen): Persönlichkeitsentwicklung
-
-it5: (aeinskont): Kontakte knüpfen
-
-it6: (aeinskultur): andere Kulturen kennenlernen
-
-it7: (aeinsspas): Spaß haben
-
-st:
-
-ao1: 1: : überhaupt nicht
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : sehr stark
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO F1_2c
-
-hi:
-
-\-------------------------------
-
-F1_2c
-====
-
-tc:
-
-vn: aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
-
-qt:  Einfachauswahlmatrix/5er-Skala mit horizontalen ao
-
-hl:
-
-in:
-
-q: Und was spricht Ihrer Meinung nach gegen einen Auslandsaufenthalt?
-
-is:
-
-it1: (aeinsfinanz): finanzielle Belastung
-
-it2: (aeinsorga): Organisationsaufwand
-
-it3: (aeinsfreun): Trennung von Freund\*innen und Familie
-
-it4: (aeinsanerk): Anerkennungsschwierigkeiten
-
-it5: (aeinszeit): Zeitverlust
-
-it6: (aeinsfehlspra): fehlende Sprachkenntnisse
-
-it7: (aeinsangstl): Angst vor fremder Studien- und Lebenssituation
-
-st:
-
-ao1: 1: : überhaupt nicht
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: : sehr stark
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO F1_3
-
-hi:
-
-\-------------------------------
 
 F1_3
 ====
@@ -287,9 +157,9 @@ it:
 
 st:
 
-ao1: 1: : nein
+ao1: 1: nein
 
-ao2: 2: : ja
+ao2: 2: ja
 
 mv:
 
@@ -320,7 +190,7 @@ tc:
 
 vn:  avorniem; avorelt; avorgeschw; avorandver; avorfreund; avorkomm
 
-qt: Mehrfachauswahl mit Exklusivkategorie und mit vertikalen ao
+qt: Mehrfachauswahl mit Exklusivkategorie und vertikalen ao
 
 hl:
 
@@ -328,23 +198,23 @@ in:
 
 q: Kennen Sie jemanden, der bereits vor Ihnen im Rahmen seines Studiums im Ausland war?
 
-is: *Bitte alles Zutreffende auswählen.*
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1: (avorniem) : nein, niemanden (Exklusivkategorie)
+ao1: (avorniem): nein, niemanden (EK)
 
-ao2: (avorelt) : Eltern
+ao2: (avorelt): Eltern
 
-ao3: (avorgeschw) : Geschwister
+ao3: (avorgeschw): Geschwister
 
-ao4: (avorandver) : andere Verwandte
+ao4: (avorandver): andere Verwandte
 
-ao5: (avorfreund) : Freund\*innen
+ao5: (avorfreund): Freund\*innen
 
-ao6: (avorkomm) : Kommiliton\*innen
+ao6: (avorkomm): Kommiliton\*innen
 
 mv:
 
@@ -360,7 +230,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über it2 "ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO F1_5
 
@@ -375,7 +245,7 @@ tc:
 
 vn: aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul
 
-qt: Mehrfachauswahl mit Exklusivkategorie und mit vertikalen ao
+qt: Mehrfachauswahl mit Exklusivkategorie und vertikalen ao
 
 hl:
 
@@ -383,13 +253,13 @@ in:
 
 q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) im Ausland verbracht?
 
-is: *Bitte alles Zutreffende auswählen.*
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1: (aauszeitlebnein): nein (Exklusivkategorie)
+ao1: (aauszeitlebnein): nein (EK)
 
 ao2: (aauszeitlebfrkin): ja, in meiner frühen Kindheit
 
@@ -507,7 +377,7 @@ tc:
 
 vn: vsbanrechsch
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl/5er-Skala mit vertikalen ao
 
 hl:
 
@@ -566,7 +436,7 @@ in:
 
 q: Wo haben Sie die nötigen Sprachkenntnisse für ein Studium in Deutschland erworben?
 
-is: *Bitte alles Zutreffende auswählen.*
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
