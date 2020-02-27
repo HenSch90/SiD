@@ -9,13 +9,13 @@ tc:
 
 vn: ssqualeq (ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10)
 
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
 hl:
 
 in:
 
-q: Wie bewerten Sie Ihrer Hochschule hinsichtlich folgender Aspekte?
+q: Wie bewerten Sie Ihre Hochschule hinsichtlich folgender Aspekte?
 
 is:
 
@@ -33,11 +33,11 @@ it6: (ssqualeq6): Öffnungszeiten der Bibliothek
 
 it7: (ssqualeq7): Verfügbarkeit von Fachliteratur
 
-it8: (ssqualeq8): Service- und Beratungsleistung
+it8: (ssqualeq8): Service- und Beratungsleistungen
 
 it9: (ssqualeq9): Betreuungsangebote für Studierende mit Kind(ern)
 
-it10: (ssqualeq10): Unterstützungsangebote für Studierende mit Beeinträchtigungen (z. B. spezifisch ausgestattete Arbeitsplätze)
+it10: (ssqualeq10): Unterstützungsangebote für Studierende mit Beeinträchtigung(en) (z. B. spezifisch ausgestattete Arbeitsplätze)
 
 st:
 
@@ -51,9 +51,7 @@ ao4: 4:
 
 ao5: 5: sehr gut
 
-ao6: -12: weiß ich nicht
-
-mv: ao6
+mv: -12: weiß ich nicht
 
 ka1: (it1 TO it3): !!räumliche Ausstattung!!
 
@@ -75,6 +73,8 @@ fo1: Bitte über it1 "räumliche Ausstattung" linksbündig positionieren.
 
 fo2: Bitte über it4 "Service-Leistungen" linksbündig positionieren.
 
+fo3: mv/"weiß ich nicht" bitte etwas absetzen.
+
 tr:
 
 GOTO A_22
@@ -92,7 +92,7 @@ tc:
 
 vn: ssstruk (ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9)
 
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
 hl:
 
@@ -171,9 +171,9 @@ D2_4
 
 tc:
 
-vn: ssstud1 (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5)
+vn: ssstud (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5)
 
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -286,7 +286,7 @@ fv:
 
 hv:
 
-fo: mv/"trifft nicht zu" absetzen
+fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
@@ -503,11 +503,11 @@ q: Wie stark ist Ihr Studiengang an Ihrer Hochschule charakterisiert durch ...
 
 is:
 
-it1: (sscofopra1): ...Forschungsbezug in der Lehre?
+it1: (sscofopra1): ... Forschungsbezug in der Lehre?
 
-it2: (sscofopra2): ...eine enge Verknüpfung zwischen Theorie und Praxis?
+it2: (sscofopra2): ... eine enge Verknüpfung zwischen Theorie und Praxis?
 
-it3: (sscofopra3): ...einen engen Praxisbezug?
+it3: (sscofopra3): ... einen engen Praxisbezug?
 
 st:
 
@@ -647,7 +647,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: trifft völlig zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -688,21 +688,21 @@ hl:
 
 in:
 
-q: Wie häufig haben Sie im laufenden Semester ***außerhalb*** der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
+q: Wie häufig haben Sie im laufenden Semester *außerhalb* der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
 
 is:.
 
 it1: (sskonth1): Kommiliton\*innen
 
-it2: (sskonth2): Studierende anderer Fächer
+it2: (sskonth2): Studierenden anderer Fächer
 
-it3: (sskonth3): Freund\*innen und Bekannte außerhalb der Hochschule
+it3: (sskonth3): Freund\*innen und Bekannten außerhalb der Hochschule
 
-it4: (sskonth4): Lehrende
+it4: (sskonth4): Lehrenden
 
 it5: (sskonth5): Mitarbeiter\*innen der Hochschulverwaltung
 
-it6: (sskonth6): Familie (Eltern, Geschwister u. a.)
+it6: (sskonth6): Familie (Eltern, Geschwistern u. a.)
 
 st:
 
@@ -755,7 +755,7 @@ hl:
 
 in:
 
-q: Wie oft haben Sie im aktuellen Semester ***außerhalb*** der Lehrveranstaltungen …
+q: Wie oft haben Sie im aktuellen Semester *außerhalb* der Lehrveranstaltungen …
 
 is:
 
@@ -818,7 +818,7 @@ hl:
 
 in:
 
-q: Wie beurteilen Sie im Allgemeinen die Studienanforderungen in Ihrem Studiengang…
+q: Wie beurteilen Sie im Allgemeinen die Studienanforderungen in Ihrem Studiengang …
 
 is:
 
@@ -873,7 +873,7 @@ tc:
 
 vn: ssects (ssectsakt; ssectsstud)
 
-qt: offene Abfrage
+qt: offene Angabe
 
 hl:
 
@@ -887,9 +887,9 @@ it:
 
 st:
 
-ao1: (ssectsakt): Präfix: ... Sie in Ihrem aktuellen Studium bislang zirka erreicht haben: [number: 3 Stellig : 0 TO 999]
+ao1: (ssectsakt): ... Sie in Ihrem aktuellen Studium bislang ungefähr erreicht haben: [Infield = ECTS-Punkte; number, 3-stellig: 0 TO 999]
 
-ao2: (ssectsstud): Präfix: ... Sie insgesamt für Ihren Studienabschluss benötigen: [number: 3 Stellig : 0 TO 999]
+ao2: (ssectsstud): ... Sie insgesamt für Ihren Studienabschluss benötigen: [Infield = ECTS-Punkte; number, 3-stellig: 0 TO 999]
 
 mv:
 
@@ -968,6 +968,8 @@ ao10: 9: 9
 
 ao11: 10: ≥10
 
+mv:
+
 ka:
 
 vc:
@@ -999,13 +1001,13 @@ tc:
 
 vn: ssread
 
-qt: offene Abfrage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken, wie viele Seiten lesen Sie durchschnittlich, um sich auf die von Ihnen besuchten Lehrveranstaltungen vorzubereiten?
+q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken: Wie viele Seiten lesen Sie durchschnittlich, um sich auf die von Ihnen besuchten Lehrveranstaltungen vorzubereiten?
 
 is:.
 
@@ -1013,7 +1015,7 @@ it:
 
 st:
 
-ao: (ssread): [number, 3-stellig: 1 TO 999], Postfix: Seiten pro Woche 
+ao: (ssread): [number, 3-stellig: 0 TO 999], Postfix: Seiten pro Woche 
 
 mv:
 
@@ -1054,7 +1056,7 @@ hl:
 
 in:
 
-q: Wie oft haben Sie in diesem Semester…
+q: Wie oft haben Sie in diesem Semester …
 
 is:.
 
@@ -1111,7 +1113,7 @@ tc:
 
 vn: sszustud (sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11)
 
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1155,9 +1157,7 @@ ao4: 4:
 
 ao5: 5: sehr zufrieden
 
-ao6: -13: kann ich nicht beurteilen
-
-mv: ao6 
+mv: -12: kann ich nicht beurteilen
 
 ka1: (it1 TO it4): !!Lehre!!
 
@@ -1180,6 +1180,8 @@ fo1: Bitte über it1 "Lehre" linksbündig positionieren.
 fo2: Bitte über it5 "Studiengang" linksbündig positionieren.
 
 fo3: Bitte über it9 "Leistungen" linksbündig positionieren.
+
+fo4: mv/"kann ich nicht beurteilen" bitte etwas absetzen.
 
 tr: GOTO A_44
 
