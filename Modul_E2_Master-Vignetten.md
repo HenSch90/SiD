@@ -13,7 +13,7 @@ qt: Einfachauswahl mit vertikalen Antwortoptionen
 
 hl: Fragen zu Masterstudium und Beruf
 
-in: Sie sind momentan im fortgeschrittenen Bachelorstudium und möchten sich vielleicht für ein Masterstudium bewerben.
+in: Sie sind momentan im fortgeschrittenen Bachelorstudium und überlegen, ob Sie sich  für ein Masterstudium bewerben.
 
 Nachfolgend bitten wir Sie, für vier hypothetische Masterstudiengänge mit unterschiedlichen Eigenschaften einzuschätzen, wie wahrscheinlich Sie sich bewerben würden. Die Merkmale der Studiengänge sind jeweils in kurzen Texten dargestellt. 
 
@@ -123,8 +123,7 @@ fo:
 
 tr: GOTO KSM-ma02
 
-hi: Filter am Anfang des Moduls als Einblendbedingung (nur Bachelorstudierende ab dem 4. Semester IF sabsan = 1 AND ssemhs>=4) nötig, oder wird die Zuweisung in das Modul anderweitig gesteuert? Und wenn hier gefiltert wird, muss die Einblendbedingung dann auf jede Seite im Modul?
-vig1, vig2 und vig3 sind Absätze der Vignette, die Zuordnung und Auswahl der
+hi: vig1, vig2 und vig3 sind Absätze der Vignette, die Zuordnung und Auswahl der
 Vignetten wird in einer Excel-Liste geliefert: [Master-Vignetten](https://github.com/dzhw/SiD/blob/master/Vignetten_Master.xls)
 
 \--------------------------------
@@ -285,7 +284,7 @@ KSM-ma05
 
 tc:
 
-vn: jobfach; jobabsch; joblohn; joberfü
+vn: jobfach; jobabsch; joblohn; joberfue
 
 qt: Einfachauswahlmatrix
 
@@ -304,11 +303,11 @@ it2: (jobabsch): ... Ihrem Hochschulabschluss entspricht
 
 it3: (joblohn): ... Ihren Lohnansprüchen genügt
 
-it4: (joberfü): ... Sie wirklich erfüllt
+it4: (joberfue): ... Sie wirklich erfüllt
 
 st:
 
-ao1: 1: überhaupt nicht
+ao1: 1: keine Schwierigkeiten
 
 ao2: 2:
 
@@ -316,7 +315,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: in sehr hohem Maße
+ao5: 5: große Schwierigkeiten
 
 mv:
 
@@ -335,9 +334,8 @@ hv:
 fo:
 
 tr: GOTO KSM-ma06
-GOTO KSM-ma07 IF mastplan >= 3 AND mastersplit = 1, 2, 3, 4, 5, 6, 13
-GOTO KSM-ma08 IF mastplan < 3 AND mastersplit = 1, 2, 3, 4, 5, 6, 13
-GOTO KSM-ma09 IF mastplan = SYSMISS AND mastersplit = 1, 2, 3, 4, 5, 6, 13
+GOTO KSM-ma07 IF sabsan = 6 OR sabsan = 7 OR sabsan = 8 OR sabsan = 9
+GOTO KSM-ma07 IF sabsan = 5 AND sabslaja <>1
 
 hi: in der Vorschau entspricht die Reihenfolge der Items nicht der hier dargestellten. Bitte prüfen
 
@@ -349,43 +347,59 @@ KSM-ma06
 
 tc: 
 
-vn: lohnber; lohnba; lohnma; lohnsta1; lohnsta2; lohnphd; lohnka
+vn: lohnba; lohnma; lohnsta1; lohnsta2; lohnphd; lohnka
 
-qt: Offene Angabe
+qt: Einfachauswahl mit vertikalen ao/Spaltenformat
 
 hl:
 
 in:
 
-q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld...
+q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit ...
 
-is: Beziehen Sie Ihre Angaben auf das Netto-Gehalt, d.h. Einkommen abzüglich Steuer.
+is: Bitte beziehen Sie Ihre Angaben auf das Netto-Gehalt einer Vollzeitstelle, d. h. Gehalt abzüglich Steuern und Sozialabgaben.
 
-it:
+it1: (lohnba): … Bachelorabschluss
+
+it2: (lohnma): … Masterabschluss
+
+it3: (lohnsta1): … dem ersten Staatsexamen
+
+it4: (lohnsta2): … dem zweiten Staatsexamen
+
+it5: (lohnphd): … Promotion
 
 st:
 
-ao1: (lohnber): 5, Präfix: … mit einer Berufsausbildung: , Suffix: €/Monat
+ao1: 1: unter 1.000 €
 
-ao2: (lohnba): 5, Präfix: … mit einem Bachelorabschluss: , Suffix: €/Monat
+ao2: 2: 1.000 € bis unter 1.500
 
-ao3: (lohnma): 5, Präfix: … mit einem Masterabschluss: , Suffix: €/Monat
+ao3: 3: 1.500 € bis unter 2.000
 
-ao4: (lohnsta1): 5, Präfix: … mit dem ersten Staatsexamen: , Suffix: €/Monat
+ao4: 4: 2.000 € bis unter 2.500
 
-ao5: (lohnsta2): 5, Präfix: … mit dem zweiten Staatsexamen: , Suffix: €/Monat
+ao5: 5: 2.500 € bis unter 3.000
 
-ao6: (lohnphd): 5, Präfix: … mit einer Promotion: , Suffix: €/Monat
+ao6: 6: 3.000 € bis unter 3.500
 
-ao7: (lohnka): -12: weiß ich nicht
+ao7: 7: 3.500 € bis unter 4.000
 
-mv: ao7
+ao8: 8: 4.000 € bis unter 5.000
+
+ao9: 9: 5.000 € bis unter 10.000
+
+ao10: 10: 10.000 € und mehr
+
+ao11: -12: weiß ich nicht 
+
+mv:
 
 ka:
 
-vc: SHOW ao4 and ao5 if sabsan = 3
+vc: SHOW lohnsta1 and lohnsta2 and lohnphd if sabsan = 3 AND sabslaja = 1
 
-SHOW ao2 and ao3 if sabsan<> 3 
+SHOW lohnba and lohnma and lohnphd if sabsan = 1 
 
 av:
 
@@ -395,11 +409,9 @@ fv:
 
 hv:
 
-fo: ao7 absetzen
+fo: ao11 absetzen
 
-tr: GOTO KSM-ma07 IF mastplan >= 3
-GOTO KSM-ma08 IF mastplan < 3
-GOTO KSM-ma09 IF mastplan = SYSMISS
+tr: 
 
 hi:
 
@@ -410,7 +422,7 @@ KSM-ma07
 
 tc: 
 
-vn: mastergrund1- mastergrund15; mastergrund15o
+vn: mastergrund1- mastergrund13; mastergrund13o
 
 qt: Einfachauswahlmatrix
 
@@ -418,40 +430,35 @@ hl:
 
 in:
 
-q: Im Laufe dieser Befragung haben Sie angegeben, dass Sie ein Masterstudium
-planen. Aus welchen Gründen möchten Sie ein Masterstudium aufnehmen?
+q: Es gibt Gründe die für oder gegen ein Masterstudium sprechen. Bitte geben Sie an, inwiefern die folgenden Aussagen auf Sie persönlich zutreffen.
 
 is:
 
-it1: (mastergrund1): um meinen Berufswunsch zu erfüllen
+it1: (mastergrund1): Nur mit einem Master kann ich meinen Berufswunsch erfüllen
 
-it2: (mastergrund2): um meine Berufsaussichten zu verbessern
+it2: (mastergrund2): Ein Master verbessert meine Berufsaussichten
 
-it3: (mastergrund3): um meine beruflichen Möglichkeiten zu erweitern
+it3: (mastergrund3): Ein Master sichert mir ein höheres Einkommen
 
-it4: (mastergrund4): um mir ein höheres Einkommen zu sichern
+it4: (mastergrund4): Ein Master besitzt ein höheres soziales Ansehen
 
-it5: (mastergrund5): weil der Master ein höheres soziales Ansehen besitzt
+it5: (mastergrund5): Im Masterstudium kann ich mich persönlich entfalten 
 
-it6: (mastergrund6): um eine gute wissenschaftliche Ausbildung zu erhalten
+it6: (mastergrund6): Durch ein Masterstudium kann ich den Berufseinstieg hinausschieben
 
-it7: (mastergrund7): um mich persönlich zu entfalten
+it7: (mastergrund7): Ein Masterstudium dauert mir zu lange
 
-it8: (mastergrund8): weil es in meinem angestrebten Berufsfeld üblich ist
+it8: (mastergrund8): Ich kann mir ein Masterstudium finanziell nicht leisten 
 
-it9: (mastergrund9): um mich fachlich zu spezialisieren
+it9: (mastergrund9): Ein Masterstudium ist viel zu theoretisch
 
-it10: (mastergrund10): um länger an der Hochschule bleiben zu können
+it10: (mastergrund10): Ein Master ist für den Berufseinstieg unnötig 
 
-it11: (mastergrund11): um die Erwerbstätigkeit aufzuschieben
+it11: (mastergrund11): Das Anforderungsniveau des Masters ist zu hoch
 
-it12: (mastergrund12): um später in der Wissenschaft zu arbeiten
+it12: (mastergrund12): Ich will mich nicht so stark spezialisieren
 
-it13: (mastergrund13): weil ich noch nicht weiß, was ich sonst machen soll
-
-it14: (mastergrund14): weil ein\*e Professor\*in mich dazu ermutigt hat
-
-it15: (mastergrund15): anderes, und zwar... [mastergrund15o]
+it13: (mastergrund13): andere, und zwar... [mastergrund13o]
 
 st:
 
@@ -481,94 +488,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-ma09
+tr: GOTO KSM-ma08
 
-hi: IF mastplan = 4 OR mastplan = 5, wird beim Seitenübergang von KSM-ma06 nach KSM-07/08 definiert.
+hi: 
+
 
 \--------------------------------
 
 KSM-ma08
-========
-
-tc:
-
-vn: mastercontra1- mastercontra12; mastercontra12o
-
-qt: Einfachauswahlmatrix mit offener Frage
-
-hl:
-
-in:
-
-q: Im Laufe dieser Befragung haben Sie angegeben, dass Sie eher kein
-Masterstudium planen. Aus welchen Gründen möchten Sie kein Masterstudium
-aufnehmen?
-
-is:
-
-it1: (mastercontra1): weil die Studiendauer zu lang wird
-
-it2: (mastercontra2): weil ich es mir finanziell nicht leisten kann
-
-it3: (mastercontra3): weil ich dann überqualifiziert bin
-
-it4: (mastercontra4): weil der Master zu theoretisch ist und zu wenig
-Anwendungsbezug hat
-
-it5: (mastercontra5): weil ich das Bedürfnis habe, außerhalb der Hochschule zu
-arbeiten
-
-it6: (mastercontra6): weil der Master für den Berufseinstieg nötig ist
-
-it7: (mastercontra7): weil ich schnellstmöglich finanziell unabhängig sein will
-
-it8: (mastercontra8): weil mir das Anforderungsniveau des Masterstudiums zu hoch
-ist
-
-it9: (mastercontra9): weil ich kein Interesse an einer wissenschaftlichen
-Tätigkeit habe
-
-it10: (mastercontra10): weil der Master eine zu große Spezialisierung bedeutet
-
-it11: (mastercontra11): weil die Chance auf mein Wunschstudium zu gering ist
-
-it12: (mastercontra12): anderes, und zwar: [mastercontra12o]
-
-st:
-
-ao1: 1: trifft überhaupt nicht zu
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc: 
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO KSM-ma09
-
-hi: IF mastplan = 4 OR mastplan = 5, wird beim Seitenübergang von KSM-ma06 nach KSM-07/08 definiert.
-
-\--------------------------------
-
-KSM-ma09
 ========
 
 tc:
@@ -590,9 +517,9 @@ is:
 it1: (bawert1): … ist kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
 der beruflichen Ausbildung
 
-it2: (bawert3): …ist nur ein Zwischenschritt zu einem Masterstudium
+it2: (bawert3): … ist nur ein Zwischenschritt zu einem Masterstudium
 
-it3: (bawert2): …wird von Arbeitgebern kaum angesehen
+it3: (bawert2): … wird von Arbeitgebern kaum angesehen
 
 st:
 
