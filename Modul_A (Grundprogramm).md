@@ -158,7 +158,7 @@ in:
 
 q: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
 
-Wo haben Sie erstmals Ihre Hochschulreife erworben?
+!!Wo haben Sie erstmals Ihre Hochschulreife erworben?!!
 
 is:
 
@@ -188,7 +188,7 @@ fo:
 
 tr:
 
-hi:
+hi: Bitte lediglich die Frage ("Wo haben Sie erstmals Ihre Hochschulreife erworben?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
 
 \------------------------------------------------------------
 
@@ -263,11 +263,11 @@ it:
 
 st:
 
-ao1: 1: von Geburt an?
+ao1: 1: ... von Geburt an?
 
-ao2: 2: als Spätaussiedler\*in?
+ao2: 2: ... als Spätaussiedler\*in?
 
-ao3: 3: durch Einbürgerung?
+ao3: 3: ... durch Einbürgerung?
 
 mv:
 
@@ -313,13 +313,9 @@ q1: Welche Staatsangehörigkeit besaßen Sie bevor Sie nach Deutschland kamen?
 
 q2: Welche Staatsangehörigkeit besaßen Sie vor Ihrer Einbürgerung?
 
-q3: Sie haben zu Beginn der Befragung angegeben, die deutsche und eine ausländische Staatsangehörigkeit zu haben.
+q3: Sie haben zu Beginn der Befragung angegeben, die deutsche und eine ausländische Staatsangehörigkeit zu haben. Welche Staatsangehörigkeit besitzen Sie neben der deutschen?
 
-Welche Staatsangehörigkeit besitzen Sie neben der deutschen?
-
-q4: Sie haben zu Beginn der Befragung angegeben, eine ausländische Staatsangehörigkeit zu haben.
-
-Welche ausländische Staatsangehörigkeit besitzen Sie?
+q4: Sie haben zu Beginn der Befragung angegeben, eine ausländische Staatsangehörigkeit zu haben. Welche ausländische Staatsangehörigkeit besitzen Sie?
 
 is: Bitte wählen Sie hier zunächst den Kontinent aus.
 
@@ -380,13 +376,11 @@ hl:
 
 in:
 
-q1: Bitte geben Sie nun die Staatsangehörigkeit an, die Sie bevor Sie nach
-Deutschland kamen hatten.
+q1: Bitte geben Sie nun die Staatsangehörigkeit an, die Sie hatten, bevor Sie nach Deutschland kamen.
 
 q2: Bitte geben Sie nun Ihre Staatsangehörigkeit vor Ihrer Einbürgerung an.
 
-q3: Bitte geben Sie nun Ihre Staatsangehörigkeit an, die Sie neben der deutschen
-besitzen.
+q3: Bitte geben Sie nun Ihre Staatsangehörigkeit an, die Sie neben der deutschen besitzen.
 
 q4: Bitte geben Sie nun Ihre ausländische Staatsangehörigkeit an.
 
