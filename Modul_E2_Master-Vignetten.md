@@ -347,7 +347,7 @@ KSM-ma06
 
 tc: 
 
-vn: lohnba; lohnma; lohnsta1; lohnsta2; lohnphd; lohnka
+vn: lohnba; lohnma; lohnsta1; lohnsta2; lohnphd
 
 qt: Einfachauswahl mit vertikalen ao/Spaltenformat
 
@@ -517,9 +517,9 @@ is:
 it1: (bawert1): … ist kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
 der beruflichen Ausbildung
 
-it2: (bawert3): … ist nur ein Zwischenschritt zu einem Masterstudium
+it2: (bawert2): … ist nur ein Zwischenschritt zu einem Masterstudium
 
-it3: (bawert2): … wird von Arbeitgeber*/innen kaum angesehen
+it3: (bawert3): … wird von Arbeitgeber*/innen kaum angesehen
 
 st:
 
