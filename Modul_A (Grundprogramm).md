@@ -3030,7 +3030,7 @@ A_39
 
 tc:
 
-vn: vsbstyp1-15; vsbtypob
+vn: vsbstyp (vsbstyp1-vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15); vsbtypob
 
 qt: Mehrfachauswahl mit offener Abfrage
 
@@ -3076,11 +3076,15 @@ ao13: (vsbtyp13): Begabtenprüfung
 
 ao14: (vsbtyp14): Mediziner\*innen-Test (TMS)
 
-ao15: (vsbtyp15): auf einem anderen Weg, und zwar: [vsbtypob]
+ao15: (vsbtyp15): auf einem anderen Weg, und zwar: [(vsbtypob); offen Angabe, 30 Zeichen]
 
 mv:
 
-ka: ka1 (ao1 TO ao9) Schulischer Weg: ; ka2(ao10 TO ao11) Berufliche Qualifikation: ; ka3(ao12 TO ao15) Eignungsprüfungen:
+ka1 (ao1 TO ao9) Schulischer Weg:
+
+ka2(ao10 TO ao11) Berufliche Qualifikation:
+
+ka3(ao12 TO ao15) Eignungsprüfungen:
 
 vc:
 
@@ -3122,7 +3126,7 @@ it:
 
 st:
 
-ao1: 3: Präfix: Durchschnittsnote (z. B. 2,5): (vsbnoteo)
+ao1: 3: Präfix: Durchschnittsnote (z. B. 2,5): [(vsbnoteo); offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
 ao2: -11: Ich habe keine Note erhalten. 
 
@@ -3165,11 +3169,11 @@ q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt?
 
 is: Zeitpunkt der Zeugnisübergabe
 
-it:
+it: Jahr: [Dropdown, Jahresliste: Jahr, 2019 ... 1999 und früher]
 
 st:
 
-ao1: 1: Jahr: [Dropdown, Jahresliste: Jahr, 2019 ... 1999 und früher]
+ao:
 
 vc:
 
@@ -3256,7 +3260,9 @@ hl:
 
 in:
 
-q: Sind Sie während der Vorlesungszeit erwerbstätig?
+q1: Sind Sie während der Vorlesungszeit erwerbstätig?
+
+q2: Sind Sie während der Vorlesungszeit neben Ihrem dualen Studium erwerbstätig?
 
 is: 
 
@@ -3276,7 +3282,9 @@ mv:
 
 ka:
 
-vc: 
+vc1: SHOW q1 IF sformdua < 1
+
+vc2: SHOW q2 IF sformdua = 1
 
 av:
 
@@ -3325,11 +3333,11 @@ q6: In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigk
 
 is:
 
-it: 1: Tätigkeit A 
+it: (efachnah1): Tätigkeit A 
 
-it: 2: Tätigkeit B 
+it: (efachnah2): Tätigkeit B 
 
-it: 3: Tätigkeit C 
+it: (efachnah3): Tätigkeit C 
 
 st:
 
@@ -3359,10 +3367,11 @@ vc5: SHOW q5 IF eaktsens=4 AND sformdua!=1
 
 vc6: SHOW q6 IF eaktsens=4 AND sformdua=1 
 
-vc7: SHOW it1 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4 
-vc8: SHOW it2 IF eaktsens=3 OR eaktsens=4 
-vc9: SHOW it3 IF eaktsens=4 
+vc7: SHOW it1 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
 
+vc8: SHOW it2 IF eaktsens=3 OR eaktsens=4 
+
+vc9: SHOW it3 IF eaktsens=4 
 
 av:
 
@@ -3424,10 +3433,10 @@ hv:
 fo:
 
 tr: GOTO A_49a IF sabsja=1 AND sabser=1
-    GOTO A_49b IF sabsja=1 AND sabser\>1
+    GOTO A_49b IF sabsja=1 AND sabser!=1
     GOTO A_45 IF sabsja=2
     GOTO A_49a IF sabsja=MISSING AND sabser=1
-    GOTO A_49b IF sabsja=MISSING AND sabser\>1
+    GOTO A_49b IF sabsja=MISSING AND sabser!=1
     
 hi:
 
@@ -3450,70 +3459,68 @@ q: Wann haben Sie diesen Abschluss erworben?
 
 is:
 
-it:
+it1: (sabszp): [Dropdown; infield = Monat; Januar - Februar - März - ... - Dezember]
+
+it2: (sabszp2): [Dropdown; infield = Jahr; 2019 - 2018 - 2017 - ... - 2009 und früher]
 
 st:
 
-ao: (sabszp): [Dropdown]
+ao: 
 
-ao0: 0: Monat
+ao0: (sabszp): 0: Monat
 
-ao1: 1: Januar
+ao1: (sabszp): 1: Januar
 
-ao2: 2: Februar
+ao2: (sabszp): 2: Februar
 
-ao3: 3: März
+ao3: (sabszp): 3: März
 
-ao4: 4: April
+ao4: (sabszp): 4: April
 
-ao5: 5: Mai
+ao5: (sabszp): 5: Mai
 
-ao6: 6: Juni
+ao6: (sabszp): 6: Juni
 
-ao7: 7: Juli
+ao7: (sabszp): 7: Juli
 
-ao8: 8: August
+ao8: (sabszp): 8: August
 
-ao9: 9: September
+ao9: (sabszp): 9: September
 
-ao10: 10: Oktober
+ao10: (sabszp): 10: Oktober
 
-ao11: 11: November
+ao11: (sabszp): 11: November
 
-ao12: 12: Dezember
+ao12: (sabszp): 12: Dezember
 
 
-ao: (sabszp2) [Dropdown] Jahr
+ao0: (sabszp2): 0: Jahr
 
-ao0: 0: Jahr
+ao1: (sabszp2): 1: 2019
 
-ao1: 1: 2019
+ao2: (sabszp2): 2: 2018
 
-ao2: 2: 2018
+ao3: (sabszp2): 3: 2017
 
-ao3: 3: 2017
+ao4: (sabszp2): 4: 2016
 
-ao4: 4: 2016
+ao5: (sabszp2): 5: 2015
 
-ao5: 5: 2015
+ao6: (sabszp2): 6: 2014
 
-ao6: 6: 2014
+ao7: (sabszp2): 7: 2013
 
-ao7: 7: 2013
+ao8: (sabszp2): 8: 2012
 
-ao8: 8: 2012
+ao9: (sabszp2): 9: 2011
 
-ao9: 9: 2011
+ao10: (sabszp2): 10: 2010
 
-ao10: 10: 2010
-
-ao11: 11: 2009 und früher
+ao11: (sabszp2): 11: 2009 und früher
 
 mv:
 
-ka1: (Dropdown Monat): Monat
-
-ka2: (Dropdown Jahr): Jahr
+ka:
 
 vc:
 
@@ -3668,11 +3675,11 @@ it:
 
 st:
 
-ao1: 1: offene Angabe: 3, Prefix: Abschlussnote (z. B. 2,5): [sabsernoto]
+ao1 (sabsernot): 1: Prefix: Abschlussnote (z. B. 2,5): [(sabsernoto); offene Angabe: 3 Zeichen mit einer Dezimalstelle]
 
-ao2: -11: Ich habe keine Note erhalten./In meinem vorigen Studium gab es keine Noten.
+ao2 (sabsernot): -11: Ich habe keine Note erhalten. / In meinem vorigen Studium gab es keine Noten.
 
-ao3: -12: weiß ich nicht
+ao3 (sabsernot): -12: weiß ich nicht
 
 mv:
 
@@ -4045,9 +4052,9 @@ ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind)
 
 mv:
 
-ka1: ao1 TO ao3: in einer Wohnung, einem Zimmer oder einem Haus
+ka1: (ao1 TO ao3): in einer Wohnung, einem Zimmer oder einem Haus
 
-ka2: ao4TO ao7: im Studierendenwohnheim
+ka2: (ao4 TO ao7): im Studierendenwohnheim
 
 vc: 
 
@@ -4090,19 +4097,19 @@ it:
 
 st: Ich wohne …
 
-ao1: 1: allein. [Exklusivkategorie]
+ao1: (wohnal): allein. [Exklusivkategorie]
 
-ao2: 2: mit Mitbewohner\*innen in einer Wohngemeinschaft.
+ao2: (wohnwg): mit Mitbewohner\*innen in einer Wohngemeinschaft.
 
-ao3: 3: bei meinen Eltern (bzw. einem Elternteil)
+ao3: (wohnel): bei meinen Eltern (bzw. einem Elternteil)
 
-ao4: 4: mit meinem/meiner (Ehe-) Partner\*in.
+ao4: (wohnpar): mit meinem/meiner (Ehe-) Partner\*in.
 
-ao5: 5: mit meinem Kind/meinen Kindern.
+ao5: (wohnkin): mit meinem Kind/meinen Kindern.
 
-ao6: 6: mit anderen Familienangehörigen.
+ao6: (wohnfam): mit anderen Familienangehörigen.
 
-ao7: 7: mit anderen Personen.
+ao7: (wohnsons): mit anderen Personen.
 
 mv:
 
