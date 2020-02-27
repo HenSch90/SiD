@@ -2705,7 +2705,7 @@ A_37a
 
 tc:
 
-vn: vsbplz; [vsbplzo]; vsbort
+vn: vsbplz; vsbort
 
 qt: offene Frage
 
@@ -2727,17 +2727,17 @@ mv:
 
 ka:
 
-vc: SHOW ao2 -> uid="softforce" visible="navigatorBean.isSame() or vsbort.value==''"
+vc:
 
 av: number, 5-stellig: 01000 TO 99999
 
 kh:
 
-fv: sf_ao: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an:
+fv: 
 
 hv:
 
-fo: Softreminder: Bitte den Text „[Textfeld; 12 Stellen]“ erst dann einblenden,
+fo: Softreminder: Bitte den Text „Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an:“ erst dann einblenden,
 wenn die PLZ nicht angegeben wurde.
 
 tr: GOTO A_41
@@ -2751,7 +2751,7 @@ A_37b
 
 tc:
 
-vn: vsbplz; [vsbplzo]; vsbort
+vn: vsbplzb; vsbortb
 
 qt: offene Frage
 
@@ -2767,9 +2767,9 @@ it:
 
 st:
 
-ao1: (vsbplz): 5, Präfix: Postleitzahl: [vsbplzo]
+ao1: (vsbplzb): Präfix: Postleitzahl: [(vsbplzo) offene Angabe, NUMBER, 5-stellig]
 
-ao2: (vsbort): 25, Präfix: ggf. Wohnort
+ao2: (vsbortb): : [offene Angabe, 25-stellig]
 
 mv:
 
@@ -2777,7 +2777,7 @@ ka:
 
 vc:
 
-av: number, 5-stellig: 00000 TO 99999
+av:
 
 kh:
 
@@ -2864,6 +2864,7 @@ hl:
 in:
 
 q: Wurden diese Bildungsabschlüsse bzw. Ihre bisherigen Studienleistungen in Deutschland anerkannt?
+
 is:
 
 it1: (ankbild1): Promotion
@@ -2939,7 +2940,7 @@ ao3: (intvors3): Nachweis englischer Sprachkenntnisse (z. B. Cambridge FCE, TOEF
 
 ao4: (intvors4): fachliche Eignungsprüfung (z. B. Kunst, Musik, Sport)
 
-ao5: (intvors5): Etwas anderes, und zwar: (intvors5o), 250 Zeichen
+ao5: (intvors5): Etwas anderes, und zwar: [(intvors5o), offene Angabe, 250 Zeichen]
 
 ao6: (intvors6): keine
 
