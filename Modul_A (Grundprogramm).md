@@ -2449,7 +2449,7 @@ mv:
 
 ka:
 
-vc: SHOW Einfachauswahl IF deltgebv=2
+vc:
 
 av:
 
@@ -2502,7 +2502,7 @@ mv:
 
 ka:
 
-vc: SHOW Einfachauswahl IF deltgebm=2
+vc:
 
 av:
 
@@ -2547,7 +2547,7 @@ mv:
 
 ka:
 
-vc: visible="(!zofar.isMissing(deltgkov) or zofar.asNumber(deltkov)!=0) and zofar.asNumber(deltgebv)==2"
+vc:  visible="(!zofar.isMissing(deltgkov) or zofar.asNumber(deltkov)!=0) and zofar.asNumber(deltgebv)==2"
 
 av:
 
@@ -2586,13 +2586,13 @@ it:
 
 st:
 
-ao1: 50: Prefix: Geburtsland des Vaters:
+ao1: Prefix: Geburtsland des Vaters: [offene Angabe, 50 Zeichen]
 
 mv:
 
 ka:
 
-vc: visible="(zofar.isMissing(deltgkov) or zofar.asNumber(deltgkov)==0) and zofar.asNumber(deltgebv)==2"
+vc:  visible="(zofar.isMissing(deltgkov) or zofar.asNumber(deltgkov)==0) and zofar.asNumber(deltgebv)==2"
 
 av:
 
@@ -2676,7 +2676,7 @@ it:
 
 st:
 
-ao1: 50: Prefix: Geburtsland der Mutter:
+ao1: Prefix: Geburtsland der Mutter:: [offene Angabe, 50 Zeichen]
 
 mv:
 
@@ -2719,9 +2719,9 @@ it:
 
 st:
 
-ao1: (vsbplz): 5 Zeichen, Präfix: Postleitzahl: [vsbplzo]
+ao1: (vsbplz): Präfix: Postleitzahl: [offene Angabe, NUMBER, 5-stellig]
 
-ao2: (vsbort): 25 Zeichen
+ao2: (vsbort): : [offene Angabe, 25-stellig]
 
 mv:
 
@@ -2733,7 +2733,7 @@ av: number, 5-stellig: 01000 TO 99999
 
 kh:
 
-fv: sf_ao: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: 25 Stellen
+fv: sf_ao: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an:
 
 hv:
 
