@@ -120,11 +120,11 @@ st:
 
 ao1: 1: gar nicht zufrieden
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: sehr zufrieden
 
@@ -307,7 +307,7 @@ tc:
 vn: ibedsfin; ibedfinbs; ibedfinwo; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedsuch; ibedvbew;
 ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln; ibebssu
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
@@ -367,18 +367,20 @@ ao4: 4:
 
 ao5: 5: in hohem Maße
 
-mv:
+mv: 
+ka1: (it1, it2, it3, it4, it5): finanzierungsbezogene Themen
 
-t1: (it1, it2, it3, it4, it5): finanzierungsbezogene Themen
+ka2: (it6, it7, it8, it9): persönliche Themen
 
-t2: (it6, it7, it8, it9): persönliche Themen
-
-t3: (it10, it11, it12, it13, it14, it15, it16, it17, it18, it19): studienbezogene Themen
+ka3: (it10, it11, it12, it13, it14, it15, it16, it17, it18, it19): studienbezogene Themen
 
 vc: 
 SHOW ibedfinbs IF h_gartcount >= 1
+
 SHOW ibedvbew IF eaktsens = 2,3,4
+
 SHOW ibedvbki IF dkinja = 2
+
 SHOW ibedvbhc AND ibebsln AND ibebssu IF h_gartcount >= 1
 
 av:
@@ -405,67 +407,58 @@ hi:
 E1_7
 ====
 
-tc:
+tc: ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
 
-vn: iinasfin; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinaaldr; iinavbew;
-iianvbki; iinavbhs; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs;
-iinabsln; iinabssu; iinabsth; iinabspa; iinabsbh, iinabsat, iinabsrb; iinano
+vn: iinasfin; iinafinbs; iinafinwo; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinasuch;
+iinavbew; iinavbki; iinavbhc; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs; innabsln; iinabssu
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
 in:
 
-q: Haben Sie zu den zuvor genannten Themen/Problembereichen in den letzten zwölf Monaten Beratung in Anspruch genommen?
+q: Haben Sie zu den zuvor genannten Themen in den letzten zwölf Monaten Beratung in Anspruch genommen?
 
 is:
 
 it1: (iinasfin): Finanzierung des Studiums
 
-it2: (iinakv): Krankenversicherung
+it2: (iinafinbs): Finanzierungsfragen im Zusammenhang mit meiner Beeinträchtigung 
 
-it3: (iinaafin): Finanzierung eines studienbezogenen Auslandsaufenthalts
+it3: (iinafinwo): Finanzierung der Wohnung 
 
-it4: (iinapart): Partnerschaftsprobleme
+it4: (iinakv): Krankenversicherung
 
-it5: (iinafamu): Probleme im familiären Umfeld
+it5: (iinaafin): Finanzierung eines studienbezogenen Auslandsaufenthalts
 
-it6: (iinadep): depressive Verstimmungen
+it6: (iinapart): Partnerschaftsprobleme
 
-it7: (iinaaldr): Probleme mit Alkohol oder anderen Drogen
+it7: (iinafamu): Probleme im familiären Umfeld
 
-it8: (iinavbew): Vereinbarkeit von Studium und Erwerbstätigkeit
+it8: (iinadep): depressive Verstimmungen
 
-it9: (iinavbki): Vereinbarkeit von Studium und Kind(ern)
+it9: (iinasuch): Suchtprobleme
 
-it10: (iinavbhc): Vereinbarkeit von Studium und Behinderung/chronischer
-Krankheit
+it10: (iinavbew): Vereinbarkeit von Studium und Erwerbstätigkeit
 
-it11: (iinallpran): Lern-/Leistungsprobleme, Prüfungsangst
+it11: (iinavbki): Vereinbarkeit von Studium und Kind
 
-it12: (iinaaoz): Arbeitsorganisation, Zeitmanagement
+it12: (iinavbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
 
-it13: (iinaabersw): Studienorganisation, Studienganggestaltung/-wechsel
+it13: (iinallpran): Lern-/Leistungsprobleme, Prüfungsangst
 
-it14: (iinaaorg): Organisation eines studienbezogenen Auslandsaufenthalts
+it14: (iinaaoz): Arbeitsorganisation, Zeitmanagement
 
-it15: (iinaabs): Studienabschlussprobleme
+it15: (iinaabersw): Studienorganisation, Studienganggestaltung/-wechsel
 
-it16: (innabsln): Nachteilsausgleiche bei Leistungsnachweisen
+it16: (iinaaorg): Organisation eines studienbezogenen Auslandsaufenthalts
 
-it17: (iinabssu): Umgang mit längeren beeinträchtigungsbedingten
-Studienunterbrechungen
+it17: (iinaabs): Studienabschlussprobleme
 
-it18: (iinabsth): Organisation und Nutzung von technischen Hilfsmitteln
+it18: (innabsln): Nachteilsausgleiche in Studium und Prüfungen
 
-it19: (iinabspa): Organisation und Nutzung von personellen Assistenten
-
-it20: (iinabsbh): Umgang mit baulichen Hürden, Raumverlegungen und Umbauten
-
-it21: (iinabsat): Aneignung bedarfsberechter Arbeitstechniken
-
-it22: (iinabsrb): Durchsetzung von Ansprüchen, Rechtsberatung
+it19: (iinabssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
 
 st:
 
@@ -479,57 +472,51 @@ ao4: 4: ja, innerhalb und außerhalb des Hochschulbereichs
 
 mv:
 
-ka1: (it1, it2, it3): finanzierungsbezogene Themen
+ka1: (it1, it2, it3, it4, it5): finanzierungsbezogene Themen
 
-ka2: (it4, it5, it6, it7): persönliche Themen
+ka2: (it6, it7, it8, it9): persönliche Themen
 
-ka3: (it8, it9, it10, it11, it12, it13, it14, it15): studienbezogene Themen
+ka3: (it10, it11, it12, it13, it14, it15, it16, it17, it18, it19): studienbezogene Themen
 
-ka4: (it16, it17, it18, it19, it20, it21, it22): beeinträchtigungsbezogene Themen
+vc: 
 
-vc: SHOW it1 IF ibedsfin > 1
+SHOW it1 IF ibedsfin > 1
 
-SHOW it2 IF ibedkv > 1
+SHOW it2 IF ibedfinbs > 1
 
-SHOW it3 IF ibedafin > 1
+SHOW it3 IF ibedfinwo > 1
 
-SHOW it4 IF ibedpart > 1
+SHOW it4 IF ibedkv > 1
 
-SHOW it5 IF ibedfamu > 1
+SHOW it5 IF ibedafin > 1
 
-SHOW it6 IF ibeddep > 1
+SHOW it6 IF ibedpart > 1
 
-SHOW it7 IF ibedaldr > 1
+SHOW it7 IF ibedfamu > 1
 
-SHOW it8 IF ibedvbew > 1
+SHOW it8 IF ibeddep > 1
 
-SHOW it9 IF ibedvbki > 1
+SHOW it9 IF ibedsuch > 1
 
-SHOW it10 IF ibedvbhc > 1
+SHOW it10 IF ibedvbew > 1
 
-SHOW it11 IF ibedllpran > 1
+SHOW it11 IF ibedvbki > 1
 
-SHOW it12 IF ibedaoz > 1
+SHOW it12 IF ibedvbhc > 1
 
-SHOW it13 IF ibedabersw > 1
+SHOW it13 IF ibedllpran > 1
 
-SHOW it14 IF ibedaorg > 1
+SHOW it14 IF ibedaoz > 1
 
-SHOW it15 IF ibedabs > 1
+SHOW it15 IF ibedabersw > 1
 
-SHOW it16 IF ibebsln > 1
+SHOW it16 IF ibedaorg > 1
 
-SHOW it17 IF ibebssu > 1
+SHOW it17 IF ibedabs > 1
 
-SHOW it18 IF ibebsth > 1
+SHOW it18 IF ibebsln > 1
 
-SHOW it19 IF ibebspa > 1
-
-SHOW it20 IF ibebsbh > 1
-
-SHOW it21 IF ibebsat > 1
-
-SHOW it22 IF ibebsrb > 1
+SHOW it19 IF ibebssu > 1
 
 av:
 
@@ -543,7 +530,10 @@ fo:
 
 tr: GOTO E1_8
 
-hi:
+hi: Bitte Systemvariable "iinano" mit den folgenden Werten anlegen:
+iinano=0, wenn mind. 1 Item auf E1_7 > 1 ist und
+iinano=1, wenn alle **angezeigten** Items auf E1_7=0
+
 
 \--------------------------------
 
@@ -552,40 +542,37 @@ E1_8
 
 tc: IF iinano = 1
 
-vn: ihinzeit; ihingel; ihinkan; ihinpre; ihinfreu; ihinhil; ihinhem; ihinnac;
-ihinand
+vn: ihinzeit; ihinaufw; ihingel; ihinkan; ihinpre; ihinfreu; ihinhil; ihinhem; ihinnac; ihinand
 
-qt: Mehrfachauswahl mit vertikalen ao (Mehrfachnennung)
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
-q: Warum haben Sie kein Beratungsangebot genutzt?
+q: Warum haben Sie kein Beratungsangebot in Anspruch genommen?
 
-in:Ich habe kein Beratungsangebot in Anspruch genommen, ...
+in: Ich habe kein Beratungsangebot in Anspruch genommen, weil…
 
-is: Bitte alles Zutreffende auswählen
+is: Bitte alles Zutreffende auswählen.
 
-it1: (ihinzeit): ... weil ich keine Zeit dafür hatte/der Aufwand zu groß
-erschien.
+it1: (ihinzeit): ... ich keine Zeit dafür hatte.
 
-it2: (ihingel): ... weil sich das Problem von allein gelöst hat.
+it2: (ihinaufw): ...der Aufwand zu groß erschien.
 
-it3: (ihinkan): ... weil ich kein passendes Angebot gefunden habe.
+it3: (ihingel): ... sich das Problem von allein gelöst hat.
 
-it4: (ihinpre): ... weil ich mein Problem/meine Schwierigkeit nicht preisgeben
-wollte.
+it4: (ihinkan): ... ich kein passendes Angebot gefunden habe.
 
-it5: (ihinfreu): ... weil ich im privaten Umfeld Hilfe/Unterstützung gefunden
-habe.
+it5: (ihinpre): ... ich mein Problem nicht preisgeben wollte.
 
-it6: (ihinhil): ...weil ich nicht wusste, wen ich um Beratung hätte bitten
-können.
+it6: (ihinfreu): ... ich im privaten Umfeld Unterstützung gefunden habe.
 
-it7: (ihinhem): ...weil ich Hemmungen hatte, Hilfe in Anspruch zu nehmen.
+it7: (ihinhil): ...ich nicht wusste, wen ich um Beratung hätte bitten können.
 
-it8: (ihinnac): ... weil ich dadurch Nachteile im weiteren Studium befürchtete.
+it8: (ihinhem): ...ich Hemmungen hatte, Hilfe in Anspruch zu nehmen.
 
-it9: (ihinand): ... aus anderen Gründen.
+it9: (ihinnac): ... ich dadurch Nachteile im weiteren Studium befürchtete.
+
+it10: (ihinand): ... aus anderen Gründen.
 
 st: 
 
@@ -607,158 +594,10 @@ hv:
 
 fo:
 
-tr: GOTO E1_9
-
-hi:
-
-\--------------------------------
-
-E1_9
-====
-
-tc:
-
-vn: uekastei; uekastte; uekasfrsp; uekasosk; uekauefa; uekabeei; uekabekr
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Unabhängig von Ihren fachlichen Lehrveranstaltungen, welche zusätzlichen
-Kurse werden an Ihrer Hochschule angeboten und welche haben Sie genutzt?
-
-is:
-
-it1: (uekastei): Kurse zum Studieneinstieg (z. B. “Brückenkurse zur Aufarbeitung
-von Wissenslücken)
-
-it2: (uekastte): Kurse zur Schulung von Studien- und Lerntechniken (z. B.
-Schreibwerkstatt, Präsentationstraining)
-
-it3: (uekafrsp): (Fremd-)Sprachenkurse
-
-it4: (uekasosk): Kurse zur Schulung von “soft skills” (z. B. Rhetorik, soziale
-Kompetenzen)
-
-it5: (uekauefa): Kurse zum Erwerb überfachlicher Zusatzqualifikationen (z. B.
-Projekt-, Wissensmanagement, spezielle EDV-Software)
-
-it6: (uekabeei): Kurse zum Berufseinstieg (z. B. Bewerbungsstrategien,
-Assessment Center-Training, Karrieremessen)
-
-it7: (uekabekr): Kurse zum Umgang mit der eigenen Beeinträchtigung/chronischen
-Krankheit
-
-st:
-
-ao1: 1: nicht angeboten
-
-ao2: 2: angeboten, aber nicht genutzt
-
-ao3: 3: angeboten und genutzt
-
-ao4: -12: weiß ich nicht
-
-mv:
-
-ka:
-
-vc: SHOW uekabekr IF gartmob==1 OR gartseh==1 OR gartohr==1 OR gartspr==1 OR gartpsy==1 OR gartsom==1 OR garttls==1 OR gartson==1 OR gartka==1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO E1_10 IF uekastei==3 OR uekastte==3 OR uekasfrsp==3 OR uekasosk==3 OR uekauefa==3 OR uekabeei==3 OR uekabekr==3 
-
-ELSE GOTO E1_11
-
-hi:
-
-\--------------------------------
-
-E1_10
-=====
-
-tc: IF uekastei==3 OR uekastte==3 OR uekasfrsp==3 OR uekasosk==3 OR uekauefa==3 OR uekabeei==3 OR uekabekr==3
-
-vn: zuekastei; zuekastte; zuekafrsp; zuekasosk; zuekauefa; zuekabeei; zuekabekr
-
-qt:
-
-hl:
-
-in:
-
-q: Wie zufrieden sind/waren Sie mit den von Ihnen genutzten Kursangeboten?
-
-is:
-
-it1: (zuekastei): Kurse zum Studieneinstieg (z. B. “Brückenkurse zur Aufarbeitung von Wissenslücken)
-
-it2: (zuekastte): Kurse zur Schulung von Studien- und Lerntechniken (z. B. Schreibwerkstatt, Präsentationstraining)
-
-it3: (zuekafrsp): (Fremd-)Sprachenkurse
-
-it4: (zuekasosk): Kurse zur Schulung von “soft skills” (z. B. Rhetorik, soziale Kompetenzen)
-
-it5: (zuekauefa): Kurse zum Erwerb überfachlicher Zusatzqualifikationen (z. B. Projekt-, Wissensmanagement, spezielle EDV-Software)
-
-it6: (zuekabeei): Kurse zum Berufseinstieg (z. B. Bewerbungsstrategien, Assessment Center-Training, Karrieremessen)
-
-it7: (zuekabekr): Kurse zum Umgang mit der eigenen Beeinträchtigung/chronischen Krankheit
-
-st:
-
-ao1: 1: überhaupt nicht zufrieden
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4
-
-ao5: 5: sehr zufrieden
-
-mv:
-
-ka:
-
-vc1: SHOW zuekastei IF uekastei == 3
-
-vc2: SHOW zuekastte IF uekastte == 3
-
-vc3: SHOW zuekafrsp IF uekafrsp == 3
-
-vc4: SHOW zuekasosk IF uekasosk == 3
-
-vc5: SHOW zuekauefa IF uekauefa == 3
-
-vc6: SHOW zuekabeei IF uekabeei == 3
-
-vc7: SHOW zuekabekr IF uekabekr == 3
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
 tr: GOTO E1_11
 
 hi:
+
 
 \--------------------------------
 
@@ -781,7 +620,7 @@ is:
 
 it1: (infoauvo): außercurriculare Vortragsreihen (z. B. Studium generale)
 
-it2: (Infofopr): Forschungsschwerpunkte Ihrer Professor\*innen
+it2: (Infofopr): Forschungsschwerpunkte Ihrer Professor*innen
 
 it3: (infohosp): Programm des Hochschulsports
 
@@ -795,17 +634,17 @@ st:
 
 ao1: 1: gar nicht informiert
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: sehr gut informiert
 
-ao6: -12: interessiert mich nicht (Extrakategorie)
+ao6: -12: interessiert mich nicht
 
-mv:
+mv: ao6
 
 ka:
 
@@ -825,6 +664,6 @@ tr:
 
 GOTO A_56
 
-hi:
+hi: Bitte ao6 bzw. mv optisch vom Rest der Antwortskala absetzen. 
 
 \--------------------------------
