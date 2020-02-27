@@ -1,6 +1,6 @@
 \------------------------------------------------------------
 
-KSM-pol01 (E3_1)
+KSM-pol01 
 =========
 
 tc:
@@ -54,7 +54,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol02 (E3_2)
+KSM-pol02 
 =========
 
 tc:
@@ -85,9 +85,9 @@ ao4: 4:
 
 ao5: 5: voll und ganz zufrieden
 
-ao6: 6: weiß nicht
+ao6: -12: weiß nicht
 
-mv: ao6
+mv: 
 
 ka:
 
@@ -109,12 +109,12 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol03 (E3_3)
+KSM-pol03 
 =========
 
 tc:
 
-vn: rechtspop1; rechtspop2; rechtspop3; rechtspop4; rechtspop5; rechtspop6; rechtspop7; rechtspop8; rechtspop9; rechtspop10
+vn: rechtspop1; rechtspop2; rechtspop3; rechtspop4; rechtspop5; rechtspop6; rechtspop7; rechtspop8; rechtspop9
 
 qt: Einfachauswahlmatrix
 
@@ -126,25 +126,23 @@ q: Inwiefern stimmen Sie den folgenden Aussagen zu?
 
 is:
 
-it1: (rechtspop1): Die Auseinandersetzungen zwischen verschiedenen Interessengruppen schaden dem Allgemeinwohl.
+it1: (rechtspop1): Politische Vorgänge sind so kompliziert, dass ich mir nur schwer ein Urteil bilden kann.
 
-it2: (rechtspop2): Bürger\*innen sollten das Recht zu Streiks und Demonstrationen verlieren, wenn sie damit die öffentliche Ordnung gefährden.
+it2: (rechtspop2): Wichtige Fragen sollten nicht von Parlamenten, sondern in Volksabstimmungen entschieden werden.
 
-it3: (rechtspop3): Die Parteien wollen nur die Stimmen der Wähler\*innen, ihre Ansichten interessieren sie nicht.
+it3: (rechtspop3): Bürger\*innen sollten das Recht zu Streiks und Demonstrationen verlieren, wenn sie damit die öffentliche Ordnung gefährden.
 
-it4: (rechtspop4): Wichtige Fragen sollten nicht von Parlamenten, sondern in Volksabstimmungen entschieden werden.
+it4: (rechtspop4): Die Parteien wollen nur die Stimmen der Wähler\*innen, ihre Ansichten interessieren sie nicht.
 
-it5: (rechtspop5): Politische Kompromisse sind nichts anderes als ein Verrat der eigenen Prinzipien.
+it5: (rechtspop5): Die Auseinandersetzungen zwischen verschiedenen Interessengruppen schaden dem Allgemeinwohl.
 
-it6: (rechtspop6): Die Politik ist nur zur Lösung kurzfristiger Probleme in der Lage.
+it6: (rechtspop6): Politische Kompromisse sind nichts anderes als ein Verrat der eigenen Prinzipien.
 
-it7: (rechtspop7): Die Medien (Tageszeitungen, TV-Nachrichten) manipulieren die öffentliche Meinung.
+it7: (rechtspop7): Die Politik ist sehr gut in der Lage, auch langfristige Probleme zu lösen. 
 
-it8: (rechtspop8): Die Parteien sind die Handlanger\*innen des Lobbyismus.
+it8: (rechtspop8): Die Medien (Tageszeitungen, TV-Nachrichten) manipulieren die öffentliche Meinung.
 
 it9: (rechtspop9): Gleichgültigkeit gegenüber Politik ist verantwortungslos.
-
-it10: (rechtspop10): Politische Vorgänge sind so kompliziert, dass ich mir nur schwer ein Urteil bilden kann.
 
 st:
 
@@ -158,9 +156,9 @@ ao4: 4:
 
 ao5: 5: stimme voll und ganz zu
 
-ao6: 6: kann ich nicht beurteilen
+ao6: -12: kann ich nicht beurteilen
 
-mv: ao6
+mv: 
 
 ka:
 
@@ -182,12 +180,12 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol04 (E3_4)
+KSM-pol04 
 =========
 
 tc:
 
-vn: polziel1; polziel2; polziel3; polziel4; polziel5; polziel6; polziel7; polziel8; polziel9; polziel10; polziel1; polziel12; polziel13; polziel14; polziel15
+vn: polziel1; polziel2; polziel3; polziel4; polziel5; polziel6; polziel7; polziel8; polziel9; polziel10; polziel1; polziel12; polziel13
 
 qt: Einfachauswahlmatrix
 
@@ -199,35 +197,31 @@ q: Wie stehen Sie zu den angeführten politischen Zielen: Welche unterstützen S
 
 is:
 
-it1: (polziel1): harte Bestrafung der Kriminalität
+it1: (polziel1): verstärkte Förderung technologischer Entwicklung
 
-it2: (polziel2): verstärkte Förderung technologischer Entwicklung
+it2: (polziel2): Begrenzung der Zuwanderung von Ausländer\*innen
 
-it3: (polziel3): Begrenzung der Zuwanderung von Ausländer\*innen
+it3: (polziel3): Sicherung der freien Marktwirtschaft und des privaten Unternehmertums
 
-it4: (polziel4): Sicherung der freien Marktwirtschaft und des privaten Unternehmertums
+it4: (polziel4): harte Bestrafung der Kriminalität
 
-it5: (polziel5): Abschaffung des Privateigentums an Industrieunternehmen und Banken
+it5: (polziel5): Priorität des Umweltschutzes vor wirtschaftlichem Wachstum
 
-it6: (polziel6): Priorität des Umweltschutzes vor wirtschaftlichem Wachstum
+it6: (polziel6): Stärkung des politischen und wirtschaftlichen Zusammenhalts innerhalb Europas
 
-it7: (polziel7): Vollendung der politischen und wirtschaftlichen Integration Europas
+it7: (polziel7): Reduzierung des Wohlfahrtstaates und der sozialen Sicherungssysteme
 
-it8: (polziel8): stärkere finanzielle und personelle Unterstützung der Entwicklungsländer
+it8: (polziel8): Bewahrung der traditionellen Familie 
 
-it9: (polziel9): Abwehr von kultureller Überfremdung
+it9: (polziel9): Gleichstellung sexueller Orientierungen (LGBTQIA+)
 
-it10: (polziel10): Reduzierung des Wohlfahrtstaates und der sozialen Sicherungssysteme
+it10: (polziel10): Einführung eines bedingungslosen Grundeinkommens
 
-it11: (polziel11): Bewahrung der Familie in ihrer herkömmlichen Form
+it11: (polziel11): höhere Steuern für Reiche
 
-it12: (polziel12): Gleichstellung sexueller Minderheiten
+it12: (polziel12): Durchsetzung von Frauenquoten in Führungspositionen
 
-it13: (polziel13): Einführung eines bedingungslosen Grundeinkommens
-
-it14: (polziel14): höhere Steuern für Reiche
-
-it15: (polziel15): Durchsetzung von Frauenquoten in Führungspositionen
+it13: (polziel13): gemeinsamer Unterricht von behinderten und nicht behinderten Kindern an Schulen
 
 st:
 
@@ -241,9 +235,9 @@ ao4: 4:
 
 ao5: 5: stimme völlig zu
 
-ao6: 6: kann ich nicht beurteilen
+ao6: -12: kann ich nicht beurteilen
 
-mv: ao6
+mv: 
 
 ka:
 
@@ -265,12 +259,12 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol05 (E3_5)
+KSM-pol05 
 =========
 
 tc:
 
-vn: hochschulpol1; hochschulpol2; hochschulpol3; hochschulpol4; hochschulpol5; hochschulpol6
+vn: hochschulpol1; hochschulpol2; hochschulpol3; hochschulpol4; hochschulpol5
 
 qt: Einfachauswahlmatrix
 
@@ -282,7 +276,7 @@ q: Im Folgenden geht es um hochschulpolitische Themen. Wie stehen Sie zu folgend
 
 is:
 
-it1: (hochschulpol1): Professor\*innen sind nur an Forschung interessiert, nicht an der Lehre.
+it1: (hochschulpol1): Studierende haben an den Hochschulen zu wenig Mitbestimmungsrechte.
 
 it2: (hochschulpol2): Hochschulen beziehen zu wenig Stellung zu gesellschaftlich relevanten Themen.
 
@@ -290,9 +284,7 @@ it3: (hochschulpol3): Das Prüfungssystem führt nur zu einem kurzfristigen stat
 
 it4: (hochschulpol4): Zu wenige Studierende haben Anspruch auf BAföG.
 
-it5: (hochschulpol5): Studierende profitieren nicht durch die Exzellenzstrategie (Eliteuniversitäten).
-
-it6: (hochschulpol6): Studierende haben an den Hochschulen zu wenig Mitbestimmungsrechte.
+it5: (hochschulpol5): Professor\*innen sind nur an Forschung interessiert, nicht an der Lehre.
 
 st:
 
@@ -306,9 +298,9 @@ ao4: 4:
 
 ao5: 5: stimme voll und ganz zu
 
-ao6: 6: kann ich nicht beurteilen
+ao6: -12: kann ich nicht beurteilen
 
-mv: ao6 
+mv:  
 
 ka:
 
@@ -331,7 +323,7 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol06 (E3_6)
+KSM-pol06 
 =========
 
 tc:
@@ -344,7 +336,7 @@ hl:
 
 in:
 
-q: An welchen Formen der Kritik würden Sie teilnehmen, um auf hochschulpolitische Probleme aufmerksam zu machen?
+q: Welche Formen der Kritik würden Sie nutzen, um auf hochschulpolitische Probleme aufmerksam zu machen?
 
 is:
 
@@ -364,7 +356,7 @@ it: (teilnpeti): Petitionen, Unterschriftenaktionen
 
 st:
 
-ao1: 1: würde sicher nicht teilnehmen
+ao1: 1: würde ich sicher nicht nutzen
 
 ao2: 2:
 
@@ -372,7 +364,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: würde ganz sicher teilnehmen
+ao5: 5: würde ich ganz sicher nutzen
 
 mv:
 
@@ -397,12 +389,12 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-pol07 (E3_7)
+KSM-pol07 
 =========
 
 tc:
 
-vn: beteil1; beteil2; beteil3; beteil4; beteil5; beteil6; beteil7; beteil8; beteil9
+vn: beteil1; beteil2; beteil3; beteil4; beteil5; beteil6; beteil7; beteil8; beteil9; beteil10
 
 qt: Mehrfachauswahl
 
@@ -412,7 +404,7 @@ in:
 
 q: An welcher der folgenden Tätigkeiten in Gruppen oder Organisationen sind Sie selbst beteiligt?
 
-is: Mehrfachantworten sind möglich
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -422,17 +414,20 @@ ao2: (beteil2): Mitarbeit in politischen Parteien
 
 ao3: (beteil3): Beteiligung an Umwelt-, Natur-, Tierschutzorganisationen
 
-ao4: (beteil4): Mitarbeit im sozialen Bereich (Jugendarbeit, Hilfen, Wohlfahrt)
+ao4: (beteil4): Mitarbeit im sozialen Bereich (z.B. Jugendarbeit, Hilfen, Wohlfahrt)
 
 ao5: (beteil5): Trainer\ \*in / Übungsleiter\ \*in im Sportverein
 
-ao6: (beteil6): Mitarbeit in Friedens-, Menschenrechts-, Asylgruppen
+ao6: (beteil6): Studierendenvertretungen
 
-ao7: (beteil7): Studierendenvertretungen
+ao7: (beteil7): Engagement in anderen politischen Gruppierungen
 
-ao8: (beteil8): Student\ \*innenverbindungen
+ao8: (beteil8): Mitarbeit in Selbsthilfegruppen
 
-ao9: (beteil9): Engagement in anderen politischen oder sozialen Gruppierungen
+ao9: (beteil9): Studentenverbindungen
+
+ao10: (beteil10): nichts davon
+
 
 st:
 
