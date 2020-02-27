@@ -153,11 +153,9 @@ qt: Einfachauswahl
 
 hl:
 
-in:
+in: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
 
-q: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
-
-!!Wo haben Sie erstmals Ihre Hochschulreife erworben?!!
+q: Wo haben Sie erstmals Ihre Hochschulreife erworben?
 
 is:
 
@@ -389,7 +387,7 @@ it:
 
 st:
 
-ao (dnatsta): [infield = Staatsangehörigkeit; Staatenliste_DBI] (Dropdown)
+ao: (dnatsta): [infield = Staatsangehörigkeit; Staatenliste_DBI] (Dropdown)
 
 mv:
 
@@ -442,7 +440,7 @@ it:
 
 st:
 
-ao (dnatstao): [offene Angabe; 60 Zeichen]
+ao: (dnatstao): [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -589,7 +587,7 @@ it:
 
 st:
 
-ao (dgebsta): [infield = Geburtsland; Staatenliste_DBI] (Dropdown)
+ao: (dgebsta): [infield = Geburtsland; Staatenliste_DBI] (Dropdown)
 
 mv:
 
@@ -634,7 +632,7 @@ it:
 
 st:
 
-ao (dgebstao): [offene Angabe; 60 Zeichen]
+ao: (dgebstao): [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -801,7 +799,7 @@ q: Was waren die Gründe dafür, dass Sie oder Ihre Familie...
 
 is:
 
-it1 (intgrundhl): Präfix: ... Ihr Herkunftsland verlassen haben? [offene Angabe; 250 Zeichen]
+it1: (intgrundhl): Präfix: ... Ihr Herkunftsland verlassen haben? [offene Angabe; 250 Zeichen]
 
 it2: (intgrunddl): Präfix: ... nach Deutschland gezogen sind? [offene Angabe; 250 Zeichen]
 
@@ -897,7 +895,7 @@ it:
 
 st:
 
-ao:  Postfix: Jahre [offene Angabe; NUMBER 2-stellig]
+ao: Postfix: Jahre [offene Angabe; NUMBER 2-stellig]
 
 mv:
 
@@ -905,7 +903,7 @@ ka:
 
 vc:
 
-av: number: zweistellig: 16 TO 99
+av: NUMBER: 2-stellig: 16 TO 99
 
 kh: Bitte geben Sie Ihr Lebensalter an (16 bis 99).
 
@@ -917,7 +915,7 @@ fo:
 
 tr: GOTO A_11
 
-hi: Bitte als 2-stellige NUMBER programmieren.
+hi: Bitte als 2-stellige NUMBER, 16 bis 99, programmieren.
 
 \------------------------------------------------------------
 
@@ -926,9 +924,9 @@ A_11
 
 tc:
 
-vn: demofam
+vn: demofam (demofamsin; demofampar; demofamehe; demofamaus; demofamtod; demofamka)
 
-qt: Einfachauswahl
+qt: Mehrfachauswahl
 
 hl:
 
@@ -936,21 +934,25 @@ in:
 
 q: Welchen Familienstand haben Sie?
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1: 1: nicht verheiratet, ohne feste Partnerbeziehung
+ao1: (demofamsin): ohne feste(n) Partner\*in
 
-ao2: 2: nicht verheiratet, mit fester Partnerbeziehung
+ao2: (demofampar): mit einer/einem festen Partner\*in
 
-ao3: 3: verheiratet/eingetragene Lebenspartnerschaft
+ao3: (demofamehe): verheiratet/eingetragene Lebenspartnerschaft
 
-ao4: -13: keine Angabe
+ao4: (demofamaus): geschieden
+	
+ao5: (demofamtod): verwitwet
 
-mv: ao4
+ao6: (demofamka): keine Angabe [Exklusivkategorie]
+
+mv:
 
 ka:
 
@@ -964,7 +966,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao6 bitte als Exklusivkategorie etwas absetzen.
 
 tr: GOTO A_12
 
@@ -1026,9 +1028,9 @@ A_13
 
 tc:
 
-vn: pflegang; pflegango
+vn: pflegeang (pflegangno; pflegang1; pflegang2)
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1036,19 +1038,21 @@ in:
 
 q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
 
-is:
+is: Nicht gemeint ist die Betreuung der eigenen Kinder.
 
 it:
 
 st:
 
-ao1: 1: nein
+ao1: (pflegangno): nein [Exklusivkategorie]
 
-ao2: 2: Präfix: ja, und zwar: [pflegango] Postfix: Personen
+ao2: (pflegang1): aus der Familie
+
+ao3: (pflegang2): aus dem Freundes- und Bekanntenkreis
 
 mv:
 
-ka:
+ka: (ao2 TO ao3): ja, und zwar:
 
 vc:
 
@@ -1060,11 +1064,11 @@ fv:
 
 hv:
 
-fo:
+fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
 
 tr:
 
-GOTO A_14 IF pflegang=2
+GOTO A_14 IF pflegang1=1 OR pflegang2=1 
 ELSE A_15
 
 hi:
@@ -1074,11 +1078,11 @@ hi:
 A_14
 ==
 
-tc:
+tc: IF pflegang1=1 OR pflegang2=1
 
 vn: pflegt (pflegt1; pflegt2; pflegt3; pflegt4; pflegt5; pflegt5o)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao, offene Angabe
 
 hl:
 
@@ -1088,21 +1092,23 @@ q: Wenn Sie an eine typische Woche denken: Wie häufig führen Sie folgende Pfle
 
 is:
 
-it1: (pflegt1): Besorgungen und Erledigungen außer Haus
+it1: (pflegt1): Besorgungen und Erledigungen außer Haus, z. B. Behördengänge
 
 it2: (pflegt2): Haushaltsführung, Versorgung mit Mahlzeiten und Getränken
 
-it3: (pflegt3): einfachere Pflegetätigkeiten, z.B. Hilfe beim An- und Auskleiden,
+it3: (pflegt3): einfachere Pflegetätigkeiten, z. B. Hilfe beim An- und Auskleiden,
 Waschen, Kämmen und Rasieren
 
-it4: (pflegt4): schwierigere Pflegetätigkeiten, z.B. Hilfe beim Umbetten,
-Stuhlgang usw.
+it4: (pflegt4): schwierigere Pflegetätigkeiten, z. B. Hilfe beim Umbetten,
+Stuhlgang
 
-it5: (pflegt4): Etwas anderes und zwar: [pflegt5o]
+it5: (pflegt4): Etwas anderes, und zwar: [(pflegt5o); 80 Zeichen] (offene Angabe)
 
 st:
 
-ao1: 1: überhaupt nicht
+ao0: 0: nie
+
+ao1: 1: sehr selten
 
 ao2: 2:
 
@@ -1126,7 +1132,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte die Spalte "nie" etwas von der Skala "sehr selten" bis "sehr häufig" absetzen.
 
 tr: GOTO A_15
 
@@ -1146,7 +1152,6 @@ qt: Mehrfachauswahl
 hl:
 
 in: Im Folgenden stellen wir Ihnen einige kurze Fragen zu möglichen Beeinträchtigungen. Wie für alle Fragen gilt: Die Beantwortung dieser Fragen ist selbstverständlich freiwillig und wir sichern Ihnen Anonymität und den Schutz Ihrer Daten zu.
-(Leerzeile)
 
 q: Haben Sie eine oder mehrere der nachfolgend aufgeführten gesundheitlichen Beeinträchtigungen?
 
@@ -1156,29 +1161,29 @@ it:
 
 st:
 
-ao1: (gbeges): 1: nein (Exklusivkategorie)
+ao1: (gbeges): 1: keine [Exklusivkategorie]
 
 ao2: (gartmob): 2: Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
 
-ao3: (gartseh): 3: Sehbeeinträchtigung/Blindheit
+ao3: (gartseh): 3: Blindheit/Sehbeeinträchtigung
 
-ao4: (gartohr): 4: Hörbeeinträchtigung/Gehörlosigkeit
+ao4: (gartohr): 4: Gehörlosigkeit/Hörbeeinträchtigung
 
 ao5: (gartspr): 5: Sprechbeeinträchtigung (z. B. Stottern)
 
 ao6: (gartpsy): 6: psychische Erkrankung (z. B. Depression, Essstörung)
 
-ao7: (gartsom): 7: länger dauernde Krankheit/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
+ao7: (gartsom): 7: körperlich länger dauernde/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
 
 ao8: (garttls): 8: Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-ao9: (gartson): 9: andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) [gartsono], 50 Zeichen
+ao9: (gartson): 9: andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) [gartsono], 50 Zeichen
 
 ao10: (gartka): 10: Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
 mv:
 
-ka: ka1 (ao2 TO ao10): ja, und zwar:
+ka: (ao2 TO ao10): Ja, und zwar:
 
 vc:
 
@@ -1190,7 +1195,11 @@ fv:
 
 hv: 
 
-fo:
+fo1: Bitte lediglich die Frage ("Haben Sie eine oder mehrere der nachfolgend aufgeführten gesundheitlichen Beeinträchtigungen?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
+
+fo2: Bitte über ao2 "Ja, und zwar:" positionieren.
+
+fo3: ao10 bitte etwas absetzen.
 
 tr: GOTO A_16 if gbeges=1
     GOTO C2_1 if gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
