@@ -62,7 +62,7 @@ it:
 
 st:
 
-ao1: (sidpretest_consent): Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden. Meine Teilnahme an der Befragung ist freiwillig. Diese Einwilligung bezieht sich ausdrücklich auch auf die Angaben zur gesundheitlichen Beeinträchtigung.
+ao: (sidpretest_consent): Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden. Meine Teilnahme an der Befragung ist freiwillig. Diese Einwilligung bezieht sich ausdrücklich auch auf die Angaben zur gesundheitlichen Beeinträchtigung.
 
 mv:
 
@@ -79,7 +79,7 @@ kh1: Bitte beachten Sie, dass ohne Zustimmung zu den Datenschutzbestimmungen ein
 fv:
 
 hv:
-mastersplit = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
+mastersplit= 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
 
 zusatzsplit = 1, 2, 3, 4 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
 
@@ -590,23 +590,23 @@ it:
 
 st:
 
-ao1: (baufgrueuba): 1: Bürger\*in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
+ao1: (baufgrueuba): Bürger\*in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
 
-ao2: (baufgrustuba): 2: Studierende\*r (auch zur Studienvorbereitung)
+ao2: (baufgrustuba): Studierende\*r (auch zur Studienvorbereitung)
 
-ao3: (baufgruerwerb): 3: Erwerbstätige\*r (Arbeitsvisum)
+ao3: (baufgruerwerb): Erwerbstätige\*r (Arbeitsvisum)
 
-ao4: (baufgrutouba): 4: Tourist\*in (Besuchsvisum)
+ao4: (baufgrutouba): Tourist\*in (Besuchsvisum)
 
-ao5: (baufgruasylba): 5: Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
+ao5: (baufgruasylba): Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
 
-ao6: (baufgrufaman): 6: Familienangehörige\*r, kam mit Eltern bzw. Ehepartner\*in
+ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. Ehepartner\*in
 
-ao6: (baufgrufamba): 7: Familiennachzug, zog zu bereits in Deutschland lebender Familie
+ao6: (baufgrufamba): Familiennachzug, zog zu bereits in Deutschland lebender Familie
 
-ao6: (baufgruausba): 8: (Spät-)Aussiedler\*in
+ao6: (baufgruausba): (Spät-)Aussiedler\*in
 
-ao7: (baufgruandba): 7: Anderer Status, und zwar: (baufgruandba_open) [offene Eingabe, 80 Zeichen]
+ao7: (baufgruandba): Anderer Status, und zwar: [(baufgruandba_open); offene Angabe, 80 Zeichen]
 
 ato:
 
@@ -690,7 +690,6 @@ tr: GOTO A_8b IF (baufgrufaman=1 OR baufgrufamba=1)
 
 hi:
 
-
 \------------------------------------------------------------
 
 A_8b
@@ -733,7 +732,6 @@ fo: Die beiden Items bitte linksbündig untereinander setzen.
 tr: GO TO A_9b
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -781,7 +779,6 @@ fo: ao4 bitte etwas absetzen.
 tr: GOTO A_10
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -837,7 +834,7 @@ tc:
 
 vn: demofam (demofamsin; demofampar; demofamehe; demofamaus; demofamtod; demofamka)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -941,7 +938,7 @@ tc:
 
 vn: pflegeang (pflegangno; pflegang1; pflegang2)
 
-qt: Mehrfachauswahl mit vertikalen ao
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -963,7 +960,7 @@ ao3: (pflegang2): aus dem Freundes- und Bekanntenkreis
 
 mv:
 
-ka: (ao2 TO ao3): ja, und zwar:
+ka: (ao2 TO ao3): Ja, und zwar:
 
 vc:
 
@@ -975,7 +972,7 @@ fv:
 
 hv:
 
-fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
+fo: "Ja, und zwar:" über ao2 linksbündig positionieren.
 
 tr:
 
@@ -993,7 +990,7 @@ tc: IF pflegang1=1 OR pflegang2=1
 
 vn: pflegt (pflegt1; pflegt2; pflegt3; pflegt4; pflegt5; pflegt5o)
 
-qt: Einfachauswahlmatrix mit horizontalen ao, offene Angabe
+qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
 
 hl:
 
@@ -1058,7 +1055,7 @@ tc:
 
 vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartka; h_gartcount
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1108,7 +1105,7 @@ hv:
 
 fo1: Bitte lediglich die Frage ("Haben Sie eine oder mehrere der nachfolgend aufgeführten gesundheitlichen Beeinträchtigungen?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
 
-fo2: Bitte über ao2 "Ja, und zwar:" positionieren.
+fo2: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 fo3: ao10 bitte etwas absetzen.
 
@@ -1174,7 +1171,7 @@ tc:
 
 vn: ssemfs
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
@@ -1219,7 +1216,7 @@ tc:
 
 vn: ssemhs
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
@@ -1264,7 +1261,7 @@ tc:
 
 vn: ssemul
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahl
 
 hl:
 
@@ -1437,7 +1434,6 @@ GOTO A_21 if hsstandbl=17
 
 hi: 
 
-
 \------------------------------------------------------------
 
 A_20
@@ -1483,7 +1479,6 @@ tr:
 
 hi: Dropdown-Hochschulliste bitte nach Bundesland vorselektieren.
 
-
 \------------------------------------------------------------
 
 A_20
@@ -1493,7 +1488,7 @@ tc:
 
 vn: hsstandhso
 
-qt: Offene Angabe
+qt: offene Angabe
 
 hl:
 
@@ -1526,7 +1521,6 @@ tr: GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
 
 hi: 
 
-
 \------------------------------------------------------------
 
 A_21
@@ -1536,7 +1530,7 @@ tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
 
 vn: hsstandlao, hsstandhsao
 
-qt: Offene Angaben
+qt: offene Angaben
 
 hl:
 
@@ -1574,7 +1568,6 @@ GOTO A_22 if mastersplit=3, 4, 9, 10, 13
 
 hi: 
 
-
 \------------------------------------------------------------
 
 A_22
@@ -1584,7 +1577,7 @@ tc:
 
 vn: sperleiszufr
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahlmatrix mit vertikalen ao
 
 hl:
 
@@ -1639,7 +1632,7 @@ tc:
 
 vn: sfach1o2, sfach2o2
 
-qt: Offene Angaben
+qt: offene Angaben
 
 hl:
 
@@ -1726,7 +1719,7 @@ fv:
 
 hv:
 
-fo: Bitte über ao2 "Ja, und zwar:" positionieren.
+fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO A_25
 
@@ -1769,9 +1762,9 @@ ao6: (sabsano): 6: kirchliche Abschlussprüfung
 
 ao7: (sabsano): 7: künstlerische Abschlussprüfung
 
-ao8: (sabsano): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa); 60 Zeichen] (offene Angabe)
+ao8: (sabsano): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
 
-ao9: (sabsano): 9: Keinen Studienabschluss, sondern: [(sabsanoka); 80 Zeichen] (offene Angabe)
+ao9: (sabsano): 9: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
 
 mv:
 
@@ -1796,7 +1789,6 @@ tr: GOTO A_27 if sabsan=9
     GOTO A_27 if sabsan=MISSING AND mastersplit=5, 6, 11, 12, 13
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -1826,7 +1818,7 @@ ao2: (sformfern): Fernstudium
 ao3: (sformdua): duales Studium
 ao4: (sformberu): berufsbegleitendes Studium
 ao5: (sformgast): Gasthörerschaft
-ao6: (sformsons): Anderes, und zwar: [(sformsonso) offene Angabe, 60 Zeichen]
+ao6: (sformsons): Anderes, und zwar: [(sformsonso), offene Angabe, 60 Zeichen]
 
 mv:
 
@@ -1859,7 +1851,7 @@ tc:
 
 vn: sartzeit
 
-qt: Einfachauswahl vertikal
+qt: Einfachauswahl
 
 hl:
 
@@ -1928,7 +1920,7 @@ it:
 
 st:
 
-ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto) offene Angabe, NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0)]
+ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto), offene Angabe, NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0)]
 
 ao: (spernot): -11: Ich habe bisher keine Noten erhalten.
 
@@ -1959,7 +1951,7 @@ tc:
 
 vn: sperleisrel
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahlmatrix mit vertikalen ao
 
 hl:
 
@@ -2003,7 +1995,6 @@ tr: GOTO A_31
 
 hi:
 
-
 \------------------------------------------------------------
 
 A_31
@@ -2013,7 +2004,7 @@ tc:
 
 vn: studerfolg; masterfolg; promoerfolg
 
-qt: Mehrfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -2066,7 +2057,7 @@ tc:
 
 vn: deltberuv; deltberum
 
-qt: Comparison
+qt: Comparison; Einfachauswahl
 
 hl:
 
@@ -2112,12 +2103,12 @@ fv:
 
 hv:
 
-fo:
+fo: ao8 bitte etwas absetzen.
 
 tr: GOTO A_33 if mastersplit=1, 2, 3, 4, 5, 6, 14
     GOTO B2_1 if mastersplit=7, 8, 9, 10, 11, 12, 13
 
-hi: ao8 bitte etwas absetzen.
+hi:
 
 \------------------------------------------------------------
 
@@ -2128,7 +2119,7 @@ tc:
 
 vn: deltjobv (deltjobvo1; deltjobv1; deltjobv2); deltjobm (deltjobmo1; ddeltjobm1; deltjobm2)
 
-qt: Comparison, offene Angaben, Einfachauswahl
+qt: Comparison; offene Angaben; Einfachauswahl
 
 hl:
 
@@ -2196,7 +2187,7 @@ tc:
 
 vn: deltgebv; deltgebm
 
-qt: Comparison
+qt: Comparison; Einfachauswahl
 
 hl:
 
@@ -2475,9 +2466,9 @@ it:
 
 st:
 
-ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield: Postleitzahl, NUMBER, 5-stellig]
+ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield: Postleitzahl, offene Angabe, NUMBER, 5-stellig]
 
-ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield: Ort, 50-stellig]
+ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield: Ort, offene Angabe, 60-stellig]
 
 mv:
 
@@ -2498,7 +2489,6 @@ fo: Bitte jeweils zwischen den Präfixen und den Feldern für die offenen Angabe
 tr: GOTO A_41
 
 hi: vsbplz bitte als NUMBER, 5-stellig (01000 TO 99999), programmieren.
-
 
 \------------------------------------------------------------
 A_38a
@@ -2566,7 +2556,7 @@ tc:
 
 vn: ankbild (ankbild1; ankbild2; ankbild3; ankbild4; ankbild5)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -2627,7 +2617,7 @@ tc:
 
 vn: intvors (intvors1; intvors2; intvors3; intvors4; intvors5; intvors5o; intvors6)
 
-qt: Mehrfachauswahl mit Exklusivkategorie
+qt: Mehrfachauswahl mit Exklusivkategorie; offene Angabe
 
 hl:
 
@@ -2867,7 +2857,6 @@ hi1: vsbnoteo bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) 
 
 hi2: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
 
-
 \------------------------------------------------------------
 
 A_41
@@ -3041,7 +3030,7 @@ tc: sabsja=2 OR sbsja=3
 
 vn: sabszp, sabszp2
 
-qt: Einfachauswahl mit Dropdown x2
+qt: Einfachauswahl mit Dropdown
 
 hl:
 
@@ -3059,7 +3048,7 @@ st:
 
 ao: 
 
-ao0: (sabszp): 0: Monat
+aox: (sabszp): Monat
 
 ao1: (sabszp): 1: Januar
 
@@ -3086,7 +3075,7 @@ ao11: (sabszp): 11: November
 ao12: (sabszp): 12: Dezember
 
 
-ao0: (sabszp2): 0: Jahr
+aox: (sabszp2): Jahr
 
 ao1: (sabszp2): 1: 2020
 
@@ -3240,7 +3229,7 @@ fv:
 
 hv:
 
-fo: Bitte über ao2 "Ja, und zwar:" positionieren.
+fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO A_48
 
@@ -3255,7 +3244,7 @@ tc: sabsja=2 OR sbsja=3
 
 vn: sabsernot
 
-qt: Offene Angabe
+qt: offene Angabe
 
 hl:
 
@@ -3302,7 +3291,7 @@ tc:
 
 vn: mastplan; promoplan
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -3433,7 +3422,7 @@ tc:
 
 vn: ssahswe; ssafawe; ssaunt; ssaaja
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -3571,19 +3560,19 @@ it:
 
 st:
 
-ao1: (wohnal): alleine. [Exklusivkategorie]
+ao1: (wohnal): ... alleine. [Exklusivkategorie]
 
-ao2: (wohnwg): mit Mitbewohner\*innen in einer Wohngemeinschaft.
+ao2: (wohnwg): ... mit Mitbewohner\*innen in einer Wohngemeinschaft.
 
-ao3: (wohnel): bei/mit meinen Eltern (bzw. einem Elternteil)
+ao3: (wohnel): ... bei/mit meinen Eltern (bzw. einem Elternteil)
 
-ao4: (wohnpar): mit meinem/meiner (Ehe-) Partner\*in.
+ao4: (wohnpar): ... mit meinem/meiner (Ehe-) Partner\*in.
 
-ao5: (wohnkin): mit meinem Kind/meinen Kindern.
+ao5: (wohnkin): ... mit meinem Kind/meinen Kindern.
 
-ao6: (wohnfam): mit anderen Familienangehörigen.
+ao6: (wohnfam): ... mit anderen Familienangehörigen.
 
-ao7: (wohnsons): mit anderen Personen.
+ao7: (wohnsons): ... mit anderen Personen.
 
 mv:
 
@@ -3722,7 +3711,6 @@ tr: GOTO F1_1 if mastersplit=2, 4, 6, 8, 10, 12, 14
     GOTO A_56 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1)
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -3903,7 +3891,6 @@ tr: GOTO N_3
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_3
@@ -4072,7 +4059,7 @@ tc:
 
 vn: nrwdigged
 
-qt: Einfachauswahlmatrix  mit vertikaler ao
+qt: Einfachauswahlmatrix mit vertikaler ao
 
 hl:
 
@@ -4115,7 +4102,6 @@ fo:
 tr: GOTO N_7
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -4167,11 +4153,11 @@ fv:
 
 hv:
 
-fo:
+fo: ao6 (missing) bitte etwas absetzen.
 
 tr: GOTO N_8
 
-hi: ao6 (missing) bitte etwas absetzen.
+hi:
 
 \------------------------------------------------------------
 
@@ -4222,11 +4208,11 @@ fv:
 
 hv:
 
-fo:
+fo: ao6 (missing) bitte etwas absetzen.
 
 tr: GOTO N_9a
 
-hi: ao6 (missing) bitte etwas absetzen.
+hi:
 
 \------------------------------------------------------------
 
@@ -4284,7 +4270,7 @@ tc:
 
 vn: digorg (digorg1, digorg2, digorg3, digorg4, digorg5)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4347,7 +4333,7 @@ tc:
 
 vn: digfor (digfor1, digfor2, digfor3, digfor4, digfor5)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4406,7 +4392,7 @@ tc:
 
 vn: diglehr (diglehr1, diglehr2, diglehr3, diglehr4, diglehr5, diglehr6, diglehr7, diglehr8, diglehr9, diglehr9o)
 
-qt: horizontale Einfachauswahlmatrix; offene Angabe
+qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
 
 hl:
 
@@ -4477,7 +4463,7 @@ tc:
 
 vn: diggeso (diggeso1, diggeso2, diggeso3, diggeso4, diggeso5)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4538,7 +4524,7 @@ tc:
 
 vn: digflehr (digflehr1, digflehr2, digflehr3)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4595,7 +4581,7 @@ tc:
 
 vn: digkom (digkom1, digkom2, digkom3, digkom4, digkom5, digkom6)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4649,7 +4635,6 @@ tr: GOTO N_12
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_12
@@ -4659,7 +4644,7 @@ tc:
 
 vn: digan (digan1, digan2, digan3, digan4, digan5, digan6, digan7, digan8, digan9, digan10, digan11)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4722,7 +4707,6 @@ fo:
 tr: GOTO A_57
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -4796,7 +4780,9 @@ fv:
 
 hv:
 
-fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
+fo1: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
+
+fo2: "Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?" bitte etwas von den Einleitungssätzen absetzen.
 
 tr: GOTO A_57 IF diskjane=1
     GOTO N_14 IF diskjane!=1
@@ -4813,7 +4799,7 @@ tc:
 vn: diskanza (diskanza1, diskanza2, diskanza3, diskanza4, diskanza5, diskanza6, diskanza7, diskanza8, diskanza9, diskanza10, diskanza11, 
 diskanza12, diskanza13, diskanza14, diskanza15)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4915,7 +4901,6 @@ tr: GOTO N_15
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_15
@@ -4974,7 +4959,6 @@ tr: GOTO A_57
 
 hi:
 
-
 \------------------------------------------------------------
 
 A_57
@@ -4984,7 +4968,7 @@ tc:
 
 vn: sdkzei (sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
