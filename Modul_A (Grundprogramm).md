@@ -1753,23 +1753,23 @@ it:
 
 st:
 
-ao1: 1: Bachelor
+ao1: (sabsano): 1: Bachelor
 
-ao2: 2: Master
+ao2: (sabsano): 2: Master
 
-ao3: 3: Staatsexamen
+ao3: (sabsano): 3: Staatsexamen
 
-ao4: 4: Diplom
+ao4: (sabsano): 4: Diplom
 
-ao5: 5: Promotion
+ao5: (sabsano): 5: Promotion
 
-ao6: 6: kirchliche Abschlussprüfung
+ao6: (sabsano): 6: kirchliche Abschlussprüfung
 
-ao7: 7: künstlerische Abschlussprüfung
+ao7: (sabsano): 7: künstlerische Abschlussprüfung
 
-ao8: 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa); 60 Zeichen] (offene Angabe)
+ao8: (sabsano): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa); 60 Zeichen] (offene Angabe)
 
-ao9: 9: Keinen Studienabschluss, sondern: [(sabsanoka); 80 Zeichen] (offene Angabe)
+ao9: (sabsano): 9: Keinen Studienabschluss, sondern: [(sabsanoka); 80 Zeichen] (offene Angabe)
 
 mv:
 
@@ -2937,7 +2937,7 @@ q1: Sind Sie während der Vorlesungszeit erwerbstätig?
 
 q2: Sind Sie während der Vorlesungszeit neben Ihrem dualen Studium erwerbstätig?
 
-is: 
+is: Mit „Erwerbstätigkeit(en)“ sind sämtliche Tätigkeiten gemeint, mit denen Sie im aktuellen Semester Geld verdienen.
 
 it:
 
@@ -2979,91 +2979,6 @@ hi:
 
 \------------------------------------------------------------
 
-A_43
-=========
-
-tc: if eaktsens=2 OR eaktsens=3 OR eaktsens=4
-
-vn: efachnah1, efachnah2, efachnah3
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q1: In welchem Maße hat ihre Erwerbstätigkeit einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q2: In welchem Maße hat Ihre Erwerbstätigkeit, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q3: In welchem Maße haben Ihre Erwerbstätigkeiten einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q4: In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q5: In welchem Maße haben Ihre Erwerbstätigkeiten einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q6: In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-is:
-
-it: (efachnah1): Tätigkeit A 
-
-it: (efachnah2): Tätigkeit B 
-
-it: (efachnah3): Tätigkeit C 
-
-st:
-
-ao1: 1: in gar keinem Maße
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc1: SHOW q1 IF eaktsens=2 AND sformdua!=1
-
-vc2: SHOW q2 IF eaktsens=2 AND sformdua=1 
-
-vc3: SHOW q3 IF eaktsens=3 AND sformdua!=1
-
-vc4: SHOW q4 IF eaktsens=3 AND sformdua=1 
-
-vc5: SHOW q5 IF eaktsens=4 AND sformdua!=1
-
-vc6: SHOW q6 IF eaktsens=4 AND sformdua=1 
-
-vc7: SHOW it1 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
-
-vc8: SHOW it2 IF eaktsens=3 OR eaktsens=4 
-
-vc9: SHOW it3 IF eaktsens=4 
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: 
-
-tr: GOTO D3_19 IF mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
-    GOTO D1_9 IF mastersplit=1, 2, 7, 8
-    GOTO A44 IF mastersplit=13
-    
-hi:
-
-\------------------------------------------------------------
-
 A_44
 =========
 
@@ -3087,7 +3002,9 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja
+ao2: 2: ja, an meiner jetzigen Hochschule
+
+ao3: 3: ja, an einer anderen Hochschule 
 
 mv:
 
@@ -3107,7 +3024,7 @@ fo:
 
 tr: GOTO A_49a IF sabsja=1 AND sabser=1
     GOTO A_49b IF sabsja=1 AND sabser!=1
-    GOTO A_45 IF sabsja=2
+    GOTO A_45 IF sabsja=2 OR sabsja=3
     GOTO A_49a IF sabsja=MISSING AND sabser=1
     GOTO A_49b IF sabsja=MISSING AND sabser!=1
     
@@ -3118,7 +3035,7 @@ hi:
 A_45
 ===========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
 vn: sabszp, sabszp2
 
@@ -3132,9 +3049,9 @@ q: Wann haben Sie diesen Abschluss erworben?
 
 is:
 
-it1: (sabszp): [Dropdown; infield = Monat; Januar - Februar - März - ... - Dezember]
+it1: (sabszp): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-it2: (sabszp2): [Dropdown; infield = Jahr; 2019 - 2018 - 2017 - ... - 2009 und früher]
+it2: (sabszp2): [infield = Jahr; 2020 - 2019 - 2018 - ... - 2009 und früher] (Dropdown)
 
 st:
 
@@ -3169,27 +3086,29 @@ ao12: (sabszp): 12: Dezember
 
 ao0: (sabszp2): 0: Jahr
 
-ao1: (sabszp2): 1: 2019
+ao1: (sabszp2): 1: 2020
 
-ao2: (sabszp2): 2: 2018
+ao2: (sabszp2): 2: 2019
 
-ao3: (sabszp2): 3: 2017
+ao3: (sabszp2): 3: 2018
 
-ao4: (sabszp2): 4: 2016
+ao4: (sabszp2): 4: 2017
 
-ao5: (sabszp2): 5: 2015
+ao5: (sabszp2): 5: 2016
 
-ao6: (sabszp2): 6: 2014
+ao6: (sabszp2): 6: 2015
 
-ao7: (sabszp2): 7: 2013
+ao7: (sabszp2): 7: 2014
 
-ao8: (sabszp2): 8: 2012
+ao8: (sabszp2): 8: 2013
 
-ao9: (sabszp2): 9: 2011
+ao9: (sabszp2): 9: 2012
 
-ao10: (sabszp2): 10: 2010
+ao10: (sabszp2): 10: 2011
 
-ao11: (sabszp2): 11: 2009 und früher
+ao11: (sabszp2): 11: 2010
+
+ao12: (sabszp2): 12: 2009 und früher
 
 mv:
 
@@ -3205,7 +3124,7 @@ fv:
 
 hv:
 
-fo:
+fo: Dropdowns bitte nebeneinander programmieren.
 
 tr: GOTO A_46
 
@@ -3216,7 +3135,7 @@ hi:
 A_46
 =========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
 vn: sabser
 
@@ -3228,7 +3147,7 @@ in:
 
 q: Welchen Abschluss haben Sie bereits erworben?
 
-is:
+is: Bei mehreren Hochschulabschlüssen bitte den zuletzt erworbenen angeben.
 
 it:
 
@@ -3275,7 +3194,7 @@ hi:
 A_47
 ========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
 vn: sabsla
 
@@ -3287,7 +3206,7 @@ in:
 
 q: Handelt es sich hierbei um ein Lehramtsstudium?
 
-is: Bei mehreren Hochschulabschlüssen bitte den letzten angeben.
+is:
 
 it:
 
@@ -3295,19 +3214,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, und zwar Lehramt an Grundschulen (Primarstufe)
+ao2: 2: Lehramt an Grundschulen (Primarstufe)
 
-ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I)
+ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
-ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
+ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: ja, und zwar Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: ja, und zwar Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: Lehramt an Förderschulen/Sonderpädagogik
 
 mv:
 
-ka:
+ka: (ao2 TO ao6): Ja, und zwar:
 
 vc:
 
@@ -3319,7 +3238,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über ao2 "Ja, und zwar:" positionieren.
 
 tr: GOTO A_48
 
@@ -3330,11 +3249,11 @@ hi:
 A_48
 =========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
-vn: sabsernot, sabsernoto
+vn: sabsernot
 
-qt: Einfachauswahl mit offene Angabe
+qt: Offene Angabe
 
 hl:
 
@@ -3342,17 +3261,13 @@ in:
 
 q: Welche Abschlussnote haben Sie in Ihrem vorherigen Studium erhalten?
 
-is: Für den Fall, dass Sie keine Noten erhalten haben, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in eine Abschlussnote um.
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
 st:
 
-ao1 (sabsernot): 1: Prefix: Abschlussnote (z. B. 2,5): [(sabsernoto); offene Angabe: 3 Zeichen mit einer Dezimalstelle]
-
-ao2 (sabsernot): -11: Ich habe keine Note erhalten. / In meinem vorigen Studium gab es keine Noten.
-
-ao3 (sabsernot): -12: weiß ich nicht
+ao: (sabsernot): Präfix: Abschlussnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
 mv:
 
@@ -3360,9 +3275,9 @@ ka:
 
 vc:
 
-av: 
+av: NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
 
-kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh: Bitte geben Sie Ihre Abschlussnote an (1,0 bis 4,0).
 
 fv:
 
@@ -3374,7 +3289,7 @@ tr: GOTO D1_10a IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
     GOTO A_49a IF (mastersplit=5, 6, 11, 12, 13) AND (sabser==1)
     GOTO A_49b IF (mastersplit=5, 6, 11, 12, 13) AND (sabser!=1)
 
-hi:
+hi: Bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
 
 \------------------------------------------------------------
 
@@ -3415,7 +3330,7 @@ mv:
 
 ka:
 
-vc:
+vc: SHOW it1 (masterplan) IF sabsano==1 
 
 av:
 
@@ -3439,71 +3354,6 @@ tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3,
      GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=1 AND imausl=1)
      GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=MISSING OR imausl=MISSING)
      
-hi:
-
-
-\------------------------------------------------------------
-
-A_49b
-=========
-
-tc:
-
-vn: promoplan
-
-qt: Einfachauswahl mit Horizontalen ao
-
-hl:
-
-in:
-
-q: Wie wahrscheinlich ist es, dass Sie...
-
-is:
-
-it:
-
-st: … eine Promotion aufnehmen?
-
-ao1: 1: sehr unwahrscheinlich
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr wahrscheinlich
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-anf02 IF (mastersplit=7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-anf01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-anf02 IF (mastersplit=8, 10, 12) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=2) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-ma01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND sabsan=1 AND ssemfs>5
-     GOTO KSM-ma01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND sabsan=1 AND ssemfs>5
-     GOTO KSM-phd01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
-     GOTO KSM-phd01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
-     GOTO A_50 IF zusatzsplit=1 OR zusatzsplit=3 OR zusatzsplit=4
-     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=1 AND imausl=1)
-     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=MISSING OR imausl=MISSING)
-     
-
 hi:
 
 \------------------------------------------------------------
@@ -3535,9 +3385,7 @@ it4: (ssuja): … das Studium zwischenzeitlich unterbrochen?
 
 st:
 
-ao1: 1: ja
-
-ao2: 2: nein
+ao:
 
 mv:
 
@@ -3556,12 +3404,9 @@ hv:
 fo:
 
 tr: GOTO D1_14 IF (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
-    GOTO A_51a if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1 AND h_split=1 (50%)) AND (mastersplit=5, 6, 11, 12, 13)
-    GOTO A_51b if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1 AND h_split=2 (50%)) AND (mastersplit=5, 6, 11, 12, 13)
-    GOTO A_51a if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2) AND (h_split=1 (50%))
-    GOTO A_51b if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2) AND (h_split=2 (50%))
-    GOTO A_51a if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=1 (50%))
-    GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=2 (50%))
+    GOTO A_51b if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=5, 6, 11, 12, 13)
+    GOTO A_51b if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2)
+    GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.)
 
 hi:
 
