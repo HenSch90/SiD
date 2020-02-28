@@ -3523,9 +3523,9 @@ ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind)
 
 mv:
 
-ka1: (ao1 TO ao3): in einer Wohnung, einem Zimmer oder einem Haus
+ka1: (ao1 TO ao3): In einer Wohnung, einem Zimmer oder einem Haus
 
-ka2: (ao4 TO ao7): im Studierendenwohnheim
+ka2: (ao4 TO ao7): Im Studierendenwohnheim
 
 vc: 
 
@@ -3537,10 +3537,13 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über ao1 "In einer Wohnung, einem Zimmer oder einem Haus" linkbündig positionieren.
 
-tr: GOTO D3_1 if mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
-    GOTO A_53 IF mastersplit=1, 2, 7, 8, 13	
+fo2: Bitte über ao4 "Im Studierendenwohnheim" linkbündig positionieren.
+
+tr: GOTO E1_0 IF wohnfo = 4 | 5 | 6 |7
+    GOTO D3_1 IF wohnfo = 1 | 2 | 3 | mis AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO A_53 IF wohnfo = 1 | 2 | 3 | mis AND mastersplit=1, 2, 7, 8, 13	
 
   
 hi:
@@ -3554,7 +3557,7 @@ tc:
 
 vn: wohnal; wohnwg; wohnel; wohnpar; wohnkin; wohnfam; wohnsons
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -3568,11 +3571,11 @@ it:
 
 st: Ich wohne …
 
-ao1: (wohnal): allein. [Exklusivkategorie]
+ao1: (wohnal): alleine. [Exklusivkategorie]
 
 ao2: (wohnwg): mit Mitbewohner\*innen in einer Wohngemeinschaft.
 
-ao3: (wohnel): bei meinen Eltern (bzw. einem Elternteil)
+ao3: (wohnel): bei/mit meinen Eltern (bzw. einem Elternteil)
 
 ao4: (wohnpar): mit meinem/meiner (Ehe-) Partner\*in.
 
@@ -3671,9 +3674,9 @@ hl:
 
 in:
 
-q1: Beabsichtigen Sie künftig einen studienbezogenen Auslandsaufenthalt durchzuführen?
+q1: Haben Sie vor, künftig einen studienbezogenen Auslandsaufenthalt durchzuführen?
 
-q2: Beabsichtigen Sie einen weiteren studienbezogenen Auslandsaufenthalt durchzuführen?
+q2: Haben Sie vor, künftig einen weiteren studienbezogenen Auslandsaufenthalt durchzuführen?
 
 is:
 
@@ -3685,9 +3688,11 @@ ao1: 1: nein, kein Interesse
 
 ao2: 2: nein, sehe keine Realisierungschance
 
-ao3: 3: weiß ich noch nicht
+ao3: 3: ja, geplant
 
-ao4: 4: ja
+ao4: 4: ja, bereits in Vorbereitung
+
+ao5: 5: weiß ich noch nicht
 
 mv:
 
@@ -3728,7 +3733,7 @@ tc:
 
 vn: (zlvwo, zlvwo2) (zseswo, zseswo2) (zerwo, zerwo2) (zcarwo, zcarwo2)
 
-qt: offene Frage Matrix
+qt: Comparison, offene Angaben-Matrix
 
 hl:
 
@@ -3736,29 +3741,43 @@ in:
 
 q: Wie viele Stunden wenden Sie in einer für Sie typischen Woche für folgende Aktivitäten auf?
 
-is: Bitte runden Sie Ihre Zeitangaben jeweils auf volle Zeitstunden.
+is: Bitte runden Sie Ihre Zeitangaben jeweils auf volle Zeitstunden und unterscheiden Sie bitte zwischen der Vorlesungszeit/Studienphase und der vorlesungsfreien Zeit/Praxisphase.
 
-it: Vorlesungszeit / Studienphase
+ita: während Vorlesungszeit/Studienphase
 
-it: vorlesungsfreien Zeit / Praxisphase
+itb: während vorlesungsfreier Zeit/Praxisphase
 
 st:
 
-ao1: (zlvwo, zlvwo2): Lehrveranstaltungen (Vorlesungen, Seminare, Übungen, Tutorien usw.)
+ao1a: (zlvwo): Lehrveranstaltungen [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao2: (zseswo, zseswo2): Selbststudium (Vor‐/Nachbereitung, Referate, Fachlektüre, Studien-/Haus-/Abschlussarbeiten, stud. Lerngruppen, Prüfungsvorbereitung usw.)
+ao1b: (zlvwo2): Lehrveranstaltungen [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao3: (zerwo, zerwo2): Erwerbstätigkeit (Nebenjob, Beruf, freiberufliche/selbstständige Tätigkeit usw.)
+ao2a: (zseswo): Selbststudium [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao4: (zcarwo, zcarwo2): Pflege- und Betreuungsarbeiten (Familienleben, Kinderbetreuung, Pflege Angehöriger usw.)
+ao2b: (zseswo2): Selbststudium [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao3a: (zerwo): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao3b: (zerwo2): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao4a: (zcarwo): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao4b: (zcarwo2): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
 mv:
 
-ka: Während der...
+ka:
 
-vc:
+vc1: SHOW ao3a (zerwo) IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
 
-av: number: \<= zweistellig, 0 TO 99
+vc2: SHOW ao3b (zerwo2) IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
+
+vc3: SHOW ao4a (zcarwo) IF pflegang1=1 OR pflegang2=1
+
+vc4: SHOW ao4b (zcarwo2) IF pflegang1=1 OR pflegang2=1
+
+av: NUMBER, 2-stellig (0 bis 99)
 
 kh: Bitte geben Sie volle Zeitstunden an (0 bis 99).
 
@@ -3766,14 +3785,14 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte anhand der Unterteilung in a und b die Zuordnung der Items zu den beiden Kategorien ita und itb vornehmen. ita und itb bilden die Spalten und in den Zeilen werden dann die einzelnen Bereiche noch einmal unterteilt (bspw. Lehrveranstaltungen: ao1a -> ita; ao1b -> itb).
 
 tr: <zofar:transition target="N_1" condition="zofar.asNumber(zusatzsplit)==1"/>
     <zofar:transition target="N_13" condition="zofar.asNumber(zusatzsplit)==4"/>
     <zofar:transition target="N_5" condition="zofar.asNumber(zusatzsplit)==3"/>
     <zofar:transition target="A_57" condition="zofar.asNumber(zusatzsplit)==2"/>
 
-hi:
+hi: Bitte als NUMBER, 2-stellig (0 bis 99) programmieren.
 
 
 \------------------------------------------------------------
@@ -4698,7 +4717,6 @@ mv:
 ka:
 
 vc:
-
 av:
 
 kh:
@@ -4721,7 +4739,7 @@ A_57
 
 tc:
 
-vn: sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16
+vn: sdkzei (sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16)
 
 qt: Einfachauswahlmatrix
 
@@ -4731,49 +4749,49 @@ in:
 
 q: Wie wichtig sind Ihnen die folgenden Aspekte des weiteren Berufs- und Lebensweges?
 
-is:.
+is:
 
-it: (sdkzei1): hohes Einkommen
+it1: (sdkzei1): hohes Einkommen
 
-it: (sdkzei2): prestigeträchtige Berufsposition
+it2: (sdkzei2): prestigeträchtige Berufsposition
 
-it: (sdkzei3): sicherer Arbeitsplatz
+it3: (sdkzei3): sicherer Arbeitsplatz
 
-it: (sdkzei4): gute Aufstiegsmöglichkeiten
+it4: (sdkzei4): gute Aufstiegsmöglichkeiten
 
-it: (sdkzei5): flexible Arbeitszeiten
+it5: (sdkzei5): flexible Arbeitszeiten
 
-it: (sdkzei6): die Erwartungen meiner Vorgesetzten zu erfüllen
+it6: (sdkzei6): die Erwartungen meiner Vorgesetzten erfüllen
 
-it: (sdkzei7): verantwortungsvolle Aufgaben zu übernehmen
+it7: (sdkzei7): verantwortungsvolle Aufgaben übernehmen
 
-it: (sdkzei8): eigene Ideen verwirklichen zu können
+it8: (sdkzei8): eigene Ideen verwirklichen
 
-it: (sdkzei9): selbstständig Entscheidungen treffen zu können
+it9: (sdkzei9): selbstständig Entscheidungen treffen
 
-it: (sdkzei10): eine Arbeit, die mir immer wieder neue Aufgaben stellt
+it10: (sdkzei10): eine Arbeit, die mir immer wieder neue Aufgaben stellt
 
-it: (sdkzei11): Möglichkeit zu wissenschaftlicher Tätigkeit
+it11: (sdkzei11): Möglichkeit zu wissenschaftlicher Tätigkeit
 
-it: (sdkzei12): anderen Menschen helfen zu können
+it12: (sdkzei12): anderen Menschen helfen zu können
 
-it: (sdkzei13): ein Beruf, in dem ich Nützliches für die Allgemeinheit tun kann
+it13: (sdkzei13): ein Beruf, in dem ich Nützliches für die Allgemeinheit tun kann
 
-it: (sdkzei14): Vereinbarkeit von Privatleben und Beruf
+it14: (sdkzei14): Vereinbarkeit von Privatleben und Beruf
 
-it: (sdkzei15): eine glückliche Beziehung zu führen
+it15: (sdkzei15): eine glückliche Beziehung führen
 
-it: (sdkzei16): eine Familie zu gründen
+it16: (sdkzei16): eine Familie gründen
 
 st:
 
 ao1: 1: unbedeutend
 
-ao2: 2:
+ao2: 2
 
-ao3: 3:
+ao3: 3
 
-ao4: 4:
+ao4: 4
 
 ao5: 5: sehr bedeutend
 
