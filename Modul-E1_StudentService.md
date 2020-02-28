@@ -73,8 +73,9 @@ E1_2
 
 tc:
 
-vn: mzufges; mzufqual; mzufausw; mzufatmo; mzufprl; mzufpraes; 
-mzuflage; mzufwart; mzufserv; mzufverl; mzuföff; mzufkomm
+vn: mzufges; mzufqual; mzufausw; mzufprl; mzufpraes; mzufatmo; 
+mzufsitz; mzuflage; mzufwart; mzufserv; mzufverl; mzufoeff; mzufkomm;
+mzufbarf; mzufkind
 
 qt: Einfachauswahlmatrix mit horizontalen aos
 
@@ -642,7 +643,7 @@ ao4: 4:
 
 ao5: 5: sehr gut informiert
 
-ao6: -12: interessiert mich nicht
+ao6: -11: interessiert mich nicht
 
 mv: ao6
 
