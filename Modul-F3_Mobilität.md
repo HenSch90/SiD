@@ -574,9 +574,9 @@ hi:
 F3_12 
 ======
 
-tc: IF ainfaus \> 1 \| k.A.
+tc:
 
-vn: asprachland / asprachdeut / asprachand / asprachando
+vn: asprachland; asprachdeut; asprachand; asprachando
 
 qt: Einfachauswahlmatrix mit horizontalen aos
 
@@ -584,29 +584,27 @@ hl:
 
 in:
 
-q1: Wie häufig haben Sie während Ihres Auslandsaufenthalts die folgenden
-Sprachen gesprochen?
+q1: Wie häufig haben Sie während Ihres Auslandsaufenthaltes die folgenden Sprachen gesprochen?
 
-q2: Wie häufig haben Sie während Ihres letzten Auslandsaufenthalts die folgenden
-Sprachen gesprochen?
+q2: Wie häufig haben Sie während Ihres letzten Auslandsaufenthaltes die folgenden Sprachen gesprochen?
 
 is:
 
-it1: (asprachland): Landessprache
+it1: (asprachland): Landessprache des Gastlandes
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): Andere Sprache, und zwar [asprachando] [Eingabefeld]
+it3: (asprachand): Andere Sprache, und zwar: [asprachando] [Eingabefeld]
 
 st:
 
 ao1: 1: nie
 
-ao2: 2: selten
+ao2: 2:
 
-ao3: 3: manchmal
+ao3: 3:
 
-ao4: 4: häufig
+ao4: 4:
 
 ao5: 5: sehr häufig
 
@@ -616,7 +614,7 @@ ka:
 
 vc:
 
-SHOW q1 IF ainfaus = 2 \| MISSING
+SHOW q1 IF ainfaus = 2 OR ainfaus = MISSING
 
 SHOW q2 IF ainfaus \> 2
 
@@ -641,30 +639,23 @@ hi:
 F3_13 
 ======
 
-tc: IF ainfaus \> 1 \| kA
+tc:
 
-vn: azufskein / azufskstu / azufsklehr / azuflernerf / azufinsg
+vn: azuflernerf; azufinsg
 
-qt: Akkordeon
+qt: Einfachauswahlmatrix mit horizontalen aos
 
 hl:
 
 in:
 
-q: Wie zufrieden sind Sie in Bezug auf Ihren letzten studienbezogenen
-Auslandsaufenthalt mit …
+q: Wie zufrieden sind Sie in Bezug auf Ihren letzten studienbezogenen Auslandsaufenthalt mit…
 
 is:
 
-it1: (azufskein): … dem Kontakt zu Einheimischen?
+it1: (azuflernerf): … den gewonnenen fachlichen Kenntnissen?
 
-it2: (azufskstu): … dem Kontakt zu Studierenden?
-
-it3: (azufsklehr): … dem Kontakt zu Lehrenden?
-
-it4: (azuflernerf): … den gewonnen fachlichen Kenntnissen?
-
-it5: (azufinsg): … dem Auslandsaufenthalt insgesamt?
+it2: (azufinsg): … dem Aufenthalt insgesamt?
 
 st:
 
