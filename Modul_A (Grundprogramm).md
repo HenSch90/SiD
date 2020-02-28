@@ -4282,7 +4282,7 @@ N_9
 
 tc:
 
-vn: digorg1, digorg2, digorg3, digorg4, digorg5
+vn: digorg (digorg1, digorg2, digorg3, digorg4, digorg5)
 
 qt: horizontale Einfachauswahlmatrix
 
@@ -4345,7 +4345,7 @@ N_9b
 
 tc:
 
-vn: digfor1, digfor2, digfor3, digfor4, digfor5
+vn: digfor (digfor1, digfor2, digfor3, digfor4, digfor5)
 
 qt: horizontale Einfachauswahlmatrix
 
@@ -4404,42 +4404,35 @@ N_10
 
 tc:
 
-vn: diglehr1, diglehr2, diglehr3, diglehr4, diglehr5, diglehr6, diglehr7, diglehr8, diglehr9, diglehr10, diglehr11, diglehr12, 
-diglehr12o
+vn: diglehr (diglehr1, diglehr2, diglehr3, diglehr4, diglehr5, diglehr6, diglehr7, diglehr8, diglehr9, diglehr9o)
 
-qt: horizontale Einfachauswahlmatrix / offene Angabe
+qt: horizontale Einfachauswahlmatrix; offene Angabe
 
 hl:
 
 in:
 
-q: Wie häufig kommen folgende digitale Methoden bzw. Medien im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
+q: Wie häufig kommen folgende digitale Elemente und Lehrformate im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
 
 is:
 
-it1: (diglehr1): Online-Vorlesung (z. B. Live-Digitized-Lecture oder archivierte Aufzeichnung)
+it1: (diglehr1): Podcasts, Blogs, Videos
 
-it2: (diglehr2): Online-Seminare
+it2: (diglehr2): Abstimmungsmedien (Clicker-Abfrage, Voting-Tool)
 
-it3: (diglehr3): Online-Selbststudium mit anschließender Vertiefung im Präsenzstudium
+it3: (diglehr3): Game-Based-Learning (auf Lernspielen basierende Lehr- und Lernformate)
 
-it4: (diglehr4): virtuelle Lernorte / Labore
+it4: (diglehr4): Mobiles Lernen (virtuelle Lernorte/Labore)
 
-it5: (diglehr5): Lehr- und Lernvideos / E-Lecture
+it5: (diglehr5): Augmented- und Virtual-Reality
 
-it6: (diglehr6): E-Tutorial / E-Coaching (z. B. Web Based Training)
+it6: (diglehr6): E-Portfolio (digitales Lerntagebuch)
 
-it7: (diglehr7): Lernspiele / Game-Based Learning
+it7: (diglehr7): Videoaufzeichnungen von Vorlesungen
 
-it8: (diglehr8): Präsentationssoftware (z. B. PowerPoint, Prezi)
+it8: (diglehr8): digitale Prüfungsformate/E-Assessment
 
-it9: (diglehr9): Smart-Board 
-
-it10: (diglehr10): fachspezifische Software (z. B. Statistik- oder Transkriptionsprog.)
-
-it11: (diglehr11): Kommunikationstools
-
-it12: (diglehr12): Etwas anderes und zwar: [diglehr12o, 50 Zeichen] 
+it12: (diglehr9): Etwas anderes und zwar: [(diglehr9o), offene Angabe, 80 Zeichen] 
 
 st:
 
@@ -4471,10 +4464,127 @@ hv:
 
 fo:
 
+tr: GOTO N_10a
+
+hi: ao6 (missing) bitte etwas absetzen.
+
+\------------------------------------------------------------
+
+N_10a
+=========
+
+tc:
+
+vn: diggeso (diggeso1, diggeso2, diggeso3, diggeso4, diggeso5)
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie häufig werden die folgenden Geräte bzw. Software in eine typische Lehrveranstaltung eingebunden?
+
+is:
+
+it1: (diggeso1): Laptop und Beamer der Hochschule
+
+it2: (diggeso2): Smart-Board
+
+it3: (diggeso3): eigener Laptop, Tablet, Smartphone
+
+it4: (diggeso4): Präsentationssoftware (Powerpoint, Prezi)
+
+it5: (diggeso5): fachspezifische Software
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_10b
+
+hi:
+
+\------------------------------------------------------------
+
+N_10b
+=========
+
+tc:
+
+vn: digflehr (digflehr1, digflehr2, digflehr3)
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie häufig nutzen Sie die folgenden Formen des digitalen Lernens?
+
+is:
+
+it1: (digflehr1): im Internet zugängliche Lehr- und Lernmaterialien
+
+it2: (digflehr2): Lehr- und Lernvideos
+
+it3: (digflehr3): digitale Selbstlernprogramme (z. B. Simulation, Lernapps, Lernspiele)
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
 tr: GOTO N_11
 
-hi: ao6 (missing) ist abgesetzt von ao1-ao5
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4483,7 +4593,7 @@ N_11
 
 tc:
 
-vn: digkom1, digkom2, digkom3, digkom4, digkom5, digkom6
+vn: digkom (digkom1, digkom2, digkom3, digkom4, digkom5, digkom6)
 
 qt: horizontale Einfachauswahlmatrix
 
@@ -4491,7 +4601,7 @@ hl:
 
 in:
 
-q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton\*innen)? 
+q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton\*innen? 
 
 is:
 
@@ -4499,7 +4609,7 @@ it1: (digkom1): Instant Messaging-Dienste (z. B. WhatsApp, Telegram)
 
 it2: (digkom2): Soziale Netzwerke (z. B. Facebook, Instagram)
 
-it3: (digkom3): Online Verwaltungstools (z. B. Doodle)
+it3: (digkom3): Online Verwaltungstools (z. B. Doodle, Trello)
 
 it4: (digkom4): Tools der Lernmanagementsysteme (z. B. Peer-Feedback, Foren)
 
@@ -4519,9 +4629,7 @@ ao4: 4:
 
 ao5: 5: sehr häufig 
 
-ao6: -13: kenne ich nicht
-
-mv: ao6
+mv: 
 
 ka:
 
@@ -4539,7 +4647,7 @@ fo:
 
 tr: GOTO N_12
 
-hi: ao6 (missing) ist abgesetzt von ao1-ao5
+hi:
 
 
 \------------------------------------------------------------
@@ -4549,7 +4657,7 @@ N_12
 
 tc:
 
-vn: digan1, digan2, digan3, digan4, digan5, digan6, digan7, digan8, digan9, digan10, digan11
+vn: digan (digan1, digan2, digan3, digan4, digan5, digan6, digan7, digan8, digan9, digan10, digan11)
 
 qt: horizontale Einfachauswahlmatrix
 
@@ -4561,27 +4669,27 @@ q: Wie leicht würde es Ihnen fallen, …
 
 is:
 
-it1: (digan1): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)? 
+it1: (digan1): … einen Text nach bestimmten Vorgaben zu formatieren (z. B. mit Word, Latex)? 
 
-it2: (digan2): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
+it2: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)
 
-it3: (digan3): … eine bestimmte Publikation als Download zu finden?
+it3: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, Open Office Calc)
 
-it4: (digan4): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren?
+it4: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
 
-it5: (digan5): … einen Text nach bestimmten Vorgabe  zu formatieren (z. B. mit Word, Latex)? 
+it5: (digan5): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren? 
 
-it6: (digan6): …  wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
+it6: (digan6): … wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
 
-it7: (digan7): … sich in ein neues Computerprogramm einzuarbeiten?
+it7: (digan7): … von Ihnen genutzte digitale Medien miteinander zu synchronisieren?
 
-it8: (digan8): … eine Website zu programmieren?
+it8: (digan8): … sich in ein neues Computerprogramm einzuarbeiten?
 
-it9: (digan9): … eine Programmiersprache (z. B. Python, SQL, QML) sicher anzuwenden?
+it9: (digan9): … eine Programmiersprache sicher anzuwenden (z. B. Python, Java)?
 
 it10: (digan10): … digitale Gruppen/Netzwerke zu recherchieren und sich zu beteiligen?
 
-it11: (digan11): … digitale Gruppen/Netzwerke zu initiieren und zu moderieren?
+it11: (digan11): … sich in einer virtuellen oder simulierten Umgebung zu bewegen und zu handeln?
 
 st:
 
