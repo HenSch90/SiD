@@ -3365,7 +3365,7 @@ tc:
 
 vn: ssweja; saweja; shwja; ssuja
 
-qt: Einfachauswahl matrix
+qt: Einfachauswahl Dropdown
 
 hl:
 
@@ -3375,17 +3375,29 @@ q: Haben Sie seit Ihrer Erstimmatrikulation…
 
 is: Nicht gemeint sind Veränderungen bzw. Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
 
-it1: (ssweja): … das Studienfach gewechselt?
+it1: (ssweja): … das Studienfach gewechselt? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
-it2: (saweja): … den Abschluss gewechselt?
+it2: (saweja): … den Abschluss gewechselt? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
-it3: (shwja): … die Hochschule gewechselt?
+it3: (shwja): … die Hochschule gewechselt? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
-it4: (ssuja): … das Studium zwischenzeitlich unterbrochen?
+it4: (ssuja): … das Studium zwischenzeitlich unterbrochen? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
 st:
 
-ao:
+aox: Anzahl
+
+ao1: (ssweja TO ssuja): 0: keinmal
+
+ao2: (ssweja TO ssuja): 1: einmal
+
+ao3: (ssweja TO ssuja): 2: zweimal
+
+ao4: (ssweja TO ssuja): 3: dreimal
+
+ao5: (ssweja TO ssuja): 4: viermal
+
+ao6: (ssweja TO ssuja): 5: fünfmal
 
 mv:
 
@@ -3403,70 +3415,10 @@ hv:
 
 fo:
 
-tr: GOTO D1_14 IF (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
-    GOTO A_51b if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=5, 6, 11, 12, 13)
-    GOTO A_51b if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2)
+tr: GOTO D1_14 IF (ssweja>=1 OR saweja>=1 OR shwja>=1 OR ssuja>=1) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
+    GOTO A_51b if (ssweja>=1 OR saweja>=1 OR shwja>=1 OR ssuja>=1) AND (mastersplit=5, 6, 11, 12, 13)
+    GOTO A_51b if (ssweja=0 AND saweja=0 AND shwja=0 AND ssuja=0)
     GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.)
-
-hi:
-
-\------------------------------------------------------------
-
-A_51a
-=========
-
-tc:
-
-vn: ssahswe; ssafawe; ssaunt; ssaaja
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Inwieweit denken Sie daran…
-
-is:
-
-it1: (ssahswe): … die Hochschule zu wechseln?
-
-it2: (ssafawe): … Ihr Studienfach zu wechseln?
-
-it3: (ssaunt): … Ihr aktuelles Studium zu unterbrechen?
-
-it4: (ssaaja): … das Studium ganz aufzugeben?
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr ernsthaft
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO D1_20 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
-    GOTO A_52 IF mastersplit=5, 6, 11, 12, 13	
 
 hi:
 
