@@ -1379,6 +1379,8 @@ it: (hsstandbl): [infield = Bundesland/Land; Baden-Württemberg - ... - im Ausla
 
 st:
 
+aox: Bundesland/Land
+
 ao1: 1: Baden-Württemberg
 
 ao2: 2: Bayern
@@ -1926,7 +1928,7 @@ it:
 
 st:
 
-ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto) offene Angabe, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0), NUMBER]
+ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto) offene Angabe, NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0)]
 
 ao: (spernot): -11: Ich habe bisher keine Noten erhalten.
 
@@ -3437,7 +3439,7 @@ hl:
 
 in:
 
-q: Wie ernsthaft denken Sie zur Zeit daran …
+q: Inwieweit denken Sie zurzeit daran …
 
 is:
 
@@ -3459,7 +3461,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr ernsthaft
+ao5: 5: sehr häufig
 
 mv:
 
@@ -3497,10 +3499,9 @@ hl:
 
 in:
 
-q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters? 
+q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters hauptsächlich?
 
-is: Bitte beziehen Sie Ihre Angaben auf Ihren Hauptwohnsitz.
-Wenn Sie bei Ihren Eltern oder anderen Verwandten/Bekannten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
+is: Wenn Sie überwiegend bei Ihren Eltern oder Verwandten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
 
 it:
 
