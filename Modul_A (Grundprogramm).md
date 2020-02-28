@@ -2461,21 +2461,21 @@ tc:
 
 vn: vsbplz; vsbort
 
-qt: offene Frage
+qt: offene Angaben
 
 hl:
 
 in:
 
-q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben? Bitte tragen Sie die fünfstellige Postleitzahl ein.
+q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung (HZB) erhalten haben?
 
 it:
 
 st:
 
-ao1: (vsbplz): Präfix: Postleitzahl: [offene Angabe, NUMBER, 5-stellig]
+ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield: Postleitzahl, NUMBER, 5-stellig]
 
-ao2: (vsbort): : [offene Angabe, 25-stellig]
+ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield: Ort, 50-stellig]
 
 mv:
 
@@ -2483,7 +2483,7 @@ ka:
 
 vc:
 
-av: number, 5-stellig: 01000 TO 99999
+av: (vsbplz): NUMBER, 5-stellig (01000 TO 99999)
 
 kh:
 
@@ -2491,59 +2491,12 @@ fv:
 
 hv:
 
-fo: Softreminder: Bitte den Text „Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an:“ erst dann einblenden,
-wenn die PLZ nicht angegeben wurde.
+fo: Bitte jeweils zwischen den Präfixen und den Feldern für die offenen Angaben einen Zeilenumbruch einfügen. Alles linksbündig untereinander anordnen.
 
 tr: GOTO A_41
 
-hi:
+hi: vsbplz bitte als NUMBER, 5-stellig (01000 TO 99999), programmieren.
 
-\------------------------------------------------------------
-
-A_37b
-==========
-
-tc:
-
-vn: vsbplzb; vsbortb
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben?
-
-is: Bitte tragen Sie die fünfstellige Postleitzahl und ggf. den Wohnort ein.
-
-it:
-
-st:
-
-ao1: (vsbplzb): Präfix: Postleitzahl: [(vsbplzo) offene Angabe, NUMBER, 5-stellig]
-
-ao2: (vsbortb): : [offene Angabe, 25-stellig]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO A_41
-
-hi:
 
 \------------------------------------------------------------
 A_38a
@@ -2551,7 +2504,7 @@ A_38a
 
 tc:
 
-vn: intbild1 intbild2 intbild3 intbild4 intbild5 intbild6 intbild7
+vn: intbild (intbild1; intbild2; intbild3; intbild4; intbild5; intbild6; intbild7)
 
 qt: Mehrfachauswahl
 
@@ -2575,11 +2528,11 @@ ao3. (intbild3): Hochschulstudium mit erstem Abschluss (z. B. Bachelor)
 
 ao4: (intbild4): begonnenes Hochschulstudium ohne Abschluss
 
-a05: (intbild5): Schulabschluss, der zum Studium berechtigt"
+a05: (intbild5): Schulabschluss, der zum Studium berechtigt
 
 ao6: (intbild6): Schulabschluss ohne Studienberechtigung
 
-ao7: (intbild7): kein Schulabschluss
+ao7: (intbild7): keinen Schulabschluss
 
 mv:
 
@@ -2609,7 +2562,7 @@ A_38b
 
 tc:
 
-vn: ankbild1 ankbild2 ankbild3 ankbild4 ankbild5
+vn: ankbild (ankbild1; ankbild2; ankbild3; ankbild4; ankbild5)
 
 qt: Einfachauswahlmatrix
 
@@ -2639,9 +2592,9 @@ ao2: 2: teilweise anerkannt
 
 ao3: 3: nicht anerkannt
 
-ao6: -13: weiß ich nicht
+ao4: -13: weiß ich nicht
 
-mv: ao6
+mv: ao4
 
 ka:
 
@@ -2670,9 +2623,9 @@ A_38c
 
 tc:
 
-vn: intvors1 intvors2 intvors3 intvors4 intvors5 intvors5o intvors6
+vn: intvors (intvors1; intvors2; intvors3; intvors4; intvors5; intvors5o; intvors6)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -2692,11 +2645,11 @@ ao2: (intvors2): Nachweis deutscher Sprachkenntnisse (z. B. TestDaF, DSH)
 
 ao3: (intvors3): Nachweis englischer Sprachkenntnisse (z. B. Cambridge FCE, TOEFL, IELTS)
 
-ao4: (intvors4): fachliche Eignungsprüfung (z. B. Kunst, Musik, Sport)
+ao4: (intvors4): fachliche Eignungsprüfung (z. B. TestAS, Medizin, Kunst, Musik, Sport)
 
 ao5: (intvors5): Etwas anderes, und zwar: [(intvors5o), offene Angabe, 250 Zeichen]
 
-ao6: (intvors6): keine
+ao6: (intvors6): keine [Exklusivkategorie]
 
 mv:
 
@@ -2712,7 +2665,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao6 als Exklusivkategorie bitte etwas absetzen.
 
 tr: 
 GOTO D1_2 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
