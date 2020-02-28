@@ -3555,7 +3555,7 @@ A_53
 
 tc:
 
-vn: wohnal; wohnwg; wohnel; wohnpar; wohnkin; wohnfam; wohnsons
+vn: wohn (wohnal; wohnwg; wohnel; wohnpar; wohnkin; wohnfam; wohnsons)
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -3563,13 +3563,13 @@ hl:
 
 in:
 
-q1: Mit wem wohnen Sie während der Vorlesungszeit des aktuellen Semesters überwiegend zusammen?
+q1: Mit wem wohnen Sie während der Vorlesungszeit überwiegend zusammen?
 
-is: 
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
-st: Ich wohne …
+st:
 
 ao1: (wohnal): alleine. [Exklusivkategorie]
 
@@ -3587,7 +3587,7 @@ ao7: (wohnsons): mit anderen Personen.
 
 mv:
 
-ka:
+ka: (ao1 TO ao7):  Ich wohne …
 
 vc:
 
@@ -3599,7 +3599,7 @@ fv:
 
 hv:
 
-fo:
+fo: "Ich wohne …" bitte linksbündig über die erste ao positionieren.
 
 tr: GOTO D3_2 IF wohnal != 1 AND mastersplit = 3, 4, 5, 6, 9, 10, 11, 12, 14
     GOTO D3_4 IF wohnal = 1 AND mastersplit = 3, 4, 5, 6, 9, 10, 11, 12, 14
@@ -3803,7 +3803,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwstudium, nrwfach
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -3859,7 +3859,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwstudium2
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit vertikaler ao
 
 hl:
 
@@ -3913,7 +3913,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwfach2
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit vertikaler ao
 
 hl:
 
@@ -3957,7 +3957,6 @@ tr: GOTO N_4
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_4
@@ -3967,7 +3966,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwregel
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix  mit vertikaler ao
 
 hl:
 
@@ -4011,7 +4010,6 @@ tr: GOTO A_57
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_5
@@ -4021,13 +4019,13 @@ tc: IF zusatzsplit == 3
 
 vn: nrwdigbed
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix  mit vertikaler ao
 
 hl:
 
 in:
 
-q: Wie schätzen Sie Ihren Bedarf an digitalen Selbstlernangeboten in Ihrem Studiengang ein?
+q: Wie schätzen Sie Ihren Bedarf an digitalen Studienangeboten in Ihrem Studiengang ein?
 
 is:
 
@@ -4065,7 +4063,6 @@ tr: GOTO N_6
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_6
@@ -4075,13 +4072,13 @@ tc:
 
 vn: nrwdigged
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix  mit vertikaler ao
 
 hl:
 
 in:
 
-q: In welchem Maße wird Ihr Bedarf an digitalen Selbstlernangeboten durch die Hochschule gedeckt?
+q: In welchem Maße wird Ihr Bedarf an digitalen Selbstlernangeboten durch die Hochschule abgedeckt?
 
 is:
 
@@ -4129,7 +4126,7 @@ tc:
 
 vn: nrwselbtest
 
-qt: vertikale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix  mit vertikaler ao
 
 hl:
 
@@ -4154,7 +4151,9 @@ ao4: 4:
 
 ao5: 5: in sehr hohem Maße
 
-mv: 7: Test nicht durchgeführt/angeboten
+ao6: -13: Test nicht durchgeführt/angeboten
+
+mv: ao6
 
 ka:
 
@@ -4172,8 +4171,7 @@ fo:
 
 tr: GOTO N_8
 
-hi: mv ist von den übrigen aos abgesetzt, nicht Teil der Antwortmatrix
-
+hi: ao6 (missing) bitte etwas absetzen.
 
 \------------------------------------------------------------
 
@@ -4184,7 +4182,7 @@ tc:
 
 vn: nrwstudipor
 
-qt: vertikale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix  mit vertikaler ao
 
 hl:
 
@@ -4208,7 +4206,56 @@ ao4: 4:
 
 ao5: 5: in sehr hohem Maße
 
-mv: 7: Angebot nicht bekannt/nicht genutzt
+ao6: -13: Angebot nicht bekannt/nicht genutzt
+
+mv: ao6 
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_9a
+
+hi: ao6 (missing) bitte etwas absetzen.
+
+\------------------------------------------------------------
+
+N_9a 
+==========
+
+tc:
+
+vn: digosa
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Haben Sie vor bzw. zu Beginn des Studiums einen Selbsttest zur fachlichen Eignung durchgeführt (z. B. Online-Self-Assessment)?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: ja
+
+ao2: 2: nein
+
+mv:
 
 ka:
 
@@ -4226,8 +4273,7 @@ fo:
 
 tr: GOTO N_9
 
-hi: mv ist von den übrigen aos abgesetzt, nicht Teil der Antwortmatrix
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4244,24 +4290,23 @@ hl:
 
 in:
 
-q: Wie häufig werden die folgenden Aspekte Ihrer Lehrveranstaltungen über digitale Plattformen organisiert? (z. B. StudIP, Moodle, 
-Ilias, Olat)
+q: Wie viele Ihrer Lehrveranstaltungen werden über digitale Plattformen organisiert (z. B. StudIP, Moodle, Ilias, Olat)?
 
 is:
 
 it1: (digorg1): An-/Abmeldung zu Lehrveranstaltungen
 
-it2: (digorg2): Kommunikation innerhalb der Lehrveranstaltungen
+it2: (digorg2): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
 
-it3: (digorg3): Bereitstellung von Literatur und Lehrmaterialien
+it3: (digorg3): Kommunikation innerhalb der Lehrveranstaltungen
 
-it4: (digorg4): Erbringung von Leistungsnachweisen / elektronische Prüfungen
+it4: (digorg4): Bereitstellung von Literatur und Lehrmaterialien
 
-it5: (digorg5): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
+it5: (digorg5): Erbringung von Leistungsnachweisen/elektronische Prüfungen
 
 st:
 
-ao1: 1: nie
+ao1: 1: keine
 
 ao2: 2:
 
@@ -4269,9 +4314,9 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr häufig 
+ao5: 5: alle 
 
-ao6: -13:  weiß nicht  
+ao6: -13: weiß nicht  
 
 mv: ao6
 
@@ -4289,10 +4334,68 @@ hv:
 
 fo:
 
+tr: GOTO N_9b
+
+hi: ao6 (missing) bitte etwas absetzen.
+
+\------------------------------------------------------------
+
+N_9b
+=========
+
+tc:
+
+vn: digfor1, digfor2, digfor3, digfor4, digfor5
+
+qt: horizontale Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Wie viele Ihrer Lehrveranstaltungen werden in folgender Form organisiert?
+
+is:
+
+it1: (digfor1): als reine Online-Veranstaltung (z. B. Online-Vorlesung, Online-Seminar) 
+
+it2: (digfor2): als Online-Selbststudium mit einzelnen Präsenzterminen
+
+it3: (digfor3): als Präsenzveranstaltung mit einzelnen Online-Terminen
+
+it4: (digfor4): als reine Präsenzveranstaltung
+
+st:
+
+ao1: 1: keine
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: alle 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
 tr: GOTO N_10
 
-hi: ao6 (missing) ist abgesetzt von ao1-ao5
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4787,11 +4890,11 @@ st:
 
 ao1: 1: unbedeutend
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: sehr bedeutend
 
