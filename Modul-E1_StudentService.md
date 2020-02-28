@@ -718,6 +718,6 @@ tr:
 
 GOTO A_56
 
-hi: Bitte ao6 bzw. mv optisch vom Rest der Antwortskala absetzen. 
+hi: 
 
 \--------------------------------
