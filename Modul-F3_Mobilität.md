@@ -56,6 +56,7 @@ GOTO F3_21 IF ainfaus=MISSING AND auslandint=1 | 2 | 3
 GOTO F3_21 IF ainfaus=MISSING AND auslandint=MISSING
 hi:
 
+
 \--------------------------------
 
 F3_7 
@@ -241,6 +242,7 @@ tr:
 
 GOTO F3_8
 
+
 \--------------------------------
 
 F3_8
@@ -387,6 +389,7 @@ fo: ao4 absetzen
 tr: GOTO F3_10
 
 hi:
+
 
 \--------------------------------
 
@@ -569,6 +572,7 @@ GOTO F3_12
 
 hi:
 
+
 \--------------------------------
 
 F3_12 
@@ -578,7 +582,7 @@ tc: IF ainfaus > 1
 
 vn: asprachland; asprachdeut; asprachand; asprachando
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -594,7 +598,7 @@ it1: (asprachland): Landessprache des Gastlandes
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): andere Sprache, und zwar: [asprachando] [Eingabefeld]
+it3: (asprachand): andere Sprache, und zwar: [asprachando] [string, 50 Zeichen]
 
 st:
 
@@ -644,7 +648,7 @@ tc: IF ainfaus > 1
 
 vn: azuflernerf; azufinsg
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -702,7 +706,7 @@ tc: IF ainfaus > 1
 
 vn: azufleistanf; azuforgaufw; azuffinanzaufw
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -762,7 +766,7 @@ tc: IF ainfaus > 1
 
 vn: aeempf
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -938,7 +942,7 @@ tc: IF auslandint==4
 
 vn: aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanselb
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -994,7 +998,7 @@ tc: IF auslandint==4
 
 vn: aplfinelt; aplfinpar; aplfinbaf; aplfinjobv; aplfinjobw; aplfinstip; aplfinbkred; aplfinand
 
-qt: Mehrfachnennung
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1107,7 +1111,7 @@ tc:
 
 vn: akontdeust; akonteust; akontneust
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1167,7 +1171,7 @@ tc:
 
 vn: intpsydeu; intpsyzeitl; intpsyandl
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
