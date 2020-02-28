@@ -4731,15 +4731,14 @@ N_13
 
 tc: IF zusatzsplit ==4
 
-vn: diskjane, diskjane1, diskjane2, diskjane3, diskjane4, diskjane5, diskjane6, diskjane7, diskjane8, diskjane9, diskjane10, 
-diskjane11, diskjane12, diskjane13, diskjane14, diskjane15, diskjane16, diskjane16o
+vn: diskjane (diskjaneno, diskjane1, diskjane2, diskjane3, diskjane4, diskjane5, diskjane6, diskjane7, diskjane8, diskjane9, diskjane10, 
+diskjane11, diskjane12, diskjane13, diskjane14, diskjane15, diskjane16, diskjane16o)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
-in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt 
-wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. 
+in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. 
 
 q: !!Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?!!
 
@@ -4749,7 +4748,7 @@ it:
 
 st:
 
-ao1: (diskjane): nein  
+ao1: (diskjaneno): nein [Exklusivkategorie]
 
 ao2: (diskjane1): Leistungen wurden mir nicht zugetraut.
 
@@ -4767,7 +4766,7 @@ ao8: (diskjane7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppe
 
 ao9: (diskjane8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
 
-ao10: (diskjane9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet. 
+ao10: (diskjane9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet. 
 
 ao11: (diskjane10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
 
@@ -4781,11 +4780,11 @@ ao15: (diskjane14): Ich wurde körperlich bedroht.
 
 ao16: (diskjane15): Ich wurde körperlich angegriffen. 
 
-ao17: (diskjane16): sonstiges: [(diskjane16o), 50 Zeichen] 
+ao17: (diskjane16): Anderes, und zwar: [(diskjane16o), offene Angabe, 250 Zeichen] 
 
 mv:
 
-ka (ao2 TO ao17): ja, und zwar: 
+ka: (ao2 TO ao17): Ja, und zwar: 
 
 vc:
 
@@ -4797,11 +4796,12 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO A_57 IF diskjane=1
     GOTO N_14 IF diskjane!=1
-
+    
+hi:
 
 \------------------------------------------------------------
 
@@ -4810,8 +4810,8 @@ N_14
 
 tc:
 
-vn: diskanza1, diskanza2, diskanza3, diskanza4, diskanza5, diskanza6, diskanza7, diskanza8, diskanza9, diskanza10, diskanza11, 
-diskanza12, diskanza13, diskanza14, diskanza15
+vn: diskanza (diskanza1, diskanza2, diskanza3, diskanza4, diskanza5, diskanza6, diskanza7, diskanza8, diskanza9, diskanza10, diskanza11, 
+diskanza12, diskanza13, diskanza14, diskanza15)
 
 qt: Einfachauswahlmatrix
 
@@ -4839,7 +4839,7 @@ it7: (diskanza7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppe
 
 it8: (diskanza8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
 
-it9: (diskanza9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet.
+it9: (diskanza9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet.
 
 it10: (diskanza10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
 
@@ -4853,6 +4853,8 @@ it14: (diskanza14): Ich wurde körperlich bedroht.
 
 it15: (diskanza15): Ich wurde körperlich angegriffen.
 
+it16: (diskanza16): Anderes
+
 st:
 
 ao1: 1: einmal
@@ -4861,13 +4863,43 @@ ao2: 2: mehrmals
 
 ao3: 3: regelmäßig
 
-ao4: 4: weiß nicht wie häufig
+ao4: 4: weiß ich nicht
 
 mv:
 
 ka:
 
-vc:
+vc1: SHOW it1 (diskanza1) IF diskjane1=1
+
+vc2: SHOW it2 (diskanza2) IF diskjane2=1
+
+vc3: SHOW it3 (diskanza3) IF diskjane3=1
+
+vc4: SHOW it4 (diskanza4) IF diskjane4=1
+
+vc5: SHOW it5 (diskanza5) IF diskjane5=1
+
+vc6: SHOW it6 (diskanza6) IF diskjane6=1
+
+vc7: SHOW it7 (diskanza7) IF diskjane7=1
+
+vc8: SHOW it8 (diskanza8) IF diskjane8=1
+
+vc9: SHOW it9 (diskanza9) IF diskjane9=1
+
+vc10: SHOW itq10 (diskanza10) IF diskjane10=1
+
+vc11: SHOW it11 (diskanza11) IF diskjane11=1
+
+vc12: SHOW it12 (diskanza12) IF diskjane12=1
+
+vc13: SHOW it13 (diskanza13) IF diskjane13=1
+
+vc14: SHOW it14 (diskanza14) IF diskjane14=1
+
+vc15: SHOW it15 (diskanza15) IF diskjane15=1
+
+vc16: SHOW it16 (diskanza16) IF diskjane16=1
 
 av:
 
@@ -4877,7 +4909,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao4 bitte etwas absetzen.
 
 tr: GOTO N_15
 
@@ -4891,9 +4923,9 @@ N_15
 
 tc:
 
-vn: diskwem1; diskwem2; diskwem3; diskwem4; diskwem5; diskwem6; diskwem7; diskwem8; diskwem8o
+vn: diskwem (diskwem1; diskwem2; diskwem3; diskwem4; diskwem5; diskwem6; diskwem7; diskwem8; diskwem8o)
 
-qt:  Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt:  Mehrfachauswahl; offene Angabe
 
 hl:
 
@@ -4921,7 +4953,7 @@ ao6: (diskwem6): Verfahren/Regelungen
 
 ao7: (diskwem7): Keine Angabe
 
-ao8: (diskwem8): Andere: [diskwem8o, 350 Zeichen]
+ao8: (diskwem8): Andere, und zwar: [(diskwem8o), offene Angabe, 250 Zeichen]
 
 mv:
 
