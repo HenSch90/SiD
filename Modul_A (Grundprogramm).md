@@ -2708,7 +2708,7 @@ ao5: 5: Hauptschulabschluss
 
 ao6: 6: anderer Abschluss
 
-a07: 7: kein Abschluss
+a07: 7: keinen Abschluss
 
 mv:
 
@@ -2737,17 +2737,15 @@ A_39
 
 tc:
 
-vn: vsbstyp (vsbstyp1-vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15); vsbtypob
+vn: vsbstyp (vsbstyp1-vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
 
-qt: Mehrfachauswahl mit offener Abfrage
+qt: Mehrfachauswahl mit offener Angabe
 
 hl:
 
 in:
 
-q: Die Berechtigung zum Studium kann in Deutschland auf unterschiedlichen Wegen erfolgen: Zum einen (klassisch) über ein Schulzeugnis, zum anderen aber auch über die Anerkennung beruflicher Qualifikationen oder besonderer Eignungen.
-
-Auf welchem Weg erfolgte Ihre Zulassung zu Ihrem ersten Studium?
+q: Auf welchem Weg erfolgte die Zulassung zu Ihrem ersten Studium (über den schulischen Weg, eine berufliche Qualifikation oder besondere Eignung)?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -2771,9 +2769,9 @@ ao7: (vsbtyp7): Berufsoberschule
 
 ao8: (vsbtyp8): Fachoberschule
 
-ao9: (vsbtyp9): andere berufsbildende Schule (z. B. Fachschule, Fachakademie, Berufskolleg u. a.) [Exklusivkategorie]
+ao9: (vsbtyp9): andere berufsbildende Schule (z. B. Fachschule, Fachakademie, Berufskolleg u. a.)
 
-ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z. B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
+ao10: (vsbtyp10): berufliche Aufstiegsfortbildung als Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in
 
 ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
 
@@ -2783,15 +2781,15 @@ ao13: (vsbtyp13): Begabtenprüfung
 
 ao14: (vsbtyp14): Mediziner\*innen-Test (TMS)
 
-ao15: (vsbtyp15): auf einem anderen Weg, und zwar: [(vsbtypob); offen Angabe, 30 Zeichen]
+ao15: (vsbtyp15): Auf einem anderen Weg, und zwar: [(vsbtyp15o); offen Angabe, 80 Zeichen]
 
 mv:
 
-ka1 (ao1 TO ao9) Schulischer Weg:
+ka1 (ao1 TO ao9) Schulischer Weg
 
-ka2(ao10 TO ao11) Berufliche Qualifikation:
+ka2 (ao10 TO ao11) Berufliche Qualifikation
 
-ka3(ao12 TO ao15) Eignungsprüfungen:
+ka3 (ao12 TO ao15o) Eignungsprüfungen
 
 vc:
 
@@ -2803,7 +2801,9 @@ fv:
 
 hv:
 
-fo: Bitte die Beispiele in Klammern in etwas kleinerer Schriftgröße (2pt kleiner) umsetzen.
+fo1: Bitte die Beispiele in Klammern in etwas kleinerer Schriftgröße (2pt kleiner) umsetzen.
+
+fo2: "Schulischer Weg" linksbündig über ao1; "Berufliche Qualifikation" linksbündig über ao10; "Eignungsprüfungen" linksbündig über ao12
 
 tr: GOTO D1_1 if (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14) AND (vsbtyp1=1 OR vsbtyp2=1 OR vsbtyp3=1 OR vsbtyp4=1 OR vsbtyp5=1 OR vsbtyp6=1 OR vsbtyp7=1 OR vsbtyp8=1 OR vsbtyp9=1)
     GOTO A_40 IF ELSE
@@ -2817,15 +2817,15 @@ A_40
 
 tc:
 
-vn: vsbnoteo; vsbnote
+vn: vsbnoteo; vsbnotej; vsbnote
 
-qt: Einfachauswahl mit offener Abfrage
+qt: offene Angaben; Einfachauswahl
 
 hl:
 
 in:
 
-q: Welche Abschlussnote hatten Sie in dem Zeugnis, das Sie zur Aufnahme eines Studiums berechtigt?
+q: Wann und mit welcher Note haben Sie ihre Hochschulzugangsberechtigung erlangt?
 
 is: Punktzahl bitte in Note umrechnen
 
@@ -2833,60 +2833,25 @@ it:
 
 st:
 
-ao1: 3: Präfix: Durchschnittsnote (z. B. 2,5): [(vsbnoteo); offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
+ao1: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
-ao2: -11: Ich habe keine Note erhalten. 
+ao2: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
 
-ao3: -12: weiß ich nicht 
+ao3: (vsbnote): Ich habe keine Note erhalten.
+
+mv:
 
 ka:
 
 vc:
 
-av: 
+av1: (vsbnoteo): NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
 
-kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+av2: (vsbnotej): NUMBER, 4-stellig (1950 bis 2020)
 
-fv:
+kh1: (vsbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
-hv:
-
-fo:
-
-tr: 
-
-hi:
-
-\------------------------------------------------------------
-
-A_40
-========
-
-tc:
-
-vn: vsbzpj
-
-qt: Einfachauswahl mit Dropdown
-
-hl:
-
-in:
-
-q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt?
-
-is: Zeitpunkt der Zeugnisübergabe
-
-it: Jahr: [Dropdown, Jahresliste: Jahr, 2019 ... 1999 und früher]
-
-st:
-
-ao:
-
-vc:
-
-av:
-
-kh:
+kh2: (vsbnotej): Bitte geben Sie die vierstellige Jahreszahl an.
 
 fv:
 
@@ -2894,11 +2859,12 @@ hv:
 
 fo:
 
-tr:
-GOTO A_37a IF h_split=1
-GOTO A_37b IF h_split=2
+tr: GOTO A_37a 
 
-hi:
+hi1: vsbnoteo bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
+
+hi2: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
+
 
 \------------------------------------------------------------
 
