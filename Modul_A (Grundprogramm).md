@@ -194,7 +194,7 @@ A_1
 
 tc:
 
-vn: dnatdeu, dnatausl
+vn: dnatdeu; dnatausl
 
 qt: Mehrfachauswahl
 
@@ -572,7 +572,7 @@ A_8
 
 tc:
 
-vn: baufgru (baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandba_open)
+vn: baufgru (baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandbao)
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -606,7 +606,7 @@ ao6: (baufgrufamba): Familiennachzug, zog zu bereits in Deutschland lebender Fam
 
 ao6: (baufgruausba): (Spät-)Aussiedler\*in
 
-ao7: (baufgruandba): Anderer Status, und zwar: [(baufgruandba_open); offene Angabe, 80 Zeichen]
+ao7: (baufgruandba): Anderer Status, und zwar: [(baufgruandbao); offene Angabe, 80 Zeichen]
 
 ato:
 
@@ -697,7 +697,7 @@ A_8b
 
 tc:
 
-vn: intgrundhl intgrunddl
+vn: intgrundhl; intgrunddl
 
 qt: offene Angaben
 
@@ -1528,7 +1528,7 @@ A_21
 
 tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
 
-vn: hsstandlao, hsstandhsao
+vn: hsstandlao; hsstandhsao
 
 qt: offene Angaben
 
@@ -1630,7 +1630,7 @@ A_23
 
 tc:
 
-vn: sfach1o2, sfach2o2
+vn: sfach1o2; sfach2o2
 
 qt: offene Angaben
 
@@ -3028,7 +3028,7 @@ A_45
 
 tc: sabsja=2 OR sbsja=3
 
-vn: sabszp, sabszp2
+vn: sabszp; sabszp2
 
 qt: Einfachauswahl mit Dropdown
 
@@ -3420,7 +3420,7 @@ A_51b
 
 tc:
 
-vn: ssahswe; ssafawe; ssaunt; ssaaja
+vn: ssa (ssahswe; ssafawe; ssaunt; ssaaja)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -3789,7 +3789,7 @@ N_1
 =========
 tc: IF NRW / zusatzsplit ==1
 
-vn: nrwstudium, nrwfach
+vn: nrwstudium; nrwfach
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4268,7 +4268,7 @@ N_9
 
 tc:
 
-vn: digorg (digorg1, digorg2, digorg3, digorg4, digorg5)
+vn: digorg (digorg1; digorg2; digorg3; digorg4; digorg5)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4331,7 +4331,7 @@ N_9b
 
 tc:
 
-vn: digfor (digfor1, digfor2, digfor3, digfor4, digfor5)
+vn: digfor (digfor1; digfor2; digfor3; digfor4; digfor5)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4390,7 +4390,7 @@ N_10
 
 tc:
 
-vn: diglehr (diglehr1, diglehr2, diglehr3, diglehr4, diglehr5, diglehr6, diglehr7, diglehr8, diglehr9, diglehr9o)
+vn: diglehr (diglehr1; diglehr2; diglehr3; diglehr4; diglehr5; diglehr6; diglehr7; diglehr8; diglehr9; diglehr9o)
 
 qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
 
@@ -4461,7 +4461,7 @@ N_10a
 
 tc:
 
-vn: diggeso (diggeso1, diggeso2, diggeso3, diggeso4, diggeso5)
+vn: diggeso (diggeso1; diggeso2; diggeso3; diggeso4; diggeso5)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4522,7 +4522,7 @@ N_10b
 
 tc:
 
-vn: digflehr (digflehr1, digflehr2, digflehr3)
+vn: digflehr (digflehr1; digflehr2; digflehr3)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4579,7 +4579,7 @@ N_11
 
 tc:
 
-vn: digkom (digkom1, digkom2, digkom3, digkom4, digkom5, digkom6)
+vn: digkom (digkom1; digkom2; digkom3; digkom4; digkom5; digkom6)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4642,7 +4642,7 @@ N_12
 
 tc:
 
-vn: digan (digan1, digan2, digan3, digan4, digan5, digan6, digan7, digan8, digan9, digan10, digan11)
+vn: digan (digan1; digan2; digan3; digan4; digan5; digan6; digan7; digan8; digan9; digan10; digan11)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4715,8 +4715,8 @@ N_13
 
 tc: IF zusatzsplit ==4
 
-vn: diskjane (diskjaneno, diskjane1, diskjane2, diskjane3, diskjane4, diskjane5, diskjane6, diskjane7, diskjane8, diskjane9, diskjane10, 
-diskjane11, diskjane12, diskjane13, diskjane14, diskjane15, diskjane16, diskjane16o)
+vn: diskjane (diskjaneno; diskjane1; diskjane2; diskjane3; diskjane4; diskjane5; diskjane6; diskjane7; diskjane8; diskjane9; diskjane10; 
+diskjane11; diskjane12; diskjane13; diskjane14; diskjane15; diskjane16; diskjane16o)
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -4796,8 +4796,8 @@ N_14
 
 tc:
 
-vn: diskanza (diskanza1, diskanza2, diskanza3, diskanza4, diskanza5, diskanza6, diskanza7, diskanza8, diskanza9, diskanza10, diskanza11, 
-diskanza12, diskanza13, diskanza14, diskanza15)
+vn: diskanza (diskanza1; diskanza2; diskanza3; diskanza4; diskanza5; diskanza6; diskanza7; diskanza8; diskanza9; diskanza10; diskanza11; 
+diskanza12; diskanza13; diskanza14; diskanza15)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
