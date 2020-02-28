@@ -365,9 +365,9 @@ A_4
 
 tc:
 
-vn: dnatsta
+vn: dnatsta; dnatstao
 
-qt: Einfachauswahl mit Dropdown
+qt: Einfachauswahl mit Dropdown; offene Angabe
 
 hl:
 
@@ -387,21 +387,21 @@ it:
 
 st:
 
-ao: (dnatsta): [infield = Staatsangehörigkeit; Staatenliste_DBI] (Dropdown)
+ao1: (dnatsta): [infield = Staatsangehörigkeit; Staatenliste_DBI] (Dropdown)
+
+ao2: (dnatstao): Präfix: An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben: [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc: SHOW Dropdown if dnatko\>0
+vc1: SHOW q1 if dnatderw=2 and dnatausl=0
 
-SHOW q1 if dnatderw=2 and dnatausl=0
+vc2: SHOW q2 if dnatderw=3 and dnatausl=0
 
-SHOW q2 if dnatderw=3 and dnatausl=0
+vc3: SHOW q3 if dnatdeu=1 AND dnatausl=1
 
-SHOW q3 if dnatdeu=1 AND dnatausl=1
-
-SHOW q4 if dnatdeu=0 AND dnatausl=1
+vc4: SHOW q4 if dnatdeu=0 AND dnatausl=1
 
 av:
 
@@ -413,54 +413,9 @@ hv:
 
 fo:
 
-tr: 
+tr:  GOTO A_5
 
 hi: Dropdown bitte nach Angabe des Kontinents in A_3 (dnatko) vorselektieren.
-
-\------------------------------------------------------------
-
-A_4
-====
-
-tc:
-
-vn: dnatstao
-
-qt: offene Angabe
-
-hl:
-
-in:
-
-q: An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben: 
-
-is:
-
-it:
-
-st:
-
-ao: (dnatstao): [offene Angabe; 60 Zeichen]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO A_5
-
-hi:
 
 \------------------------------------------------------------
 
