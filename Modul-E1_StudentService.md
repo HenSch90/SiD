@@ -1,5 +1,52 @@
 \--------------------------------
 
+E1_0
+====
+
+tc: wohnfo = 4 | 5 | 6 | 7
+
+vn: stuwotrae
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: In welcher Trägerschaft ist das Studierendenwohnheim, in dem Sie wohnen?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: Studierendenwerk/Studentenwerk
+
+ao2: 2: anderer Träger (z. B. privat, kirchlich)
+
+mv: -12: weiß ich nicht
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: mv/"weiß ich nicht" bitte etwas absetzen.
+
+tr: GOTO D3_1 if mastersplit= 3, 4, 5, 6, 9, 10, 11, 12, 14 GOTO A_53 IF mastersplit= 1, 2, 7, 8, 13
+
+hi:
+
+\--------------------------------
+
 E1_1
 ====
 
@@ -7,7 +54,7 @@ tc:
 
 vn: moftfrue; moftvorm; moftmitt; moftnach; moftaben
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -77,13 +124,13 @@ vn: mzufges; mzufqual; mzufausw; mzufprl; mzufpraes; mzufatmo;
 mzufsitz; mzuflage; mzufwart; mzufserv; mzufverl; mzufoeff; mzufkomm;
 mzufbarf; mzufkind
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie zufrieden sind Sie mit Ihrer Mensa oder Cafeteria hinsichtlich der folgenden Aspekte?
+q: Wie zufrieden sind Sie mit Ihrer Mensa/Cafeteria hinsichtlich der folgenden Aspekte?
 
 is:
 
@@ -95,7 +142,7 @@ it3: (mzufausw): Auswahl- und Kombinationsmöglichkeiten
 
 it4: (mzufprl): Preis-Leistungs-Verhältnis
 
-it5: (mzufpraes): Präsentation und Darbietung des Essensangebots
+it5: (mzufpraes): Präsentation des Essensangebots
 
 it6: (mzufatmo): Atmosphäre und Raumgestaltung
 
@@ -133,9 +180,9 @@ mv:
 
 ka:
 
-vc:
-SHOW it14 IF h_gartcount >= 1
-SHOW it15 IF dkinja = 2
+vc1: SHOW it14 IF h_gartcount >= 1
+
+vc2: SHOW it15 IF dkinja = 2
 
 av:
 
@@ -162,7 +209,7 @@ tc:
 vn: indergenu; indersatt; inderprei; inderwich; inderplan; inderzuha; 
 inderprob; inderschn; inderunwe; inderkoch; indergese
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -188,7 +235,7 @@ it7: (inderprob): Ich probiere gerne Speisen aus anderen Kulturkreisen aus.
 
 it8: (inderschn): Mein Essen muss schnell zubereitet sein.
 
-it9: (inderunwe): Ich esse häufig unterwegs.
+it9: (inderunwe): Ich esse häufig unterwegs (to go).
 
 it10: (inderkoch): Meistens koche ich mein Essen selbst.
 
@@ -234,9 +281,9 @@ E1_3a
 
 tc:
 
-vn: indervege; indervega; inderoeko; inderfair; inderregi; inderzuck; inderkalo; inderfris
+vn: inderflei; inderfisch; indervege; indervega; inderoeko; inderfair; inderregi; inderzuck; inderkalo; inderfris
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -254,13 +301,13 @@ it3: (indervege): Ich ernähre mich vegetarisch.
 
 it4: (indervega): Ich ernähre mich vegan.
 
-it5: (inderoeko): Ich achte bei Lebensmitteln darauf, dass sie EU-Öko/Bio-zertifiziert sind.
+it5: (inderoeko): Ich achte bei Lebensmitteln darauf, dass sie EU-Öko-/Bio-zertifiziert sind.
 
 it6: (inderfair): Ich achte darauf, dass Lebensmittel fair gehandelt sind.
 
 it7: (inderregi): Ich konsumiere vor allem regionale/saisonale Lebensmittel.
 
-it8: (inderzuck): Ich versuche den Konsum von Zucker zu vermeiden.
+it8: (inderzuck): Ich versuche, den Konsum von Zucker zu vermeiden.
 
 it9: (inderkalo): Beim Essen achte ich darauf, wie viele Kalorien ich zu mir nehme.
 
@@ -306,9 +353,9 @@ E1_6
 tc:
 
 vn: ibedsfin; ibedfinbs; ibedfinwo; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedsuch; ibedvbew;
-ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln; ibebssu
+ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln; ibebssu;
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
 hl:
 
@@ -369,20 +416,20 @@ ao4: 4:
 ao5: 5: in hohem Maße
 
 mv: 
-ka1: (it1, it2, it3, it4, it5): finanzierungsbezogene Themen
 
-ka2: (it6, it7, it8, it9): persönliche Themen
+ka1: (it1 TO it5): !!finanzierungsbezogene Themen!!
 
-ka3: (it10, it11, it12, it13, it14, it15, it16, it17, it18, it19): studienbezogene Themen
+ka2: (it6 TO it9): !!persönliche Themen!!
 
-vc: 
-SHOW ibedfinbs IF h_gartcount >= 1
+ka3: (it10 TO it19): !!studienbezogene Themen!!
 
-SHOW ibedvbew IF eaktsens = 2,3,4
+vc1: SHOW it2, it12, it18, it19 IF h_gartcount >= 1
 
-SHOW ibedvbki IF dkinja = 2
+vc2: SHOW it6 IF demofam = 2 | 3
 
-SHOW ibedvbhc AND ibebsln AND ibebssu IF h_gartcount >= 1
+vc3: SHOW it10 IF eaktsens = 2 | 3 | 4
+
+vc4: SHOW it11 IF dkinja = 2
 
 av:
 
@@ -392,13 +439,17 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "finanzierungsbezogene Themen" linksbündig positionieren.
+
+fo2: Bitte über it6 "persönliche Themen" linksbündig positionieren.
+
+fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
 
 tr: 
 
 GOTO E1_7 IF ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
 
-ELSE GOTO E1_8
+ELSE GOTO E1_11
 
 hi:
 
@@ -411,9 +462,10 @@ E1_7
 tc: ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
 
 vn: iinasfin; iinafinbs; iinafinwo; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinasuch;
-iinavbew; iinavbki; iinavbhc; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs; innabsln; iinabssu
+iinavbew; iinavbki; iinavbhc; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs; innabsln; iinabssu;
+iinano;
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix mit Zwischenüberschriften und horizontalen ao
 
 hl:
 
@@ -473,51 +525,49 @@ ao4: 4: ja, innerhalb und außerhalb des Hochschulbereichs
 
 mv:
 
-ka1: (it1, it2, it3, it4, it5): finanzierungsbezogene Themen
+ka1: (it1 TO it5): !!finanzierungsbezogene Themen!!
 
-ka2: (it6, it7, it8, it9): persönliche Themen
+ka2: (it6 TO it9): !!persönliche Themen!!
 
-ka3: (it10, it11, it12, it13, it14, it15, it16, it17, it18, it19): studienbezogene Themen
+ka3: (it10 TO it19): !!studienbezogene Themen!!
 
-vc: 
+vc1: SHOW it1 IF ibedsfin > 1
 
-SHOW it1 IF ibedsfin > 1
+vc2: SHOW it2 IF ibedfinbs > 1
 
-SHOW it2 IF ibedfinbs > 1
+vc3: SHOW it3 IF ibedfinwo > 1
 
-SHOW it3 IF ibedfinwo > 1
+vc4: SHOW it4 IF ibedkv > 1
 
-SHOW it4 IF ibedkv > 1
+vc5: SHOW it5 IF ibedafin > 1
 
-SHOW it5 IF ibedafin > 1
+vc6: SHOW it6 IF ibedpart > 1
 
-SHOW it6 IF ibedpart > 1
+vc7: SHOW it7 IF ibedfamu > 1
 
-SHOW it7 IF ibedfamu > 1
+vc8: SHOW it8 IF ibeddep > 1
 
-SHOW it8 IF ibeddep > 1
+vc9: SHOW it9 IF ibedsuch > 1
 
-SHOW it9 IF ibedsuch > 1
+vc10: SHOW it10 IF ibedvbew > 1
 
-SHOW it10 IF ibedvbew > 1
+vc11: SHOW it11 IF ibedvbki > 1
 
-SHOW it11 IF ibedvbki > 1
+vc12: SHOW it12 IF ibedvbhc > 1
 
-SHOW it12 IF ibedvbhc > 1
+vc13: SHOW it13 IF ibedllpran > 1
 
-SHOW it13 IF ibedllpran > 1
+vc14: SHOW it14 IF ibedaoz > 1
 
-SHOW it14 IF ibedaoz > 1
+vc15: SHOW it15 IF ibedabersw > 1
 
-SHOW it15 IF ibedabersw > 1
+vc16: SHOW it16 IF ibedaorg > 1
 
-SHOW it16 IF ibedaorg > 1
+vc17: SHOW it17 IF ibedabs > 1
 
-SHOW it17 IF ibedabs > 1
+vc18: SHOW it18 IF ibebsln > 1
 
-SHOW it18 IF ibebsln > 1
-
-SHOW it19 IF ibebssu > 1
+vc19: SHOW it19 IF ibebssu > 1
 
 av:
 
@@ -527,13 +577,18 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "finanzierungsbezogene Themen" linksbündig positionieren.
 
-tr: GOTO E1_8
+fo2: Bitte über it6 "persönliche Themen" linksbündig positionieren.
 
+fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
+
+tr: GOTO E1_8 IF iinano = 1
+    ELSE GOTO E1_11
+    
 hi: Bitte Systemvariable "iinano" mit den folgenden Werten anlegen:
-iinano=0, wenn mind. 1 Item auf E1_7 > 1 ist und
-iinano=1, wenn alle **angezeigten** Items auf E1_7=0
+iinano = 0, wenn mind. ein Item/eine Variable auf E1_7 > 1 ist.
+iinano = 1, wenn alle **angezeigten** Items/Variablen auf E1_7 = 1 sind.
 
 
 \--------------------------------
@@ -549,17 +604,17 @@ qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
-q: Warum haben Sie kein Beratungsangebot in Anspruch genommen?
+in:
 
-in: Ich habe kein Beratungsangebot in Anspruch genommen, weil…
+q: Warum haben Sie kein Beratungsangebot in Anspruch genommen?
 
 is: Bitte alles Zutreffende auswählen.
 
 it1: (ihinzeit): ... ich keine Zeit dafür hatte.
 
-it2: (ihinaufw): ...der Aufwand zu groß erschien.
+it2: (ihinaufw): ... der Aufwand zu groß erschien.
 
-it3: (ihingel): ... sich das Problem von allein gelöst hat.
+it3: (ihingel): ... sich das Problem von alleine gelöst hat.
 
 it4: (ihinkan): ... ich kein passendes Angebot gefunden habe.
 
@@ -567,9 +622,9 @@ it5: (ihinpre): ... ich mein Problem nicht preisgeben wollte.
 
 it6: (ihinfreu): ... ich im privaten Umfeld Unterstützung gefunden habe.
 
-it7: (ihinhil): ...ich nicht wusste, wen ich um Beratung hätte bitten können.
+it7: (ihinhil): ... ich nicht wusste, wen ich um Beratung hätte bitten können.
 
-it8: (ihinhem): ...ich Hemmungen hatte, Hilfe in Anspruch zu nehmen.
+it8: (ihinhem): ... ich Hemmungen hatte, Hilfe in Anspruch zu nehmen.
 
 it9: (ihinnac): ... ich dadurch Nachteile im weiteren Studium befürchtete.
 
@@ -581,7 +636,7 @@ ao:
 
 mv:
 
-ka:
+ka: (it1 TO it10): !!Ich habe kein Beratungsangebot in Anspruch genommen, weil …!!
 
 vc:
 
@@ -593,7 +648,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über it1 "Ich habe kein Beratungsangebot in Anspruch genommen, weil …" linksbündig positionieren.
 
 tr: GOTO E1_11
 
@@ -609,7 +664,7 @@ tc:
 
 vn: infoauvo; infofopr; infohosp; infostve; infopaho; infohole
 
-qt:
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -621,7 +676,7 @@ is:
 
 it1: (infoauvo): außercurriculare Vortragsreihen (z. B. Studium generale)
 
-it2: (Infofopr): Forschungsschwerpunkte Ihrer Professor*innen
+it2: (Infofopr): Forschungsschwerpunkte Ihrer Professor\*innen
 
 it3: (infohosp): Programm des Hochschulsports
 
@@ -643,9 +698,7 @@ ao4: 4:
 
 ao5: 5: sehr gut informiert
 
-ao6: -11: interessiert mich nicht
-
-mv: ao6
+mv: -11: interessiert mich nicht
 
 ka:
 
@@ -659,7 +712,7 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"interessiert mich nicht" bitte etwas absetzen.
 
 tr:
 
