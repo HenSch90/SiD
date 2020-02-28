@@ -190,7 +190,7 @@ tc:
 
 vn:  avorniem; avorelt; avorgeschw; avorandver; avorfreund; avorkomm
 
-qt: Mehrfachauswahl mit Exklusivkategorie und vertikalen ao
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -230,7 +230,9 @@ fv:
 
 hv:
 
-fo: Bitte über it2 "ja, und zwar:" linksbündig positionieren.
+fo1: ao1 bitte etwas absetzen.
+
+fo2: Bitte über it2 "ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO F1_5
 
@@ -245,7 +247,7 @@ tc:
 
 vn: aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul
 
-qt: Mehrfachauswahl mit Exklusivkategorie und vertikalen ao
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -489,23 +491,25 @@ hl:
 
 in:
 
-q: Warum haben Sie sich für Deutschland als Studienland entschieden?
+q1: Warum haben Sie sich für Deutschland als Studienland entschieden?
 
-is: **Ich habe mich für ein Studium in Deutschland entschieden, ...**
+q2: !!Ich habe mich für ein Studium in Deutschland entschieden, ...!!
 
-it1: (bdequaba): aufgrund der hohen Lebensqualität.
+is:
 
-it2: (bdefamsba): weil bereits Freund\*innen/Verwandte in Deutschland studiert haben.
+it1: (bdequaba): ... aufgrund der hohen Lebensqualität.
 
-it3: (bdeoekba): aufgrund der wirtschaftlichen Lage in Deutschland.
+it2: (bdefamsba): ... weil bereits Freund\*innen/Verwandte in Deutschland studiert haben.
 
-it4: (bdefinba): weil dies meinen finanziellen Möglichkeiten entspricht.
+it3: (bdeoekba): ... aufgrund der wirtschaftlichen Lage in Deutschland.
 
-it5: (bdesprba): um meine Sprachkenntnisse zu vertiefen.
+it4: (bdefinba): ... weil dies meinen finanziellen Möglichkeiten entspricht.
 
-it6: (bdearbba): um nach Studienabschluss in Deutschland zu arbeiten.
+it5: (bdesprba): ... um meine Sprachkenntnisse zu vertiefen.
 
-it7: (bdekenba): um Deutschland kennenzulernen.
+it6: (bdearbba): ... um nach Studienabschluss in Deutschland zu arbeiten.
+
+it7: (bdekenba): ... um Deutschland kennenzulernen.
 
 st:
 
@@ -533,7 +537,7 @@ fv:
 
 hv:
 
-fo:
+fo: q2 bitte unterhalb und mit etwas Abstand von q1 positionieren.
 
 tr: GOTO F1_10
 
@@ -548,7 +552,7 @@ tc:
 
 vn: simmaba
 
-qt: Einfachauswahl mit Dropdown
+qt: Drop-Down
 
 hl:
 
@@ -562,7 +566,7 @@ it:
 
 st:
 
-ao: [Dropdown, Semesterliste: Semester; SoSe2020, WiSe2019/2020 bis SoSe2010]
+ao: (simmaba): [infield = Semester; Sommersemester 2020 - Wintersemester 2019/20 - Sommersemester 2019 - ... - Sommersemester 2010] (Drop-Down)
 
 mv:
 
@@ -603,6 +607,8 @@ q: Planen Sie, in Deutschland einen Hochschulabschluss zu erwerben?
 
 is: Bitte beziehen Sie sich auf Ihren aktuellen Studiengang.
 
+is: 
+
 it:
 
 st:
@@ -613,9 +619,7 @@ ao2: 2: Ja, ich plane einen Studienabschluss in Deutschland (z. B. Bachelor, Mas
 
 ao3: 3: Ja, ich plane einen Doppelabschluss (Deutschland und anderes Land).
 
-ao4: -12: weiß ich noch nicht
-
-mv: ao4
+mv: -12: weiß ich noch nicht
 
 ka:
 
@@ -629,7 +633,7 @@ fv:
 
 hv:
 
-fo: ao4 absetzen
+fo: mv/"weiß ich noch nicht" bitte etwas absetzen.
 
 tr: GOTO F1_12
 
@@ -645,6 +649,7 @@ tc:
 vn: ainfcpba
 
 qt: Einfachauswahl mit vertikalen ao
+
 hl:
 
 in:
@@ -665,9 +670,7 @@ ao3: 3: ja, vollständig
 
 ao4: 4: ist nicht vorgesehen
 
-ao5: -12: weiß ich nicht
-
-mv: ao5
+mv: -12: weiß ich nicht
 
 ka:
 
@@ -681,7 +684,7 @@ fv:
 
 hv:
 
-fo: ao5 absetzen
+fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
 tr: GOTO F1_13
 
@@ -710,7 +713,7 @@ it:
 
 st:
 
-ao1: (apronoba): nein (Exklusivkategorie)
+ao1: (apronoba): nein (EK)
 
 ao2: (aproerasba): ERASMUS+
 
@@ -736,11 +739,13 @@ fv:
 
 hv:
 
-fo: ao1 absetzen
+fo1: ao1 bitte etwas absetzen.
+
+fo2: Bitte über it2 "ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO F1_14
 
-hi: Items bitte zufällig rotieren.
+hi: 
 
 \--------------------------------
 
@@ -757,7 +762,7 @@ hl:
 
 in:
 
-q: Wie häufig unterhalten Sie sich mit…
+q: Wie häufig unterhalten Sie sich mit …
 
 is:
 
@@ -818,7 +823,7 @@ in:
 
 q1: (azufrwillba): Wie willkommen fühlen Sie sich in Deutschland?
 
-q2: (azufrsichba): Wie sicher fühlen Sie sich bislang in Deutschland insgesamt?
+q2: (azufrsichba): Wie sicher fühlen Sie sich in Deutschland insgesamt?
 
 is:
 
@@ -826,29 +831,26 @@ it:
 
 st:
 
-[für q1 (azufrwillba):]
+ao1 (azufrwillba): 1: gar nicht willkommen
 
-ao1: 1: gar nicht willkommen
+ao2 (azufrwillba): 2:
 
-ao2: 2:
+ao3 (azufrwillba): 3:
 
-ao3: 3:
+ao4 (azufrwillba): 4:
 
-ao4: 4:
+ao5 (azufrwillba): 5: sehr willkommen
 
-a05: 5: sehr willkommen
 
-[für q2 (azufrsichba):]
+ao6 (azufrsichba): 1: gar nicht sicher
 
-ao1: 1: gar nicht sicher
+ao7 (azufrsichba): 2:
 
-ao2: 2:
+ao8 (azufrsichba): 3:
 
-ao3: 3:
+ao9 (azufrsichba): 4:
 
-ao4: 4:
-
-ao5: 5: sehr sicher
+ao10 (azufrsichba): 5: sehr sicher
 
 mv:
 
@@ -864,7 +866,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte zuerst q1 mit ao1-ao5 darstellen und darunter dann q2 mit ao6-ao10 darstellen.
 
 tr: GOTO F1_16
 
@@ -877,7 +879,7 @@ F1_16
 
 tc:
 
-vn: azuflernerf; azufinsg
+vn: azuflernerfba; azufinsgba
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -889,9 +891,9 @@ q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …
 
 is:
 
-it1: (azuflernerf): … den in Deutschland gewonnenen fachlichen Kenntnissen?
+it1: (azuflernerfba): … den in Deutschland gewonnenen fachlichen Kenntnissen?
 
-it2: (azufinsg): … Ihrem Aufenthalt in Deutschland insgesamt?
+it2: (azufinsgba): … Ihrem Aufenthalt in Deutschland insgesamt?
 
 st:
 
@@ -989,7 +991,7 @@ tc:
 
 vn: adeempfba
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1043,7 +1045,7 @@ tc:
 
 vn: bdebleibba
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahl mit Zwischenüberschriften und vertikalen ao
 
 hl:
 
@@ -1073,11 +1075,11 @@ ao7: 7: sonstiges
 
 mv:
 
-ka1 (ao1 TO ao3): Ich möchte arbeiten, und zwar …
+ka1 (ao1 TO ao3): !!Ich möchte arbeiten, und zwar …!!
 
-ka2 (ao4 TO ao6): Ich möchte weiterstudieren/promovieren, und zwar …
+ka2 (ao4 TO ao6): !!Ich möchte weiterstudieren/promovieren, und zwar …!!
 
-ka3 (ao7): etwas Anderes
+ka3 (ao7): !!etwas Anderes!!
 
 vc:
 
@@ -1089,7 +1091,11 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über ao1 "Ich möchte arbeiten, und zwar …" mit etwas Abstand linksbündig positionieren.
+
+fo2: Bitte über ao4 "Ich möchte weiterstudieren/promovieren, und zwar …" mit etwas Abstand linksbündig positionieren.
+
+fo3: Bitte über ao7 "etwas Anderes" mit etwas Abstand linksbündig positionieren.
 
 tr: GOTO F1_22
 
@@ -1218,7 +1224,7 @@ F1_24
 
 tc:
 
-vn: aarbchdeuba; aarbchherkba
+vn: aarbchherkba; aarbchdeuba 
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1273,7 +1279,7 @@ F1_25
 
 tc:
 
-vn: 
+vn: asprachgaslba; asprachheimlba; asprachandba; asprachandbao;
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1289,7 +1295,7 @@ it1: (asprachgaslba): Deutsch
 
 it2: (asprachheimlba): Sprache Ihres Heimatlandes
 
-it3: (asprachandba): andere Sprache, und zwar: [50 Zeichen, (asprachandbao)]
+it3: (asprachandba): Andere Sprache, und zwar: [(asprachandbao); 60 Zeichen, ]
 
 st:
 
