@@ -314,7 +314,7 @@ q3: Sie haben zu Beginn der Befragung angegeben, die deutsche und eine ausländi
 
 q4: Sie haben zu Beginn der Befragung angegeben, eine ausländische Staatsangehörigkeit zu haben. Welche ausländische Staatsangehörigkeit besitzen Sie?
 
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
@@ -2204,7 +2204,7 @@ fo:
 tr: GOTO A_33 if mastersplit=1, 2, 3, 4, 5, 6, 14
     GOTO B2_1 if mastersplit=7, 8, 9, 10, 11, 12, 13
 
-hi:
+hi: ao8 bitte etwas absetzen.
 
 \------------------------------------------------------------
 
@@ -2213,49 +2213,35 @@ A_33
 
 tc:
 
-vn: deltjobv (deltjobvo1; deltjobvo2; deltjobv1; deltjobv2); deltjobm (deltjobmo1; deltjobmo2; deltjobm1; deltjobm2)
+vn: deltjobv (deltjobvo1; deltjobv1; deltjobv2); deltjobm (deltjobmo1; ddeltjobm1; deltjobm2)
 
-qt: Comparison, Mehrfachauswahl, offene Angaben
+qt: Comparison, offene Angaben, Einfachauswahl
 
 hl:
 
 in:
 
-q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus? Bitte erläutern Sie die Tätigkeit Ihres Vaters/Ihrer Mutter kurz.
+q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus?
 
-is: Falls Ihr Vater oder Ihre Mutter zurzeit nicht erwerbstätig sind (z. B. Rentner(in), Pensionär(in), Hausfrau/-mann oder arbeitssuchend), geben Sie bitte die jeweils zuletzt ausgeübte Tätigkeit an.
+is: Falls Ihre Eltern zurzeit nicht erwerbstätig sind, geben Sie bitte den jeweils zuletzt ausgeübten Beruf an.
 
-Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive Führungsaufgaben ein. Zum Beispiel:
+Bitte tragen Sie die Berufsbezeichnung möglichst genau ein, z. B.:
+Bankkaufmann/-frau (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter) Maschinenbauingenieur\*in (nicht: Ingenieur\*in)
 
-\- Bankkaufmann/-frau (nicht: Angestellte/r) 
 
-Beratung, Verkauf von Finanzprodukten, Abteilungsleitung
+it:
 
-\- Zollbeamte(r) im gehobenen Dienst (nicht: Beamter/in)
+ao1: (deltjobvo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
-Zollfahndung, Einsatzplanung
+ao2: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
 
-\- Maschinenbauingenieur(in) (nicht: Ingenieur/in)
+ao3: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
 
-Konstruktion, Optimierungsprozesse, Produktionsleitung
+ao4: (deltjobmo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
-it1: (deltjobvo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+ao5: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
 
-it2: (deltjobvo2): Prefix: Tätigkeitsbeschreibung: [offene Angabe; 100 Zeichen]
-
-it3: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
-
-it4: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
-
-it5: (deltjobmo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
-
-it6: (deltjobmo2): Prefix: Tätigkeitsbeschreibung: [offene Angabe; 100 Zeichen]
-
-it7: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
-
-it8: (deltjobm2): -12: weiß ich nicht [Exklusivkategorie]
-
-ao: 
+ao6: (deltjobm2): -12: weiß ich nicht [Exklusivkategorie]
 
 ka:
 
@@ -2269,21 +2255,20 @@ fv:
 
 hv:
 
-fo: „Vater“ und „Mutter“ bitte in einer extra Zeile positionieren, die mittig über den jeweils darunterliegenden Antwortzeilen liegt (siehe Darstellung hierunter):
+fo: „Vater“ und „Mutter“ bitte jeweils in einer extra Zeile positionieren, die linksbündig über den jeweils darunterliegenden Antwortzeilen liegt (siehe Darstellung hierunter):
 
-Vater Mutter
+Vater
+Berufsbezeichnung: Eingabefeld
+nie berufstätig gewesen-Kästchen
+weiß ich nicht-Kästchen
 
-Berufsbezeichnung: Eingabefeld Eingabefeld
+Mutter
+Berufsbezeichnung: Eingabefeld
+nie berufstätig gewesen-Kästchen
+weiß ich nicht-Kästchen
 
-Tätigkeitsbeschreibung: Eingabefeld Eingabefeld
 
-weiß ich nicht Kästchen
-
-o Bei Angabe von „weiß ich nicht“, sollen die Textfelder in der jeweiligen
-Spalte bitte nicht ausgefüllt werden können und umgekehrt (Exklusivkategorie).
-
-tr: GOTO B2_2a if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split==1 (50%)
-    GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split==2 (50%)
+tr: GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13
     GOTO B1_6 if mastersplit=1, 2, 3, 4, 5, 6
     GOTO A34 if mastersplit=14
 
@@ -2318,9 +2303,7 @@ ao1: 1: in Deutschland
 
 ao2: 2: in einem anderen Land
 
-ao3: 3: weiß ich nicht
-
-mv: ao3
+mv:
 
 ka:
 
@@ -2375,7 +2358,7 @@ in:
 
 q: In welchem Land wurde Ihr Vater geboren?
 
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
@@ -2428,7 +2411,7 @@ in:
 
 q: In welchem Land wurde Ihre Mutter geboren?
 
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
