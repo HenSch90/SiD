@@ -1010,7 +1010,7 @@ Waschen, Kämmen und Rasieren
 it4: (pflegt4): schwierigere Pflegetätigkeiten, z. B. Hilfe beim Umbetten,
 Stuhlgang
 
-it5: (pflegt4): Etwas anderes, und zwar: [(pflegt5o); 80 Zeichen] (offene Angabe)
+it5: (pflegt5): Etwas anderes, und zwar: [(pflegt5o); 80 Zeichen] (offene Angabe)
 
 st:
 
@@ -1431,6 +1431,7 @@ fo:
 tr: 
 GOTO A_20 if hsstandbl=1-16
 GOTO A_21 if hsstandbl=17
+ELSE GOTO A_20
 
 hi: 
 
@@ -1544,9 +1545,9 @@ it:
 
 st:
 
-ao1: (hsstandlao): Präfix: Land: [offene Angabe; 60 Zeichen]
+ao1: (hsstandlao): Präfix: Land: [offene Angabe; 100 Zeichen]
 
-ao2: (hsstandhsao): Präfix: Hochschule: [offene Angabe; 60 Zeichen]
+ao2: (hsstandhsao): Präfix: Hochschule: [offene Angabe; 100 Zeichen]
 
 mv: 
 
@@ -3689,7 +3690,7 @@ ka:
 
 vc: 
 
-SHOW q1 if ainfaus=1
+SHOW q1 if ainfaus=1 OR ainfaus=k.A
 
 SHOW q2 if ainfaus=2 OR ainfaus=3 OR ainfaus=4
 
