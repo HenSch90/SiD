@@ -506,8 +506,7 @@ hv:
 fo:
 
 tr: GOTO A_6 if dgebort=2
-    GOTO A_9a if (dgebort=1 OR dgebort=MISSING) AND h_split=1 (50%)
-    GOTO A_9b if (dgebort=1 OR dgebort=MISSING) AND h_split=2 (50%)
+    GOTO A_9b if (dgebort=1 OR dgebort=MISSING)
 
 hi:
 
@@ -571,9 +570,9 @@ A_7
 
 tc:
 
-vn: dgebsta
+vn: dgebsta; dgebstao
 
-qt: Einfachauswahl mit Dropdown
+qt: Einfachauswahl mit Dropdown; offene Angabe
 
 hl:
 
@@ -587,52 +586,9 @@ it:
 
 st:
 
-ao: (dgebsta): [infield = Geburtsland; Staatenliste_DBI] (Dropdown)
+ao1: (dgebsta): [infield = Geburtsland; Staatenliste_DBI] (Dropdown)
 
-mv:
-
-ka:
-
-vc: SHOW Dropdown if (dgebko != MISSING AND dgebko != 0)
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: 
-
-hi: Dropdown bitte nach Angabe des Kontinents in A_6 (dgebko) vorselektieren.
-
-\------------------------------------------------------------
-
-A_7
-====
-
-tc:
-
-vn: dgebstao
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q: An dieser Stelle können Sie Ihr Geburtsland auch offen angeben:
-
-is:
-
-it:
-
-st:
-
-ao: (dgebstao): [offene Angabe; 60 Zeichen]
+ao2: (dgebstao): Präfix: An dieser Stelle können Sie Ihr Geburtsland auch offen angeben: [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -652,7 +608,7 @@ fo:
 
 tr: GOTO C3_1
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_6 (dgebko) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -2454,54 +2410,9 @@ A_36
 
 tc:
 
-vn: deltgstav
+vn: deltgstav; deltgstavo
 
-qt: Einfachauswahl mit Dropdown
-
-hl:
-
-in:
-
-q: Bitte geben Sie hier das Geburtsland Ihres Vaters an.
-
-is:
-
-it:
-
-st:
-
-ao: [Dropdown; Staatenliste_DBI_Eltern]
-
-mv:
-
-ka:
-
-vc:  visible="(!zofar.isMissing(deltgkov) or zofar.asNumber(deltkov)!=0) and zofar.asNumber(deltgebv)==2"
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-A_36
-=====
-
-tc:
-
-vn: deltgstavo
-
-qt: offene Frage
+qt: Einfachauswahl mit Dropdown; offene Angabe
 
 hl:
 
@@ -2515,13 +2426,15 @@ it:
 
 st:
 
-ao1: Prefix: Geburtsland des Vaters: [offene Angabe, 50 Zeichen]
+ao1: (deltgstav): [infield = Geburtsland Vater; Staatenliste_DBI] (Dropdown)
+
+ao2: (deltgstavo): Präfix: An dieser Stelle können Sie das Geburtsland auch offen angeben: [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc:  visible="(zofar.isMissing(deltgkov) or zofar.asNumber(deltgkov)==0) and zofar.asNumber(deltgebv)==2"
+vc:
 
 av:
 
@@ -2535,7 +2448,7 @@ fo:
 
 tr:
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_35 (deltgkov) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -2544,9 +2457,9 @@ A_36
 
 tc:
 
-vn: deltgstam
+vn: deltgstam; deltgstamo
 
-qt: Einfachauswahl mit Dropdown
+qt: Einfachauswahl mit Dropdown; offene Angabe
 
 hl:
 
@@ -2560,58 +2473,15 @@ it:
 
 st:
 
-ao: [Dropdown; Staatenliste_DBI_Eltern]
+ao1: (deltgstam): [infield = Geburtsland Mutter; Staatenliste_DBI] (Dropdown)
+
+ao2: (deltgstamo): Präfix: An dieser Stelle können Sie das Geburtsland auch offen angeben: [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc: visible="(!zofar.isMissing(deltgkom) or zofar.asNumber(deltgkom)!=0) and zofar.asNumber(deltgebm)==2"
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-A_36
-=====
-
-tc:
-
-vn: deltgstamo
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q: Bitte geben Sie hier das Geburtsland Ihrer Mutter an.
-
-is:
-
-it:
-
-st:
-
-ao1: Prefix: Geburtsland der Mutter:: [offene Angabe, 50 Zeichen]
-
-mv:
-
-ka:
-
-vc: visible="(zofar.isMissing(deltgkom) or zofar.asNumber(deltgkom)==0) and zofar.asNumber(deltgebm)==2"
+vc: 
 
 av:
 
@@ -2625,7 +2495,7 @@ fo:
 
 tr: GOTO C3_2
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_35 (deltgkom) vorselektieren.
 
 \------------------------------------------------------------
 
