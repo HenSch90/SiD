@@ -6,7 +6,7 @@ tc:
 
 vn: azufmob
 
-qt: Einfachauswahl mit horizontalen aos
+qt: Einfachauswahl mit horizontalen ao
 
 hl:
 
@@ -533,15 +533,15 @@ it4: (akontintst): … anderen internationalen Studierenden?
 
 st:
 
-ao1: 1: : nie
+ao1: 1: nie
 
-ao2: 2: :
+ao2: 2:
 
-ao3: 3: :
+ao3: 3:
 
-ao4: 4: :
+ao4: 4:
 
-ao5: 5: : sehr häufig
+ao5: 5: sehr häufig
 
 mv:
 
@@ -578,7 +578,7 @@ tc: IF ainfaus > 1
 
 vn: asprachland; asprachdeut; asprachand; asprachando
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -594,7 +594,7 @@ it1: (asprachland): Landessprache des Gastlandes
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): Andere Sprache, und zwar: [asprachando] [Eingabefeld]
+it3: (asprachand): andere Sprache, und zwar: [asprachando] [Eingabefeld]
 
 st:
 
@@ -644,7 +644,7 @@ tc: IF ainfaus > 1
 
 vn: azuflernerf; azufinsg
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -702,7 +702,7 @@ tc: IF ainfaus > 1
 
 vn: azufleistanf; azuforgaufw; azuffinanzaufw
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -762,7 +762,7 @@ tc: IF ainfaus > 1
 
 vn: aeempf
 
-qt: Einfachauswahl mit horizontalen aos
+qt: Einfachauswahl mit horizontalen ao
 
 hl:
 
@@ -816,9 +816,9 @@ F3_16
 
 tc: IF auslandint==4
 
-vn: aplanstg; aplantst; aplanpra; aplanspk; aplanstureis; aplanprojekt; aplansumschoo; aplanson; aplanwnn
+vn: aplanart
 
-qt: Einfachauswahl mit vertikalen aos
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -833,25 +833,23 @@ it:
 
 st:
 
-ao1: (aplanstg): Auslandsstudium mit Abschluss
+ao1: 1: Auslandsstudium mit Abschluss
 
-ao2: (aplantst): Auslandssemester
+ao2: 2: Auslandssemester
 
-ao3: (aplanpra): Auslandspraktikum
+ao3: 3: Auslandspraktikum
 
-ao4: (aplanspk): Sprachkurs im Ausland
+ao4: 4: Sprachkurs im Ausland
 
-ao5: (aplanstureis): Studienreise
+ao5: 5: Studienreise
 
-ao6: (aplanprojekt): Projektarbeit
+ao6: 6: Projektarbeit
 
-ao7: (aplansumschoo): Summer School
+ao7: 7: Summer School
 
-ao8: (aplanson): sonstiger Auslandsaufenthalt
+ao8: 8: sonstiger Auslandsaufenthalt
 
-ao9: (aplanwnn): weiß ich noch nicht
-
-mv: ao9
+mv: -12: weiß ich noch nicht
 
 ka:
 
@@ -1048,15 +1046,14 @@ GOTO F3_22
 
 hi:
 
+
 \--------------------------------
 
 F3_21
 =====
 
 tc: IF (ainfaus==1 AND auslandint==1)
-Die Frage erhalten ausschließlich Studierende, die nicht studienbezogen im
-Ausland waren und auch nicht beabsichtigen einen Auslandsaufenthalt
-durchzuführen
+Die Frage erhalten ausschließlich Studierende, die nicht studienbezogen im Ausland waren und auch nicht beabsichtigen einen Auslandsaufenthalt durchzuführen
 
 vn: aplanbedi; aplanbedio
 
@@ -1066,8 +1063,7 @@ hl:
 
 in:
 
-q: Gibt es Umstände, unter denen ein Auslandsstudium für Sie doch in Frage
-kommen würde?
+q: Gibt es Umstände, unter denen ein Auslandsstudium für Sie doch in Frage kommen würde?
 
 is:
 
@@ -1077,7 +1073,7 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, und zwar wenn … (offene Angabe; 200 Zeichen; [aplanbedio])
+ao2: 2: Präfix: ja, und zwar wenn: [aplanbedio] (string; 200 Zeichen)
 
 mv:
 
@@ -1101,6 +1097,7 @@ GOTO F3_22
 
 hi:
 
+
 \--------------------------------
 
 F3_22
@@ -1110,7 +1107,7 @@ tc:
 
 vn: akontdeust; akonteust; akontneust
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -1120,7 +1117,7 @@ q: Wie häufig unterhalten Sie sich mit…
 
 is:
 
-it1: (akontdeust): … Studierenden aus Deutschland?
+it1: (akontdeust): … deutschen Studierenden?
 
 it2: (akonteust): … Studierenden aus anderen Ländern Europas?
 
@@ -1128,7 +1125,7 @@ it3: (akontneust): … Studierenden aus Ländern außerhalb Europas?
 
 st:
 
-ao1: 1: sehr selten
+ao1: 1: nie
 
 ao2: 2:
 
@@ -1156,119 +1153,10 @@ fo:
 
 tr:
 
-GOTO F3_23
-
-hi:
-
-\--------------------------------
-
-F3_23
-=====
-
-tc:
-
-vn: wohnemin / wohnemino
-
-qt: Einfachauswahl, offene Angabe
-
-hl:
-
-in:
-
-q: Wie viel Zeit benötigen Sie für den einfachen Weg von Ihrer Wohnung zur
-Hochschule?
-
-is: Bitte geben Sie die Dauer des Weges „von Tür zu Tür“ an.
-
-it:
-
-st:
-
-ao1: 1: Präfix: Dauer: (offene Angabe; 3 Zeichen; [wohnemino]); Suffix: Minuten
-
-ao2: -12: weiß ich nicht
-
-mv:
-
-ka:
-
-vc:
-
-av: number : \<= dreistellig : 1 TO 999
-
-kh: Bitte geben Sie die Dauer des einfachen Weges von Ihrer Wohnung zu Ihrer
-Hochschule an (1 bis 999).
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO F3_24
-
-hi:
-
-\--------------------------------
-
-F3_24
-=====
-
-tc:
-
-vn: mobregmittel
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Welches Verkehrsmittel nutzen Sie überwiegend um an Ihre Hochschule zu
-gelangen?
-
-is: Bei kombinierter Nutzung geben Sie bitte das Verkehrsmittel an, mit dem Sie
-die längste Wegstrecke zurücklegen.
-
-it:
-
-st:
-
-ao1: 1: ich gehe zu Fuß
-
-ao2: 2: Fahrrad
-
-ao3: 3: öffentliche Verkehrsmittel
-
-ao4: 4: PKW (allein fahrend)
-
-ao5: 5: PKW (in Fahrgemeinschaft)
-
-ao6: 6: anderes
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
 GOTO F3_25
 
 hi:
+
 
 \--------------------------------
 
@@ -1277,9 +1165,9 @@ F3_25
 
 tc:
 
-vn: intpsydeu / intpsyzeit / intpsyandl
+vn: intpsydeu; intpsyzeitl; intpsyandl
 
-qt: Einfachauswahlmatrix mit horizontalen aos
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
