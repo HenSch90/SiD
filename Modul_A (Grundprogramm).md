@@ -1623,7 +1623,7 @@ tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
 
 vn: hsstandlao, hsstandhsao
 
-qt: Offene Frage
+qt: Offene Angaben
 
 hl:
 
@@ -1637,9 +1637,9 @@ it:
 
 st:
 
-ao1: Präfix Land [hsstandlao]
+ao1: (hsstandlao): Präfix: Land: [offene Angabe; 60 Zeichen]
 
-ao2: Präfix Ort/Hochschule [hsstandhsao]
+ao2: (hsstandhsao): Präfix: Hochschule: [offene Angabe; 60 Zeichen]
 
 mv: 
 
@@ -1671,7 +1671,7 @@ tc:
 
 vn: sperleiszufr
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
