@@ -1297,7 +1297,7 @@ fo:
 
 tr: 
 
-hi: Bitte als NUMBER, 2-stellig (1 bis 99), codieren.
+hi: Bitte als NUMBER, 2-stellig (1 bis 99), programmieren.
 
 \------------------------------------------------------------
 
@@ -1342,7 +1342,7 @@ fo:
 
 tr:
 
-hi: Bitte als NUMBER, 2-stellig (1 bis 99), codieren.
+hi: Bitte als NUMBER, 2-stellig (1 bis 99), programmieren.
 
 \------------------------------------------------------------
 
@@ -1726,25 +1726,23 @@ tc:
 
 vn: sfach1o2, sfach2o2
 
-qt: Offene Frage
+qt: Offene Angaben
 
 hl:
 
 in:
 
-q1: Bitte geben Sie Ihr Studienfach an.
+q: Bitte geben Sie Ihr Studienfach an.
 
-q2: 
+is: Bitte geben Sie nicht Ihren angestrebten Abschluss an (z. B. Masterstudent\*in, Promotionsstudent\*in).
 
-is:
-
-it1 (sfach1o2): Präfix: erstes Studienfach [offene Angabe; 50 Zeichen]
-
-it2 (sfach2o2): Präfix: ggf. zweites Studienfach [offene Angabe; 50 Zeichen]
+it:
 
 st:
 
-ao:
+ao1 (sfach1o2): Präfix: erstes Studienfach: [offene Angabe; 60 Zeichen]
+
+ao2 (sfach2o2): Präfix: ggf. zweites Studienfach: [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -1791,19 +1789,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, und zwar Lehramt an Grundschulen (Primarstufe)
+ao2: 2: Lehramt an Grundschulen (Primarstufe)
 
-ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I)
+ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen  (Sekundarstufe I)
 
-ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
+ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: ja, und zwar Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: ja, und zwar Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: Lehramt an Förderschulen/Sonderpädagogik
 
 mv:
 
-ka:
+ka: (ao2 TO ao6): Ja, und zwar:
 
 vc:
 
@@ -1815,7 +1813,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über ao2 "Ja, und zwar:" positionieren.
 
 tr: GOTO A_25
 
@@ -1828,9 +1826,9 @@ A_25
 
 tc:
 
-vn: sabsan
+vn: sabsano; sabsanoaa; sabsanoka
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit offenen Angaben
 
 hl:
 
@@ -1858,9 +1856,9 @@ ao6: 6: kirchliche Abschlussprüfung
 
 ao7: 7: künstlerische Abschlussprüfung
 
-ao8: 8: anderen Abschluss (bspw. ausländischer Abschluss, Magister)
+ao8: 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa); 60 Zeichen] (offene Angabe)
 
-ao9: 9: keinen Studienabschluss
+ao9: 9: Keinen Studienabschluss, sondern: [(sabsanoka); 80 Zeichen] (offene Angabe)
 
 mv:
 
@@ -1878,7 +1876,7 @@ hv:
 
 fo:
 
-tr: GOTO A_26 if sabsan=9
+tr: GOTO A_27 if sabsan=9
     GOTO D1_13 if sabsan=1-8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
     GOTO A_27 if sabsan=1-8 AND mastersplit=5, 6, 11, 12, 13
     GOTO D1_13 if sabsan=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
@@ -1886,60 +1884,6 @@ tr: GOTO A_26 if sabsan=9
 
 hi:
 
-\------------------------------------------------------------
-
-A_26
-=======
-
-tc: IF sabsan=9
-
-vn: sabsweit; sabsweito; todo1; todo2; todo3; todo4; todo5;
-
-qt: Mehrfachauswahl
-
-hl:
-
-in:
-
-q: Sie haben angegeben, in Ihrem aktuellen Studium keinen Studienabschluss anzustreben. Nutzen Sie aktuell hochschulische Weiterbildungsangebote?
-
-is: Bitte alles zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: (sabsweit): 1: nein [Exklusivkategorie]
-
-ao2: (sabsweito): 2: ja, Zertifikatskurs(e)
-
-ao3: (todo1): 3: ja, Seminar(reihe)
-
-ao4: (todo2): 4: ja, Workshop(s)
-
-ao5: (todo3): 5: ja, Modul/Kurs
-
-ao6: (todo4): 6: Ja, anderes und zwar: [(todo5) offene Angabe, 50 Zeichen]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO A_27
-
-hi:
 
 \------------------------------------------------------------
 
@@ -1948,7 +1892,7 @@ A_27
 
 tc:
 
-vn: sformpraes; sformdua; sformberu; sformfern; sformsons; sformsonso
+vn: sform (sformpraes; sformdua; sformberu; sformfern; sformgast; sformsons; sformsonso)
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -1956,7 +1900,7 @@ hl:
 
 in:
 
-q: Um welche Form des Studiums handelt es sich bei Ihrem Studiengang?
+q: Um welche Form handelt es sich bei Ihrem Studium?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -1964,11 +1908,12 @@ it:
 
 st:
 
-ao1: (sformpraes): 1: Präsenzstudim (in Gegensatz zum Fernstudium)
-ao2: (sformfern): 2: Fernstudium
-ao3: (sformdua): 3: duales Studium
-ao4: (sformberu): 4: berufsbegleitendes Studium
-ao5: (sformsons): 5: Anderes, und zwar: [(sformsonso) offene Angabe, 50 Zeichen]
+ao1: (sformpraes): Präsenzstudim (in Gegensatz zu Fernstudium)
+ao2: (sformfern): Fernstudium
+ao3: (sformdua): duales Studium
+ao4: (sformberu): berufsbegleitendes Studium
+ao5: (sformgast): Gasthörerschaft
+ao6: (sformsons): Anderes, und zwar: [(sformsonso) offene Angabe, 60 Zeichen]
 
 mv:
 
@@ -1992,6 +1937,61 @@ tr: GOTO D2_3 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
 
 hi:
 
+\--------------------------------
+
+D1_9 
+==
+
+tc:
+
+vn: sartzeit
+
+qt: Einfachauswahl vertikal
+
+hl:
+
+in:
+
+q: Betreiben Sie Ihr Studium in Vollzeit oder Teilzeit?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: Vollzeit
+
+ao2: 2: Teilzeit
+
+ao3: 3: Vollzeitstudiengang mit individueller Teilzeitregelung
+
+ao4: 4: Vollzeitstudiengang inoffiziell als Teilzeitstudium
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO D1_7 IF ssemhs <= 6
+    GOTO D1_7 IF ssemhs = k. A. 
+    GOTO D2_6 IF (ssemhs >= 7) AND (mastersplit = 1, 2, 7, 8, 14)
+    GOTO A_44 IF (ssemhs >= 7) AND (mastersplit = 3, 4, 9, 10)
+       
+
+hi:
+
 \------------------------------------------------------------
 
 A_28
@@ -2001,43 +2001,41 @@ tc:
 
 vn: spernot; spernoto
 
-qt: offene Frage, Einfachauswahl
+qt: offene Angabe, Einfachauswahl
 
 hl:
 
 in:
 
-q: Wie wurden Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium bewertet?
+q: Mit welcher Note wurden Ihre bisherigen Studienleistungen bewertet?
 
-is: Für den Fall, dass Sie keine Noten erhalten, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in Noten um.
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
 st:
 
-ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto) offene Angabe, 3 Zeichen, NUMBER]
+ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto) offene Angabe, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0), NUMBER]
 
-ao1: (spernot): -11: Ich habe bisher keine Noten erhalten. / In meinem Studium gibt es keine Noten.
-
-ao2: (spernot): -12: weiß ich nicht
+ao: (spernot): -11: Ich habe bisher keine Noten erhalten.
 
 ka:
 
 vc:
 
-av: 
+av: NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0)
 
-kh: 
+kh: Bitte geben Sie Ihre aktuelle Durchschnittsnote an (1,0 bis 5,0)
 
 fv:
 
 hv:
 
-fo: Bitte die beiden geschlossenen Antwortoptionen/-items neben der Notenabfrage in einer Zeile positionieren.
+fo: Bitte offene Angabe und Einfachauswahl untereinander, linksbündig positionieren
 
 tr: GOTO A_29
 
-hi:
+hi: Offene Angabe bitte als NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0), programmieren.
 
 \------------------------------------------------------------
 
@@ -2048,7 +2046,7 @@ tc:
 
 vn: sperleisrel
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2088,58 +2086,10 @@ hv:
 
 fo:
 
-tr: GOTO A_30
-
-hi:
-
-\------------------------------------------------------------
-
-A_30
-=========
-
-tc:
-
-vn: sperleiszufr_2
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Wie zufrieden sind Sie insgesamt mit den bisher von Ihnen erbrachten Studienleistungen?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: sehr unzufrieden
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr zufrieden
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
 tr: GOTO A_31
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -2168,7 +2118,7 @@ it3: (promoerfolg): … eine Promotion erfolgreich abzuschließen?
 
 st:
 
-ao1: 1: sehr unwahrscheinlich
+ao1: 1: überhaupt nicht
 
 ao2: 2:
 
@@ -2176,7 +2126,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr wahrscheinlich
+ao5: 5: vollkommen
 
 vc:
 
