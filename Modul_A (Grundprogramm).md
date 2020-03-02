@@ -574,14 +574,13 @@ tc:
 
 vn: baufgru (baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandbao)
 
-qt: Mehrfachauswahl mit offener Angabe
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
 in:
 
-q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
-
+q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen? #{layout.BREAK}#{layout.BREAK }
 Als ich nach Deutschland kam, war ich:
 
 is: Bitte alles Zutreffende auswählen.
@@ -590,7 +589,7 @@ it:
 
 st:
 
-ao1: (baufgrueuba): Bürger\*in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
+ao1: (baufgrueuba): Bürger\*in eines EU-Mitgliedstaates bzw. des europäischen Wirtschaftsraums
 
 ao2: (baufgrustuba): Studierende\*r (auch zur Studienvorbereitung)
 
@@ -600,7 +599,7 @@ ao4: (baufgrutouba): Tourist\*in (Besuchsvisum)
 
 ao5: (baufgruasylba): Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
 
-ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. Ehepartner\*in
+ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. mit/wegen Ehepartner\*in
 
 ao6: (baufgrufamba): Familiennachzug, zog zu bereits in Deutschland lebender Familie
 
@@ -624,7 +623,7 @@ fv:
 
 hv: 
 
-fo: "Als ich nach Deutschland kam, war ich:" bitte etwas von den Einleitungssätzen absetzen.
+fo: "Als ich nach Deutschland kam, war ich:" bitte etwas von den beiden Einleitungssätzen in der question absetzen.
 
 tr: 
 GOTO A_8a IF baufgruasylba=1
@@ -644,7 +643,7 @@ tc:
 
 vn: asylantrag
 
-qt: Einfachauswahl 
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -705,7 +704,7 @@ hl:
 
 in:
 
-q: Was waren die Gründe dafür, dass Sie oder Ihre Familie...
+q: Was waren die Gründe dafür, dass Sie oder Ihre Familie ...
 
 is:
 
@@ -742,7 +741,7 @@ tc:
 
 vn: demosex; demosexo
 
-qt: Einfachauswahl mit offener Angabe
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -762,7 +761,7 @@ ao2: 2: weiblich
 
 ao3: 3: divers
 
-ao4: 4: Keine der genannten Kategorien, sondern: [(demosexo); 80 Zeichen] (offene Angabe)
+ao4: 4: Keine der genannten Kategorien, sondern: [(demosexo); 50 Zeichen] (offene Angabe)
 
 vc:
 
@@ -789,7 +788,7 @@ tc:
 
 vn: demoage
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
@@ -803,7 +802,7 @@ it:
 
 st:
 
-ao: Postfix: Jahre [offene Angabe; NUMBER 2-stellig]
+ao: [offene Angabe; Number, 2-stellig: 15 TO 99], Postfix: Jahre 
 
 mv:
 
@@ -811,9 +810,9 @@ ka:
 
 vc:
 
-av: NUMBER: 2-stellig: 16 TO 99
+av: 
 
-kh: Bitte geben Sie Ihr Lebensalter an (16 bis 99).
+kh: Bitte geben Sie Ihr Lebensalter an (15 bis 99).
 
 fv:
 
@@ -823,7 +822,7 @@ fo:
 
 tr: GOTO A_11
 
-hi: Bitte als 2-stellige NUMBER, 16 bis 99, programmieren.
+hi: 
 
 \------------------------------------------------------------
 
@@ -834,7 +833,7 @@ tc:
 
 vn: demofam (demofamsin; demofampar; demofamehe; demofamaus; demofamtod; demofamka)
 
-qt: Mehrfachauswahl mit Exklusivkategorie
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -848,7 +847,7 @@ it:
 
 st:
 
-ao1: (demofamsin): ohne feste(n) Partner\*in
+ao1: (demofamsin): ohne feste\*n Partner\*in
 
 ao2: (demofampar): mit einer/einem festen Partner\*in
 
@@ -889,7 +888,7 @@ tc:
 
 vn: dkinja
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -938,7 +937,7 @@ tc:
 
 vn: pflegeang (pflegangno; pflegang1; pflegang2)
 
-qt: Mehrfachauswahl mit Exklusivkategorie
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -990,7 +989,7 @@ tc: IF pflegang1=1 OR pflegang2=1
 
 vn: pflegt (pflegt1; pflegt2; pflegt3; pflegt4; pflegt5; pflegt5o)
 
-qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -1055,7 +1054,7 @@ tc:
 
 vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartka; h_gartcount
 
-qt: Mehrfachauswahl mit Exklusivkategorie
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1069,25 +1068,25 @@ it:
 
 st:
 
-ao1: (gbeges): 1: keine [Exklusivkategorie]
+ao1: (gbeges): keine [Exklkusivkategorie]
 
-ao2: (gartmob): 2: Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
+ao2: (gartmob): Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
 
-ao3: (gartseh): 3: Blindheit/Sehbeeinträchtigung
+ao3: (gartseh): Blindheit/Sehbeeinträchtigung
 
-ao4: (gartohr): 4: Gehörlosigkeit/Hörbeeinträchtigung
+ao4: (gartohr): Gehörlosigkeit/Hörbeeinträchtigung
 
-ao5: (gartspr): 5: Sprechbeeinträchtigung (z. B. Stottern)
+ao5: (gartspr): Sprechbeeinträchtigung (z. B. Stottern)
 
-ao6: (gartpsy): 6: psychische Erkrankung (z. B. Depression, Essstörung)
+ao6: (gartpsy): psychische Erkrankung (z. B. Depression, Essstörung)
 
-ao7: (gartsom): 7: körperlich länger dauernde/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
+ao7: (gartsom): körperlich länger dauernde/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
 
-ao8: (garttls): 8: Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
+ao8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-ao9: (gartson): 9: andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) [gartsono], 50 Zeichen
+ao9: (gartson): andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung): [(gartsono), 50 Zeichen]
 
-ao10: (gartka): 10: Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
+ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
 mv:
 
