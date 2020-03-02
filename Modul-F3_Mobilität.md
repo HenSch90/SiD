@@ -6,7 +6,7 @@ tc:
 
 vn: azufmob
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -312,9 +312,15 @@ mv:
 
 ka1 (ao1 TO ao6): Letzter studienbezogener Auslandsaufenthalt
 
+ka: (ao2 TO ao6): Ja, und zwar:
+
 ka2 (ao7 TO ao12): Vorletzter studienbezogener Auslandsaufenthalt
 
+ka: (ao8 TO ao12): Ja, und zwar:
+
 ka3 (ao13 TO ao18): Drittletzter studienbezogener Auslandsaufenthalt
+
+ka: (ao14 TO ao18): Ja, und zwar:
 
 vc:
 
@@ -333,6 +339,8 @@ fv:
 hv:
 
 fo: ao1, ao7 und ao13 jeweils von den nachstehenden ao absetzen
+
+fo2: Bitte über jeweils über ao2, ao8 und ao14 "Ja, und zwar:" linksbündig positionieren.
 
 tr:
 
@@ -598,7 +606,7 @@ it1: (asprachland): Landessprache des Gastlandes
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): andere Sprache, und zwar: [asprachando] [string, 50 Zeichen]
+it3: (asprachand): Andere Sprache, und zwar: [asprachando] [string, 50 Zeichen]
 
 st:
 
