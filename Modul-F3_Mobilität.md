@@ -64,11 +64,11 @@ F3_7
 
 tc: 
 
-vn: ainfa1; ainflando; ainforto; ainfbm1; ainfbj1, ainfdau
+vn: ainfa1; ainflando1; ainforto1; ainfbm1; ainfbj1, ainfdau1
     ainfa2; ainflando2; ainforto2; ainfbm2; ainfbj2, ainfdau2
-    ainfa3; ainflando3; ainforto; ainfbm3; ainfbj3, ainfdau3
+    ainfa3; ainflando3; ainforto3; ainfbm3; ainfbj3, ainfdau3
 
-qt: Dropdown und offene Angabe
+qt: Einfachauswahl mit Dropdown und offene Angaben
 
 hl:
 
@@ -82,124 +82,107 @@ q3: Bitte beschreiben Sie Ihre drei studienbezogenen Auslandsaufenthalte näher.
 
 is1: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt.
 
-is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. Sollten Sie bereits häufiger als dreimal studienbezogen im Ausland gewesen sein, dann geben Sie bitte nur die drei letzten Aufenthalte an.
+is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. Sollten Sie bereits häufiger als dreimal studienbezogen im Ausland gewesen sein, dann geben Sie bitte die drei letzten Aufenthalte an.
 
+it:
 
+st:
 
-it1: (ainfa1): [Dropdown, Art des Aufenthalts]
+ao1: (ainfa1): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
-aox (ainfa1): 0: Art des Auslandsaufenthalts
+    (ainfa1): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
 
-ao1 (ainfa1): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+    (ainfa1): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    
+    (ainfa1): 3: Praktikum/Praxisphase
 
-ao2 (ainfa1): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    (ainfa1): 4: Sprachkurs
 
-ao3 (ainfa1): 3: Praktikum/Praxisphase
+    (ainfa1): 5: Studienreise
 
-ao4 (ainfa1): 4: Sprachkurs
+    (ainfa1): 6: Projektarbeit
 
-ao5 (ainfa1): 5: Studienreise
+    (ainfa1): 7: Summer School
 
-ao6 (ainfa1): 6: Projektarbeit
+    (ainfa1): 8: sonstiger Aufenthalt
 
-ao7 (ainfa1): 7: Summer School
 
-ao8 (ainfa1): 8: sonstiger Aufenthalt
+ao2: (ainflando1): [infield = Land; 100 Zeichen] (offene Angabe)
 
+ao3: (ainforto1): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
-it2: (ainflando): Präfix: Land: [string, 100 Zeichen]
 
-it3: (ainforto): Präfix: Stadt/Hochschule: [string, 100 Zeichen]
+ao4: (ainfbm1): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
+ao5: (ainfbj1): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
-[Nebeneinander angeordnete Dropdowns (Monat, Jahr)]
 
-it4: (ainfbm1): : Monat: (Monat \ Januar \| … \| Dezember)
+ao6: (ainfdau1): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
-it5: (ainfbj1): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2009 \| vor 2009)
 
+ao7: (ainfa2): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
-[Dropdown, Dauer des Aufenthalts]
+    (ainfa2): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
 
-it6: (ainfdau): Dauer: (Dauer \| 1 Monat \| 2 Monate \| ... \| 12 Monate \| mehr als 12 Monate)
+    (ainfa2): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    
+    (ainfa2): 3: Praktikum/Praxisphase
 
+    (ainfa2): 4: Sprachkurs
 
+    (ainfa2): 5: Studienreise
 
-it7: (ainfa2): [Dropdown, Art des Aufenthalts]
+    (ainfa2): 6: Projektarbeit
 
-aox (ainfa2): 0: Art des Auslandsaufenthalts
+    (ainfa2): 7: Summer School
 
-ao9 (ainfa2): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+    (ainfa2): 8: sonstiger Aufenthalt
 
-ao10 (ainfa2): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
 
-ao11 (ainfa2): 3: Praktikum/Praxisphase
+ao8: (ainflando2): [infield = Land; 100 Zeichen] (offene Angabe)
 
-ao12 (ainfa2): 4: Sprachkurs
+ao9: (ainforto2): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
-ao13 (ainfa2): 5: Studienreise
 
-ao14 (ainfa2): 6: Projektarbeit
+ao10: (ainfbm2): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
-ao15 (ainfa2): 7: Summer School
+ao11: (ainfbj2): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
-ao16 (ainfa2): 8: sonstiger Aufenthalt
 
+ao12: (ainfdau2): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
-it8: (ainflando2): Präfix: Land: [string, 100 Zeichen]
 
-it9: (ainforto2): Präfix: Stadt/Hochschule: [string, 100 Zeichen]
+ao13: (ainfa3): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
+    (ainfa3): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
 
-[Nebeneinander angeordnete Dropdowns (Monat, Jahr)]
+    (ainfa3): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    
+    (ainfa3): 3: Praktikum/Praxisphase
 
-it10: (ainfbm2): : Monat: (Monat \ Januar \| … \| Dezember)
+    (ainfa3): 4: Sprachkurs
 
-it11: (ainfbj2): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2009 \| vor 2009)
+    (ainfa3): 5: Studienreise
 
+    (ainfa3): 6: Projektarbeit
 
-[Dropdown, Dauer des Aufenthalts]
+    (ainfa3): 7: Summer School
 
-it12: (ainfdau2): Dauer: (Dauer \| 1 Monat \| 2 Monate \| ... \| 12 Monate \| mehr als 12 Monate)
+    (ainfa3): 8: sonstiger Aufenthalt
 
 
+ao14: (ainflando3): [infield = Land; 100 Zeichen] (offene Angabe)
 
-it13: (ainfa3): [Dropdown, Art des Aufenthalts]
+ao15: (ainforto3): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
-aox (ainfa3): 0: Art des Auslandsaufenthalts
 
-ao17 (ainfa3): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+ao16: (ainfbm3): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
-ao18 (ainfa3): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+ao17: (ainfbj3): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
-ao19 (ainfa3): 3: Praktikum/Praxisphase
 
-ao20 (ainfa3): 4: Sprachkurs
+ao18: (ainfdau3): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
-ao21 (ainfa3): 5: Studienreise
-
-ao22 (ainfa3): 6: Projektarbeit
-
-ao23 (ainfa3): 7: Summer School
-
-ao24 (ainfa3): 8: sonstiger Aufenthalt
-
-
-it14: (ainflando3): Präfix: Land: [string, 100 Zeichen]
-
-it15: (ainforto3): Präfix: Stadt/Hochschule: [string, 100 Zeichen]
-
-
-[Nebeneinander angeordnete Dropdowns (Monat, Jahr)]
-
-it16: (ainfbm3): : Monat: (Monat \ Januar \| … \| Dezember)
-
-it17: (ainfbj3): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2009 \| vor 2009)
-
-
-[Dropdown, Dauer des Aufenthalts]
-
-it18: (ainfdau3): Dauer: (Dauer \| 1 Monat \| 2 Monate \| ... \| 12 Monate \| mehr als 12 Monate)
 
 st:
 
@@ -207,26 +190,26 @@ ao:
 
 mv:
 
-ka1 (it1 TO it6): letzter studienbezogener Auslandsaufenthalt
+ka1 (ao1 TO ao6): !!Letzter studienbezogener Auslandsaufenthalt!!
 
-ka2 (it4 TO it6): Start und Dauer des Auslandsaufenthalts:
+ka2 (ao4 TO ao5): Start des Aufenthalts:
 
-ka3 (it7 TO it12): Vorletzter studienbezogener Auslandsaufenthalt
+ka3 (ao7 TO ao12): !!Vorletzter studienbezogener Auslandsaufenthalt!!
 
-ka4 (it10 TO it12): Start und Dauer des Auslandsaufenthalts:
+ka4 (ao10 TO ao11): Start des Aufenthalts:
 
-ka5 (it13 TO it18): Drittletzter studienbezogener Auslandsaufenthalt
+ka5 (ao13 TO ao18): !!Drittletzter studienbezogener Auslandsaufenthalt!!
 
-ka6 (it16 TO it18): Start und Dauer des Auslandsaufenthalts:
+ka6 (ao16 TO ao17): Start des Aufenthalts:
 
 
 vc:
 
-SHOW q1 AND it1 TO it6 AND ka1 TO ka2 IF ainfaus = 2 \| kA
+SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF ainfaus = 2 \| kA
 
-SHOW q2 AND is1 AND it1 TO it12 AND ka1 TO ka4 IF ainfaus = 3
+SHOW q2 AND is1 AND ao1 TO ao12 AND ka1 TO ka4 IF ainfaus = 3
 
-SHOW q3 AND is2 AND it1 TO it18 AND ka1 TO ka6 IF ainfaus = 4
+SHOW q3 AND is2 AND ao1 TO ao18 AND ka1 TO ka6 IF ainfaus = 4
 
 av:
 
@@ -236,7 +219,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte jeweils "Art des Auslandsaufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter studienbezogener Auslandsaufenthalt", "Vorletzter studienbezogener Auslandsaufenthalt" und "Drittletzter studienbezogener Auslandsaufenthalt".
 
 tr:
 
@@ -254,7 +237,7 @@ vn: aprono1; aproeras1; aprodaad1; aprohhs1; aprogahs1; aproanpr1
     aprono2; aproeras2; aprodaad2; aprohhs2; aprogahs2; aproanpr2
     aprono3; aproeras3; aprodaad3; aprohhs3; aprogahs3; aproanpr3
 
-qt: Mehrfachauswahl mit vertikalen ao
+qt: Mehrfachauswahl
 
 hl:
 
@@ -296,39 +279,39 @@ ao11: (aprogahs2): Programm der Gasthochschule in Deutschland
 ao12: (aproanpr2): anderes Programm
 
 
-ao13: (aprono1): nein (Exklusivkategorie)
+ao13: (aprono3): nein (Exklusivkategorie)
 
-ao14: (aproeras1): ERASMUS+, ERASMUS
+ao14: (aproeras3): ERASMUS+, ERASMUS
 
-ao15: (aprodaad1): DAAD-Programm
+ao15: (aprodaad3): DAAD-Programm
 
-ao16 (aprohhs1): Programm meiner Heimathochschule
+ao16 (aprohhs3): Programm meiner Heimathochschule
 
-ao17: (aprogahs1): Programm der Gasthochschule in Deutschland
+ao17: (aprogahs3): Programm der Gasthochschule in Deutschland
 
-ao18: (aproanpr1): anderes Programm
+ao18: (aproanpr3): anderes Programm
 
 mv:
 
-ka1 (ao1 TO ao6): Letzter studienbezogener Auslandsaufenthalt
+ka1: (ao1 TO ao6): Letzter studienbezogener Auslandsaufenthalt
 
-ka: (ao2 TO ao6): Ja, und zwar:
+ka2: (ao2 TO ao6): Ja, und zwar:
 
-ka2 (ao7 TO ao12): Vorletzter studienbezogener Auslandsaufenthalt
+ka3: (ao7 TO ao12): Vorletzter studienbezogener Auslandsaufenthalt
 
-ka: (ao8 TO ao12): Ja, und zwar:
+ka4: (ao8 TO ao12): Ja, und zwar:
 
-ka3 (ao13 TO ao18): Drittletzter studienbezogener Auslandsaufenthalt
+ka5: (ao13 TO ao18): Drittletzter studienbezogener Auslandsaufenthalt
 
-ka: (ao14 TO ao18): Ja, und zwar:
+ka6: (ao14 TO ao18): Ja, und zwar:
 
 vc:
 
-SHOW q1 AND ao1 TO ao6 AND ka1 IF 1 Aufenthalt (ainfaus > 1)
+SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF 1 Aufenthalt (ainfaus == 2)
 
-SHOW q2 AND ao1 TO ao16 AND ka1 TO ka2 IF 2 Aufenthalte (ainfaus > 2)
+SHOW q2 AND ao1 TO ao16 AND ka1 TO ka4 IF 2 Aufenthalte (ainfaus == 3)
 
-SHOW q2 AND is AND ao1 TO ao18 AND ka1 TO ka3 IF 3 Aufenthalte (ainfaus > 3)
+SHOW q2 AND is AND ao1 TO ao18 AND ka1 TO ka6 IF 3 Aufenthalte (ainfaus == 4)
 
 av:
 
@@ -338,9 +321,11 @@ fv:
 
 hv:
 
-fo: ao1, ao7 und ao13 jeweils von den nachstehenden ao absetzen
+fo1: ao1, ao7 und ao13 jeweils etwas von den nachstehenden ao absetzen.
 
-fo2: Bitte über jeweils über ao2, ao8 und ao14 "Ja, und zwar:" linksbündig positionieren.
+fo2: Bitte jeweils über ao2, ao8 und ao14 "Ja, und zwar:" linksbündig positionieren. 
+
+fo3: Es werden bis zu drei Episoden angezeigt, die linksbündig untereinander mit den Überschriften (fett und unterstrichen) "Letzter studienbezogener Auslandsaufenthalt", "Vorletzter studienbezogener Auslandsaufenthalt" und "Drittletzter studienbezogener Auslandsaufenthalt" positioniert werden.
 
 tr:
 
