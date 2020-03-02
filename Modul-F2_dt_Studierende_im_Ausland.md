@@ -17,10 +17,6 @@ q: Sie befinden sich zurzeit im Ausland: Bitte beschreiben Sie diesen Auslandauf
 
 is:
 
-it:
-
-st:
-
 ao1: (ainfasia): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfasia): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
@@ -54,7 +50,7 @@ ao6: (ainfdausia): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 
 
 mv:
 
-ka:(ao4 To ao5) Start des Aufenthalts
+ka:(ao4 To ao5) Start des Aufenthalts:
 
 vc: SHOW ao2 AND ao3 if hsstandbl=17 AND hsstandlao=MISSING AND hsstandhsao=MISSING
 
