@@ -92,19 +92,19 @@ q: Warum haben Sie sich für dieses Land entschieden?
 
 is: 
 
-it1: (bdequasia): aufgrund der hohen Lebensqualität.
+it1: (bdequasia): … aufgrund der hohen Lebensqualität.
 
-it2: (bdefamssia): weil bereits Freund\*innen/Verwandte in diesem Land studiert haben.
+it2: (bdefamssia): … weil bereits Freund\*innen/Verwandte in diesem Land studiert haben.
 
-it3: (bdeoeksia): aufgrund der wirtschaftlichen Lage.
+it3: (bdeoeksia): … aufgrund der wirtschaftlichen Lage.
 
-it4: (bdefinsia): weil dies meinen finanziellen Möglichkeiten entspricht.
+it4: (bdefinsia): … weil dies meinen finanziellen Möglichkeiten entspricht.
 
-it5: (bdesprsia): um meine Sprachkenntnisse zu vertiefen.
+it5: (bdesprsia): … um meine Sprachkenntnisse zu vertiefen.
 
-it6: (bdearbsia): um nach Studienabschluss in diesem Land zu arbeiten.
+it6: (bdearbsia): … um nach Studienabschluss in diesem Land zu arbeiten.
 
-it7: (bdekensia): um dieses Land kennenzulernen.
+it7: (bdekensia): … um dieses Land kennenzulernen.
 
 st:
 
@@ -273,15 +273,15 @@ st:
 
 ao1: (apronosia): nein (Exklusivkategorie)
 
-ao2: (aproerassia): … ERASMUS+
+ao2: (aproerassia): ERASMUS+
 
-ao3: (aprodaadsia): … DAAD-Programm
+ao3: (aprodaadsia): DAAD-Programm
 
-ao4: (aprohhssia): … Programm meiner Heimathochschule
+ao4: (aprohhssia): Programm meiner Heimathochschule
 
-ao5: (aprogahssia): … Programm der Gasthochschule in Deutschland
+ao5: (aprogahssia): Programm der Gasthochschule in Deutschland
 
-ao6: (aproanprsia): … anderes Programm
+ao6: (aproanprsia): anderes Programm
 
 mv:
 
