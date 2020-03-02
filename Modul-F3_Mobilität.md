@@ -49,10 +49,10 @@ fo:
 tr:
 
 GOTO F3_7 IF ainfaus>1
-GOTO F3_16 IF ainfaus=1 AND auslandint=4
-GOTO F3_16 IF ainfaus=MISSING AND auslandint=4
-GOTO F3_22 IF ainfaus=1 AND auslandint=1 | 2 | 3
-GOTO F3_22 IF ainfaus=MISSING AND auslandint=1 | 2 | 3
+GOTO F3_16 IF ainfaus=1 AND (auslandint==3 OR auslandint==4)
+GOTO F3_16 IF ainfaus=MISSING (auslandint==3 OR auslandint==4)
+GOTO F3_22 IF ainfaus=1 AND auslandint=1 | 2 | 5
+GOTO F3_22 IF ainfaus=MISSING AND auslandint=1 | 2 | 5
 GOTO F3_22 IF ainfaus=MISSING AND auslandint=MISSING
 hi:
 
