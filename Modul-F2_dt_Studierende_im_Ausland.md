@@ -419,7 +419,7 @@ fv:
 
 hv:
 
-fo: Bitte eine Leerzeile zwischen Frage und Antwortitems. Im Pretest waren diese sehr nah beieinander.
+fo: Bitte etwas Abstand zwischen Frage und Antwortitems. Im Pretest waren diese sehr nah beieinander.
 
 tr:
 
@@ -434,7 +434,7 @@ F2_14
 
 tc:
 
-vn: asprachgaslsia; asprachheimlsia; asprachandsia; asprachandsiao
+vn: asprach (asprachgaslsia; asprachheimlsia; asprachandsia; asprachandsiao)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -450,7 +450,7 @@ it1: (asprachgaslsia): Landessprache des Gastlandes
 
 it2: (asprachheimlsia): Deutsch
 
-it3: (asprachandsia): andere Sprache, und zwar: [50 Zeichen, (asprachandsiao)]
+it3: (asprachandsia): Andere Sprache, und zwar: [(asprachandsiao); 60 Zeichen]
 
 st:
 
