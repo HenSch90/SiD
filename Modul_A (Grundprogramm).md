@@ -2034,7 +2034,11 @@ ao4: 4:
 
 ao5: 5: vollkommen
 
-vc:
+mv:
+
+ka:
+
+vc: SHOW it2 IF sabsano = 1
 
 av:
 
@@ -2059,7 +2063,7 @@ tc:
 
 vn: deltberuv; deltberum
 
-qt: Comparison; Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao im Spaltenformat/Comparison
 
 hl:
 
@@ -2089,9 +2093,7 @@ ao6: 2: anderer beruflicher Abschluss
 
 ao7: 1: hat keinen beruflichen Abschluss
 
-ao8: -12: weiß ich nicht
-
-mv: ao8
+mv: -12: weiß ich nicht
 
 ka:
 
@@ -2105,7 +2107,9 @@ fv:
 
 hv:
 
-fo: ao8 bitte etwas absetzen.
+fo1: mv/"weiß ich nicht" bitte etwas absetzen.
+
+fo2: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
 
 tr: GOTO A_33 if mastersplit=1, 2, 3, 4, 5, 6, 14
     GOTO B2_1 if mastersplit=7, 8, 9, 10, 11, 12, 13
@@ -2121,7 +2125,7 @@ tc:
 
 vn: deltjobv (deltjobvo1; deltjobv1; deltjobv2); deltjobm (deltjobmo1; ddeltjobm1; deltjobm2)
 
-qt: Comparison; offene Angaben; Einfachauswahl
+qt: offene Angaben; Einfachauswahl;
 
 hl:
 
@@ -2132,18 +2136,20 @@ q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus?
 is: Falls Ihre Eltern zurzeit nicht erwerbstätig sind, geben Sie bitte den jeweils zuletzt ausgeübten Beruf an.
 
 Bitte tragen Sie die Berufsbezeichnung möglichst genau ein, z. B.:
-Bankkaufmann/-frau (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter) Maschinenbauingenieur\*in (nicht: Ingenieur\*in)
+Bankkaufmann/-frau (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter), Maschinenbauingenieur\*in (nicht: Ingenieur\*in).
 
 
-it:
+it1: Vater
 
-ao1: (deltjobvo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+it2: Mutter
+
+ao1: (deltjobvo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
 ao2: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
 
 ao3: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
 
-ao4: (deltjobmo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+ao4: (deltjobmo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
 ao5: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
 
@@ -2189,7 +2195,7 @@ tc:
 
 vn: deltgebv; deltgebm
 
-qt: Comparison; Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao im Spaltenformat/Comparison
 
 hl:
 
@@ -2223,7 +2229,7 @@ fv:
 
 hv:
 
-fo:
+fo: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
 
 tr: <zofar:transition target="A_35" condition="zofar.asNumber(deltgebv)==2 or zofar.asNumber(deltgebm)==2"/>
     <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber(deltgebv)==1 and zofar.asNumber(deltgebm)==1)"/>
@@ -2256,7 +2262,7 @@ tc: IF deltgebv=2
 
 vn: deltgkov
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2309,7 +2315,7 @@ tc: IF deltgebm=2
 
 vn: deltgkom
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2347,7 +2353,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A35) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen unterhalb der vorhergehenden Frage platzieren.
 
 tr: GOTO A_36
 
@@ -2362,7 +2368,7 @@ tc:
 
 vn: deltgstav; deltgstavo
 
-qt: Einfachauswahl mit Dropdown; offene Angabe
+qt: Drop-Down; offene Angabe
 
 hl:
 
@@ -2409,7 +2415,7 @@ tc:
 
 vn: deltgstam; deltgstamo
 
-qt: Einfachauswahl mit Dropdown; offene Angabe
+qt: Drop-Down; offene Angabe
 
 hl:
 
@@ -2441,7 +2447,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A36) darstellen. Fragetext und ao der vorliegenden Frage bitte zusammen unterhalb der vorhergehenden Frage platzieren.
 
 tr: GOTO C3_2
 
@@ -2456,7 +2462,7 @@ tc:
 
 vn: vsbplz; vsbort
 
-qt: offene Angaben
+qt: offene Angabe
 
 hl:
 
@@ -2468,9 +2474,9 @@ it:
 
 st:
 
-ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield: Postleitzahl, offene Angabe, NUMBER, 5-stellig]
+ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield = Postleitzahl; Number, 5-stellig: 01000 TO 99999] (offene Angabe)
 
-ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield: Ort, offene Angabe, 60-stellig]
+ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield = Ort; 60 Zeichen] (offene Angabe)
 
 mv:
 
@@ -2478,7 +2484,7 @@ ka:
 
 vc:
 
-av: (vsbplz): NUMBER, 5-stellig (01000 TO 99999)
+av: 
 
 kh:
 
@@ -2486,13 +2492,14 @@ fv:
 
 hv:
 
-fo: Bitte jeweils zwischen den Präfixen und den Feldern für die offenen Angaben einen Zeilenumbruch einfügen. Alles linksbündig untereinander anordnen.
+fo: Bitte jeweils zwischen den Präfixen und den Feldern für die offenen Angaben einen Zeilenumbruch einfügen (Präfixe also über den Feldern positionieren). Alles linksbündig untereinander anordnen.
 
 tr: GOTO A_41
 
-hi: vsbplz bitte als NUMBER, 5-stellig (01000 TO 99999), programmieren.
+hi: Besteht die Möglichkeit, dass bei PLZ mit einer 0 vorne, diese nicht gelöscht wird?
 
 \------------------------------------------------------------
+
 A_38a
 ==========
 
@@ -2500,7 +2507,7 @@ tc:
 
 vn: intbild (intbild1; intbild2; intbild3; intbild4; intbild5; intbild6; intbild7)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2518,7 +2525,7 @@ ao1: (intbild1): Promotion
 
 ao2: (intbild2): Hochschulstudium mit zweitem Abschluss (z. B. Master)
 
-ao3. (intbild3): Hochschulstudium mit erstem Abschluss (z. B. Bachelor)
+ao3: (intbild3): Hochschulstudium mit erstem Abschluss (z. B. Bachelor)
 
 ao4: (intbild4): begonnenes Hochschulstudium ohne Abschluss
 
