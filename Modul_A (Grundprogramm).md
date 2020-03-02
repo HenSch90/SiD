@@ -1362,7 +1362,7 @@ tc: IF hsstand_2=1
 
 vn: hsstandbl
 
-qt: Einfachauswahl mit Dropdown
+qt: Drop-Down
 
 hl:
 
@@ -1375,8 +1375,6 @@ is:
 it: (hsstandbl): [infield = Bundesland/Land; Baden-Württemberg - ... - im Ausland] (Dropdown)
 
 st:
-
-aox: Bundesland/Land
 
 ao1: 1: Baden-Württemberg
 
@@ -1444,7 +1442,7 @@ tc:
 
 vn: sabserhs
 
-qt: Einfachauswahl mit Dropdown
+qt: Drop-Down
 
 hl:
 
@@ -1458,7 +1456,7 @@ it: (sabserhs): [infield = Hochschule] (Dropdown)
 
 st:
 
-ao: nach Bundesland vorselektierte Dropdown-Liste
+ao: nach Bundesland vorselektierte Dropdown-Hochschulliste
 
 mv: 
 
@@ -1501,7 +1499,7 @@ it:
 
 st:
 
-ao: (hsstandhso): Präfix: Hochschule: [offene Angabe; 60 Zeichen]
+ao: (hsstandhso): [infield = Hochschule; 60 Zeichen] (offene Angabe)
 
 mv: 
 
@@ -1515,7 +1513,7 @@ fv:
 
 hv: 
 
-fo: 
+fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A20) darstellen. Fragetext und ao der vorliegenden Frage bitte zusammen unterhalb  der vorhergehenden Fragen platzieren.
 
 tr: GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
     GOTO A_22 if mastersplit=3, 4, 9, 10, 13
@@ -1578,7 +1576,7 @@ tc:
 
 vn: sperleiszufr
 
-qt: Einfachauswahlmatrix mit vertikalen ao
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1592,15 +1590,15 @@ it:
 
 st:
 
-ao: 1: sehr unzufrieden
+ao1: 1: sehr unzufrieden
 
-ao: 2
+ao2: 2
 
-ao: 3
+ao3: 3
 
-ao: 4
+ao4: 4
 
-ao: 5: sehr zufrieden
+ao5: 5: sehr zufrieden
 
 mv:
 
@@ -1680,7 +1678,7 @@ tc:
 
 vn: sabslaja
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1698,7 +1696,7 @@ ao1: 1: nein
 
 ao2: 2: Lehramt an Grundschulen (Primarstufe)
 
-ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen  (Sekundarstufe I)
+ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
 ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
 
@@ -1735,7 +1733,7 @@ tc:
 
 vn: sabsano; sabsanoaa; sabsanoka
 
-qt: Einfachauswahl mit offenen Angaben
+qt: Einfachauswahl mit vertikalen ao und offenen Angaben
 
 hl:
 
@@ -1798,9 +1796,10 @@ A_27
 
 tc:
 
-vn: sform (sformpraes; sformdua; sformberu; sformfern; sformgast; sformsons; sformsonso)
+vn: sform (sformpraes; sformfern; sformdua; sformberu; sformgast; sformsons; sformsonso)
 
-qt: Mehrfachauswahl mit offener Angabe
+
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1814,7 +1813,7 @@ it:
 
 st:
 
-ao1: (sformpraes): Präsenzstudim (in Gegensatz zu Fernstudium)
+ao1: (sformpraes): Präsenzstudium (im Gegensatz zu Fernstudium)
 ao2: (sformfern): Fernstudium
 ao3: (sformdua): duales Studium
 ao4: (sformberu): berufsbegleitendes Studium
@@ -1852,7 +1851,7 @@ tc:
 
 vn: sartzeit
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1921,15 +1920,17 @@ it:
 
 st:
 
-ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto), offene Angabe, NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0)]
+ao1: (spernot): Präfix: Durchschnittsnote (z. B. 2,5): [(spernoto): Number, 3-stellig: 1,0 TO 5,0]
 
-ao: (spernot): -11: Ich habe bisher keine Noten erhalten.
+ao2: (spernot): -11: Ich habe bisher keine Noten erhalten.
+
+mv:
 
 ka:
 
 vc:
 
-av: NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0)
+av: 
 
 kh: Bitte geben Sie Ihre aktuelle Durchschnittsnote an (1,0 bis 5,0)
 
@@ -1941,7 +1942,7 @@ fo: Bitte offene Angabe und Einfachauswahl untereinander, linksbündig positioni
 
 tr: GOTO A_29
 
-hi: Offene Angabe bitte als NUMBER, 3-stellig, mit einer Dezimalstelle (1,0 bis 5,0), programmieren.
+hi: Offene Angabe bitte als NUMBER mit einer Dezimalstelle (1,0 bis 5,0), programmieren.
 
 \------------------------------------------------------------
 
@@ -1952,7 +1953,7 @@ tc:
 
 vn: sperleisrel
 
-qt: Einfachauswahlmatrix mit vertikalen ao
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
