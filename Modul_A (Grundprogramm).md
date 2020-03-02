@@ -1052,7 +1052,7 @@ A_15
 
 tc:
 
-vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartka; h_gartcount
+vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartsono; gartka; h_gartcount
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -1112,7 +1112,7 @@ tr: GOTO A_16 if gbeges=1
     GOTO C2_1 if gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
     GOTO A_16 if gbeges=MISSING AND gartmob=MISSING AND gartseh=MISSING AND gartohr=MISSING AND gartspr=MISSING AND gartpsy=MISSING AND gartsom=MISSING AND garttls=MISSING AND gartson=MISSING AND gartka=MISSING
     
-hi:
+hi: Bitte die Systemvariable h_gartcount erzeugen. Diese soll die Anzahl an genannten beeinträchtigungen abbilden (sum ao2-ao10 bzw. sum gartmob-gartka)
 
 \------------------------------------------------------------
 
@@ -1123,7 +1123,7 @@ tc:
 
 vn: imausl
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1178,13 +1178,13 @@ in:
 
 q: Im wievielten Fachsemester befinden Sie sich zurzeit?
 
-is1: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
+is: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
 
 it:
 
 st:
 
-ao: Präfix: Fachsemester: [offene Angabe; NUMBER 2-stellig; 1 bis 99]
+ao: Präfix: Fachsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
 
 mv:
 
@@ -1192,19 +1192,20 @@ ka:
 
 vc: 
 
-av: NUMBER, 2-stellig (1 bis 99)
+av: 
 
-kh: Bitte geben Sie die Anzahl Ihrer Fachsemester als Zahl an.
+kh: Bitte geben Sie die Anzahl Ihrer Fachsemester an (1 bis 99).
 
 fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit den beiden Folgefrage auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen oberhalb von den beiden nachhfolgenden Fragen platzieren.
+
 
 tr: 
 
-hi: Bitte als NUMBER, 2-stellig (1 bis 99), programmieren.
+hi: 
 
 \------------------------------------------------------------
 
@@ -1229,7 +1230,7 @@ it:
 
 st:
 
-ao: Präfix: Hochschulsemester: [offene Angabe; NUMBER 2-stellig; 1 bis 99]
+ao: Präfix: Hochschulsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
 
 mv:
 
@@ -1237,19 +1238,19 @@ ka:
 
 vc:
 
-av: NUMBER, 2-stellig (1 bis 99)
+av: 
 
-kh: Bitte geben Sie die Anzahl Ihrer Hochschulsemester als Zahl an.
+kh: Bitte geben Sie die Anzahl Ihrer Hochschulsemester an (1 bis 99).
 
 fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit der vorherigen Frage und der Folgefrage auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen zwischen der vorherigen Frage und der nachhfolgenden Frage platzieren.
 
 tr:
 
-hi: Bitte als NUMBER, 2-stellig (1 bis 99), programmieren.
+hi: 
 
 \------------------------------------------------------------
 
@@ -1260,7 +1261,7 @@ tc:
 
 vn: ssemul
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1292,7 +1293,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit den beiden vorhergehenden Fragen auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen unterhalb von den beiden vorhergehenden Fragen platzieren.
 
 tr: <zofar:transition target="A_19" condition="zofar.asNumber(PRELOADhs_id)==0"/>
     <zofar:transition target="A_18"/>
@@ -1308,15 +1309,15 @@ tc:
 
 vn: hsstand
 
-qt: Einfachauswahl mit Dropdown
+qt: Einfachauswahl mit vertikalen ao und Drop-Down
 
 hl:
 
 in:
 
-q: Wir haben Sie über die [Preload-Token: Hochschulname] angeschrieben. Ist das die Hochschule, an der Sie aktuell studieren??
+q: Wir haben Sie über die [Preload-Token: Hochschulname] angeschrieben. Ist das die Hochschule, an der Sie aktuell studieren?
 
-is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus.
+is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus. #{layout.BREAK }
 Falls Sie an mehreren Hochschulen parallel studieren, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
 
 it1 (hsstand): Ja, und zwar am Standort [Dropdown; Standortliste].
