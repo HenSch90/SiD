@@ -205,11 +205,11 @@ ka6 (ao16 TO ao17): Start des Aufenthalts:
 
 vc:
 
-SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF ainfaus = 2 \| kA
+SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF ainfaus == 2 \| kA
 
-SHOW q2 AND is1 AND ao1 TO ao12 AND ka1 TO ka4 IF ainfaus = 3
+SHOW q2 AND is1 AND ao1 TO ao12 AND ka1 TO ka4 IF ainfaus == 3
 
-SHOW q3 AND is2 AND ao1 TO ao18 AND ka1 TO ka6 IF ainfaus = 4
+SHOW q3 AND is2 AND ao1 TO ao18 AND ka1 TO ka6 IF ainfaus == 4
 
 av:
 
@@ -307,11 +307,11 @@ ka6: (ao14 TO ao18): Ja, und zwar:
 
 vc:
 
-SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF 1 Aufenthalt (ainfaus == 2)
+SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF ainfaus == 2 OR ainfaus==MISSING
 
-SHOW q2 AND ao1 TO ao16 AND ka1 TO ka4 IF 2 Aufenthalte (ainfaus == 3)
+SHOW q2 AND ao1 TO ao16 AND ka1 TO ka4 IF ainfaus == 3
 
-SHOW q2 AND is AND ao1 TO ao18 AND ka1 TO ka6 IF 3 Aufenthalte (ainfaus == 4)
+SHOW q2 AND is AND ao1 TO ao18 AND ka1 TO ka6 IF ainfaus == 4
 
 av:
 
@@ -341,7 +341,7 @@ tc:
 
 vn: ainfcp
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahl
 
 hl:
 
@@ -479,7 +479,7 @@ SHOW q1 AND is1 AND ao1 TO ao8 AND ka1 IF ainfaus==2 OR ainfaus==MISSING
 
 SHOW q2 AND is2 AND ao1 TO ao16 AND ka1 TO ka2 IF ainfaus==3
 
-SHOW q2 AND is2 ao1 TO ao24 AND ka1 TO ka3 IF ainfaus==4
+SHOW q2 AND is2 AND ao1 TO ao24 AND ka1 TO ka3 IF ainfaus==4
 
 av:
 
@@ -513,9 +513,9 @@ hl:
 
 in:
 
-q1: Wie häufig hatten Sie während Ihres studienbezogenen Auslandsaufenthalts Kontakt …
+q1: Wie häufig hatten Sie während Ihres studienbezogenen Auslandsaufenthalts Kontakt zu …
 
-q2: Wie häufig hatten Sie während Ihres letzten studienbezogenen Auslandsaufenthalts Kontakt zu…
+q2: Wie häufig hatten Sie während Ihres letzten studienbezogenen Auslandsaufenthalts Kontakt zu …
 
 is:
 
