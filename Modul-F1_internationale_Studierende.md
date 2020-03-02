@@ -727,7 +727,7 @@ ao6: (aproanprba): anderes Programm
 
 mv:
 
-ka: (ao2 TO ao6) ja, und zwar:
+ka: (ao2 TO ao6) Ja, und zwar:
 
 vc:
 
