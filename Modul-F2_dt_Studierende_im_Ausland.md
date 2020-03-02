@@ -446,7 +446,7 @@ it1: (asprachgaslsia): Landessprache des Gastlandes
 
 it2: (asprachheimlsia): Deutsch
 
-it3: (asprachandsia): Andere Sprache, und zwar: [(asprachandsiao); 60 Zeichen]
+it3: (asprachandsia): Andere Sprache, und zwar: [(asprachandsiao); offene Angabe, 60 Zeichen]
 
 st:
 
