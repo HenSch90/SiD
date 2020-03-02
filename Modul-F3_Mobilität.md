@@ -820,7 +820,7 @@ hl:
 
 in:
 
-q: Sie haben angegeben, dass Sie einen (weiteren) studienbezogenen Auslandsaufenthalt künftig beabsichtigen: 
+q: Sie haben angegeben, dass Sie künftig einen (weiteren) studienbezogenen Auslandsaufenthalt beabsichtigen: 
 Welche Art von Aufenthalt planen Sie?
 
 is:
@@ -908,7 +908,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao1 und ao2 bitte linksbündig untereinander positionieren.
 
 tr:
 
@@ -923,7 +923,7 @@ F3_19
 
 tc: IF auslandint==3 OR auslandint==4
 
-vn: aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanselb
+vn: aplan (aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanselb)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -963,13 +963,13 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte ao6 optisch etwas absetzen.
 
 tr:
 
 GOTO F3_20
 
-hi: Bitte ao6 optisch etwas absetzen.
+hi: 
 
 \--------------------------------
 
@@ -978,7 +978,7 @@ F3_20
 
 tc: IF auslandint==3 OR auslandint==4
 
-vn: aplfinelt; aplfinpar; aplfinbaf; aplfinjobv; aplfinjobw; aplfinstip; aplfinbkred; aplfinand
+vn: aplfin (aplfinelt; aplfinpar; aplfinbaf; aplfinjobv; aplfinjobw; aplfinstip; aplfinbkred; aplfinand)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -1049,7 +1049,7 @@ hl:
 
 in:
 
-q: Wie häufig unterhalten Sie sich mit…
+q: Wie häufig unterhalten Sie sich mit …
 
 is:
 
