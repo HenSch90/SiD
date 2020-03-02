@@ -501,7 +501,7 @@ hl:
 
 in:
 
-q: In Bezug auf Ihren Auslandsaufenthalt: Wie zufrieden sind Sie mit …
+q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …
 
 is:
 
@@ -609,7 +609,7 @@ tc:
 
 vn: aeempfsia
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -663,7 +663,7 @@ F2_19
 
 tc: 
 
-vn: intpsydeusia; intpsyzeitasia; intpsydauasia
+vn: intpsy (intpsydeusia; intpsyzeitasia; intpsydauasia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
