@@ -149,7 +149,7 @@ tc:
 
 vn: vsbdeba
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -196,7 +196,7 @@ tc:
 
 vn: dnatdeu; dnatausl
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -210,9 +210,9 @@ it:
 
 st:
 
-ao1: (dnatdeu): 1: deutsche Staatsangehörigkeit
+ao1: (dnatdeu): deutsche Staatsangehörigkeit
 
-ao2: (dnatausl): 2: andere Staatsangehörigkeit(en)
+ao2: (dnatausl): andere Staatsangehörigkeit(en)
 
 mv:
 
@@ -228,7 +228,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A1) darstellen. Fragetext,Ausfüllanweisung und Antwortoptionen der vorliegenden Frage bitte zusammen unterhalb von Fragetext und Antwortoptionen der vorhergehenden Frage platzieren.
 
 tr: GOTO A_2 IF dnatdeu==1
     GOTO A_3 IF dnatdeu=0 AND dnatausl=1
@@ -246,7 +246,7 @@ tc:
 
 vn: dnatderw
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -300,19 +300,19 @@ tc:
 
 vn: dnatko
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
 in:
 
-q1: Welche Staatsangehörigkeit besaßen Sie bevor Sie nach Deutschland kamen?
+q1: Welche Staatsangehörigkeit besaßen Sie, bevor Sie nach Deutschland kamen?
 
 q2: Welche Staatsangehörigkeit besaßen Sie vor Ihrer Einbürgerung?
 
-q3: Sie haben zu Beginn der Befragung angegeben, die deutsche und eine ausländische Staatsangehörigkeit zu haben. Welche Staatsangehörigkeit besitzen Sie neben der deutschen?
+q3: Sie haben angegeben, die deutsche und eine ausländische Staatsangehörigkeit zu haben. Welche Staatsangehörigkeit besitzen Sie neben der deutschen?
 
-q4: Sie haben zu Beginn der Befragung angegeben, eine ausländische Staatsangehörigkeit zu haben. Welche ausländische Staatsangehörigkeit besitzen Sie?
+q4: Sie haben angegeben, eine ausländische Staatsangehörigkeit zu haben. Welche ausländische Staatsangehörigkeit besitzen Sie?
 
 is: Bitte wählen Sie zunächst den Kontinent aus.
 
@@ -336,13 +336,13 @@ ka:
 
 vc:
 
-SHOW q1 if dnatderw=2 AND dnatausl=0
+SHOW q1 IF dnatderw=2 AND dnatausl=0
 
-SHOW q2 if dnatderw=3 AND dnatausl=0
+SHOW q2 IF dnatderw=3 AND dnatausl=0
 
-SHOW q3 if dnatdeu=1 AND dnatausl=1
+SHOW q3 IF dnatdeu=1 AND dnatausl=1
 
-SHOW q4 if dnatdeu=0 AND dnatausl=1
+SHOW q4 IF dnatdeu=0 AND dnatausl=1
 
 av:
 
@@ -367,7 +367,7 @@ tc:
 
 vn: dnatsta; dnatstao
 
-qt: Einfachauswahl mit Dropdown; offene Angabe
+qt: Drop-Down; offene Angabe
 
 hl:
 
@@ -389,7 +389,7 @@ st:
 
 ao1: (dnatsta): [infield = Staatsangehörigkeit; Staatenliste_DBI] (Dropdown)
 
-ao2: (dnatstao): Präfix: An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben: [offene Angabe; 60 Zeichen]
+ao2: (dnatstao): Präfix: !!An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben:!! [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -411,7 +411,7 @@ fv:
 
 hv:
 
-fo:
+fo: Das Präfix bei ao2 ("An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben:") bitte linksbündig und in fett oberhalb des offenen Eingabefeldes platzieren.
 
 tr:  GOTO A_5
 
@@ -426,7 +426,7 @@ tc:
 
 vn: dgebort
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -460,8 +460,8 @@ hv:
 
 fo:
 
-tr: GOTO A_6 if dgebort=2
-    GOTO A_9b if (dgebort=1 OR dgebort=MISSING)
+tr: GOTO A_6 IF dgebort=2
+    GOTO A_9b IF dgebort=1 OR dgebort=MISSING
 
 hi:
 
@@ -474,7 +474,7 @@ tc:
 
 vn: dgebko
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -482,7 +482,7 @@ in:
 
 q: In welchem Land wurden Sie geboren?
 
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
@@ -527,13 +527,13 @@ tc:
 
 vn: dgebsta; dgebstao
 
-qt: Einfachauswahl mit Dropdown; offene Angabe
+qt: Drop-Down; offene Angabe
 
 hl:
 
 in:
 
-q: Bitte geben Sie nun das Land an, in dem Sie geboren wurden.
+q: Bitte geben Sie nun das Land an, in dem Sie geboren sind.
 
 is:
 
@@ -543,7 +543,7 @@ st:
 
 ao1: (dgebsta): [infield = Geburtsland; Staatenliste_DBI] (Dropdown)
 
-ao2: (dgebstao): Präfix: An dieser Stelle können Sie Ihr Geburtsland auch offen angeben: [offene Angabe; 60 Zeichen]
+ao2: (dgebstao): Präfix: !!An dieser Stelle können Sie Ihr Geburtsland auch offen angeben:!! [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -559,7 +559,7 @@ fv:
 
 hv:
 
-fo:
+fo: Das Präfix bei ao2 ("An dieser Stelle können Sie Ihr Geburtsland auch offen angeben:") bitte linksbündig und in fett oberhalb des offenen Eingabefeldes platzieren.
 
 tr: GOTO C3_1
 
