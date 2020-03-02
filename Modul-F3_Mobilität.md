@@ -12,7 +12,7 @@ hl:
 
 in:
 
-q1: Trauen Sie sich zu, ein Studium im Ausland zu absolvieren?
+q1: Trauen Sie sich zu, ein komplettes Studium im Ausland zu absolvieren?
 
 is:
 
@@ -51,9 +51,9 @@ tr:
 GOTO F3_7 IF ainfaus>1
 GOTO F3_16 IF ainfaus=1 AND auslandint=4
 GOTO F3_16 IF ainfaus=MISSING AND auslandint=4
-GOTO F3_21 IF ainfaus=1 AND auslandint=1 | 2 | 3
-GOTO F3_21 IF ainfaus=MISSING AND auslandint=1 | 2 | 3
-GOTO F3_21 IF ainfaus=MISSING AND auslandint=MISSING
+GOTO F3_22 IF ainfaus=1 AND auslandint=1 | 2 | 3
+GOTO F3_22 IF ainfaus=MISSING AND auslandint=1 | 2 | 3
+GOTO F3_22 IF ainfaus=MISSING AND auslandint=MISSING
 hi:
 
 
@@ -545,7 +545,7 @@ ka:
 
 vc:
 
-SHOW q1 IF ainfaus > 1
+SHOW q1 IF ainfaus == 2 OR ainfaus == MISSING
 
 SHOW q2 IF ainfaus > 2
 
@@ -591,7 +591,7 @@ it1: (asprachland): Landessprache des Gastlandes
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): Andere Sprache, und zwar: [asprachando] [string, 50 Zeichen]
+it3: (asprachand): Andere Sprache, und zwar: [(asprachando); offene Angabe, 60 Zeichen]
 
 st:
 
@@ -611,9 +611,9 @@ ka:
 
 vc:
 
-SHOW q1 IF ainfaus = 2 OR ainfaus = MISSING
+SHOW q1 IF ainfaus == 2 OR ainfaus == MISSING
 
-SHOW q2 IF ainfaus \> 2
+SHOW q2 IF ainfaus > 2
 
 av:
 
@@ -647,7 +647,7 @@ hl:
 
 in:
 
-q: Wie zufrieden sind Sie in Bezug auf Ihren letzten studienbezogenen Auslandsaufenthalt mit…
+q: Wie zufrieden sind Sie in Bezug auf Ihren letzten studienbezogenen Auslandsaufenthalt mit …
 
 is:
 
@@ -759,7 +759,7 @@ tc: IF ainfaus > 1
 
 vn: aeempf
 
-qt: Einfachauswahl/5er-Skala mit horizontalen ao
+qt: Einfachauswahl/5er-Skala mit vertikalen ao
 
 hl:
 
@@ -805,13 +805,12 @@ GOTO F3_22
 
 hi:
 
-
 \-------------------------------- 
 
 F3_16
 =====
 
-tc: IF auslandint==4
+tc: IF auslandint==3 OR auslandint==4
 
 vn: aplanart
 
@@ -860,7 +859,7 @@ fv:
 
 hv:
 
-fo:
+fo: "-12: weiß ich noch nicht" bitte etwas absetzen.
 
 tr:
 
@@ -868,17 +867,16 @@ GOTO F3_17
 
 hi:
 
-
 \--------------------------------
 
 F3_17
 =====
 
-tc: IF auslandint==4
+tc: IF auslandint==3 OR auslandint==4
 
 vn: aplanlando; aplanorto
 
-qt: offene Angabe
+qt: offene Angaben
 
 hl:
 
@@ -892,9 +890,9 @@ it:
 
 st:
 
-ao1: (aplanlando): Präfix: Land: [string, 100 Zeichen]
+ao1: (aplanlando): Präfix: Land: [offene Angabe; 100 Zeichen]
 
-ao2: (aplanorto): Präfix: Stadt/Hochschule: [string, 100 Zeichen]
+ao2: (aplanorto): Präfix: Stadt/Hochschule: [offene Angabe, 100 Zeichen]
 
 mv:
 
@@ -918,20 +916,12 @@ GOTO F3_19
 
 hi:
 
-
-\--------------------------------
-
-F3_18
-=====
-** Hinweis: Seite F3_18 **nicht** Bestandteil der Finalversion 
-
-
 \--------------------------------
 
 F3_19
 =====
 
-tc: IF auslandint==4
+tc: IF auslandint==3 OR auslandint==4
 
 vn: aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanselb
 
@@ -981,13 +971,12 @@ GOTO F3_20
 
 hi: Bitte ao6 optisch etwas absetzen.
 
-
 \--------------------------------
 
 F3_20
 =====
 
-tc: IF auslandint==4
+tc: IF auslandint==3 OR auslandint==4
 
 vn: aplfinelt; aplfinpar; aplfinbaf; aplfinjobv; aplfinjobw; aplfinstip; aplfinbkred; aplfinand
 
@@ -1046,56 +1035,6 @@ hi:
 
 \--------------------------------
 
-F3_21
-=====
-
-tc: IF (ainfaus==1 AND auslandint==1)
-Die Frage erhalten ausschließlich Studierende, die nicht studienbezogen im Ausland waren und auch nicht beabsichtigen einen Auslandsaufenthalt durchzuführen
-
-vn: aplanbedi; aplanbedio
-
-qt: Einfachauswahl mit offener Angabe
-
-hl:
-
-in:
-
-q: Gibt es Umstände, unter denen ein Auslandsstudium für Sie doch in Frage kommen würde?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: nein
-
-ao2: 2: Präfix: ja, und zwar wenn: [aplanbedio] (string; 200 Zeichen)
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO F3_22
-
-hi:
-
-
-\--------------------------------
 
 F3_22
 =====
