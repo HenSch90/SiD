@@ -2558,6 +2558,7 @@ tr: <zofar:transition target="A_38b" condition="(intbild1.value or intbild2.valu
 hi:
 
 \------------------------------------------------------------
+
 A_38b
 ==========
 
@@ -2593,17 +2594,17 @@ ao2: 2: teilweise anerkannt
 
 ao3: 3: nicht anerkannt
 
-ao4: -13: weiß ich nicht
+mv: -12: weiß ich nicht
 
-mv: ao4
 
 ka:
 
-vc: SHOW it1 if intbild1>0
-      SHOW it2 if intbild2>0
-      SHOW it3 if intbild3>0
-      SHOW it4 if intbild4>0
-      SHOW it5 if intbild5>0
+vc1: SHOW it1 if intbild1 > 0
+vc2: SHOW it2 if intbild2 > 0
+vc3: SHOW it3 if intbild3 > 0
+vc4: SHOW it4 if intbild4 > 0
+vc5: SHOW it5 if intbild5 > 0
+
 av:
 
 kh:
@@ -2612,13 +2613,14 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
 tr: GOTO A_38c
 
 hi:
 
 \------------------------------------------------------------
+
 A_38c
 ==========
 
@@ -2626,7 +2628,7 @@ tc:
 
 vn: intvors (intvors1; intvors2; intvors3; intvors4; intvors5; intvors5o; intvors6)
 
-qt: Mehrfachauswahl mit Exklusivkategorie; offene Angabe
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
