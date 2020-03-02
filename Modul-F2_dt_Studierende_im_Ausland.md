@@ -62,7 +62,7 @@ fv:
 
 hv:
 
-fo: Bitte ainfasia ainflandosia ainfortosia linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts" und darunter linksbündig ainfbmsia und daneben ainfbjsia. Zuletzt dann ebenfalls darunter linksbündig ainfdausia.
+fo: Bitte ainfasia ainflandosia ainfortosia linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig ainfbmsia und daneben ainfbjsia. Zuletzt dann ebenfalls darunter linksbündig ainfdausia.
 
 tr: GOTO F2_8
 
