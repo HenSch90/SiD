@@ -218,7 +218,7 @@ ao6: (avorkomm): Kommiliton\*innen
 
 mv:
 
-ka: (it2 TO it6) ja, und zwar:
+ka: (it2 TO it6) Ja, und zwar:
 
 vc:
 
