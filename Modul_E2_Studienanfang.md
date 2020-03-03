@@ -49,7 +49,7 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf02a IF mastersplit <> 1, 2, 3, 4, 5, 6, 13
+tr: GOTO KSM-anf02 IF mastersplit <> 1, 2, 3, 4, 5, 6, 13
 GOTO KSM-anf03 IF mastersplit = 1, 2, 3, 4, 5, 6, 13
 
 hi: Wäre es möglich, diesen Eingangstext etwas größer darzustellen als es sonst für die Einleitung üblich ist?
