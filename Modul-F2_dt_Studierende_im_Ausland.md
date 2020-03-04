@@ -1,11 +1,9 @@
-
-
 F2_6
 ====
 
 tc:
 
-vn: ainf (ainfasia; ainflandosia; ainfortosia; ainfbmsia; ainfbjsia; ainfdausia)
+vn: ainf (ainfasia; ainflosia; ainfstosia; ainfbmsia; ainfbjsia; ainfdausia)
 
 qt: Einfachauswahl mit Dropdown und offene Angaben
 
@@ -19,9 +17,9 @@ is:
 
 ao1: (ainfasia): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
-    (ainfasia): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+    (ainfasia): 1: Auslandsstudium mit Abschluss
 
-    (ainfasia): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    (ainfasia): 2: Auslandssemester
 
     (ainfasia): 3: Praktikum/Praxisphase
 
@@ -36,9 +34,9 @@ ao1: (ainfasia): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit ang
     (ainfasia): 8: sonstiger Aufenthalt
 
 
-ao2: (ainflandosia): [infield = Land; 100 Zeichen] (offene Angabe)
+ao2: (ainflosia): [infield = Land; 100 Zeichen] (offene Angabe)
 
-ao3: (ainfortosia): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
+ao3: (ainfstosia): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 
 ao4: (ainfbmsia): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
@@ -151,7 +149,7 @@ hl:
 
 in:
 
-q: Planen Sie im Ausland einen Hochschulabschluss zu erwerben?
+q: Planen Sie, im Ausland einen Hochschulabschluss zu erwerben?
 
 is: Bitte beziehen Sie sich auf Ihren aktuellen Studiengang.
 
@@ -308,9 +306,9 @@ F2_12
 
 tc:
 
-vn: afin (afinelt; afinpar; afinbaf; afinjobv; afinjobw; afinstip; afinkre; afinand)
+vn: afin (afineltsia; afinparsia; afinbafsia; afinjobvsia; afinjobwsia; afinstipsia; afinkresia; afinandsia)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -324,21 +322,21 @@ it:
 
 st:
 
-ao1: (afinelt): Eltern
+ao1: (afineltsia): Eltern
 
-ao2: (afinpar): Parnter\*in
+ao2: (afinparsia): Parnter\*in
 
-ao3: (afinbaf): BAföG
+ao3: (afinbafsia): BAföG
 
-ao4: (afinjobv): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
+ao4: (afinjobvsia): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
 
-ao5: (afinjobw): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalt
+ao5: (afinjobwsia): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalt
 
-ao6: (afinstip): Stipendium
+ao6: (afinstipsia): Stipendium
 
-ao7: (afinkre): Bildungskredit
+ao7: (afinkresia): Bildungskredit
 
-ao8: (afinand): andere Finanzierungsquelle
+ao8: (afinandsia): andere Finanzierungsquelle
 
 mv:
 
@@ -489,7 +487,7 @@ F2_15
 
 tc:
 
-vn: azuflernerfsia; azufinsgsia
+vn: azuf (azuflernerfsia; azufinsgsia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -546,7 +544,7 @@ F2_16
 
 tc:
 
-vn: azuforgaufwsia; azuffinanzaufwsia
+vn: azuf (azuforgaufsia; azuffinaufsia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -558,9 +556,9 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1: (azuforgaufwsia): … den organisatorischen Aufwand Ihres Aufenthaltes?
+it1: (azuforgaufsia): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it2: (azuffinanzaufwsia): … den finanziellen Aufwand Ihres Aufenthaltes?
+it2: (azuffinaufsia): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
@@ -647,12 +645,11 @@ fo:
 
 tr:
 
-GOTO F2_18
+GOTO F2_19
 
 hi:
 
 \--------------------------------
-
 
 F2_19 
 ======
@@ -718,7 +715,7 @@ F2_20
 
 tc:
 
-vn: intling1sia; intling2sia; intling3sia
+vn: intling (intling1sia; intling2sia; intling3sia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -767,4 +764,5 @@ fo:
 tr:
 
 GOTO A_56
+
 hi:
