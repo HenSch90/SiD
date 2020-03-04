@@ -506,7 +506,7 @@ F3_11
 
 tc:
 
-vn: akontgast; akonteinheim; akontdeust; akontintst
+vn: akont (akontgast; akontbuerg; akontdeust; akontintst)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -522,7 +522,7 @@ is:
 
 it1: (akontgast): … Studierenden des Gastlandes?
 
-it2: (akonteinheim): … anderen Bürger\*innen des Gastlandes?
+it2: (akontbuerg): … anderen Bürger\*innen des Gastlandes?
 
 it3: (akontdeust): … deutschen Studierenden?
 
