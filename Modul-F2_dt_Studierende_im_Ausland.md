@@ -367,7 +367,7 @@ F2_13
 
 tc:
 
-vn: akont (akontgastsia; akonteinheimsia; akontdeustsia; akontintstsia)
+vn: akont (akontgastsia; akontbuergsia; akontdeustsia; akontintstsia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -381,7 +381,7 @@ is:
 
 it1: (akontgastsia): … Studierenden des Gastlandes?
 
-it2: (akonteinheimsia): … anderen Bürger\*innen des Gastlandes?
+it2: (akontbuergsia): … anderen Bürger\*innen des Gastlandes?
 
 it3: (akontdeustsia): … deutschen Studierenden?
 
