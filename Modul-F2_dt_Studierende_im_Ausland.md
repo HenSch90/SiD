@@ -21,7 +21,7 @@ ao1: (ainfasia): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit ang
 
     (ainfasia): 2: Auslandssemester
 
-    (ainfasia): 3: Praktikum/Praxisphase
+    (ainfasia): 3: Auslandspraktikum/-praxisphase
 
     (ainfasia): 4: Sprachkurs
 
@@ -381,7 +381,7 @@ is:
 
 it1: (akontgastsia): … Studierenden des Gastlandes?
 
-it2: (akonteinheimsia): … anderen Einheimischen?
+it2: (akonteinheimsia): … anderen Bürger\*innen des Gastlandes?
 
 it3: (akontdeustsia): … deutschen Studierenden?
 
