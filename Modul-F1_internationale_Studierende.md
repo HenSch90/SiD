@@ -428,7 +428,7 @@ F1_8
 
 tc:
 
-vn: intdeutsch (intdeutschba1; intdeutschba2; intdeutschba3; intdeutschba4; intdeutschba5; intdeutschba6)
+vn: intdeutsch (intdeutsch1ba; intdeutsch2ba; intdeutsch3ba; intdeutsch4ba; intdeutsch5ba; intdeutsch6ba)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -444,17 +444,17 @@ it:
 
 st:
 
-ao1: (intdeutsch1): Elternhaus
+ao1: (intdeutsch1ba): Elternhaus
 
-ao2: (intdeutsch2): Schule/Studium im Ausland
+ao2: (intdeutsch2ba): Schule/Studium im Ausland
 
-ao3: (intdeutsch3): Sprachkurs im Ausland
+ao3: (intdeutsch3ba): Sprachkurs im Ausland
 
-ao4: (intdeutsch4): Sprachkurs in Deutschland (vor dem Studium)
+ao4: (intdeutsch4ba): Sprachkurs in Deutschland (vor dem Studium)
 
-ao5: (intdeutsch5): studienbegleitend an einer deutschen Hochschule
+ao5: (intdeutsch5ba): studienbegleitend an einer deutschen Hochschule
 
-ao6: (intdeutsch6): bisher noch gar nicht
+ao6: (intdeutsch6ba): bisher noch gar nicht
 
 mv:
 
@@ -758,7 +758,7 @@ F1_14
 
 tc:
 
-vn: akont (akontdeustba; akonteinheimba; akontheimba; akontintstba)
+vn: akont (akontdeustba; akontbuergba; akontheimba; akontintstba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -772,7 +772,7 @@ is:
 
 it1: (akontdeustba): … deutschen Studierenden?
 
-it2: (akonteinheimba): … anderen Bürger\*innen in Deutschland?
+it2: (akontbuergba): … anderen Bürger\*innen in Deutschland?
 
 it3: (akontheimba): … Studierenden aus Ihrem Heimatland?
 
