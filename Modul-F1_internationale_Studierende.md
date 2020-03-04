@@ -772,7 +772,7 @@ is:
 
 it1: (akontdeustba): … deutschen Studierenden?
 
-it2: (akonteinheimba): … anderen Einheimischen?
+it2: (akonteinheimba): … anderen Bürger\*innen in Deutschland?
 
 it3: (akontheimba): … Studierenden aus Ihrem Heimatland?
 
