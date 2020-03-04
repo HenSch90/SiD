@@ -3,7 +3,7 @@ F1_1
 
 tc:
 
-vn: aeinnorm1; aeinnorm2
+vn: aeinnorm (aeinnorm1; aeinnorm2)
 
 qt:  Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -23,11 +23,11 @@ st:
 
 ao1: 1: trifft überhaupt nicht zu
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: trifft voll und ganz zu
 
@@ -58,7 +58,7 @@ F1_2
 
 tc:
 
-vn: aeinsarbm; aeinssprachk; aeinsfach; aeinspersoen; aeinskont; aeinskultur; aeinsspas; aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl
+vn: aeins (aeinsarbm; aeinssprachk; aeinsfach; aeinspersoen; aeinskont; aeinskultur; aeinsspas; aeinsfinanz; aeinsorga; aeinsfreun; aeinsanerk; aeinszeit; aeinsfehlspra; aeinsangstl)
 
 qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
@@ -102,11 +102,11 @@ st:
 
 ao1: 1: überhaupt nicht
 
-ao2: 2
+ao2: 2:
 
-ao3: 3
+ao3: 3:
 
-ao4: 4
+ao4: 4:
 
 ao5: 5: sehr stark
 
@@ -126,9 +126,9 @@ fv:
 
 hv:
 
-fo1: Bitte über it1 "... für einen Auslandsaufenthalt" linksbündig positionieren.
+fo1: Bitte über it1 "... *für* einen Auslandsaufenthalt" linksbündig positionieren.
 
-fo2: Bitte über it8 "... gegen einen Auslandsaufenthalt" linksbündig positionieren.
+fo2: Bitte über it8 "... *gegen* einen Auslandsaufenthalt" linksbündig positionieren.
 
 tr: GOTO F1_3
 
@@ -188,7 +188,7 @@ F1_4
 
 tc:
 
-vn:  avorniem; avorelt; avorgeschw; avorandver; avorfreund; avorkomm
+vn: avor (avorniem; avorelt; avorgeschw; avorandver; avorfreund; avorkomm)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -204,7 +204,7 @@ it:
 
 st:
 
-ao1: (avorniem): nein, niemanden (EK)
+ao1: (avorniem): nein, niemanden (Exklusivkategorie)
 
 ao2: (avorelt): Eltern
 
@@ -232,7 +232,7 @@ hv:
 
 fo1: ao1 bitte etwas absetzen.
 
-fo2: Bitte über it2 "ja, und zwar:" linksbündig positionieren.
+fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO F1_5
 
@@ -245,7 +245,7 @@ F1_5
 
 tc:
 
-vn: aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul
+vn: aauszeitleb (aauszeitlebnein; aauszeitlebfrkin; aauszeitlebwschul; aauszeitlebnschul)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -261,7 +261,7 @@ it:
 
 st:
 
-ao1: (aauszeitlebnein): nein (EK)
+ao1: (aauszeitlebnein): nein (Exklusivkategorie)
 
 ao2: (aauszeitlebfrkin): ja, in meiner frühen Kindheit
 
@@ -377,7 +377,7 @@ F1_7
 
 tc:
 
-vn: vsbanrechsch
+vn: vsbanrschba
 
 qt: Einfachauswahl/5er-Skala mit vertikalen ao
 
@@ -428,7 +428,7 @@ F1_8
 
 tc:
 
-vn: intdeutsch1; intdeutsch2; intdeutsch3; intdeutsch4; intdeutsch5; intdeutsch6
+vn: intdeutsch (intdeutschba1; intdeutschba2; intdeutschba3; intdeutschba4; intdeutschba5; intdeutschba6)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -483,7 +483,7 @@ F1_9
 
 tc:
 
-vn: bdequaba; bdefamsba; bdeoekba; bdefinba; bdesprba; bdearbba; bdekenba 
+vn: bde (bdequaba; bdefamsba; bdeoekba; bdefinba; bdesprba; bdearbba; bdekenba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -605,7 +605,7 @@ in:
 
 q: Planen Sie, in Deutschland einen Hochschulabschluss zu erwerben?
 
-is: Bitte beziehen Sie sich auf Ihren aktuellen Studiengang.
+is: Bitte beziehen Sie sich auf Ihr aktuelles Auslandsstudium.
 
 is: 
 
@@ -619,7 +619,9 @@ ao2: 2: Ja, ich plane einen Studienabschluss in Deutschland (z. B. Bachelor, Mas
 
 ao3: 3: Ja, ich plane einen Doppelabschluss (Deutschland und anderes Land).
 
-mv: -12: weiß ich noch nicht
+ao4: -12: weiß ich noch nicht 
+
+mv: ao4
 
 ka:
 
@@ -670,7 +672,9 @@ ao3: 3: ja, vollständig
 
 ao4: 4: ist nicht vorgesehen
 
-mv: -12: weiß ich nicht
+ao5: -12: weiß ich nicht
+
+mv: ao5
 
 ka:
 
@@ -697,7 +701,7 @@ F1_13
 
 tc:
 
-vn: apronoba; aproerasba; aprodaadba; aprohhsba; aprogahsba; aproanprba
+vn: apro (apronoba; aproerasba; aprodaadba; aprohhsba; aprogahsba; aproanprba)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -713,7 +717,7 @@ it:
 
 st:
 
-ao1: (apronoba): nein (EK)
+ao1: (apronoba): nein (Exklusivkategorie)
 
 ao2: (aproerasba): ERASMUS+
 
@@ -741,7 +745,7 @@ hv:
 
 fo1: ao1 bitte etwas absetzen.
 
-fo2: Bitte über it2 "ja, und zwar:" linksbündig positionieren.
+fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO F1_14
 
@@ -754,7 +758,7 @@ F1_14
 
 tc:
 
-vn: akontdeutstba; akonteinheimba; akontheimba; akontintstba
+vn: akont (akontdeustba; akonteinheimba; akontheimba; akontintstba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -766,7 +770,7 @@ q: Wie häufig unterhalten Sie sich mit …
 
 is:
 
-it1: (akontdeutstba): … deutschen Studierenden?
+it1: (akontdeustba): … deutschen Studierenden?
 
 it2: (akonteinheimba): … anderen Einheimischen?
 
@@ -879,7 +883,7 @@ F1_16
 
 tc:
 
-vn: azuflernerfba; azufinsgba
+vn: azuf (azuflernerfba; azufinsgba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -934,7 +938,7 @@ F1_17
 
 tc:
 
-vn: azuforgaaufwba; azuffinanzaufwba
+vn: azuf (azuforgaufba; azuffinaufba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -946,9 +950,9 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1: (azuforgaaufwba): … den organisatorischen Aufwand Ihres Aufenthaltes?
+it1: (azuforgaufba): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it2: (azuffinanzaufwba): … den finanziellen Aufwand Ihres Aufenthaltes?
+it2: (azuffinaufba): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
@@ -989,7 +993,7 @@ F1_18
 
 tc:
 
-vn: adeempfba
+vn: aeempfba
 
 qt: Einfachauswahl mit vertikalen ao
 
@@ -1108,7 +1112,7 @@ F1_22
 
 tc:
 
-vn: intpsydeu; intpsyzeitdeu; intpsyherkba; intpsyandl
+vn: intpsy (intpsydaudeuba; intpsyzeitdeuba; intpsyherkba; intpsyandlba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1120,13 +1124,13 @@ q: Wenn Sie an Ihre Zukunft denken, wo möchten Sie leben?
 
 is:
 
-it1: (intpsydeu): in Deutschland
+it1: (intpsydaudeuba): dauerhaft in Deutschland
 
-it2: (intpsyzeitdeu): zeitweise in Deutschland
+it2: (intpsyzeitdeuba): zeitweise in Deutschland
 
 it3: (intpsyherkba): in meinem Heimatland
 
-it4: (intpsyandl): in einem anderen Land
+it4: (intpsyandlba): in einem anderen Land
 
 st:
 
@@ -1167,7 +1171,7 @@ F1_23
 
 tc:
 
-vn: intling1ba; intling2ba; intling3ba
+vn: intling (intling1ba; intling2ba; intling3ba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1224,7 +1228,7 @@ F1_24
 
 tc:
 
-vn: aarbchherkba; aarbchdeuba 
+vn: aarbch (aarbchherkba; aarbchdeuba)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1279,7 +1283,7 @@ F1_25
 
 tc:
 
-vn: asprachgaslba; asprachheimlba; asprachandba; asprachandbao;
+vn: asprachgaslba; asprachheimlba; asprachandba; asprachandbao
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1295,7 +1299,7 @@ it1: (asprachgaslba): Deutsch
 
 it2: (asprachheimlba): Sprache Ihres Heimatlandes
 
-it3: (asprachandba): Andere Sprache, und zwar: [(asprachandbao); 60 Zeichen, ]
+it3: (asprachandba): Andere Sprache, und zwar: ([asprachandbao]; 60 Zeichen)
 
 st:
 
