@@ -54,6 +54,7 @@ GOTO F3_16 IF ainfaus=MISSING (auslandint==3 OR auslandint==4)
 GOTO F3_22 IF ainfaus=1 AND auslandint=1 | 2 | 5
 GOTO F3_22 IF ainfaus=MISSING AND auslandint=1 | 2 | 5
 GOTO F3_22 IF ainfaus=MISSING AND auslandint=MISSING
+
 hi:
 
 
@@ -67,7 +68,7 @@ tc:
 vn: ainfa1; ainflo1; ainfsto1; ainfbm1; ainfbj1, ainfdau1
     ainfa2; ainflo2; ainfsto2; ainfbm2; ainfbj2, ainfdau2
     ainfa3; ainflo3; ainfsto3; ainfbm3; ainfbj3, ainfdau3
-
+    
 qt: Einfachauswahl mit Dropdown und offene Angaben
 
 hl:

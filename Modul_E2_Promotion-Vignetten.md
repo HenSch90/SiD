@@ -324,7 +324,7 @@ hv:
 
 fo:
 
-tr: GOTO A_50
+tr: GOTO ABSCHLUSSSEITE
 
 hi: 
 
