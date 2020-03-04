@@ -151,7 +151,7 @@ in:
 
 q: Planen Sie, im Ausland einen Hochschulabschluss zu erwerben?
 
-is: Bitte beziehen Sie sich auf Ihren aktuellen Studiengang.
+is: Bitte beziehen Sie sich auf Ihr aktuelles Auslandsstudium.
 
 it:
 
