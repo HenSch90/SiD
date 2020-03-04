@@ -64,9 +64,9 @@ F3_7
 
 tc: 
 
-vn: ainfa1; ainflando1; ainforto1; ainfbm1; ainfbj1, ainfdau1
-    ainfa2; ainflando2; ainforto2; ainfbm2; ainfbj2, ainfdau2
-    ainfa3; ainflando3; ainforto3; ainfbm3; ainfbj3, ainfdau3
+vn: ainfa1; ainflo1; ainfsto1; ainfbm1; ainfbj1, ainfdau1
+    ainfa2; ainflo2; ainfsto2; ainfbm2; ainfbj2, ainfdau2
+    ainfa3; ainflo3; ainfsto3; ainfbm3; ainfbj3, ainfdau3
 
 qt: Einfachauswahl mit Dropdown und offene Angaben
 
@@ -88,13 +88,13 @@ it:
 
 st:
 
-ao1: (ainfa1): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
+ao1: (ainfa1): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit Abschluss - ... - sonstiger Aufenthalt] (Dropdown)
 
-    (ainfa1): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+    (ainfa1): 1: Auslandsstudium mit Abschluss
 
-    (ainfa1): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    (ainfa1): 2: Auslandssemester
     
-    (ainfa1): 3: Praktikum/Praxisphase
+    (ainfa1): 3: Auslandspraktikum/-praxisphase
 
     (ainfa1): 4: Sprachkurs
 
@@ -107,9 +107,9 @@ ao1: (ainfa1): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit anges
     (ainfa1): 8: sonstiger Aufenthalt
 
 
-ao2: (ainflando1): [infield = Land; 100 Zeichen] (offene Angabe)
+ao2: (ainflo1): [infield = Land; 100 Zeichen] (offene Angabe)
 
-ao3: (ainforto1): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
+ao3: (ainfsto1): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 
 ao4: (ainfbm1): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
@@ -122,11 +122,11 @@ ao6: (ainfdau1): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12
 
 ao7: (ainfa2): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
-    (ainfa2): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+    (ainfa2): 1: Auslandsstudium mit Abschluss
 
-    (ainfa2): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    (ainfa2): 2: Auslandssemester
     
-    (ainfa2): 3: Praktikum/Praxisphase
+    (ainfa2): 3: Auslandspraktikum/-praxisphase
 
     (ainfa2): 4: Sprachkurs
 
@@ -139,9 +139,9 @@ ao7: (ainfa2): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit anges
     (ainfa2): 8: sonstiger Aufenthalt
 
 
-ao8: (ainflando2): [infield = Land; 100 Zeichen] (offene Angabe)
+ao8: (ainflo2): [infield = Land; 100 Zeichen] (offene Angabe)
 
-ao9: (ainforto2): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
+ao9: (ainfsto2): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 
 ao10: (ainfbm2): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
@@ -154,11 +154,11 @@ ao12: (ainfdau2): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 1
 
 ao13: (ainfa3): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
-    (ainfa3): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+    (ainfa3): 1: Auslandsstudium mit Abschluss
 
-    (ainfa3): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    (ainfa3): 2: Auslandssemester
     
-    (ainfa3): 3: Praktikum/Praxisphase
+    (ainfa3): 3: Auslandspraktikum/-praxisphase
 
     (ainfa3): 4: Sprachkurs
 
@@ -171,9 +171,9 @@ ao13: (ainfa3): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit ange
     (ainfa3): 8: sonstiger Aufenthalt
 
 
-ao14: (ainflando3): [infield = Land; 100 Zeichen] (offene Angabe)
+ao14: (ainflo3): [infield = Land; 100 Zeichen] (offene Angabe)
 
-ao15: (ainforto3): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
+ao15: (ainfsto3): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 
 ao16: (ainfbm3): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
@@ -237,7 +237,7 @@ vn: aprono1; aproeras1; aprodaad1; aprohhs1; aprogahs1; aproanpr1
     aprono2; aproeras2; aprodaad2; aprohhs2; aprogahs2; aproanpr2
     aprono3; aproeras3; aprodaad3; aprohhs3; aprogahs3; aproanpr3
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -361,9 +361,9 @@ ao2: 2: ja, teilweise
 
 ao3: 3: ja, vollständig
 
-ao4: 4: Ich habe keine Leistungen erbracht.
+ao4: -11: Ich habe keine Leistungen erbracht.
 
-mv:
+mv: ao4
 
 ka:
 
@@ -401,9 +401,9 @@ hl:
 
 in:
 
-q1: Wie haben Sie ihren Auslandsaufenthalt finanziert?
+q1: Wie haben Sie Ihren Auslandsaufenthalt finanziert?
 
-q2: Wie haben Sie ihre Auslandsaufenthalte finanziert?
+q2: Wie haben Sie Ihre Auslandsaufenthalte finanziert?
 
 is1: Bitte alles Zutreffende auswählen.
 
@@ -419,9 +419,9 @@ ao2: (afinpar1): Partner\*in
 
 ao3: (afinbaf1): BAföG
 
-ao4: (afinjobv1): Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao4: (afinjobv1): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
 
-ao5: (afinjobw1): Verdienst aus Tätigkeiten während des Auslandsaufenthalts
+ao5: (afinjobw1): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalts
 
 ao6: (afinstip1): Stipendium
 
@@ -591,7 +591,7 @@ it1: (asprachland): Landessprache des Gastlandes
 
 it2: (asprachdeut): Deutsch
 
-it3: (asprachand): Andere Sprache, und zwar: [(asprachando); offene Angabe, 60 Zeichen]
+it3: (asprachand): Andere Sprache, und zwar: ([asprachando]; offene Angabe, 60 Zeichen)
 
 st:
 
@@ -639,7 +639,7 @@ F3_13
 
 tc: IF ainfaus > 1
 
-vn: azuflernerf; azufinsg
+vn: azuf (azuflernerf; azufinsg)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -697,7 +697,7 @@ F3_14
 
 tc: IF ainfaus > 1
 
-vn: azufleistanf; azuforgaufw; azuffinanzaufw
+vn: azufleistanf; azuforgauf; azuffinauf
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -711,9 +711,9 @@ is:
 
 it1: (azufleistanf): … die Leistungsanforderungen?
 
-it2: (azuforgaufw): … den organisatorischen Aufwand?
+it2: (azuforgauf): … den organisatorischen Aufwand?
 
-it3: (azuffinanzaufw): … den finanziellen Aufwand?
+it3: (azuffinauf): … den finanziellen Aufwand?
 
 st:
 
@@ -810,7 +810,7 @@ hi:
 F3_16
 =====
 
-tc: IF auslandint==3 OR auslandint==4
+tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
 vn: aplanart
 
@@ -833,7 +833,7 @@ ao1: 1: Auslandsstudium mit Abschluss
 
 ao2: 2: Auslandssemester
 
-ao3: 3: Auslandspraktikum
+ao3: 3: Auslandspraktikum/-praxisphase
 
 ao4: 4: Sprachkurs im Ausland
 
@@ -845,7 +845,9 @@ ao7: 7: Summer School
 
 ao8: 8: sonstiger Auslandsaufenthalt
 
-mv: -12: weiß ich noch nicht
+ao9: -12: weiß ich noch nicht
+
+mv: ao9
 
 ka:
 
@@ -872,9 +874,9 @@ hi:
 F3_17
 =====
 
-tc: IF auslandint==3 OR auslandint==4
+tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
-vn: aplanlando; aplanorto
+vn: aplan (aplanlando; aplanorto)
 
 qt: offene Angaben
 
@@ -921,9 +923,9 @@ hi:
 F3_19
 =====
 
-tc: IF auslandint==3 OR auslandint==4
+tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
-vn: aplan (aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanselb)
+vn: aplan (aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanno)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -947,7 +949,7 @@ ao4: (aplangahs): Programm der Gasthochschule
 
 ao5: (aplananpr): anderes Programm
 
-ao6: (aplanselb): Ich werde den Aufenthalt selbst organisieren.
+ao6: (aplanno): Ich werde den Aufenthalt selbst organisieren. (Exklusivkategorie)
 
 mv:
 
@@ -976,9 +978,9 @@ hi:
 F3_20
 =====
 
-tc: IF auslandint==3 OR auslandint==4
+tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
-vn: aplfin (aplfinelt; aplfinpar; aplfinbaf; aplfinjobv; aplfinjobw; aplfinstip; aplfinbkred; aplfinand)
+vn: aplanfin (aplanfinelt; aplanfinpar; aplanfinbaf; aplanfinjobv; aplanfinjobw; aplanfinstip; aplanfinbkred; aplanfinand)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -994,21 +996,21 @@ it:
 
 st:
 
-ao1: (aplfinelt): Eltern
+ao1: (aplanfinelt): Eltern
 
-ao2: (aplfinpar): Partner\*in
+ao2: (aplanfinpar): Partner\*in
 
-ao3: (aplfinbaf): BAföG
+ao3: (aplanfinbaf): BAföG
 
-ao4: (aplfinjobv): Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao4: (aplanfinjobv): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
 
-ao5: (aplfinjobw): Verdienst aus Tätigkeiten während des Auslandsaufenthalt
+ao5: (aplanfinjobw): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalt
 
-ao6: (aplfinstip): Stipendium
+ao6: (aplanfinstip): Stipendium
 
-ao7: (aplfinbkred): Bildungskredit
+ao7: (aplanfinbkred): Bildungskredit
 
-ao8: (aplfinand): andere Finanzierungsquelle
+ao8: (aplanfinand): andere Finanzierungsquelle
 
 mv:
 
@@ -1041,7 +1043,7 @@ F3_22
 
 tc:
 
-vn: akontdeust; akonteust; akontneust
+vn: akont (akontdeust; akonteust; akontneust)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1101,7 +1103,7 @@ F3_25
 
 tc:
 
-vn: intpsydeu; intpsyzeitl; intpsyandl
+vn: intpsy (intpsydeu; intpsyzeita; intpsydaua)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1115,9 +1117,9 @@ is:
 
 it1: (intpsydeu): in Deutschland
 
-it2: (intpsyzeitl): zeitweise im Ausland
+it2: (intpsyzeita): zeitweise im Ausland
 
-it3: (intpsyandl): dauerhaft im Ausland
+it3: (intpsydaua): dauerhaft im Ausland
 
 st:
 
