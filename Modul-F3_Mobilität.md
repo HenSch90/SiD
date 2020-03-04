@@ -522,7 +522,7 @@ is:
 
 it1: (akontgast): … Studierenden des Gastlandes?
 
-it2: (akonteinheim): … anderen Einheimischen?
+it2: (akonteinheim): … anderen Bürger\*innen des Gastlandes?
 
 it3: (akontdeust): … deutschen Studierenden?
 
@@ -574,7 +574,7 @@ F3_12
 
 tc: IF ainfaus > 1
 
-vn: asprachland; asprachdeut; asprachand; asprachando
+vn: aprach (asprachland; asprachdeut; asprachand; asprachando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
