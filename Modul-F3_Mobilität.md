@@ -63,9 +63,9 @@ F3_7
 
 tc: 
 
-vn: ainfa1; ainflando; ainforto; ainfbm1; ainfbj1, ainfdau
+vn: ainfa1; ainflando1; ainforto1; ainfbm1; ainfbj1, ainfdau1
     ainfa2; ainflando2; ainforto2; ainfbm2; ainfbj2, ainfdau2
-    ainfa3; ainflando3; ainforto; ainfbm3; ainfbj3, ainfdau3
+    ainfa3; ainflando3; ainforto3; ainfbm3; ainfbj3, ainfdau3
 
 qt: Dropdown und offene Angabe
 
@@ -106,9 +106,9 @@ ao7 (ainfa1): 7: Summer School
 ao8 (ainfa1): 8: sonstiger Aufenthalt
 
 
-it2: (ainflando): Präfix: Land: [string, 100 Zeichen]
+it2: (ainflando1): Präfix: Land: [string, 100 Zeichen]
 
-it3: (ainforto): Präfix: Stadt/Hochschule: [string, 100 Zeichen]
+it3: (ainforto1): Präfix: Stadt/Hochschule: [string, 100 Zeichen]
 
 
 [Nebeneinander angeordnete Dropdowns (Monat, Jahr)]
@@ -120,7 +120,7 @@ it5: (ainfbj1): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2009 \| vor 2009)
 
 [Dropdown, Dauer des Aufenthalts]
 
-it6: (ainfdau): Dauer: (Dauer \| 1 Monat \| 2 Monate \| ... \| 12 Monate \| mehr als 12 Monate)
+it6: (ainfdau1): Dauer: (Dauer \| 1 Monat \| 2 Monate \| ... \| 12 Monate \| mehr als 12 Monate)
 
 
 
@@ -294,17 +294,17 @@ ao11: (aprogahs2): Programm der Gasthochschule in Deutschland
 ao12: (aproanpr2): anderes Programm
 
 
-ao13: (aprono1): nein (Exklusivkategorie)
+ao13: (aprono3): nein (Exklusivkategorie)
 
-ao14: (aproeras1): ERASMUS+, ERASMUS
+ao14: (aproeras3): ERASMUS+, ERASMUS
 
-ao15: (aprodaad1): DAAD-Programm
+ao15: (aprodaad3): DAAD-Programm
 
-ao16 (aprohhs1): Programm meiner Heimathochschule
+ao16 (aprohhs3): Programm meiner Heimathochschule
 
-ao17: (aprogahs1): Programm der Gasthochschule in Deutschland
+ao17: (aprogahs3): Programm der Gasthochschule in Deutschland
 
-ao18: (aproanpr1): anderes Programm
+ao18: (aproanpr3): anderes Programm
 
 mv:
 
@@ -396,9 +396,9 @@ F3_10
 
 tc: 
 
-vn: afinelt1; afinpar1; afinbaf1; afinjobv1; afinjobw1, afinstip1; afinkre1; afinand1
-    afinelt2; afinpar2; afinbaf2; afinjobv2; afinjobw2; afinstip2; afinkre2; afinand2
-    afinelt3; afinpar3; afinbaf3; afinjobv3; afinjobw3; afinstip3; afinkre3;afinand3
+vn: afinelt1; afinpar1; afinbaf1; afinjobv1; afinjobw1, afinstip1; afinkre1; afinand1;
+    afinelt2; afinpar2; afinbaf2; afinjobv2; afinjobw2; afinstip2; afinkre2; afinand2;
+    afinelt3; afinpar3; afinbaf3; afinjobv3; afinjobw3; afinstip3; afinkre3; afinand3
 
 qt: Mehrfachauswahl
 
