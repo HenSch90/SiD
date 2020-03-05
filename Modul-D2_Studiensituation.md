@@ -1,76 +1,5 @@
 **------------------------------------------------------------**
 
-**Supportive Environment**
-
-D2_1
--------
-
-tc:
-
-vn: sssupe1; sssupe2; sssupe3; sssupe4; sssupe5; sssupe6; sssupe7; sssupe8
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Was schätzen Sie, wie wichtig ist es Ihrer Hochschule, …
-
-is:
-
-it1: (sssupe1): … den Studierenden Angebote zur Verbesserung des Studienerfolgs zu machen?
-
-it2: (sssupe2): … dass Studierende Lernangebote nutzen? (Tutorien, Schreibwerkstatt)
-
-it3: (sssupe3): … den Kontakt zwischen Studierenden unterschiedlicher Herkunft (sozial, ethnisch, religiös) zu fördern?
-
-it4: (sssupe4): … dass die Studierenden sozial eingebunden sind?
-
-it5: (sssupe5): … den Studierenden Angebote zur Verbesserung des allgemeinen Wohlbefindens zu machen? (Gesundheitsfürsorge, Beratung)
-
-it6: (sssupe6): … den Studierenden bei der Bewältigung außeruniversitärer Aufgaben zu helfen? (Familie, Arbeit)
-
-it7: (sssupe7): … dass Studierende an Campus-Aktivitäten und Veranstaltungen teilnehmen? (Sportevents, Kunstausstellungen)
-
-it8: (sssupe8): … dass Studierende an Veranstaltungen zu sozialen, wirtschaftlichen oder politischen Themen teilnehmen?
-
-st:
-
-ao1: 1: überhaupt nicht wichtig
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr wichtig
-
-mv: -12: weiß ich nicht
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D2_2
-
-hi: 
-
-**------------------------------------------------------------**
-
 **Qualität der Ausstattung**
 
 D2_2
@@ -78,43 +7,37 @@ D2_2
 
 tc:
 
-vn: ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10; ssqualeq11; ssqualeq12
+vn: ssqualeq (ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
 hl:
 
 in:
 
-q: Wie bewerten Sie die Ausstattung Ihrer Hochschule hinsichtlich folgender Aspekte?
+q: Wie bewerten Sie Ihre Hochschule hinsichtlich folgender Aspekte?
 
 is:
 
-it1: (ssqualeq1): Zugang zum W-LAN
+it1: (ssqualeq1): Zustand und Ausstattung der Veranstaltungsräume (Technik, Mobiliar, Helligkeit)
 
-it2: (ssqualeq2): Verfügbarkeit von studienrelevanter EDV/Software
+it2: (ssqualeq2): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume)
 
-it3: (ssqualeq3): digitale Organisation und Verwaltung des Studiums (z. B. Einschreibung, Prüfungsanmeldung, -verfahren)
+it3: (ssqualeq3): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen Lernen
 
-it4: (ssqualeq4): Einsatz von digitalen Lernmanagementsystemen (z. B. Moodle, ILIAS oder hochschuleigene Entwicklungen)
+it4: (ssqualeq4): Zugang zum W-LAN
 
-it5: (ssqualeq5): Öffnungszeiten der Bibliothek
+it5: (ssqualeq5): IT-/digitale Ausstattung (z. B. Software)
 
-it6: (ssqualeq6): technische Ausstattung der Veranstaltungsräume
+it6: (ssqualeq6): Öffnungszeiten der Bibliothek
 
-it7: (ssqualeq7): Gesamtzustand der Veranstaltungsräume (Helligkeit, Belüftung, Mobiliar)
+it7: (ssqualeq7): Verfügbarkeit von Fachliteratur
 
-it8: (ssqualeq8): Verfügbarkeit und Ausstattung der PC-Pools
+it8: (ssqualeq8): Service- und Beratungsleistungen
 
-it9: (ssqualeq9): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume, Orchesterräume, Bild- und Tonstudios)
+it9: (ssqualeq9): Betreuungsangebote für Studierende mit Kind(ern)
 
-it10: (ssqualeq10): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen
-Lernen
-
-it11: (ssqualeq11): Betreuungsangebote für Studierende mit Kindern
-
-it12: (ssqualeq12): Verfügbarkeit von Fachliteratur (Bücher, Zeitschriften und
-Literaturdatenbanken)
+it10: (ssqualeq10): Unterstützungsangebote für Studierende mit Beeinträchtigung(en) (z. B. spezifisch ausgestattete Arbeitsplätze)
 
 st:
 
@@ -128,13 +51,15 @@ ao4: 4:
 
 ao5: 5: sehr gut
 
-ao6: -12: weiß ich nicht
+mv: -12: weiß ich nicht
 
-mv: ao6
+ka1: (it1 TO it3): !!räumliche Ausstattung!!
 
-ka:
+ka2: (it4 TO it10): !!Service-Leistungen!!
 
-vc:
+vc1: SHOW it9 (ssqualeq9) IF dkinja = 2
+
+vc2: SHOW it10 (ssqualeq10) IF h_gartcount >= 1
 
 av:
 
@@ -144,7 +69,11 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "räumliche Ausstattung" linksbündig positionieren.
+
+fo2: Bitte über it4 "Service-Leistungen" linksbündig positionieren.
+
+fo3: mv/"weiß ich nicht" bitte etwas absetzen.
 
 tr:
 
@@ -161,9 +90,9 @@ D2_3
 
 tc:
 
-vn: ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9; ssstruk10; ssstruk11; ssstruk12; ssstruk13
+vn: ssstruk (ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
 hl:
 
@@ -171,33 +100,25 @@ in:
 
 q: Inwieweit treffen folgende Aussagen auf Ihr Studium zu?
 
-is:.
+is:
 
 it1: (ssstruk1): Es bestehen übersichtliche Modulwahlmöglichkeiten.
 
-it2: (ssstruk2): Lehrveranstaltungen sind zeitlich gut koordiniert.
+it2: (ssstruk2): Die Lehrveranstaltungen sind zeitlich gut koordiniert.
 
-it3: (ssstruk3): Mein Studium ist stark durch Studienordnungen/Verlaufspläne festgelegt.
+it3: (ssstruk3): Die Semestervorgaben sind gut erfüllbar.
 
-it4: (ssstruk4): Der Arbeitsaufwand ist gut über das Semester verteilt.
+it4: (ssstruk4): Die einzelnen Module bauen inhaltlich aufeinander auf.
 
-it5: (ssstruk5): Die Semestervorgaben sind gut erfüllbar.
+it5: (ssstruk5): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
 
-it6: (ssstruk6): Die einzelnen Module bauen inhaltlich/thematisch aufeinander auf.
+it6: (ssstruk6): Die Veranstaltungen bereiten gut auf die Prüfungen vor.
 
-it7: (ssstruk7): Es werden vielfältige Lehr-/ Lernformen angeboten (Vorlesungen, Seminare, Übungen etc.).
+it7: (ssstruk7): Die Prüfungen liegen zeitlich oft zu nah beieinander.
 
-it8: (ssstruk8): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
+it8: (ssstruk8): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
 
-it9: (ssstruk9): Die Veranstaltungen der Module bereiten gut auf die Modulabschlussprüfungen vor.
-
-it10: (ssstruk10): Es werden vielfältige Prüfungsformen angeboten (Klausuren, Hausarbeiten, mündliche Prüfungen etc.).
-
-it11: (ssstruk11): Die Prüfungen liegen oft zeitlich nah beieinander.
-
-it12: (ssstruk12): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
-
-it13: (ssstruk13): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten ist angemessen.
+it9: (ssstruk9): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten sind angemessen.
 
 st:
 
@@ -213,7 +134,11 @@ ao5: 5: trifft voll und ganz zu
 
 mv:
 
-ka:
+ka1: (it1 TO it3): !!Koordination!!
+
+ka2: (it4 TO it5): !!Inhalte!!
+
+ka3: (it6 TO it9): !!Prüfungsorganisation!!
 
 vc:
 
@@ -225,7 +150,11 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "Koordination" linksbündig positionieren.
+
+fo2: Bitte über it4 "Inhalte" linksbündig positionieren.
+
+fo3: Bitte über it6 "Prüfungsorganisation" linksbündig positionieren.
 
 tr:
 
@@ -242,9 +171,9 @@ D2_4
 
 tc:
 
-vn: ssstud1; ssstud2; ssstud3; ssstud4; ssstud5; ssstud6
+vn: ssstud (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -264,8 +193,6 @@ it4: (ssstud4): Es besteht eine Anwesenheitspflicht.
 
 it5: (ssstud5): Die Lehrveranstaltungssprache ist Englisch.
 
-it6: (ssstud6): Die Lehrveranstaltungssprache ist weder Deutsch noch Englisch, sondern eine andere.
-
 st:
 
 ao1: 1: keine
@@ -278,9 +205,7 @@ ao4: 4:
 
 ao5: 5: alle
 
-ao6: -14: kann ich nicht beurteilen
-
-mv: ao6
+mv:
 
 ka:
 
@@ -313,7 +238,7 @@ tc:
 
 vn: ssanwesend
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -347,7 +272,7 @@ ao9: 9: 81 bis 90 %
 
 ao10: 10: 91 bis 100 %
 
-mv: 0: trifft nicht zu
+mv: -11: trifft nicht zu
 
 ka:
 
@@ -361,77 +286,14 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
 GOTO B1_7 if mastersplit=1, 2, 5, 6
 GOTO A_28 if mastersplit=7, 8, 11, 12, 14
 
-hi:
-
-**------------------------------------------------------------**
-
-**Vereinbarkeit Studium**
-
-D2_6
--------
-
-tc:
-
-vn: sver (sverkin; sverbeein; svererwerb; svercare)
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in: 
-
-q: Inwieweit kann man aus Ihrer Perspektive ein Studium mit folgenden Aspekten vereinbaren?
-
-is: 
-
-it1: (sverkin): Elternschaft
-
-it1: (sverbeein): gesundheitlicher Beeinträchtigung
-
-it1: (svererwerb): Erwerbstätigkeit
-
-it1: (svercare): Pflegeaufgaben
-
-st:
-
-ao1: 1: überhaupt nicht vereinbar
-
-ao2: 2
-
-ao3: 3
-
-ao4: 4
-
-ao5: 5: sehr gut vereinbar
-
-mv: 
-
-ka: 
-
-vc: 
-
-av: 
-
-kh: 
-
-fv: 
-
-hv: 
-
-fo: 
-
-tr: GOTO D2_6a
-
 hi: 
-
-
 
 **------------------------------------------------------------**
 
@@ -442,15 +304,15 @@ D2_6a
 
 tc:
 
-vn: sscowver1; sscowver2; sscowver3
+vn: sscowver (sscowver1; sscowver2; sscowver3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie beurteilen Sie die Anforderungen, die in Ihrem Studiengang an Studierende gestellt werden? Wie viel Wert wird in Ihrem Studiengang auf folgende Aspekte gelegt?
+q: Wie viel Wert wird in Ihrem Studiengang auf folgende Aspekte gelegt?
 
 is:.
 
@@ -503,9 +365,9 @@ D2_7
 
 tc:
 
-vn: sscolehr1; sscolehr2; sscolehr3; sscolehr4; sscolehr5; sscolehr6; sscolehr7; sscolehr8
+vn: sscolehr (sscolehr1; sscolehr2; sscolehr3; sscolehr4; sscolehr5; sscolehr6)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -521,15 +383,11 @@ it2: (sscolehr2): Es wird zum Mitdenken und Durchdenken des Stoffes angeregt.
 
 it3: (sscolehr3): Die Mischung aus Wissensvermittlung und Diskussion ist ausgewogen.
 
-it4: (sscolehr4): Die Lehrenden bieten Diskussionsmöglichkeiten an.
+it4: (sscolehr4): Die Lehrenden führen in die Anwendung von Forschungsmethoden ein.
 
-it5: (sscolehr5): Die Lehrenden führen in die Anwendung von Forschungsmethoden ein.
+it5: (sscolehr5): Das Lernziel der Lernveranstaltung wird klar definiert.
 
-it6: (sscolehr6): Das Lernziel der Lernveranstaltung wird klar definiert.
-
-it7: (sscolehr7): Die Lehrenden können gut erklären.
-
-it8: (sscolehr8): Die Lehrenden sind immer gut erreichbar.
+it6: (sscolehr6): Die Lehrenden sind gut erreichbar.
 
 st:
 
@@ -574,9 +432,9 @@ D2_8
 
 tc:
 
-vn: sscofaeh1; sscofaeh2; sscofaeh3
+vn: sscofaeh (sscofaeh1; sscofaeh2)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -586,11 +444,9 @@ q: Bitte geben Sie an, inwieweit folgende Aspekte in Ihrem Studiengang geförder
 
 is:.
 
-it1: (sscofaeh1): kritische Auseinandersetzung mit den Studieninhalten
+it1: (sscofaeh1): Fähigkeit, selbständig forschend tätig zu sein
 
-it2: (sscofaeh2): Fähigkeit, selbständig forschend tätig zu sein
-
-it3: (sscofaeh3): berufspraktische Fähigkeiten
+it2: (sscofaeh2): berufspraktische Fähigkeiten
 
 st:
 
@@ -635,9 +491,9 @@ D2_9
 
 tc:
 
-vn: sscofopra1; sscofopra2; sscofopra3
+vn: sscofopra (sscofopra1; sscofopra2; sscofopra3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -647,11 +503,11 @@ q: Wie stark ist Ihr Studiengang an Ihrer Hochschule charakterisiert durch ...
 
 is:
 
-it1: (sscofopra1): ...Forschungsbezug in der Lehre?
+it1: (sscofopra1): ... Forschungsbezug in der Lehre?
 
-it2: (sscofopra2): ...eine enge Verknüpfung zwischen Theorie und Praxis?
+it2: (sscofopra2): ... eine enge Verknüpfung zwischen Theorie und Praxis?
 
-it3: (sscofopra3): ...einen engen Praxisbezug?
+it3: (sscofopra3): ... einen engen Praxisbezug?
 
 st:
 
@@ -664,63 +520,6 @@ ao3: 3:
 ao4: 4:
 
 ao5: 5: sehr stark
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D2_10
-
-hi: 
-
-**------------------------------------------------------------**
-
-**SSCO 5**
-
-D2_10
--------
-
-tc:
-
-vn: sscoaktfo
-
-qt: Einfachauswahl mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig werden von den Lehrenden in den Veranstaltungen Fragen der laufenden Forschung behandelt?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: sehr selten
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr oft
 
 mv:
 
@@ -753,9 +552,9 @@ D2_11
 
 tc:
 
-vn: sscokli1; sscokli2; sscokli3; sscokli4; sscokli5; sscokli6
+vn: sscokli (sscokli1; sscokli2; sscokli3; sscokli4; sscokli5; sscokli6)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -820,9 +619,9 @@ D2_12
 
 tc:
 
-vn: sscolmo1; sscolmo2; sscolmo3
+vn: sscolmo (sscolmo1; sscolmo2; sscolmo3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -836,7 +635,7 @@ it1: (sscolmo1): Die Lehrenden stellen den Lernstoff interessant dar.
 
 it2: (sscolmo2): Die Lehrenden vermitteln den Studierenden Freude am Fach.
 
-it3: (sscolmo3): Die Lehrenden schaffen es, die Studierenden für das Gebiet/den Stoff zu interessieren.
+it3: (sscolmo3): Die Lehrenden schaffen es, die Studierenden für das Fach zu motivieren.
 
 st:
 
@@ -848,7 +647,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: trifft völlig zu
+ao5: 5: trifft voll und ganz zu
 
 mv:
 
@@ -881,106 +680,33 @@ D2_13
 
 tc:
 
-vn: sskonth1; sskonth2; sskonth3; sskonth4; sskonth5; sskonth6
+vn: sskonth (sskonth1; sskonth2; sskonth3; sskonth4; sskonth5; sskonth6)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie häufig haben Sie im laufenden Semester ***außerhalb*** der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
+q: Wie häufig haben Sie im laufenden Semester *außerhalb* der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
 
 is:.
 
 it1: (sskonth1): Kommiliton\*innen
 
-it2: (sskonth2): Studierende anderer Fächer
+it2: (sskonth2): Studierenden anderer Fächer
 
-it3: (sskonth3): Lehrende
+it3: (sskonth3): Freund\*innen und Bekannten außerhalb der Hochschule
 
-it4: (sskonth4): Mitarbeiter\*innen der Hochschulverwaltung
+it4: (sskonth4): Lehrenden
 
-it5: (sskonth5): Freund\*innen und Bekannte außerhalb der Hochschule
+it5: (sskonth5): Mitarbeiter\*innen der Hochschulverwaltung
 
-it6: (sskonth6): Familie (Eltern, Geschwister u. a.)
-
-st:
-
-ao1: 1: mehrmals in der Woche
-
-ao2: 2: einmal in der Woche
-
-ao3: 3: 2-3 im Monat
-
-ao4: 4: einmal im Monat
-
-ao5: 5: 3-5 mal im Halbjahr
-
-ao6: 6: 1-2 mal im Halbjahr
-
-ao7: 7: weniger als halbjährlich
-
-ao8: 8: nie
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-GOTO D2_14
-
-hi: @ZOFAR in der QML sind die Titel nicht deckungsgleich mit den Antwortoptionen programmiert.
-
-**------------------------------------------------------------**
-
-**Kontaktqualität**
-
-D2_14
--------
-
-tc:
-
-vn: sskontq1; sskontq2; sskontq3; sskontq4; sskontq5; sskontq6
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Und wie zufrieden sind Sie mit Ihrem Kontakt zu…
-
-is:.
-
-it1: (sskontq1): … Kommiliton\*innen?
-
-it2: (sskontq2): … Studierende anderer Fächer?
-
-it3: (sskontq3): … Lehrende?
-
-it4: (sskontq4): … Mitarbeiter\*innen der Hochschulverwaltung?
-
-it5: (sskontq5): … Freund\*innen und Bekannten außerhalb der Hochschule?
-
-it6: (sskontq6): … Familie (Eltern, Geschwister u. a.)?
+it6: (sskonth6): Familie (Eltern, Geschwistern u. a.)
 
 st:
 
-ao1: 1: sehr unzufrieden
+ao1: 1: nie
 
 ao2: 2:
 
@@ -988,7 +714,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr zufrieden
+ao5: 5: sehr häufig
 
 mv:
 
@@ -1021,23 +747,23 @@ D2_15
 
 tc:
 
-vn: sskontl1; sskontl2; sskontl3; sskontl4
+vn: sskontl (sskontl1; sskontl2; sskontl3; sskontl4)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie oft haben Sie im aktuellen Semester ...
+q: Wie oft haben Sie im aktuellen Semester *außerhalb* der Lehrveranstaltungen …
 
-is:.
+is:
 
 it1: (sskontl1): … mit Lehrenden über Ihre Karrierepläne gesprochen?
 
-it2: (sskontl2): … mit Lehrenden außerhalb von Lehrveranstaltungen zusammengearbeitet (z. B. in Kommissionen)?
+it2: (sskontl2): … mit Lehrenden zusammengearbeitet (z. B. in Kommissionen)?
 
-it3: (sskontl3): … mit Lehrenden über fachliche Inhalte, Ideen oder Konzepte außerhalb von Lehrveranstaltungen diskutiert?
+it3: (sskontl3): … mit Lehrenden über fachliche Inhalte und Ideen diskutiert?
 
 it4: (sskontl4): … mit Lehrenden über Ihre Studienleistungen gesprochen?
 
@@ -1073,7 +799,7 @@ tr:
 
 GOTO D2_16
 
-hi: @ZOFAR in der QML wurde t1 zweimal programmiert.
+hi:
 
 **------------------------------------------------------------**
 
@@ -1084,15 +810,15 @@ D2_16
 
 tc:
 
-vn: ssleisd1; ssleisd2; ssleisd3
+vn: ssleisd (ssleisd1; ssleisd2; ssleisd3)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie beurteilen Sie im Allgemeinen die Studienanforderungen in Ihrem Studiengang…
+q: Wie beurteilen Sie im Allgemeinen die Studienanforderungen in Ihrem Studiengang …
 
 is:
 
@@ -1145,9 +871,9 @@ D2_17
 
 tc:
 
-vn: ssectsstud; ssectssem
+vn: ssects (ssectsakt; ssectsstud)
 
-qt: offene Abfrage
+qt: offene Angabe
 
 hl:
 
@@ -1161,9 +887,9 @@ it:
 
 st:
 
-ao1: (ssectsstud): Präfix: ... Sie bislang in Ihrem aktuellen Studium zirka erreicht haben.
+ao1: (ssectsakt): ... Sie in Ihrem aktuellen Studium bislang ungefähr erreicht haben: [Infield = ECTS-Punkte; number, 3-stellig: 0 TO 999]
 
-ao2: (ssectssem): Präfix: ... Sie voraussichtlich im aktuellen Semester erreichen werden.
+ao2: (ssectsstud): ... Sie insgesamt für Ihren Studienabschluss benötigen: [Infield = ECTS-Punkte; number, 3-stellig: 0 TO 999]
 
 mv:
 
@@ -1173,11 +899,7 @@ vc:
 
 av:
 
-ssectsstud: [number: 3 Stellig : 0 TO 999]
-
-ssectssem: [number: 3 Stellig : 0 TO 999]
-
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte tragen Sie die Anzahl der ECTS-Punkte ein (0 bis 999).
 
 fv:
 
@@ -1198,35 +920,55 @@ D2_18
 
 tc:
 
-vn: sswrite1; sswrite2; sswrite3; sswrite4; sswrite5; sswrite6; sswrite7
+vn: sswrite (sswrite1; sswrite2; sswrite3; sswrite4; sswrite5; sswrite6)
 
-qt: offene Abfrage und Mehrfachauswahl
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten oder andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen?
+q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten und andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen?
 
-is: Bitte geben Sie die Anzahl der schriftlichen Leistungen (inklusive der noch nicht abgeschlossenen) entsprechend ihrer Länge an.
+is: Bitte geben Sie die ++Anzahl++ der schriftlichen Leistungen (inklusive der noch nicht abgeschlossenen) entsprechend ihrer Länge an.
 
-it:
+it1: (sswrite1): bis zu 5 Seiten
+
+it2: (sswrite2): 6 bis 10 Seiten
+
+it3: (sswrite3): 11 bis 15 Seiten
+
+it4: (sswrite4): 16 bis 20 Seiten
+
+it5: (sswrite5): 21 bis 25 Seiten
+
+it6: (sswrite6): 26 Seiten oder mehr
 
 st:
 
-ao1: (sswrite1): Präfix: bis zu 5 Seiten
+ao1: 0: 0
 
-ao2: (sswrite2): Präfix: 6 bis 10 Seiten
+ao2: 1: 1
 
-ao3: (sswrite3): Präfix: 11 bis 25 Seiten
+ao3: 2: 2
 
-ao4: (sswrite4): Präfix: 16 bis 20 Seiten
+ao4: 3: 3
 
-ao5: (sswrite5): Präfix: 21 bis 25 Seiten
+ao5: 4: 4
 
-ao6: (sswrite6): Präfix: 26 Seiten oder mehr
+ao6: 5: 5
 
-ao7: (sswrite7): nichts davon
+ao7: 6: 6
+
+ao8: 7: 7
+
+ao9: 8: 8
+
+ao10: 9: 9
+
+ao11: 10: ≥10
+
+mv:
 
 ka:
 
@@ -1234,25 +976,13 @@ vc:
 
 av:
 
-bis zu 5 Seiten: [number: 2 Stellig : 0 TO 99]
-
-6 bis 10 Seiten: [number: 2 Stellig : 0 TO 99]
-
-11 bis 15 Seiten: [number: 2 Stellig : 0 TO 99]
-
-16 bis 20 Seiten: [number: 2 Stellig : 0 TO 99]
-
-21 bis 25 Seiten: [number: 2 Stellig : 0 TO 99]
-
-26 Seiten oder mehr: [number: 2 Stellig : 0 TO 99]
-
-kh: Bitte geben Sie nur Zahlen ein.
+kh:
 
 fv:
 
 hv:
 
-fo:
+fo: Bitte mittig über die ao !!Anzahl der verfassten Texte!! positionieren.
 
 tr:
 
@@ -1271,13 +1001,13 @@ tc:
 
 vn: ssread
 
-qt: offene Abfrage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken, wie viele Seiten lesen Sie durchschnittlich, um sich auf die von Ihnen besuchten Lehrveranstaltungen vorzubereiten?
+q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken: Wie viele Seiten lesen Sie durchschnittlich, um sich auf die von Ihnen besuchten Lehrveranstaltungen vorzubereiten?
 
 is:.
 
@@ -1285,7 +1015,7 @@ it:
 
 st:
 
-ao: (ssread): 
+ao: (ssread): [number, 3-stellig: 0 TO 999], Postfix: Seiten pro Woche 
 
 mv:
 
@@ -1293,9 +1023,9 @@ ka:
 
 vc:
 
-av: [number: 3 Stellig : 0 TO 999]
+av:
 
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte geben Sie die Anzahl gelesener Seiten pro Woche an (0 bis 999).
 
 fv:
 
@@ -1318,31 +1048,25 @@ D2_20
 
 tc:
 
-vn: ssrilern1; ssrilern2; ssrilern3; ssrilern4; ssrilern5; ssrilern6; ssrilern7
+vn: ssrilern (ssrilern1; ssrilern2; ssrilern3; ssrilern4)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie oft haben Sie in diesem Semester…
+q: Wie oft haben Sie in diesem Semester …
 
 is:.
 
-it1: (ssrilern1): … Erkenntnisse aus verschiedenen Lehrveranstaltungen zusammengeführt?
+it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
 
-it2: (ssrilern2): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
+it2: (ssrilern2): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
 
-it3: (ssrilern3): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
+it3: (ssrilern3): … die Stärken und Schwächen des eigenen Standpunktes reflektiert?
 
-it4: (ssrilern4): … die Stärken und Schwächen des eigenen Standpunktes reflektiert?
-
-it5: (ssrilern5): … versucht, die Ansichten Anderer besser nachzuvollziehen, indem Sie sich in deren Perspektive hineinversetzt haben?
-
-it6: (ssrilern6): … etwas gelernt, das Ihre bisherige Sicht der Dinge grundlegend verändert hat?
-
-it7: (ssrilern7): … Erkenntnisse aus Lehrveranstaltungen mit Ihren bisherigen Erfahrungen und Kenntnissen verknüpft?
+it4: (ssrilern4): … Erkenntnisse aus Lehrveranstaltungen mit Ihren bisherigen Erfahrungen und Kenntnissen verknüpft?
 
 st:
 
@@ -1387,9 +1111,9 @@ D2_21
 
 tc:
 
-vn: sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11; sszustud12; sszustud13
+vn: sszustud (sszustud1; sszustud2; sszustud3; sszustud4; sszustud5; sszustud6; sszustud7; sszustud8; sszustud9; sszustud10; sszustud11)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -1401,29 +1125,25 @@ is:
 
 it1: (sszustud1): fachliche Kompetenz der Lehrenden
 
-it2: (sszustud2): Vermittlung des Lehrstoffs durch die Lehrenden (Didaktik)
+it2: (sszustud2): digitale Kompetenz der Lehrenden
 
-it3: (sszustud3): Betreuung und Beratung durch die Lehrenden
+it3: (sszustud3): Vermittlung des Lehrstoffs durch die Lehrenden
 
-it4: (sszustud4): Klima/Atmosphäre im Studiengang
+it4: (sszustud4): Betreuung und Beratung durch die Lehrenden
 
-it5: (sszustud5): inhaltliche Breite/Vielfalt des Studienangebots
+it5: (sszustud5): Klima/Atmosphäre im Studiengang
 
-it6: (sszustud6): Verknüpfung von Theorie- und Praxisanteilen
+it6: (sszustud6): inhaltliche Breite/Vielfalt des Studienangebots
 
-it7: (sszustud7): Aufbau und Struktur des Studiengangs insgesamt
+it7: (sszustud7): Verknüpfung von Theorie- und Praxisanteilen
 
-it8: (sszustud8): räumliche und sachliche Ausstattung Ihrer Hochschule
+it8: (sszustud8): Aufbau und Struktur des Studiengangs
 
-it9: (sszustud9): Service- und Beratungsleistungen an Ihrer Hochschule
+it9: (sszustud9): Ihren Studienleistungen
 
-it10: (sszustud10): Studienbedingungen an Ihrer Hochschule insgesamt
+it10: (sszustud10): Ihrem Studienfortschritt
 
-it11: (sszustud11): Ihren Studienleistungen
-
-it12: (sszustud12): Ihrem Studienfortschritt
-
-it13: (sszustud13): Ihrem bisher erreichten Wissen und Können
+it11: (sszustud11): Ihrem bisher erreichten Wissen und Können
 
 st:
 
@@ -1437,11 +1157,13 @@ ao4: 4:
 
 ao5: 5: sehr zufrieden
 
-ao6: -13: kann ich nicht beurteilen
+mv: -12: kann ich nicht beurteilen
 
-mv: ao6 
+ka1: (it1 TO it4): !!Lehre!!
 
-ka:
+ka2: (it5 TO it8): !!Studiengang!!
+
+ka3: (it9 TO it11): !!Leistungen!!
 
 vc:
 
@@ -1453,7 +1175,13 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über it1 "Lehre" linksbündig positionieren.
+
+fo2: Bitte über it5 "Studiengang" linksbündig positionieren.
+
+fo3: Bitte über it9 "Leistungen" linksbündig positionieren.
+
+fo4: mv/"kann ich nicht beurteilen" bitte etwas absetzen.
 
 tr: GOTO A_44
 
