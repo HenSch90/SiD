@@ -5,7 +5,7 @@ index
 
 tc:
 
-vn: sidpretest_consent
+vn: sid_ic
 
 qt: Mehrfachauswahl
 
@@ -14,10 +14,10 @@ hl:
 in:
 
 q: 
-Vorstudie „die Studierendenbefragung in Deutschland“
+Studie: !!Die Studierendenbefragung in Deutschland!!
 (Leerzeile)
 
-Herzlich willkommen bei **Die Studierendenbefragung in Deutschland**
+Herzlich willkommen bei !!Die Studierendenbefragung in Deutschland!!
 (Leerzeile)
 
 Wir freuen uns, dass Sie uns mit Ihrer Teilnahme bei der Konzeption der größten Studierendenbefragung in Deutschland unterstützen. 
@@ -62,14 +62,14 @@ it:
 
 st:
 
-ao: (sidpretest_consent): Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden. Meine Teilnahme an der Befragung ist freiwillig. Diese Einwilligung bezieht sich ausdrücklich auch auf die Angaben zur gesundheitlichen Beeinträchtigung.
+ao: (sid_ic): Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden. Meine Teilnahme an der Befragung ist freiwillig. Diese Einwilligung bezieht sich ausdrücklich auch auf die Angaben zur gesundheitlichen Beeinträchtigung.
 
 mv:
 
 ka:
 
 vc:
-SHOW kh1 IF sidpretest_consent!=1
+SHOW kh1 IF sid_ic != 1
 
 av:
 
@@ -86,9 +86,9 @@ zusatzsplit = 1, 2, 3, 4 (einmalige Randomisierung; mit gleicher Ziehungswahrsch
 fo:
 
 tr: 
-GOTO index IF !sidpretest_consent.value and !sf_h.value
-GOTO offer IF sidpretest_consent.value and jsCheck.value and isMobile.value and width.value lt 768
-GOTO A_1 IF sidpretest_consent.value
+GOTO index IF !sid_ic.value and !sf_h.value
+GOTO offer IF sid_ic.value and jsCheck.value and isMobile.value and width.value lt 768
+GOTO A_1 IF sid_ic.value
 
 
 hi:
@@ -2740,7 +2740,7 @@ A_39
 
 tc:
 
-vn: vsbstyp (vsbstyp1-vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
+vn: vsbstyp (vsbstyp1; vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -2772,11 +2772,13 @@ ao7: (vsbtyp7): Berufsoberschule
 
 ao8: (vsbtyp8): Fachoberschule
 
-ao9: (vsbtyp9): andere berufsbildende Schule (z. B. Fachschule, Fachakademie, Berufskolleg u. a.)
+ao9: (vsbtyp9): andere berufsbildende Schule (Fachschule, Fachakademie, Berufskolleg)
+
 
 ao10: (vsbtyp10): berufliche Aufstiegsfortbildung als Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in
 
 ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
+
 
 ao12: (vsbtyp12): Eignungsprüfung (z. B. Kunst, Musik, Sport)
 
@@ -2830,7 +2832,7 @@ in:
 
 q: Wann und mit welcher Note haben Sie ihre Hochschulzugangsberechtigung erlangt?
 
-is: Punktzahl bitte in Note umrechnen
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
@@ -2873,7 +2875,7 @@ hi2: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
 A_41
 ===========
 
-tc: 
+tc:
 
 vn: vausbja
 
@@ -3004,7 +3006,7 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, an meiner jetzigen Hochschule
+ao2: 2: ja, an meiner aktuellen Hochschule
 
 ao3: 3: ja, an einer anderen Hochschule 
 
@@ -3332,7 +3334,7 @@ mv:
 
 ka:
 
-vc: SHOW it1 (masterplan) IF sabsano==1 
+vc: SHOW it1 (mastplan) IF sabsano==1 
 
 av:
 
@@ -3507,7 +3509,7 @@ it:
 
 st:
 
-ao1: 1: zur Miete (auch Wohngemeinschaft)
+ao1: 1: zur Miete (auch Wohngemeinschaft) 
 
 ao2: 2: zur Untermiete
 
@@ -3537,9 +3539,9 @@ fv:
 
 hv:
 
-fo1: Bitte über ao1 "In einer Wohnung, einem Zimmer oder einem Haus" linkbündig positionieren.
+fo1: Bitte über ao1 "In einer Wohnung, einem Zimmer oder einem Haus" linksbündig positionieren.
 
-fo2: Bitte über ao4 "Im Studierendenwohnheim" linkbündig positionieren.
+fo2: Bitte über ao4 "Im Studierendenwohnheim" linksbündig positionieren.
 
 tr: GOTO E1_0 IF wohnfo = 4 | 5 | 6 |7
     GOTO D3_1 IF wohnfo = 1 | 2 | 3 | mis AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
@@ -3730,7 +3732,7 @@ A_56
 
 tc:
 
-vn: (zlvwo, zlvwo2) (zseswo, zseswo2) (zerwo, zerwo2) (zcarwo, zcarwo2)
+vn: zlv (zlvwo, zlvwo2); zses (zseswo, zseswo2); zer (zerwo, zerwo2); zcar (zcarwo, zcarwo2)
 
 qt: Comparison, offene Angaben-Matrix
 
@@ -3858,7 +3860,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwstudium2
 
-qt: Einfachauswahlmatrix mit vertikaler ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -3911,7 +3913,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwfach2
 
-qt: Einfachauswahlmatrix mit vertikaler ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -3964,7 +3966,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwregel
 
-qt: Einfachauswahlmatrix  mit vertikaler ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4017,7 +4019,7 @@ tc: IF zusatzsplit == 3
 
 vn: nrwdigbed
 
-qt: Einfachauswahlmatrix  mit vertikaler ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4070,7 +4072,7 @@ tc:
 
 vn: nrwdigged
 
-qt: Einfachauswahlmatrix mit vertikaler ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4123,7 +4125,7 @@ tc:
 
 vn: nrwselbtest
 
-qt: Einfachauswahlmatrix  mit vertikaler ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4179,7 +4181,7 @@ tc:
 
 vn: nrwstudipor
 
-qt: Einfachauswahlmatrix  mit vertikaler ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4313,7 +4315,7 @@ ao4: 4:
 
 ao5: 5: alle 
 
-ao6: -13: weiß nicht  
+ao6: -12: weiß ich nicht  
 
 mv: ao6
 
