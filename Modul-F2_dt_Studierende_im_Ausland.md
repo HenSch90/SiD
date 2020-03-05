@@ -1,13 +1,11 @@
-
-
 F2_6
 ====
 
 tc:
 
-vn: ainfasia; ainflandosia; ainfortosia; ainfbmsia; ainfbjsia; ainfdausia
+vn: ainf (ainfasia; ainflosia; ainfstosia; ainfbmsia; ainfbjsia; ainfdausia)
 
-qt: Dropdown und offene Angabe
+qt: Einfachauswahl mit Dropdown und offene Angaben
 
 hl:
 
@@ -17,58 +15,42 @@ q: Sie befinden sich zurzeit im Ausland: Bitte beschreiben Sie diesen Auslandauf
 
 is:
 
-it:
+ao1: (ainfasia): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
-st:
+    (ainfasia): 1: Auslandsstudium mit Abschluss
 
+    (ainfasia): 2: Auslandssemester
 
-ao:[Dropdown, Art des Aufenthalts]
+    (ainfasia): 3: Auslandspraktikum/-praxisphase
 
-aox (ainfasia): 0: Art des Auslandsaufenthalts 
+    (ainfasia): 4: Sprachkurs
 
-ao1 (ainfasia): 1: Auslandsstudium mit angestrebtem Abschluss im Ausland
+    (ainfasia): 5: Studienreise
 
-ao2 (ainfasia): 2: Auslandsstudium/-semester ohne angestrebten Abschluss
+    (ainfasia): 6: Projektarbeit
 
-ao3 (ainfasia): 3: Praktikum/Praxisphase
+    (ainfasia): 7: Summer School
 
-ao4 (ainfasia): 4: Sprachkurs
-
-ao5 (ainfasia): 5: Studienreise
-
-ao6 (ainfasia): 6: Projektarbeit
-
-ao7 (ainfasia): 7: Summer School
-
-ao8 (ainfasia): 8: sonstiger Aufenthalt
+    (ainfasia): 8: sonstiger Aufenthalt
 
 
+ao2: (ainflosia): [infield = Land; 100 Zeichen] (offene Angabe)
 
-ao9 (ainflandosia): Präfix: Land: [string, 100 Zeichen]
-
-ao10 (ainfortosia): Präfix: Stadt/Hochschule: [string, 100 Zeichen]
-
+ao3: (ainfstosia): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 
-[Nebeneinander angeordnete Dropdowns (Monat, Jahr)]
+ao4: (ainfbmsia): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
-[Dropdown, Start des Auslandsaufenthalts]
-
-ao11 (ainfbmsia): : Monat: (Monat \ Januar \| … \| Dezember)
-
-ao12 (ainfbjsia): : Jahr: (Jahr \ 2020 \| 2019 \| … \| 2009 \| vor 2009)
+ao5: (ainfbjsia): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
 
-
-[Dropdown, Dauer des Aufenthalts]
-
-ao13: (ainfdausia): Dauer: (Dauer \| 1 Monat \| 2 Monate \| ... \| 12 Monate \| mehr als 12 Monate)
+ao6: (ainfdausia): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
 mv:
 
-ka:(ao11 To ao12) Start des Aufenthalts
+ka:(ao4 To ao5) Start des Aufenthalts:
 
-vc: SHOW ao9 AND ao10 if hsstandbl=17 AND hsstandlao=MISSING AND hsstandhsao=MISSING
+vc: SHOW ao2 AND ao3 if hsstandbl=17 AND hsstandlao=MISSING AND hsstandhsao=MISSING
 
 av:
 
@@ -78,11 +60,11 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte ainfasia ainflandosia ainfortosia linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig ainfbmsia und daneben ainfbjsia. Zuletzt dann ebenfalls darunter linksbündig ainfdausia.
 
 tr: GOTO F2_8
 
-hi: @ZOFAR ich bin mir nicht sicher, ob deutlich wird, dass die Dropdowns für Monat und Jahr nebeneinander stehen sollen, während das Dropdown "Dauer des Aufenthalts" unter den beiden zuvor genannten stehen soll.
+hi:
 
 \--------------------------------
 
@@ -91,7 +73,7 @@ F2_8
 
 tc:
 
-vn: bdequasia; bdefamssia; bdeoeksia; bdefinsia; bdesprsia; bdearbsia; bdekensia
+vn: bde (bdequasia; bdefamssia; bdeoeksia; bdefinsia; bdesprsia; bdearbsia; bdekensia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -100,22 +82,23 @@ hl:
 in:
 
 q: Warum haben Sie sich für dieses Land entschieden?
+!!Ich habe mich für ein Studium in diesem Land entschieden, …!!
 
-is: **Ich habe mich für ein Studium in diesem Land entschieden, …**
+is: 
 
-it1: (bdequasia): aufgrund der hohen Lebensqualität.
+it1: (bdequasia): … aufgrund der hohen Lebensqualität.
 
-it2: (bdefamssia): weil bereits Freund\*innen/Verwandte in diesem Land studiert haben.
+it2: (bdefamssia): … weil bereits Freund\*innen/Verwandte in diesem Land studiert haben.
 
-it3: (bdeoeksia): aufgrund der wirtschaftlichen Lage.
+it3: (bdeoeksia): … aufgrund der wirtschaftlichen Lage.
 
-it4: (bdefinsia): weil dies meinen finanziellen Möglichkeiten entspricht.
+it4: (bdefinsia): … weil dies meinen finanziellen Möglichkeiten entspricht.
 
-it5: (bdesprsia): um meine Sprachkenntnisse zu vertiefen.
+it5: (bdesprsia): … um meine Sprachkenntnisse zu vertiefen.
 
-it6: (bdearbsia): um nach Studienabschluss in diesem Land zu arbeiten.
+it6: (bdearbsia): … um nach Studienabschluss in diesem Land zu arbeiten.
 
-it7: (bdekensia): um dieses Land kennenzulernen.
+it7: (bdekensia): … um dieses Land kennenzulernen.
 
 st:
 
@@ -143,7 +126,7 @@ fv:
 
 hv:
 
-fo:
+fo: Frage und Satzbeginn ("Ich habe mich für ein Studium...") bitte linksbündig untereinander positionieren und etwas voneinander absetzen. 
 
 tr:
 
@@ -166,9 +149,9 @@ hl:
 
 in:
 
-q: Planen Sie im Ausland einen Hochschulabschluss zu erwerben?
+q: Planen Sie, im Ausland einen Hochschulabschluss zu erwerben?
 
-is: Bitte beziehen Sie sich auf Ihren aktuellen Studiengang.
+is: Bitte beziehen Sie sich auf Ihr aktuelles Auslandsstudium.
 
 it:
 
@@ -266,7 +249,7 @@ F2_11
 
 tc:
 
-vn: apronosia; aproerassia; aprodaadsia; aprohhssia; aprogahssia; aproanprsia
+vn: apro (apronosia; aproerassia; aprodaadsia; aprohhssia; aprogahssia; aproanprsia)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -284,19 +267,19 @@ st:
 
 ao1: (apronosia): nein (Exklusivkategorie)
 
-ao2: (aproerassia): … ERASMUS+
+ao2: (aproerassia): ERASMUS+
 
-ao3: (aprodaadsia): … DAAD-Programm
+ao3: (aprodaadsia): DAAD-Programm
 
-ao4: (aprohhssia): … Programm meiner Heimathochschule
+ao4: (aprohhssia): Programm meiner Heimathochschule
 
-ao5: (aprogahssia): … Programm der Gasthochschule in Deutschland
+ao5: (aprogahssia): Programm der Gasthochschule in Deutschland
 
-ao6: (aproanprsia): … anderes Programm
+ao6: (aproanprsia): anderes Programm
 
 mv:
 
-ka:
+ka: (ao2 TO ao6): Ja, und zwar:
 
 vc:
 
@@ -308,7 +291,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 tr:
 
@@ -323,9 +306,9 @@ F2_12
 
 tc:
 
-vn: afinelt; afinpar; afinbaf; afinjobv; afinjobw; afinstip; afinkre; afinand
+vn: afin (afineltsia; afinparsia; afinbafsia; afinjobvsia; afinjobwsia; afinstipsia; afinkresia; afinandsia)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -339,21 +322,21 @@ it:
 
 st:
 
-ao1: (afinelt): Eltern
+ao1: (afineltsia): Eltern
 
-ao2: (afinpar): Parnter\*in
+ao2: (afinparsia): Parnter\*in
 
-ao3: (afinbaf): BAföG
+ao3: (afinbafsia): BAföG
 
-ao4: (afinjobv): Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao4: (afinjobvsia): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
 
-ao5: (afinjobw): Verdienst aus Tätigkeiten während des Auslandsaufenthalt
+ao5: (afinjobwsia): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalt
 
-ao6: (afinstip): Stipendium
+ao6: (afinstipsia): Stipendium
 
-ao7: (afinkre): Bildungskredit
+ao7: (afinkresia): Bildungskredit
 
-ao8: (afinand): andere Finanzierungsquelle
+ao8: (afinandsia): andere Finanzierungsquelle
 
 mv:
 
@@ -384,7 +367,7 @@ F2_13
 
 tc:
 
-vn: akontgastsia; akonteinheimsia; akontdeustsia; akontintstsia
+vn: akont (akontgastsia; akontbuergsia; akontdeustsia; akontintstsia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -398,7 +381,7 @@ is:
 
 it1: (akontgastsia): … Studierenden des Gastlandes?
 
-it2: (akonteinheimsia): … anderen Einheimischen?
+it2: (akontbuergsia): … anderen Bürger\*innen des Gastlandes?
 
 it3: (akontdeustsia): … deutschen Studierenden?
 
@@ -430,7 +413,7 @@ fv:
 
 hv:
 
-fo: Bitte eine Leerzeile zwischen Frage und Antwortitems. Im Pretest waren diese sehr nah beieinander.
+fo: Bitte etwas Abstand zwischen Frage und Antwortitems. Im Pretest waren diese sehr nah beieinander.
 
 tr:
 
@@ -445,7 +428,7 @@ F2_14
 
 tc:
 
-vn: asprachgaslsia; asprachheimlsia; asprachandsia; asprachandsiao
+vn: asprach (asprachgaslsia; asprachheimlsia; asprachandsia; asprachandsiao)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -461,7 +444,7 @@ it1: (asprachgaslsia): Landessprache des Gastlandes
 
 it2: (asprachheimlsia): Deutsch
 
-it3: (asprachandsia): andere Sprache, und zwar: [50 Zeichen, (asprachandsiao)]
+it3: (asprachandsia): Andere Sprache, und zwar: [(asprachandsiao); offene Angabe, 60 Zeichen]
 
 st:
 
@@ -504,7 +487,7 @@ F2_15
 
 tc:
 
-vn: azuflernerfsia; azufinsgsia
+vn: azuf (azuflernerfsia; azufinsgsia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -512,7 +495,7 @@ hl:
 
 in:
 
-q: In Bezug auf Ihren Auslandsaufenthalt: Wie zufrieden sind Sie mit …
+q: Wie zufrieden sind Sie bis zum jetzigen Zeitpunkt mit …
 
 is:
 
@@ -561,7 +544,7 @@ F2_16
 
 tc:
 
-vn: azuforgaufwsia; azuffinanzaufwsia
+vn: azuf (azuforgaufsia; azuffinaufsia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -573,9 +556,9 @@ q: Und wie beurteilen Sie …
 
 is:
 
-it1: (azuforgaufwsia): … den organisatorischen Aufwand Ihres Aufenthaltes?
+it1: (azuforgaufsia): … den organisatorischen Aufwand Ihres Aufenthaltes?
 
-it2: (azuffinanzaufwsia): … den finanziellen Aufwand Ihres Aufenthaltes?
+it2: (azuffinaufsia): … den finanziellen Aufwand Ihres Aufenthaltes?
 
 st:
 
@@ -620,7 +603,7 @@ tc:
 
 vn: aeempfsia
 
-qt: Einfachauswahl mit horizontalen ao
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -662,19 +645,18 @@ fo:
 
 tr:
 
-GOTO F2_18
+GOTO F2_19
 
 hi:
 
 \--------------------------------
-
 
 F2_19 
 ======
 
 tc: 
 
-vn: intpsydeusia; intpsyzeitasia; intpsydauasia
+vn: intpsy (intpsydeusia; intpsyzeitasia; intpsydauasia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -733,7 +715,7 @@ F2_20
 
 tc:
 
-vn: intling1sia; intling2sia; intling3sia
+vn: intling (intling1sia; intling2sia; intling3sia)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -782,4 +764,5 @@ fo:
 tr:
 
 GOTO A_56
+
 hi:
