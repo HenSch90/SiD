@@ -347,7 +347,7 @@ tc:
 
 vn: lohnba; lohnma; lohnsta1; lohnsta2; lohnphd
 
-qt: Einfachauswahl mit vertikalen ao/Spaltenformat
+qt: Einfachauswahl Dropdown mit ao0
 
 hl:
 
@@ -368,6 +368,8 @@ it4: (lohnsta2): … dem zweiten Staatsexamen
 it5: (lohnphd): … Promotion
 
 st:
+
+a00: 0: Netto-Gehalt einer Vollzeitstelle
 
 ao1: 1: unter 1.000 €
 
