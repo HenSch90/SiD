@@ -333,9 +333,7 @@ hv:
 
 fo:
 
-tr: GOTO KSM-ma06
-GOTO KSM-ma07 IF sabsan = 6 OR sabsan = 7 OR sabsan = 8 OR sabsan = 9
-GOTO KSM-ma07 IF sabsan = 5 AND sabslaja <>1
+tr: GOTO KSM-ma06 OR GOTO KSM-ma07 IF sabsan = 6 OR sabsan = 7 OR sabsan = 8 OR sabsan = 9 OR GOTO KSM-ma07 IF sabsan = 5 AND sabslaja <>1
 
 hi: in der Vorschau entspricht die Reihenfolge der Items nicht der hier dargestellten. Bitte prüfen
 
