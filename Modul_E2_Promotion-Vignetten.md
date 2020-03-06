@@ -150,14 +150,14 @@ hv:
 
 fo:
 
-tr:
+tr: pvig2[deck][vignr]
 
 hi: vigA, vigB und vigC sind Absätze der Vignette, die Zuordnung und Auswahl der
 Vignetten wird in einer Excel-Liste geliefert.
 
 \--------------------------------
 
-mvig2[deck][vignr]
+pvig2[deck][vignr]
 ==================
 
 tc:
