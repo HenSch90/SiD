@@ -49,14 +49,230 @@ hv:
 
 fo:
 
-tr: GOTO V[deck]_1 if IF h_deck==[deck]
+tr: GOTO mvig[deck]_1 if IF h_deck==[deck]
 
 hi:
 
 
 \--------------------------------
 
-mvig[deck][vignr]
+mvig[deck]_1
+=================
+
+tc: 
+
+vn: mabew
+
+qt: Einfachauswahl mit horizontalen Antwortoptionen
+
+hl: Attraktivität eines Masterstudiums
+
+in: 
+
+in1: [vigA]
+
+in2: [vigB]
+
+in3: [vigC]
+
+q4: Wie wahrscheinlich würden Sie sich auf diesen Masterstudiengang bewerben?
+
+is:
+
+it:
+
+st:
+
+ao1: 0: sehr unwahrscheinlich
+
+ao2: 1:
+
+ao3: 2:
+
+ao4: 3:
+
+ao5: 4:
+
+ao6: 5:
+
+ao7: 6:
+
+ao8: 7:
+
+ao9: 8:
+
+ao10: 9:
+
+ao11: 10: sehr wahrscheinlich
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: mvig[deck]_2
+
+hi: vig1, vig2 und vig3 sind Absätze der Vignette, die Zuordnung und Auswahl der
+Vignetten wird in einer Excel-Liste geliefert: [Master-Vignetten](https://github.com/dzhw/SiD/blob/master/Vignetten_Master.xls)
+
+\--------------------------------
+
+mvig[deck]_2
+=================
+
+tc: 
+
+vn: mabew
+
+qt: Einfachauswahl mit horizontalen Antwortoptionen
+
+hl: Attraktivität eines Masterstudiums
+
+in: 
+
+in1: [vigA]
+
+in2: [vigB]
+
+in3: [vigC]
+
+q4: Wie wahrscheinlich würden Sie sich auf diesen Masterstudiengang bewerben?
+
+is:
+
+it:
+
+st:
+
+ao1: 0: sehr unwahrscheinlich
+
+ao2: 1:
+
+ao3: 2:
+
+ao4: 3:
+
+ao5: 4:
+
+ao6: 5:
+
+ao7: 6:
+
+ao8: 7:
+
+ao9: 8:
+
+ao10: 9:
+
+ao11: 10: sehr wahrscheinlich
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: mvig[deck]_3
+
+hi: vig1, vig2 und vig3 sind Absätze der Vignette, die Zuordnung und Auswahl der
+Vignetten wird in einer Excel-Liste geliefert: [Master-Vignetten](https://github.com/dzhw/SiD/blob/master/Vignetten_Master.xls)
+
+\--------------------------------
+
+mvig[deck]_3
+=================
+
+tc: 
+
+vn: mabew
+
+qt: Einfachauswahl mit horizontalen Antwortoptionen
+
+hl: Attraktivität eines Masterstudiums
+
+in: 
+
+in1: [vigA]
+
+in2: [vigB]
+
+in3: [vigC]
+
+q4: Wie wahrscheinlich würden Sie sich auf diesen Masterstudiengang bewerben?
+
+is:
+
+it:
+
+st:
+
+ao1: 0: sehr unwahrscheinlich
+
+ao2: 1:
+
+ao3: 2:
+
+ao4: 3:
+
+ao5: 4:
+
+ao6: 5:
+
+ao7: 6:
+
+ao8: 7:
+
+ao9: 8:
+
+ao10: 9:
+
+ao11: 10: sehr wahrscheinlich
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: mvig[deck]_4
+
+hi: vig1, vig2 und vig3 sind Absätze der Vignette, die Zuordnung und Auswahl der
+Vignetten wird in einer Excel-Liste geliefert: [Master-Vignetten](https://github.com/dzhw/SiD/blob/master/Vignetten_Master.xls)
+
+\--------------------------------
+
+mvig[deck]_4
 =================
 
 tc: 
@@ -127,6 +343,7 @@ hi: vig1, vig2 und vig3 sind Absätze der Vignette, die Zuordnung und Auswahl de
 Vignetten wird in einer Excel-Liste geliefert: [Master-Vignetten](https://github.com/dzhw/SiD/blob/master/Vignetten_Master.xls)
 
 \--------------------------------
+
 
 KSM-ma02
 ========
