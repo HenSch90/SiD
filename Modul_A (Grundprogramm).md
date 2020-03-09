@@ -5,7 +5,7 @@ index
 
 tc:
 
-vn: sidpretest_consent
+vn: sid_ic
 
 qt: Mehrfachauswahl
 
@@ -14,10 +14,10 @@ hl:
 in:
 
 q: 
-Vorstudie „die Studierendenbefragung in Deutschland“
+Studie: !!Die Studierendenbefragung in Deutschland!!
 (Leerzeile)
 
-Herzlich willkommen bei **Die Studierendenbefragung in Deutschland**
+Herzlich willkommen bei !!Die Studierendenbefragung in Deutschland!!
 (Leerzeile)
 
 Wir freuen uns, dass Sie uns mit Ihrer Teilnahme bei der Konzeption der größten Studierendenbefragung in Deutschland unterstützen. 
@@ -62,14 +62,14 @@ it:
 
 st:
 
-ao1: (sidpretest_consent): Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden. Meine Teilnahme an der Befragung ist freiwillig. Diese Einwilligung bezieht sich ausdrücklich auch auf die Angaben zur gesundheitlichen Beeinträchtigung.
+ao: (sid_ic): Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden. Meine Teilnahme an der Befragung ist freiwillig. Diese Einwilligung bezieht sich ausdrücklich auch auf die Angaben zur gesundheitlichen Beeinträchtigung.
 
 mv:
 
 ka:
 
 vc:
-SHOW kh1 IF sidpretest_consent!=1
+SHOW kh1 IF sid_ic != 1
 
 av:
 
@@ -79,16 +79,16 @@ kh1: Bitte beachten Sie, dass ohne Zustimmung zu den Datenschutzbestimmungen ein
 fv:
 
 hv:
-mastersplit = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
+mastersplit= 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
 
 zusatzsplit = 1, 2, 3, 4 (einmalige Randomisierung; mit gleicher Ziehungswahrscheinlichkeit)
 
 fo:
 
 tr: 
-GOTO index IF !sidpretest_consent.value and !sf_h.value
-GOTO offer IF sidpretest_consent.value and jsCheck.value and isMobile.value and width.value lt 768
-GOTO A_1 IF sidpretest_consent.value
+GOTO index IF !sid_ic.value and !sf_h.value
+GOTO offer IF sid_ic.value and jsCheck.value and isMobile.value and width.value lt 768
+GOTO A_1 IF sid_ic.value
 
 
 hi:
@@ -109,8 +109,7 @@ hl:
 
 in:
 
-q: 
-Um ein optimales Befragungserlebnis zu erhalten, sollten Sie für die Beantwortung einiger Fragen das Display drehen.
+q: Um ein optimales Befragungserlebnis zu erhalten, sollten Sie für die Beantwortung einiger Fragen das Display drehen.
 
 is:
 
@@ -150,15 +149,13 @@ tc:
 
 vn: vsbdeba
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
-in:
+in: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
 
-q: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
-
-Wo haben Sie erstmals Ihre Hochschulreife erworben?
+q: Wo haben Sie erstmals Ihre Hochschulreife erworben?
 
 is:
 
@@ -184,11 +181,11 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte lediglich die Frage ("Wo haben Sie erstmals Ihre Hochschulreife erworben?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
 
 tr:
 
-hi:
+hi: 
 
 \------------------------------------------------------------
 
@@ -197,9 +194,9 @@ A_1
 
 tc:
 
-vn: dnatdeu, dnatausl
+vn: dnatdeu; dnatausl
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -213,9 +210,9 @@ it:
 
 st:
 
-ao1: (dnatdeu): 1: die deutsche Staatsangehörigkeit
+ao1: (dnatdeu): deutsche Staatsangehörigkeit
 
-ao2: (dnatausl): 2: eine oder mehrere andere Staatsangehörigkeit(en)
+ao2: (dnatausl): andere Staatsangehörigkeit(en)
 
 mv:
 
@@ -231,7 +228,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A1) darstellen. Fragetext,Ausfüllanweisung und Antwortoptionen der vorliegenden Frage bitte zusammen unterhalb von Fragetext und Antwortoptionen der vorhergehenden Frage platzieren.
 
 tr: GOTO A_2 IF dnatdeu==1
     GOTO A_3 IF dnatdeu=0 AND dnatausl=1
@@ -249,7 +246,7 @@ tc:
 
 vn: dnatderw
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -263,11 +260,11 @@ it:
 
 st:
 
-ao1: 1: von Geburt an?
+ao1: 1: ... von Geburt an?
 
-ao2: 2: als Spätaussiedler\*in?
+ao2: 2: ... als Spätaussiedler\*in?
 
-ao3: 3: durch Einbürgerung?
+ao3: 3: ... durch Einbürgerung?
 
 mv:
 
@@ -303,25 +300,21 @@ tc:
 
 vn: dnatko
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
 in:
 
-q1: Welche Staatsangehörigkeit besaßen Sie bevor Sie nach Deutschland kamen?
+q1: Welche Staatsangehörigkeit besaßen Sie, bevor Sie nach Deutschland kamen?
 
 q2: Welche Staatsangehörigkeit besaßen Sie vor Ihrer Einbürgerung?
 
-q3: Sie haben zu Beginn der Befragung angegeben, die deutsche und eine ausländische Staatsangehörigkeit zu haben.
+q3: Sie haben angegeben, die deutsche und eine ausländische Staatsangehörigkeit zu haben. Welche Staatsangehörigkeit besitzen Sie neben der deutschen?
 
-Welche Staatsangehörigkeit besitzen Sie neben der deutschen?
+q4: Sie haben angegeben, eine ausländische Staatsangehörigkeit zu haben. Welche ausländische Staatsangehörigkeit besitzen Sie?
 
-q4: Sie haben zu Beginn der Befragung angegeben, eine ausländische Staatsangehörigkeit zu haben.
-
-Welche ausländische Staatsangehörigkeit besitzen Sie?
-
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
@@ -343,13 +336,13 @@ ka:
 
 vc:
 
-SHOW q1 if dnatderw=2 AND dnatausl=0
+SHOW q1 IF dnatderw=2 AND dnatausl=0
 
-SHOW q2 if dnatderw=3 AND dnatausl=0
+SHOW q2 IF dnatderw=3 AND dnatausl=0
 
-SHOW q3 if dnatdeu=1 AND dnatausl=1
+SHOW q3 IF dnatdeu=1 AND dnatausl=1
 
-SHOW q4 if dnatdeu=0 AND dnatausl=1
+SHOW q4 IF dnatdeu=0 AND dnatausl=1
 
 av:
 
@@ -372,21 +365,19 @@ A_4
 
 tc:
 
-vn: dnatsta
+vn: dnatsta; dnatstao
 
-qt: Einfachauswahl mit Dropdown
+qt: Dropdown; offene Angabe
 
 hl:
 
 in:
 
-q1: Bitte geben Sie nun die Staatsangehörigkeit an, die Sie bevor Sie nach
-Deutschland kamen hatten.
+q1: Bitte geben Sie nun die Staatsangehörigkeit an, die Sie hatten, bevor Sie nach Deutschland kamen.
 
 q2: Bitte geben Sie nun Ihre Staatsangehörigkeit vor Ihrer Einbürgerung an.
 
-q3: Bitte geben Sie nun Ihre Staatsangehörigkeit an, die Sie neben der deutschen
-besitzen.
+q3: Bitte geben Sie nun Ihre Staatsangehörigkeit an, die Sie neben der deutschen besitzen.
 
 q4: Bitte geben Sie nun Ihre ausländische Staatsangehörigkeit an.
 
@@ -396,21 +387,21 @@ it:
 
 st:
 
-ao: Dropdown [Staatenliste_DBI]
+ao1: (dnatsta): [infield = Staatsangehörigkeit; Staatenliste_DBI] (Dropdown)
+
+ao2: (dnatstao): Präfix: !!An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben:!! [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc: SHOW Dropdown if dnatko\>0
+vc1: SHOW q1 if dnatderw=2 and dnatausl=0
 
-SHOW q1 if dnatderw=2 and dnatausl=0
+vc2: SHOW q2 if dnatderw=3 and dnatausl=0
 
-SHOW q2 if dnatderw=3 and dnatausl=0
+vc3: SHOW q3 if dnatdeu=1 AND dnatausl=1
 
-SHOW q3 if dnatdeu=1 AND dnatausl=1
-
-SHOW q4 if dnatdeu=0 AND dnatausl=1
+vc4: SHOW q4 if dnatdeu=0 AND dnatausl=1
 
 av:
 
@@ -420,56 +411,11 @@ fv:
 
 hv:
 
-fo:
+fo: Das Präfix bei ao2 ("An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben:") bitte linksbündig und in fett oberhalb des offenen Eingabefeldes platzieren.
 
-tr: 
+tr:  GOTO A_5
 
-hi: Dropdown bitte nach Angabe des Kontinents in A_3 vorselektieren.
-
-\------------------------------------------------------------
-
-A_4
-====
-
-tc:
-
-vn: dnatstao
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q: An dieser Stelle können Sie Ihre Staatsangehörigkeit auch offen angeben. 
-
-is:
-
-it:
-
-st:
-
-ao1: offene Angabe: 50 Zeichen
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO A_5
-
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_3 (dnatko) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -480,7 +426,7 @@ tc:
 
 vn: dgebort
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -514,9 +460,8 @@ hv:
 
 fo:
 
-tr: GOTO A_6 if dgebort=2
-    GOTO A_9a if (dgebort=1 OR dgebort=MISSING) AND h_split=1 (50%)
-    GOTO A_9b if (dgebort=1 OR dgebort=MISSING) AND h_split=2 (50%)
+tr: GOTO A_6 IF dgebort=2
+    GOTO A_9b IF dgebort=1 OR dgebort=MISSING
 
 hi:
 
@@ -529,7 +474,7 @@ tc:
 
 vn: dgebko
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -537,7 +482,7 @@ in:
 
 q: In welchem Land wurden Sie geboren?
 
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
@@ -580,15 +525,15 @@ A_7
 
 tc:
 
-vn: dgebsta
+vn: dgebsta; dgebstao
 
-qt: Einfachauswahl mit Dropdown
+qt: Dropdown; offene Angabe
 
 hl:
 
 in:
 
-q: Bitte geben Sie nun das Land an, in dem Sie geboren wurden.
+q: Bitte geben Sie nun das Land an, in dem Sie geboren sind.
 
 is:
 
@@ -596,13 +541,15 @@ it:
 
 st:
 
-ao: Dropdown [Staatenliste_DBI]
+ao1: (dgebsta): [infield = Geburtsland; Staatenliste_DBI] (Dropdown)
+
+ao2: (dgebstao): Präfix: !!An dieser Stelle können Sie Ihr Geburtsland auch offen angeben:!! [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc: SHOW Dropdown if (dgebko != MISSING AND dgebko != 0)
+vc:
 
 av:
 
@@ -612,56 +559,11 @@ fv:
 
 hv:
 
-fo:
-
-tr: 
-
-hi:
-
-\------------------------------------------------------------
-
-A_7
-====
-
-tc:
-
-vn: dgebstao
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q: An dieser Stelle können Sie Ihr Geburtsland auch offen angeben.
-
-is:
-
-it:
-
-st:
-
-ao1: offene Angabe: 50 Zeichen
-
-mv:
-
-ka:
-
-vc: SHOW offene Angabe if dgebko=SYSMISS
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
+fo: Das Präfix bei ao2 ("An dieser Stelle können Sie Ihr Geburtsland auch offen angeben:") bitte linksbündig und in fett oberhalb des offenen Eingabefeldes platzieren.
 
 tr: GOTO C3_1
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_6 (dgebko) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -670,16 +572,15 @@ A_8
 
 tc:
 
-vn: baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandba_open
+vn: baufgru (baufgrueuba; baufgrustuba; baufgruerwerb; baufgrutouba; baufgruasylba; baufgrufaman; baufgrufamba; baufgruausba; baufgruandba; baufgruandbao)
 
-qt: Mehrfachauswahl mit offener Angabe
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
 in:
 
-q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
-(Leerzeile)
+q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen? #{layout.BREAK}#{layout.BREAK }
 Als ich nach Deutschland kam, war ich:
 
 is: Bitte alles Zutreffende auswählen.
@@ -688,23 +589,23 @@ it:
 
 st:
 
-ao1: (baufgrueuba): 1: Bürger\*in eines EU Mitgliedstaates bzw. des europäischen Wirtschaftsraums
+ao1: (baufgrueuba): Bürger\*in eines EU-Mitgliedstaates bzw. des europäischen Wirtschaftsraums
 
-ao2: (baufgrustuba): 2: Studierende\*r (auch zur Studienvorbereitung)
+ao2: (baufgrustuba): Studierende\*r (auch zur Studienvorbereitung)
 
-ao3: (baufgruerwerb): 3: Erwerbstätige\*r (Arbeitsvisum)
+ao3: (baufgruerwerb): Erwerbstätige\*r (Arbeitsvisum)
 
-ao4: (baufgrutouba): 4: Tourist\*in (Besuchsvisum)
+ao4: (baufgrutouba): Tourist\*in (Besuchsvisum)
 
-ao5: (baufgruasylba): 5: Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
+ao5: (baufgruasylba): Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
 
-ao6: (baufgrufaman): 6: Familienangehörige\*r, kam mit Eltern bzw. Ehepartner\*in
+ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. mit/wegen Ehepartner\*in
 
-ao6: (baufgrufamba): 7: Familiennachzug, zog zu bereits in Deutschland lebender Familie
+ao6: (baufgrufamba): Familiennachzug, zog zu bereits in Deutschland lebender Familie
 
-ao6: (baufgruausba): 8: (Spät-)Aussiedler\*in
+ao6: (baufgruausba): (Spät-)Aussiedler\*in
 
-ao7: (baufgruandba): 7: Anderer Status, und zwar: (baufgruandba_open) [offene Eingabe, 50 Zeichen]
+ao7: (baufgruandba): Anderer Status, und zwar: [(baufgruandbao); offene Angabe, 80 Zeichen]
 
 ato:
 
@@ -722,7 +623,7 @@ fv:
 
 hv: 
 
-fo:
+fo: "Als ich nach Deutschland kam, war ich:" bitte etwas von den beiden Einleitungssätzen in der question absetzen.
 
 tr: 
 GOTO A_8a IF baufgruasylba=1
@@ -742,7 +643,7 @@ tc:
 
 vn: asylantrag
 
-qt: Einfachauswahl 
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -758,13 +659,13 @@ st:
 
 ao1: 1: Das Asylverfahren ist noch nicht abgeschlossen.
 
-ao2: 2: Ich wurde als Flüchtling oder Asylberechtigte\*r anerkannt.
+ao2: 2: Ich wurde als Geflüchtete\*r oder Asylberechtigte\*r anerkannt.
 
 ao3: 3: Ich habe einen subsidiären Schutzstatus bekommen.
 
 ao4: 4: Der Asylantrag wurde abgelehnt und ich habe eine Duldung bekommen.
 
-ao5: 5: Der Asylantrag wurde abgelehnt und ich habe keine Duldung bekommen.
+ao5: 5: Ich möchte keine Angabe machen.
 
 mv:
 
@@ -788,7 +689,6 @@ tr: GOTO A_8b IF (baufgrufaman=1 OR baufgrufamba=1)
 
 hi:
 
-
 \------------------------------------------------------------
 
 A_8b
@@ -796,24 +696,25 @@ A_8b
 
 tc:
 
-vn: intgrund2
+vn: intgrundhl; intgrunddl
 
-qt: offene Angabe
+qt: offene Angaben
 
 hl:
 
 in:
 
-q: Was waren die Gründe dafür, dass Ihre Familie...
+q: Was waren die Gründe dafür, dass Sie oder Ihre Familie ...
 
 is:
 
-it:
+it1: (intgrundhl): Präfix: ... Ihr Herkunftsland verlassen haben? [offene Angabe; 250 Zeichen]
+
+it2: (intgrunddl): Präfix: ... nach Deutschland gezogen sind? [offene Angabe; 250 Zeichen]
 
 st:
 
-ao1: 1: offene Angabe: Präfix: ...Ihr Herkunftsland verlassen hat?: [intgrund2]
-ao2: 2: offene Angabe: Präfix: ...nach Deutschland gezogen ist?: [intgrund2]
+ao:
 
 vc:
 
@@ -825,63 +726,11 @@ fv:
 
 hv:
 
-fo:
+fo: Die beiden Items bitte linksbündig untereinander setzen.
 
-tr: <zofar:transition target="A_9a" condition="zofar.asNumber(h_split)==1"/>
-    <zofar:transition target="A_9b" condition="zofar.asNumber(h_split)==2"/>
-
-hi:
-
-
-\------------------------------------------------------------
-
-A_9a
-=========
-
-tc:
-
-vn: demosex; demosexo
-
-qt: Einfachauswahl mit offener Angabe
-
-hl:
-
-in:
-
-q: Welches Geschlecht haben Sie?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: männlich
-
-ao2: 2: weiblich
-
-ao3: 3: Anderes, und zwar: [demosexo]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO A_10
+tr: GO TO A_9b
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -890,9 +739,9 @@ A_9b
 
 tc:
 
-vn: demosexb; demosexob
+vn: demosex; demosexo
 
-qt: Einfachauswahl mit offener Angabe
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -912,7 +761,7 @@ ao2: 2: weiblich
 
 ao3: 3: divers
 
-ao4: 4: Keine der genannten Kategorien, sondern: [demosexob]
+ao4: 4: Keine der genannten Kategorien, sondern: [(demosexo); 50 Zeichen] (offene Angabe)
 
 vc:
 
@@ -924,12 +773,11 @@ fv:
 
 hv:
 
-fo:
+fo: ao4 bitte etwas absetzen.
 
 tr: GOTO A_10
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -940,7 +788,7 @@ tc:
 
 vn: demoage
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
@@ -954,7 +802,7 @@ it:
 
 st:
 
-ao1: Postfix: Jahre
+ao: [offene Angabe; Number, 2-stellig: 15 TO 99], Postfix: Jahre 
 
 mv:
 
@@ -962,9 +810,9 @@ ka:
 
 vc:
 
-av: number: zweistellig: 16 TO 99
+av: 
 
-kh: Bitte geben Sie Ihr Lebensalter an (16 bis 99).
+kh: Bitte geben Sie Ihr Lebensalter an (15 bis 99).
 
 fv:
 
@@ -974,7 +822,7 @@ fo:
 
 tr: GOTO A_11
 
-hi:
+hi: 
 
 \------------------------------------------------------------
 
@@ -983,9 +831,9 @@ A_11
 
 tc:
 
-vn: demofam
+vn: demofam (demofamsin; demofampar; demofamehe; demofamaus; demofamtod; demofamka)
 
-qt: Einfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -993,21 +841,25 @@ in:
 
 q: Welchen Familienstand haben Sie?
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1: 1: nicht verheiratet, ohne feste Partnerbeziehung
+ao1: (demofamsin): ohne feste\*n Partner\*in
 
-ao2: 2: nicht verheiratet, mit fester Partnerbeziehung
+ao2: (demofampar): mit einer/einem festen Partner\*in
 
-ao3: 3: verheiratet/eingetragene Lebenspartnerschaft
+ao3: (demofamehe): verheiratet/eingetragene Lebenspartnerschaft
 
-ao4: -13: keine Angabe
+ao4: (demofamaus): geschieden
+	
+ao5: (demofamtod): verwitwet
 
-mv: ao4
+ao6: (demofamka): keine Angabe [Exklusivkategorie]
+
+mv:
 
 ka:
 
@@ -1021,7 +873,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao6 bitte als Exklusivkategorie etwas absetzen.
 
 tr: GOTO A_12
 
@@ -1036,7 +888,7 @@ tc:
 
 vn: dkinja
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1070,38 +922,38 @@ hv:
 
 fo:
 
-tr: GOTO A_13 if dkinja=1
+tr: GOTO A_12a if dkinja=1
     GOTO C1_1 if dkinja=2
-    GOTO A_13 if dkinja=MISSING
+    GOTO A_12a if dkinja=MISSING
 
 hi:
 
-\--------------------------------
+\------------------------------------------------------------
 
-A_13
-==
+A_12a
+=========
 
 tc:
 
-vn: pflegang; pflegango
+vn: dsib; dsibo
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahl mit vertikalen ao und offener Angabe
 
 hl:
 
 in:
 
-q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
+q: Haben Sie Geschwister?
 
-is:
+is: Bitte geben Sie auch Ihre Halb- und Stiefgeschwister an.
 
 it:
 
 st:
 
-ao1: 1: nein
+ao1: (dsib): 1: nein
 
-ao2: 2: Präfix: ja, und zwar: [pflegango] Postfix: Personen
+ao2: (dsib): 2: Ja, und zwar: ([dsibo], NUMBER, 2-Steller)
 
 mv:
 
@@ -1119,9 +971,134 @@ hv:
 
 fo:
 
+tr: GOTO A_12b if dsibo>0
+    ELSE GOTO A_13
+    
+hi:
+
+
+\------------------------------------------------------------
+
+A_12b
+=========
+
+tc:
+
+vn: dsibageo1; dsibsex1; dsibageo2; dsibsex2; dsibageo3; dsibsex3
+ 
+qt: Offene Angabe und Dropdown
+
+hl:
+
+in:
+
+q1: Wie alt ist Ihr Geschwisterteil und welches Geschlecht hat Ihr Geschwisterteil?
+
+q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben Ihre Geschwister jeweils?
+
+is: Sollten Sie mehr als drei Geschwister haben, so nennen Sie uns bitte Ihre drei zeitlich nahestehendsten Geschwister. 
+
+
+it1: (dsibageo1): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
+it2: (dsibsex1): (infield = Geschlecht; männlich, weiblich, divers)  (Dropdown)
+
+it3: (dsibageo2): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
+it4: (dsibsex2): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+it5: (dsibageo3): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
+it6: (dsibsex3): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+st:
+
+aox: 0: Geschlecht 
+
+ao1: 1: männlich
+
+ao2: 2: weiblich
+
+ao3: 3: divers
+
+mv:
+
+ka1: (it1-it2): Geschwisterteil:
+
+ka2: (it1-it2): 1. Geschwisterteil:
+
+ka3: (it3-it4): 2. Geschwisterteil:
+
+ka4: (it5-it6): 3. Geschwisterteil:
+
+vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibo = 1
+
+vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibo = 2
+
+vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibo = 3
+
+vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibo > 3
+
+av:
+
+kh: Bitte geben Sie das Lebensalter an (0 bis 99).
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_13
+    
+hi:
+
+
+\--------------------------------
+
+A_13
+==
+
+tc:
+
+vn: pflegeang (pflegangno; pflegang1; pflegang2)
+
+qt: Mehrfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
+
+is: Nicht gemeint ist die Betreuung der eigenen Kinder.
+
+it:
+
+st:
+
+ao1: (pflegangno): nein [Exklusivkategorie]
+
+ao2: (pflegang1): aus der Familie
+
+ao3: (pflegang2): aus dem Freundes- und Bekanntenkreis
+
+mv:
+
+ka: (ao2 TO ao3): Ja, und zwar:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: "Ja, und zwar:" über ao2 linksbündig positionieren.
+
 tr:
 
-GOTO A_14 IF pflegang=2
+GOTO A_14 IF pflegang1=1 OR pflegang2=1 
 ELSE A_15
 
 hi:
@@ -1131,11 +1108,11 @@ hi:
 A_14
 ==
 
-tc:
+tc: IF pflegang1=1 OR pflegang2=1
 
 vn: pflegt (pflegt1; pflegt2; pflegt3; pflegt4; pflegt5; pflegt5o)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -1145,21 +1122,23 @@ q: Wenn Sie an eine typische Woche denken: Wie häufig führen Sie folgende Pfle
 
 is:
 
-it1: (pflegt1): Besorgungen und Erledigungen außer Haus
+it1: (pflegt1): Besorgungen und Erledigungen außer Haus, z. B. Behördengänge
 
 it2: (pflegt2): Haushaltsführung, Versorgung mit Mahlzeiten und Getränken
 
-it3: (pflegt3): einfachere Pflegetätigkeiten, z.B. Hilfe beim An- und Auskleiden,
+it3: (pflegt3): einfachere Pflegetätigkeiten, z. B. Hilfe beim An- und Auskleiden,
 Waschen, Kämmen und Rasieren
 
-it4: (pflegt4): schwierigere Pflegetätigkeiten, z.B. Hilfe beim Umbetten,
-Stuhlgang usw.
+it4: (pflegt4): schwierigere Pflegetätigkeiten, z. B. Hilfe beim Umbetten,
+Stuhlgang
 
-it5: (pflegt4): Etwas anderes und zwar: [pflegt5o]
+it5: (pflegt5): Etwas anderes, und zwar: [(pflegt5o); 80 Zeichen] (offene Angabe)
 
 st:
 
-ao1: 1: überhaupt nicht
+ao0: 0: nie
+
+ao1: 1: sehr selten
 
 ao2: 2:
 
@@ -1183,7 +1162,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte die Spalte "nie" etwas von der Skala "sehr selten" bis "sehr häufig" absetzen.
 
 tr: GOTO A_15
 
@@ -1196,14 +1175,13 @@ A_15
 
 tc:
 
-vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartka; h_gartcount
+vn: gbeges; gartmob; gartseh; gartohr; gartspr; gartpsy; gartsom; garttls; gartson; gartsono; gartka; h_gartcount
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
 in: Im Folgenden stellen wir Ihnen einige kurze Fragen zu möglichen Beeinträchtigungen. Wie für alle Fragen gilt: Die Beantwortung dieser Fragen ist selbstverständlich freiwillig und wir sichern Ihnen Anonymität und den Schutz Ihrer Daten zu.
-(Leerzeile)
 
 q: Haben Sie eine oder mehrere der nachfolgend aufgeführten gesundheitlichen Beeinträchtigungen?
 
@@ -1213,29 +1191,29 @@ it:
 
 st:
 
-ao1: (gbeges): 1: nein (Exklusivkategorie)
+ao1: (gbeges): keine [Exklkusivkategorie]
 
-ao2: (gartmob): 2: Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
+ao2: (gartmob): Bewegungsbeeinträchtigung (z. B. beim Gehen, Stehen, Greifen)
 
-ao3: (gartseh): 3: Sehbeeinträchtigung/Blindheit
+ao3: (gartseh): Blindheit/Sehbeeinträchtigung
 
-ao4: (gartohr): 4: Hörbeeinträchtigung/Gehörlosigkeit
+ao4: (gartohr): Gehörlosigkeit/Hörbeeinträchtigung
 
-ao5: (gartspr): 5: Sprechbeeinträchtigung (z. B. Stottern)
+ao5: (gartspr): Sprechbeeinträchtigung (z. B. Stottern)
 
-ao6: (gartpsy): 6: psychische Erkrankung (z. B. Depression, Essstörung)
+ao6: (gartpsy): psychische Erkrankung (z. B. Depression, Essstörung)
 
-ao7: (gartsom): 7: länger dauernde Krankheit/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
+ao7: (gartsom): körperlich länger dauernde/chronische Krankheit (z. B. Rheuma, MS, Darmerkrankung)
 
-ao8: (garttls): 8: Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
+ao8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-ao9: (gartson): 9: andere Beeinträchtigung/schwere Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung) [gartsono], 50 Zeichen
+ao9: (gartson): andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung): [(gartsono), 50 Zeichen]
 
-ao10: (gartka): 10: Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
+ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
 mv:
 
-ka: ka1 (ao2 TO ao10): ja, und zwar:
+ka: (ao2 TO ao10): Ja, und zwar:
 
 vc:
 
@@ -1247,13 +1225,17 @@ fv:
 
 hv: 
 
-fo:
+fo1: Bitte lediglich die Frage ("Haben Sie eine oder mehrere der nachfolgend aufgeführten gesundheitlichen Beeinträchtigungen?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
+
+fo2: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
+
+fo3: ao10 bitte etwas absetzen.
 
 tr: GOTO A_16 if gbeges=1
     GOTO C2_1 if gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
     GOTO A_16 if gbeges=MISSING AND gartmob=MISSING AND gartseh=MISSING AND gartohr=MISSING AND gartspr=MISSING AND gartpsy=MISSING AND gartsom=MISSING AND garttls=MISSING AND gartson=MISSING AND gartka=MISSING
     
-hi:
+hi: Bitte die Systemvariable h_gartcount erzeugen. Diese soll die Anzahl an genannten beeinträchtigungen abbilden (sum ao2-ao10 bzw. sum gartmob-gartka)
 
 \------------------------------------------------------------
 
@@ -1264,7 +1246,7 @@ tc:
 
 vn: imausl
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1311,21 +1293,21 @@ tc:
 
 vn: ssemfs
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q1: Im wievielten Fachsemester befinden Sie sich zurzeit?
+q: Im wievielten Fachsemester befinden Sie sich zurzeit?
 
-is1: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
+is: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
 
 it:
 
 st:
 
-ao1: 2, Präfix: Fachsemester:
+ao: Präfix: Fachsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
 
 mv:
 
@@ -1333,19 +1315,20 @@ ka:
 
 vc: 
 
-av: number, 2 stellig
+av: 
 
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte geben Sie die Anzahl Ihrer Fachsemester an (1 bis 99).
 
 fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit den beiden Folgefrage auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen oberhalb von den beiden nachhfolgenden Fragen platzieren.
+
 
 tr: 
 
-hi:
+hi: 
 
 \------------------------------------------------------------
 
@@ -1356,21 +1339,21 @@ tc:
 
 vn: ssemhs
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q1: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
+q: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
 
-is: Hochschulsemester sind alle Semester, die Sie seit Ihrer Erstimmatrikulation insgesamt studiert haben, einschließlich Urlaubs-, Auslands- und Praxissemester.
+is: Hochschulsemester sind alle Semester seit Beginn des Studiums, einschließlich Urlaubs-, Auslands- und Praxissemester.
 
 it:
 
 st:
 
-ao1: 2, Präfix: Hochschulsemester:
+ao: Präfix: Hochschulsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
 
 mv:
 
@@ -1378,15 +1361,62 @@ ka:
 
 vc:
 
-av: number, 2 stellig
+av: 
 
-kh: Bitte geben Sie nur Zahlen ein.
+kh: Bitte geben Sie die Anzahl Ihrer Hochschulsemester an (1 bis 99).
 
 fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit der vorherigen Frage und der Folgefrage auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen zwischen der vorherigen Frage und der nachhfolgenden Frage platzieren.
+
+tr:
+
+hi: 
+
+\------------------------------------------------------------
+
+A_17
+=========
+
+tc:
+
+vn: ssemul
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Befinden Sie sich aktuell in einem Urlaubssemester?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: Bitte diese Frage zusammen mit den beiden vorhergehenden Fragen auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen unterhalb von den beiden vorhergehenden Fragen platzieren.
 
 tr: <zofar:transition target="A_19" condition="zofar.asNumber(PRELOADhs_id)==0"/>
     <zofar:transition target="A_18"/>
@@ -1402,18 +1432,18 @@ tc:
 
 vn: hsstand
 
-qt: Einfachauswahl mit Dropdown
+qt: Einfachauswahl mit vertikalen ao und Dropdown
 
 hl:
 
 in:
 
-q: Sie haben bei Ihrer letzten Befragung angegeben, dass Sie an der [Preload-Token: Hochschulname] studieren?
+q: Wir haben Sie über die [Preload-Token: Hochschulname] angeschrieben. Ist das die Hochschule, an der Sie aktuell studieren?
 
-is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus.
+is: Falls Sie aktuell an einer anderen Hochschule studieren, wählen Sie bitte “Nein” aus. #{layout.BREAK }
 Falls Sie an mehreren Hochschulen parallel studieren, beziehen Sie Ihre Antworten bitte auf die oben genannte Hochschule. 
 
-it1 (hsstand): Ja, und zwar am Standort [Dropdown ao]:
+it1 (hsstand): Ja, und zwar am Standort [Dropdown; Standortliste].
 
 it2 (hsstand_2): Nein, ich studiere an einer anderen Hochschule.
 
@@ -1428,7 +1458,6 @@ ka:
 vc: 
 SHOW ao1 AND [Dropdown] IF 
 zofar.asNumber(PRELOADhs_id)==10 or zofar.asNumber(PRELOADhs_id)==30 or zofar.asNumber(PRELOADhs_id)==100 or zofar.asNumber(PRELOADhs_id)==300 or zofar.asNumber(PRELOADhs_id)==370 or zofar.asNumber(PRELOADhs_id)==550 or zofar.asNumber(PRELOADhs_id)==760 or zofar.asNumber(PRELOADhs_id)==810 or zofar.asNumber(PRELOADhs_id)==820 or zofar.asNumber(PRELOADhs_id)==1190 or zofar.asNumber(PRELOADhs_id)==1220 or zofar.asNumber(PRELOADhs_id)==1250 or zofar.asNumber(PRELOADhs_id)==1290 or zofar.asNumber(PRELOADhs_id)==1310 or zofar.asNumber(PRELOADhs_id)==1320 or zofar.asNumber(PRELOADhs_id)==1540 or zofar.asNumber(PRELOADhs_id)==1560 or zofar.asNumber(PRELOADhs_id)==1630 or zofar.asNumber(PRELOADhs_id)==1920 or zofar.asNumber(PRELOADhs_id)==2210 or zofar.asNumber(PRELOADhs_id)==2270 or zofar.asNumber(PRELOADhs_id)==2370 or zofar.asNumber(PRELOADhs_id)==2380 or zofar.asNumber(PRELOADhs_id)==2570 or zofar.asNumber(PRELOADhs_id)==2580 or zofar.asNumber(PRELOADhs_id)==3050 or zofar.asNumber(PRELOADhs_id)==3060 or zofar.asNumber(PRELOADhs_id)==3070 or zofar.asNumber(PRELOADhs_id)==3120 or zofar.asNumber(PRELOADhs_id)==3240 or zofar.asNumber(PRELOADhs_id)==3710 or zofar.asNumber(PRELOADhs_id)==3970 or zofar.asNumber(PRELOADhs_id)==4980 or zofar.asNumber(PRELOADhs_id)==4990 or zofar.asNumber(PRELOADhs_id)==5150 or zofar.asNumber(PRELOADhs_id)==5160 or zofar.asNumber(PRELOADhs_id)==5250 or zofar.asNumber(PRELOADhs_id)==5270 or zofar.asNumber(PRELOADhs_id)==5310 or zofar.asNumber(PRELOADhs_id)==5380 or zofar.asNumber(PRELOADhs_id)==5390 or zofar.asNumber(PRELOADhs_id)==5410 or zofar.asNumber(PRELOADhs_id)==5500 or zofar.asNumber(PRELOADhs_id)==5690 or zofar.asNumber(PRELOADhs_id)==5700 or zofar.asNumber(PRELOADhs_id)==5710 or zofar.asNumber(PRELOADhs_id)==5720 or zofar.asNumber(PRELOADhs_id)==5730 or zofar.asNumber(PRELOADhs_id)==5750 or zofar.asNumber(PRELOADhs_id)==5800 or zofar.asNumber(PRELOADhs_id)==5820 or zofar.asNumber(PRELOADhs_id)==5830 or zofar.asNumber(PRELOADhs_id)==5840 or zofar.asNumber(PRELOADhs_id)==5860 or zofar.asNumber(PRELOADhs_id)==5890 or zofar.asNumber(PRELOADhs_id)==5900 or zofar.asNumber(PRELOADhs_id)==5990 or zofar.asNumber(PRELOADhs_id)==6030 or zofar.asNumber(PRELOADhs_id)==6210 or zofar.asNumber(PRELOADhs_id)==6230 or zofar.asNumber(PRELOADhs_id)==6240 or zofar.asNumber(PRELOADhs_id)==6270 or zofar.asNumber(PRELOADhs_id)==6280 or zofar.asNumber(PRELOADhs_id)==6400 or zofar.asNumber(PRELOADhs_id)==6410 or zofar.asNumber(PRELOADhs_id)==6520 or zofar.asNumber(PRELOADhs_id)==6530 or zofar.asNumber(PRELOADhs_id)==6580 or zofar.asNumber(PRELOADhs_id)==6710 or zofar.asNumber(PRELOADhs_id)==6730 or zofar.asNumber(PRELOADhs_id)==6740 or zofar.asNumber(PRELOADhs_id)==6750 or zofar.asNumber(PRELOADhs_id)==6790 or zofar.asNumber(PRELOADhs_id)==6840 or zofar.asNumber(PRELOADhs_id)==7190 or zofar.asNumber(PRELOADhs_id)==7300 or zofar.asNumber(PRELOADhs_id)==7310 or zofar.asNumber(PRELOADhs_id)==7350 or zofar.asNumber(PRELOADhs_id)==7380 or zofar.asNumber(PRELOADhs_id)==7520 or zofar.asNumber(PRELOADhs_id)==7530 or zofar.asNumber(PRELOADhs_id)==7550 or zofar.asNumber(PRELOADhs_id)==7970 or zofar.asNumber(PRELOADhs_id)==8010 or zofar.asNumber(PRELOADhs_id)==8020 or zofar.asNumber(PRELOADhs_id)==8030 or zofar.asNumber(PRELOADhs_id)==8070 or zofar.asNumber(PRELOADhs_id)==81000 or zofar.asNumber(PRELOADhs_id)==8110 or zofar.asNumber(PRELOADhs_id)==81700
-
 
 av:
 
@@ -1456,7 +1485,7 @@ tc: IF hsstand_2=1
 
 vn: hsstandbl
 
-qt: Einfachauswahl mit Dropdown
+qt: Dropdown
 
 hl:
 
@@ -1466,13 +1495,9 @@ q: In welchem Bundesland/Land liegt Ihre Hochschule?
 
 is: 
 
-it: 
+it: (hsstandbl): [infield = Bundesland/Land; Baden-Württemberg - ... - im Ausland] (Dropdown)
 
 st:
-
-ao: [Dropdown:]
-
-aox: 0: Bundesland/Land
 
 ao1: 1: Baden-Württemberg
 
@@ -1527,9 +1552,9 @@ fo:
 tr: 
 GOTO A_20 if hsstandbl=1-16
 GOTO A_21 if hsstandbl=17
+ELSE GOTO A_20
 
 hi: 
-
 
 \------------------------------------------------------------
 
@@ -1540,7 +1565,7 @@ tc:
 
 vn: sabserhs
 
-qt: Einfachauswahl mit Dropdown
+qt: Dropdown
 
 hl:
 
@@ -1550,17 +1575,17 @@ q: An welcher Hochschule studieren Sie aktuell?
 
 is: 
 
-it: 
+it: (sabserhs): [infield = Hochschule] (Dropdown) 
 
 st:
 
-ao: [Dropdown; Hochschulliste]
+ao: nach Bundesland vorselektierte Dropdown-Hochschulliste
 
 mv: 
 
 ka: 
 
-vc: nach Bundesland vorselektierte [Dropdown] - Liste
+vc: 
 
 av: 
 
@@ -1574,8 +1599,7 @@ fo:
 
 tr:
 
-hi: 
-
+hi: Dropdown-Hochschulliste bitte nach Bundesland vorselektieren.
 
 \------------------------------------------------------------
 
@@ -1586,17 +1610,19 @@ tc:
 
 vn: hsstandhso
 
-qt: Offene Frage
+qt: offene Angabe
 
 hl:
 
 in: 
 
+q: Sollte Ihre Hochschule nicht aufgeführt sein, tragen Sie diese bitte hier ein (z. B. HU Berlin, FH Bielefeld).
+
 it: 
 
 st:
 
-ao1: 50 Stellen, Präfix Hochschule: [hsstandhso] 
+ao: (hsstandhso): [infield = Hochschule; 60 Zeichen] (offene Angabe)
 
 mv: 
 
@@ -1610,13 +1636,12 @@ fv:
 
 hv: 
 
-fo: 
+fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A20) darstellen. Fragetext und ao der vorliegenden Frage bitte zusammen unterhalb  der vorhergehenden Fragen platzieren.
 
 tr: GOTO D2_1 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
     GOTO A_22 if mastersplit=3, 4, 9, 10, 13
 
 hi: 
-
 
 \------------------------------------------------------------
 
@@ -1625,9 +1650,9 @@ A_21
 
 tc: IF hsstandbl=17 (wenn Studierende an einer ausländ. HS studieren)
 
-vn: hsstandlao, hsstandhsao
+vn: hsstandlao; hsstandhsao
 
-qt: Offene Frage
+qt: offene Angaben
 
 hl:
 
@@ -1641,9 +1666,9 @@ it:
 
 st:
 
-ao1: Präfix Land [hsstandlao]
+ao1: (hsstandlao): Präfix: Land: [offene Angabe; 100 Zeichen]
 
-ao2: Präfix Ort/Hochschule [hsstandhsao]
+ao2: (hsstandhsao): Präfix: Hochschule: [offene Angabe; 100 Zeichen]
 
 mv: 
 
@@ -1665,7 +1690,6 @@ GOTO A_22 if mastersplit=3, 4, 9, 10, 13
 
 hi: 
 
-
 \------------------------------------------------------------
 
 A_22
@@ -1675,7 +1699,7 @@ tc:
 
 vn: sperleiszufr
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1689,15 +1713,15 @@ it:
 
 st:
 
-ao: 1: sehr unzufrieden
+ao1: 1: sehr unzufrieden
 
-ao: 2
+ao2: 2
 
-ao: 3
+ao3: 3
 
-ao: 4
+ao4: 4
 
-ao: 5: sehr zufrieden
+ao5: 5: sehr zufrieden
 
 mv:
 
@@ -1728,27 +1752,25 @@ A_23
 
 tc:
 
-vn: sfach1o2, sfach2o2
+vn: sfach1o2; sfach2o2
 
-qt: Offene Frage
+qt: offene Angaben
 
 hl:
 
 in:
 
-q1: Bitte geben Sie Ihr Studienfach an.
+q: Bitte geben Sie Ihr Studienfach an.
 
-q2: 
+is: Bitte geben Sie nicht Ihren angestrebten Abschluss an (z. B. Masterstudent\*in, Promotionsstudent\*in).
 
-is:
-
-it1 (sfach1o2): Präfix: erstes Studienfach [offene Angabe; 50 Zeichen]
-
-it2 (sfach2o2): Präfix: ggf. zweites Studienfach [offene Angabe; 50 Zeichen]
+it:
 
 st:
 
-ao:
+ao1 (sfach1o2): Präfix: erstes Studienfach: [offene Angabe; 60 Zeichen]
+
+ao2 (sfach2o2): Präfix: ggf. zweites Studienfach: [offene Angabe; 60 Zeichen]
 
 mv:
 
@@ -1779,7 +1801,7 @@ tc:
 
 vn: sabslaja
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -1795,19 +1817,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, und zwar Lehramt an Grundschulen (Primarstufe)
+ao2: 2: Lehramt an Grundschulen (Primarstufe)
 
-ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I)
+ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
-ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
+ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: ja, und zwar Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: ja, und zwar Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: Lehramt an Förderschulen/Sonderpädagogik
 
 mv:
 
-ka:
+ka: (ao2 TO ao6): Ja, und zwar:
 
 vc:
 
@@ -1819,7 +1841,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO A_25
 
@@ -1832,9 +1854,9 @@ A_25
 
 tc:
 
-vn: sabsan
+vn: sabsano; sabsanoaa; sabsanoka
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao und offenen Angaben
 
 hl:
 
@@ -1848,23 +1870,23 @@ it:
 
 st:
 
-ao1: 1: Bachelor
+ao1: (sabsano): 1: Bachelor
 
-ao2: 2: Master
+ao2: (sabsano): 2: Master
 
-ao3: 3: Staatsexamen
+ao3: (sabsano): 3: Staatsexamen
 
-ao4: 4: Diplom
+ao4: (sabsano): 4: Diplom
 
-ao5: 5: Promotion
+ao5: (sabsano): 5: Promotion
 
-ao6: 6: kirchliche Abschlussprüfung
+ao6: (sabsano): 6: kirchliche Abschlussprüfung
 
-ao7: 7: künstlerische Abschlussprüfung
+ao7: (sabsano): 7: künstlerische Abschlussprüfung
 
-ao8: 8: anderen Abschluss (bspw. ausländischer Abschluss, Magister)
+ao8: (sabsano): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
 
-ao9: 9: keinen Studienabschluss
+ao9: (sabsano): 9: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
 
 mv:
 
@@ -1882,52 +1904,59 @@ hv:
 
 fo:
 
-tr: GOTO A_26 if sabsan=9
+tr: GOTO A_25b if sabsano==5
+    GOTO A_27 if sabsan=9
     GOTO D1_13 if sabsan=1-8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
     GOTO A_27 if sabsan=1-8 AND mastersplit=5, 6, 11, 12, 13
     GOTO D1_13 if sabsan=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
     GOTO A_27 if sabsan=MISSING AND mastersplit=5, 6, 11, 12, 13
-
+    
 hi:
+
 
 \------------------------------------------------------------
 
-A_26
-=======
+A_25b
+=========
 
-tc: IF sabsan=9
+tc:
 
-vn: sabsweit; sabsweito; todo1; todo2; todo3; todo4; todo5;
+vn: sabsanpr
 
-qt: Mehrfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
 in:
 
-q: Sie haben angegeben, in Ihrem aktuellen Studium keinen Studienabschluss anzustreben. Nutzen Sie aktuell hochschulische Weiterbildungsangebote?
+q: Sie haben angegeben, dass Sie die Promotion anstreben: Sind Sie darüber hinaus in einem regulären Studiengang eingeschrieben?
 
-is: Bitte alles zutreffende auswählen.
+is: 
 
 it:
 
 st:
 
-ao1: (sabsweit): 1: nein [Exklusivkategorie]
+ao1: (sabsanpr): -11: nein
 
-ao2: (sabsweito): 2: ja, Zertifikatskurs(e)
 
-ao3: (todo1): 3: ja, Seminar(reihe)
+ao2: (sabsanpr): 1: Bachelor
 
-ao4: (todo2): 4: ja, Workshop(s)
+ao3: (sabsanpr): 2: Master
 
-ao5: (todo3): 5: ja, Modul/Kurs
+ao4: (sabsanpr): 3: Staatsexamen
 
-ao6: (todo4): 6: Ja, anderes und zwar: [(todo5) offene Angabe, 50 Zeichen]
+ao5: (sabsanpr): 4: Diplom
+
+ao7: (sabsanpr): 6: kirchliche Abschlussprüfung
+
+ao8: (sabsanpr): 7: künstlerische Abschlussprüfung
+
+ao9: (sabsanpr): 8: Anderer Abschluss (bspw. ausländischer Abschluss, Magister)
 
 mv:
 
-ka:
+ka: (ao2 to ao9): Ja, und zwar: 
 
 vc:
 
@@ -1939,11 +1968,15 @@ fv:
 
 hv:
 
-fo:
+fo:  "Ja, und zwar:" über ao2 linksbündig positionieren.
 
-tr: GOTO A_27
+tr: GOTO D1_13 if sabsanpr=2-8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
+    GOTO A_27 if sabsanpr=2-8 AND mastersplit=5, 6, 11, 12, 13
+    GOTO D1_13 if sabsanpr=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
+    GOTO A_27 if sabsanpr=MISSING AND mastersplit=5, 6, 11, 12, 13
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -1952,15 +1985,16 @@ A_27
 
 tc:
 
-vn: sformpraes; sformdua; sformberu; sformfern; sformsons; sformsonso
+vn: sform (sformpraes; sformfern; sformdua; sformberu; sformgast; sformsons; sformsonso)
 
-qt: Mehrfachauswahl mit offener Angabe
+
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
 in:
 
-q: Um welche Form des Studiums handelt es sich bei Ihrem Studiengang?
+q: Um welche Form handelt es sich bei Ihrem Studium?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -1968,11 +2002,12 @@ it:
 
 st:
 
-ao1: (sformpraes): 1: Präsenzstudim (in Gegensatz zum Fernstudium)
-ao2: (sformfern): 2: Fernstudium
-ao3: (sformdua): 3: duales Studium
-ao4: (sformberu): 4: berufsbegleitendes Studium
-ao5: (sformsons): 5: Anderes, und zwar: [(sformsonso) offene Angabe, 50 Zeichen]
+ao1: (sformpraes): Präsenzstudium (im Gegensatz zu Fernstudium)
+ao2: (sformfern): Fernstudium
+ao3: (sformdua): duales Studium
+ao4: (sformberu): berufsbegleitendes Studium
+ao5: (sformgast): Gasthörerschaft
+ao6: (sformsons): Anderes, und zwar: [(sformsonso), offene Angabe, 60 Zeichen]
 
 mv:
 
@@ -1996,6 +2031,61 @@ tr: GOTO D2_3 if mastersplit=1, 2, 5, 6, 7, 8, 11, 12, 14
 
 hi:
 
+\--------------------------------
+
+D1_9 
+==
+
+tc:
+
+vn: sartzeit
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Betreiben Sie Ihr Studium in Vollzeit oder Teilzeit?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: Vollzeit
+
+ao2: 2: Teilzeit
+
+ao3: 3: Vollzeitstudiengang mit individueller Teilzeitregelung
+
+ao4: 4: Vollzeitstudiengang inoffiziell als Teilzeitstudium
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO D1_7 IF ssemhs <= 6
+    GOTO D1_7 IF ssemhs = k. A. 
+    GOTO D2_6 IF (ssemhs >= 7) AND (mastersplit = 1, 2, 7, 8, 14)
+    GOTO A_44 IF (ssemhs >= 7) AND (mastersplit = 3, 4, 9, 10)
+       
+
+hi:
+
 \------------------------------------------------------------
 
 A_28
@@ -2005,25 +2095,25 @@ tc:
 
 vn: spernot; spernoto
 
-qt: offene Frage, Einfachauswahl
+qt: offene Angabe, Einfachauswahl
 
 hl:
 
 in:
 
-q: Wie wurden Ihre bisherigen Studienleistungen in Ihrem aktuellen Studium bewertet?
+q: Mit welcher Note wurden Ihre bisherigen Studienleistungen bewertet?
 
-is: Für den Fall, dass Sie keine Noten erhalten, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in Noten um.
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
 st:
 
-ao: Prefix: Durchschnittsnote (z. B. 2,5): [(spernoto) offene Angabe, 3 Zeichen, NUMBER]
+ao1: (spernot): Präfix: Durchschnittsnote (z. B. 2,5): [(spernoto): Number, 3-stellig: 1,0 TO 5,0]
 
-ao1: (spernot): -11: Ich habe bisher keine Noten erhalten. / In meinem Studium gibt es keine Noten.
+ao2: (spernot): -11: Ich habe bisher keine Noten erhalten.
 
-ao2: (spernot): -12: weiß ich nicht
+mv:
 
 ka:
 
@@ -2031,17 +2121,17 @@ vc:
 
 av: 
 
-kh: 
+kh: Bitte geben Sie Ihre aktuelle Durchschnittsnote an (1,0 bis 5,0)
 
 fv:
 
 hv:
 
-fo: Bitte die beiden geschlossenen Antwortoptionen/-items neben der Notenabfrage in einer Zeile positionieren.
+fo: Bitte offene Angabe und Einfachauswahl untereinander, linksbündig positionieren
 
 tr: GOTO A_29
 
-hi:
+hi: Offene Angabe bitte als NUMBER mit einer Dezimalstelle (1,0 bis 5,0), programmieren.
 
 \------------------------------------------------------------
 
@@ -2052,7 +2142,7 @@ tc:
 
 vn: sperleisrel
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2092,55 +2182,6 @@ hv:
 
 fo:
 
-tr: GOTO A_30
-
-hi:
-
-\------------------------------------------------------------
-
-A_30
-=========
-
-tc:
-
-vn: sperleiszufr_2
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Wie zufrieden sind Sie insgesamt mit den bisher von Ihnen erbrachten Studienleistungen?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: sehr unzufrieden
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr zufrieden
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
 tr: GOTO A_31
 
 hi:
@@ -2154,7 +2195,7 @@ tc:
 
 vn: studerfolg; masterfolg; promoerfolg
 
-qt: Mehrfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -2172,7 +2213,7 @@ it3: (promoerfolg): … eine Promotion erfolgreich abzuschließen?
 
 st:
 
-ao1: 1: sehr unwahrscheinlich
+ao1: 1: überhaupt nicht
 
 ao2: 2:
 
@@ -2180,9 +2221,13 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr wahrscheinlich
+ao5: 5: vollkommen
 
-vc:
+mv:
+
+ka:
+
+vc: SHOW it2 IF sabsano = 1
 
 av:
 
@@ -2207,7 +2252,7 @@ tc:
 
 vn: deltberuv; deltberum
 
-qt: Comparison
+qt: Einfachauswahl mit vertikalen ao im Spaltenformat/Comparison
 
 hl:
 
@@ -2237,9 +2282,7 @@ ao6: 2: anderer beruflicher Abschluss
 
 ao7: 1: hat keinen beruflichen Abschluss
 
-ao8: -12: weiß ich nicht
-
-mv: ao8
+mv: -12: weiß ich nicht
 
 ka:
 
@@ -2253,7 +2296,9 @@ fv:
 
 hv:
 
-fo:
+fo1: mv/"weiß ich nicht" bitte etwas absetzen.
+
+fo2: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
 
 tr: GOTO A_33 if mastersplit=1, 2, 3, 4, 5, 6, 14
     GOTO B2_1 if mastersplit=7, 8, 9, 10, 11, 12, 13
@@ -2267,49 +2312,37 @@ A_33
 
 tc:
 
-vn: deltjobv (deltjobvo1; deltjobvo2; deltjobv1; deltjobv2); deltjobm (deltjobmo1; deltjobmo2; deltjobm1; deltjobm2)
+vn: deltjobv (deltjobvo1; deltjobv1; deltjobv2); deltjobm (deltjobmo1; ddeltjobm1; deltjobm2)
 
-qt: Comparison, Mehrfachauswahl, offene Angaben
+qt: offene Angaben; Einfachauswahl;
 
 hl:
 
 in:
 
-q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus? Bitte erläutern Sie die Tätigkeit Ihres Vaters/Ihrer Mutter kurz.
+q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus?
 
-is: Falls Ihr Vater oder Ihre Mutter zurzeit nicht erwerbstätig sind (z. B. Rentner(in), Pensionär(in), Hausfrau/-mann oder arbeitssuchend), geben Sie bitte die jeweils zuletzt ausgeübte Tätigkeit an.
+is: Falls Ihre Eltern zurzeit nicht erwerbstätig sind, geben Sie bitte den jeweils zuletzt ausgeübten Beruf an.
 
-Bitte tragen Sie die genaue Bezeichnung und Tätigkeit inklusive Führungsaufgaben ein. Zum Beispiel:
+Bitte tragen Sie die Berufsbezeichnung möglichst genau ein, z. B.:
+Bankkaufmann/-frau (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter), Maschinenbauingenieur\*in (nicht: Ingenieur\*in).
 
-\- Bankkaufmann/-frau (nicht: Angestellte/r) 
 
-Beratung, Verkauf von Finanzprodukten, Abteilungsleitung
+it1: Vater
 
-\- Zollbeamte(r) im gehobenen Dienst (nicht: Beamter/in)
+it2: Mutter
 
-Zollfahndung, Einsatzplanung
+ao1: (deltjobvo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
-\- Maschinenbauingenieur(in) (nicht: Ingenieur/in)
+ao2: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
 
-Konstruktion, Optimierungsprozesse, Produktionsleitung
+ao3: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
 
-it1: (deltjobvo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+ao4: (deltjobmo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
 
-it2: (deltjobvo2): Prefix: Tätigkeitsbeschreibung: [offene Angabe; 100 Zeichen]
+ao5: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
 
-it3: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
-
-it4: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
-
-it5: (deltjobmo1): Prefix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
-
-it6: (deltjobmo2): Prefix: Tätigkeitsbeschreibung: [offene Angabe; 100 Zeichen]
-
-it7: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
-
-it8: (deltjobm2): -12: weiß ich nicht [Exklusivkategorie]
-
-ao: 
+ao6: (deltjobm2): -12: weiß ich nicht [Exklusivkategorie]
 
 ka:
 
@@ -2323,21 +2356,20 @@ fv:
 
 hv:
 
-fo: „Vater“ und „Mutter“ bitte in einer extra Zeile positionieren, die mittig über den jeweils darunterliegenden Antwortzeilen liegt (siehe Darstellung hierunter):
+fo: „Vater“ und „Mutter“ bitte jeweils in einer extra Zeile positionieren, die linksbündig über den jeweils darunterliegenden Antwortzeilen liegt (siehe Darstellung hierunter):
 
-Vater Mutter
+Vater
+Berufsbezeichnung: Eingabefeld
+nie berufstätig gewesen-Kästchen
+weiß ich nicht-Kästchen
 
-Berufsbezeichnung: Eingabefeld Eingabefeld
+Mutter
+Berufsbezeichnung: Eingabefeld
+nie berufstätig gewesen-Kästchen
+weiß ich nicht-Kästchen
 
-Tätigkeitsbeschreibung: Eingabefeld Eingabefeld
 
-weiß ich nicht Kästchen
-
-o Bei Angabe von „weiß ich nicht“, sollen die Textfelder in der jeweiligen
-Spalte bitte nicht ausgefüllt werden können und umgekehrt (Exklusivkategorie).
-
-tr: GOTO B2_2a if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split==1 (50%)
-    GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13 AND h_split==2 (50%)
+tr: GOTO B2_2b if mastersplit=7, 8, 9, 10, 11, 12, 13
     GOTO B1_6 if mastersplit=1, 2, 3, 4, 5, 6
     GOTO A34 if mastersplit=14
 
@@ -2352,7 +2384,7 @@ tc:
 
 vn: deltgebv; deltgebm
 
-qt: Comparison
+qt: Einfachauswahl mit vertikalen ao im Spaltenformat/Comparison
 
 hl:
 
@@ -2372,9 +2404,7 @@ ao1: 1: in Deutschland
 
 ao2: 2: in einem anderen Land
 
-ao3: 3: weiß ich nicht
-
-mv: ao3
+mv:
 
 ka:
 
@@ -2388,7 +2418,7 @@ fv:
 
 hv:
 
-fo:
+fo: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
 
 tr: <zofar:transition target="A_35" condition="zofar.asNumber(deltgebv)==2 or zofar.asNumber(deltgebm)==2"/>
     <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber(deltgebv)==1 and zofar.asNumber(deltgebm)==1)"/>
@@ -2421,7 +2451,7 @@ tc: IF deltgebv=2
 
 vn: deltgkov
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2429,7 +2459,7 @@ in:
 
 q: In welchem Land wurde Ihr Vater geboren?
 
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
@@ -2474,7 +2504,7 @@ tc: IF deltgebm=2
 
 vn: deltgkom
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2482,7 +2512,7 @@ in:
 
 q: In welchem Land wurde Ihre Mutter geboren?
 
-is: Bitte wählen Sie hier zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus.
 
 it:
 
@@ -2512,7 +2542,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A35) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen unterhalb der vorhergehenden Frage platzieren.
 
 tr: GOTO A_36
 
@@ -2525,54 +2555,9 @@ A_36
 
 tc:
 
-vn: deltgstav
+vn: deltgstav; deltgstavo
 
-qt: Einfachauswahl mit Dropdown
-
-hl:
-
-in:
-
-q: Bitte geben Sie hier das Geburtsland Ihres Vaters an.
-
-is:
-
-it:
-
-st:
-
-ao: [Dropdown; Staatenliste_DBI_Eltern]
-
-mv:
-
-ka:
-
-vc:  visible="(!zofar.isMissing(deltgkov) or zofar.asNumber(deltkov)!=0) and zofar.asNumber(deltgebv)==2"
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-A_36
-=====
-
-tc:
-
-vn: deltgstavo
-
-qt: offene Frage
+qt: Dropdown; offene Angabe
 
 hl:
 
@@ -2586,13 +2571,15 @@ it:
 
 st:
 
-ao1: Prefix: Geburtsland des Vaters: [offene Angabe, 50 Zeichen]
+ao1: (deltgstav): [infield = Geburtsland Vater; Staatenliste_DBI] (Dropdown)
+
+ao2: (deltgstavo): Präfix: An dieser Stelle können Sie das Geburtsland auch offen angeben: [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc:  visible="(zofar.isMissing(deltgkov) or zofar.asNumber(deltgkov)==0) and zofar.asNumber(deltgebv)==2"
+vc:
 
 av:
 
@@ -2606,7 +2593,7 @@ fo:
 
 tr:
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_35 (deltgkov) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -2615,9 +2602,9 @@ A_36
 
 tc:
 
-vn: deltgstam
+vn: deltgstam; deltgstamo
 
-qt: Einfachauswahl mit Dropdown
+qt: Dropdown; offene Angabe
 
 hl:
 
@@ -2631,13 +2618,15 @@ it:
 
 st:
 
-ao: [Dropdown; Staatenliste_DBI_Eltern]
+ao1: (deltgstam): [infield = Geburtsland Mutter; Staatenliste_DBI] (Dropdown)
+
+ao2: (deltgstamo): Präfix: An dieser Stelle können Sie das Geburtsland auch offen angeben: [offene Angabe; 60 Zeichen]
 
 mv:
 
 ka:
 
-vc: visible="(!zofar.isMissing(deltgkom) or zofar.asNumber(deltgkom)!=0) and zofar.asNumber(deltgebm)==2"
+vc: 
 
 av:
 
@@ -2647,56 +2636,11 @@ fv:
 
 hv:
 
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-A_36
-=====
-
-tc:
-
-vn: deltgstamo
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q: Bitte geben Sie hier das Geburtsland Ihrer Mutter an.
-
-is:
-
-it:
-
-st:
-
-ao1: Prefix: Geburtsland der Mutter:: [offene Angabe, 50 Zeichen]
-
-mv:
-
-ka:
-
-vc: visible="(zofar.isMissing(deltgkom) or zofar.asNumber(deltgkom)==0) and zofar.asNumber(deltgebm)==2"
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
+fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A36) darstellen. Fragetext und ao der vorliegenden Frage bitte zusammen unterhalb der vorhergehenden Frage platzieren.
 
 tr: GOTO C3_2
 
-hi:
+hi: Dropdown bitte nach Angabe des Kontinents in A_35 (deltgkom) vorselektieren.
 
 \------------------------------------------------------------
 
@@ -2707,21 +2651,21 @@ tc:
 
 vn: vsbplz; vsbort
 
-qt: offene Frage
+qt: offene Angabe
 
 hl:
 
 in:
 
-q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben? Bitte tragen Sie die fünfstellige Postleitzahl ein.
+q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung (HZB) erhalten haben?
 
 it:
 
 st:
 
-ao1: (vsbplz): Präfix: Postleitzahl: [offene Angabe, NUMBER, 5-stellig]
+ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield = Postleitzahl; Number, 5-stellig: 01000 TO 99999] (offene Angabe)
 
-ao2: (vsbort): : [offene Angabe, 25-stellig]
+ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield = Ort; 60 Zeichen] (offene Angabe)
 
 mv:
 
@@ -2729,7 +2673,7 @@ ka:
 
 vc:
 
-av: number, 5-stellig: 01000 TO 99999
+av: 
 
 kh:
 
@@ -2737,69 +2681,22 @@ fv:
 
 hv:
 
-fo: Softreminder: Bitte den Text „Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an:“ erst dann einblenden,
-wenn die PLZ nicht angegeben wurde.
+fo: Bitte jeweils zwischen den Präfixen und den Feldern für die offenen Angaben einen Zeilenumbruch einfügen (Präfixe also über den Feldern positionieren). Alles linksbündig untereinander anordnen.
 
 tr: GOTO A_41
 
-hi:
+hi: Besteht die Möglichkeit, dass bei PLZ mit einer 0 vorne, diese nicht gelöscht wird?
 
 \------------------------------------------------------------
 
-A_37b
-==========
-
-tc:
-
-vn: vsbplzb; vsbortb
-
-qt: offene Frage
-
-hl:
-
-in:
-
-q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung erhalten haben?
-
-is: Bitte tragen Sie die fünfstellige Postleitzahl und ggf. den Wohnort ein.
-
-it:
-
-st:
-
-ao1: (vsbplzb): Präfix: Postleitzahl: [(vsbplzo) offene Angabe, NUMBER, 5-stellig]
-
-ao2: (vsbortb): : [offene Angabe, 25-stellig]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO A_41
-
-hi:
-
-\------------------------------------------------------------
 A_38a
 ==========
 
 tc:
 
-vn: intbild1 intbild2 intbild3 intbild4 intbild5 intbild6 intbild7
+vn: intbild (intbild1; intbild2; intbild3; intbild4; intbild5; intbild6; intbild7)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2817,15 +2714,15 @@ ao1: (intbild1): Promotion
 
 ao2: (intbild2): Hochschulstudium mit zweitem Abschluss (z. B. Master)
 
-ao3. (intbild3): Hochschulstudium mit erstem Abschluss (z. B. Bachelor)
+ao3: (intbild3): Hochschulstudium mit erstem Abschluss (z. B. Bachelor)
 
 ao4: (intbild4): begonnenes Hochschulstudium ohne Abschluss
 
-a05: (intbild5): Schulabschluss, der zum Studium berechtigt"
+a05: (intbild5): Schulabschluss, der zum Studium berechtigt
 
 ao6: (intbild6): Schulabschluss ohne Studienberechtigung
 
-ao7: (intbild7): kein Schulabschluss
+ao7: (intbild7): keinen Schulabschluss
 
 mv:
 
@@ -2850,14 +2747,15 @@ tr: <zofar:transition target="A_38b" condition="(intbild1.value or intbild2.valu
 hi:
 
 \------------------------------------------------------------
+
 A_38b
 ==========
 
 tc:
 
-vn: ankbild1 ankbild2 ankbild3 ankbild4 ankbild5
+vn: ankbild (ankbild1; ankbild2; ankbild3; ankbild4; ankbild5)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -2885,17 +2783,17 @@ ao2: 2: teilweise anerkannt
 
 ao3: 3: nicht anerkannt
 
-ao6: -13: weiß ich nicht
+mv: -12: weiß ich nicht
 
-mv: ao6
 
 ka:
 
-vc: SHOW it1 if intbild1>0
-      SHOW it2 if intbild2>0
-      SHOW it3 if intbild3>0
-      SHOW it4 if intbild4>0
-      SHOW it5 if intbild5>0
+vc1: SHOW it1 if intbild1 > 0
+vc2: SHOW it2 if intbild2 > 0
+vc3: SHOW it3 if intbild3 > 0
+vc4: SHOW it4 if intbild4 > 0
+vc5: SHOW it5 if intbild5 > 0
+
 av:
 
 kh:
@@ -2904,21 +2802,22 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
 tr: GOTO A_38c
 
 hi:
 
 \------------------------------------------------------------
+
 A_38c
 ==========
 
 tc:
 
-vn: intvors1 intvors2 intvors3 intvors4 intvors5 intvors5o intvors6
+vn: intvors (intvors1; intvors2; intvors3; intvors4; intvors5; intvors5o; intvors6)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit vertikalen ao
 
 hl:
 
@@ -2938,11 +2837,11 @@ ao2: (intvors2): Nachweis deutscher Sprachkenntnisse (z. B. TestDaF, DSH)
 
 ao3: (intvors3): Nachweis englischer Sprachkenntnisse (z. B. Cambridge FCE, TOEFL, IELTS)
 
-ao4: (intvors4): fachliche Eignungsprüfung (z. B. Kunst, Musik, Sport)
+ao4: (intvors4): fachliche Eignungsprüfung (z. B. TestAS, Medizin, Kunst, Musik, Sport)
 
 ao5: (intvors5): Etwas anderes, und zwar: [(intvors5o), offene Angabe, 250 Zeichen]
 
-ao6: (intvors6): keine
+ao6: (intvors6): keine [Exklusivkategorie]
 
 mv:
 
@@ -2958,7 +2857,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao6 als Exklusivkategorie bitte etwas absetzen.
 
 tr: 
 GOTO D1_2 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
@@ -3001,7 +2900,7 @@ ao5: 5: Hauptschulabschluss
 
 ao6: 6: anderer Abschluss
 
-a07: 7: kein Abschluss
+a07: 7: keinen Abschluss
 
 mv:
 
@@ -3030,17 +2929,15 @@ A_39
 
 tc:
 
-vn: vsbstyp (vsbstyp1-vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15); vsbtypob
+vn: vsbstyp (vsbstyp1; vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
 
-qt: Mehrfachauswahl mit offener Abfrage
+qt: Mehrfachauswahl mit offener Angabe
 
 hl:
 
 in:
 
-q: Die Berechtigung zum Studium kann in Deutschland auf unterschiedlichen Wegen erfolgen: Zum einen (klassisch) über ein Schulzeugnis, zum anderen aber auch über die Anerkennung beruflicher Qualifikationen oder besonderer Eignungen.
-
-Auf welchem Weg erfolgte Ihre Zulassung zu Ihrem ersten Studium?
+q: Auf welchem Weg erfolgte die Zulassung zu Ihrem ersten Studium (über den schulischen Weg, eine berufliche Qualifikation oder besondere Eignung)?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -3064,11 +2961,13 @@ ao7: (vsbtyp7): Berufsoberschule
 
 ao8: (vsbtyp8): Fachoberschule
 
-ao9: (vsbtyp9): andere berufsbildende Schule (z. B. Fachschule, Fachakademie, Berufskolleg u. a.) [Exklusivkategorie]
+ao9: (vsbtyp9): andere berufsbildende Schule (Fachschule, Fachakademie, Berufskolleg)
 
-ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z. B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
+
+ao10: (vsbtyp10): berufliche Aufstiegsfortbildung als Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in
 
 ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
+
 
 ao12: (vsbtyp12): Eignungsprüfung (z. B. Kunst, Musik, Sport)
 
@@ -3076,15 +2975,15 @@ ao13: (vsbtyp13): Begabtenprüfung
 
 ao14: (vsbtyp14): Mediziner\*innen-Test (TMS)
 
-ao15: (vsbtyp15): auf einem anderen Weg, und zwar: [(vsbtypob); offen Angabe, 30 Zeichen]
+ao15: (vsbtyp15): Auf einem anderen Weg, und zwar: [(vsbtyp15o); offen Angabe, 80 Zeichen]
 
 mv:
 
-ka1 (ao1 TO ao9) Schulischer Weg:
+ka1 (ao1 TO ao9) Schulischer Weg
 
-ka2(ao10 TO ao11) Berufliche Qualifikation:
+ka2 (ao10 TO ao11) Berufliche Qualifikation
 
-ka3(ao12 TO ao15) Eignungsprüfungen:
+ka3 (ao12 TO ao15o) Eignungsprüfungen
 
 vc:
 
@@ -3096,7 +2995,9 @@ fv:
 
 hv:
 
-fo: Bitte die Beispiele in Klammern in etwas kleinerer Schriftgröße (2pt kleiner) umsetzen.
+fo1: Bitte die Beispiele in Klammern in etwas kleinerer Schriftgröße (2pt kleiner) umsetzen.
+
+fo2: "Schulischer Weg" linksbündig über ao1; "Berufliche Qualifikation" linksbündig über ao10; "Eignungsprüfungen" linksbündig über ao12
 
 tr: GOTO D1_1 if (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14) AND (vsbtyp1=1 OR vsbtyp2=1 OR vsbtyp3=1 OR vsbtyp4=1 OR vsbtyp5=1 OR vsbtyp6=1 OR vsbtyp7=1 OR vsbtyp8=1 OR vsbtyp9=1)
     GOTO A_40 IF ELSE
@@ -3110,76 +3011,41 @@ A_40
 
 tc:
 
-vn: vsbnoteo; vsbnote
+vn: vsbnoteo; vsbnotej; vsbnote
 
-qt: Einfachauswahl mit offener Abfrage
+qt: offene Angaben; Einfachauswahl
 
 hl:
 
 in:
 
-q: Welche Abschlussnote hatten Sie in dem Zeugnis, das Sie zur Aufnahme eines Studiums berechtigt?
+q: Wann und mit welcher Note haben Sie ihre Hochschulzugangsberechtigung erlangt?
 
-is: Punktzahl bitte in Note umrechnen
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
 st:
 
-ao1: 3: Präfix: Durchschnittsnote (z. B. 2,5): [(vsbnoteo); offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
+ao1: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
-ao2: -11: Ich habe keine Note erhalten. 
+ao2: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
 
-ao3: -12: weiß ich nicht 
+ao3: (vsbnote): Ich habe keine Note erhalten.
+
+mv:
 
 ka:
 
 vc:
 
-av: 
+av1: (vsbnoteo): NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
 
-kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+av2: (vsbnotej): NUMBER, 4-stellig (1950 bis 2020)
 
-fv:
+kh1: (vsbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
-hv:
-
-fo:
-
-tr: 
-
-hi:
-
-\------------------------------------------------------------
-
-A_40
-========
-
-tc:
-
-vn: vsbzpj
-
-qt: Einfachauswahl mit Dropdown
-
-hl:
-
-in:
-
-q: In welchem Jahr haben Sie die Hochschulzugangsberechtigung erlangt?
-
-is: Zeitpunkt der Zeugnisübergabe
-
-it: Jahr: [Dropdown, Jahresliste: Jahr, 2019 ... 1999 und früher]
-
-st:
-
-ao:
-
-vc:
-
-av:
-
-kh:
+kh2: (vsbnotej): Bitte geben Sie die vierstellige Jahreszahl an.
 
 fv:
 
@@ -3187,18 +3053,18 @@ hv:
 
 fo:
 
-tr:
-GOTO A_37a IF h_split=1
-GOTO A_37b IF h_split=2
+tr: GOTO A_37a 
 
-hi:
+hi1: vsbnoteo bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
+
+hi2: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
 
 \------------------------------------------------------------
 
 A_41
 ===========
 
-tc: 
+tc:
 
 vn: vausbja
 
@@ -3264,7 +3130,7 @@ q1: Sind Sie während der Vorlesungszeit erwerbstätig?
 
 q2: Sind Sie während der Vorlesungszeit neben Ihrem dualen Studium erwerbstätig?
 
-is: 
+is: Mit „Erwerbstätigkeit(en)“ sind sämtliche Tätigkeiten gemeint, mit denen Sie im aktuellen Semester Geld verdienen.
 
 it:
 
@@ -3306,91 +3172,6 @@ hi:
 
 \------------------------------------------------------------
 
-A_43
-=========
-
-tc: if eaktsens=2 OR eaktsens=3 OR eaktsens=4
-
-vn: efachnah1, efachnah2, efachnah3
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q1: In welchem Maße hat ihre Erwerbstätigkeit einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q2: In welchem Maße hat Ihre Erwerbstätigkeit, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q3: In welchem Maße haben Ihre Erwerbstätigkeiten einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q4: In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q5: In welchem Maße haben Ihre Erwerbstätigkeiten einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-q6: In welchem Maße haben Ihre Erwerbstätigkeiten, die Sie neben Ihrer Tätigkeit im Ausbildungsbetrieb ausüben, einen fachlichen Bezug zu Ihrem aktuellen Studium?
-
-is:
-
-it: (efachnah1): Tätigkeit A 
-
-it: (efachnah2): Tätigkeit B 
-
-it: (efachnah3): Tätigkeit C 
-
-st:
-
-ao1: 1: in gar keinem Maße
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc1: SHOW q1 IF eaktsens=2 AND sformdua!=1
-
-vc2: SHOW q2 IF eaktsens=2 AND sformdua=1 
-
-vc3: SHOW q3 IF eaktsens=3 AND sformdua!=1
-
-vc4: SHOW q4 IF eaktsens=3 AND sformdua=1 
-
-vc5: SHOW q5 IF eaktsens=4 AND sformdua!=1
-
-vc6: SHOW q6 IF eaktsens=4 AND sformdua=1 
-
-vc7: SHOW it1 IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
-
-vc8: SHOW it2 IF eaktsens=3 OR eaktsens=4 
-
-vc9: SHOW it3 IF eaktsens=4 
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: 
-
-tr: GOTO D3_19 IF mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
-    GOTO D1_9 IF mastersplit=1, 2, 7, 8
-    GOTO A44 IF mastersplit=13
-    
-hi:
-
-\------------------------------------------------------------
-
 A_44
 =========
 
@@ -3414,7 +3195,9 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja
+ao2: 2: ja, an meiner aktuellen Hochschule
+
+ao3: 3: ja, an einer anderen Hochschule 
 
 mv:
 
@@ -3434,7 +3217,7 @@ fo:
 
 tr: GOTO A_49a IF sabsja=1 AND sabser=1
     GOTO A_49b IF sabsja=1 AND sabser!=1
-    GOTO A_45 IF sabsja=2
+    GOTO A_45 IF sabsja=2 OR sabsja=3
     GOTO A_49a IF sabsja=MISSING AND sabser=1
     GOTO A_49b IF sabsja=MISSING AND sabser!=1
     
@@ -3445,11 +3228,11 @@ hi:
 A_45
 ===========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
-vn: sabszp, sabszp2
+vn: sabszp; sabszp2
 
-qt: Einfachauswahl mit Dropdown x2
+qt: Einfachauswahl mit Dropdown
 
 hl:
 
@@ -3459,15 +3242,15 @@ q: Wann haben Sie diesen Abschluss erworben?
 
 is:
 
-it1: (sabszp): [Dropdown; infield = Monat; Januar - Februar - März - ... - Dezember]
+it1: (sabszp): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-it2: (sabszp2): [Dropdown; infield = Jahr; 2019 - 2018 - 2017 - ... - 2009 und früher]
+it2: (sabszp2): [infield = Jahr; 2020 - 2019 - 2018 - ... - 2009 und früher] (Dropdown)
 
 st:
 
 ao: 
 
-ao0: (sabszp): 0: Monat
+aox: (sabszp): Monat
 
 ao1: (sabszp): 1: Januar
 
@@ -3494,29 +3277,31 @@ ao11: (sabszp): 11: November
 ao12: (sabszp): 12: Dezember
 
 
-ao0: (sabszp2): 0: Jahr
+aox: (sabszp2): Jahr
 
-ao1: (sabszp2): 1: 2019
+ao1: (sabszp2): 1: 2020
 
-ao2: (sabszp2): 2: 2018
+ao2: (sabszp2): 2: 2019
 
-ao3: (sabszp2): 3: 2017
+ao3: (sabszp2): 3: 2018
 
-ao4: (sabszp2): 4: 2016
+ao4: (sabszp2): 4: 2017
 
-ao5: (sabszp2): 5: 2015
+ao5: (sabszp2): 5: 2016
 
-ao6: (sabszp2): 6: 2014
+ao6: (sabszp2): 6: 2015
 
-ao7: (sabszp2): 7: 2013
+ao7: (sabszp2): 7: 2014
 
-ao8: (sabszp2): 8: 2012
+ao8: (sabszp2): 8: 2013
 
-ao9: (sabszp2): 9: 2011
+ao9: (sabszp2): 9: 2012
 
-ao10: (sabszp2): 10: 2010
+ao10: (sabszp2): 10: 2011
 
-ao11: (sabszp2): 11: 2009 und früher
+ao11: (sabszp2): 11: 2010
+
+ao12: (sabszp2): 12: 2009 und früher
 
 mv:
 
@@ -3532,7 +3317,7 @@ fv:
 
 hv:
 
-fo:
+fo: Dropdowns bitte nebeneinander programmieren.
 
 tr: GOTO A_46
 
@@ -3543,7 +3328,7 @@ hi:
 A_46
 =========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
 vn: sabser
 
@@ -3555,7 +3340,7 @@ in:
 
 q: Welchen Abschluss haben Sie bereits erworben?
 
-is:
+is: Bei mehreren Hochschulabschlüssen bitte den zuletzt erworbenen angeben.
 
 it:
 
@@ -3602,7 +3387,7 @@ hi:
 A_47
 ========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
 vn: sabsla
 
@@ -3614,7 +3399,7 @@ in:
 
 q: Handelt es sich hierbei um ein Lehramtsstudium?
 
-is: Bei mehreren Hochschulabschlüssen bitte den letzten angeben.
+is:
 
 it:
 
@@ -3622,19 +3407,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, und zwar Lehramt an Grundschulen (Primarstufe)
+ao2: 2: Lehramt an Grundschulen (Primarstufe)
 
-ao3: 3: ja, und zwar Lehramt an Haupt-, Real- und Mittelschulen (Sekundarstufe I)
+ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
-ao4: 4: ja, und zwar Lehramt an Gymnasien (Sekundarstufe II)
+ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: ja, und zwar Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: ja, und zwar Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: Lehramt an Förderschulen/Sonderpädagogik
 
 mv:
 
-ka:
+ka: (ao2 TO ao6): Ja, und zwar:
 
 vc:
 
@@ -3646,7 +3431,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 tr: GOTO A_48
 
@@ -3657,11 +3442,11 @@ hi:
 A_48
 =========
 
-tc: sabsja==2
+tc: sabsja=2 OR sbsja=3
 
-vn: sabsernot, sabsernoto
+vn: sabsernot
 
-qt: Einfachauswahl mit offene Angabe
+qt: offene Angabe
 
 hl:
 
@@ -3669,17 +3454,13 @@ in:
 
 q: Welche Abschlussnote haben Sie in Ihrem vorherigen Studium erhalten?
 
-is: Für den Fall, dass Sie keine Noten erhalten haben, sondern Ihre Studienleistungen mit Punkten, Prozentangaben o. Ä. bewertet werden, rechnen Sie diese bitte in eine Abschlussnote um.
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
 st:
 
-ao1 (sabsernot): 1: Prefix: Abschlussnote (z. B. 2,5): [(sabsernoto); offene Angabe: 3 Zeichen mit einer Dezimalstelle]
-
-ao2 (sabsernot): -11: Ich habe keine Note erhalten. / In meinem vorigen Studium gab es keine Noten.
-
-ao3 (sabsernot): -12: weiß ich nicht
+ao: (sabsernot): Präfix: Abschlussnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
 mv:
 
@@ -3687,9 +3468,9 @@ ka:
 
 vc:
 
-av: 
+av: NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
 
-kh: Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh: Bitte geben Sie Ihre Abschlussnote an (1,0 bis 4,0).
 
 fv:
 
@@ -3701,7 +3482,7 @@ tr: GOTO D1_10a IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
     GOTO A_49a IF (mastersplit=5, 6, 11, 12, 13) AND (sabser==1)
     GOTO A_49b IF (mastersplit=5, 6, 11, 12, 13) AND (sabser!=1)
 
-hi:
+hi: Bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
 
 \------------------------------------------------------------
 
@@ -3712,7 +3493,7 @@ tc:
 
 vn: mastplan; promoplan
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -3742,7 +3523,7 @@ mv:
 
 ka:
 
-vc:
+vc: SHOW it1 (mastplan) IF sabsano==1 
 
 av:
 
@@ -3768,71 +3549,6 @@ tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3,
      
 hi:
 
-
-\------------------------------------------------------------
-
-A_49b
-=========
-
-tc:
-
-vn: promoplan
-
-qt: Einfachauswahl mit Horizontalen ao
-
-hl:
-
-in:
-
-q: Wie wahrscheinlich ist es, dass Sie...
-
-is:
-
-it:
-
-st: … eine Promotion aufnehmen?
-
-ao1: 1: sehr unwahrscheinlich
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr wahrscheinlich
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:  GOTO KSM-anf01 IF (mastersplit=1, 3, 5) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-anf02 IF (mastersplit=7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-anf01 IF (mastersplit=2, 4, 6, 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-anf02 IF (mastersplit=8, 10, 12) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=2) AND (sabsan=1, 3, 4, 6, 7, 8) AND ssemfs<=5
-     GOTO KSM-ma01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND sabsan=1 AND ssemfs>5
-     GOTO KSM-ma01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND sabsan=1 AND ssemfs>5
-     GOTO KSM-phd01 IF (mastersplit=1, 3, 5, 7, 9, 11, 13) AND zusatzsplit=2 AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
-     GOTO KSM-phd01 IF (mastersplit=2, 4, 6, 8, 10, 12 14) AND zusatzsplit=2 AND ((vsbdeba=1 AND dnatausl=0) OR imausl=1) AND (sabsan=2, 3, 4, 6, 7, 8) AND ssemfs>5
-     GOTO A_50 IF zusatzsplit=1 OR zusatzsplit=3 OR zusatzsplit=4
-     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=1 AND imausl=1)
-     GOTO A_50 IF (mastersplit=2, 4, 6, 8, 10, 12, 14) AND zusatzsplit=2 AND (vsbdeba=MISSING OR imausl=MISSING)
-     
-
-hi:
-
 \------------------------------------------------------------
 
 A_50
@@ -3842,7 +3558,7 @@ tc:
 
 vn: ssweja; saweja; shwja; ssuja
 
-qt: Einfachauswahl matrix
+qt: Einfachauswahl Dropdown
 
 hl:
 
@@ -3852,19 +3568,29 @@ q: Haben Sie seit Ihrer Erstimmatrikulation…
 
 is: Nicht gemeint sind Veränderungen bzw. Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
 
-it1: (ssweja): … das Studienfach gewechselt?
+it1: (ssweja): … das Studienfach gewechselt? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
-it2: (saweja): … den Abschluss gewechselt?
+it2: (saweja): … den Abschluss gewechselt? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
-it3: (shwja): … die Hochschule gewechselt?
+it3: (shwja): … die Hochschule gewechselt? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
-it4: (ssuja): … das Studium zwischenzeitlich unterbrochen?
+it4: (ssuja): … das Studium zwischenzeitlich unterbrochen? [infield = Anzahl; keinmal - einmal - ... - fünfmal] (Dropdown)
 
 st:
 
-ao1: 1: ja
+aox: Anzahl
 
-ao2: 2: nein
+ao1: (ssweja TO ssuja): 0: keinmal
+
+ao2: (ssweja TO ssuja): 1: einmal
+
+ao3: (ssweja TO ssuja): 2: zweimal
+
+ao4: (ssweja TO ssuja): 3: dreimal
+
+ao5: (ssweja TO ssuja): 4: viermal
+
+ao6: (ssweja TO ssuja): 5: fünfmal
 
 mv:
 
@@ -3882,75 +3608,12 @@ hv:
 
 fo:
 
-tr: GOTO D1_14 IF (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
-    GOTO A_51a if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1 AND h_split=1 (50%)) AND (mastersplit=5, 6, 11, 12, 13)
-    GOTO A_51b if (ssweja=1 OR saweja=1 OR shwja=1 OR ssuja=1 AND h_split=2 (50%)) AND (mastersplit=5, 6, 11, 12, 13)
-    GOTO A_51a if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2) AND (h_split=1 (50%))
-    GOTO A_51b if (ssweja=2 AND saweja=2 AND shwja=2 AND ssuja=2) AND (h_split=2 (50%))
-    GOTO A_51a if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=1 (50%))
-    GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.) AND (h_split=2 (50%))
+tr: GOTO D1_14 IF (ssweja>=1 OR saweja>=1 OR shwja>=1 OR ssuja>=1) AND (mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14)
+    GOTO A_51b if (ssweja>=1 OR saweja>=1 OR shwja>=1 OR ssuja>=1) AND (mastersplit=5, 6, 11, 12, 13)
+    GOTO A_51b if (ssweja=0 AND saweja=0 AND shwja=0 AND ssuja=0)
+    GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.)
 
-hi:
-
-\------------------------------------------------------------
-
-A_51a
-=========
-
-tc:
-
-vn: ssahswe; ssafawe; ssaunt; ssaaja
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Inwieweit denken Sie daran…
-
-is:
-
-it1: (ssahswe): … die Hochschule zu wechseln?
-
-it2: (ssafawe): … Ihr Studienfach zu wechseln?
-
-it3: (ssaunt): … Ihr aktuelles Studium zu unterbrechen?
-
-it4: (ssaaja): … das Studium ganz aufzugeben?
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr ernsthaft
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr: GOTO D1_20 IF mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14
-    GOTO A_52 IF mastersplit=5, 6, 11, 12, 13	
-
-hi:
+hi: Bitte für den Infield-Text nicht die "0" als Wert vergeben, da diese bereits für die erste Antwortoption "keinmal" vorgehalten ist.
 
 \------------------------------------------------------------
 
@@ -3959,15 +3622,15 @@ A_51b
 
 tc:
 
-vn: ssahswe; ssafawe; ssaunt; ssaaja
+vn: ssa (ssahswe; ssafawe; ssaunt; ssaaja)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie ernsthaft denken Sie zur Zeit daran …
+q: Inwieweit denken Sie zurzeit daran …
 
 is:
 
@@ -3989,7 +3652,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr ernsthaft
+ao5: 5: sehr häufig
 
 mv:
 
@@ -4027,16 +3690,15 @@ hl:
 
 in:
 
-q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters? 
+q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters hauptsächlich?
 
-is: Bitte beziehen Sie Ihre Angaben auf Ihren Hauptwohnsitz.
-Wenn Sie bei Ihren Eltern oder anderen Verwandten/Bekannten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
+is: Wenn Sie überwiegend bei Ihren Eltern oder Verwandten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
 
 it:
 
 st:
 
-ao1: 1: zur Miete (auch Wohngemeinschaft)
+ao1: 1: zur Miete (auch Wohngemeinschaft) 
 
 ao2: 2: zur Untermiete
 
@@ -4052,9 +3714,9 @@ ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind)
 
 mv:
 
-ka1: (ao1 TO ao3): in einer Wohnung, einem Zimmer oder einem Haus
+ka1: (ao1 TO ao3): In einer Wohnung, einem Zimmer oder einem Haus
 
-ka2: (ao4 TO ao7): im Studierendenwohnheim
+ka2: (ao4 TO ao7): Im Studierendenwohnheim
 
 vc: 
 
@@ -4066,10 +3728,13 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über ao1 "In einer Wohnung, einem Zimmer oder einem Haus" linksbündig positionieren.
 
-tr: GOTO D3_1 if mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
-    GOTO A_53 IF mastersplit=1, 2, 7, 8, 13	
+fo2: Bitte über ao4 "Im Studierendenwohnheim" linksbündig positionieren.
+
+tr: GOTO E1_0 IF wohnfo = 4 | 5 | 6 |7
+    GOTO D3_1 IF wohnfo = 1 | 2 | 3 | mis AND mastersplit=3, 4, 5, 6, 9, 10, 11, 12, 14
+    GOTO A_53 IF wohnfo = 1 | 2 | 3 | mis AND mastersplit=1, 2, 7, 8, 13	
 
   
 hi:
@@ -4081,39 +3746,39 @@ A_53
 
 tc:
 
-vn: wohnal; wohnwg; wohnel; wohnpar; wohnkin; wohnfam; wohnsons
+vn: wohn (wohnal; wohnwg; wohnel; wohnpar; wohnkin; wohnfam; wohnsons)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
 in:
 
-q1: Mit wem wohnen Sie während der Vorlesungszeit des aktuellen Semesters überwiegend zusammen?
+q1: Mit wem wohnen Sie während der Vorlesungszeit überwiegend zusammen?
 
-is: 
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
-st: Ich wohne …
+st:
 
-ao1: (wohnal): allein. [Exklusivkategorie]
+ao1: (wohnal): ... alleine. [Exklusivkategorie]
 
-ao2: (wohnwg): mit Mitbewohner\*innen in einer Wohngemeinschaft.
+ao2: (wohnwg): ... mit Mitbewohner\*innen in einer Wohngemeinschaft.
 
-ao3: (wohnel): bei meinen Eltern (bzw. einem Elternteil)
+ao3: (wohnel): ... bei/mit meinen Eltern (bzw. einem Elternteil)
 
-ao4: (wohnpar): mit meinem/meiner (Ehe-) Partner\*in.
+ao4: (wohnpar): ... mit meinem/meiner (Ehe-) Partner\*in.
 
-ao5: (wohnkin): mit meinem Kind/meinen Kindern.
+ao5: (wohnkin): ... mit meinem Kind/meinen Kindern.
 
-ao6: (wohnfam): mit anderen Familienangehörigen.
+ao6: (wohnfam): ... mit anderen Familienangehörigen.
 
-ao7: (wohnsons): mit anderen Personen.
+ao7: (wohnsons): ... mit anderen Personen.
 
 mv:
 
-ka:
+ka: (ao1 TO ao7):  Ich wohne …
 
 vc:
 
@@ -4125,7 +3790,7 @@ fv:
 
 hv:
 
-fo:
+fo: "Ich wohne …" bitte linksbündig über die erste ao positionieren.
 
 tr: GOTO D3_2 IF wohnal != 1 AND mastersplit = 3, 4, 5, 6, 9, 10, 11, 12, 14
     GOTO D3_4 IF wohnal = 1 AND mastersplit = 3, 4, 5, 6, 9, 10, 11, 12, 14
@@ -4200,9 +3865,9 @@ hl:
 
 in:
 
-q1: Beabsichtigen Sie künftig einen studienbezogenen Auslandsaufenthalt durchzuführen?
+q1: Haben Sie vor, künftig einen studienbezogenen Auslandsaufenthalt durchzuführen?
 
-q2: Beabsichtigen Sie einen weiteren studienbezogenen Auslandsaufenthalt durchzuführen?
+q2: Haben Sie vor, künftig einen weiteren studienbezogenen Auslandsaufenthalt durchzuführen?
 
 is:
 
@@ -4214,9 +3879,11 @@ ao1: 1: nein, kein Interesse
 
 ao2: 2: nein, sehe keine Realisierungschance
 
-ao3: 3: weiß ich noch nicht
+ao3: 3: ja, geplant
 
-ao4: 4: ja
+ao4: 4: ja, bereits in Vorbereitung
+
+ao5: 5: weiß ich noch nicht
 
 mv:
 
@@ -4224,7 +3891,7 @@ ka:
 
 vc: 
 
-SHOW q1 if ainfaus=1
+SHOW q1 if ainfaus=1 OR ainfaus=k.A
 
 SHOW q2 if ainfaus=2 OR ainfaus=3 OR ainfaus=4
 
@@ -4247,7 +3914,6 @@ tr: GOTO F1_1 if mastersplit=2, 4, 6, 8, 10, 12, 14
 
 hi:
 
-
 \------------------------------------------------------------
 
 A_56
@@ -4255,9 +3921,9 @@ A_56
 
 tc:
 
-vn: (zlvwo, zlvwo2) (zseswo, zseswo2) (zerwo, zerwo2) (zcarwo, zcarwo2)
+vn: zlv (zlvwo, zlvwo2); zses (zseswo, zseswo2); zer (zerwo, zerwo2); zcar (zcarwo, zcarwo2)
 
-qt: offene Frage Matrix
+qt: Comparison, offene Angaben-Matrix
 
 hl:
 
@@ -4265,29 +3931,43 @@ in:
 
 q: Wie viele Stunden wenden Sie in einer für Sie typischen Woche für folgende Aktivitäten auf?
 
-is: Bitte runden Sie Ihre Zeitangaben jeweils auf volle Zeitstunden.
+is: Bitte runden Sie Ihre Zeitangaben jeweils auf volle Zeitstunden und unterscheiden Sie bitte zwischen der Vorlesungszeit/Studienphase und der vorlesungsfreien Zeit/Praxisphase.
 
-it: Vorlesungszeit / Studienphase
+ita: während Vorlesungszeit/Studienphase
 
-it: vorlesungsfreien Zeit / Praxisphase
+itb: während vorlesungsfreier Zeit/Praxisphase
 
 st:
 
-ao1: (zlvwo, zlvwo2): Lehrveranstaltungen (Vorlesungen, Seminare, Übungen, Tutorien usw.)
+ao1a: (zlvwo): Lehrveranstaltungen [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao2: (zseswo, zseswo2): Selbststudium (Vor‐/Nachbereitung, Referate, Fachlektüre, Studien-/Haus-/Abschlussarbeiten, stud. Lerngruppen, Prüfungsvorbereitung usw.)
+ao1b: (zlvwo2): Lehrveranstaltungen [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao3: (zerwo, zerwo2): Erwerbstätigkeit (Nebenjob, Beruf, freiberufliche/selbstständige Tätigkeit usw.)
+ao2a: (zseswo): Selbststudium [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao4: (zcarwo, zcarwo2): Pflege- und Betreuungsarbeiten (Familienleben, Kinderbetreuung, Pflege Angehöriger usw.)
+ao2b: (zseswo2): Selbststudium [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao3a: (zerwo): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao3b: (zerwo2): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao4a: (zcarwo): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao4b: (zcarwo2): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
 mv:
 
-ka: Während der...
+ka:
 
-vc:
+vc1: SHOW ao3a (zerwo) IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
 
-av: number: \<= zweistellig, 0 TO 99
+vc2: SHOW ao3b (zerwo2) IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
+
+vc3: SHOW ao4a (zcarwo) IF pflegang1=1 OR pflegang2=1
+
+vc4: SHOW ao4b (zcarwo2) IF pflegang1=1 OR pflegang2=1
+
+av: NUMBER, 2-stellig (0 bis 99)
 
 kh: Bitte geben Sie volle Zeitstunden an (0 bis 99).
 
@@ -4295,14 +3975,14 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte anhand der Unterteilung in a und b die Zuordnung der Items zu den beiden Kategorien ita und itb vornehmen. ita und itb bilden die Spalten und in den Zeilen werden dann die einzelnen Bereiche noch einmal unterteilt (bspw. Lehrveranstaltungen: ao1a -> ita; ao1b -> itb).
 
 tr: <zofar:transition target="N_1" condition="zofar.asNumber(zusatzsplit)==1"/>
     <zofar:transition target="N_13" condition="zofar.asNumber(zusatzsplit)==4"/>
     <zofar:transition target="N_5" condition="zofar.asNumber(zusatzsplit)==3"/>
     <zofar:transition target="A_57" condition="zofar.asNumber(zusatzsplit)==2"/>
 
-hi:
+hi: Bitte als NUMBER, 2-stellig (0 bis 99) programmieren.
 
 
 \------------------------------------------------------------
@@ -4311,9 +3991,9 @@ N_1
 =========
 tc: IF NRW / zusatzsplit ==1
 
-vn: nrwstudium, nrwfach
+vn: nrwstudium; nrwfach
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4369,7 +4049,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwstudium2
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4413,7 +4093,6 @@ tr: GOTO N_3
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_3
@@ -4423,7 +4102,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwfach2
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4467,7 +4146,6 @@ tr: GOTO N_4
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_4
@@ -4477,7 +4155,7 @@ tc: IF NRW / zusatzsplit ==1
 
 vn: nrwregel
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4521,7 +4199,6 @@ tr: GOTO A_57
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_5
@@ -4531,13 +4208,13 @@ tc: IF zusatzsplit == 3
 
 vn: nrwdigbed
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
 in:
 
-q: Wie schätzen Sie Ihren Bedarf an digitalen Selbstlernangeboten in Ihrem Studiengang ein?
+q: Wie schätzen Sie Ihren Bedarf an digitalen Studienangeboten in Ihrem Studiengang ein?
 
 is:
 
@@ -4575,7 +4252,6 @@ tr: GOTO N_6
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_6
@@ -4585,13 +4261,13 @@ tc:
 
 vn: nrwdigged
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
 in:
 
-q: In welchem Maße wird Ihr Bedarf an digitalen Selbstlernangeboten durch die Hochschule gedeckt?
+q: In welchem Maße wird Ihr Bedarf an digitalen Selbstlernangeboten durch die Hochschule abgedeckt?
 
 is:
 
@@ -4629,7 +4305,6 @@ tr: GOTO N_7
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_7
@@ -4639,7 +4314,7 @@ tc:
 
 vn: nrwselbtest
 
-qt: vertikale Einfachauswahlmatrix
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
@@ -4664,7 +4339,9 @@ ao4: 4:
 
 ao5: 5: in sehr hohem Maße
 
-mv: 7: Test nicht durchgeführt/angeboten
+ao6: -13: Test nicht durchgeführt/angeboten
+
+mv: ao6
 
 ka:
 
@@ -4678,12 +4355,11 @@ fv:
 
 hv:
 
-fo:
+fo: ao6 (missing) bitte etwas absetzen.
 
 tr: GOTO N_8
 
-hi: mv ist von den übrigen aos abgesetzt, nicht Teil der Antwortmatrix
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4694,13 +4370,14 @@ tc:
 
 vn: nrwstudipor
 
-qt: vertikale Einfachauswahlmatrix
+qt: Einfachauswahl mit vertikaler ao
 
 hl:
 
 in:
 
-q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportal "Studiport" genutzt? Halten Sie rückblickend diese E-Learning-Angebote für hilfreich?
+q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportal "Studiport" genutzt? Halten Sie rückblickend diese 
+E-Learning-Angebote für hilfreich?
 
 is:
 
@@ -4718,7 +4395,56 @@ ao4: 4:
 
 ao5: 5: in sehr hohem Maße
 
-mv: 7: Angebot nicht bekannt/nicht genutzt
+ao6: -13: Angebot nicht bekannt/nicht genutzt
+
+mv: ao6 
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: ao6 (missing) bitte etwas absetzen.
+
+tr: GOTO N_9a
+
+hi:
+
+\------------------------------------------------------------
+
+N_9a 
+==========
+
+tc:
+
+vn: digosa
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Haben Sie vor bzw. zu Beginn des Studiums einen Selbsttest zur fachlichen Eignung durchgeführt (z. B. Online-Self-Assessment)?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: ja
+
+ao2: 2: nein
+
+mv:
 
 ka:
 
@@ -4736,8 +4462,7 @@ fo:
 
 tr: GOTO N_9
 
-hi: mv ist von den übrigen aos abgesetzt, nicht Teil der Antwortmatrix
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4746,32 +4471,31 @@ N_9
 
 tc:
 
-vn: digorg1, digorg2, digorg3, digorg4, digorg5
+vn: digorg (digorg1; digorg2; digorg3; digorg4; digorg5)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie häufig werden die folgenden Aspekte Ihrer Lehrveranstaltungen über digitale Plattformen organisiert? (z. B. StudIP, Moodle, 
-Ilias, Olat)
+q: Wie viele Ihrer Lehrveranstaltungen werden über digitale Plattformen organisiert (z. B. StudIP, Moodle, Ilias, Olat)?
 
 is:
 
 it1: (digorg1): An-/Abmeldung zu Lehrveranstaltungen
 
-it2: (digorg2): Kommunikation innerhalb der Lehrveranstaltungen
+it2: (digorg2): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
 
-it3: (digorg3): Bereitstellung von Literatur und Lehrmaterialien
+it3: (digorg3): Kommunikation innerhalb der Lehrveranstaltungen
 
-it4: (digorg4): Erbringung von Leistungsnachweisen / elektronische Prüfungen
+it4: (digorg4): Bereitstellung von Literatur und Lehrmaterialien
 
-it5: (digorg5): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
+it5: (digorg5): Erbringung von Leistungsnachweisen/elektronische Prüfungen
 
 st:
 
-ao1: 1: nie
+ao1: 1: keine
 
 ao2: 2:
 
@@ -4779,9 +4503,9 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr häufig 
+ao5: 5: alle 
 
-ao6: -13:  weiß nicht  
+ao6: -12: weiß ich nicht  
 
 mv: ao6
 
@@ -4799,10 +4523,68 @@ hv:
 
 fo:
 
+tr: GOTO N_9b
+
+hi: ao6 (missing) bitte etwas absetzen.
+
+\------------------------------------------------------------
+
+N_9b
+=========
+
+tc:
+
+vn: digfor (digfor1; digfor2; digfor3; digfor4; digfor5)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie viele Ihrer Lehrveranstaltungen werden in folgender Form organisiert?
+
+is:
+
+it1: (digfor1): als reine Online-Veranstaltung (z. B. Online-Vorlesung, Online-Seminar) 
+
+it2: (digfor2): als Online-Selbststudium mit einzelnen Präsenzterminen
+
+it3: (digfor3): als Präsenzveranstaltung mit einzelnen Online-Terminen
+
+it4: (digfor4): als reine Präsenzveranstaltung
+
+st:
+
+ao1: 1: keine
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: alle 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
 tr: GOTO N_10
 
-hi: ao6 (missing) ist abgesetzt von ao1-ao5
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4811,42 +4593,35 @@ N_10
 
 tc:
 
-vn: diglehr1, diglehr2, diglehr3, diglehr4, diglehr5, diglehr6, diglehr7, diglehr8, diglehr9, diglehr10, diglehr11, diglehr12, 
-diglehr12o
+vn: diglehr (diglehr1; diglehr2; diglehr3; diglehr4; diglehr5; diglehr6; diglehr7; diglehr8; diglehr9; diglehr9o)
 
-qt: horizontale Einfachauswahlmatrix / offene Angabe
+qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
 
 hl:
 
 in:
 
-q: Wie häufig kommen folgende digitale Methoden bzw. Medien im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
+q: Wie häufig kommen folgende digitale Elemente und Lehrformate im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
 
 is:
 
-it1: (diglehr1): Online-Vorlesung (z. B. Live-Digitized-Lecture oder archivierte Aufzeichnung)
+it1: (diglehr1): Podcasts, Blogs, Videos
 
-it2: (diglehr2): Online-Seminare
+it2: (diglehr2): Abstimmungsmedien (Clicker-Abfrage, Voting-Tool)
 
-it3: (diglehr3): Online-Selbststudium mit anschließender Vertiefung im Präsenzstudium
+it3: (diglehr3): Game-Based-Learning (auf Lernspielen basierende Lehr- und Lernformate)
 
-it4: (diglehr4): virtuelle Lernorte / Labore
+it4: (diglehr4): Mobiles Lernen (virtuelle Lernorte/Labore)
 
-it5: (diglehr5): Lehr- und Lernvideos / E-Lecture
+it5: (diglehr5): Augmented- und Virtual-Reality
 
-it6: (diglehr6): E-Tutorial / E-Coaching (z. B. Web Based Training)
+it6: (diglehr6): E-Portfolio (digitales Lerntagebuch)
 
-it7: (diglehr7): Lernspiele / Game-Based Learning
+it7: (diglehr7): Videoaufzeichnungen von Vorlesungen
 
-it8: (diglehr8): Präsentationssoftware (z. B. PowerPoint, Prezi)
+it8: (diglehr8): digitale Prüfungsformate/E-Assessment
 
-it9: (diglehr9): Smart-Board 
-
-it10: (diglehr10): fachspezifische Software (z. B. Statistik- oder Transkriptionsprog.)
-
-it11: (diglehr11): Kommunikationstools
-
-it12: (diglehr12): Etwas anderes und zwar: [diglehr12o, 50 Zeichen] 
+it12: (diglehr9): Etwas anderes und zwar: [(diglehr9o), offene Angabe, 80 Zeichen] 
 
 st:
 
@@ -4878,10 +4653,127 @@ hv:
 
 fo:
 
+tr: GOTO N_10a
+
+hi: ao6 (missing) bitte etwas absetzen.
+
+\------------------------------------------------------------
+
+N_10a
+=========
+
+tc:
+
+vn: diggeso (diggeso1; diggeso2; diggeso3; diggeso4; diggeso5)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie häufig werden die folgenden Geräte bzw. Software in eine typische Lehrveranstaltung eingebunden?
+
+is:
+
+it1: (diggeso1): Laptop und Beamer der Hochschule
+
+it2: (diggeso2): Smart-Board
+
+it3: (diggeso3): eigener Laptop, Tablet, Smartphone
+
+it4: (diggeso4): Präsentationssoftware (PowerPoint, Prezi)
+
+it5: (diggeso5): fachspezifische Software
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_10b
+
+hi:
+
+\------------------------------------------------------------
+
+N_10b
+=========
+
+tc:
+
+vn: digflehr (digflehr1; digflehr2; digflehr3)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie häufig nutzen Sie die folgenden Formen des digitalen Lernens?
+
+is:
+
+it1: (digflehr1): im Internet zugängliche Lehr- und Lernmaterialien
+
+it2: (digflehr2): Lehr- und Lernvideos
+
+it3: (digflehr3): digitale Selbstlernprogramme (z. B. Simulation, Lernapps, Lernspiele)
+
+st:
+
+ao1: 1: nie
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr häufig 
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
 tr: GOTO N_11
 
-hi: ao6 (missing) ist abgesetzt von ao1-ao5
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4890,15 +4782,15 @@ N_11
 
 tc:
 
-vn: digkom1, digkom2, digkom3, digkom4, digkom5, digkom6
+vn: digkom (digkom1; digkom2; digkom3; digkom4; digkom5; digkom6)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
 in:
 
-q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton\*innen)? 
+q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton\*innen? 
 
 is:
 
@@ -4906,7 +4798,7 @@ it1: (digkom1): Instant Messaging-Dienste (z. B. WhatsApp, Telegram)
 
 it2: (digkom2): Soziale Netzwerke (z. B. Facebook, Instagram)
 
-it3: (digkom3): Online Verwaltungstools (z. B. Doodle)
+it3: (digkom3): Online Verwaltungstools (z. B. Doodle, Trello)
 
 it4: (digkom4): Tools der Lernmanagementsysteme (z. B. Peer-Feedback, Foren)
 
@@ -4926,9 +4818,7 @@ ao4: 4:
 
 ao5: 5: sehr häufig 
 
-ao6: -13: kenne ich nicht
-
-mv: ao6
+mv: 
 
 ka:
 
@@ -4946,8 +4836,7 @@ fo:
 
 tr: GOTO N_12
 
-hi: ao6 (missing) ist abgesetzt von ao1-ao5
-
+hi:
 
 \------------------------------------------------------------
 
@@ -4956,9 +4845,9 @@ N_12
 
 tc:
 
-vn: digan1, digan2, digan3, digan4, digan5, digan6, digan7, digan8, digan9, digan10, digan11
+vn: digan (digan1; digan2; digan3; digan4; digan5; digan6; digan7; digan8; digan9; digan10; digan11)
 
-qt: horizontale Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -4968,27 +4857,27 @@ q: Wie leicht würde es Ihnen fallen, …
 
 is:
 
-it1: (digan1): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)? 
+it1: (digan1): … einen Text nach bestimmten Vorgaben zu formatieren (z. B. mit Word, Latex)? 
 
-it2: (digan2): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
+it2: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)
 
-it3: (digan3): … eine bestimmte Publikation als Download zu finden?
+it3: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, Open Office Calc)
 
-it4: (digan4): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren?
+it4: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
 
-it5: (digan5): … einen Text nach bestimmten Vorgabe  zu formatieren (z. B. mit Word, Latex)? 
+it5: (digan5): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren? 
 
-it6: (digan6): …  wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
+it6: (digan6): … wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
 
-it7: (digan7): … sich in ein neues Computerprogramm einzuarbeiten?
+it7: (digan7): … von Ihnen genutzte digitale Medien miteinander zu synchronisieren?
 
-it8: (digan8): … eine Website zu programmieren?
+it8: (digan8): … sich in ein neues Computerprogramm einzuarbeiten?
 
-it9: (digan9): … eine Programmiersprache (z. B. Python, SQL, QML) sicher anzuwenden?
+it9: (digan9): … eine Programmiersprache sicher anzuwenden (z. B. Python, Java)?
 
 it10: (digan10): … digitale Gruppen/Netzwerke zu recherchieren und sich zu beteiligen?
 
-it11: (digan11): … digitale Gruppen/Netzwerke zu initiieren und zu moderieren?
+it11: (digan11): … sich in einer virtuellen oder simulierten Umgebung zu bewegen und zu handeln?
 
 st:
 
@@ -5022,7 +4911,6 @@ tr: GOTO A_57
 
 hi:
 
-
 \------------------------------------------------------------
 
 N_13
@@ -5030,17 +4918,16 @@ N_13
 
 tc: IF zusatzsplit ==4
 
-vn: diskjane, diskjane1, diskjane2, diskjane3, diskjane4, diskjane5, diskjane6, diskjane7, diskjane8, diskjane9, diskjane10, 
-diskjane11, diskjane12, diskjane13, diskjane14, diskjane15, diskjane16, diskjane16o
+vn: diskjane (diskjaneno; diskjane1; diskjane2; diskjane3; diskjane4; diskjane5; diskjane6; diskjane7; diskjane8; diskjane9; 
+diskjane10; diskjane11; diskjane12; diskjane13; diskjane14; diskjane15; diskjane16; diskjane16o)
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie und offener Angabe
 
 hl:
 
-in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt 
-wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. 
+in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt.
 
-q: !!Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?!!
+q: Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?
 
 is:
 
@@ -5048,7 +4935,7 @@ it:
 
 st:
 
-ao1: (diskjane): nein  
+ao1: (diskjaneno): nein [Exklusivkategorie]
 
 ao2: (diskjane1): Leistungen wurden mir nicht zugetraut.
 
@@ -5066,7 +4953,7 @@ ao8: (diskjane7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppe
 
 ao9: (diskjane8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
 
-ao10: (diskjane9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet. 
+ao10: (diskjane9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet. 
 
 ao11: (diskjane10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
 
@@ -5080,11 +4967,11 @@ ao15: (diskjane14): Ich wurde körperlich bedroht.
 
 ao16: (diskjane15): Ich wurde körperlich angegriffen. 
 
-ao17: (diskjane16): sonstiges: [(diskjane16o), 50 Zeichen] 
+ao17: (diskjane16): Anderes, und zwar: [(diskjane16o), offene Angabe, 250 Zeichen] 
 
 mv:
 
-ka (ao2 TO ao17): ja, und zwar: 
+ka: (ao2 TO ao17): Ja, und zwar: 
 
 vc:
 
@@ -5096,11 +4983,14 @@ fv:
 
 hv:
 
-fo:
+fo1: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
+
+fo2: "Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?" bitte etwas von den Einleitungssätzen absetzen.
 
 tr: GOTO A_57 IF diskjane=1
     GOTO N_14 IF diskjane!=1
-
+    
+hi:
 
 \------------------------------------------------------------
 
@@ -5109,10 +4999,10 @@ N_14
 
 tc:
 
-vn: diskanza1, diskanza2, diskanza3, diskanza4, diskanza5, diskanza6, diskanza7, diskanza8, diskanza9, diskanza10, diskanza11, 
-diskanza12, diskanza13, diskanza14, diskanza15
+vn: diskanza (diskanza1; diskanza2; diskanza3; diskanza4; diskanza5; diskanza6; diskanza7; diskanza8; diskanza9; diskanza10; 
+diskanza11; diskanza12; diskanza13; diskanza14; diskanza15; diskanza16)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
@@ -5138,7 +5028,7 @@ it7: (diskanza7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppe
 
 it8: (diskanza8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
 
-it9: (diskanza9): Mir sind unangebrachte Fragen oder Bemerkungen zu meinem Privatleben begegnet.
+it9: (diskanza9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet.
 
 it10: (diskanza10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
 
@@ -5152,6 +5042,8 @@ it14: (diskanza14): Ich wurde körperlich bedroht.
 
 it15: (diskanza15): Ich wurde körperlich angegriffen.
 
+it16: (diskanza16): Anderes
+
 st:
 
 ao1: 1: einmal
@@ -5160,13 +5052,43 @@ ao2: 2: mehrmals
 
 ao3: 3: regelmäßig
 
-ao4: 4: weiß nicht wie häufig
+ao4: -12: weiß ich nicht
 
-mv:
+mv: ao4
 
 ka:
 
-vc:
+vc1: SHOW it1 (diskanza1) IF diskjane1=1
+
+vc2: SHOW it2 (diskanza2) IF diskjane2=1
+
+vc3: SHOW it3 (diskanza3) IF diskjane3=1
+
+vc4: SHOW it4 (diskanza4) IF diskjane4=1
+
+vc5: SHOW it5 (diskanza5) IF diskjane5=1
+
+vc6: SHOW it6 (diskanza6) IF diskjane6=1
+
+vc7: SHOW it7 (diskanza7) IF diskjane7=1
+
+vc8: SHOW it8 (diskanza8) IF diskjane8=1
+
+vc9: SHOW it9 (diskanza9) IF diskjane9=1
+
+vc10: SHOW itq10 (diskanza10) IF diskjane10=1
+
+vc11: SHOW it11 (diskanza11) IF diskjane11=1
+
+vc12: SHOW it12 (diskanza12) IF diskjane12=1
+
+vc13: SHOW it13 (diskanza13) IF diskjane13=1
+
+vc14: SHOW it14 (diskanza14) IF diskjane14=1
+
+vc15: SHOW it15 (diskanza15) IF diskjane15=1
+
+vc16: SHOW it16 (diskanza16) IF diskjane16=1
 
 av:
 
@@ -5176,12 +5098,11 @@ fv:
 
 hv:
 
-fo:
+fo: ao4 bitte etwas absetzen.
 
 tr: GOTO N_15
 
 hi:
-
 
 \------------------------------------------------------------
 
@@ -5190,9 +5111,9 @@ N_15
 
 tc:
 
-vn: diskwem1; diskwem2; diskwem3; diskwem4; diskwem5; diskwem6; diskwem7; diskwem8; diskwem8o
+vn: diskwem (diskwem1; diskwem2; diskwem3; diskwem4; diskwem5; diskwem6; diskwem7; diskwem8; diskwem8o)
 
-qt:  Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt:  Mehrfachauswahl; offene Angabe
 
 hl:
 
@@ -5218,9 +5139,84 @@ ao5: (diskwem5): Materielle Gegebenheiten/technische Ausstattung
 
 ao6: (diskwem6): Verfahren/Regelungen
 
-ao7: (diskwem7): Keine Angabe
+ao7: (diskwem7): keine Angabe
 
-ao8: (diskwem8): Andere: [diskwem8o, 350 Zeichen]
+ao8: (diskwem8): Andere, und zwar: [(diskwem8o), offene Angabe, 250 Zeichen]
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO B1_3a
+
+hi:
+
+\------------------------------------------------------------
+
+B1_3a
+=========
+
+tc: If demosex !=3 (?; tc bitte im Rahmen neugesetzten Seitenweiterleitungsbedingungen prüfen)
+
+vn: besex1; besex2; besex3; besex4; besex5;
+    hosex1; hosex2; hosex3; hosex4; hosex5
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und ihre Beziehungen in der heutigen Gesellschaft. 
+(Leerzeile)
+Bitte geben Sie an, in welchem Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
+
+is:
+
+it1: (besex1): Egal wie erfolgreich ein Mann auch sein mag, ohne die Liebe einer Frau fehlt ihm etwas ganz Wichtiges.
+
+it2: (besex2): Man kann im Leben erst richtig glücklich sein, wenn man einen Partner hat, den man liebt.
+
+it3: (hosex1): Wenn Frauen in einem fairen Wettbewerb gegenüber Männern den Kürzeren ziehen, behaupten sie gerne, sie seien 
+diskriminiert worden.
+
+it4: (hosex2): Feminist\*innen wollen, dass Frauen mehr Macht bekommen als Männer.
+
+it5: (hosex3): Frauen versuchen, Macht zu erlangen, indem sie Männer immer mehr beherrschen.
+
+it6: (besex3): Jeder Mann sollte eine Frau haben, die er über alles liebt.
+
+it7: (hosex4): Die meisten Frauen interpretieren harmlose Äußerungen oder Handlungen als frauenfeindlich.
+
+it8: (besex4): Frauen sollten von Männern umsorgt und beschützt werden.
+
+it9: (besex5): Ein Mann sollte bereit sein, sein eigenes Wohl zu opfern, um für seine Frau sorgen zu können.
+
+it10: (hosex5): Viele Frauen versuchen unter dem Deckmantel der Gleichberechtigung, besondere Vergünstigungen zu erlangen, wie z. B. eine Bevorzugung bei der Besetzung von Arbeitsstellen.
+
+st:
+
+ao1: 1: stimme gar nicht zu
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: stimme voll und ganz zu
 
 mv:
 
@@ -5242,6 +5238,353 @@ tr: GOTO A_57
 
 hi:
 
+\------------------------------------------------------------
+
+D3_1
+=========
+
+tc:
+
+vn: wohnplz; wohnplzort
+
+qt: Einfachauswahl mit vertikalen ao und offener Angabe
+
+hl:
+
+in:
+
+q1: Wo wohnen Sie während der Vorlesungszeit hauptsächlich?
+
+q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an.
+is:
+
+it:
+
+st:
+
+ao1: (wohnplz): [infield = PLZ; number, 5-stellig: 01000 TO 99999] 
+
+ao2: (wohnplzort): [infield = Ort; 60 Zeichen]
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh: (wohnplz): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
+
+fv:
+
+hv:
+
+fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
+
+tr:
+hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
+
+\------------------------------------------------------------
+
+F3_23
+=========
+
+tc:
+
+vn: wohnemin; wohnemino
+
+qt: Einfachauswahl mit offener Angabe
+
+hl:
+
+in:
+
+q: Wie viel Zeit benötigen Sie für den einfachen Weg von Ihrer Wohnung zur Hochschule?
+
+is: Bitte geben Sie die Dauer „von Tür zu Tür“ an.
+
+it:
+
+st:
+
+ao1: 1: Präfix: Dauer: [wohnemino] (infield=Minutenangabe; NUMBER; 3-Stellen)
+
+ao2: -12: weiß ich nicht
+
+mv: ao2
+
+ka:
+
+vc:
+
+av: number: 3-Stellen: 1 TO 999
+
+kh: Bitte geben Sie die Dauer des einfachen Weges von Ihrer Wohnung zu Ihrer Hochschule an (1 bis 999).
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO F3_24
+
+hi:
+ 
+\------------------------------------------------------------
+
+F3_24
+=========
+
+tc:
+
+vn: mobregmittel
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Welches Verkehrsmittel nutzen Sie überwiegend um an Ihre Hochschule zu gelangen?
+
+is: Bei kombinierter Nutzung geben Sie bitte das Verkehrsmittel an, mit dem Sie die längste Wegstrecke zurücklegen.
+
+it:
+
+st:
+
+ao1: 1: zu Fuß
+
+ao2: 2: Fahrrad
+
+ao3: 3: Öffentliche Verkehrsmittel
+
+ao4: 4: PKW (allein fahrend)
+
+ao5: 5: PKW (in Fahrgemeinschaft)
+
+ao6: 6: anderes
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_17
+
+hi:
+
+\------------------------------------------------------------
+
+N_17
+=========
+
+tc:
+
+vn: diskwoh (diskwoh1; diskwoh2; diskwoh3)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwieweit treffen die folgenden Aussagen auf Ihre persönlichen Erfahrungen bei der Wohnungssuche zu?
+
+is: 
+
+it1: (diskwoh1): Ich habe mich oft vergeblich um eine Wohnung beworben.
+
+it2: (diskwoh2): Für die Wohnungssuche sind soziale Kontakte sehr wichtig.
+
+it3: (diskwoh3): Eine Wohnung zu einem günstigen Mietpreis zu finden, ist fast aussichtslos.
+
+st:
+
+ao1: 1: trifft überhaupt nicht zu
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_16
+
+hi:
+ 
+\------------------------------------------------------------
+
+N_16
+=========
+
+tc:
+
+vn: lftaus (lftaus1; lftaus2; lftaus3; lftaus4);
+    lftzei (lftzei1; lftzei2; lftzei3; lftzei4) 
+       
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwieweit treffen die folgenden Aussagen auf Ihre Lebensführung zu?
+
+is: 
+
+it1: (lftaus1): Ich pflege einen gehobenen Lebensstandard.
+
+It2: (lftaus2): Es ist mir zu teuer, regelmäßig große Urlaube im Ausland zu machen.
+
+It3: (lftaus3): In Kunst und Kultur kenne ich mich sehr gut aus.
+
+It4: (lftaus4): Ich lese gern anspruchsvolle Bücher.
+
+It5: (lftzei1): Mein Leben gefällt mir dann besonders gut, wenn ständig etwas los ist.
+
+It6: (lftzei2): Ich suche immer wieder nach neuen Herausforderungen und Erfahrungen.
+
+It7: (lftzei3): Sicherheit und Beständigkeit sind das oberste Gebot in meinem Leben.
+
+It8: (lftzei4): Ich halte an Traditionen und Bräuchen meiner Familie fest.
+
+st:
+
+ao1: 1: trifft überhaupt nicht zu
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO B2_5
+
+hi:
+
+\------------------------------------------------------------
+
+B2_5
+=========
+
+tc:
+
+vn: frei (freispor; freikunst; freikult; freiparty; freifreu; freipc; freifimu; freiehr; freidiswiss; freidispol; freinix)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie häufig gehen Sie in Ihrer Freizeit folgenden Tätigkeiten nach?
+
+is:
+
+it1: (freispor): sportlich betätigen
+
+it2: (freikunst): künstlerisch betätigen (zeichnen,  musizieren)
+
+it3: (freikult): Kulturveranstaltungen besuchen (Konzerte, Theater, Poetry-Slam etc.)
+
+it4: (freiparty): feiern, auf Partys gehen
+
+it5: (freifreu): Freunde treffen
+
+it6: (freipc): Videospiele, Computer spielen
+
+it7: (freifimu): Filme/Serien schauen, Musik hören
+
+it8: (freiehr): ehrenamtlich tätig sein
+
+it9: (freidiswiss): über wissenschaftliche Themen reden
+
+it10: (freidispol): über soziale und politische Fragen diskutieren
+
+it11: (freinix): einfach nichts tun
+
+st:
+
+ao1: 1: nie
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: sehr häufig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_57
+
+hi:
 
 \------------------------------------------------------------
 
@@ -5250,49 +5593,49 @@ A_57
 
 tc:
 
-vn: sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16
+vn: sdkzei (sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie wichtig sind Ihnen die folgenden Aspekte des weiteren Berufs- und Lebensweges?
+q: Wie wichtig sind Ihnen die folgenden Aspekte Ihres weiteren Berufs- und Lebensweges?
 
-is:.
+is:
 
-it: (sdkzei1): hohes Einkommen
+it1: (sdkzei1): hohes Einkommen
 
-it: (sdkzei2): prestigeträchtige Berufsposition
+it2: (sdkzei2): prestigeträchtige Berufsposition
 
-it: (sdkzei3): sicherer Arbeitsplatz
+it3: (sdkzei3): sicherer Arbeitsplatz
 
-it: (sdkzei4): gute Aufstiegsmöglichkeiten
+it4: (sdkzei4): gute Aufstiegsmöglichkeiten
 
-it: (sdkzei5): flexible Arbeitszeiten
+it5: (sdkzei5): flexible Arbeitszeiten
 
-it: (sdkzei6): die Erwartungen meiner Vorgesetzten zu erfüllen
+it6: (sdkzei6): die Erwartungen meiner Vorgesetzten erfüllen
 
-it: (sdkzei7): verantwortungsvolle Aufgaben zu übernehmen
+it7: (sdkzei7): verantwortungsvolle Aufgaben übernehmen
 
-it: (sdkzei8): eigene Ideen verwirklichen zu können
+it8: (sdkzei8): eigene Ideen verwirklichen
 
-it: (sdkzei9): selbstständig Entscheidungen treffen zu können
+it9: (sdkzei9): selbstständig Entscheidungen treffen
 
-it: (sdkzei10): eine Arbeit, die mir immer wieder neue Aufgaben stellt
+it10: (sdkzei10): eine Arbeit, die mir immer wieder neue Aufgaben stellt
 
-it: (sdkzei11): Möglichkeit zu wissenschaftlicher Tätigkeit
+it11: (sdkzei11): Möglichkeit zu wissenschaftlicher Tätigkeit
 
-it: (sdkzei12): anderen Menschen helfen zu können
+it12: (sdkzei12): anderen Menschen helfen zu können
 
-it: (sdkzei13): ein Beruf, in dem ich Nützliches für die Allgemeinheit tun kann
+it13: (sdkzei13): ein Beruf, in dem ich Nützliches für die Allgemeinheit tun kann
 
-it: (sdkzei14): Vereinbarkeit von Privatleben und Beruf
+it14: (sdkzei14): Vereinbarkeit von Privatleben und Beruf
 
-it: (sdkzei15): eine glückliche Beziehung zu führen
+it15: (sdkzei15): eine glückliche Beziehung führen
 
-it: (sdkzei16): eine Familie zu gründen
+it16: (sdkzei16): eine Familie gründen
 
 st:
 
