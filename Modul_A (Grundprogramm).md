@@ -367,7 +367,7 @@ tc:
 
 vn: dnatsta; dnatstao
 
-qt: Drop-Down; offene Angabe
+qt: Dropdown; offene Angabe
 
 hl:
 
@@ -527,7 +527,7 @@ tc:
 
 vn: dgebsta; dgebstao
 
-qt: Drop-Down; offene Angabe
+qt: Dropdown; offene Angabe
 
 hl:
 
@@ -922,11 +922,173 @@ hv:
 
 fo:
 
-tr: GOTO A_13 if dkinja=1
+tr: GOTO A_12a if dkinja=1
     GOTO C1_1 if dkinja=2
-    GOTO A_13 if dkinja=MISSING
+    GOTO A_12a if dkinja=MISSING
 
 hi:
+
+\------------------------------------------------------------
+
+A_12a
+=========
+
+tc:
+
+vn: dsib; dsibo
+
+qt: Einfachauswahl mit vertikalen ao und offener Angabe
+
+hl:
+
+in:
+
+q: Haben Sie Geschwister?
+
+is: Bitte geben Sie auch Ihre Halb- und Stiefgeschwister an.
+
+it:
+
+st:
+
+ao1: (dsib): 1: nein
+
+ao2: (dsib): 2: Ja, und zwar: ([dsibo], NUMBER, 2-Steller)
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_12b if dsibo>0
+    ELSE GOTO A_13
+    
+hi:
+
+
+\------------------------------------------------------------
+
+A_12b
+=========
+
+tc:
+
+vn: dsibageo1; dsibsex1; dsibageo2; dsibsex2; dsibageo3; dsibsex3; dsibageo4; dsibsex4; dsibageo5; dsibsex5; dsibageo6; dsibsex6; dsibageo7; dsibsex7; dsibageo8; dsibsex8; dsibageo9; dsibsex9; 
+
+qt: Offene Angabe und Dropdown
+
+hl:
+
+in:
+
+q1: Wie ist und welches Geschlecht hat Ihr Geschwisterteil?
+
+q2: Wie alt sind und welches Geschlecht haben Ihre Geschwister?
+
+is: 
+
+it1: (dsibageo1): Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
+it2: (dsibsex1): (infield = Geschlecht; männlich, weiblich, divers)  (Dropdown)
+
+it3: (dsibageo2): Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
+it4: (dsibsex2): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+it5: (dsibageo3): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
+it6: (dsibsex3): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+it7: (dsibageo4): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller) ; Suffix: Jahre 
+it8: (dsibsex4): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+ 
+it9: (dsibageo5): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
+it10: (dsibsex5): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+it11: (dsibageo6): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
+it12: (dsibsex6): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+it13: (dsibageo7): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
+it14: (dsibsex7): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+it15: (dsibageo8): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
+it16: (dsibsex8): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+it17: (dsibageo9): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
+it18: (dsibsex9): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
+
+st:
+
+aox: 0: Geschlecht 
+
+ao1: 1: männlich
+
+ao2: 2: weiblich
+
+ao3: 3: divers
+
+mv:
+
+ka1: (it1-it2): Geschwisterteil:
+
+ka2: (it1-it2): 1. Geschwisterteil:
+
+ka3: (it3-it4): 2. Geschwisterteil:
+
+ka4: (it5-it6): 3. Geschwisterteil:
+
+ka5: (it7-it8): 4. Geschwisterteil:
+
+ka6: (it9-it10): 5. Geschwisterteil:
+
+ka7: (it11-it12): 6. Geschwisterteil:
+
+ka8: (it13-it14): 7. Geschwisterteil:
+
+ka9: (it15-it16): 8. Geschwisterteil:
+
+ka10: (it17-it18): 9. Geschwisterteil:
+
+vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibo=1
+
+vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibo=2
+
+vc3: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibo=3
+
+vc4: SHOW q2 AND ka2-ka5 AND it1-it8 IF dsibo=4
+
+vc5: SHOW q2 AND ka2-ka6 AND it1-it10 IF dsibo=5
+
+vc6: SHOW q2 AND ka2-ka7 AND it1-it12 IF dsibo=6
+
+vc7: SHOW q2 AND ka2-ka8 AND it1-it14 IF dsibo=7
+
+vc8: SHOW q2 AND ka2-ka9 AND it1-it16 IF dsibo=8
+
+vc9: SHOW q2 AND ka2-ka10 AND it1-it18 IF dsibo=9
+
+av:
+
+kh: Bitte geben Sie das Lebensalter an (0 bis 99).
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_13
+    
+hi:
+
 
 \--------------------------------
 
@@ -1309,7 +1471,7 @@ tc:
 
 vn: hsstand
 
-qt: Einfachauswahl mit vertikalen ao und Drop-Down
+qt: Einfachauswahl mit vertikalen ao und Dropdown
 
 hl:
 
@@ -1362,7 +1524,7 @@ tc: IF hsstand_2=1
 
 vn: hsstandbl
 
-qt: Drop-Down
+qt: Dropdown
 
 hl:
 
@@ -1442,7 +1604,7 @@ tc:
 
 vn: sabserhs
 
-qt: Drop-Down
+qt: Dropdown
 
 hl:
 
@@ -1781,13 +1943,79 @@ hv:
 
 fo:
 
-tr: GOTO A_27 if sabsan=9
+tr: GOTO A_25b if sabsano==5
+    GOTO A_27 if sabsan=9
     GOTO D1_13 if sabsan=1-8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
     GOTO A_27 if sabsan=1-8 AND mastersplit=5, 6, 11, 12, 13
     GOTO D1_13 if sabsan=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
     GOTO A_27 if sabsan=MISSING AND mastersplit=5, 6, 11, 12, 13
+    
+hi:
+
+
+\------------------------------------------------------------
+
+A_25b
+=========
+
+tc:
+
+vn: sabsanpr
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Sie haben angegeben, dass Sie die Promotion anstreben: Sind Sie darüber hinaus in einem regulären Studiengang eingeschrieben?
+
+is: 
+
+it:
+
+st:
+
+ao1: (sabsanpr): -11: nein
+
+
+ao2: (sabsanpr): 1: Bachelor
+
+ao3: (sabsanpr): 2: Master
+
+ao4: (sabsanpr): 3: Staatsexamen
+
+ao5: (sabsanpr): 4: Diplom
+
+ao7: (sabsanpr): 6: kirchliche Abschlussprüfung
+
+ao8: (sabsanpr): 7: künstlerische Abschlussprüfung
+
+ao9: (sabsanpr): 8: Anderer Abschluss (bspw. ausländischer Abschluss, Magister)
+
+mv:
+
+ka: (ao2 to ao9): Ja, und zwar: 
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:  "Ja, und zwar:" über ao2 linksbündig positionieren.
+
+tr: GOTO D1_13 if sabsanpr=2-8 AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
+    GOTO A_27 if sabsanpr=2-8 AND mastersplit=5, 6, 11, 12, 13
+    GOTO D1_13 if sabsanpr=MISSING AND mastersplit=1, 2, 3, 4, 7, 8, 9, 10, 14 
+    GOTO A_27 if sabsanpr=MISSING AND mastersplit=5, 6, 11, 12, 13
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -2368,7 +2596,7 @@ tc:
 
 vn: deltgstav; deltgstavo
 
-qt: Drop-Down; offene Angabe
+qt: Dropdown; offene Angabe
 
 hl:
 
@@ -2415,7 +2643,7 @@ tc:
 
 vn: deltgstam; deltgstamo
 
-qt: Drop-Down; offene Angabe
+qt: Dropdown; offene Angabe
 
 hl:
 
@@ -3424,7 +3652,7 @@ tr: GOTO D1_14 IF (ssweja>=1 OR saweja>=1 OR shwja>=1 OR ssuja>=1) AND (mastersp
     GOTO A_51b if (ssweja=0 AND saweja=0 AND shwja=0 AND ssuja=0)
     GOTO A_51b if (ssweja=k.A. AND saweja=k.A. AND shwja=k.A. AND ssuja=k.A.)
 
-hi:
+hi: Bitte für den Infield-Text nicht die "0" als Wert vergeben, da diese bereits für die erste Antwortoption "keinmal" vorgehalten ist.
 
 \------------------------------------------------------------
 
@@ -4187,7 +4415,8 @@ hl:
 
 in:
 
-q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportal "Studiport" genutzt? Halten Sie rückblickend diese E-Learning-Angebote für hilfreich?
+q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportal "Studiport" genutzt? Halten Sie rückblickend diese 
+E-Learning-Angebote für hilfreich?
 
 is:
 
@@ -4492,7 +4721,7 @@ it2: (diggeso2): Smart-Board
 
 it3: (diggeso3): eigener Laptop, Tablet, Smartphone
 
-it4: (diggeso4): Präsentationssoftware (Powerpoint, Prezi)
+it4: (diggeso4): Präsentationssoftware (PowerPoint, Prezi)
 
 it5: (diggeso5): fachspezifische Software
 
@@ -4728,16 +4957,16 @@ N_13
 
 tc: IF zusatzsplit ==4
 
-vn: diskjane (diskjaneno; diskjane1; diskjane2; diskjane3; diskjane4; diskjane5; diskjane6; diskjane7; diskjane8; diskjane9; diskjane10; 
-diskjane11; diskjane12; diskjane13; diskjane14; diskjane15; diskjane16; diskjane16o)
+vn: diskjane (diskjaneno; diskjane1; diskjane2; diskjane3; diskjane4; diskjane5; diskjane6; diskjane7; diskjane8; diskjane9; 
+diskjane10; diskjane11; diskjane12; diskjane13; diskjane14; diskjane15; diskjane16; diskjane16o)
 
-qt: Mehrfachauswahl mit Exklusivkategorie
+qt: Mehrfachauswahl mit Exklusivkategorie und offener Angabe
 
 hl:
 
-in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. 
+in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt.
 
-q: !!Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?!!
+q: Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?
 
 is:
 
@@ -4809,8 +5038,8 @@ N_14
 
 tc:
 
-vn: diskanza (diskanza1; diskanza2; diskanza3; diskanza4; diskanza5; diskanza6; diskanza7; diskanza8; diskanza9; diskanza10; diskanza11; 
-diskanza12; diskanza13; diskanza14; diskanza15)
+vn: diskanza (diskanza1; diskanza2; diskanza3; diskanza4; diskanza5; diskanza6; diskanza7; diskanza8; diskanza9; diskanza10; 
+diskanza11; diskanza12; diskanza13; diskanza14; diskanza15; diskanza16)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4862,9 +5091,9 @@ ao2: 2: mehrmals
 
 ao3: 3: regelmäßig
 
-ao4: 4: weiß ich nicht
+ao4: -12: weiß ich nicht
 
-mv:
+mv: ao4
 
 ka:
 
@@ -4949,7 +5178,7 @@ ao5: (diskwem5): Materielle Gegebenheiten/technische Ausstattung
 
 ao6: (diskwem6): Verfahren/Regelungen
 
-ao7: (diskwem7): Keine Angabe
+ao7: (diskwem7): keine Angabe
 
 ao8: (diskwem8): Andere, und zwar: [(diskwem8o), offene Angabe, 250 Zeichen]
 
@@ -4958,6 +5187,83 @@ mv:
 ka:
 
 vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO B1_3a
+
+hi:
+
+
+\------------------------------------------------------------
+
+B1_3a
+==
+
+tc: If demosex !=3 (?; tc bitte im Rahmen neugesetzten Seitenweiterleitungsbedingungen prüfen)
+
+vn: besex1; besex2; besex3; besex4; besex5;
+    hosex1; hosex2; hosex3; hosex4; hosex5
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und ihre Beziehungen in der heutigen Gesellschaft. 
+(Leerzeile)
+Bitte geben Sie an, in welchem Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
+
+is:
+
+it1: (besex1): Egal wie erfolgreich ein Mann auch sein mag, ohne die Liebe einer Frau fehlt ihm etwas ganz Wichtiges.
+
+it2: (besex2): Man kann im Leben erst richtig glücklich sein, wenn man einen Partner hat, den man liebt.
+
+it3: (hosex1): Wenn Frauen in einem fairen Wettbewerb gegenüber Männern den Kürzeren ziehen, behaupten sie gerne, sie seien 
+diskriminiert worden.
+
+it4: (hosex2): Feminist\*innen wollen, dass Frauen mehr Macht bekommen als Männer.
+
+it5: (hosex3): Frauen versuchen, Macht zu erlangen, indem sie Männer immer mehr beherrschen.
+
+it6: (besex3): Jeder Mann sollte eine Frau haben, die er über alles liebt.
+
+it7: (hosex4): Die meisten Frauen interpretieren harmlose Äußerungen oder Handlungen als frauenfeindlich.
+
+it8: (besex4): Frauen sollten von Männern umsorgt und beschützt werden.
+
+it9: (besex5): Ein Mann sollte bereit sein, sein eigenes Wohl zu opfern, um für seine Frau sorgen zu können.
+
+it10: (hosex5): Viele Frauen versuchen unter dem Deckmantel der Gleichberechtigung, besondere Vergünstigungen zu erlangen, wie z. B. eine Bevorzugung bei der Besetzung von Arbeitsstellen.
+
+st:
+
+ao1: 1: stimme gar nicht zu
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: stimme voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
 av:
 
 kh:
@@ -4971,6 +5277,7 @@ fo:
 tr: GOTO A_57
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -4987,7 +5294,7 @@ hl:
 
 in:
 
-q: Wie wichtig sind Ihnen die folgenden Aspekte des weiteren Berufs- und Lebensweges?
+q: Wie wichtig sind Ihnen die folgenden Aspekte Ihres weiteren Berufs- und Lebensweges?
 
 is:
 
