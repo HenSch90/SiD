@@ -5451,7 +5451,7 @@ N_16
 
 tc:
 
-vn: lftaus (lftaus1; lftaus2; lftaus3; lftaus4) 
+vn: lftaus (lftaus1; lftaus2; lftaus3; lftaus4);
     lftzei (lftzei1; lftzei2; lftzei3; lftzei4) 
        
 
@@ -5461,7 +5461,7 @@ hl:
 
 in:
 
-q: Inwieweit treffen die folgenden Aussagen auf Ihre alltägliche Lebensführung zu?
+q: Inwieweit treffen die folgenden Aussagen auf Ihre Lebensführung zu?
 
 is: 
 
