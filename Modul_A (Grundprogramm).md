@@ -5279,6 +5279,353 @@ tr: GOTO A_57
 hi:
 
 
+
+D3_1
+====
+tc:
+
+vn: wohnplz; wohnplzort
+
+qt: Einfachauswahl mit vertikalen ao und offener Angabe
+
+hl:
+
+in:
+
+q1: Wo wohnen Sie während der Vorlesungszeit hauptsächlich?
+
+q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an.
+is:
+
+it:
+
+st:
+
+ao1: (wohnplz): [infield = PLZ; number, 5-stellig: 01000 TO 99999] 
+
+ao2: (wohnplzort): [infield = Ort; 60 Zeichen]
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh: (wohnplz): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
+
+fv:
+
+hv:
+
+fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
+
+tr:
+hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
+
+ 
+\--------------------------------
+F3_23
+=====
+
+tc:
+
+vn: wohnemin; wohnemino
+
+qt: Einfachauswahl mit offener Angabe
+
+hl:
+
+in:
+
+q: Wie viel Zeit benötigen Sie für den einfachen Weg von Ihrer Wohnung zur Hochschule?
+
+is: Bitte geben Sie die Dauer „von Tür zu Tür“ an.
+
+it:
+
+st:
+
+ao1: 1: Präfix: Dauer: [wohnemino] (infield=Minutenangabe; NUMBER; 3-Stellen)
+
+ao2: -12: weiß ich nicht
+
+mv: ao2
+
+ka:
+
+vc:
+
+av: number: 3-Stellen: 1 TO 999
+
+kh: Bitte geben Sie die Dauer des einfachen Weges von Ihrer Wohnung zu Ihrer Hochschule an (1 bis 999).
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO F3_24
+
+hi:
+
+ 
+\--------------------------------
+
+F3_24
+=====
+
+tc:
+
+vn: mobregmittel
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Welches Verkehrsmittel nutzen Sie überwiegend um an Ihre Hochschule zu gelangen?
+
+is: Bei kombinierter Nutzung geben Sie bitte das Verkehrsmittel an, mit dem Sie die längste Wegstrecke zurücklegen.
+
+it:
+
+st:
+
+ao1: 1: zu Fuß
+
+ao2: 2: Fahrrad
+
+ao3: 3: Öffentliche Verkehrsmittel
+
+ao4: 4: PKW (allein fahrend)
+
+ao5: 5: PKW (in Fahrgemeinschaft)
+
+ao6: 6: anderes
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_17
+
+hi:
+ 
+\--------------------------------
+
+N_17
+=====
+
+tc:
+
+vn: diskwoh (diskwoh1; diskwoh2; diskwoh3)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwieweit treffen die folgenden Aussagen auf Ihre persönlichen Erfahrungen bei der Wohnungssuche zu?
+
+is: 
+
+it1: (diskwoh1): Ich habe mich oft vergeblich um eine Wohnung beworben.
+
+it2: (diskwoh2): Für die Wohnungssuche sind soziale Kontakte sehr wichtig.
+
+it3: (diskwoh3): Eine Wohnung zu einem günstigen Mietpreis zu finden, ist fast aussichtslos.
+
+st:
+
+ao1: 1: trifft überhaupt nicht zu
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO N_16
+
+hi:
+ 
+\--------------------------------
+
+N_16
+=====
+
+tc:
+
+vn: lftaus (lftaus1; lftaus2; lftaus3; lftaus4) 
+    lftzei (lftzei1; lftzei2; lftzei3; lftzei4) 
+       
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwieweit treffen die folgenden Aussagen auf Ihre alltägliche Lebensführung zu?
+
+is: 
+
+it1: (lftaus1): Ich pflege einen gehobenen Lebensstandard.
+
+It2: (lftaus2): Es ist mir zu teuer, regelmäßig große Urlaube im Ausland zu machen.
+
+It3: (lftaus3): In Kunst und Kultur kenne ich mich sehr gut aus.
+
+It4: (lftaus4): Ich lese gern anspruchsvolle Bücher.
+
+It5: (lftzei1): Mein Leben gefällt mir dann besonders gut, wenn ständig etwas los ist.
+
+It6: (lftzei2): Ich suche immer wieder nach neuen Herausforderungen und Erfahrungen.
+
+It7: (lftzei3): Sicherheit und Beständigkeit sind das oberste Gebot in meinem Leben.
+
+It8: (lftzei4): Ich halte an Traditionen und Bräuchen meiner Familie fest.
+
+st:
+
+ao1: 1: trifft überhaupt nicht zu
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO B2_5
+
+hi:
+
+\--------------------------------
+B2_5
+==
+
+tc:
+
+vn: frei (freispor; freikunst; freikult; freiparty; freifreu; freipc; freifimu; freiehr; freidiswiss; freidispol; freinix)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie häufig gehen Sie in Ihrer Freizeit folgenden Tätigkeiten nach?
+
+is:
+
+it1: (freispor): sportlich betätigen
+
+it2: (freikunst): künstlerisch betätigen (zeichnen,  musizieren)
+
+it3: (freikult): Kulturveranstaltungen besuchen (Konzerte, Theater, Poetry-Slam etc.)
+
+it4: (freiparty): feiern, auf Partys gehen
+
+it5: (freifreu): Freunde treffen
+
+it6: (freipc): Videospiele, Computer spielen
+
+it7: (freifimu): Filme/Serien schauen, Musik hören
+
+it8: (freiehr): ehrenamtlich tätig sein
+
+it9: (freidiswiss): über wissenschaftliche Themen reden
+
+it10: (freidispol): über soziale und politische Fragen diskutieren
+
+it11: (freinix): einfach nichts tun
+
+st:
+
+ao1: 1: nie
+
+ao2: 2: 
+
+ao3: 3: 
+
+ao4: 4: 
+
+ao5: 5: sehr häufig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO A_57
+
+hi:
+
+
 \------------------------------------------------------------
 
 A_57
