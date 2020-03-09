@@ -984,8 +984,8 @@ A_12b
 
 tc:
 
-vn: dsibageo1; dsibsex1; dsibageo2; dsibsex2; dsibageo3; dsibsex3; dsibageo4; dsibsex4; dsibageo5; dsibsex5; dsibageo6; dsibsex6; dsibageo7; dsibsex7; dsibageo8; dsibsex8; dsibageo9; dsibsex9; 
-
+vn: dsibageo1; dsibsex1; dsibageo2; dsibsex2; dsibageo3; dsibsex3
+ 
 qt: Offene Angabe und Dropdown
 
 hl:
@@ -995,6 +995,9 @@ in:
 q1: Wie ist und welches Geschlecht hat Ihr Geschwisterteil?
 
 q2: Wie alt sind und welches Geschlecht haben Ihre Geschwister?
+
+q3: Wie alt sind und welches Geschlecht haben Ihre Geschwister?
+Sollten Sie mehr als drei Geschwister haben, so nennen Sie uns bitte Ihre drei zeitlich nahestehendsten Geschwister. 
 
 is: 
 
@@ -1006,24 +1009,6 @@ it4: (dsibsex2): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
 
 it5: (dsibageo3): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
 it6: (dsibsex3): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
-
-it7: (dsibageo4): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller) ; Suffix: Jahre 
-it8: (dsibsex4): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
- 
-it9: (dsibageo5): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
-it10: (dsibsex5): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
-
-it11: (dsibageo6): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
-it12: (dsibsex6): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
-
-it13: (dsibageo7): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
-it14: (dsibsex7): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
-
-it15: (dsibageo8): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
-it16: (dsibsex8): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
-
-it17: (dsibageo9): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre 
-it18: (dsibsex9): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
 
 st:
 
@@ -1045,35 +1030,13 @@ ka3: (it3-it4): 2. Geschwisterteil:
 
 ka4: (it5-it6): 3. Geschwisterteil:
 
-ka5: (it7-it8): 4. Geschwisterteil:
+vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibo = 1
 
-ka6: (it9-it10): 5. Geschwisterteil:
+vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibo = 2
 
-ka7: (it11-it12): 6. Geschwisterteil:
+vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibo = 3
 
-ka8: (it13-it14): 7. Geschwisterteil:
-
-ka9: (it15-it16): 8. Geschwisterteil:
-
-ka10: (it17-it18): 9. Geschwisterteil:
-
-vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibo=1
-
-vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibo=2
-
-vc3: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibo=3
-
-vc4: SHOW q2 AND ka2-ka5 AND it1-it8 IF dsibo=4
-
-vc5: SHOW q2 AND ka2-ka6 AND it1-it10 IF dsibo=5
-
-vc6: SHOW q2 AND ka2-ka7 AND it1-it12 IF dsibo=6
-
-vc7: SHOW q2 AND ka2-ka8 AND it1-it14 IF dsibo=7
-
-vc8: SHOW q2 AND ka2-ka9 AND it1-it16 IF dsibo=8
-
-vc9: SHOW q2 AND ka2-ka10 AND it1-it18 IF dsibo=9
+vc3: SHOW q3 AND ka2-ka4 AND it1-it6 IF dsibo > 3
 
 av:
 
