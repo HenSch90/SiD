@@ -992,22 +992,20 @@ hl:
 
 in:
 
-q1: Wie ist und welches Geschlecht hat Ihr Geschwisterteil?
+q1: Wie alt ist Ihr Geschwisterteil und welches Geschlecht hat Ihr Geschwisterteil?
 
-q2: Wie alt sind und welches Geschlecht haben Ihre Geschwister?
+q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben Ihre Geschwister jeweils?
 
-q3: Wie alt sind und welches Geschlecht haben Ihre Geschwister?
-Sollten Sie mehr als drei Geschwister haben, so nennen Sie uns bitte Ihre drei zeitlich nahestehendsten Geschwister. 
+is: Sollten Sie mehr als drei Geschwister haben, so nennen Sie uns bitte Ihre drei zeitlich nahestehendsten Geschwister. 
 
-is: 
 
-it1: (dsibageo1): Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
+it1: (dsibageo1): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
 it2: (dsibsex1): (infield = Geschlecht; männlich, weiblich, divers)  (Dropdown)
 
-it3: (dsibageo2): Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
+it3: (dsibageo2): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
 it4: (dsibsex2): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
 
-it5: (dsibageo3): 1: Präfix: Alter: ([offene Angabe], NUMBER, 2-Steller); Suffix: Jahre
+it5: (dsibageo3): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
 it6: (dsibsex3): (infield = Geschlecht; männlich, weiblich, divers) (Dropdown)
 
 st:
@@ -1036,7 +1034,7 @@ vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibo = 2
 
 vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibo = 3
 
-vc3: SHOW q3 AND ka2-ka4 AND it1-it6 IF dsibo > 3
+vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibo > 3
 
 av:
 
