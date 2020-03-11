@@ -252,7 +252,9 @@ fo: Bitte eine vierte Zeile programmieren, in der in der Itemspalte unter it3 ("
 
 tr:
 
-GOTO B1_4b
+        <zofar:transitions>
+            <zofar:transition target="B1_4b"/>
+        </zofar:transitions>
 
 hi:
 
@@ -305,7 +307,11 @@ hv:
 
 fo: 
 
-tr: GOTO B1_2
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="B1_2"/>
+        </zofar:transitions>
 
 hi:  
 
@@ -366,9 +372,12 @@ hv:
 
 fo: 
 
-tr: GOTO B1_4a IF wohnpar=1
-    GOTO B1_2 IF wohnpar=0
-    GOTO B1_2 IF wohnpar=MISSING
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="B1_4a" condition="wohnpar.value"/>
+            <zofar:transition target="B1_2" condition="!wohnpar.value or zofar.isMissing(wohnpar)"/>
+        </zofar:transitions>
     
 hi: 
 
