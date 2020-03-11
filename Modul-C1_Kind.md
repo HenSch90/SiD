@@ -48,8 +48,10 @@ fo:
 
 tr:
 
-GOTO C1_2
-
+        <zofar:transitions>
+            <zofar:transition target="C1_2"/>
+        </zofar:transitions>
+        
 hi:
 
 \--------------------------------
@@ -137,7 +139,9 @@ fo:
 
 tr:
 
-GOTO C1_4
+        <zofar:transitions>
+            <zofar:transition target="C1_4"/>
+        </zofar:transitions>
 
 hi: Dezimalstellen zulassen.
 
@@ -194,7 +198,9 @@ fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
 
 tr:
 
-GOTO C1_6
+        <zofar:transitions>
+            <zofar:transition target="C1_11"/>
+        </zofar:transitions>
 
 hi:
 
@@ -239,7 +245,11 @@ hv:
 
 fo:
 
-tr: GOTO C1_5
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="C1_5"/>
+        </zofar:transitions>
 
 hi:
 
@@ -287,7 +297,11 @@ hv:
 
 fo:
 
-tr: GOTO C1_3
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="C1_3"/>
+        </zofar:transitions>
 
 hi:
 
@@ -354,7 +368,11 @@ hv:
 
 fo: ao8 bitte etwas absetzen.
 
-tr: GOTO C1_9
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C1_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -437,7 +455,11 @@ hv:
 
 fo:
 
-tr: GOTO C1_7
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C1_7"/>
+        </zofar:transitions>
 
 hi:
 
@@ -501,7 +523,11 @@ hv:
 
 fo: mv/"weiß ich nicht" etwas absetzen.
 
-tr: GOTO C1_10
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C1_10"/>
+        </zofar:transitions>
 
 hi:
 
@@ -582,7 +608,11 @@ hv:
 
 fo:
 
-tr: GOTO C1_12
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C1_12"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -650,7 +680,11 @@ hv:
 
 fo:
 
-tr: GOTO C1_14
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="C1_13"/>
+        </zofar:transitions>
 
 hi:
 
@@ -701,6 +735,10 @@ hv:
 
 fo:
 
-tr: GOTO A_13
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_13"/>
+        </zofar:transitions>
 
 hi:
