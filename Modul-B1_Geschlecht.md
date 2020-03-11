@@ -122,7 +122,9 @@ fo: Items bitte zufällig rotieren.
 
 tr:
 
-GOTO B1_1
+        <zofar:transitions>
+            <zofar:transition target="B1_2"/>
+        </zofar:transitions>
 
 hi:
 
