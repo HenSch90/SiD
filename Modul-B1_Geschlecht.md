@@ -123,7 +123,7 @@ fo: Items bitte zufällig rotieren.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="B1_2"/>
+            <zofar:transition target="B1_1"/>
         </zofar:transitions>
 
 hi:
@@ -190,9 +190,13 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr:  GOTO D3_13 IF mastersplit=3, 4, 5, 6
-     GOTO A_54 IF mastersplit=1, 2, 13
+tr:
 
+        <zofar:transitions>
+            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
+        </zofar:transitions>
+        
 hi:
 
 \--------------------------------
