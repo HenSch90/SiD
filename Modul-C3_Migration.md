@@ -40,7 +40,11 @@ hv:
 
 fo:
 
-tr: GOTO A_8
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -91,7 +95,11 @@ hv:
 
 fo:
 
-tr: GOTO C3_3
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C3_3"/>
+        </zofar:transitions>
 
 hi:
 
@@ -140,6 +148,10 @@ hv:
 
 fo:
 
-tr: GOTO A_38
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_38"/>
+        </zofar:transitions>
 
 hi:
