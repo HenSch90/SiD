@@ -437,7 +437,9 @@ fo: Bitte eine fünfte Zeile programmieren, in der in der Itemspalte unter it4 (
 
 tr:
 
-GOTO B1_8
+        <zofar:transitions>
+            <zofar:transition target="B1_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -502,7 +504,9 @@ fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
-GOTO A_28
+        <zofar:transitions>
+            <zofar:transition target="A_28"/>
+        </zofar:transitions>
 
 hi:
 
@@ -565,7 +569,9 @@ fo: Bitte in der Zeile Großvater (promgroßv), Großmutter (promgroßm), Vater 
 
 tr:
 
-GOTO A_34
+        <zofar:transitions>
+            <zofar:transition target="A_34"/>
+        </zofar:transitions>
 
 hi:
 
