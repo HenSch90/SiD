@@ -87,9 +87,12 @@ zusatzsplit = 1, 2, 3, 4 (einmalige Randomisierung; mit gleicher Ziehungswahrsch
 fo:
 
 tr: 
-GOTO index IF !sid_ic.value and !sf_h.value
-GOTO offer IF sid_ic.value and jsCheck.value and isMobile.value and width.value lt 768
-GOTO A_1 IF sid_ic.value
+
+	<zofar:transitions>
+  		<zofar:transition target="index" condition="!sidpretest_consent.value and !sf_h.value"/>
+  		<zofar:transition target="offer" condition="sidpretest_consent.value and jsCheck.value and isMobile.value and width.value lt 768"/>
+  		<zofar:transition target="A_1" condition="sidpretest_consent.value"/>
+	</zofar:transitions>
 
 
 hi:
