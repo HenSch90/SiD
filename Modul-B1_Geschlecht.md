@@ -52,7 +52,10 @@ fo:
 
 tr: 
 
-GOTO B1_3b 
+        <zofar:transitions>
+            <zofar:transition target="B1_3a" condition="zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="B1_3b" condition="zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
 
 hi:
 
