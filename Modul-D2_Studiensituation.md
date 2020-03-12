@@ -430,7 +430,9 @@ fo:
 
 tr:
 
-GOTO D2_8
+        <zofar:transitions>
+            <zofar:transition target="D2_8"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -489,7 +491,9 @@ fo:
 
 tr:
 
-GOTO D2_9
+       <zofar:transitions>
+            <zofar:transition target="D2_9"/>
+        </zofar:transitions>
 
 hi:
 
@@ -550,7 +554,9 @@ fo:
 
 tr:
 
-GOTO D2_11
+       <zofar:transitions>
+            <zofar:transition target="D2_10"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -617,7 +623,9 @@ fo:
 
 tr:
 
-GOTO D2_12
+        <zofar:transitions>
+            <zofar:transition target="D2_12"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -1046,7 +1054,9 @@ fo:
 
 tr:
 
-GOTO D2_20
+      <zofar:transitions>
+            <zofar:transition target="D2_20"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1109,7 +1119,9 @@ fo:
 
 tr:
 
-GOTO A_23
+       <zofar:transitions>
+            <zofar:transition target="A_23"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1194,6 +1206,8 @@ fo3: Bitte über it9 "Leistungen" linksbündig positionieren.
 
 fo4: mv/"kann ich nicht beurteilen" bitte etwas absetzen.
 
-tr: GOTO A_44
+       <zofar:transitions>
+            <zofar:transition target="A_44"/>
+        </zofar:transitions>
 
 hi:
