@@ -46,7 +46,9 @@ fo:
 
 tr:
 
-GOTO D1_2
+        <zofar:transitions>
+            <zofar:transition target="D1_2"/>
+        </zofar:transitions>
 
 hi:
 
@@ -115,7 +117,9 @@ fo2: Sollte hi2 nicht möglich sein, bitte die Eingabefelder/Drop-Downs jeweils 
 
 tr:
 
-GOTO D1_3
+        <zofar:transitions>
+            <zofar:transition target="D1_3"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -167,7 +171,11 @@ hv:
 
 fo:
 
-tr: GOTO A_40
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_40"/>
+        </zofar:transition
 
 hi:
 
@@ -230,7 +238,9 @@ fo:
 
 tr:
 
-GOTO D1_7
+        <zofar:transitions>
+            <zofar:transition target="D1_5"/>
+        </zofar:transitions>
 
 hi: Auf dieser Seite werden untereinander drei Fragen mit den zugehörigen Antwortoptionen usw. dargestellt (zuerst q1 mit ao1, dann q2 mit ao2a und ao2b sowie abschließend q3 mit is3, ao3a, kh3a und ao3b). ao2a und ao2b bitte nebeneinander darstellen, ao3a und ao3b können gerne linksbündig untereinander darsgestellt werden. Wichtig: ao3a bitte als NUMBER mit einer Dezimalstelle programmieren und nicht als Textfeld/string!
 
@@ -311,7 +321,9 @@ fo:
 
 tr:
 
-GOTO D1_8
+        <zofar:transitions>
+            <zofar:transition target="D1_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -398,8 +410,10 @@ fo:
 
 tr:
 
-GOTO D2_6 IF mastersplit=1, 2, 7, 8, 14
-GOTO A_44 IF mastersplit=3, 4, 9, 10
+        <zofar:transitions>
+            <zofar:transition target="D2_6" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==14)"/>
+            <zofar:transition target="A_44" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10)"/>
+        </zofar:transitions>
 
 hi:
 
@@ -478,9 +492,13 @@ fo:
 
 tr:
 
-GOTO D1_11 IF (sabserbl = 1 – 16)
-GOTO D1_11a IF (sabserbl = 17)
-GOTO D1_12 IF (sabserbl = k. A. | 0)
+        <zofar:transitions>
+            <zofar:transition target="D1_11" condition="(zofar.asNumber(sabserbl)==2            or zofar.asNumber(sabserbl)==3             or zofar.asNumber(sabserbl)==4             or zofar.asNumber(sabserbl)==5             or zofar.asNumber(sabserbl)==6             or zofar.asNumber(sabserbl)==7             or zofar.asNumber(sabserbl)==8             or zofar.asNumber(sabserbl)==9             or zofar.asNumber(sabserbl)==10             or zofar.asNumber(sabserbl)==11             or zofar.asNumber(sabserbl)==12             or zofar.asNumber(sabserbl)==13             or zofar.asNumber(sabserbl)==14             or zofar.asNumber(sabserbl)==15             or zofar.asNumber(sabserbl)==16             or zofar.asNumber(sabserbl)==17)"/>
+            <zofar:transition target="D1_11a" condition="zofar.asNumber(sabserbl)==18"/>
+            <zofar:transition target="D1_12" condition="zofar.isMissing(sabserbl) or zofar.asNumber(sabserbl)==0"/>
+        </zofar:transitions>
+
+hi:
 
 \--------------------------------
 
@@ -529,7 +547,9 @@ fo: q1 und ao1 bitte zusammen oberhalb von q2 und ao2 platzieren.
 
 tr:
 
-GOTO D1_12
+        <zofar:transitions>
+            <zofar:transition target="D1_12"/>
+        </zofar:transitions>
 
 hi: Das Drop-Down zu sabserhs1 wird mit einer von uns noch zu lieferenden Hochschulliste (vorgefiltert nach Bundesland) gefüllt.
 
@@ -579,7 +599,9 @@ fo:
 
 tr:
 
-GOTO D1_12
+        <zofar:transitions>
+            <zofar:transition target="D1_12"/>
+        </zofar:transitions>
 
 hi:
 
@@ -626,7 +648,12 @@ hv:
 
 fo:
 
-tr: GOTO A_49a
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_49a" condition="zofar.asNumber(sabser)==1"/>
+            <zofar:transition target="A_49b" condition="zofar.asNumber(sabser)!=1 or zofar.isMissing(sabser)"/>
+        </zofar:transitions>
     
 hi:
 
@@ -673,7 +700,9 @@ fo:
 
 tr:
 
-GOTO A_27
+        <zofar:transitions>
+            <zofar:transition target="A_27"/>
+        </zofar:transitions>
 
 hi:
 
@@ -738,8 +767,14 @@ hv:
 
 fo:
 
-tr: GOTO D1_16 IF ssuja=1  
-    GOTO A_51b
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D1_15b" condition="zofar.asNumber(techepi)==2"/>
+            <zofar:transition target="D1_16" condition="zofar.asNumber(ssuja)==1"/>
+            <zofar:transition target="A_51a" condition="zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="A_51b" condition="zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
     
 hi1: Bitte 5 Akkordeons mit den Überschriften (!!in fett!!) !!1. Studienepisode!!, !!2. Studienepisode!!, !!3. Studienepisode!!, !!4. Studienepisode!!, !!5. Studienepisode!! linksbündig untereinander anlegen. 
 
@@ -814,7 +849,12 @@ hv:
 
 fo:
 
-tr: GOTO A_51b 
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_51a" condition="zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="A_51b" condition="zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
     
 hi1: Bitte 5 Zeilen programmieren, in denen jeweils ganz vorne/in der ersten Spalte (!!in fett!!) !!1. Unterbrechung!!, !!2. Unterbrechung!!, !!3. Unterbrechung!!, !!4. Unterbrechung!! und !!5. Unterbrechung!! linksbündig untereinander stehen. Die beiden Drop-Downs und die Einfachauswahl dann bitte pro Unterbrechung/Zeile linksbündig nebeneinander anordnen/folgen lassen. Diese drei Spalten bitte (!!in fett!!) mit !!Zeitpunkt!!, !!Dauer!! und !!Beurlaubung!! überschreiben.
 
@@ -905,8 +945,12 @@ hv:
 
 fo:
 
-tr: GOTO D2_13 if mastersplit=1, 2, 7, 8, 14
-    GOTO A_23 if mastersplit=3, 4, 9, 10
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D2_13" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==14) "/>
+            <zofar:transition target="A_23" condition="(zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10) "/>
+        </zofar:transitions>
 
 hi:
 
@@ -988,7 +1032,9 @@ fo:
 
 tr:
 
-GOTO D1_21
+        <zofar:transitions>
+            <zofar:transition target="D1_21"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1057,7 +1103,10 @@ fo:
 
 tr:
 
-GOTO D1_22
+        <zofar:transitions>
+            <zofar:transition target="D1_22" condition="zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="D1_23" condition="zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
 
 hi1: Bitte über die drei offenen Angaben eine Zeile linksbündig einfügen mit "Andere Sprache(n), und zwar:"
 
@@ -1137,7 +1186,9 @@ fo:
 
 tr:
 
-GOTO D1_24
+        <zofar:transitions>
+            <zofar:transition target="D1_24"/>
+        </zofar:transitions>
 
 hi: Items bitte zufällig rotieren.
 
@@ -1210,7 +1261,9 @@ fo:
 
 tr:
 
-GOTO D1_25
+        <zofar:transitions>
+            <zofar:transition target="D1_25"/>
+        </zofar:transitions>
 
 hi: Items bitte zufällig rotieren
 
@@ -1269,6 +1322,8 @@ fo:
 
 tr:
 
-GOTO A_52
+        <zofar:transitions>
+            <zofar:transition target="D1_26"/>
+        </zofar:transitions>
 
 hi: Items bitte zufällig rotieren
