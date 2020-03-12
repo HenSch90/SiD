@@ -686,7 +686,9 @@ fo:
 
 tr:
 
-GOTO D2_21
+       <zofar:transitions>
+            <zofar:transition target="D2_21"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -753,7 +755,9 @@ fo:
 
 tr:
 
-GOTO D2_15
+       <zofar:transitions>
+            <zofar:transition target="D2_14"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -816,7 +820,9 @@ fo:
 
 tr:
 
-GOTO D2_16
+       <zofar:transitions>
+            <zofar:transition target="D2_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -877,7 +883,9 @@ fo:
 
 tr:
 
-GOTO D2_17
+       <zofar:transitions>
+            <zofar:transition target="D2_17"/>
+        </zofar:transitions>
 
 hi:
 
@@ -926,7 +934,9 @@ hv:
 
 fo:
 
-tr: GOTO D2_18
+        <zofar:transitions>
+            <zofar:transition target="D2_18"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1005,7 +1015,9 @@ fo: Bitte mittig über die ao !!Anzahl der verfassten Texte!! positionieren.
 
 tr:
 
-GOTO D2_19
+       <zofar:transitions>
+            <zofar:transition target="D2_19"/>
+        </zofar:transitions>
 
 hi: 
 
