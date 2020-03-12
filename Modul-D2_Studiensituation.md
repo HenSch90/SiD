@@ -361,7 +361,9 @@ fo:
 
 tr:
 
-GOTO D2_7
+        <zofar:transitions>
+            <zofar:transition target="D2_7"/>
+        </zofar:transitions>
 
 hi:
 
