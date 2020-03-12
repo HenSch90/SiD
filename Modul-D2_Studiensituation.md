@@ -297,8 +297,10 @@ fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
-GOTO B1_7 if mastersplit=1, 2, 5, 6
-GOTO A_28 if mastersplit=7, 8, 11, 12, 14
+        <zofar:transitions>
+            <zofar:transition target="B1_7" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+            <zofar:transition target="A_28" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
+        </zofar:transitions>
 
 hi: 
 
