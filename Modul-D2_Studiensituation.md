@@ -78,7 +78,9 @@ fo3: mv/"weiß ich nicht" bitte etwas absetzen.
 
 tr:
 
-GOTO A_22
+        <zofar:transitions>
+            <zofar:transition target="A_22"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -159,7 +161,9 @@ fo3: Bitte über it6 "Prüfungsorganisation" linksbündig positionieren.
 
 tr:
 
-GOTO D2_4
+        <zofar:transitions>
+            <zofar:transition target="D2_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -224,7 +228,9 @@ fo:
 
 tr:
 
-GOTO D2_5
+        <zofar:transitions>
+            <zofar:transition target="D2_5"/>
+        </zofar:transitions>
 
 hi: 
 
