@@ -942,7 +942,7 @@ fo1: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (qu
 
 fo2: Bitte in der Zeile der Kommiliton\*innen (it1: bsuntkom) und Lehrende (it2: bsuntleh) jeweils das Antwortkästchen für mv/"nicht vorhanden" nicht einblenden.
 
-tr: GOTO C2_12
+tr:
 
 hi:
 
