@@ -52,7 +52,11 @@ hv:
 
 fo: mv/"weiß ich nicht" absetzen
 
-tr: GOTO A_33
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_33"/>
+        </zofar:transitions>
 
 hi:
 
@@ -148,7 +152,11 @@ hv:
 
 fo:
 
-tr: GOTO B2_2b2
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_2b2"/>
+        </zofar:transitions>
 
 hi: Überkategorien der Antwortoptionen:
 
@@ -255,8 +263,12 @@ hv:
 
 fo:
 
-tr: GOTO B2_3a
-    
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_3a" condition="zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="B2_3b" condition="zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
 
 hi: Zwischenüberschriften zwischen den ao’s:
 
@@ -334,7 +346,11 @@ hv:
 
 fo: mv/"weiß ich nicht" absetzen
 
-tr: GOTO B2_6
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_6"/>
+        </zofar:transitions>
 
 hi:
 
@@ -397,7 +413,13 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO B2_8a
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_8a" condition="zofar.asNumber(sabsan)==1 or              zofar.asNumber(sabsan)==2"/>
+            <zofar:transition target="B2_8b" condition="zofar.asNumber(sabsan) ge 3"/>
+            <zofar:transition target="B2_8b" condition="zofar.isMissing(sabsan)"/>
+        </zofar:transitions>
  
 hi:
 
@@ -432,14 +454,6 @@ it5: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z. B. BAföG, S
 
 it6: (skkarr) … Ihnen hilfreiche Ratschläge für den weiteren Berufs- und Karriereweg gibt?
 
-
-
-
-
-
-
-
-
 st:
 
 ao1: 1: sehr unwahrscheinlich
@@ -468,7 +482,11 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr: GOTO B2_9b
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_9b"/>
+        </zofar:transitions>
     
 hi:
 
@@ -527,7 +545,11 @@ hv:
 
 fo: mv/"weiß ich nicht" absetzen
 
-tr:   GOTO B2_10
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_10"/>
+        </zofar:transitions>
 
 hi:
 
@@ -596,8 +618,12 @@ hv:
 
 fo: mv/"weiß ich nicht" absetzen
 
-tr: GOTO D3_13 IF mastersplit=9, 10, 11, 12
-    GOTO A_54 IF mastersplit=7, 8, 13
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12)"/>
+            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==13)"/>
+        </zofar:transitions>
 
 
 hi:
@@ -655,7 +681,11 @@ hv:
 
 fo: Bitte in der Zeile der Großeltern (promgroß) und Eltern (promelt) jeweils das Antwortkästchen für mv2/"habe ich nicht"  nicht einblenden.
 
-tr: GOTO A_34
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="A_34"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -714,7 +744,9 @@ fo:
 
 tr:
 
-GOTO D1_19
+        <zofar:transitions>
+            <zofar:transition target="D1_19"/>
+        </zofar:transitions>
 
 hi: Items bitte zufällig rotieren.
 
