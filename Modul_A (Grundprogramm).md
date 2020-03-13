@@ -5592,6 +5592,10 @@ fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
 
 tr:
 
+      <zofar:transitions>
+            <zofar:transition target="D3_3"/>
+        </zofar:transitions>
+
 hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
 
 \------------------------------------------------------------
@@ -5638,6 +5642,10 @@ hv:
 fo:
 
 tr:
+
+       <zofar:transitions>
+            <zofar:transition target="F3_24"/>
+        </zofar:transitions>
 
 hi:
  
@@ -5693,6 +5701,10 @@ hv:
 fo:
 
 tr:
+
+       <zofar:transitions>
+            <zofar:transition target="F3_25"/>
+        </zofar:transitions>
 
 hi:
 
@@ -5892,6 +5904,10 @@ hv:
 fo:
 
 tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_4"/>
+        </zofar:transitions>
 
 hi:
 
