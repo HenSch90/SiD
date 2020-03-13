@@ -491,7 +491,7 @@ fo:
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_9"/>
         </zofar:transitions>
 
@@ -554,7 +554,7 @@ fo:
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_10"/>
         </zofar:transitions>
 
@@ -686,7 +686,7 @@ fo:
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_21"/>
         </zofar:transitions>
 
@@ -755,7 +755,7 @@ fo:
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_14"/>
         </zofar:transitions>
 
@@ -820,7 +820,7 @@ fo:
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_16"/>
         </zofar:transitions>
 
@@ -883,7 +883,7 @@ fo:
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_17"/>
         </zofar:transitions>
 
@@ -1015,7 +1015,7 @@ fo: Bitte mittig über die ao !!Anzahl der verfassten Texte!! positionieren.
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_19"/>
         </zofar:transitions>
 
@@ -1066,7 +1066,7 @@ fo:
 
 tr:
 
-      <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="D2_20"/>
         </zofar:transitions>
 
@@ -1131,7 +1131,7 @@ fo:
 
 tr:
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="A_23"/>
         </zofar:transitions>
 
@@ -1218,7 +1218,7 @@ fo3: Bitte über it9 "Leistungen" linksbündig positionieren.
 
 fo4: mv/"kann ich nicht beurteilen" bitte etwas absetzen.
 
-       <zofar:transitions>
+        <zofar:transitions>
             <zofar:transition target="A_44"/>
         </zofar:transitions>
 
