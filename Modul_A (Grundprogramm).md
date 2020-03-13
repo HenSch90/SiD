@@ -5536,7 +5536,13 @@ hv:
 
 fo:
 
-tr:
+tr:       		
+
+
+		<zofar:transitions>
+            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
+        	</zofar:transitions>
 
 hi:
 
