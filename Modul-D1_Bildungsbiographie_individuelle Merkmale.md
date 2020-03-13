@@ -175,7 +175,7 @@ tr:
 
         <zofar:transitions>
             <zofar:transition target="A_40"/>
-        </zofar:transition
+        </zofar:transitions>
 
 hi:
 
@@ -1189,7 +1189,7 @@ tr:
         <zofar:transitions>
             <zofar:transition target="D1_24"/>
         </zofar:transitions>
-
+        
 hi: Items bitte zufällig rotieren.
 
 \--------------------------------
