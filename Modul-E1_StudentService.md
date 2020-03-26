@@ -1,3 +1,4 @@
+
 \--------------------------------
 
 E1_0
@@ -41,7 +42,7 @@ hv:
 
 fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
-tr: GOTO D3_1 if mastersplit= 3, 4, 5, 6, 9, 10, 11, 12, 14 GOTO A_53 IF mastersplit= 1, 2, 7, 8, 13
+tr:
 
 hi:
 
@@ -108,7 +109,11 @@ hv:
 
 fo:
 
-tr: GOTO E1_2
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="E1_2"/>
+        </zofar:transitions>
 
 hi:
 
@@ -194,7 +199,11 @@ hv:
 
 fo:
 
-tr: GOTO E1_3
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="E1_3"/>
+        </zofar:transitions>
 
 hi:
 
@@ -269,7 +278,11 @@ hv:
 
 fo:
 
-tr: GOTO E1_3a
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="E1_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -341,7 +354,7 @@ hv:
 
 fo:
 
-tr: GOTO E1_6
+tr:
 
 hi:
 
@@ -447,9 +460,10 @@ fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
 
 tr: 
 
-GOTO E1_7 IF ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
-
-ELSE GOTO E1_11
+        <zofar:transitions>
+            <zofar:transition target="E1_7" condition="(zofar.asNumber(ibedsfin) gt 1         or zofar.asNumber (ibedkv) gt 1         or zofar.asNumber (ibedafin) gt 1         or zofar.asNumber (ibedpart) gt 1         or zofar.asNumber (ibedfamu) gt 1         or zofar.asNumber (ibeddep) gt 1         or zofar.asNumber (ibedaldr) gt 1         or zofar.asNumber (ibedvbew) gt 1         or zofar.asNumber (ibedvbki) gt 1         or zofar.asNumber (ibedvbhc) gt 1         or zofar.asNumber (ibedllpran) gt 1         or zofar.asNumber (ibedaoz) gt 1         or zofar.asNumber (ibedabersw) gt 1         or zofar.asNumber (ibedaorg) gt 1         or zofar.asNumber (ibedabs) gt 1         or zofar.asNumber (ibebsln) gt 1         or zofar.asNumber (ibebssu) gt 1         or zofar.asNumber (ibebsth) gt 1         or zofar.asNumber (ibebspa) gt 1         or zofar.asNumber (ibebsbh) gt 1         or zofar.asNumber (ibebsat) gt 1         or zofar.asNumber (ibebsrb) gt 1         or zofar.asNumber (ibedno) gt 1)"/>
+            <zofar:transition target="E1_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -583,8 +597,11 @@ fo2: Bitte über it6 "persönliche Themen" linksbündig positionieren.
 
 fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
 
-tr: GOTO E1_8 IF iinano = 1
-    ELSE GOTO E1_11
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="E1_8"/>
+        </zofar:transitions>
     
 hi: Bitte Systemvariable "iinano" mit den folgenden Werten anlegen:
 iinano = 0, wenn mind. ein Item/eine Variable auf E1_7 > 1 ist.
@@ -650,7 +667,11 @@ hv:
 
 fo: Bitte über it1 "Ich habe kein Beratungsangebot in Anspruch genommen, weil …" linksbündig positionieren.
 
-tr: GOTO E1_11
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="E1_9"/>
+        </zofar:transitions>
 
 hi:
 
@@ -716,7 +737,9 @@ fo: mv/"interessiert mich nicht" bitte etwas absetzen.
 
 tr:
 
-GOTO A_56
+        <zofar:transitions>
+            <zofar:transition target="A_56"/>
+        </zofar:transitions>
 
 hi: 
 
