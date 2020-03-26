@@ -1,3 +1,4 @@
+
 \--------------------------------
 
 B1_1
@@ -51,7 +52,10 @@ fo:
 
 tr: 
 
-GOTO B1_3b 
+        <zofar:transitions>
+            <zofar:transition target="B1_3a" condition="zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="B1_3b" condition="zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
 
 hi:
 
@@ -118,7 +122,9 @@ fo: Items bitte zufällig rotieren.
 
 tr:
 
-GOTO B1_1
+        <zofar:transitions>
+            <zofar:transition target="B1_1"/>
+        </zofar:transitions>
 
 hi:
 
@@ -184,9 +190,13 @@ hv:
 
 fo: Items bitte zufällig rotieren.
 
-tr:  GOTO D3_13 IF mastersplit=3, 4, 5, 6
-     GOTO A_54 IF mastersplit=1, 2, 13
+tr:
 
+        <zofar:transitions>
+            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
+        </zofar:transitions>
+        
 hi:
 
 \--------------------------------
@@ -242,7 +252,9 @@ fo: Bitte eine vierte Zeile programmieren, in der in der Itemspalte unter it3 ("
 
 tr:
 
-GOTO B1_4b
+        <zofar:transitions>
+            <zofar:transition target="B1_4b"/>
+        </zofar:transitions>
 
 hi:
 
@@ -295,7 +307,11 @@ hv:
 
 fo: 
 
-tr: GOTO B1_2
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="B1_2"/>
+        </zofar:transitions>
 
 hi:  
 
@@ -356,9 +372,12 @@ hv:
 
 fo: 
 
-tr: GOTO B1_4a IF wohnpar=1
-    GOTO B1_2 IF wohnpar=0
-    GOTO B1_2 IF wohnpar=MISSING
+tr: 
+
+        <zofar:transitions>
+            <zofar:transition target="B1_4a" condition="wohnpar.value"/>
+            <zofar:transition target="B1_2" condition="!wohnpar.value or zofar.isMissing(wohnpar)"/>
+        </zofar:transitions>
     
 hi: 
 
@@ -418,7 +437,9 @@ fo: Bitte eine fünfte Zeile programmieren, in der in der Itemspalte unter it4 (
 
 tr:
 
-GOTO B1_8
+        <zofar:transitions>
+            <zofar:transition target="B1_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -483,7 +504,9 @@ fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
-GOTO A_28
+        <zofar:transitions>
+            <zofar:transition target="A_28"/>
+        </zofar:transitions>
 
 hi:
 
@@ -546,7 +569,9 @@ fo: Bitte in der Zeile Großvater (promgroßv), Großmutter (promgroßm), Vater 
 
 tr:
 
-GOTO A_34
+        <zofar:transitions>
+            <zofar:transition target="A_34"/>
+        </zofar:transitions>
 
 hi:
 
