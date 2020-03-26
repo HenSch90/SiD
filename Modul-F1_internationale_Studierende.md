@@ -1,3 +1,4 @@
+
 F1_1
 ====
 
@@ -47,7 +48,12 @@ hv:
 
 fo:
 
-tr: GOTO F1_2
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_2b" condition="width.value lt 768"/>
+            <zofar:transition target="F1_2"/>
+        </zofar:transitions>
 
 hi:
 
@@ -130,7 +136,11 @@ fo1: Bitte über it1 "... *für* einen Auslandsaufenthalt" linksbündig position
 
 fo2: Bitte über it8 "... *gegen* einen Auslandsaufenthalt" linksbündig positionieren.
 
-tr: GOTO F1_3
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_3"/>
+        </zofar:transitions>
 
 hi:
 
@@ -177,7 +187,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_4
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -234,7 +248,11 @@ fo1: ao1 bitte etwas absetzen.
 
 fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
-tr: GOTO F1_5
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_5"/>
+        </zofar:transitions>
 
 hi:
 
@@ -285,44 +303,17 @@ hv:
 
 fo:
 
-tr: 
-GOTO F1_6 IF (vsbdeba=2 AND dnatausl=1 AND imausl=1)
+tr:
 
-GOTO F2_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=2)
+        <zofar:transitions>
+            <zofar:transition target="F1_6" condition="(zofar.asNumber(vsbdeba)==2)"/>
+            <zofar:transition target="F2_6" condition="(zofar.asNumber(vsbdeba)==1              and zofar.asNumber(imausl)==2)"/>
+            <zofar:transition target="F2_6" condition="(zofar.isMissing(vsbdeba)              and zofar.asNumber(imausl)==2)"/>
+            <zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1              and zofar.asNumber(imausl)==1)"/>
+            <zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1              and zofar.isMissing(imausl))"/>
+            <zofar:transition target="F3_6" condition="(zofar.isMissing(vsbdeba)              and zofar.isMissing(imausl))"/>
+        </zofar:transitions>
 
-GOTO F2_6 IF (vsbdeba=1 AND dnatdeu=MISSING AND imausl=2)
-GOTO F2_6 IF (vsbdeba=MISSING AND dnatdeu=1 AND imausl=2)
-GOTO F2_6 IF (vsbdeba=MISSING AND dnatdeu=MISSING AND imausl=2)
-
-GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=1)
-
-GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=1 AND imausl=MISSING)
-GOTO F3_6 IF (vsbdeba=1 AND dnatdeu=MISSING AND imausl=1)
-GOTO F3_6 IF (vsbdeba=MISSING AND dnatdeu=1 AND imausl=1)
-
-GOTO F1_6 IF (vsbdeba=2 AND dnatausl=1 AND imausl=MISSING)
-GOTO F1_6 IF (vsbdeba=2 AND dnatausl=MISSING AND imausl=1)
-GOTO F1_6 IF (vsbdeba=2 AND dnatausl=MISSING AND imausl=MISSING)
-
-
-ALTERNATIV:
-
-<zofar:transition target="F1_6" condition="(zofar.asNumber(vsbdeba)==2)"/>		
-
-<zofar:transition target="F2_6" condition="(zofar.asNumber(vsbdeba)==1 					  			and zofar.asNumber(imausl)==2)"/>
-
-<zofar:transition target="F2_6" condition="(zofar.isMissing(vsbdeba) 
-					and zofar.asNumber(imausl)==2)"/>
-
-<zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1 
-					and zofar.asNumber(imausl)==1)"/>
-
-<zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1 
-					and zofar.isMissing(imausl))"/>
-					
-<zofar:transition target="F3_6" condition="(zofar.isMissing(vsbdeba) 
-					and zofar.isMissing(imausl))"/>
-                      
 hi:
 
 \--------------------------------
@@ -366,7 +357,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_7
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_7"/>
+        </zofar:transitions>
 
 hi:
 
@@ -417,7 +412,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_8
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -472,7 +471,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_9
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_9"/>
+        </zofar:transitions>
 
 hi:
 
@@ -539,7 +542,11 @@ hv:
 
 fo: q2 bitte unterhalb und mit etwas Abstand von q1 positionieren.
 
-tr: GOTO F1_10
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_10"/>
+        </zofar:transitions>
 
 hi: Items bitte zufällig rotieren.
 
@@ -584,7 +591,11 @@ hv:
 
 fo:
 
-tr:  GOTO F1_11
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_11"/>
+        </zofar:transitions>
 
 hi:
 
@@ -637,7 +648,11 @@ hv:
 
 fo: mv/"weiß ich noch nicht" bitte etwas absetzen.
 
-tr: GOTO F1_12
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_12"/>
+        </zofar:transitions>
 
 hi:
 
@@ -690,7 +705,11 @@ hv:
 
 fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
-tr: GOTO F1_13
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_13"/>
+        </zofar:transitions>
 
 hi:
 
@@ -747,7 +766,11 @@ fo1: ao1 bitte etwas absetzen.
 
 fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
-tr: GOTO F1_14
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_14"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -806,7 +829,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_15
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_15"/>
+        </zofar:transitions>
 
 hi:
 
@@ -872,7 +899,11 @@ hv:
 
 fo: Bitte zuerst q1 mit ao1-ao5 darstellen und darunter dann q2 mit ao6-ao10 darstellen.
 
-tr: GOTO F1_16
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -927,7 +958,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_17
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_17"/>
+        </zofar:transitions>
 
 hi:
 
@@ -982,7 +1017,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_18
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_18"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1035,7 +1074,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_21
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_20"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1101,7 +1144,11 @@ fo2: Bitte über ao4 "Ich möchte weiterstudieren/promovieren, und zwar …" mit
 
 fo3: Bitte über ao7 "etwas Anderes" mit etwas Abstand linksbündig positionieren.
 
-tr: GOTO F1_22
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_22"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1160,7 +1207,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_23
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_23"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1217,7 +1268,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_24
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="F1_24"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1272,7 +1327,11 @@ hv:
 
 fo:
 
-tr: GOTO F1_25
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_56"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1329,6 +1388,6 @@ hv:
 
 fo:
 
-tr: GOTO A_56
+tr:
 
 hi:
