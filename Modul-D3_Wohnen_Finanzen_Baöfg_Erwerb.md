@@ -1,3 +1,4 @@
+
 \--------------------------------
 
 D3_2
@@ -52,7 +53,11 @@ hv:
 
 fo: Auf der Seite als erstes q1/ao1 zusammen darstellen. Darunter dann q2/ao2 zusammen darstellen und darunter dann ggf. q3/ao3 zusammen einblenden.
 
-tr: GOTO D3_5
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_4"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -105,9 +110,13 @@ hv:
 
 fo:
 
-tr: GOTO B2_5 if mastersplit=9, 10, 11, 12
-    GOTO B1_5 if mastersplit=3, 4, 5, 6,
-    GOTO D3_13 if mastersplit=14
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="B2_5" condition="(zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12)"/>
+            <zofar:transition target="B1_5" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+            <zofar:transition target="D3_13" condition="zofar.asNumber(mastersplit)==14"/>
+        </zofar:transitions>
 
 hi:
 
@@ -226,7 +235,9 @@ fo2: Bitte Leerzeile/Abstand vor den Gesamteinnahmen einziehen.
 
 tr:
 
-GOTO D3_7
+        <zofar:transitions>
+            <zofar:transition target="D3_7"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -285,7 +296,11 @@ hv:
 
 fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
 
-tr: GOTO D3_8
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -413,7 +428,11 @@ fo2: Bitte etwas Abstand zwischen den beiden Spalten.
 
 fo3: Bitte Leerzeile/Abstand vor den Gesamtausgaben einziehen. 
 
-tr: GOTO D3_9
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_9"/>
+        </zofar:transitions>
 
 hi1: Bitte kh1 für die Einzelausgabeposten der Spalte "ich bezahle selbst" nutzen und kh2 für die Einzelausgabeposten der Spalte "andere bezahlen für mich".
 
@@ -460,7 +479,14 @@ hv:
 
 fo:
 
-tr: GOTO D3_11
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_10" condition="zofar.asNumber(feindgsemo) gt 0 or zofar.asNumber(feindgstuo) gt 0"/>
+            <zofar:transition target="D3_11" condition="zofar.asNumber(feindgsemo)==0 and zofar.asNumber(feindgstuo) == 0"/>
+            <zofar:transition target="D3_11" condition="zofar.isMissing(feindgsemo) and zofar.isMissing(feindgstuo)"/>
+            <zofar:transition target="D3_11"/>
+        </zofar:transitions>
 
 hi:
 
@@ -517,7 +543,11 @@ hv:
 
 fo:
 
-tr: GOTO A_54
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_12"/>
+        </zofar:transitions>
 
 hi: Items bitte zufällig rotieren.
 
@@ -568,7 +598,14 @@ hv:
 
 fo:
 
-tr: GOTO D3_13b
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_14" condition="zofar.asNumber(fbafja)==1"/>
+            <zofar:transition target="D3_15" condition="zofar.asNumber(fbafja)==2"/>
+            <zofar:transition target="D3_17" condition="zofar.asNumber(fbafja)==4"/>
+            <zofar:transition target="D3_6" condition="zofar.asNumber(fbafja)==3        or zofar.isMissing(fbafja)"/>
+        </zofar:transitions>
 
 hi:
 
@@ -617,13 +654,7 @@ hv:
 fo:
 
 tr:
-GOTO D3_14 IF fbafja = 1
 
-GOTO D3_15 IF fbafja = 2
-
-GOTO D3_17 IF fbafja = 4
-
-GOTO D3_6 IF fbafja = 3 OR fbafja = k. A.
 
 hi:
 
@@ -677,7 +708,11 @@ hv:
 
 fo:
 
-tr: GOTO D3_16
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -726,7 +761,11 @@ hv:
 
 fo:
 
-tr: GOTO D3_16
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -807,7 +846,9 @@ hv:
 
 fo:
 
-GOTO D3_6
+        <zofar:transitions>
+            <zofar:transition target="D3_6"/>
+        </zofar:transitions>
 
 hi:
 
@@ -854,7 +895,11 @@ hv:
 
 fo:
 
-tr: GOTO D3_18
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_18"/>
+        </zofar:transitions>
 
 hi:
 
@@ -909,7 +954,11 @@ hv:
 
 fo:
 
-tr: GOTO D3_6
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_6"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1023,9 +1072,12 @@ hv:
 
 fo: Die Abfrage der Erwerbstätigkeit und Fachnähe soll bitte jeweils zusammen erfolgen. Das heißt "1. Erwerbstätigkeit" (it1) soll als Überschrift in fett programmiert werden und darunter vertikel die entsprechenden ao1-ao7 folgen. Anschließend/darunter soll "Fachnähe" (it2) fett programmiert werden und in derselben Zeile/horizontal die ao8-ao12 folgen. Damit wäre der erste Abschnitt für die erste Erwerbstätigkeit beendet. Der ggf. folgende zweite/dritte Abschnitt würden äquivalent umgesetzt werden, sofern die Einblendbedingungen erfüllt sind.
 
-tr: GOTO D3_20 IF sformberu=1 | sformdua=1;  
-    GOTO D3_21 IF sformberu=0 & sformdua=0 & eaktsens > 1
-    GOTO D3_22 IF sformberu=0 & sformdua=0 & eaktsens = 1 | k. A.
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_20" condition="sformberu.value or sformdua.value"/>
+            <zofar:transition target="D3_21" condition="!sformberu.value and !sformdua.value"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -1083,8 +1135,12 @@ hv:
 
 fo:
 
-tr: GOTO D3_21 IF (eaktsens > 1)
-    GOTO D3_22 IF (eaktsens = 1 | k. A.)
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_21" condition="zofar.asNumber(eaktsens) gt 1"/>
+            <zofar:transition target="D3_22" condition="zofar.asNumber(eaktsens)==1 or zofar.isMissing(eaktsens)"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1175,7 +1231,11 @@ hv:
 
 fo:
 
-tr: GOTO D3_22
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_22"/>
+        </zofar:transitions>
 
 hi: Items bitte zufällig rotieren.
 
@@ -1248,7 +1308,12 @@ hv:
 
 fo:
 
-tr:  GOTO D3_23
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D1_9" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==14)"/>
+            <zofar:transition target="D2_6" condition="(zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12)"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1301,7 +1366,7 @@ hv:
 
 fo:
 
-tr: GOTO D1_27
+tr:
 
 hi:
 
@@ -1358,7 +1423,9 @@ fo:
 
 tr:
 
-GOTO D1_28
+        <zofar:transitions>
+            <zofar:transition target="D1_28"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1417,7 +1484,10 @@ hv:
 
 fo:
 
-tr: GOTO D1_9 IF mastersplit=3, 4, 9, 10, 14
-    GOTO D2_6 IF mastersplit=5, 6, 11, 12
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_52"/>
+        </zofar:transitions>
 
 hi1: Items bitte zufällig rotieren.
