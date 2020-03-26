@@ -1,3 +1,4 @@
+
 \--------------------------------
 
 C2_0
@@ -41,8 +42,7 @@ hv:
 
 fo:
 
-tr: GOTO C2_1 if beschwer==2
-GOTO XX if beschwer==1
+tr: 
 
 hi:
 
@@ -134,7 +134,11 @@ hv:
 
 fo: mv als erste, etwa abgesetzte Spalte, danach Skala.
 
-tr: GOTO C2_2
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C2_2"/>
+        </zofar:transitions>
 
 hi:
 
@@ -197,9 +201,11 @@ hv:
 
 fo: Bitte über ao2 "ja, und zwar:" positionieren.
 
-tr: GOTO C2_2a IF bedbau=1 OR bedauss=1 OR bedsich=1 OR bedruh=1 OR bedmed=1 OR bedelearn=1 OR bedpers=1 OR bedtech=1 OR bedand=1
-GOTO C2_3 if bedno==1
+tr:
 
+        <zofar:transitions>
+            <zofar:transition target="C2_3"/>
+        </zofar:transitions>
 
 hi:
 
@@ -284,8 +290,7 @@ hv:
 
 fo:
 
-tr: GOTO C2_3
-
+tr:
 
 hi:
 
@@ -332,7 +337,11 @@ hv:
 
 fo: 
 
-tr: GOTO C2_4
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C2_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -381,7 +390,12 @@ hv:
 
 fo:
 
-tr: GOTO C2_5
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C2_5" condition="zofar.asNumber(h_split)==1"/>
+            <zofar:transition target="C2_6" condition="zofar.asNumber(h_split)==2"/>
+        </zofar:transitions>
 
 hi:
 
@@ -432,11 +446,13 @@ hv:
 
 fo:
 
-tr: GOTO C2_7
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C2_7"/>
+        </zofar:transitions>
 
 hi:
-
-
 
 \--------------------------------
 
@@ -507,7 +523,11 @@ fo1: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in f
 
 fo2: schwno/"Ich habe und hatte keine Schwierigkeiten." als EK absetzen
 
-tr: GOTO C2_12 IF schwno=1; GOTO C2_8 IF schwleist=1 OR schwwieei=1 OR schwanwes=1 OR schwlv=1 OR schwselbst=1 OR schwgrup=1 OR schwflex=1 OR schwdicht=1 OR schwwieho=1 OR schwdauer=1 OR schwprart=1 
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C2_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -602,35 +622,28 @@ hv:
 
 fo: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
 
-tr: GOTO C2_9 IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagrup=1 OR ntaflex=1 OR ntadicht=1 OR ntawieho=1 OR ntadauer=1 OR ntaprart=1
-
-GOTO C2_10 IF ntaleist=3 AND ntawieei=3 AND ntaanwes=3 AND ntalv=3 AND ntaselbst=3 AND ntagrup=3 AND ntaflex=3 AND ntadicht=3 AND ntawieho=3 AND ntadauer=3 AND ntaprart=3
-
-GOTO C2_11 IF ntaleist=2 OR ntawieei=2 OR ntaanwes=2 OR ntalv=2 OR ntaselbst=2 OR ntagrup=2 OR ntaflex=2 OR ntadicht=2 OR ntawieho=2 OR ntadauer=2 OR ntaprart=2
-
-ODER
+tr:
 
         <zofar:transitions>
             <zofar:transition target="C2_9" condition="zofar.asNumber(ntabau)==2 or zofar.asNumber(ntaorg)==2 or zofar.asNumber(ntapru)==2 or zofar.asNumber(ntaand)==2"/>
             <zofar:transition target="C2_11" condition="zofar.asNumber(ntabau)==3 or zofar.asNumber(ntaorg)==3 or zofar.asNumber(ntapru)==3 or zofar.asNumber(ntaand)==3"/>
-	        <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
-			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
             <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
             <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
             <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
-			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
+            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
             <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
             <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
             <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
-			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
             <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
             <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
             <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
-			<zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
+            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
             <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
             <zofar:transition target="C2_12" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
-		</zofar:transitions>
-
+        </zofar:transitions>
 
 hi:
 
@@ -725,11 +738,12 @@ hv:
 
 fo: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
 
-tr: 
+tr:
 
-GOTO C2_11 IF ntabau=3 OR ntaorg=3 OR ntapru=3 OR ntaand=3
-
-ELSE GOTO C2_12
+        <zofar:transitions>
+            <zofar:transition target="C2_11" condition="zofar.asNumber(ntabau)==3 or zofar.asNumber(ntaorg)==3 or zofar.asNumber(ntapru)==3 or zofar.asNumber(ntaand)==3"/>
+            <zofar:transition target="C2_12"/>
+        </zofar:transitions>
 
 hi:
 
@@ -794,7 +808,11 @@ hv:
 
 fo:
 
-tr: GOTO C2_12
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C2_12"/>
+        </zofar:transitions>
 
 hi:
 
@@ -855,7 +873,11 @@ hv:
 
 fo: kbmem/"Wurde mir nicht mitgeteilt." als EK absetzen
 
-tr: GOTO C2_11a
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="C2_12"/>
+        </zofar:transitions>
 
 hi:
 
@@ -920,7 +942,7 @@ fo1: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (qu
 
 fo2: Bitte in der Zeile der Kommiliton\*innen (it1: bsuntkom) und Lehrende (it2: bsuntleh) jeweils das Antwortkästchen für mv/"nicht vorhanden" nicht einblenden.
 
-tr: GOTO C2_12
+tr:
 
 hi:
 
@@ -979,9 +1001,12 @@ hv:
 
 fo: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (quasi links von der Spalte "kenne ich nicht").
 
-tr: GOTO C2_13 IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb = 3 OR beand = 3
+tr:
 
-ELSE GOTO C2_14
+        <zofar:transitions>
+            <zofar:transition target="C2_13" condition="zofar.asNumber(beauftr)==3 or zofar.asNumber(besoz)==3 or zofar.asNumber(bepsy)==3 or zofar.asNumber(bestud)==3              or zofar.asNumber(beselb)==3 or zofar.asNumber(beand)==3"/>
+            <zofar:transition target="A_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1054,7 +1079,11 @@ hv:
 
 fo:
 
-tr: GOTO C2_14
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1112,6 +1141,6 @@ hv:
 
 fo:
 
-tr: GOTO A_16
+tr:
 
 hi:
