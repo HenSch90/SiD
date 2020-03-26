@@ -1,3 +1,4 @@
+
 **------------------------------------------------------------**
 
 **Qualität der Ausstattung**
@@ -77,7 +78,9 @@ fo3: mv/"weiß ich nicht" bitte etwas absetzen.
 
 tr:
 
-GOTO A_22
+        <zofar:transitions>
+            <zofar:transition target="A_22"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -158,7 +161,9 @@ fo3: Bitte über it6 "Prüfungsorganisation" linksbündig positionieren.
 
 tr:
 
-GOTO D2_4
+        <zofar:transitions>
+            <zofar:transition target="D2_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -223,7 +228,9 @@ fo:
 
 tr:
 
-GOTO D2_5
+        <zofar:transitions>
+            <zofar:transition target="D2_5"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -290,8 +297,10 @@ fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
-GOTO B1_7 if mastersplit=1, 2, 5, 6
-GOTO A_28 if mastersplit=7, 8, 11, 12, 14
+        <zofar:transitions>
+            <zofar:transition target="B1_7" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+            <zofar:transition target="A_28" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -352,7 +361,9 @@ fo:
 
 tr:
 
-GOTO D2_7
+        <zofar:transitions>
+            <zofar:transition target="D2_7"/>
+        </zofar:transitions>
 
 hi:
 
@@ -419,7 +430,9 @@ fo:
 
 tr:
 
-GOTO D2_8
+        <zofar:transitions>
+            <zofar:transition target="D2_8"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -478,7 +491,9 @@ fo:
 
 tr:
 
-GOTO D2_9
+        <zofar:transitions>
+            <zofar:transition target="D2_9"/>
+        </zofar:transitions>
 
 hi:
 
@@ -539,7 +554,9 @@ fo:
 
 tr:
 
-GOTO D2_11
+        <zofar:transitions>
+            <zofar:transition target="D2_10"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -606,7 +623,9 @@ fo:
 
 tr:
 
-GOTO D2_12
+        <zofar:transitions>
+            <zofar:transition target="D2_12"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -667,7 +686,9 @@ fo:
 
 tr:
 
-GOTO D2_21
+        <zofar:transitions>
+            <zofar:transition target="D2_21"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -734,7 +755,9 @@ fo:
 
 tr:
 
-GOTO D2_15
+        <zofar:transitions>
+            <zofar:transition target="D2_14"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -797,7 +820,9 @@ fo:
 
 tr:
 
-GOTO D2_16
+        <zofar:transitions>
+            <zofar:transition target="D2_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -858,7 +883,9 @@ fo:
 
 tr:
 
-GOTO D2_17
+        <zofar:transitions>
+            <zofar:transition target="D2_17"/>
+        </zofar:transitions>
 
 hi:
 
@@ -907,7 +934,9 @@ hv:
 
 fo:
 
-tr: GOTO D2_18
+        <zofar:transitions>
+            <zofar:transition target="D2_18"/>
+        </zofar:transitions>
 
 hi:
 
@@ -986,7 +1015,9 @@ fo: Bitte mittig über die ao !!Anzahl der verfassten Texte!! positionieren.
 
 tr:
 
-GOTO D2_19
+        <zofar:transitions>
+            <zofar:transition target="D2_19"/>
+        </zofar:transitions>
 
 hi: 
 
@@ -1035,7 +1066,9 @@ fo:
 
 tr:
 
-GOTO D2_20
+        <zofar:transitions>
+            <zofar:transition target="D2_20"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1098,7 +1131,9 @@ fo:
 
 tr:
 
-GOTO A_23
+        <zofar:transitions>
+            <zofar:transition target="A_23"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1183,6 +1218,8 @@ fo3: Bitte über it9 "Leistungen" linksbündig positionieren.
 
 fo4: mv/"kann ich nicht beurteilen" bitte etwas absetzen.
 
-tr: GOTO A_44
+        <zofar:transitions>
+            <zofar:transition target="A_44"/>
+        </zofar:transitions>
 
 hi:
