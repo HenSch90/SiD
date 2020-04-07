@@ -732,7 +732,7 @@ Ein Bachelorabschluss …
 
 is:
 
-it1: (bawert1): … ist kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
+it1: (bawert1): … ist meiner Meinung nach kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
 der beruflichen Ausbildung
 
 it2: (bawert2): … ist nur ein Zwischenschritt zu einem Masterstudium
