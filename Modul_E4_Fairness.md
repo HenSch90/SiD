@@ -203,7 +203,7 @@ it7: (faifina): finanzielle Unterstützung
 
 it8: (faiglue): Zufall/Glück
 
-it9: (faiprof): Unterstützung durch Professor\*innen
+it9: (faiprof): fachliche Unterstützung durch Professor\*innen
 
 it10: (faielt): Eltern, die studiert haben
 
@@ -267,7 +267,7 @@ it1: (faischuet): Hochschulen sind verpflichtet, ihre Studierenden vor Äußerun
 
 it2: (faimut): An meiner Hochschule wird der freie Austausch von ganz unterschiedlichen Sichtweisen ermutigt und gefördert.
 
-it3: (faiausl): Kontroverse Gastredner\*innen sollten wieder ausgeladen werden, wenn einige Studierende es fordern.
+it3: (faiausl): Gastredner\*innen sollten wieder ausgeladen werden, wenn einige Studierende es fordern.
 
 it4: (faiprot): Kontroverse Gastredner\*innen zu stören oder am Reden zu hindern ist eine legitime Form des Protests.
 
