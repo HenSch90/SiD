@@ -282,7 +282,7 @@ it2: (hochschulpol2): Hochschulen beziehen zu wenig Stellung zu gesellschaftlich
 
 it3: (hochschulpol3): Das Prüfungssystem führt nur zu einem kurzfristigen statt dauerhaften Lerneffekt.
 
-it4: (hochschulpol4): Zu wenige Studierende haben Anspruch auf BAföG.
+it4: (hochschulpol4): Die finanzielle Unterstützung der Studierenden durch den Staat ist zu gering.
 
 it5: (hochschulpol5): Professor\*innen sind nur an Forschung interessiert, nicht an der Lehre.
 
@@ -340,7 +340,7 @@ q: Welche Formen der Kritik würden Sie nutzen, um auf hochschulpolitische Probl
 
 is:
 
-it: (teilndisku): Diskussion mit Verantwortlichen suchen
+it: (teilndisku): Gespräch mit Verantwortlichen suchen
 
 it: (teilnbeitr): Beiträge / Aufrufe in Blogs, Plattformen, sozialen Medien
 
@@ -420,7 +420,7 @@ ao5: (beteil5): Trainer\ \*in / Übungsleiter\ \*in im Sportverein
 
 ao6: (beteil6): Studierendenvertretungen
 
-ao7: (beteil7): Engagement in anderen politischen Gruppierungen
+ao7: (beteil7): Engagement in anderen politischen Bewegungen
 
 ao8: (beteil8): Mitarbeit in Selbsthilfegruppen
 
