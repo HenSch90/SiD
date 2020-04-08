@@ -137,41 +137,41 @@ q: Bitte geben Sie an, wie sehr Sie sich für folgende Tätigkeiten interessiere
 
 is:
 
-it1: (intsoc1): anderen Menschen helfen
+it1: (intreal1): untersuchen, wie Dinge funktionieren
 
-it2: (intinv1): etwas genau beobachten und analysieren
+it2: (intinv4): Lösungen für komplexe Probleme finden
 
-it3: (intinv2): Unbekanntes erforschen, experimentieren
+it3: (intart1): kreativ/gestaltend tätig sein
 
-it4: (intart1): kreativ/gestaltend tätig sein
+it4: (intsoc1): anderen Menschen helfen
 
-it5: (intart2): sich mit Kunst und Kultur befassen
+it5: (intent1): Unternehmen gründen oder leiten
 
-it6: (intent1): Unternehmen gründen oder leiten
+it6: (Intconv2): sich mit rechtlichen Fragen auseinandersetzen
 
-it7: (intent2): andere von einer Sache überzeugen
+it7: (intreal2): innovative technische Lösungen entwickeln
 
-it8: (Intconv2): sich mit rechtlichen Fragen auseinandersetzen
+it8: (intinv2): Unbekanntes erforschen, experimentieren
 
-it9: (intreal1): untersuchen, wie Dinge funktionieren
+it9: (intart2): sich mit Kunst und Kultur befassen
 
-it10: (intreal2): innovative technische Lösungen entwickeln
+it10: (intsoc3): sich mit den Lebenslagen von Menschen auseinandersetzen
 
-it11: (intsoc3): sich mit den Lebenslagen von Menschen auseinandersetzen
+it11: (intent3): andere Menschen anleiten oder führen
 
-it12: (intsoc4): mit Menschen (zusammen)arbeiten
+it12: (intconv3): Arbeitsprozesse planen
 
-it13: (intinv4): Lösungen für komplexe Probleme finden
+it13: (intreal3): an Soft- oder Hardware arbeiten
 
-it14: (intart4): etwas sprachlich ansprechend formulieren
+it14: (intinv1): etwas genau beobachten und analysieren
 
-it15: (intent3): andere Menschen anleiten oder führen
+it15: (intart4): etwas sprachlich ansprechend formulieren
 
-it16: (intconv3): Arbeitsprozesse planen
+it16: (intsoc4): mit Menschen (zusammen)arbeiten
 
-it17: (intconv4): mit Zahlen oder Statistiken arbeiten
+it17: (intent2): andere von einer Sache überzeugen
 
-it18: (intreal3): an Soft- oder Hardware arbeiten
+it18: (intconv4): mit Zahlen oder Statistiken arbeiten
 
 st:
 
@@ -201,9 +201,9 @@ hv:
 
 fo:
 
-tr: KSM-anf04
+tr: GOTO KSM-anf04
 
-hi: Itemliste bitte rotieren
+hi: 
 
 \------------------------------------------------------------
 
@@ -310,9 +310,8 @@ st:
 
 ao1: 1: nicht teilgenommen
 
-ao2: 2: nicht teilgenommen, aber ursprünglich geplant
+ao2: 2: teilgenommen
 
-ao3: 3: teilgenommen
 
 mv: 
 
@@ -330,8 +329,8 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf06 IF maßnahm1 = 3 
-GOTO KSM-anf07 IF maßnahm1 <> 3 
+tr: GOTO KSM-anf06 IF maßnahm1 = 2 
+GOTO KSM-anf07 IF maßnahm1 <> 2 
 
 hi:
 
@@ -423,11 +422,9 @@ ao1: 1: kenne ich nicht
 
 ao2: 2: gab es nicht
 
-ao3: 3: gab es, wollte nicht teilnehmen
+ao3: 3: gab es, habe nicht teilgenommen
 
-ao4: 4: gab es, konnte nicht teilnehmen
-
-ao5: 5: gab es, habe teilgenommen
+ao4: 4: gab es, habe teilgenommen
 
 mv: 
 
@@ -445,8 +442,8 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf08 IF angeb1 = 5 OR angeb2 = 5 OR angeb3 = 5 OR angeb4 = 5 OR angeb5 = 5 OR angeb6 = 5 OR angeb7 = 5
-GOTO KSM-anf09 IF angeb1 <> 5 AND angeb2 <> 5 AND angeb3 <> 5 AND angeb4 <> 5 AND angeb5 <> 5 AND angeb6 <> 5 AND angeb7 <> 5
+tr: GOTO KSM-anf08 IF angeb1 = 4 OR angeb2 = 4 OR angeb3 = 4 OR angeb4 = 4 OR angeb5 = 4 OR angeb6 = 4 OR angeb7 = 4
+GOTO KSM-anf09 IF angeb1 <> 4 AND angeb2 <> 4 AND angeb3 <> 4 AND angeb4 <> 4 AND angeb5 <> 4 AND angeb6 <> 4 AND angeb7 <> 4
 
 hi:
 
@@ -500,13 +497,13 @@ mv:
 
 ka:
 
-vc: SHOW nutz1 IF angeb1 = 5 
-SHOW nutz2 IF angeb2 = 5
-SHOW nutz3 IF angeb3 = 5
-SHOW nutz4 IF angeb4 = 5
-SHOW nutz5 IF angeb5 = 5
-SHOW nutz6 IF angeb6 = 5
-SHOW nutz7 IF angeb7 = 5
+vc: SHOW nutz1 IF angeb1 = 4 
+SHOW nutz2 IF angeb2 = 4
+SHOW nutz3 IF angeb3 = 4
+SHOW nutz4 IF angeb4 = 4
+SHOW nutz5 IF angeb5 = 4
+SHOW nutz6 IF angeb6 = 4
+SHOW nutz7 IF angeb7 = 4
 
 av:
 
