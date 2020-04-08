@@ -708,7 +708,7 @@ fo:
 
 tr: GOTO KSM-ma08
 
-hi: 
+hi: Reihenfolge Itemliste bitte randomisieren.
 
 
 \--------------------------------
