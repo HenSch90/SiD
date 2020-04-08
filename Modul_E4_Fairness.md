@@ -1660,6 +1660,8 @@ ao7: (faierlbeein_s, faierlbeein_a): aufgrund physischer oder psychischer Beeint
 
 ao8: (faierlelt_s, faierlelt_a): aufgrund von Elternschaft
 
+ao9: (faierland_s, faieerland_a): andere, und zwar: [fairerlando]
+
 st:
 
 mv:
