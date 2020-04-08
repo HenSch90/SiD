@@ -1628,7 +1628,7 @@ KSM-fai27
 
 tc:
 
-vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a; faierlelt_s/_a
+vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a; faierlelt_s/_a; faierland_s/a; fairerlando
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao
 
