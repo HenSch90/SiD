@@ -282,7 +282,7 @@ KSM-anf05
 
 tc:
 
-vn: maßnahm1; maßnahm2; maßnahm3; maßnahm4; maßnahm5; maßnahm6
+vn: massnahm1; massnahm2; massnahm3; massnahm4; massnahm5; massnahm6
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -294,17 +294,17 @@ q: Haben Sie vor der Aufnahme Ihres aktuellen Studiums an folgenden Maßnahmen t
 
 is:
 
-it1: (maßnahm1): Tests zur fachlichen Eignung (Online Self Assessment, Studicheck, Wissenstest, Studium-Interessentests)
+it1: (massnahm1): Tests zur fachlichen Eignung (Online Self Assessment, Studicheck, Wissenstest, Studium-Interessentests)
 
-it2: (maßnahm2): Aufnahmeprüfungen
+it2: (massnahm2): Aufnahmeprüfungen
 
-it3: (maßnahm3): Aufnahmegespräche
+it3: (massnahm3): Aufnahmegespräche
 
-it4: (maßnahm4): Probestudium
+it4: (massnahm4): Probestudium
 
-it5: (maßnahm5): Schüleruni, Schnupperstudium
+it5: (massnahm5): Schüleruni, Schnupperstudium
 
-it6: (maßnahm6): E-Learning-Angebote im bundesweiten Onlineportal Studiport
+it6: (massnahm6): E-Learning-Angebote im bundesweiten Onlineportal Studiport
 
 st:
 
@@ -329,8 +329,8 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf06 IF maßnahm1 = 2 
-GOTO KSM-anf07 IF maßnahm1 <> 2 
+tr: GOTO KSM-anf06 IF massnahm1 = 2 
+GOTO KSM-anf07 IF massnahm1 <> 2 
 
 hi:
 
