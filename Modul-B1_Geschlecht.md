@@ -410,13 +410,13 @@ it4: (\_a): andere Personen
 
 st:
 
-ao1 (athhm): Hausarbeit [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
+ao1 (athhm): !!Hausarbeit!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
-ao2 (ateem): Erwerbseinkommen [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
+ao2 (ateem): !!Erwerbseinkommen!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
-ao3 (atwem): Treffen wichtiger Entscheidungen [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
+ao3 (atwem): !!Treffen wichtiger Entscheidungen!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
-ao4 (atkbm): Kinderbetreuung [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
+ao4 (atkbm): !!Kinderbetreuung!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
 mv:
 
