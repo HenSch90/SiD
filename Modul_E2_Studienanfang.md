@@ -606,7 +606,7 @@ q: Und inwiefern bereiten Ihnen folgende Aspekte des Studiums Schwierigkeiten?
 
 is:
 
-it1: (schwstud1): Wissenschaftlichkeit (z.B. akademische Sprach-, Denk- und Arbeitsweise)
+it1: (schwstud1): Wissenschaftlichkeit (z.B. akademische Sprache, Denk- und Arbeitsweise)
 
 it2: (schwstud2): sich an Diskussionen beteiligen
 
