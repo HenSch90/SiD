@@ -629,7 +629,7 @@ hv:
 
 fo: ao11 absetzen
 
-tr: 
+tr: GOTO KSM-ma07
 
 hi:
 
