@@ -22,7 +22,7 @@ it:
 
 st:
 
-ao: Präfix: Fachsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
+ao: (ssemfs) Präfix: Fachsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
 
 mv:
 
@@ -41,7 +41,7 @@ hv:
 fo: 
 
 
-tr: 
+tr: (siehe unten)
 
 hi: 
 
@@ -68,7 +68,7 @@ it:
 
 st:
 
-ao: Präfix: Hochschulsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
+ao: (ssemhs) Präfix: Hochschulsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
 
 mv:
 
@@ -84,9 +84,9 @@ fv:
 
 hv:
 
-fo: Bitte diese Frage zusammen mit der vorherigen Frage und der Folgefrage auf einer Seite (A_17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen zwischen der vorherigen Frage und der nachhfolgenden Frage platzieren.
+fo: 
 
-tr:
+tr: (siehe unten)
 
 hi: 
 
@@ -131,7 +131,7 @@ fv:
 
 hv:
 
-fo: Bitte diese Frage zusammen mit den beiden vorhergehenden Fragen auf einer Seite (A_17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen unterhalb von den beiden vorhergehenden Fragen platzieren.
+fo: 
 
 tr:
 
@@ -146,7 +146,7 @@ CO_1
 
 tc: 
 
-vn: VCO_0
+vn: VCO_1
 
 qt: Einfachauswahl mit vertikaler ao
 
@@ -303,7 +303,7 @@ CO_2
 
 tc:
 
-vn: VCO_Xa
+vn: VCO_2a
 
 qt: Einfachauswahl mit vertikalen ao
 
@@ -313,7 +313,7 @@ in:
 
 q: Hat sich die Corona-Pandemie auf Ihre ++bisherige++ Prüfungssituation ausgewirkt?
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -331,7 +331,7 @@ ao5: 5: … durch andere Formen ersetzt.
 
 mv:
 
-ka: Klausuren wurden …
+ka1: Klausuren wurden …
 
 vc:
 
@@ -343,9 +343,9 @@ fv:
 
 hv:
 
-fo: Bitte diese Frage zusammen mit den beiden vorhergehenden Fragen auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen unterhalb von den beiden vorhergehenden Fragen platzieren.
+fo: 
 
-tr:
+tr: (siehe unten)
 
 hi:
 
@@ -356,7 +356,7 @@ CO_2
 
 tc:
 
-vn: VCO_Xb
+vn: VCO_2b
 
 qt: Einfachauswahl mit vertikalen ao
 
@@ -395,9 +395,9 @@ fv:
 
 hv:
 
-fo: Bitte diese Frage zusammen mit den beiden Folgefrage auf einer Seite (CO_2) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen oberhalb von den beiden nachhfolgenden Fragen platzieren.
+fo: 
 
-tr:
+tr: (siehe unten)
 
 hi:
 
@@ -408,7 +408,7 @@ CO_2
 
 tc:
 
-vn: VCO_Xc
+vn: VCO_2c
 
 qt: Einfachauswahl mit vertikalen ao
 
@@ -450,7 +450,7 @@ fv:
 
 hv:
 
-fo: Bitte diese Frage zusammen mit den beiden vorhergehenden Fragen auf einer Seite (CO_2) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen unterhalb von den beiden vorhergehenden Fragen platzieren.
+fo: 
 
 tr:
 
@@ -490,7 +490,7 @@ it5: (digfor5): … in diesem Semester
 
 it6: (digfor6): … im letzten Semester
 
-it7: (digfor7): al… in diesem Semester
+it7: (digfor7): … in diesem Semester
 
 it8: (digfor8): … im letzten Semester
 
@@ -510,6 +510,7 @@ ao5: 5: alle
 mv:
 
 ka1: (it1 TO it2): !! als reine Online-Veranstaltung (z. B. Online-Vorlesung, Online-Seminar)!!
+
 ka2: (it3 TO it4): !! als Online-Selbststudium mit einzelnen Präsenzterminen!!
 
 ka3: (it5 TO it6): !! als Präsenzveranstaltung mit einzelnen Online-Terminen!!
@@ -533,6 +534,7 @@ tr:
 GOTO CO_3
 
 hi:
+
 
 \------------------------------------------------------------
 
@@ -604,7 +606,7 @@ GOTO CO_4
 
 hi: 
 
-**------------------------------------------------------------**
+\------------------------------------------------------------
 
 CO_4
 =========
@@ -758,7 +760,7 @@ hl:
 
 in:
 
-q: Und wie zufrieden sind Sie ++im aktuellen Semester++ mit …
+q: Und wie zufrieden sind Sie im aktuellen Semester mit …
 
 is: 
 	
@@ -967,11 +969,9 @@ fv:
 
 hv:
 
-fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
+fo: 
 
-tr:
-
-        GOTO A_25
+tr: GOTO A_25
 
 hi:
 
@@ -982,7 +982,7 @@ A_25
 
 tc:
 
-vn: sabsano; sabsanoaa; sabsanoka
+vn: sabsan; sabsanoaa; sabsanoka
 
 qt: Einfachauswahl mit vertikalen ao und offenen Angaben
 
@@ -998,23 +998,23 @@ it:
 
 st:
 
-ao1: (sabsano): 1: Bachelor
+ao1: (sabsan): 1: Bachelor
 
-ao2: (sabsano): 2: Master
+ao2: (sabsan): 2: Master
 
-ao3: (sabsano): 3: Staatsexamen
+ao3: (sabsan): 3: Staatsexamen
 
-ao4: (sabsano): 4: Diplom
+ao4: (sabsan): 4: Diplom
 
-ao5: (sabsano): 5: Promotion
+ao5: (sabsan): 5: Promotion
 
-ao6: (sabsano): 6: kirchliche Abschlussprüfung
+ao6: (sabsan): 6: kirchliche Abschlussprüfung
 
-ao7: (sabsano): 7: künstlerische Abschlussprüfung
+ao7: (sabsan): 7: künstlerische Abschlussprüfung
 
-ao8: (sabsano): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
+ao8: (sabsan): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
 
-ao9: (sabsano): 9: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
+ao9: (sabsan): 9: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
 
 mv:
 
@@ -1032,9 +1032,7 @@ hv:
 
 fo:
 
-tr:
-
-       GOTO A_27
+tr: GOTO A_27
 	
 hi:
 
@@ -1133,12 +1131,11 @@ fv:
 
 hv:
 
-fo: Bitte offene Angabe und Einfachauswahl untereinander, linksbündig positionieren
+fo: 
 
-tr:
+tr: (siehe unten)
 
-
-hi: Offene Angabe bitte als NUMBER mit einer Dezimalstelle (1,0 bis 5,0), programmieren.
+hi: 
 
 \------------------------------------------------------------
 
@@ -1185,11 +1182,9 @@ fo1: Bitte offene Angabe und Einfachauswahl untereinander, linksbündig position
 
 fo2: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A_28) darstellen. 
 
-tr:
+tr:  GOTO D2_5
 
-GOTO D2_5
-
-hi: Offene Angabe bitte als NUMBER mit einer Dezimalstelle (1,0 bis 5,0), programmieren.
+hi: 
 
 \------------------------------------------------------------
 
@@ -1199,7 +1194,7 @@ D2_5
 
 tc:
 
-vn: ssanwesend; ssanwesend2
+vn: lsanwesend; dsanwesend
 
 qt: Comparison
 
@@ -1210,9 +1205,9 @@ in:
 q: Wenn Sie an die von Ihnen belegten Veranstaltungen denken: Wie hoch ist der Anteil der Sitzungen, an denen Sie im Schnitt auch tatsächlich teilnehmen?
 is:
 
-it1: im letzten Semester
+it1: (lsanwesend) im letzten Semester
 
-it2: in diesem Semester
+it2: (dsanwesend) in diesem Semester
 
 st:
 
@@ -1250,15 +1245,13 @@ fv:
 
 hv:
 
-fo: mv/"trifft nicht zu" bitte etwas absetzen.
+fo: 
 
-tr:
-
-GOTO D2_18
+tr: GOTO D2_18
 
 hi: 
 
-**------------------------------------------------------------**
+\------------------------------------------------------------
 
 
 D2_18
@@ -1328,15 +1321,13 @@ fv:
 
 hv:
 
-fo: Bitte mittig über die ao !!Anzahl der verfassten Texte!! positionieren.
+fo: 
 
-tr:
-
-     GOTO D2_19
+tr: GOTO D2_19
 
 hi: 
 
-**------------------------------------------------------------**
+\------------------------------------------------------------
 D2_19
 -------
 
@@ -1384,7 +1375,7 @@ tr:
 
 hi:
 
-**------------------------------------------------------------**
+\------------------------------------------------------------
 
 CO_18
 -------
@@ -1399,7 +1390,7 @@ hl:
 
 in:
 
-q: Und wie zufrieden sind Sie ++im aktuellen Semester++ mit …
+q: Inwiefern haben sich die folgenden Aspekte durch die Corona-Pandemie für Sie verändert?
 
 is: 
 	
@@ -1417,6 +1408,7 @@ it5: (VCO_18_e): Prüfungsanforderungen bewältigen
 it6: (VCO_18_f): Kontakte zu Mitstudierenden knüpfen
 	
 it7: (VCO_18_g): Kommunikation mit Lehrenden
+
 it8: (VCO_18_h): Austausch in Lerngruppen
 
 it9: (VCO_18_i): Beziehungen im familiären Umfeld
@@ -1573,13 +1565,11 @@ hv:
 
 fo:
 
-tr:
-
-        GOTO D2_13
+tr:  GOTO D2_13
 
 hi: 
 
-**------------------------------------------------------------**
+\------------------------------------------------------------
 
 D2_13
 -------
@@ -1677,7 +1667,7 @@ it6: (VCO_7_f): Familie (Eltern, Geschwistern u. a.)
 
 st:
 
-ao1: 1:   viel weniger
+ao1: 1: viel weniger
 
 ao2: 2:
 
@@ -2005,7 +1995,8 @@ fv:
 
 hv:
 
-fo:
+fo: 
+
 
 tr:
 
@@ -2101,7 +2092,7 @@ fv:
 
 hv:
 
-fo: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A_1) darstellen.
+fo: 
 
 tr:
 
@@ -2262,7 +2253,7 @@ fv:
 
 hv:
 
-fo: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
+fo: 
 
 tr:
 
@@ -2324,9 +2315,7 @@ fv:
 
 hv:
 
-fo1: mv/"weiß ich nicht" bitte etwas absetzen.
-
-fo2: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
+fo:
 
 tr:
 
@@ -2376,7 +2365,7 @@ fv:
 
 hv:
 
-fo: ao4 bitte etwas absetzen.
+fo: 
 
 tr:
 
@@ -2408,7 +2397,7 @@ it:
 
 st:
 
-ao: [offene Angabe; Number, 2-stellig: 15 TO 99], Postfix: Jahre 
+ao: (demoage) [offene Angabe; Number, 2-stellig: 15 TO 99], Postfix: Jahre 
 
 mv:
 
@@ -2531,7 +2520,7 @@ fv:
 
 hv:
 
-fo: ao6 bitte als Exklusivkategorie etwas absetzen.
+fo: 
 
 tr:
 
@@ -2584,7 +2573,8 @@ fo:
 
 tr: 
 
-GOTO C1_1
+GOTO C1_1 IF dkinja == 2
+GOTO CO_21
 
 hi:
 
@@ -2594,7 +2584,8 @@ hi:
 C1_1
 ====
 
-tc: IF dkinja = 2
+tc: 
+
 
 vn: dkinanz
 
@@ -2612,13 +2603,13 @@ it:
 
 st:
 
-ao1: 1: eins
+ao1: (dkinanz) 1: eins
 
-ao2: 2: zwei
+ao2: (dkinanz) 2: zwei
 
-ao3: 3: drei
+ao3: (dkinanz) 3: drei
 
-ao4: 4: vier oder mehr
+ao4: (dkinanz) 4: vier oder mehr
 
 mv:
 
@@ -2648,7 +2639,8 @@ hi:
 C1_2
 ====
 
-tc: IF dkinja = 2
+tc: 
+
 
 vn: dkinage (dkinagej / dkinage1 / dkinage2 / dkinage3 / dkinage4 / dkinage5)
 
@@ -2726,14 +2718,15 @@ tr:
 
 GOTO C1_6
 
-hi: Dezimalstellen zulassen.
+hi: 
 
 \--------------------------------
 
 C1_6
 ====
 
-tc: IF dkinja = 2
+tc: 
+
 
 vn: dkinbe (dkinbesel / dkinbepar / dkinbeelt / dkinbegelt / dkinbefr / dkinbesit / dkinbealo)
 
@@ -2816,14 +2809,15 @@ it:
 
 st:
 
-ao1: 1: nein
+ao1: (VCO_21) 1: nein
 
-ao2: 2: ja
+ao2: (VCO_21) 2: ja
 
-ao3: 3: weiß ich nicht
+ao3: (VCO_21) 3: weiß ich nicht
 
-mv: 4:  Ich möchte keine Angabe machen.
+ao4: (VCO_21) 4:  Ich möchte keine Angabe machen.
 
+mv: 
 
 ka:
 
@@ -2837,7 +2831,7 @@ fv:
 
 hv:
 
-fo: mv bitte als Exklusivkategorie etwas absetzen.
+fo: 
 
 tr:
 
@@ -2888,7 +2882,7 @@ ao9: (gartson): andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Auti
 
 ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
-mv:
+mv: 
 
 ka: (ao2 TO ao10): Ja, und zwar:
 
@@ -2900,26 +2894,25 @@ kh:
 
 fv:
 
-hv: 
+hv: Es wird die Hilfsvariable h_gartcount berechnet: als Anzahl aller hier gewählten Antworoptionen ao1-ao9, exklusive ao10.
 
-fo1: Bitte lediglich die Frage ("Haben Sie eine oder mehrere der nachfolgend aufgeführten gesundheitlichen Beeinträchtigungen?") fetten und etwas vom Einleitungstext absetzen. Der Einleitungstext sollte nicht fett sein.
-
-fo2: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
-
-fo3: ao10 bitte etwas absetzen.
+fo: 
 
 tr:
 
-GOT C2_0
+GOTO C2_0 IF h_gartcount >= 1
 
-hi: Bitte die Systemvariable h_gartcount erzeugen. Diese soll die Anzahl an genannten beeinträchtigungen abbilden (sum ao2-ao10 bzw. sum gartmob-gartka)
+GOTO D3_23
+
+hi: 
 
 \------------------------------------------------------------
 
 C2_0
 ====
 
-tc: IF h_gartcount >= 1
+tc: 
+
 
 vn: beschwer
 
@@ -2937,11 +2930,13 @@ it:
 
 st:
 
-ao1: 1: nein
+ao1: (beschwer) 1: nein
 
-ao2: 2: ja
+ao2: (beschwer) 2: ja
 
-mv: Ich möchte keine Angabe machen.
+ao3: (beschwer) 3: Ich möchte keine Angabe machen.
+
+mv: 
 
 ka:
 
@@ -2955,7 +2950,7 @@ fv:
 
 hv:
 
-fo: mv bitte etwas absetzen.
+fo: 
 
 tr: 
 
@@ -3083,7 +3078,8 @@ hi:
 D1_28 
 ===
 
-tc: IF NOT gartpsy=1
+tc: 
+
 
 vn: dep (depspass / depglue / depschw / depgedr)
 
@@ -3190,7 +3186,7 @@ fv:
 
 hv:
 
-fo: Items bitte zufällig rotieren.
+fo: 
 
 tr:
 
@@ -3270,7 +3266,7 @@ tr:
 
 GOTO D1_25
 
-hi: Items bitte zufällig rotieren
+hi: 
 
 \--------------------------------
 
@@ -3329,7 +3325,7 @@ tr:
 
 GOTO CO_19
 
-hi: Items bitte zufällig rotieren
+hi: 
 
 **------------------------------------------------------------**
 
@@ -3377,7 +3373,7 @@ fv:
 
 hv:
 
-fo: Bitte über ao2 " Ja, wurde…" linksbündig positionieren.
+fo: 
 
 tr:
 
@@ -3445,9 +3441,9 @@ hi:
 D3_19
 =====
 
-tc: IF eaktsens = 2 | 3 | 4 
+tc:
 
-vn1: etat1; fachn1 
+vn: etat1; fachn1 
 
 qt: Tableau/Einfachauswahl
 
@@ -3492,7 +3488,7 @@ fv:
 
 hv: 
 
-fo: Die Abfrage der Erwerbstätigkeit und Fachnähe soll bitte jeweils zusammen erfolgen. Das heißt "1. Erwerbstätigkeit" (it1) soll als Überschrift in fett programmiert werden und darunter vertikel die entsprechenden ao1-ao7 folgen. Anschließend/darunter soll "Fachnähe" (it2) fett programmiert werden und in derselben Zeile/horizontal die ao8-ao12 folgen. 
+fo: 
 
 tr:
 
@@ -3621,7 +3617,9 @@ ao7: (VCO_9_g): Ja, ich habe gekündigt.
 
 ao8: (VCO_9_h): Ja, ich habe eine neue Erwerbstätigkeit aufgenommen.
 
-mv: ao9: (VCO_9_i): Nein, nichts davon
+ao9: (VCO_9_i): Nein, nichts davon
+
+mv: 
 
 ka:
 
@@ -3635,7 +3633,7 @@ fv:
 
 hv:
 
-fo: mv bitte etwas absetzen.
+fo: 
 
 tr:
 
@@ -3670,7 +3668,9 @@ ao1: 1: ja
 
 ao2: 2: nein
 
-mv: ao3: 3: weiß ich nicht
+ao3: 3: weiß ich nicht
+
+mv: 
 
 ka:
 
@@ -3684,7 +3684,7 @@ fv:
 
 hv:
 
-fo: mv bitte etwas absetzen.
+fo: 
 
 tr:
 
@@ -3716,11 +3716,11 @@ it:
 
 st:
 
-ao1: 1: …deutlich verschlechtert.
+ao1: 1: … deutlich verschlechtert.
 
 ao2: 2: … nicht verändert.
 
-ao3: 3: …deutlich verbessert.
+ao3: 3: … deutlich verbessert.
 
 mv:
 
@@ -3866,7 +3866,7 @@ fv:
 
 hv:
 
-fo1: Bitte Leerzeile/Abstand nach den Gesamteinnahmen einziehen. 
+fo: 
 
 tr:
 
@@ -3877,12 +3877,35 @@ hi:
 \--------------------------------
 
 
-CO_10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CO_20
 =========
 
 tc:
 
-vn: VCO_10_ (VCO_10_a; VCO_10_b; VCO_10_c; VCO_10_d; VCO_10_e; VCO_10_f; VCO_10_g VCO_10_h; VCO_10_i; VCO_10_j)
+vn: VCO_20_ (VCO_20_a; VCO_20_b; VCO_20_c; VCO_20_d; VCO_20_e; VCO_20_f; VCO_20_g VCO_20_h; VCO_20_i; VCO_20_j, VCO_20_k, VCO_20_ko)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -3890,7 +3913,7 @@ hl:
 
 in:
 
-q: Vor dem Hintergrund der Corona-Pandemie: Wie sehr treffen die folgenden Aussagen Ihrer Meinung nach zu?
+q: Auf welche Finanzierungsquellen greifen Sie zurück, um mögliche finanzielle Engpässe aufgrund der Corona-Pandemie auszugleichen?
 
 is:
 
@@ -3944,8 +3967,12 @@ fo:
 
 tr:
 
-GOTO CO_22 IF VCO_20_h= 3 OR VCO_20_h= 4 OR VCO_20_i= 3 OR VCO_20_i= 4
+GOTO CO_22 IF VCO_20_e= 3 OR VCO_20_e= 4
+
+GOTO CO_23 IF VCO_20g == 3 or VCO_20g == 4 or VCO_20h == 3 or VCO_20h == 4 or VCO_20_i == 3 or VCO_20_i == 4
+
 GOTO D3_8
+
 hi:
 
 \--------------------------------
@@ -3994,7 +4021,9 @@ fo:
 
 tr:
 
-GOTO CO_23
+GOTO CO_23 IF VCO_20g == 3 or VCO_20g == 4 or VCO_20h == 3 or VCO_20h == 4 or VCO_20_i == 3 or VCO_20_i == 4
+
+GOTO D3_8
 
 hi: 
 
@@ -4148,7 +4177,7 @@ D3_11
 
 tc:
 
-vn: fsit (fsitzum1 / fsitzum2 / fsitzum3/ fsitzum4)
+vn: fsitzum (fsitzum1, fsitzum2, fsitzum3, fsitzum4, fsitzum5)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -4202,13 +4231,13 @@ tr:
 
 GOTO B2_7
 
-hi: Items bitte zufällig rotieren.
+hi: 
 
 \--------------------------------
 
 
 B2_7
-=
+=====
 
 tc:
 
@@ -4260,11 +4289,11 @@ fv:
 
 hv:
 
-fo: Items bitte zufällig rotieren.
+fo: 
 
 tr:
 
-A_56
+GOTO A_56
     
 hi:
 
@@ -4328,13 +4357,13 @@ fv:
 
 hv:
 
-fo: Bitte anhand der Unterteilung in a und b die Zuordnung der Items zu den beiden Kategorien ita und itb vornehmen. ita und itb bilden die Spalten und in den Zeilen werden dann die einzelnen Bereiche noch einmal unterteilt (bspw. Lehrveranstaltungen: ao1a -> ita; ao1b -> itb).
+fo: 
 
 tr:
 
 GOTO A_53
 
-hi: Bitte als NUMBER, 2-stellig (0 bis 99) programmieren.
+hi: 
 
 
 \------------------------------------------------------------
@@ -4397,7 +4426,7 @@ fv:
 
 hv:
 
-fo: "Ich wohne …" bitte linksbündig über die erste ao positionieren.
+fo: 
 
 tr:
 
@@ -4434,7 +4463,7 @@ mv:
 
 ka:
 
-vc: 
+vc: gesamte Frage wird nur angezeigt, wenn wohnal1 == FALSE
 
 av: 
 
@@ -4447,7 +4476,7 @@ hv:
 
 fo: 
 
-tr:
+tr: (siehe unten)
 
 hi: 
 
@@ -4485,18 +4514,19 @@ mv:
 
 ka:
 
-vc: 
+vc: gesamte Frage wird nur angezeigt, wenn wohnal1 == FALSE
 
 av: 
 
-kh:
+kh: 
 
 fv:
 
 hv:
 
-fo: Bitte diese Frage zusammen mit der vorherigen Frage und der Folgefrage auf einer Seite (D3_2) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen zwischen der vorherigen Frage und die nachfolgenden Fragen platzieren.
-tr:
+fo: 
+
+tr: (siehe unten)
 
 hi: 
 
@@ -4517,7 +4547,6 @@ in:
 
 q3: Wie groß ist Ihre Wohnung/Ihr Haus?
 
-q4: Wie groß ist das von Ihnen genutzte Zimmer?
 
 is:
 
@@ -4527,26 +4556,68 @@ st:
 
 ao3: (wohnqmw): [number, 3-stellig: 1 TO 999], Postfix: m²
 
+mv:
+
+ka:
+
+vc: 
+
+av: 
+
+kh2: (wohnqmw): Bitte geben Sie die Größe Ihrer Wohnung/Ihres Hauses an (1 bis 999).
+
+fv:
+
+hv:
+
+fo: 
+
+tr:
+
+GOTO CO_10
+
+hi: 
+
+\--------------------------------
+
+D3_2
+====
+
+tc:
+
+vn: wohnqmw; wohnqmz
+
+qt: offene Angaben
+
+hl:
+
+in:
+
+q4: Wie groß ist das von Ihnen genutzte Zimmer?
+
+is:
+
+it:
+
+st:
+
 ao4: (wohnqmz): [number, 2-stellig: 1 TO 99], Postfix: m²
 
 mv:
 
 ka:
 
-vc: SHOW q4, ao6 IF wohnel=1 OR wohnwg=1 
+vc: gesamte Frage wird nur angezeigt, wenn wohnal1 == FALSE
 
 av: 
 
-kh2: (wohnqmw): Bitte geben Sie die Größe Ihrer Wohnung/Ihres Hauses an (1 bis 999).
-
 kh3: (wohnqmz): Bitte geben Sie die Größe Ihres Zimmers an (1 bis 99).
-
 
 fv:
 
 hv:
 
-fo: Auf der Seite als erstes q1/ao1 zusammen darstellen. Darunter dann q/aos zusammen darstellen und darunter dann ggf. q3/ao3 und q4/ao4 zusammen einblenden.
+fo: 
 
 tr:
 
@@ -4570,7 +4641,7 @@ hl:
 
 in:
 
-q: Vor dem Hintergrund der Corona-Pandemie: Wie sehr treffen die folgenden Aussagen Ihrer Meinung nach zu?
+q: Wenn Sie an Ihre bisherigen Erfahrungen mit digitaler Lehre denken: Inwiefern stimmen Sie den folgenden Aussagen zu?
 
 is:
 
@@ -5200,7 +5271,7 @@ it5: (VCO_12_e): Häufiges sorgfältiges Händewaschen
 
 it6: (VCO_12_f): Einhaltung der Nies- und Hustenetikette
 
-It7: (VCO_12_g): Mund-Nasen-Schutzes
+It7: (VCO_12_g): Tragen eines Mund-Nasen-Schutzes
 
 st:
 
@@ -5262,7 +5333,7 @@ st:
 
 ao1: (VCO_13): 1: nein
 
-ao2: (VCO_13): 2: ja, und zwar: [(VCO_13o), offene Angabe]
+ao2: (VCO_13): 2: ja, und zwar: [(VCO_13o), offene Angabe] (bitte Anzahl der Personen angeben)
 
 mv:
 
@@ -5272,7 +5343,7 @@ vc:
 
 av:
 
-kh: bitte Anzahl der Personen angeben
+kh: 
 
 fv:
 
@@ -5293,7 +5364,7 @@ CO_14
 
 tc:
 
-vn: VCO_10
+vn: VCO_14
 
 qt: Einfachauswahl
 
@@ -5345,7 +5416,7 @@ CO_15
 
 tc:
 
-vn: VCO_10a
+vn: VCO_15
 
 qt: Einfachauswahl
 
@@ -5383,7 +5454,7 @@ fv:
 
 hv:
 
-fo: ao4 bitte etwas absetzen
+fo: 
 
 tr:
 
