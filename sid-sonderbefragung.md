@@ -293,7 +293,8 @@ fo:
 
 tr:
 
-GOTO CO_2
+GOTO N9_b if ssemhs < 2
+ELSE GOTO CO_2
 
 hi:
 
@@ -1372,7 +1373,8 @@ fo:
 
 tr:
 
-        GOTO CO_18
+GOTO A_51b if ssemhs < 2
+ELSE GOTO CO_18
 
 hi:
 
@@ -1631,7 +1633,8 @@ fo:
 
 tr:
 
-        GOTO CO_7
+GOTO N_10b if ssemhs < 2
+ELSE GOTO CO_7
 
 hi: 
 
@@ -2901,9 +2904,8 @@ fo:
 
 tr:
 
-GOTO C2_0 IF h_gartcount >= 1
-
-GOTO D3_23
+GOTO C2_0 if h_gartcount ≥ 1 (--> momentan steht in der QML nur größer 1)
+ELSE GOTO D3_23
 
 hi: 
 
@@ -3432,7 +3434,8 @@ fo:
 
 tr:
 
-GOTO D3_19
+GOTO CO_24 if  eaktsens = 1
+ELSE GOTO D3_19
 
 hi:
 
@@ -3638,7 +3641,8 @@ fo:
 
 tr:
 
-GOTO CO_9a
+GOTO CO_9a if VCO_9_h = 1
+ELSE GOTO CO_24
 
 hi:
 
@@ -4022,9 +4026,10 @@ fo:
 
 tr:
 
-GOTO CO_23 IF VCO_20g == 3 or VCO_20g == 4 or VCO_20h == 3 or VCO_20h == 4 or VCO_20_i == 3 or VCO_20_i == 4
+GOTO CO_23 if VCO_20_g = 3 OR VCO_20_g) = 4 OR VCO_20_h = 3 OR VCO_20_h = 4 OR VCO_20 i = 3 OR VCO_20_i = 4 (--> in QML fehlt bei der Weiterleitung der jeweils zweite Unterstrich in den Variablennamen; VCO_20_*)
 
-GOTO D3_8
+ELSE GOTO D3_8"
+
 
 hi: 
 
