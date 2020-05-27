@@ -521,6 +521,9 @@ ka4: (it7 TO it8): !! als reine Präsenzveranstaltung!!
 
 vc:
 
+SHOW it1, it3, it5 AND it7 if ssemhs < 2
+SHOW it1-it8 if ssemhs ≥ 2
+
 av:
 
 kh:
@@ -1107,7 +1110,7 @@ hl:
 
 in:
 
-q: Mit welcher Note wurden Ihre bisherigen Studienleistungen im ++letzten Semester++ bewertet?
+q1: Mit welcher Note wurden Ihre bisherigen Studienleistungen im ++letzten Semester++ bewertet?
 
 is: Punktzahl bitte in Note umrechnen.
 
@@ -1124,6 +1127,9 @@ mv:
 ka:
 
 vc:
+
+SHOW q1, is, spernot, q2 AND spernot2 if ssemhs ≥ 2
+SHOW q2, is and spernot2 if ssemhs < 2
 
 av: 
 
@@ -1154,7 +1160,7 @@ hl:
 
 in:
 
-q: Und wie wurden Ihre bisherigen Studienleistungen bislang ++insgesamt++ bewertet?
+q2: Und wie wurden Ihre bisherigen Studienleistungen bislang ++insgesamt++ bewertet?
 
 is: 
 
@@ -1171,6 +1177,9 @@ mv:
 ka:
 
 vc:
+
+SHOW q1, is, spernot, q2 AND spernot2 if ssemhs ≥ 2
+SHOW q2, is and spernot2 if ssemhs < 2
 
 av: 
 
@@ -1238,6 +1247,9 @@ mv: -11: trifft nicht zu
 ka:
 
 vc:
+
+SHOW it1 AND it2 if ssemhs ≥ 2
+SHOW it1 if ssemhs < 2
 
 av:
 
@@ -1360,6 +1372,9 @@ mv:
 ka:
 
 vc:
+
+SHOW ao1 AND ao2 if ssemhs ≥ 2
+SHOW ao1 if ssemhs < 2
 
 av:
 
@@ -1883,6 +1898,9 @@ ka2: (it3 TO it4): !! Lehr- und Lernvideos!!
 ka3: (it5 TO it6): !! digitale Selbstlernprogramme (z. B. Simulation, Lernapps, Lernspiele)!!
 
 vc:
+
+SHOW it1, it3 AND it5 if ssemhs < 2
+SHOW it1-it6 if ssemhs ≥ 2
 
 av:
 
@@ -4355,6 +4373,9 @@ ka:
 
 vc: 
 
+SHOW ao1a, ao2a, ao3a, ao4a AND ao5a if ssemhs < 2
+SHOW ao1a-ao5b if ssemhs ≥ 2
+
 av: NUMBER, 2-stellig (0 bis 99)
 
 kh: Bitte geben Sie volle Zeitstunden an (0 bis 99).
@@ -4423,6 +4444,9 @@ mv:
 ka: Ich wohne …
 
 vc:
+
+SHOW ao1, wohnal1, wohnwg1, VA_51_1, wohnel1, wohnpar1, wohnkin1, wohnfam1 AND wohnsons1 if ssemhs < 2
+SHOW ao1, ao2 AND wohnal1 - wohnsons2 if ssemhs  ≥ 2
 
 av:
 
@@ -4881,6 +4905,13 @@ ao5: 5: sehr zufrieden
 mv:
 
 ka: 
+
+vc:
+
+SHOW zufrvstelt if dkinja = 2
+SHOW zufrvstbe if h_gartcount ≥ 1
+SHOW zufrvsterw if eaktsens ≥ 2
+SHOW zufrvstpfl if zcarwo ≥ 1 OR zcarwo2 ≥ 1
 
 av:
 
