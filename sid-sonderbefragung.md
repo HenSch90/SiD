@@ -293,7 +293,8 @@ fo:
 
 tr:
 
-GOTO CO_2
+GOTO N9_b IF ssemhs < 2
+GOTO CO_2 IF ELSE
 
 hi:
 
