@@ -293,8 +293,7 @@ fo:
 
 tr:
 
-GOTO N9_b if ssemhs < 2
-ELSE GOTO CO_2
+GOTO CO_2
 
 hi:
 
@@ -521,8 +520,8 @@ ka4: (it7 TO it8): !! als reine Präsenzveranstaltung!!
 
 vc:
 
-SHOW it1, it3, it5 AND it7 if ssemhs < 2
-SHOW it1-it8 if ssemhs ≥ 2
+SHOW it1, it3, it5 AND it7 if ssemhs == 1 
+SHOW it1-it8 if ssemhs >= 2 OR ssemhs == 0 OR ssemhs == MISSING (CF: mein Vorschlag)
 
 av:
 
@@ -1112,7 +1111,7 @@ in:
 
 q1: Mit welcher Note wurden Ihre bisherigen Studienleistungen im ++letzten Semester++ bewertet?
 
-is: Punktzahl bitte in Note umrechnen.
+is1: Punktzahl bitte in Note umrechnen.
 
 it:
 
@@ -1128,8 +1127,7 @@ ka:
 
 vc:
 
-SHOW q1, is, spernot, q2 AND spernot2 if ssemhs ≥ 2
-SHOW q2, is and spernot2 if ssemhs < 2
+SHOW q1, is1 and spernot if ssemhs >= 2
 
 av: 
 
@@ -1162,8 +1160,8 @@ in:
 
 q2: Und wie wurden Ihre bisherigen Studienleistungen bislang ++insgesamt++ bewertet?
 
-is: 
-
+is2: Punktzahl bitte in Note umrechnen.
+ 
 it:
 
 st:
@@ -1178,8 +1176,9 @@ ka:
 
 vc:
 
-SHOW q1, is, spernot, q2 AND spernot2 if ssemhs ≥ 2
-SHOW q2, is and spernot2 if ssemhs < 2
+SHOW q2 and spernot2 if TRUE (CF: also immer)
+SHOW is2 if !(ssemhs >= 2)   (CF: "!()" als logisches Gegenereignis zum Inhalt der Klammer)
+
 
 av: 
 
@@ -1248,8 +1247,8 @@ ka:
 
 vc:
 
-SHOW it1 AND it2 if ssemhs ≥ 2
-SHOW it1 if ssemhs < 2
+SHOW it1 if TRUE (also immer)
+SHOW it2 if ssemhs >= 2 (CF: mein Vorschlag)
 
 av:
 
@@ -1319,7 +1318,7 @@ ao9: 8: 8
 
 ao10: 9: 9
 
-ao11: 10: ≥10
+ao11: 10: =10
 
 mv:
 
@@ -1373,8 +1372,8 @@ ka:
 
 vc:
 
-SHOW ao1 AND ao2 if ssemhs ≥ 2
-SHOW ao1 if ssemhs < 2
+SHOW ao1 if TRUE (also immer)
+SHOW ao2 if ssemhs >= 2 (CF: mein Vorschlag)
 
 av:
 
@@ -1388,7 +1387,7 @@ fo:
 
 tr:
 
-GOTO A_51b if ssemhs < 2
+GOTO A_51b if ssemhs == 1
 ELSE GOTO CO_18
 
 hi:
@@ -1648,7 +1647,7 @@ fo:
 
 tr:
 
-GOTO N_10b if ssemhs < 2
+GOTO N_10b if ssemhs == 1 (CF: da alle anderen Werte sicherlich wie Missings behandelt werden sollten, oder?)
 ELSE GOTO CO_7
 
 hi: 
@@ -1899,8 +1898,8 @@ ka3: (it5 TO it6): !! digitale Selbstlernprogramme (z. B. Simulation, Lernapps, 
 
 vc:
 
-SHOW it1, it3 AND it5 if ssemhs < 2
-SHOW it1-it6 if ssemhs ≥ 2
+SHOW it1, it3 AND it5 IF TRUE (CF: also immer)
+SHOW it2, it4 AND it6 IF ssemhs >= 2 (CF: mein Vorschlag)
 
 av:
 
@@ -2922,8 +2921,9 @@ fo:
 
 tr:
 
-GOTO C2_0 if h_gartcount ≥ 1 (--> momentan steht in der QML nur größer 1)
-ELSE GOTO D3_23
+GOTO D3_23 IF gartka == TRUE (CF: in der derzeitigen Umsetzung technisch sinnvoll, da es pro Frage nur eine einzige Exklusivkategorie geben kann)
+GOTO C2_0 if h_gartcount = 1
+GOTO D3_23 IF ELSE
 
 hi: 
 
@@ -4044,9 +4044,8 @@ fo:
 
 tr:
 
-GOTO CO_23 if VCO_20_g = 3 OR VCO_20_g) = 4 OR VCO_20_h = 3 OR VCO_20_h = 4 OR VCO_20 i = 3 OR VCO_20_i = 4 (--> in QML fehlt bei der Weiterleitung der jeweils zweite Unterstrich in den Variablennamen; VCO_20_*)
-
-ELSE GOTO D3_8"
+GOTO CO_23 if VCO_20_g = 3 OR VCO_20_g) = 4 OR VCO_20_h = 3 OR VCO_20_h = 4 OR VCO_20 i = 3 OR VCO_20_i = 4 
+ELSE GOTO D3_8
 
 
 hi: 
@@ -4374,7 +4373,7 @@ ka:
 vc: 
 
 SHOW ao1a, ao2a, ao3a, ao4a AND ao5a if ssemhs < 2
-SHOW ao1a-ao5b if ssemhs ≥ 2
+SHOW ao1a-ao5b if ssemhs = 2
 
 av: NUMBER, 2-stellig (0 bis 99)
 
@@ -4445,8 +4444,8 @@ ka: Ich wohne …
 
 vc:
 
-SHOW ao1, wohnal1, wohnwg1, VA_51_1, wohnel1, wohnpar1, wohnkin1, wohnfam1 AND wohnsons1 if ssemhs < 2
-SHOW ao1, ao2 AND wohnal1 - wohnsons2 if ssemhs  ≥ 2
+SHOW ao1, wohnal1, wohnwg1, VA_51_1, wohnel1, wohnpar1, wohnkin1, wohnfam1 AND wohnsons1 if TRUE (CF: also immer)
+SHOW ao2, wohnal2, wohnwg2, VA_51_2, wohnel2, wohnpar2, wohnkin2, wohnfam2 AND wohnsons2  IF ssemhs >= 2 (CF: mein Vorschlag)
 
 av:
 
@@ -4909,9 +4908,9 @@ ka:
 vc:
 
 SHOW zufrvstelt if dkinja = 2
-SHOW zufrvstbe if h_gartcount ≥ 1
-SHOW zufrvsterw if eaktsens ≥ 2
-SHOW zufrvstpfl if zcarwo ≥ 1 OR zcarwo2 ≥ 1
+SHOW zufrvstbe if h_gartcount >= 1 (CF: mein Vorschlag)
+SHOW zufrvsterw if eaktsens = 2 (CF: Sicher, dass hier nur Personen mit einer Tätigkeit, aber nicht mit zwei, drei oder mehr befragt werden sollen?)
+SHOW zufrvstpfl if zcarwo >= 1 OR zcarwo2 >= 1 (CF: mein Vorschlag)
 
 av:
 
