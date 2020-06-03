@@ -1192,9 +1192,65 @@ fo1: Bitte offene Angabe und Einfachauswahl untereinander, linksbündig position
 
 fo2: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A_28) darstellen. 
 
-tr:  GOTO D2_5
+tr:
+
+	<zofar:transitions>
+		<zofar:transition target="A_49a"/>
+	</zofar:transitions>
 
 hi: 
+
+
+\--------------------------------
+
+
+A_49a
+=====
+
+tc:
+
+vn: 
+
+qt:
+
+hl:
+
+in:
+
+q:
+
+is:
+
+it:
+
+st:
+
+ao:
+
+mv: 
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: 
+
+tr:
+
+	<zofar:transitions>
+		<zofar:transition target="D2_5"/>
+	</zofar:transitions>
+
+hi:
+
 
 \------------------------------------------------------------
 
@@ -2594,8 +2650,11 @@ fo:
 
 tr: 
 
-GOTO C1_1 IF dkinja == 2
-GOTO CO_21
+	<zofar:transitions>
+		<zofar:transition condition="zofar.asNumber(dkinja) == 2" target="C1_1"/>
+		<zofar:transition target="A_15"/>
+	</zofar:transitions>
+
 
 hi:
 
@@ -2803,7 +2862,10 @@ fo:
 
 tr:
 
-GOTO CO_21
+	<zofar:transitions>
+		<zofar:transition target="A_15"/>
+	</zofar:transitions>
+
 
 hi:
 
@@ -2856,7 +2918,10 @@ fo:
 
 tr:
 
-GOTO A_15
+	<zofar:transitions>
+		<zofar:transition target="D3_23"/>
+	</zofar:transitions>
+
         
 hi:
 
@@ -2921,9 +2986,11 @@ fo:
 
 tr:
 
-GOTO D3_23 IF gartka == TRUE (CF: in der derzeitigen Umsetzung technisch sinnvoll, da es pro Frage nur eine einzige Exklusivkategorie geben kann)
-GOTO C2_0 if h_gartcount = 1
-GOTO D3_23 IF ELSE
+	<zofar:transitions>
+		<zofar:transition condition="zofar.asNumber(h_gartcount) gt 1" target="C2_0"/>
+		<zofar:transition target="CO_21"/>
+	</zofar:transitions>
+
 
 hi: 
 
@@ -2975,7 +3042,10 @@ fo:
 
 tr: 
 
-GOTO D3_23
+	<zofar:transitions>
+		<zofar:transition target="CO_21"/>
+	</zofar:transitions>
+
 
 hi:
 
@@ -3452,8 +3522,12 @@ fo:
 
 tr:
 
-GOTO CO_24 if  eaktsens = 1
-ELSE GOTO D3_19
+	<zofar:transitions>
+		<zofar:transition condition="zofar.asNumber(eaktsens) == 1 or zofar.isMissing(eaktsens)" target="CO_9a1"/>
+		<zofar:transition condition="zofar.asNumber(eaktsens) == 2 or zofar.asNumber(eaktsens) == 3 or zofar.asNumber(eaktsens) == 4" target="D3_19"/>
+		<zofar:transition target=" CO_9a1"/>
+	</zofar:transitions>
+
 
 hi:
 
@@ -3659,8 +3733,12 @@ fo:
 
 tr:
 
-GOTO CO_9a if VCO_9_h = 1
-ELSE GOTO CO_24
+	<zofar:transitions>
+		<zofar:transition condition="VCO_9_h.value" target="CO_9a"/>
+		<zofar:transition condition="VCO_9_i.value" target="CO_9a"/>
+		<zofar:transition target="CO_9a1"/>
+	</zofar:transitions>
+
 
 hi:
 
@@ -3712,6 +3790,57 @@ fo:
 tr:
 
 GOTO CO_24
+
+hi:
+
+\--------------------------------
+
+CO_9a1
+=====
+
+tc:
+
+vn: VCO_9a1
+
+qt:
+
+hl:
+
+in:
+
+q:
+
+is:
+
+it:
+
+st:
+
+ao:
+
+mv: 
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: 
+
+tr:
+
+	<zofar:transitions>
+		<zofar:transition condition="zofar.asNumber(eaktsens2) == 1" target="CO_9a"/>
+		<zofar:transition condition="zofar.asNumber(eaktsens2) == 2 or zofar.isMissing(eaktsens2)" target="CO_24"/>
+	</zofar:transitions>
+
 
 hi:
 
@@ -5765,6 +5894,5 @@ tr:
 GOTO end
 
 hi:
-
 
 
