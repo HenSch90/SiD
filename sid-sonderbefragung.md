@@ -1127,7 +1127,7 @@ ka:
 
 vc:
 
-SHOW q1, is1 and spernot if ssemhs >= 2
+SHOW q1, is1 and spernot if ssemhs >= 2 OR ssemhs == MISSING
 
 av: 
 
@@ -1177,7 +1177,7 @@ ka:
 vc:
 
 SHOW q2 and spernot2 if TRUE (CF: also immer)
-SHOW is2 if !(ssemhs >= 2)   (CF: "!()" als logisches Gegenereignis zum Inhalt der Klammer)
+SHOW is2 if !(ssemhs >= 2) OR !(MISSING) (CF: "!()" als logisches Gegenereignis zum Inhalt der Klammer)
 
 
 av: 
@@ -1201,6 +1201,13 @@ tr:
 hi: 
 
 
+
+
+
+
+
+
+
 \--------------------------------
 
 
@@ -1208,47 +1215,32 @@ A_49a
 =====
 
 tc:
-
-vn: 
-
-qt:
-
+vn: mastplan; promoplan
+qt: Einfachauswahlmatrix mit horizontalen ao
 hl:
-
 in:
-
-q:
-
+q: Wie wahrscheinlich ist es, dass Sie…
 is:
-
-it:
-
+it1: (mastplan): … ein Masterstudium aufnehmen?
+It2: (promoplan): … eine Promotion aufnehmen?
 st:
-
-ao:
-
-mv: 
-
+ao1: 1: sehr unwahrscheinlich
+ao2: 2:
+ao3: 3:
+ao4: 4:
+ao5: 5: sehr wahrscheinlich
+mv:
 ka:
-
-vc:
-
+vc: SHOW it1 (mastplan) IF sabsano==1
 av:
-
 kh:
-
 fv:
-
 hv:
-
-fo: 
-
+fo:
 tr:
-
 	<zofar:transitions>
-		<zofar:transition target="D2_5"/>
-	</zofar:transitions>
-
+        	<zofar:transition target="D2_5"/>
+  	</zofar:transitions>
 hi:
 
 
@@ -1297,14 +1289,14 @@ ao9: 9: 81 bis 90 %
 
 ao10: 10: 91 bis 100 %
 
-mv: -11: trifft nicht zu
+mv: -11: trifft nicht zu (bitte jeweils unter beide Spalten setzen)
 
 ka:
 
 vc:
 
-SHOW it1 if TRUE (also immer)
-SHOW it2 if ssemhs >= 2 (CF: mein Vorschlag)
+SHOW it1 if ssemhs >= 2 OR ssemhs == MISSING
+SHOW it2 if TRUE (also immer)
 
 av:
 
@@ -1318,7 +1310,7 @@ fo:
 
 tr: GOTO D2_18
 
-hi: 
+hi: Bitte jeweils unter beide Spalten/Items die o.g. mv-Kategorie ("trifft nicht zu") setzen  
 
 \------------------------------------------------------------
 
@@ -1354,6 +1346,8 @@ it6: (sswrite6): 26 Seiten oder mehr
 
 st:
 
+aox: : Bitte wählen (ist schon korrekt programmiert)
+
 ao1: 0: 0
 
 ao2: 1: 1
@@ -1374,7 +1368,7 @@ ao9: 8: 8
 
 ao10: 9: 9
 
-ao11: 10: =10
+ao11: 10: 10 und mehr
 
 mv:
 
@@ -1394,7 +1388,7 @@ fo:
 
 tr: GOTO D2_19
 
-hi: 
+hi: Bitte die "ka"(Anzahl der verfassten Texte) direkt in der Spalte über den DDMs darstellen.
 
 \------------------------------------------------------------
 D2_19
@@ -1429,7 +1423,7 @@ ka:
 vc:
 
 SHOW ao1 if TRUE (also immer)
-SHOW ao2 if ssemhs >= 2 (CF: mein Vorschlag)
+SHOW ao2 if ssemhs >= 2 OR ssemhs == MISSING (CF: mein Vorschlag)
 
 av:
 
@@ -1955,7 +1949,7 @@ ka3: (it5 TO it6): !! digitale Selbstlernprogramme (z. B. Simulation, Lernapps, 
 vc:
 
 SHOW it1, it3 AND it5 IF TRUE (CF: also immer)
-SHOW it2, it4 AND it6 IF ssemhs >= 2 (CF: mein Vorschlag)
+SHOW it2, it4 AND it6 IF ssemhs >= 2 OR ssemhs == MISSING (CF: mein Vorschlag)
 
 av:
 
@@ -3742,6 +3736,61 @@ tr:
 
 hi:
 
+
+\--------------------------------
+
+CO_9a1
+=====
+
+tc:
+
+vn: VCO_9a1
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q1: Sind Sie aktuell erwerbstätig?
+
+is: 
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
+
+mv:
+
+ka:
+
+vc: 
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+	<zofar:transitions>
+		<zofar:transition condition="zofar.asNumber(eaktsens2) == 1" target="CO_9a"/>
+		<zofar:transition condition="zofar.asNumber(eaktsens2) == 2 or zofar.isMissing(eaktsens2)" target="CO_24"/>
+	</zofar:transitions>
+
+
+hi:
+
+
 \--------------------------------
 
 CO_9a
@@ -3790,57 +3839,6 @@ fo:
 tr:
 
 GOTO CO_24
-
-hi:
-
-\--------------------------------
-
-CO_9a1
-=====
-
-tc:
-
-vn: VCO_9a1
-
-qt:
-
-hl:
-
-in:
-
-q:
-
-is:
-
-it:
-
-st:
-
-ao:
-
-mv: 
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: 
-
-tr:
-
-	<zofar:transitions>
-		<zofar:transition condition="zofar.asNumber(eaktsens2) == 1" target="CO_9a"/>
-		<zofar:transition condition="zofar.asNumber(eaktsens2) == 2 or zofar.isMissing(eaktsens2)" target="CO_24"/>
-	</zofar:transitions>
-
 
 hi:
 
@@ -4173,7 +4171,7 @@ fo:
 
 tr:
 
-GOTO CO_23 if VCO_20_g = 3 OR VCO_20_g) = 4 OR VCO_20_h = 3 OR VCO_20_h = 4 OR VCO_20 i = 3 OR VCO_20_i = 4 
+GOTO CO_23 if VCO_20_g = 3 OR VCO_20_g = 4 OR VCO_20_h = 3 OR VCO_20_h = 4 OR VCO_20 i = 3 OR VCO_20_i = 4 
 ELSE GOTO D3_8
 
 
@@ -4501,8 +4499,8 @@ ka:
 
 vc: 
 
-SHOW ao1a, ao2a, ao3a, ao4a AND ao5a if ssemhs < 2
-SHOW ao1a-ao5b if ssemhs = 2
+SHOW ao1a, ao2a, ao3a, ao4a AND ao5a IF TRUE
+SHOW ao1b, ao2b, ao3b, ao4b AND ao5b IF ssemhs >=2 OR ssemhs == MISSING
 
 av: NUMBER, 2-stellig (0 bis 99)
 
@@ -4574,7 +4572,7 @@ ka: Ich wohne …
 vc:
 
 SHOW ao1, wohnal1, wohnwg1, VA_51_1, wohnel1, wohnpar1, wohnkin1, wohnfam1 AND wohnsons1 if TRUE (CF: also immer)
-SHOW ao2, wohnal2, wohnwg2, VA_51_2, wohnel2, wohnpar2, wohnkin2, wohnfam2 AND wohnsons2  IF ssemhs >= 2 (CF: mein Vorschlag)
+SHOW ao2, wohnal2, wohnwg2, VA_51_2, wohnel2, wohnpar2, wohnkin2, wohnfam2 AND wohnsons2 IF ssemhs >= 2 OR ssemhs == MISSING (CF: mein Vorschlag)
 
 av:
 
@@ -5038,7 +5036,7 @@ vc:
 
 SHOW zufrvstelt if dkinja = 2
 SHOW zufrvstbe if h_gartcount >= 1 (CF: mein Vorschlag)
-SHOW zufrvsterw if eaktsens = 2 (CF: Sicher, dass hier nur Personen mit einer Tätigkeit, aber nicht mit zwei, drei oder mehr befragt werden sollen?)
+SHOW zufrvsterw if eaktsens >= 2
 SHOW zufrvstpfl if zcarwo >= 1 OR zcarwo2 >= 1 (CF: mein Vorschlag)
 
 av:
