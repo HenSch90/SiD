@@ -1201,13 +1201,6 @@ tr:
 hi: 
 
 
-
-
-
-
-
-
-
 \--------------------------------
 
 
@@ -1215,29 +1208,53 @@ A_49a
 =====
 
 tc:
+
 vn: mastplan; promoplan
+
 qt: Einfachauswahlmatrix mit horizontalen ao
+
 hl:
+
 in:
+
 q: Wie wahrscheinlich ist es, dass Sie…
+
 is:
+
 it1: (mastplan): … ein Masterstudium aufnehmen?
+
 It2: (promoplan): … eine Promotion aufnehmen?
+
 st:
+
 ao1: 1: sehr unwahrscheinlich
+
 ao2: 2:
+
 ao3: 3:
+
 ao4: 4:
+
 ao5: 5: sehr wahrscheinlich
+
 mv:
+
 ka:
-vc: SHOW it1 (mastplan) IF sabsano==1
+
+vc: SHOW it1 (mastplan) IF sabsan==1
+
 av:
+
 kh:
+
 fv:
+
 hv:
+
 fo:
+
 tr:
+
 	<zofar:transitions>
         	<zofar:transition target="D2_5"/>
   	</zofar:transitions>
@@ -2019,7 +2036,7 @@ fo:
 
 tr:
 
-GOTO A_41
+GOTO A_38
     
 hi:
 
@@ -2167,7 +2184,7 @@ fo:
 
 tr:
 
-    GOTO A_38
+    GOTO A_5
 
 hi:
 
@@ -2226,7 +2243,7 @@ fo:
 
 tr:
 
-GOTO A_5
+GOTO A_41
 
 hi:
 
@@ -2960,7 +2977,7 @@ ao8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
 ao9: (gartson): andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung): [(gartsono), 50 Zeichen]
 
-ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
+ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung(en) nicht nennen. 
 
 mv: 
 
@@ -2981,7 +2998,7 @@ fo:
 tr:
 
 	<zofar:transitions>
-		<zofar:transition condition="zofar.asNumber(h_gartcount) gt 1" target="C2_0"/>
+		<zofar:transition condition="zofar.asNumber(h_gartcount) ge 1" target="C2_0"/>
 		<zofar:transition target="CO_21"/>
 	</zofar:transitions>
 
@@ -3519,7 +3536,6 @@ tr:
 	<zofar:transitions>
 		<zofar:transition condition="zofar.asNumber(eaktsens) == 1 or zofar.isMissing(eaktsens)" target="CO_9a1"/>
 		<zofar:transition condition="zofar.asNumber(eaktsens) == 2 or zofar.asNumber(eaktsens) == 3 or zofar.asNumber(eaktsens) == 4" target="D3_19"/>
-		<zofar:transition target=" CO_9a1"/>
 	</zofar:transitions>
 
 
@@ -3783,8 +3799,8 @@ fo:
 tr:
 
 	<zofar:transitions>
-		<zofar:transition condition="zofar.asNumber(eaktsens2) == 1" target="CO_9a"/>
-		<zofar:transition condition="zofar.asNumber(eaktsens2) == 2 or zofar.isMissing(eaktsens2)" target="CO_24"/>
+		<zofar:transition condition="zofar.asNumber(VCO_9a1) == 1" target="CO_24"/>
+		<zofar:transition condition="zofar.asNumber(VCO_9a1) == 2 or zofar.isMissing(eaktsens2)" target="CO_9a"/>
 	</zofar:transitions>
 
 
@@ -3806,7 +3822,7 @@ hl:
 
 in:
 
-q: Ist Ihre neue Erwerbstätigkeit systemrelevant?
+q: Ist Ihre Erwerbstätigkeit systemrelevant?
 
 is: Gemeint sind Erwerbstätigkeiten, die zur Bekämpfung der Corona-Pandemie und deren Folgen beitragen.
 
@@ -4443,13 +4459,19 @@ fo:
 
 tr:
 
-GOTO A_56
+GOTO A_56a IF jsCheck==1 AND isMobile==1 AND width == 1 lt 768
+ELSE GOTO A_56
     
 hi:
 
 \--------------------------
 
 
+A_56a [Platzhalter; Methodenexperiment]
+=========
+
+
+\--------------------------
 A_56
 =========
 
@@ -5527,7 +5549,7 @@ CO_14
 
 tc:
 
-vn: VCO_14
+vn: VCO_14a
 
 qt: Einfachauswahl
 
@@ -5535,7 +5557,7 @@ hl:
 
 in:
 
-q1: Was trifft im Hinblick auf eine potenzielle Ansteckung mit dem COVID-19-Virus auf Sie persönlich zu?
+q1: Hatten Sie in den vergangenen Wochen Symptome, die auf eine potenzielle Ansteckung mit dem SARS-CoV-2-Virus hingedeutet haben?
 
 is:
 
@@ -5566,20 +5588,18 @@ hv:
 
 fo:
 
-tr:
-
-GOTO CO_15
+tr: (siehe unten)
 
 hi:
 
 \------------------------------------------------------------
 
-CO_15
+CO_14
 =========
 
 tc:
 
-vn: VCO_15
+vn: VCO_14b
 
 qt: Einfachauswahl
 
