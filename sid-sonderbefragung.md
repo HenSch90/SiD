@@ -2827,7 +2827,7 @@ hl:
 
 in:
 
-q1: In Anbetracht der besonderen Situation durch die Schließung von Kitas, Kindergärten und Schulen: Wie häufig betreuen die folgenden Personen Ihre Kinder im aktuellen Semester?
+q1: In Anbetracht der besonderen Situation durch die zeitweise Schließung von Kitas, Kindergärten und Schulen: Wie häufig betreuen die folgenden Personen Ihre Kinder im aktuellen Semester?
 
 is:
 
