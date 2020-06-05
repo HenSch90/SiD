@@ -3830,9 +3830,9 @@ it:
 
 st:
 
-ao1: 1: ja
+ao1: 1: nein
 
-ao2: 2: nein
+ao2: 2: ja
 
 ao3: 3: weiß ich nicht
 
