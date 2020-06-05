@@ -5555,7 +5555,7 @@ qt: Einfachauswahl
 
 hl:
 
-in:
+in: Die folgenden Fragen beziehen sich auf Ihren Gesundheitszustand. Wie für alle Fragen gilt: Die Beantwortung dieser Fragen ist selbstverständlich freiwillig und wir sichern Ihnen Anonymität und den Schutz Ihrer Daten zu.
 
 q1: Hatten Sie in den vergangenen Wochen Symptome, die auf eine potenzielle Ansteckung mit dem SARS-CoV-2-Virus hingedeutet haben?
 
