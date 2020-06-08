@@ -1196,6 +1196,7 @@ tr:
 
 	<zofar:transitions>
 		<zofar:transition target="A_49a"/>
+		<zofar:transition target="D2_5" condition="zofar.asNumber(sabsan) == 5" />
 	</zofar:transitions>
 
 hi: 
@@ -1241,7 +1242,7 @@ mv:
 
 ka:
 
-vc: SHOW it1 (mastplan) IF sabsan==1
+vc: SHOW it1 (mastplan) IF sabsan==1 OR sabsan==MISSING
 
 av:
 
@@ -2827,7 +2828,7 @@ hl:
 
 in:
 
-q1: In Anbetracht der besonderen Situation durch die zeitweise Schließung von Kitas, Kindergärten und Schulen: Wie häufig betreuen die folgenden Personen Ihre Kinder im aktuellen Semester?
+q1: In Anbetracht der besonderen Situation durch die zeitweise Schließung von Kitas, Kindergärten und Schulen: Wie häufig betreuen die folgenden Personen Ihr(e) Kind(er) im aktuellen Semester?
 
 is:
 
@@ -5058,7 +5059,7 @@ vc:
 
 SHOW zufrvstelt if dkinja = 2
 SHOW zufrvstbe if h_gartcount >= 1 (CF: mein Vorschlag)
-SHOW zufrvsterw if eaktsens >= 2
+SHOW zufrvsterw if eaktsens >= 2 OR VCO_9a1 == 2
 SHOW zufrvstpfl if zcarwo >= 1 OR zcarwo2 >= 1 (CF: mein Vorschlag)
 
 av:
