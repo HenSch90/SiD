@@ -1195,8 +1195,8 @@ fo2: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A_28) 
 tr:
 
 	<zofar:transitions>
-		<zofar:transition target="A_49a"/>
 		<zofar:transition target="D2_5" condition="zofar.asNumber(sabsan) == 5" />
+		<zofar:transition target="A_49a"/>
 	</zofar:transitions>
 
 hi: 
