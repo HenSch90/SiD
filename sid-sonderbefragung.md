@@ -5059,7 +5059,7 @@ ka:
 vc:
 
 SHOW zufrvstelt if dkinja = 2
-SHOW zufrvstbe if h_gartcount >= 1 (CF: mein Vorschlag)
+SHOW zufrvstbe if h_gartcount >= 1 OR gartka==1
 SHOW zufrvsterw if eaktsens >= 2 OR VCO_9a1 == 2
 SHOW zufrvstpfl if zcarwo >= 1 OR zcarwo2 >= 1 (CF: mein Vorschlag)
 
