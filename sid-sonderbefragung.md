@@ -4015,7 +4015,7 @@ ao5b: (feinkredo2): Kredit(e) [infield = € pro Monat; number, 4-stellig: 0 TO 
 
 ao6a: (feinandq1): Weitere Finanzierungsquelle(n) [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-ao6b: (feinandq1): Weitere Finanzierungsquelle(n) [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+ao6b: (feinandq2): Weitere Finanzierungsquelle(n) [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
 mv:
 
