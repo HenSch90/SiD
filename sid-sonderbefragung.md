@@ -4218,9 +4218,9 @@ it:
 
 st:
 
-ao1: 1: vor dem 1. Juni 2020
+ao1: 1: vor dem 15. Juni 2020
 
-ao2: 2:  nach dem 1. Juni 2020
+ao2: 2:  nach dem 15. Juni 2020
 
 mv:
 
