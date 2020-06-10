@@ -4021,7 +4021,8 @@ mv:
 
 ka: (ao2 TO ao6): **++davon entfallen auf…++**
 
-vc: 
+vc:	SHOW itb, ao1b, ao2b, ao3b, ao4b, ao5b AND ao6b IF TRUE
+	SHOW ita, ao1a, ao2a, ao3a, ao4a, ao5a AND ao6a IF ssemhs >=2 OR ssemhs == MISSING
 
 av: 
 
