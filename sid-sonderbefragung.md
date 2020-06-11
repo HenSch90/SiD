@@ -3000,6 +3000,7 @@ tr:
 
 	<zofar:transitions>
 		<zofar:transition condition="zofar.asNumber(h_gartcount) ge 1" target="C2_0"/>
+		<zofar:transition condition="zofar.asNumber(gartka) == 1" target="C2_0"/>
 		<zofar:transition target="CO_21"/>
 	</zofar:transitions>
 
