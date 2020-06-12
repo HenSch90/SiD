@@ -1131,7 +1131,7 @@ SHOW q1, is1 and spernot if ssemhs >= 2 OR ssemhs == MISSING
 
 av: 
 
-kh: Bitte geben Sie Ihre aktuelle Durchschnittsnote an (1,0 bis 5,0)
+kh: Bitte geben Sie Ihre Durchschnittsnote im letzten Semester an (1,0 bis 5,0).
 
 fv:
 
@@ -1182,7 +1182,7 @@ SHOW is2 if !(ssemhs >= 2) OR !(MISSING) (CF: "!()" als logisches Gegenereignis 
 
 av: 
 
-kh: Bitte geben Sie Ihre aktuelle Durchschnittsnote an (1,0 bis 5,0)
+kh: Bitte geben Sie Ihre Durchschnittsnote insgesamt an (1,0 bis 5,0).
 
 fv:
 
