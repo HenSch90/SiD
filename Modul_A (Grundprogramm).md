@@ -1710,7 +1710,7 @@ it:
 
 st:
 
-ao: (hsstandhso): [infield = Hochschule; 60 Zeichen] (offene Angabe)
+ao: (hsstandhso): [infield = Name der Hochschule; 60 Zeichen] (offene Angabe)
 
 mv: 
 
@@ -1861,7 +1861,7 @@ in:
 
 q: Bitte geben Sie Ihr Studienfach an.
 
-is: Bitte geben Sie nicht Ihren angestrebten Abschluss an (z. B. Masterstudent\*in, Promotionsstudent\*in).
+is: Bitte schreiben Sie das Studienfach aus (z. B. Wirtschaftsinformatik, Soziale Arbeit).
 
 it:
 
