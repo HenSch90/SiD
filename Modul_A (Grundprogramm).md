@@ -3706,13 +3706,13 @@ hl:
 
 in:
 
-q: Wie wahrscheinlich ist es, dass Sie…
+q: Wie wahrscheinlich ist es, dass Sie …
 
 is:
 
 it1: (mastplan): … ein Masterstudium aufnehmen?
 
-It2: (promoplan) … eine Promotion aufnehmen?
+It2: (promoplan) … eine Promotion (Dr., PhD) aufnehmen?
 
 st:
 
