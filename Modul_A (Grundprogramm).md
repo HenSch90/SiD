@@ -3197,9 +3197,9 @@ it:
 
 st:
 
-ao2: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
+ao1: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
 
-ao1: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
+ao2: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
 ao3: (vsbnote): Ich habe keine Note erhalten.
 
@@ -3209,13 +3209,13 @@ ka:
 
 vc:
 
-av1: (vsbnoteo): NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
+av1: (vsbnotej): NUMBER, 4-stellig (1950 bis 2020)
 
-av2: (vsbnotej): NUMBER, 4-stellig (1950 bis 2020)
+av2: (vsbnoteo): NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
 
-kh1: (vsbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh1: (vsbnotej): Bitte geben Sie die vierstellige Jahreszahl an.
 
-kh2: (vsbnotej): Bitte geben Sie die vierstellige Jahreszahl an.
+kh2: (vsbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
 fv:
 
@@ -3230,9 +3230,9 @@ tr:
             <zofar:transition target="A_37b" condition="zofar.asNumber(h_split)==2"/>
         </zofar:transitions>
 
-hi1: vsbnoteo bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
+hi1: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
 
-hi2: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
+hi2: vsbnoteo bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
 
 \------------------------------------------------------------
 
