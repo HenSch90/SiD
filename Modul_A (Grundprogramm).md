@@ -1332,7 +1332,11 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja
+ao2: 2: nein, musste den Auslandsaufenthalt abbrechen
+
+ao3: 3: nein, konnte den Auslandsaufenthalt nicht antreten
+
+ao4: 4: ja
 
 mv:
 
