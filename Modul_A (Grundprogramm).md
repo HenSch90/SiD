@@ -1969,7 +1969,7 @@ hl:
 
 in:
 
-q: Und welchen Abschluss streben Sie als nächstes an?
+q: Und welchen Abschluss streben Sie in ihrem derzeitigen Studium als nächstes an?
 
 is: Sollten Sie mehrere Abschlüsse anstreben, beziehen Sie sich bitte auf den zeitlich nächsten.
 
@@ -1985,15 +1985,13 @@ ao3: (sabsano): 3: Staatsexamen
 
 ao4: (sabsano): 4: Diplom
 
-ao5: (sabsano): 5: Promotion
+ao5: (sabsano): 5: Magister
 
-ao6: (sabsano): 6: kirchliche Abschlussprüfung
+ao5: (sabsano): 6: Promotion (Dr., PhD)
 
-ao7: (sabsano): 7: künstlerische Abschlussprüfung
+ao7: (sabsano): 7: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
 
-ao8: (sabsano): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
-
-ao9: (sabsano): 9: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
+ao8: (sabsano): 8: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
 
 mv:
 
