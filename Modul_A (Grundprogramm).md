@@ -633,7 +633,7 @@ ao4: (baufgrutouba): Tourist\*in (Besuchsvisum)
 
 ao5: (baufgruasylba): Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
 
-ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. mit/wegen Ehepartner\*in
+ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. mit/wegen (Ehe-)Partner\*in
 
 ao6: (baufgrufamba): Familiennachzug, zog zu bereits in Deutschland lebender Familie
 
