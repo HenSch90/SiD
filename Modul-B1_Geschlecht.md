@@ -129,6 +129,74 @@ hi:
 
 \--------------------------------
 
+B1_3a
+==
+
+tc: If demosex !=3 (?; tc bitte im Rahmen neugesetzten Seitenweiterleitungsbedingungen prüfen)
+
+vn: besex1; besex3; besex5; hosex1; hosex2; hosex5
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und ihre Beziehungen in der heutigen Gesellschaft. Bitte geben Sie an, in welchem Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
+
+is:
+
+it1: (besex1): Egal wie erfolgreich ein Mann auch sein mag, ohne die Liebe einer Frau fehlt ihm etwas ganz Wichtiges.
+
+it2: (hosex1): Wenn Frauen in einem fairen Wettbewerb gegenüber Männern den Kürzeren ziehen, behaupten sie gerne, sie seien diskriminiert worden.
+
+it3: (hosex2): Feministinnen stellen oftmals unberechtigte Forderungen an Männer.
+
+it4: (besex3): Jeder Mann sollte eine Frau haben, die er über alles liebt.
+
+it5: (besex5): Ein Mann sollte bereit sein, sein eigenes Wohl zu opfern, um für seine Frau sorgen zu können.
+
+it6: (hosex5): Viele Frauen versuchen unter dem Deckmantel der Gleichberechtigung besondere Vergünstigungen zu erlangen, wie z. B. eine Bevorzugung bei der Besetzung von Arbeitsstellen.
+
+st:
+
+ao1: 1: stimme überhaupt nicht zu
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: stimme voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+	<zofar:transitions>
+        <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+        <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
+    	</zofar:transitions>
+
+hi:
+
+\--------------------------------
+
 B1_3b
 ==
 
