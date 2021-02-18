@@ -2056,15 +2056,13 @@ ao4: (sabsanpr): 3: Staatsexamen
 
 ao5: (sabsanpr): 4: Diplom
 
-ao7: (sabsanpr): 6: kirchliche Abschlussprüfung
+ao6: (sabsanpr): 5: Magister
 
-ao8: (sabsanpr): 7: künstlerische Abschlussprüfung
-
-ao9: (sabsanpr): 8: Anderer Abschluss (bspw. ausländischer Abschluss, Magister)
+ao9: (sabsanpr): 8: anderer Abschluss 
 
 mv:
 
-ka: (ao2 to ao9): Ja, und zwar: 
+ka: (ao2 to ao9): Ja, und zwar mit dem angestrebten Abschluss: 
 
 vc:
 
