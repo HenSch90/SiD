@@ -2097,7 +2097,7 @@ hl:
 
 in:
 
-q: Um welche Form handelt es sich bei Ihrem Studium?
+q: Abgesehen von der besonderen Studiensituation durch die Corona-Pandemie: Um welche Form handelt es sich bei Ihrem Studium?
 
 is: Bitte alles Zutreffende auswählen.
 
