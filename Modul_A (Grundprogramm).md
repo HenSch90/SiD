@@ -2455,7 +2455,7 @@ q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus?
 is: Falls Ihre Eltern zurzeit nicht erwerbstätig sind, geben Sie bitte den jeweils zuletzt ausgeübten Beruf an.
 
 Bitte tragen Sie die Berufsbezeichnung möglichst genau ein, z. B.:
-Bankkaufmann/-frau (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter), Maschinenbauingenieur\*in (nicht: Ingenieur\*in).
+Bankkauffrau oder -mann (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter), Maschinenbauingenieur\*in (nicht: Ingenieur\*in).
 
 
 it1: Vater
