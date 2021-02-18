@@ -2327,11 +2327,11 @@ q: Inwieweit trauen Sie sich zu, …
 
 is:
 
-it1: (studerfolg): … ein Studium erfolgreich abzuschließen?
+it1: (studerfolg): … Ihr Studium erfolgreich abzuschließen?
 
 it2: (masterfolg): … ein Masterstudium erfolgreich abzuschließen?
 
-it3: (promoerfolg): … eine Promotion erfolgreich abzuschließen?
+it3: (promoerfolg): … eine Promotion (Dr., PhD) erfolgreich abzuschließen?
 
 st:
 
