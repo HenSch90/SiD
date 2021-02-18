@@ -3095,7 +3095,7 @@ A_39
 
 tc:
 
-vn: vsbstyp (vsbstyp1; vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp9o, vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
+vn: vsbtyp (vsbtyp1; vsbtyp2; vsbtyp3; vsbtyp4; vsbtyp5; vsbtyp6; vsbtyp7; vsbtyp8; vsbtyp9; vsbtyp9o, vsbtyp10; vsbtyp11; vsbtyp12; vsbtyp13; vsbtyp14; vsbtyp15; vsbtyp15o)
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -3111,37 +3111,37 @@ it:
 
 st:
 
-ao1: (vsbstyp1): Gymnasium
+ao1: (vsbtyp1): Gymnasium
 
-ao2: (vsbstyp2): Gesamtschule mit gymnasialer Oberstufe
+ao2: (vsbtyp2): Gesamtschule mit gymnasialer Oberstufe
 
-ao3: (vsbstyp3): freie Waldorfschule
+ao3: (vsbtyp3): freie Waldorfschule
 
-ao4: (vsbstyp4): Abendgymnasium, Kolleg (nicht Berufskolleg)
+ao4: (vsbtyp4): Abendgymnasium, Kolleg (nicht Berufskolleg)
 
-ao5: (vsbstyp5): Fachgymnasium, berufliches Gymnasium
+ao5: (vsbtyp5): Fachgymnasium, berufliches Gymnasium
 
-ao6: (vsbstyp6): Berufsfachschule
+ao6: (vsbtyp6): Berufsfachschule
 
-ao7: (vsbstyp7): Berufsoberschule
+ao7: (vsbtyp7): Berufsoberschule
 
-ao8: (vsbstyp8): Fachoberschule
+ao8: (vsbtyp8): Fachoberschule
 
-ao9: (vsbstyp9): andere Schulform, und zwar: [(vsbstyp9o); offen Angabe, 80 Zeichen]
-
-
-ao10: (vsbstyp10): berufliche Aufstiegsfortbildung (z.B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
-
-ao11: (vsbstyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
+ao9: (vsbtyp9): andere Schulform, und zwar: [(vsbtyp9o); offen Angabe, 80 Zeichen]
 
 
-ao12: (vsbstyp12): Eignungsprüfung (z. B. Kunst, Musik, Sport)
+ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z.B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
 
-ao13: (vsbstyp13): Begabtenprüfung
+ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
 
-ao14: (vsbstyp14): Mediziner\*innen-Test (TMS)
 
-ao15: (vsbstyp15): Auf einem anderen Weg, und zwar: [(vsbstyp15o); offen Angabe, 80 Zeichen]
+ao12: (vsbtyp12): Eignungsprüfung (z. B. Kunst, Musik, Sport)
+
+ao13: (vsbtyp13): Begabtenprüfung
+
+ao14: (vsbtyp14): Mediziner\*innen-Test (TMS)
+
+ao15: (vsbtyp15): Auf einem anderen Weg, und zwar: [(vsbtyp15o); offen Angabe, 80 Zeichen]
 
 mv:
 
