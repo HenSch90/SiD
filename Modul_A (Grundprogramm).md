@@ -3249,9 +3249,9 @@ hl:
 
 in:
 
-q: Haben Sie vor dem Studium eine Berufsausbildung begonnen bzw. abgeschlossen?
+q: Haben Sie vor dem Studium eine Berufsausbildung/berufliche Aufstiegsfortbildung abgeschlossen?
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -3259,9 +3259,9 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja, begonnen und nicht abgeschlossen
+ao2: 2: ja, eine Berufsausbildung abgeschlossen
 
-ao3: 3: ja, begonnen und abgeschlossen
+ao3: 3: ja, eine berufliche Aufstiegsfortbildung abgeschlossen
 
 mv:
 
