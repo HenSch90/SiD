@@ -1276,7 +1276,7 @@ ao8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
 ao9: (gartson): andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung): [(gartsono), 50 Zeichen]
 
-ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung(en) nicht nennen. 
+ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
 
 mv:
 
@@ -1332,11 +1332,7 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: nein, musste den Auslandsaufenthalt abbrechen
-
-ao3: 3: nein, konnte den Auslandsaufenthalt nicht antreten
-
-ao4: 4: ja
+ao2: 2: ja
 
 mv:
 
@@ -3185,7 +3181,7 @@ A_40
 
 tc:
 
-vn: vsbnoteo; vsbnotej; vsbnote
+vn: vsbnotej; vsbnoteo; vsbnote
 
 qt: offene Angaben; Einfachauswahl
 
@@ -3201,9 +3197,9 @@ it:
 
 st:
 
-ao1: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
-
 ao2: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
+
+ao1: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
 ao3: (vsbnote): Ich habe keine Note erhalten.
 
