@@ -301,7 +301,8 @@ in:
 
 q: Was schätzen Sie: Wie viele Bücher besitzen Sie selbst aktuell und wie viele Bücher besaßen Ihre Eltern zum Zeitpunkt Ihrer Kindheit?
 
-is: Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher. Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
+is: Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
+Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher.
 
 it1: (buchanzi): ich selbst
 
