@@ -281,7 +281,7 @@ hl:
 
 in:
 
-q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an. Wenn Sie an Ihre Partnerschaft denken: Wer trägt in welchem Ausmaß zu den folgenden Haushaltsbereichen bei?
+q: Wer trägt in Ihrer Partnerschaft in welchem Ausmaß zu folgenden Bereichen bei?
 
 is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
