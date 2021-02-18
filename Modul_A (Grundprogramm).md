@@ -745,7 +745,7 @@ hl:
 
 in:
 
-q: Was waren die Gründe dafür, dass Sie oder Ihre Familie ...
+q: Was waren die Gründe dafür, dass Sie bzw. Ihre Familie ...
 
 is:
 
