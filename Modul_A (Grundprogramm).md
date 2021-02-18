@@ -5842,7 +5842,7 @@ A_57
 
 tc:
 
-vn: sdkzei (sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16)
+vn: sdkzei (sdkzei1; sdkzei2; sdkzei3; sdkzei5; sdkzei7; sdkzei8; sdkzei9; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -5860,21 +5860,13 @@ it2: (sdkzei2): prestigeträchtige Berufsposition
 
 it3: (sdkzei3): sicherer Arbeitsplatz
 
-it4: (sdkzei4): gute Aufstiegsmöglichkeiten
-
 it5: (sdkzei5): flexible Arbeitszeiten
-
-it6: (sdkzei6): die Erwartungen meiner Vorgesetzten erfüllen
 
 it7: (sdkzei7): verantwortungsvolle Aufgaben übernehmen
 
 it8: (sdkzei8): eigene Ideen verwirklichen
 
 it9: (sdkzei9): selbstständig Entscheidungen treffen
-
-it10: (sdkzei10): eine Arbeit, die mir immer wieder neue Aufgaben stellt
-
-it11: (sdkzei11): Möglichkeit zu wissenschaftlicher Tätigkeit
 
 it12: (sdkzei12): anderen Menschen helfen zu können
 
