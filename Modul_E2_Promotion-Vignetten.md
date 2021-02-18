@@ -326,7 +326,7 @@ fo:
 
 tr: GOTO ABSCHLUSSSEITE
 
-hi: 
+hi: Reihenfolge der Itemliste bitte randomisieren.
 
 \--------------------------------
 

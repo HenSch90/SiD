@@ -629,7 +629,7 @@ hv:
 
 fo: ao11 absetzen
 
-tr: 
+tr: GOTO KSM-ma07
 
 hi:
 
@@ -708,7 +708,7 @@ fo:
 
 tr: GOTO KSM-ma08
 
-hi: 
+hi: Reihenfolge Itemliste bitte randomisieren.
 
 
 \--------------------------------
@@ -732,7 +732,7 @@ Ein Bachelorabschluss …
 
 is:
 
-it1: (bawert1): … ist kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
+it1: (bawert1): … ist meiner Meinung nach kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
 der beruflichen Ausbildung
 
 it2: (bawert2): … ist nur ein Zwischenschritt zu einem Masterstudium

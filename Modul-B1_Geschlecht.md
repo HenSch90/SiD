@@ -29,11 +29,11 @@ ao3: 3: lesbisch
 
 ao4: 4: bisexuell
 
-ao5: 5: offene Angabe: 25, Prefix: Eine andere, und zwar:
+ao5: 5: Präfix: Eine andere, und zwar: [offene Angabe, 25-stellig]
 
 ao6: 6: unklar
 
-mv: -11: Ich möchte diese Frage nicht beantworten.
+mv: -13: Ich möchte diese Frage nicht beantworten.
 
 ka:
 
@@ -223,11 +223,11 @@ it3: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und
 
 it4: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
 
-it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie eine Mutter, die nicht berufstätig ist.
+it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie eine Mutter, die nicht berufstätig ist.
 
 it6: (bothfull): Die beste Arbeitsteilung in einer Familie ist die, dass beide Partner in gleichem Umfang arbeiten und sich gleichermaßen um den Haushalt und die Kinder kümmern.
 
-it7: (fulldadtod): Ein Vollzeit erwerbstätiger Vater kann zu seinem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie ein Vater, der nicht berufstätig ist.
+it7: (fulldadtod): Ein Vollzeit erwerbstätiger Vater kann zu seinem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie ein Vater, der nicht berufstätig ist.
 
 st:
 
@@ -293,13 +293,13 @@ it3: (\_a): andere Personen
 
 st:
 
-ao1 (atakhh): Hausarbeit: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao1 (atakhh): !!Hausarbeit!! [offene Angabe, 3-stellig: 0 TO 100, Suffix: %]
 
-ao2 (atakee): Erwerbseinkommen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao2 (atakee): !!Erwerbseinkommen!! [offene Angabe, 3-stellig: 0 TO 100, Suffix: %]
 
-ao3 (atakwe): Treffen wichtiger Entscheidungen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao3 (atakwe): !!Treffen wichtiger Entscheidungen!! [offene Angabe, 3-stellig: 0 TO 100, Suffix: %]
 
-ao4 (atakkb): Kinderbetreuung: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao4 (atakkb): !!Kinderbetreuung!! [offene Angabe, 3-stellig: 0 TO 100, Suffix: %]
 
 mv:
 
@@ -334,7 +334,7 @@ tc: IF wohnpar=1
 
 vn1: atakzufr
 
-qt: Einfachauswahl mit vertikalen ao
+qt: Einfachauswahl mit ao
 
 hl:
 
@@ -478,13 +478,13 @@ it4: (\_a): andere Personen
 
 st:
 
-ao1 (athhm): Hausarbeit: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao1 (athhm): !!Hausarbeit!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
-ao2 (ateem): Erwerbseinkommen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao2 (ateem): !!Erwerbseinkommen!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
-ao3 (atwem): Treffen wichtiger Entscheidungen: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao3 (atwem): !!Treffen wichtiger Entscheidungen!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
-ao4 (atkbm): Kinderbetreuung: offene Angabe, 3-stellig: 0 TO 100, Suffix: %
+ao4 (atkbm): !!Kinderbetreuung!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
 mv:
 
@@ -618,11 +618,9 @@ ao3: 3: promoviert
 
 mv1: -12: weiß ich nicht
 
-mv2: -11: habe ich nicht
-
 ka:
 
-vc: 
+vc: SHOW it5, it6 IF dsibo >=1
 
 av:
 
@@ -632,7 +630,7 @@ fv:
 
 hv:
 
-fo: Bitte in der Zeile Großvater (promgroßv), Großmutter (promgroßm), Vater (promvat), Mutter (prommut) jeweils das Antwortkästchen für mv2/"habe ich nicht" ausblenden.
+fo:
 
 tr:
 

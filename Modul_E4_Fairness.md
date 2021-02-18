@@ -203,7 +203,7 @@ it7: (faifina): finanzielle Unterstützung
 
 it8: (faiglue): Zufall/Glück
 
-it9: (faiprof): Unterstützung durch Professor\*innen
+it9: (faiprof): fachliche Unterstützung durch Professor\*innen
 
 it10: (faielt): Eltern, die studiert haben
 
@@ -267,7 +267,7 @@ it1: (faischuet): Hochschulen sind verpflichtet, ihre Studierenden vor Äußerun
 
 it2: (faimut): An meiner Hochschule wird der freie Austausch von ganz unterschiedlichen Sichtweisen ermutigt und gefördert.
 
-it3: (faiausl): Kontroverse Gastredner\*innen sollten wieder ausgeladen werden, wenn einige Studierende es fordern.
+it3: (faiausl): Gastredner\*innen sollten wieder ausgeladen werden, wenn einige Studierende es fordern.
 
 it4: (faiprot): Kontroverse Gastredner\*innen zu stören oder am Reden zu hindern ist eine legitime Form des Protests.
 
@@ -1628,7 +1628,7 @@ KSM-fai27
 
 tc:
 
-vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a; faierlelt_s/_a
+vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a; faierlelt_s/_a; faierland_s/a; fairerlando
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao
 
@@ -1659,6 +1659,8 @@ ao6: (faierlsex_s, faierlsex_a): aufgrund der sexuellen Orientierung
 ao7: (faierlbeein_s, faierlbeein_a): aufgrund physischer oder psychischer Beeinträchtigung
 
 ao8: (faierlelt_s, faierlelt_a): aufgrund von Elternschaft
+
+ao9: (faierland_s, faieerland_a): andere, und zwar: [fairerlando]
 
 st:
 
