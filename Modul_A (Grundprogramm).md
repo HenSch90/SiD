@@ -327,7 +327,7 @@ q3: Sie haben angegeben, die deutsche und eine ausländische Staatsangehörigkei
 
 q4: Sie haben angegeben, eine ausländische Staatsangehörigkeit zu haben. Welche ausländische Staatsangehörigkeit besitzen Sie?
 
-is: Bitte wählen Sie zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus. 
 
 it:
 
