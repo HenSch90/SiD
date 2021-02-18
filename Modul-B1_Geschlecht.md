@@ -464,13 +464,13 @@ hl:
 
 in:
 
-q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß zu den unterschiedlichen Bereichen im Haushalt beigetragen?
+q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß zu den unterschiedlichen Bereichen überwiegend beigetragen?
 
 is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
-it1: (\_m): (Stief-)Mutter
+it1: (\_m): Mutter
 
-it2: (\_v): (Stief-)Vater
+it2: (\_v): Vater
 
 it3: (\_i): ich selbst
 
@@ -478,7 +478,7 @@ it4: (\_a): andere Personen
 
 st:
 
-ao1 (athhm): !!Hausarbeit!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
+ao1 (athhm): !!Haushalt!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
 ao2 (ateem): !!Erwerbseinkommen!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
