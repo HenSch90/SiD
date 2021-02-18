@@ -1276,7 +1276,7 @@ ao8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
 ao9: (gartson): andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung): [(gartsono), 50 Zeichen]
 
-ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
+ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung(en) nicht nennen. 
 
 mv:
 
