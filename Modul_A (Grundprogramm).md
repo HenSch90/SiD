@@ -1127,7 +1127,7 @@ hl:
 
 in:
 
-q: Umsorgen Sie regelmäßig pflegebedürftige Personen aus dem Familien- oder Freundeskreis?
+q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
 
 is: Nicht gemeint ist die Betreuung der eigenen Kinder.
 
@@ -3000,7 +3000,7 @@ ao4: (intvors4): fachliche Eignungsprüfung (z. B. TestAS, Medizin, Kunst, Musik
 
 ao5: (intvors5): Etwas anderes, und zwar: [(intvors5o), offene Angabe, 250 Zeichen]
 
-ao6: (intvors6): keine [Exklusivkategorie]
+ao6: (intvors6): Keine [Exklusivkategorie]
 
 mv:
 
@@ -3095,7 +3095,7 @@ A_39
 
 tc:
 
-vn: vsbstyp (vsbstyp1; vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
+vn: vsbstyp (vsbstyp1; vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp9o, vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -3103,7 +3103,7 @@ hl:
 
 in:
 
-q: Auf welchem Weg erfolgte die Zulassung zu Ihrem ersten Studium (über den schulischen Weg, eine berufliche Qualifikation oder besondere Eignung)?
+q: Auf welchem Weg haben Sie Ihre Studienberechtigung erhalten (über den schulischen Weg, eine berufliche Qualifikation oder besondere Eignung)?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -3111,37 +3111,37 @@ it:
 
 st:
 
-ao1: (vsbtyp1): Gymnasium
+ao1: (vsbstyp1): Gymnasium
 
-ao2: (vsbtyp2): Gesamtschule mit gymnasialer Oberstufe
+ao2: (vsbstyp2): Gesamtschule mit gymnasialer Oberstufe
 
-ao3: (vsbtyp3): Schule in freier Trägerschaft (z. B. Waldorfschule)
+ao3: (vsbstyp3): freie Waldorfschule
 
-ao4: (vsbtyp4): Abendgymnasium, Kolleg (nicht Berufskolleg)
+ao4: (vsbstyp4): Abendgymnasium, Kolleg (nicht Berufskolleg)
 
-ao5: (vsbtyp5): Fachgymnasium, berufliches Gymnasium
+ao5: (vsbstyp5): Fachgymnasium, berufliches Gymnasium
 
-ao6: (vsbtyp6): Berufsfachschule
+ao6: (vsbstyp6): Berufsfachschule
 
-ao7: (vsbtyp7): Berufsoberschule
+ao7: (vsbstyp7): Berufsoberschule
 
-ao8: (vsbtyp8): Fachoberschule
+ao8: (vsbstyp8): Fachoberschule
 
-ao9: (vsbtyp9): andere berufsbildende Schule (Fachschule, Fachakademie, Berufskolleg)
-
-
-ao10: (vsbtyp10): berufliche Aufstiegsfortbildung als Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in
-
-ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
+ao9: (vsbstyp9): andere Schulform, und zwar: [(vsbstyp9o); offen Angabe, 80 Zeichen]
 
 
-ao12: (vsbtyp12): Eignungsprüfung (z. B. Kunst, Musik, Sport)
+ao10: (vsbstyp10): berufliche Aufstiegsfortbildung (z.B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
 
-ao13: (vsbtyp13): Begabtenprüfung
+ao11: (vsbstyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
 
-ao14: (vsbtyp14): Mediziner\*innen-Test (TMS)
 
-ao15: (vsbtyp15): Auf einem anderen Weg, und zwar: [(vsbtyp15o); offen Angabe, 80 Zeichen]
+ao12: (vsbstyp12): Eignungsprüfung (z. B. Kunst, Musik, Sport)
+
+ao13: (vsbstyp13): Begabtenprüfung
+
+ao14: (vsbstyp14): Mediziner\*innen-Test (TMS)
+
+ao15: (vsbstyp15): Auf einem anderen Weg, und zwar: [(vsbstyp15o); offen Angabe, 80 Zeichen]
 
 mv:
 
