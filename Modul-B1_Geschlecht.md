@@ -403,7 +403,7 @@ q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewä
 
 is: 
 
-it1: (atihh): Hausarbeit
+it1: (atihh): Haushalt
 
 it2: (atiee): Erwerbseinkommen
 
