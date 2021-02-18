@@ -1181,7 +1181,7 @@ hl:
 
 in:
 
-q: Wenn Sie an eine typische Woche denken: Wie häufig führen Sie folgende Pflegetätigkeiten aus?
+q: Wie häufig führen Sie pro Woche die folgenden Pflegetätigkeiten aus?
 
 is:
 
