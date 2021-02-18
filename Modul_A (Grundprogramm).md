@@ -2920,7 +2920,7 @@ q: Wurden diese Bildungsabschlüsse bzw. Ihre bisherigen Studienleistungen in De
 
 is:
 
-it1: (ankbild1): Promotion
+it1: (ankbild1): Promotion (Dr., PhD)
 
 it2: (ankbild2): Hochschulstudium mit zweitem Abschluss
 
