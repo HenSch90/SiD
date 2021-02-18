@@ -369,7 +369,7 @@ hl:
 
 in:
 
-q: Wenn Sie an die Beziehung zu Ihren Eltern denken, inwiefern treffen die folgenden Aussagen zu?
+q: Wenn Sie an die Beziehung zu Ihren Eltern denken, inwiefern treffen folgende Aussagen zu?
 
 is:
 
