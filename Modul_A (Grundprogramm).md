@@ -1127,7 +1127,7 @@ hl:
 
 in:
 
-q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
+q: Umsorgen Sie regelmäßig pflegebedürftige Personen aus dem Familien- oder Freundeskreis?
 
 is: Nicht gemeint ist die Betreuung der eigenen Kinder.
 
