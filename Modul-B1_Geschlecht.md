@@ -73,7 +73,7 @@ hl:
 
 in:
 
-q: Wenn Sie sich selbst beschreiben müssten: Welche Eigenschaften treffen am ehesten auf Sie zu?
+q: Wenn Sie sich selbst beschreiben müssten: Inwiefern treffen die folgenden Eigenschaften auf Sie zu?
 
 is:
 
