@@ -533,25 +533,25 @@ it:
 
 st:
 
-ao1: 1: 0 bis 10 %
+ao1: 1: 0 % bis 10 %
 
-ao2: 2: 11 bis 20 %
+ao2: 2: 11 % bis 20 %
 
-ao3: 3: 21 bis 30 %
+ao3: 3: 21 % bis 30 %
 
-ao4: 4: 31 bis 40 %
+ao4: 4: 31 % bis 40 %
 
-ao5: 5: 41 bis 50 %
+ao5: 5: 41 % bis 50 %
 
-ao6: 6: 51 bis 60 %
+ao6: 6: 51 % bis 60 %
 
-ao7: 7: 61 bis 70 %
+ao7: 7: 61 % bis 70 %
 
-ao8: 8: 71 bis 80 %
+ao8: 8: 71 % bis 80 %
 
-ao9: 9: 81 bis 90 %
+ao9: 9: 81 % bis 90 %
 
-ao10: 10: 91 bis 100 %
+ao10: 10: 91 % bis 100 %
 
 mv: -11: trifft nicht zu
 
