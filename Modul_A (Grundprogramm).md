@@ -4112,11 +4112,11 @@ ao1: 1: nein, kein Interesse
 
 ao2: 2: nein, sehe keine Realisierungschance
 
-ao3: 3: ja, geplant
+ao3: 3: weiß ich noch nicht
 
-ao4: 4: ja, bereits in Vorbereitung
+ao4: 4: ja, geplant
 
-ao5: 5: weiß ich noch nicht
+ao5: 5: ja, bereits in Vorbereitung
 
 mv:
 
