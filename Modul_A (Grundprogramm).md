@@ -2163,11 +2163,11 @@ st:
 
 ao1: 1: Vollzeit
 
-ao2: 2: Teilzeit
+ao2: 2: Vollzeitstudiengang mit individueller Teilzeitregelung
 
-ao3: 3: Vollzeitstudiengang mit individueller Teilzeitregelung
+ao3: 3: Vollzeitstudiengang inoffiziell als Teilzeitstudium
 
-ao4: 4: Vollzeitstudiengang inoffiziell als Teilzeitstudium
+ao4: 4: Teilzeit
 
 mv:
 
