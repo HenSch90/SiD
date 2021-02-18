@@ -2394,7 +2394,7 @@ it2: (deltberum): Mutter
 
 st:
 
-ao1: 7: Promotion (Doktortitel)
+ao1: 7: Promotion (Dr., PhD)
 
 ao2: 6: Universitätsabschluss
 
@@ -2408,7 +2408,7 @@ ao6: 2: anderer beruflicher Abschluss
 
 ao7: 1: hat keinen beruflichen Abschluss
 
-mv: -12: weiß ich nicht
+mv: -12: weiß ich nicht 
 
 ka:
 
