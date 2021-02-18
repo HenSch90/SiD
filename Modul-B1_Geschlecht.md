@@ -356,7 +356,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: sehr zufrieden
+ao5: 5: voll und ganz zufrieden
 
 mv: 
 
