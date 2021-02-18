@@ -2853,7 +2853,7 @@ hl:
 
 in:
 
-q: Welchen Bildungsstand hatten Sie, als Sie nach Deutschland kamen?
+q: Welche Bildungsabschlüsse hatten Sie bereits, als Sie nach Deutschland kamen?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -2861,7 +2861,7 @@ it:
 
 st:
 
-ao1: (intbild1): Promotion
+ao1: (intbild1): Promotion (Dr., PhD)
 
 ao2: (intbild2): Hochschulstudium mit zweitem Abschluss (z. B. Master)
 
