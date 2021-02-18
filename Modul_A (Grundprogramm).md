@@ -3549,7 +3549,7 @@ ao3: 3: Staatsexamen
 
 ao4: 4: Diplom
 
-ao5: 5: Promotion
+ao5: 5: Promotion (Dr., PhD)
 
 ao6: 6: kirchliche Abschlussprüfung
 
