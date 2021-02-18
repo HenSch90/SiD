@@ -3606,19 +3606,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ... Grundschulen (Primarstufe)
+ao2: 2: … Grundschulen (Primarstufe)
 
-ao3: 3: ... Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
+ao3: 3: … Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
-ao4: 4: ... Gymnasien und Gesamtschulen (Sekundarstufe II)
+ao4: 4: … Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: ... beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: … beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: ... Förderschulen/Sonderpädagogik
+ao6: 6: … Förderschulen/Sonderpädagogik
 
 mv:
 
-ka: (ao2 TO ao6): Ja, und zwar Lehramt an ...
+ka: (ao2 TO ao6): Ja, und zwar Lehramt an …
 
 vc:
 
@@ -3774,7 +3774,7 @@ hl:
 
 in:
 
-q: Haben Sie seit Ihrer Erstimmatrikulation…
+q: Haben Sie seit Ihrer Erstimmatrikulation …
 
 is: Nicht gemeint sind Veränderungen bzw. Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
 
@@ -3914,25 +3914,25 @@ in:
 
 q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters hauptsächlich?
 
-is: Wenn Sie überwiegend bei Ihren Eltern oder Verwandten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
+is: Wenn Sie ++überwiegend++ bei Ihren Eltern oder Verwandten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
 
 it:
 
 st:
 
-ao1: 1: zur Miete (auch Wohngemeinschaft) 
+ao1: 1: zur Miete (auch Wohngemeinschaft). 
 
-ao2: 2: zur Untermiete
+ao2: 2: zur Untermiete.
 
-ao3: 3: als (Mit-)Eigentümer\*in
+ao3: 3: als (Mit-)Eigentümer\*in.
 
-ao4: 4: im Einzelzimmer (Flurgemeinschaft)
+ao4: 4: im Einzelzimmer (Flurgemeinschaft).
 
-ao5: 5: im Einzelzimmer (in einer Wohngruppe)
+ao5: 5: im Einzelzimmer (in einer Wohngruppe).
 
-ao6: 6: im Einzelappartement
+ao6: 6: im Einzelappartement.
 
-ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind)
+ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind).
 
 mv:
 
