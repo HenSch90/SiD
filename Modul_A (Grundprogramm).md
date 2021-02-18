@@ -1920,19 +1920,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: Lehramt an Grundschulen (Primarstufe)
+ao2: 2: ... Grundschulen (Primarstufe)
 
-ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
+ao3: 3: ... Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
-ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
+ao4: 4: ... Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: ... beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: ... Förderschulen/Sonderpädagogik
 
 mv:
 
-ka: (ao2 TO ao6): Ja, und zwar:
+ka: (ao2 TO ao6): Ja, und zwar Lehramt an ...
 
 vc:
 
