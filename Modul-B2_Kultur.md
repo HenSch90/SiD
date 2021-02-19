@@ -494,12 +494,12 @@ hi:
 
 \--------------------------
 
-B2_8a
+B2_8a2
 ==
 
 tc: 
 
-vn: bilaspab / bilaspma / bilaspdr / bilaspber
+vn: bilaspab / bilaspba / bilaspma / bilaspdr / bilaspber
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -513,11 +513,13 @@ is:
 
 it1: (bilaspab) … einen Hochschulabschluss erreichen?
 
-it2: (bilaspma) … einen Master erreichen?
+it2: (bilaspba) … einen Bachelorabschluss erreichen?
+ 
+it3: (bilaspma) … einen Master erreichen?
 
-it3: (bilaspdr) … einen Doktortitel erreichen?
+it4: (bilaspdr) … einen Doktortitel erreichen?
 
-it4: (bilaspber) … beruflich ganz weit nach vorne kommen?
+it5: (bilaspber) … beruflich ganz weit nach vorne kommen?
 
 st:
 
@@ -535,7 +537,10 @@ mv: -12: weiß ich nicht
 
 ka:
 
-vc: SHOW it2 IF sabsan = 1 OR sabsan = 2
+vc: 
+SHOW it1 IF sabsan != 1 OR sabsan != 2
+SHOW it2 IF sabsan = 1
+SHOW it3 IF sabsan = 1 OR sabsan = 2
 
 av: 
 
