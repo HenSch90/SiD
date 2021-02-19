@@ -575,41 +575,41 @@ hl:
 
 in:
 
-q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit ...
+q: Was denken Sie: Wie hoch ist schätzungsweise das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit …
 
-is: Bitte beziehen Sie Ihre Angaben auf das Netto-Gehalt einer Vollzeitstelle, d. h. Gehalt abzüglich Steuern und Sozialabgaben.
+is: Bitte schätzen Sie das Netto-Gehalt ungefähr ein, d. h. Einkommen abzüglich Steuer.
 
-it1: (einkberuf): ... Berufsausbildung?
+it1: (einkberuf): … Berufsausbildung?
 
-it2: (einkba): ... Bachelorabschluss?
+it2: (einkba): … Bachelorabschluss?
 
-it3: (einkma): ... Masterabschluss?
+it3: (einkma): … Masterabschluss?
 
-it4: (einkdr): ... Promotion?
+it4: (einkdr): … Promotion?
 
 st:
 
 ao1: 1: unter 1.000 €
 
-ao2: 2: 1.000 € bis unter 1.500
+ao2: 2: 1.000 € bis unter 1.500 €
 
-ao3: 3: 1.500 € bis unter 2.000
+ao3: 3: 1.500 € bis unter 2.000 €
 
-ao4: 4: 2.000 € bis unter 2.500
+ao4: 4: 2.000 € bis unter 2.500 €
 
-ao5: 5: 2.500 € bis unter 3.000
+ao5: 5: 2.500 € bis unter 3.000 €
 
-ao6: 6: 3.000 € bis unter 3.500
+ao6: 6: 3.000 € bis unter 3.500 €
 
-ao7: 7: 3.500 € bis unter 4.000
+ao7: 7: 3.500 € bis unter 4.000 €
 
-ao8: 8: 4.000 € bis unter 5.000
+ao8: 8: 4.000 € bis unter 5.000 €
 
-ao9: 9: 5.000 € bis unter 10.000
+ao9: 9: 5.000 € bis unter 10.000 €
 
 ao10:  10: 10.000 € und mehr
 
-mv: -12:, weiß ich nicht
+mv: -12:, weiß ich nicht / trifft nicht zu
 
 ka:
 
