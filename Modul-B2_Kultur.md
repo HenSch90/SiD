@@ -430,7 +430,7 @@ B2_7
 
 tc:
 
-vn: skausl / skeuro / skwiss / skjobs / skantr / skkarr
+vn: skeuro / skwiss / skjobs / skantr / skkarr / sktech / skkonf
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -442,17 +442,19 @@ q: Wie wahrscheinlich ist es, dass jemand aus Ihrem persönlichen Umfeld …
 
 is:
 
-it1: (skausl) … Ihnen nahelegt, im Ausland zu studieren?
+it1: (skeuro) … Ihnen spontan 1000 € leihen würde?
 
-it2: (skeuro) … Ihnen spontan 1000 € leihen würde?
+it2: (skwiss) … Ihre wissenschaftlichen Arbeiten gegenliest?
 
-it3: (skwiss) … Ihre wissenschaftlichen Arbeiten gegenliest?
+it3: (skjobs) … Ihnen einen Job oder ein Praktikum vermittelt?
 
-it4: (skjobs) … Ihnen einen Job oder ein Praktikum vermittelt?
+it4: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z. B. BAföG) helfen würde?
 
-it5: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z. B. BAföG, Steuererklärung) helfen würde?
+it5: (skkarr) … Sie in beruflichen / karrierebezogenen Fragen beraten würde?
 
-it6: (skkarr) … Ihnen hilfreiche Ratschläge für den weiteren Berufs- und Karriereweg gibt?
+it6: (sktech) … Ihnen bei technischen Problemen helfen würde?
+
+it7: (skkonf) … Sie bei schwerwiegenden Konflikten unterstützen würde?
 
 st:
 
