@@ -756,3 +756,56 @@ tr:
 hi: Items bitte zufällig rotieren.
 
 \--------------------------------
+
+B2_Y
+===
+
+tc:
+
+vn: intges
+
+qt: Einfachauswahl mit horizontalen ao
+
+hl:
+
+in:
+
+q: Haben Sie das Gefühl, Teil der Gesellschaft zu sein oder fühlen Sie sich eher ausgeschlossen?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: : ausgeschlossen
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: : dazugehörig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\--------------------------------
