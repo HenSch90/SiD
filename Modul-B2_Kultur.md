@@ -672,11 +672,9 @@ ao3: 3: promoviert
 
 mv1: -12: weiß ich nicht
 
-mv2: -11: habe ich nicht
-
 ka:
 
-vc:
+vc: SHOW it3 IF dsib = 2 (OR (dsibo > 0 & dsibo !=.))
 
 av:
 
@@ -686,7 +684,7 @@ fv:
 
 hv:
 
-fo: Bitte in der Zeile der Großeltern (promgroß) und Eltern (promelt) jeweils das Antwortkästchen für mv2/"habe ich nicht"  nicht einblenden.
+fo:
 
 tr: 
 
