@@ -2442,9 +2442,9 @@ A_33
 
 tc:
 
-vn: deltjobv (deltjobvo1; deltjobv1; deltjobv2); deltjobm (deltjobmo1; ddeltjobm1; deltjobm2)
+vn: deltjobv; deltjobvo; deltjobm; deltjobmo 
 
-qt: offene Angaben; Einfachauswahl;
+qt: offene Angaben; Einfachauswahl
 
 hl:
 
@@ -2462,17 +2462,17 @@ it1: Vater
 
 it2: Mutter
 
-ao1: (deltjobvo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+ao1: (deltjobv):   1: Präfix: Berufsbezeichnung: [(deltjobvo), offene Angabe; 100 Zeichen]
 
-ao2: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
+ao2: (deltjobv): -11: nie berufstätig gewesen
 
-ao3: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
+ao3: (deltjobv): -12: weiß ich nicht
 
-ao4: (deltjobmo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+ao4: (deltjobm):   1: Präfix: Berufsbezeichnung: [(deltjobmo), offene Angabe; 100 Zeichen]
 
-ao5: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
+ao5: (deltjobm): -11: nie berufstätig gewesen
 
-ao6: (deltjobm2): -12: weiß ich nicht [Exklusivkategorie]
+ao6: (deltjobm): -12: weiß ich nicht
 
 ka:
 
