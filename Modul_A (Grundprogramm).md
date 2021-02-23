@@ -1965,7 +1965,7 @@ A_25
 
 tc:
 
-vn: sabsano; sabsanoaa; sabsanoka
+vn: sabsan; sabsanoaa; sabsanoka
 
 qt: Einfachauswahl mit vertikalen ao und offenen Angaben
 
@@ -1981,21 +1981,21 @@ it:
 
 st:
 
-ao1: (sabsano): 1: Bachelor
+ao1: (sabsan): 1: Bachelor
 
-ao2: (sabsano): 2: Master
+ao2: (sabsan): 2: Master
 
-ao3: (sabsano): 3: Staatsexamen
+ao3: (sabsan): 3: Staatsexamen
 
-ao4: (sabsano): 4: Diplom
+ao4: (sabsan): 4: Diplom
 
-ao5: (sabsano): 5: Magister
+ao5: (sabsan): 5: Magister
 
-ao5: (sabsano): 6: Promotion (Dr., PhD)
+ao5: (sabsan): 6: Promotion (Dr., PhD)
 
-ao7: (sabsano): 7: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
+ao7: (sabsan): 7: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
 
-ao8: (sabsano): 8: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
+ao8: (sabsan): 8: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
 
 mv:
 
