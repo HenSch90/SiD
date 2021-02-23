@@ -972,7 +972,7 @@ vc:
 
 av:
 
-kh:
+kh: 
 
 fv:
 
@@ -1025,7 +1025,7 @@ vc:
 
 av:
 
-kh:
+kh: Bitte geben Sie an, wieviele Geschwister Sie haben (1 bis 12).
 
 fv:
 
