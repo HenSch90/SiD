@@ -2822,7 +2822,7 @@ vc:
 
 av: 
 
-kh:
+kh: Bitte geben Sie nur Zahlen an.
 
 fv: 
 
