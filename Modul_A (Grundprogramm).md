@@ -2051,7 +2051,6 @@ st:
 
 ao1: (sabsanpr): -11: nein
 
-
 ao2: (sabsanpr): 1: Bachelor
 
 ao3: (sabsanpr): 2: Master
@@ -2062,11 +2061,11 @@ ao5: (sabsanpr): 4: Diplom
 
 ao6: (sabsanpr): 5: Magister
 
-ao9: (sabsanpr): 8: anderer Abschluss 
+ao7: (sabsanpr): 6: anderer Abschluss
 
 mv:
 
-ka: (ao2 to ao9): Ja, und zwar mit dem angestrebten Abschluss: 
+ka: (ao2 to ao7): Ja, und zwar mit dem angestrebten Abschluss: 
 
 vc:
 
@@ -2076,7 +2075,7 @@ kh:
 
 fv:
 
-hv:
+hv: 
 
 fo:  "Ja, und zwar:" über ao2 linksbündig positionieren.
 
