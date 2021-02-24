@@ -1160,7 +1160,7 @@ D1_22
 
 tc:
 
-vn: dpfrag / dsfreiz / sfklaus / ssverl / kogorga / kogkrit / kogwied / mkogwach / ressanst / resskonz / lernumg / lit
+vn: dpfrag / dsfreiz / sfklaus / ssverl
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1180,23 +1180,6 @@ it3: (sfklaus): Ich sehe keinen Grund darin Stoff zu lernen, der wahrscheinlich 
 
 it4: (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
 
-it5: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
-
-it6: (kogkrit): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
-
-it7: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
-
-it8: (mkogwach): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte, ohne 
-meine Unterlagen zu Hilfe zu nehmen.
-
-it9: (ressanst): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
-
-it10: (resskonz): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
-
-it11: (lernumg): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell finden kann.
-
-it12: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
-
 st:
 
 ao1: 1: trifft gar nicht zu
@@ -1208,6 +1191,80 @@ ao3: 3
 ao4: 4
 
 ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D1_24"/>
+        </zofar:transitions>
+        
+hi: Items bitte zufällig rotieren.
+
+\--------------------------------
+
+D1_23 
+===
+
+tc:
+
+vn: kogorga / kogkrit / kogwied / mkogwach / ressanst / resskonz / lernumg / lit / digmat
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Im Folgenden möchten wir gerne mehr darüber erfahren, wie Sie lernen. Bitte geben Sie für jede der folgenden Lerntätigkeiten an, wie oft Sie diese ausführen. 
+
+is:
+
+it1: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
+
+it2: (kogkrit): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
+
+it3: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
+
+it4: (mkogwach): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte ohne 
+meine Unterlagen zu Hilfe zu nehmen.
+
+it5: (ressanst): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
+
+it6: (resskonz): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
+
+it7: (lernumg): Ich gestalte meinen Arbeitsplatz so, dass ich alles schnell finden kann.
+
+it8: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
+
+it9: (digmat): Ich nutze digitale Lehr- und Lernmaterialien.
+
+st:
+
+ao1: 1: sehr selten
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr oft
 
 mv:
 
