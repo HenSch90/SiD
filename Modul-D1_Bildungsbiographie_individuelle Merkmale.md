@@ -1001,7 +1001,7 @@ D1_20
 tc:
 
 vn: kom  (komsch / kommuen / kombela / komdurch / komteam / komvera / komplan / komkomm / komtext / komwiss / kommeth / 
-komwisl / komkrit / kominter)
+komwisl / komkrit / kominter / komdig)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1009,7 +1009,7 @@ hl:
 
 in:
 
-q: Bitte schätzen Sie ein, inwieweit Sie aktuell über die folgenden Fähigkeiten und Kenntnisse verfügen.
+q: Inwieweit würden Sie sich die folgenden Fähigkeiten und Kenntnisse zuschreiben?
 
 is:
 
@@ -1040,6 +1040,8 @@ it12: (komwisl): eigene Wissenslücken erkennen und schließen
 it13: (komkrit): kritisches Denken/Ideen hinterfragen
 
 it14: (kominter): fachübergreifendes Wissen und Denken
+
+it15: (komdig): digitale Kompetenzen
 
 st:
 
