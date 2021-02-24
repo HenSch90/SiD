@@ -611,7 +611,7 @@ ao9: 9: 5.000 € bis unter 10.000 €
 
 ao10:  10: 10.000 € und mehr
 
-mv: -12:, weiß ich nicht / trifft nicht zu
+mv: -12:, weiß ich nicht/trifft nicht zu
 
 ka:
 
