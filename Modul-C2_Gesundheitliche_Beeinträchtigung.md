@@ -186,7 +186,7 @@ ao10: (bedand): andere Anforderung
 
 mv:
 
-ka: (ao2 TO ao10): ja, und zwar:
+ka: (ao2 TO ao10): Ja, und zwar:
 
 vc:
 
@@ -198,7 +198,7 @@ fv:
 
 hv:
 
-fo: Bitte über ao2 "ja, und zwar:" positionieren.
+fo: Bitte über ao2 "Ja, und zwar:" positionieren.
 
 tr:
 
@@ -257,7 +257,7 @@ ao4: 4:
 
 ao5: 5: voll und ganz erfüllt
 
-mv:
+mv: -12: weiß ich nicht
 
 ka:
 
@@ -287,7 +287,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte mv als letzte etwas abgesetzte Spalte.
 
 tr:
 
@@ -427,7 +427,7 @@ ao2: (beausw): 2: Nein, weil keine Behinderung festgestellt wurde.
 
 ao3: (beausw): 3: Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
 
-ao4: (beausw): 4: Ja, mit einem Grad der Behinderung (GdB) von [(beauswo): number, 3-stellig: 1 to 100]
+ao4: (beausw): 4: Ja, mit einem Grad der Behinderung von [(beauswo): number, 3-stellig: 1 to 100]
 
 mv:
 
