@@ -286,7 +286,7 @@ it9: (stfwwiss): eine gute wissenschaftliche Ausbildung
 
 it10: (stfwverf): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
 
-it11: (stfwverb): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
+it11: (stfwverb): Vereinbarkeit meiner Beeinträchtigung(en) mit späteren Beschäftigungsmöglichkeiten
 
 it12: (stfwand): Anderes, und zwar: [(stfwando); 100 Zeichen]
 
@@ -663,7 +663,7 @@ in:
 
 q: Wann werden Sie Ihr derzeitiges Studium voraussichtlich abschließen?
 
-is:
+is: 
 
 it: 
 
@@ -689,11 +689,63 @@ fo:
 
 tr:
 
+hi:
+
+\--------------------------------
+
+D1_13 (Fortsetzung D1_13)
+===
+tc: IF NRW / zusatzsplit ==1
+
+vn: nrwregel
+
+qt: Einfachauswahl mit horizontaler ao
+
+hl:
+
+in:
+
+q: Wie wichtig ist Ihnen ein Abschluss in Regelstudienzeit?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
         <zofar:transitions>
             <zofar:transition target="A_27"/>
         </zofar:transitions>
 
-hi:
+hi: 
 
 \--------------------------------
 
@@ -738,7 +790,7 @@ ao4: (fach01 / fach02 / fach03 / fach04 / fach05): [infield = Studienfach; 80 Ze
 
 ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: Bachelor \ 2: Bachelor (Lehramt) \ 3: Master \ 4: Master (Lehramt) \ 5: Staatsexamen \ 6: Staatsexamen (Lehramt) \ 7: Diplom \ 8: künstlerische Abschlussprüfung \ 9: Promotion \ 10: anderer Abschluss (bspw. Ausländischer Abschluss, Magister) \ 11: kein Studienabschluss
 
-ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: begonnen \ 2: abgeschlossen \ 3: abgebrochen \ 4: unterbrochen
+ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: läuft noch \ 2: abgeschlossen \ 3: abgebrochen \ 4: unterbrochen
 
 mv:
 
