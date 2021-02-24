@@ -460,7 +460,7 @@ C2_7
 
 tc: IF h_gartcount >= 1 & beschwer=2
 
-vn: schwleist; schwwieei; schwanwes; schwlv; schwselbst; schwgrup; schwflex; schwdicht; schwwieho; schwdauer; schwprart; schwno
+vn: schwleist; schwwieei; schwanwes; schwlv; schwselbst; schwgrup; schwflex; schwdicht; schwwieho; schwdauer; schwprart; schwprbed; schwno
 
 qt: Mehrfachauswahl mit vertikalen ao und mit Überkategorien/Zwischenüberschriften
 
@@ -496,9 +496,11 @@ ao9: (schwwieho): Wiederholung/Verschiebung von Prüfungen
 
 ao10: (schwdauer): Prüfungsdauer/Abgabefristen
 
-ao11: (schwprart): Prüfungsart/Prüfungsbedingungen
+ao11: (schwprart): Prüfungsart
 
-ao12: (schwno): Ich habe und hatte keine Schwierigkeiten. [EK]
+ao12: (schwprbed): Prüfungsbedingungen
+
+ao13: (schwno): Ich habe und hatte keine Schwierigkeiten. [EK]
 
 mv:
 
@@ -537,7 +539,7 @@ C2_8
 
 tc: IF schwleist=1 OR schwwieei=1 OR schwanwes=1 OR schwlv=1 OR schwselbst=1 OR schwgrup=1 OR schwflex=1 OR schwdicht=1 OR schwwieho=1 OR schwdauer=1 OR schwprart=1 
 
-vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart
+vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart; ntaprbed
 
 qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien/Zwischenüberschriften
 
@@ -547,7 +549,7 @@ in:
 
 q: Haben Sie in den von Ihnen benannten Bereichen um individuelle Anpassungen gebeten oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
 
-is: Wenn im Laufe Ihres Studiums bestimmte Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Lehrenden.
+is: Wenn Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl formale Antragstellungen als auch informelle Absprachen.
 
 it1: (ntaleist): Leistungspensum/festgelegte Studienordnung
 
@@ -569,7 +571,9 @@ it9: (ntawieho): Wiederholung/Verschiebung von Prüfungen
 
 it10: (ntadauer): Prüfungsdauer/Abgabefristen
 
-it11: (ntaprart): Prüfungsart/Prüfungsbedingungen
+it11: (ntaprart): Prüfungsart
+
+it12: (ntaprbed): Prüfungsbedingungen
 
 st:
 
@@ -608,6 +612,8 @@ vc9: SHOW it9 IF schwwieho=1
 vc10: SHOW it10 IF schwdauer=1 
 
 vc11: SHOW it11 IF schwprart=1 
+
+vc12: SHOW it12 IF schwprbed=1
 
 vc:
 
