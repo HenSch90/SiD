@@ -1425,3 +1425,147 @@ tr:
         </zofar:transitions>
 
 hi: Items bitte zufällig rotieren
+
+\--------------------------------
+
+D1_29 
+===
+
+tc:
+
+vn: intsoc1b / intsoc3b / intsoc4b / intinv1b / intinv2b / intinv4b / intart1b / intart2b / intart4b / intent1b / intent2b / intent3b / Intconv2b / intconv3b / intconv4b / intreal1b / intreal2b / intreal3b
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Bitte geben Sie an, wie sehr Sie sich für folgende Tätigkeiten interessieren. 
+
+is:
+
+it1: (intsoc1b): anderen Menschen helfen
+
+it2: (intsoc3b): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
+
+it3: (intsoc4b): mit Menschen (zusammen)arbeiten
+
+it4: (intinv1b): etwas genau beobachten und analysieren
+
+it5: (intinv2b): Unbekanntes erforschen, experimentieren
+
+it6: (intinv4b): Lösungen für komplexe Probleme finden
+
+it7: (intart1b): kreativ/gestaltend tätig sein
+
+it8: (intart2b): sich mit Kunst und Kultur befassen
+
+it9: (intart4b): etwas sprachlich ansprechend formulieren
+
+it10: (intent1b): Unternehmen gründen oder leiten
+
+it11: (intent2b): andere von einer Sache überzeugen
+
+it12: (intent3b): andere Menschen anleiten oder führen
+
+it13: (Intconv2b): sich mit rechtlichen Fragen beschäftigen
+
+it14: (intconv3b): Arbeitsprozesse planen
+
+it15: (intconv4b): mit Zahlen oder Statistiken arbeiten
+
+it16: (intreal1b): untersuchen, wie Dinge funktionieren
+
+it17: (intreal2b): innovative technische Lösungen entwickeln
+
+it18: (intreal3b): an Soft- oder Hardware arbeiten
+
+st:
+
+ao1: 1: überhaupt nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr stark
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\--------------------------------
+
+D1_30 
+===
+
+tc:
+
+vn: psw (pswskill / pswkraft / pswaufg)
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
+
+is:
+
+it1: (pswskill): In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.
+
+it2: (pswkraft): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
+
+it3: (pswaufg): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.
+
+st:
+
+ao1: 1: trifft gar nicht zu
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
