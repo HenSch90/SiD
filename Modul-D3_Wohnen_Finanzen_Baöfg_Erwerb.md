@@ -238,6 +238,59 @@ hi:
 
 \--------------------------------
 
+D3_6b
+====
+
+tc:
+
+vn: fekreart (fekreartbil / fekreartkfw / fekreartsons / fekreartsonso)
+
+qt: Mehrfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Sie haben angegeben, über einen Kredit Ihr Studium zu finanzieren: Welchen Kredit nutzen Sie aktuell? 
+
+is: Bitte alles Zutreffende auswählen.
+
+it:
+
+st:
+
+ao1: (fekreartbil): Bildungskredit der Bundesregierung
+
+ao2: (fekreartkfw): KfW-Studienkredit
+
+ao3: (fekreartsonso): Anderer Studienkredit, und zwar: [(fekreartsonso); 50 Zeichen]   
+
+mv:
+
+ka: 
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: 
+
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_7"/>
+        </zofar:transitions>
+
+hi:
+
+\--------------------------------
+
 D3_7
 ====
 
