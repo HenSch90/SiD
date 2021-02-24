@@ -11,7 +11,7 @@ hl:
 
 in:
 
-q: An welcher Schule haben Sie Ihre Studienberechtigung erworben?
+q: An welcher Schule haben Sie die Hochschulzugangsberechtigung erworben?
 
 is:
 
@@ -69,7 +69,7 @@ in:
 
 q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer inklusive der jeweiligen Abschlussnote.
 
-is: Beziehen Sie Ihre Angaben bitte auf Ihr Abschlussjahr.
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
