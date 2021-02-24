@@ -464,7 +464,7 @@ hl:
 
 in:
 
-q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß zu den unterschiedlichen Bereichen überwiegend beigetragen?
+q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß zu den unterschiedlichen Bereichen beigetragen?
 
 is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
