@@ -135,7 +135,7 @@ D3_6
 
 tc:
 
-vn: fein (feinelto / feinekio / feinparo / feinjobo1 / feinjobdso / feinjobo2 / feinspao / feinbafo / feinkredo / feinstio /  feinwaiso / feinbest / feinandq / feinandqo / feininsg)
+vn: fein (feinelto / feinekio / feinparo / feinjobo1 /  feinspao / feinbafo / feinkredo / feinstio /  feinbest / feinandq / feinandqo / feininsg)
 
 qt: offene Angabe
 
@@ -144,102 +144,89 @@ hl:
 in:
 
 q: Auf Ihre Person bezogen: Wie viel Geld steht Ihnen durchschnittlich ++pro Monat++
-während des Sommersemesters 2020 zur Verfügung?
+während des Sommersemesters 2021 zur Verfügung?
 
 is: Bitte berücksichtigen Sie hier nur das Geld, über das Sie tatsächlich selbst
 verfügen. ++Nicht++ gemeint sind Beträge, die z. B. von Ihren Eltern für Sie direkt 
 an Dritte überwiesen werden (z. B. Überweisung der Miete durch Ihre Eltern).
 
-it1: (feinelto): Eltern und Verwandte
-
-it2: (feinekio): Kindergeld/Unterhalt für Ihr(e) Kind(er)
-
-it3: (feinparo): Partner\*in 
-
-it4: (feinjobo1): Erwerbstätigkeit
-
-it5: (feinjobdso): Ausbildungsvergütung für Duales Studium
-
-it6: (feinjobo2): Verdienst aus weiteren Tätigkeiten außerhalb der Ausbildung
-
-it7: (feinspao): eigene Mittel (z. B. Ersparnisse, Erbe)
-
-it8: (feinbafo): BAföG
-
-it9: (feinkredo): Kredit(e)
-
-it10: (feinstio): Stipendium
-
-it11: (feinwaiso): Waisengeld/Waisenrente
-
-it12: (feinbest): Sozialleistungen im Zusammenhang mit Ihrer gesundheitlichen Beeinträchtigung
-
-it13: (feinandq): Weitere Finanzierungsquelle(n), und zwar: 
+it1: (feininsg): !!Gesamteinnahmen!!:
 
 #{layout.BREAK}#{layout.BREAK } 
 
-it14: (feininsg): ++Gesamteinnahmen++:
+it2: (feinelto): Eltern und Verwandte
 
+it3: (feinekio): Kindergeld/Unterhalt für Ihr(e) Kind(er)
+
+it4: (feinparo): Partner\*in 
+
+it5: (feinjobo1): Erwerbstätigkeit (auch Ausbildungsvergütung)
+
+it6: (feinspao): eigene Mittel (z. B. Ersparnisse, Erbe)
+
+it7: (feinbafo): BAföG
+
+it8: (feinkredo): Kredit(e)
+
+it9: (feinstio): Stipendium
+
+it10: (feinbest): Sozialleistungen im Zusammenhang mit Ihrer gesundheitlichen Beeinträchtigung
+
+it11: (feinandq): Weitere Finanzierungsquelle(n), und zwar: 
 
 st:
 
-ao1: (feinelto): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao2: (feinekio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao3: (feinparo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao4: (feinjobo1): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao5: (feinjobdso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao6: (feinjobo2): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao7: (feinspao): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao8: (feinbafo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao9: (feinkredo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao10: (feinstio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao11: (feinwaiso): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao12: (feinbest): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
-
-ao13: (feinandq; feinandqo): [50 Zeichen] [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+ao1: (feininsg), [infield = € pro Monat; number, 5-stellig: 0 TO 99999]
 
 #{layout.BREAK}#{layout.BREAK } 
 
-ao14: (feininsg), [infield = € pro Monat; number, 5-stellig: 0 TO 99999]
+ao2: (feinelto): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao3: (feinekio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao4: (feinparo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao5: (feinjobo1): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao6: (feinspao): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao7: (feinbafo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao8: (feinkredo): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao9: (feinstio): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao10: (feinbest): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+ao11: (feinandq; feinandqo): [50 Zeichen] [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
+
+
+
+
 
 mv:
 
-ka:
+ka: (it2 TO it11): !!davon entfallen auf:!!
 
-vc1: SHOW it2/ao2 (feinekio) IF dkinja = 2
+vc1: SHOW it3/ao3 (feinekio) IF dkinja = 2
 
-vc2: SHOW it4/ao4 (feinjobo1) IF sformdua != 1
+vc2: SHOW it5/ao5 (feinjobo1) IF sformdua != 1
 
-vc3: SHOW it5/ao5 (feinjobdso) IF sformdua = 1 
-
-vc4: SHOW it6/ao6 (feinjobo2) IF  sformdua = 1 
-
-vc5: SHOW it12/ao12 (feinbest) IF  h_gartcount >= 1 
+vc3: SHOW it10/ao10 (feinbest) IF  h_gartcount >= 1 
 
 av: 
 
-kh1: ao1 TO ao13: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999).
+kh1: ao2 TO ao11: Bitte geben Sie Ihre jeweiligen monatlichen Einnahmen an (0 bis 9999).
 
-kh2: ao14: Bitte geben Sie Ihre monatlichen Gesamteinnahmen an (0 bis 99999).
+kh2: ao1: Bitte geben Sie Ihre monatlichen Gesamteinnahmen an (0 bis 99999).
 
 fv:
 
 hv:
 
-fo1: “Betrag” bitte als Spaltenüberschrift über die Spalte mit den Eingabefeldern.
+fo1: 
 
-fo2: Bitte Leerzeile/Abstand vor den Gesamteinnahmen einziehen. 
+fo2: 
 
 tr:
 
