@@ -2142,6 +2142,56 @@ tr:
 hi:
 
 \--------------------------------
+A_27a
+=========
+
+tc:
+
+vn: sdual (sdualausb; sdualprax; sdualberu; sdualsons; sdualsonso)
+
+
+qt: Mehrfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Um welche Form handelt es sich bei Ihrem dualen Studium? Duales Studium mit …
+
+is: 
+
+it:
+
+st:
+
+ao1: (sdualausb): … integrierter Berufsausbildung 
+ao2: (sdualprax): … Praxisanteilen beim Praxispartner
+ao3: (sdualberu): … integrierter Berufstätigkeit
+ao4: (sdualsons): Anderes, und zwar: [(sdualsonso), offene Angabe, 60 Zeichen]
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+       
+
+hi:
+
+\--------------------------------
 
 D1_9 
 ==
