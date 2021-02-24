@@ -333,7 +333,7 @@ D1_8
 
 tc: IF (ssemhs <= 4 | isMissing(ssemhs)) | (sabsan = 2)
 
-vn: hsw (hswkont / hswbed / hswatt / hswfach / hswrank / hswruf / hswtrad / hswzul / hswint / hsweng / hswtz / hswsupp / hswdig / hswuntb / hswbarr / hswand / hswando)
+vn: hsw (hswkont / hswbed / hswatt / hswfach / hswrank / hswtrad / hswzul / hswint / hswtz / hswsupp / hswbarr / hswand / hswando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -355,27 +355,19 @@ it4: (hswfach): gewünschte Fachrichtung
 
 it5: (hswrank): gute Platzierung meines Fachs in Rankings
 
-it6: (hswruf): guter Ruf der Lehrenden in meinem Fachgebiet
+it6: (hswtrad): Tradition und Ruf der Hochschule
 
-it7: (hswtrad): Tradition und Ruf der Hochschule
+it7: (hswzul): keine Zulassung an Wunschhochschule
 
-it8: (hswzul): keine Zulassung an Wunschhochschule
+it8: (hswint): internationale Ausrichtung der Hochschule
 
-it9: (hswint): internationale Ausrichtung der Hochschule
+it9: (hswtz): Möglichkeit, in Teilzeit studieren zu können
 
-it10: (hsweng): Wunschstudiengang wird auf Englisch angeboten
+it10: (hswsupp): hochschulspezifische Beratungs- und Unterstützungsangebote
 
-it11: (hswtz): Möglichkeit, in Teilzeit studieren zu können
+it11: (hswbarr): Barrierefreiheit der Hochschule
 
-it12: (hswsupp): hochschulspezifische Beratungs- und Unterstützungsangebote
-
-it13: (hswdig): Online-Angebot (Studium und Lehre)
-
-it14: (hswuntb): beeinträchtigungsspezifische Unterstützungsangebote der Hochschule
-
-it15: (hswbarr): Barrierefreiheit der Hochschule
-
-it16: (hswand): Anderes, und zwar: [(hswando); 100 Zeichen]
+it12: (hswand): Anderes, und zwar: [(hswando); 100 Zeichen]
 
 st:
 
@@ -393,9 +385,7 @@ mv:
 
 ka:
 
-vc1: SHOW it14 (hswuntb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
-
-vc2: SHOW it15 (hswbarr) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it11 (hswbarr) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
