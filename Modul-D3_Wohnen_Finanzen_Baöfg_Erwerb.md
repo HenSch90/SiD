@@ -55,31 +55,40 @@ fo: Auf der Seite als erstes q1/ao1 zusammen darstellen. Darunter dann q2/ao2 zu
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="D3_4"/>
+            <zofar:transition target="D3_5"/>
         </zofar:transitions>
 
 hi: 
 
 \--------------------------------
 
+
 D3_5
 ====
 
 tc:
 
-vn: wohnzust
+vn: wohnzust (wohnzustallg / wohnzustlaut / wohnzustrüzu / wohnzustinet / wohnzusttech)
 
-qt: Einfachauswahl/5er-Skala mit vertikalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Wie würden Sie den Allgemeinzustand Ihrer Wohnung einschätzen?
+q: Wie würden Sie Ihre Wohnsituation hinsichtlich der folgenden Aspekte bewerten?
 
 is:
 
-it:
+it1: (wohnzustallg): Allgemeinzustand der Wohnung
+
+it2: (wohnzustlaut): Lautstärke
+
+it3: (wohnzustrüzu): Rückzugsmöglichkeiten
+
+it4: (wohnzustinet): Internetverbindung
+
+it5: (wohnzusttech): technische Ausstattung (z. B. Monitor, Drucker)
 
 st:
 
