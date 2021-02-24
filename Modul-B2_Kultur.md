@@ -29,7 +29,7 @@ ao2: 2: Fachhochschulreife
 
 ao3: 3: mittlere Reife, Realschulabschluss (10. Klasse)
 
-ao4: 4: Haupt-, Volkschulabschluss (mind. 8. Klasse)
+ao4: 4: Haupt-, Volksschulabschluss (mind. 8. Klasse)
 
 ao5: 5: anderer Schulabschluss
 
