@@ -185,9 +185,9 @@ D1_4
 
 tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
-vn: vausberufo; vausbzpjo; vausbzpmo; vausbnoteo; vausbnote
+vn: vausberufo; vausbzpjo; vausbzpmo; vausaufo; vausaufojo; vausaufomo
 
-qt: offene Angabe / Drop-Down / Einfachauswahl/Exklusivkategorie
+qt: offene Angabe / Drop-Down / Einfachauswahl / Exklusivkategorie
 
 hl:
 
@@ -195,15 +195,17 @@ in:
 
 q1: Welchen Beruf haben Sie (zuletzt) erlernt?
 
-q2: Wann haben Sie die Berufsausbildung abgeschlossen?
+q2: Tragen Sie hier bitte Ihre Berufsausbildung ein.
 
-q3: Mit welcher Note haben Sie Ihre Berufsausbildung abgeschlossen?
+q3: Wann haben Sie die Berufsausbildung abgeschlossen?
 
-is1:
+q4: Tragen Sie hier bitte Ihre Aufstiegsfortbildung ein.
 
-is2:
+q5: Wann haben Sie die Aufstiegsfortbildung abgeschlossen?
 
-is3: Für den Fall, dass Sie keine Noten erhalten haben, sondern Ihre Leistungen mit Punkten, Prozentangaben o. Ä. bewertet wurden, rechnen Sie diese bitte in Noten um.
+is1: Beispielsweise Mechatroniker/*in, Bankkauffrau oder-mann
+
+is2: Beispielsweise Elektrotechnikmeister/*in, Bankfachwirt/*in, Betriebswirt/*in
 
 it:
 
@@ -215,19 +217,21 @@ ao2a: (vausbzpjo): [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
 
 ao2b: (vausbzpmo): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-ao3a: (vausbnoteo): [infield = Abschlussnote (z. B. 2,5); number, 3-stellig: 1,0 TO 4,0] (offene Angabe mit Dezimalstelle)
+ao3: (vausaufo): [infield = Aufstiegsfortbildung; 80 Zeichen] (offene Angabe)
 
-ao3b: (vausbnote): Ich habe keine Note erhalten. [EK]
+ao4a: (vausaufojo): [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
+
+ao4b: (vausaufomo): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
 mv:
 
 ka:
 
-vc:
+vc: Show q4 AND q5 AND is2 AND ao3 AND ao4a AND ao4b if vsbstyp = 10 | 11
 
 av:
 
-kh3a: (vausbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh: 
 
 fv:
 
