@@ -1993,7 +1993,7 @@ ao5: (sabsan): 5: Magister
 
 ao5: (sabsan): 6: Promotion (Dr., PhD)
 
-ao7: (sabsan): 7: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
+ao7: (sabsan): 7: Anderen Abschluss, und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
 
 ao8: (sabsan): 8: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
 
