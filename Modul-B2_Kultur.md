@@ -331,6 +331,7 @@ ao10: 10: 401 bis 500
 ao11: 11: mehr als 500
 
 
+
 mv: -12: : weiß ich nicht
 
 ka:
