@@ -254,7 +254,7 @@ D1_7
 
 tc: IF (ssemhs <= 4 | isMissing(ssemhs)) 
 
-vn: stfw (stfwein / stfwart / stfwzul / stfwalt / stfwzeit / stfwfam / stfwber / stfwent / stfwbega / stfwint / stfwwiss / stfwverf / stfwverb / stfwand / stfwando)
+vn: stfw (stfwein / stfwart / stfwalt / stfwzeit / stfwfam / stfwber / stfwbega / stfwint / stfwwiss / stfwverf / stfwverb / stfwand / stfwando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -262,37 +262,33 @@ hl:
 
 in:
 
-q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches?  
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches? 
 
 is:
 
 it1: (stfwein): Einkommens- und Karrierechancen
 
-it2: (stfwart): gute Aussichten auf sicheren Arbeitsplatz
+it2: (stfwart): gute Aussichten auf sicheren Arbeitsplatz 
 
-it3: (stfwzul): keine Zulassungsbeschränkungen
+it3: (stfwalt): keine Zulassung im gewünschten Studienfach
 
-it4: (stfwalt): Ausweichlösung, da keine Zulassung im gewünschten Studienfach
+it4: (stfwzeit): kurze Studienzeiten
 
-it5: (stfwzeit): kurze Studienzeiten
+it5: (stfwfam): Eltern/Familie haben mir dazu geraten
 
-it6: (stfwfam): Eltern/Familie haben mir dazu geraten
+it6: (stfwber): fester Berufswunsch
 
-it7: (stfwber): fester Berufswunsch
+it7: (stfwbega): eigene Begabung
 
-it8: (stfwent): persönliche Entfaltung
+it8: (stfwint): spezielles Fachinteresse
 
-it9: (stfwbega): eigene Begabung
+it9: (stfwwiss): eine gute wissenschaftliche Ausbildung
 
-it10: (stfwint): spezielles Fachinteresse
+it10: (stfwverf): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
 
-it11: (stfwwiss): eine gute wissenschaftliche Ausbildung
+it11: (stfwverb): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
 
-it12: (stfwverf): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
-
-it13: (stfwverb): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
-
-it14: (stfwand): Anderes, und zwar: [(stfwando); 100 Zeichen]
+it12: (stfwand): Anderes, und zwar: [(stfwando); 100 Zeichen]
 
 st:
 
@@ -310,7 +306,7 @@ mv:
 
 ka:
 
-vc: SHOW it13 (stfwverb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it11 (stfwverb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
