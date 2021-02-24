@@ -1325,7 +1325,7 @@ it7: (pbigruh): Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe br
 
 it8: (pbignerv): Ich werde leicht nervös und unsicher.
 
-it9: (pbigkrea): Ich habe eine aktive Vorstellungskraft, bin phantasievoll.
+it9: (pbigkrea): Ich habe eine aktive Vorstellungskraft, bin fantasievoll.
 
 it10: (pbignoku): Ich habe nur wenig künstlerisches Interesse.
 
