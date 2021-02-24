@@ -844,9 +844,7 @@ q2: Bitte beschreiben Sie Ihre Studienunterbrechungen näher.
 
 q3: Bitte beschreiben Sie Ihre letzten fünf Studienunterbrechungen näher.
 
-is1: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
-
-is2: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung. Sollten Sie mehr als fünfmal unterbrochen haben, beginnen Sie bitte mit Ihrer fünftletzten Unterbrechung.
+is: 
 
 it1: (suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05): Präfix: Zeitpunkt [infield = Semester] (Drop-Down)
 
