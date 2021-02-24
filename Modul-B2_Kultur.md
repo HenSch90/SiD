@@ -330,6 +330,7 @@ ao10: 10: 401 bis 500
 
 ao11: 11: mehr als 500
 
+
 mv: -12: : weiß ich nicht
 
 ka:
@@ -450,7 +451,7 @@ it3: (skjobs) … Ihnen einen Job oder ein Praktikum vermittelt?
 
 it4: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z. B. BAföG) helfen würde?
 
-it5: (skkarr) … Sie in beruflichen / karrierebezogenen Fragen beraten würde?
+it5: (skkarr) … Sie in beruflichen/karrierebezogenen Fragen beraten würde?
 
 it6: (sktech) … Ihnen bei technischen Problemen helfen würde?
 
@@ -539,7 +540,7 @@ ka:
 
 vc: 
 SHOW it1 IF sabsan != 1 OR sabsan != 2
-SHOW it2 IF sabsan = 1
+SHOW it2 IF sabsan = 1 OR sabsan = 2
 SHOW it3 IF sabsan = 1 OR sabsan = 2
 
 av: 
@@ -585,7 +586,7 @@ it2: (einkba): … Bachelorabschluss?
 
 it3: (einkma): … Masterabschluss?
 
-it4: (einkdr): … Promotion?
+it4: (einkdr): … Promotion (Dr., PhD)?
 
 st:
 
