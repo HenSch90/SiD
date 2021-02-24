@@ -1520,35 +1520,37 @@ D1_30
 
 tc:
 
-vn: psw (pswskill / pswkraft / pswaufg)
+vn: semtag
 
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+qt: Einfachauswahl mit vertikalen ao´s
 
 hl:
 
 in:
 
-q: Inwieweit treffen die folgenden Aussagen auf Sie zu?
+q: Wenn Sie an dieses Semester denken: An wie vielen Tagen in der Woche sind Sie an Ihrer Hochschule? 
 
 is:
 
-it1: (pswskill): In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.
-
-it2: (pswkraft): Die meisten Probleme kann ich aus eigener Kraft gut meistern.
-
-it3: (pswaufg): Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.
+it:
 
 st:
 
-ao1: 1: trifft gar nicht zu
+ao1: 1: an keinem Tag
 
-ao2: 2
+ao2: 2: 1 Tag
 
-ao3: 3
+ao3: 3: 2 Tagen
 
-ao4: 4
+ao4: 4: 3 Tagen
 
-ao5: 5: trifft voll und ganz zu
+ao5: 5: 4 Tagen
+
+ao6: 6: 5 Tagen
+
+ao7: 7: 6 Tagen
+
+ao8: 8: 7 Tagen
 
 mv:
 
