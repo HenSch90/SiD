@@ -691,7 +691,9 @@ it9: (hilfwieho): Wiederholung/Verschiebung von Prüfungen
 
 it10: (hilfdauer): Prüfungsdauer/Abgabefristen
 
-it11: (hilfprart): Prüfungsart/Prüfungsbedingungen
+it11: (hilfprart): Prüfungsart
+
+it12: (hilfprbed): Prüfungsbedingungen
 
 st:
 
@@ -732,6 +734,8 @@ vc9: SHOW it9 IF ntawieho=1
 vc10: SHOW it10 IF ntadauer=1
 
 vc11: SHOW it11 IF ntaprart=1
+
+vc12: SHO it12 IF ntaprbed=1
 
 av:
 
@@ -876,7 +880,9 @@ fv:
 
 hv:
 
-fo: kbmem/"Wurde mir nicht mitgeteilt." als EK absetzen
+
+
+fo: ao10: (kbmem): Wurde mir nicht mitgeteilt. als EK absetzen
 
 tr:
 
@@ -942,6 +948,8 @@ kh:
 fv:
 
 hv:
+
+
 
 fo1: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (quasi links von der Spalte "überhaupt nicht").
 
