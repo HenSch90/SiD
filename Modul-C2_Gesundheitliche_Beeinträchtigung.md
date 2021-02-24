@@ -657,6 +657,9 @@ hi:
 C2_9
 ====
 
+
+
+
 tc: IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagrup=1 OR ntaflex=1 OR ntadicht=1 OR ntawieho=1 OR ntadauer=1 OR ntaprart=1
 
 vn: hilfleist; hilfwieei; hilfanwes; hilflv; hilfselbst; hilfgrup; hilfflex; hilfdicht; hilfwieho; hilfdauer; hilfprart
@@ -882,6 +885,8 @@ hv:
 
 
 
+
+
 fo: ao10: (kbmem): Wurde mir nicht mitgeteilt. als EK absetzen
 
 tr:
@@ -948,6 +953,8 @@ kh:
 fv:
 
 hv:
+
+
 
 
 
@@ -1027,6 +1034,9 @@ hi:
 
 C2_13
 =====
+
+
+
 
 tc: IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb = 3 OR beand = 3
 
