@@ -227,11 +227,7 @@ it2: (malebread): Es ist für alle Beteiligten besser, wenn der Mann voll im Ber
 it3: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
 
 it4: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
-
-
-
-
-
+.
 it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie eine Mutter, die nicht berufstätig ist.
 
 it6: (bothfull): Die beste Arbeitsteilung in einer Familie ist die, dass beide Partner in gleichem Umfang arbeiten und sich gleichermaßen um den Haushalt und die Kinder kümmern.
