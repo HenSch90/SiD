@@ -1444,7 +1444,7 @@ hl:
 
 in:
 
-q: Wie ist Ihr Gesundheitszustand im Allgemeinen?
+q: Wie schätzen Sie ihren Gesundheitszustand im Allgemeinen ein?
 
 is:
 
