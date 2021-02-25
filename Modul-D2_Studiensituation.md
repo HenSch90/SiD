@@ -714,9 +714,9 @@ hl:
 
 in:
 
-q: Wie häufig haben Sie im laufenden Semester *außerhalb* der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
+q: Wie häufig haben Sie im laufenden Semester *außerhalb* der Lehrveranstaltungen zu den folgenden Personen Kontakt?
 
-is:.
+is: Gemeint sind Kontakte jeglicher Art (persönlich, telefonisch, schriftlich, digital).
 
 it1: (sskonth1): Kommiliton\*innen
 
@@ -937,7 +937,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte infield-Texte noch umsetzten.
 
         <zofar:transitions>
             <zofar:transition target="D2_18"/>
@@ -954,7 +954,7 @@ D2_18
 
 tc:
 
-vn: sswrite (sswrite1; sswrite2; sswrite3; sswrite4; sswrite5; sswrite6)
+vn: anzprkla anzprmlp anzprsau anzprabs
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -962,21 +962,17 @@ hl:
 
 in:
 
-q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten und andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen?
+q: Wie viele der folgenden Prüfungsleistungen müssen Sie im aktuellen Semester ablegen?
 
-is: Bitte geben Sie die ++Anzahl++ der schriftlichen Leistungen (inklusive der noch nicht abgeschlossenen) entsprechend ihrer Länge an.
+is: 
 
-it1: (sswrite1): bis zu 5 Seiten
+it1: (anzprkla): Klausuren
 
-it2: (sswrite2): 6 bis 10 Seiten
+it2: (anzprmlp): mündliche Prüfungen
 
-it3: (sswrite3): 11 bis 15 Seiten
+it3: (anzprsau): schriftliche Ausarbeitung (Hausarbeit, Laborbericht)
 
-it4: (sswrite4): 16 bis 20 Seiten
-
-it5: (sswrite5): 21 bis 25 Seiten
-
-it6: (sswrite6): 26 Seiten oder mehr
+it4: (anzprabs): Abschlussarbeiten
 
 st:
 
@@ -1043,7 +1039,7 @@ hl:
 
 in:
 
-q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken: Wie viele Seiten lesen Sie durchschnittlich, um sich auf die von Ihnen besuchten Lehrveranstaltungen vorzubereiten?
+q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken: Wie viele Seiten lesen Sie durchschnittlich, um sich auf Lehrveranstaltungen vorzubereiten?
 
 is:.
 
@@ -1067,7 +1063,7 @@ fv:
 
 hv:
 
-fo:
+fo: Postfix bitte umsetzen.
 
 tr:
 
@@ -1099,6 +1095,8 @@ q: Wie oft haben Sie in diesem Semester …
 is:.
 
 it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
+
+.
 
 it2: (ssrilern2): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
 
@@ -1167,7 +1165,7 @@ it1: (sszustud1): fachliche Kompetenz der Lehrenden
 
 it2: (sszustud2): digitale Kompetenz der Lehrenden
 
-it3: (sszustud3): Vermittlung des Lehrstoffs durch die Lehrenden
+it3: (sszustud3): Aufbereitung/Vermittlung des Lehrstoffs durch die Lehrenden
 
 it4: (sszustud4): Betreuung und Beratung durch die Lehrenden
 
