@@ -621,7 +621,7 @@ E1_8
 
 tc: IF iinano = 1
 
-vn: ihinzeit; ihinaufw; ihingel; ihinkan; ihinpre; ihinfreu; ihinhil; ihinhem; ihinnac; ihinand
+vn: ihinzeit; ihinaufw; ihingel; ihinkan; ihinpre; ihinfreu; ihinhil; ihinhem; ihinnac; ihinerr; ihinand
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -631,7 +631,7 @@ in:
 
 q: Warum haben Sie kein Beratungsangebot in Anspruch genommen?
 
-is: Bitte alles Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen. 
 
 it1: (ihinzeit): ... ich keine Zeit dafür hatte.
 
@@ -651,7 +651,9 @@ it8: (ihinhem): ... ich Hemmungen hatte, Hilfe in Anspruch zu nehmen.
 
 it9: (ihinnac): ... ich dadurch Nachteile im weiteren Studium befürchtete.
 
-it10: (ihinand): ... aus anderen Gründen.
+it10: (ihinerr): ... weil ich niemanden erreichen konnte.
+
+it11: (ihinand): aus anderen Gründen.
 
 st: 
 
@@ -659,7 +661,7 @@ ao:
 
 mv:
 
-ka: (it1 TO it10): !!Ich habe kein Beratungsangebot in Anspruch genommen, weil …!!
+ka: (it1 TO it11): !!Ich habe kein Beratungsangebot in Anspruch genommen, weil …!!
 
 vc:
 
