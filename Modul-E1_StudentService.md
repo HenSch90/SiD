@@ -1,6 +1,6 @@
 \--------------------------------
 
-E1_0
+E1_0 
 ====
 
 tc: wohnfo = 4 | 5 | 6 | 7
@@ -23,7 +23,9 @@ st:
 
 ao1: 1: Studierendenwerk/Studentenwerk
 
-ao2: 2: anderer Träger (z. B. privat, kirchlich)
+ao2: 2: andere gemeinnützige Trägerschaft (z. B. kirchliche)
+
+ao2: 2: private Trägerschaft
 
 mv: -12: weiß ich nicht
 
