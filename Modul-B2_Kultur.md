@@ -113,17 +113,17 @@ z. B. Lehrer, Amtsrat
 ao13: 13: … im höheren Dienst 
 z. B. Studienrat, Hochschullehrer, Richter
 
-ao14: 14: … keine weiteren Mitarbeiter\*innen
+ao14: 14: … mit keinen weiteren Mitarbeiter\*innen
 
-ao15: 15: … 1 bis 4 Mitarbeiter\*innen
+ao15: 15: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao16: 16: … 5 und mehr Mitarbeiter\*innen
+ao16: 16: … mit 5 und mehr Mitarbeiter\*innen
 
-ao17: 17: … keine weiteren Mitarbeiter\*innen
+ao17: 17: … mit keinen weiteren Mitarbeiter\*innen
 
-ao18: 18: … 1 bis 4 Mitarbeiter\*innen
+ao18: 18: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao19: 19: … 5 und mehr Mitarbeiter\*innen
+ao19: 19: … mit 5 und mehr Mitarbeiter\*innen
 
 ao20: 20: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
 
@@ -167,7 +167,7 @@ hi: Überkategorien der Antwortoptionen:
 
 >   st4: !!Akademiker in freiem Beruf (z. B. Rechtsanwalt, niedergelassener Arzt), und zwar …!! (ao14, ao15, ao16)
 
->   st5: !!Selbstständiger im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und hat/hatte …!! (ao17, ao18, ao19)
+>   st5: !!Selbstständiger im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und zwar …!! (ao17, ao18, ao19)
 
 >   st6: !!Selbständiger Landwirt bzw. Genossenschaftsbauer, und zwar …!! (ao20, ao21, ao22)
 
@@ -224,17 +224,17 @@ z. B. Lehrerin, Amtsrätin
 ao13: 13: … im höheren Dienst 
 z. B. Studienrätin, Hochschullehrerin, Richterin
 
-ao14: 14: … keine weiteren Mitarbeiter\*innen
+ao14: 14: … mit keinen weiteren Mitarbeiter\*innen
 
-ao15: 15: … 1 bis 4 Mitarbeiter\*innen
+ao15: 15: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao16: 16: … 5 und mehr Mitarbeiter\*innen
+ao16: 16: … mit 5 und mehr Mitarbeiter\*innen
 
-ao17: 17: … keine weiteren Mitarbeiter\*innen
+ao17: 17: … mit keinen weiteren Mitarbeiter\*innen
 
-ao18: 18: … 1 bis 4 Mitarbeiter\*innen
+ao18: 18: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao19: 19: … 5 und mehr Mitarbeiter\*innen
+ao19: 19: … mit 5 und mehr Mitarbeiter\*innen
 
 ao20: 20: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
 
@@ -279,7 +279,7 @@ hi: Zwischenüberschriften zwischen den ao’s:
 
 >   st4: !!Akademikerin in freiem Beruf (z. B. Rechtsanwältin, niedergelassene Ärztin), und zwar …!! (ao14, ao15, ao16)
 
->   st5: !!Selbstständige im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und hat/hatte …!! (ao17, ao18, ao19)
+>   st5: !!Selbstständige im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und zwar …!! (ao17, ao18, ao19)
 
 >   st6: !!Selbständige Landwirtin bzw. Genossenschaftsbäuerin, und zwar …!! (ao20, ao21, ao22)
 
