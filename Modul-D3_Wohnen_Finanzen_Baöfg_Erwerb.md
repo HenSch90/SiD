@@ -684,7 +684,7 @@ hl:
 
 in:
 
-q: Werden Sie im Sommersemester 2020 nach dem BAföG gefördert?
+q: Werden Sie im Sommersemester 2021 nach dem BAföG gefördert?
 
 is:
 
