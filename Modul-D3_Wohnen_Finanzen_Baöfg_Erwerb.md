@@ -1552,7 +1552,7 @@ D1_28
 
 tc: IF NOT gartpsy=1
 
-vn: dep (depspass / depglue / depschw / depgedr)
+vn: dep (depausgel / depmuede / depbelast )
 
 qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
@@ -1560,17 +1560,15 @@ hl:
 
 in:
 
-q: Wie fühlen Sie sich im Allgemeinen?
+q: Wie häufig treffen die folgenden Aussagen auf Sie und Ihr Studium zu?
 
 is:
 
-it1: (depspass): Das Leben macht mir Spaß.
+it1: (depausgel): Durch mein Studium fühle ich mich ausgelaugt.
 
-it2: (depglue): Ich bin glücklich.
+it2: (depmuede):Ich fühle mich schon müde, wenn ich morgens aufstehe und wieder einen Tag an der Hochschule vor mir habe.
 
-it3: (depschw): Meine Stimmung ist schwermütig.
-
-it4: (depgedr): Ich bin in gedrückter Stimmung.
+it3: (depbelast): Das Studium ist eine hohe Belastung für mich
 
 st:
 
