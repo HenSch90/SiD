@@ -7,7 +7,7 @@ D2_2
 
 tc:
 
-vn: ssqualeq (ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10)
+vn: ssqualeq (ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10; ssqualeg11)
 
 qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
@@ -19,25 +19,27 @@ q: Wie bewerten Sie Ihre Hochschule hinsichtlich folgender Aspekte?
 
 is:
 
-it1: (ssqualeq1): Zustand und Ausstattung der Veranstaltungsräume (Technik, Mobiliar, Helligkeit)
+it1: (ssqualeq1): Gesamtzustand der Veranstaltungsräume (Funktionalität, Mobiliar, Belüftung)
 
-it2: (ssqualeq2): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume)
+it2: (ssqualeq2): technische Ausstattung der Veranstaltungsräume (z. B. Beamer, Smartboards)
 
-it3: (ssqualeq3): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen Lernen
+it3: (ssqualeq3): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume)
 
-it4: (ssqualeq4): Zugang zum W-LAN
+it4: (ssqualeq4): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen Lernen
 
-it5: (ssqualeq5): IT-/digitale Ausstattung (z. B. Software)
+it5: (ssqualeq5): Zugang zum W-LAN
 
-it6: (ssqualeq6): Öffnungszeiten der Bibliothek
+it6: (ssqualeq6): IT-/digitale Ausstattung (z. B. Software)
 
-it7: (ssqualeq7): Verfügbarkeit von Fachliteratur
+it7: (ssqualeq7): Öffnungszeiten der Bibliothek
 
-it8: (ssqualeq8): Service- und Beratungsleistungen
+it8: (ssqualeq8): Verfügbarkeit von Fachliteratur
 
-it9: (ssqualeq9): Betreuungsangebote für Studierende mit Kind(ern)
+it9: (ssqualeq9): Service- und Beratungsleistungen
 
-it10: (ssqualeq10): Unterstützungsangebote für Studierende mit Beeinträchtigung(en) (z. B. spezifisch ausgestattete Arbeitsplätze)
+it10: (ssqualeq10): Betreuungsangebote für Studierende mit Kind(ern)
+
+it11: (ssqualeq11): Unterstützungsangebote für Studierende mit Beeinträchtigung(en) (z. B. spezifisch ausgestattete Arbeitsplätze)
 
 st:
 
@@ -53,13 +55,13 @@ ao5: 5: sehr gut
 
 mv: -12: weiß ich nicht
 
-ka1: (it1 TO it3): !!räumliche Ausstattung!!
+ka1: (it1 TO it4): !!räumliche Ausstattung!!
 
-ka2: (it4 TO it10): !!Service-Leistungen!!
+ka2: (it5 TO it11): !!Service-Leistungen!!
 
-vc1: SHOW it9 (ssqualeq9) IF dkinja = 2
+vc1: SHOW it10 (ssqualeq10) IF dkinja = 2
 
-vc2: SHOW it10 (ssqualeq10) IF h_gartcount >= 1
+vc2: SHOW it11 (ssqualeq11) IF h_gartcount >= 1
 
 av:
 
@@ -71,7 +73,7 @@ hv:
 
 fo1: Bitte über it1 "räumliche Ausstattung" linksbündig positionieren.
 
-fo2: Bitte über it4 "Service-Leistungen" linksbündig positionieren.
+fo2: Bitte über it5 "Service-Leistungen" linksbündig positionieren.
 
 fo3: mv/"weiß ich nicht" bitte etwas absetzen.
 
