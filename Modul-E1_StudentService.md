@@ -366,7 +366,7 @@ E1_6
 ===
 tc:
 
-vn: ibedsfin; ibedfinbs; ibedfinwo; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedsuch; ibedvbew;
+vn: ibedsfin; ibedfinbs; ibedfinwo; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedsuch; ibedkont; ibedvbew;
 ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln; ibebssu;
 
 qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
@@ -397,25 +397,27 @@ it8: (ibeddep): depressive Verstimmungen
 
 it9: (ibedsuch): Suchtprobleme
 
-it10: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
+it10: (ibedkont): Mangel an persönlichen Kontakten
 
-it11: (ibedvbki): Vereinbarkeit von Studium und Kind
+it11: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
 
-it12: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
+it12: (ibedvbki): Vereinbarkeit von Studium und Kind
 
-it13: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
+it13: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
 
-it14: (ibedaoz): Arbeitsorganisation, Zeitmanagement
+it14: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
 
-it15: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
+it15: (ibedaoz): Arbeitsorganisation, Zeitmanagement
 
-it16: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
+it16: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
 
-it17: (ibedabs): Studienabschlussprobleme
+it17: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
 
-it18: (ibebsln): Nachteilsausgleiche in Studium und Prüfungen
+it18: (ibedabs): Studienabschlussprobleme
 
-it19: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
+it19: (ibebsln): Nachteilsausgleiche in Studium und Prüfungen
+
+it20: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
 
 st:
 
@@ -433,17 +435,17 @@ mv:
 
 ka1: (it1 TO it5): !!finanzierungsbezogene Themen!!
 
-ka2: (it6 TO it9): !!persönliche Themen!!
+ka2: (it6 TO it10): !!persönliche Themen!!
 
-ka3: (it10 TO it19): !!studienbezogene Themen!!
+ka3: (it11 TO it20): !!studienbezogene Themen!!
 
-vc1: SHOW it2, it12, it18, it19 IF h_gartcount >= 1
+vc1: SHOW it2, it13, it19, it20 IF h_gartcount >= 1
 
 vc2: SHOW it6 IF demofam = 2 | 3
 
-vc3: SHOW it10 IF eaktsens = 2 | 3 | 4
+vc3: SHOW it11 IF eaktsens = 2 | 3 | 4
 
-vc4: SHOW it11 IF dkinja = 2
+vc4: SHOW it12 IF dkinja = 2
 
 av:
 
@@ -457,7 +459,7 @@ fo1: Bitte über it1 "finanzierungsbezogene Themen" linksbündig positionieren.
 
 fo2: Bitte über it6 "persönliche Themen" linksbündig positionieren.
 
-fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
+fo3: Bitte über it11 "studienbezogene Themen" linksbündig positionieren.
 
 tr: 
 
