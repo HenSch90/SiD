@@ -476,10 +476,9 @@ hi:
 E1_7
 ====
 
-tc: ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
+tc: ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedkont > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
 
-vn: iinasfin; iinafinbs; iinafinwo; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinasuch;
-iinavbew; iinavbki; iinavbhc; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs; innabsln; iinabssu;
+vn: iinasfin; iinafinbs; iinafinwo; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinasuch; iinakont; iinavbew; iinavbki; iinavbhc; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs; innabsln; iinabssu;
 iinano;
 
 qt: Einfachauswahlmatrix mit Zwischenüberschriften und horizontalen ao
@@ -510,25 +509,27 @@ it8: (iinadep): depressive Verstimmungen
 
 it9: (iinasuch): Suchtprobleme
 
-it10: (iinavbew): Vereinbarkeit von Studium und Erwerbstätigkeit
+it10: (iinakont): Partnerschaftsprobleme
 
-it11: (iinavbki): Vereinbarkeit von Studium und Kind
+it11: (iinavbew): Vereinbarkeit von Studium und Erwerbstätigkeit
 
-it12: (iinavbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
+it12: (iinavbki): Vereinbarkeit von Studium und Kind
 
-it13: (iinallpran): Lern-/Leistungsprobleme, Prüfungsangst
+it13: (iinavbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
 
-it14: (iinaaoz): Arbeitsorganisation, Zeitmanagement
+it14: (iinallpran): Lern-/Leistungsprobleme, Prüfungsangst
 
-it15: (iinaabersw): Studienorganisation, Studienganggestaltung/-wechsel
+it15: (iinaaoz): Arbeitsorganisation, Zeitmanagement
 
-it16: (iinaaorg): Organisation eines studienbezogenen Auslandsaufenthalts
+it16: (iinaabersw): Studienorganisation, Studienganggestaltung/-wechsel
 
-it17: (iinaabs): Studienabschlussprobleme
+it17: (iinaaorg): Organisation eines studienbezogenen Auslandsaufenthalts
 
-it18: (innabsln): Nachteilsausgleiche in Studium und Prüfungen
+it18: (iinaabs): Studienabschlussprobleme
 
-it19: (iinabssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
+it19: (innabsln): Nachteilsausgleiche in Studium und Prüfungen
+
+it20: (iinabssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
 
 st:
 
@@ -544,9 +545,9 @@ mv:
 
 ka1: (it1 TO it5): !!finanzierungsbezogene Themen!!
 
-ka2: (it6 TO it9): !!persönliche Themen!!
+ka2: (it6 TO it10): !!persönliche Themen!!
 
-ka3: (it10 TO it19): !!studienbezogene Themen!!
+ka3: (it11 TO it20): !!studienbezogene Themen!!
 
 vc1: SHOW it1 IF ibedsfin > 1
 
@@ -566,25 +567,27 @@ vc8: SHOW it8 IF ibeddep > 1
 
 vc9: SHOW it9 IF ibedsuch > 1
 
-vc10: SHOW it10 IF ibedvbew > 1
+vc10: SHOW it10 IF ibedkont > 1
 
-vc11: SHOW it11 IF ibedvbki > 1
+vc11: SHOW it11 IF ibedvbew > 1
 
-vc12: SHOW it12 IF ibedvbhc > 1
+vc12: SHOW it12 IF ibedvbki > 1
 
-vc13: SHOW it13 IF ibedllpran > 1
+vc13: SHOW it13 IF ibedvbhc > 1
 
-vc14: SHOW it14 IF ibedaoz > 1
+vc14: SHOW it14 IF ibedllpran > 1
 
-vc15: SHOW it15 IF ibedabersw > 1
+vc15: SHOW it15 IF ibedaoz > 1
 
-vc16: SHOW it16 IF ibedaorg > 1
+vc16: SHOW it16 IF ibedabersw > 1
 
-vc17: SHOW it17 IF ibedabs > 1
+vc17: SHOW it17 IF ibedaorg > 1
 
-vc18: SHOW it18 IF ibebsln > 1
+vc18: SHOW it18 IF ibedabs > 1
 
-vc19: SHOW it19 IF ibebssu > 1
+vc19: SHOW it19 IF ibebsln > 1
+
+vc20: SHOW it20 IF ibebssu > 1
 
 av:
 
@@ -598,7 +601,7 @@ fo1: Bitte über it1 "finanzierungsbezogene Themen" linksbündig positionieren.
 
 fo2: Bitte über it6 "persönliche Themen" linksbündig positionieren.
 
-fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
+fo3: Bitte über it11 "studienbezogene Themen" linksbündig positionieren.
 
 tr:
 
