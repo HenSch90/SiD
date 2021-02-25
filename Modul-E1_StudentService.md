@@ -62,7 +62,7 @@ hl:
 
 in:
 
-q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine Mensa oder Cafeteria Ihrer Hochschule bzw. wie oft nehmen Sie die to-go-Angebote wahr?
+q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine Mensa oder Cafeteria Ihrer Hochschule bzw. wie oft nehmen Sie die take-away-Angebote wahr?
 
 is:
 
@@ -245,7 +245,7 @@ it7: (inderprob): Ich probiere gerne Speisen aus anderen Kulturkreisen aus.
 
 it8: (inderschn): Mein Essen muss schnell zubereitet sein.
 
-it9: (inderunwe): Ich esse häufig unterwegs (to go).
+it9: (inderunwe): Ich esse häufig unterwegs (to-go).
 
 it10: (inderkoch): Meistens koche ich mein Essen selbst.
 
