@@ -457,7 +457,7 @@ ao15: (fausandqo; feinandqo2): [50 Zeichen] [infield = € pro Monat; number, 4-
 
 mv:
 
-ka:
+ka: (it2 TO it15): !!davon entfallen auf:!!
 
 vc1: SHOW it11/ao11 TO it12/ao12 IF dkinja = 2
 
@@ -484,6 +484,8 @@ fo1: “ich bezahle selbst” und “andere bezahlen für mich” bitte als Spal
 fo2: Bitte etwas Abstand zwischen den beiden Spalten.
 
 fo3: Bitte Leerzeile/Abstand nach den Gesamtausgaben einziehen. 
+
+fo4: Bitte "davon entfallen auf" zwischen It1 "Gesamtausgaben" und den nachfolgenden einfügen.
 
 tr:
 
