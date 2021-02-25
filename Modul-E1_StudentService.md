@@ -509,7 +509,7 @@ it8: (iinadep): depressive Verstimmungen
 
 it9: (iinasuch): Suchtprobleme
 
-it10: (iinakont): Partnerschaftsprobleme
+it10: (iinakont): Mangel an persönlichen Kontakten
 
 it11: (iinavbew): Vereinbarkeit von Studium und Erwerbstätigkeit
 
