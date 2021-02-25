@@ -62,7 +62,7 @@ hl:
 
 in:
 
-q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine Mensa oder Cafeteria Ihrer Hochschule?
+q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine Mensa oder Cafeteria Ihrer Hochschule bzw. wie oft nehmen Sie die to-go-Angebote wahr?
 
 is:
 
