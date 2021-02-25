@@ -1489,7 +1489,7 @@ D1_27
 
 tc:
 
-vn: feel (feelstress / feellast)
+vn: feel (feelstress / feellast / feelglueck / feelschwer )
 
 qt: Einfachauswahl/5er-Skala mit horizontalen ao
 
@@ -1497,17 +1497,21 @@ hl:
 
 in:
 
-q: Wie haben Sie sich in den letzten vier Wochen überwiegend gefühlt?
+q: Wie häufig fühlten Sie sich in den letzten vier Wochen …
 
 is:
 
-it1: (feelstress): gestresst
+it1: (feelstress): … gestresst?
 
-it2: (feellast): überlastet
+it2: (feellast): … überlastet?
+
+it3: (feelglueck): … glücklich?
+
+it4: (feelschwer): … schwermütig? 
 
 st:
 
-ao1: 1: gar nicht
+ao1: 1: nie
 
 ao2: 2
 
@@ -1515,7 +1519,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: sehr stark
+ao5: 5: sehr häufig
 
 mv:
 
