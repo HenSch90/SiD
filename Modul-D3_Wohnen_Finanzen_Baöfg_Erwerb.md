@@ -1271,7 +1271,7 @@ D3_21
 
 tc: IF eaktsens = 2 \|3 \|4
 
-vn: egr (egrfin1 / egrfin2 / egrfin3 / egrfin4 / egrkar1 / egrkar2 / egrkar3 / egrerf1 / egralt1 / egralt2)
+vn: egr (egrfin1 / egrfin3 / egrfin4 / egrkar1 / egrkar2 / egrerf1 / egralt1 )
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1299,19 +1299,11 @@ it2: (egrkar2): ... um mich neben dem Studium weiter zu qualifizieren.
 
 it3: (egrkar1): ... um Kontakte für eine spätere Beschäftigung zu knüpfen.
 
-it4: (egralt2): ... um anderen zu helfen.
+it4: (egrerf1): ... um praktische Erfahrungen zu sammeln.
 
-it5: (egrfin2): ... um mir mein Studium finanzieren zu können.
+it5: (egralt1): ... um einen Beitrag zur Gesellschaft zu leisten.
 
-it6: (egrerf1): ... um praktische Erfahrungen zu sammeln.
-
-it7: (egrkar3) ... um meine Berufschancen zu verbessern.
-
-it8: (egralt1): ... um einen Beitrag zur Gesellschaft zu leisten.
-
-it9: (egrfin4) ... um finanziell unabhängig von den Eltern zu sein.
-
-it10: (egrfin3): ... damit ich mir etwas mehr leisten kann.
+it6: (egrfin3): ... damit ich mir etwas Zusätzliches leisten kann.
 
 
 
