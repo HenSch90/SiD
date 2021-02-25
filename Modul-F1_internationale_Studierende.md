@@ -131,6 +131,9 @@ fv:
 
 hv:
 
+
+
+
 fo1: Bitte über it1 "... *für* einen Auslandsaufenthalt" linksbündig positionieren.
 
 fo2: Bitte über it8 "... *gegen* einen Auslandsaufenthalt" linksbündig positionieren.
@@ -272,6 +275,9 @@ in:
 
 q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) im Ausland verbracht?
 
+
+
+
 is: Bitte alles Zutreffende auswählen.
 
 it:
@@ -284,7 +290,7 @@ ao2: (aauszeitlebfrkin): ja, in meiner frühen Kindheit
 
 ao3: (aauszeitlebwschul): ja, während meiner Schulzeit
 
-ao4: (aauszeitlebnschul): ja, direkt nach der Schulzeit
+ao4: (aauszeitlebnschul): ja, zwischen Schule und Studium
 
 mv:
 
@@ -444,9 +450,9 @@ st:
 
 ao1: (intdeutsch1ba): Elternhaus
 
-ao2: (intdeutsch2ba): Schule/Studium im Ausland
+ao2: (intdeutsch2ba): Schule/Studium außerhalb Deutschlands
 
-ao3: (intdeutsch3ba): Sprachkurs im Ausland
+ao3: (intdeutsch3ba): Sprachkurs außerhalb Deutschlands
 
 ao4: (intdeutsch4ba): Sprachkurs in Deutschland (vor dem Studium)
 
