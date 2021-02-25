@@ -136,7 +136,7 @@ hl:
 
 in:
 
-q: Wie zufrieden sind Sie mit Ihrer Mensa/Cafeteria hinsichtlich der folgenden Aspekte?
+q: Wie zufrieden sind Sie mit Ihrer Mensa/Cafeteria und dem Speisenagebot hinsichtlich der folgenden Aspekte?
 
 is:
 
@@ -182,7 +182,7 @@ ao4: 4:
 
 ao5: 5: sehr zufrieden
 
-mv:
+mv: -12: kann ich nicht beurteilen
 
 ka:
 
@@ -206,7 +206,7 @@ tr:
             <zofar:transition target="E1_3"/>
         </zofar:transitions>
 
-hi:
+hi: mv bitte etwas absetzen
 
 
 \--------------------------------
