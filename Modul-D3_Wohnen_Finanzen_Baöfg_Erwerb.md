@@ -296,7 +296,7 @@ D3_7
 
 tc:
 
-vn: festipart (festipartnein / festipartdeut / festipartstuvolk / festipartpartei / festipartbegabt / festipartandstaat / festipartprivat / festipartsons / festipartsonso)
+vn: festipart (festipartnein1 / festipartnein2 / festipartnein3 / festipartdeut / festipartbegabt / festipartweitbil / festipartaufstieg / festipartandstaat / festipartprivat / festipartsons / festipartsonso)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -312,25 +312,29 @@ it:
 
 st:
 
-ao1: (festipartnein): nein [EK]
+ao1: (festipartnein1): nein, nicht beantragt [EK]
 
-ao2: (festipartdeut): Deutschlandstipendium
+ao2: (festipartnein2): nein, Antrag wurde nicht bewilligt [EK]
 
-ao3: (festipartstuvolk): Stipendium der Studienstiftung des deutschen Volkes e. V.
+ao3: (festipartnein3): nein, Antragsverfahren läuft noch [EK]
 
-ao4: (festipartpartei): Stipendium einer parteinahen Stiftung
+ao4: (festipartdeut): Deutschlandstipendium
 
-ao5: (festipartbegabt): Stipendium eines anderen Begabtenförderungswerkes
+ao5: (festipartbegabt): Stipendium eines Begabtenförderungswerkes
 
-ao6: (festipartandstaat): anderes mit staatlichen Mitteln finanziertes Stipendium (z. B. Hochschule, Land)
+ao6: (festipartweitbil): Weiterbildungsstipendium
 
-ao7: (festipartprivat): Stipendium eines privaten Geldgebers (z. B. Industrie, private\*r Stifter\*in)
+ao7: (festipartaufstieg): Aufstiegsstipendium der Stiftung Begabtenförderung berufliche Bildung gGmbH
 
-ao8: (festipartsons): anderes: [(festipartsonso); 50 Zeichen]
+ao8: (festipartandstaat): anderes mit staatlichen Mitteln finanziertes Stipendium (z. B. Hochschule, Land)
+
+ao9: (festipartprivat): Stipendium eines privaten Geldgebers (z. B. Industrie, privater Stifter)
+
+ao10: (festipartsons): anderes, und zwar: [(festipartsonso); 50 Zeichen]
 
 mv:
 
-ka: (ao2 TO ao8): ja, und zwar:
+ka: (ao4 TO ao10): ja, und zwar:
 
 vc:
 
@@ -342,7 +346,7 @@ fv:
 
 hv:
 
-fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
+fo: "ja, und zwar:" zwischen ao3 und ao4 setzen.
 
 tr:
 
