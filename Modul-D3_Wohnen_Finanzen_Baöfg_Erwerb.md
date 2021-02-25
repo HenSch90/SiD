@@ -577,7 +577,7 @@ it:
 
 st:
 
-ao1: (fmineinko): [number, 5-stellig: 1 TO 99999], Postfix: € 
+ao1: (fmineinko): [infield = € pro Monat; number, 5-stellig: 1 TO 99999], Postfix: € 
 
 mv:
 
