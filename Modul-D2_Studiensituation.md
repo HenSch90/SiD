@@ -94,7 +94,7 @@ D2_3
 
 tc:
 
-vn: ssstruk (ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9)
+vn: ssstruk (ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9, ssstruk10)
 
 qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
@@ -110,19 +110,21 @@ it1: (ssstruk1): Es bestehen übersichtliche Modulwahlmöglichkeiten.
 
 it2: (ssstruk2): Die Lehrveranstaltungen sind zeitlich gut koordiniert.
 
-it3: (ssstruk3): Die Semestervorgaben sind gut erfüllbar.
+it3: (ssstruk3): Lehrveranstaltungstermine fallen häufiger aus.
 
-it4: (ssstruk4): Die einzelnen Module bauen inhaltlich aufeinander auf.
+it4: (ssstruk4): Die Semestervorgaben sind gut erfüllbar.
 
-it5: (ssstruk5): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
+it5: (ssstruk5): Die einzelnen Module bauen inhaltlich aufeinander auf.
 
-it6: (ssstruk6): Die Veranstaltungen bereiten gut auf die Prüfungen vor.
+it6: (ssstruk6): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
 
-it7: (ssstruk7): Die Prüfungen liegen zeitlich oft zu nah beieinander.
+it7: (ssstruk7): Die Veranstaltungen bereiten gut auf die Prüfungen vor.
 
-it8: (ssstruk8): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
+it8: (ssstruk8): Die Prüfungen liegen zeitlich oft zu nah beieinander.
 
-it9: (ssstruk9): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten sind angemessen.
+it9: (ssstruk9): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
+
+it10: (ssstruk10): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten sind angemessen.
 
 st:
 
@@ -138,11 +140,11 @@ ao5: 5: trifft voll und ganz zu
 
 mv:
 
-ka1: (it1 TO it3): !!Koordination!!
+ka1: (it1 TO it4): !!Koordination!!
 
-ka2: (it4 TO it5): !!Inhalte!!
+ka2: (it5 TO it6): !!Inhalte!!
 
-ka3: (it6 TO it9): !!Prüfungsorganisation!!
+ka3: (it7 TO it10): !!Prüfungsorganisation!!
 
 vc:
 
@@ -156,9 +158,9 @@ hv:
 
 fo1: Bitte über it1 "Koordination" linksbündig positionieren.
 
-fo2: Bitte über it4 "Inhalte" linksbündig positionieren.
+fo2: Bitte über it5 "Inhalte" linksbündig positionieren.
 
-fo3: Bitte über it6 "Prüfungsorganisation" linksbündig positionieren.
+fo3: Bitte über it7 "Prüfungsorganisation" linksbündig positionieren.
 
 tr:
 
@@ -177,7 +179,7 @@ D2_4
 
 tc:
 
-vn: ssstud (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5)
+vn: ssstud (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5; ssstud6)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -191,13 +193,15 @@ is:.
 
 it1: (ssstud1): Die Lehrveranstaltung ist überfüllt.
 
-it2: (ssstud2): Es sind einzelne Termine ausgefallen.
+it2: (ssstud2): Es besteht eine Anmeldepflicht.
 
-it3: (ssstud3): Es besteht eine Anmeldepflicht.
+it3: (ssstud3): Es besteht eine Anwesenheitspflicht.
 
-it4: (ssstud4): Es besteht eine Anwesenheitspflicht.
+it4: (ssstud4): Die Lehrveranstaltung wird als Videokonferenz/Web-Seminar angeboten.
 
-it5: (ssstud5): Die Lehrveranstaltungssprache ist Englisch.
+it5: (ssstud5): Die Lehrveranstaltung ist als Videoaufzeichnung abrufbar.
+
+it6: (ssstud6): Die Lehrveranstaltungssprache ist Englisch.
 
 st:
 
@@ -205,7 +209,7 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
@@ -252,9 +256,9 @@ hl:
 
 in:
 
-q: Wenn Sie an die von Ihnen belegten Veranstaltungen in einem typischen Semester denken: Wie hoch ist der Anteil der Sitzungen, an denen Sie auch tatsächlich anwesend sind?
+q: Wenn Sie an die von Ihnen belegten Veranstaltungen denken: Wie hoch ist der Anteil der Sitzungen, an denen Sie im Schnitt auch tatsächlich teilnehmen?
 
-is:
+is: Gemeint sind alle Formate von Veranstaltungen (Präsenz-/Onlineveranstaltungen).
 
 it:
 
@@ -334,7 +338,7 @@ it3: (sscowver3): verschiedene Theorien und Konzepte kritisch vergleichen und be
 
 st:
 
-ao1: 1: sehr wenig Wert
+ao1: 1: sehr wenig
 
 ao2: 2:
 
@@ -342,7 +346,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr viel Wert
+ao5: 5: sehr viel
 
 mv:
 
@@ -385,7 +389,7 @@ hl:
 
 in:
 
-q: Bitte schätzen Sie	ein, auf wie viele der Lehrveranstaltungen in Ihrem	derzeitigen	Studiengang die folgenden Aussagen zutreffen.
+q: Bitte schätzen Sie ein, auf wie viele der Lehrveranstaltungen in Ihrem derzeitigen Studiengang die folgenden Aussagen zutreffen.
 
 is:
 
