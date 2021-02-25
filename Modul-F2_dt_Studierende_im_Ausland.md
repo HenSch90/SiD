@@ -34,6 +34,9 @@ ao1: (ainfasia): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit ang
     (ainfasia): 8: sonstiger Aufenthalt
 
 
+
+
+
 ao2: (ainflosia): [infield = Land; 100 Zeichen] (offene Angabe)
 
 ao3: (ainfstosia): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
@@ -87,8 +90,7 @@ hl:
 
 in:
 
-q: Warum haben Sie sich für dieses Land entschieden?
-!!Ich habe mich für ein Studium in diesem Land entschieden, …!!
+q: Ich habe mich für ein Studium in diesem Land entschieden, …
 
 is: 
 
@@ -159,7 +161,7 @@ in:
 
 q: Planen Sie, im Ausland einen Hochschulabschluss zu erwerben?
 
-is: Bitte beziehen Sie sich auf Ihr aktuelles Auslandsstudium.
+is: Bitte beziehen Sie sich auf Ihren aktuellen Studiengang.
 
 it:
 
@@ -186,6 +188,9 @@ kh:
 fv:
 
 hv:
+
+
+
 
 fo: ao4 absetzen
 
@@ -243,6 +248,9 @@ kh:
 fv:
 
 hv:
+
+
+
 
 fo: ao5 absetzen
 
@@ -309,69 +317,6 @@ tr:
 
         <zofar:transitions>
             <zofar:transition target="F2_12"/>
-        </zofar:transitions>
-
-hi:
-
-\--------------------------------
-
-F2_12
-=====
-
-tc:
-
-vn: afin (afineltsia; afinparsia; afinbafsia; afinjobvsia; afinjobwsia; afinstipsia; afinkresia; afinandsia)
-
-qt: Mehrfachauswahl mit vertikalen ao
-
-hl:
-
-in:
-
-q: Wie finanzieren Sie Ihren studienbezogenen Auslandsaufenthalt?
-
-is: Bitte alles Zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: (afineltsia): Eltern
-
-ao2: (afinparsia): Parnter\*in
-
-ao3: (afinbafsia): BAföG
-
-ao4: (afinjobvsia): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
-
-ao5: (afinjobwsia): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalt
-
-ao6: (afinstipsia): Stipendium
-
-ao7: (afinkresia): Bildungskredit
-
-ao8: (afinandsia): andere Finanzierungsquelle
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F2_13"/>
         </zofar:transitions>
 
 hi:
@@ -461,6 +406,9 @@ is:
 it1: (asprachgaslsia): Landessprache des Gastlandes
 
 it2: (asprachheimlsia): Deutsch
+
+
+
 
 it3: (asprachandsia): Andere Sprache, und zwar: [(asprachandsiao); offene Angabe, 60 Zeichen]
 
