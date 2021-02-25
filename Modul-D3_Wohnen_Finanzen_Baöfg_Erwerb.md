@@ -1105,9 +1105,9 @@ q3: Sie haben angegeben, im aktuellen Semester mehreren Erwerbstätigkeiten nach
 
 q4: Sie haben angegeben, im aktuellen Semester neben Ihrer Tätigkeit im Ausbildungsbetrieb mehreren Erwerbstätigkeiten nachzugehen. 
 
-is1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit und deren inhaltliche Nähe zu den Studieninhalten an.
+is1: Bitte geben Sie die Art Ihrer Erwerbstätigkeit und die inhaltliche Nähe zu den Studieninhalten an.
 
-is2: Bitte geben Sie die Art Ihrer jeweiligen Erwerbstätigkeiten und deren inhaltliche Nähe zu den Studieninhalten an. Sollten Sie mehr als drei Erwerbstätigkeiten ausüben, dann beziehen Sie Ihre Angaben bitte auf die drei Haupttätigkeiten.
+is2: Bitte geben Sie die Art Ihrer jeweiligen Erwerbstätigkeiten und die inhaltliche Nähe zu den Studieninhalten an. Sollten Sie mehr als drei Erwerbstätigkeiten ausüben, dann beziehen Sie Ihre Angaben bitte auf die drei Haupttätigkeiten.
 
 
 it1: (etat1): !!1. Erwerbstätigkeit!!
