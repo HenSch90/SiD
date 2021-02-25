@@ -578,7 +578,10 @@ it:
 
 st:
 
-ao: (simmaba): [infield = Semester; Sommersemester 2020 - Wintersemester 2019/20 - Sommersemester 2019 - ... - Sommersemester 2010] (Drop-Down)
+
+
+
+ao: (simmaba): [infield = Semester; Sommersemester 2021 - Wintersemester 20/21 - Sommersemester 2020 - ... - Sommersemester 2010] (Drop-Down)
 
 mv:
 
@@ -619,7 +622,7 @@ hl:
 
 in:
 
-q: Planen Sie, in Deutschland einen Hochschulabschluss zu erwerben?
+q: Planen Sie in Deutschland einen Hochschulabschluss zu erwerben?
 
 is: Bitte beziehen Sie sich auf Ihr aktuelles Auslandsstudium.
 
@@ -650,6 +653,9 @@ kh:
 fv:
 
 hv:
+
+
+
 
 fo: mv/"weiß ich noch nicht" bitte etwas absetzen.
 
@@ -707,6 +713,9 @@ kh:
 fv:
 
 hv:
+
+
+
 
 fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
@@ -800,7 +809,7 @@ is:
 
 it1: (akontdeustba): … deutschen Studierenden?
 
-it2: (akontbuergba): … anderen Bürger\*innen in Deutschland?
+it2: (akontbuergba): … anderen deutschen Bürger\*innen?
 
 it3: (akontheimba): … Studierenden aus Ihrem Heimatland?
 
@@ -1123,7 +1132,7 @@ ao5: 5: … in meinem Heimatland.
 
 ao6: 6: … in einem anderen Land.
 
-ao7: 7: sonstiges
+ao7: 7: und zwar: [(bdebleibbao); (offene Angabe); 250 Zeichen]
 
 mv:
 
@@ -1131,7 +1140,7 @@ ka1 (ao1 TO ao3): !!Ich möchte arbeiten, und zwar …!!
 
 ka2 (ao4 TO ao6): !!Ich möchte weiterstudieren/promovieren, und zwar …!!
 
-ka3 (ao7): !!etwas Anderes!!
+ka3 (ao7): !!Etwas Anderes, ...!!
 
 vc:
 
@@ -1147,7 +1156,7 @@ fo1: Bitte über ao1 "Ich möchte arbeiten, und zwar …" mit etwas Abstand link
 
 fo2: Bitte über ao4 "Ich möchte weiterstudieren/promovieren, und zwar …" mit etwas Abstand linksbündig positionieren.
 
-fo3: Bitte über ao7 "etwas Anderes" mit etwas Abstand linksbündig positionieren.
+fo3: Bitte über ao7 "Etwas Anderes" mit etwas Abstand linksbündig positionieren.
 
 tr:
 
