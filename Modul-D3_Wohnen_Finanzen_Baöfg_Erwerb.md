@@ -1601,7 +1601,128 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_52"/>
+            <zofar:transition target="D3_24"/>
         </zofar:transitions>
 
 hi1: Items bitte zufällig rotieren.
+
+\--------------------------------
+
+D3_24
+====
+
+tc:
+
+vn: koerpbeschw
+
+qt: Einfachauswahl/5er-Skala mit vertikalen ao
+
+hl:
+
+in:
+
+q: Wie häufig hatten Sie in den letzten 4 Wochen körperliche Beschwerden?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nie
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr häufig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:       <zofar:transitions>
+            <zofar:transition target="D3_25"/>
+        </zofar:transitions>
+
+hi:
+
+\--------------------------------
+\--------------------------------
+
+D3_25
+===
+
+tc: 
+
+vn: belast ( belast1 / belast2 / belast3 / belast4)
+
+qt: Einfachauswahl/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Inwiefern stimmen Sie den folgenden Aussagen zu?
+
+is:
+
+it1: (belast1): Ich brauche nicht viel Zeit, um mich von einem stressigen Ereignis zu erholen.
+
+it2: (belast2):Es fällt mir schwer zur Normalität zurückzukehren, wenn etwas Schlimmes passiert ist.
+
+it3: (belast3): Normalerweise überstehe ich schwierige Zeiten ohne größere Probleme.
+
+it4: (belast4): Ich brauche tendenziell lange, um über Rückschläge hinwegzukommen.
+
+st:
+
+ao1: 1: stimme überhaupt nicht zu
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: stimme vollkommen zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_52"/>
+        </zofar:transitions>
+
+hi:
+
+\--------------------------------
