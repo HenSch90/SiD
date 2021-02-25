@@ -703,7 +703,7 @@ q: Wie gut informiert sind Sie über die folgenden Bereiche Ihrer Hochschule?
 
 is:
 
-it1: (infoauvo): außercurriculare Vortragsreihen (z. B. Studium generale)
+it1: (infoauvo): außercurriculare Vorträge und Veranstaltungen (z. B. Studium generale)
 
 it2: (Infofopr): Forschungsschwerpunkte Ihrer Professor\*innen
 
