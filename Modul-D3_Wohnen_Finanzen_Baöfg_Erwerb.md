@@ -499,6 +499,63 @@ hi2: Bitte kh3 für die Gesamtausgaben der Spalte "ich bezahle selbst" nutzen un
 
 \--------------------------------
 
+D3_8a
+====
+
+tc:
+
+vn: feind1 ( feind1eltern / feind1partner / feind1verwandt / feind1arbeitg / feind1sons / feind1sonso)
+
+qt: Mehrfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Sie haben angegeben, dass ein Teil Ihrer Ausgaben von anderen bezahlt wird: Von wem werden Sie unterstützt?
+
+is: Bitte alles Zutreffende auswählen.
+
+it:
+
+st:
+
+ao1: (feind1eltern): Eltern/-teil
+
+ao2: (feind1partner): Partner*in
+
+ao3: (feind1verwandt): andere Verwandte
+
+ao4: (feind1arbeitg):  	Arbeitgeber*in
+
+ao10: (feind1sons): andere, und zwar: [(feind1sonso); 50 Zeichen]
+
+mv:
+
+ka: 
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo: 
+
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D3_9"/>
+        </zofar:transitions>
+
+hi:
+
+\--------------------------------
+
 D3_9
 =====
 
