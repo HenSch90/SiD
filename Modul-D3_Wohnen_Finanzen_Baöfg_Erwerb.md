@@ -613,7 +613,7 @@ D3_11
 
 tc:
 
-vn: fsit (fsitzum1 / fsitzum2 / fsitzum3)
+vn: fsit (fsitzum1 / fsitzum2 / fsitzum3 / fsitzum4)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -630,6 +630,8 @@ it1: (fsitzum1): Die Finanzierung meines Lebensunterhalts während des Studiums 
 it2: (fsitzum2): Ich habe zurzeit finanzielle Schwierigkeiten.
 
 it3: (fsitzum3): Im Großen und Ganzen gelingt es mir, mit meinem Geld auszukommen.
+
+it4: (fsitzum4): Aufgrund der Corona-Pandemie kann ich mein Studium ohne zusätzliche finanzielle Unterstützung nicht fortführen. 
 
 st:
 
