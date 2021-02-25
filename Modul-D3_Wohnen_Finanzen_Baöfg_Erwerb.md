@@ -1038,11 +1038,11 @@ hl:
 
 in:
 
-q: Ist in Ihrem Förderungsbetrag ein Zuschlag enthalten für …
+q1: Ist in Ihrem Förderungsbetrag ein Zuschlag enthalten für …
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
-it:
+it: 
 
 st:
 
