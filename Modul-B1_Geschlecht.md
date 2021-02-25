@@ -589,7 +589,7 @@ B1_8
 
 tc:
 
-vn: promgroßv; promgroßm; promvat; prommut; prombrud; promschw
+vn: promgroßv; promgroßm; promvat; prommut; prombrud; promschw; promdiv
 
 qt: Einfachauswahl mit horizontalen ao
 
@@ -613,6 +613,8 @@ it5: (prombrud): Bruder
 
 it6: (promschw): Schwester
 
+it7: (promdiv): Geschwister (divers)
+
 st:
 
 ao1: 1: nein
@@ -625,7 +627,10 @@ mv1: -12: weiß ich nicht
 
 ka:
 
-vc: SHOW it5, it6 IF dsibo >=1
+vc: 
+SHOW it5 IF (dsibsex1== 1 OR dsibsex2== 1 OR dsibsex3== 1)
+SHOW it6 IF (dsibsex1== 2 OR dsibsex2== 2 OR dsibsex3== 2)
+SHOW it7 IF (dsibsex1== 3 OR dsibsex2== 3 OR dsibsex3== 3)
 
 av:
 
