@@ -894,7 +894,7 @@ D3_16
 
 tc: IF fbafja = 1 \| 2 
 
-vn: fbaf (fbafkelt / fbafkein / fbafkfhd / fbafktw / fbafkleis / fbafkalt / fbafkzwei / fbafkweni / fabfkschu / fbafand / fbafando)
+vn: fbaf (fbafkelt / fbafkein / fbafkfhd / fbafktw / fbafkleis / fbafkrsz/ fbafkalt / fbafkzwei / fbafkweni / fabfkschu / fbafand / fbafando)
 
 qt: Mehrfachnennung/offene Angabe mit vertikalen ao
 
@@ -926,16 +926,18 @@ ao4: (fbafktw): Das Studienfach wurde gewechselt.
 
 ao5: (fbafkleis): Die notwendigen Leistungsbescheinigungen konnten nicht erbracht werden.
 
-ao6: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits überschritten.
+ao6: (fbafkrsz): Die Regelstudienzeit wurde überschritten.
 
-ao7: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
+ao7: (fbafkalt): Bei Studienbeginn war die maßgebliche Altersgrenze bereits überschritten.
+
+ao8: (fbafkzwei): Das jetzige Studium ist eine nicht förderungsfähige weitere
 Hochschulausbildung (Zweitstudium, Ergänzungsstudium).
 
-ao8: (fbafkweni): Der zu erwartende Förderbetrag ist so gering, dass es sich nicht lohnt.
+ao9: (fbafkweni): Der zu erwartende Förderbetrag ist so gering, dass es sich nicht lohnt.
 
-ao9: (fbafkschu): Ich will keine Schulden machen.
+ao10: (fbafkschu): Ich will keine Schulden machen.
 
-ao10: (fbafand): Andere Gründe, und zwar: [(fbafando) 50 Zeichen] 
+ao11: (fbafand): Andere Gründe, und zwar: [(fbafando) 50 Zeichen] 
 
 mv:
 
