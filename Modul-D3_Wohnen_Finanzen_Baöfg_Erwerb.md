@@ -312,11 +312,11 @@ it:
 
 st:
 
-ao1: (festipartnein1): nein, nicht beantragt [EK]
+ao1: (festipartnein1): nein, nicht beantragt
 
-ao2: (festipartnein2): nein, Antrag wurde nicht bewilligt [EK]
+ao2: (festipartnein2): nein, Antrag wurde nicht bewilligt
 
-ao3: (festipartnein3): nein, Antragsverfahren läuft noch [EK]
+ao3: (festipartnein3): nein, Antragsverfahren läuft noch 
 
 ao4: (festipartdeut): Deutschlandstipendium
 
