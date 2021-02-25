@@ -419,11 +419,7 @@ it4: (atikb): Kinderbetreuung
 st:
 
 ao1: 1: ausschließlich mein\*e Partner\*in
-
-
-
-
-
+.
 ao2: 2: eher mein\*e Partner\*in
 
 ao3: 3: wir beide gleichermaßen
