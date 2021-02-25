@@ -802,13 +802,13 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: Ja, ich habe einmal einen Antrag gestellt, der wurde aber abgelehnt.
+ao2: 2: Ja, ich habe einen Antrag gestellt, der wurde aber abgelehnt.
 
-ao3: 3: Ja, in früheren Semestern wurde ich auch gefördert, ein Antrag auf
-Weiterförderung wurde dann aber abgelehnt.
+ao3: 3: Ja, in früheren Semestern wurde ich gefördert, ein Antrag auf
+Weiterförderung wurde abgelehnt.
 
-ao4: 4: Ja, in früheren Semestern wurde ich auch gefördert, habe dann aber
-keinen Antrag auf Weiterförderung mehr gestellt.
+ao4: 4: Ja, in früheren Semestern wurde ich gefördert, habe dann aber
+keinen Antrag auf Weiterförderung gestellt.
 
 mv:
 
@@ -861,7 +861,7 @@ ao1: 1: nein
 
 ao2: 2: Ja, ich habe früher einen Antrag gestellt, der wurde aber abgelehnt.
 
-ao3: 3: Ja, in früheren Semestern wurde ich auch gefördert.
+ao3: 3: Ja, in früheren Semestern wurde ich gefördert.
 
 mv:
 
