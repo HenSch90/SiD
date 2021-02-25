@@ -1223,13 +1223,11 @@ q: Welchen Beruf üben Sie aktuell aus?
 is: Falls Sie aktuell nicht erwerbstätig sind, geben Sie bitte den jeweils zuletzt ausgeübten Beruf an. 
 #{layout.BREAK}
 #{layout.BREAK}
-Bitte tragen Sie Ihre Berufsbezeichnung möglichst genau ein. Zum Beispiel:
-#{layout.BREAK}
 #{layout.BREAK}
 
-\-   Bankkaufmann/-frau (nicht: Angestellte\*r)
+\-   Bankkauffrau bzw. -mann (nicht: Angestellte\*r)
 
-\-   Zollbeamtin/-beamter (nicht: Beamtin bzw. Beamter)
+\-   Zollbeamtin bzw. -beamter (nicht: Beamtin bzw. Beamter)
 
 \-   Maschinenbauingenieur\*in (nicht: Ingenieur\*in)
 
