@@ -1528,7 +1528,8 @@ hl:
 
 in:
 
-q: Wenn Sie an dieses Semester denken: An wie vielen Tagen in der Woche sind Sie an Ihrer Hochschule? 
+q: Wenn Sie an dieses Semester denken: An wie vielen Tagen in der Woche sind Sie an Ihrer Hochschule?
+An...
 
 is:
 
@@ -1536,21 +1537,21 @@ it:
 
 st:
 
-ao1: 1: an keinem Tag
+ao1: 1: ... keinem Tag
 
-ao2: 2: 1 Tag
+ao2: 2: ... 1 Tag
 
-ao3: 3: 2 Tagen
+ao3: 3: ... 2 Tagen
 
-ao4: 4: 3 Tagen
+ao4: 4: ... 3 Tagen
 
-ao5: 5: 4 Tagen
+ao5: 5: ... 4 Tagen
 
-ao6: 6: 5 Tagen
+ao6: 6: ... 5 Tagen
 
-ao7: 7: 6 Tagen
+ao7: 7: ... 6 Tagen
 
-ao8: 8: 7 Tagen
+ao8: 8: ... 7 Tagen
 
 mv:
 
