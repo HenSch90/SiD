@@ -4281,83 +4281,26 @@ hi: Bitte als NUMBER, 2-stellig (0 bis 99) programmieren.
 
 \------------------------------------------------------------
 
-N_1
-=========
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwstudium; nrwfach
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Würden Sie wieder…
-
-is:
-
-it1: (nrwstudium): … ein Studium aufnehmen?
-
-it2: (nrwfach): … das gleiche Studienfach wählen?
-
-st:
-
-ao1: 1: auf keinen Fall
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: auf jeden Fall 
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_2"/>
-        </zofar:transitions>
-
-hi:
-
-
-\------------------------------------------------------------
-
 N_2
 =========
 
 tc: IF NRW / zusatzsplit ==1
 
-vn: nrwstudium2
+vn: nrwstudium ( nrwstudium2 / nrwstudium3)
 
-qt: Einfachauswahl mit vertikaler ao
+qt: Einfachauswahlmatrix mit horizontaler ao
 
 hl:
 
 in:
 
-q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, zu studieren?
+q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, …
 
 is:
 
-it:
+it1: (nrwstudium2): … zu studieren?
+
+it2: (nrwstudium3): … Ihren Studiengang/Ihre Fächerkombination zu studieren?
 
 st:
 
