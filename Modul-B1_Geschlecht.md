@@ -165,7 +165,7 @@ it6: (hosex5): Viele Frauen versuchen unter dem Deckmantel der Gleichberechtigun
 
 st:
 
-ao1: 1: stimme überhaupt nicht zu
+ao1: 1: stimme gar nicht zu
 
 ao2: 2:
 
