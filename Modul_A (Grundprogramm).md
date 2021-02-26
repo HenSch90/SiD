@@ -4286,7 +4286,7 @@ N_2
 
 tc: IF NRW / zusatzsplit ==1
 
-vn: nrwstudium ( nrwstudium2 / nrwstudium3)
+vn: nrwstudium ( nrwstudium1 / nrwstudium2)
 
 qt: Einfachauswahlmatrix mit horizontaler ao
 
@@ -4298,9 +4298,9 @@ q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, …
 
 is:
 
-it1: (nrwstudium2): … zu studieren?
+it1: (nrwstudium1): … zu studieren?
 
-it2: (nrwstudium3): … Ihren Studiengang/Ihre Fächerkombination zu studieren?
+it2: (nrwstudium2): … Ihren Studiengang/Ihre Fächerkombination zu studieren?
 
 st:
 
