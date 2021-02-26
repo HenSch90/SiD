@@ -4286,7 +4286,7 @@ N_2
 
 tc: IF NRW / zusatzsplit ==1
 
-vn: nrwstudium ( nrwstudium1 / nrwstudium2)
+vn: nrwstudium (nrwstudium1; nrwstudium2)
 
 qt: Einfachauswahlmatrix mit horizontaler ao
 
@@ -4535,19 +4535,19 @@ it:
 
 st:
 
-ao1: 1: gar nicht
+ao1: -13: Angebot nicht bekannt/nicht genutzt
 
-ao2: 2:
+ao2: 1: gar nicht hilfreich
 
-ao3: 3:
+ao3: 2:
 
-ao4: 4:
+ao4: 3:
 
-ao5: 5: in sehr hohem Maße
+ao5: 4:
 
-ao6: -13: Angebot nicht bekannt/nicht genutzt
+ao6: 5: sehr hilfreich
 
-mv: ao6 
+mv: ao1
 
 ka:
 
@@ -4561,60 +4561,13 @@ fv:
 
 hv:
 
-fo: ao6 (missing) bitte etwas absetzen.
+fo: ao1 (missing) bitte etwas absetzen.
 
 tr:
 
         <zofar:transitions>
             <zofar:transition target="N_9"/>
         </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_9a 
-==========
-
-tc:
-
-vn: digosa
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Haben Sie vor bzw. zu Beginn des Studiums einen Selbsttest zur fachlichen Eignung durchgeführt (z. B. Online-Self-Assessment)?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: ja
-
-ao2: 2: nein
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
 
 hi:
 
@@ -4633,7 +4586,7 @@ hl:
 
 in:
 
-q: Wie viele Ihrer Lehrveranstaltungen werden über digitale Plattformen organisiert (z. B. StudIP, Moodle, Ilias, Olat)?
+q: Wie viele Ihrer Lehrveranstaltungen werden wie folgt über digitale Plattformen organisiert (z. B. StudIP, Moodle, Ilias, Olat)?
 
 is:
 
@@ -4641,11 +4594,13 @@ it1: (digorg1): An-/Abmeldung zu Lehrveranstaltungen
 
 it2: (digorg2): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
 
+it3: (digorg5): Durchführung von Prüfungen
+
 it3: (digorg3): Kommunikation innerhalb der Lehrveranstaltungen
 
 it4: (digorg4): Bereitstellung von Literatur und Lehrmaterialien
 
-it5: (digorg5): Erbringung von Leistungsnachweisen/elektronische Prüfungen
+
 
 st:
 
@@ -4653,15 +4608,11 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
 ao5: 5: alle 
-
-ao6: -12: weiß ich nicht  
-
-mv: ao6
 
 ka:
 
@@ -4683,7 +4634,7 @@ tr:
             <zofar:transition target="N_10"/>
         </zofar:transitions>
 
-hi: ao6 (missing) bitte etwas absetzen.
+hi: 
 
 \------------------------------------------------------------
 
@@ -4692,7 +4643,7 @@ N_9b
 
 tc:
 
-vn: digfor (digfor1; digfor2; digfor3; digfor4; digfor5)
+vn: digfor (digfor1; digfor2)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4700,17 +4651,13 @@ hl:
 
 in:
 
-q: Wie viele Ihrer Lehrveranstaltungen werden in folgender Form organisiert?
+q: Wie viele Ihrer Lehrveranstaltungen und Prüfungen werden in digitaler Form organisiert?
 
 is:
 
-it1: (digfor1): als reine Online-Veranstaltung (z. B. Online-Vorlesung, Online-Seminar) 
+it1: (digfor1): als reine Online-Veranstaltung (z. B. Vorlesung, Seminar) 
 
-it2: (digfor2): als Online-Selbststudium mit einzelnen Präsenzterminen
-
-it3: (digfor3): als Präsenzveranstaltung mit einzelnen Online-Terminen
-
-it4: (digfor4): als reine Präsenzveranstaltung
+it2: (digfor2): als Online-Prüfung (z. B. Klausur, mündl. Prüfung)
 
 st:
 
@@ -4718,7 +4665,7 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
