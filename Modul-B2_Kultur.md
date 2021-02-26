@@ -525,7 +525,7 @@ it5: (bilaspber) … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: sehr unwichtig
+ao1: 1: gar nicht wichtig
 
 ao2: 2:
 
