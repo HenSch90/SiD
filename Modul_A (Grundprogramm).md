@@ -4847,7 +4847,7 @@ N_11
 
 tc:
 
-vn: digkom (digkom1; digkom2; digkom3; digkom4; digkom5; digkom6)
+vn: digkom (digkom1; digkom2; digkom3; digkom4; digkom7; digkom8; digkom5; digkom6)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4855,7 +4855,7 @@ hl:
 
 in:
 
-q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton\*innen? 
+q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der studienbezogenen Zusammenarbeit mit Ihren Kommiliton\*innen? 
 
 is:
 
@@ -4867,9 +4867,13 @@ it3: (digkom3): Online Verwaltungstools (z. B. Doodle, Trello)
 
 it4: (digkom4): Tools der Lernmanagementsysteme (z. B. Peer-Feedback, Foren)
 
-it5: (digkom5): Clouddienste zum gemeinsamen Schreiben (z.B. Etherpad, Google docs)
+it5: (digkom7): Videokonferenzsysteme (z. B. Zoom, Skype, WebEx)
 
-it6: (digkom6): Clouddienste zum Dateienaustausch (z. B. Dropbox)
+it6: (digkom8): Kollaborationstools (z. B. Slack, Teams)
+
+it7: (digkom5): Clouddienste zum gemeinsamen Schreiben (z.B. Etherpad, Google docs)
+
+it8: (digkom6): Clouddienste zum Dateienaustausch (z. B. Dropbox)
 
 st:
 
