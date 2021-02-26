@@ -4698,51 +4698,49 @@ N_10
 
 tc:
 
-vn: diglehr (diglehr1; diglehr2; diglehr3; diglehr4; diglehr5; diglehr6; diglehr7; diglehr8; diglehr9; diglehr9o)
+vn: diglehr (diglehr1; diglehr2; diglehr3; diglehr4; diglehr5; diglehr6; diglehr7; diglehr8; diglehr9; diglehr10; diglehr11; diglehr12; diglehr12o; diglehr13)
 
-qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
+qt: Mehrfachauswahl mit vertikalen ao und offener Angabe
 
 hl:
 
 in:
 
-q: Wie häufig kommen folgende digitale Elemente und Lehrformate im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
+q: Welche der folgenden digitalen Elemente kommen in den von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
 
 is:
 
-it1: (diglehr1): Podcasts, Blogs, Videos
-
-it2: (diglehr2): Abstimmungsmedien (Clicker-Abfrage, Voting-Tool)
-
-it3: (diglehr3): Game-Based-Learning (auf Lernspielen basierende Lehr- und Lernformate)
-
-it4: (diglehr4): Mobiles Lernen (virtuelle Lernorte/Labore)
-
-it5: (diglehr5): Augmented- und Virtual-Reality
-
-it6: (diglehr6): E-Portfolio (digitales Lerntagebuch)
-
-it7: (diglehr7): Videoaufzeichnungen von Vorlesungen
-
-it8: (diglehr8): digitale Prüfungsformate/E-Assessment
-
-it12: (diglehr9): Etwas anderes und zwar: [(diglehr9o), offene Angabe, 80 Zeichen] 
+it:
 
 st:
 
-ao1: 1: nie
+ao1: (diglehr1): Podcasts, Blogs 
 
-ao2: 2:
+ao2: (diglehr2): Videos, Animationen, Simulationen
 
-ao3: 3:
+ao3: (diglehr3): Abstimmungsmedien (z. B. Clicker-Abfrage, Voting-Tool)
 
-ao4: 4:
+ao4: (diglehr4): spielbasierte Lernelemente (z. B. Quizzes, Puzzles, Plan-/Rollenspiele)
 
-ao5: 5: sehr häufig 
+ao5: (diglehr5): Mobile Lernelemente (Apps)
 
-ao6: -13: kenne ich nicht
+ao6: (diglehr6): immersive Lernumgebungen (z. B. Augmented- und Virtual-Reality-Anwendungen)
 
-mv: ao6
+ao7: (diglehr7): adaptive Lernumgebungen (z. B. Lernhilfen, die sich an Ihren individuellen Lernstand anpassen)
+
+ao8: (diglehr8): E-Portfolio (digitales Lerntagebuch)
+
+ao9: (diglehr9): Kommunikations- und Kollaborationstools (z. B. Etherpad, Foren, Chats, Break-out-Räume)
+
+ao10: (diglehr10): Wikis
+
+ao11: (diglehr11): eTests (z. B. zur individuellen Überprüfung des Lernstandes im Semesterverlauf)
+
+ao12: (diglehr12): Andere, und zwar: [(diglehr12o), offene Angabe, 250 Zeichen] 
+
+ao13: (diglehr13): Keine [Exklusivkategorie]
+
+mv: 
 
 ka:
 
@@ -4764,7 +4762,7 @@ tr:
             <zofar:transition target="N_11"/>
         </zofar:transitions>
 
-hi: ao6 (missing) bitte etwas absetzen.
+hi: ao13  bitte etwas absetzen.
 
 \------------------------------------------------------------
 
