@@ -4918,7 +4918,7 @@ N_12
 
 tc:
 
-vn: digan (digan1; digan2; digan3; digan4; digan5; digan6; digan7; digan8; digan9; digan10; digan11)
+vn: digan ( digan2; digan3; digan4; digan5; digan6; digan7; digan8; digan9; digan12)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4926,35 +4926,32 @@ hl:
 
 in:
 
-q: Wie leicht würde es Ihnen fallen, …
+q: Wie schwer/leicht würde es Ihnen fallen, …
 
 is:
 
-it1: (digan1): … einen Text nach bestimmten Vorgaben zu formatieren (z. B. mit Word, Latex)? 
 
-it2: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)
+it1: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)
 
-it3: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, Open Office Calc)
+it2: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, Open Office Calc)
 
-it4: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
+it3: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
 
-it5: (digan5): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren? 
+it4: (digan5): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren? 
 
-it6: (digan6): … wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
+it5: (digan6): … wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
 
-it7: (digan7): … von Ihnen genutzte digitale Medien miteinander zu synchronisieren?
+it6: (digan7): … von Ihnen genutzte digitale Medien miteinander zu synchronisieren?
+
+it7: (digan12): … als Administrator eine digitale Gruppe in einem sozialen Netzwerk zu initiieren?
 
 it8: (digan8): … sich in ein neues Computerprogramm einzuarbeiten?
 
 it9: (digan9): … eine Programmiersprache sicher anzuwenden (z. B. Python, Java)?
 
-it10: (digan10): … digitale Gruppen/Netzwerke zu recherchieren und sich zu beteiligen?
-
-it11: (digan11): … sich in einer virtuellen oder simulierten Umgebung zu bewegen und zu handeln?
-
 st:
 
-ao1: 1: sehr leicht
+ao1: 1: sehr schwer
 
 ao2: 2:
 
@@ -4962,7 +4959,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr schwer
+ao5: 5: sehr leicht
 
 mv:
 
