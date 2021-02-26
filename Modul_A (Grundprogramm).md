@@ -4766,12 +4766,12 @@ hi: ao13  bitte etwas absetzen.
 
 \------------------------------------------------------------
 
-N_10a
+N_10c
 =========
 
 tc:
 
-vn: diggeso (diggeso1; diggeso2; diggeso3; diggeso4; diggeso5)
+vn: diglehranz (diglehranz1; diglehranz2; diglehranz3; diglehranz4; diglehranz5; diglehranz6; diglehranz7; diglehranz8; diglehranz9; diglehranz10; diglehranz11; diglehranz12)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -4783,27 +4783,41 @@ q: Wie häufig werden die folgenden Geräte bzw. Software in eine typische Lehrv
 
 is:
 
-it1: (diggeso1): Laptop und Beamer der Hochschule
+it1: (diglehranz1): Podcasts, Blogs
 
-it2: (diggeso2): Smart-Board
+it2: (diglehranz2): Videos, Animationen, Simulationen
 
-it3: (diggeso3): eigener Laptop, Tablet, Smartphone
+it3: (diglehranz3): Abstimmungsmedien (z. B. Clicker-Abfrage, Voting-Tool)
 
-it4: (diggeso4): Präsentationssoftware (PowerPoint, Prezi)
+it4: (diglehranz4): spielbasierte Lernelemente (z. B. Quizzes, Puzzles, Plan-/Rollenspiele)
 
-it5: (diggeso5): fachspezifische Software
+it5: (diglehranz5): Mobile Lernelemente (Apps)
+
+it6: (diglehranz6): immersive Lernumgebungen (z. B. Augmented- und Virtual-Reality-Anwendungen)
+
+it7: (diglehranz7): adaptive Lernumgebungen (z. B. Lernhilfen, die sich an Ihren individuellen Lernstand anpassen)
+
+it8: (diglehranz8): E-Portfolio (digitales Lerntagebuch)
+
+it9: (diglehranz9): Kommunikations- und Kollaborationstools (z. B. Etherpad, Foren, Chats, Break-out-Räume)
+
+it10: (diglehranz10): Wikis
+
+it11: (diglehranz11): eTests (z. B. zur individuellen Überprüfung des Lernstandes im Semesterverlauf)
+
+it12: (diglehranz12): Andere
 
 st:
 
-ao1: 1: nie
+ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
-ao5: 5: sehr häufig 
+ao5: 5: alle
 
 mv:
 
@@ -4827,62 +4841,6 @@ hi:
 
 \------------------------------------------------------------
 
-N_10b
-=========
-
-tc:
-
-vn: digflehr (digflehr1; digflehr2; digflehr3)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig nutzen Sie die folgenden Formen des digitalen Lernens?
-
-is:
-
-it1: (digflehr1): im Internet zugängliche Lehr- und Lernmaterialien
-
-it2: (digflehr2): Lehr- und Lernvideos
-
-it3: (digflehr3): digitale Selbstlernprogramme (z. B. Simulation, Lernapps, Lernspiele)
-
-st:
-
-ao1: 1: nie
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr häufig 
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
 
 N_11
 =========
