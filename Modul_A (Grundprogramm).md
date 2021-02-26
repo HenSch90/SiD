@@ -4333,121 +4333,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="N_3"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_3
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwfach2
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, Ihren Studiengang/Ihre Fächerkombination zu studieren?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_4"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_4
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwregel
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie wichtig ist Ihnen ein Abschluss in Regelstudienzeit, d. h. in der Anzahl an Fachsemestern, wie es der Studienverlaufsplan vorsieht?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_57"/>
+            <zofar:transition target="N_5"/>
         </zofar:transitions>
 
 hi:
@@ -4467,7 +4353,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie Ihren Bedarf an digitalen Studienangeboten in Ihrem Studiengang ein?
+q: Wie schätzen Sie Ihren persönlichen Bedarf an digitalen Studienangeboten in Ihrem Studiengang ein?
 
 is:
 
@@ -4581,8 +4467,7 @@ hl:
 
 in:
 
-q: Haben Sie vor/zu Studienbeginn einen von Ihrer Hochschule angebotenen Selbsttest zur fachlichen Eignung durchgeführt? Und wie 
-hilfreich waren die Ergebnisse des Selbsttests (bspw. Online-Self-Assessment/OSA, Studicheck, Wissenstest etc.)?
+q: Haben Sie vor/zu Studienbeginn einen von Ihrer Hochschule angebotenen Selbsttest zur fachlichen Eignung durchgeführt (bspw. Online-Self-Assessment/OSA, Studicheck, Wissenstest etc.)? Und wie hilfreich waren die Ergebnisse des Selbsttestes?
 
 is:
 
@@ -4590,19 +4475,19 @@ it:
 
 st:
 
-ao1: 1: gar nicht
+ao1: -13: Test nicht durchgeführt/angeboten
 
-ao2: 2:
+ao2: 1: gar nicht hilfreich
 
-ao3: 3:
+ao3: 2:
 
-ao4: 4:
+ao4: 3:
 
-ao5: 5: in sehr hohem Maße
+ao5: 4:
 
-ao6: -13: Test nicht durchgeführt/angeboten
+ao6: 5: sehr hilfreich
 
-mv: ao6
+mv: ao1
 
 ka:
 
@@ -4616,7 +4501,7 @@ fv:
 
 hv:
 
-fo: ao6 (missing) bitte etwas absetzen.
+fo: ao1 (missing) bitte etwas absetzen.
 
 tr:
 
