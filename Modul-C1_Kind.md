@@ -331,11 +331,11 @@ hl:
 
 in:
 
-q1: Wie häufig betreuen die folgenden Personen Ihr(e) Kind(er)?
+q1: Wie häufig betreuen üblicherweise die folgenden Personen Ihr(e) Kind(er)?
 
-q2: Wie häufig betreuen die folgenden Personen Ihr Kind?
+q2: Wie häufig betreuen üblicherweise die folgenden Personen Ihr Kind?
 
-q3: Wie häufig betreuen die folgenden Personen Ihre Kinder?
+q3: Wie häufig betreuen üblicherweise die folgenden Personen Ihre Kinder?
 
 is:
 
