@@ -1,4 +1,3 @@
-
 \--------------------------
 
 B2_1
@@ -114,17 +113,17 @@ z. B. Lehrer, Amtsrat
 ao13: 13: … im höheren Dienst 
 z. B. Studienrat, Hochschullehrer, Richter
 
-ao14: 14: … keine weiteren Mitarbeiter\*innen
+ao14: 14: … mit keinen weiteren Mitarbeiter\*innen
 
-ao15: 15: … 1 bis 4 Mitarbeiter\*innen
+ao15: 15: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao16: 16: … 5 und mehr Mitarbeiter\*innen
+ao16: 16: … mit 5 und mehr Mitarbeiter\*innen
 
-ao17: 17: … keine weiteren Mitarbeiter\*innen
+ao17: 17: … mit keinen weiteren Mitarbeiter\*innen
 
-ao18: 18: … 1 bis 4 Mitarbeiter\*innen
+ao18: 18: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao19: 19: … 5 und mehr Mitarbeiter\*innen
+ao19: 19: … mit 5 und mehr Mitarbeiter\*innen
 
 ao20: 20: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
 
@@ -168,7 +167,7 @@ hi: Überkategorien der Antwortoptionen:
 
 >   st4: !!Akademiker in freiem Beruf (z. B. Rechtsanwalt, niedergelassener Arzt), und zwar …!! (ao14, ao15, ao16)
 
->   st5: !!Selbstständiger im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und hat/hatte …!! (ao17, ao18, ao19)
+>   st5: !!Selbstständiger im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und zwar …!! (ao17, ao18, ao19)
 
 >   st6: !!Selbständiger Landwirt bzw. Genossenschaftsbauer, und zwar …!! (ao20, ao21, ao22)
 
@@ -225,17 +224,17 @@ z. B. Lehrerin, Amtsrätin
 ao13: 13: … im höheren Dienst 
 z. B. Studienrätin, Hochschullehrerin, Richterin
 
-ao14: 14: … keine weiteren Mitarbeiter\*innen
+ao14: 14: … mit keinen weiteren Mitarbeiter\*innen
 
-ao15: 15: … 1 bis 4 Mitarbeiter\*innen
+ao15: 15: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao16: 16: … 5 und mehr Mitarbeiter\*innen
+ao16: 16: … mit 5 und mehr Mitarbeiter\*innen
 
-ao17: 17: … keine weiteren Mitarbeiter\*innen
+ao17: 17: … mit keinen weiteren Mitarbeiter\*innen
 
-ao18: 18: … 1 bis 4 Mitarbeiter\*innen
+ao18: 18: … mit 1 bis 4 Mitarbeiter\*innen
 
-ao19: 19: … 5 und mehr Mitarbeiter\*innen
+ao19: 19: … mit 5 und mehr Mitarbeiter\*innen
 
 ao20: 20: … mit einer landwirtschaftlich genutzten Fläche bis unter 10 ha
 
@@ -280,7 +279,7 @@ hi: Zwischenüberschriften zwischen den ao’s:
 
 >   st4: !!Akademikerin in freiem Beruf (z. B. Rechtsanwältin, niedergelassene Ärztin), und zwar …!! (ao14, ao15, ao16)
 
->   st5: !!Selbstständige im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und hat/hatte …!! (ao17, ao18, ao19)
+>   st5: !!Selbstständige im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und zwar …!! (ao17, ao18, ao19)
 
 >   st6: !!Selbständige Landwirtin bzw. Genossenschaftsbäuerin, und zwar …!! (ao20, ao21, ao22)
 
@@ -302,7 +301,8 @@ in:
 
 q: Was schätzen Sie: Wie viele Bücher besitzen Sie selbst aktuell und wie viele Bücher besaßen Ihre Eltern zum Zeitpunkt Ihrer Kindheit?
 
-is: Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher. Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
+is: Zählen Sie bitte keine E-Books, Zeitungen und Zeitschriften mit.
+Als Hilfestellung: Auf einen Meter Regalbrett passen ungefähr 40 Bücher.
 
 it1: (buchanzi): ich selbst
 
@@ -329,6 +329,8 @@ ao9: 9: 301 bis 400
 ao10: 10: 401 bis 500
 
 ao11: 11: mehr als 500
+
+
 
 mv: -12: : weiß ich nicht
 
@@ -369,7 +371,7 @@ hl:
 
 in:
 
-q: Wenn Sie an die Beziehung zu Ihren Eltern denken, inwiefern treffen die folgenden Aussagen zu?
+q: Wenn Sie an die Beziehung zu Ihren Eltern denken, inwiefern treffen folgende Aussagen zu?
 
 is:
 
@@ -430,7 +432,7 @@ B2_7
 
 tc:
 
-vn: skausl / skeuro / skwiss / skjobs / skantr / skkarr
+vn: skeuro / skwiss / skjobs / skantr / skkarr / sktech / skkonf
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -442,17 +444,19 @@ q: Wie wahrscheinlich ist es, dass jemand aus Ihrem persönlichen Umfeld …
 
 is:
 
-it1: (skausl) … Ihnen nahelegt, im Ausland zu studieren?
+it1: (skeuro) … Ihnen spontan 1000 € leihen würde?
 
-it2: (skeuro) … Ihnen spontan 1000 € leihen würde?
+it2: (skwiss) … Ihre wissenschaftlichen Arbeiten gegenliest?
 
-it3: (skwiss) … Ihre wissenschaftlichen Arbeiten gegenliest?
+it3: (skjobs) … Ihnen einen Job oder ein Praktikum vermittelt?
 
-it4: (skjobs) … Ihnen einen Job oder ein Praktikum vermittelt?
+it4: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z. B. BAföG) helfen würde?
 
-it5: (skantr) … Ihnen beim Ausfüllen von amtlichen Anträgen (z. B. BAföG, Steuererklärung) helfen würde?
+it5: (skkarr) … Sie in beruflichen/karrierebezogenen Fragen beraten würde?
 
-it6: (skkarr) … Ihnen hilfreiche Ratschläge für den weiteren Berufs- und Karriereweg gibt?
+it6: (sktech) … Ihnen bei technischen Problemen helfen würde?
+
+it7: (skkonf) … Sie bei schwerwiegenden Konflikten unterstützen würde?
 
 st:
 
@@ -492,12 +496,12 @@ hi:
 
 \--------------------------
 
-B2_8a
+B2_8a2
 ==
 
 tc: 
 
-vn: bilaspab / bilaspma / bilaspdr / bilaspber
+vn: bilaspab / bilaspba / bilaspma / bilaspdr / bilaspber
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -511,15 +515,17 @@ is:
 
 it1: (bilaspab) … einen Hochschulabschluss erreichen?
 
-it2: (bilaspma) … einen Master erreichen?
+it2: (bilaspba) … einen Bachelorabschluss erreichen?
+ 
+it3: (bilaspma) … einen Master erreichen?
 
-it3: (bilaspdr) … einen Doktortitel erreichen?
+it4: (bilaspdr) … einen Doktortitel erreichen?
 
-it4: (bilaspber) … beruflich ganz weit nach vorne kommen?
+it5: (bilaspber) … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: sehr unwichtig
+ao1: 1: gar nicht wichtig
 
 ao2: 2:
 
@@ -533,7 +539,10 @@ mv: -12: weiß ich nicht
 
 ka:
 
-vc: SHOW it2 IF sabsan = 1 OR sabsan = 2
+vc: 
+SHOW it1 IF sabsan != 1 OR sabsan != 2
+SHOW it2 IF sabsan = 1 OR sabsan = 2
+SHOW it3 IF sabsan = 1 OR sabsan = 2
 
 av: 
 
@@ -568,41 +577,41 @@ hl:
 
 in:
 
-q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit ...
+q: Was denken Sie: Wie hoch ist schätzungsweise das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit …
 
-is: Bitte beziehen Sie Ihre Angaben auf das Netto-Gehalt einer Vollzeitstelle, d. h. Gehalt abzüglich Steuern und Sozialabgaben.
+is: Bitte schätzen Sie das Netto-Gehalt ungefähr ein, d. h. Einkommen abzüglich Steuer.
 
-it1: (einkberuf): ... Berufsausbildung?
+it1: (einkberuf): … Berufsausbildung?
 
-it2: (einkba): ... Bachelorabschluss?
+it2: (einkba): … Bachelorabschluss?
 
-it3: (einkma): ... Masterabschluss?
+it3: (einkma): … Masterabschluss?
 
-it4: (einkdr): ... Promotion?
+it4: (einkdr): … Promotion (Dr., PhD)?
 
 st:
 
 ao1: 1: unter 1.000 €
 
-ao2: 2: 1.000 € bis unter 1.500
+ao2: 2: 1.000 € bis unter 1.500 €
 
-ao3: 3: 1.500 € bis unter 2.000
+ao3: 3: 1.500 € bis unter 2.000 €
 
-ao4: 4: 2.000 € bis unter 2.500
+ao4: 4: 2.000 € bis unter 2.500 €
 
-ao5: 5: 2.500 € bis unter 3.000
+ao5: 5: 2.500 € bis unter 3.000 €
 
-ao6: 6: 3.000 € bis unter 3.500
+ao6: 6: 3.000 € bis unter 3.500 €
 
-ao7: 7: 3.500 € bis unter 4.000
+ao7: 7: 3.500 € bis unter 4.000 €
 
-ao8: 8: 4.000 € bis unter 5.000
+ao8: 8: 4.000 € bis unter 5.000 €
 
-ao9: 9: 5.000 € bis unter 10.000
+ao9: 9: 5.000 € bis unter 10.000 €
 
 ao10:  10: 10.000 € und mehr
 
-mv: -12:, weiß ich nicht
+mv: -12:, weiß ich nicht/trifft nicht zu
 
 ka:
 
@@ -665,11 +674,9 @@ ao3: 3: promoviert
 
 mv1: -12: weiß ich nicht
 
-mv2: -11: habe ich nicht
-
 ka:
 
-vc:
+vc: SHOW it3 IF dsib = 2 (OR (dsibo > 0 & dsibo !=.))
 
 av:
 
@@ -679,7 +686,7 @@ fv:
 
 hv:
 
-fo: Bitte in der Zeile der Großeltern (promgroß) und Eltern (promelt) jeweils das Antwortkästchen für mv2/"habe ich nicht"  nicht einblenden.
+fo:
 
 tr: 
 
@@ -749,5 +756,58 @@ tr:
         </zofar:transitions>
 
 hi: Items bitte zufällig rotieren.
+
+\--------------------------------
+
+B2_11
+===
+
+tc:
+
+vn: intges
+
+qt: Einfachauswahl mit horizontalen ao
+
+hl:
+
+in:
+
+q: Haben Sie das Gefühl, Teil der Gesellschaft zu sein oder fühlen Sie sich eher ausgeschlossen?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: : ausgeschlossen
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: : dazugehörig
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
 
 \--------------------------------
