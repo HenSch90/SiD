@@ -53,7 +53,7 @@ C2_1
 
 tc: IF h_gartcount >= 1 & beschwer=2
 
-vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls; gbegrson; gbegrsono; gbegrka
+vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls; gbegrson; gbegrka
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -81,7 +81,7 @@ it6: (gbegrchron): körperliche länger dauernde/chronische Krankheit (z. B. Rhe
 
 it7: (gbegrtls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-it8: (gbegrson): Andere Beeinträchtigung/Erkrankung, und zwar: [gbegrsono] [offenes Eingabefeld; 250 Zeichen]
+it8: (gbegrson): andere Beeinträchtigung
 
 it9: (gbegrka): Beeinträchtigung ohne Zuordnung
 
@@ -131,7 +131,7 @@ fv:
 
 hv:
 
-fo: mv als erste, etwa abgesetzte Spalte, danach Skala.
+fo: mv als erste, etwas abgesetzte Spalte, danach Skala.
 
 tr:
 
