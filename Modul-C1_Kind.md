@@ -146,65 +146,6 @@ hi: Dezimalstellen zulassen.
 
 \--------------------------------
 
-C1_3
-====
-
-tc: IF dkinja=2
-
-vn: dkinro (dkinrono / dkinrofr / dkinrokom / dkinroges / dkinroelt / dkinrover)
-
-qt: Mehrfachauswahl mit vertikalen ao
-
-hl:
-
-in:
-
-q: Kannten Sie jemanden, der bereits vor Ihnen mit Kind studiert hat?
-
-is: Bitte alles Zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: (dkinrono): nein, niemanden [EK] 
-
-ao2: (dkinrofr): Freund\*innen, Bekannte
-
-ao3: (dkinrokom): Kommiliton\*innen
-
-ao4: (dkinroges): Geschwister
-
-ao5: (dkinroelt): Eltern
-
-ao6: (dkinrover): andere Verwandte
-
-mv:
-
-ka: (ao2 TO ao6): ja, und zwar:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C1_11"/>
-        </zofar:transitions>
-
-hi:
-
-\--------------------------------
-
 C1_4
 ====
 
