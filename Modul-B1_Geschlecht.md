@@ -73,7 +73,7 @@ hl:
 
 in:
 
-q: Wenn Sie sich selbst beschreiben müssten: Welche Eigenschaften treffen am ehesten auf Sie zu?
+q: Wenn Sie sich selbst beschreiben müssten: Inwiefern treffen die folgenden Eigenschaften auf Sie zu?
 
 is:
 
@@ -129,6 +129,79 @@ hi:
 
 \--------------------------------
 
+B1_3a
+==
+
+tc: If demosex !=3 (?; tc bitte im Rahmen neugesetzten Seitenweiterleitungsbedingungen prüfen)
+
+vn: besex1; besex3; besex5; hosex1; hosex2; hosex5
+
+qt: Einfachauswahlmatrix
+
+hl:
+
+in:
+
+
+
+
+
+
+q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und ihre Beziehungen in der heutigen Gesellschaft. Bitte geben Sie an, in welchem Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
+
+is:
+
+it1: (besex1): Egal wie erfolgreich ein Mann auch sein mag, ohne die Liebe einer Frau fehlt ihm etwas ganz Wichtiges.
+
+it2: (hosex1): Wenn Frauen in einem fairen Wettbewerb gegenüber Männern den Kürzeren ziehen, behaupten sie gerne, sie seien diskriminiert worden.
+
+it3: (hosex2): Feministinnen stellen oftmals unberechtigte Forderungen an Männer.
+
+it4: (besex3): Jeder Mann sollte eine Frau haben, die er über alles liebt.
+
+it5: (besex5): Ein Mann sollte bereit sein, sein eigenes Wohl zu opfern, um für seine Frau sorgen zu können.
+
+it6: (hosex5): Viele Frauen versuchen unter dem Deckmantel der Gleichberechtigung besondere Vergünstigungen zu erlangen, wie z. B. eine Bevorzugung bei der Besetzung von Arbeitsstellen.
+
+st:
+
+ao1: 1: stimme gar nicht zu
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: stimme voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+	<zofar:transitions>
+        <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+        <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
+    	</zofar:transitions>
+
+hi:
+
+\--------------------------------
+
 B1_3b
 ==
 
@@ -154,8 +227,8 @@ it2: (malebread): Es ist für alle Beteiligten besser, wenn der Mann voll im Ber
 it3: (chldben): Es ist für ein Kind gut, wenn seine Mutter berufstätig ist und sich nicht nur auf den Haushalt konzentriert.
 
 it4: (wrkmumhome): Auch wenn beide Eltern erwerbstätig sind, ist es besser, wenn die Verantwortung für den Haushalt und die Kinder hauptsächlich bei der Frau liegt.
-
-it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie eine Mutter, die nicht berufstätig ist.
+.
+it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie eine Mutter, die nicht berufstätig ist.
 
 it6: (bothfull): Die beste Arbeitsteilung in einer Familie ist die, dass beide Partner in gleichem Umfang arbeiten und sich gleichermaßen um den Haushalt und die Kinder kümmern.
 
@@ -213,7 +286,7 @@ hl:
 
 in:
 
-q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an. Wenn Sie an Ihre Partnerschaft denken: Wer trägt im Allgemeinen in welchem Ausmaß zu den folgenden Haushaltsbereichen bei?
+q: Wer trägt in Ihrer Partnerschaft in welchem Ausmaß zu folgenden Bereichen bei?
 
 is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
@@ -225,7 +298,7 @@ it3: (\_a): andere Personen
 
 st:
 
-ao1 (atakhh): !!Hausarbeit!! [offene Angabe, 3-stellig: 0 TO 100, Suffix: %]
+ao1 (atakhh): !!Haushalt!! [offene Angabe, 3-stellig: 0 TO 100, Suffix: %]
 
 ao2 (atakee): !!Erwerbseinkommen!! [offene Angabe, 3-stellig: 0 TO 100, Suffix: %]
 
@@ -288,7 +361,7 @@ ao3: 3
 
 ao4: 4
 
-ao5: 5: sehr zufrieden
+ao5: 5: voll und ganz zufrieden
 
 mv: 
 
@@ -335,7 +408,7 @@ q: In einem Haushalt fallen täglich eine Reihe von Aufgaben an, die es zu bewä
 
 is: 
 
-it1: (atihh): Hausarbeit
+it1: (atihh): Haushalt
 
 it2: (atiee): Erwerbseinkommen
 
@@ -346,7 +419,7 @@ it4: (atikb): Kinderbetreuung
 st:
 
 ao1: 1: ausschließlich mein\*e Partner\*in
-
+.
 ao2: 2: eher mein\*e Partner\*in
 
 ao3: 3: wir beide gleichermaßen
@@ -396,13 +469,13 @@ hl:
 
 in:
 
-q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß zu den unterschiedlichen Bereichen im Haushalt beigetragen?
+q: Wenn Sie nun an Ihre Kindheit denken: Wer hat in Ihrer Familie in welchem Ausmaß zu den unterschiedlichen Bereichen beigetragen?
 
 is: Bitte summieren Sie jeweils die ++Spaltenprozente++ auf 100 Prozent.
 
-it1: (\_m): (Stief-)Mutter
+it1: (\_m): Mutter
 
-it2: (\_v): (Stief-)Vater
+it2: (\_v): Vater
 
 it3: (\_i): ich selbst
 
@@ -410,7 +483,7 @@ it4: (\_a): andere Personen
 
 st:
 
-ao1 (athhm): !!Hausarbeit!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
+ao1 (athhm): !!Haushalt!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
 ao2 (ateem): !!Erwerbseinkommen!! [offene Angabe, NUMBER, 3-stellig: 0 TO 100, Suffix: %]
 
@@ -465,25 +538,25 @@ it:
 
 st:
 
-ao1: 1: 0 bis 10 %
+ao1: 1: 0 % bis 10 %
 
-ao2: 2: 11 bis 20 %
+ao2: 2: 11 % bis 20 %
 
-ao3: 3: 21 bis 30 %
+ao3: 3: 21 % bis 30 %
 
-ao4: 4: 31 bis 40 %
+ao4: 4: 31 % bis 40 %
 
-ao5: 5: 41 bis 50 %
+ao5: 5: 41 % bis 50 %
 
-ao6: 6: 51 bis 60 %
+ao6: 6: 51 % bis 60 %
 
-ao7: 7: 61 bis 70 %
+ao7: 7: 61 % bis 70 %
 
-ao8: 8: 71 bis 80 %
+ao8: 8: 71 % bis 80 %
 
-ao9: 9: 81 bis 90 %
+ao9: 9: 81 % bis 90 %
 
-ao10: 10: 91 bis 100 %
+ao10: 10: 91 % bis 100 %
 
 mv: -11: trifft nicht zu
 
@@ -516,7 +589,7 @@ B1_8
 
 tc:
 
-vn: promgroßv; promgroßm; promvat; prommut; prombrud; promschw
+vn: promgroßv; promgroßm; promvat; prommut; prombrud; promschw; promdiv
 
 qt: Einfachauswahl mit horizontalen ao
 
@@ -540,6 +613,8 @@ it5: (prombrud): Bruder
 
 it6: (promschw): Schwester
 
+it7: (promdiv): Geschwister (divers)
+
 st:
 
 ao1: 1: nein
@@ -552,7 +627,10 @@ mv1: -12: weiß ich nicht
 
 ka:
 
-vc: SHOW it5, it6 IF dsibo >=1
+vc: 
+SHOW it5 IF (dsibsex1== 1 OR dsibsex2== 1 OR dsibsex3== 1)
+SHOW it6 IF (dsibsex1== 2 OR dsibsex2== 2 OR dsibsex3== 2)
+SHOW it7 IF (dsibsex1== 3 OR dsibsex2== 3 OR dsibsex3== 3)
 
 av:
 
