@@ -250,7 +250,7 @@ q1: Fand Ihr Auslandsaufenthalt im Rahmen eines Programms statt?
 
 q2: Fanden Ihre Auslandsaufenthalte im Rahmen eines Programms statt?
 
-is: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt. Sollten Sie mehr als drei Aufenthalte haben, dann geben sie bitte den drittletzten Aufenthalt an.
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -296,15 +296,15 @@ ao18: (aproanpr3): anderes Programm
 
 mv:
 
-ka1: (ao1 TO ao6): Letzter studienbezogener Auslandsaufenthalt
+ka1: (ao1 TO ao6): !!Letzter Auslandsaufenthalt!!
 
 ka2: (ao2 TO ao6): Ja, und zwar:
 
-ka3: (ao7 TO ao12): Vorletzter studienbezogener Auslandsaufenthalt
+ka3: (ao7 TO ao12): !!Vorletzter Auslandsaufenthalt!!
 
 ka4: (ao8 TO ao12): Ja, und zwar:
 
-ka5: (ao13 TO ao18): Drittletzter studienbezogener Auslandsaufenthalt
+ka5: (ao13 TO ao18): !!Drittletzter Auslandsaufenthalt!!
 
 ka6: (ao14 TO ao18): Ja, und zwar:
 
@@ -328,7 +328,7 @@ fo1: ao1, ao7 und ao13 jeweils etwas von den nachstehenden ao absetzen.
 
 fo2: Bitte jeweils über ao2, ao8 und ao14 "Ja, und zwar:" linksbündig positionieren. 
 
-fo3: Es werden bis zu drei Episoden angezeigt, die linksbündig untereinander mit den Überschriften (fett und unterstrichen) "Letzter studienbezogener Auslandsaufenthalt", "Vorletzter studienbezogener Auslandsaufenthalt" und "Drittletzter studienbezogener Auslandsaufenthalt" positioniert werden.
+fo3: Es werden bis zu drei Episoden angezeigt, die linksbündig untereinander mit den Überschriften (fett und unterstrichen) "Letzter  Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt" positioniert werden.
 
 tr:
 
@@ -411,13 +411,11 @@ hl:
 
 in:
 
-q1: Wie haben Sie Ihren Auslandsaufenthalt finanziert?
+q1: Wie haben Sie Ihren studienbezogenen Auslandsaufenthalt finanziert?
 
-q2: Wie haben Sie Ihre Auslandsaufenthalte finanziert?
+q2: Wie haben Sie Ihre studienbezogenen Auslandsaufenthalte finanziert?
 
-is1: Bitte alles Zutreffende auswählen.
-
-is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. Bitte alles Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -477,11 +475,11 @@ ao24: (afinand3): andere Finanzierungsquelle
 
 mv:
 
-ka1 (ao1 TO ao8): Letzter studienbezogener Auslandsaufenthalt
+ka1 (ao1 TO ao8): !!Letzter Auslandsaufenthalt!!
 
-ka2 (ao9 TO ao16): Vorletzter studienbezogener Auslandsaufenthalt
+ka2 (ao9 TO ao16): !!Vorletzter Auslandsaufenthalt!!
 
-ka3 (ao17 TO ao24): Drittletzter studienbezogener Auslandsaufenthalt
+ka3 (ao17 TO ao24): !!Drittletzter Auslandsaufenthalt!!
 
 vc:
 
@@ -525,9 +523,9 @@ hl:
 
 in:
 
-q1: Wie häufig hatten Sie während Ihres studienbezogenen Auslandsaufenthalts Kontakt zu …
+q1: Wie häufig haben Sie sich während des Aufenthaltes unterhalten mit …
 
-q2: Wie häufig hatten Sie während Ihres letzten studienbezogenen Auslandsaufenthalts Kontakt zu …
+q2: Wie häufig haben Sie sich während des letzten Aufenthaltes unterhalten mit …
 
 is:
 
@@ -672,7 +670,7 @@ it2: (azufinsg): … dem Aufenthalt insgesamt?
 
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
@@ -793,7 +791,7 @@ it:
 
 st:
 
-ao1: 1: überhaupt nicht
+ao1: 1: auf keinen Fall
 
 ao2: 2:
 
@@ -801,7 +799,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: voll und ganz
+ao5: 5: auf jeden Fall
 
 mv:
 
