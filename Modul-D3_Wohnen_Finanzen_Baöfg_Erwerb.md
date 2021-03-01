@@ -1056,11 +1056,11 @@ mv:
 
 ka:
 
-vc1: SHOW ao2 IF dkinanz = k. A.
+vc1: SHOW is AND ao2 IF dkinanz = k. A.
 
-vc2: SHOW ao3 IF dkinanz = 1
+vc2: SHOW is AND ao3 IF dkinanz = 1
 
-vc3: SHOW ao4 IF dkinanz \> 1 
+vc3: SHOW is AND ao4 IF dkinanz \> 1 
 
 av:
 
