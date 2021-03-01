@@ -260,11 +260,11 @@ hl:
 
 in:
 
-q1: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes/Ihrer Kinder?
+q1: Nutzen Sie üblicherweise die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes/Ihrer Kinder?
 
-q2: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes?
+q2: Nutzen Sie üblicherweise die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes?
 
-q3: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihrer Kinder?
+q3: Nutzen Sie üblicherweise die folgenden Einrichtungen/Angebote zur Betreuung Ihrer Kinder?
 
 is: Bitte alles Zutreffende auswählen.
 
