@@ -224,9 +224,7 @@ fv:
 
 hv:
 
-fo1: 
-
-fo2: 
+fo: Bitte ka linksbündig.
 
 tr:
 
@@ -330,11 +328,11 @@ ao8: (festipartandstaat): anderes mit staatlichen Mitteln finanziertes Stipendiu
 
 ao9: (festipartprivat): Stipendium eines privaten Geldgebers (z. B. Industrie, privater Stifter)
 
-ao10: (festipartsons): anderes, und zwar: [(festipartsonso); 50 Zeichen]
+ao10: (festipartsons): Anderes, und zwar: [(festipartsonso); 50 Zeichen]
 
 mv:
 
-ka: (ao4 TO ao10): ja, und zwar:
+ka: (ao4 TO ao10): Ja, und zwar:
 
 vc:
 
@@ -346,7 +344,7 @@ fv:
 
 hv:
 
-fo: "ja, und zwar:" zwischen ao3 und ao4 setzen.
+fo: "Ja, und zwar:" zwischen ao3 und ao4 setzen.
 
 tr:
 
@@ -479,13 +477,13 @@ fv:
 
 hv:
 
-fo1: “ich bezahle selbst” und “andere bezahlen für mich” bitte als Spaltenüberschriften über die erste bzw. zweite Spalte mit den Eingabefeldern setzen (und dabei bitte kleingeschrieben anfangen).
+fo1: “ich bezahle selbst” und “andere bezahlen für mich” bitte als Spaltenüberschriften über die erste bzw. zweite Spalte mit den Eingabefeldern setzen.
 
 fo2: Bitte etwas Abstand zwischen den beiden Spalten.
 
 fo3: Bitte Leerzeile/Abstand nach den Gesamtausgaben einziehen. 
 
-fo4: Bitte "davon entfallen auf" zwischen It1 "Gesamtausgaben" und den nachfolgenden einfügen.
+fo4: Bitte ka "davon entfallen auf" zwischen It1 "Gesamtausgaben" und den nachfolgenden einfügen.
 
 tr:
 
@@ -522,13 +520,13 @@ st:
 
 ao1: (feind1eltern): Eltern/-teil
 
-ao2: (feind1partner): Partner*in
+ao2: (feind1partner): Partner\*in
 
 ao3: (feind1verwandt): andere Verwandte
 
-ao4: (feind1arbeitg):  	Arbeitgeber*in
+ao4: (feind1arbeitg): Arbeitgeber\*in
 
-ao10: (feind1sons): andere, und zwar: [(feind1sonso); 50 Zeichen]
+ao10: (feind1sons): Andere, und zwar: [(feind1sonso); 50 Zeichen]
 
 mv:
 
