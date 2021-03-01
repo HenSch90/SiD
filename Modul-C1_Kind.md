@@ -563,34 +563,27 @@ C1_12
 
 tc: IF dkinja = 2
 
-vn: dkin (dkinwistu / dkinentstu)
+vn: dkinwistu
 
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit vertikalen ao
 
 hl:
 
 in:
 
-q: Wie sehr stimmen Sie den folgenden Aussagen zu?
+q1: Wie wichtig ist es Ihnen, dass Ihr Kind später einmal studiert/Ihre Kinder später einmal studieren?
+
+q2: Wie wichtig ist es Ihnen, dass Ihr Kind später einmal studiert?
+
+q3: Wie wichtig ist es Ihnen, dass Ihre Kinder später einmal studieren?
 
 is:
 
-it1: (dkinwistu): Mir ist es wichtig, dass mein Kind später einmal studiert/meine Kinder später einmal studieren.
-
-it2: (dkinwistu): Mir ist es wichtig, dass mein Kind später einmal studiert.
-
-it3: (dkinwistu): Mir ist es wichtig, dass meine Kinder später einmal studieren.
-
-it4: (dkinentstu): Wenn mein Kind nicht studiert/meine Kinder nicht studieren, wäre ich enttäuscht.
-
-it5: (dkinentstu): Wenn mein Kind nicht studiert, wäre ich enttäuscht.
-
-it6: (dkinentstu): Wenn meine Kinder nicht studieren, wäre ich enttäuscht.
-
+it1: 
 
 st:
 
-ao1: 1: gar nicht
+ao1: 1: gar nicht wichtig
 
 ao2: 2: 
 
@@ -598,17 +591,17 @@ ao3: 3:
 
 ao4: 4: 
 
-ao5: 5: voll und ganz
+ao5: 5: sehr wichtig
 
-mv:
+mv: -12: weiß ich nicht
 
 ka:
 
-vc1: SHOW it1, it4 IF dkinanz = k. A.
+vc1: SHOW q1 IF dkinanz = k. A.
 
-vc2: SHOW it2, it5 IF dkinanz = 1
+vc2: SHOW q2 IF dkinanz = 1
 
-vc3: SHOW it3, it6 IF dkinanz \> 1
+vc3: SHOW q3 IF dkinanz \> 1
 
 av:
 
@@ -618,7 +611,7 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"weiß ich nicht" etwas absetzen.
 
 tr: 
 
@@ -643,7 +636,7 @@ hl:
 
 in:
 
-q: Was würden Sie künftigen Studienanfänger\*innen empfehlen
+q: Was würden Sie angehenden Studierenden empfehlen?
 
 is:
 
