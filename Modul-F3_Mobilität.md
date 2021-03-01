@@ -82,9 +82,7 @@ q2: Bitte beschreiben Sie Ihre beiden studienbezogenen Auslandsaufenthalte nähe
 
 q3: Bitte beschreiben Sie Ihre drei studienbezogenen Auslandsaufenthalte näher.
 
-is1: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt.
-
-is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. Sollten Sie bereits häufiger als dreimal studienbezogen im Ausland gewesen sein, dann geben Sie bitte die drei letzten Aufenthalte an.
+is:
 
 it:
 
@@ -192,15 +190,15 @@ ao:
 
 mv:
 
-ka1 (ao1 TO ao6): !!Letzter studienbezogener Auslandsaufenthalt!!
+ka1 (ao1 TO ao6): !!Letzter Auslandsaufenthalt!!
 
 ka2 (ao4 TO ao5): Start des Aufenthalts:
 
-ka3 (ao7 TO ao12): !!Vorletzter studienbezogener Auslandsaufenthalt!!
+ka3 (ao7 TO ao12): !!Vorletzter Auslandsaufenthalt!!
 
 ka4 (ao10 TO ao11): Start des Aufenthalts:
 
-ka5 (ao13 TO ao18): !!Drittletzter studienbezogener Auslandsaufenthalt!!
+ka5 (ao13 TO ao18): !!Drittletzter Auslandsaufenthalt!!
 
 ka6 (ao16 TO ao17): Start des Aufenthalts:
 
@@ -221,7 +219,7 @@ fv:
 
 hv:
 
-fo: Bitte jeweils "Art des Auslandsaufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter studienbezogener Auslandsaufenthalt", "Vorletzter studienbezogener Auslandsaufenthalt" und "Drittletzter studienbezogener Auslandsaufenthalt".
+fo: Bitte jeweils "Art des Auslandsaufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt".
 
 tr:
 
