@@ -898,7 +898,7 @@ F3_17
 
 tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
-vn: aplan (aplanlando; aplanorto)
+vn: aplan (aplanlando; aplanorto; aplanka)
 
 qt: offene Angaben
 
@@ -906,9 +906,9 @@ hl:
 
 in:
 
-q: In welchem Land und in welcher Stadt/Hochschule planen Sie den Auslandsaufenthalt durchzuführen?
+q: Wo planen Sie den Auslandsaufenthalt durchzuführen?
 
-is:
+is: Sollten mehrere Orte infrage kommen, geben Sie bitte Ihren Favoriten an.
 
 it:
 
@@ -917,6 +917,8 @@ st:
 ao1: (aplanlando): Präfix: Land: [offene Angabe; 100 Zeichen]
 
 ao2: (aplanorto): Präfix: Stadt/Hochschule: [offene Angabe, 100 Zeichen]
+
+ao3:   (aplanka): weiß ich noch nicht
 
 mv:
 
@@ -932,7 +934,7 @@ fv:
 
 hv:
 
-fo: ao1 und ao2 bitte linksbündig untereinander positionieren.
+fo: ao1 und ao2 bitte linksbündig untereinander positionieren. ao3 bitte etwas abgesetzt unter ao2 positionieren.
 
 tr:
 
@@ -945,7 +947,7 @@ F3_19
 
 tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
-vn: aplan (aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanno)
+vn: aplan (aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanno; aplankaa)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -969,7 +971,9 @@ ao4: (aplangahs): Programm der Gasthochschule
 
 ao5: (aplananpr): anderes Programm
 
-ao6: (aplanno): Ich werde den Aufenthalt selbst organisieren. (Exklusivkategorie)
+ao6: (aplanno): Ich werde den Aufenthalt selbst organisieren.
+
+ao7: (aplankaa): weiß ich noch nicht [EK]
 
 mv:
 
@@ -985,7 +989,7 @@ fv:
 
 hv:
 
-fo: Bitte ao6 optisch etwas absetzen.
+fo: Bitte ao7 optisch etwas absetzen.
 
 tr:
 
@@ -1034,6 +1038,8 @@ ao7: (aplanfinbkred): Bildungskredit
 
 ao8: (aplanfinand): andere Finanzierungsquelle
 
+ao9: (aplanfinkaa): weiß ich noch nicht [EK]
+
 mv:
 
 ka:
@@ -1048,7 +1054,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao9 bitte etwas optisch absetzen.
 
 tr:
 
@@ -1065,7 +1071,7 @@ F3_22
 
 tc:
 
-vn: akont (akontdeust; akonteust; akontneust)
+vn: akont (akontdeust; akontneust)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1079,9 +1085,7 @@ is:
 
 it1: (akontdeust): … deutschen Studierenden?
 
-it2: (akonteust): … Studierenden aus anderen Ländern Europas?
-
-it3: (akontneust): … Studierenden aus Ländern außerhalb Europas?
+it2: (akontneust): … internationalen Studierenden?
 
 st:
 
