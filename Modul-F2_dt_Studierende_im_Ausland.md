@@ -11,11 +11,11 @@ hl:
 
 in:
 
-q: Sie befinden sich zurzeit im Ausland: Bitte beschreiben Sie diesen Auslandaufenthalt näher.
+q: Sie befinden sich zurzeit im Ausland: Bitte beschreiben Sie diesen Aufenthalt näher.
 
 is:
 
-ao1: (ainfasia): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
+ao1: (ainfasia): [infield = Art des Aufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfasia): 1: Auslandsstudium mit Abschluss
 
