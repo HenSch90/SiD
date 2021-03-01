@@ -117,9 +117,9 @@ ao5: 5: sehr stark
 
 mv:
 
-ka1: (it1 TO it7) !!… *für* einen Auslandsaufenthalt?!!
+ka1: (it1 TO it7) !!… **für** einen Auslandsaufenthalt?!!
 
-ka2: (it8 TO it it14) !!… *gegen* einen Auslandsaufenthalt?!!
+ka2: (it8 TO it it14) !!… **gegen** einen Auslandsaufenthalt?!!
 
 vc:
 
@@ -134,9 +134,9 @@ hv:
 
 
 
-fo1: Bitte über it1 "... *für* einen Auslandsaufenthalt" linksbündig positionieren.
+fo1: Bitte über it1 "... **für** einen Auslandsaufenthalt" linksbündig positionieren.
 
-fo2: Bitte über it8 "... *gegen* einen Auslandsaufenthalt" linksbündig positionieren.
+fo2: Bitte über it8 "... **gegen** einen Auslandsaufenthalt" linksbündig positionieren.
 
 tr:
 
