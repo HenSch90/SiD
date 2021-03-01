@@ -1315,7 +1315,7 @@ it2: (aarbchdeuba): … Deutschland?
 
 st:
 
-ao1: 1: überhaupt nicht gut
+ao1: 1: sehr schlecht
 
 ao2: 2:
 
