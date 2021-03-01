@@ -240,7 +240,7 @@ fo:
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="C1_3"/>
+            <zofar:transition target="C1_7"/>
         </zofar:transitions>
 
 hi:
@@ -311,7 +311,7 @@ fo: ao8 bitte etwas absetzen.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="C1_8"/>
+            <zofar:transition target="C1_6"/>
         </zofar:transitions>
 
 hi:
@@ -398,7 +398,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="C1_7"/>
+            <zofar:transition target="C1_9"/>
         </zofar:transitions>
 
 hi:
@@ -623,7 +623,7 @@ fo:
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="C1_13"/>
+            <zofar:transition target="C1_14"/>
         </zofar:transitions>
 
 hi:
