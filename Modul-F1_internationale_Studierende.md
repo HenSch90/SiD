@@ -1104,7 +1104,7 @@ F1_21
 
 tc:
 
-vn: bdebleibba
+vn: bdebleibba; bdebleibbao
 
 qt: Einfachauswahl mit Zwischenüberschriften und vertikalen ao
 
@@ -1132,7 +1132,7 @@ ao5: 5: … in meinem Heimatland.
 
 ao6: 6: … in einem anderen Land.
 
-ao7: 7: und zwar: [(bdebleibbao); (offene Angabe); 250 Zeichen]
+ao7: 7: … und zwar: [(bdebleibbao); (offene Angabe); 250 Zeichen]
 
 mv:
 
@@ -1185,7 +1185,7 @@ q: Wenn Sie an Ihre Zukunft denken, wo möchten Sie leben?
 
 is:
 
-it1: (intpsydaudeuba): dauerhaft in Deutschland
+it1: (intpsydaudeuba): in Deutschland
 
 it2: (intpsyzeitdeuba): zeitweise in Deutschland
 
