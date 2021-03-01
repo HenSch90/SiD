@@ -776,7 +776,7 @@ fv:
 
 hv:
 
-fo1: ao1 bitte etwas absetzen.
+fo1: ao1 bitte etwas absetzen.  
 
 fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
@@ -946,7 +946,7 @@ it2: (azufinsgba): … Ihrem Aufenthalt in Deutschland insgesamt?
 
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
