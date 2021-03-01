@@ -62,7 +62,7 @@ tc: IF dkinja = 2
 
 vn: dkinage (dkinagej / dkinage1 / dkinage2 / dkinage3 / dkinage4 / dkinage5)
 
-qt: offene Angaben mit vertikaler Eingabespalte/-feldern
+qt: Mehrere Dropdownmenüs vertikal
 
 hl:
 
@@ -76,31 +76,85 @@ q3: Wie alt sind Ihre Kinder?
 
 is: Mit “1. Kind” meinen wir Ihr ältestes Kind.
 
-it1: (dkinagej) [infield = Alter jüngstes Kind]
+it1: (dkinagej) Alter jüngstes Kind:
 
-it2: (dkinage1): [infield = Alter Ihres Kindes]
+it2: (dkinage1): Alter Ihres Kindes:
 
-it3: (dkinage2): [infield = Alter 1. Kind]
+it3: (dkinage2): Alter 1. Kind:
 
-it4: (dkinage3): [infield = Alter 2. Kind]
+it4: (dkinage3): Alter 2. Kind:
 
-it5: (dkinage4): [infield = Alter 3. Kind]
+it5: (dkinage4): Alter 3. Kind:
 
-it6: (dkinage5): [infield = Alter 4. Kind]
+it6: (dkinage5): Alter 4. Kind:
 
 st:
 
-ao1: (dkinagej): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao1: Alter
 
-ao2: (dkinage1): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao2: < 1 Jahr
 
-ao3: (dkinage2): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao3: 1 Jahr
 
-ao4: (dkinage3): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao4: 2 Jahre
 
-ao5: (dkinage4): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao5: 3 Jahre
 
-ao6: (dkinage5): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao6: 4 Jahre
+
+ao7: 5 Jahre
+
+ao8: 6 Jahre
+
+ao9: 7 Jahre
+
+ao10: 8 Jahre
+
+ao10: 9 Jahre
+
+ao11: 10 Jahre
+
+ao12: 11 Jahre
+
+ao13: 12 Jahre
+
+ao14: 13 Jahre
+
+ao15: 14 Jahre
+
+ao16: 15 Jahre
+
+ao17: 16 Jahre
+
+ao18: 17 Jahre
+
+ao19: 18 Jahre
+
+ao20: 19 Jahre
+
+ao21: 20 Jahre
+
+ao22: 21 Jahre
+
+ao23: 22 Jahre
+
+ao24: 23 Jahre
+
+ao25: 24 Jahre
+
+ao26: 25 Jahre
+
+ao27: 26 Jahre
+
+ao28: 27 Jahre
+
+ao29: 28 Jahre
+
+ao30: 29 Jahre
+
+ao31: 30 Jahre
+
+ao32: >30 Jahre
 
 mv:
 
@@ -128,7 +182,7 @@ vc10: SHOW q3 IF dkinanz >= 2
 
 av: 
 
-kh: Bitte geben Sie das Lebensalter Ihres Kindes an (0 bis 99).
+kh: 
 
 fv:
 
@@ -142,7 +196,7 @@ tr:
             <zofar:transition target="C1_4"/>
         </zofar:transitions>
 
-hi: Dezimalstellen zulassen.
+hi: Kategorien des Dropdown-Menüs sind für jede Variable gleich (siehe ao1-ao32). ao1 (Alter) soll vorausgewählt sein
 
 \--------------------------------
 
