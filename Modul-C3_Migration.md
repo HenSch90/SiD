@@ -118,7 +118,7 @@ C3_2
 
 tc:
 
-vn: dnat (dnatm; dnatv)
+vn: dnat (dnatv; dnatm)
 
 qt: Einfachauswahl im Spaltenformat/Comparison
 
@@ -126,21 +126,21 @@ hl:
 
 in:
 
-q: Welche Staatsangehörigkeit hat Ihre Mutter bzw. Ihr Vater?
+q: Welche Staatsangehörigkeit haben Ihre Eltern?
 
 is:
 
-it1: (dnatm): Mutter
+it1: (dnatv): Vater
 
-it2: (dnatv): Vater
+it2: (dnatm): Mutter
 
 st:
 
-ao1: 1: die deutsche Staatsangehörigkeit
+ao1: 1: deutsche Staatsangehörigkeit
 
-ao2: 2: die deutsche und eine andere Staatsangehörigkeit
+ao2: 2: deutsche und eine andere Staatsangehörigkeit
 
-ao3: 3: eine andere Staatsangehörigkeit
+ao3: 3: andere Staatsangehörigkeit
 
 mv: 
 
