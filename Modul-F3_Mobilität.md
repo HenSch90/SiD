@@ -592,9 +592,9 @@ hl:
 
 in:
 
-q1: Wie häufig haben Sie während Ihres Auslandsaufenthaltes die folgenden Sprachen gesprochen?
+q1: Wie häufig haben Sie während Ihres Auslandsaufenthalts die folgenden Sprachen gesprochen?
 
-q2: Wie häufig haben Sie während Ihres letzten Auslandsaufenthaltes die folgenden Sprachen gesprochen?
+q2: Wie häufig haben Sie während Ihres letzten Auslandsaufenthalts die folgenden Sprachen gesprochen?
 
 is:
 
@@ -783,7 +783,7 @@ hl:
 
 in:
 
-q: Ausgehend von Ihren bisherigen Erfahrungen: Würden Sie einen studienbezogenen Auslandsaufenthalt empfehlen?
+q: Ausgehend von Ihren bisherigen Erfahrungen: Würden Sie Ihren Freund\*innen/Bekannten empfehlen, im Ausland zu studieren?
 
 is:
 
