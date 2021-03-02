@@ -4594,11 +4594,11 @@ it1: (digorg1): An-/Abmeldung zu Lehrveranstaltungen
 
 it2: (digorg2): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
 
-it3: (digorg5): Durchführung von Prüfungen
+it3: (digorg3): Durchführung von Prüfungen
 
-it3: (digorg3): Kommunikation innerhalb der Lehrveranstaltungen
+it3: (digorg4): Kommunikation innerhalb der Lehrveranstaltungen
 
-it4: (digorg4): Bereitstellung von Literatur und Lehrmaterialien
+it4: (digorg5): Bereitstellung von Literatur und Lehrmaterialien
 
 
 
