@@ -473,7 +473,7 @@ it2: (azufinsgsia): … Ihrem Auslandsaufenthalt insgesamt?
 
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
