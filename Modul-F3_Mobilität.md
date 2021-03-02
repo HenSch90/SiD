@@ -246,9 +246,9 @@ hl:
 
 in:
 
-q1: Fand Ihr Auslandsaufenthalt im Rahmen eines Programms statt?
+q1: Fand Ihr studienbezogener Auslandsaufenthalt im Rahmen eines Programms statt?
 
-q2: Fanden Ihre Auslandsaufenthalte im Rahmen eines Programms statt?
+q2: Fanden Ihre studienbezogenen Auslandsaufenthalte im Rahmen eines Programms statt?
 
 is: Bitte alles Zutreffende auswählen.
 
