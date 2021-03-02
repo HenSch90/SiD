@@ -427,9 +427,9 @@ ao2: (afinpar1): Partner\*in
 
 ao3: (afinbaf1): BAföG
 
-ao4: (afinjobv1): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
+ao4: (afinjobv1): Verdienst aus Tätigkeit(en) vor dem Aufenthalt
 
-ao5: (afinjobw1): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalts
+ao5: (afinjobw1): Verdienst aus Tätigkeit(en) während des Aufenthalts
 
 ao6: (afinstip1): Stipendium
 
@@ -445,9 +445,9 @@ ao10: (afinpar2): Partner\*in
 
 ao11: (afinbaf2): BAföG
 
-ao12: (afinjobv2): Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao12: (afinjobv2): Verdienst aus Tätigkeiten vor dem Aufenthalt
 
-ao13: (afinjobw2): Verdienst aus Tätigkeiten während des Auslandsaufenthalts
+ao13: (afinjobw2): Verdienst aus Tätigkeiten während des Aufenthalts
 
 ao14: (afinstip2): Stipendium
 
@@ -463,9 +463,9 @@ ao18: (afinpar3): Partner\*in
 
 ao19: (afinbaf3): BAföG
 
-ao20: (afinjobv3): Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao20: (afinjobv3): Verdienst aus Tätigkeiten vor dem Aufenthalt
 
-ao21: (afinjobw3): Verdienst aus Tätigkeiten während des Auslandsaufenthalts
+ao21: (afinjobw3): Verdienst aus Tätigkeiten während des Aufenthalts
 
 ao22: (afinstip3): Stipendium
 
