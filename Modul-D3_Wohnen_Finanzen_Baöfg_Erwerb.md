@@ -200,17 +200,13 @@ ao10: (feinbest): [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
 ao11: (feinandq; feinandqo): [50 Zeichen] [infield = € pro Monat; number, 4-stellig: 0 TO 9999]
 
-
-
-
-
 mv:
 
 ka: (it2 TO it11): !!davon entfallen auf:!!
 
 vc1: SHOW it3/ao3 (feinekio) IF dkinja = 2
 
-vc2: SHOW it5/ao5 (feinjobo1) IF sformdua != 1
+vc2: SHOW it5/ao5 (feinjobo1) IF sformdua == 1 | sformberu==1 | eaktsens>1
 
 vc3: SHOW it10/ao10 (feinbest) IF  h_gartcount >= 1 
 
