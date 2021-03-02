@@ -945,9 +945,9 @@ vc3: SHOW q3 IF (fbafja = 1) AND (fbafex = 2 | 3)
 
 vc4: SHOW q4 IF (fbafja = 1) AND (fbafex = 4)
 
-vc5: DON’T SHOW ao8, ao9 IF (fbafja = 2)
+vc5: SHOW ao8, ao9 IF (fbafja != 2)
 
-vc6: DON’T SHOW ao8, ao9 IF (fbafja = 1) AND (fbafex = 2 | 3)
+vc6: SHOW ao8, ao9 IF (fbafja != 1) AND (fbafex != 2 | 3)
 
 
 av:
