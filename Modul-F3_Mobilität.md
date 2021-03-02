@@ -9,7 +9,7 @@ qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
-in:
+in:t
 
 q1: Trauen Sie sich zu, ein komplettes Studium im Ausland zu absolvieren?
 
@@ -88,7 +88,7 @@ it:
 
 st:
 
-ao1: (ainfa1): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit Abschluss - ... - sonstiger Aufenthalt] (Dropdown)
+ao1: (ainfa1): [infield = Art des Aufenthalts; Auslandsstudium mit Abschluss - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfa1): 1: Auslandsstudium mit Abschluss
 
@@ -120,7 +120,7 @@ ao5: (ainfbj1): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 ao6: (ainfdau1): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
 
-ao7: (ainfa2): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
+ao7: (ainfa2): [infield = Art des Aufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfa2): 1: Auslandsstudium mit Abschluss
 
@@ -152,7 +152,7 @@ ao11: (ainfbj2): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown
 ao12: (ainfdau2): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
 
-ao13: (ainfa3): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
+ao13: (ainfa3): [infield = Art des Aufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfa3): 1: Auslandsstudium mit Abschluss
 
@@ -219,7 +219,7 @@ fv:
 
 hv:
 
-fo: Bitte jeweils "Art des Auslandsaufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt".
+fo: Bitte jeweils "Art des Aufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt".
 
 tr:
 
