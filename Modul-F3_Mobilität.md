@@ -9,7 +9,7 @@ qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
-in:t
+in:
 
 q1: Trauen Sie sich zu, ein komplettes Studium im Ausland zu absolvieren?
 
