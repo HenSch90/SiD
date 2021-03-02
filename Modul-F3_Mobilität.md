@@ -863,7 +863,7 @@ ao6: 6: Projektarbeit
 
 ao7: 7: Summer School
 
-ao8: 8: sonstiger Auslandsaufenthalt
+ao8: 8: anderer Auslandsaufenthalt
 
 ao9: -12: weiß ich noch nicht
 
