@@ -1269,7 +1269,7 @@ D3_21
 
 tc: IF eaktsens = 2 \|3 \|4
 
-vn: egr (egrfin1 / egrfin3 / egrfin4 / egrkar1 / egrkar2 / egrerf1 / egralt1 )
+vn: egr (egrfin1; egrkar2; egrkar1; /  egrerf1 / egralt1; egrfin3)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1406,7 +1406,7 @@ vc2: SHOW it5 IF h_gartcount >= 1
 
 vc3: SHOW it6 IF eaktsens = 2 |3 | 4
 
-vc4: SHOW it7 IF pflegang = 1 
+vc4: SHOW it7 IF pflegang1 = 1 | pflegang2 = 1
 
 av:
 
@@ -1442,7 +1442,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie ihren Gesundheitszustand im Allgemeinen ein?
+q: Wie schätzen Sie Ihren Gesundheitszustand im Allgemeinen ein?
 
 is:
 
@@ -1566,7 +1566,7 @@ it1: (depausgel): Durch mein Studium fühle ich mich ausgelaugt.
 
 it2: (depmuede):Ich fühle mich schon müde, wenn ich morgens aufstehe und wieder einen Tag an der Hochschule vor mir habe.
 
-it3: (depbelast): Das Studium ist eine hohe Belastung für mich
+it3: (depbelast): Das Studium ist eine hohe Belastung für mich.
 
 st:
 
@@ -1602,7 +1602,7 @@ tr:
             <zofar:transition target="D3_24"/>
         </zofar:transitions>
 
-hi1: Items bitte zufällig rotieren.
+hi:
 
 \--------------------------------
 
@@ -1619,7 +1619,7 @@ hl:
 
 in:
 
-q: Wie häufig hatten Sie in den letzten 4 Wochen körperliche Beschwerden?
+q: Wie häufig hatten Sie in den letzten vier Wochen körperliche Beschwerden?
 
 is:
 
@@ -1660,7 +1660,6 @@ tr:       <zofar:transitions>
 hi:
 
 \--------------------------------
-\--------------------------------
 
 D3_25
 ===
@@ -1681,7 +1680,7 @@ is:
 
 it1: (belast1): Ich brauche nicht viel Zeit, um mich von einem stressigen Ereignis zu erholen.
 
-it2: (belast2):Es fällt mir schwer zur Normalität zurückzukehren, wenn etwas Schlimmes passiert ist.
+it2: (belast2): Es fällt mir schwer zur Normalität zurückzukehren, wenn etwas Schlimmes passiert ist.
 
 it3: (belast3): Normalerweise überstehe ich schwierige Zeiten ohne größere Probleme.
 
