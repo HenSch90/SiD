@@ -7,7 +7,7 @@ tc:
 
 vn: daltein
 
-qt: offene Angabe
+qt: Dropdown-Menü
 
 hl:
 
@@ -21,7 +21,71 @@ it:
 
 st:
 
-ao: (daltein): [infield = "Alter"; number, 2-stellig: 1 TO 99]; Suffix: Jahre  
+ao1: Alter
+
+ao2: < 1 Jahr
+
+ao3: 1 Jahr
+
+ao4: 2 Jahre
+
+ao5: 3 Jahre
+
+ao6: 4 Jahre
+
+ao7: 5 Jahre
+
+ao8: 6 Jahre
+
+ao9: 7 Jahre
+
+ao10: 8 Jahre
+
+ao10: 9 Jahre
+
+ao11: 10 Jahre
+
+ao12: 11 Jahre
+
+ao13: 12 Jahre
+
+ao14: 13 Jahre
+
+ao15: 14 Jahre
+
+ao16: 15 Jahre
+
+ao17: 16 Jahre
+
+ao18: 17 Jahre
+
+ao19: 18 Jahre
+
+ao20: 19 Jahre
+
+ao21: 20 Jahre
+
+ao22: 21 Jahre
+
+ao23: 22 Jahre
+
+ao24: 23 Jahre
+
+ao25: 24 Jahre
+
+ao26: 25 Jahre
+
+ao27: 26 Jahre
+
+ao28: 27 Jahre
+
+ao29: 28 Jahre
+
+ao30: 29 Jahre
+
+ao31: 30 Jahre
+
+ao32: >30 Jahre
 
 mv:
 
@@ -31,7 +95,7 @@ vc:
 
 av: 
 
-kh: Bitte geben Sie an, wie alt Sie waren, als Sie nach Deutschland gekommen sind (1 bis 99).
+kh: 
 
 fv:
 
