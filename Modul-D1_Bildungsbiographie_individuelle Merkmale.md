@@ -242,7 +242,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="D1_5"/>
+            <zofar:transition target="D1_7"/>
         </zofar:transitions>
 
 hi: Auf dieser Seite werden untereinander drei Fragen mit den zugehörigen Antwortoptionen usw. dargestellt (zuerst q1 mit ao1, dann q2 mit ao2a und ao2b sowie abschließend q3 mit is3, ao3a, kh3a und ao3b). ao2a und ao2b bitte nebeneinander darstellen, ao3a und ao3b können gerne linksbündig untereinander darsgestellt werden. Wichtig: ao3a bitte als NUMBER mit einer Dezimalstelle programmieren und nicht als Textfeld/string!
