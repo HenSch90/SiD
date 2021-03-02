@@ -1030,7 +1030,7 @@ ao3: (aplanfinbaf): BAföG
 
 ao4: (aplanfinjobv): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
 
-ao5: (aplanfinjobw): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalt
+ao5: (aplanfinjobw): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalts
 
 ao6: (aplanfinstip): Stipendium
 
