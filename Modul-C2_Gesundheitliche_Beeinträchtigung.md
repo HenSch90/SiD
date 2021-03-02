@@ -547,7 +547,7 @@ hl:
 
 in:
 
-q: Haben Sie in den von Ihnen benannten Bereichen um individuelle Anpassungen gebeten oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
+q: Haben Sie bereits um individuelle Anpassungen gebeten oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt??
 
 is: Wenn Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl formale Antragstellungen als auch informelle Absprachen.
 
@@ -625,7 +625,7 @@ fv:
 
 hv:
 
-fo: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
+fo: "Studienorganisation" in fett über it1 platzieren; "Lehre und Lernen" in fett über it4 platzieren; "Prüfungen/Leistungsnachweise" in fett über it8 platzieren. 
 
 tr:
 
