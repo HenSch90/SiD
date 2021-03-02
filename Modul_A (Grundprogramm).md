@@ -4693,6 +4693,66 @@ hi:
 
 \------------------------------------------------------------
 
+N_9c
+=========
+
+tc:
+
+vn: covdigfor (covdigfor1; covdigfor2 covdigfor3; covdigfor4)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie viele Ihrer Lehrveranstaltungen und Prüfungen werden in digitaler Form organisiert?
+
+is:
+
+it1: (digfor1): in diesem Semester
+
+it2: (digfor2): im letzten Semester
+
+it3: (digfor3): in diesem Semester
+
+it4: (digfor4): im letzten Semester
+
+st:
+
+ao1: 1: keine
+
+ao2: 2:
+
+ao3: 3: etwa die Hälfte
+
+ao4: 4:
+
+ao5: 5: alle 
+
+mv:
+
+ka1: (it1-it2): als reine Online-Veranstaltung (z. B. Vorlesung, Seminar)
+
+ka2: (it3-it4): als Online-Prüfung (z. B. Klausur, mündl. Prüfung)
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\------------------------------------------------------------
 N_10
 =========
 
@@ -4823,7 +4883,29 @@ mv:
 
 ka:
 
-vc:
+vc1: SHOW it1 IF diglehranz1==1
+
+vc2: SHOW it2 IF diglehranz2==1
+
+vc3: SHOW it3 IF diglehranz3==1
+
+vc4: SHOW it4 IF diglehranz4==1
+
+vc5: SHOW it5 IF diglehranz5==1
+
+vc6: SHOW it6 IF diglehranz6==1
+
+vc7: SHOW it7 IF diglehranz7==1
+
+vc8: SHOW it8 IF diglehranz8==1
+
+vc9: SHOW it9 IF diglehranz9==1
+
+vc10: SHOW it10 IF diglehranz10==1
+
+vc11: SHOW it11 IF diglehranz11==1
+
+vc12: SHOW it12 IF diglehranz12==1
 
 av:
 
