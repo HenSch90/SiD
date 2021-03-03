@@ -5075,9 +5075,9 @@ D3_1
 
 tc:
 
-vn: wohnplz; wohnplzort
+vn: wohnplzort wohnplz;  wohnland
 
-qt: Einfachauswahl mit vertikalen ao und offener Angabe
+qt: offene Angabe
 
 hl:
 
@@ -5085,16 +5085,19 @@ in:
 
 q1: Wo wohnen Sie während der Vorlesungszeit hauptsächlich?
 
-q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an.
+q2: Falls Sie nicht in Deutschland leben, geben Sie bitte das Land an:
+
 is:
 
 it:
 
 st:
 
-ao1: (wohnplz): [infield = PLZ; number, 5-stellig: 01000 TO 99999] 
+ao1: (wohnplzort): Präfix: Ort: [60 Zeichen]
 
-ao2: (wohnplzort): [infield = Ort; 60 Zeichen]
+ao2: (wohnplz): Präfix: ggf. PLZ: [number, 5-stellig: 01000 TO 99999]
+
+ao3: (wohnland): Präfix: Land: [infield = Ort; 60 Zeichen] 
 
 mv:
 
@@ -5110,7 +5113,7 @@ fv:
 
 hv:
 
-fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
+fo: 
 
 tr:
 
@@ -5118,7 +5121,7 @@ tr:
             <zofar:transition target="D3_3"/>
         </zofar:transitions>
 
-hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
+hi: Bitte unter q1 ao1 und ao2 darstellen. Dann Absatz q2 und ao3 darstellen.
 
 \------------------------------------------------------------
 
@@ -5143,7 +5146,7 @@ it:
 
 st:
 
-ao1: 1: Präfix: Dauer: [wohnemino] (infield=Minutenangabe; NUMBER; 3-Stellen)
+ao1: 1: Präfix: Dauer: [wohnemino; infield Minutenangabe; number, 3-stellig: 000 TO 999]
 
 ao2: -12: weiß ich nicht
 
@@ -5153,7 +5156,7 @@ ka:
 
 vc:
 
-av: number: 3-Stellen: 1 TO 999
+av:
 
 kh: Bitte geben Sie die Dauer des einfachen Weges von Ihrer Wohnung zu Ihrer Hochschule an (1 bis 999).
 
@@ -5171,65 +5174,6 @@ tr:
 
 hi:
  
-\------------------------------------------------------------
-
-F3_24
-=========
-
-tc:
-
-vn: mobregmittel
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Welches Verkehrsmittel nutzen Sie überwiegend um an Ihre Hochschule zu gelangen?
-
-is: Bei kombinierter Nutzung geben Sie bitte das Verkehrsmittel an, mit dem Sie die längste Wegstrecke zurücklegen.
-
-it:
-
-st:
-
-ao1: 1: zu Fuß
-
-ao2: 2: Fahrrad
-
-ao3: 3: Öffentliche Verkehrsmittel
-
-ao4: 4: PKW (allein fahrend)
-
-ao5: 5: PKW (in Fahrgemeinschaft)
-
-ao6: 6: anderes
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-       <zofar:transitions>
-            <zofar:transition target="F3_25"/>
-        </zofar:transitions>
-
-hi:
-
 \------------------------------------------------------------
 
 N_17
@@ -5363,7 +5307,7 @@ B2_5
 
 tc:
 
-vn: frei (freispor; freikunst; freikult; freiparty; freifreu; freipc; freifimu; freiehr; freidiswiss; freidispol; freinix)
+vn: frei (freikunst; freibuch; freispor; freiehr)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -5375,27 +5319,17 @@ q: Wie häufig gehen Sie in Ihrer Freizeit folgenden Tätigkeiten nach?
 
 is:
 
-it1: (freispor): sportlich betätigen
 
-it2: (freikunst): künstlerisch betätigen (zeichnen,  musizieren)
+it1: (freikunst): künstlerische oder kulturelle Tätigkeiten
 
-it3: (freikult): Kulturveranstaltungen besuchen (Konzerte, Theater, Poetry-Slam etc.)
+it2: (freibuch): Bücher lesen
 
-it4: (freiparty): feiern, auf Partys gehen
+it5: (freifreu): Freund\*innen treffen
 
-it5: (freifreu): Freunde treffen
+it1: (freispor): sportlich aktiv sein
 
-it6: (freipc): Videospiele, Computer spielen
+it8: (freiehr): ehrenamtlich aktiv sein
 
-it7: (freifimu): Filme/Serien schauen, Musik hören
-
-it8: (freiehr): ehrenamtlich tätig sein
-
-it9: (freidiswiss): über wissenschaftliche Themen reden
-
-it10: (freidispol): über soziale und politische Fragen diskutieren
-
-it11: (freinix): einfach nichts tun
 
 st:
 
