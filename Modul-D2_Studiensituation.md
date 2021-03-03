@@ -1094,7 +1094,7 @@ q: Wie oft haben Sie in diesem Semester …
 
 is:.
 
-it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
+it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen verknüpft?
 
 .
 
@@ -1185,7 +1185,7 @@ it11: (sszustud11): Ihrem bisher erreichten Wissen und Können
 
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
