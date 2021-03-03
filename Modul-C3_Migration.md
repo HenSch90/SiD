@@ -13,7 +13,7 @@ hl:
 
 in:
 
-q: Wie alt waren Sie, als Sie nach Deutschland gekommen sind?
+q: Wie alt waren Sie als Sie nach Deutschland gekommen sind?
 
 is:
 
