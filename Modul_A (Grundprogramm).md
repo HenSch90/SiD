@@ -2845,7 +2845,7 @@ A_37a
 
 tc:
 
-vn: vsbplz; vsbort
+vn: vsbort; vsbplz
 
 qt: offene Angabe
 
@@ -2853,15 +2853,15 @@ hl:
 
 in:
 
-q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung (HZB) erhalten haben?
+q: An welchem Ort haben Sie gewohnt, als Sie die Hochschulzugangsberechtigung erhalten haben?
 
 it:
 
 st:
 
-ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield = Postleitzahl; Number, 5-stellig: 01000 TO 99999] (offene Angabe)
+ao1: (vsbort): Präfix: Ort: [Infield = Ort; 60 Zeichen] (offene Angabe)
 
-ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield = Ort; 60 Zeichen] (offene Angabe)
+ao2: (vsbplz): Präfix: ggf. PLZ: [Infield = Postleitzahl; Number, 5-stellig: 01000 TO 99999] (offene Angabe)
 
 mv:
 
@@ -2871,13 +2871,13 @@ vc:
 
 av: 
 
-kh: Bitte geben Sie nur Zahlen an.
+kh2: Bitte tragen Sie die fünfstellige Postleitzahl ein.
 
 fv: 
 
 hv:
 
-fo: Bitte jeweils zwischen den Präfixen und den Feldern für die offenen Angaben einen Zeilenumbruch einfügen (Präfixe also über den Feldern positionieren). Alles linksbündig untereinander anordnen.
+fo: 
 
 tr:
 
@@ -5013,9 +5013,9 @@ q: Wie schwer/leicht würde es Ihnen fallen, …
 is:
 
 
-it1: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)
+it1: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit PowerPoint, Prezi)
 
-it2: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, Open Office Calc)
+it2: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, OpenOffice Calc)
 
 it3: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
 
