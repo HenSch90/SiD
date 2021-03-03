@@ -17,7 +17,7 @@ in: Sie sind momentan im fortgeschrittenen Bachelorstudium und überlegen, ob Si
 
 Nachfolgend bitten wir Sie, für vier hypothetische Masterstudiengänge mit unterschiedlichen Eigenschaften einzuschätzen, wie wahrscheinlich Sie sich bewerben würden. Die Merkmale der Studiengänge sind jeweils in kurzen Texten dargestellt. 
 
-Es handelt sich um einen Studiengang an einer **staatlichen oder privaten** Hochschule, der auf Ihrem angestrebten Bachelorabschluss **fachlich aufbaut**. **Wohnkosten und Freizeitmöglichkeiten** entsprechen in etwa Ihrem **jetzigen Studienort**.
+Es handelt sich um einen Studiengang an einer !!staatlichen oder privaten!! Hochschule, der auf Ihrem angestrebten Bachelorabschluss !!fachlich aufbaut!!. !!Wohnkosten und Freizeitmöglichkeiten!! entsprechen in etwa Ihrem !!jetzigen Studienort!!.
 
 q: 
 
