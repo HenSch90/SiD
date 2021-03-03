@@ -707,7 +707,7 @@ in:
 
 q: Wie wichtig ist Ihnen ein Abschluss in Regelstudienzeit?
 
-is:
+is: Die Regelstudienzeit entspricht der Anzahl an Fachsemestern, die der Studienverlaufsplan vorsieht.
 
 it:
 
