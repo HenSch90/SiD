@@ -17,7 +17,7 @@ in: Sie sind momentan im fortgeschrittenen Bachelorstudium und überlegen, ob Si
 
 Nachfolgend bitten wir Sie, für vier hypothetische Masterstudiengänge mit unterschiedlichen Eigenschaften einzuschätzen, wie wahrscheinlich Sie sich bewerben würden. Die Merkmale der Studiengänge sind jeweils in kurzen Texten dargestellt. 
 
-Es handelt sich um einen Studiengang an einer **staatlichen oder privaten** Hochschule, der auf Ihrem angestrebten Bachelorabschluss **fachlich aufbaut**. **Wohnkosten und Freizeitmöglichkeiten** entsprechen in etwa Ihrem jetzigen Studienort.
+Es handelt sich um einen Studiengang an einer **staatlichen oder privaten** Hochschule, der auf Ihrem angestrebten Bachelorabschluss **fachlich aufbaut**. **Wohnkosten und Freizeitmöglichkeiten** entsprechen in etwa Ihrem **jetzigen Studienort**.
 
 q: 
 
@@ -51,7 +51,7 @@ fo:
 
 tr: GOTO mvig[deck]_1 if IF h_deck==[deck]
 
-hi:
+hi: Teile der Introduction werden nicht fett gedruckt.
 
 
 \--------------------------------
@@ -510,17 +510,17 @@ hl:
 in:
 
 q: Inwiefern erwarten Sie Schwierigkeiten nach Ihrem Bachelorabschluss, eine
-Stelle zu finden, die...?
+Stelle zu finden, die...
 
 is:
 
-it1: (jobfach): ... Ihren fachlichen Fähigkeiten entspricht
+it1: (jobfach): ...Ihren fachlichen Fähigkeiten entspricht.
 
-it2: (jobabsch): ... Ihrem Hochschulabschluss entspricht
+it2: (jobabsch): ...Ihrem Hochschulabschluss entspricht.
 
-it3: (joblohn): ... Ihren Lohnansprüchen genügt
+it3: (joblohn): ...Ihren Lohnansprüchen genügt.
 
-it4: (joberfue): ... Sie wirklich erfüllt
+it4: (joberfue): ...Sie wirklich erfüllt.
 
 st:
 
@@ -553,7 +553,7 @@ fo:
 tr: GOTO KSM-ma07 IF (sabsan = 6 OR sabsan = 7 OR sabsan = 8 OR sabsan = 9) OR (sabsan = 5 AND sabslaja <>1)
 GOTO KSM-ma06 IF ELSE
 
-hi: in der Vorschau entspricht die Reihenfolge der Items nicht der hier dargestellten. Bitte prüfen
+hi: 
 
 
 \--------------------------------
@@ -648,35 +648,35 @@ hl:
 
 in:
 
-q: Es gibt Gründe die für oder gegen ein Masterstudium sprechen. Bitte geben Sie an, inwiefern die folgenden Aussagen auf Sie persönlich zutreffen.
+q: Es gibt Gründe, die für oder gegen ein Masterstudium sprechen. Bitte geben Sie an, inwiefern die folgenden Aussagen auf Sie persönlich zutreffen.
 
 is:
 
-it1: (mastergrund1): Nur mit einem Master kann ich meinen Berufswunsch erfüllen
+it1: (mastergrund1): Nur mit einem Master kann ich meinen Berufswunsch erfüllen.
 
-it2: (mastergrund2): Ein Master verbessert meine Berufsaussichten
+it2: (mastergrund2): Ein Master verbessert meine Berufsaussichten.
 
-it3: (mastergrund3): Ein Master sichert mir ein höheres Einkommen
+it3: (mastergrund3): Ein Master sichert mir ein höheres Einkommen.
 
-it4: (mastergrund4): Ein Master besitzt ein höheres soziales Ansehen
+it4: (mastergrund4): Ein Master besitzt ein höheres soziales Ansehen.
 
-it5: (mastergrund5): Im Masterstudium kann ich mich persönlich entfalten 
+it5: (mastergrund5): Im Masterstudium kann ich mich persönlich entfalten.
 
-it6: (mastergrund6): Durch ein Masterstudium kann ich den Berufseinstieg hinausschieben
+it6: (mastergrund6): Durch ein Masterstudium kann ich den Berufseinstieg hinausschieben.
 
-it7: (mastergrund7): Ein Masterstudium dauert mir zu lange
+it7: (mastergrund7): Ein Masterstudium dauert mir zu lange.
 
-it8: (mastergrund8): Ich kann mir ein Masterstudium finanziell nicht leisten 
+it8: (mastergrund8): Ich kann mir ein Masterstudium finanziell nicht leisten. 
 
-it9: (mastergrund9): Ein Masterstudium ist viel zu theoretisch
+it9: (mastergrund9): Ein Masterstudium ist viel zu theoretisch.
 
-it10: (mastergrund10): Ein Master ist für den Berufseinstieg unnötig 
+it10: (mastergrund10): Ein Master ist für den Berufseinstieg unnötig. 
 
-it11: (mastergrund11): Das Anforderungsniveau des Masters ist zu hoch
+it11: (mastergrund11): Das Anforderungsniveau des Masters ist zu hoch.
 
-it12: (mastergrund12): Ich will mich nicht so stark spezialisieren
+it12: (mastergrund12): Ich will mich nicht so stark spezialisieren.
 
-it13: (mastergrund13): andere, und zwar... [mastergrund13o]
+it13: (mastergrund13): Sonstiges, und zwar... [mastergrund13o]
 
 st:
 
@@ -728,16 +728,16 @@ in:
 
 q: Wie stehen Sie zu den folgenden Aussagen bezüglich des Bachelorabschlusses?
 
-Ein Bachelorabschluss …
+Ein Bachelorabschluss...
 
 is:
 
-it1: (bawert1): … ist meiner Meinung nach kein vollwertiger Hochschulabschluss, vielmehr vergleichbar mit
-der beruflichen Ausbildung
+it1: (bawert1): ...ist kein vollwertiger Hochschulabschluss, sondern vergleichbar mit
+der beruflichen Ausbildung.
 
-it2: (bawert2): … ist nur ein Zwischenschritt zu einem Masterstudium
+it2: (bawert2): ...ist nur ein Zwischenschritt zu einem Masterstudium.
 
-it3: (bawert3): … wird von Arbeitgeber*/innen kaum angesehen
+it3: (bawert3): ...wird von Arbeitgeber*/innen als Hochschulabschluss voll anerkannt.
 
 st:
 
@@ -767,6 +767,6 @@ hv:
 
 fo:
 
-tr: GOTO A_50
+tr: GOTO Abschlussseite
 
 hi:
