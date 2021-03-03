@@ -548,20 +548,15 @@ q3: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kindern 
 
 is:
 
+it1: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kindern.
 
-it1: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kind(ern).
+it2: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind(ern).
 
-it2: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kind.
+it3: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind.
 
-it3: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kindern.
+it4: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kindern.
 
-it4: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind(ern).
-
-it5: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind.
-
-it6: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kindern.
-
-it7: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche Atmosphäre.
+it5: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche Atmosphäre.
 
 
 st:
@@ -586,11 +581,11 @@ vc2: SHOW q2 IF dkinanz = 1
 
 vc3: SHOW q3 IF dkinanz \>1
 
-vc4: SHOW it1, it4 IF dkinanz = k.A.
+vc4: SHOW it2 IF dkinanz = k.A.
 
-vc5: SHOW it2, it5 IF dkinanz = 1
+vc5: SHOW it3 IF dkinanz = 1
 
-vc6: SHOW it3, it6 IF dkinanz \>1
+vc6: SHOW it4 IF dkinanz \>1
 
 av:
 
