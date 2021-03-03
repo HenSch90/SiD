@@ -411,7 +411,7 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
