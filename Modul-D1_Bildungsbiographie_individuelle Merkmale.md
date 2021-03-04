@@ -227,7 +227,7 @@ mv:
 
 ka:
 
-vc: Show q4 AND q5 AND is2 AND ao3 AND ao4a AND ao4b if vsbstyp = 10 | 11
+vc: Show q4 AND q5 AND is2 AND ao3 AND ao4a AND ao4b if (vsbstyp10 = 1 OR vsbstyp11 = 1)
 
 av:
 
