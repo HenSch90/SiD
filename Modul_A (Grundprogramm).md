@@ -4710,13 +4710,13 @@ q: Wie viele Ihrer Lehrveranstaltungen und Prüfungen werden in digitaler Form o
 
 is:
 
-it1: (digfor1): in diesem Semester
+it1: (covdigfor1): in diesem Semester
 
-it2: (digfor2): im letzten Semester
+it2: (covdigfor2): im letzten Semester
 
-it3: (digfor3): in diesem Semester
+it3: (covdigfor3): in diesem Semester
 
-it4: (digfor4): im letzten Semester
+it4: (covdigfor4): im letzten Semester
 
 st:
 
@@ -5075,7 +5075,7 @@ D3_1
 
 tc:
 
-vn: wohnplzort wohnplz;  wohnland
+vn: wohnplzort; wohnplz;  wohnland
 
 qt: offene Angabe
 
