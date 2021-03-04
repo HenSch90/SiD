@@ -4883,29 +4883,29 @@ mv:
 
 ka:
 
-vc1: SHOW it1 IF diglehranz1==1
+vc1: SHOW it1 IF diglehr1==1
 
-vc2: SHOW it2 IF diglehranz2==1
+vc2: SHOW it2 IF diglehr2==1
 
-vc3: SHOW it3 IF diglehranz3==1
+vc3: SHOW it3 IF diglehr3==1
 
-vc4: SHOW it4 IF diglehranz4==1
+vc4: SHOW it4 IF diglehr4==1
 
-vc5: SHOW it5 IF diglehranz5==1
+vc5: SHOW it5 IF diglehr5==1
 
-vc6: SHOW it6 IF diglehranz6==1
+vc6: SHOW it6 IF diglehr6==1
 
-vc7: SHOW it7 IF diglehranz7==1
+vc7: SHOW it7 IF diglehr7==1
 
-vc8: SHOW it8 IF diglehranz8==1
+vc8: SHOW it8 IF diglehr8==1
 
-vc9: SHOW it9 IF diglehranz9==1
+vc9: SHOW it9 IF diglehr9==1
 
-vc10: SHOW it10 IF diglehranz10==1
+vc10: SHOW it10 IF diglehr10==1
 
-vc11: SHOW it11 IF diglehranz11==1
+vc11: SHOW it11 IF diglehr11==1
 
-vc12: SHOW it12 IF diglehranz12==1
+vc12: SHOW it12 IF diglehr12==1
 
 av:
 
