@@ -514,13 +514,13 @@ Stelle zu finden, die...
 
 is:
 
-it1: (jobfach): ...Ihren fachlichen Fähigkeiten entspricht.
+it1: (jobfach): ...Ihren fachlichen Fähigkeiten entspricht?
 
-it2: (jobabsch): ...Ihrem Hochschulabschluss entspricht.
+it2: (jobabsch): ...Ihrem Hochschulabschluss entspricht?
 
-it3: (joblohn): ...Ihren Lohnansprüchen genügt.
+it3: (joblohn): ...Ihren Lohnansprüchen genügt?
 
-it4: (joberfue): ...Sie wirklich erfüllt.
+it4: (joberfue): ...Sie wirklich erfüllt?
 
 st:
 
