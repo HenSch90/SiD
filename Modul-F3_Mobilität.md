@@ -312,7 +312,7 @@ vc:
 
 SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF ainfaus == 2 OR ainfaus==MISSING
 
-SHOW q2 AND ao1 TO ao16 AND ka1 TO ka4 IF ainfaus == 3
+SHOW q2 AND ao1 TO ao12 AND ka1 TO ka4 IF ainfaus == 3
 
 SHOW q2 AND is AND ao1 TO ao18 AND ka1 TO ka6 IF ainfaus == 4
 
