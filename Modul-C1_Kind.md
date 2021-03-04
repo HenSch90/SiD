@@ -1,4 +1,3 @@
-
 \--------------------------------
 
 C1_1
@@ -63,7 +62,7 @@ tc: IF dkinja = 2
 
 vn: dkinage (dkinagej / dkinage1 / dkinage2 / dkinage3 / dkinage4 / dkinage5)
 
-qt: offene Angaben mit vertikaler Eingabespalte/-feldern
+qt: Mehrere Dropdownmenüs vertikal
 
 hl:
 
@@ -77,31 +76,85 @@ q3: Wie alt sind Ihre Kinder?
 
 is: Mit “1. Kind” meinen wir Ihr ältestes Kind.
 
-it1: (dkinagej) [infield = Alter jüngstes Kind]
+it1: (dkinagej) Alter jüngstes Kind:
 
-it2: (dkinage1): [infield = Alter Ihres Kindes]
+it2: (dkinage1): Alter Ihres Kindes:
 
-it3: (dkinage2): [infield = Alter 1. Kind]
+it3: (dkinage2): Alter 1. Kind:
 
-it4: (dkinage3): [infield = Alter 2. Kind]
+it4: (dkinage3): Alter 2. Kind:
 
-it5: (dkinage4): [infield = Alter 3. Kind]
+it5: (dkinage4): Alter 3. Kind:
 
-it6: (dkinage5): [infield = Alter 4. Kind]
+it6: (dkinage5): Alter 4. Kind:
 
 st:
 
-ao1: (dkinagej): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao1: Alter
 
-ao2: (dkinage1): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao2: < 1 Jahr
 
-ao3: (dkinage2): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao3: 1 Jahr
 
-ao4: (dkinage3): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao4: 2 Jahre
 
-ao5: (dkinage4): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao5: 3 Jahre
 
-ao6: (dkinage5): 4-stellig: 0 TO 99, number, Suffix: Jahre
+ao6: 4 Jahre
+
+ao7: 5 Jahre
+
+ao8: 6 Jahre
+
+ao9: 7 Jahre
+
+ao10: 8 Jahre
+
+ao10: 9 Jahre
+
+ao11: 10 Jahre
+
+ao12: 11 Jahre
+
+ao13: 12 Jahre
+
+ao14: 13 Jahre
+
+ao15: 14 Jahre
+
+ao16: 15 Jahre
+
+ao17: 16 Jahre
+
+ao18: 17 Jahre
+
+ao19: 18 Jahre
+
+ao20: 19 Jahre
+
+ao21: 20 Jahre
+
+ao22: 21 Jahre
+
+ao23: 22 Jahre
+
+ao24: 23 Jahre
+
+ao25: 24 Jahre
+
+ao26: 25 Jahre
+
+ao27: 26 Jahre
+
+ao28: 27 Jahre
+
+ao29: 28 Jahre
+
+ao30: 29 Jahre
+
+ao31: 30 Jahre
+
+ao32: >30 Jahre
 
 mv:
 
@@ -129,7 +182,7 @@ vc10: SHOW q3 IF dkinanz >= 2
 
 av: 
 
-kh: Bitte geben Sie das Lebensalter Ihres Kindes an (0 bis 99).
+kh: 
 
 fv:
 
@@ -143,66 +196,7 @@ tr:
             <zofar:transition target="C1_4"/>
         </zofar:transitions>
 
-hi: Dezimalstellen zulassen.
-
-\--------------------------------
-
-C1_3
-====
-
-tc: IF dkinja=2
-
-vn: dkinro (dkinrono / dkinrofr / dkinrokom / dkinroges / dkinroelt / dkinrover)
-
-qt: Mehrfachauswahl mit vertikalen ao
-
-hl:
-
-in:
-
-q: Kannten Sie jemanden, der bereits vor Ihnen mit Kind studiert hat?
-
-is: Bitte alles Zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: (dkinrono): nein, niemanden [EK] 
-
-ao2: (dkinrofr): Freund\*innen, Bekannte
-
-ao3: (dkinrokom): Kommiliton\*innen
-
-ao4: (dkinroges): Geschwister
-
-ao5: (dkinroelt): Eltern
-
-ao6: (dkinrover): andere Verwandte
-
-mv:
-
-ka: (ao2 TO ao6): ja, und zwar:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: "ja, und zwar:" zwischen ao1 und ao2 setzen.
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C1_11"/>
-        </zofar:transitions>
-
-hi:
+hi: Kategorien des Dropdown-Menüs sind für jede Variable gleich (siehe ao1-ao32). ao1 (Alter) soll vorausgewählt sein
 
 \--------------------------------
 
@@ -300,7 +294,7 @@ fo:
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="C1_3"/>
+            <zofar:transition target="C1_7"/>
         </zofar:transitions>
 
 hi:
@@ -320,11 +314,11 @@ hl:
 
 in:
 
-q1: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes/Ihrer Kinder?
+q1: Nutzen Sie üblicherweise die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes/Ihrer Kinder?
 
-q2: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes?
+q2: Nutzen Sie üblicherweise die folgenden Einrichtungen/Angebote zur Betreuung Ihres Kindes?
 
-q3: Nutzen Sie die folgenden Einrichtungen/Angebote zur Betreuung Ihrer Kinder?
+q3: Nutzen Sie üblicherweise die folgenden Einrichtungen/Angebote zur Betreuung Ihrer Kinder?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -371,7 +365,7 @@ fo: ao8 bitte etwas absetzen.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="C1_8"/>
+            <zofar:transition target="C1_6"/>
         </zofar:transitions>
 
 hi:
@@ -391,11 +385,11 @@ hl:
 
 in:
 
-q1: Wie häufig betreuen die folgenden Personen Ihr(e) Kind(er)?
+q1: Wie häufig betreuen üblicherweise die folgenden Personen Ihr(e) Kind(er)?
 
-q2: Wie häufig betreuen die folgenden Personen Ihr Kind?
+q2: Wie häufig betreuen üblicherweise die folgenden Personen Ihr Kind?
 
-q3: Wie häufig betreuen die folgenden Personen Ihre Kinder?
+q3: Wie häufig betreuen üblicherweise die folgenden Personen Ihre Kinder?
 
 is:
 
@@ -458,7 +452,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="C1_7"/>
+            <zofar:transition target="C1_9"/>
         </zofar:transitions>
 
 hi:
@@ -554,20 +548,15 @@ q3: Wie sehr treffen die folgenden Aussagen auf Sie und Ihr Studium mit Kindern 
 
 is:
 
+it1: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kindern.
 
-it1: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kind(ern).
+it2: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind(ern).
 
-it2: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kind.
+it3: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind.
 
-it3: (dkinverlver): Die Lehrenden meines Studiengangs haben Verständnis für die besondere Situation von Studierenden mit Kindern.
+it4: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kindern.
 
-it4: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind(ern).
-
-it5: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kind.
-
-it6: (dkinverreg): Die geltenden Studienregelungen erleichtern das Studieren mit Kindern.
-
-it7: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche Atmosphäre.
+it5: (dkinveratm): In meinem Studiengang herrscht eine kinderfreundliche Atmosphäre.
 
 
 st:
@@ -592,11 +581,11 @@ vc2: SHOW q2 IF dkinanz = 1
 
 vc3: SHOW q3 IF dkinanz \>1
 
-vc4: SHOW it1, it4 IF dkinanz = k.A.
+vc4: SHOW it2 IF dkinanz = k.A.
 
-vc5: SHOW it2, it5 IF dkinanz = 1
+vc5: SHOW it3 IF dkinanz = 1
 
-vc6: SHOW it3, it6 IF dkinanz \>1
+vc6: SHOW it4 IF dkinanz \>1
 
 av:
 
@@ -623,34 +612,27 @@ C1_12
 
 tc: IF dkinja = 2
 
-vn: dkin (dkinwistu / dkinentstu)
+vn: dkinwistu
 
-qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+qt: Einfachauswahlmatrix/5er-Skala mit vertikalen ao
 
 hl:
 
 in:
 
-q: Wie sehr stimmen Sie den folgenden Aussagen zu?
+q1: Wie wichtig ist es Ihnen, dass Ihr Kind später einmal studiert/Ihre Kinder später einmal studieren?
+
+q2: Wie wichtig ist es Ihnen, dass Ihr Kind später einmal studiert?
+
+q3: Wie wichtig ist es Ihnen, dass Ihre Kinder später einmal studieren?
 
 is:
 
-it1: (dkinwistu): Mir ist es wichtig, dass mein Kind später einmal studiert/meine Kinder später einmal studieren.
-
-it2: (dkinwistu): Mir ist es wichtig, dass mein Kind später einmal studiert.
-
-it3: (dkinwistu): Mir ist es wichtig, dass meine Kinder später einmal studieren.
-
-it4: (dkinentstu): Wenn mein Kind nicht studiert/meine Kinder nicht studieren, wäre ich enttäuscht.
-
-it5: (dkinentstu): Wenn mein Kind nicht studiert, wäre ich enttäuscht.
-
-it6: (dkinentstu): Wenn meine Kinder nicht studieren, wäre ich enttäuscht.
-
+it1: 
 
 st:
 
-ao1: 1: gar nicht
+ao1: 1: gar nicht wichtig
 
 ao2: 2: 
 
@@ -658,17 +640,17 @@ ao3: 3:
 
 ao4: 4: 
 
-ao5: 5: voll und ganz
+ao5: 5: sehr wichtig
 
-mv:
+mv: -12: weiß ich nicht
 
 ka:
 
-vc1: SHOW it1, it4 IF dkinanz = k. A.
+vc1: SHOW q1 IF dkinanz = k. A.
 
-vc2: SHOW it2, it5 IF dkinanz = 1
+vc2: SHOW q2 IF dkinanz = 1
 
-vc3: SHOW it3, it6 IF dkinanz \> 1
+vc3: SHOW q3 IF dkinanz \> 1
 
 av:
 
@@ -678,12 +660,12 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"weiß ich nicht" etwas absetzen.
 
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="C1_13"/>
+            <zofar:transition target="C1_14"/>
         </zofar:transitions>
 
 hi:
@@ -703,7 +685,7 @@ hl:
 
 in:
 
-q: Was würden Sie künftigen Studienanfänger\*innen empfehlen
+q: Was würden Sie angehenden Studierenden empfehlen?
 
 is:
 
