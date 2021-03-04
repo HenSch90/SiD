@@ -924,7 +924,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -991,7 +991,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1058,7 +1058,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1125,7 +1125,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1193,7 +1193,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1260,7 +1260,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1327,7 +1327,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1394,7 +1394,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1461,7 +1461,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1528,7 +1528,7 @@ ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkei
 
 ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): Nichts davon [Exklusivkategorie]
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
