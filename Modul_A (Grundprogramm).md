@@ -997,9 +997,9 @@ A_12a
 
 tc:
 
-vn: dsib; dsibo
+vn: dsib; dsibanz
 
-qt: Einfachauswahl mit vertikalen ao und offener Angabe
+qt: Einfachauswahl mit vertikalen ao und Dropdown
 
 hl:
 
@@ -1015,7 +1015,7 @@ st:
 
 ao1: (dsib): 1: nein
 
-ao2: (dsib): 2: Ja, und zwar: ([dsibo], NUMBER, 2-Steller)
+ao2: (dsib): 2: Ja, und zwar: ([dsibanz], Dropdown, infield Anzahl, 1 bis 12 und mehr)
 
 mv:
 
@@ -1025,7 +1025,7 @@ vc:
 
 av:
 
-kh: Bitte geben Sie an, wieviele Geschwister Sie haben (1 bis 12).
+kh:
 
 fv:
 
@@ -1055,9 +1055,9 @@ in:
 
 q1: Wie alt ist Ihr Geschwisterteil und welches Geschlecht hat Ihr Geschwisterteil?
 
-q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben Ihre Geschwister jeweils?
+q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben sie? 
 
-is: Sollten Sie mehr als drei Geschwister haben, so nennen Sie uns bitte Ihre drei zeitlich nahestehendsten Geschwister. 
+is: Bitte beginnen Sie mit Ihrem ältesten Geschwisterteil.
 
 
 it1: (dsibageo1): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
@@ -1089,13 +1089,13 @@ ka3: (it3-it4): 2. Geschwisterteil:
 
 ka4: (it5-it6): 3. Geschwisterteil:
 
-vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibo = 1
+vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibanz = 1
 
-vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibo = 2
+vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibanz = 2
 
-vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibo = 3
+vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibanz = 3
 
-vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibo > 3
+vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibanz > 3
 
 av:
 
@@ -1105,7 +1105,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte wie folgt umsetzen: ka1, it1 und it2 nebeneinander darstellen und äqivalent bitte für die anderen Items umsetzen.
 
 tr:
     
@@ -1127,7 +1127,7 @@ hl:
 
 in:
 
-q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
+q: Umsorgen Sie regelmäßig pflegebedürftige Personen aus dem Familien- oder Freundeskreis?
 
 is: Nicht gemeint ist die Betreuung der eigenen Kinder.
 
