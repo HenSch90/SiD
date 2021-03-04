@@ -1,4 +1,3 @@
-
 \--------------------------------
 
 C2_0
@@ -54,7 +53,7 @@ C2_1
 
 tc: IF h_gartcount >= 1 & beschwer=2
 
-vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls; gbegrson; gbegrsono; gbegrka
+vn: gbegrmob; gbegrseh; gbegrohr; gbegrspr; gbegrpsy; gbegrchron; gbegrtls; gbegrson; gbegrka
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -82,7 +81,7 @@ it6: (gbegrchron): körperliche länger dauernde/chronische Krankheit (z. B. Rhe
 
 it7: (gbegrtls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
-it8: (gbegrson): Andere Beeinträchtigung/Erkrankung, und zwar: [gbegrsono] [offenes Eingabefeld; 250 Zeichen]
+it8: (gbegrson): andere Beeinträchtigung
 
 it9: (gbegrka): Beeinträchtigung ohne Zuordnung
 
@@ -132,7 +131,7 @@ fv:
 
 hv:
 
-fo: mv als erste, etwa abgesetzte Spalte, danach Skala.
+fo: mv als erste, etwas abgesetzte Spalte, danach Skala.
 
 tr:
 
@@ -187,7 +186,7 @@ ao10: (bedand): andere Anforderung
 
 mv:
 
-ka: (ao2 TO ao10): ja, und zwar:
+ka: (ao2 TO ao10): Ja, und zwar:
 
 vc:
 
@@ -199,7 +198,7 @@ fv:
 
 hv:
 
-fo: Bitte über ao2 "ja, und zwar:" positionieren.
+fo: Bitte über ao2 "Ja, und zwar:" positionieren.
 
 tr:
 
@@ -258,7 +257,7 @@ ao4: 4:
 
 ao5: 5: voll und ganz erfüllt
 
-mv:
+mv: -12: weiß ich nicht
 
 ka:
 
@@ -288,7 +287,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte mv als letzte etwas abgesetzte Spalte.
 
 tr:
 
@@ -428,7 +427,7 @@ ao2: (beausw): 2: Nein, weil keine Behinderung festgestellt wurde.
 
 ao3: (beausw): 3: Nein, weil der Grad der Behinderung niedriger als 50 eingestuft wurde.
 
-ao4: (beausw): 4: Ja, mit einem Grad der Behinderung (GdB) von [(beauswo): number, 3-stellig: 1 to 100]
+ao4: (beausw): 4: Ja, mit einem Grad der Behinderung von [(beauswo): number, 3-stellig: 1 to 100]
 
 mv:
 
@@ -461,7 +460,7 @@ C2_7
 
 tc: IF h_gartcount >= 1 & beschwer=2
 
-vn: schwleist; schwwieei; schwanwes; schwlv; schwselbst; schwgrup; schwflex; schwdicht; schwwieho; schwdauer; schwprart; schwno
+vn: schwleist; schwwieei; schwanwes; schwlv; schwselbst; schwgrup; schwflex; schwdicht; schwwieho; schwdauer; schwprart; schwprbed; schwno
 
 qt: Mehrfachauswahl mit vertikalen ao und mit Überkategorien/Zwischenüberschriften
 
@@ -497,9 +496,11 @@ ao9: (schwwieho): Wiederholung/Verschiebung von Prüfungen
 
 ao10: (schwdauer): Prüfungsdauer/Abgabefristen
 
-ao11: (schwprart): Prüfungsart/Prüfungsbedingungen
+ao11: (schwprart): Prüfungsart
 
-ao12: (schwno): Ich habe und hatte keine Schwierigkeiten. [EK]
+ao12: (schwprbed): Prüfungsbedingungen
+
+ao13: (schwno): Ich habe und hatte keine Schwierigkeiten. [EK]
 
 mv:
 
@@ -538,7 +539,7 @@ C2_8
 
 tc: IF schwleist=1 OR schwwieei=1 OR schwanwes=1 OR schwlv=1 OR schwselbst=1 OR schwgrup=1 OR schwflex=1 OR schwdicht=1 OR schwwieho=1 OR schwdauer=1 OR schwprart=1 
 
-vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart
+vn: ntaleist; ntawieei; ntaanwes; ntalv; ntaselbst; ntagrup; ntaflex; ntadicht; ntawieho; ntadauer; ntaprart; ntaprbed
 
 qt: Einfachauswahlmatrix mit horizontalen ao und mit Überkategorien/Zwischenüberschriften
 
@@ -546,9 +547,9 @@ hl:
 
 in:
 
-q: Haben Sie in den von Ihnen benannten Bereichen um individuelle Anpassungen gebeten oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt?
+q: Haben Sie bereits um individuelle Anpassungen gebeten oder Nachteilsausgleiche beantragt? Und wurden diese bewilligt??
 
-is: Wenn im Laufe Ihres Studiums bestimmte Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl Antragstellungen bei Prüfungsausschüssen/der Hochschulverwaltung als auch informelle Absprachen mit Lehrenden.
+is: Wenn Schwierigkeiten häufiger aufgetreten sind, beziehen Sie sich bitte auf die letzte Situation. Bitte berücksichtigen Sie sowohl formale Antragstellungen als auch informelle Absprachen.
 
 it1: (ntaleist): Leistungspensum/festgelegte Studienordnung
 
@@ -570,7 +571,9 @@ it9: (ntawieho): Wiederholung/Verschiebung von Prüfungen
 
 it10: (ntadauer): Prüfungsdauer/Abgabefristen
 
-it11: (ntaprart): Prüfungsart/Prüfungsbedingungen
+it11: (ntaprart): Prüfungsart
+
+it12: (ntaprbed): Prüfungsbedingungen
 
 st:
 
@@ -610,6 +613,8 @@ vc10: SHOW it10 IF schwdauer=1
 
 vc11: SHOW it11 IF schwprart=1 
 
+vc12: SHOW it12 IF schwprbed=1
+
 vc:
 
 av:
@@ -620,7 +625,7 @@ fv:
 
 hv:
 
-fo: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
+fo: "Studienorganisation" in fett über it1 platzieren; "Lehre und Lernen" in fett über it4 platzieren; "Prüfungen/Leistungsnachweise" in fett über it8 platzieren. 
 
 tr:
 
@@ -651,6 +656,9 @@ hi:
 
 C2_9
 ====
+
+
+
 
 tc: IF ntaleist=1 OR ntawieei=1 OR ntaanwes=1 OR ntalv=1 OR ntaselbst=1 OR ntagrup=1 OR ntaflex=1 OR ntadicht=1 OR ntawieho=1 OR ntadauer=1 OR ntaprart=1
 
@@ -686,7 +694,9 @@ it9: (hilfwieho): Wiederholung/Verschiebung von Prüfungen
 
 it10: (hilfdauer): Prüfungsdauer/Abgabefristen
 
-it11: (hilfprart): Prüfungsart/Prüfungsbedingungen
+it11: (hilfprart): Prüfungsart
+
+it12: (hilfprbed): Prüfungsbedingungen
 
 st:
 
@@ -727,6 +737,8 @@ vc9: SHOW it9 IF ntawieho=1
 vc10: SHOW it10 IF ntadauer=1
 
 vc11: SHOW it11 IF ntaprart=1
+
+vc12: SHO it12 IF ntaprbed=1
 
 av:
 
@@ -871,7 +883,11 @@ fv:
 
 hv:
 
-fo: kbmem/"Wurde mir nicht mitgeteilt." als EK absetzen
+
+
+
+
+fo: ao10: (kbmem): Wurde mir nicht mitgeteilt. als EK absetzen
 
 tr:
 
@@ -937,6 +953,10 @@ kh:
 fv:
 
 hv:
+
+
+
+
 
 fo1: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (quasi links von der Spalte "überhaupt nicht").
 
@@ -1014,6 +1034,9 @@ hi:
 
 C2_13
 =====
+
+
+
 
 tc: IF beauftr = 3 OR besoz = 3 OR bepsy = 3 OR bestud = 3 OR beselb = 3 OR beand = 3
 
