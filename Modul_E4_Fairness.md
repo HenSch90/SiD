@@ -886,7 +886,7 @@ KSM-fai16
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -953,7 +953,7 @@ KSM-fai17
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1020,7 +1020,7 @@ KSM-fai18
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1087,7 +1087,7 @@ KSM-fai19
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1155,7 +1155,7 @@ KSM-fai20
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1222,7 +1222,7 @@ KSM-fai21
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1289,7 +1289,7 @@ KSM-fai22
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1356,7 +1356,7 @@ KSM-fai23
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1423,7 +1423,7 @@ KSM-fai24
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
@@ -1490,7 +1490,7 @@ KSM-fai25
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
 qt: Mehrfachauswahl mit Exklusivkategorie
 
