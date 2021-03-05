@@ -1,4 +1,3 @@
-
 D1_1
 ==
 
@@ -12,7 +11,7 @@ hl:
 
 in:
 
-q: An welcher Schule haben Sie Ihre Studienberechtigung erworben?
+q: An welcher Schule haben Sie die Hochschulzugangsberechtigung erworben?
 
 is:
 
@@ -70,7 +69,7 @@ in:
 
 q: Bitte nennen Sie uns Ihre schulischen Prüfungsfächer inklusive der jeweiligen Abschlussnote.
 
-is: Beziehen Sie Ihre Angaben bitte auf Ihr Abschlussjahr.
+is: Punktzahl bitte in Note umrechnen.
 
 it:
 
@@ -186,9 +185,9 @@ D1_4
 
 tc: IF (vsbstyp= 10 | 11) | (vausbja=3)
 
-vn: vausberufo; vausbzpjo; vausbzpmo; vausbnoteo; vausbnote
+vn: vausberufo; vausbzpjo; vausbzpmo; vausaufo; vausaufojo; vausaufomo
 
-qt: offene Angabe / Drop-Down / Einfachauswahl/Exklusivkategorie
+qt: offene Angabe / Drop-Down / Einfachauswahl / Exklusivkategorie
 
 hl:
 
@@ -196,15 +195,17 @@ in:
 
 q1: Welchen Beruf haben Sie (zuletzt) erlernt?
 
-q2: Wann haben Sie die Berufsausbildung abgeschlossen?
+q2: Tragen Sie hier bitte Ihre Berufsausbildung ein.
 
-q3: Mit welcher Note haben Sie Ihre Berufsausbildung abgeschlossen?
+q3: Wann haben Sie die Berufsausbildung abgeschlossen?
 
-is1:
+q4: Tragen Sie hier bitte Ihre Aufstiegsfortbildung ein.
 
-is2:
+q5: Wann haben Sie die Aufstiegsfortbildung abgeschlossen?
 
-is3: Für den Fall, dass Sie keine Noten erhalten haben, sondern Ihre Leistungen mit Punkten, Prozentangaben o. Ä. bewertet wurden, rechnen Sie diese bitte in Noten um.
+is1: Beispielsweise Mechatroniker/*in, Bankkauffrau oder-mann
+
+is2: Beispielsweise Elektrotechnikmeister/*in, Bankfachwirt/*in, Betriebswirt/*in
 
 it:
 
@@ -216,19 +217,21 @@ ao2a: (vausbzpjo): [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
 
 ao2b: (vausbzpmo): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-ao3a: (vausbnoteo): [infield = Abschlussnote (z. B. 2,5); number, 3-stellig: 1,0 TO 4,0] (offene Angabe mit Dezimalstelle)
+ao3: (vausaufo): [infield = Aufstiegsfortbildung; 80 Zeichen] (offene Angabe)
 
-ao3b: (vausbnote): Ich habe keine Note erhalten. [EK]
+ao4a: (vausaufojo): [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
+
+ao4b: (vausaufomo): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
 mv:
 
 ka:
 
-vc:
+vc: Show q4 AND q5 AND is2 AND ao3 AND ao4a AND ao4b if (vsbstyp10 = 1 OR vsbstyp11 = 1)
 
 av:
 
-kh3a: (vausbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh: 
 
 fv:
 
@@ -251,7 +254,7 @@ D1_7
 
 tc: IF (ssemhs <= 4 | isMissing(ssemhs)) 
 
-vn: stfw (stfwein / stfwart / stfwzul / stfwalt / stfwzeit / stfwfam / stfwber / stfwent / stfwbega / stfwint / stfwwiss / stfwverf / stfwverb / stfwand / stfwando)
+vn: stfw (stfwein / stfwart / stfwalt / stfwzeit / stfwfam / stfwber / stfwbega / stfwint / stfwwiss / stfwverf / stfwverb / stfwand / stfwando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -259,37 +262,33 @@ hl:
 
 in:
 
-q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches?  
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches? 
 
 is:
 
 it1: (stfwein): Einkommens- und Karrierechancen
 
-it2: (stfwart): gute Aussichten auf sicheren Arbeitsplatz
+it2: (stfwart): gute Aussichten auf sicheren Arbeitsplatz 
 
-it3: (stfwzul): keine Zulassungsbeschränkungen
+it3: (stfwalt): keine Zulassung im gewünschten Studienfach
 
-it4: (stfwalt): Ausweichlösung, da keine Zulassung im gewünschten Studienfach
+it4: (stfwzeit): kurze Studienzeiten
 
-it5: (stfwzeit): kurze Studienzeiten
+it5: (stfwfam): Eltern/Familie haben mir dazu geraten
 
-it6: (stfwfam): Eltern/Familie haben mir dazu geraten
+it6: (stfwber): fester Berufswunsch
 
-it7: (stfwber): fester Berufswunsch
+it7: (stfwbega): eigene Begabung
 
-it8: (stfwent): persönliche Entfaltung
+it8: (stfwint): spezielles Fachinteresse
 
-it9: (stfwbega): eigene Begabung
+it9: (stfwwiss): eine gute wissenschaftliche Ausbildung
 
-it10: (stfwint): spezielles Fachinteresse
+it10: (stfwverf): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
 
-it11: (stfwwiss): eine gute wissenschaftliche Ausbildung
+it11: (stfwverb): Vereinbarkeit meiner Beeinträchtigung(en) mit späteren Beschäftigungsmöglichkeiten
 
-it12: (stfwverf): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
-
-it13: (stfwverb): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
-
-it14: (stfwand): Anderes, und zwar: [(stfwando); 100 Zeichen]
+it12: (stfwand): Anderes, und zwar: [(stfwando); 100 Zeichen]
 
 st:
 
@@ -307,7 +306,7 @@ mv:
 
 ka:
 
-vc: SHOW it13 (stfwverb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it11 (stfwverb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
@@ -334,7 +333,7 @@ D1_8
 
 tc: IF (ssemhs <= 4 | isMissing(ssemhs)) | (sabsan = 2)
 
-vn: hsw (hswkont / hswbed / hswatt / hswfach / hswrank / hswruf / hswtrad / hswzul / hswint / hsweng / hswtz / hswsupp / hswdig / hswuntb / hswbarr / hswand / hswando)
+vn: hsw (hswkont / hswbed / hswatt / hswfach / hswrank / hswtrad / hswzul / hswint / hswtz / hswsupp / hswbarr / hswand / hswando)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -356,27 +355,19 @@ it4: (hswfach): gewünschte Fachrichtung
 
 it5: (hswrank): gute Platzierung meines Fachs in Rankings
 
-it6: (hswruf): guter Ruf der Lehrenden in meinem Fachgebiet
+it6: (hswtrad): Tradition und Ruf der Hochschule
 
-it7: (hswtrad): Tradition und Ruf der Hochschule
+it7: (hswzul): keine Zulassung an Wunschhochschule
 
-it8: (hswzul): keine Zulassung an Wunschhochschule
+it8: (hswint): internationale Ausrichtung der Hochschule
 
-it9: (hswint): internationale Ausrichtung der Hochschule
+it9: (hswtz): Möglichkeit, in Teilzeit studieren zu können
 
-it10: (hsweng): Wunschstudiengang wird auf Englisch angeboten
+it10: (hswsupp): hochschulspezifische Beratungs- und Unterstützungsangebote
 
-it11: (hswtz): Möglichkeit, in Teilzeit studieren zu können
+it11: (hswbarr): Barrierefreiheit der Hochschule
 
-it12: (hswsupp): hochschulspezifische Beratungs- und Unterstützungsangebote
-
-it13: (hswdig): Online-Angebot (Studium und Lehre)
-
-it14: (hswuntb): beeinträchtigungsspezifische Unterstützungsangebote der Hochschule
-
-it15: (hswbarr): Barrierefreiheit der Hochschule
-
-it16: (hswand): Anderes, und zwar: [(hswando); 100 Zeichen]
+it12: (hswand): Anderes, und zwar: [(hswando); 100 Zeichen]
 
 st:
 
@@ -394,9 +385,7 @@ mv:
 
 ka:
 
-vc1: SHOW it14 (hswuntb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
-
-vc2: SHOW it15 (hswbarr) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it11 (hswbarr) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
@@ -674,7 +663,7 @@ in:
 
 q: Wann werden Sie Ihr derzeitiges Studium voraussichtlich abschließen?
 
-is:
+is: 
 
 it: 
 
@@ -700,11 +689,63 @@ fo:
 
 tr:
 
+hi:
+
+\--------------------------------
+
+D1_13 (Fortsetzung D1_13)
+===
+tc: IF NRW / zusatzsplit ==1
+
+vn: nrwregel
+
+qt: Einfachauswahl mit horizontaler ao
+
+hl:
+
+in:
+
+q: Wie wichtig ist Ihnen ein Abschluss in Regelstudienzeit?
+
+is: Die Regelstudienzeit entspricht der Anzahl an Fachsemestern, die der Studienverlaufsplan vorsieht.
+
+it:
+
+st:
+
+ao1: 1: gar nicht
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: in sehr hohem Maße
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
         <zofar:transitions>
             <zofar:transition target="A_27"/>
         </zofar:transitions>
 
-hi:
+hi: 
 
 \--------------------------------
 
@@ -749,7 +790,7 @@ ao4: (fach01 / fach02 / fach03 / fach04 / fach05): [infield = Studienfach; 80 Ze
 
 ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: Bachelor \ 2: Bachelor (Lehramt) \ 3: Master \ 4: Master (Lehramt) \ 5: Staatsexamen \ 6: Staatsexamen (Lehramt) \ 7: Diplom \ 8: künstlerische Abschlussprüfung \ 9: Promotion \ 10: anderer Abschluss (bspw. Ausländischer Abschluss, Magister) \ 11: kein Studienabschluss
 
-ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: begonnen \ 2: abgeschlossen \ 3: abgebrochen \ 4: unterbrochen
+ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: läuft noch \ 2: abgeschlossen \ 3: abgebrochen \ 4: unterbrochen
 
 mv:
 
@@ -787,7 +828,7 @@ hi3: Bitte bei it6/ao6 (!!in fett!!) !!letzter Stand!! darüber positionieren.
 D1_16 
 ===
 
-tc: IF ssujaaz>=1 
+tc: IF ssuja=1 
 
 vn: suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05 / sudau01 / sudau02 / sudau03 / sudau04 / sudau05 / subeur01 / subeur02 / subeur03 / subeur04 / subeur05
 
@@ -803,9 +844,7 @@ q2: Bitte beschreiben Sie Ihre Studienunterbrechungen näher.
 
 q3: Bitte beschreiben Sie Ihre letzten fünf Studienunterbrechungen näher.
 
-is1: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung.
-
-is2: Bitte beginnen Sie mit Ihrer letzten Studienunterbrechung. Sollten Sie mehr als fünfmal unterbrochen haben, beginnen Sie bitte mit Ihrer fünftletzten Unterbrechung.
+is: 
 
 it1: (suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05): Präfix: Zeitpunkt [infield = Semester] (Drop-Down)
 
@@ -825,19 +864,19 @@ mv:
 
 ka:
 
-vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssujaaz=1
+vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssuja=1
 
 vc2: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
-subeur02 IF ssujaaz=2
+subeur02 IF ssuja=2
 
 vc3: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
-subeur02 & suzeitp03 & sudau03 & subeur03 IF ssujaaz=3
+subeur02 & suzeitp03 & sudau03 & subeur03 IF ssuja=
 
 vc4: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
-subeur02 & suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 IF ssujaaz=4
+subeur02 & suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 IF ssuja=4
 
 vc5: SHOW q3/is2 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 &sudau02 & subeur02 & 
-suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 & suzeitp05 & sudau05 & subeur05 IF ssujaaz= 5
+suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 & suzeitp05 & sudau05 & subeur05 IF ssuja= 5
 
 av:
 
@@ -962,7 +1001,7 @@ D1_20
 tc:
 
 vn: kom  (komsch / kommuen / kombela / komdurch / komteam / komvera / komplan / komkomm / komtext / komwiss / kommeth / 
-komwisl / komkrit / kominter)
+komwisl / komkrit / kominter / komdig)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -970,7 +1009,7 @@ hl:
 
 in:
 
-q: Bitte schätzen Sie ein, inwieweit Sie aktuell über die folgenden Fähigkeiten und Kenntnisse verfügen.
+q: Inwieweit würden Sie sich die folgenden Fähigkeiten und Kenntnisse zuschreiben?
 
 is:
 
@@ -1001,6 +1040,8 @@ it12: (komwisl): eigene Wissenslücken erkennen und schließen
 it13: (komkrit): kritisches Denken/Ideen hinterfragen
 
 it14: (kominter): fachübergreifendes Wissen und Denken
+
+it15: (komdig): digitale Kompetenzen
 
 st:
 
@@ -1119,7 +1160,7 @@ D1_22
 
 tc:
 
-vn: dpfrag / dsfreiz / sfklaus / ssverl / kogorga / kogkrit / kogwied / mkogwach / ressanst / resskonz / lernumg / lit
+vn: dpfrag / dsfreiz / sfklaus / ssverl
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1139,23 +1180,6 @@ it3: (sfklaus): Ich sehe keinen Grund darin Stoff zu lernen, der wahrscheinlich 
 
 it4: (ssverl): Ich lerne nur das ernsthaft, was in meinem Studium verlangt wird.
 
-it5: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
-
-it6: (kogkrit): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
-
-it7: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
-
-it8: (mkogwach): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte, ohne 
-meine Unterlagen zu Hilfe zu nehmen.
-
-it9: (ressanst): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
-
-it10: (resskonz): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
-
-it11: (lernumg): Mein Arbeitsplatz ist so gestaltet, dass ich alles schnell finden kann.
-
-it12: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
-
 st:
 
 ao1: 1: trifft gar nicht zu
@@ -1167,6 +1191,80 @@ ao3: 3
 ao4: 4
 
 ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="D1_24"/>
+        </zofar:transitions>
+        
+hi: Items bitte zufällig rotieren.
+
+\--------------------------------
+
+D1_23 
+===
+
+tc:
+
+vn: kogorga / kogkrit / kogwied / mkogwach / ressanst / resskonz / lernumg / lit / digmat
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Im Folgenden möchten wir gerne mehr darüber erfahren, wie Sie lernen. Bitte geben Sie für jede der folgenden Lerntätigkeiten an, wie oft Sie diese ausführen. 
+
+is:
+
+it1: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
+
+it2: (kogkrit): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
+
+it3: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
+
+it4: (mkogwach): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte ohne 
+meine Unterlagen zu Hilfe zu nehmen.
+
+it5: (ressanst): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
+
+it6: (resskonz): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
+
+it7: (lernumg): Ich gestalte meinen Arbeitsplatz so, dass ich alles schnell finden kann.
+
+it8: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
+
+it9: (digmat): Ich nutze digitale Lehr- und Lernmaterialien.
+
+st:
+
+ao1: 1: sehr selten
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr oft
 
 mv:
 
@@ -1227,7 +1325,7 @@ it7: (pbigruh): Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe br
 
 it8: (pbignerv): Ich werde leicht nervös und unsicher.
 
-it9: (pbigkrea): Ich habe eine aktive Vorstellungskraft, bin phantasievoll.
+it9: (pbigkrea): Ich habe eine aktive Vorstellungskraft, bin fantasievoll.
 
 it10: (pbignoku): Ich habe nur wenig künstlerisches Interesse.
 
@@ -1327,3 +1425,150 @@ tr:
         </zofar:transitions>
 
 hi: Items bitte zufällig rotieren
+
+\--------------------------------
+
+D1_29 
+===
+
+tc:
+
+vn: intsoc1b / intsoc3b / intsoc4b / intinv1b / intinv2b / intinv4b / intart1b / intart2b / intart4b / intent1b / intent2b / intent3b / Intconv2b / intconv3b / intconv4b / intreal1b / intreal2b / intreal3b
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Bitte geben Sie an, wie sehr Sie sich für folgende Tätigkeiten interessieren. 
+
+is:
+
+it1: (intsoc1b): anderen Menschen helfen
+
+it2: (intsoc3b): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
+
+it3: (intsoc4b): mit Menschen (zusammen)arbeiten
+
+it4: (intinv1b): etwas genau beobachten und analysieren
+
+it5: (intinv2b): Unbekanntes erforschen, experimentieren
+
+it6: (intinv4b): Lösungen für komplexe Probleme finden
+
+it7: (intart1b): kreativ/gestaltend tätig sein
+
+it8: (intart2b): sich mit Kunst und Kultur befassen
+
+it9: (intart4b): etwas sprachlich ansprechend formulieren
+
+it10: (intent1b): Unternehmen gründen oder leiten
+
+it11: (intent2b): andere von einer Sache überzeugen
+
+it12: (intent3b): andere Menschen anleiten oder führen
+
+it13: (Intconv2b): sich mit rechtlichen Fragen beschäftigen
+
+it14: (intconv3b): Arbeitsprozesse planen
+
+it15: (intconv4b): mit Zahlen oder Statistiken arbeiten
+
+it16: (intreal1b): untersuchen, wie Dinge funktionieren
+
+it17: (intreal2b): innovative technische Lösungen entwickeln
+
+it18: (intreal3b): an Soft- oder Hardware arbeiten
+
+st:
+
+ao1: 1: überhaupt nicht
+
+ao2: 2
+
+ao3: 3
+
+ao4: 4
+
+ao5: 5: sehr stark
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\--------------------------------
+
+D1_30 
+===
+
+tc:
+
+vn: semtag
+
+qt: Einfachauswahl mit vertikalen ao´s
+
+hl:
+
+in:
+
+q: Wenn Sie an dieses Semester denken: An wie vielen Tagen in der Woche sind Sie an Ihrer Hochschule?
+An...
+
+is:
+
+it:
+
+st:
+
+ao1: 1: ... keinem Tag
+
+ao2: 2: ... 1 Tag
+
+ao3: 3: ... 2 Tagen
+
+ao4: 4: ... 3 Tagen
+
+ao5: 5: ... 4 Tagen
+
+ao6: 6: ... 5 Tagen
+
+ao7: 7: ... 6 Tagen
+
+ao8: 8: ... 7 Tagen
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
