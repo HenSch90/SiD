@@ -1,7 +1,6 @@
-
 \--------------------------------
 
-E1_0
+E1_0 
 ====
 
 tc: wohnfo = 4 | 5 | 6 | 7
@@ -24,7 +23,9 @@ st:
 
 ao1: 1: Studierendenwerk/Studentenwerk
 
-ao2: 2: anderer Träger (z. B. privat, kirchlich)
+ao2: 2: andere gemeinnützige Trägerschaft (z. B. kirchliche)
+
+ao2: 2: private Trägerschaft
 
 mv: -12: weiß ich nicht
 
@@ -61,7 +62,7 @@ hl:
 
 in:
 
-q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine Mensa oder Cafeteria Ihrer Hochschule?
+q: Wie häufig gehen Sie im Laufe einer für Sie typischen Woche zum Essen in eine Mensa oder Cafeteria Ihrer Hochschule bzw. wie oft nehmen Sie die take-away-Angebote wahr?
 
 is:
 
@@ -135,7 +136,7 @@ hl:
 
 in:
 
-q: Wie zufrieden sind Sie mit Ihrer Mensa/Cafeteria hinsichtlich der folgenden Aspekte?
+q: Wie zufrieden sind Sie mit Ihrer Mensa/Cafeteria und dem Speisenagebot hinsichtlich der folgenden Aspekte?
 
 is:
 
@@ -181,7 +182,7 @@ ao4: 4:
 
 ao5: 5: sehr zufrieden
 
-mv:
+mv: -12: kann ich nicht beurteilen
 
 ka:
 
@@ -205,7 +206,7 @@ tr:
             <zofar:transition target="E1_3"/>
         </zofar:transitions>
 
-hi:
+hi: mv bitte etwas absetzen
 
 
 \--------------------------------
@@ -244,7 +245,7 @@ it7: (inderprob): Ich probiere gerne Speisen aus anderen Kulturkreisen aus.
 
 it8: (inderschn): Mein Essen muss schnell zubereitet sein.
 
-it9: (inderunwe): Ich esse häufig unterwegs (to go).
+it9: (inderunwe): Ich esse häufig unterwegs (to-go).
 
 it10: (inderkoch): Meistens koche ich mein Essen selbst.
 
@@ -365,7 +366,7 @@ E1_6
 ===
 tc:
 
-vn: ibedsfin; ibedfinbs; ibedfinwo; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedsuch; ibedvbew;
+vn: ibedsfin; ibedfinbs; ibedfinwo; ibedkv; ibedafin; ibedpart; ibedfamu; ibeddep; ibedsuch; ibedkont; ibedvbew;
 ibedvbki; ibedvbhc; ibedllpran; ibedaoz; ibedabersw; ibedaorg; ibedabs; ibebsln; ibebssu;
 
 qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
@@ -396,25 +397,27 @@ it8: (ibeddep): depressive Verstimmungen
 
 it9: (ibedsuch): Suchtprobleme
 
-it10: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
+it10: (ibedkont): Mangel an persönlichen Kontakten
 
-it11: (ibedvbki): Vereinbarkeit von Studium und Kind
+it11: (ibedvbew): Vereinbarkeit von Studium und Erwerbstätigkeit
 
-it12: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
+it12: (ibedvbki): Vereinbarkeit von Studium und Kind
 
-it13: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
+it13: (ibedvbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
 
-it14: (ibedaoz): Arbeitsorganisation, Zeitmanagement
+it14: (ibedllpran): Lern-/Leistungsprobleme, Prüfungsangst
 
-it15: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
+it15: (ibedaoz): Arbeitsorganisation, Zeitmanagement
 
-it16: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
+it16: (ibedabersw): Studienorganisation, Studienganggestaltung/-wechsel
 
-it17: (ibedabs): Studienabschlussprobleme
+it17: (ibedaorg): Organisation eines studienbezogenen Auslandsaufenthalts
 
-it18: (ibebsln): Nachteilsausgleiche in Studium und Prüfungen
+it18: (ibedabs): Studienabschlussprobleme
 
-it19: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
+it19: (ibebsln): Nachteilsausgleiche in Studium und Prüfungen
+
+it20: (ibebssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
 
 st:
 
@@ -432,17 +435,17 @@ mv:
 
 ka1: (it1 TO it5): !!finanzierungsbezogene Themen!!
 
-ka2: (it6 TO it9): !!persönliche Themen!!
+ka2: (it6 TO it10): !!persönliche Themen!!
 
-ka3: (it10 TO it19): !!studienbezogene Themen!!
+ka3: (it11 TO it20): !!studienbezogene Themen!!
 
-vc1: SHOW it2, it12, it18, it19 IF h_gartcount >= 1
+vc1: SHOW it2, it13, it19, it20 IF h_gartcount >= 1
 
 vc2: SHOW it6 IF demofam = 2 | 3
 
-vc3: SHOW it10 IF eaktsens = 2 | 3 | 4
+vc3: SHOW it11 IF eaktsens = 2 | 3 | 4
 
-vc4: SHOW it11 IF dkinja = 2
+vc4: SHOW it12 IF dkinja = 2
 
 av:
 
@@ -456,7 +459,7 @@ fo1: Bitte über it1 "finanzierungsbezogene Themen" linksbündig positionieren.
 
 fo2: Bitte über it6 "persönliche Themen" linksbündig positionieren.
 
-fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
+fo3: Bitte über it11 "studienbezogene Themen" linksbündig positionieren.
 
 tr: 
 
@@ -473,10 +476,9 @@ hi:
 E1_7
 ====
 
-tc: ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
+tc: ibedsfin > 1 OR ibedfinbs > 1 OR ibedfinwo > 1 OR ibedkv > 1 OR ibedafin > 1 OR ibedpart > 1 OR ibedfamu > 1 OR ibeddep > 1 OR ibedsuch > 1 OR ibedkont > 1 OR ibedvbew > 1 OR ibedvbki > 1 OR ibedvbhc > 1 OR ibedllpran > 1 OR ibedaoz > 1 OR ibedabersw > 1 OR ibedaorg > 1 OR ibedabs > 1 OR ibebsln > 1 OR ibebssu > 1 
 
-vn: iinasfin; iinafinbs; iinafinwo; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinasuch;
-iinavbew; iinavbki; iinavbhc; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs; innabsln; iinabssu;
+vn: iinasfin; iinafinbs; iinafinwo; iinakv; iinaafin; iinapart; iinafamu; iinadep; iinasuch; iinakont; iinavbew; iinavbki; iinavbhc; iinallpran; iinaaoz; iinaabersw; iinaaorg; iinaabs; innabsln; iinabssu;
 iinano;
 
 qt: Einfachauswahlmatrix mit Zwischenüberschriften und horizontalen ao
@@ -507,25 +509,27 @@ it8: (iinadep): depressive Verstimmungen
 
 it9: (iinasuch): Suchtprobleme
 
-it10: (iinavbew): Vereinbarkeit von Studium und Erwerbstätigkeit
+it10: (iinakont): Mangel an persönlichen Kontakten
 
-it11: (iinavbki): Vereinbarkeit von Studium und Kind
+it11: (iinavbew): Vereinbarkeit von Studium und Erwerbstätigkeit
 
-it12: (iinavbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
+it12: (iinavbki): Vereinbarkeit von Studium und Kind
 
-it13: (iinallpran): Lern-/Leistungsprobleme, Prüfungsangst
+it13: (iinavbhc): Vereinbarkeit von Studium und Behinderung/chronischer Krankheit
 
-it14: (iinaaoz): Arbeitsorganisation, Zeitmanagement
+it14: (iinallpran): Lern-/Leistungsprobleme, Prüfungsangst
 
-it15: (iinaabersw): Studienorganisation, Studienganggestaltung/-wechsel
+it15: (iinaaoz): Arbeitsorganisation, Zeitmanagement
 
-it16: (iinaaorg): Organisation eines studienbezogenen Auslandsaufenthalts
+it16: (iinaabersw): Studienorganisation, Studienganggestaltung/-wechsel
 
-it17: (iinaabs): Studienabschlussprobleme
+it17: (iinaaorg): Organisation eines studienbezogenen Auslandsaufenthalts
 
-it18: (innabsln): Nachteilsausgleiche in Studium und Prüfungen
+it18: (iinaabs): Studienabschlussprobleme
 
-it19: (iinabssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
+it19: (innabsln): Nachteilsausgleiche in Studium und Prüfungen
+
+it20: (iinabssu): Umgang mit längeren beeinträchtigungsbedingten Studienunterbrechungen
 
 st:
 
@@ -541,9 +545,9 @@ mv:
 
 ka1: (it1 TO it5): !!finanzierungsbezogene Themen!!
 
-ka2: (it6 TO it9): !!persönliche Themen!!
+ka2: (it6 TO it10): !!persönliche Themen!!
 
-ka3: (it10 TO it19): !!studienbezogene Themen!!
+ka3: (it11 TO it20): !!studienbezogene Themen!!
 
 vc1: SHOW it1 IF ibedsfin > 1
 
@@ -563,25 +567,27 @@ vc8: SHOW it8 IF ibeddep > 1
 
 vc9: SHOW it9 IF ibedsuch > 1
 
-vc10: SHOW it10 IF ibedvbew > 1
+vc10: SHOW it10 IF ibedkont > 1
 
-vc11: SHOW it11 IF ibedvbki > 1
+vc11: SHOW it11 IF ibedvbew > 1
 
-vc12: SHOW it12 IF ibedvbhc > 1
+vc12: SHOW it12 IF ibedvbki > 1
 
-vc13: SHOW it13 IF ibedllpran > 1
+vc13: SHOW it13 IF ibedvbhc > 1
 
-vc14: SHOW it14 IF ibedaoz > 1
+vc14: SHOW it14 IF ibedllpran > 1
 
-vc15: SHOW it15 IF ibedabersw > 1
+vc15: SHOW it15 IF ibedaoz > 1
 
-vc16: SHOW it16 IF ibedaorg > 1
+vc16: SHOW it16 IF ibedabersw > 1
 
-vc17: SHOW it17 IF ibedabs > 1
+vc17: SHOW it17 IF ibedaorg > 1
 
-vc18: SHOW it18 IF ibebsln > 1
+vc18: SHOW it18 IF ibedabs > 1
 
-vc19: SHOW it19 IF ibebssu > 1
+vc19: SHOW it19 IF ibebsln > 1
+
+vc20: SHOW it20 IF ibebssu > 1
 
 av:
 
@@ -595,7 +601,7 @@ fo1: Bitte über it1 "finanzierungsbezogene Themen" linksbündig positionieren.
 
 fo2: Bitte über it6 "persönliche Themen" linksbündig positionieren.
 
-fo3: Bitte über it10 "studienbezogene Themen" linksbündig positionieren.
+fo3: Bitte über it11 "studienbezogene Themen" linksbündig positionieren.
 
 tr:
 
@@ -615,7 +621,7 @@ E1_8
 
 tc: IF iinano = 1
 
-vn: ihinzeit; ihinaufw; ihingel; ihinkan; ihinpre; ihinfreu; ihinhil; ihinhem; ihinnac; ihinand
+vn: ihinzeit; ihinaufw; ihingel; ihinkan; ihinpre; ihinfreu; ihinhil; ihinhem; ihinnac; ihinerr; ihinand
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -625,7 +631,7 @@ in:
 
 q: Warum haben Sie kein Beratungsangebot in Anspruch genommen?
 
-is: Bitte alles Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen. 
 
 it1: (ihinzeit): ... ich keine Zeit dafür hatte.
 
@@ -645,7 +651,9 @@ it8: (ihinhem): ... ich Hemmungen hatte, Hilfe in Anspruch zu nehmen.
 
 it9: (ihinnac): ... ich dadurch Nachteile im weiteren Studium befürchtete.
 
-it10: (ihinand): ... aus anderen Gründen.
+it10: (ihinerr): ... weil ich niemanden erreichen konnte.
+
+it11: (ihinand): aus anderen Gründen.
 
 st: 
 
@@ -653,7 +661,7 @@ ao:
 
 mv:
 
-ka: (it1 TO it10): !!Ich habe kein Beratungsangebot in Anspruch genommen, weil …!!
+ka: (it1 TO it11): !!Ich habe kein Beratungsangebot in Anspruch genommen, weil …!!
 
 vc:
 
@@ -695,7 +703,7 @@ q: Wie gut informiert sind Sie über die folgenden Bereiche Ihrer Hochschule?
 
 is:
 
-it1: (infoauvo): außercurriculare Vortragsreihen (z. B. Studium generale)
+it1: (infoauvo): außercurriculare Vorträge und Veranstaltungen (z. B. Studium generale)
 
 it2: (Infofopr): Forschungsschwerpunkte Ihrer Professor\*innen
 
