@@ -1,5 +1,3 @@
-
-
 F3_6
 =====
 
@@ -84,15 +82,13 @@ q2: Bitte beschreiben Sie Ihre beiden studienbezogenen Auslandsaufenthalte nähe
 
 q3: Bitte beschreiben Sie Ihre drei studienbezogenen Auslandsaufenthalte näher.
 
-is1: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt.
-
-is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. Sollten Sie bereits häufiger als dreimal studienbezogen im Ausland gewesen sein, dann geben Sie bitte die drei letzten Aufenthalte an.
+is:
 
 it:
 
 st:
 
-ao1: (ainfa1): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit Abschluss - ... - sonstiger Aufenthalt] (Dropdown)
+ao1: (ainfa1): [infield = Art des Aufenthalts; Auslandsstudium mit Abschluss - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfa1): 1: Auslandsstudium mit Abschluss
 
@@ -124,7 +120,7 @@ ao5: (ainfbj1): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 ao6: (ainfdau1): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
 
-ao7: (ainfa2): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
+ao7: (ainfa2): [infield = Art des Aufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfa2): 1: Auslandsstudium mit Abschluss
 
@@ -156,7 +152,7 @@ ao11: (ainfbj2): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown
 ao12: (ainfdau2): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
 
 
-ao13: (ainfa3): [infield = Art des Auslandsaufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
+ao13: (ainfa3): [infield = Art des Aufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
 
     (ainfa3): 1: Auslandsstudium mit Abschluss
 
@@ -194,15 +190,15 @@ ao:
 
 mv:
 
-ka1 (ao1 TO ao6): !!Letzter studienbezogener Auslandsaufenthalt!!
+ka1 (ao1 TO ao6): !!Letzter Auslandsaufenthalt!!
 
 ka2 (ao4 TO ao5): Start des Aufenthalts:
 
-ka3 (ao7 TO ao12): !!Vorletzter studienbezogener Auslandsaufenthalt!!
+ka3 (ao7 TO ao12): !!Vorletzter Auslandsaufenthalt!!
 
 ka4 (ao10 TO ao11): Start des Aufenthalts:
 
-ka5 (ao13 TO ao18): !!Drittletzter studienbezogener Auslandsaufenthalt!!
+ka5 (ao13 TO ao18): !!Drittletzter Auslandsaufenthalt!!
 
 ka6 (ao16 TO ao17): Start des Aufenthalts:
 
@@ -223,7 +219,7 @@ fv:
 
 hv:
 
-fo: Bitte jeweils "Art des Auslandsaufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter studienbezogener Auslandsaufenthalt", "Vorletzter studienbezogener Auslandsaufenthalt" und "Drittletzter studienbezogener Auslandsaufenthalt".
+fo: Bitte jeweils "Art des Aufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt".
 
 tr:
 
@@ -250,11 +246,11 @@ hl:
 
 in:
 
-q1: Fand Ihr Auslandsaufenthalt im Rahmen eines Programms statt?
+q1: Fand Ihr studienbezogener Auslandsaufenthalt im Rahmen eines Programms statt?
 
-q2: Fanden Ihre Auslandsaufenthalte im Rahmen eines Programms statt?
+q2: Fanden Ihre studienbezogenen Auslandsaufenthalte im Rahmen eines Programms statt?
 
-is: Bitte beginnen Sie mit Ihrem zuletzt durchgeführten Aufenthalt. Sollten Sie mehr als drei Aufenthalte haben, dann geben sie bitte den drittletzten Aufenthalt an.
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -300,15 +296,15 @@ ao18: (aproanpr3): anderes Programm
 
 mv:
 
-ka1: (ao1 TO ao6): Letzter studienbezogener Auslandsaufenthalt
+ka1: (ao1 TO ao6): !!Letzter Auslandsaufenthalt!!
 
 ka2: (ao2 TO ao6): Ja, und zwar:
 
-ka3: (ao7 TO ao12): Vorletzter studienbezogener Auslandsaufenthalt
+ka3: (ao7 TO ao12): !!Vorletzter Auslandsaufenthalt!!
 
 ka4: (ao8 TO ao12): Ja, und zwar:
 
-ka5: (ao13 TO ao18): Drittletzter studienbezogener Auslandsaufenthalt
+ka5: (ao13 TO ao18): !!Drittletzter Auslandsaufenthalt!!
 
 ka6: (ao14 TO ao18): Ja, und zwar:
 
@@ -316,7 +312,7 @@ vc:
 
 SHOW q1 AND ao1 TO ao6 AND ka1 TO ka2 IF ainfaus == 2 OR ainfaus==MISSING
 
-SHOW q2 AND ao1 TO ao16 AND ka1 TO ka4 IF ainfaus == 3
+SHOW q2 AND ao1 TO ao12 AND ka1 TO ka4 IF ainfaus == 3
 
 SHOW q2 AND is AND ao1 TO ao18 AND ka1 TO ka6 IF ainfaus == 4
 
@@ -332,7 +328,7 @@ fo1: ao1, ao7 und ao13 jeweils etwas von den nachstehenden ao absetzen.
 
 fo2: Bitte jeweils über ao2, ao8 und ao14 "Ja, und zwar:" linksbündig positionieren. 
 
-fo3: Es werden bis zu drei Episoden angezeigt, die linksbündig untereinander mit den Überschriften (fett und unterstrichen) "Letzter studienbezogener Auslandsaufenthalt", "Vorletzter studienbezogener Auslandsaufenthalt" und "Drittletzter studienbezogener Auslandsaufenthalt" positioniert werden.
+fo3: Es werden bis zu drei Episoden angezeigt, die linksbündig untereinander mit den Überschriften (fett und unterstrichen) "Letzter  Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt" positioniert werden.
 
 tr:
 
@@ -415,13 +411,11 @@ hl:
 
 in:
 
-q1: Wie haben Sie Ihren Auslandsaufenthalt finanziert?
+q1: Wie haben Sie Ihren studienbezogenen Auslandsaufenthalt finanziert?
 
-q2: Wie haben Sie Ihre Auslandsaufenthalte finanziert?
+q2: Wie haben Sie Ihre studienbezogenen Auslandsaufenthalte finanziert?
 
-is1: Bitte alles Zutreffende auswählen.
-
-is2: Bitte beginnen Sie mit Ihrem letzten studienbezogenen Auslandsaufenthalt. Bitte alles Zutreffende auswählen.
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
@@ -433,9 +427,9 @@ ao2: (afinpar1): Partner\*in
 
 ao3: (afinbaf1): BAföG
 
-ao4: (afinjobv1): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
+ao4: (afinjobv1): Verdienst aus Tätigkeit(en) vor dem Aufenthalt
 
-ao5: (afinjobw1): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalts
+ao5: (afinjobw1): Verdienst aus Tätigkeit(en) während des Aufenthalts
 
 ao6: (afinstip1): Stipendium
 
@@ -451,9 +445,9 @@ ao10: (afinpar2): Partner\*in
 
 ao11: (afinbaf2): BAföG
 
-ao12: (afinjobv2): Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao12: (afinjobv2): Verdienst aus Tätigkeiten vor dem Aufenthalt
 
-ao13: (afinjobw2): Verdienst aus Tätigkeiten während des Auslandsaufenthalts
+ao13: (afinjobw2): Verdienst aus Tätigkeiten während des Aufenthalts
 
 ao14: (afinstip2): Stipendium
 
@@ -469,9 +463,9 @@ ao18: (afinpar3): Partner\*in
 
 ao19: (afinbaf3): BAföG
 
-ao20: (afinjobv3): Verdienst aus Tätigkeiten vor dem Auslandsaufenthalt
+ao20: (afinjobv3): Verdienst aus Tätigkeiten vor dem Aufenthalt
 
-ao21: (afinjobw3): Verdienst aus Tätigkeiten während des Auslandsaufenthalts
+ao21: (afinjobw3): Verdienst aus Tätigkeiten während des Aufenthalts
 
 ao22: (afinstip3): Stipendium
 
@@ -481,11 +475,11 @@ ao24: (afinand3): andere Finanzierungsquelle
 
 mv:
 
-ka1 (ao1 TO ao8): Letzter studienbezogener Auslandsaufenthalt
+ka1 (ao1 TO ao8): !!Letzter Auslandsaufenthalt!!
 
-ka2 (ao9 TO ao16): Vorletzter studienbezogener Auslandsaufenthalt
+ka2 (ao9 TO ao16): !!Vorletzter Auslandsaufenthalt!!
 
-ka3 (ao17 TO ao24): Drittletzter studienbezogener Auslandsaufenthalt
+ka3 (ao17 TO ao24): !!Drittletzter Auslandsaufenthalt!!
 
 vc:
 
@@ -521,7 +515,7 @@ F3_11
 
 tc:
 
-vn: akont (akontgast; akontbuerg; akontdeust; akontintst)
+vn: akont (akontgast; akontbuerg; akontdtst; akontintst)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -529,9 +523,9 @@ hl:
 
 in:
 
-q1: Wie häufig hatten Sie während Ihres studienbezogenen Auslandsaufenthalts Kontakt zu …
+q1: Wie häufig haben Sie sich während des Aufenthalts unterhalten mit …
 
-q2: Wie häufig hatten Sie während Ihres letzten studienbezogenen Auslandsaufenthalts Kontakt zu …
+q2: Wie häufig haben Sie sich während des letzten Aufenthalts unterhalten mit …
 
 is:
 
@@ -539,7 +533,7 @@ it1: (akontgast): … Studierenden des Gastlandes?
 
 it2: (akontbuerg): … anderen Bürger\*innen des Gastlandes?
 
-it3: (akontdeust): … deutschen Studierenden?
+it3: (akontdtst): … deutschen Studierenden?
 
 it4: (akontintst): … anderen internationalen Studierenden?
 
@@ -598,9 +592,9 @@ hl:
 
 in:
 
-q1: Wie häufig haben Sie während Ihres Auslandsaufenthaltes die folgenden Sprachen gesprochen?
+q1: Wie häufig haben Sie während Ihres Auslandsaufenthalts die folgenden Sprachen gesprochen?
 
-q2: Wie häufig haben Sie während Ihres letzten Auslandsaufenthaltes die folgenden Sprachen gesprochen?
+q2: Wie häufig haben Sie während Ihres letzten Auslandsaufenthalts die folgenden Sprachen gesprochen?
 
 is:
 
@@ -676,7 +670,7 @@ it2: (azufinsg): … dem Aufenthalt insgesamt?
 
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
@@ -789,7 +783,7 @@ hl:
 
 in:
 
-q: Ausgehend von Ihren bisherigen Erfahrungen: Würden Sie einen studienbezogenen Auslandsaufenthalt empfehlen?
+q: Ausgehend von Ihren bisherigen Erfahrungen: Würden Sie Ihren Freund\*innen/Bekannten empfehlen, im Ausland zu studieren?
 
 is:
 
@@ -797,7 +791,7 @@ it:
 
 st:
 
-ao1: 1: überhaupt nicht
+ao1: 1: auf keinen Fall
 
 ao2: 2:
 
@@ -805,7 +799,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: voll und ganz
+ao5: 5: auf jeden Fall
 
 mv:
 
@@ -869,7 +863,7 @@ ao6: 6: Projektarbeit
 
 ao7: 7: Summer School
 
-ao8: 8: sonstiger Auslandsaufenthalt
+ao8: 8: anderer Auslandsaufenthalt
 
 ao9: -12: weiß ich noch nicht
 
@@ -904,7 +898,7 @@ F3_17
 
 tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
-vn: aplan (aplanlando; aplanorto)
+vn: aplan (aplanlando; aplanorto; aplanka)
 
 qt: offene Angaben
 
@@ -912,9 +906,9 @@ hl:
 
 in:
 
-q: In welchem Land und in welcher Stadt/Hochschule planen Sie den Auslandsaufenthalt durchzuführen?
+q: Wo planen Sie den Auslandsaufenthalt durchzuführen?
 
-is:
+is: Sollten mehrere Orte infrage kommen, geben Sie bitte Ihren Favoriten an.
 
 it:
 
@@ -923,6 +917,8 @@ st:
 ao1: (aplanlando): Präfix: Land: [offene Angabe; 100 Zeichen]
 
 ao2: (aplanorto): Präfix: Stadt/Hochschule: [offene Angabe, 100 Zeichen]
+
+ao3:   (aplanka): weiß ich noch nicht
 
 mv:
 
@@ -938,7 +934,7 @@ fv:
 
 hv:
 
-fo: ao1 und ao2 bitte linksbündig untereinander positionieren.
+fo: ao1 und ao2 bitte linksbündig untereinander positionieren. ao3 bitte etwas abgesetzt unter ao2 positionieren.
 
 tr:
 
@@ -951,7 +947,7 @@ F3_19
 
 tc: IF (ainfaus=1 AND auslandint==4) OR (ainfaus=MISSING AND auslandint==4)
 
-vn: aplan (aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanno)
+vn: aplan (aplaneras; aplandaad; aplanhhs; aplangahs; aplananpr; aplanno; aplankaa)
 
 qt: Mehrfachauswahl mit vertikalen ao
 
@@ -975,7 +971,9 @@ ao4: (aplangahs): Programm der Gasthochschule
 
 ao5: (aplananpr): anderes Programm
 
-ao6: (aplanno): Ich werde den Aufenthalt selbst organisieren. (Exklusivkategorie)
+ao6: (aplanno): Ich werde den Aufenthalt selbst organisieren.
+
+ao7: (aplankaa): weiß ich noch nicht [EK]
 
 mv:
 
@@ -991,7 +989,7 @@ fv:
 
 hv:
 
-fo: Bitte ao6 optisch etwas absetzen.
+fo: Bitte ao7 optisch etwas absetzen.
 
 tr:
 
@@ -1032,13 +1030,15 @@ ao3: (aplanfinbaf): BAföG
 
 ao4: (aplanfinjobv): Verdienst aus Tätigkeit(en) vor dem Auslandsaufenthalt
 
-ao5: (aplanfinjobw): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalt
+ao5: (aplanfinjobw): Verdienst aus Tätigkeit(en) während des Auslandsaufenthalts
 
 ao6: (aplanfinstip): Stipendium
 
 ao7: (aplanfinbkred): Bildungskredit
 
 ao8: (aplanfinand): andere Finanzierungsquelle
+
+ao9: (aplanfinkaa): weiß ich noch nicht [EK]
 
 mv:
 
@@ -1054,7 +1054,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao9 bitte etwas optisch absetzen.
 
 tr:
 
@@ -1071,7 +1071,7 @@ F3_22
 
 tc:
 
-vn: akont (akontdeust; akonteust; akontneust)
+vn: akont (akontdeust; akontneust)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -1085,9 +1085,7 @@ is:
 
 it1: (akontdeust): … deutschen Studierenden?
 
-it2: (akonteust): … Studierenden aus anderen Ländern Europas?
-
-it3: (akontneust): … Studierenden aus Ländern außerhalb Europas?
+it2: (akontneust): … internationalen Studierenden?
 
 st:
 
