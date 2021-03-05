@@ -828,7 +828,7 @@ hi3: Bitte bei it6/ao6 (!!in fett!!) !!letzter Stand!! darüber positionieren.
 D1_16 
 ===
 
-tc: IF ssujaaz>=1 
+tc: IF ssuja=1 
 
 vn: suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05 / sudau01 / sudau02 / sudau03 / sudau04 / sudau05 / subeur01 / subeur02 / subeur03 / subeur04 / subeur05
 
@@ -864,19 +864,19 @@ mv:
 
 ka:
 
-vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssujaaz=1
+vc1: SHOW q1 AND suzeitp01 & sudau01 & subeur01 IF ssuja=1
 
 vc2: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
-subeur02 IF ssujaaz=2
+subeur02 IF ssuja=2
 
 vc3: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
-subeur02 & suzeitp03 & sudau03 & subeur03 IF ssujaaz=3
+subeur02 & suzeitp03 & sudau03 & subeur03 IF ssuja=
 
 vc4: SHOW q2/is1 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 & sudau02 &
-subeur02 & suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 IF ssujaaz=4
+subeur02 & suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 IF ssuja=4
 
 vc5: SHOW q3/is2 AND suzeitp01 & sudau01 & subeur01 & suzeitp02 &sudau02 & subeur02 & 
-suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 & suzeitp05 & sudau05 & subeur05 IF ssujaaz= 5
+suzeitp03 & sudau03 & subeur03 & suzeitp04 & sudau04 & subeur04 & suzeitp05 & sudau05 & subeur05 IF ssuja= 5
 
 av:
 
