@@ -249,7 +249,7 @@ tc:
 
 vn: promgrund1- promgrund18; promgrund18o
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit offener Angabe
 
 hl:
 
@@ -294,7 +294,7 @@ it16: (promgrund16): Eine Promotion passt nicht in meine Lebens- und Familienpla
 it17: (promgrund17): Eine Promotion ist mit einer zu großen psychischen Belastung verbunden.
 
 
-it18: (promgrund18): Sonstiges, und zwar: [promgrund18o]
+it18: (promgrund18): Sonstiges, und zwar: [(promgrund18o), offene Angabe, 250 Zeichen]
 
 st:
 
