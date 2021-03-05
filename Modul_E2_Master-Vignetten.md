@@ -642,7 +642,7 @@ tc:
 
 vn: mastergrund1- mastergrund13; mastergrund13o
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit offener Angabe
 
 hl:
 
@@ -676,7 +676,7 @@ it11: (mastergrund11): Das Anforderungsniveau des Masters ist zu hoch.
 
 it12: (mastergrund12): Ich will mich nicht so stark spezialisieren.
 
-it13: (mastergrund13): Sonstiges, und zwar... [mastergrund13o]
+it13: (mastergrund13): Sonstiges, und zwar... [(mastergrund13o), offene Angabe, 250 Zeichen]
 
 st:
 
