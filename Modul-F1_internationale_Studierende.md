@@ -1,4 +1,3 @@
-
 F1_1
 ====
 
@@ -118,9 +117,9 @@ ao5: 5: sehr stark
 
 mv:
 
-ka1: (it1 TO it7) !!… *für* einen Auslandsaufenthalt?!!
+ka1: (it1 TO it7) !!… **für** einen Auslandsaufenthalt?!!
 
-ka2: (it8 TO it it14) !!… *gegen* einen Auslandsaufenthalt?!!
+ka2: (it8 TO it it14) !!… **gegen** einen Auslandsaufenthalt?!!
 
 vc:
 
@@ -132,9 +131,12 @@ fv:
 
 hv:
 
-fo1: Bitte über it1 "... *für* einen Auslandsaufenthalt" linksbündig positionieren.
 
-fo2: Bitte über it8 "... *gegen* einen Auslandsaufenthalt" linksbündig positionieren.
+
+
+fo1: Bitte über it1 "... **für** einen Auslandsaufenthalt" linksbündig positionieren.
+
+fo2: Bitte über it8 "... **gegen** einen Auslandsaufenthalt" linksbündig positionieren.
 
 tr:
 
@@ -273,6 +275,9 @@ in:
 
 q: Haben Sie im Laufe Ihres Lebens eine längere Zeit (durchgängig mehr als 3 Monate) im Ausland verbracht?
 
+
+
+
 is: Bitte alles Zutreffende auswählen.
 
 it:
@@ -285,7 +290,7 @@ ao2: (aauszeitlebfrkin): ja, in meiner frühen Kindheit
 
 ao3: (aauszeitlebwschul): ja, während meiner Schulzeit
 
-ao4: (aauszeitlebnschul): ja, direkt nach der Schulzeit
+ao4: (aauszeitlebnschul): ja, zwischen Schule und Studium
 
 mv:
 
@@ -445,9 +450,9 @@ st:
 
 ao1: (intdeutsch1ba): Elternhaus
 
-ao2: (intdeutsch2ba): Schule/Studium im Ausland
+ao2: (intdeutsch2ba): Schule/Studium außerhalb Deutschlands
 
-ao3: (intdeutsch3ba): Sprachkurs im Ausland
+ao3: (intdeutsch3ba): Sprachkurs außerhalb Deutschlands
 
 ao4: (intdeutsch4ba): Sprachkurs in Deutschland (vor dem Studium)
 
@@ -573,7 +578,10 @@ it:
 
 st:
 
-ao: (simmaba): [infield = Semester; Sommersemester 2020 - Wintersemester 2019/20 - Sommersemester 2019 - ... - Sommersemester 2010] (Drop-Down)
+
+
+
+ao: (simmaba): [infield = Semester; Sommersemester 2021 - Wintersemester 20/21 - Sommersemester 2020 - ... - Sommersemester 2010] (Drop-Down)
 
 mv:
 
@@ -614,7 +622,7 @@ hl:
 
 in:
 
-q: Planen Sie, in Deutschland einen Hochschulabschluss zu erwerben?
+q: Planen Sie in Deutschland einen Hochschulabschluss zu erwerben?
 
 is: Bitte beziehen Sie sich auf Ihr aktuelles Auslandsstudium.
 
@@ -645,6 +653,9 @@ kh:
 fv:
 
 hv:
+
+
+
 
 fo: mv/"weiß ich noch nicht" bitte etwas absetzen.
 
@@ -702,6 +713,9 @@ kh:
 fv:
 
 hv:
+
+
+
 
 fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
@@ -762,7 +776,7 @@ fv:
 
 hv:
 
-fo1: ao1 bitte etwas absetzen.
+fo1: ao1 bitte etwas absetzen.  
 
 fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
@@ -795,7 +809,7 @@ is:
 
 it1: (akontdeustba): … deutschen Studierenden?
 
-it2: (akontbuergba): … anderen Bürger\*innen in Deutschland?
+it2: (akontbuergba): … anderen deutschen Bürger\*innen?
 
 it3: (akontheimba): … Studierenden aus Ihrem Heimatland?
 
@@ -932,7 +946,7 @@ it2: (azufinsgba): … Ihrem Aufenthalt in Deutschland insgesamt?
 
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
@@ -1090,7 +1104,7 @@ F1_21
 
 tc:
 
-vn: bdebleibba
+vn: bdebleibba; bdebleibbao
 
 qt: Einfachauswahl mit Zwischenüberschriften und vertikalen ao
 
@@ -1118,7 +1132,7 @@ ao5: 5: … in meinem Heimatland.
 
 ao6: 6: … in einem anderen Land.
 
-ao7: 7: sonstiges
+ao7: 7: … und zwar: [(bdebleibbao); (offene Angabe); 250 Zeichen]
 
 mv:
 
@@ -1126,7 +1140,7 @@ ka1 (ao1 TO ao3): !!Ich möchte arbeiten, und zwar …!!
 
 ka2 (ao4 TO ao6): !!Ich möchte weiterstudieren/promovieren, und zwar …!!
 
-ka3 (ao7): !!etwas Anderes!!
+ka3 (ao7): !!Etwas Anderes, ...!!
 
 vc:
 
@@ -1142,7 +1156,7 @@ fo1: Bitte über ao1 "Ich möchte arbeiten, und zwar …" mit etwas Abstand link
 
 fo2: Bitte über ao4 "Ich möchte weiterstudieren/promovieren, und zwar …" mit etwas Abstand linksbündig positionieren.
 
-fo3: Bitte über ao7 "etwas Anderes" mit etwas Abstand linksbündig positionieren.
+fo3: Bitte über ao7 "Etwas Anderes" mit etwas Abstand linksbündig positionieren.
 
 tr:
 
@@ -1171,7 +1185,7 @@ q: Wenn Sie an Ihre Zukunft denken, wo möchten Sie leben?
 
 is:
 
-it1: (intpsydaudeuba): dauerhaft in Deutschland
+it1: (intpsydaudeuba): in Deutschland
 
 it2: (intpsyzeitdeuba): zeitweise in Deutschland
 
@@ -1301,7 +1315,7 @@ it2: (aarbchdeuba): … Deutschland?
 
 st:
 
-ao1: 1: überhaupt nicht gut
+ao1: 1: sehr schlecht
 
 ao2: 2:
 
