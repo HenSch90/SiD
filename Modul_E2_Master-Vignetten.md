@@ -51,7 +51,7 @@ fo:
 
 tr: GOTO mvig[deck]_1 if IF h_deck==[deck]
 
-hi: Teile der Introduction werden nicht fett gedruckt.
+hi:
 
 
 \--------------------------------
