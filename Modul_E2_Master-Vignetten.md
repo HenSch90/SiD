@@ -510,17 +510,17 @@ hl:
 in:
 
 q: Inwiefern erwarten Sie Schwierigkeiten nach Ihrem Bachelorabschluss, eine
-Stelle zu finden, die...
+Stelle zu finden, die …
 
 is:
 
-it1: (jobfach): ...Ihren fachlichen Fähigkeiten entspricht?
+it1: (jobfach): … Ihren fachlichen Fähigkeiten entspricht?
 
-it2: (jobabsch): ...Ihrem Hochschulabschluss entspricht?
+it2: (jobabsch): … Ihrem Hochschulabschluss entspricht?
 
-it3: (joblohn): ...Ihren Lohnansprüchen genügt?
+it3: (joblohn): … Ihren Lohnansprüchen genügt?
 
-it4: (joberfue): ...Sie wirklich erfüllt?
+it4: (joberfue): … Sie wirklich erfüllt?
 
 st:
 
@@ -561,63 +561,55 @@ hi:
 KSM-ma06
 ========
 
-tc: 
+tc:
 
-vn: lohnba; lohnma; lohnsta1; lohnsta2; lohnphd
+vn: einkberufb; einkbab; einkmab; einkdrb
 
-qt: Einfachauswahl Dropdown mit ao0
+qt: Einfachauswahl mit vertikalen ao/Spaltenformat
 
 hl:
 
 in:
 
-q: Was denken Sie: Wie hoch ist das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit ...
+q: Was denken Sie: Wie hoch ist schätzungsweise das durchschnittliche monatliche Nettoeinkommen in Ihrem Berufsfeld mit …
 
-is: Bitte beziehen Sie Ihre Angaben auf das Netto-Gehalt einer Vollzeitstelle, d. h. Gehalt abzüglich Steuern und Sozialabgaben.
+is: Bitte schätzen Sie das Netto-Gehalt ungefähr ein, d. h. Einkommen abzüglich Steuer.
 
-it1: (lohnba): … Bachelorabschluss
+it1: (einkberufb): … Berufsausbildung?
 
-it2: (lohnma): … Masterabschluss
+it2: (einkbab): … Bachelorabschluss?
 
-it3: (lohnsta1): … dem ersten Staatsexamen
+it3: (einkmab): … Masterabschluss?
 
-it4: (lohnsta2): … dem zweiten Staatsexamen
-
-it5: (lohnphd): … Promotion
+it4: (einkdrb): … Promotion (Dr., PhD)?
 
 st:
 
-a00: 0: Netto-Gehalt einer Vollzeitstelle
-
 ao1: 1: unter 1.000 €
 
-ao2: 2: 1.000 € bis unter 1.500
+ao2: 2: 1.000 € bis unter 1.500 €
 
-ao3: 3: 1.500 € bis unter 2.000
+ao3: 3: 1.500 € bis unter 2.000 €
 
-ao4: 4: 2.000 € bis unter 2.500
+ao4: 4: 2.000 € bis unter 2.500 €
 
-ao5: 5: 2.500 € bis unter 3.000
+ao5: 5: 2.500 € bis unter 3.000 €
 
-ao6: 6: 3.000 € bis unter 3.500
+ao6: 6: 3.000 € bis unter 3.500 €
 
-ao7: 7: 3.500 € bis unter 4.000
+ao7: 7: 3.500 € bis unter 4.000 €
 
-ao8: 8: 4.000 € bis unter 5.000
+ao8: 8: 4.000 € bis unter 5.000 €
 
-ao9: 9: 5.000 € bis unter 10.000
+ao9: 9: 5.000 € bis unter 10.000 €
 
 ao10: 10: 10.000 € und mehr
 
-ao11: -12: weiß ich nicht 
-
-mv:
+mv: -12:, weiß ich nicht/trifft nicht zu
 
 ka:
 
-vc: SHOW lohnsta1 and lohnsta2 and lohnphd if sabsan = 3 AND sabslaja = 1
-
-SHOW lohnba and lohnma and lohnphd if sabsan = 1 
+vc:
 
 av:
 
@@ -627,7 +619,7 @@ fv:
 
 hv:
 
-fo: ao11 absetzen
+fo: mv/"weiß ich nicht" absetzen
 
 tr: GOTO KSM-ma07
 
@@ -728,16 +720,16 @@ in:
 
 q: Wie stehen Sie zu den folgenden Aussagen bezüglich des Bachelorabschlusses?
 
-Ein Bachelorabschluss...
+Ein Bachelorabschluss …
 
 is:
 
-it1: (bawert1): ...ist kein vollwertiger Hochschulabschluss, sondern vergleichbar mit
+it1: (bawert1): … ist kein vollwertiger Hochschulabschluss, sondern vergleichbar mit
 der beruflichen Ausbildung.
 
-it2: (bawert2): ...ist nur ein Zwischenschritt zu einem Masterstudium.
+it2: (bawert2): … ist nur ein Zwischenschritt zu einem Masterstudium.
 
-it3: (bawert3): ...wird von Arbeitgeber*/innen als Hochschulabschluss voll anerkannt.
+it3: (bawert3): … wird von Arbeitgeber*/innen als Hochschulabschluss voll anerkannt.
 
 st:
 
