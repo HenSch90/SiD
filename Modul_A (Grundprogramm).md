@@ -1812,7 +1812,7 @@ it:
 
 st:
 
-ao1: 1: sehr unzufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2
 
@@ -2384,7 +2384,7 @@ it3: (promoerfolg): … eine Promotion (Dr., PhD) erfolgreich abzuschließen?
 
 st:
 
-ao1: 1: überhaupt nicht
+ao1: 1: gar nicht
 
 ao2: 2:
 
@@ -2392,7 +2392,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: vollkommen
+ao5: 5: voll und ganz
 
 mv:
 
@@ -2922,7 +2922,7 @@ a05: (intbild5): Schulabschluss, der zum Studium berechtigt
 
 ao6: (intbild6): Schulabschluss ohne Studienberechtigung
 
-ao7: (intbild7): keinen Schulabschluss
+ao7: (intbild7): keinen Schulabschluss [Exklusivkategorie]
 
 mv:
 
@@ -2938,7 +2938,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao7 bitte als Exklusivkategorie etwas absetzen.
 
 tr:
 
