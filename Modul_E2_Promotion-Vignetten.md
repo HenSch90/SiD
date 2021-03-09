@@ -104,7 +104,7 @@ in2: [vigB]
 
 in3: [vigC]
 
-q: Diese Rahmenbedingungen für eine Promotion wären für mich...
+q: Diese Rahmenbedingungen für eine Promotion wären für mich …
 
 is:
 
@@ -186,7 +186,7 @@ in2: [vigB]
 
 in3: [vigC]
 
-q: Diese Rahmenbedingungen für eine Promotion wären für mich...
+q: Diese Rahmenbedingungen für eine Promotion wären für mich …
 
 is:
 
