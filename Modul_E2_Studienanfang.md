@@ -123,9 +123,9 @@ KSM-anf03
 
 tc:
 
-vn: intsoc1; intinv1; intinv2; intart1; intart2; intent1; intent2; intconv2; intreal1; intreal2; intsoc3; intsoc4; intinv4; intart4; intent3; intconv3; intconv4; intreal3
+vn: intsoc1 / intsoc3 / intsoc4 / intinv1 / intinv2 / intinv4 / intart1 / intart2 / intart4 / intent1 / intent2 / intent3 / Intconv2 / intconv3 / intconv4 / intreal1 / intreal2 / intreal3
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -135,51 +135,51 @@ q: Bitte geben Sie an, wie sehr Sie sich für folgende Tätigkeiten interessiere
 
 is:
 
-it1: (intreal1): untersuchen, wie Dinge funktionieren
+it1: (intsoc1): anderen Menschen helfen
 
-it2: (intinv4): Lösungen für komplexe Probleme finden
+it2: (intsoc3): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
 
-it3: (intart1): kreativ/gestaltend tätig sein
+it3: (intsoc4): mit Menschen (zusammen)arbeiten
 
-it4: (intsoc1): anderen Menschen helfen
+it4: (intinv1): etwas genau beobachten und analysieren
 
-it5: (intent1): Unternehmen gründen oder leiten
+it5: (intinv2): Unbekanntes erforschen, experimentieren
 
-it6: (Intconv2): sich mit rechtlichen Fragen auseinandersetzen
+it6: (intinv4): Lösungen für komplexe Probleme finden
 
-it7: (intreal2): innovative technische Lösungen entwickeln
+it7: (intart1): kreativ/gestaltend tätig sein
 
-it8: (intinv2): Unbekanntes erforschen, experimentieren
+it8: (intart2): sich mit Kunst und Kultur befassen
 
-it9: (intart2): sich mit Kunst und Kultur befassen
+it9: (intart4): etwas sprachlich ansprechend formulieren
 
-it10: (intsoc3): sich mit den Lebenslagen von Menschen auseinandersetzen
+it10: (intent1): Unternehmen gründen oder leiten
 
-it11: (intent3): andere Menschen anleiten oder führen
+it11: (intent2): andere von einer Sache überzeugen
 
-it12: (intconv3): Arbeitsprozesse planen
+it12: (intent3): andere Menschen anleiten oder führen
 
-it13: (intreal3): an Soft- oder Hardware arbeiten
+it13: (Intconv2): sich mit rechtlichen Fragen beschäftigen
 
-it14: (intinv1): etwas genau beobachten und analysieren
+it14: (intconv3): Arbeitsprozesse planen
 
-it15: (intart4): etwas sprachlich ansprechend formulieren
+it15: (intconv4): mit Zahlen oder Statistiken arbeiten
 
-it16: (intsoc4): mit Menschen (zusammen)arbeiten
+it16: (intreal1): untersuchen, wie Dinge funktionieren
 
-it17: (intent2): andere von einer Sache überzeugen
+it17: (intreal2): innovative technische Lösungen entwickeln
 
-it18: (intconv4): mit Zahlen oder Statistiken arbeiten
+it18: (intreal3): an Soft- oder Hardware arbeiten
 
 st:
 
 ao1: 1: überhaupt nicht
 
-ao2: 2:
+ao2: 2
 
-ao3: 3:
+ao3: 3
 
-ao4: 4:
+ao4: 4
 
 ao5: 5: sehr stark
 
@@ -210,7 +210,7 @@ KSM-anf04
 
 tc:
 
-vn: stfwb (stfweinb / stfwartb / stfwzulb / stfwaltb / stfwzeitb / stfwfamb / stfwberb / stfwentb / stfwbegab / stfwintb / stfwwissb / stfwverfb / stfwverbb / stfwandb / stfwandob)
+vn: stfwb (stfweinb / stfwartb / stfwaltb / stfwzeitb / stfwfamb / stfwberb / stfwbegab / stfwintb / stfwwissb / stfwverfb / stfwverbb / stfwandb / stfwandob)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -226,29 +226,25 @@ it1: (stfweinb): Einkommens- und Karrierechancen
 
 it2: (stfwartb): gute Aussichten auf sicheren Arbeitsplatz
 
-it3: (stfwzulb): keine Zulassungsbeschränkungen
+it3: (stfwaltb): keine Zulassung im gewünschten Studienfach
 
-it4: (stfwaltb): Ausweichlösung, da keine Zulassung im gewünschten Studienfach
+it4: (stfwzeitb): kurze Studienzeiten
 
-it5: (stfwzeitb): kurze Studienzeiten
+it5: (stfwfamb): Eltern/Familie haben mir dazu geraten
 
-it6: (stfwfamb): Eltern/Familie haben mir dazu geraten
+it6: (stfwberb): fester Berufswunsch
 
-it7: (stfwberb): fester Berufswunsch
+it7: (stfwbegab): eigene Begabung
 
-it8: (stfwentb): persönliche Entfaltung
+it8: (stfwintb): spezielles Fachinteresse
 
-it9: (stfwbegab): eigene Begabung
+it9: (stfwwissb): eine gute wissenschaftliche Ausbildung
 
-it10: (stfwintb): spezielles Fachinteresse
+it10: (stfwverfb): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
 
-it11: (stfwwissb): eine gute wissenschaftliche Ausbildung
+it11: (stfwverbb): Vereinbarkeit meiner Beeinträchtigung(en) mit späteren Beschäftigungsmöglichkeiten
 
-it12: (stfwverfb): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
-
-it13: (stfwverbb): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
-
-it14: (stfwandb): Anderes, und zwar: [(stfwando); 100 Zeichen]
+it12: (stfwandb): Anderes, und zwar: [(stfwando); 100 Zeichen]
 
 st:
 
@@ -266,7 +262,7 @@ mv:
 
 ka:
 
-vc: SHOW it13 (stfwverb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it11 (stfwverbb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
@@ -287,7 +283,7 @@ KSM-anf05
 
 tc:
 
-vn: hswb (hswkontb / hswbedb / hswattb / hswfachb / hswrankb / hswrufb / hswtradb / hswzulb / hswintb / hswengb / hswtzb / hswsuppb / hswdigb / hswuntbb / hswbarrb / hswandb / hswandob)
+vn: hswb (hswkontb / hswbedb / hswattb / hswfachb / hswrankb / hswtradb / hswzulb / hswintb / hswtzb / hswsuppb / hswbarrb / hswandb / hswandob)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -309,27 +305,19 @@ it4: (hswfachb): gewünschte Fachrichtung
 
 it5: (hswrankb): gute Platzierung meines Fachs in Rankings
 
-it6: (hswrufb): guter Ruf der Lehrenden in meinem Fachgebiet
+it6: (hswtradb): Tradition und Ruf der Hochschule
 
-it7: (hswtradb): Tradition und Ruf der Hochschule
+it7: (hswzulb): keine Zulassung an Wunschhochschule
 
-it8: (hswzulb): keine Zulassung an Wunschhochschule
+it8: (hswintb): internationale Ausrichtung der Hochschule
 
-it9: (hswintb): internationale Ausrichtung der Hochschule
+it9: (hswtzb): Möglichkeit, in Teilzeit studieren zu können
 
-it10: (hswengb): Wunschstudiengang wird auf Englisch angeboten
+it10: (hswsuppb): hochschulspezifische Beratungs- und Unterstützungsangebote
 
-it11: (hswtzb): Möglichkeit, in Teilzeit studieren zu können
+it11: (hswbarrb): Barrierefreiheit der Hochschule
 
-it12: (hswsuppb): hochschulspezifische Beratungs- und Unterstützungsangebote
-
-it13: (hswdigb): Online-Angebot (Studium und Lehre)
-
-it14: (hswuntbb): beeinträchtigungsspezifische Unterstützungsangebote der Hochschule
-
-it15: (hswbarrb): Barrierefreiheit der Hochschule
-
-it16: (hswandb): Anderes, und zwar: [(hswando); 100 Zeichen]
+it12: (hswandb): Anderes, und zwar: [(hswando); 100 Zeichen]
 
 st:
 
@@ -347,9 +335,7 @@ mv:
 
 ka:
 
-vc1: SHOW it14 (hswuntbb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
-
-vc2: SHOW it15 (hswbarrb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+vc: SHOW it11 (hswbarrb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
