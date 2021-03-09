@@ -60,29 +60,31 @@ KSM-anf02
 
 tc:
 
-vn: paba; pama ; paphd ; pajob
+vn: bilaspabb / bilaspbab / bilaspmab / bilaspdrb / bilaspberb
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
 in:
 
-q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
+q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie …
 
 is:
 
-it1: (paba): … einen Hochschulabschluss erreichen?
+it1: (bilaspabb) … einen Hochschulabschluss erreichen?
 
-it2: (pama): … einen Master erreichen?
+it2: (bilaspbab) … einen Bachelorabschluss erreichen?
 
-it3: (paphd): … einen Doktortitel erreichen?
+it3: (bilaspmab) … einen Master erreichen?
 
-it4: (pajob): … beruflich ganz weit nach vorne kommen?
+it4: (bilaspdrb) … einen Doktortitel erreichen?
+
+it5: (bilaspberb) … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: sehr unwichtig
+ao1: 1: gar nicht wichtig
 
 ao2: 2:
 
@@ -92,13 +94,11 @@ ao4: 4:
 
 ao5: 5: sehr wichtig
 
-ao6: -12: weiß ich nicht
-
-mv: 
+mv: -12: weiß ich nicht
 
 ka:
 
-vc: SHOW it2 IF sabsan = 1
+vc: SHOW it1 IF sabsan != 1 OR sabsan != 2 SHOW it2 IF sabsan = 1 OR sabsan = 2 SHOW it3 IF sabsan = 1 OR sabsan = 2
 
 av:
 
@@ -108,7 +108,7 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"weiß ich nicht" absetzen
 
 tr: GOTO KSM-anf03
 
@@ -117,7 +117,6 @@ hi:
 
 
 \--------------------------
-
 
 KSM-anf03
 =========
@@ -204,9 +203,169 @@ tr: GOTO KSM-anf04
 
 hi: 
 
-\------------------------------------------------------------
+\--------------------------
+
+KSM-anf04
+=========
+
+tc:
+
+vn: stfwb (stfweinb / stfwartb / stfwzulb / stfwaltb / stfwzeitb / stfwfamb / stfwberb / stfwentb / stfwbegab / stfwintb / stfwwissb / stfwverfb / stfwverbb / stfwandb / stfwandob)
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches?
+
+is:
+
+it1: (stfweinb): Einkommens- und Karrierechancen
+
+it2: (stfwartb): gute Aussichten auf sicheren Arbeitsplatz
+
+it3: (stfwzulb): keine Zulassungsbeschränkungen
+
+it4: (stfwaltb): Ausweichlösung, da keine Zulassung im gewünschten Studienfach
+
+it5: (stfwzeitb): kurze Studienzeiten
+
+it6: (stfwfamb): Eltern/Familie haben mir dazu geraten
+
+it7: (stfwberb): fester Berufswunsch
+
+it8: (stfwentb): persönliche Entfaltung
+
+it9: (stfwbegab): eigene Begabung
+
+it10: (stfwintb): spezielles Fachinteresse
+
+it11: (stfwwissb): eine gute wissenschaftliche Ausbildung
+
+it12: (stfwverfb): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
+
+it13: (stfwverbb): Vereinbarkeit meiner Beeinträchtigung mit späteren Beschäftigungsmöglichkeiten
+
+it14: (stfwandb): Anderes, und zwar: [(stfwando); 100 Zeichen]
+
+st:
+
+ao1: 1: gar nicht wichtig
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr wichtig
+
+mv:
+
+ka:
+
+vc: SHOW it13 (stfwverb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-anf05
+
+\--------------------------
 
 KSM-anf05
+=========
+
+tc:
+
+vn: hswb (hswkontb / hswbedb / hswattb / hswfachb / hswrankb / hswrufb / hswtradb / hswzulb / hswintb / hswengb / hswtzb / hswsuppb / hswdigb / hswuntbb / hswbarrb / hswandb / hswandob)
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihrer derzeitigen Hochschule?
+
+is:
+
+it1: (hswkontb): Freund*innen/Familie vor Ort
+
+it2: (hswbedb): günstige Lebensbedingungen am Hochschulort
+
+it3: (hswattb): Attraktivität von Stadt und Umgebung
+
+it4: (hswfachb): gewünschte Fachrichtung
+
+it5: (hswrankb): gute Platzierung meines Fachs in Rankings
+
+it6: (hswrufb): guter Ruf der Lehrenden in meinem Fachgebiet
+
+it7: (hswtradb): Tradition und Ruf der Hochschule
+
+it8: (hswzulb): keine Zulassung an Wunschhochschule
+
+it9: (hswintb): internationale Ausrichtung der Hochschule
+
+it10: (hswengb): Wunschstudiengang wird auf Englisch angeboten
+
+it11: (hswtzb): Möglichkeit, in Teilzeit studieren zu können
+
+it12: (hswsuppb): hochschulspezifische Beratungs- und Unterstützungsangebote
+
+it13: (hswdigb): Online-Angebot (Studium und Lehre)
+
+it14: (hswuntbb): beeinträchtigungsspezifische Unterstützungsangebote der Hochschule
+
+it15: (hswbarrb): Barrierefreiheit der Hochschule
+
+it16: (hswandb): Anderes, und zwar: [(hswando); 100 Zeichen]
+
+st:
+
+ao1: 1: gar nicht wichtig
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr wichtig
+
+mv:
+
+ka:
+
+vc1: SHOW it14 (hswuntbb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+
+vc2: SHOW it15 (hswbarrb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-anf06
+
+\------------------------------------------------------------
+
+KSM-anf06
 =========
 
 tc:
@@ -258,15 +417,15 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf06 IF massnahm1 = 2 
-GOTO KSM-anf07 IF massnahm1 <> 2 
+tr: GOTO KSM-anf07 IF massnahm1 = 2 
+GOTO KSM-anf08 IF massnahm1 <> 2 
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-anf06
+KSM-anf07
 =========
 
 tc:
@@ -307,14 +466,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf07
+tr: GOTO KSM-anf08
 
 hi: Derzeit wird kein Fragetext angezeigt.
 
 
 \------------------------------------------------------------
 
-KSM-anf07
+KSM-anf08
 =========
 
 tc:
@@ -371,15 +530,15 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf08 IF angeb1 = 4 OR angeb2 = 4 OR angeb3 = 4 OR angeb4 = 4 OR angeb5 = 4 OR angeb6 = 4 OR angeb7 = 4
-GOTO KSM-anf09 IF angeb1 <> 4 AND angeb2 <> 4 AND angeb3 <> 4 AND angeb4 <> 4 AND angeb5 <> 4 AND angeb6 <> 4 AND angeb7 <> 4
+tr: GOTO KSM-anf09 IF angeb1 = 4 OR angeb2 = 4 OR angeb3 = 4 OR angeb4 = 4 OR angeb5 = 4 OR angeb6 = 4 OR angeb7 = 4
+GOTO KSM-anf10 IF angeb1 <> 4 AND angeb2 <> 4 AND angeb3 <> 4 AND angeb4 <> 4 AND angeb5 <> 4 AND angeb6 <> 4 AND angeb7 <> 4
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-anf08
+KSM-anf09
 =========
 
 tc:
@@ -444,14 +603,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf09
+tr: GOTO KSM-anf10
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-anf09
+KSM-anf10
 =========
 
 tc:
@@ -512,13 +671,13 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf10
+tr: GOTO KSM-anf11
 
 hi:
 
 \------------------------------------------------------------
 
-KSM-anf10
+KSM-anf11
 =========
 
 tc:
@@ -587,13 +746,13 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf11
+tr: GOTO KSM-anf12
 
 hi: Item 1 nicht auf dem aktuellen Stand (akademische Sprach- anstatt Sprache)
 
 \------------------------------------------------------------
 
-KSM-anf11
+KSM-anf12
 =========
 
 tc:
