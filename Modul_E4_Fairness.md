@@ -896,7 +896,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Wirtschaftswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie...
+is: Die Absolvent\*innen der Wirtschaftswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -963,7 +963,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie...
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -1030,7 +1030,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -1097,7 +1097,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie...
+is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -1165,7 +1165,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
 
 it:
 
@@ -1232,7 +1232,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Ingenieurwissenschaften, weil sie...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Ingenieurwissenschaften, weil sie …
 
 it:
 
@@ -1299,7 +1299,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
@@ -1366,7 +1366,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie...
+is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
@@ -1433,7 +1433,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie...
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
 
 it:
 
@@ -1500,7 +1500,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie...
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
