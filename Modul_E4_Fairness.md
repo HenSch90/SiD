@@ -1,6 +1,6 @@
 \------------------------------------------------------------
 
-KSM-fai01 
+KSM-fai01
 =========
 
 tc:
@@ -129,11 +129,11 @@ q: Wie stehen Sie zu den folgenden Aussagen?
 
 is:
 
-it1: (faihs): In Deutschland hat Jede\*r die gleiche Chance auf einen Hochschulabschluss.
+it1: (faihs): In Deutschland hat jede\*r die gleiche Chance auf einen Hochschulabschluss.
 
 it2: (faiein): Nur wenn die Unterschiede im Einkommen und im sozialen Ansehen groß genug sind, gibt es auch einen Anreiz für persönliche Leistungen.
 
-it3: (faiunt): Die Wirtschaft funktioniert nur, wenn die Unternehmen gute Gewinne machen, und das kommt letzten Endes allen zugute.
+it3: (faiunt): Die Wirtschaft funktioniert nur, wenn die Unternehmen hohe Gewinne machen, und das kommt letzten Endes allen zugute.
 
 st:
 
@@ -183,7 +183,7 @@ hl:
 
 in:
 
-q: Wie stark tragen die angeführten Aspekte dazu bei, ob man im Studium erfolgreich ist?
+q: Wie stark tragen, Ihrer Einschätzung nach, die angeführten Aspekte dazu bei, ob man im Studium erfolgreich ist?
 
 is:
 
@@ -241,7 +241,7 @@ fo:
 
 tr: GOTO KSM-fai05
 
-hi:
+hi: Reihenfolge der Items randomisieren.
 
 
 \------------------------------------------------------------
@@ -886,9 +886,9 @@ KSM-fai16
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -896,35 +896,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Wirtschaftswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Wirtschaftswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften. 
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -953,9 +953,9 @@ KSM-fai17
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -963,35 +963,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften. 
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1020,9 +1020,9 @@ KSM-fai18
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1030,35 +1030,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften. 
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1087,9 +1087,9 @@ KSM-fai19
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1097,35 +1097,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften.
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1155,9 +1155,9 @@ KSM-fai20
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1165,35 +1165,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften. 
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1222,9 +1222,9 @@ KSM-fai21
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1232,35 +1232,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Ingenieurwissenschaften, weil sie ...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Ingenieurwissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften. 
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1289,9 +1289,9 @@ KSM-fai22
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1299,35 +1299,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften. 
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen.
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1356,9 +1356,9 @@ KSM-fai23
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1366,35 +1366,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften.
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1423,9 +1423,9 @@ KSM-fai24
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1433,35 +1433,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften.
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen.
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1490,9 +1490,9 @@ KSM-fai25
 
 tc:
 
-vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand;  faiando
+vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
-qt: Mehrfachauswahl mit vertikaler Antwortoption und offenem Feld
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
@@ -1500,35 +1500,35 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie ...
+is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
 st:
 
-ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen
+ao1: (faigefun): eine wichtige gesellschaftliche Funktion übernehmen.
 
-ao2: (faifinan): hohe finanzielle Erträge erwirtschaften 
+ao2: (faifinan): hohe finanzielle Erträge erwirtschaften. 
 
-ao3: (faizeit): eine längere Wochenarbeitszeit haben
+ao3: (faizeit): eine längere Wochenarbeitszeit haben.
 
-ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten
+ao4: (fainive): ein höheres Anforderungsniveau im Studium hatten.
 
-ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist
+ao5: (faivolk): eine Tätigkeit ausüben, die von größerer Bedeutung für die Volkswirtschaft ist.
 
-ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen
+ao6: (failequal): zur Sicherung der Lebensqualität in der Gesellschaft beitragen.
 
-ao7: (faiveran): mehr Verantwortung im Beruf übernehmen 
+ao7: (faiveran): mehr Verantwortung im Beruf übernehmen. 
 
-ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen
+ao8: (faikennt): über am Arbeitsmarkt stärker nachgefragte Kenntnisse und Fertigkeiten verfügen.
 
-ao9: (faikompl): komplexere Aufgaben im Beruf ausführen
+ao9: (faikompl): komplexere Aufgaben im Beruf ausführen.
 
-ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben
+ao10: (faiflex): geringere zeitliche/räumliche Flexibilität in ihrer Tätigkeit haben.
 
-ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben
+ao11: (faistre): mehr Stress/Belastungen am Arbeitsplatz haben.
 
-ao12: (faiando): nichts davon
+ao12: (faiando): Nichts davon. [Exklusivkategorie]
 
 mv:
 
@@ -1560,7 +1560,7 @@ KSM-fai26
 
 tc:
 
-vn: faidisge; faidismig; faidissoz; faidisspra; faidisrel; faidissex; faidisbeein; faidiselt
+vn: faidisge; faidismig; faidissoz; faidisspra; faidisrel; faidissex; faidisbeein; faidiselt; faidiskorp
 
 qt: Einfachauswahlmatrix
 
@@ -1568,7 +1568,7 @@ hl:
 
 in:
 
-q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen für eine Absage (z. B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung für die Ablehnung verantwortlich sein. Aus welchen Gründen wird man Ihrer Meinung nach diskriminiert?
+q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen (z. B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung zu einer Absage führen. Diskriminierung bedeutet, dass eine Person schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. Aufgrund welcher Merkmale wird man Ihrer Meinung nach diskriminiert?
 
 is:
 
@@ -1584,9 +1584,11 @@ it5: (faidisrel): aufgrund religiöser Zugehörigkeit
 
 it6: (faidissex): aufgrund der sexuellen Orientierung
 
-it7: (faidisbeein): aufgrund physischer oder psychischer Beeinträchtigung
+it7: (faidisbeein): aufgrund körperlicher oder psychischer Beeinträchtigung
 
 it8: (faidiselt): aufgrund von Elternschaft
+
+it9: (faidiskorp): aufgrund des körperlichen Erscheinungsbilds
 
 st:
 
@@ -1628,7 +1630,7 @@ KSM-fai27
 
 tc:
 
-vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a; faierlelt_s/_a; faierland_s/a; fairerlando
+vn: faierlge_s/_a; faierlmig_s/_a; faierlsoz_s/_a; faierlspra_s/_a; faierlrel_s/_a; faierlsex_s/_a; faierlbeein_s/_a; faierlelt_s/_a; faierlkorp_s/_a
 
 qt: Mehrfachauswahlmatrix mit horizontalen ao
 
@@ -1636,7 +1638,7 @@ hl:
 
 in:
 
-q: Haben Sie in Ihrem bisherigen Studium an der Hochschule schon einmal Benachteiligung/Diskriminierung selbst erlebt oder bei anderen beobachtet?
+q: Haben Sie in Ihrem bisherigen Studium schon einmal Diskriminierung selbst erlebt oder bei anderen beobachtet?
 
 is:
 
@@ -1656,11 +1658,11 @@ ao5: (faierlrel_s, faierlrel_a): aufgrund religiöser Zugehörigkeit
 
 ao6: (faierlsex_s, faierlsex_a): aufgrund der sexuellen Orientierung
 
-ao7: (faierlbeein_s, faierlbeein_a): aufgrund physischer oder psychischer Beeinträchtigung
+ao7: (faierlbeein_s, faierlbeein_a): aufgrund körperlicher oder psychischer Beeinträchtigung
 
 ao8: (faierlelt_s, faierlelt_a): aufgrund von Elternschaft
 
-ao9: (faierland_s, faieerland_a): andere, und zwar: [fairerlando]
+ao9: (faierlkorp_s, faieerlkorp_a): aufgrund des körperlichen Erscheinungsbilds
 
 st:
 
@@ -1680,6 +1682,159 @@ hv:
 
 fo:
 
-tr:GOTO A_56
+tr:GOTO KSM-fai28
 
 hi:
+
+\------------------------------------------------------------
+
+KSM-fai28 
+=========
+
+tc:
+
+vn: diskjane (diskjane1; diskjane2; diskjane3; diskjane4; diskjane5; diskjane6; diskjane7; diskjane8; diskjane9; diskjane10; diskjane11; diskjane12; diskjane12o; diskjane13)
+
+qt: Mehrfachauswahlmatrix mit Exklusivkategorie und offener Angabe
+
+hl:
+
+in:
+
+q: Welche der folgenden Erfahrungen haben Sie im Rahmen Ihres Studiums bereits gemacht? 
+Wie für alle Fragen gilt: Die Beantwortung dieser Fragen ist selbstverständlich freiwillig und wir sichern Ihnen Anonymität und den Schutz Ihrer Daten zu. 
+
+is:
+
+ao1: (diskjane1): Leistungen wurden mir nicht zugetraut.
+
+ao2: (diskjane2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
+
+ao3: (diskjane3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde.
+
+ao4: (diskjane4): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
+
+ao5: (diskjane5): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
+
+ao6: (diskjane6): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet.
+
+ao7: (diskjane7): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
+
+ao8: (diskjane8): Ich wurde beleidigt oder beschimpft.
+
+ao9: (diskjane9): Ich habe unerwünschte sexualisierte Kommentare erlebt.
+
+ao10: (diskjane10): Ich habe sexualisierte körperliche Übergriffe erlebt.
+
+ao11: (diskjane11): Ich wurde körperlich bedroht oder angegriffen.
+
+ao12: (diskjane12): Andere diskriminierende Erfahrung, und zwar: [(diskjane12o), offene Angabe, 250 Zeichen]
+
+ao13: (diskjane13): Nichts davon.[Exklusivkategorie]
+
+st:
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:GOTO KSM-fai29 if  diskjane1=1 OR diskjane2=1 OR   diskjane3=1 OR  diskjane4=1 OR diskjane5=1 OR diskjane6=1 OR  diskjane7=1 OR diskjane8=1 OR diskjane9=1 OR diskjane10=1 OR diskjane11=1 OR diskjane12=1 GOTO ABSCHLUSSSEITE IF diskjane1=0 AND diskjane2=0 AND diskjane3=0 AND diskjane4=0 AND diskjane5=0 AND diskjane6=0 AND diskjane7=0 AND diskjane8=0 AND diskjane9=0 AND diskjane10=0 AND diskjane11=0 AND diskjane12=0 OR diskjane13=1
+
+hi: Satz "Wie für alle Fragen gilt: Die Beantwortung dieser Fragen ist selbstverständlich freiwillig und wir sichern Ihnen Anonymität und den Schutz Ihrer Daten zu." nicht fett drucken. 
+
+\------------------------------------------------------------
+
+KSM-fai29 
+=========
+
+tc:
+
+vn: diskanza (diskanza1; diskanza2; diskanza3; diskanza4; diskanza5; diskanza6; diskanza7; diskanza8; diskanza9; diskanza10; diskanza11; diskanza12)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie häufig haben Sie diese Erfahrungen im Rahmen des Studiums gemacht?
+
+is:
+
+it1: (diskanza1): Leistungen wurden mir nicht zugetraut.
+
+it2: (diskanza2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
+
+it3: (diskanza3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde.
+
+it4: (diskanza4): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
+
+it5: (diskanza5): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
+
+it6: (diskanza6): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet.
+
+it7: (diskanza7): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
+
+it8: (diskanza8): Ich wurde beleidigt oder beschimpft.
+
+it9: (diskanza9): Ich habe unerwünschte sexualisierte Kommentare erlebt.
+
+it10: (diskanza10): Ich habe sexualisierte körperliche Übergriffe erlebt.
+
+it11: (diskanza11): Ich wurde körperlich bedroht oder angegriffen.
+
+it12: (diskanza12): Andere diskriminierende Erfahrung:
+
+ao1: 1: einmal
+
+ao2: 2: mehrmals
+
+ao3: 3: regelmäßig
+
+st:
+
+mv:
+
+ka:
+
+vc1: SHOW it1 (diskanza1) IF diskjane1=1
+vc2: SHOW it2 (diskanza2) IF diskjane2=1
+vc3: SHOW it3 (diskanza3) IF diskjane3=1
+vc4: SHOW it4 (diskanza4) IF diskjane4=1
+vc5: SHOW it5 (diskanza5) IF diskjane5=1
+vc6: SHOW it6 (diskanza6) IF diskjane6=1
+vc7: SHOW it7 (diskanza7) IF diskjane7=1
+vc8: SHOW it8 (diskanza8) IF diskjane8=1
+vc9: SHOW it9 (diskanza9) IF diskjane9=1
+vc10: SHOW itq10 (diskanza10) IF diskjane10=1
+vc11: SHOW it11 (diskanza11) IF diskjane11=1
+vc12: SHOW it12 (diskanza12) IF diskjane12=1
+
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:GOTO ABSCHLUSSSEITE 
+
+hi: 
+
+
