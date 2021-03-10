@@ -4237,9 +4237,9 @@ ao3a: (zerwo): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
 ao3b: (zerwo2): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao4a: (zcarwo): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+ao4a: (zcarwo): Pflege von Verwandten/Bekannten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao4b: (zcarwo2): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+ao4b: (zcarwo2): Pflege von Verwandten/Bekannten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
 ao5a: (zkbwo): Kinderbetreuung [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
