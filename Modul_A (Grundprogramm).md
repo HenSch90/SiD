@@ -3306,7 +3306,7 @@ it:
 
 st:
 
-ao1: 1: nein
+ao1: 1: nein [Exklisivkategorie]
 
 ao2: 2: ja, eine Berufsausbildung abgeschlossen
 
@@ -3326,7 +3326,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao1 als Exklusivkategorie umsetzen.
 
 tr:
 
@@ -3484,7 +3484,7 @@ is:
 
 it1: (sabszp): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-it2: (sabszp2): [infield = Jahr; 2020 - 2019 - 2018 - ... - 2009 und früher] (Dropdown)
+it2: (sabszp2): [infield = Jahr; 2021 - 2019 - 2018 - ... - 2009 und früher] (Dropdown)
 
 st:
 
@@ -3519,29 +3519,31 @@ ao12: (sabszp): 12: Dezember
 
 aox: (sabszp2): Jahr
 
-ao1: (sabszp2): 1: 2020
+ao1: (sabszp2): 1: 2021
 
-ao2: (sabszp2): 2: 2019
+ao2: (sabszp2): 2: 2020
 
-ao3: (sabszp2): 3: 2018
+ao3: (sabszp2): 3: 2019
 
-ao4: (sabszp2): 4: 2017
+ao4: (sabszp2): 4: 2018
 
-ao5: (sabszp2): 5: 2016
+ao5: (sabszp2): 5: 2017
 
-ao6: (sabszp2): 6: 2015
+ao6: (sabszp2): 6: 2016
 
-ao7: (sabszp2): 7: 2014
+ao7: (sabszp2): 7: 2015
 
-ao8: (sabszp2): 8: 2013
+ao8: (sabszp2): 8: 2014
 
-ao9: (sabszp2): 9: 2012
+ao9: (sabszp2): 9: 2013
 
-ao10: (sabszp2): 10: 2011
+ao10: (sabszp2): 10: 2012
 
-ao11: (sabszp2): 11: 2010
+ao11: (sabszp2): 11: 2011
 
-ao12: (sabszp2): 12: 2009 und früher
+ao12: (sabszp2): 12: 2010
+
+ao13: (sabszp2): 13: 2009 und früher
 
 mv:
 
