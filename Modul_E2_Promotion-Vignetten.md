@@ -249,52 +249,52 @@ tc:
 
 vn: promgrund1- promgrund18; promgrund18o
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit offener Angabe
 
 hl:
 
 in:
 
-q: Es gibt Gründe die für oder gegen eine Promotion sprechen. Bitte geben Sie an, inwiefern die folgenden Aussagen auf Sie persönlich zutreffen. 
+q: Es gibt Gründe, die für oder gegen eine Promotion sprechen. Bitte geben Sie an, inwiefern die folgenden Aussagen auf Sie persönlich zutreffen. 
 
 is:
 
-it1: (promgrund1): Ich will zu einem bestimmten Thema forschen
+it1: (promgrund1): Ich will zu einem bestimmten Thema forschen.
 
-it2: (promgrund2): Eine Promotion verbessert meine Berufsaussichten 
+it2: (promgrund2): Eine Promotion verbessert meine Berufsaussichten. 
 
-it3: (promgrund3): Eine Promotion ist in meinem angestrebten Berufsfeld üblich 
+it3: (promgrund3): Eine Promotion ist in meinem angestrebten Berufsfeld üblich. 
 
-it4: (promgrund4): Ein Doktortitel besitzt ein hohes soziales Ansehen 
+it4: (promgrund4): Ein Doktortitel besitzt ein hohes soziales Ansehen. 
 
-it5: (promgrund5): Durch eine Promotion kann ich den Berufseinstieg hinausschieben
+it5: (promgrund5): Durch eine Promotion kann ich den Berufseinstieg hinausschieben.
 
-it6: (promgrund6): Mein*/e Professor*/in hat mich dazu ermutigt 
+it6: (promgrund6): Mein*/e Professor*/in hat mich dazu ermutigt. 
 
-it7: (promgrund7): Mit einer Promotion kann ich meinen Berufswunsch erfüllen
+it7: (promgrund7): Mit einer Promotion kann ich meinen Berufswunsch erfüllen.
 
-it8: (promgrund8): Eine Promotion sichert mir ein höheres Einkommen
+it8: (promgrund8): Eine Promotion sichert mir ein höheres Einkommen.
 
-it9: (promgrund9): Durch eine Promotion kann ich mich persönlich entfalten
+it9: (promgrund9): Durch eine Promotion kann ich mich persönlich entfalten.
 
-it10: (promgrund10): Eine Promotion dauert zu lange
+it10: (promgrund10): Eine Promotion dauert zu lange.
 
-it11: (promgrund11): Eine Promotion kann ich mir finanziell nicht leisten 
+it11: (promgrund11): Eine Promotion kann ich mir finanziell nicht leisten. 
 
-it12: (promgrund12): Mit einer Promotion wäre ich überqualifiziert 
+it12: (promgrund12): Mit einer Promotion bin ich überqualifiziert. 
 
-it13: (promgrund13): Das Anforderungsniveau für eine Promotion ist zu hoch
+it13: (promgrund13): Das Anforderungsniveau für eine Promotion ist zu hoch.
 
-it14: (promgrund14): Ich habe kein Interesse an einer wissenschaftlichen Tätigkeit 
+it14: (promgrund14): Ich habe kein Interesse an einer wissenschaftlichen Tätigkeit. 
 
-it15: (promgrund15): Ich will mich nicht so stark spezialisieren 
+it15: (promgrund15): Ich will mich nicht so stark spezialisieren. 
 
-it16: (promgrund16): Eine Promotion passt nicht in meine Lebens- und Familienplanung
+it16: (promgrund16): Eine Promotion passt nicht in meine Lebens- und Familienplanung.
 
-it17: (promgrund17): Eine Promotion ist mit einer zu großen psychischen Belastung verbunden
+it17: (promgrund17): Eine Promotion ist mit einer zu großen psychischen Belastung verbunden.
 
 
-it18: (promgrund18): sonstige, und zwar: [promgrund18o]
+it18: (promgrund18): Sonstiges, und zwar: [(promgrund18o), offene Angabe, 250 Zeichen]
 
 st:
 
@@ -326,7 +326,7 @@ fo:
 
 tr: GOTO ABSCHLUSSSEITE
 
-hi: Reihenfolge der Itemliste bitte randomisieren.
+hi: Reihenfolge der Itemliste bitte randomisieren, aber Item 18 immer ans Ende setzen.
 
 \--------------------------------
 
