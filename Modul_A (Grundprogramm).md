@@ -3779,7 +3779,7 @@ mv:
 
 ka:
 
-vc: SHOW it1 (mastplan) IF sabsano==1 
+vc: SHOW it1 (mastplan) IF sabsan=1 
 
 av:
 
