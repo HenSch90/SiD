@@ -3576,9 +3576,9 @@ A_46
 
 tc: sabsja=2 OR sbsja=3
 
-vn: sabser
+vn: sabser, sabseroaa
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit offener Angabe
 
 hl:
 
@@ -3600,13 +3600,11 @@ ao3: 3: Staatsexamen
 
 ao4: 4: Diplom
 
-ao5: 5: Promotion (Dr., PhD)
+ao5: 5: Magister
 
-ao6: 6: kirchliche Abschlussprüfung
+ao6: 6: Promotion (Dr., PhD)
 
-ao7: 7: künstlerische Abschlussprüfung
-
-ao8: 8: anderen Abschluss (bspw. ausländischer Abschluss)
+ao7: 7: Anderen Abschluss, und zwar: [(sabseroaa), offene Angabe, 80 Zeichen]
 
 mv:
 
