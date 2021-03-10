@@ -11,8 +11,7 @@ qt:
 
 hl: 
 
-in: 
-Übergang an die Hochschule: 
+in:  
 Der Übergang an die Hochschule kann mit verschiedenen Herausforderungen und Schwierigkeiten verbunden sein. Im Folgenden werden wir Ihnen daher Fragen zu Ihrer Studienanfangsphase stellen.
 
 q: 
@@ -52,7 +51,7 @@ fo:
 tr: GOTO KSM-anf02 IF mastersplit <> 1, 2, 3, 4, 5, 6, 13
 GOTO KSM-anf03 IF mastersplit = 1, 2, 3, 4, 5, 6, 13
 
-hi: Wäre es möglich, diesen Eingangstext etwas größer darzustellen als es sonst für die Einleitung üblich ist?
+hi:
 
 \------------------------------------------------------------
 
@@ -61,29 +60,31 @@ KSM-anf02
 
 tc:
 
-vn: paba; pama ; paphd ; pajob
+vn: bilaspabb / bilaspbab / bilaspmab / bilaspdrb / bilaspberb
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix mit horizontalen ao
 
 hl:
 
 in:
 
-q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie…
+q: Was denken Sie: Wie wichtig ist es Ihren Eltern, dass Sie …
 
 is:
 
-it1: (paba): … einen Hochschulabschluss erreichen?
+it1: (bilaspabb) … einen Hochschulabschluss erreichen?
 
-it2: (pama): … einen Master erreichen?
+it2: (bilaspbab) … einen Bachelorabschluss erreichen?
 
-it3: (paphd): … einen Doktortitel erreichen?
+it3: (bilaspmab) … einen Master erreichen?
 
-it4: (pajob): … beruflich ganz weit nach vorne kommen?
+it4: (bilaspdrb) … einen Doktortitel erreichen?
+
+it5: (bilaspberb) … beruflich ganz weit nach vorne kommen?
 
 st:
 
-ao1: 1: sehr unwichtig
+ao1: 1: gar nicht wichtig
 
 ao2: 2:
 
@@ -93,13 +94,11 @@ ao4: 4:
 
 ao5: 5: sehr wichtig
 
-ao6: -12: weiß ich nicht
-
-mv: 
+mv: -12: weiß ich nicht
 
 ka:
 
-vc: SHOW it2 IF sabsan = 1
+vc: SHOW it1 IF sabsan != 1 OR sabsan != 2 SHOW it2 IF sabsan = 1 OR sabsan = 2 SHOW it3 IF sabsan = 1 OR sabsan = 2
 
 av:
 
@@ -109,7 +108,7 @@ fv:
 
 hv:
 
-fo:
+fo: mv/"weiß ich nicht" absetzen
 
 tr: GOTO KSM-anf03
 
@@ -119,15 +118,14 @@ hi:
 
 \--------------------------
 
-
 KSM-anf03
 =========
 
 tc:
 
-vn: intsoc1; intinv1; intinv2; intart1; intart2; intent1; intent2; intconv2; intreal1; intreal2; intsoc3; intsoc4; intinv4; intart4; intent3; intconv3; intconv4; intreal3
+vn: intsoc1 / intsoc3 / intsoc4 / intinv1 / intinv2 / intinv4 / intart1 / intart2 / intart4 / intent1 / intent2 / intent3 / Intconv2 / intconv3 / intconv4 / intreal1 / intreal2 / intreal3
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
@@ -137,51 +135,51 @@ q: Bitte geben Sie an, wie sehr Sie sich für folgende Tätigkeiten interessiere
 
 is:
 
-it1: (intreal1): untersuchen, wie Dinge funktionieren
+it1: (intsoc1): anderen Menschen helfen
 
-it2: (intinv4): Lösungen für komplexe Probleme finden
+it2: (intsoc3): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
 
-it3: (intart1): kreativ/gestaltend tätig sein
+it3: (intsoc4): mit Menschen (zusammen)arbeiten
 
-it4: (intsoc1): anderen Menschen helfen
+it4: (intinv1): etwas genau beobachten und analysieren
 
-it5: (intent1): Unternehmen gründen oder leiten
+it5: (intinv2): Unbekanntes erforschen, experimentieren
 
-it6: (Intconv2): sich mit rechtlichen Fragen auseinandersetzen
+it6: (intinv4): Lösungen für komplexe Probleme finden
 
-it7: (intreal2): innovative technische Lösungen entwickeln
+it7: (intart1): kreativ/gestaltend tätig sein
 
-it8: (intinv2): Unbekanntes erforschen, experimentieren
+it8: (intart2): sich mit Kunst und Kultur befassen
 
-it9: (intart2): sich mit Kunst und Kultur befassen
+it9: (intart4): etwas sprachlich ansprechend formulieren
 
-it10: (intsoc3): sich mit den Lebenslagen von Menschen auseinandersetzen
+it10: (intent1): Unternehmen gründen oder leiten
 
-it11: (intent3): andere Menschen anleiten oder führen
+it11: (intent2): andere von einer Sache überzeugen
 
-it12: (intconv3): Arbeitsprozesse planen
+it12: (intent3): andere Menschen anleiten oder führen
 
-it13: (intreal3): an Soft- oder Hardware arbeiten
+it13: (Intconv2): sich mit rechtlichen Fragen beschäftigen
 
-it14: (intinv1): etwas genau beobachten und analysieren
+it14: (intconv3): Arbeitsprozesse planen
 
-it15: (intart4): etwas sprachlich ansprechend formulieren
+it15: (intconv4): mit Zahlen oder Statistiken arbeiten
 
-it16: (intsoc4): mit Menschen (zusammen)arbeiten
+it16: (intreal1): untersuchen, wie Dinge funktionieren
 
-it17: (intent2): andere von einer Sache überzeugen
+it17: (intreal2): innovative technische Lösungen entwickeln
 
-it18: (intconv4): mit Zahlen oder Statistiken arbeiten
+it18: (intreal3): an Soft- oder Hardware arbeiten
 
 st:
 
 ao1: 1: überhaupt nicht
 
-ao2: 2:
+ao2: 2
 
-ao3: 3:
+ao3: 3
 
-ao4: 4:
+ao4: 4
 
 ao5: 5: sehr stark
 
@@ -205,47 +203,52 @@ tr: GOTO KSM-anf04
 
 hi: 
 
-\------------------------------------------------------------
+\--------------------------
 
 KSM-anf04
 =========
 
 tc:
 
-vn: erwfach; erwwiss; erwleis; erweiglei; erwori; erwatmo; erwdid; erwauss; erwansp
+vn: stfwb (stfweinb / stfwartb / stfwaltb / stfwzeitb / stfwfamb / stfwberb / stfwbegab / stfwintb / stfwwissb / stfwverfb / stfwverbb / stfwandb / stfwandob)
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
 hl:
 
 in:
 
-q: Welche Erwartungen an das Studium hatten Sie vor Ihrer Studienaufnahme?
-Ich habe erwartet, dass … 
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihres derzeitigen Studienfaches?
 
 is:
 
-it1: (erwfach): ich interessante Fachinhalte lerne
+it1: (stfweinb): Einkommens- und Karrierechancen
 
-it2: (erwwiss): ich viel wissenschaftlich arbeite
+it2: (stfwartb): gute Aussichten auf sicheren Arbeitsplatz
 
-it3: (erwleis): ich hohe Leistungen erbringen muss
+it3: (stfwaltb): keine Zulassung im gewünschten Studienfach
 
-it4: (erweiglei): ich die Leistungsanforderungen meistern kann
+it4: (stfwzeitb): kurze Studienzeiten
 
-it5: (erwori): ich durch die Hochschule gut betreut werde
+it5: (stfwfamb): Eltern/Familie haben mir dazu geraten
 
-it6: (erwatmo): ich Anschluss zu anderen Studierenden finde
+it6: (stfwberb): fester Berufswunsch
 
-it7: (erwdid): die Lehrenden Fachinhalte gut vermitteln
+it7: (stfwbegab): eigene Begabung
 
-ao8: (erwauss): die Ausstattung (Seminarräume, Bibliothek, Labore) sehr gut ist
+it8: (stfwintb): spezielles Fachinteresse
 
-ao9: (erwansp): die Lehrenden sich um Studierende kümmern
+it9: (stfwwissb): eine gute wissenschaftliche Ausbildung
+
+it10: (stfwverfb): Vereinbarkeit von Familie mit späteren Beschäftigungsmöglichkeiten
+
+it11: (stfwverbb): Vereinbarkeit meiner Beeinträchtigung(en) mit späteren Beschäftigungsmöglichkeiten
+
+it12: (stfwandb): Anderes, und zwar: [(stfwando); 100 Zeichen]
 
 st:
 
-ao1: 1: trifft überhaupt nicht zu
+ao1: 1: gar nicht wichtig
 
 ao2: 2:
 
@@ -253,13 +256,13 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: trifft voll und ganz zu
+ao5: 5: sehr wichtig
 
 mv:
 
 ka:
 
-vc:
+vc: SHOW it11 (stfwverbb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
 
 av:
 
@@ -271,13 +274,84 @@ hv:
 
 fo:
 
-tr: KSM-anf05
+tr: GOTO KSM-anf05
 
-hi:
+\--------------------------
+
+KSM-anf05
+=========
+
+tc:
+
+vn: hswb (hswkontb / hswbedb / hswattb / hswfachb / hswrankb / hswtradb / hswzulb / hswintb / hswtzb / hswsuppb / hswbarrb / hswandb / hswandob)
+
+qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie wichtig waren Ihnen die folgenden Gründe bei der Wahl Ihrer derzeitigen Hochschule?
+
+is:
+
+it1: (hswkontb): Freund*innen/Familie vor Ort
+
+it2: (hswbedb): günstige Lebensbedingungen am Hochschulort
+
+it3: (hswattb): Attraktivität von Stadt und Umgebung
+
+it4: (hswfachb): gewünschte Fachrichtung
+
+it5: (hswrankb): gute Platzierung meines Fachs in Rankings
+
+it6: (hswtradb): Tradition und Ruf der Hochschule
+
+it7: (hswzulb): keine Zulassung an Wunschhochschule
+
+it8: (hswintb): internationale Ausrichtung der Hochschule
+
+it9: (hswtzb): Möglichkeit, in Teilzeit studieren zu können
+
+it10: (hswsuppb): hochschulspezifische Beratungs- und Unterstützungsangebote
+
+it11: (hswbarrb): Barrierefreiheit der Hochschule
+
+it12: (hswandb): Anderes, und zwar: [(hswando); 100 Zeichen]
+
+st:
+
+ao1: 1: gar nicht wichtig
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: sehr wichtig
+
+mv:
+
+ka:
+
+vc: SHOW it11 (hswbarrb) IF gartmob=1 OR gartseh=1 OR gartohr=1 OR gartspr=1 OR gartpsy=1 OR gartsom=1 OR garttls=1 OR gartson=1 OR gartka=1
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr: GOTO KSM-anf06
 
 \------------------------------------------------------------
 
-KSM-anf05
+KSM-anf06
 =========
 
 tc:
@@ -290,11 +364,11 @@ hl:
 
 in:
 
-q: Haben Sie vor der Aufnahme Ihres aktuellen Studiums an folgenden Maßnahmen teilgenommen? 
+q: Haben Sie vor der Aufnahme Ihres aktuellen Studiums an den folgenden Maßnahmen teilgenommen? 
 
 is:
 
-it1: (massnahm1): Tests zur fachlichen Eignung (Online Self Assessment, Studicheck, Wissenstest, Studium-Interessentests)
+it1: (massnahm1): Tests zur fachlichen Eignung (Online Self Assessment, Studicheck, Wissenstest, Studium-Interessenstests)
 
 it2: (massnahm2): Aufnahmeprüfungen
 
@@ -304,7 +378,7 @@ it4: (massnahm4): Probestudium
 
 it5: (massnahm5): Schüleruni, Schnupperstudium
 
-it6: (massnahm6): E-Learning-Angebote im bundesweiten Onlineportal Studiport
+it6: (massnahm6): E-Learning-Angebote im bundesweiten Onlineportal _Studiport_
 
 st:
 
@@ -329,15 +403,15 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf06 IF massnahm1 = 2 
-GOTO KSM-anf07 IF massnahm1 <> 2 
+tr: GOTO KSM-anf07 IF massnahm1 = 2 
+GOTO KSM-anf08 IF massnahm1 <> 2 
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-anf06
+KSM-anf07
 =========
 
 tc:
@@ -354,7 +428,7 @@ q: Waren die Maßnahmen verpflichtend oder freiwillig?
 
 is:
 
-it1: (pflicht1): Tests zur fachlichen Eignung (Online Self Assessment, Studicheck, Wissenstest, Studium-Interessentests)
+it1: (pflicht1): Tests zur fachlichen Eignung (Online Self Assessment, Studicheck, Wissenstest, Studium-Interessenstests)
 
 st:
 
@@ -378,14 +452,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf07
+tr: GOTO KSM-anf08
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-anf07
+KSM-anf08
 =========
 
 tc:
@@ -398,17 +472,17 @@ hl:
 
 in:
 
-q: Welche Angebote gibt es Ihres Wissens an Ihrer Hochschule? An welchen haben Sie teilgenommen?
+q: Welche Angebote gibt es Ihres Wissens nach an Ihrer Hochschule? An welchen haben Sie teilgenommen?
 
 is:
 
 it1: (angeb1): Betreuung bei Studienaufnahme (Einschreibung, Zimmersuche)
 
-it2: (angeb2): studienvorbereitende Tage, Camps oder Orientierungswochen
+it2: (angeb2): Studienvorbereitende Tage, Camps oder Orientierungswochen
 
 it3: (angeb3): „Brückenkurse“ zur Aufarbeitung fachlicher Wissenslücken
 
-it4: (angeb4): studentische Ansprechpartner zu Fragen rund ums Studium (z.B. Tutorien-, Buddy- Programme
+it4: (angeb4): Studentische Ansprechpartner zu Fragen rund ums Studium (z.B. Tutorien-, Buddy-Programme)
 
 it5: (angeb5): Beratung von Lehrenden zum Studienverlauf (z.B. Mentoringprogramme)
 
@@ -442,15 +516,15 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf08 IF angeb1 = 4 OR angeb2 = 4 OR angeb3 = 4 OR angeb4 = 4 OR angeb5 = 4 OR angeb6 = 4 OR angeb7 = 4
-GOTO KSM-anf09 IF angeb1 <> 4 AND angeb2 <> 4 AND angeb3 <> 4 AND angeb4 <> 4 AND angeb5 <> 4 AND angeb6 <> 4 AND angeb7 <> 4
+tr: GOTO KSM-anf09 IF angeb1 = 4 OR angeb2 = 4 OR angeb3 = 4 OR angeb4 = 4 OR angeb5 = 4 OR angeb6 = 4 OR angeb7 = 4
+GOTO KSM-anf10 IF angeb1 <> 4 AND angeb2 <> 4 AND angeb3 <> 4 AND angeb4 <> 4 AND angeb5 <> 4 AND angeb6 <> 4 AND angeb7 <> 4
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-anf08
+KSM-anf09
 =========
 
 tc:
@@ -469,11 +543,11 @@ is:
 
 it1: (nutz1): Betreuung bei Studienaufnahme (Einschreibung, Zimmersuche)
 
-it2: (nutz2): studienvorbereitende Tage, Camps oder Orientierungswochen
+it2: (nutz2): Studienvorbereitende Tage, Camps oder Orientierungswochen
 
 it3: (nutz3): „Brückenkurse“ zur Aufarbeitung fachlicher Wissenslücken
 
-it4: (nutz4): studentische Ansprechpartner zu Fragen rund ums Studium (z.B. Tutorien-, Buddy- Programme
+it4: (nutz4): Studentische Ansprechpartner zu Fragen rund ums Studium (z.B. Tutorien-, Buddy-Programme)
 
 it5: (nutz5): Beratung von Lehrenden zum Studienverlauf (z.B. Mentoringprogramme)
 
@@ -515,14 +589,14 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf09
+tr: GOTO KSM-anf10
 
 hi:
 
 
 \------------------------------------------------------------
 
-KSM-anf09
+KSM-anf10
 =========
 
 tc:
@@ -547,7 +621,7 @@ it3: (studall3): Einrichten an der Hochschule (Immatrikulation, Seminarplan)
 
 it4: (studall4): Heimweh (Familie, Freunde)
 
-it5: (studall5): Mit meinen finanziellen Mitteln auskommen
+it5: (studall5): mit meinen finanziellen Mitteln auskommen
 
 it6: (studall6): Alltagsorganisation (Haushaltsführung, Behördengänge)
 
@@ -555,7 +629,7 @@ it7: (studall7): Eigenverantwortung
 
 st:
 
-ao1: 1: überhaupt keine
+ao1: 1: überhaupt nicht
 
 ao2: 2:
 
@@ -563,9 +637,9 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr große
+ao5: 5: sehr stark
 
-ao6: -12: trifft nicht zu
+ao6: -12: kann ich nicht beurteilen
 
 mv: 
 
@@ -583,13 +657,13 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf10
+tr: GOTO KSM-anf11
 
 hi:
 
 \------------------------------------------------------------
 
-KSM-anf10
+KSM-anf11
 =========
 
 tc:
@@ -658,13 +732,13 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf11
+tr: GOTO KSM-anf12
 
 hi:
 
 \------------------------------------------------------------
 
-KSM-anf11
+KSM-anf12
 =========
 
 tc:
