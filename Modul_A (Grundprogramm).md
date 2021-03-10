@@ -2398,7 +2398,7 @@ mv:
 
 ka:
 
-vc: SHOW it2 IF sabsano = 1
+vc: SHOW it2 IF sabsan = 1
 
 av:
 
