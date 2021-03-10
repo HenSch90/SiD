@@ -1,6 +1,6 @@
 \------------------------------------------------------------
 
-KSM-pol01 
+KSM-pol01
 =========
 
 tc:
@@ -11,7 +11,7 @@ qt: Einfachauswahl mit horizontaler Antwortoption
 
 hl:
 
-in: Im Folgenden geht es um Aussagen zur Politik und zu hochschulpolitischen Themen, bei denen Sie angeben sollen, inwieweit sie diesen zustimmen oder diese ablehnen. Dabei geht es nicht um richtig oder falsch, sondern um Ihre persönliche Meinung. Bitte lesen Sie dazu die Aussagen aufmerksam durch.
+in: Im Folgenden geht es um Aussagen zur Politik und zu hochschulpolitischen Themen, bei denen Sie angeben sollen, inwieweit Sie diesen zustimmen oder diese ablehnen. Dabei geht es nicht um richtig oder falsch, sondern um Ihre persönliche Meinung. Bitte lesen Sie dazu die Aussagen aufmerksam durch.
 
 
 q: Wie stark interessieren Sie sich für Politik?
@@ -50,7 +50,7 @@ fo:
 
 tr: KSM-pol02
 
-hi:
+hi: Fragetext bitte optisch vom Einleitungstext absetzen.
 
 \------------------------------------------------------------
 
@@ -67,7 +67,7 @@ hl:
 
 in:
 
-q: Sind Sie mit der Art und Weise, wie die Demokratie in Deutschland funktioniert, alles in allem…?
+q: Wie zufrieden sind Sie alles in allem mit der Art und Weise, wie die Demokratie in Deutschland funktioniert?
 
 is:
 
@@ -211,7 +211,7 @@ it6: (polziel6): Stärkung des politischen und wirtschaftlichen Zusammenhalts in
 
 it7: (polziel7): Reduzierung des Wohlfahrtstaates und der sozialen Sicherungssysteme
 
-it8: (polziel8): Bewahrung der traditionellen Familie 
+it8: (polziel8): Bewahrung der traditionellen Familie ("Vater, Mutter, Kind")
 
 it9: (polziel9): Gleichstellung sexueller Orientierungen (LGBTQIA+)
 
@@ -221,7 +221,7 @@ it11: (polziel11): höhere Steuern für Reiche
 
 it12: (polziel12): Durchsetzung von Frauenquoten in Führungspositionen
 
-it13: (polziel13): gemeinsamer Unterricht von behinderten und nicht behinderten Kindern an Schulen
+it13: (polziel13): gemeinsamer Unterricht von beeinträchtigten und nicht beeinträchtigten Kindern an Schulen
 
 st:
 
@@ -255,7 +255,7 @@ fo:
 
 tr: KSM-pol05
 
-hi:
+hi: Reihenfolge der Items randomisieren.
 
 \------------------------------------------------------------
 
@@ -276,7 +276,7 @@ q: Im Folgenden geht es um hochschulpolitische Themen. Wie stehen Sie zu folgend
 
 is:
 
-it1: (hochschulpol1): Studierende haben an den Hochschulen zu wenig Mitbestimmungsrechte.
+it1: (hochschulpol1): Studierende haben an den Hochschulen zu wenig Mitbestimmungsrechte in Gremien (z.B. Studierendenvertretung im Senat, AStA etc.).
 
 it2: (hochschulpol2): Hochschulen beziehen zu wenig Stellung zu gesellschaftlich relevanten Themen.
 
@@ -336,7 +336,7 @@ hl:
 
 in:
 
-q: Welche Formen der Kritik würden Sie nutzen, um auf hochschulpolitische Probleme aufmerksam zu machen?
+q: Welche Formen der Kritik würden Sie üblicherweise nutzen, um auf hochschulpolitische Probleme aufmerksam zu machen?
 
 is:
 
@@ -394,15 +394,15 @@ KSM-pol07
 
 tc:
 
-vn: beteil1; beteil2; beteil3; beteil4; beteil5; beteil6; beteil7; beteil8; beteil9; beteil10
+vn: beteil1; beteil2; beteil3; beteil4; beteil5; beteil6; beteil7; beteil8; beteil9; beteil10; beteil11
 
-qt: Mehrfachauswahl
+qt: Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
 in:
 
-q: An welcher der folgenden Tätigkeiten in Gruppen oder Organisationen sind Sie selbst beteiligt?
+q: In welchen Gruppen oder Organisationen haben Sie sich während Ihrer Studienzeit beteiligt?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -426,7 +426,9 @@ ao8: (beteil8): Mitarbeit in Selbsthilfegruppen
 
 ao9: (beteil9): Studentenverbindungen
 
-ao10: (beteil10): nichts davon
+ao10: (beteil10): Mitarbeit in Kirchen oder anderen Religionsgemeinschaften
+
+ao11: (beteil11): Nichts davon [Exklusivkategorie]
 
 
 st:
@@ -447,6 +449,6 @@ hv:
 
 fo:
 
-tr: GOTO A_56
+tr: GOTO Abschlussseite
 
 hi:
