@@ -1,4 +1,3 @@
-
 **------------------------------------------------------------**
 
 **Qualität der Ausstattung**
@@ -8,7 +7,7 @@ D2_2
 
 tc:
 
-vn: ssqualeq (ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10)
+vn: ssqualeq (ssqualeq1; ssqualeq2; ssqualeq3; ssqualeq4; ssqualeq5; ssqualeq6; ssqualeq7; ssqualeq8; ssqualeq9; ssqualeq10; ssqualeg11)
 
 qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
@@ -20,25 +19,27 @@ q: Wie bewerten Sie Ihre Hochschule hinsichtlich folgender Aspekte?
 
 is:
 
-it1: (ssqualeq1): Zustand und Ausstattung der Veranstaltungsräume (Technik, Mobiliar, Helligkeit)
+it1: (ssqualeq1): Gesamtzustand der Veranstaltungsräume (Funktionalität, Mobiliar, Belüftung)
 
-it2: (ssqualeq2): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume)
+it2: (ssqualeq2): technische Ausstattung der Veranstaltungsräume (z. B. Beamer, Smartboards)
 
-it3: (ssqualeq3): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen Lernen
+it3: (ssqualeq3): Verfügbarkeit und Ausstattung fachspezifischer Übungsräume (z. B. Labore, Werkstätten, Sportübungsräume)
 
-it4: (ssqualeq4): Zugang zum W-LAN
+it4: (ssqualeq4): Verfügbarkeit und Ausstattung von Räumen zum eigenständigen Lernen
 
-it5: (ssqualeq5): IT-/digitale Ausstattung (z. B. Software)
+it5: (ssqualeq5): Zugang zum W-LAN
 
-it6: (ssqualeq6): Öffnungszeiten der Bibliothek
+it6: (ssqualeq6): IT-/digitale Ausstattung (z. B. Software)
 
-it7: (ssqualeq7): Verfügbarkeit von Fachliteratur
+it7: (ssqualeq7): Öffnungszeiten der Bibliothek
 
-it8: (ssqualeq8): Service- und Beratungsleistungen
+it8: (ssqualeq8): Verfügbarkeit von Fachliteratur
 
-it9: (ssqualeq9): Betreuungsangebote für Studierende mit Kind(ern)
+it9: (ssqualeq9): Service- und Beratungsleistungen
 
-it10: (ssqualeq10): Unterstützungsangebote für Studierende mit Beeinträchtigung(en) (z. B. spezifisch ausgestattete Arbeitsplätze)
+it10: (ssqualeq10): Betreuungsangebote für Studierende mit Kind(ern)
+
+it11: (ssqualeq11): Unterstützungsangebote für Studierende mit Beeinträchtigung(en) (z. B. spezifisch ausgestattete Arbeitsplätze)
 
 st:
 
@@ -54,13 +55,13 @@ ao5: 5: sehr gut
 
 mv: -12: weiß ich nicht
 
-ka1: (it1 TO it3): !!räumliche Ausstattung!!
+ka1: (it1 TO it4): !!räumliche Ausstattung!!
 
-ka2: (it4 TO it10): !!Service-Leistungen!!
+ka2: (it5 TO it11): !!Service-Leistungen!!
 
-vc1: SHOW it9 (ssqualeq9) IF dkinja = 2
+vc1: SHOW it10 (ssqualeq10) IF dkinja = 2
 
-vc2: SHOW it10 (ssqualeq10) IF h_gartcount >= 1
+vc2: SHOW it11 (ssqualeq11) IF h_gartcount >= 1
 
 av:
 
@@ -72,7 +73,7 @@ hv:
 
 fo1: Bitte über it1 "räumliche Ausstattung" linksbündig positionieren.
 
-fo2: Bitte über it4 "Service-Leistungen" linksbündig positionieren.
+fo2: Bitte über it5 "Service-Leistungen" linksbündig positionieren.
 
 fo3: mv/"weiß ich nicht" bitte etwas absetzen.
 
@@ -93,7 +94,7 @@ D2_3
 
 tc:
 
-vn: ssstruk (ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9)
+vn: ssstruk (ssstruk1; ssstruk2; ssstruk3; ssstruk4; ssstruk5; ssstruk6; ssstruk7; ssstruk8; ssstruk9, ssstruk10)
 
 qt: Einfachauswahlmatrix/5er-Skala mit Zwischenüberschriften und horizontalen ao
 
@@ -109,19 +110,21 @@ it1: (ssstruk1): Es bestehen übersichtliche Modulwahlmöglichkeiten.
 
 it2: (ssstruk2): Die Lehrveranstaltungen sind zeitlich gut koordiniert.
 
-it3: (ssstruk3): Die Semestervorgaben sind gut erfüllbar.
+it3: (ssstruk3): Lehrveranstaltungstermine fallen häufiger aus.
 
-it4: (ssstruk4): Die einzelnen Module bauen inhaltlich aufeinander auf.
+it4: (ssstruk4): Die Semestervorgaben sind gut erfüllbar.
 
-it5: (ssstruk5): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
+it5: (ssstruk5): Die einzelnen Module bauen inhaltlich aufeinander auf.
 
-it6: (ssstruk6): Die Veranstaltungen bereiten gut auf die Prüfungen vor.
+it6: (ssstruk6): Der Zusammenhang mit anderen Fächern wird aufgezeigt.
 
-it7: (ssstruk7): Die Prüfungen liegen zeitlich oft zu nah beieinander.
+it7: (ssstruk7): Die Veranstaltungen bereiten gut auf die Prüfungen vor.
 
-it8: (ssstruk8): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
+it8: (ssstruk8): Die Prüfungen liegen zeitlich oft zu nah beieinander.
 
-it9: (ssstruk9): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten sind angemessen.
+it9: (ssstruk9): Das An- und Abmeldeverfahren zu Prüfungen ist unkompliziert.
+
+it10: (ssstruk10): Die Dauer von Prüfungen bzw. Abgabefristen von Hausarbeiten sind angemessen.
 
 st:
 
@@ -137,11 +140,11 @@ ao5: 5: trifft voll und ganz zu
 
 mv:
 
-ka1: (it1 TO it3): !!Koordination!!
+ka1: (it1 TO it4): !!Koordination!!
 
-ka2: (it4 TO it5): !!Inhalte!!
+ka2: (it5 TO it6): !!Inhalte!!
 
-ka3: (it6 TO it9): !!Prüfungsorganisation!!
+ka3: (it7 TO it10): !!Prüfungsorganisation!!
 
 vc:
 
@@ -155,9 +158,9 @@ hv:
 
 fo1: Bitte über it1 "Koordination" linksbündig positionieren.
 
-fo2: Bitte über it4 "Inhalte" linksbündig positionieren.
+fo2: Bitte über it5 "Inhalte" linksbündig positionieren.
 
-fo3: Bitte über it6 "Prüfungsorganisation" linksbündig positionieren.
+fo3: Bitte über it7 "Prüfungsorganisation" linksbündig positionieren.
 
 tr:
 
@@ -176,7 +179,7 @@ D2_4
 
 tc:
 
-vn: ssstud (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5)
+vn: ssstud (ssstud1; ssstud2; ssstud3; ssstud4; ssstud5; ssstud6)
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -190,13 +193,15 @@ is:.
 
 it1: (ssstud1): Die Lehrveranstaltung ist überfüllt.
 
-it2: (ssstud2): Es sind einzelne Termine ausgefallen.
+it2: (ssstud2): Es besteht eine Anmeldepflicht.
 
-it3: (ssstud3): Es besteht eine Anmeldepflicht.
+it3: (ssstud3): Es besteht eine Anwesenheitspflicht.
 
-it4: (ssstud4): Es besteht eine Anwesenheitspflicht.
+it4: (ssstud4): Die Lehrveranstaltung wird als Videokonferenz/Web-Seminar angeboten.
 
-it5: (ssstud5): Die Lehrveranstaltungssprache ist Englisch.
+it5: (ssstud5): Die Lehrveranstaltung ist als Videoaufzeichnung abrufbar.
+
+it6: (ssstud6): Die Lehrveranstaltungssprache ist Englisch.
 
 st:
 
@@ -204,7 +209,7 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
@@ -251,9 +256,9 @@ hl:
 
 in:
 
-q: Wenn Sie an die von Ihnen belegten Veranstaltungen in einem typischen Semester denken: Wie hoch ist der Anteil der Sitzungen, an denen Sie auch tatsächlich anwesend sind?
+q: Wenn Sie an die von Ihnen belegten Veranstaltungen denken: Wie hoch ist der Anteil der Sitzungen, an denen Sie im Schnitt auch tatsächlich teilnehmen?
 
-is:
+is: Gemeint sind alle Formate von Veranstaltungen (Präsenz-/Onlineveranstaltungen).
 
 it:
 
@@ -333,7 +338,7 @@ it3: (sscowver3): verschiedene Theorien und Konzepte kritisch vergleichen und be
 
 st:
 
-ao1: 1: sehr wenig Wert
+ao1: 1: sehr wenig
 
 ao2: 2:
 
@@ -341,7 +346,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr viel Wert
+ao5: 5: sehr viel
 
 mv:
 
@@ -384,7 +389,7 @@ hl:
 
 in:
 
-q: Bitte schätzen Sie	ein, auf wie viele der Lehrveranstaltungen in Ihrem	derzeitigen	Studiengang die folgenden Aussagen zutreffen.
+q: Bitte schätzen Sie ein, auf wie viele der Lehrveranstaltungen in Ihrem derzeitigen Studiengang die folgenden Aussagen zutreffen.
 
 is:
 
@@ -406,7 +411,7 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
@@ -709,9 +714,9 @@ hl:
 
 in:
 
-q: Wie häufig haben Sie im laufenden Semester *außerhalb* der Lehrveranstaltungen zu den folgenden Personen Kontakt (direkt, telefonisch, schriftlich)?
+q: Wie häufig haben Sie im laufenden Semester *außerhalb* der Lehrveranstaltungen zu den folgenden Personen Kontakt?
 
-is:.
+is: Gemeint sind Kontakte jeglicher Art (persönlich, telefonisch, schriftlich, digital).
 
 it1: (sskonth1): Kommiliton\*innen
 
@@ -932,7 +937,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte infield-Texte noch umsetzten.
 
         <zofar:transitions>
             <zofar:transition target="D2_18"/>
@@ -949,7 +954,7 @@ D2_18
 
 tc:
 
-vn: sswrite (sswrite1; sswrite2; sswrite3; sswrite4; sswrite5; sswrite6)
+vn: anzprkla anzprmlp anzprsau anzprabs
 
 qt: Einfachauswahlmatrix/5er-Skala mit horizontalen ao
 
@@ -957,21 +962,17 @@ hl:
 
 in:
 
-q: Wie viele Zusammenfassungen, Exzerpte, Hausarbeiten und andere schriftliche Leistungen müssen Sie im aktuellen Semester erbringen?
+q: Wie viele der folgenden Prüfungsleistungen müssen Sie im aktuellen Semester ablegen?
 
-is: Bitte geben Sie die ++Anzahl++ der schriftlichen Leistungen (inklusive der noch nicht abgeschlossenen) entsprechend ihrer Länge an.
+is: 
 
-it1: (sswrite1): bis zu 5 Seiten
+it1: (anzprkla): Klausuren
 
-it2: (sswrite2): 6 bis 10 Seiten
+it2: (anzprmlp): mündliche Prüfungen
 
-it3: (sswrite3): 11 bis 15 Seiten
+it3: (anzprsau): schriftliche Ausarbeitung (Hausarbeit, Laborbericht)
 
-it4: (sswrite4): 16 bis 20 Seiten
-
-it5: (sswrite5): 21 bis 25 Seiten
-
-it6: (sswrite6): 26 Seiten oder mehr
+it4: (anzprabs): Abschlussarbeiten
 
 st:
 
@@ -1038,7 +1039,7 @@ hl:
 
 in:
 
-q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken: Wie viele Seiten lesen Sie durchschnittlich, um sich auf die von Ihnen besuchten Lehrveranstaltungen vorzubereiten?
+q: Wenn Sie an eine typische 7-Tage-Woche des laufenden Semesters denken: Wie viele Seiten lesen Sie durchschnittlich, um sich auf Lehrveranstaltungen vorzubereiten?
 
 is:.
 
@@ -1062,7 +1063,7 @@ fv:
 
 hv:
 
-fo:
+fo: Postfix bitte umsetzen.
 
 tr:
 
@@ -1093,7 +1094,9 @@ q: Wie oft haben Sie in diesem Semester …
 
 is:.
 
-it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen oder Aufgaben verknüpft?
+it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen verknüpft?
+
+.
 
 it2: (ssrilern2): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
 
@@ -1162,7 +1165,7 @@ it1: (sszustud1): fachliche Kompetenz der Lehrenden
 
 it2: (sszustud2): digitale Kompetenz der Lehrenden
 
-it3: (sszustud3): Vermittlung des Lehrstoffs durch die Lehrenden
+it3: (sszustud3): Aufbereitung/Vermittlung des Lehrstoffs durch die Lehrenden
 
 it4: (sszustud4): Betreuung und Beratung durch die Lehrenden
 
@@ -1182,7 +1185,7 @@ it11: (sszustud11): Ihrem bisher erreichten Wissen und Können
 
 st:
 
-ao1: 1: überhaupt nicht zufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
