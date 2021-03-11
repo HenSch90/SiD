@@ -3481,7 +3481,9 @@ hl:
 
 in:
 
-q: Wann haben Sie diesen Abschluss erworben?
+q1: Wann haben Sie diesen Abschluss erworben?
+
+q2: Sie haben angegeben, dass Sie bereits einen Hochschulabschluss haben: Wann haben Sie diesen Abschluss erworben?
 
 is:
 
@@ -3552,7 +3554,7 @@ mv:
 
 ka:
 
-vc:
+vc: SHOW q2 if Internationale Studierende
 
 av:
 
@@ -3562,7 +3564,7 @@ fv:
 
 hv:
 
-fo: Dropdowns bitte nebeneinander programmieren.
+fo: Dropdowns bitte nebeneinander programmieren. 
 
 tr:
 
@@ -3570,7 +3572,7 @@ tr:
             <zofar:transition target="A_46"/>
         </zofar:transitions>
 
-hi:
+hi: q2 soll nur an internationale Studierende ausgespielt werden,VC wird nachgereicht -> Platzhalter
 
 \------------------------------------------------------------
 
