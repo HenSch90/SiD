@@ -1055,7 +1055,9 @@ in:
 
 q1: Wie alt ist Ihr Geschwisterteil und welches Geschlecht hat Ihr Geschwisterteil?
 
-q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben sie? 
+q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben sie?
+
+q3: Wie alt ist/sind Ihr Geschwisterteil/Ihre Geschwister und welches Geschlecht hat/haben Ihr Geschwisterteil/Ihre Geschwister?
 
 is: Bitte beginnen Sie mit Ihrem ältesten Geschwisterteil.
 
@@ -1097,6 +1099,7 @@ vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibanz = 3
 
 vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibanz > 3
 
+vc4: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibanz=missing
 av:
 
 kh: Bitte geben Sie das Lebensalter an (0 bis 99).
@@ -1135,17 +1138,17 @@ it:
 
 st:
 
-ao1: (pflegangno): nein [Exklusivkategorie]
+ao1: 1: (pflegangno): nein [Exklusivkategorie]
 
-ao2: (pflegang1): aus der Familie
+ao2: 2:(pflegang1): aus der Familie
 
-ao3: (pflegang2): aus dem Freundes- und Bekanntenkreis
+ao3: 3:(pflegang2): aus dem Freundes- und Bekanntenkreis
 
 mv:
 
 ka: (ao2 TO ao3): Ja, und zwar:
 
-vc:
+vc: SHOW is if dkinja==1
 
 av:
 
