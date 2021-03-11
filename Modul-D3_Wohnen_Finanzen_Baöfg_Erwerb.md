@@ -43,7 +43,7 @@ vc2: SHOW q4, ao2 IF wohnal == 1 & (wohnfo == 4 | wohnfo ==5 | wohnfo ==6)
 
 vc3: SHOW q1, q2, q3, ao1, ao2, ao3 IF (wohnwg==1 | wohnel == 1 |wohnfam == 1 | wohnsons == 1) & (wohnfo != 4 | wohnfo !=5 | wohnfo !=6)
 
-vc4: SHOW q1, q4, q3, ao1, ao2, ao3 IF (wohnwg==1 | wohnel == 1 |wohnfam == 1 | wohnsons == 1) & (wohnfo == 4 | wohnfo ==5 | wohnfo ==6)
+vc4: SHOW q1, q4, ao1, ao2, ao3 IF (wohnwg==1 | wohnel == 1 |wohnfam == 1 | wohnsons == 1) & (wohnfo == 4 | wohnfo ==5 | wohnfo ==6)
 
 vc5: SHOW  q1, q2, ao1, ao2 IF (wohnpar == 1 | wohnkin ==1) & (wohnfo != 4 | wohnfo !=5 | wohnfo !=6)
 
