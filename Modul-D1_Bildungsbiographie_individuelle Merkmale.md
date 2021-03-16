@@ -856,7 +856,7 @@ st:
 
 ao1: (suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05): 1: Sommersemester 2021 \ 2: Wintersemester 2020/2019 \ 3: Sommersemester 2019 \ 4: Wintersemester 2018/2019 \ ... 23: Sommersemester 2010 \ 24: vor Sommersemester 2010
 
-ao2: (sudau01 / sudau02 / sudau03 / sudau04 / sudau05): 1: 1 Monat \ 2: 2 Monate \ 3: 3 Monate \ 4: 4 Monate \ ... \ 24: 24 Monate
+ao2: (sudau01 / sudau02 / sudau03 / sudau04 / sudau05): 1: 1 Monat \ 2: 2 Monate \ 3: 3 Monate \ 4: 4 Monate \ ... \ 24: 24 Monate und mehr
 
 ao3: (subeur01 / subeur02 / subeur03 / subeur04 / subeur05) 1: ja; 2: nein
 
