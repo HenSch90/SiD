@@ -780,9 +780,9 @@ it6: (stand01 / stand02 / stand03 / stand04 / stand05): letzter Stand [Einfachau
 
 st:
 
-ao1: (beginn01 / beginn02 / beginn03 / beginn04 / beginn05): 1: Sommersemester 2020 \ 2: Wintersemester 2019/2020 \ 3: Sommersemester 2019 \ 4: Wintersemester 2018/2019 \ ... 21: Sommersemester 2010
+ao1: (beginn01 / beginn02 / beginn03 / beginn04 / beginn05): 1: Sommersemester 2021 \ 2: Wintersemester 2020/2019 \ 3: Sommersemester 2019 \ 4: Wintersemester 2018/2019 \ ... 23: Sommersemester 2010 \ 24: vor Sommersemester 2010
 
-ao2: (ende01 / ende02 / ende03 / ende04 / ende05): 1: Sommersemester 2020 \ 2: Wintersemester 2019/2020 \ 3: Sommersemester 2019 \ 4: Wintersemester 2018/2019 \ ... 21: Sommersemester 2010
+ao2: (ende01 / ende02 / ende03 / ende04 / ende05): 1: Sommersemester 2021 \ 2: Wintersemester 2020/2019 \ 3: Sommersemester 2019 \ 4: Wintersemester 2018/2019 \ ... 23: Sommersemester 2010 \ 24: vor Sommersemester 2010
 
 ao3: (hs01 / hs02 / hs03 / hs04 / hs05): [infield = Hochschule; 100 Zeichen] 
 
@@ -854,7 +854,7 @@ it3: (subeur01 / subeur02 / subeur03 / subeur04 / subeur05): Präfix: Beurlaubun
 
 st:
 
-ao1: (suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05): 1: Sommersemester 2020 \ 2 : Wintersemester 2019/2020 \ 3 : Sommersemester 2019 \ 4 : Wintersemester 2018/2019 \ ... 21 : Sommersemester 2010
+ao1: (suzeitp01 / suzeitp02 / suzeitp03 / suzeitp04 / suzeitp05): 1: Sommersemester 2021 \ 2: Wintersemester 2020/2019 \ 3: Sommersemester 2019 \ 4: Wintersemester 2018/2019 \ ... 23: Sommersemester 2010 \ 24: vor Sommersemester 2010
 
 ao2: (sudau01 / sudau02 / sudau03 / sudau04 / sudau05): 1: 1 Monat \ 2: 2 Monate \ 3: 3 Monate \ 4: 4 Monate \ ... \ 24: 24 Monate
 
