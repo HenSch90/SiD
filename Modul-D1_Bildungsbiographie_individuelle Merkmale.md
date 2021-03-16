@@ -213,13 +213,13 @@ st:
 
 ao1: (vausberufo): [infield = erlernter Beruf; 80 Zeichen] (offene Angabe)
 
-ao2a: (vausbzpjo): [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
+ao2a: (vausbzpjo): [infield = Jahr; 2021 - 2020 - 2019 - ... - 1950] (Dropdown)
 
 ao2b: (vausbzpmo): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
 ao3: (vausaufo): [infield = Aufstiegsfortbildung; 80 Zeichen] (offene Angabe)
 
-ao4a: (vausaufojo): [infield = Jahr; 2020 - 2019 - 2018 - ... - 1950] (Dropdown)
+ao4a: (vausaufojo): [infield = Jahr; 2021 - 2020 - 2019 - ... - 1950] (Dropdown)
 
 ao4b: (vausaufomo): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
