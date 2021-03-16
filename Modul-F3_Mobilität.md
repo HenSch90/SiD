@@ -114,7 +114,7 @@ ao3: (ainfsto1): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 ao4: (ainfbm1): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
-ao5: (ainfbj1): [infield = Jahr; 2021 - 2019 - ... - 2009 - vor 2009] (Dropdown)
+ao5: (ainfbj1): [infield = Jahr; 2021 - 2010 - ... - 2009 - vor 2009] (Dropdown)
 
 
 ao6: (ainfdau1): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - 13 bis 18 Monate - 19 bis  24 Monate - 25 bis 30 Monate - 31 bis 36 Monate - mehr als 36 Monate] (Dropdown)
@@ -146,7 +146,7 @@ ao9: (ainfsto2): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 ao10: (ainfbm2): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
-ao11: (ainfbj2): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
+ao11: (ainfbj2): [infield = Jahr; 2021 - 2010 - ... - 2009 - vor 2009] (Dropdown)
 
 
 ao12: (ainfdau2): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - 13 bis 18 Monate - 19 bis  24 Monate - 25 bis 30 Monate - 31 bis 36 Monate - mehr als 36 Monate] (Dropdown)
@@ -178,7 +178,7 @@ ao15: (ainfsto3): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 ao16: (ainfbm3): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
-ao17: (ainfbj3): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
+ao17: (ainfbj3): [infield = Jahr; 2021 - 2010 - ... - 2009 - vor 2009] (Dropdown)
 
 
 ao18: (ainfdau3): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - 13 bis 18 Monate - 19 bis  24 Monate - 25 bis 30 Monate - 31 bis 36 Monate - mehr als 36 Monate] (Dropdown)
