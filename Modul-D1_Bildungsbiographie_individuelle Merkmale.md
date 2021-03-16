@@ -669,7 +669,7 @@ it:
 
 st:
 
-ao: (absterm): [infield = Semester; Sommersemester 2020 - Wintersemester 2020/21 - Sommersemester 2021 - ... - Sommersemester 2030] (Drop-Down) 
+ao: (absterm): [infield = Semester; Sommersemester 2021 - Wintersemester 2021/22 - Sommersemester 2022 ... - Sommersemester 2030] (Drop-Down) 
 
 mv:
 
