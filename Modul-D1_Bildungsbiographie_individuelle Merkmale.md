@@ -788,7 +788,7 @@ ao3: (hs01 / hs02 / hs03 / hs04 / hs05): [infield = Hochschule; 100 Zeichen]
 
 ao4: (fach01 / fach02 / fach03 / fach04 / fach05): [infield = Studienfach; 80 Zeichen] 
 
-ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: Bachelor \ 2: Bachelor (Lehramt) \ 3: Master \ 4: Master (Lehramt) \ 5: Staatsexamen \ 6: Staatsexamen (Lehramt) \ 7: Diplom \ 8: künstlerische Abschlussprüfung \ 9: Promotion \ 10: anderer Abschluss (bspw. Ausländischer Abschluss, Magister) \ 11: kein Studienabschluss
+ao5: (abs01 / abs02 / abs03 / abs04 / abs05): 1: Bachelor \ 2: Bachelor (Lehramt) \ 3: Master \ 4: Master (Lehramt) \ 5: Staatsexamen \ 6: Staatsexamen (Lehramt) \ 7: Diplom \ 8: Magister \ 9: Promotion (Dr., PhD) \ 10: anderer Abschluss (bspw. Ausländischer Abschluss) \ 11: kein Studienabschluss
 
 ao6: (stand01 / stand02 / stand03 / stand04 / stand05): 1: läuft noch \ 2: abgeschlossen \ 3: abgebrochen \ 4: unterbrochen
 
