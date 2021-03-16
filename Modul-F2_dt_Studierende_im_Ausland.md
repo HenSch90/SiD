@@ -47,7 +47,7 @@ ao4: (ainfbmsia): [infield = Monat; Januar - Februar - ... - November - Dezember
 ao5: (ainfbjsia): [infield = Jahr; 2021 - 2020 - ... - 2009 - vor 2009] (Dropdown)
 
 
-ao6: (ainfdausia): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
+ao6: (ainfdausia): [infield = Gesamtdauer; 1 Monat - 2 Monate - ... - 12 Monate - 13 bis 18 Monate - 19 bis  24 Monate - 25 bis 30 Monate - 31 bis 36 Monate - mehr als 36 Monate] (Dropdown)
 
 mv:
 
@@ -63,7 +63,7 @@ fv:
 
 hv:
 
-fo: Bitte ainfasia ainflandosia ainfortosia linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig ainfbmsia und daneben ainfbjsia. Zuletzt dann ebenfalls darunter linksbündig ainfdausia.
+fo: Bitte ainfasia ainflandosia ainfortosia linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig ainfbmsia und daneben ainfbjsia. Zuletzt dann ebenfalls darunter linksbündig ainfdausia. Über ainfdausia linksbündig die Kategorienüberschrift "Voraussichtliche Dauer des Aufenthalts:".
 
 tr:
 
