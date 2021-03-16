@@ -117,7 +117,7 @@ ao4: (ainfbm1): [infield = Monat; Januar - Februar - ... - November - Dezember] 
 ao5: (ainfbj1): [infield = Jahr; 2021 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
 
-ao6: (ainfdau1): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
+ao6: (ainfdau1): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - 13 bis 18 Monate - 19 bis  24 Monate - 25 bis 30 Monate - 31 bis 36 Monate - mehr als 36 Monate] (Dropdown)
 
 
 ao7: (ainfa2): [infield = Art des Aufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
@@ -149,7 +149,7 @@ ao10: (ainfbm2): [infield = Monat; Januar - Februar - ... - November - Dezember]
 ao11: (ainfbj2): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
 
-ao12: (ainfdau2): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
+ao12: (ainfdau2): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - 13 bis 18 Monate - 19 bis  24 Monate - 25 bis 30 Monate - 31 bis 36 Monate - mehr als 36 Monate] (Dropdown)
 
 
 ao13: (ainfa3): [infield = Art des Aufenthalts; Auslandsstudium mit angestrebtem Abschluss im Ausland - ... - sonstiger Aufenthalt] (Dropdown)
@@ -181,7 +181,7 @@ ao16: (ainfbm3): [infield = Monat; Januar - Februar - ... - November - Dezember]
 ao17: (ainfbj3): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
 
-ao18: (ainfdau3): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
+ao18: (ainfdau3): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - 13 bis 18 Monate - 19 bis  24 Monate - 25 bis 30 Monate - 31 bis 36 Monate - mehr als 36 Monate] (Dropdown)
 
 
 st:
