@@ -581,7 +581,7 @@ st:
 
 
 
-ao: (simmaba): [infield = Semester; Sommersemester 2021 - Wintersemester 20/21 - Sommersemester 2020 - ... - Sommersemester 2010] (Drop-Down)
+ao: (simmaba): [infield = Semester; 1: Sommersemester 2021 - 2: Wintersemester 20/21 - 3: Sommersemester 2020 - ... - 23: Sommersemester 2010 - 24: vor Sommersemester 2010] (Drop-Down)
 
 mv:
 
