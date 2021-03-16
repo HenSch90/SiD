@@ -44,7 +44,7 @@ ao3: (ainfstosia): [infield = Stadt/Hochschule; 100 Zeichen] (offene Angabe)
 
 ao4: (ainfbmsia): [infield = Monat; Januar - Februar - ... - November - Dezember] (Dropdown)
 
-ao5: (ainfbjsia): [infield = Jahr; 2020 - 2019 - ... - 2009 - vor 2009] (Dropdown)
+ao5: (ainfbjsia): [infield = Jahr; 2021 - 2019 - ... - 2009 - vor 2009] (Dropdown)
 
 
 ao6: (ainfdausia): [infield = Dauer des Aufenthalts; 1 Monat - 2 Monate - ... - 12 Monate - mehr als 12 Monate] (Dropdown)
