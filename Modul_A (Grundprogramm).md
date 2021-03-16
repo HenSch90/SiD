@@ -3489,7 +3489,7 @@ is:
 
 it1: (sabszp): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-it2: (sabszp2): [infield = Jahr; 2021 - 2019 - 2018 - ... - 2009 und früher] (Dropdown)
+it2: (sabszp2): [infield = Jahr; 2021 - 2020 - 2019 - ... - 2009 und früher] (Dropdown)
 
 st:
 
