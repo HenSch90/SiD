@@ -232,7 +232,7 @@ it5: (fullmumtod): Eine Vollzeit erwerbstätige Mutter kann zu ihrem Kleinkind n
 
 it6: (bothfull): Die beste Arbeitsteilung in einer Familie ist die, dass beide Partner in gleichem Umfang arbeiten und sich gleichermaßen um den Haushalt und die Kinder kümmern.
 
-it7: (fulldadtod): Ein Vollzeit erwerbstätiger Vater kann zu seinem Kleinkind normalerweise ein genauso inniges Verhältnis haben wie ein Vater, der nicht berufstätig ist.
+it7: (fulldadtod): Ein Vollzeit erwerbstätiger Vater kann zu seinem Kleinkind normalerweise ein genauso inniges Verhältnis haben, wie ein Vater, der nicht berufstätig ist.
 
 st:
 
