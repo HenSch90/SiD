@@ -1235,24 +1235,24 @@ q: Im Folgenden möchten wir gerne mehr darüber erfahren, wie Sie lernen. Bitte
 
 is:
 
-it1: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
+it1: (lernumg): Ich gestalte meinen Arbeitsplatz so, dass ich alles schnell finden kann.
 
-it2: (kogkrit): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
+it2: (kogorga): Ich stelle mir aus Mitschrift, Skript oder Literatur kurze Zusammenfassungen zusammen.
 
-it3: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
+it3: (digmat): Ich nutze digitale Lehr- und Lernmaterialien.
 
 it4: (mkogwach): Um Wissenslücken festzustellen, rekapituliere ich die wichtigsten Inhalte ohne 
 meine Unterlagen zu Hilfe zu nehmen.
 
-it5: (ressanst): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
+it5: (kogwied): Ich lerne den Lernstoff möglichst auswendig.
 
-it6: (resskonz): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
+it6: (ressanst): Ich lerne auch spätabends und am Wochenende, wenn es sein muss.
 
-it7: (lernumg): Ich gestalte meinen Arbeitsplatz so, dass ich alles schnell finden kann.
+it7: (resskonz): Beim Lernen fällt es mir schwer, bei der Sache zu bleiben.
 
-it8: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
+it8: (kogkrit): Ich denke über Alternativen zu Schlussfolgerungen in den Lehrtexten nach.
 
-it9: (digmat): Ich nutze digitale Lehr- und Lernmaterialien.
+it9: (lit): Ich suche nach weiterführender Literatur, wenn mir bestimmte Inhalte noch nicht ganz klar sind.
 
 st:
 
