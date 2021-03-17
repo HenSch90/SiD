@@ -1,4 +1,3 @@
-
 \------------------------------------------------------------
 
 index
@@ -160,9 +159,9 @@ qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
-in: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen.
+in: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen:
 
-q: Wo haben Sie erstmals Ihre Hochschulreife erworben?
+q: Wo haben Sie erstmals Ihre Hochschulzugangsberechtigung erworben?
 
 is:
 
@@ -328,7 +327,7 @@ q3: Sie haben angegeben, die deutsche und eine ausländische Staatsangehörigkei
 
 q4: Sie haben angegeben, eine ausländische Staatsangehörigkeit zu haben. Welche ausländische Staatsangehörigkeit besitzen Sie?
 
-is: Bitte wählen Sie zunächst den Kontinent aus.
+is: Bitte wählen Sie zunächst den Kontinent aus. 
 
 it:
 
@@ -634,7 +633,7 @@ ao4: (baufgrutouba): Tourist\*in (Besuchsvisum)
 
 ao5: (baufgruasylba): Asylbewerber\*in, Geflüchtete\*r oder Schutzsuchende\*r
 
-ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. mit/wegen Ehepartner\*in
+ao6: (baufgrufaman): Familienangehörige\*r, kam mit Eltern bzw. mit/wegen (Ehe-)Partner\*in
 
 ao6: (baufgrufamba): Familiennachzug, zog zu bereits in Deutschland lebender Familie
 
@@ -746,7 +745,7 @@ hl:
 
 in:
 
-q: Was waren die Gründe dafür, dass Sie oder Ihre Familie ...
+q: Was waren die Gründe dafür, dass Sie bzw. Ihre Familie ...
 
 is:
 
@@ -973,7 +972,7 @@ vc:
 
 av:
 
-kh:
+kh: 
 
 fv:
 
@@ -998,9 +997,9 @@ A_12a
 
 tc:
 
-vn: dsib; dsibo
+vn: dsib; dsibanz
 
-qt: Einfachauswahl mit vertikalen ao und offener Angabe
+qt: Einfachauswahl mit vertikalen ao und Dropdown
 
 hl:
 
@@ -1016,7 +1015,7 @@ st:
 
 ao1: (dsib): 1: nein
 
-ao2: (dsib): 2: Ja, und zwar: ([dsibo], NUMBER, 2-Steller)
+ao2: (dsib): 2: Ja, und zwar: ([dsibanz], Dropdown, infield Anzahl, 1 bis 12 und mehr)
 
 mv:
 
@@ -1056,9 +1055,11 @@ in:
 
 q1: Wie alt ist Ihr Geschwisterteil und welches Geschlecht hat Ihr Geschwisterteil?
 
-q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben Ihre Geschwister jeweils?
+q2: Wie alt sind Ihre Geschwister und welches Geschlecht haben sie?
 
-is: Sollten Sie mehr als drei Geschwister haben, so nennen Sie uns bitte Ihre drei zeitlich nahestehendsten Geschwister. 
+q3: Wie alt ist/sind Ihr Geschwisterteil/Ihre Geschwister und welches Geschlecht hat/haben Ihr Geschwisterteil/Ihre Geschwister?
+
+is: Bitte beginnen Sie mit Ihrem ältesten Geschwisterteil.
 
 
 it1: (dsibageo1): ([offene Angabe]; infield = Alter; NUMBER, 2-Steller); Suffix: Jahre
@@ -1090,14 +1091,15 @@ ka3: (it3-it4): 2. Geschwisterteil:
 
 ka4: (it5-it6): 3. Geschwisterteil:
 
-vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibo = 1
+vc1: SHOW q1 AND ka1 AND it1-it2 IF dsibanz = 1
 
-vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibo = 2
+vc2: SHOW q2 AND ka2-ka3 AND it1-it4 IF dsibanz = 2
 
-vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibo = 3
+vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibanz = 3
 
-vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibo > 3
+vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibanz > 3
 
+vc4: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibanz=missing
 av:
 
 kh: Bitte geben Sie das Lebensalter an (0 bis 99).
@@ -1106,7 +1108,7 @@ fv:
 
 hv:
 
-fo:
+fo: Bitte wie folgt umsetzen: ka1, it1 und it2 nebeneinander darstellen und äqivalent bitte für die anderen Items umsetzen.
 
 tr:
     
@@ -1128,7 +1130,7 @@ hl:
 
 in:
 
-q: Pflegen Sie regelmäßig pflegebedürftige Verwandte oder Freunde?
+q: Umsorgen Sie regelmäßig pflegebedürftige Personen aus dem Familien- oder Freundeskreis?
 
 is: Nicht gemeint ist die Betreuung der eigenen Kinder.
 
@@ -1136,17 +1138,17 @@ it:
 
 st:
 
-ao1: (pflegangno): nein [Exklusivkategorie]
+ao1: 1: (pflegangno): nein [Exklusivkategorie]
 
-ao2: (pflegang1): aus der Familie
+ao2: 2:(pflegang1): aus der Familie
 
-ao3: (pflegang2): aus dem Freundes- und Bekanntenkreis
+ao3: 3:(pflegang2): aus dem Freundes- und Bekanntenkreis
 
 mv:
 
 ka: (ao2 TO ao3): Ja, und zwar:
 
-vc:
+vc: SHOW is if dkinja==1
 
 av:
 
@@ -1182,7 +1184,7 @@ hl:
 
 in:
 
-q: Wenn Sie an eine typische Woche denken: Wie häufig führen Sie folgende Pflegetätigkeiten aus?
+q: Wie häufig führen Sie pro Woche die folgenden Pflegetätigkeiten aus?
 
 is:
 
@@ -1277,7 +1279,7 @@ ao8: (garttls): Teilleistungsstörung (z. B. Legasthenie, Dyskalkulie)
 
 ao9: (gartson): andere Beeinträchtigung/Erkrankung (z. B. Tumorerkrankung, Autismus-Spektrum-Störung): [(gartsono), 50 Zeichen]
 
-ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung nicht nennen. 
+ao10: (gartka): Ich möchte die Form meiner Beeinträchtigung(en) nicht nennen. 
 
 mv:
 
@@ -1333,7 +1335,11 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: ja
+ao2: 2: nein, musste den Auslandsaufenthalt abbrechen
+
+ao3: 3: nein, konnte den Auslandsaufenthalt nicht antreten
+
+ao4: 4: ja
 
 mv:
 
@@ -1711,7 +1717,7 @@ it:
 
 st:
 
-ao: (hsstandhso): [infield = Hochschule; 60 Zeichen] (offene Angabe)
+ao: (hsstandhso): [infield = Name der Hochschule; 60 Zeichen] (offene Angabe)
 
 mv: 
 
@@ -1809,7 +1815,7 @@ it:
 
 st:
 
-ao1: 1: sehr unzufrieden
+ao1: 1: gar nicht zufrieden
 
 ao2: 2
 
@@ -1862,7 +1868,7 @@ in:
 
 q: Bitte geben Sie Ihr Studienfach an.
 
-is: Bitte geben Sie nicht Ihren angestrebten Abschluss an (z. B. Masterstudent\*in, Promotionsstudent\*in).
+is: Bitte schreiben Sie das Studienfach aus (z. B. Wirtschaftsinformatik, Soziale Arbeit).
 
 it:
 
@@ -1921,19 +1927,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: Lehramt an Grundschulen (Primarstufe)
+ao2: 2: ... Grundschulen (Primarstufe)
 
-ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
+ao3: 3: ... Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
-ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
+ao4: 4: ... Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: ... beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: ... Förderschulen/Sonderpädagogik
 
 mv:
 
-ka: (ao2 TO ao6): Ja, und zwar:
+ka: (ao2 TO ao6): Ja, und zwar Lehramt an ...
 
 vc:
 
@@ -1962,7 +1968,7 @@ A_25
 
 tc:
 
-vn: sabsano; sabsanoaa; sabsanoka
+vn: sabsan; sabsanoaa; sabsanoka
 
 qt: Einfachauswahl mit vertikalen ao und offenen Angaben
 
@@ -1970,7 +1976,7 @@ hl:
 
 in:
 
-q: Und welchen Abschluss streben Sie als nächstes an?
+q: Und welchen Abschluss streben Sie in ihrem derzeitigen Studium als nächstes an?
 
 is: Sollten Sie mehrere Abschlüsse anstreben, beziehen Sie sich bitte auf den zeitlich nächsten.
 
@@ -1978,23 +1984,21 @@ it:
 
 st:
 
-ao1: (sabsano): 1: Bachelor
+ao1: (sabsan): 1: Bachelor
 
-ao2: (sabsano): 2: Master
+ao2: (sabsan): 2: Master
 
-ao3: (sabsano): 3: Staatsexamen
+ao3: (sabsan): 3: Staatsexamen
 
-ao4: (sabsano): 4: Diplom
+ao4: (sabsan): 4: Diplom
 
-ao5: (sabsano): 5: Promotion
+ao5: (sabsan): 5: Magister
 
-ao6: (sabsano): 6: kirchliche Abschlussprüfung
+ao5: (sabsan): 6: Promotion (Dr., PhD)
 
-ao7: (sabsano): 7: künstlerische Abschlussprüfung
+ao7: (sabsan): 7: Anderen Abschluss, und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
 
-ao8: (sabsano): 8: Anderen Abschluss (bspw. ausländischer Abschluss, Magister), und zwar: [(sabsanoaa), offene Angabe, 80 Zeichen]
-
-ao9: (sabsano): 9: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
+ao8: (sabsan): 8: Keinen Studienabschluss, sondern: [(sabsanoka), offene Angabe, 80 Zeichen]
 
 mv:
 
@@ -2050,7 +2054,6 @@ st:
 
 ao1: (sabsanpr): -11: nein
 
-
 ao2: (sabsanpr): 1: Bachelor
 
 ao3: (sabsanpr): 2: Master
@@ -2059,15 +2062,13 @@ ao4: (sabsanpr): 3: Staatsexamen
 
 ao5: (sabsanpr): 4: Diplom
 
-ao7: (sabsanpr): 6: kirchliche Abschlussprüfung
+ao6: (sabsanpr): 5: Magister
 
-ao8: (sabsanpr): 7: künstlerische Abschlussprüfung
-
-ao9: (sabsanpr): 8: Anderer Abschluss (bspw. ausländischer Abschluss, Magister)
+ao7: (sabsanpr): 6: anderer Abschluss
 
 mv:
 
-ka: (ao2 to ao9): Ja, und zwar: 
+ka: (ao2 to ao7): Ja, und zwar mit dem angestrebten Abschluss: 
 
 vc:
 
@@ -2077,7 +2078,7 @@ kh:
 
 fv:
 
-hv:
+hv: 
 
 fo:  "Ja, und zwar:" über ao2 linksbündig positionieren.
 
@@ -2102,7 +2103,7 @@ hl:
 
 in:
 
-q: Um welche Form handelt es sich bei Ihrem Studium?
+q: Abgesehen von der besonderen Studiensituation durch die Corona-Pandemie: Um welche Form handelt es sich bei Ihrem Studium?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -2144,6 +2145,56 @@ tr:
 hi:
 
 \--------------------------------
+A_27a
+=========
+
+tc:
+
+vn: sdual (sdualausb; sdualprax; sdualberu; sdualsons; sdualsonso)
+
+
+qt: Mehrfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Um welche Form handelt es sich bei Ihrem dualen Studium? Duales Studium mit …
+
+is: 
+
+it:
+
+st:
+
+ao1: (sdualausb): … integrierter Berufsausbildung 
+ao2: (sdualprax): … Praxisanteilen beim Praxispartner
+ao3: (sdualberu): … integrierter Berufstätigkeit
+ao4: (sdualsons): Anderes, und zwar: [(sdualsonso), offene Angabe, 60 Zeichen]
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+       
+
+hi:
+
+\--------------------------------
 
 D1_9 
 ==
@@ -2168,11 +2219,11 @@ st:
 
 ao1: 1: Vollzeit
 
-ao2: 2: Teilzeit
+ao2: 2: Vollzeitstudiengang mit individueller Teilzeitregelung
 
-ao3: 3: Vollzeitstudiengang mit individueller Teilzeitregelung
+ao3: 3: Vollzeitstudiengang inoffiziell als Teilzeitstudium
 
-ao4: 4: Vollzeitstudiengang inoffiziell als Teilzeitstudium
+ao4: 4: Teilzeit
 
 mv:
 
@@ -2328,15 +2379,15 @@ q: Inwieweit trauen Sie sich zu, …
 
 is:
 
-it1: (studerfolg): … ein Studium erfolgreich abzuschließen?
+it1: (studerfolg): … Ihr Studium erfolgreich abzuschließen?
 
 it2: (masterfolg): … ein Masterstudium erfolgreich abzuschließen?
 
-it3: (promoerfolg): … eine Promotion erfolgreich abzuschließen?
+it3: (promoerfolg): … eine Promotion (Dr., PhD) erfolgreich abzuschließen?
 
 st:
 
-ao1: 1: überhaupt nicht
+ao1: 1: gar nicht
 
 ao2: 2:
 
@@ -2344,13 +2395,13 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: vollkommen
+ao5: 5: voll und ganz
 
 mv:
 
 ka:
 
-vc: SHOW it2 IF sabsano = 1
+vc: SHOW it2 IF sabsan = 1
 
 av:
 
@@ -2395,7 +2446,7 @@ it2: (deltberum): Mutter
 
 st:
 
-ao1: 7: Promotion (Doktortitel)
+ao1: 7: Promotion (Dr., PhD)
 
 ao2: 6: Universitätsabschluss
 
@@ -2409,7 +2460,7 @@ ao6: 2: anderer beruflicher Abschluss
 
 ao7: 1: hat keinen beruflichen Abschluss
 
-mv: -12: weiß ich nicht
+mv: -12: weiß ich nicht 
 
 ka:
 
@@ -2443,9 +2494,9 @@ A_33
 
 tc:
 
-vn: deltjobv (deltjobvo1; deltjobv1; deltjobv2); deltjobm (deltjobmo1; ddeltjobm1; deltjobm2)
+vn: deltjobv; deltjobvo; deltjobm; deltjobmo 
 
-qt: offene Angaben; Einfachauswahl;
+qt: offene Angaben; Einfachauswahl
 
 hl:
 
@@ -2456,24 +2507,24 @@ q: Und welchen Beruf übt Ihr Vater/Ihre Mutter hauptberuflich aus?
 is: Falls Ihre Eltern zurzeit nicht erwerbstätig sind, geben Sie bitte den jeweils zuletzt ausgeübten Beruf an.
 
 Bitte tragen Sie die Berufsbezeichnung möglichst genau ein, z. B.:
-Bankkaufmann/-frau (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter), Maschinenbauingenieur\*in (nicht: Ingenieur\*in).
+Bankkauffrau oder -mann (nicht: Angestellte\*r), Zollbeamtin oder -beamter (nicht: Beamtin oder Beamter), Maschinenbauingenieur\*in (nicht: Ingenieur\*in).
 
 
 it1: Vater
 
 it2: Mutter
 
-ao1: (deltjobvo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+ao1: (deltjobv):   1: Präfix: Berufsbezeichnung: [(deltjobvo), offene Angabe; 100 Zeichen]
 
-ao2: (deltjobv1): -11: nie berufstätig gewesen [Einfachauswahl]
+ao2: (deltjobv): -11: nie berufstätig gewesen
 
-ao3: (deltjobv2): -12: weiß ich nicht [Exklusivkategorie]
+ao3: (deltjobv): -12: weiß ich nicht
 
-ao4: (deltjobmo1): Präfix: Berufsbezeichnung: [offene Angabe; 100 Zeichen]
+ao4: (deltjobm):   1: Präfix: Berufsbezeichnung: [(deltjobmo), offene Angabe; 100 Zeichen]
 
-ao5: (deltjobm1): -11: nie berufstätig gewesen [Einfachauswahl]
+ao5: (deltjobm): -11: nie berufstätig gewesen
 
-ao6: (deltjobm2): -12: weiß ich nicht [Exklusivkategorie]
+ao6: (deltjobm): -12: weiß ich nicht
 
 ka:
 
@@ -2792,55 +2843,6 @@ hi: Dropdown bitte nach Angabe des Kontinents in A_35 (deltgkom) vorselektieren.
 
 \------------------------------------------------------------
 
-A_37a
-========
-
-tc:
-
-vn: vsbplz; vsbort
-
-qt: offene Angabe
-
-hl:
-
-in:
-
-q: An welchem Ort haben Sie gewohnt, als Sie die Studienberechtigung (HZB) erhalten haben?
-
-it:
-
-st:
-
-ao1: (vsbplz): Präfix: Bitte tragen Sie die fünfstellige Postleitzahl ein: [Infield = Postleitzahl; Number, 5-stellig: 01000 TO 99999] (offene Angabe)
-
-ao2: (vsbort): Präfix: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an: [Infield = Ort; 60 Zeichen] (offene Angabe)
-
-mv:
-
-ka:
-
-vc:
-
-av: 
-
-kh:
-
-fv: 
-
-hv:
-
-fo: Bitte jeweils zwischen den Präfixen und den Feldern für die offenen Angaben einen Zeilenumbruch einfügen (Präfixe also über den Feldern positionieren). Alles linksbündig untereinander anordnen.
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_41"/>
-        </zofar:transitions>
-
-hi: Besteht die Möglichkeit, dass bei PLZ mit einer 0 vorne, diese nicht gelöscht wird?
-
-\------------------------------------------------------------
-
 A_38a
 ==========
 
@@ -2854,7 +2856,7 @@ hl:
 
 in:
 
-q: Welchen Bildungsstand hatten Sie, als Sie nach Deutschland kamen?
+q: Welche Bildungsabschlüsse hatten Sie bereits, als Sie nach Deutschland kamen?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -2862,7 +2864,7 @@ it:
 
 st:
 
-ao1: (intbild1): Promotion
+ao1: (intbild1): Promotion (Dr., PhD)
 
 ao2: (intbild2): Hochschulstudium mit zweitem Abschluss (z. B. Master)
 
@@ -2874,7 +2876,7 @@ a05: (intbild5): Schulabschluss, der zum Studium berechtigt
 
 ao6: (intbild6): Schulabschluss ohne Studienberechtigung
 
-ao7: (intbild7): keinen Schulabschluss
+ao7: (intbild7): keinen Schulabschluss [Exklusivkategorie]
 
 mv:
 
@@ -2890,7 +2892,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao7 bitte als Exklusivkategorie etwas absetzen.
 
 tr:
 
@@ -2921,7 +2923,7 @@ q: Wurden diese Bildungsabschlüsse bzw. Ihre bisherigen Studienleistungen in De
 
 is:
 
-it1: (ankbild1): Promotion
+it1: (ankbild1): Promotion (Dr., PhD)
 
 it2: (ankbild2): Hochschulstudium mit zweitem Abschluss
 
@@ -3001,7 +3003,7 @@ ao4: (intvors4): fachliche Eignungsprüfung (z. B. TestAS, Medizin, Kunst, Musik
 
 ao5: (intvors5): Etwas anderes, und zwar: [(intvors5o), offene Angabe, 250 Zeichen]
 
-ao6: (intvors6): keine [Exklusivkategorie]
+ao6: (intvors6): Keine [Exklusivkategorie]
 
 mv:
 
@@ -3096,7 +3098,7 @@ A_39
 
 tc:
 
-vn: vsbstyp (vsbstyp1; vsbstyp2; vsbstyp3; vsbstyp4; vsbstyp5; vsbstyp6; vsbstyp7; vsbstyp8; vsbstyp9; vsbstyp10; vsbstyp11; vsbstyp12; vsbstyp13; vsbstyp14; vsbstyp15; vsbstyp15o)
+vn: vsbtyp (vsbtyp1; vsbtyp2; vsbtyp3; vsbtyp4; vsbtyp5; vsbtyp6; vsbtyp7; vsbtyp8; vsbtyp9; vsbtyp9o, vsbtyp10; vsbtyp11; vsbtyp12; vsbtyp13; vsbtyp14; vsbtyp15; vsbtyp15o)
 
 qt: Mehrfachauswahl mit offener Angabe
 
@@ -3104,7 +3106,7 @@ hl:
 
 in:
 
-q: Auf welchem Weg erfolgte die Zulassung zu Ihrem ersten Studium (über den schulischen Weg, eine berufliche Qualifikation oder besondere Eignung)?
+q: Auf welchem Weg haben Sie Ihre Studienberechtigung erhalten (über den schulischen Weg, eine berufliche Qualifikation oder besondere Eignung)?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -3116,7 +3118,7 @@ ao1: (vsbtyp1): Gymnasium
 
 ao2: (vsbtyp2): Gesamtschule mit gymnasialer Oberstufe
 
-ao3: (vsbtyp3): Schule in freier Trägerschaft (z. B. Waldorfschule)
+ao3: (vsbtyp3): freie Waldorfschule
 
 ao4: (vsbtyp4): Abendgymnasium, Kolleg (nicht Berufskolleg)
 
@@ -3128,10 +3130,10 @@ ao7: (vsbtyp7): Berufsoberschule
 
 ao8: (vsbtyp8): Fachoberschule
 
-ao9: (vsbtyp9): andere berufsbildende Schule (Fachschule, Fachakademie, Berufskolleg)
+ao9: (vsbtyp9): andere Schulform, und zwar: [(vsbtyp9o); offen Angabe, 80 Zeichen]
 
 
-ao10: (vsbtyp10): berufliche Aufstiegsfortbildung als Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in
+ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z.B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
 
 ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
 
@@ -3182,7 +3184,7 @@ A_40
 
 tc:
 
-vn: vsbnoteo; vsbnotej; vsbnote
+vn: vsbnotej; vsbnoteo; vsbnote
 
 qt: offene Angaben; Einfachauswahl
 
@@ -3198,9 +3200,9 @@ it:
 
 st:
 
-ao1: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
+ao1: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
 
-ao2: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
+ao2: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
 ao3: (vsbnote): Ich habe keine Note erhalten.
 
@@ -3210,13 +3212,13 @@ ka:
 
 vc:
 
-av1: (vsbnoteo): NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
+av1: (vsbnotej): NUMBER, 4-stellig (1950 bis 2020)
 
-av2: (vsbnotej): NUMBER, 4-stellig (1950 bis 2020)
+av2: (vsbnoteo): NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0)
 
-kh1: (vsbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
+kh1: (vsbnotej): Bitte geben Sie die vierstellige Jahreszahl an.
 
-kh2: (vsbnotej): Bitte geben Sie die vierstellige Jahreszahl an.
+kh2: (vsbnoteo): Bitte geben Sie Ihren Notendurchschnitt an (1,0 bis 4,0).
 
 fv:
 
@@ -3231,9 +3233,9 @@ tr:
             <zofar:transition target="A_37b" condition="zofar.asNumber(h_split)==2"/>
         </zofar:transitions>
 
-hi1: vsbnoteo bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
+hi1: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
 
-hi2: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
+hi2: vsbnoteo bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
 
 \------------------------------------------------------------
 
@@ -3250,19 +3252,19 @@ hl:
 
 in:
 
-q: Haben Sie vor dem Studium eine Berufsausbildung begonnen bzw. abgeschlossen?
+q: Haben Sie vor dem Studium eine Berufsausbildung/berufliche Aufstiegsfortbildung abgeschlossen?
 
-is:
+is: Bitte alles Zutreffende auswählen.
 
 it:
 
 st:
 
-ao1: 1: nein
+ao1: 1: nein [Exklisivkategorie]
 
-ao2: 2: ja, begonnen und nicht abgeschlossen
+ao2: 2: ja, eine Berufsausbildung abgeschlossen
 
-ao3: 3: ja, begonnen und abgeschlossen
+ao3: 3: ja, eine berufliche Aufstiegsfortbildung abgeschlossen
 
 mv:
 
@@ -3278,7 +3280,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao1 als Exklusivkategorie umsetzen.
 
 tr:
 
@@ -3430,13 +3432,15 @@ hl:
 
 in:
 
-q: Wann haben Sie diesen Abschluss erworben?
+q1: Wann haben Sie diesen Abschluss erworben?
+
+q2: Sie haben angegeben, dass Sie bereits einen Hochschulabschluss haben: Wann haben Sie diesen Abschluss erworben?
 
 is:
 
 it1: (sabszp): [infield = Monat; Januar - Februar - März - ... - Dezember] (Dropdown)
 
-it2: (sabszp2): [infield = Jahr; 2020 - 2019 - 2018 - ... - 2009 und früher] (Dropdown)
+it2: (sabszp2): [infield = Jahr; 2021 - 2020 - 2019 - ... - 2009 und früher] (Dropdown)
 
 st:
 
@@ -3471,35 +3475,37 @@ ao12: (sabszp): 12: Dezember
 
 aox: (sabszp2): Jahr
 
-ao1: (sabszp2): 1: 2020
+ao1: (sabszp2): 1: 2021
 
-ao2: (sabszp2): 2: 2019
+ao2: (sabszp2): 2: 2020
 
-ao3: (sabszp2): 3: 2018
+ao3: (sabszp2): 3: 2019
 
-ao4: (sabszp2): 4: 2017
+ao4: (sabszp2): 4: 2018
 
-ao5: (sabszp2): 5: 2016
+ao5: (sabszp2): 5: 2017
 
-ao6: (sabszp2): 6: 2015
+ao6: (sabszp2): 6: 2016
 
-ao7: (sabszp2): 7: 2014
+ao7: (sabszp2): 7: 2015
 
-ao8: (sabszp2): 8: 2013
+ao8: (sabszp2): 8: 2014
 
-ao9: (sabszp2): 9: 2012
+ao9: (sabszp2): 9: 2013
 
-ao10: (sabszp2): 10: 2011
+ao10: (sabszp2): 10: 2012
 
-ao11: (sabszp2): 11: 2010
+ao11: (sabszp2): 11: 2011
 
-ao12: (sabszp2): 12: 2009 und früher
+ao12: (sabszp2): 12: 2010
+
+ao13: (sabszp2): 13: 2009 und früher
 
 mv:
 
 ka:
 
-vc:
+vc: SHOW q2 if Internationale Studierende
 
 av:
 
@@ -3509,7 +3515,7 @@ fv:
 
 hv:
 
-fo: Dropdowns bitte nebeneinander programmieren.
+fo: Dropdowns bitte nebeneinander programmieren. 
 
 tr:
 
@@ -3517,7 +3523,7 @@ tr:
             <zofar:transition target="A_46"/>
         </zofar:transitions>
 
-hi:
+hi: q2 soll nur an internationale Studierende ausgespielt werden,VC wird nachgereicht -> Platzhalter
 
 \------------------------------------------------------------
 
@@ -3526,9 +3532,9 @@ A_46
 
 tc: sabsja=2 OR sbsja=3
 
-vn: sabser
+vn: sabser, sabseroaa
 
-qt: Einfachauswahl
+qt: Einfachauswahl mit offener Angabe
 
 hl:
 
@@ -3550,13 +3556,11 @@ ao3: 3: Staatsexamen
 
 ao4: 4: Diplom
 
-ao5: 5: Promotion
+ao5: 5: Magister
 
-ao6: 6: kirchliche Abschlussprüfung
+ao6: 6: Promotion (Dr., PhD)
 
-ao7: 7: künstlerische Abschlussprüfung
-
-ao8: 8: anderen Abschluss (bspw. ausländischer Abschluss)
+ao7: 7: Anderen Abschluss, und zwar: [(sabseroaa), offene Angabe, 80 Zeichen]
 
 mv:
 
@@ -3607,19 +3611,19 @@ st:
 
 ao1: 1: nein
 
-ao2: 2: Lehramt an Grundschulen (Primarstufe)
+ao2: 2: … Grundschulen (Primarstufe)
 
-ao3: 3: Lehramt an Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
+ao3: 3: … Haupt-, Real- und Sekundar-/Mittelschulen (Sekundarstufe I)
 
-ao4: 4: Lehramt an Gymnasien und Gesamtschulen (Sekundarstufe II)
+ao4: 4: … Gymnasien und Gesamtschulen (Sekundarstufe II)
 
-ao5: 5: Lehramt an beruflichen/berufsbildenden Schulen, Berufskollegs
+ao5: 5: … beruflichen/berufsbildenden Schulen, Berufskollegs
 
-ao6: 6: Lehramt an Förderschulen/Sonderpädagogik
+ao6: 6: … Förderschulen/Sonderpädagogik
 
 mv:
 
-ka: (ao2 TO ao6): Ja, und zwar:
+ka: (ao2 TO ao6): Ja, und zwar Lehramt an …
 
 vc:
 
@@ -3707,13 +3711,13 @@ hl:
 
 in:
 
-q: Wie wahrscheinlich ist es, dass Sie…
+q: Wie wahrscheinlich ist es, dass Sie …
 
 is:
 
 it1: (mastplan): … ein Masterstudium aufnehmen?
 
-It2: (promoplan) … eine Promotion aufnehmen?
+It2: (promoplan) … eine Promotion (Dr., PhD) aufnehmen?
 
 st:
 
@@ -3731,7 +3735,7 @@ mv:
 
 ka:
 
-vc: SHOW it1 (mastplan) IF sabsano==1 
+vc: SHOW it1 (mastplan) IF sabsan=1 
 
 av:
 
@@ -3775,7 +3779,7 @@ hl:
 
 in:
 
-q: Haben Sie seit Ihrer Erstimmatrikulation…
+q: Haben Sie seit Ihrer Erstimmatrikulation …
 
 is: Nicht gemeint sind Veränderungen bzw. Unterbrechungen beim Übergang vom Bachelor- ins Masterstudium.
 
@@ -3915,25 +3919,25 @@ in:
 
 q1: Wie wohnen Sie während der Vorlesungszeit des aktuellen Semesters hauptsächlich?
 
-is: Wenn Sie überwiegend bei Ihren Eltern oder Verwandten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
+is: Wenn Sie ++überwiegend++ bei Ihren Eltern oder Verwandten wohnen, geben Sie bitte die Wohnform Ihrer Eltern bzw. der Verwandten/Bekannten an.
 
 it:
 
 st:
 
-ao1: 1: zur Miete (auch Wohngemeinschaft) 
+ao1: 1: zur Miete (auch Wohngemeinschaft). 
 
-ao2: 2: zur Untermiete
+ao2: 2: zur Untermiete.
 
-ao3: 3: als (Mit-)Eigentümer\*in
+ao3: 3: als (Mit-)Eigentümer\*in.
 
-ao4: 4: im Einzelzimmer (Flurgemeinschaft)
+ao4: 4: im Einzelzimmer (Flurgemeinschaft).
 
-ao5: 5: im Einzelzimmer (in einer Wohngruppe)
+ao5: 5: im Einzelzimmer (in einer Wohngruppe).
 
-ao6: 6: im Einzelappartement
+ao6: 6: im Einzelappartement.
 
-ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind)
+ao7: 7: in einer Mehrzimmerwohnung (für Paare oder Studierende mit Kind).
 
 mv:
 
@@ -4113,11 +4117,11 @@ ao1: 1: nein, kein Interesse
 
 ao2: 2: nein, sehe keine Realisierungschance
 
-ao3: 3: ja, geplant
+ao3: 3: weiß ich noch nicht
 
-ao4: 4: ja, bereits in Vorbereitung
+ao4: 4: ja, geplant
 
-ao5: 5: weiß ich noch nicht
+ao5: 5: ja, bereits in Vorbereitung
 
 mv:
 
@@ -4159,7 +4163,7 @@ A_56
 
 tc:
 
-vn: zlv (zlvwo, zlvwo2); zses (zseswo, zseswo2); zer (zerwo, zerwo2); zcar (zcarwo, zcarwo2)
+vn: zlv (zlvwo, zlvwo2); zses (zseswo, zseswo2); zer (zerwo, zerwo2); zcar (zcarwo, zcarwo2); zkb (zkbwo, zkbwo2)
 
 qt: Comparison, offene Angaben-Matrix
 
@@ -4189,9 +4193,13 @@ ao3a: (zerwo): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
 ao3b: (zerwo2): Erwerbstätigkeit [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao4a: (zcarwo): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+ao4a: (zcarwo): Pflege von Verwandten/Bekannten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
-ao4b: (zcarwo2): Pflege- und Betreuungsarbeiten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+ao4b: (zcarwo2): Pflege von Verwandten/Bekannten [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao5a: (zkbwo): Kinderbetreuung [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
+
+ao5a: (zkbwo2): Kinderbetreuung [offene Angabe, NUMBER, 2-stellig (0 bis 99)]
 
 mv:
 
@@ -4229,1696 +4237,12 @@ hi: Bitte als NUMBER, 2-stellig (0 bis 99) programmieren.
 
 \------------------------------------------------------------
 
-N_1
-=========
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwstudium; nrwfach
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Würden Sie wieder…
-
-is:
-
-it1: (nrwstudium): … ein Studium aufnehmen?
-
-it2: (nrwfach): … das gleiche Studienfach wählen?
-
-st:
-
-ao1: 1: auf keinen Fall
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: auf jeden Fall 
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_2"/>
-        </zofar:transitions>
-
-hi:
-
-
-\------------------------------------------------------------
-
-N_2
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwstudium2
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, zu studieren?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_3"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_3
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwfach2
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, Ihren Studiengang/Ihre Fächerkombination zu studieren?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_4"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_4
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwregel
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie wichtig ist Ihnen ein Abschluss in Regelstudienzeit, d. h. in der Anzahl an Fachsemestern, wie es der Studienverlaufsplan vorsieht?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_57"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_5
-=========
-
-tc: IF zusatzsplit == 3
-
-vn: nrwdigbed
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie schätzen Sie Ihren Bedarf an digitalen Studienangeboten in Ihrem Studiengang ein?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: sehr niedrig
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr hoch
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_6"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_6
-=========
-
-tc:
-
-vn: nrwdigged
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: In welchem Maße wird Ihr Bedarf an digitalen Selbstlernangeboten durch die Hochschule abgedeckt?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_7"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_7
-=========
-
-tc:
-
-vn: nrwselbtest
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Haben Sie vor/zu Studienbeginn einen von Ihrer Hochschule angebotenen Selbsttest zur fachlichen Eignung durchgeführt? Und wie 
-hilfreich waren die Ergebnisse des Selbsttests (bspw. Online-Self-Assessment/OSA, Studicheck, Wissenstest etc.)?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-ao6: -13: Test nicht durchgeführt/angeboten
-
-mv: ao6
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: ao6 (missing) bitte etwas absetzen.
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_8"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_8
-=========
-
-tc:
-
-vn: nrwstudipor
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Haben Sie zu Studienbeginn die E-Learning-Angebote im landesweiten Onlineportal "Studiport" genutzt? Halten Sie rückblickend diese 
-E-Learning-Angebote für hilfreich?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-ao6: -13: Angebot nicht bekannt/nicht genutzt
-
-mv: ao6 
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: ao6 (missing) bitte etwas absetzen.
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_9"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_9a 
-==========
-
-tc:
-
-vn: digosa
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Haben Sie vor bzw. zu Beginn des Studiums einen Selbsttest zur fachlichen Eignung durchgeführt (z. B. Online-Self-Assessment)?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: ja
-
-ao2: 2: nein
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-N_9
-=========
-
-tc:
-
-vn: digorg (digorg1; digorg2; digorg3; digorg4; digorg5)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie viele Ihrer Lehrveranstaltungen werden über digitale Plattformen organisiert (z. B. StudIP, Moodle, Ilias, Olat)?
-
-is:
-
-it1: (digorg1): An-/Abmeldung zu Lehrveranstaltungen
-
-it2: (digorg2): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
-
-it3: (digorg3): Kommunikation innerhalb der Lehrveranstaltungen
-
-it4: (digorg4): Bereitstellung von Literatur und Lehrmaterialien
-
-it5: (digorg5): Erbringung von Leistungsnachweisen/elektronische Prüfungen
-
-st:
-
-ao1: 1: keine
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: alle 
-
-ao6: -12: weiß ich nicht  
-
-mv: ao6
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_10"/>
-        </zofar:transitions>
-
-hi: ao6 (missing) bitte etwas absetzen.
-
-\------------------------------------------------------------
-
-N_9b
-=========
-
-tc:
-
-vn: digfor (digfor1; digfor2; digfor3; digfor4; digfor5)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie viele Ihrer Lehrveranstaltungen werden in folgender Form organisiert?
-
-is:
-
-it1: (digfor1): als reine Online-Veranstaltung (z. B. Online-Vorlesung, Online-Seminar) 
-
-it2: (digfor2): als Online-Selbststudium mit einzelnen Präsenzterminen
-
-it3: (digfor3): als Präsenzveranstaltung mit einzelnen Online-Terminen
-
-it4: (digfor4): als reine Präsenzveranstaltung
-
-st:
-
-ao1: 1: keine
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: alle 
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-N_10
-=========
-
-tc:
-
-vn: diglehr (diglehr1; diglehr2; diglehr3; diglehr4; diglehr5; diglehr6; diglehr7; diglehr8; diglehr9; diglehr9o)
-
-qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
-
-hl:
-
-in:
-
-q: Wie häufig kommen folgende digitale Elemente und Lehrformate im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
-
-is:
-
-it1: (diglehr1): Podcasts, Blogs, Videos
-
-it2: (diglehr2): Abstimmungsmedien (Clicker-Abfrage, Voting-Tool)
-
-it3: (diglehr3): Game-Based-Learning (auf Lernspielen basierende Lehr- und Lernformate)
-
-it4: (diglehr4): Mobiles Lernen (virtuelle Lernorte/Labore)
-
-it5: (diglehr5): Augmented- und Virtual-Reality
-
-it6: (diglehr6): E-Portfolio (digitales Lerntagebuch)
-
-it7: (diglehr7): Videoaufzeichnungen von Vorlesungen
-
-it8: (diglehr8): digitale Prüfungsformate/E-Assessment
-
-it12: (diglehr9): Etwas anderes und zwar: [(diglehr9o), offene Angabe, 80 Zeichen] 
-
-st:
-
-ao1: 1: nie
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr häufig 
-
-ao6: -13: kenne ich nicht
-
-mv: ao6
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_11"/>
-        </zofar:transitions>
-
-hi: ao6 (missing) bitte etwas absetzen.
-
-\------------------------------------------------------------
-
-N_10a
-=========
-
-tc:
-
-vn: diggeso (diggeso1; diggeso2; diggeso3; diggeso4; diggeso5)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig werden die folgenden Geräte bzw. Software in eine typische Lehrveranstaltung eingebunden?
-
-is:
-
-it1: (diggeso1): Laptop und Beamer der Hochschule
-
-it2: (diggeso2): Smart-Board
-
-it3: (diggeso3): eigener Laptop, Tablet, Smartphone
-
-it4: (diggeso4): Präsentationssoftware (PowerPoint, Prezi)
-
-it5: (diggeso5): fachspezifische Software
-
-st:
-
-ao1: 1: nie
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr häufig 
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-N_10b
-=========
-
-tc:
-
-vn: digflehr (digflehr1; digflehr2; digflehr3)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig nutzen Sie die folgenden Formen des digitalen Lernens?
-
-is:
-
-it1: (digflehr1): im Internet zugängliche Lehr- und Lernmaterialien
-
-it2: (digflehr2): Lehr- und Lernvideos
-
-it3: (digflehr3): digitale Selbstlernprogramme (z. B. Simulation, Lernapps, Lernspiele)
-
-st:
-
-ao1: 1: nie
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr häufig 
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-N_11
-=========
-
-tc:
-
-vn: digkom (digkom1; digkom2; digkom3; digkom4; digkom5; digkom6)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton\*innen? 
-
-is:
-
-it1: (digkom1): Instant Messaging-Dienste (z. B. WhatsApp, Telegram)
-
-it2: (digkom2): Soziale Netzwerke (z. B. Facebook, Instagram)
-
-it3: (digkom3): Online Verwaltungstools (z. B. Doodle, Trello)
-
-it4: (digkom4): Tools der Lernmanagementsysteme (z. B. Peer-Feedback, Foren)
-
-it5: (digkom5): Clouddienste zum gemeinsamen Schreiben (z.B. Etherpad, Google docs)
-
-it6: (digkom6): Clouddienste zum Dateienaustausch (z. B. Dropbox)
-
-st:
-
-ao1: 1: nie
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr häufig 
-
-mv: 
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_12"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_12
-=========
-
-tc:
-
-vn: digan (digan1; digan2; digan3; digan4; digan5; digan6; digan7; digan8; digan9; digan10; digan11)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie leicht würde es Ihnen fallen, …
-
-is:
-
-it1: (digan1): … einen Text nach bestimmten Vorgaben zu formatieren (z. B. mit Word, Latex)? 
-
-it2: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)
-
-it3: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, Open Office Calc)
-
-it4: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
-
-it5: (digan5): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren? 
-
-it6: (digan6): … wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
-
-it7: (digan7): … von Ihnen genutzte digitale Medien miteinander zu synchronisieren?
-
-it8: (digan8): … sich in ein neues Computerprogramm einzuarbeiten?
-
-it9: (digan9): … eine Programmiersprache sicher anzuwenden (z. B. Python, Java)?
-
-it10: (digan10): … digitale Gruppen/Netzwerke zu recherchieren und sich zu beteiligen?
-
-it11: (digan11): … sich in einer virtuellen oder simulierten Umgebung zu bewegen und zu handeln?
-
-st:
-
-ao1: 1: sehr leicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr schwer
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_57"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_13
-=========
-
-tc: IF zusatzsplit ==4
-
-vn: diskjane (diskjaneno; diskjane1; diskjane2; diskjane3; diskjane4; diskjane5; diskjane6; diskjane7; diskjane8; diskjane9; 
-diskjane10; diskjane11; diskjane12; diskjane13; diskjane14; diskjane15; diskjane16; diskjane16o)
-
-qt: Mehrfachauswahl mit Exklusivkategorie und offener Angabe
-
-hl:
-
-in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt.
-
-q: Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?
-
-is:
-
-it:
-
-st:
-
-ao1: (diskjaneno): nein [Exklusivkategorie]
-
-ao2: (diskjane1): Leistungen wurden mir nicht zugetraut.
-
-ao3: (diskjane2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
-
-ao4: (diskjane3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde. 
-
-ao5: (diskjane4): Mir wurden Rechte/Informationen vorenthalten.
-
-ao6: (diskjane5): Mein Antrag wurde abgelehnt oder mir wurde eine Leistung verwehrt. 
-
-ao7: (diskjane6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen). 
-
-ao8: (diskjane7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
-
-ao9: (diskjane8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
-
-ao10: (diskjane9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet. 
-
-ao11: (diskjane10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
-
-ao12: (diskjane11): Ich wurde beleidigt oder beschimpft. 
-
-ao13: (diskjane12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
-
-ao14: (diskjane13): Ich habe sexualisierte körperliche Übergriffe erlebt. 
-
-ao15: (diskjane14): Ich wurde körperlich bedroht.
-
-ao16: (diskjane15): Ich wurde körperlich angegriffen. 
-
-ao17: (diskjane16): Anderes, und zwar: [(diskjane16o), offene Angabe, 250 Zeichen] 
-
-mv:
-
-ka: (ao2 TO ao17): Ja, und zwar: 
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo1: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
-
-fo2: "Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?" bitte etwas von den Einleitungssätzen absetzen.
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_14" condition="!diskjane.value"/>
-            <zofar:transition target="A_57" condition="diskjane.value"/>
-        </zofar:transitions>
-    
-hi:
-
-\------------------------------------------------------------
-
-N_14
-=========
-
-tc:
-
-vn: diskanza (diskanza1; diskanza2; diskanza3; diskanza4; diskanza5; diskanza6; diskanza7; diskanza8; diskanza9; diskanza10; 
-diskanza11; diskanza12; diskanza13; diskanza14; diskanza15; diskanza16)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig haben Sie diese Erfahrungen im Rahmen des Studiums gemacht?
-
-is:
-
-it1: (diskanza1): Leistungen wurden mir nicht zugetraut.
-
-it2: (diskanza2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
-
-it3: (diskanza3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde.
-
-it4: (diskanza4): Mir wurden Rechte/Informationen vorenthalten.
-
-it5: (diskanza5): Mein Antrag wurde abgelehnt oder mir wurde eine Leistung verwehrt.
-
-it6: (diskanza6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen).
-
-it7: (diskanza7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
-
-it8: (diskanza8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
-
-it9: (diskanza9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet.
-
-it10: (diskanza10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
-
-it11: (diskanza11): Ich wurde beleidigt oder beschimpft.
-
-it12: (diskanza12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
-
-it13: (diskanza13): Ich habe sexualisierte körperliche Übergriffe erlebt.
-
-it14: (diskanza14): Ich wurde körperlich bedroht.
-
-it15: (diskanza15): Ich wurde körperlich angegriffen.
-
-it16: (diskanza16): Anderes
-
-st:
-
-ao1: 1: einmal
-
-ao2: 2: mehrmals
-
-ao3: 3: regelmäßig
-
-ao4: -12: weiß ich nicht
-
-mv: ao4
-
-ka:
-
-vc1: SHOW it1 (diskanza1) IF diskjane1=1
-
-vc2: SHOW it2 (diskanza2) IF diskjane2=1
-
-vc3: SHOW it3 (diskanza3) IF diskjane3=1
-
-vc4: SHOW it4 (diskanza4) IF diskjane4=1
-
-vc5: SHOW it5 (diskanza5) IF diskjane5=1
-
-vc6: SHOW it6 (diskanza6) IF diskjane6=1
-
-vc7: SHOW it7 (diskanza7) IF diskjane7=1
-
-vc8: SHOW it8 (diskanza8) IF diskjane8=1
-
-vc9: SHOW it9 (diskanza9) IF diskjane9=1
-
-vc10: SHOW itq10 (diskanza10) IF diskjane10=1
-
-vc11: SHOW it11 (diskanza11) IF diskjane11=1
-
-vc12: SHOW it12 (diskanza12) IF diskjane12=1
-
-vc13: SHOW it13 (diskanza13) IF diskjane13=1
-
-vc14: SHOW it14 (diskanza14) IF diskjane14=1
-
-vc15: SHOW it15 (diskanza15) IF diskjane15=1
-
-vc16: SHOW it16 (diskanza16) IF diskjane16=1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: ao4 bitte etwas absetzen.
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="N_15"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_15
-=========
-
-tc:
-
-vn: diskwem (diskwem1; diskwem2; diskwem3; diskwem4; diskwem5; diskwem6; diskwem7; diskwem8; diskwem8o)
-
-qt:  Mehrfachauswahl; offene Angabe
-
-hl:
-
-in:
-
-q: Von wem oder was ging die Benachteiligung/Diskriminierung aus?
-
-is: Bitte alles Zutreffende auswählen.
-
-it:
-
-st:
-
-ao1: (diskwem1): Studierende
-
-ao2: (diskwem2): Tutor\*innen
-
-ao3: (diskwem3): Lehrende
-
-ao4: (diskwem4): Verwaltungsmitarbeiter\*innen
-
-ao5: (diskwem5): Materielle Gegebenheiten/technische Ausstattung
-
-ao6: (diskwem6): Verfahren/Regelungen
-
-ao7: (diskwem7): keine Angabe
-
-ao8: (diskwem8): Andere, und zwar: [(diskwem8o), offene Angabe, 250 Zeichen]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_57"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-B1_3a
-=========
-
-tc: If demosex !=3 (?; tc bitte im Rahmen neugesetzten Seitenweiterleitungsbedingungen prüfen)
-
-vn: besex1; besex2; besex3; besex4; besex5;
-    hosex1; hosex2; hosex3; hosex4; hosex5
-
-qt: Einfachauswahlmatrix
-
-hl:
-
-in:
-
-q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und ihre Beziehungen in der heutigen Gesellschaft. 
-(Leerzeile)
-Bitte geben Sie an, in welchem Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
-
-is:
-
-it1: (besex1): Egal wie erfolgreich ein Mann auch sein mag, ohne die Liebe einer Frau fehlt ihm etwas ganz Wichtiges.
-
-it2: (besex2): Man kann im Leben erst richtig glücklich sein, wenn man einen Partner hat, den man liebt.
-
-it3: (hosex1): Wenn Frauen in einem fairen Wettbewerb gegenüber Männern den Kürzeren ziehen, behaupten sie gerne, sie seien 
-diskriminiert worden.
-
-it4: (hosex2): Feminist\*innen wollen, dass Frauen mehr Macht bekommen als Männer.
-
-it5: (hosex3): Frauen versuchen, Macht zu erlangen, indem sie Männer immer mehr beherrschen.
-
-it6: (besex3): Jeder Mann sollte eine Frau haben, die er über alles liebt.
-
-it7: (hosex4): Die meisten Frauen interpretieren harmlose Äußerungen oder Handlungen als frauenfeindlich.
-
-it8: (besex4): Frauen sollten von Männern umsorgt und beschützt werden.
-
-it9: (besex5): Ein Mann sollte bereit sein, sein eigenes Wohl zu opfern, um für seine Frau sorgen zu können.
-
-it10: (hosex5): Viele Frauen versuchen unter dem Deckmantel der Gleichberechtigung, besondere Vergünstigungen zu erlangen, wie z. B. eine Bevorzugung bei der Besetzung von Arbeitsstellen.
-
-st:
-
-ao1: 1: stimme gar nicht zu
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: stimme voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:       		
-
-
-		<zofar:transitions>
-            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
-            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
-        	</zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-D3_1
-=========
-
-tc:
-
-vn: wohnplz; wohnplzort
-
-qt: Einfachauswahl mit vertikalen ao und offener Angabe
-
-hl:
-
-in:
-
-q1: Wo wohnen Sie während der Vorlesungszeit hauptsächlich?
-
-q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an.
-is:
-
-it:
-
-st:
-
-ao1: (wohnplz): [infield = PLZ; number, 5-stellig: 01000 TO 99999] 
-
-ao2: (wohnplzort): [infield = Ort; 60 Zeichen]
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh: (wohnplz): Bitte geben Sie Ihre Postleitzahl an (01000 bis 99999).
-
-fv:
-
-hv:
-
-fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
-
-tr:
-
-      <zofar:transitions>
-            <zofar:transition target="D3_3"/>
-        </zofar:transitions>
-
-hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
-
-\------------------------------------------------------------
-
-F3_23
-=========
-
-tc:
-
-vn: wohnemin; wohnemino
-
-qt: Einfachauswahl mit offener Angabe
-
-hl:
-
-in:
-
-q: Wie viel Zeit benötigen Sie für den einfachen Weg von Ihrer Wohnung zur Hochschule?
-
-is: Bitte geben Sie die Dauer „von Tür zu Tür“ an.
-
-it:
-
-st:
-
-ao1: 1: Präfix: Dauer: [wohnemino] (infield=Minutenangabe; NUMBER; 3-Stellen)
-
-ao2: -12: weiß ich nicht
-
-mv: ao2
-
-ka:
-
-vc:
-
-av: number: 3-Stellen: 1 TO 999
-
-kh: Bitte geben Sie die Dauer des einfachen Weges von Ihrer Wohnung zu Ihrer Hochschule an (1 bis 999).
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-       <zofar:transitions>
-            <zofar:transition target="F3_24"/>
-        </zofar:transitions>
-
-hi:
- 
-\------------------------------------------------------------
-
-F3_24
-=========
-
-tc:
-
-vn: mobregmittel
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Welches Verkehrsmittel nutzen Sie überwiegend um an Ihre Hochschule zu gelangen?
-
-is: Bei kombinierter Nutzung geben Sie bitte das Verkehrsmittel an, mit dem Sie die längste Wegstrecke zurücklegen.
-
-it:
-
-st:
-
-ao1: 1: zu Fuß
-
-ao2: 2: Fahrrad
-
-ao3: 3: Öffentliche Verkehrsmittel
-
-ao4: 4: PKW (allein fahrend)
-
-ao5: 5: PKW (in Fahrgemeinschaft)
-
-ao6: 6: anderes
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-       <zofar:transitions>
-            <zofar:transition target="F3_25"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_17
-=========
-
-tc:
-
-vn: diskwoh (diskwoh1; diskwoh2; diskwoh3)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Inwieweit treffen die folgenden Aussagen auf Ihre persönlichen Erfahrungen bei der Wohnungssuche zu?
-
-is: 
-
-it1: (diskwoh1): Ich habe mich oft vergeblich um eine Wohnung beworben.
-
-it2: (diskwoh2): Für die Wohnungssuche sind soziale Kontakte sehr wichtig.
-
-it3: (diskwoh3): Eine Wohnung zu einem günstigen Mietpreis zu finden, ist fast aussichtslos.
-
-st:
-
-ao1: 1: trifft überhaupt nicht zu
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
- 
-\------------------------------------------------------------
-
-N_16
-=========
-
-tc:
-
-vn: lftaus (lftaus1; lftaus2; lftaus3; lftaus4);
-    lftzei (lftzei1; lftzei2; lftzei3; lftzei4) 
-       
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Inwieweit treffen die folgenden Aussagen auf Ihre Lebensführung zu?
-
-is: 
-
-it1: (lftaus1): Ich pflege einen gehobenen Lebensstandard.
-
-It2: (lftaus2): Es ist mir zu teuer, regelmäßig große Urlaube im Ausland zu machen.
-
-It3: (lftaus3): In Kunst und Kultur kenne ich mich sehr gut aus.
-
-It4: (lftaus4): Ich lese gern anspruchsvolle Bücher.
-
-It5: (lftzei1): Mein Leben gefällt mir dann besonders gut, wenn ständig etwas los ist.
-
-It6: (lftzei2): Ich suche immer wieder nach neuen Herausforderungen und Erfahrungen.
-
-It7: (lftzei3): Sicherheit und Beständigkeit sind das oberste Gebot in meinem Leben.
-
-It8: (lftzei4): Ich halte an Traditionen und Bräuchen meiner Familie fest.
-
-st:
-
-ao1: 1: trifft überhaupt nicht zu
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: trifft voll und ganz zu
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
-
-B2_5
-=========
-
-tc:
-
-vn: frei (freispor; freikunst; freikult; freiparty; freifreu; freipc; freifimu; freiehr; freidiswiss; freidispol; freinix)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig gehen Sie in Ihrer Freizeit folgenden Tätigkeiten nach?
-
-is:
-
-it1: (freispor): sportlich betätigen
-
-it2: (freikunst): künstlerisch betätigen (zeichnen,  musizieren)
-
-it3: (freikult): Kulturveranstaltungen besuchen (Konzerte, Theater, Poetry-Slam etc.)
-
-it4: (freiparty): feiern, auf Partys gehen
-
-it5: (freifreu): Freunde treffen
-
-it6: (freipc): Videospiele, Computer spielen
-
-it7: (freifimu): Filme/Serien schauen, Musik hören
-
-it8: (freiehr): ehrenamtlich tätig sein
-
-it9: (freidiswiss): über wissenschaftliche Themen reden
-
-it10: (freidispol): über soziale und politische Fragen diskutieren
-
-it11: (freinix): einfach nichts tun
-
-st:
-
-ao1: 1: nie
-
-ao2: 2: 
-
-ao3: 3: 
-
-ao4: 4: 
-
-ao5: 5: sehr häufig
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="B2_4"/>
-        </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
 A_57
 =========
 
 tc:
 
-vn: sdkzei (sdkzei1; sdkzei2; sdkzei3; sdkzei4; sdkzei5; sdkzei6; sdkzei7; sdkzei8; sdkzei9; sdkzei10; sdkzei11; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16)
+vn: sdkzei (sdkzei1; sdkzei2; sdkzei3; sdkzei5; sdkzei7; sdkzei8; sdkzei9; sdkzei12; sdkzei13; sdkzei14; sdkzei15; sdkzei16)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -5936,21 +4260,13 @@ it2: (sdkzei2): prestigeträchtige Berufsposition
 
 it3: (sdkzei3): sicherer Arbeitsplatz
 
-it4: (sdkzei4): gute Aufstiegsmöglichkeiten
-
 it5: (sdkzei5): flexible Arbeitszeiten
-
-it6: (sdkzei6): die Erwartungen meiner Vorgesetzten erfüllen
 
 it7: (sdkzei7): verantwortungsvolle Aufgaben übernehmen
 
 it8: (sdkzei8): eigene Ideen verwirklichen
 
 it9: (sdkzei9): selbstständig Entscheidungen treffen
-
-it10: (sdkzei10): eine Arbeit, die mir immer wieder neue Aufgaben stellt
-
-it11: (sdkzei11): Möglichkeit zu wissenschaftlicher Tätigkeit
 
 it12: (sdkzei12): anderen Menschen helfen zu können
 
