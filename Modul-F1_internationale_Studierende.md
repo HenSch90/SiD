@@ -505,19 +505,19 @@ q2: !!Ich habe mich für ein Studium in Deutschland entschieden, ...!!
 
 is:
 
-it1: (bdequaba): ... aufgrund der hohen Lebensqualität.
+it1: (bdefamsba): ... weil bereits Freund\*innen/Verwandte in Deutschland studiert haben.
 
-it2: (bdefamsba): ... weil bereits Freund\*innen/Verwandte in Deutschland studiert haben.
+it2: (bdefinba): ... weil dies meinen finanziellen Möglichkeiten entspricht.
 
-it3: (bdeoekba): ... aufgrund der wirtschaftlichen Lage in Deutschland.
+it3: (bdesprba): ... um meine Sprachkenntnisse zu vertiefen.
 
-it4: (bdefinba): ... weil dies meinen finanziellen Möglichkeiten entspricht.
+it4: (bdekenba): ... um Deutschland kennenzulernen.
 
-it5: (bdesprba): ... um meine Sprachkenntnisse zu vertiefen.
+it5: (bdeoekba): ... aufgrund der wirtschaftlichen Lage in Deutschland.
 
-it6: (bdearbba): ... um nach Studienabschluss in Deutschland zu arbeiten.
+it6: (bdequaba): ... aufgrund der hohen Lebensqualität.
 
-it7: (bdekenba): ... um Deutschland kennenzulernen.
+it7: (bdearbba): ... um nach Studienabschluss in Deutschland zu arbeiten.
 
 st:
 
@@ -553,7 +553,7 @@ tr:
             <zofar:transition target="F1_10"/>
         </zofar:transitions>
 
-hi: Items bitte zufällig rotieren.
+hi: Rotation der Items bitte entfernen
 
 \--------------------------------
 
