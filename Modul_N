@@ -1,63 +1,3 @@
-\------------------------------------------------------------
-
-N_1
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwstudium; nrwfach
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Würden Sie wieder…
-
-is:
-
-it1: (nrwstudium): … ein Studium aufnehmen?
-
-it2: (nrwfach): … das gleiche Studienfach wählen?
-
-st:
-
-ao1: 1: auf keinen Fall
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: auf jeden Fall
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_2"/>
-    </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
 
 N_2
 =========
@@ -116,120 +56,6 @@ hi:
 
 \------------------------------------------------------------
 
-N_3
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwfach2
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie überzeugt sind Sie momentan von Ihrer Entscheidung, Ihren Studiengang/Ihre Fächerkombination zu studieren?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_4"/>
-    </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_4
-=========
-
-tc: IF NRW / zusatzsplit ==1
-
-vn: nrwregel
-
-qt: Einfachauswahl mit vertikaler ao
-
-hl:
-
-in:
-
-q: Wie wichtig ist Ihnen ein Abschluss in Regelstudienzeit, d. h. in der Anzahl an Fachsemestern, wie es der Studienverlaufsplan vorsieht?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: gar nicht
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: in sehr hohem Maße
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-    <zofar:transitions>
-        <zofar:transition target="A_57"/>
-    </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
 N_5
 =========
 
@@ -243,7 +69,7 @@ hl:
 
 in:
 
-q: Wie schätzen Sie Ihren Bedarf an digitalen Studienangeboten in Ihrem Studiengang ein?
+q: Wie schätzen Sie Ihren persönlichen Bedarf an digitalen Studienangeboten in Ihrem Studiengang ein?
 
 is:
 
@@ -357,7 +183,7 @@ hl:
 
 in:
 
-q: Haben Sie vor/zu Studienbeginn einen von Ihrer Hochschule angebotenen Selbsttest zur fachlichen Eignung durchgeführt? Und wie hilfreich waren die Ergebnisse des Selbsttests (bspw. Online-Self-Assessment/OSA, Studicheck, Wissenstest etc.)?
+q: Haben Sie vor/zu Studienbeginn einen von Ihrer Hochschule angebotenen Selbsttest zur fachlichen Eignung durchgeführt (bspw. Online-Self-Assessment/OSA, Studicheck, Wissenstest etc.)? Und wie hilfreich waren die Ergebnisse des Selbsttestes?
 
 is:
 
@@ -365,19 +191,19 @@ it:
 
 st:
 
-ao1: 1: gar nicht
+ao1: -13: Test nicht durchgeführt/angeboten
 
-ao2: 2:
+ao2: 1: gar nicht hilfreich
 
-ao3: 3:
+ao3: 2:
 
-ao4: 4:
+ao4: 3:
 
-ao5: 5: in sehr hohem Maße
+ao5: 4:
 
-ao6: -13: Test nicht durchgeführt/angeboten
+ao6: 5: sehr hilfreich
 
-mv: ao6
+mv: ao1
 
 ka:
 
@@ -391,7 +217,7 @@ fv:
 
 hv:
 
-fo: ao6 (missing) bitte etwas absetzen.
+fo: ao1 (missing) bitte etwas absetzen.
 
 tr:
 
@@ -424,19 +250,19 @@ it:
 
 st:
 
-ao1: 1: gar nicht
+ao1: -13: Test nicht durchgeführt/angeboten
 
-ao2: 2:
+ao2: 1: gar nicht hilfreich
 
-ao3: 3:
+ao3: 2:
 
-ao4: 4:
+ao4: 3:
 
-ao5: 5: in sehr hohem Maße
+ao5: 4:
 
-ao6: -13: Angebot nicht bekannt/nicht genutzt
+ao6: 5: sehr hilfreich
 
-mv: ao6
+mv: ao1
 
 ka:
 
@@ -450,7 +276,7 @@ fv:
 
 hv:
 
-fo: ao6 (missing) bitte etwas absetzen.
+fo: ao1 (missing) bitte etwas absetzen.
 
 tr:
 
@@ -462,52 +288,6 @@ hi:
 
 \------------------------------------------------------------
 
-N_9a
-=========
-
-tc:
-
-vn: digosa
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Haben Sie vor bzw. zu Beginn des Studiums einen Selbsttest zur fachlichen Eignung durchgeführt (z. B. Online-Self-Assessment)?
-
-is:
-
-it:
-
-st:
-
-ao1: 1: ja
-
-ao2: 2: nein
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-hi:
-
-\------------------------------------------------------------
 
 N_9
 =========
@@ -522,7 +302,7 @@ hl:
 
 in:
 
-q: Wie viele Ihrer Lehrveranstaltungen werden über digitale Plattformen organisiert (z. B. StudIP, Moodle, Ilias, Olat)?
+q: Wie viele Ihrer Lehrveranstaltungen werden wie folgt über digitale Plattformen organisiert (z. B. StudIP, Moodle, Ilias, Olat)?
 
 is:
 
@@ -530,11 +310,11 @@ it1: (digorg1): An-/Abmeldung zu Lehrveranstaltungen
 
 it2: (digorg2): An-/Abmeldung zu Prüfungen, Ergebniseinsicht
 
-it3: (digorg3): Kommunikation innerhalb der Lehrveranstaltungen
+it3: (digorg3): Durchführung von Prüfungen
 
-it4: (digorg4): Bereitstellung von Literatur und Lehrmaterialien
+it4: (digorg4): Kommunikation innerhalb der Lehrveranstaltungen
 
-it5: (digorg5): Erbringung von Leistungsnachweisen/elektronische Prüfungen
+it5: (digorg5): Bereitstellung von Literatur und Lehrmaterialien
 
 st:
 
@@ -542,15 +322,13 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
 ao5: 5: alle
 
-ao6: -12: weiß ich nicht
-
-mv: ao6
+mv:
 
 ka:
 
@@ -572,7 +350,7 @@ tr:
         <zofar:transition target="N_10"/>
     </zofar:transitions>
 
-hi: ao6 (missing) bitte etwas absetzen.
+hi:
 
 \------------------------------------------------------------
 
@@ -581,7 +359,7 @@ N_9b
 
 tc:
 
-vn: digfor (digfor1; digfor2; digfor3; digfor4; digfor5)
+vn: digfor (digfor1; digfor2)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -589,17 +367,13 @@ hl:
 
 in:
 
-q: Wie viele Ihrer Lehrveranstaltungen werden in folgender Form organisiert?
+q: Wie viele Ihrer Lehrveranstaltungen und Prüfungen werden in digitaler Form organisiert?
 
 is:
 
-it1: (digfor1): als reine Online-Veranstaltung (z. B. Online-Vorlesung, Online-Seminar)
+it1: (digfor1): als reine Online-Veranstaltung (z. B. Vorlesung, Seminar)
 
-it2: (digfor2): als Online-Selbststudium mit einzelnen Präsenzterminen
-
-it3: (digfor3): als Präsenzveranstaltung mit einzelnen Online-Terminen
-
-it4: (digfor4): als reine Präsenzveranstaltung
+it2: (digfor2): als Online-Prüfung (z. B. Klausur, mündl. Prüfung)
 
 st:
 
@@ -607,7 +381,7 @@ ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
@@ -616,6 +390,67 @@ ao5: 5: alle
 mv:
 
 ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\------------------------------------------------------------
+
+N_9c
+=========
+
+tc:
+
+vn: covdigfor (covdigfor1; covdigfor2 covdigfor3; covdigfor4)
+
+qt: Einfachauswahlmatrix mit horizontalen ao
+
+hl:
+
+in:
+
+q: Wie viele Ihrer Lehrveranstaltungen und Prüfungen werden in digitaler Form organisiert?
+
+is:
+
+it1: (covdigfor1): in diesem Semester
+
+it2: (covdigfor2): im letzten Semester
+
+it3: (covdigfor3): in diesem Semester
+
+it4: (covdigfor4): im letzten Semester
+
+st:
+
+ao1: 1: keine
+
+ao2: 2:
+
+ao3: 3: etwa die Hälfte
+
+ao4: 4:
+
+ao5: 5: alle
+
+mv:
+
+ka1: (it1-it2): als reine Online-Veranstaltung (z. B. Vorlesung, Seminar)
+
+ka2: (it3-it4): als Online-Prüfung (z. B. Klausur, mündl. Prüfung)
 
 vc:
 
@@ -640,51 +475,49 @@ N_10
 
 tc:
 
-vn: diglehr (diglehr1; diglehr2; diglehr3; diglehr4; diglehr5; diglehr6; diglehr7; diglehr8; diglehr9; diglehr9o)
+vn: diglehr (diglehr1; diglehr2; diglehr3; diglehr4; diglehr5; diglehr6; diglehr7; diglehr8; diglehr9; diglehr10; diglehr11; diglehr12; diglehr12o; diglehr13)
 
-qt: Einfachauswahlmatrix mit horizontalen ao; offene Angabe
+qt: Mehrfachauswahl mit vertikalen ao und offener Angabe
 
 hl:
 
 in:
 
-q: Wie häufig kommen folgende digitale Elemente und Lehrformate im Rahmen der von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
+q: Welche der folgenden digitalen Elemente kommen in den von Ihnen besuchten Lehrveranstaltungen zum Einsatz?
 
 is:
 
-it1: (diglehr1): Podcasts, Blogs, Videos
-
-it2: (diglehr2): Abstimmungsmedien (Clicker-Abfrage, Voting-Tool)
-
-it3: (diglehr3): Game-Based-Learning (auf Lernspielen basierende Lehr- und Lernformate)
-
-it4: (diglehr4): Mobiles Lernen (virtuelle Lernorte/Labore)
-
-it5: (diglehr5): Augmented- und Virtual-Reality
-
-it6: (diglehr6): E-Portfolio (digitales Lerntagebuch)
-
-it7: (diglehr7): Videoaufzeichnungen von Vorlesungen
-
-it8: (diglehr8): digitale Prüfungsformate/E-Assessment
-
-it12: (diglehr9): Etwas anderes und zwar: [(diglehr9o), offene Angabe, 80 Zeichen]
+it:
 
 st:
 
-ao1: 1: nie
+ao1: (diglehr1): Podcasts, Blogs
 
-ao2: 2:
+ao2: (diglehr2): Videos, Animationen, Simulationen
 
-ao3: 3:
+ao3: (diglehr3): Abstimmungsmedien (z. B. Clicker-Abfrage, Voting-Tool)
 
-ao4: 4:
+ao4: (diglehr4): spielbasierte Lernelemente (z. B. Quizzes, Puzzles, Plan-/Rollenspiele)
 
-ao5: 5: sehr häufig
+ao5: (diglehr5): Mobile Lernelemente (Apps)
 
-ao6: -13: kenne ich nicht
+ao6: (diglehr6): immersive Lernumgebungen (z. B. Augmented- und Virtual-Reality-Anwendungen)
 
-mv: ao6
+ao7: (diglehr7): adaptive Lernumgebungen (z. B. Lernhilfen, die sich an Ihren individuellen Lernstand anpassen)
+
+ao8: (diglehr8): E-Portfolio (digitales Lerntagebuch)
+
+ao9: (diglehr9): Kommunikations- und Kollaborationstools (z. B. Etherpad, Foren, Chats, Break-out-Räume)
+
+ao10: (diglehr10): Wikis
+
+ao11: (diglehr11): eTests (z. B. zur individuellen Überprüfung des Lernstandes im Semesterverlauf)
+
+ao12: (diglehr12): Andere, und zwar: [(diglehr12o), offene Angabe, 250 Zeichen]
+
+ao13: (diglehr13): Keine [Exklusivkategorie]
+
+mv:
 
 ka:
 
@@ -701,21 +534,21 @@ hv:
 fo:
 
 tr:
-
     <zofar:transitions>
         <zofar:transition target="N_11"/>
     </zofar:transitions>
 
-hi: ao6 (missing) bitte etwas absetzen.
+hi: ao13 bitte etwas absetzen.
+
 
 \------------------------------------------------------------
 
-N_10a
+N_10c
 =========
 
 tc:
 
-vn: diggeso (diggeso1; diggeso2; diggeso3; diggeso4; diggeso5)
+vn: diglehranz (diglehranz1; diglehranz2; diglehranz3; diglehranz4; diglehranz5; diglehranz6; diglehranz7; diglehranz8; diglehranz9; diglehranz10; diglehranz11; diglehranz12)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -727,90 +560,69 @@ q: Wie häufig werden die folgenden Geräte bzw. Software in eine typische Lehrv
 
 is:
 
-it1: (diggeso1): Laptop und Beamer der Hochschule
+it1: (diglehranz1): Podcasts, Blogs
 
-it2: (diggeso2): Smart-Board
+it2: (diglehranz2): Videos, Animationen, Simulationen
 
-it3: (diggeso3): eigener Laptop, Tablet, Smartphone
+it3: (diglehranz3): Abstimmungsmedien (z. B. Clicker-Abfrage, Voting-Tool)
 
-it4: (diggeso4): Präsentationssoftware (PowerPoint, Prezi)
+it4: (diglehranz4): spielbasierte Lernelemente (z. B. Quizzes, Puzzles, Plan-/Rollenspiele)
 
-it5: (diggeso5): fachspezifische Software
+it5: (diglehranz5): Mobile Lernelemente (Apps)
+
+it6: (diglehranz6): immersive Lernumgebungen (z. B. Augmented- und Virtual-Reality-Anwendungen)
+
+it7: (diglehranz7): adaptive Lernumgebungen (z. B. Lernhilfen, die sich an Ihren individuellen Lernstand anpassen)
+
+it8: (diglehranz8): E-Portfolio (digitales Lerntagebuch)
+
+it9: (diglehranz9): Kommunikations- und Kollaborationstools (z. B. Etherpad, Foren, Chats, Break-out-Räume)
+
+it10: (diglehranz10): Wikis
+
+it11: (diglehranz11): eTests (z. B. zur individuellen Überprüfung des Lernstandes im Semesterverlauf)
+
+it12: (diglehranz12): Andere
 
 st:
 
-ao1: 1: nie
+ao1: 1: keine
 
 ao2: 2:
 
-ao3: 3:
+ao3: 3: etwa die Hälfte
 
 ao4: 4:
 
-ao5: 5: sehr häufig
+ao5: 5: alle
 
 mv:
 
 ka:
 
-vc:
+vc1: SHOW it1 IF diglehr1==1
 
-av:
+vc2: SHOW it2 IF diglehr2==1
 
-kh:
+vc3: SHOW it3 IF diglehr3==1
 
-fv:
+vc4: SHOW it4 IF diglehr4==1
 
-hv:
+vc5: SHOW it5 IF diglehr5==1
 
-fo:
+vc6: SHOW it6 IF diglehr6==1
 
-tr:
+vc7: SHOW it7 IF diglehr7==1
 
-hi:
+vc8: SHOW it8 IF diglehr8==1
 
-\------------------------------------------------------------
+vc9: SHOW it9 IF diglehr9==1
 
-N_10b
-=========
+vc10: SHOW it10 IF diglehr10==1
 
-tc:
+vc11: SHOW it11 IF diglehr11==1
 
-vn: digflehr (digflehr1; digflehr2; digflehr3)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Wie häufig nutzen Sie die folgenden Formen des digitalen Lernens?
-
-is:
-
-it1: (digflehr1): im Internet zugängliche Lehr- und Lernmaterialien
-
-it2: (digflehr2): Lehr- und Lernvideos
-
-it3: (digflehr3): digitale Selbstlernprogramme (z. B. Simulation, Lernapps, Lernspiele)
-
-st:
-
-ao1: 1: nie
-
-ao2: 2:
-
-ao3: 3:
-
-ao4: 4:
-
-ao5: 5: sehr häufig
-
-mv:
-
-ka:
-
-vc:
+vc12: SHOW it12 IF diglehr12==1
 
 av:
 
@@ -833,7 +645,7 @@ N_11
 
 tc:
 
-vn: digkom (digkom1; digkom2; digkom3; digkom4; digkom5; digkom6)
+vn: digkom (digkom1; digkom2; digkom3; digkom4; digkom5; digkom6; digkom7; digkom8)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -841,7 +653,7 @@ hl:
 
 in:
 
-q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der Zusammenarbeit mit Ihren Kommiliton*innen?
+q: Inwieweit nutzen Sie die folgenden digitalen Möglichkeiten bei der studienbezogenen Zusammenarbeit mit Ihren Kommiliton*innen?
 
 is:
 
@@ -853,9 +665,13 @@ it3: (digkom3): Online Verwaltungstools (z. B. Doodle, Trello)
 
 it4: (digkom4): Tools der Lernmanagementsysteme (z. B. Peer-Feedback, Foren)
 
-it5: (digkom5): Clouddienste zum gemeinsamen Schreiben (z.B. Etherpad, Google docs)
+it5: (digkom7): Videokonferenzsysteme (z. B. Zoom, Skype, WebEx)
 
-it6: (digkom6): Clouddienste zum Dateienaustausch (z. B. Dropbox)
+it6: (digkom8): Kollaborationstools (z. B. Slack, Teams)
+
+it7: (digkom5): Clouddienste zum gemeinsamen Schreiben (z. B. Etherpad, Google docs)
+
+it8: (digkom6): Clouddienste zum Dateienaustausch (z. B. Dropbox)
 
 st:
 
@@ -900,7 +716,7 @@ N_12
 
 tc:
 
-vn: digan (digan1; digan2; digan3; digan4; digan5; digan6; digan7; digan8; digan9; digan10; digan11)
+vn: digan (digan2; digan3; digan4; digan5; digan6; digan7; digan8; digan9; digan12)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -908,35 +724,31 @@ hl:
 
 in:
 
-q: Wie leicht würde es Ihnen fallen, …
+q: Wie schwer/leicht würde es Ihnen fallen, …
 
 is:
 
-it1: (digan1): … einen Text nach bestimmten Vorgaben zu formatieren (z. B. mit Word, Latex)?
+it1: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit PowerPoint, Prezi)
 
-it2: (digan2): … eine animierte Präsentation zu gestalten (z. B. mit Power Point, Prezi)
+it2: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, OpenOffice Calc)
 
-it3: (digan3): … eine Tabellenkalkulation durchzuführen (z. B. Excel, Open Office Calc)
+it3: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
 
-it4: (digan4): … eine Literaturdatenbank anzulegen (z. B. mit Citavi, EndNote)?
+it4: (digan5): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren?
 
-it5: (digan5): … zentrale Literatur zu einem wissenschaftlichen Thema online zu recherchieren?
+it5: (digan6): … wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
 
-it6: (digan6): … wissenschaftliche von nicht-wissenschaftlichen Internetquellen zu unterscheiden?
+it6: (digan7): … von Ihnen genutzte digitale Medien miteinander zu synchronisieren?
 
-it7: (digan7): … von Ihnen genutzte digitale Medien miteinander zu synchronisieren?
+it7: (digan12): … als Administrator eine digitale Gruppe in einem sozialen Netzwerk zu initiieren?
 
 it8: (digan8): … sich in ein neues Computerprogramm einzuarbeiten?
 
 it9: (digan9): … eine Programmiersprache sicher anzuwenden (z. B. Python, Java)?
 
-it10: (digan10): … digitale Gruppen/Netzwerke zu recherchieren und sich zu beteiligen?
-
-it11: (digan11): … sich in einer virtuellen oder simulierten Umgebung zu bewegen und zu handeln?
-
 st:
 
-ao1: 1: sehr leicht
+ao1: 1: sehr schwer
 
 ao2: 2:
 
@@ -944,7 +756,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: sehr schwer
+ao5: 5: sehr leicht
 
 mv:
 
@@ -972,241 +784,36 @@ hi:
 
 \------------------------------------------------------------
 
-N_13
-=========
-
-tc: IF zusatzsplit ==4
-
-vn: diskjane (diskjaneno; diskjane1; diskjane2; diskjane3; diskjane4; diskjane5; diskjane6; diskjane7; diskjane8; diskjane9; diskjane10; diskjane11; diskjane12; diskjane13; diskjane14; diskjane15; diskjane16; diskjane16o)
-
-qt: Mehrfachauswahl mit Exklusivkategorie und offener Angabe
-
-hl:
-
-in: Nun geht es um das Thema Diskriminierung. Diskriminierung bedeutet, dass eine Person aus bestimmten Gründen schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt.
-
-q: Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?
-
-is:
-
-it:
-
-st:
-
-ao1: (diskjaneno): nein [Exklusivkategorie]
-
-ao2: (diskjane1): Leistungen wurden mir nicht zugetraut.
-
-ao3: (diskjane2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
-
-ao4: (diskjane3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde.
-
-ao5: (diskjane4): Mir wurden Rechte/Informationen vorenthalten.
-
-ao6: (diskjane5): Mein Antrag wurde abgelehnt oder mir wurde eine Leistung verwehrt.
-
-ao7: (diskjane6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen).
-
-ao8: (diskjane7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
-
-ao9: (diskjane8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
-
-ao10: (diskjane9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet.
-
-ao11: (diskjane10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
-
-ao12: (diskjane11): Ich wurde beleidigt oder beschimpft.
-
-ao13: (diskjane12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
-
-ao14: (diskjane13): Ich habe sexualisierte körperliche Übergriffe erlebt.
-
-ao15: (diskjane14): Ich wurde körperlich bedroht.
-
-ao16: (diskjane15): Ich wurde körperlich angegriffen.
-
-ao17: (diskjane16): Anderes, und zwar: [(diskjane16o), offene Angabe, 250 Zeichen]
-
-mv:
-
-ka: (ao2 TO ao17): Ja, und zwar:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo1: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
-
-fo2: "Haben Sie selbst bereits diskriminierende Erfahrungen im Rahmen Ihres Studiums gemacht?" bitte etwas von den Einleitungssätzen absetzen.
-
-tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_14" condition="!diskjane.value"/>
-        <zofar:transition target="A_57" condition="diskjane.value"/>
-    </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_14
+CO_4
 =========
 
 tc:
 
-vn: diskanza (diskanza1; diskanza2; diskanza3; diskanza4; diskanza5; diskanza6; diskanza7; diskanza8; diskanza9; diskanza10; diskanza11; diskanza12; diskanza13; diskanza14; diskanza15; diskanza16)
+vn: VCO_4
 
-qt: Einfachauswahlmatrix mit horizontalen ao
+qt: Einfachauswahl vertikal
 
 hl:
 
 in:
 
-q: Wie häufig haben Sie diese Erfahrungen im Rahmen des Studiums gemacht?
+q: In wie vielen Online-Lehrveranstaltungen werden aktive Interaktionsmöglichkeiten angeboten?
 
-is:
-
-it1: (diskanza1): Leistungen wurden mir nicht zugetraut.
-
-it2: (diskanza2): Von mir erbrachte Leistungen wurden herabgesetzt (z. B. ungerecht bewertet).
-
-it3: (diskanza3): Regeln/Verfahren wurden so gestaltet, dass ich benachteiligt wurde.
-
-it4: (diskanza4): Mir wurden Rechte/Informationen vorenthalten.
-
-it5: (diskanza5): Mein Antrag wurde abgelehnt oder mir wurde eine Leistung verwehrt.
-
-it6: (diskanza6): Ich wurde durch Barrieren eingeschränkt (z. B. Hindernisse, Erreichbarkeit von Räumen).
-
-it7: (diskanza7): Ich wurde ausgegrenzt oder übergangen (z. B. in Arbeitsgruppen).
-
-it8: (diskanza8): Menschen wie ich wurden stereotyp/herabwürdigend dargestellt.
-
-it9: (diskanza9): Mir sind unangebrachte Bemerkungen zu meinem Privatleben begegnet.
-
-it10: (diskanza10): Man hat abwertende Witze über mich gemacht oder mich ausgelacht.
-
-it11: (diskanza11): Ich wurde beleidigt oder beschimpft.
-
-it12: (diskanza12): Ich habe unerwünschte sexualisierte Kommentare erlebt.
-
-it13: (diskanza13): Ich habe sexualisierte körperliche Übergriffe erlebt.
-
-it14: (diskanza14): Ich wurde körperlich bedroht.
-
-it15: (diskanza15): Ich wurde körperlich angegriffen.
-
-it16: (diskanza16): Anderes
-
-st:
-
-ao1: 1: einmal
-
-ao2: 2: mehrmals
-
-ao3: 3: regelmäßig
-
-ao4: -12: weiß ich nicht
-
-mv: ao4
-
-ka:
-
-vc1: SHOW it1 (diskanza1) IF diskjane1=1
-
-vc2: SHOW it2 (diskanza2) IF diskjane2=1
-
-vc3: SHOW it3 (diskanza3) IF diskjane3=1
-
-vc4: SHOW it4 (diskanza4) IF diskjane4=1
-
-vc5: SHOW it5 (diskanza5) IF diskjane5=1
-
-vc6: SHOW it6 (diskanza6) IF diskjane6=1
-
-vc7: SHOW it7 (diskanza7) IF diskjane7=1
-
-vc8: SHOW it8 (diskanza8) IF diskjane8=1
-
-vc9: SHOW it9 (diskanza9) IF diskjane9=1
-
-vc10: SHOW itq10 (diskanza10) IF diskjane10=1
-
-vc11: SHOW it11 (diskanza11) IF diskjane11=1
-
-vc12: SHOW it12 (diskanza12) IF diskjane12=1
-
-vc13: SHOW it13 (diskanza13) IF diskjane13=1
-
-vc14: SHOW it14 (diskanza14) IF diskjane14=1
-
-vc15: SHOW it15 (diskanza15) IF diskjane15=1
-
-vc16: SHOW it16 (diskanza16) IF diskjane16=1
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: ao4 bitte etwas absetzen.
-
-tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_15"/>
-    </zofar:transitions>
-
-hi:
-
-\------------------------------------------------------------
-
-N_15
-=========
-
-tc:
-
-vn: diskwem (diskwem1; diskwem2; diskwem3; diskwem4; diskwem5; diskwem6; diskwem7; diskwem8; diskwem8o)
-
-qt: Mehrfachauswahl; offene Angabe
-
-hl:
-
-in:
-
-q: Von wem oder was ging die Benachteiligung/Diskriminierung aus?
-
-is: Bitte alles Zutreffende auswählen.
+is: Mit Interaktionsmöglichkeiten sind direkte Austauschmöglichkeiten, wie z. B. im Rahmen einer Chatfunktion, gemeint.
 
 it:
 
 st:
 
-ao1: (diskwem1): Studierende
+ao1: 1: keine
 
-ao2: (diskwem2): Tutor*innen
+ao2: 2:
 
-ao3: (diskwem3): Lehrende
+ao3: 3: etwa die Hälfte
 
-ao4: (diskwem4): Verwaltungsmitarbeiter*innen
+ao4: 4:
 
-ao5: (diskwem5): Materielle Gegebenheiten/technische Ausstattung
-
-ao6: (diskwem6): Verfahren/Regelungen
-
-ao7: (diskwem7): keine Angabe
-
-ao8: (diskwem8): Andere, und zwar: [(diskwem8o), offene Angabe, 250 Zeichen]
+ao5: 5: alle
 
 mv:
 
@@ -1226,54 +833,34 @@ fo:
 
 tr:
 
-    <zofar:transitions>
-        <zofar:transition target="A_57"/>
-    </zofar:transitions>
-
 hi:
 
 \------------------------------------------------------------
 
-B1_3a
+CO_5
 =========
 
-tc: If demosex !=3 (?; tc bitte im Rahmen neugesetzten Seitenweiterleitungsbedingungen prüfen)
+tc:
 
-vn: besex1; besex2; besex3; besex4; besex5; hosex1; hosex2; hosex3; hosex4; hosex5
+vn: VCO_5_a; VCO_5_b
 
-qt: Einfachauswahlmatrix
+qt: Einfachauswahlmatrix horizontal
 
 hl:
 
 in:
 
-q: Nachfolgend finden Sie eine Reihe von Aussagen über Frauen und Männer und ihre Beziehungen in der heutigen Gesellschaft. (Leerzeile) Bitte geben Sie an, in welchem Ausmaß Sie der jeweiligen Aussage zustimmen oder nicht zustimmen.
+q: Und wie zufrieden sind Sie mit … 
 
 is:
 
-it1: (besex1): Egal wie erfolgreich ein Mann auch sein mag, ohne die Liebe einer Frau fehlt ihm etwas ganz Wichtiges.
+it1: (VCO_5_a): … dem Angebot/der Umsetzung digitaler Lehrveranstaltungen?
 
-it2: (besex2): Man kann im Leben erst richtig glücklich sein, wenn man einen Partner hat, den man liebt.
-
-it3: (hosex1): Wenn Frauen in einem fairen Wettbewerb gegenüber Männern den Kürzeren ziehen, behaupten sie gerne, sie seien diskriminiert worden.
-
-it4: (hosex2): Feminist*innen wollen, dass Frauen mehr Macht bekommen als Männer.
-
-it5: (hosex3): Frauen versuchen, Macht zu erlangen, indem sie Männer immer mehr beherrschen.
-
-it6: (besex3): Jeder Mann sollte eine Frau haben, die er über alles liebt.
-
-it7: (hosex4): Die meisten Frauen interpretieren harmlose Äußerungen oder Handlungen als frauenfeindlich.
-
-it8: (besex4): Frauen sollten von Männern umsorgt und beschützt werden.
-
-it9: (besex5): Ein Mann sollte bereit sein, sein eigenes Wohl zu opfern, um für seine Frau sorgen zu können.
-
-it10: (hosex5): Viele Frauen versuchen unter dem Deckmantel der Gleichberechtigung, besondere Vergünstigungen zu erlangen, wie z. B. eine Bevorzugung bei der Besetzung von Arbeitsstellen.
+it2: (VCO_5_b): … dem Angebot/der Umsetzung digitaler Prüfungen?
 
 st:
 
-ao1: 1: stimme gar nicht zu
+ao1: 1: gar nicht zufrieden
 
 ao2: 2:
 
@@ -1281,7 +868,7 @@ ao3: 3:
 
 ao4: 4:
 
-ao5: 5: stimme voll und ganz zu
+ao5: 5: voll und ganz zufrieden
 
 mv:
 
@@ -1301,12 +888,121 @@ fo:
 
 tr:
 
-	<zofar:transitions>
-        <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
-        <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
-    	</zofar:transitions>
+hi:
+
+\------------------------------------------------------------
+
+CO_10
+=========
+
+tc:
+
+vn: VCO_10_e; VCO_10_g; VCO_10_h; VCO_10_j; VCO_10_k¸ VCO_10_l¸ VCO_10_m
+
+qt: Einfachauswahlmatrix horizontal
+
+hl:
+
+in:
+
+q: Wenn Sie an Ihre bisherigen Erfahrungen mit digitaler Lehre denken: Inwiefern stimmen Sie den folgenden Aussagen zu?
+
+is:
+
+it1: (VCO_10_e): Durch den Einsatz digitaler Lehrformate bin ich zeitlich flexibler.
+
+It2: (VCO_10_g): Mir fehlt der persönliche Austausch mit anderen Studierenden.
+
+it3: (VCO_10_h): Mir fehlt der persönliche Austausch mit Lehrenden.
+
+it4: (VCO_10_j): Im Rahmen digitaler Lehrformate lassen sich Fragen genauso gut klären wie im persönlichen Kontakt.
+
+it5: (VCO_10_k): Ich habe Bedenken hinsichtlich Datenschutz/-sicherheit.
+it6: (VCO_10_l): Bei einer digitalen Prüfung sind die Prüfungsbedingungen und –chancen für alle Studierenden gleich.
+
+it7: (VCO_10_m): Durch den Einsatz digitaler Lehrformate muss ich mein Studium besser organisieren.
+
+st:
+
+ao1: 1: trifft gar nicht zu
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
 
 hi:
+
+\------------------------------------------------------------
+
+A_37a
+========
+
+tc:
+
+vn: vsbort; vsbplz
+
+qt: offene Angabe
+
+hl:
+
+in:
+
+q: An welchem Ort haben Sie gewohnt, als Sie die Hochschulzugangsberechtigung erhalten haben?
+
+it:
+
+st:
+
+ao1: (vsbort): Präfix: Ort: [Infield = Ort; 60 Zeichen] (offene Angabe)
+
+ao2: (vsbplz): Präfix: ggf. PLZ: [Infield = Postleitzahl; Number, 5-stellig: 01000 TO 99999] (offene Angabe)
+
+mv:
+
+ka:
+
+vc:
+
+av: 
+
+kh2: Bitte tragen Sie die fünfstellige Postleitzahl ein.
+
+fv: 
+
+hv:
+
+fo: 
+
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="A_41"/>
+        </zofar:transitions>
+
+hi: Besteht die Möglichkeit, dass bei PLZ mit einer 0 vorne, diese nicht gelöscht wird?
+
 
 \------------------------------------------------------------
 
@@ -1315,9 +1011,9 @@ D3_1
 
 tc:
 
-vn: wohnplz; wohnplzort
+vn: wohnplzort; wohnplz; wohnland
 
-qt: Einfachauswahl mit vertikalen ao und offener Angabe
+qt: offene Angabe
 
 hl:
 
@@ -1325,15 +1021,17 @@ in:
 
 q1: Wo wohnen Sie während der Vorlesungszeit hauptsächlich?
 
-q2: Falls Sie die Postleitzahl nicht kennen, geben Sie bitte den Ort an. is:
+q2: Falls Sie nicht in Deutschland leben, geben Sie bitte das Land an:
 
 it:
 
 st:
 
-ao1: (wohnplz): [infield = PLZ; number, 5-stellig: 01000 TO 99999]
+ao1: (wohnplzort): Präfix: Ort: [60 Zeichen]
 
-ao2: (wohnplzort): [infield = Ort; 60 Zeichen]
+ao2: (wohnplz): Präfix: ggf. PLZ: [number, 5-stellig: 01000 TO 99999]
+
+ao3: (wohnland): Präfix: Land: [infield = Ort; 60 Zeichen]
 
 mv:
 
@@ -1357,7 +1055,7 @@ tr:
         <zofar:transition target="D3_3"/>
     </zofar:transitions>
 
-hi: Bitte q1 und ao1 zusammen oberhalb von q2 und ao2 darstellen.
+hi: Bitte unter q1, ao1 und ao2 darstellen. Dann Absatz q2 und ao3 darstellen.
 
 \------------------------------------------------------------
 
@@ -1382,7 +1080,7 @@ it:
 
 st:
 
-ao1: 1: Präfix: Dauer: [wohnemino] (infield=Minutenangabe; NUMBER; 3-Stellen)
+ao1: 1: Präfix: Dauer: [wohnemino; infield Minutenangabe; number, 3-stellig: 000 TO 999]
 
 ao2: -12: weiß ich nicht
 
@@ -1392,7 +1090,7 @@ ka:
 
 vc:
 
-av: number: 3-Stellen: 1 TO 999
+av:
 
 kh: Bitte geben Sie die Dauer des einfachen Weges von Ihrer Wohnung zu Ihrer Hochschule an (1 bis 999).
 
@@ -1409,65 +1107,6 @@ tr:
     </zofar:transitions>
 
 hi:   
-
-\------------------------------------------------------------
-
-F3_24
-=========
-
-tc:
-
-vn: mobregmittel
-
-qt: Einfachauswahl
-
-hl:
-
-in:
-
-q: Welches Verkehrsmittel nutzen Sie überwiegend um an Ihre Hochschule zu gelangen?
-
-is: Bei kombinierter Nutzung geben Sie bitte das Verkehrsmittel an, mit dem Sie die längste Wegstrecke zurücklegen.
-
-it:
-
-st:
-
-ao1: 1: zu Fuß
-
-ao2: 2: Fahrrad
-
-ao3: 3: Öffentliche Verkehrsmittel
-
-ao4: 4: PKW (allein fahrend)
-
-ao5: 5: PKW (in Fahrgemeinschaft)
-
-ao6: 6: anderes
-
-mv:
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo:
-
-tr:
-
-   <zofar:transitions>
-        <zofar:transition target="F3_25"/>
-    </zofar:transitions>
-
-hi:
 
 \------------------------------------------------------------
 
@@ -1600,7 +1239,7 @@ B2_5
 
 tc:
 
-vn: frei (freispor; freikunst; freikult; freiparty; freifreu; freipc; freifimu; freiehr; freidiswiss; freidispol; freinix)
+vn: frei (freikunst; freibuch; freispor; freiehr)
 
 qt: Einfachauswahlmatrix mit horizontalen ao
 
@@ -1612,27 +1251,15 @@ q: Wie häufig gehen Sie in Ihrer Freizeit folgenden Tätigkeiten nach?
 
 is:
 
-it1: (freispor): sportlich betätigen
+it1: (freikunst): künstlerische oder kulturelle Tätigkeiten
 
-it2: (freikunst): künstlerisch betätigen (zeichnen, musizieren)
+it2: (freibuch): Bücher lesen
 
-it3: (freikult): Kulturveranstaltungen besuchen (Konzerte, Theater, Poetry-Slam etc.)
+it3: (freifreu): Freund*innen treffen
 
-it4: (freiparty): feiern, auf Partys gehen
+it4: (freispor): sportlich aktiv sein
 
-it5: (freifreu): Freunde treffen
-
-it6: (freipc): Videospiele, Computer spielen
-
-it7: (freifimu): Filme/Serien schauen, Musik hören
-
-it8: (freiehr): ehrenamtlich tätig sein
-
-it9: (freidiswiss): über wissenschaftliche Themen reden
-
-it10: (freidispol): über soziale und politische Fragen diskutieren
-
-it11: (freinix): einfach nichts tun
+it5: (freiehr): ehrenamtlich aktiv sein
 
 st:
 
