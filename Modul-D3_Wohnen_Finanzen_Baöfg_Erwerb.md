@@ -633,9 +633,9 @@ is:
 
 it1: (fsitzum1): Die Finanzierung meines Lebensunterhalts während des Studiums ist sichergestellt.
 
-it2: (fsitzum2): Ich habe zurzeit finanzielle Schwierigkeiten.
+it2: (fsitzum3): Im Großen und Ganzen gelingt es mir, mit meinem Geld auszukommen.
 
-it3: (fsitzum3): Im Großen und Ganzen gelingt es mir, mit meinem Geld auszukommen.
+it3: (fsitzum2): Ich habe zurzeit finanzielle Schwierigkeiten.
 
 it4: (fsitzum4): Aufgrund der Corona-Pandemie kann ich mein Studium ohne zusätzliche finanzielle Unterstützung nicht fortführen. 
 
@@ -673,7 +673,7 @@ tr:
             <zofar:transition target="D3_12"/>
         </zofar:transitions>
 
-hi: Items bitte zufällig rotieren.
+hi: Rotation der ITems bitte entfernen
 
 \--------------------------------
 
@@ -1355,7 +1355,7 @@ tr:
             <zofar:transition target="D3_22"/>
         </zofar:transitions>
 
-hi: Items bitte zufällig rotieren.
+hi: Rotation der Items bitte entfernen
 
 \--------------------------------
 
@@ -1610,7 +1610,7 @@ tr:
             <zofar:transition target="D3_24"/>
         </zofar:transitions>
 
-hi:
+hi: Itemrotation, falls vorhanden, bitte entfernen.
 
 \--------------------------------
 
