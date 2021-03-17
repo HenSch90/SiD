@@ -2843,55 +2843,6 @@ hi: Dropdown bitte nach Angabe des Kontinents in A_35 (deltgkom) vorselektieren.
 
 \------------------------------------------------------------
 
-A_37a
-========
-
-tc:
-
-vn: vsbort; vsbplz
-
-qt: offene Angabe
-
-hl:
-
-in:
-
-q: An welchem Ort haben Sie gewohnt, als Sie die Hochschulzugangsberechtigung erhalten haben?
-
-it:
-
-st:
-
-ao1: (vsbort): Präfix: Ort: [Infield = Ort; 60 Zeichen] (offene Angabe)
-
-ao2: (vsbplz): Präfix: ggf. PLZ: [Infield = Postleitzahl; Number, 5-stellig: 01000 TO 99999] (offene Angabe)
-
-mv:
-
-ka:
-
-vc:
-
-av: 
-
-kh2: Bitte tragen Sie die fünfstellige Postleitzahl ein.
-
-fv: 
-
-hv:
-
-fo: 
-
-tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_41"/>
-        </zofar:transitions>
-
-hi: Besteht die Möglichkeit, dass bei PLZ mit einer 0 vorne, diese nicht gelöscht wird?
-
-\------------------------------------------------------------
-
 A_38a
 ==========
 
