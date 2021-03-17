@@ -1214,7 +1214,7 @@ tr:
             <zofar:transition target="D1_24"/>
         </zofar:transitions>
         
-hi: Items bitte zufällig rotieren.
+hi: Rotierung der Items bitte entfernen.
 
 \--------------------------------
 
@@ -1288,7 +1288,7 @@ tr:
             <zofar:transition target="D1_24"/>
         </zofar:transitions>
         
-hi: Items bitte zufällig rotieren.
+hi: Rotierung der Items bitte entfernen.
 
 \--------------------------------
 
@@ -1363,7 +1363,7 @@ tr:
             <zofar:transition target="D1_25"/>
         </zofar:transitions>
 
-hi: Items bitte zufällig rotieren
+hi: Rotierung der Items bitte entfernen.
 
 \--------------------------------
 
@@ -1511,7 +1511,7 @@ fo:
 
 tr:
 
-hi:
+hi: Items bitte blockweise rotieren in folgen drei Blöcken: (intreal1b, intinv1b, intart1b, intsoc1b, intent1b, Intconv2b) (intreal2b, intinv2b, intart2b, intsoc3b, intent2b, Intconv3b) (intreal3b, intinv4b, intart4b, intsoc4b, intent3b, intconv4b).
 
 \--------------------------------
 
