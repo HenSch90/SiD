@@ -23,7 +23,7 @@ st:
 
 ao1: Alter
 
-ao2: < 1 Jahr
+ao2: <1 Jahr
 
 ao3: 1 Jahr
 
