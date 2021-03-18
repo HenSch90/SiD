@@ -1445,41 +1445,42 @@ q: Bitte geben Sie an, wie sehr Sie sich für folgende Tätigkeiten interessiere
 
 is:
 
-it1: (intsoc1b): anderen Menschen helfen
+it1: (intreal1b): untersuchen, wie Dinge funktionieren
 
-it2: (intsoc3b): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
+it2: (intinv1b): etwas genau beobachten und analysieren
 
-it3: (intsoc4b): mit Menschen (zusammen)arbeiten
+it3: (intart1b): kreativ/gestaltend tätig sein
 
-it4: (intinv1b): etwas genau beobachten und analysieren
+it4: (intsoc1b): anderen Menschen helfen
 
-it5: (intinv2b): Unbekanntes erforschen, experimentieren
+it5: (intent1b): Unternehmen gründen oder leiten
 
-it6: (intinv4b): Lösungen für komplexe Probleme finden
+it6: (Intconv2b): sich mit rechtlichen Fragen beschäftigen 
 
-it7: (intart1b): kreativ/gestaltend tätig sein
+it7: (intreal2b): innovative technische Lösungen entwickeln 
 
-it8: (intart2b): sich mit Kunst und Kultur befassen
+it8: (intinv2b): Unbekanntes erforschen, experimentieren
 
-it9: (intart4b): etwas sprachlich ansprechend formulieren
+it9: (intart2b): sich mit Kunst und Kultur befassen
 
-it10: (intent1b): Unternehmen gründen oder leiten
+it10: (intsoc3b): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
 
 it11: (intent2b): andere von einer Sache überzeugen
 
-it12: (intent3b): andere Menschen anleiten oder führen
+it12: (intconv3b): Arbeitsprozesse planen
 
-it13: (Intconv2b): sich mit rechtlichen Fragen beschäftigen
+it13: (intreal3b): an Soft- oder Hardware arbeiten
 
-it14: (intconv3b): Arbeitsprozesse planen
+it14: (intinv4b): Lösungen für komplexe Probleme finden
 
-it15: (intconv4b): mit Zahlen oder Statistiken arbeiten
+it15: (intart4b): etwas sprachlich ansprechend formulieren
 
-it16: (intreal1b): untersuchen, wie Dinge funktionieren
+it16: (intsoc4b): mit Menschen (zusammen)arbeiten
 
-it17: (intreal2b): innovative technische Lösungen entwickeln
+it17: (intent3b): andere Menschen anleiten oder führen
 
-it18: (intreal3b): an Soft- oder Hardware arbeiten
+it18: (intconv4b): mit Zahlen oder Statistiken arbeiten
+
 
 st:
 
@@ -1511,7 +1512,7 @@ fo:
 
 tr:
 
-hi: Items bitte blockweise rotieren in folgen drei Blöcken: (intreal1b, intinv1b, intart1b, intsoc1b, intent1b, Intconv2b) (intreal2b, intinv2b, intart2b, intsoc3b, intent2b, Intconv3b) (intreal3b, intinv4b, intart4b, intsoc4b, intent3b, intconv4b).
+hi: Items bitte blockweise rotieren in folgen drei Blöcken: (it1-it6) (it7-it12) (it13-it18).
 
 \--------------------------------
 
