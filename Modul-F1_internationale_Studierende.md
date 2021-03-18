@@ -434,7 +434,7 @@ tc:
 
 vn: intdeutsch (intdeutsch1ba; intdeutsch2ba; intdeutsch3ba; intdeutsch4ba; intdeutsch5ba; intdeutsch6ba)
 
-qt: Mehrfachauswahl mit vertikalen ao
+qt: Mehrfachauswahl mit vertikalen ao und Exklusivkat.
 
 hl:
 
@@ -458,7 +458,7 @@ ao4: (intdeutsch4ba): Sprachkurs in Deutschland (vor dem Studium)
 
 ao5: (intdeutsch5ba): studienbegleitend an einer deutschen Hochschule
 
-ao6: (intdeutsch6ba): bisher noch gar nicht
+ao6: (intdeutsch6ba): bisher noch gar nicht [Exklusivkategorie]
 
 mv:
 
