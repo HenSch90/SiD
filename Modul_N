@@ -1296,3 +1296,210 @@ tr:
     </zofar:transitions>
 
 hi:
+
+\------------------------------------------------------------
+
+CO_21
+
+=========
+
+tc:
+
+vn: VCO_21
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Gehören Sie zur COVID-19-Risikogruppe?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
+
+ao3: 3: weiß ich nicht
+
+ao4: 4: Ich möchte keine Angabe machen.
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\------------------------------------------------------------
+
+CO_11
+
+=========
+
+tc:
+
+vn: VCO_11_a
+
+qt: Einfachauswahl vertikal
+
+hl:
+
+in:
+
+q: Bitte geben Sie an, wie sehr die folgende Aussage auf Sie zutrifft: Ich habe Angst mich mit dem Coronavirus zu infizieren
+is:
+
+it:
+
+st:
+
+ao1: 1: trifft gar nicht zu
+
+ao2: 2:
+
+ao3: 3:
+
+ao4: 4:
+
+ao5: 5: trifft voll und ganz zu
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\------------------------------------------------------------
+
+CO_19
+
+=========
+
+tc:
+
+vn: VCO_19
+
+qt: Einfachauswahl
+
+hl:
+
+in:
+
+q: Hatten Sie in diesem Semester ein studienbezogenes Praktikum geplant?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: … wie geplant durchgeführt.
+
+ao3: 3: … aber verschoben.
+
+ao4: 4: … aber abgesagt.
+
+mv:
+
+ka: (ao2 to ao4): Ja, wurde …
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\------------------------------------------------------------
+
+CO_24
+
+=========
+
+tc:
+
+vn: VCO_24
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Hat sich die Corona-Pandemie auf die Einkommenssituation Ihrer Eltern ausgewirkt?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: … deutlich verschlechtert.
+
+ao2: 2: … nicht verändert.
+
+ao3: 3: … deutlich verbessert.
+
+mv:
+
+ka: Die Einkommenssituation hat sich …
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
