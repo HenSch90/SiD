@@ -135,41 +135,41 @@ q: Bitte geben Sie an, wie sehr Sie sich für folgende Tätigkeiten interessiere
 
 is:
 
-it1: (intsoc1): anderen Menschen helfen
+it1: (intreal1): untersuchen, wie Dinge funktionieren
 
-it2: (intsoc3): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
+it2: (intinv1): etwas genau beobachten und analysieren
 
-it3: (intsoc4): mit Menschen (zusammen)arbeiten
+it3: (intart1): kreativ/gestaltend tätig sein
 
-it4: (intinv1): etwas genau beobachten und analysieren
+it4: (intsoc1): anderen Menschen helfen
 
-it5: (intinv2): Unbekanntes erforschen, experimentieren
+it5: (intent1): Unternehmen gründen oder leiten
 
-it6: (intinv4): Lösungen für komplexe Probleme finden
+it6: (Intconv2): sich mit rechtlichen Fragen beschäftigen
 
-it7: (intart1): kreativ/gestaltend tätig sein
+it7: (intreal2): innovative technische Lösungen entwickeln
 
-it8: (intart2): sich mit Kunst und Kultur befassen
+it8: (intinv2): Unbekanntes erforschen, experimentieren
 
-it9: (intart4): etwas sprachlich ansprechend formulieren
+it9: (intart2): sich mit Kunst und Kultur befassen
 
-it10: (intent1): Unternehmen gründen oder leiten
+it10: (intsoc3): sich mit den Lebenslagen von Menschen/Gruppen auseinandersetzen
 
 it11: (intent2): andere von einer Sache überzeugen
 
-it12: (intent3): andere Menschen anleiten oder führen
+it12: (intconv3): Arbeitsprozesse planen
 
-it13: (Intconv2): sich mit rechtlichen Fragen beschäftigen
+it13: (intreal3): an Soft- oder Hardware arbeiten
 
-it14: (intconv3): Arbeitsprozesse planen
+it14: (intinv4): Lösungen für komplexe Probleme finden
 
-it15: (intconv4): mit Zahlen oder Statistiken arbeiten
+it15: (intart4): etwas sprachlich ansprechend formulieren
 
-it16: (intreal1): untersuchen, wie Dinge funktionieren
+it16: (intsoc4): mit Menschen (zusammen)arbeiten
 
-it17: (intreal2): innovative technische Lösungen entwickeln
+it17: (intent3): andere Menschen anleiten oder führen
 
-it18: (intreal3): an Soft- oder Hardware arbeiten
+it18: (intconv4): mit Zahlen oder Statistiken arbeiten
 
 st:
 
@@ -201,7 +201,7 @@ fo:
 
 tr: GOTO KSM-anf04
 
-hi: 
+hi: Items bitte blockweise rotieren in folgen drei Blöcken: (it1-it6) (it7-it12) (it13-it18).
 
 \--------------------------
 
