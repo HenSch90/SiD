@@ -244,7 +244,7 @@ it10: (stfwverfb): Vereinbarkeit von Familie mit späteren Beschäftigungsmögli
 
 it11: (stfwverbb): Vereinbarkeit meiner Beeinträchtigung(en) mit späteren Beschäftigungsmöglichkeiten
 
-it12: (stfwandb): Anderes, und zwar: [(stfwando); 100 Zeichen]
+it12: (stfwandb): Anderes, und zwar: [(stfwandob); 100 Zeichen]
 
 st:
 
