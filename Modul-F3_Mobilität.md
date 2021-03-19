@@ -264,7 +264,7 @@ ao3: (aprodaad1): DAAD-Programm
 
 ao4: (aprohhs1): Programm meiner Heimathochschule
 
-ao5: (aprogahs1): Programm der Gasthochschule in Deutschland
+ao5: (aprogahs1): Programm der Gasthochschule
 
 ao6: (aproanpr1): anderes Programm
 
@@ -277,7 +277,7 @@ ao9: (aprodaad2): DAAD-Programm
 
 ao10: (aprohhs2): Programm meiner Heimathochschule
 
-ao11: (aprogahs2): Programm der Gasthochschule in Deutschland
+ao11: (aprogahs2): Programm der Gasthochschule
 
 ao12: (aproanpr2): anderes Programm
 
@@ -290,7 +290,7 @@ ao15: (aprodaad3): DAAD-Programm
 
 ao16 (aprohhs3): Programm meiner Heimathochschule
 
-ao17: (aprogahs3): Programm der Gasthochschule in Deutschland
+ao17: (aprogahs3): Programm der Gasthochschule
 
 ao18: (aproanpr3): anderes Programm
 
