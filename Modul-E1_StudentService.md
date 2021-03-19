@@ -441,7 +441,7 @@ ka3: (it11 TO it20): !!studienbezogene Themen!!
 
 vc1: SHOW it2, it13, it19, it20 IF h_gartcount >= 1
 
-vc2: SHOW it6 IF demofam = 2 | 3
+vc2: SHOW it6 IF demofampar=1 OR demofamehe=1
 
 vc3: SHOW it11 IF eaktsens = 2 | 3 | 4
 
