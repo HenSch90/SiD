@@ -483,11 +483,11 @@ ka3 (ao17 TO ao24): !!Drittletzter Auslandsaufenthalt!!
 
 vc:
 
-SHOW q1 AND is1 AND ao1 TO ao8 AND ka1 IF ainfaus==2 OR ainfaus==MISSING
+SHOW q1 AND ao1 TO ao8 AND ka1 IF ainfaus==2 OR ainfaus==MISSING
 
-SHOW q2 AND is2 AND ao1 TO ao16 AND ka1 TO ka2 IF ainfaus==3
+SHOW q2 AND ao1 TO ao16 AND ka1 TO ka2 IF ainfaus==3
 
-SHOW q2 AND is2 AND ao1 TO ao24 AND ka1 TO ka3 IF ainfaus==4
+SHOW q2 AND ao1 TO ao24 AND ka1 TO ka3 IF ainfaus==4
 
 av:
 
