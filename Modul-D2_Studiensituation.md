@@ -1098,7 +1098,7 @@ it1: (ssrilern1): … Erlerntes mit gesellschaftlichen Problemen verknüpft?
 
 .
 
-it2: (ssrilern2): … unterschiedliche Perspektiven (politisch, religiös, ethnisch) in eine Diskussion eingebracht?
+it2: (ssrilern2): … unterschiedliche Perspektiven (politische, religiöse) in eine Diskussion eingebracht?
 
 it3: (ssrilern3): … die Stärken und Schwächen des eigenen Standpunktes reflektiert?
 
