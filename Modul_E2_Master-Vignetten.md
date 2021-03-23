@@ -11,7 +11,7 @@ vn:
 
 qt: Einfachauswahl mit vertikalen Antwortoptionen
 
-hl: Fragen zu Masterstudium und Beruf
+hl:
 
 in: Sie sind momentan im fortgeschrittenen Bachelorstudium und überlegen, ob Sie sich  für ein Masterstudium bewerben.
 
