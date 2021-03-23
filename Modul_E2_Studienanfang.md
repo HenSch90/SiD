@@ -378,7 +378,7 @@ it4: (massnahm4): Probestudium
 
 it5: (massnahm5): Schüleruni, Schnupperstudium
 
-it6: (massnahm6): E-Learning-Angebote im bundesweiten Onlineportal _Studiport_
+it6: (massnahm6): E-Learning-Angebote im bundesweiten Onlineportal Studiport
 
 st:
 
@@ -482,7 +482,7 @@ it2: (angeb2): Studienvorbereitende Tage, Camps oder Orientierungswochen
 
 it3: (angeb3): „Brückenkurse“ zur Aufarbeitung fachlicher Wissenslücken
 
-it4: (angeb4): Studentische Ansprechpartner zu Fragen rund ums Studium (z.B. Tutorien-, Buddy-Programme)
+it4: (angeb4): Studentische Ansprechpartner*innen zu Fragen rund ums Studium (z.B. Tutorien-, Buddy-Programme)
 
 it5: (angeb5): Beratung von Lehrenden zum Studienverlauf (z.B. Mentoringprogramme)
 
@@ -547,7 +547,7 @@ it2: (nutz2): Studienvorbereitende Tage, Camps oder Orientierungswochen
 
 it3: (nutz3): „Brückenkurse“ zur Aufarbeitung fachlicher Wissenslücken
 
-it4: (nutz4): Studentische Ansprechpartner zu Fragen rund ums Studium (z.B. Tutorien-, Buddy-Programme)
+it4: (nutz4): Studentische Ansprechpartner*innen zu Fragen rund ums Studium (z.B. Tutorien-, Buddy-Programme)
 
 it5: (nutz5): Beratung von Lehrenden zum Studienverlauf (z.B. Mentoringprogramme)
 
