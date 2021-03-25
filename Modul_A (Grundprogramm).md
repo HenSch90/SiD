@@ -1099,7 +1099,7 @@ vc2: SHOW q2 AND ka2-ka4 AND it1-it6 IF dsibanz = 3
 
 vc3: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibanz > 3
 
-vc4: SHOW q2 AND is AND ka2-ka4 AND it1-it6 IF dsibanz=missing
+vc4: SHOW q3 AND is AND ka2-ka4 AND it1-it6 IF dsibanz=missing
 av:
 
 kh: Bitte geben Sie das Lebensalter an (0 bis 99).
