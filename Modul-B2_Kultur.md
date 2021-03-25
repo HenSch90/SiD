@@ -167,7 +167,7 @@ hi: Überkategorien der Antwortoptionen:
 
 >   st4: !!Akademiker in freiem Beruf (z. B. Rechtsanwalt, niedergelassener Arzt), und zwar …!! (ao14, ao15, ao16)
 
->   st5: !!Selbstständiger im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und zwar …!! (ao17, ao18, ao19)
+>   st5: !!Selbstständiger im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung, und zwar …!! (ao17, ao18, ao19)
 
 >   st6: !!Selbständiger Landwirt bzw. Genossenschaftsbauer, und zwar …!! (ao20, ao21, ao22)
 
@@ -279,7 +279,7 @@ hi: Zwischenüberschriften zwischen den ao’s:
 
 >   st4: !!Akademikerin in freiem Beruf (z. B. Rechtsanwältin, niedergelassene Ärztin), und zwar …!! (ao14, ao15, ao16)
 
->   st5: !!Selbstständige im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung und zwar …!! (ao17, ao18, ao19)
+>   st5: !!Selbstständige im Handel, Gewerbe, Handwerk, Industrie, Dienstleistung, und zwar …!! (ao17, ao18, ao19)
 
 >   st6: !!Selbständige Landwirtin bzw. Genossenschaftsbäuerin, und zwar …!! (ao20, ao21, ao22)
 
