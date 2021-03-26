@@ -1029,11 +1029,11 @@ it:
 
 st:
 
-ao1: (wohnplzort): Präfix: Ort: [60 Zeichen]
+ao1: (wohnplzort): [infield = Ort; 60 Zeichen]
 
-ao2: (wohnplz): Präfix: ggf. PLZ: [number, 5-stellig: 01000 TO 99999]
+ao2: (wohnplz): [Infield = ggf. PLZ; number, 5-stellig: 01000 TO 99999]
 
-ao3: (wohnland): Präfix: Land: [infield = Ort; 60 Zeichen]
+ao3: (wohnland): [infield = Land; 60 Zeichen]
 
 mv:
 
