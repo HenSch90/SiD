@@ -3244,9 +3244,9 @@ A_41
 
 tc:
 
-vn: vausbja
+vn: vausbnein, vausbja1, vausbja2
 
-qt: Einfachauswahl
+qt: Mehrfachnennung
 
 hl:
 
@@ -3256,15 +3256,15 @@ q: Haben Sie vor dem Studium eine Berufsausbildung/berufliche Aufstiegsfortbildu
 
 is: Bitte alles Zutreffende auswählen.
 
-it:
+it1:(vausbnein): nein [Exklusivkategorie]
+
+it2: (vausbja1): ja, eine Berufsausbildung abgeschlossen
+
+it3: (vausbja2): ja, eine berufliche Aufstiegsfortbildung abgeschlossen
 
 st:
 
-ao1: 1: nein [Exklisivkategorie]
-
-ao2: 2: ja, eine Berufsausbildung abgeschlossen
-
-ao3: 3: ja, eine berufliche Aufstiegsfortbildung abgeschlossen
+ao:
 
 mv:
 
