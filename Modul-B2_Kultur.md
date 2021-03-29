@@ -569,7 +569,7 @@ B2_9b
 
 tc: 
 
-vn: einkberuf; einkba; einkma; einkdr
+vn: einkberuf; einkba; einkma; einkhsa; einkdr
 
 qt: Einfachauswahl mit vertikalen ao/Spaltenformat
 
@@ -587,35 +587,40 @@ it2: (einkba): … Bachelorabschluss?
 
 it3: (einkma): … Masterabschluss?
 
-it4: (einkdr): … Promotion (Dr., PhD)?
+it4: (einkhsa): … Hochschulabschluss?
+
+it5: (einkdr): … Promotion (Dr., PhD)?
 
 st:
 
-ao1: 1: unter 1.000 €
+ao1: 1: < 1.000 €
 
-ao2: 2: 1.000 € bis unter 1.500 €
+ao2: 2: bis 1.500 €
 
-ao3: 3: 1.500 € bis unter 2.000 €
+ao3: 3: bis 2.000 €
 
-ao4: 4: 2.000 € bis unter 2.500 €
+ao4: 4: bis 2.500 €
 
-ao5: 5: 2.500 € bis unter 3.000 €
+ao5: 5: bis 3.000 €
 
-ao6: 6: 3.000 € bis unter 3.500 €
+ao6: 6: bis 3.500 €
 
-ao7: 7: 3.500 € bis unter 4.000 €
+ao7: 7: bis 4.000 €
 
-ao8: 8: 4.000 € bis unter 5.000 €
+ao8: 8: bis 5.000 €
 
-ao9: 9: 5.000 € bis unter 10.000 €
+ao9: 9: bis 10.000 €
 
-ao10:  10: 10.000 € und mehr
+ao10: 10: > 10.000 €
 
-mv: -12:, weiß ich nicht/trifft nicht zu
+mv: -12: weiß ich nicht/trifft nicht zu
 
 ka:
 
 vc: 
+SHOW it2 IF sabsan = 1 OR sabsan = 2 
+SHOW it3 IF sabsan = 1 OR sabsan = 2 
+SHOW it4 IF sabsan = 3 OR sabsan = 4 OR sabsan = 5 OR sabsan = 7 
 
 av:
 
@@ -625,7 +630,7 @@ fv:
 
 hv:
 
-fo: mv/"weiß ich nicht" absetzen
+fo: mv/"weiß ich nicht/trifft nicht zu" absetzen
 
 tr:
 
