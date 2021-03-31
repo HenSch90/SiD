@@ -77,7 +77,7 @@ in3: [vigC]
 
 q4: Wie wahrscheinlich würden Sie sich auf diesen Masterstudiengang bewerben?
 
-is:
+is: Bei mobilen Endgeräten bitte die horizontale Ansicht verwenden.
 
 it:
 
@@ -149,7 +149,7 @@ in3: [vigC]
 
 q4: Wie wahrscheinlich würden Sie sich auf diesen Masterstudiengang bewerben?
 
-is:
+is: Bei mobilen Endgeräten bitte die horizontale Ansicht verwenden.
 
 it:
 
@@ -221,7 +221,7 @@ in3: [vigC]
 
 q4: Wie wahrscheinlich würden Sie sich auf diesen Masterstudiengang bewerben?
 
-is:
+is: Bei mobilen Endgeräten bitte die horizontale Ansicht verwenden.
 
 it:
 
@@ -293,7 +293,7 @@ in3: [vigC]
 
 q4: Wie wahrscheinlich würden Sie sich auf diesen Masterstudiengang bewerben?
 
-is:
+is: Bei mobilen Endgeräten bitte die horizontale Ansicht verwenden.
 
 it:
 
