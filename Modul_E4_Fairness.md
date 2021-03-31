@@ -334,7 +334,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden. 
 
-Absolvent\*innen wirtschaftswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 43.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
+Absolvent\*innen **wirtschaftswissenschaftlicher Fächer** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **43.000 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Geisteswissenschaften** verdienen demgegenüber durchschnittlich ca. **35.000 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen wirtschaftswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
@@ -390,7 +390,7 @@ hl:
  
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 
-Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
+Absolvent\*innen **ingenieurwissenschaftlicher Fächer** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **47.500 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Geisteswissenschaften** verdienen demgegenüber durchschnittlich ca. **35.000 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
@@ -446,7 +446,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 
-Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
+Absolvent\*innen der **Medizin** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **53.000 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Geisteswissenschaften** verdienen demgegenüber durchschnittlich ca. **35.000 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
@@ -502,7 +502,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 
-Absolvent\*innen rechtswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 46.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Geisteswissenschaften verdienen demgegenüber durchschnittlich ca. 35.000 € im Jahr.
+Absolvent\*innen **rechtswissenschaftlicher Fächer** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **46.500 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Geisteswissenschaften** verdienen demgegenüber durchschnittlich ca. **35.000 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Geisteswissenschaften?
 
@@ -558,7 +558,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 
-Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
+Absolvent\*innen der **Medizin** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **53.000 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Rechtswissenschaften** verdienen demgegenüber durchschnittlich ca. **46.500 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Rechtswissenschaften?
 
@@ -614,7 +614,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 
-Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Ingenieurwissenschaften verdienen demgegenüber durchschnittlich ca. 47.500 € im Jahr.
+Absolvent\*innen der **Medizin** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **53.000 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Ingenieurwissenschaften** verdienen demgegenüber durchschnittlich ca. **47.500 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Ingenieurwissenschaften?
 
@@ -670,7 +670,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.
 
-Absolvent\*innen der Medizin verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 53.000 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
+Absolvent\*innen der **Medizin** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **53.000 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Wirtschaftswissenschaften** verdienen demgegenüber durchschnittlich ca. **43.000 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen der Medizin direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
@@ -726,7 +726,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.
 
-Absolvent\*innen rechtswissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 46.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
+Absolvent\*innen **rechtswissenschaftlicher Fächer** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **46.500 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Wirtschaftswissenschaften** verdienen demgegenüber durchschnittlich ca. **43.000 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen rechtswissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
@@ -782,7 +782,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.  
 
-Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Rechtswissenschaften verdienen demgegenüber durchschnittlich ca. 46.500 € im Jahr.
+Absolvent\*innen **ingenieurwissenschaftlicher Fächer** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **47.500 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Rechtswissenschaften** verdienen demgegenüber durchschnittlich ca. **46.500 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Rechtswissenschaften?
 
@@ -838,7 +838,7 @@ hl:
 
 in: Im Folgenden geht es um Gehaltsunterschiede zwischen Absolvent\*innen verschiedener Fächergruppen und darum, ob Sie diese Unterschiede als gerechtfertigt empfinden.
 
-Absolvent\*innen ingenieurwissenschaftlicher Fächer verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa 47.500 € pro Jahr (Bruttojahresgehalt). Absolvent\*innen der Wirtschaftswissenschaften verdienen demgegenüber durchschnittlich ca. 43.000 € im Jahr.
+Absolvent\*innen **ingenieurwissenschaftlicher Fächer** verdienen nach ihrem Abschluss in Vollzeit durchschnittlich etwa **47.500 €** pro Jahr (Bruttojahresgehalt). Absolvent\*innen der **Wirtschaftswissenschaften** verdienen demgegenüber durchschnittlich ca. **43.000 €** im Jahr.
 
 q: In welchem Ausmaß finden Sie es gerechtfertigt, dass Absolvent\*innen ingenieurwissenschaftlicher Studienfächer direkt nach ihrem Abschluss **mehr** verdienen als Absolvent\*innen der Wirtschaftswissenschaften?
 
@@ -1566,9 +1566,9 @@ qt: Einfachauswahlmatrix
 
 hl:
 
-in:
+in: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen (z. B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung zu einer Absage führen. Diskriminierung bedeutet, dass eine Person schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. 
 
-q: Es ist nicht immer einfach, nach Abschluss des Studiums einen Job zu finden. Neben legitimen Gründen (z. B. Bewerberprofil passt nicht zur Stelle), kann auch Diskriminierung zu einer Absage führen. Diskriminierung bedeutet, dass eine Person schlechter behandelt wird als andere Menschen, ohne dass es dafür eine sachliche Rechtfertigung gibt. Aufgrund welcher Merkmale wird man Ihrer Meinung nach diskriminiert?
+q: Aufgrund welcher Merkmale wird man Ihrer Meinung nach diskriminiert?
 
 is:
 
