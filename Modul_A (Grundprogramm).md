@@ -614,8 +614,7 @@ hl:
 
 in:
 
-q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen? #{layout.BREAK}#{layout.BREAK }
-Als ich nach Deutschland kam, war ich:
+q: Für die Einreise nach Deutschland gibt es unterschiedliche rechtliche Grundlagen. Wie war das bei Ihnen?
 
 is: Bitte alles Zutreffende auswählen.
 
@@ -645,7 +644,7 @@ ato:
 
 mv:
 
-ka:
+ka: Als ich nach Deutschland kam, war ich:
 
 vc:
 
@@ -657,7 +656,7 @@ fv:
 
 hv: 
 
-fo: "Als ich nach Deutschland kam, war ich:" bitte etwas von den beiden Einleitungssätzen in der question absetzen.
+fo: "Als ich nach Deutschland kam, war ich:" bitte über a01-ao7 platzieren
 
 tr: 
 
@@ -718,7 +717,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao5 bitte absetzen
 
 tr: 
 
@@ -2186,7 +2185,7 @@ fv:
 
 hv:
 
-fo:
+fo: ao4 bitte absetzen
 
 tr:
 
@@ -3133,7 +3132,7 @@ ao8: (vsbtyp8): Fachoberschule
 ao9: (vsbtyp9): andere Schulform, und zwar: [(vsbtyp9o); offen Angabe, 80 Zeichen]
 
 
-ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z.B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
+ao10: (vsbtyp10): berufliche Aufstiegsfortbildung (z. B. Meister\*in, Techniker\*in, Fachwirt\*in, Erzieher\*in)
 
 ao11: (vsbtyp11): abgeschlossene Berufsausbildung mit anschließender Berufspraxis 
 
@@ -4212,6 +4211,10 @@ vc2: SHOW ao3b (zerwo2) IF eaktsens=2 OR eaktsens=3 OR eaktsens=4
 vc3: SHOW ao4a (zcarwo) IF pflegang1=1 OR pflegang2=1
 
 vc4: SHOW ao4b (zcarwo2) IF pflegang1=1 OR pflegang2=1
+
+vc5: SHOW ao5a (zkbwo) IF dkinja=2
+
+vc6: SHOW ao5b (zkbwo2) IF dkinja=2
 
 av: NUMBER, 2-stellig (0 bis 99)
 
