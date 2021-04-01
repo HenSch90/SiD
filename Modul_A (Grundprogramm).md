@@ -3183,7 +3183,7 @@ A_40
 
 tc:
 
-vn: vsbnotej; vsbnoteo; vsbnote
+vn: vsbnotej; vsbnotejo; vsbnoteo; vsbnoteop; vsbnote
 
 qt: offene Angaben; Mehrfachauswahl mit Exklusivkategorie
 
@@ -3199,9 +3199,9 @@ it:
 
 st:
 
-ao1: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
+ao1: (vsbnotej): Präfix: Jahr (z. B. 2017): [(vsbnotejo) :offene Angabe, NUMBER, 4-stellig]
 
-ao2: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
+ao2: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [(vsbnoteop):offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
 ao3: (vsbnote): Ich habe keine Note erhalten. [Exklusivkategorie]
 
