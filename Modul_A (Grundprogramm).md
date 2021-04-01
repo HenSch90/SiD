@@ -159,7 +159,7 @@ qt: Einfachauswahl mit vertikalen ao
 
 hl:
 
-in: Um die Befragung passend für Ihre Situation gestalten zu können und insbesondere auf die Situation internationaler Studierender eingehen zu können, müssen wir Ihnen zu Beginn zwei zentrale Eingangsfragen stellen:
+in:
 
 q: Wo haben Sie erstmals Ihre Hochschulzugangsberechtigung erworben?
 
