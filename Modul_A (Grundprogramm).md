@@ -3185,7 +3185,7 @@ tc:
 
 vn: vsbnotej; vsbnoteo; vsbnote
 
-qt: offene Angaben; Einfachauswahl
+qt: offene Angaben; Mehrfachauswahl mit Exklusivkategorie
 
 hl:
 
