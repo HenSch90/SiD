@@ -949,13 +949,13 @@ mv:
 
 ka:
 
-vc1: SHOW q1 IF (fbafja = 1) AND (fbafex = 1 | k. A.) AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao09, ao10, ao11
+vc1: SHOW q1 AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao09, ao10, ao11 IF (fbafja = 1) AND (fbafex = 1 | k. A.)
 
-vc2: SHOW q2 IF (fbafja = 2) AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao11
+vc2: SHOW q2 AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao11 IF (fbafja = 2)
 
-vc3: SHOW q3 IF (fbafja = 1) AND (fbafex = 2 | 3) AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao11
+vc3: SHOW q3 AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao11 IF (fbafja = 1) AND (fbafex = 2 | 3) 
 
-vc4: SHOW q4 IF (fbafja = 1) AND (fbafex = 4) AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 ao11
+vc4: SHOW q4 AND ao1, ao2, ao3, ao4, ao5, ao6, ao7, ao8, ao9, ao10 ao11 IF (fbafja = 1) AND (fbafex = 4)
 
 av:
 
@@ -1405,7 +1405,7 @@ ka:
 
 vc1: SHOW it4 IF dkinja = 2 
 
-vc2: SHOW it5 IF h_gartcount >= 1 
+vc2: SHOW it5 IF h_gartcount >= 1 | gartka = 1
 
 vc3: SHOW it6 IF eaktsens = 2 |3 | 4
 
