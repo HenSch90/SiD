@@ -1147,7 +1147,7 @@ mv:
 
 ka: (ao2 TO ao3): Ja, und zwar:
 
-vc: SHOW is if dkinja==1
+vc: SHOW is if dkinja==2
 
 av:
 
