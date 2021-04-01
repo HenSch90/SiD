@@ -3203,7 +3203,7 @@ ao1: (vsbnotej): Präfix: Jahr (z. B. 2017): [offene Angabe, NUMBER, 4-stellig]
 
 ao2: (vsbnoteo): Präfix: Durchschnittsnote (z. B. 2,5): [offene Angabe, NUMBER, 3-stellig mit einer Dezimalstelle]
 
-ao3: (vsbnote): Ich habe keine Note erhalten.
+ao3: (vsbnote): Ich habe keine Note erhalten. [Exklusivkategorie]
 
 mv:
 
