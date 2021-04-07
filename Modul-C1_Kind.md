@@ -90,71 +90,71 @@ it6: (dkinage5): Alter 4. Kind:
 
 st:
 
-ao1: Alter
+ao0: 0: Alter
+  
+ao1: 1: < 1 Jahr
+  
+ao2: 2: 1 Jahr
+  
+ao3: 3: 2 Jahre
+  
+ao4: 4: 3 Jahre
+  
+ao5: 5: 4 Jahre
+  
+ao6: 6: 5 Jahre
+  
+ao7: 7: 6 Jahre
+  
+ao8: 8: 7 Jahre
+  
+ao9: 9: 8 Jahre
 
-ao2: < 1 Jahr
+ao10: 10: 9 Jahre
 
-ao3: 1 Jahr
+ao11: 11: 10 Jahre
 
-ao4: 2 Jahre
+ao12: 12: 11 Jahre
 
-ao5: 3 Jahre
+ao13: 13: 12 Jahre
 
-ao6: 4 Jahre
+ao14: 14: 13 Jahre
 
-ao7: 5 Jahre
+ao15: 15: 14 Jahre
 
-ao8: 6 Jahre
+ao16: 16: 15 Jahre
 
-ao9: 7 Jahre
+ao17: 17: 16 Jahre
 
-ao10: 8 Jahre
+ao18: 18: 17 Jahre
 
-ao10: 9 Jahre
+ao19: 19: 18 Jahre
 
-ao11: 10 Jahre
+ao20: 20: 19 Jahre
 
-ao12: 11 Jahre
+ao21: 21: 20 Jahre
 
-ao13: 12 Jahre
+ao22: 22: 21 Jahre
 
-ao14: 13 Jahre
+ao23: 23: 22 Jahre
 
-ao15: 14 Jahre
+ao24: 24: 23 Jahre
 
-ao16: 15 Jahre
+ao25: 25: 24 Jahre
 
-ao17: 16 Jahre
+ao26: 26: 25 Jahre
 
-ao18: 17 Jahre
+ao27: 27: 26 Jahre
 
-ao19: 18 Jahre
+ao28: 28: 27 Jahre
 
-ao20: 19 Jahre
+ao29: 29: 28 Jahre
 
-ao21: 20 Jahre
+ao30: 30: 29 Jahre
 
-ao22: 21 Jahre
+ao31: 31: 30 Jahre
 
-ao23: 22 Jahre
-
-ao24: 23 Jahre
-
-ao25: 24 Jahre
-
-ao26: 25 Jahre
-
-ao27: 26 Jahre
-
-ao28: 27 Jahre
-
-ao29: 28 Jahre
-
-ao30: 29 Jahre
-
-ao31: 30 Jahre
-
-ao32: >30 Jahre
+ao32: 32: >30 Jahre
 
 mv:
 
