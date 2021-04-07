@@ -2093,7 +2093,7 @@ A_27
 
 tc:
 
-vn: sform (sformpraes; sformfern; sformdua; sformberu; sformgast; sformsons; sformsonso)
+vn: sform (sformpraes; sformfern; sformdua; sformberu; sformsons; sformsonso)
 
 
 qt: Mehrfachauswahl mit vertikalen ao
@@ -2114,8 +2114,7 @@ ao1: (sformpraes): Präsenzstudium (im Gegensatz zu Fernstudium)
 ao2: (sformfern): Fernstudium
 ao3: (sformdua): duales Studium
 ao4: (sformberu): berufsbegleitendes Studium
-ao5: (sformgast): Gasthörerschaft
-ao6: (sformsons): Anderes, und zwar: [(sformsonso), offene Angabe, 60 Zeichen]
+ao5: (sformsons): Anderes, und zwar: [(sformsonso), offene Angabe, 60 Zeichen]
 
 mv:
 
