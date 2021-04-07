@@ -449,6 +449,6 @@ hv:
 
 fo:
 
-tr: GOTO Abschlussseite
+tr: GOTO A_56
 
 hi:
