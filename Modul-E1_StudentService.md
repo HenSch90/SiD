@@ -62,7 +62,7 @@ hl:
 
 in:
 
-q: Gibt es an ihrer Hochschule eine Mensa oder eine Cafeteria?
+q: Gibt es an Ihrer Hochschule eine Mensa oder eine Cafeteria?
 
 is:
 
