@@ -315,7 +315,7 @@ hv:
 
 fo:
 
-tr: GOTO ABSCHLUSSSEITE
+tr: GOTO A_50
 
 hi: Reihenfolge der Itemliste bitte randomisieren, aber Item 18 immer ans Ende setzen.
 
