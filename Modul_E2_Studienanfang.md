@@ -48,8 +48,10 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf02 IF mastersplit <> 1, 2, 3, 4, 5, 6, 13
-GOTO KSM-anf03 IF mastersplit = 1, 2, 3, 4, 5, 6, 13
+tr: GOTO KSM-anf06 if mastersplit=7 OR mastersplit=8 OR mastersplit=9 OR mastersplit=10
+GOTO KSM-anf03 if mastersplit=11 OR mastersplit=12
+GOTO KSM-anf02 if mastersplit=1 OR mastersplit=2 OR mastersplit=3 OR mastersplit=4 OR mastersplit=5 OR mastersplit=6
+
 
 hi:
 
@@ -110,7 +112,8 @@ hv:
 
 fo: mv/"weiß ich nicht" absetzen
 
-tr: GOTO KSM-anf03
+tr: GOTO KSM-anf06 if mastersplit=1 OR mastersplit=2 OR mastersplit=3 OR mastersplit=4 
+GOTO KSM-anf03 if mastersplit=5 OR mastersplit=6 OR mastersplit=11 OR mastersplit=12 
 
 hi:
 
@@ -199,7 +202,7 @@ hv:
 
 fo:
 
-tr: GOTO KSM-anf04
+tr: GOTO KSM-anf04 
 
 hi: Items bitte blockweise rotieren in folgen drei Blöcken: (it1-it6) (it7-it12) (it13-it18).
 
@@ -787,7 +790,7 @@ hv:
 
 fo:
 
-tr: 
+tr: GOTO A_50
 
 hi:
 
