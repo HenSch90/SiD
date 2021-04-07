@@ -550,8 +550,9 @@ hv:
 
 fo:
 
-tr: GOTO KSM-ma07 IF (sabsan = 6 OR sabsan = 7 OR sabsan = 8 OR sabsan = 9) OR (sabsan = 5 AND sabslaja <>1)
-GOTO KSM-ma06 IF ELSE
+tr: GOTO KSM-ma07 if mastersplit=7 OR mastersplit=8 OR mastersplit=9 OR mastersplit=10 OR mastersplit=11 OR mastersplit=12
+GOTO KSM-ma06 if mastersplit=1 OR mastersplit=2 OR mastersplit=3 OR mastersplit=4 OR mastersplit=5 OR mastersplit=6
+
 
 hi: 
 
@@ -761,6 +762,6 @@ hv:
 
 fo:
 
-tr: GOTO Abschlussseite
+tr: GOTO A_50
 
 hi:
