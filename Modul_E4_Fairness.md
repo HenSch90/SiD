@@ -1833,7 +1833,7 @@ hv:
 
 fo:
 
-tr:GOTO ABSCHLUSSSEITE 
+tr:GOTO A_56
 
 hi: 
 
