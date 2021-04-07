@@ -49,6 +49,53 @@ hi:
 
 \--------------------------------
 
+E1_1a
+=========
+
+tc:
+
+vn: mensajn
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Gibt es an ihrer Hochschule eine Mensa oder eine Cafeteria?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: nein
+
+ao2: 2: ja
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+hi:
+
+\--------------------------------
+
 E1_1
 ====
 
