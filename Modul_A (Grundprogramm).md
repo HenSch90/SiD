@@ -3308,7 +3308,7 @@ in:
 
 q1: Sind Sie während der Vorlesungszeit erwerbstätig?
 
-q2: Sind Sie während der Vorlesungszeit neben Ihrem dualen Studium erwerbstätig?
+q2: Sind Sie während der Vorlesungszeit ++neben++ Ihrem dualen Studium zusätzlich erwerbstätig?
 
 is: Mit „Erwerbstätigkeit(en)“ sind sämtliche Tätigkeiten gemeint, mit denen Sie im aktuellen Semester Geld verdienen.
 
@@ -3340,7 +3340,7 @@ fv:
 
 hv:
 
-fo:
+fo: das Wort "neben" in q2 bitte unterstrichen
 
 tr:
 
