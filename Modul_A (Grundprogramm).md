@@ -1352,6 +1352,106 @@ hi:
 
 \------------------------------------------------------------
 
+Tr_1
+=========
+
+tc:
+
+vn: triorga
+
+qt: Einfachauswahl mit vertikalen ao
+
+hl:
+
+in:
+
+q: Wie ist ihr aktuelles Studium organisiert?
+
+is:
+
+it:
+
+st:
+
+ao1: 1: Semester
+
+ao2: 2: Trimester
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+        <zofar:transitions>
+            <zofar:transition target="Tr_2" condition="zofar.asNumber(triorga)==2"/>
+            <zofar:transition target="A_17"/>
+        </zofar:transitions>
+
+hi:
+
+\------------------------------------------------------------
+
+
+Tr_2
+=========
+
+tc:
+
+vn:
+
+qt: 
+
+hl:
+
+in:
+
+q: Studiengänge sind in Deutschland in der Regel in Semestern organisiert. Daher beziehen wir uns im Folgenden durchgängig auf „Semester“.
+
+is:
+
+it:
+
+st:
+
+mv:
+
+ka:
+
+vc:
+
+av:
+
+kh:
+
+fv:
+
+hv:
+
+fo:
+
+tr:
+
+        <zofar:transitions>
+             <zofar:transition target="A_17"/>
+        </zofar:transitions>
+
+hi:
+
+\------------------------------------------------------------
+
 A_17
 =========
 
@@ -1367,19 +1467,22 @@ in:
 
 q: Im wievielten Fachsemester befinden Sie sich zurzeit?
 
-is: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
+is1: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind.
+is2: Fachsemester sind die Semester, die Sie in Ihrem derzeitigen Studiengang eingeschrieben sind. Falls Ihr aktuelles Studium in Trimester organisiert ist, rechnen Sie diese bitte in Semester um (1 Jahr = 2 Semester).
 
 it:
 
 st:
 
-ao: Präfix: Fachsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
+ao1: Präfix: Fachsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
+ao2: Präfix: Fachsemester: [offene Angabe; Number, 2-stellig mit einer Nachkommastelle : 1,0 TO 99,9]
 
 mv:
 
 ka:
 
-vc: 
+vc: show is1 AND ao1 if (triorga=1) OR (PRELOADhs_tr=0)
+vc: show is2 AND ao2 if (triorga=2)
 
 av: 
 
@@ -1413,19 +1516,22 @@ in:
 
 q: Im wievielten Hochschulsemester befinden Sie sich zurzeit?
 
-is: Hochschulsemester sind alle Semester seit Beginn des Studiums, einschließlich Urlaubs-, Auslands- und Praxissemester.
+is1: Hochschulsemester sind alle Semester seit Beginn des Studiums, einschließlich Urlaubs-, Auslands- und Praxissemester.
+is2: Hochschulsemester sind alle Semester seit Beginn des Studiums, einschließlich Urlaubs-, Auslands- und Praxissemester. Falls Ihr Studium (auch) in Trimester organisiert war/ist, rechnen Sie diese bitte in Semester um (1 Jahr = 2 Semester).
 
 it:
 
 st:
 
-ao: Präfix: Hochschulsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
+ao1: Präfix: Hochschulsemester: [offene Angabe; Number, 2-stellig: 1 TO 99]
+ao2: Präfix: Hochschulsemester: [offene Angabe; Number, 2-stellig mit einer Nachkommastelle : 1,0 TO 99,9]
 
 mv:
 
 ka:
 
-vc:
+vc: show is1 AND ao1 if (triorga=1) OR (PRELOADhs_tr=0)
+vc: show is2 AND ao2 if (triorga=2)
 
 av: 
 
@@ -1456,7 +1562,8 @@ hl:
 
 in:
 
-q: Befinden Sie sich aktuell in einem Urlaubssemester?
+q1: Befinden Sie sich aktuell in einem Urlaubssemester?
+q2: Befinden Sie sich aktuell in einem Urlaubstrimester?
 
 is:
 
@@ -1472,7 +1579,8 @@ mv:
 
 ka:
 
-vc:
+vc: show q1 if (triorga=1) OR (PRELOADhs_tr=0)
+vc: show q2 if (triorga=2)
 
 av:
 
