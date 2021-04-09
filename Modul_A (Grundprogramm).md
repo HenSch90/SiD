@@ -1482,7 +1482,7 @@ mv:
 ka:
 
 vc: show is1 AND ao1 if (triorga=1) OR (PRELOADhs_tr=0)
-vc: show is2 AND ao2 if (triorga=2)
+vc: show is2 AND ao2 if (triorga=2) OR (triorga=missing)
 
 av: 
 
@@ -1531,7 +1531,7 @@ mv:
 ka:
 
 vc: show is1 AND ao1 if (triorga=1) OR (PRELOADhs_tr=0)
-vc: show is2 AND ao2 if (triorga=2)
+vc: show is2 AND ao2 if (triorga=2) OR (triorga=missing)
 
 av: 
 
@@ -1580,7 +1580,7 @@ mv:
 ka:
 
 vc: show q1 if (triorga=1) OR (PRELOADhs_tr=0)
-vc: show q2 if (triorga=2)
+vc: show q2 if (triorga=2) OR (triorga=missing)
 
 av:
 
