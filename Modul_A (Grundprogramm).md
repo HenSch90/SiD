@@ -3284,7 +3284,9 @@ hl:
 
 in:
 
-q: Wann und mit welcher Note haben Sie ihre Hochschulzugangsberechtigung erlangt?
+q1: Wann und mit welcher Note haben Sie ihre Hochschulzugangsberechtigung erlangt?
+
+q2: Wann und mit welcher Note haben Sie ihre Studienberechtigung erlangt?
 
 is: Punktzahl bitte in Note umrechnen.
 
@@ -3302,7 +3304,9 @@ mv:
 
 ka:
 
-vc:
+vc: SHOW q1 IF vsbdeba==1 or vsbdeba==missing
+
+vc: SHOW q2 if vsbdeba==2
 
 av1: (vsbnotej): NUMBER, 4-stellig (1950 bis 2020)
 
