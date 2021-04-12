@@ -762,6 +762,7 @@ hv:
 
 fo:
 
-tr: GOTO A_50
+tr: GOTO A_56 if mastersplit=2 OR mastersplit=4 OR mastersplit=6 OR mastersplit=8 OR mastersplit=10 OR mastersplit=12
+GOTO A_50 if mastersplit=1 OR mastersplit=3 OR mastersplit=5 OR mastersplit=7 OR mastersplit=9 OR mastersplit=11
 
 hi:
