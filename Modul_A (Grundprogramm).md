@@ -225,6 +225,7 @@ fo: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A1) dar
 tr:
 
         <zofar:transitions>
+            <zofar:transition target="end_prom" condition="(zofar.asNumber(sabsanpr)==-11 or zofar.isMissing(sabsanpr)) and (zofar.asNumber(vsbdeba)==1 or zofar.isMissing(vsbdeba))"/>
             <zofar:transition target="A_2" condition="dnatdeu.value"/>
             <zofar:transition target="A_3" condition="!dnatdeu.value and dnatausl.value"/>
             <zofar:transition target="A_5" condition="!dnatdeu.value and !dnatausl.value"/>
@@ -281,11 +282,12 @@ fo:
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="A_3" condition="dnatausl.value or (dnatdeu.value and (zofar.asNumber(dnatderw)==2 or zofar.asNumber(dnatderw)==3))"/>
-            <zofar:transition target="A_3" condition="dnatausl.value and zofar.asNumber(dnatderw)==1"/>
-            <zofar:transition target="A_3" condition="dnatausl.value and zofar.isMissing(dnatderw)"/>
+            <zofar:transition target="A_3" condition="dnatausl.value"/>             <zofar:transition target="A_3" condition="
+dnatdeu.value and (zofar.asNumber(dnatderw)==2 or zofar.asNumber(dnatderw)==3)"/>
+
             <zofar:transition target="A_5" condition="dnatdeu.value and zofar.asNumber(dnatderw)==1"/>
             <zofar:transition target="A_5" condition="dnatdeu.value and zofar.isMissing(dnatderw)"/>
+
         </zofar:transitions>
 
 hi:
@@ -471,8 +473,7 @@ tr:
 
         <zofar:transitions>
             <zofar:transition target="A_6" condition="zofar.asNumber(dgebort)==2"/>
-            <zofar:transition target="A_9a" condition="(zofar.asNumber(dgebort)==1 or zofar.isMissing(dgebort)) and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_9b" condition="(zofar.asNumber(dgebort)==1 or zofar.isMissing(dgebort)) and zofar.asNumber(h_split)==2"/>
+            <zofar:transition target="A_9b" condition="zofar.asNumber(dgebort)==1 or zofar.isMissing(dgebort)"/>
         </zofar:transitions>
 
 hi:
@@ -648,9 +649,8 @@ tr:
 
         <zofar:transitions>
             <zofar:transition target="A_8a" condition="baufgruasylba.value"/>
-            <zofar:transition target="A_8b" condition="!baufgruasylba.value and (baufgrufaman.value or baufgrufamba.value)"/>
-            <zofar:transition target="A_9a" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_9b" condition="(!baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
+            <zofar:transition target="A_8b" condition="!baufgruasylba.value and (baufgrueuba.value or baufgrufaman.value or baufgrufamba.value or baufgruausba.value)"/>
+            <zofar:transition target="A_9b" condition="!baufgrueuba.value and !baufgruasylba.value and !baufgrufaman.value and !baufgrufamba.value and !baufgruausba.value"/>
         </zofar:transitions>
 
 hi:
@@ -709,8 +709,7 @@ tr:
 
         <zofar:transitions>
             <zofar:transition target="A_8b" condition="baufgrufaman.value or baufgrufamba.value"/>
-            <zofar:transition target="A_9a" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_9b" condition="(!baufgrufaman.value and !baufgrufamba.value) and zofar.asNumber(h_split)==2"/>
+            <zofar:transition target="A_9b" condition="!baufgrufaman.value and !baufgrufamba.value"/>
         </zofar:transitions>
 
 hi:
@@ -757,8 +756,7 @@ fo: Die beiden Items bitte linksbündig untereinander setzen.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_9a" condition="zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_9b" condition="zofar.asNumber(h_split)==2"/>
+            <zofar:transition target="A_9b"/>
         </zofar:transitions>
 
 hi:
@@ -917,7 +915,7 @@ fo: ao6 bitte als Exklusivkategorie etwas absetzen.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_12"/>
+            <zofar:transition target="A_12a"/>
         </zofar:transitions>
 
 hi:
@@ -968,7 +966,8 @@ fo:
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="A_13" condition="zofar.asNumber(dkinja)==1"/>
+            <zofar:transition target="A_34" condition="zofar.asNumber(vsbdeba)==2 and zofar.asNumber(sabsanpr)==-11"/>
+            <zofar:transition target="A_13"condition="zofar.asNumber(dkinja)==1"/>
             <zofar:transition target="C1_1" condition="zofar.asNumber(dkinja)==2"/>
             <zofar:transition target="A_13" condition="zofar.isMissing(dkinja)"/>
         </zofar:transitions>
@@ -1018,8 +1017,13 @@ hv:
 
 fo:
 
-tr:
-    
+tr:		
+
+	<zofar:transitions>
+        <zofar:transition target="A_12b" condition="zofar.asNumber(dsib) == 2"/>
+            <zofar:transition target="A_12"/>
+        </zofar:transitions>
+  
 hi:
 
 
@@ -1095,7 +1099,12 @@ hv:
 
 fo: Bitte wie folgt umsetzen: ka1, it1 und it2 nebeneinander darstellen und äqivalent bitte für die anderen Items umsetzen.
 
-tr:
+tr:		
+	
+	<zofar:transitions>
+            <zofar:transition target="A_12"/>
+        </zofar:transitions>
+
     
 hi:
 
@@ -1147,10 +1156,13 @@ fo: "Ja, und zwar:" über ao2 linksbündig positionieren.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="A_14" condition="zofar.asNumber(pflegang)==2"/>
-            <zofar:transition target="A_15"/>
+		<zofar:transitions>
+            <zofar:transition target="A_14" condition="zofar.asNumber(pflegang1)==1 or zofar.asNumber(pflegang2)==1"/>
+            <zofar:transition target="D3_24" condition=" zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==5 or  zofar.asNumber(mastersplit)==6 or          
+	zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10 or      
+	zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12      "/>            <zofar:transition target="A_15"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -1217,9 +1229,12 @@ fo: Bitte die Spalte "nie" etwas von der Skala "sehr selten" bis "sehr häufig" 
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="A_15"/>
+		<zofar:transitions>
+            <zofar:transition target="D3_24" condition=" zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==5 or  	zofar.asNumber(mastersplit)==6 or          
+	zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10 or      
+	zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12      "/>                        <zofar:transition target="A_15"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -1288,10 +1303,19 @@ fo3: ao10 bitte etwas absetzen.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="C2_1" condition="gartmob.value or gartseh.value                or gartohr.value or gartspr.value                or gartpsy.value or gartsom.value                or garttls.value or gartson.value                or gartka.value"/>
+		<zofar:transitions>
+     <zofar:transition target="C2_0" condition="gartmob.value 
+	or gartseh.value 
+	or gartohr.value 
+	or gartspr.value                
+	or gartpsy.value 
+	or gartsom.value                
+	or garttls.value 
+	or gartson.value                
+	or gartka.value"/>
             <zofar:transition target="A_16"/>
         </zofar:transitions>
+
 
 hi: Bitte die Systemvariable h_gartcount erzeugen. Diese soll die Anzahl an genannten beeinträchtigungen abbilden (sum ao2-ao10 bzw. sum gartmob-gartka)
 
@@ -1345,7 +1369,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_17"/>
+            <zofar:transition target="A_31"/>
         </zofar:transitions>
 
 hi:
@@ -1495,7 +1519,12 @@ hv:
 fo: Bitte diese Frage zusammen mit den beiden Folgefrage auf einer Seite (A17) darstellen. Fragetext, Ausfüllanweisung und ao der vorliegenden Frage bitte zusammen oberhalb von den beiden nachhfolgenden Fragen platzieren.
 
 
-tr: 
+tr: 		
+
+	<zofar:transitions>
+            <zofar:transition target="A_22"/>
+        </zofar:transitions>
+
 
 hi: 
 
@@ -1595,8 +1624,7 @@ fo: Bitte diese Frage zusammen mit den beiden vorhergehenden Fragen auf einer Se
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_19" condition="zofar.asNumber(PRELOADhs_id)==0"/>
-            <zofar:transition target="A_18"/>
+            <zofar:transition target="A_22"/>
         </zofar:transitions>
 
 hi:
@@ -1650,8 +1678,8 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="D2_1" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_22" condition="!hsstand_2.value and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13)"/>
+            <zofar:transition target="TR_1" condition="zofar.asNumber(PRELOADhs_tr)==1"/>
+            <zofar:transition target="A_17" condition="!hsstand_2.value "/>
             <zofar:transition target="A_19" condition="hsstand_2.value"/>
         </zofar:transitions>
 
@@ -1733,8 +1761,9 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_20" condition="zofar.asNumber(hsstandbl) lt 17"/>
+            <zofar:transition target="A_20" condition="zofar.asNumber(hsstandbl) lt 17 and zofar.asNumber(hsstandbl) != 0"/>
             <zofar:transition target="A_21" condition="zofar.asNumber(hsstandbl) == 17"/>
+            <zofar:transition target="A_20"/>
         </zofar:transitions>
 
 hi: 
@@ -1782,10 +1811,6 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D2_1" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14"/>
-            <zofar:transition target="A_22" condition="zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13"/>
-        </zofar:transitions>
 
 hi: Dropdown-Hochschulliste bitte nach Bundesland vorselektieren.
 
@@ -1828,10 +1853,10 @@ fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A20
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D2_1" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14"/>
-            <zofar:transition target="A_22" condition="zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13"/>
+		<zofar:transitions>
+            <zofar:transition target="A_17" "/>
         </zofar:transitions>
+
 
 hi: 
 
@@ -1878,10 +1903,10 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D2_1" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14"/>
-            <zofar:transition target="A_22" condition="zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==13"/>
+		<zofar:transitions>
+            <zofar:transition target="A_17" "/>
         </zofar:transitions>
+
 
 hi: 
 
@@ -1936,11 +1961,11 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D1_17" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==14"/>
-            <zofar:transition target="D2_13" condition="zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12"/>
-            <zofar:transition target="A_23" condition="zofar.asNumber(mastersplit)==13"/>
+		<zofar:transitions>
+            <zofar:transition target="D1_19" condition="      zofar.asNumber(mastersplit)==1 or        zofar.asNumber(mastersplit)==2 or        zofar.asNumber(mastersplit)==3 or        zofar.asNumber(mastersplit)==4 or        zofar.asNumber(mastersplit)==7 or        zofar.asNumber(mastersplit)==8 or        zofar.asNumber(mastersplit)==9 or        zofar.asNumber(mastersplit)==10"/>
+            <zofar:transition target="D2_13" condition="      zofar.asNumber(mastersplit)==5 or        zofar.asNumber(mastersplit)==6 or        zofar.asNumber(mastersplit)==11 or        zofar.asNumber(mastersplit)==12"/>
         </zofar:transitions>
+
     
 hi:
 
@@ -1989,9 +2014,10 @@ fo:
 
 tr:
 
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="A_24"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -2111,13 +2137,13 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="A_26" condition="zofar.asNumber(sabsan)==9"/>
-            <zofar:transition target="D1_13" condition="zofar.asNumber(sabsan) lt 9 and             (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_27" condition="zofar.asNumber(sabsan) lt 9 and             (zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13)"/>
-            <zofar:transition target="D1_13" condition="zofar.isMissing(sabsan) and             (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_27" condition="zofar.isMissing(sabsan) and             (zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13)"/>
+		<zofar:transitions>
+         <zofar:transition target="A_25b" condition="zofar.asNumber(sabsan) == 6"/>
+          <zofar:transition target="A_27" condition="zofar.asNumber(sabsan) == 8"/>
+            <zofar:transition target="D1_13" condition="      (      zofar.asNumber(mastersplit)==1 or      zofar.asNumber(mastersplit)==2 or      zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==7 or      zofar.asNumber(mastersplit)==8 or      zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10)"/>
+            <zofar:transition target="A_27" condition="      (      zofar.asNumber(mastersplit)==5 or      zofar.asNumber(mastersplit)==6 or      zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12)"/>
         </zofar:transitions>
+
 	
 hi:
 
@@ -2175,7 +2201,12 @@ hv:
 
 fo:  "Ja, und zwar:" über ao2 linksbündig positionieren.
 
-tr:
+tr:		<zofar:transitions>
+            <zofar:transition target="A_1" condition="zofar.asNumber(sabsanpr)==-11 or zofar.isMissing(sabsanpr)"/>     
+            <zofar:transition target="D1_13" condition="      zofar.asNumber(sabsanpr) ge 1 and      zofar.asNumber(sabsanpr) le 6 and      (      zofar.asNumber(mastersplit)==1 or      zofar.asNumber(mastersplit)==2 or      zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==7 or      zofar.asNumber(mastersplit)==8 or      zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10)"/>
+            <zofar:transition target="A_27" condition="      zofar.asNumber(sabsanpr) ge 1 and      zofar.asNumber(sabsanpr) le 6 and      (      zofar.asNumber(mastersplit)==5 or      zofar.asNumber(mastersplit)==6 or      zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12)"/>
+        </zofar:transitions>
+
 
 hi:
 
@@ -2228,10 +2259,11 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D2_3" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14"/>
-            <zofar:transition target="B1_7" condition="zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==13"/>
-            <zofar:transition target="A_28" condition="zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10"/>
+		<zofar:transitions>
+            <zofar:transition target="A_27a" condition="sformdua.value"/>
+            <zofar:transition target="D2_3" condition="      zofar.asNumber(mastersplit)==1 or        zofar.asNumber(mastersplit)==2 or        zofar.asNumber(mastersplit)==5 or        zofar.asNumber(mastersplit)==6 or        zofar.asNumber(mastersplit)==7 or        zofar.asNumber(mastersplit)==8 or        zofar.asNumber(mastersplit)==11 or        zofar.asNumber(mastersplit)==12 "/>
+            <zofar:transition target="B1_7" condition="      zofar.asNumber(mastersplit)==3 or        zofar.asNumber(mastersplit)==4"/>
+            <zofar:transition target="A_28" condition="      zofar.asNumber(mastersplit)==9 or        zofar.asNumber(mastersplit)==10"/>
         </zofar:transitions>
 
 hi:
@@ -2280,7 +2312,14 @@ hv:
 
 fo: ao4 bitte absetzen
 
-tr:
+tr:		
+	
+	<zofar:transitions>
+	<zofar:transition target="D2_3" condition="      zofar.asNumber(mastersplit)==1 or        zofar.asNumber(mastersplit)==2 or        zofar.asNumber(mastersplit)==5 or        	zofar.asNumber(mastersplit)==6 or        zofar.asNumber(mastersplit)==7 or        zofar.asNumber(mastersplit)==8 or        zofar.asNumber(mastersplit)==11 or        	zofar.asNumber(mastersplit)==12"/>
+            <zofar:transition target="B1_7" condition="      zofar.asNumber(mastersplit)==3 or        zofar.asNumber(mastersplit)==4"/>
+            <zofar:transition target="A_28" condition="      zofar.asNumber(mastersplit)==9 or        zofar.asNumber(mastersplit)==10"/>
+        </zofar:transitions>
+
 
        
 
@@ -2335,12 +2374,11 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D1_7" condition="(zofar.asNumber(ssemhs) le 5 or             zofar.asNumber(ssemhs) le 6)"/>
-            <zofar:transition target="D1_7" condition="zofar.isMissing(ssemhs)"/>
-            <zofar:transition target="D2_6" condition="zofar.asNumber(ssemhs) ge 7 and             (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_44" condition="zofar.asNumber(ssemhs) ge 7 and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10)"/>
+		<zofar:transitions>
+      	<zofar:transition target="D1_30" condition=" (zofar.asNumber(mastersplit)==1 or      zofar.asNumber(mastersplit)==2 or      zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==7 or      zofar.asNumber(mastersplit)==8 or      zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10      )"/>
+      	<zofar:transition target="A_1" condition=" (zofar.asNumber(mastersplit)==5 or      zofar.asNumber(mastersplit)==6 or      zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12 ) "/>
         </zofar:transitions>
+
 
 hi:
 
@@ -2446,9 +2484,10 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="A_30"/>
+		<zofar:transitions>
+            <zofar:transition target="D1_9"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -2572,10 +2611,11 @@ fo2: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="A_33" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==14"/>
-            <zofar:transition target="B2_1" condition="zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13"/>
+		<zofar:transitions>
+            <zofar:transition target="A_33" condition="      zofar.asNumber(mastersplit)==1 or      zofar.asNumber(mastersplit)==2 or      zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==5 or      zofar.asNumber(mastersplit)==6"/>
+            <zofar:transition target="B2_1" condition="      zofar.asNumber(mastersplit)==7 or      zofar.asNumber(mastersplit)==8 or      zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10 or      zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -2645,12 +2685,11 @@ weiß ich nicht-Kästchen
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="B2_2a" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="B2_2b" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(h_split)==2"/>
-            <zofar:transition target="B1_6" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6"/>
-            <zofar:transition target="A_34" condition="zofar.asNumber(mastersplit)==14"/>
+   		<zofar:transitions>
+            <zofar:transition target="B2_2b" condition="      zofar.asNumber(mastersplit)==7 or      zofar.asNumber(mastersplit)==8 or      zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10 or      zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12"/>
+            <zofar:transition target="B1_6" condition="      zofar.asNumber(mastersplit)==1 or      zofar.asNumber(mastersplit)==2 or      zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==5 or      zofar.asNumber(mastersplit)==6"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -2701,7 +2740,7 @@ fo: "Vater" und Mutter bitte jeweils als Spaltenüberschrift.
 
 tr:
 
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="A_35" condition="zofar.asNumber(deltgebv)==2 or zofar.asNumber(deltgebm)==2"/>
             <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber(deltgebv)==1 and zofar.asNumber(deltgebm)==1)"/>
             <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.isMissing(deltgebv) and zofar.isMissing(deltgebm))"/>
@@ -2711,17 +2750,12 @@ tr:
             <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.isMissing(deltgebv) and zofar.isMissing(deltgebm))"/>
             <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebv)==1 and zofar.isMissing(deltgebm))"/>
             <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebm)==1 and zofar.isMissing(deltgebv))"/>
-            <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebv)==1 and zofar.asNumber (deltgebm)==3)"/>
-            <zofar:transition target="A_38a" condition="(zofar.asNumber(vsbdeba)==2 and zofar.asNumber (deltgebm)==1 and zofar.asNumber (deltgebv)==3)"/>
             <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebv)==1 and zofar.isMissing(deltgebm))"/>
             <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebm)==1 and zofar.isMissing(deltgebv))"/>
-            <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebv)==1 and zofar.asNumber (deltgebm)==3)"/>
-            <zofar:transition target="A_38" condition="(zofar.asNumber(vsbdeba)==1 and zofar.asNumber (deltgebm)==1 and zofar.asNumber (deltgebv)==3)"/>
             <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebv)==1 and zofar.isMissing(deltgebm))"/>
             <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebm)==1 and zofar.isMissing(deltgebv))"/>
-            <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebv)==1 and zofar.asNumber (deltgebm)==3)"/>
-            <zofar:transition target="A_38" condition="(zofar.isMissing(vsbdeba) and zofar.asNumber (deltgebm)==1 and zofar.asNumber (deltgebv)==3)"/>
         </zofar:transitions>
+
     
 hi:
 
@@ -2774,7 +2808,9 @@ hv:
 
 fo:
 
-tr:
+tr:		
+
+
 
 hi:
 
@@ -2829,7 +2865,7 @@ fo: Bitte diese Frage zusammen mit der vorhergehenden Frage auf einer Seite (A35
 
 tr:
 
-        <zofar:transitions>
+	<zofar:transitions>
             <zofar:transition target="A_36"/>
         </zofar:transitions>
 
@@ -2988,11 +3024,12 @@ fo: ao7 bitte als Exklusivkategorie etwas absetzen.
 
 tr:
 
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="A_38b" condition="(intbild1.value                 or intbild2.value                 or intbild3.value                 or intbild4.value                 or intbild5.value)"/>
             <zofar:transition target="A_38c" condition="(intbild6.value                 or intbild7.value)"/>
             <zofar:transition target="A_38c" condition="(!intbild1.value                 and !intbild2.value                 and !intbild3.value                 and !intbild4.value                 and !intbild5.value                 and !intbild6.value                 and !intbild7.value)"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -3115,10 +3152,11 @@ fo: ao6 als Exklusivkategorie bitte etwas absetzen.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D1_2" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==14)"/>
+		<zofar:transitions>
+            <zofar:transition target="D1_2" condition="(      zofar.asNumber(mastersplit)==1      or zofar.asNumber(mastersplit)==2      or zofar.asNumber(mastersplit)==3      or zofar.asNumber(mastersplit)==4      or zofar.asNumber(mastersplit)==7      or zofar.asNumber(mastersplit)==8      or zofar.asNumber(mastersplit)==9      or zofar.asNumber(mastersplit)==10      )"/>
             <zofar:transition target="A_40"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -3262,10 +3300,13 @@ fo2: "Schulischer Weg" linksbündig über ao1; "Berufliche Qualifikation" linksb
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D1_1" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==14)                 and (vsbtyp1.value or vsbtyp2.value                  or vsbtyp3.value or vsbtyp4.value                  or vsbtyp5.value or vsbtyp6.value                  or vsbtyp7.value or vsbtyp8.value                  or vsbtyp9.value)"/>
+		<zofar:transitions>
+            <zofar:transition target="D1_1" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 )                 and (vsbtyp1.value or vsbtyp2.value                  or vsbtyp3.value or vsbtyp4.value                  or vsbtyp5.value or vsbtyp6.value                  or vsbtyp7.value or vsbtyp8.value                  or vsbtyp9.value)"/>
+                <zofar:transition target="D1_4" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10) and (!vsbtyp1.value and !vsbtyp2.value                  and !vsbtyp3.value and !vsbtyp4.value and !vsbtyp5.value and !vsbtyp6.value                  and !vsbtyp7.value and !vsbtyp8.value and !vsbtyp9.value) and (vsbtyp10.value  or vsbtyp11.value )"/>
+        <zofar:transition target="A_42" condition="(zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12) and (!vsbtyp1.value and !vsbtyp2.value                  and !vsbtyp3.value and !vsbtyp4.value and !vsbtyp5.value and !vsbtyp6.value                  and !vsbtyp7.value and !vsbtyp8.value and !vsbtyp9.value) and (vsbtyp10.value  or vsbtyp11.value )"/>
             <zofar:transition target="A_40"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -3323,11 +3364,13 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_37a" condition="zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_37b" condition="zofar.asNumber(h_split)==2"/>
+		
+	<zofar:transitions>
+            	<zofar:transition target="F1_6" condition="zofar.asNumber(vsbdeba)==2 and zofar.asNumber(sabsanpr)==-11"/>
+        	<zofar:transition target="A_37a" condition=" zofar.asNumber(acht_a)==2 and (zofar.asNumber(vsbdeba)==1 or zofar.isMissing(vsbdeba)"/>
+        	<zofar:transition target="A_41"/>
         </zofar:transitions>
+
 
 hi1: vsbnotej bitte als NUMBER, 4-stellig (1950 bis 2020) programmieren.
 
@@ -3381,10 +3424,10 @@ fo: ao1 als Exklusivkategorie umsetzen.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_42" condition="zofar.asNumber(vausbja)==1                or zofar.isMissing(vausbja)"/>
-            <zofar:transition target="D1_5" condition="zofar.asNumber(vausbja)==2               and (zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="D1_4" condition="zofar.asNumber(vausbja)==3               and (zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_42" condition="(zofar.asNumber(vausbja)==2 or zofar.asNumber(vausbja)==3)                and (zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12                 or zofar.asNumber(mastersplit)==13)"/>
+            <zofar:transition target="A_42" condition="vausbnein.value                or (!vausbnein.value and !vausbja1.value and !vausbja2.value)"/>
+            <zofar:transition target="D1_4" condition="(vausbja1.value or vausbja2.value)                and (zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10)"/>
+            <zofar:transition target="A_42" condition="(vausbja1.value or vausbja2.value)                and (zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12)"/>
+	<zofar:transition target="A_42"/>
         </zofar:transitions>
 
 hi:
@@ -3442,17 +3485,14 @@ fo: das Wort "neben" in q2 bitte unterstrichen
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="A_43" condition="zofar.asNumber(eaktsens)==2                or zofar.asNumber(eaktsens)==3                or zofar.asNumber(eaktsens)==4"/>
-            <zofar:transition target="A_44" condition="zofar.asNumber(eaktsens)==1                and zofar.asNumber(mastersplit)==13"/>
-            <zofar:transition target="A_44" condition="zofar.isMissing(eaktsens)               and zofar.asNumber(mastersplit)==13"/>
-            <zofar:transition target="D3_20" condition="zofar.asNumber(eaktsens)==1                 and (sformberu.value or sformdua.value)                 and (zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12                               or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="D3_20" condition="zofar.isMissing(eaktsens)                 and (sformberu.value or sformdua.value)                 and (zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12                               or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="D3_22" condition="zofar.asNumber(eaktsens)==1                 and (!sformberu.value or !sformdua.value)                 and (zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12                               or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="D3_22" condition="zofar.isMissing(eaktsens)                 and (!sformberu.value or !sformdua.value)                 and (zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12                               or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="D1_9" condition="zofar.asNumber(eaktsens)==1               and (zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8)"/>
-            <zofar:transition target="D1_9" condition="zofar.isMissing(eaktsens)               and (zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8)"/>
-        </zofar:transitions>
+    <zofar:transitions>
+        <zofar:transition target="D3_19" condition="(zofar.asNumber(eaktsens)==2                or zofar.asNumber(eaktsens)==3                or zofar.asNumber(eaktsens)==4) and (zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12)"/>
+        <zofar:transition target="D3_20" condition="(zofar.asNumber(eaktsens)==1 or zofar.isMissing(eaktsens))               and (sformberu.value or sformdua.value)                 and (zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12)"/>
+        <zofar:transition target="D3_22" condition="(zofar.asNumber(eaktsens)==1 or zofar.isMissing(eaktsens))               and (!sformberu.value and !sformdua.value)                 and (zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12)"/>
+        <zofar:transition target="D1_7" condition="(zofar.asNumber(ssemfs) le 3 and (zofar.asNumber(sabsan)==1 or (zofar.asNumber(sabsan)ge 3 and zofar.asNumber(sabsan)le 7)))     and (zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8)"/>
+        <zofar:transition target="D2_2" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8)"/>
+    </zofar:transitions>
+
 
 hi:
 
@@ -3502,14 +3542,13 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_49a" condition="zofar.asNumber(sabsja)==1               and zofar.asNumber(sabser)==1"/>
-            <zofar:transition target="A_49b" condition="zofar.asNumber(sabsja)==1               and zofar.asNumber(sabser)!=1"/>
-            <zofar:transition target="A_45" condition="zofar.asNumber(sabsja)==2"/>
-            <zofar:transition target="A_49a" condition="zofar.isMissing(sabsja) and               zofar.asNumber(sabser)==1"/>
-            <zofar:transition target="A_49b" condition="zofar.isMissing(sabsja) and               zofar.asNumber(sabser)!=1"/>
+		
+		<zofar:transitions>
+        <zofar:transition target="A_49a" condition="zofar.asNumber(sabsja)==1"/>
+        <zofar:transition target="A_45" condition="zofar.asNumber(sabsja)==2 or zofar.asNumber(sabsja)==3"/>
+        <zofar:transition target="A_49a" condition="zofar.isMissing(sabsja)"/>
         </zofar:transitions>
+
     
 hi:
 
@@ -3784,11 +3823,12 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D1_10a" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10                 or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_49a" condition="(zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12                 or zofar.asNumber(mastersplit)==13)               and (zofar.asNumber(sabsan)==1 or zofar.isMissing(sabsan))"/>
-            <zofar:transition target="A_49b" condition="(zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12                 or zofar.asNumber(mastersplit)==13)               and zofar.asNumber(sabsan)!=1"/>
-        </zofar:transitions>
+		<zofar:transitions>
+            <zofar:transition target="D1_10" condition="zofar.asNumber(sabsja)==3 and      (      zofar.asNumber(mastersplit)==1      or zofar.asNumber(mastersplit)==2      or zofar.asNumber(mastersplit)==3      or zofar.asNumber(mastersplit)==4      or zofar.asNumber(mastersplit)==7      or zofar.asNumber(mastersplit)==8      or zofar.asNumber(mastersplit)==9      or zofar.asNumber(mastersplit)==10)      "/>
+        <zofar:transition target="D1_12" condition="zofar.asNumber(sabsja)==2 and (zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10)"/>
+            <zofar:transition target="A_49a"/>
+	</zofar:transitions>
+
 
 hi: Bitte als NUMBER, 3-stellig mit einer Dezimalstelle (1,0 bis 4,0) programmieren.
 
@@ -3845,18 +3885,13 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="KSM-anf01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(sabsan)==1)             and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="KSM-anf01" condition="(zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(vsbdeba)==1              or zofar.asNumber(imausl)==1)             and (zofar.asNumber(sabsan)==1)             and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="KSM-ma01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(sabsan)==1)             and zofar.asNumber(h_split)==2"/>
-            <zofar:transition target="KSM-ma01" condition="(zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(vsbdeba)==1               or zofar.asNumber(imausl)==1)             and (zofar.asNumber(sabsan)==1)             and zofar.asNumber(h_split)==2"/>
-            <zofar:transition target="KSM-phd01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(sabsan)==2             or zofar.asNumber(sabsan)==3             or zofar.asNumber(sabsan)==4             or zofar.asNumber(sabsan)==6             or zofar.asNumber(sabsan)==7             or zofar.asNumber(sabsan)==8           or zofar.isMissing(sabsan))"/>
-            <zofar:transition target="KSM-phd01" condition="(zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(vsbdeba)==1              or zofar.asNumber(imausl)==1)             and (zofar.asNumber(sabsan)==2             or zofar.asNumber(sabsan)==3             or zofar.asNumber(sabsan)==4             or zofar.asNumber(sabsan)==6             or zofar.asNumber(sabsan)==7             or zofar.asNumber(sabsan)==8           or zofar.isMissing(sabsan))"/>
-            <zofar:transition target="A_50" condition="zofar.asNumber(zusatzsplit)==1             or zofar.asNumber(zusatzsplit)==3             or zofar.asNumber(zusatzsplit)==4"/>
-            <zofar:transition target="A_50" condition="(zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(vsbdeba)==2              or zofar.asNumber(imausl)==2)"/>
-            <zofar:transition target="A_50" condition="(zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)             and zofar.asNumber(zusatzsplit)==2             and (zofar.isMissing(vsbdeba)              or zofar.isMissing(imausl))"/>
+		<zofar:transitions>
+            <zofar:transition target="KSM-anf01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(sabsan)==1 or zofar.asNumber(sabsan)==3 or zofar.asNumber(sabsan)==4 or zofar.asNumber(sabsan)==5 or zofar.asNumber(sabsan)==7) and zofar.asNumber(ssemfs) le 3"/>
+            <zofar:transition target="KSM-ma01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11)             and zofar.asNumber(zusatzsplit)==2             and zofar.asNumber(sabsan)==1             and zofar.asNumber(ssemfs) ge 4"/>
+            <zofar:transition target="KSM-phd01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11)             and zofar.asNumber(zusatzsplit)==2             and (((zofar.asNumber(sabsan)==3 or zofar.asNumber(sabsan)==4 or zofar.asNumber(sabsan)==5 or zofar.asNumber(sabsan)==7) and zofar.asNumber(ssemfs) ge 4) or zofar.asNumber(sabsan)==2)"/>
             <zofar:transition target="A_50"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -3921,16 +3956,11 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D1_14" condition="(zofar.asNumber(ssweja)==1             or zofar.asNumber(saweja)==1             or zofar.asNumber(shwja)==1             or zofar.asNumber(ssuja)==1)             and (zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_51a" condition="(zofar.asNumber(ssweja)==1             or zofar.asNumber(saweja)==1             or zofar.asNumber(shwja)==1             or zofar.asNumber(ssuja)==1)             and (zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13)           and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_51b" condition="(zofar.asNumber(ssweja)==1             or zofar.asNumber(saweja)==1             or zofar.asNumber(shwja)==1             or zofar.asNumber(ssuja)==1)             and (zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13)           and zofar.asNumber(h_split)==2"/>
-            <zofar:transition target="A_51a" condition="(zofar.asNumber(ssweja)==2             and zofar.asNumber(saweja)==2             and zofar.asNumber(shwja)==2             and zofar.asNumber(ssuja)==2)             and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_51b" condition="(zofar.asNumber(ssweja)==2             and zofar.asNumber(saweja)==2             and zofar.asNumber(shwja)==2             and zofar.asNumber(ssuja)==2)             and zofar.asNumber(h_split)==2"/>
-            <zofar:transition target="A_51a" condition="(zofar.isMissing(ssweja)             and zofar.isMissing(saweja)             and zofar.isMissing(shwja)             and zofar.isMissing(ssuja))             and zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="A_51b" condition="(zofar.isMissing(ssweja)             and zofar.isMissing(saweja)             and zofar.isMissing(shwja)             and zofar.isMissing(ssuja))             and zofar.asNumber(h_split)==2"/>
-            <zofar:transition target="A_51a"/>
+		<zofar:transitions>
+            <zofar:transition target="D1_15" condition="(         zofar.asNumber(ssweja) ge 1 or            zofar.asNumber(saweja) ge 1 or           zofar.asNumber(shwja) ge 1 or           zofar.asNumber(ssuja) ge 1          )          and           (           zofar.asNumber(mastersplit)==1           or zofar.asNumber(mastersplit)==2           or zofar.asNumber(mastersplit)==3           or zofar.asNumber(mastersplit)==4           or zofar.asNumber(mastersplit)==7           or zofar.asNumber(mastersplit)==8           or zofar.asNumber(mastersplit)==9           or zofar.asNumber(mastersplit)==10 )"/>
+            <zofar:transition target="A_51b"/>
         </zofar:transitions>
+
 
 hi: Bitte für den Infield-Text nicht die "0" als Wert vergeben, da diese bereits für die erste Antwortoption "keinmal" vorgehalten ist.
 
@@ -3991,10 +4021,11 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D1_20" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_52" condition="zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==13"/>
+		<zofar:transitions>
+            <zofar:transition target="D1_20" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             )"/>
+            <zofar:transition target="A_52" condition="zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             "/>
         </zofar:transitions>
+
 
 hi:
 
@@ -4057,10 +4088,11 @@ fo2: Bitte über ao4 "Im Studierendenwohnheim" linksbündig positionieren.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D3_1" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="A_53" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==13"/>
+		<zofar:transitions>
+            <zofar:transition target="E1_0" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11)             and zofar.asNumber(zusatzsplit)==1"/>
+            <zofar:transition target="A_53" />
         </zofar:transitions>
+
 
   
 hi:
@@ -4120,12 +4152,12 @@ fo: "Ich wohne …" bitte linksbündig über die erste ao positionieren.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D3_2" condition="!wohnal.value and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="D3_4" condition="wohnal.value and             (zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
-            <zofar:transition target="B2_5" condition="zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==13"/>
-            <zofar:transition target="B1_5" condition="zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2"/>
-        </zofar:transitions>
+	<zofar:transitions>
+   	<zofar:transition target="D3_2" condition="(zofar.asNumber(mastersplit)==3 or zofar.asNumber(mastersplit)==4 or zofar.asNumber(mastersplit)==5 or zofar.asNumber(mastersplit)==6 or zofar.asNumber(mastersplit)==9 or zofar.asNumber(mastersplit)==10 or zofar.asNumber(mastersplit)==11 or zofar.asNumber(mastersplit)==12)" /> 
+  	<zofar:transition target="B2_7" condition="(zofar.asNumber(mastersplit)==7 or zofar.asNumber(mastersplit)==8)" /> 
+  	<zofar:transition target="B1_5" condition="zofar.asNumber(mastersplit)==1 or zofar.asNumber(mastersplit)==2" /> 
+  	</zofar:transitions>
+
   
 hi:
 
@@ -4241,14 +4273,14 @@ fo:
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="F1_1" condition="zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14"/>
-            <zofar:transition target="E1_1" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(zusatzsplit)==1"/>
-            <zofar:transition target="KSM-pol01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(zusatzsplit)==3"/>
-            <zofar:transition target="KSM-fai01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(zusatzsplit)==4"/>
-            <zofar:transition target="A_56" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==13)             and zofar.asNumber(zusatzsplit)==2"/>
-            <zofar:transition target="A_56" condition="(zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)             and zofar.asNumber(zusatzsplit)==2             and (zofar.asNumber(vsbdeba)==1              or zofar.asNumber(imausl)==1)"/>
+		<zofar:transitions>
+            <zofar:transition target="F1_1" condition="zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==6             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==12             "/>
+            <zofar:transition target="E1_1a" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11)             and zofar.asNumber(zusatzsplit)==1"/>
+            <zofar:transition target="KSM-pol01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11 and zofar.asNumber(zusatzsplit)==3"/>
+            <zofar:transition target="KSM-fai01" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11)             and zofar.asNumber(zusatzsplit)==4"/>
+            <zofar:transition target="A_56" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==11)             and zofar.asNumber(zusatzsplit)==2"/> 
         </zofar:transitions>
+
 
 hi:
 
@@ -4325,12 +4357,13 @@ fo: Bitte anhand der Unterteilung in a und b die Zuordnung der Items zu den beid
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="N_1" condition="zofar.asNumber(zusatzsplit)==1"/>
-            <zofar:transition target="N_13" condition="zofar.asNumber(zusatzsplit)==4"/>
-            <zofar:transition target="N_5" condition="zofar.asNumber(zusatzsplit)==3"/>
-            <zofar:transition target="A_57" condition="zofar.asNumber(zusatzsplit)==2"/>
-        </zofar:transitions>
+	<zofar:transitions>
+		<zofar:transition target="N_2" condition="zofar.asNumber(PRELOADhs_nrw)==1"/>
+		<zofar:transition target="N_9" condition="zofar.asNumber(acht_a)==1"/>
+		<zofar:transition target="D3_1" condition="zofar.asNumber(acht_a)==2"/>
+        	<zofar:transition target="A_57"/>
+  	 </zofar:transitions>
+
 
 hi: Bitte als NUMBER, 2-stellig (0 bis 99) programmieren.
 
