@@ -49,10 +49,10 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="N_5"/>
+        </zofar:transitions>
 
-    <zofar:transitions>
-        <zofar:transition target="N_3"/>
-    </zofar:transitions>
 
 hi:
 
@@ -106,10 +106,9 @@ hv:
 fo:
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_6"/>
-    </zofar:transitions>
+	<zofar:transitions>
+            <zofar:transition target="N_6"/>
+        </zofar:transitions>
 
 hi:
 
@@ -163,10 +162,9 @@ hv:
 fo:
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_7"/>
-    </zofar:transitions>
+		<zofar:transitions>
+            <zofar:transition target="N_7"/>
+        </zofar:transitions>
 
 hi:
 
@@ -222,10 +220,9 @@ hv:
 fo: ao1 (missing) bitte etwas absetzen.
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_8"/>
-    </zofar:transitions>
+		<zofar:transitions>
+            <zofar:transition target="N_8"/>
+        </zofar:transitions>
 
 hi:
 
@@ -281,10 +278,11 @@ hv:
 fo: ao1 (missing) bitte etwas absetzen.
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_9"/>
-    </zofar:transitions>
+		<zofar:transitions>
+<zofar:transition target="N_9" condition="zofar.asNumber(acht_a)==1”/>
+<zofar:transition target="D3_1" condition="zofar.asNumber(acht_a)==2”/>
+            <zofar:transition target="A_57"/>
+        </zofar:transitions>
 
 hi:
 
@@ -347,10 +345,9 @@ hv:
 fo:
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_10"/>
-    </zofar:transitions>
+	<zofar:transitions>
+    	<zofar:transition target="N_10"/>
+        </zofar:transitions>
 
 hi:
 
@@ -406,6 +403,9 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="D2_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -467,6 +467,9 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="D2_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -536,9 +539,10 @@ hv:
 fo:
 
 tr:
-    <zofar:transitions>
-        <zofar:transition target="N_11"/>
-    </zofar:transitions>
+		<zofar:transitions>
+            <zofar:transition target="CO_4" condition="diglehr13.value”/>
+            <zofar:transition target="N_10c"/>
+        </zofar:transitions>
 
 hi: ao13 bitte etwas absetzen.
 
@@ -637,6 +641,9 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="CO_4"/>
+        </zofar:transitions>
 
 hi:
 
@@ -704,11 +711,9 @@ hv:
 fo:
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="N_12"/>
-    </zofar:transitions>
-
+	<zofar:transitions>
+            <zofar:transition target="N_12"/>
+        </zofar:transitions>
 hi:
 
 \------------------------------------------------------------
@@ -777,10 +782,9 @@ hv:
 fo:
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="A_57"/>
-    </zofar:transitions>
+		<zofar:transitions>
+            <zofar:transition target="A_57"/>
+        </zofar:transitions>
 
 hi:
 
@@ -834,6 +838,9 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="CO_5"/>
+        </zofar:transitions>
 
 hi:
 
@@ -889,6 +896,9 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="CO_10"/>
+        </zofar:transitions>
 
 hi:
 
@@ -953,6 +963,9 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="N_11"/>
+        </zofar:transitions>
 
 hi:
 
@@ -999,7 +1012,7 @@ fo:
 
 tr:
 
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="A_41"/>
         </zofar:transitions>
 
@@ -1052,10 +1065,10 @@ hv:
 fo: SHOW q2 and ao2 IF wohnplz = k. A. (--> soft forcing)
 
 tr:
+<zofar:transitions>
+            <zofar:transition target="F3_23"/>
+        </zofar:transitions>
 
-  <zofar:transitions>
-        <zofar:transition target="D3_3"/>
-    </zofar:transitions>
 
 hi: Bitte unter q1, ao1 und ao2 darstellen. Dann Absatz q2 und ao3 darstellen.
 
@@ -1103,10 +1116,9 @@ hv:
 fo:
 
 tr:
-
-   <zofar:transitions>
-        <zofar:transition target="F3_24"/>
-    </zofar:transitions>
+		<zofar:transitions>
+            <zofar:transition target="N_17"/>
+        </zofar:transitions>
 
 hi:   
 
@@ -1164,6 +1176,9 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="B2_5"/>
+        </zofar:transitions>
 
 hi:   
 
@@ -1231,6 +1246,9 @@ hv:
 fo:
 
 tr:
+	<zofar:transitions>
+            <zofar:transition target="A_57"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1292,10 +1310,9 @@ hv:
 fo:
 
 tr:
-
-    <zofar:transitions>
-        <zofar:transition target="B2_4"/>
-    </zofar:transitions>
+	<zofar:transitions>
+            <zofar:transition target="N_16"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1348,6 +1365,9 @@ hv:
 fo:
 
 tr:
+	<zofar:transitions>
+            <zofar:transition target="CO_11"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1401,7 +1421,9 @@ hv:
 fo:
 
 tr:
-
+	<zofar:transitions>
+            <zofar:transition target="CO_19"/>
+        </zofar:transitions>
 hi:
 
 \------------------------------------------------------------
@@ -1453,6 +1475,10 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            
+            <zofar:transition target="CO_24"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1503,5 +1529,8 @@ hv:
 fo:
 
 tr:
+	<zofar:transitions>
+            <zofar:transition target="A_15"/>
+        </zofar:transitions>
 
 hi:
