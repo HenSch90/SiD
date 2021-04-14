@@ -43,7 +43,12 @@ hv:
 
 fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
-tr:
+tr:    
+
+        <zofar:transitions>
+                <zofar:transition target="A_53"/>
+        </zofar:transitions>
+
 
 hi:
 
@@ -90,7 +95,13 @@ hv:
 
 fo:
 
-tr:
+tr:		
+        
+        <zofar:transitions>
+            <zofar:transition target="E1_1" condition="zofar.asNumber(mensajn)==2"/>
+            <zofar:transition target="E1_3" condition="zofar.asNumber(mensajn)==1 or zofar.isMissing(mensajn)"/>         
+        </zofar:transitions>
+
 
 hi:
 
@@ -329,7 +340,7 @@ fo:
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="E1_4"/>
+            <zofar:transition target="E1_3a"/>
         </zofar:transitions>
 
 hi:
@@ -402,7 +413,12 @@ hv:
 
 fo:
 
-tr:
+tr:		
+        
+        <zofar:transitions>
+            <zofar:transition target="E1_6"/>
+        </zofar:transitions>
+
 
 hi:
 
@@ -510,10 +526,11 @@ fo3: Bitte über it11 "studienbezogene Themen" linksbündig positionieren.
 
 tr: 
 
-        <zofar:transitions>
-            <zofar:transition target="E1_7" condition="(zofar.asNumber(ibedsfin) gt 1         or zofar.asNumber (ibedkv) gt 1         or zofar.asNumber (ibedafin) gt 1         or zofar.asNumber (ibedpart) gt 1         or zofar.asNumber (ibedfamu) gt 1         or zofar.asNumber (ibeddep) gt 1         or zofar.asNumber (ibedaldr) gt 1         or zofar.asNumber (ibedvbew) gt 1         or zofar.asNumber (ibedvbki) gt 1         or zofar.asNumber (ibedvbhc) gt 1         or zofar.asNumber (ibedllpran) gt 1         or zofar.asNumber (ibedaoz) gt 1         or zofar.asNumber (ibedabersw) gt 1         or zofar.asNumber (ibedaorg) gt 1         or zofar.asNumber (ibedabs) gt 1         or zofar.asNumber (ibebsln) gt 1         or zofar.asNumber (ibebssu) gt 1         or zofar.asNumber (ibebsth) gt 1         or zofar.asNumber (ibebspa) gt 1         or zofar.asNumber (ibebsbh) gt 1         or zofar.asNumber (ibebsat) gt 1         or zofar.asNumber (ibebsrb) gt 1         or zofar.asNumber (ibedno) gt 1)"/>
-            <zofar:transition target="E1_8"/>
+	<zofar:transitions>
+                <zofar:transition target="E1_7" condition="zofar.asNumber(ibedsfin) gt 1         or zofar.asNumber (ibedfinbs) gt 1         or zofar.asNumber (ibedfinwo) gt 1         or zofar.asNumber (ibedkv) gt 1         or zofar.asNumber (ibedafin) gt 1         or zofar.asNumber (ibedpart) gt 1         or zofar.asNumber (ibedfamu) gt 1         or zofar.asNumber (ibeddep) gt 1         or zofar.asNumber (ibedsuch) gt 1         or zofar.asNumber (ibedvbew) gt 1         or zofar.asNumber (ibedvbki) gt 1         or zofar.asNumber (ibedvbhc) gt 1         or zofar.asNumber (ibedllpran) gt 1         or zofar.asNumber (ibedaoz) gt 1         or zofar.asNumber (ibedabersw) gt 1         or zofar.asNumber (ibedaorg) gt 1         or zofar.asNumber (ibedabs) gt 1         or zofar.asNumber (ibebsln) gt 1         or zofar.asNumber (ibebssu) gt 1        or zofar.asNumber (ibedkont) gt 1"/>
+            <zofar:transition target="E1_11"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -652,9 +669,11 @@ fo3: Bitte über it11 "studienbezogene Themen" linksbündig positionieren.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="E1_8"/>
+	<zofar:transitions>
+                <zofar:transition target="E1_8" condition="(zofar.asNumber(iinasfin) == 1         or zofar.asNumber (iinafinbs) == 1         or zofar.asNumber (iinafinwo) == 1         or zofar.asNumber (iinakv) == 1         or zofar.asNumber (iinaafin) == 1         or zofar.asNumber (iinapart) == 1         or zofar.asNumber (iinafamu) == 1         or zofar.asNumber (iinadep) == 1          or zofar.asNumber (iinasuch) == 1         or zofar.asNumber (iinakont) == 1         or zofar.asNumber (iinavbew) == 1         or zofar.asNumber (iinavbki) == 1         or zofar.asNumber (iinavbhc) == 1         or zofar.asNumber (iinallpran) == 1         or zofar.asNumber (iinaaoz) == 1         or zofar.asNumber (iinaabersw) == 1         or zofar.asNumber (iinaaorg) == 1         or zofar.asNumber (iinaabs) == 1         or zofar.asNumber (innabsln) == 1         or zofar.asNumber (iinabssu) == 1"/>
+            <zofar:transition target="E1_11"/>
         </zofar:transitions>
+
     
 hi: Bitte Systemvariable "iinano" mit den folgenden Werten anlegen:
 iinano = 0, wenn mind. ein Item/eine Variable auf E1_7 > 1 ist.
@@ -725,7 +744,7 @@ fo: Bitte über it1 "Ich habe kein Beratungsangebot in Anspruch genommen, weil �
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="E1_9"/>
+            <zofar:transition target="E1_11"/>
         </zofar:transitions>
 
 hi:
