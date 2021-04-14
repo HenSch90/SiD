@@ -80,7 +80,7 @@ fo3: mv/"weiß ich nicht" bitte etwas absetzen.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_22"/>
+            <zofar:transition target="D2_6a"/>
         </zofar:transitions>
 
 hi: 
@@ -164,9 +164,11 @@ fo3: Bitte über it7 "Prüfungsorganisation" linksbündig positionieren.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D2_4"/>
+	<zofar:transitions>
+            <zofar:transition target="N_9c" condition="zofar.asNumber(PRELOADhs_co)==1"/> 
+            <zofar:transition target="N_9b"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -302,10 +304,11 @@ fo: mv/"trifft nicht zu" bitte etwas absetzen.
 
 tr:
 
-        <zofar:transitions>
+	<zofar:transitions>
             <zofar:transition target="B1_7" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
-            <zofar:transition target="A_28" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12             or zofar.asNumber(mastersplit)==14)"/>
+            <zofar:transition target="A_28" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12    )"/>
         </zofar:transitions>
+
 
 hi: 
 
@@ -560,7 +563,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="D2_10"/>
+            <zofar:transition target="D2_11"/>
         </zofar:transitions>
 
 hi: 
@@ -761,7 +764,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="D2_14"/>
+            <zofar:transition target="D2_15"/>
         </zofar:transitions>
 
 hi: 
