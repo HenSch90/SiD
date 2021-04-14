@@ -48,11 +48,10 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F1_2b" condition="width.value lt 768"/>
+	<zofar:transitions>
             <zofar:transition target="F1_2"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -139,10 +138,10 @@ fo1: Bitte über it1 "... **für** einen Auslandsaufenthalt" linksbündig positi
 fo2: Bitte über it8 "... **gegen** einen Auslandsaufenthalt" linksbündig positionieren.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_3"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -190,8 +189,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_4"/>
         </zofar:transitions>
 
@@ -251,8 +249,7 @@ fo1: ao1 bitte etwas absetzen.
 fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
 tr:
-
-        <zofar:transitions>
+	<zofar:transitions>
             <zofar:transition target="F1_5"/>
         </zofar:transitions>
 
@@ -309,15 +306,13 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_6" condition="(zofar.asNumber(vsbdeba)==2)"/>
-            <zofar:transition target="F2_6" condition="(zofar.asNumber(vsbdeba)==1              and zofar.asNumber(imausl)==2)"/>
-            <zofar:transition target="F2_6" condition="(zofar.isMissing(vsbdeba)              and zofar.asNumber(imausl)==2)"/>
-            <zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1              and zofar.asNumber(imausl)==1)"/>
-            <zofar:transition target="F3_6" condition="(zofar.asNumber(vsbdeba)==1              and zofar.isMissing(imausl))"/>
-            <zofar:transition target="F3_6" condition="(zofar.isMissing(vsbdeba)              and zofar.isMissing(imausl))"/>
+            <zofar:transition target="F2_6" condition="(zofar.asNumber(vsbdeba)==1              and zofar.asNumber(imausl)==4)"/>
+            <zofar:transition target="F2_6" condition="(zofar.isMissing(vsbdeba)              and zofar.asNumber(imausl)==4)"/>
+            <zofar:transition target="F3_6"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -363,8 +358,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_7"/>
         </zofar:transitions>
 
@@ -418,10 +412,10 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_8"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -477,10 +471,10 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_9"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -548,10 +542,10 @@ hv:
 fo: q2 bitte unterhalb und mit etwas Abstand von q1 positionieren.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_10"/>
         </zofar:transitions>
+
 
 hi: Rotation der Items bitte entfernen
 
@@ -600,10 +594,10 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_11"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -660,8 +654,7 @@ hv:
 fo: mv/"weiß ich noch nicht" bitte etwas absetzen.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_12"/>
         </zofar:transitions>
 
@@ -720,8 +713,7 @@ hv:
 fo: mv/"weiß ich nicht" bitte etwas absetzen.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_13"/>
         </zofar:transitions>
 
@@ -782,8 +774,8 @@ fo2: Bitte über it2 "Ja, und zwar:" linksbündig positionieren.
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="F1_14"/>
+		<zofar:transitions>
+            <zofar:transition target="F1_25"/>
         </zofar:transitions>
 
 hi: 
@@ -844,8 +836,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_15"/>
         </zofar:transitions>
 
@@ -915,9 +906,10 @@ fo: Bitte zuerst q1 mit ao1-ao5 darstellen und darunter dann q2 mit ao6-ao10 dar
 
 tr:
 
-        <zofar:transitions>
+<zofar:transitions>
             <zofar:transition target="F1_16"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -973,8 +965,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_17"/>
         </zofar:transitions>
 
@@ -1032,8 +1023,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_18"/>
         </zofar:transitions>
 
@@ -1089,9 +1079,8 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F1_20"/>
+		<zofar:transitions>
+            <zofar:transition target="F1_21"/>
         </zofar:transitions>
 
 hi:
@@ -1159,8 +1148,7 @@ fo2: Bitte über ao4 "Ich möchte weiterstudieren/promovieren, und zwar …" mit
 fo3: Bitte über ao7 "Etwas Anderes" mit etwas Abstand linksbündig positionieren.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_22"/>
         </zofar:transitions>
 
@@ -1222,8 +1210,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_23"/>
         </zofar:transitions>
 
@@ -1283,11 +1270,9 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F1_24"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -1342,8 +1327,8 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
+            <zofar:transition target="A_57" condition="zofar.asNumber(vsbdeba)==2 and zofar.asNumber(sabsanpr)==-11"/>
             <zofar:transition target="A_56"/>
         </zofar:transitions>
 
@@ -1403,5 +1388,8 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="F1_14"/>
+        </zofar:transitions>
 
 hi:
