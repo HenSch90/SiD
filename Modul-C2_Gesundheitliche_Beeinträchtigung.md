@@ -42,6 +42,11 @@ hv:
 fo:
 
 tr: 
+<zofar:transitions>
+            <zofar:transition target="C2_1" condition="zofar.asNumber(beschwer)== 2"/>
+        <zofar:transition target="C2_3" condition="zofar.asNumber(beschwer)==1"/>
+        <zofar:transition target="C2_1" condition="zofar.isMissing(beschwer)"/>
+        </zofar:transitions
 
 hi:
 
@@ -134,11 +139,12 @@ hv:
 fo: mv als erste, etwas abgesetzte Spalte, danach Skala.
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_2"/>
+		<zofar:transitions>
+<zofar:transition target="C2_2" condition="(zofar.asNumber(gbegrmob) ge 1 or zofar.asNumber(gbegrseh) ge 1 or zofar.asNumber(gbegrohr) ge 1 or zofar.asNumber(gbegrspr) ge 1 or zofar.asNumber(gbegrpsy) ge 1 or zofar.asNumber(gbegrchron) ge 1 or zofar.asNumber(gbegrtls) ge 1 or
+zofar.asNumber(gbegrson) ge 1 or zofar.asNumber(gbegrka) ge 1)"/>            <zofar:transition target="C2_3"/>
         </zofar:transitions>
 
+      
 hi:
 
 \--------------------------------
@@ -200,9 +206,9 @@ hv:
 
 fo: Bitte über ao2 "Ja, und zwar:" positionieren.
 
-tr:
-
-        <zofar:transitions>
+tr: 		
+<zofar:transitions>
+            <zofar:transition target="C2_2a" condition="bedbau.value or bedauss.value or bedsich.value or bedruh.value or bedmed.value or bedelearn.value or            bedpers.value or bedtech.value or bedand.value"/>
             <zofar:transition target="C2_3"/>
         </zofar:transitions>
 
@@ -290,6 +296,10 @@ hv:
 fo: Bitte mv als letzte etwas abgesetzte Spalte.
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="C2_3"/>
+        </zofar:transitions>
+
 
 hi:
 
@@ -337,8 +347,7 @@ hv:
 fo: 
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="C2_4"/>
         </zofar:transitions>
 
@@ -390,11 +399,10 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_5" condition="zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="C2_6" condition="zofar.asNumber(h_split)==2"/>
+		<zofar:transitions>
+            <zofar:transition target="C2_5"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -446,9 +454,11 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_7"/>
+		<zofar:transitions>
+        <zofar:transition target="C2_7" condition="zofar.asNumber(beschwer)==2"/>
+        <zofar:transition target="C2_7" condition="(zofar.asNumber(gbegrmob) ge 1 or zofar.asNumber(gbegrseh) ge 1 or zofar.asNumber(gbegrohr) ge 1 or zofar.asNumber(gbegrspr) ge 1 or zofar.asNumber(gbegrpsy) ge 1 or zofar.asNumber(gbegrchron) ge 1 or zofar.asNumber(gbegrtls) ge 1 or
+zofar.asNumber(gbegrson) ge 1 or zofar.asNumber(gbegrka) ge 1)"/>        
+        <zofar:transition target="C2_11a"/>
         </zofar:transitions>
 
 hi:
@@ -525,9 +535,10 @@ fo1: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in f
 fo2: schwno/"Ich habe und hatte keine Schwierigkeiten." als EK absetzen
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_8"/>
+		<zofar:transitions>
+            <zofar:transition target="C2_8" condition="schwleist.value or schwwieei.value or schwanwes.value or schwlv.value or schwselbst.value or schwgrup.value or schwflex.value or schwdicht.value or schwwieho.value or schwdauer.value or schwprart.value or schwprbed.value"/>
+        <zofar:transition target="C2_11a" condition="schwno.value"/>
+        <zofar:transition target="C2_11a" condition="!schwno.value and !schwleist.value and !schwwieei.value and !schwanwes.value and !schwlv.value and !schwselbst.value and !schwgrup.value and !schwflex.value and !schwdicht.value and !schwwieho.value and !schwdauer.value and !schwprart.value and !schwprbed.value"/>
         </zofar:transitions>
 
 hi:
@@ -628,28 +639,13 @@ hv:
 fo: "Studienorganisation" in fett über it1 platzieren; "Lehre und Lernen" in fett über it4 platzieren; "Prüfungen/Leistungsnachweise" in fett über it8 platzieren. 
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_9" condition="zofar.asNumber(ntabau)==2 or zofar.asNumber(ntaorg)==2 or zofar.asNumber(ntapru)==2 or zofar.asNumber(ntaand)==2"/>
-            <zofar:transition target="C2_11" condition="zofar.asNumber(ntabau)==3 or zofar.asNumber(ntaorg)==3 or zofar.asNumber(ntapru)==3 or zofar.asNumber(ntaand)==3"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
-            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
-            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
-            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.isMissing(ntaand)"/>
-            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.isMissing(ntapru) and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.isMissing(ntaorg) and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_10" condition="zofar.isMissing(ntabau) and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_10" condition="zofar.asNumber(ntabau)==1 and zofar.asNumber(ntaorg)==1 and zofar.asNumber(ntapru)==1 and zofar.asNumber(ntaand)==1"/>
-            <zofar:transition target="C2_12" condition="zofar.isMissing(ntabau) and zofar.isMissing(ntaorg) and zofar.isMissing(ntapru) and zofar.isMissing(ntaand)"/>
+	<zofar:transitions>
+            <zofar:transition target="C2_9" condition="zofar.asNumber(ntaleist)== 1 or zofar.asNumber(ntawieei)== 1 or zofar.asNumber(ntaanwes)== 1                      or zofar.asNumber(ntalv)== 1 or zofar.asNumber(ntaselbst)== 1 or zofar.asNumber(ntagrup)== 1 or zofar.asNumber(ntaflex)== 1 or zofar.asNumber(ntadicht)== 1 or zofar.asNumber(ntawieho)== 1 or zofar.asNumber(ntadauer)== 1 or zofar.asNumber(ntaprart)== 1 or zofar.asNumber(ntaprbed)== 1"/>
+            <zofar:transition target="C2_11" condition="zofar.asNumber(ntaleist)== 2 or zofar.asNumber(ntawieei)== 2 or zofar.asNumber(ntaanwes)== 2                      or zofar.asNumber(ntalv)== 2 or zofar.asNumber(ntaselbst)== 2 or zofar.asNumber(ntagrup)== 2 or zofar.asNumber(ntaflex)== 2 or zofar.asNumber(ntadicht)== 2 or zofar.asNumber(ntawieho)== 2 or zofar.asNumber(ntadauer)== 2 or zofar.asNumber(ntaprart)== 2 or zofar.asNumber(ntaprbed)==2"/>            
+            <zofar:transition target="C2_10" condition="zofar.asNumber(ntaleist)== 3 and zofar.asNumber(ntawieei)== 3 and zofar.asNumber(ntaanwes)== 3 and zofar.asNumber(ntalv)== 3 and zofar.asNumber(ntaselbst)== 3 and zofar.asNumber(ntagrup)== 3 and zofar.asNumber(ntaflex)== 3 and zofar.asNumber(ntadicht)== 3 and zofar.asNumber(ntawieho)== 3 and zofar.asNumber(ntadauer)== 3 and zofar.asNumber(ntaprart)== 3 or zofar.asNumber(ntaprbed)==3"/>
+            <zofar:transition target="C2_11a"/>
         </zofar:transitions>
-
+     
 hi:
 
 \--------------------------------
@@ -751,11 +747,14 @@ hv:
 fo: "Studienorganisation" in fett über ao1 platzieren; "Lehre und Lernen" in fett über ao4 platzieren; "Prüfungen/Leistungsnachweise" in fett über ao8 platzieren. 
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_11" condition="zofar.asNumber(ntabau)==3 or zofar.asNumber(ntaorg)==3 or zofar.asNumber(ntapru)==3 or zofar.asNumber(ntaand)==3"/>
-            <zofar:transition target="C2_12"/>
+		<zofar:transitions>        
+                <zofar:transition target="C2_11" condition="zofar.asNumber(ntaleist)==2 or zofar.asNumber(ntawieei)==2 or zofar.asNumber(ntaanwes)==2 or zofar.asNumber(ntalv)==2 or zofar.asNumber(ntaselbst)==2 or zofar.asNumber(ntagrup)==2 or zofar.asNumber(ntaflex)==2 or zofar.asNumber(ntadicht)==2 or zofar.asNumber(ntawieho)==2 or zofar.asNumber(ntadauer)==2 or zofar.asNumber(ntaprart)==2 or zofar.asNumber(ntaprbed)==2"/>
+        <zofar:transition target="C2_10" condition="zofar.asNumber(ntaleist)==3 or zofar.asNumber(ntawieei)==3 or zofar.asNumber(ntaanwes)==3 or zofar.asNumber(ntalv)==3 or zofar.asNumber(ntaselbst)==3 or zofar.asNumber(ntagrup)==3 or zofar.asNumber(ntaflex)==3 or zofar.asNumber(ntadicht)==3 or zofar.asNumber(ntawieho)==3 or zofar.asNumber(ntadauer)==3 or zofar.asNumber(ntaprart)==3 or zofar.asNumber(ntaprbed)==3"/>
+        <zofar:transition target="C2_11a"/>
         </zofar:transitions>
+
+
+
 
 hi:
 
@@ -821,9 +820,8 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_12"/>
+		<zofar:transitions>
+            <zofar:transition target="C2_11a"/>
         </zofar:transitions>
 
 hi:
@@ -890,9 +888,10 @@ hv:
 fo: ao10: (kbmem): Wurde mir nicht mitgeteilt. als EK absetzen
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_12"/>
+		<zofar:transitions>
+            <zofar:transition target="C2_10" condition="(zofar.asNumber(gbegrmob) ge 1 or zofar.asNumber(gbegrseh) ge 1 or zofar.asNumber(gbegrohr) ge 1 or zofar.asNumber(gbegrspr) ge 1 or zofar.asNumber(gbegrpsy) ge 1 or zofar.asNumber(gbegrchron) ge 1 or zofar.asNumber(gbegrtls) ge 1 or
+zofar.asNumber(gbegrson) ge 1 or zofar.asNumber(gbegrka) ge 1)"/> 
+        <zofar:transition target="C2_11a"/>
         </zofar:transitions>
 
 hi:
@@ -963,6 +962,12 @@ fo1: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (qu
 fo2: Bitte in der Zeile der Kommiliton\*innen (it1: bsuntkom) und Lehrende (it2: bsuntleh) jeweils das Antwortkästchen für mv/"nicht vorhanden" nicht einblenden.
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="C2_12" condition="zofar.asNumber(beschwer)==2"/>
+        <zofar:transition target="C2_12" condition="zofar.asNumber(gbegrmob) ge 1 or condition="zofar.asNumber(gbegrseh) ge 1 or condition="zofar.asNumber(gbegrohr) ge 1 or condition="zofar.asNumber(gbegrspr) ge 1 or condition="zofar.asNumber(gbegrpsy) ge 1 or condition="zofar.asNumber(gbegrchron) ge 1 or condition="zofar.asNumber(gbegrtls) ge 1 or 
+condition="zofar.asNumber(gbegrson) ge 1 or condition="zofar.asNumber(gbegrka) ge 1"/>
+        <zofar:transition target="C2_14"/>
+        </zofar:transitions>
 
 hi:
 
@@ -1022,11 +1027,11 @@ hv:
 fo: mv/"nicht vorhanden" bitte als erste etwas abgesetzte Spalte platzieren (quasi links von der Spalte "kenne ich nicht").
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="C2_13" condition="zofar.asNumber(beauftr)==3 or zofar.asNumber(besoz)==3 or zofar.asNumber(bepsy)==3 or zofar.asNumber(bestud)==3              or zofar.asNumber(beselb)==3 or zofar.asNumber(beand)==3"/>
-            <zofar:transition target="A_16"/>
+		<zofar:transitions>
+            <zofar:transition target="C2_13" condition="zofar.asNumber(beauftr)== 3 or zofar.asNumber(besoz)== 3 or zofar.asNumber(bepsy)== 3 or zofar.asNumber(bestud)== 3              or zofar.asNumber(beselb)== 3 or zofar.asNumber(beand)== 3"/>
+            <zofar:transition target="C2_14"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -1103,9 +1108,8 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_16"/>
+		<zofar:transitions>
+            <zofar:transition target="C2_14"/>
         </zofar:transitions>
 
 hi:
@@ -1165,5 +1169,8 @@ hv:
 fo:
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="A_16"/>
+        </zofar:transitions>
 
 hi:
