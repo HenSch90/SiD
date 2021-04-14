@@ -358,7 +358,7 @@ hl:
 
 in:
 
-q: Wissen Sie schon, welchen Beruf Sie ergreifen möchten?
+q: Wissen Sie schon, welchen Beruf Sie nach dem Studium ergreifen möchten?
 
 is:
 
