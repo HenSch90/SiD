@@ -50,11 +50,12 @@ hv:
 fo:
 
 tr: 
-
-        <zofar:transitions>
-            <zofar:transition target="B1_3a" condition="zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="B1_3b" condition="zofar.asNumber(h_split)==2"/>
+		
+	<zofar:transitions>
+            <zofar:transition target="B1_3a" condition="zofar.asNumber(zwei_b)==1"/>
+            <zofar:transition target="B1_3b" condition="zofar.asNumber(zwei_b)==2"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -194,9 +195,10 @@ fo:
 tr:
 
 	<zofar:transitions>
-        <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
-        <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
-    	</zofar:transitions>
+            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
+            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             )"/>
+        </zofar:transitions>
+
 
 hi:
 
@@ -264,10 +266,11 @@ fo: Items bitte zufällig rotieren.
 
 tr:
 
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==3             or zofar.asNumber(mastersplit)==4             or zofar.asNumber(mastersplit)==5             or zofar.asNumber(mastersplit)==6)"/>
-            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             or zofar.asNumber(mastersplit)==13)"/>
+            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==1             or zofar.asNumber(mastersplit)==2             )"/>
         </zofar:transitions>
+
         
 hi:
 
@@ -323,10 +326,11 @@ hv:
 fo: Bitte eine vierte Zeile programmieren, in der in der Itemspalte unter it3 ("andere Personen") "Summe" steht. In dieser vierten Zeile soll zudem für die vier ao-Spalten dann jeweils "100 %" als Text stehen. 
 
 tr:
-
-        <zofar:transitions>
+	
+	<zofar:transitions>
             <zofar:transition target="B1_4b"/>
         </zofar:transitions>
+
 
 hi:
 
