@@ -265,9 +265,9 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="B2_3a" condition="zofar.asNumber(h_split)==1"/>
-            <zofar:transition target="B2_3b" condition="zofar.asNumber(h_split)==2"/>
+            <zofar:transition target="B2_3a"/>
         </zofar:transitions>
+
 
 hi: Zwischenüberschriften zwischen den ao’s:
 
@@ -418,10 +418,9 @@ fo: Items bitte zufällig rotieren.
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="B2_8a" condition="zofar.asNumber(sabsan)==1 or              zofar.asNumber(sabsan)==2"/>
-            <zofar:transition target="B2_8b" condition="zofar.asNumber(sabsan) ge 3"/>
-            <zofar:transition target="B2_8b" condition="zofar.isMissing(sabsan)"/>
+            <zofar:transition target="B2_8a2"/>
         </zofar:transitions>
+
  
 hi:
 
@@ -635,9 +634,14 @@ fo: mv/"weiß ich nicht/trifft nicht zu" absetzen
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==9             or zofar.asNumber(mastersplit)==10             or zofar.asNumber(mastersplit)==11             or zofar.asNumber(mastersplit)==12)"/>
-            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==7             or zofar.asNumber(mastersplit)==8             or zofar.asNumber(mastersplit)==13)"/>
+            <zofar:transition target="D3_13" condition="(zofar.asNumber(mastersplit)==9             
+                or zofar.asNumber(mastersplit)==10             
+                or zofar.asNumber(mastersplit)==11             
+                or zofar.asNumber(mastersplit)==12)"/>
+            <zofar:transition target="A_54" condition="(zofar.asNumber(mastersplit)==7             
+                or zofar.asNumber(mastersplit)==8)"/>
         </zofar:transitions>
+
 
 
 hi:
@@ -695,9 +699,10 @@ fo:
 
 tr: 
 
-        <zofar:transitions>
-            <zofar:transition target="A_34"/>
+	<zofar:transitions>
+            <zofar:transition target="D1_18"/>
         </zofar:transitions>
+
 
 hi: 
 
@@ -755,10 +760,11 @@ hv:
 fo:
 
 tr:
-
+		
         <zofar:transitions>
-            <zofar:transition target="D1_19"/>
+            <zofar:transition target="B2_11" />
         </zofar:transitions>
+
 
 hi: Items bitte zufällig rotieren.
 
@@ -811,7 +817,12 @@ hv:
 
 fo:
 
-tr:
+tr:		
+
+        <zofar:transitions>
+            <zofar:transition target="A_34"/>
+        </zofar:transitions>
+
 
 hi:
 
