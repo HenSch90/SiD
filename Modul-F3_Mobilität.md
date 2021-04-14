@@ -46,16 +46,17 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+<zofar:transitions>
+<zofar:transition target="KSM-anf01" condition="zofar.asNumber(vier_c)==1 and (zofar.asNumber(sabsan)==1 or zofar.asNumber(sabsan)==3 or zofar.asNumber(sabsan)==4 or zofar.asNumber(sabsan)==5 or zofar.asNumber(sabsan)==7) and zofar.asNumber(ssemfs) le 3"/>
+             <zofar:transition target="KSM-ma01" condition="zofar.asNumber(vier_c)==1 and zofar.asNumber(sabsan)==1 and zofar.asNumber(ssemfs) ge 4"/>
+             <zofar:transition target="KSM-phd01" condition="zofar.asNumber(vier_c)==1 and (((zofar.asNumber(sabsan)==3  or zofar.asNumber(sabsan)==4 or zofar.asNumber(sabsan)==5 or zofar.asNumber(sabsan)==7) and zofar.asNumber(ssemfs) ge 4) or zofar.asNumber(sabsan)==2)"/>
             <zofar:transition target="F3_7" condition="(zofar.asNumber(ainfaus) ge 2)"/>
-            <zofar:transition target="F3_16" condition="(zofar.asNumber(ainfaus)==1          and zofar.asNumber(auslandint)==4)"/>
-            <zofar:transition target="F3_16" condition="(zofar.isMissing(ainfaus)          and zofar.asNumber(auslandint)==4)"/>
-            <zofar:transition target="F3_21" condition="(zofar.asNumber(ainfaus)==1)          and (zofar.asNumber(auslandint)==1          or zofar.asNumber(auslandint)==2          or zofar.asNumber(auslandint)==3)"/>
-            <zofar:transition target="F3_21" condition="(zofar.isMissing(ainfaus))          and (zofar.asNumber(auslandint)==1          or zofar.asNumber(auslandint)==2          or zofar.asNumber(auslandint)==3)"/>
-            <zofar:transition target="F3_21" condition="(zofar.isMissing(ainfaus)          and zofar.isMissing(auslandint))"/>
+            <zofar:transition target="F3_16" condition="zofar.asNumber(ainfaus)==1 and (zofar.asNumber(auslandint)==4 or zofar.asNumber(auslandint)==5)"/>
+            <zofar:transition target="F3_16" condition="zofar.isMissing(ainfaus) and (zofar.asNumber(auslandint)==4 or zofar.asNumber(auslandint)==5)"/>
+            <zofar:transition target="F3_22" condition="(zofar.asNumber(ainfaus)==1) and (zofar.asNumber(auslandint)==1 or zofar.asNumber(auslandint)==2          or zofar.asNumber(auslandint)==3)"/>
+            <zofar:transition target="F3_22" condition="(zofar.isMissing(ainfaus)) and (zofar.asNumber(auslandint)==1 or zofar.asNumber(auslandint)==2 or zofar.asNumber(auslandint)==3)"/>
+            <zofar:transition target="F3_22" condition="(zofar.isMissing(ainfaus) and zofar.isMissing(auslandint))"/>
         </zofar:transitions>
-
 hi:
 
 
@@ -222,8 +223,7 @@ hv:
 fo: Bitte jeweils "Art des Aufenthalts", "Land" und "Stadt/Hochschule" linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig "Monat" und daneben "Jahr". Zuletzt dann ebenfalls darunter linksbündig "Dauer des Aufenthalts". Das Ganze dann eben bis zu dreimal untereinander mit den Überschriften (fett und unterstrichen) "Letzter Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt".
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_8"/>
         </zofar:transitions>
 
@@ -331,8 +331,7 @@ fo2: Bitte jeweils über ao2, ao8 und ao14 "Ja, und zwar:" linksbündig position
 fo3: Es werden bis zu drei Episoden angezeigt, die linksbündig untereinander mit den Überschriften (fett und unterstrichen) "Letzter  Auslandsaufenthalt", "Vorletzter Auslandsaufenthalt" und "Drittletzter Auslandsaufenthalt" positioniert werden.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_9"/>
         </zofar:transitions>
 
@@ -386,11 +385,10 @@ hv:
 fo: ao4 absetzen
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_10"/>
         </zofar:transitions>
-
+ 
 hi:
 
 
@@ -500,8 +498,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_11"/>
         </zofar:transitions>
 
@@ -570,8 +567,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_12"/>
         </zofar:transitions>
 
@@ -637,8 +633,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_13"/>
         </zofar:transitions>
 
@@ -697,11 +692,9 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_14"/>
         </zofar:transitions>
-        
 
 hi:
 
@@ -760,8 +753,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_15"/>
         </zofar:transitions>
 
@@ -818,11 +810,9 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_22"/>
         </zofar:transitions>
-
 hi:
 
 \-------------------------------- 
@@ -884,11 +874,9 @@ hv:
 fo: "-12: weiß ich noch nicht" bitte etwas absetzen.
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F3_19"/>
+		<zofar:transitions>
+            <zofar:transition target="F3_17"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -937,6 +925,9 @@ hv:
 fo: ao1 und ao2 bitte linksbündig untereinander positionieren. ao3 bitte etwas abgesetzt unter ao2 positionieren.
 
 tr:
+		<zofar:transitions>
+            <zofar:transition target="F3_19"/>
+        </zofar:transitions>
 
 hi:
 
@@ -992,11 +983,9 @@ hv:
 fo: Bitte ao7 optisch etwas absetzen.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_20"/>
         </zofar:transitions>
-
 hi: 
 
 \--------------------------------
@@ -1057,11 +1046,10 @@ hv:
 fo: ao9 bitte etwas optisch absetzen.
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F3_22"/>
         </zofar:transitions>
-
+ 
 hi:
 
 \--------------------------------
@@ -1116,9 +1104,8 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F3_23"/>
+		<zofar:transitions>
+            <zofar:transition target="F3_25"/>
         </zofar:transitions>
 
 hi:
@@ -1178,8 +1165,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="A_56"/>
         </zofar:transitions>
 
