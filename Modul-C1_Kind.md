@@ -294,8 +294,22 @@ fo:
 tr: 
 
         <zofar:transitions>
-            <zofar:transition target="C1_7"/>
+                <zofar:transition target="C1_7" condition="
+                        (zofar.asNumber(dkinagej) lt 23 and zofar.asNumber(dkinagej) ge 1) or 
+                        (zofar.asNumber(dkinage1) lt 23 and zofar.asNumber(dkinage1) ge 1) or 
+                        (zofar.asNumber(dkinage2) lt 23 and zofar.asNumber(dkinage2) ge 1) or 
+                        (zofar.asNumber(dkinage3) lt 23 and zofar.asNumber(dkinage3) ge 1) or 
+                        (zofar.asNumber(dkinage4) lt 23 and zofar.asNumber(dkinage4) ge 1) or 
+                        (zofar.asNumber(dkinage5) lt 23 and zofar.asNumber(dkinage5) ge 1)"/>
+                <zofar:transition target="C1_7" condition="
+                        (zofar.isMissing(dkinagej) and zofar.isMissing(dkinanz)) or 
+                        (zofar.isMissing (dkinage1) and zofar.asNumber(dkinanz)==1) or 
+                        ((zofar. isMissing(dkinage2) or zofar. isMissing(dkinage3)) and zofar.asNumber(dkinanz)==2) or
+                        ((zofar. isMissing(dkinage2) or zofar. isMissing(dkinage3) or zofar. isMissing(dkinage4)) and zofar.asNumber(dkinanz)==3) or
+                        ((zofar. isMissing(dkinage2) or zofar. isMissing(dkinage3) or zofar. isMissing(dkinage4) or zofar. isMissing(dkinage5)) and zofar.asNumber(dkinanz)==4)"/>
+            <zofar:transition target="C1_12"/>
         </zofar:transitions>
+
 
 hi:
 
@@ -452,80 +466,13 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="C1_9"/>
-        </zofar:transitions>
-
-hi:
-
-\--------------------------------
-
-C1_9
-====
-
-tc: IF dkinja = 2
-
-vn: dkinsu (dkinsuwist / dkinsuekr / dkinsuspz / dkinsubers / dkinsuberf / dkinsubar / dkinsuspr / dkinsuwoh / dkinsukber)
-
-qt: Einfachauswahlmatrix mit horizontalen ao
-
-hl:
-
-in:
-
-q: Gibt es an Ihrem Hochschulstandort folgende Unterstützungsmöglichkeiten bzw. Angebote für Studierende mit Kind?
-
-is:
-
-it1: (dkinsuwist): Wickel-/Stillräume
-
-it2: (dkinsuekr): Eltern-Kind-Räume
-
-it3: (dkinsuspm): Spielmöglichkeiten
-
-it4: (dkinsubers): Studienberatung, Familienservice/-büro
-
-it5: (dkinsuberf) Sozial-/Finanzberatung
-
-it6: (dkinsubar): barrierefreie Zugänge für Kinderwagen
-
-it7: (dkinsuspr): Gesprächskreise für Eltern
-
-it8: (dkinsuwoh): Wohnangebote für Studierende mit Kind
-
-it9: (dkinsukber): Angebote zur flexiblen Kurzzeitbetreuung von Kindern
-
-
-st:
-
-ao1: 0: nein 
-
-ao2: 1: ja 
-
-mv: -12: weiß ich nicht 
-
-ka:
-
-vc:
-
-av:
-
-kh:
-
-fv:
-
-hv:
-
-fo: mv/"weiß ich nicht" etwas absetzen.
-
-tr:
-
-        <zofar:transitions>
             <zofar:transition target="C1_10"/>
         </zofar:transitions>
 
 hi:
 
 \--------------------------------
+
 
 C1_10
 =====
