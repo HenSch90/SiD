@@ -964,8 +964,8 @@ fo2: Bitte in der Zeile der Kommiliton\*innen (it1: bsuntkom) und Lehrende (it2:
 tr:
 		<zofar:transitions>
             <zofar:transition target="C2_12" condition="zofar.asNumber(beschwer)==2"/>
-        <zofar:transition target="C2_12" condition="zofar.asNumber(gbegrmob) ge 1 or condition="zofar.asNumber(gbegrseh) ge 1 or condition="zofar.asNumber(gbegrohr) ge 1 or condition="zofar.asNumber(gbegrspr) ge 1 or condition="zofar.asNumber(gbegrpsy) ge 1 or condition="zofar.asNumber(gbegrchron) ge 1 or condition="zofar.asNumber(gbegrtls) ge 1 or 
-condition="zofar.asNumber(gbegrson) ge 1 or condition="zofar.asNumber(gbegrka) ge 1"/>
+        <zofar:transition target="C2_12" condition="zofar.asNumber(gbegrmob) ge 1 or zofar.asNumber(gbegrseh) ge 1 or zofar.asNumber(gbegrohr) ge 1 or zofar.asNumber(gbegrspr) ge 1 or zofar.asNumber(gbegrpsy) ge 1 or zofar.asNumber(gbegrchron) ge 1 or zofar.asNumber(gbegrtls) ge 1 or 
+"zofar.asNumber(gbegrson) ge 1 or zofar.asNumber(gbegrka) ge 1"/>
         <zofar:transition target="C2_14"/>
         </zofar:transitions>
 
