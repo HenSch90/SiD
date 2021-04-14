@@ -212,9 +212,10 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="A_38"/>
-        </zofar:transitions>
+<zofar:transitions>
+        <zofar:transition target="A_38" condition="zofar.asNumber(vsbdeba)==1"/>
+        <zofar:transition target="A_38a" condition="zofar.asNumber(vsbdeba)==2"/>
+        <zofar:transition target="A_38" condition="zofar.isMissing(vsbdeba)"/>    
+       </zofar:transitions>
 
 hi:
