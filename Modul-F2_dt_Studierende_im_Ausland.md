@@ -66,10 +66,7 @@ hv:
 fo: Bitte ainfasia ainflandosia ainfortosia linkdbündig untereinander positionieren. Darunter dann linksbündig die Kategorienüberschrift "Start des Aufenthalts:" und darunter linksbündig ainfbmsia und daneben ainfbjsia. Zuletzt dann ebenfalls darunter linksbündig ainfdausia. Über ainfdausia linksbündig die Kategorienüberschrift "Voraussichtliche Dauer des Aufenthalts:".
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F2_7" condition="(zofar.asNumber(ainfasia) ge 3 or zofar.asNumber(ainfasia) le 8) or      ((zofar.asNumber(ainfasia)==1 or zofar.asNumber(ainfasia)==2) and (!hsstand_2.value or (zofar.asNumber(hsstandbl) ge 1 and zofar.asNumber(hsstandbl) le 16)))"/>
-            <zofar:transition target="F2_7" condition="(zofar.asNumber(ainfasia)==1 or zofar.asNumber(ainfasia)==2) and zofar.isMissing(hsstandlao)"/>
+		<zofar:transitions>
             <zofar:transition target="F2_8"/>
         </zofar:transitions>
 
@@ -137,11 +134,9 @@ hv:
 fo: Frage und Satzbeginn ("Ich habe mich für ein Studium...") bitte linksbündig untereinander positionieren und etwas voneinander absetzen. 
 
 tr:
-
-        <zofar:transitions>
+			<zofar:transitions>
             <zofar:transition target="F2_9"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -195,8 +190,7 @@ hv:
 fo: ao4 absetzen
 
 tr:
-
-        <zofar:transitions>
+			<zofar:transitions>
             <zofar:transition target="F2_10"/>
         </zofar:transitions>
 
@@ -255,11 +249,9 @@ hv:
 fo: ao5 absetzen
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F2_11"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -314,11 +306,9 @@ hv:
 fo: Bitte über ao2 "Ja, und zwar:" linksbündig positionieren.
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F2_12"/>
+		<zofar:transitions>
+            <zofar:transition target="F2_13"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -377,11 +367,9 @@ hv:
 fo: Bitte etwas Abstand zwischen Frage und Antwortitems. Im Pretest waren diese sehr nah beieinander.
 
 tr:
-
-        <zofar:transitions>
+	<zofar:transitions>
             <zofar:transition target="F2_14"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -441,11 +429,9 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F2_15"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -500,11 +486,9 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+			<zofar:transitions>
             <zofar:transition target="F2_16"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -559,8 +543,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+	<zofar:transitions>
             <zofar:transition target="F2_17"/>
         </zofar:transitions>
 
@@ -616,11 +599,9 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
-            <zofar:transition target="F2_18"/>
+		<zofar:transitions>
+            <zofar:transition target="F2_19"/>
         </zofar:transitions>
-
 hi:
 
 \--------------------------------
@@ -678,7 +659,7 @@ fo:
 
 tr:
 
-        <zofar:transitions>
+		<zofar:transitions>
             <zofar:transition target="F2_20"/>
         </zofar:transitions>
 
@@ -738,8 +719,7 @@ hv:
 fo:
 
 tr:
-
-        <zofar:transitions>
+			<zofar:transitions>
             <zofar:transition target="A_56"/>
         </zofar:transitions>
 
