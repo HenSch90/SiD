@@ -1750,7 +1750,8 @@ hv:
 
 fo:
 
-tr:GOTO KSM-fai29 if  diskjane1=1 OR diskjane2=1 OR   diskjane3=1 OR  diskjane4=1 OR diskjane5=1 OR diskjane6=1 OR  diskjane7=1 OR diskjane8=1 OR diskjane9=1 OR diskjane10=1 OR diskjane11=1 OR diskjane12=1 GOTO ABSCHLUSSSEITE IF diskjane1=0 AND diskjane2=0 AND diskjane3=0 AND diskjane4=0 AND diskjane5=0 AND diskjane6=0 AND diskjane7=0 AND diskjane8=0 AND diskjane9=0 AND diskjane10=0 AND diskjane11=0 AND diskjane12=0 OR diskjane13=1
+tr:GOTO KSM-fai29 if  diskjane1=1 OR diskjane2=1 OR   diskjane3=1 OR  diskjane4=1 OR diskjane5=1 OR diskjane6=1 OR  diskjane7=1 OR diskjane8=1 OR diskjane9=1 OR diskjane10=1 OR diskjane11=1 OR diskjane12=1 
+GOTO A_56 IF diskjane1=0 AND diskjane2=0 AND diskjane3=0 AND diskjane4=0 AND diskjane5=0 AND diskjane6=0 AND diskjane7=0 AND diskjane8=0 AND diskjane9=0 AND diskjane10=0 AND diskjane11=0 AND diskjane12=0 OR diskjane13=1
 
 hi: Satz "Wie für alle Fragen gilt: Die Beantwortung dieser Fragen ist selbstverständlich freiwillig und wir sichern Ihnen Anonymität und den Schutz Ihrer Daten zu." nicht fett drucken. 
 
