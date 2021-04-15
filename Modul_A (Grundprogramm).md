@@ -76,7 +76,7 @@ tr:
 	<zofar:transitions>
   		<zofar:transition target="index" condition="!sidpretest_consent.value and !sf_h.value"/>
   		<zofar:transition target="offer" condition="sidpretest_consent.value and jsCheck.value and isMobile.value and width.value lt 768"/>
-  		<zofar:transition target="A_1" condition="sidpretest_consent.value"/>
+  		<zofar:transition target="A_18" condition="sidpretest_consent.value"/>
 	</zofar:transitions>
 
 hi:
@@ -126,7 +126,7 @@ fo:
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="A_1"/>
+            <zofar:transition target="A_18"/>
         </zofar:transitions
 
 hi:
