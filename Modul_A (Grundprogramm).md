@@ -1157,7 +1157,7 @@ fo: "Ja, und zwar:" über ao2 linksbündig positionieren.
 tr:
 
 		<zofar:transitions>
-            <zofar:transition target="A_14" condition="zofar.asNumber(pflegang1)==1 or zofar.asNumber(pflegang2)==1"/>
+            <zofar:transition target="A_14" condition="pflegang1.value or pflegang2.value"/>
             <zofar:transition target="D3_24" condition=" zofar.asNumber(mastersplit)==3 or      zofar.asNumber(mastersplit)==4 or      zofar.asNumber(mastersplit)==5 or  zofar.asNumber(mastersplit)==6 or          
 	zofar.asNumber(mastersplit)==9 or      zofar.asNumber(mastersplit)==10 or      
 	zofar.asNumber(mastersplit)==11 or      zofar.asNumber(mastersplit)==12      "/>            <zofar:transition target="A_15"/>
