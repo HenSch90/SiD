@@ -1,0 +1,166 @@
+\--------------------------------
+
+Addon_1
+===
+
+tc: Seite wird angesteuert, wenn noch ausspielbare Incentives vorhanden sind
+
+vn: mailreko
+
+qt: offene Angabe
+
+hl:
+
+in: 
+
+q: 
+!!Vielen Dank für Ihre Teilnahme! !! (Leerzeile)
+
+Mit Ihrer Teilnahme tragen Sie aktiv dazu bei, dass Politik, Wissenschaft und Hochschulen Probleme im Studienalltag aufdecken, Verbesserungspotenziale entwickeln und die Situation der Studierenden insgesamt stärken können. Die Ergebnisse dieser Studie sind eine wesentliche Grundlage für eine Bildungs‐ und Hochschulpolitik, die sich direkt an der Lebenswirklichkeit der Studierenden orientiert.
+is: 
+
+
+it: 
+
+st:
+
+ao: 
+
+!!Damit die Stimme der Studierenden auch zukünftig Gehör findet, würden wir Sie gerne zu einem späteren Zeitpunkt noch einmal zu Ihrem weiteren Bildungs- und Berufsverlauf befragen.!!
+
+Wir würden uns daher freuen, wenn Sie uns Ihre E-Mail-Adresse hierfür zur Verfügung stellen:
+
+(mailreko): [infield = Bitte die E-Mail-Adresse hier angeben; 100 Zeichen] (offene Angabe)
+
+!!Als kleines Dankeschön für diese Adressangabe erhalten Sie auf der nächsten Seite einen Amazon-Gutschein im Wert von 10 €! !!
+
+Selbstverständlich ist Ihre Angabe freiwillig und wird gemäß geltender Datenschutzbestimmungen vertraulich behandelt. Ihre E-Mail-Adresse wird getrennt von Ihren Befragungsdaten abgespeichert.
+
+mv: 
+
+ka: 
+
+vc: 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr: 
+
+<zofar:transitions>
+	<zofar:transition target="Addon_2”/>
+</zofar:transitions>
+
+
+hi: Bitte das Feld der offenen Angabe breit darstellen.
+
+
+\--------------------------------
+
+Addon_2
+===
+
+tc: /
+
+vn:
+
+qt: 
+!!Dankeschön! !! (Leezeile)
+
+!!Als kleines Dankeschön finden Sie nachstehend einen sofort einlösbaren Amazon-Gutschein im Wert von 10 €! !!
+
+hl:
+
+in: 
+
+q: 
+is: 
+
+it: 
+
+st:
+
+ao: Code: #amazon_key#
+
+mv: 
+
+ka: 
+
+vc: 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr:
+
+hi:
+
+
+\--------------------------------
+
+Addon_3
+===
+
+tc: Seite wird angesteuert, wenn alle Incentives ausgespielt wurden
+
+vn: mailreko
+
+qt: offene Angabe
+
+hl:
+
+in: 
+
+q: 
+!!Vielen Dank für Ihre Teilnahme! !! (Leerzeile)
+Mit Ihrer Teilnahme tragen Sie aktiv dazu bei, dass Politik, Wissenschaft und Hochschulen Probleme im Studienalltag aufdecken, Verbesserungspotenziale entwickeln und die Situation der Studierenden insgesamt stärken können. Die Ergebnisse dieser Studie sind eine wesentliche Grundlage für eine Bildungs‐ und Hochschulpolitik, die sich direkt an der Lebenswirklichkeit der Studierenden orientiert.
+is: 
+
+
+it: 
+
+st:
+
+ao: 
+
+!!Damit die Stimme der Studierenden auch zukünftig Gehör findet, würden wir Sie gerne zu einem späteren Zeitpunkt noch einmal zu Ihrem weiteren Bildungs- und Berufsverlauf befragen.!!
+Wir würden uns daher freuen, wenn Sie uns Ihre E-Mail-Adresse hierfür zur Verfügung stellen:
+
+(mailreko): [infield = Bitte die E-Mail-Adresse hier angeben; 100 Zeichen] (offene Angabe)
+
+Selbstverständlich ist Ihre Angabe freiwillig und wird gemäß geltender Datenschutzbestimmungen vertraulich behandelt. Ihre E-Mail-Adresse wird getrennt von Ihren Befragungsdaten abgespeichert.
+
+mv: 
+
+ka: 
+
+vc: 
+
+av: 
+
+kh: 
+
+fv: 
+
+hv: 
+
+fo: 
+
+tr: 
+
+hi: Bitte das Feld der offenen Angabe breit darstellen.
+
