@@ -225,7 +225,7 @@ fo: Bitte diese Frage zusammen mit der vorherigen Frage auf einer Seite (A1) dar
 tr:
 
         <zofar:transitions>
-            <zofar:transition target="end_prom" condition="(zofar.asNumber(sabsanpr)==-11 or zofar.isMissing(sabsanpr)) and (zofar.asNumber(vsbdeba)==1 or zofar.isMissing(vsbdeba))"/>
+            <zofar:transition target="end_prom" condition="zofar.asNumber(sabsan)==6 and (zofar.asNumber(sabsanpr)==-11 or zofar.isMissing(sabsanpr)) and (zofar.asNumber(vsbdeba)==1 or zofar.isMissing(vsbdeba))"/>
             <zofar:transition target="A_2" condition="dnatdeu.value"/>
             <zofar:transition target="A_3" condition="!dnatdeu.value and dnatausl.value"/>
             <zofar:transition target="A_5" condition="!dnatdeu.value and !dnatausl.value"/>
