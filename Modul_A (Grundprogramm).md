@@ -2902,7 +2902,7 @@ mv:
 
 ka:
 
-vc:
+vc: SHOW q, ao1, ao2 IF deltgebv=2
 
 av:
 
@@ -2949,7 +2949,7 @@ mv:
 
 ka:
 
-vc: 
+vc: SHOW q, ao1, ao2 IF deltgebm=2
 
 av:
 
