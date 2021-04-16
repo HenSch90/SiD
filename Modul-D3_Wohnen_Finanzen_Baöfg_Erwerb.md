@@ -497,9 +497,11 @@ fo4: Bitte ka "davon entfallen auf" zwischen It1 "Gesamtausgaben" und den nachfo
 
 tr:
 
-        <zofar:transitions>
-            <zofar:transition target="D3_8a"/>
-        </zofar:transitions>
+	<zofar:transitions>
+            <zofar:transition target="D3_8a" condition=" zofar.asNumber(feininsg2) gt 0 or zofar.asNumber(feindmieto) gt 0 or zofar.asNumber(feinderno) gt 0 or zofar.asNumber(feindkomo) gt 0  or zofar.asNumber(feindkleio) gt 0 or zofar.asNumber(feindlerno) gt 0  or zofar.asNumber(feindgeso) gt 0 or zofar.asNumber(feindmobo) gt 0 or zofar.asNumber(feindgsemo) gt 0 or zofar.asNumber(feindstuo) gt 0 or zofar.asNumber(feindfreio) gt 0 or zofar.asNumber(feindkitaso) gt 0 or zofar.asNumber(feindkindso) gt 0 or zofar.asNumber(feindasso) gt 0 or zofar.asNumber(feinandquo2) gt 0 "/>
+		<zofar:transition target="D3_9"/>        
+	</zofar:transitions>
+
 
 hi1: Bitte kh1 für die Einzelausgabeposten der Spalte "ich bezahle selbst" nutzen und kh2 für die Einzelausgabeposten der Spalte "andere bezahlen für mich".
 
