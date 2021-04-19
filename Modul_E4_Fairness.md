@@ -884,7 +884,7 @@ hi:
 KSM-fai16 
 =========
 
-tc:
+tc:(s_fairsplit)==1
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -896,7 +896,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Wirtschaftswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
+is1: Die Absolvent\*innen der Wirtschaftswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -948,10 +948,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai17 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==2
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -963,7 +963,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
+is2: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -1015,10 +1015,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai18 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==3
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1030,7 +1030,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
+is3: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -1082,10 +1082,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai19 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==4
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1097,7 +1097,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
+is4: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Geisteswissenschaften, weil sie …
 
 it:
 
@@ -1150,10 +1150,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai20 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==5
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1165,7 +1165,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
+is5: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
 
 it:
 
@@ -1217,10 +1217,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai21 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==6
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1232,7 +1232,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Ingenieurwissenschaften, weil sie …
+is6: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Ingenieurwissenschaften, weil sie …
 
 it:
 
@@ -1284,10 +1284,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai22 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==7
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1299,7 +1299,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
+is7: Die Absolvent\*innen der Medizin verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
@@ -1351,10 +1351,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai23 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==8
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1366,7 +1366,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
+is8: Die Absolvent\*innen der Rechtswissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
@@ -1418,10 +1418,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai24 
+KSM-fai16
 =========
 
-tc:
+tc: (s_fairsplit)==9
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1433,7 +1433,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
+is9: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Rechtswissenschaften, weil sie …
 
 it:
 
@@ -1485,10 +1485,10 @@ hi:
 
 \------------------------------------------------------------
 
-KSM-fai25 
+KSM-fai16 
 =========
 
-tc:
+tc: (s_fairsplit)==8
 
 vn: faigefun; faifinan; faizeit; fainive; faivolk; failequal; faiveran; faikennt; faikompl; faiflex; faistre; faiand; faiando
 
@@ -1500,7 +1500,7 @@ in:
 
 q: Was könnte Ihrer Meinung nach den höheren Lohn in diesem Beispiel rechtfertigen?
 
-is: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
+is10: Die Absolvent\*innen der Ingenieurwissenschaften verdienen mehr als Absolvent*/innen der Wirtschaftswissenschaften, weil sie …
 
 it:
 
