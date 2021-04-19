@@ -3368,6 +3368,8 @@ tr:
 	<zofar:transitions>
             	<zofar:transition target="F1_6" condition="zofar.asNumber(vsbdeba)==2 and zofar.asNumber(sabsanpr)==-11"/>
         	<zofar:transition target="A_37a" condition=" zofar.asNumber(acht_a)==2 and (zofar.asNumber(vsbdeba)==1 or zofar.isMissing(vsbdeba)"/>
+		<zofar:transition target="D1_4" condition="(zofar.asNumber(mastersplit)==1                 or zofar.asNumber(mastersplit)==2                 or zofar.asNumber(mastersplit)==3                 or zofar.asNumber(mastersplit)==4                 or zofar.asNumber(mastersplit)==7                 or zofar.asNumber(mastersplit)==8                 or zofar.asNumber(mastersplit)==9                 or zofar.asNumber(mastersplit)==10) and  (vsbtyp10.value  or vsbtyp11.value )"/>
+        	<zofar:transition target="A_42" condition="(zofar.asNumber(mastersplit)==5                 or zofar.asNumber(mastersplit)==6                 or zofar.asNumber(mastersplit)==11                 or zofar.asNumber(mastersplit)==12) and (vsbtyp10.value  or vsbtyp11.value)"/>
         	<zofar:transition target="A_41"/>
         </zofar:transitions>
 
