@@ -1678,9 +1678,9 @@ fo:
 tr:
 
         <zofar:transitions>
+	    <zofar:transition target="A_19" condition="hsstand_2.value"/>
             <zofar:transition target="TR_1" condition="zofar.asNumber(PRELOADhs_tr)==1"/>
             <zofar:transition target="A_17" condition="!hsstand_2.value "/>
-            <zofar:transition target="A_19" condition="hsstand_2.value"/>
         </zofar:transitions>
 
 hi:
