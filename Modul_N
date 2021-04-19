@@ -541,6 +541,7 @@ fo:
 tr:
 		<zofar:transitions>
             <zofar:transition target="CO_4" condition="diglehr13.value”/>
+	    <zofar:transition target="CO_4" condition="(!diglehr1.value and !diglehr2.value and !diglehr3.value and !diglehr4.value and !diglehr5.value and !diglehr6.value and !diglehr7.value and  !diglehr8.value and  !diglehr9.value and !diglehr10.value and  !diglehr11.value and  !diglehr12.value and  !diglehr13.value)”/>
             <zofar:transition target="N_10c"/>
         </zofar:transitions>
 
