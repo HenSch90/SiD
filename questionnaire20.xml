@@ -535,8 +535,9 @@
 		<zofar:body uid="b">
 			<zofar:questionSingleChoice uid="sc">
 				<zofar:header>
-					<zofar:question uid="q" block="true">Handelt es sich bei Ihrem 
-					derzeitigen Studium formal um ein Fernstudium?
+					<zofar:question uid="q" block="true">Abgesehen von der besonderen 
+						Studiensituation durch die Corona-Pandemie: Handelt es sich 
+						bei Ihrem derzeitigen Studium formal um ein Fernstudium?
 					</zofar:question>
 				</zofar:header>
 				<zofar:responseDomain variable="V1_2" uid="rd">
@@ -1344,7 +1345,7 @@
 			<zofar:questionSingleChoice uid="sc">
 				<zofar:header>
 					<zofar:question uid="q" block="true">Was ist derzeit Ihr offizieller 
-					Studienstatus ? 
+					Studienstatus? 
 					</zofar:question>
 					<zofar:instruction uid="ins" block="true">Bitte beziehen Sie sich auf 
 					Ihren aktuellen Studiengang.
@@ -1390,9 +1391,11 @@
 		<zofar:body uid="b">
 			<zofar:questionOpen variable="V1_7" uid="qo" size="50" >
 				<zofar:header>
-					<zofar:question uid="q" block="true">Bitte wählen Sie Ihr (Haupt-)Studienfach 
-					aus der unten angegebenen Liste aus.
+					<zofar:question uid="q" block="true">Bitte geben Sie ihr (Haupt-)Studienfach an.
 					</zofar:question>
+					<zofar:instruction uid="ins" block="true">Bitte beziehen Sie sich 
+					hier auf Ihren aktuellen Studiengang.
+					</zofar:instruction>
 				</zofar:header>
 			</zofar:questionOpen>
 		</zofar:body>
@@ -2306,7 +2309,8 @@
 			<zofar:matrixQuestionSingleChoice
 				uid="msc">
 				<zofar:header>
-					<zofar:question uid="q" block="true">In welchem Maße stimmen Sie folgenden Aussagen zu Ihrem derzeitigen Studiengang zu? 
+					<zofar:question uid="q" block="true">In welchem Maße stimmen Sie folgenden 
+						Aussagen zu Ihrem derzeitigen Studiengang im Allgemeinen zu? 
 					</zofar:question>
 				</zofar:header>
 				<zofar:responseDomain noResponseOptions="5"
@@ -2930,8 +2934,8 @@
 					</zofar:item>
 					<zofar:item uid="i2">
 						<zofar:header>
-							<zofar:question uid="qi2">Lerninfrastruktur 
-							(z.B. Bibliothek, Computerräume, Arbeitsplätze)
+							<zofar:question uid="qi2">Lerninfrastruktur im Allgemeinen 
+								(z.B. Bibliothek, Computerräume, Arbeitsplätze)
 							</zofar:question>
 						</zofar:header>
 						<zofar:responseDomain variable="V3_7_2" uid="rdi2">
@@ -3281,8 +3285,8 @@
 			<zofar:questionOpen variable="V4_4" uid="qo" type="number"
 				validationMessage="Bitte nur Zahlen eintragen">
 				<zofar:header>
-					<zofar:question uid="q" block="true">Wieviel Zeit benötigen Sie im Durchschnitt 
-					für den einfachen Weg von Ihrer Wohnung zur Hochschule?
+					<zofar:question uid="q" block="true">Wieviel Zeit benötigen Sie im Allgemeinen 
+						durchschnittlich für den einfachen Weg von Ihrer Wohnung zur Hochschule?
 					</zofar:question>
 					<zofar:instruction uid="ins" block="true">Bitte geben Sie die Dauer 
 					des Weges von "Tür zu Tür" an.
@@ -5360,7 +5364,7 @@
 					</zofar:instruction>
 				</zofar:header>
 				<zofar:responseDomain uid="rd">
-					<zofar:answerOption variable="V5_1_1" uid="ao1" label="#{layout.UNDERLINED_START}Auslandsstudium/Auslandssemester#{layout.UNDERLINED_END} during a study programme in the Netherlands (e.g. semester abroad)"></zofar:answerOption>
+					<zofar:answerOption variable="V5_1_1" uid="ao1" label="#{layout.UNDERLINED_START}Auslandsstudium/Auslandssemester#{layout.UNDERLINED_END}"></zofar:answerOption>
 					<zofar:answerOption variable="V5_1_2" uid="ao2" label="Andere studienbezogene Aktivitäten im Ausland mit einer 
 						Dauer von #{layout.UNDERLINED_START}mindestens 3 
 						Monaten#{layout.UNDERLINED_END} 
