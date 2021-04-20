@@ -5,7 +5,7 @@ end
 
 tc: 
 
-vn: 
+vn: countvar
 
 qt: 
 
@@ -34,9 +34,9 @@ mv:
 ka: 
 
 vc: 
-q1 visible if 
+q1 visible if countvar==1
 
-q2 visible if 
+q2 visible if countvar==0
 
 av: 
 
@@ -50,8 +50,14 @@ fo:
 
 tr: 
 
+<zofar:transitions>
+    <zofar:transition target="Addon_1" condition="(zofar.asNumber(vsbtyp11)==1 or zofar.asNumber(vsbtyp12)==1) and (countvar==1) "/>
+    <zofar:transition target="Addon_3" condition="(zofar.asNumber(vsbtyp11)==1 or zofar.asNumber(vsbtyp12)==1) and (countvar==0) "/>
+</zofar:transitions>
 
-hi:
+hi: 
+countvar == 0 if ausspielbare Incentives nicht mehr vorhanden
+countvar == 1 if ausspielbare Incentives vorhanden
 
 
 ---------------------
