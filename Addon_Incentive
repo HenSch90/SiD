@@ -1,6 +1,14 @@
 \--------------------------------
 
-Addon_1
+Addon_1_index
+===
+
+Sollte es aus Ihrer Perspektive wichtige Aspekte geben, die im Fragebogen nicht angesprochen wurden, dann haben Sie die Möglichkeit, uns diese hier mitzuteilen:
+
+--> größeres freies Feld
+
+
+Addon_1_1
 ===
 
 tc: Seite wird angesteuert, wenn noch ausspielbare Incentives vorhanden sind
@@ -55,7 +63,7 @@ fo:
 tr: 
 
 <zofar:transitions>
-	<zofar:transition target="Addon_2”/>
+	<zofar:transition target="Addon_1_2”/>
 </zofar:transitions>
 
 
@@ -64,7 +72,7 @@ hi: Bitte das Feld der offenen Angabe breit darstellen.
 
 \--------------------------------
 
-Addon_2
+Addon_1_2
 ===
 
 tc: /
